@@ -460,6 +460,7 @@ NO
 YES: The German translation uses "zu öffnen" which is an infinitive construction. The English source uses "to open" as part of a larger phrase. The correct translation should be "Konnte %s nicht zum Schreiben öffnen".
 Konnte %s nicht zum Schreiben öffnen
 ```
+</details>
 
 
 <details><summary>pl</summary>
@@ -777,3 +778,4 @@ Correct translation: Kwota transakcji nie może być ujemna
 YES - There is an extra space at the end of the translation.
 Zbyt mało dostępnych deskryptorów plików. %d dostępnych, %d wymaganych.
 ```
+</details>
