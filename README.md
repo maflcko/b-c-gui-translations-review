@@ -2,6 +2,8 @@
 
 The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
 
+
+
 <details><summary>de</summary>
 
 [If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bde%5D%20low%20quality)
@@ -458,6 +460,8 @@ NO
 YES: The German translation uses "zu öffnen" which is an infinitive construction. The English source uses "to open" as part of a larger phrase. The correct translation should be "Konnte %s nicht zum Schreiben öffnen".
 Konnte %s nicht zum Schreiben öffnen
 ```
+
+
 <details><summary>pl</summary>
 
 [If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bpl%5D%20low%20quality)
