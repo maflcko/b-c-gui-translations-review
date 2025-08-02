@@ -4,7 +4,7 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 
 <details><summary>pl</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=[pl] low quality)
+[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bpl%5D%20low%20quality)
 
 
 ```
