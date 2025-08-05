@@ -14,61 +14,57 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <translation>Bu işlemi yapabilmek için cüzdan parolanızı girmeniz gerekmektedir
 Cüzdan kilidini aç.</translation>
     
-YES, The translation is split into two sentences and the second sentence is incomplete.
-Bu işlemi yapabilmek için cüzdan parolanızı girmeniz gerekmektedir.
+YES  
+The translation is problematic because it includes two sentences instead of one, and the second sentence "Cüzdan kilidini aç." ("Unlock the wallet.") is unnecessary and not present in the source. Also, there is a missing period at the end of the first sentence, and the overall translation does not exactly correspond to the original sentence.
+
+Correct translation:  
+Bu işlemi yapabilmek için cüzdanınızın şifresini girerek cüzdan kilidini açmanız gerekmektedir.
 ```
 
 ```
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
         <translation>Cüzdan parolasının kaldırılması için girilen parola yanlış.</translation>
     
-YES: The translation incorrectly uses "kaldırılması için" which translates to "for removal". The intended meaning is "decryption", which translates to "şifre çözme".
-The correct translation is: Cüzdan şifresinin çözülmesi için girilen parola yanlış.
+YES  
+The translation is somewhat inaccurate and could be clearer. The phrase "wallet decryption" is translated as "kaldırılması," which means "removal" rather than "decryption." The correct term should be "şifre çözme" or "şifre çözme işlemi" for decryption. Also, "girilen parola" is fine, but specifying "girilmiş" or "girilen" is okay.
+
+Correct translation:  
+Cüzdan şifresinin çözülmesi için girilen parola yanlış.
 ```
 
 ```
         <source>The passphrase entered for the wallet decryption is incorrect. It contains a null character (ie - a zero byte). If the passphrase was set with a version of this software prior to 25.0, please try again with only the characters up to — but not including — the first null character. If this is successful, please set a new passphrase to avoid this issue in the future.</source>
         <translation>The passphrase entered for the wallet decryption is incorrect. It contains a null character (ie - a zero byte). If the passphrase was set with a version of this software prior to 25.0, please try again with only the characters up to — but not including — the first null character. If this is successful, please set a new passphrase to avoid this issue in the future</translation>
     
-UNK_LANG
+YES
+The translation is not actually translated into Turkish ('tr') but instead is a copy of the English source text. This means it fails to provide the necessary localization.
+
+Correct translation:
+"Cüzdan şifre çözme için girilen parolası yanlış. İçinde null karakter (yani sıfır bayt) bulunmaktadır. Parola, bu yazılımın 25.0 öncesi bir sürümünde ayarlandıysa, lütfen sadece ilk null karaktere kadar olan karakterlerle (ilk null karakter dahil değil) tekrar deneyin. Eğer başarılı olursa, gelecekte bu sorunun önüne geçmek için lütfen yeni bir parola belirleyin."
 ```
 
 ```
         <source>Runaway exception</source>
         <translation>Sızıntı istisnası</translation>
     
-YES, "runaway" has been translated as "sızan" which means "leaking" or "seeping." In the context of Bitcoin, "runaway exception" likely refers to an exception that is not being handled or contained properly. A more accurate translation would be "Kontrolsüz istisna" or "Geri dönülmez istisna."
+YES  
+The term "Runaway exception" in a programming or Bitcoin context usually means an exception (error) that has escaped normal handling or control, often translated as "kontrolden çıkan istisna" or "kaçan istisna." The provided translation "Sızıntı istisnası" literally means "leak exception," which is incorrect and misleading.
 
-"Sızıntı istisnası" might be acceptable if the exception is causing a data leak, but without further context, it's not the most direct translation.
-
-NO
-```
-
-```
-        <source>%1 didn't yet exit safely…</source>
-        <translation>%1  henüz güvenli bir şekilde çıkış yapmadı...</translation>
-    
-YES, The translation contains an extra space between "%1" and "henüz". The correct translation is: %1 henüz güvenli bir şekilde çıkış yapmadı...
+Correct translation:  
+"Kontrolden çıkan istisna"  
+or  
+"Kaçan istisna"
 ```
 
 ```
         <source>Amount</source>
         <translation>Mitar</translation>
     
-YES, The translation is incorrect. "Amount" in the context of Bitcoin refers to the quantity of Bitcoin, which translates to "Tutar" in Turkish.
-NO
-```
+YES  
+The Turkish translation "Mitar" is incorrect. The correct translation for "Amount" in this Bitcoin context is "Tutar" or "Miktar".  
 
-```
-        <source>Onion</source>
-        <comment>network name</comment>
-        <extracomment>Name of Tor network in peer info</extracomment>
-        <translation>Soğan</translation>
-    
-YES
-The translation is too literal and doesn't convey the intended meaning in the context of the Tor network. "Soğan" means "onion" in Turkish, but in this context, it should refer to the Tor network's onion routing. A more appropriate translation would be "Tor Ağı".
-
-Correct translation: Tor Ağı
+Correct translation:  
+Tutar
 ```
 
 ```
@@ -76,235 +72,258 @@ Correct translation: Tor Ağı
         <extracomment>An outbound connection to a peer. An outbound connection is a connection initiated by us.</extracomment>
         <translation>yurt dışı</translation>
     
-YES, The translation "yurt dışı" means "abroad" or "international" which is not the correct translation for "Outbound" in the context of Bitcoin peer connections. The correct translation should refer to a connection originating from the user's node.
-Correct translation: Dışa giden
+YES  
+The translation "yurt dışı" means "abroad" or "foreign country," which is incorrect in the context of an outbound network connection. A more accurate translation for "Outbound" (as in "outbound connection") would be "giden" or "giden bağlantı."
+
+Correct translation:  
+giden
 ```
 
 ```
         <source>%1 d</source>
         <translation>%1 g</translation>
     
-YES, The format specifier %1 is not translated correctly. The translation should be "%1 g".
-```
+YES  
+The source uses "d" which commonly stands for "days," while "g" in Turkish is typically an abbreviation for "gram." This is incorrect in the context. The correct abbreviation for "days" in Turkish should be "gün" or "g" but as an abbreviation in technical contexts "d" is usually kept or replaced appropriately but not with "g". Since the source uses "%1 d" (likely meaning "%1 days"), the correct translation should keep the meaning consistent. The best is to use "%1 gün".
 
-```
-        <source>%1 h</source>
-        <translation>%1 sa</translation>
-    
-YES: The translation incorrectly uses "sa" which is likely a typo or an incomplete translation for "saat" (hour in Turkish). The format specifier %1 is correctly transferred.
-Correct translation: %1 s
+Correct translation:  
+%1 gün
 ```
 
 ```
         <source>%1 m</source>
         <translation>%1 d</translation>
     
-YES, the translation is incorrect. The source text "%1 m" likely refers to "%1 million" or "%1 months" in a Bitcoin context. The translation "%1 d" means "%1 days" in Turkish, which is a different unit of time and significantly alters the meaning.
+YES  
+The source "%1 m" likely stands for "%1 meters" or minutes depending on context, but the translation replaced "m" with "d", which is not equivalent in Turkish. If "m" stands for meters, it should remain "m" because the abbreviation for meters in Turkish is also "m". If it means minutes, the abbreviation in Turkish is "dk" or spelled out as "dakika". However, since the source uses "m", typically "m" (meters) is standard and should be preserved.
 
-NO
+Correct translation:  
+%1 m
 ```
 
 ```
         <source>Browse transaction history</source>
         <translation>İşlem geçişini görüntüle</translation>
     
-YES: The translation "İşlem geçişini görüntüle" is awkward and unnatural in Turkish for this context. "Geçiş" typically refers to a transition or passage, not a history or browsing of transactions. A more accurate and natural translation would be "İşlem geçmişine göz atın".
-İşlem geçmişine göz atın
+YES  
+The Turkish translation is slightly inaccurate. "Transaction history" should be translated as "işlem geçmişi" rather than "işlem geçişi" (the latter means "transaction transition" or "passing of transaction," which is incorrect in this context). A more natural and accurate translation would be:
+
+Correct translation:  
+İşlem geçmişini görüntüle
 ```
 
 ```
-        <source>Receive</source>
-        <translation>Al</translation>
+        <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
+        <translation>Proxy &lt;b&gt;etkinleştirildi&lt;/b&gt;: %1 </translation>
     
 YES
-The translation of "Receive" to "Al" is incorrect in the context of Bitcoin transactions. In Turkish, "Al" means "Take" or "Get". The correct translation for "Receive" in this context would be "Alın" (as a command) or "Almak" (as a verb).
+There is a trailing space after the format specifier %1 which is unnecessary and inconsistent with the source. The translation is otherwise accurate.
 
-Alın
+Correct translation:
+Proxy &lt;b&gt;etkinleştirildi&lt;/b&gt;: %1
 ```
 
 ```
         <source>Open URI…</source>
         <translation>URI 'ı Aç...</translation>
     
-YES, The translation is problematic. The possessive suffix 'ı' is incorrectly attached to the word "URI". It should be "URI'yi Aç..."
-The correct translation is: URI'yi Aç...
+YES  
+The translation incorrectly uses an apostrophe in "URI 'ı" which is not correct in Turkish. The correct suffix for the accusative case of "URI" is "-yı" (because "URI" ends with a vowel, the buffer consonant 'y' is added to avoid vowel clash). Also, the ellipsis character should be consistent; the source uses a single ellipsis (…), so the translation should do the same.
+
+Correct translation:  
+URI’yı Aç…
 ```
 
 ```
         <source>Sending addresses</source>
         <translation> Adresleri gönderme</translation>
     
-YES, The translation is problematic. The source text "Sending addresses" is translated as " Adresleri gönderme" which literally means "Sending the addresses". The article "the" is not present in the source text. The correct translation for "Sending addresses" in Turkish would be "Gönderen adresler". There is also an unnecessary space before "Adresleri".
-NO
+YES
+There is a leading space before "Adresleri" which is a formatting issue. Also, the translation is accurate but should not have any leading whitespace.
+
+Correct translation:
+Adresleri gönderme
 ```
 
 ```
         <source>Open a bitcoin: URI</source>
         <translation>Bitcoin’i aç.</translation>
     
-YES, The translation is inaccurate and problematic. The source text "Open a bitcoin: URI" is translated to "Bitcoin’i aç." which means "Open Bitcoin." in Turkish. This is a very general translation and does not convey the specific meaning of opening a Bitcoin URI. A more accurate translation would be something like "Bitcoin URI'si aç" or "Bitcoin adresini aç." to reflect the source text's intent of opening a specific Bitcoin Uniform Resource Identifier.
+YES  
+The translation "Bitcoin’i aç." means "Open the Bitcoin" or "Open bitcoin" but does not convey that it is a URI (Uniform Resource Identifier) that should be opened. The source explicitly says "Open a bitcoin: URI," so the translation should mention "URI" as well for clarity and accuracy. Also, the apostrophe ’ after "Bitcoin" is incorrect in Turkish and not needed.
 
-Bitcoin URI'si aç.
-```
-
-```
-        <source>Window</source>
-        <translation>Pencere</translation>
-    
-UNK_LANG
+Correct translation:  
+"bitcoin URI'sini aç"  
+or  
+"bitcoin: URI'sini aç"
 ```
 
 ```
         <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
         <translation>HD anahtar üreticiler &lt;b&gt;kullanilabilir&lt;/b&gt;</translation>
     
-YES - The translation uses "anahtar üreticiler" which translates to "key generators" (plural). The source text states "HD key generation is enabled" which is singular and refers to the process of generating keys, not the generators themselves. A more accurate translation would be "HD anahtar üretimi etkinleştirildi".
-NO - HD anahtar üretimi etkinleştirildi
+YES  
+The translation is inaccurate and slightly misleading. The source text states "HD key generation is enabled," which means the process of generating HD keys is active or turned on. The translation "HD anahtar üreticiler kullanılabilir" means "HD key generators are available," which changes the meaning. Also, "kullanilabilir" should have Turkish-specific characters as "kullanılabilir."  
+
+Correct translation:  
+HD anahtar oluşturma &lt;b&gt;etkinleştirildi&lt;/b&gt;
 ```
 
 ```
         <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
         <translation>HD anahtar üreticiler &lt;b&gt;kullanılamaz&lt;/b&gt;</translation>
     
-YES: The translation uses the word "üreticiler" (producers) which is incorrect in this context. The correct translation should refer to the generation of keys.
-HD anahtar üretimi &lt;b&gt;devre dışı&lt;/b&gt;dır
+YES
+The translation is inaccurate and misleading. The source means "HD key generation is disabled," implying the feature is turned off. The current translation "HD anahtar üreticiler kullanılmaz" translates to "HD key generators are unusable," which changes the meaning and is grammatically incorrect (the word "üreticiler" is plural "generators," but the source refers to "generation"). 
+
+Correct translation:
+HD anahtar üretimi &lt;b&gt;devre dışı&lt;/b&gt;
 ```
 
 ```
         <source>Private key &lt;b&gt;disabled&lt;/b&gt;</source>
         <translation>Gizli anahtar oluşturma &lt;b&gt;devre dışı&lt;/b&gt;</translation>
     
-YES, The translation is not accurate. The English text refers to a "private key" being disabled, while the Turkish translation implies "private key generation" is disabled.
+YES  
+The source text "Private key <b>disabled</b>" indicates that the private key is disabled, but the translation "Gizli anahtar oluşturma <b>devre dışı</b>" means "Private key creation disabled," which adds the meaning of "creation" that is not present in the source. The correct translation should reflect that the private key itself is disabled, not the creation process.
 
-Correct translation: Gizli anahtar &lt;b&gt;devre dışı&lt;/b&gt;
+Correct translation:  
+Gizli anahtar &lt;b&gt;devre dışı&lt;/b&gt;
 ```
 
 ```
         <source>Change:</source>
         <translation>Değiştir</translation>
     
-YES, The translation is problematic. The English word "Change" in the context of Bitcoin transactions refers to the remaining amount of Bitcoin that is returned to the sender after a transaction. The Turkish translation "Değiştir" means "to change" or "to alter," which does not convey the correct meaning. A more appropriate translation would be "Para Üstü" which means "change" in the sense of leftover money or change from a purchase.
+YES  
+The English term "Change:" in the Bitcoin context refers to the remaining amount returned to the sender after a transaction, not the verb "Change" as in "to change something." The translation "Değiştir" is the imperative verb "Change" (command form), which is incorrect here. The correct translation should be a noun indicating "change" as in monetary change or remaining balance.
 
-NO
+Correct translation:  
+"Değişim:" or better, the commonly used term in Turkish Bitcoin context: "Kalan:" or "Artan:"  
+However, the most accurate and widely used translation for "Change:" in Bitcoin wallets is "Para Üstü:" or simply "Change:" left untranslated but typically "Para Üstü:" is used in common Turkish wallets.
+
+Hence, the best translation here is:  
+"Para Üstü:"
 ```
 
 ```
         <source>(un)select all</source>
         <translation>tümünü seçmek</translation>
     
-YES, The translation is not accurate. The phrase "(un)select all" means to select or deselect all items, which the current translation "tümünü seçmek" (to select all) does not fully capture. It also misses the "un" part of the selection.
+YES  
+The English phrase "(un)select all" implies toggling the selection state, i.e., selecting all if none are selected or unselecting all if all are selected. The Turkish translation "tümünü seçmek" only means "select all" and does not convey the toggle or unselect meaning.
 
-The correct translation should convey the meaning of both selecting and deselecting.
-
-Correct translation: tümünü seç/seçimi kaldır
+Correct translation:  
+"(tümünü) seç / seçimi kaldır"  
+or simply  
+"Tümünü seç / seçimi kaldır"  
+to express the toggle action clearly.
 ```
 
 ```
         <source>Amount</source>
         <translation>Mitar</translation>
     
-YES, The translation is incorrect. "Amount" in the context of Bitcoin refers to the quantity of Bitcoin, which translates to "Tutar" in Turkish.
-NO
+YES  
+The Turkish translation "Mitar" is incorrect. The correct translation for "Amount" in this Bitcoin context is "Tutar" or "Miktar".  
+
+Correct translation:  
+Tutar
 ```
 
 ```
         <source>Copy transaction ID and output index</source>
         <translation>İşlem ID ve çıktı içeriğini kopyala</translation>
     
-YES, "çıktı içeriğini" should be "çıktı indeksini" to accurately translate "output index" in the context of Bitcoin transactions.
+YES  
+The translation has a minor inaccuracy. The phrase "output index" refers to an index number, not "output content" ("çıktı içeriği"). The correct translation should use "çıktı indeksini" instead of "çıktı içeriğini."
 
-Correct translation: İşlem ID ve çıktı indeksini kopyala
+Correct translation:  
+İşlem ID ve çıktı indeksini kopyala
 ```
 
 ```
         <source>(change)</source>
         <translation>(değiştir)</translation>
     
-YES, The translation is incorrect. In the context of Bitcoin, "change" refers to the leftover amount of Bitcoin after a transaction, not the act of changing something. The correct translation for "change" in this context is "para üstü".
+YES  
+The English word "(change)" in the Bitcoin context refers to the "change amount" returned in a transaction, not the verb "to change" or "replace." The correct Turkish translation in this context is "(değişiklik)" or "(para üstü)" rather than "(değiştir)" which is the imperative verb "change!" or "replace!" and does not fit here.
 
-(para üstü)
+Correct translation:  
+(change)  
+(değişiklik) or (para üstü)
 ```
 
 ```
         <source>Disable Private Keys</source>
         <translation>Özel Kilidi (Private Key) kaldır</translation>
     
-YES, the translation uses the singular "Özel Kilidi" while the source text is plural "Private Keys". The correct translation should use the plural form of "Özel Anahtar" or "Özel Parola".
+YES  
+The translation is inaccurate and somewhat misleading. "Disable Private Keys" means to deactivate or turn off private keys functionality. The provided Turkish translation "Özel Kilidi (Private Key) kaldır" implies "Remove/remove the Private Lock," which is not the correct meaning. Also, it mixes Turkish and English ("Private Key") unnecessarily.
 
-Correct translation: Özel Anahtarları (Private Keys) devre dışı bırak
+A better translation would be:  
+"Özel Anahtarları Devre Dışı Bırak"
 ```
 
 ```
         <source>Welcome</source>
         <translation>Hoş geldiniz </translation>
     
-YES, The translation has a trailing space which is not present in the source text.
-Hoş geldiniz
-```
+YES
+There is unnecessary trailing whitespace after "Hoş geldiniz".
 
-```
-        <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Exit in the menu.</source>
-        <translation>Pencere kapatıldığında uygulamadan çıkmak yerine uygulamayı küçültür. Bu seçenek etkinleştirildiğinde, uygulama sadece menüden çıkış seçildiğinde kapanacaktır.</translation>
-    
-UNK_LANG
+Correct translation:
+Hoş geldiniz
 ```
 
 ```
         <source>Prune block storage to</source>
         <translation>Depolamayı küçültmek engellemek için </translation>
     
-YES, The translation is inaccurate and misleading. The Turkish phrase "Depolamayı küçültmek engellemek için" translates to "To reduce storage to prevent," which does not accurately convey the meaning of "Prune block storage to." The original English phrase implies reducing the size of block storage, likely for efficiency.
+YES  
+The Turkish translation does not accurately reflect the original English phrase. The phrase "Prune block storage to" in the Bitcoin context means to reduce the amount of block data stored, typically indicating "pruning" or trimming the blockchain data to save space. The current translation "Depolamayı küçültmek engellemek için" translates back roughly as "To prevent reducing the storage," which is incorrect and confusing.
 
-The correct translation should be closer to "Blok depolamayı budamak için".
+A more accurate and concise translation would be:  
+"Blok depolamayı şu seviyeye kırp" or simply  
+"Blok depolamayı kırp"  
 
-NO
+If the original phrase is a prefix to a size or value to follow, the literal translation could be:  
+"Blok depolamayı şu kadara kırp"  
+
+So a better suggestion:  
+"Blok depolamayı küçült"  
+or  
+"Blok depolamayı kırp"
 ```
 
 ```
         <source>Spend unconfirmed change</source>
         <translation> Onaylanmamış bozuk parayı harcayın</translation>
     
-YES, The translation of "unconfirmed change" as "onaylanmamış bozuk parayı" is inaccurate in the context of Bitcoin. "Bozuk para" translates to "coins" or "loose change" in a general sense, not specifically the concept of unconfirmed Bitcoin change.
+YES
+There is an unnecessary leading space in the translation before "Onaylanmamış". Also, "bozuk para" as "change" in the Bitcoin context is better translated as "para üstü" or "değişim" to reflect "change" from a transaction. The most appropriate translation would be:
 
-A more accurate translation would be:
-
-YES, Onaylanmamış değişikliği harcayın
-```
-
-```
-        <source>Window</source>
-        <translation>Pencere</translation>
-    
-UNK_LANG
+Onaylanmamış para üstünü harcayın
 ```
 
 ```
         <source>Mined balance that has not yet matured</source>
         <translation>ödenilmemiş miktar</translation>
     
-YES, The translation is inaccurate and misleading. "Mined balance that has not yet matured" refers to Bitcoin mined by a miner that is still subject to maturation rules, which means it cannot be spent yet. The provided translation "ödenilmemiş miktar" translates to "unpaid amount" or "amount not yet paid". This is not related to Bitcoin mining maturation.
+YES  
+The translation "ödenilmemiş miktar" means "unpaid amount," which is not an accurate translation of "Mined balance that has not yet matured." The correct translation should reflect the idea of a mined balance that is still immature or not yet spendable.
 
-Correct translation: Henüz olgunlaşmamış madencilik bakiyesi
-```
-
-```
-        <source>Balances</source>
-        <translation>Hesaplar</translation>
-    
-YES, the translation is problematic because "Hesaplar" in Turkish means "Accounts" or "Accounts" in a broader sense, not "Balances". In the context of Bitcoin, "Balances" refers to the amounts of cryptocurrency held in a wallet or account. A more accurate translation would be "Bakiyeler".
-
-The correct translation is:
-
-Hesaplar -> Bakiyeler
+Correct translation:  
+"Henüz olgunlaşmamış madencilik bakiyesi"
 ```
 
 ```
         <source>Sends %1 to %2</source>
         <translation>Gönderiler %1 ile %2</translation>
     
-YES, The translation is inaccurate and does not convey the intended meaning. The phrase "Gönderiler %1 ile %2" translates to "Shipments %1 with %2", which is not appropriate for the context of sending Bitcoin. The correct translation should reflect sending an amount to an address.
-
-Correct translation: "%1'i %2'ye gönder"
+YES  
+The translation is inaccurate and awkward. "Gönderiler" means "shipments" or "sendings" (plural noun), which is incorrect here. The correct translation should convey the verb "Sends %1 to %2" properly as an action. The correct translation would be:  
+"%1'i %2'ye gönderir"
 ```
 
 ```
@@ -312,178 +331,177 @@ Correct translation: "%1'i %2'ye gönder"
         <extracomment>An Outbound Connection to a Peer.</extracomment>
         <translation>yurt dışı</translation>
     
-YES - The Turkish word "yurt dışı" translates to "abroad" or "international" in English, which is not an accurate translation for "Outbound" in the context of Bitcoin connections. The correct translation would be "Giden".
-Giden
-```
+YES  
+The translation "yurt dışı" means "abroad" or "overseas," which is incorrect in this technical context. The source "Outbound" here refers to an outgoing connection or direction in a network context, not geographical location. A better translation would be:  
 
-```
-        <source>An optional label to associate with the new receiving address.</source>
-        <translation>Yeni alım adresi ile ilişkili, seçiminize dayalı etiket.</translation>
-    
-YES, The translation is inaccurate and contains erroneous content. The word "seçiminize" (based on your choice) is not an accurate translation of "optional". It implies a user choice rather than an optional field.
-
-Correct translation: Yeni alım adresiyle ilişkilendirilecek isteğe bağlı bir etiket.
+Correct translation:  
+"Giden"
 ```
 
 ```
         <source>Change:</source>
         <translation>Değiştir</translation>
     
-YES, The translation is problematic. The English word "Change" in the context of Bitcoin transactions refers to the remaining amount of Bitcoin that is returned to the sender after a transaction. The Turkish translation "Değiştir" means "to change" or "to alter," which does not convey the correct meaning. A more appropriate translation would be "Para Üstü" which means "change" in the sense of leftover money or change from a purchase.
+YES  
+The English term "Change:" in the Bitcoin context refers to the remaining amount returned to the sender after a transaction, not the verb "Change" as in "to change something." The translation "Değiştir" is the imperative verb "Change" (command form), which is incorrect here. The correct translation should be a noun indicating "change" as in monetary change or remaining balance.
 
-NO
-```
+Correct translation:  
+"Değişim:" or better, the commonly used term in Turkish Bitcoin context: "Kalan:" or "Artan:"  
+However, the most accurate and widely used translation for "Change:" in Bitcoin wallets is "Para Üstü:" or simply "Change:" left untranslated but typically "Para Üstü:" is used in common Turkish wallets.
 
-```
-        <source>%1 from wallet '%2'</source>
-        <translation>%1 Cüzdandan '%2'</translation>
-    
-YES, The translation incorrectly translates "from wallet" to "Cüzdandan". The correct translation should be "%1, '%2' cüzdanından".
-YES, %1, '%2' cüzdanından
+Hence, the best translation here is:  
+"Para Üstü:"
 ```
 
 ```
         <source>Signatures - Sign / Verify a Message</source>
         <translation>İmzalar - Giri‭s / Mesaji Onayla</translation>
     
-YES - The translation is inaccurate and contains erroneous content. The word "Giri‭s" (which appears to be a typo for "Giriş") means "Entrance" or "Login" in Turkish, which is not the intended meaning of "Sign" in the context of signing a message. The correct translation for "Sign" in this context would be "İmzal" or "İmzala".
+YES  
+There are two issues in the translation:  
+1. The word "Giri‭s" contains a hidden right-to-left mark (U+202C) which breaks the text display and should be removed. It should be "Giriş".  
+2. The phrase "Mesaji Onayla" is missing the correct Turkish characters. The correct spelling is "Mesajı Onayla".  
 
-Correct translation: İmzalar - İmzal / Mesajı Doğrula
+Correct translation:  
+İmzalar - Giriş / Mesajı Onayla
 ```
 
 ```
         <source>The entered address does not refer to a legacy (P2PKH) key. Message signing for SegWit and other non-P2PKH address types is not supported in this version of %1. Please check the address and try again.</source>
         <translation>Girilen adres, eski (P2PKH) bir anahtarı belirtmiyor. Bu sürümde SegWit ve diğer P2PKH olmayan %1 versiyon adres türleri için mesajla imzalama desteklenmiyor. Lütfen adresi kontrol edin ve tekrar deneyin.</translation>
     
-YES, The translation contains an error in translating the format specifier %1. The original text has "%1" which refers to a variable but the translation has "%1 versiyon" which means "%1 version".
+YES
+The Turkish translation has a misplaced phrase order and unclear phrasing. Specifically, "diğer P2PKH olmayan %1 versiyon adres türleri" is awkward and misleading. It incorrectly places "%1 versiyon" before "adres türleri," which causes confusion. The source means "address types that are SegWit and other non-P2PKH types," and "%1" refers to the software version.
 
-Correct translation: Girilen adres, eski (P2PKH) bir anahtarı belirtmiyor. Bu sürümde SegWit ve diğer P2PKH olmayan adres türleri için mesajla imzalama desteklenmiyor. Lütfen adresi kontrol edin ve tekrar deneyin.
+Correct translation:
+Girilen adres, eski (P2PKH) bir anahtara ait değildir. Bu %1 sürümünde SegWit ve diğer P2PKH olmayan adres türleri için mesaj imzalama desteklenmemektedir. Lütfen adresi kontrol edin ve tekrar deneyin.
 ```
 
 ```
         <source>Amount</source>
         <translation>Mitar</translation>
     
-YES, The translation is incorrect. "Amount" in the context of Bitcoin refers to the quantity of Bitcoin, which translates to "Tutar" in Turkish.
-NO
-```
+YES  
+The Turkish translation "Mitar" is incorrect. The correct translation for "Amount" in this Bitcoin context is "Tutar" or "Miktar".  
 
-```
-        <source>Confirming (%1 of %2 recommended confirmations)</source>
-        <translation>Doğrulanıyor (%1 kere doğrulandı, önerilen doğrulama sayısı %2)</translation>
-    
-YES
-The translation does not accurately convey the meaning of the source text. The source text is indicating the number of confirmations needed for a Bitcoin transaction, whereas the translation suggests the number of times something has been confirmed.
-
-Correct translation: Doğrulanıyor (%1 / %2 önerilen onay)</translation>
+Correct translation:  
+Tutar
 ```
 
 ```
         <source>The transaction amount is too small to send after the fee has been deducted</source>
         <translation>Bu işlem, tutar düşüldükten sonra göndermek için çok düşük</translation>
     
-YES. The translation is inaccurate and grammatically incorrect.
+YES  
+The translation is not entirely accurate and is somewhat unclear. The original English means "The transaction amount is too small to send after the fee has been deducted," but the Turkish translation says "This transaction is too low for sending after the amount has been deducted," which is confusing. The order and wording should be improved for clarity and correctness.
 
-Correct translation:
-İşlem tutarı, işlem ücreti düşüldükten sonra gönderilemeyecek kadar küçüktür.
+Correct translation:  
+"Ücret düşüldükten sonra gönderilecek işlem tutarı çok küçük"
 ```
 
 ```
         <source>Maximum transaction weight is less than transaction weight without inputs</source>
         <translation>Maksimum işlem ağırlığı, işlem girdi ağırlığından daha küçük olmalıdır.</translation>
     
-YES, The translation is inaccurate. The English sentence states that the maximum transaction weight is *less than* the transaction weight without inputs, but the Turkish translation implies it *should be less than* (olmalıdır) which is a prescriptive statement rather than a descriptive one. The phrase "işlem girdi ağırlığından" also seems to be an interpretation that is not directly in the source.
+YES
+The translation adds "olmalıdır" ("must be"), which is not present in the original source and changes the meaning. The source states a factual comparison ("Maximum transaction weight is less than transaction weight without inputs") without implying a requirement.
 
-Correct translation: Maksimum işlem ağırlığı, girdisiz işlem ağırlığından düşüktür.
+Correct translation:
+Maksimum işlem ağırlığı, girişler olmadan işlem ağırlığından daha azdır.
 ```
 
 ```
         <source>Error: Unable to read wallet's best block locator record</source>
         <translation>Hata: Cüzdan okunamadı en iyi blok bulucu kaydı </translation>
     
-YES, The translation is grammatically incorrect and unnatural in Turkish. The word order is wrong.
-Hata: Cüzdanın en iyi blok bulucu kaydı okunamadı.
+YES
+The translation is awkward and incomplete, and there is a spacing issue before the final word. Also, the phrase "wallet's best block locator record" is not accurately conveyed. A better translation would be:
+
+Hata: Cüzdanın en iyi blok bulucu kaydı okunamadı
 ```
 
 ```
         <source>Error: Unable to write solvable wallet best block locator record</source>
         <translation>Hata: Cüzdana yazılamadı en iyi blok bulucu kaydı </translation>
     
-YES: The translation is missing the word "solvable" and "wallet", and has an incorrect word order for "best block locator record".
-Hata: Çözülebilir cüzdana en iyi blok bulucu kaydı yazılamadı
+YES
+The Turkish translation is inaccurate and awkward. It omits that the error relates to writing a "solvable wallet best block locator record" and does not preserve the technical meaning clearly. Also, spacing is problematic: a trailing space exists before closing the tag.
+
+Correct translation:
+Hata: Çözülebilir cüzdanın en iyi blok bulucu kaydı yazılamadı
 ```
 
 ```
         <source>Error: database transaction cannot be executed for wallet %s</source>
         <translation>Hata: %sCüzdan için veri tabanında işlem yapılamaz</translation>
     
-YES, The translation has an issue with the placement of the format specifier. The `%s` should be placed before the word "Cüzdan" for proper sentence structure.
-Hata: %s cüzdan için veri tabanında işlem yapılamaz
+YES  
+The translation has spacing issues and an incorrect word order. The placeholder %s should be separated by a space from the rest of the sentence, and the sentence should flow naturally in Turkish. Also, "veri tabanı" should be two words. A better translation would be:
+
+Hata: %s için veri tabanı işlemi gerçekleştirilemiyor
 ```
 
 ```
         <source>Failure removing transaction: %s</source>
         <translation>işlemi: %s silme başarısız oldu.</translation>
     
-YES, The translation is grammatically incorrect and does not convey the intended meaning. The word order is unnatural in Turkish.
+YES  
+The translation has a lowercase initial letter, while the source starts with an uppercase letter, which is inconsistent. Also, the phrase can be made more natural in Turkish by reordering.
 
-Correct translation: İşlemi kaldırma hatası: %s
-```
-
-```
-        <source>Only direction was set, no permissions: '%s'</source>
-        <translation>'%s' için izin yok. Sadece hedef ayarlandı.</translation>
-    
-YES, The translation is problematic. The meaning of "direction" and "permissions" is swapped. In the context of Bitcoin, the source sentence likely means that an action or operation has been defined with a direction (e.g., sending or receiving), but the necessary permissions for that action have not been granted. The translation suggests that permissions are absent, and only the "target" (which is a misinterpretation of "direction") has been set.
-
-A more accurate translation would be:
-
-'Kullanım izni yok, sadece yön ayarlandı: '%s''
+Correct translation:  
+İşlem %s silme başarısında hata oluştu.
 ```
 
 ```
         <source>Signer did not echo address</source>
         <translation>İmzalayıcı adresi belirtilmedi.</translation>
     
-YES - The translation is factually incorrect and misinterprets the meaning of "echo" in this context. In Bitcoin, "echo" refers to the signer returning the address to confirm it, not simply stating or specifying it. The Turkish translation implies the address was not provided or specified.
+YES  
+The English text "Signer did not echo address" means that the signer failed to repeat or confirm the address, implying an action that was not performed. The provided Turkish translation "İmzalayıcı adresi belirtilmedi." translates to "The signer’s address was not specified," which changes the meaning and does not convey the original intent.
 
-Correct translation: İmzalayıcı adresi yinelemedi.
+Correct translation:  
+"İmzalayıcı adresi geri yansıtmadı."  
+or more contextually natural:  
+"İmzalayıcı adresi tekrar etmedi."
 ```
 
 ```
         <source>Signer echoed unexpected address %s</source>
         <translation>İstenmeyen %s adrese imzalama yapıldı.</translation>
     
-YES, The translation is problematic because it misinterprets the meaning of "Signer echoed unexpected address %s". The source text indicates that the signer (likely a software or hardware wallet) returned an address that was not anticipated or expected, implying a potential issue or anomaly. The Turkish translation, "İstenmeyen %s adrese imzalama yapıldı" translates to "Signing was done to an unwanted %s address." This suggests that the *user* wanted to sign to an unwanted address, which is the opposite of the original meaning.
+YES
+The Turkish translation does not accurately reflect the original meaning. The source means that the signer returned or echoed back an unexpected address (address %s). The translation implies "an unwanted address was signed," which alters the meaning and introduces confusion.
 
-A more accurate translation would convey that the address provided by the signer was unexpected.
-
-Correct translation: İmzalayıcı beklenmeyen %s adresini yansıttı.
+Correct translation:
+İmzacı beklenmeyen adres %s'i geri gönderdi.
 ```
 
 ```
         <source>Signer returned error: %s</source>
         <translation>%s İmzayıcı hatası tekrarı.</translation>
     
-YES - The translation is inaccurate and uses an unnatural phrasing. The correct translation should convey that the signer returned an error.
-%s İmzacı hata döndürdü.
+YES  
+The translation incorrectly places the format specifier %s at the start, which should correspond to the error message in the source. Also, the phrase "İmzayıcı hatası tekrarı." is ungrammatical and unnatural in Turkish. A more accurate and natural translation would be:  
+"İmzayıcı hata döndürdü: %s"
 ```
 
 ```
         <source>This is the transaction fee you will pay if you send a transaction.</source>
         <translation>-paytxfee çok yüksek bir değere ayarlanmış! Bu, işlemi gönderirseniz ödeyeceğiniz işlem ücretidir.</translation>
     
-YES. The translation contains extraneous information not present in the source text ("-paytxfee çok yüksek bir değere ayarlanmış!"). The translated sentence is also awkwardly phrased.
+YES  
+The translation adds extra information not present in the source ("-paytxfee çok yüksek bir değere ayarlanmış!"), which could confuse the user. Also, the source is a single neutral sentence, but the translation includes an exclamation and a warning not in the original text. Furthermore, the sentence structure could be smoother.
 
-NO. Bu, işlemi gönderirseniz ödeyeceğiniz işlem ücretidir.
+Correct translation:  
+"Bu, bir işlem gönderirseniz ödeyeceğiniz işlem ücretidir."
 ```
 
 ```
         <source>Error: Could not add watchonly tx %s to watchonly wallet</source>
         <translation>Hata: Sadece izleme %s cüzdanı. tx izleme cüzdanına eklenemedi</translation>
     
-YES, The translation contains erroneous content. The word order and grammar are incorrect. The correct translation should be "Hata: İzlenen işlem %s, sadece izlenen cüzdanınıza eklenemedi".
-
-NO
+YES  
+The translation is awkward and partially incorrect. It breaks the phrase unnaturally and mistranslates parts of it. The original means "Error: Could not add watch-only transaction %s to watch-only wallet." A correct and fluent Turkish translation would be:  
+"Hata: İzleme işlemi %s, sadece izleme cüzdanına eklenemedi."
 ```
 </details>

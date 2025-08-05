@@ -13,39 +13,32 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Exporting Failed</source>
         <translation>Exportación incorrecta</translation>
     
-YES, The translation "Exportación incorrecta" means "Incorrect export". The source text "Exporting Failed" means "Exportación fallida". The translation is inaccurate.
-The correct translation is: Exportación fallida
-```
+YES  
+The Spanish translation "Exportación incorrecta" means "Incorrect export" or "Wrong export," which does not perfectly convey the English message "Exporting Failed." A better translation reflecting failure in the process would be:
 
-```
-        <source>Feeler</source>
-        <extracomment>Short-lived peer connection type that tests the aliveness of known addresses.</extracomment>
-        <translation>Sensor</translation>
-    
-YES - The translation is too generic. In the context of Bitcoin, "feeler" refers to a specific type of connection used to test the network. A more accurate translation would be "ping" or "prueba de conexión".
-Translation: Ping
+Correct translation:  
+Exportación fallida
 ```
 
 ```
         <source>Load PSBT from file…</source>
         <translation>Cargar TBPF desde archivo...</translation>
     
-YES - The translation is inaccurate. The acronym PSBT stands for Partially Signed Bitcoin Transaction, and it is not standard practice to translate it to TBPF in Spanish. The correct translation should maintain the acronym as it is or provide a more accurate, widely understood Spanish equivalent if one exists, but TBPF is not it.
-Cargar PSBT desde archivo…
-```
+YES
+The translation incorrectly translates "PSBT" as "TBPF". "PSBT" (Partially Signed Bitcoin Transaction) is a standard acronym and should remain untranslated. The ellipsis character is also different between source and translation—the source uses a single Unicode ellipsis (…) while the translation uses three periods (...). It is better to keep the same ellipsis character for consistency.
 
-```
-        <source>Load PSBT from clipboard…</source>
-        <translation>Cargar TBPF desde portapapeles...</translation>
-    
-YES - The abbreviation "PSBT" should not be translated. The correct translation is "Cargar PSBT desde portapapeles...".
+Correct translation:
+Cargar PSBT desde archivo…
 ```
 
 ```
         <source>Hide</source>
         <translation>Ocultar </translation>
     
-YES: The translation has a trailing space.
+YES
+The translation contains a trailing whitespace after "Ocultar". The word itself is a correct translation of "Hide" in this context.
+
+Correct translation:
 Ocultar
 ```
 
@@ -54,8 +47,11 @@ Ocultar
         <extracomment>An options window setting to enable PSBT controls.</extracomment>
         <translation>Activar controles de TBPF</translation>
     
-YES: The translation of "PSBT" to "TBPF" is incorrect. PSBT is a widely recognized acronym in the Bitcoin community and should not be translated.
-NO
+YES  
+The acronym PSBT (Partially Signed Bitcoin Transaction) should be preserved as is, not translated into Spanish as TBPF. The correct translation keeps the acronym unchanged.
+
+Correct translation:  
+Activar controles de PSBT
 ```
 
 ```
@@ -63,61 +59,43 @@ NO
         <extracomment>Tooltip text for options window setting that enables PSBT controls.</extracomment>
         <translation>Establecer si se muestran los controles de TBPF.</translation>
     
-YES - The translation contains an incorrect acronym (TBPF instead of PSBT). The format specifier is also incorrectly translated.
-NO - Si se muestran los controles de PSBT.
+YES  
+The translation inaccurately translates "PSBT" as "TBPF," which is incorrect. The acronym PSBT (Partially Signed Bitcoin Transaction) should remain as "PSBT" in the translation. Additionally, the translation introduces unnecessary words ("Establecer si"), which slightly changes the original meaning. A more accurate and concise translation would be:
+
+"Mostrar controles de PSBT."
 ```
 
 ```
         <source>PSBT Operations</source>
         <translation>Operaciones de TBPF</translation>
     
-YES: The translation contains an unsupported abbreviation and does not accurately reflect the source text. The correct translation for "PSBT Operations" should be "Operaciones de PSBT".
-Operaciones de PSBT
-```
+YES  
+The acronym "PSBT" (Partially Signed Bitcoin Transaction) should not be translated into "TBPF" as it is a standard term in Bitcoin context. It is better to keep "PSBT" as is.
 
-```
-        <source>PSBT copied to clipboard.</source>
-        <translation>TBPF copiada al portapapeles.</translation>
-    
-YES. The translation is problematic because "TBPF" is an incorrect translation of "PSBT". "PSBT" stands for Partially Signed Bitcoin Transaction.
-
-NO
+Correct translation:  
+Operaciones PSBT
 ```
 
 ```
         <source>PSBT saved to disk.</source>
         <translation>TBPF guardada en disco.</translation>
     
-YES, The Spanish translation is incorrect. The source text uses "PSBT" which is a specific acronym for Partially Signed Bitcoin Transaction. The translation uses "TBPF" which does not correspond to this acronym. It seems like a mistranslation or an arbitrary abbreviation.
+YES  
+The abbreviation "PSBT" (Partially Signed Bitcoin Transaction) should be preserved as is in Spanish, since it is a technical acronym commonly used in Bitcoin contexts. The translation "TBPF" is incorrect and unclear.  
 
-NO
-```
-
-```
-        <source>Whether we relay addresses to this peer.</source>
-        <extracomment>Tooltip text for the Address Relay field in the peer details area, which displays whether we relay addresses to this peer (Yes/No).</extracomment>
-        <translation>Establecer si retransmitimos las direcciones a este par.</translation>
-    
-YES - The Spanish translation is inaccurate. It translates "Whether we relay addresses to this peer" as "Establish whether we relay addresses to this peer." The word "Establecer" (Establish) is incorrect in this context. The correct translation should be "Si retransmitimos las direcciones a este par."
-NO
-```
-
-```
-        <source>The total number of addresses received from this peer that were dropped (not processed) due to rate-limiting.</source>
-        <extracomment>Tooltip text for the Addresses Rate-Limited field in the peer details area, which displays the total number of addresses received from this peer that were dropped (not processed) due to rate-limiting.</extracomment>
-        <translation>El número total de direcciones recibidas desde este par que se desestimaron (no se procesaron) debido a la limitación de volumen.</translation>
-    
-YES, The translation is problematic because "rate-limiting" has been translated to "limitación de volumen", which is not the correct translation in this context. The correct translation should be "limitación de velocidad".
-
-The correct translation is: El número total de direcciones recibidas desde este par que se desestimaron (no se procesaron) debido a la limitación de velocidad.
+Correct translation:  
+PSBT guardada en disco.
 ```
 
 ```
         <source>Sign failed</source>
         <translation>Firma incorrecta</translation>
     
-YES: The translation "Firma incorrecta" means "Incorrect signature" or "Wrong signature". The source text "Sign failed" means "The signing process failed". The correct translation should reflect that the signing process encountered an error.
-Firma fallida
+YES  
+The translation "Firma incorrecta" means "Incorrect signature" rather than "Sign failed." The correct translation should accurately convey that the signing operation failed, not that the signature itself is incorrect.
+
+Correct translation:  
+"Error al firmar"
 ```
 
 ```
@@ -125,9 +103,11 @@ Firma fallida
         <extracomment>"External signer" means using devices such as hardware wallets.</extracomment>
         <translation>Firmante externo incorrecto</translation>
     
-YES: The translation "Firmante externo incorrecto" means "Incorrect external signer", which is not an accurate translation of "External signer failure". The correct translation should convey that the external signer has failed.
+YES  
+The translation "Firmante externo incorrecto" means "Incorrect external signer," which implies an error in the signer being incorrect rather than a failure of the external signer. A more accurate translation that preserves the meaning of a failure (i.e., malfunction or error) would be:
 
-NO
+**Correct translation:**  
+Fallo del firmante externo
 ```
 
 ```
@@ -135,9 +115,11 @@ NO
         <extracomment>Popup message when a PSBT has been saved to a file</extracomment>
         <translation>TBPF guardada</translation>
     
-YES: The translation "TBPF guardada" is incorrect. "PSBT" is a specific technical term in the context of Bitcoin, and it should not be translated or abbreviated in this way. The correct translation should be a direct transliteration or the full term if commonly understood.
+YES  
+The abbreviation "PSBT" (Partially Signed Bitcoin Transaction) should be kept as is in Spanish, as it is a standard technical term, not translated as "TBPF." The rest of the translation is correct in gender agreement ("guardada" for feminine), since "transacción" is feminine, but here the message is short and "PSBT" is an English acronym that should remain unchanged.
 
-Correct translation: PSBT guardada
+Correct translation:  
+PSBT guardada
 ```
 
 ```
@@ -145,26 +127,21 @@ Correct translation: PSBT guardada
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can send their transaction or create a PSBT. This string is displayed when both private keys and PSBT controls are enabled.</extracomment>
         <translation>Revisa la transacción. Puedes crear y enviar esta transacción de Bitcoin parcialmente firmada (TBPF), que además puedes guardar o copiar y, luego, firmar; por ejemplo, con un monedero %1 sin conexión o un monedero de hardware compatible con TBPF.</translation>
     
-YES: The translation incorrectly defines PSBT as "TBPF" which is not the correct or commonly used acronym in Spanish for Partially Signed Bitcoin Transaction. It also incorrectly states that the user can create a "Bitcoin partially signed transaction" directly, when the source states they can create *and send* it or create a PSBT.
+YES
+The translation incorrectly replaces "Partially Signed Bitcoin Transaction (PSBT)" with "Bitcoin parcialmente firmada (TBPF)," which is not the accepted or used Spanish acronym and changes the meaning slightly. It also omits the option to either "create and send this transaction" or "create a PSBT," instead only mentioning creating and sending a "partially signed Bitcoin transaction," which differs from the source.
 
-The correct translation should be:
-Revisa la transacción. Puedes crear y enviar esta transacción o crear una transacción de Bitcoin parcialmente firmada (PSBT), que además puedes guardar o copiar y, luego, firmar; por ejemplo, con un monedero %1 sin conexión o un monedero de hardware compatible con PSBT.
-```
-
-```
-        <source>PSBT saved to disk</source>
-        <translation>TBPF guardada en disco</translation>
-    
-YES - The translation is incorrect. "PSBT" is a technical term that should not be translated, or if it must be translated, it should be translated as "PSBT" (Partial Bitcoin Transaction Format). The provided translation "TBPF" is not a recognized acronym in the context of Bitcoin and is likely erroneous.
-
-Correct translation: PSBT guardada en disco
+Correct translation:
+Por favor, revisa tu transacción. Puedes crear y enviar esta transacción o crear una Transacción Bitcoin Parcialmente Firmada (PSBT), que puedes guardar o copiar y luego firmar, por ejemplo, con un monedero %1 fuera de línea o un monedero hardware compatible con PSBT.
 ```
 
 ```
         <source>Copy the current signature to the system clipboard</source>
         <translation>Copiar la dirección seleccionada actualmente al portapapeles del sistema</translation>
     
-YES - The translation incorrectly translates "signature" to "dirección" (address).
+YES  
+The translation is incorrect as it changes the meaning of the original text. The source talks about copying the "current signature," but the translation refers to copying the "currently selected address," which is wrong. The correct translation should accurately reflect the "current signature."
+
+Correct translation:  
 Copiar la firma actual al portapapeles del sistema
 ```
 
@@ -172,109 +149,97 @@ Copiar la firma actual al portapapeles del sistema
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>Inmadura (%1 confirmaciones; estará disponibles después de %2)</translation>
     
-YES - The translation uses "Inmadura" which is feminine, but the English sentence is neutral. It should be "Inmaduro". Also, the English text uses a comma after %1, but the translation uses a semicolon. The correct translation should use a comma.
-Inmaduro (%1 confirmaciones, estará disponible después de %2)
+YES
+The translation has a subject-verb agreement error: "Estará" should be "Estarán" to agree with "confirmaciones" (plural). Also, the semicolon is not necessary and a comma is more natural in Spanish. Correct translation:
+Inmadura (%1 confirmaciones, estarán disponibles después de %2)
 ```
 
 ```
         <source>Exporting Failed</source>
         <translation>Exportación incorrecta</translation>
     
-YES, The translation "Exportación incorrecta" means "Incorrect export". The source text "Exporting Failed" means "Exportación fallida". The translation is inaccurate.
-The correct translation is: Exportación fallida
+YES  
+The Spanish translation "Exportación incorrecta" means "Incorrect export" or "Wrong export," which does not perfectly convey the English message "Exporting Failed." A better translation reflecting failure in the process would be:
+
+Correct translation:  
+Exportación fallida
 ```
 
 ```
         <source>PSBT copied</source>
         <translation>TBPF copiada </translation>
     
-YES. The translation is problematic because it uses the incorrect abbreviation for PSBT and includes an unnecessary trailing space.
+YES  
+There is an extra space at the end of the translation. Also, "PSBT" should be translated following its Spanish acronym or kept as is if it's a known term, but "PSBT" (Partially Signed Bitcoin Transaction) is commonly kept as "PSBT" in Spanish technical contexts. The given translation "TBPF" is an incorrect acronym and does not correspond to "PSBT". 
 
-Correct translation: PSBT copiado
-```
-
-```
-        <source>Fee-bump PSBT copied to clipboard</source>
-        <translation>TBPF con incremento de comisión copiada en el portapapeles</translation>
-    
-YES: The translation uses an unfamiliar acronym "TBPF" instead of translating "Fee-bump PSBT" which is the key element of the message. The acronym "PSBT" (Partially Signed Bitcoin Transaction) is a technical term that should ideally be kept or explained if translated. "Fee-bump" refers to increasing the transaction fee.
-
-A more accurate and understandable translation would be: "PSBT con aumento de comisión copiado al portapapeles".
-```
-
-```
-        <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
-        <translation>Esta es la comisión de transacción que puedes descartar si el cambio es más pequeño que el remanente en este nivel.</translation>
-    
-YES - The translation uses "remanente" for "dust". In Bitcoin terminology, "dust" refers to very small amounts of Bitcoin that are uneconomical to spend. "Remanente" means remainder or residue, which is not the correct term. The correct translation for "dust" in this context is "polvo" or simply leaving it as "dust" if the audience is familiar with the English term.
-
-NO
+Correct translation:  
+PSBT copiada
 ```
 
 ```
         <source>Unsupported category-specific logging level %1$s=%2$s. Expected %1$s=&lt;category&gt;:&lt;loglevel&gt;. Valid categories: %3$s. Valid loglevels: %4$s.</source>
         <translation>El nivel de registro específico de la categoría no es compatible: %1$s=%2$s. Se esperaba %1$s=&lt;category&gt;:&lt;loglevel&gt;. Categorías válidas: %3$s. Niveles de registro válidos: %4 $s.</translation>
     
-YES: The translation has a spacing error. The '%' symbol in '%4 $s' should not have a space before the '$'.
+YES
+There is an incorrect format specifier in the Spanish translation: "%4 $s" has an extra space and should be "%4$s" to match the source format specifier exactly. Also, the colon after "nivel" in the source ("category-specific logging level %1$s=%2$s") was translated as "no es compatible:" which is acceptable but slightly altering the structure; however, this is not a critical issue. The main problem is the whitespace in the format specifier.
 
-Correct translation: El nivel de registro específico de la categoría no es compatible: %1$s=%2$s. Se esperaba %1$s=&lt;category&gt;:&lt;loglevel&gt;. Categorías válidas: %3$s. Niveles de registro válidos: %4$s.
+Correct translation:
+El nivel de registro específico de la categoría no es compatible: %1$s=%2$s. Se esperaba %1$s=&lt;category&gt;:&lt;loglevel&gt;. Categorías válidas: %3$s. Niveles de registro válidos: %4$s.
 ```
 
 ```
         <source>Rename of '%s' -&gt; '%s' failed. Cannot clean up the background chainstate leveldb directory.</source>
         <translation>Error al cambiar el nombre de ''%s" a ''%s". No se puede limpiar el directorio leveldb del estado de la cadena de fondo.</translation>
     
-YES, The translation contains a formatting error with the apostrophes around the %s placeholders. The apostrophes should not be there, and the "%s" format specifier should be directly next to the quotes.
+YES  
+The translation has inconsistent and incorrect use of quotation marks around the placeholders '%s'. In the source, single quotes (') are used, but in the translation, it uses doubled single quotes ('') and mismatched double quotes ("). This should be corrected to use consistent and matching single quotes, as in the source.
 
-NO
+Correct translation:  
+Error al cambiar el nombre de '%s' -> '%s' falló. No se puede limpiar el directorio leveldb del estado de la cadena de fondo.
 ```
 
 ```
         <source>Error: Disk space is low for %s</source>
         <translation>Error: El espacio en disco es pequeño para %s</translation>
     
-YES: The Spanish word "pequeño" (small) is not the correct translation for "low" in this context. The correct word to indicate a lack of space is "bajo".
-Error: El espacio en disco es bajo para %s
-```
+YES  
+The Spanish translation "El espacio en disco es pequeño para %s" is not a natural or accurate way to express "Disk space is low." The word "pequeño" means "small," which is incorrect in this context. The proper adjective to describe low disk space is "bajo" or the phrase "poco espacio en disco."  
 
-```
-        <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
-        <translation>Fallo al escuchar en todos los puertos. Usa -listen=0 si quieres hacerlo.</translation>
-    
-YES, the translation uses an incorrect verb conjugation. "Fallo" should be "Fallo al escuchar".
-Fallo al escuchar en todos los puertos. Usa -listen=0 si quieres hacerlo.
+Correct translation:  
+Error: El espacio en disco es bajo para %s  
+or better:  
+Error: El espacio en disco es insuficiente para %s
 ```
 
 ```
         <source>Ignoring duplicate -wallet %s.</source>
         <translation>Ignorar duplicación de -wallet %s.</translation>
     
-YES. The Spanish translation uses "duplicación de" which sounds a bit unnatural and could be more concise. A more direct and common way to express "duplicate" in this context would be "duplicado". Also, the hyphen in "-wallet" should be preserved.
+YES  
+The translation is inaccurate and sounds unnatural in Spanish. The English gerund "Ignoring" indicates a present continuous action, which would be better translated using a gerund or present participle form in Spanish (e.g., "Ignorando"). Also, it is better to include an article and connect the elements more naturally.
 
-Correct translation: Ignorar -wallet duplicado %s.
-```
-
-```
-        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
-        <translation>El bloque génesis es incorrecto o no se encontró. ¿Equivocación en el directorio de datos para la red?</translation>
-    
-YES: The translation uses "Equivocación" which is too informal and not appropriate for the technical context of Bitcoin. It should be "Error" or "Incorrecto".
-El bloque génesis es incorrecto o no se encontró. ¿Directorio de datos incorrecto para la red?
+Correct translation:  
+"Ignorando duplicado -wallet %s."
 ```
 
 ```
         <source>Invalid -i2psam address or hostname: '%s'</source>
         <translation>La dirección -i2psam o el nombre de host no es válido: "%s" </translation>
     
-YES - The translation has an extra space before the closing quotation mark.
-The address -i2psam or hostname is invalid: "%s"
+YES
+The translation has a whitespace issue: there is an extra space before the closing quotation mark and at the end of the sentence. Also, the source text uses single quotes around %s, while the translation uses double quotes; it is better to keep the same style for consistency. Additionally, the source says "address or hostname" as separate items, but the translation says "dirección -i2psam o el nombre de host," which is fine, but it can be slightly improved for clarity.
+
+Correct translation:
+La dirección o el nombre de host -i2psam no son válidos: '%s'
 ```
 
 ```
         <source>Unsupported logging category %s=%s.</source>
         <translation>La categoría de registro no es compatible %s=%s. </translation>
     
-YES, The translation has an extra space before the period.
-The category of registration is not supported %s=%s.
+YES
+There is a trailing whitespace at the end of the translation and the phrasing is slightly unnatural. A more natural and direct translation would be:
+
+Categoría de registro no soportada %s=%s.
 ```
 </details>

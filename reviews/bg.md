@@ -13,17 +13,24 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Repeat new passphrase</source>
         <translation>Повтори парола</translation>
     
-YES, The translation is problematic because it is incomplete and omits the word "new".
-Correct translation: Повтори новата парола
+YES  
+The translation "Повтори парола" means "Repeat the password," which is less precise than the source phrase "Repeat new passphrase." In the context of Bitcoin and security, "passphrase" is better translated as "парола" but with the qualifier "нова" to reflect "new." Also, the imperative form is acceptable, but to be more formal and aligned with the original, it can be "Повтори новата парола" (Repeat the new passphrase) or simply "Повтори новата парола" to be explicit.
+
+Correct translation:  
+Повтори новата парола
 ```
 
 ```
         <source>Runaway exception</source>
         <translation>Изключи бягащите</translation>
     
-YES, The translation is inaccurate. The correct translation of "Runaway exception" in the context of Bitcoin would be "Извънреден случай" or "Неконтролиран изключителен случай", but given the very literal translation of "runaway" as "бягащи" (running), it is highly unlikely that this is the intended meaning. The original translation "Изключи бягащите" translates to "Turn off the running ones", which is nonsensical in the given context.
+YES  
+The translation "Изключи бягащите" is incorrect and misleading. It means "Turn off the runaways" or "Exclude the runaways," which does not correspond to the English meaning of "Runaway exception." The phrase "Runaway exception" refers to an exception (error) that is unhandled or occurring uncontrollably, often translated as "необработено изключение" or "извънконтролно изключение" in Bulgarian.  
 
-NO
+Correct translation:  
+"Извънконтролно изключение"  
+or  
+"Необработено изключение"
 ```
 
 ```
@@ -31,16 +38,29 @@ NO
         <extracomment>Explanatory text shown on startup when the settings file could not be written. Prompts user to check that we have the ability to write to the file. Explains that the user has the option of running without a settings file.</extracomment>
         <translation>Възникна фатална грешка. Проверете че файла с настройки е редактируем или опирайте да стартирате без настройки.</translation>
     
-YES: The translation uses an incorrect word for "writable". The correct word in Bulgarian is "записваем".
+YES
+The Bulgarian translation has some issues:
+1. "файла с настройки" should be "файлът с настройки" for correct article usage.
+2. "редактируем" is a calque from Russian; the correct Bulgarian term is "записваем" or "с възможност за запис".
+3. "опирайте" is incorrect; the verb should be "опитайте".
+4. Missing a comma after "Проверете".
+5. The phrase "без настройки" is slightly ambiguous; better to say "с опцията -nosettings" or "с параметър -nosettings" to reflect the command line argument in the source.
 
-Възникна фатална грешка. Проверете дали файлът с настройки е записваем, или опитайте да стартирате без настройки.
+Correct translation:
+"Възникна фатална грешка. Проверете, че файлът с настройки е записваем, или опитайте да стартирате с -nosettings."
 ```
 
 ```
         <source>Encrypt Wallet…</source>
         <translation>Крипритай уолет..</translation>
     
-YES, The translation contains spelling errors. The word "Крипритай" should be "Криптирай" and "уолет" should be "портфейл".
+YES  
+The translation contains multiple issues:  
+1. The word "Encrypt" is incorrectly translated as "Крипритай" which is not a correct Bulgarian word. The correct verb for "Encrypt" would be "Криптирай".  
+2. "Wallet" is transliterated as "уолет" which is incorrect. The correct translation for "wallet" in the Bitcoin context is "портфейл".  
+3. The ellipsis "…" is distorted as two dots ".." instead of one Unicode ellipsis character.  
+
+Correct translation:  
 Криптирай портфейл…
 ```
 
@@ -48,52 +68,64 @@ YES, The translation contains spelling errors. The word "Крипритай" sho
         <source>Encrypt the private keys that belong to your wallet</source>
         <translation>Шифроване на личните ключове,които принадлежат на портфейла Ви.</translation>
     
-YES: The translation contains a superfluous comma after "ключове". The correct translation should be: "Шифроване на личните ключове, които принадлежат на портфейла Ви."
+YES  
+The translation has minor spacing and spelling issues. There should be a space after the comma, and the correct verb form is "принадлежат" (should be "принадлежат" but in Bulgarian the correct form is "принадлежат" or better is "принадлежат" → actually the verb should be "принадлежат" is not appropriate here; the correct verb in Bulgarian is "принадлежат," but it's not the standard word. More natural would be "които принадлежат на портфейла ви" (with lowercase "ви" as per Bulgarian etiquette unless formal context, which is acceptable here). 
+
+Also, Bulgarian typically uses the noun "шифроване" for "encryption," but the English phrase is imperative, and the Bulgarian phrase appears to be a noun phrase, so it's better to use the verb form "Шифроване" doesn't fully match the imperative command tone. A more natural imperative translation would be: "Шифровайте частните ключове, които принадлежат на вашия портфейл."
+
+Corrected translation:  
+Шифровайте частните ключове, които принадлежат на вашия портфейл.
 ```
 
 ```
         <source>Processing blocks on disk…</source>
         <translation>Обработване на сектори от диска...</translation>
     
-YES, The translation is inaccurate. The word "blocks" in the context of Bitcoin refers to a block of transactions, not disk sectors.
+YES  
+The translation "Обработване на сектори от диска..." is inaccurate. The English word "blocks" in the Bitcoin context refers to blockchain blocks, not sectors on a disk. The correct Bulgarian term should reflect "blocks" as blockchain data units, not disk sectors. Also, the ellipsis is represented differently ("…") in the source and translated text ("..."). It's better to keep the ellipsis consistent.
 
-Correct translation: Обработване на блокове от диска...
+Correct translation:  
+Обработка на блокове на диска…
 ```
 
 ```
         <source>List mode</source>
         <translation>списък Режим</translation>
     
-YES, The word order is unnatural. The correct translation is "Режим на списък".
-YES, The word order is unnatural. The correct translation is "Режим на списък".
+YES  
+The word order and capitalization are problematic. In Bulgarian, the adjective should precede the noun, and "Режим" should not be capitalized here. The correct translation is:  
+списъчен режим
 ```
 
 ```
         <source>Copy change</source>
         <translation>Промяна на копирането</translation>
     
-YES, The translation is inaccurate and conveys a meaning completely different from the source text. "Промяна на копирането" literally translates to "copying change" or "change of copying", which does not make sense in the context of Bitcoin transactions. The correct translation should refer to copying the "change" amount of a transaction.
-
-The correct translation is:
-Copy change
+YES  
+The translation "Промяна на копирането" literally means "Change of copying," which is incorrect in this Bitcoin context. The source phrase "Copy change" refers to copying the "change" amount (e.g., Bitcoin transaction change), not changing the copy itself. A correct and clearer Bulgarian translation would be:  
+"Копирай ресто"  
+where "ресто" is the correct term for "change" in a financial/Bitcoin context.
 ```
 
 ```
         <source>Can vary +/- %1 satoshi(s) per input.</source>
         <translation>Може да варира с +/- %1 байт(а).</translation>
     
-YES, the translation incorrectly uses "байт(а)" (bytes) instead of "сатоши(та)" (satoshis) in the context of Bitcoin.
+YES  
+The translation incorrectly uses "байт(а)" (byte(s)) instead of "сатоши" which is the correct term for the smallest Bitcoin unit. Also, the structure is slightly off; it should closely match the English meaning and preserve the "+/- %1" pattern.
 
-Correct translation: Може да варира с +/- %1 сатоши(та).
+Correct translation:  
+Може да варира с +/- %1 сатоши на вход.
 ```
 
 ```
         <source>Create wallet warning</source>
         <translation>Създайте предупредителен портфейл </translation>
     
-YES, The translation is problematic. The Bulgarian translation "Създайте предупредителен портфейл" literally translates to "Create a warning wallet", which is not the intended meaning of "Create wallet warning". The intended meaning is a warning that appears when creating a wallet.
+YES  
+The translation "Създайте предупредителен портфейл" incorrectly suggests an imperative "Create a warning wallet," which distorts the meaning. The original English phrase "Create wallet warning" is a noun phrase likely meaning "Warning about creating a wallet" or "Create wallet: warning."
 
-A more accurate translation would be:
+A better translation would be:  
 "Предупреждение при създаване на портфейл"
 ```
 
@@ -101,71 +133,97 @@ A more accurate translation would be:
         <source>Open wallet failed</source>
         <translation>Отварянето на уолет неупсешно</translation>
     
-YES, erroneous content. The Bulgarian translation is grammatically incorrect.
-Correct translation: Отварянето на портфейла е неуспешно.
+YES  
+The translation contains a typo: "уолет" should be "портфейл" (wallet) and "неупсешно" should be "неуспешно" (unsuccessful).
+
+Correct translation:  
+Отварянето на портфейл неуспешно
 ```
 
 ```
         <source>Reverting this setting requires re-downloading the entire blockchain. It is faster to download the full chain first and prune it later. Disables some advanced features.</source>
         <translation>Връщането на тази настройка изисква повторно изтегляне на цялата секторна верига. По-бързо е първо да изтеглите пълната верига и да я подрязвате по-късно. Деактивира някои разширени функции.</translation>
     
-YES, The Bulgarian translation incorrectly translates "blockchain" as "секторна верига" (sector chain) instead of "блокчейн" (blockchain) or "верига от блокове" (chain of blocks).
-Correct translation: Връщането на тази настройка изисква повторно изтегляне на целия блокчейн. По-бързо е първо да изтеглите пълната верига и да я подрязвате по-късно. Деактивира някои разширени функции.
+YES
+The term "секторна верига" is incorrect; the correct translation for "blockchain" in the Bitcoin context is "блокчейн" or "блокчейн верига." Additionally, "подрязвате" (plural/formal you) should be consistent with the rest of the sentence, better replaced with the infinitive form to match the style.
+
+Correct translation:
+Връщането на тази настройка изисква повторно изтегляне на целия блокчейн. По-бързо е първо да изтеглите пълния блокчейн и да го подрежете по-късно. Деактивира някои разширени функции.
 ```
 
 ```
         <source>Use a custom data directory:</source>
         <translation>Използване на директория ръчно</translation>
     
-YES, The translation is not accurate. The phrase "Use a custom data directory" translates to "Използвайте директория за данни по избор" in Bulgarian. The provided translation "Използване на директория ръчно" means "Using a directory manually" which is not the same meaning.
-Използвайте директория за данни по избор
+YES  
+The translation "Използване на директория ръчно" is awkward and inaccurate. It literally means "Using a directory manually," which does not convey the meaning of "Use a custom data directory:" properly. A better translation would indicate explicitly the use of a user-defined or custom data directory.
+
+Correct translation:  
+"Използвайте потребителска директория за данни:"
 ```
 
 ```
         <source>Esc</source>
         <translation>избягай</translation>
     
-YES, The translation is incorrect. "Esc" in the context of Bitcoin usually refers to the Escape key on a keyboard, which is used to cancel an operation or go back. The provided translation "избягай" means "escape" as in to flee or run away, which is not the intended meaning.
+YES  
+The translation "избягай" means "escape" in the sense of "to avoid" or "to run away," which is incorrect in this context. The source "Esc" refers to the Escape key on the keyboard, which in Bulgarian is typically translated as "Esc" or "Еск" (transliteration of "Esc"). It is preferable to keep "Esc" untranslated or use the established abbreviation.
 
-NO
+Correct translation:  
+<translation>Esc</translation>
 ```
 
 ```
         <source>%1 is currently syncing.  It will download headers and blocks from peers and validate them until reaching the tip of the block chain.</source>
         <translation>%1 в момента синхронизира. Той ще изтегля заглавия и блокове от рояка и ще ги утвърди, докато достигне върха на секторната верига.</translation>
     
-YES, The translation uses inappropriate terminology, specifically "рояк" for "peers" and "секторна верига" for "block chain", which are not standard or understandable in the context of Bitcoin.
+YES  
+The translation has a few issues:  
+- "в момента синхронизира" is understandable but could be more naturally phrased as "в момента се синхронизира".  
+- "Той" (He) is less appropriate for %1 (which could be a program or a service); the neutral form "то" or restructuring the sentence to avoid pronouns is better.  
+- "рояк" literally means a "swarm" (usually of insects), which is incorrect here; the proper translation for "peers" in this Bitcoin/network context is "връстници" or "възли".  
+- "утвърди" means "confirm" or "establish" in a general sense but is not the best verb for "validate" in the blockchain context. A better term is "потвърди" (confirmed), or "провери/валидира" (validate).  
+- "върха на секторната верига" is a mistranslation of "tip of the block chain". "Секторната верига" is incorrect; the correct term is "веригата с блокове" or just "блокчейна". "Върха" is acceptable for "tip". Better: "докато достигне върха на блокчейна".  
 
-%1 в момента синхронизира. Той ще изтегля заглавия и блокове от партньори и ще ги валидира, докато достигне върха на блокчейна.
+Corrected translation:  
+%1 в момента се синхронизира. Ще изтегля заглавия и блокове от връстници и ще ги валидира, докато достигне върха на блокчейна.
 ```
 
 ```
         <source>Number of script verification threads</source>
         <translation>Брой на скриптове и нишки за потвърждение</translation>
     
-YES, The translation is inaccurate and implies that the threads are for both scripts and confirmation, whereas the original text clearly states that the threads are specifically for script verification. The word "нишки" (threads) is also misplaced.
-The correct translation should be: "Брой нишки за проверка на скриптове"
+YES  
+The translation adds the word "и" ("and") which is not present in the source and changes the meaning. The original phrase refers to the "number of script verification threads," implying the count of threads used for script verification, not a count of both scripts and threads.
+
+Correct translation:  
+Брой нишки за проверка на скриптове
 ```
 
 ```
         <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
         <translation>Показва дали предоставеният proxy по подразбиране Socks5 се използва за достигане до рояк чрез този тип мрежа.</translation>
     
-YES, The word "ройк" in Bulgarian means "swarm" or "horde". In the context of Bitcoin, the correct translation for "peers" is "пиъри" or "възли".
+YES  
+The translation has some issues:  
+1. "proxy" should be transliterated consistently or translated as "прокси".  
+2. "SOCKS5" should be all uppercase as in the source.  
+3. "рояк" is an incorrect translation for "peers" in this context; a better word in Bulgarian for network peers is "връзки" or "участието в мрежата" or simply "връстници".  
+4. The phrase "предоставеният proxy по подразбиране Socks5" is awkward and inconsistent with casing.  
+5. The original source word order and meaning should be preserved more accurately.
 
-The correct translation is:
-
-Показва дали предоставеният proxy по подразбиране Socks5 се използва за достигане до пиъри чрез този тип мрежа.
+Correct translation:  
+Показва дали подаденият по подразбиране SOCKS5 прокси се използва за връзка с връстници през този тип мрежа.
 ```
 
 ```
         <source>Enable coin control features</source>
         <translation>Позволяване на монетите и техните възможности</translation>
     
-YES, The translation is inaccurate and does not convey the intended meaning. The original English text "Enable coin control features" refers to enabling functionalities that allow users to manage and select specific UTXOs (Unspent Transaction Outputs) for Bitcoin transactions. The provided Bulgarian translation "Позволяване на монетите и техните възможности" literally translates to "Allowing the coins and their capabilities," which is too general and doesn't capture the specific technical meaning of "coin control features" in the context of Bitcoin.
+YES  
+The translation is inaccurate and misleading. The source means "Enable coin control features," i.e., activate the features for controlling coins. The provided translation says "Allowing coins and their features," which changes the meaning.
 
-A more accurate translation would be:
-
+Correct translation:  
 "Активиране на функциите за контрол на монети"
 ```
 
@@ -173,99 +231,106 @@ A more accurate translation would be:
         <source>Mined balance that has not yet matured</source>
         <translation>Миниран баланс,който все още не се е развил</translation>
     
-YES, erroneous content. The translation is too literal and doesn't convey the intended meaning in the context of Bitcoin. "Развил" (developed) is not the correct term for a balance maturing.
+YES  
+There is a punctuation spacing issue ("баланс,който" should be "баланс, който") and the phrase "не се е развил" ("has not yet matured") is not the correct terminology in Bulgarian Bitcoin context. The correct translation for "has not yet matured" in this context is "не е узрял" or "не е завършен". The best phrase would be:
 
-Correct translation: Миниран баланс, който все още не е узрял
+Миниран баланс, който все още не е узрял
 ```
 
 ```
         <source>Request payment to %1</source>
         <translation>Изискване на плащане от %1</translation>
     
-YES, The translation uses "от" (from) instead of "на" (to). This changes the meaning of the sentence to "Request payment from %1", while the original sentence means "Request payment to %1".
+YES  
+The preposition "от" in Bulgarian means "from," which changes the meaning of the phrase. The English source implies requesting a payment to the address %1, so the correct preposition should be "към" (to).  
 
-Correct translation: Изискване на плащане на %1
-```
-
-```
-        <source>Send Coins</source>
-        <translation>Изпращане</translation>
-    
-YES, The translation is too brief and does not convey the full meaning of the source text. The word "Изпращане" means "Sending" but lacks context. A more appropriate translation would be "Изпращане на монети".
-
-        <source>Send Coins</source>
-        <translation>Изпращане на монети</translation>
+Correct translation:  
+Изискване на плащане към %1
 ```
 
 ```
         <source>automatically selected</source>
         <translation>астоматично избран</translation>
     
-YES, The translation is missing the letter "а" at the beginning.
-Correct translation: автоматично избран
+YES  
+The Bulgarian translation contains a typographical error: "астоматично" should be "автоматично".  
+
+Correct translation:  
+автоматично избран
 ```
 
 ```
         <source>Copy change</source>
         <translation>Промяна на копирането</translation>
     
-YES, The translation is inaccurate and conveys a meaning completely different from the source text. "Промяна на копирането" literally translates to "copying change" or "change of copying", which does not make sense in the context of Bitcoin transactions. The correct translation should refer to copying the "change" amount of a transaction.
-
-The correct translation is:
-Copy change
+YES  
+The translation "Промяна на копирането" literally means "Change of copying," which is incorrect in this Bitcoin context. The source phrase "Copy change" refers to copying the "change" amount (e.g., Bitcoin transaction change), not changing the copy itself. A correct and clearer Bulgarian translation would be:  
+"Копирай ресто"  
+where "ресто" is the correct term for "change" in a financial/Bitcoin context.
 ```
 
 ```
         <source>Confirm send coins</source>
         <translation>Потвърждаване</translation>
     
-YES, The translation is too short and does not accurately convey the meaning of the source text. The source text "Confirm send coins" implies a confirmation of a transaction involving sending coins, not just a general confirmation.
-
-The correct translation should be: "Потвърдете изпращането на монети"
+YES  
+The translation "Потвърждаване" means "Confirmation" or "Confirming" in general and does not fully convey the imperative "Confirm send coins," which is a request to confirm the action of sending coins. A more accurate translation would be:  
+"Потвърдете изпращането на монети"
 ```
 
 ```
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
         <translation>Сумата при добавяне на данък добавена стойност по %1 транзакцията надвишава сумата по вашата сметка.</translation>
     
-YES, The translation incorrectly interprets "transaction fee" as "value-added tax" (данък добавена стойност). The correct translation for "transaction fee" is "такси за трансакцията".
+YES  
+The translation introduces the term "данък добавена стойност" (value added tax), which is incorrect in this Bitcoin context. The original sentence refers to the "%1 transaction fee," meaning a fee for processing the transaction, not a tax like VAT. Also, the phrasing is somewhat awkward and does not clearly convey the intended meaning.
 
-Correct translation: Сумата при добавяне на такси за трансакцията по %1 транзакцията надвишава сумата по вашата сметка.
-```
-
-```
-        <source>Paste address from clipboard</source>
-        <translation>Вмъкни от клипборда</translation>
-    
-YES, The translation is missing a key word "address" which is crucial in the context of Bitcoin. The Bulgarian translation should also include the Bulgarian word for "address".
-Correct translation: Вмъкни адрес от клипборда
+A more accurate translation would be:  
+"Общата сума надвишава вашия баланс, когато се включи таксата за транзакция %1."
 ```
 
 ```
         <source>Paste address from clipboard</source>
         <translation>Вмъкни от клипборда</translation>
     
-YES, The translation is missing a key word "address" which is crucial in the context of Bitcoin. The Bulgarian translation should also include the Bulgarian word for "address".
-Correct translation: Вмъкни адрес от клипборда
+YES  
+The translation "Вмъкни от клипборда" means "Insert from the clipboard" but does not include the word "address," which is present in the source text. The correct and more accurate translation should convey "Paste address from clipboard."
+
+Correct translation:  
+Вмъкни адрес от клипборда
+```
+
+```
+        <source>Paste address from clipboard</source>
+        <translation>Вмъкни от клипборда</translation>
+    
+YES  
+The translation "Вмъкни от клипборда" means "Insert from the clipboard" but does not include the word "address," which is present in the source text. The correct and more accurate translation should convey "Paste address from clipboard."
+
+Correct translation:  
+Вмъкни адрес от клипборда
 ```
 
 ```
         <source>Sign the message to prove you own this Bitcoin address</source>
         <translation>Подпишете съобщение като доказателство, че притежавате определен адрес</translation>
     
-YES, The translation is inaccurate. The Bulgarian translation uses "определен адрес" which means "a certain address". The original English text specifies "this Bitcoin address", implying ownership of a specific address. The translation fails to convey this specificity and also omits the crucial term "Bitcoin".
+YES  
+The translation is incomplete and somewhat vague. It omits the reference to "this Bitcoin address" ("този Bitcoin адрес"), which is important to keep the context clear and precise. The phrase "определен адрес" ("a certain address") is less specific than "this Bitcoin address." Also, "Подпишете съобщение като доказателство" is a bit awkward; a better, more natural phrasing involves "Подпишете съобщението, за да докажете, че притежавате този Bitcoin адрес."
 
-Correct translation: Подпишете съобщението, за да докажете, че притежавате този Bitcoin адрес
+Correct translation:  
+Подпишете съобщението, за да докажете, че притежавате този Bitcoin адрес.
 ```
 
 ```
         <source>The signature did not match the message digest.</source>
         <translation>Подписът не отговаря на комбинацията от съобщение и адрес.</translation>
     
-YES, The translation is inaccurate. The original English text refers to a "message digest", which is a cryptographic hash of a message. The Bulgarian translation incorrectly translates this as "combination of message and address".
+YES
+The translation introduces erroneous content by adding "и адрес" ("and address"), which is not present in the source and changes the meaning. The source only refers to "the message digest," without mentioning an "address."
 
-The correct translation should be:
-Подписът не отговаря на хеша на съобщението.
+Correct translation:
+Подписът не съответства на дайджеста на съобщението.
 ```
 
 ```
@@ -273,15 +338,21 @@ The correct translation should be:
         <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in 6 or more blocks.</extracomment>
         <translation>включена в %1 блока</translation>
     
-YES, The translation is incorrect. The source text means "%1 confirmations", while the translation means "%1 blocks". The correct translation should be "%1 потвърждения".
-NO, YES, %1 потвърждения
+YES  
+The translation "включена в %1 блока" means "included in %1 blocks," which is not an exact equivalent of "%1 confirmations." Moreover, the source phrase uses "%1" before "confirmations," implying the number of confirmations, which is a count of how many blocks have confirmed a transaction. A better translation is the plural form for "confirmations" adjusted for the number %1.
+
+Correct translation:  
+"%1 потвърждения"
 ```
 
 ```
         <source>Total credit</source>
         <translation>Общ дълг</translation>
     
-YES, The translation is incorrect. "Total credit" in the context of Bitcoin usually refers to a positive balance or amount available, while "Общ дълг" translates to "Total debt". The correct translation for "Total credit" is "Общ кредит".
+YES  
+The translation "Общ дълг" is incorrect because it means "Total debt" rather than "Total credit." The correct translation for "Total credit" in Bulgarian, especially in the context of Bitcoin or financial transactions, would be "Общ кредит."  
+
+Correct translation:  
 Общ кредит
 ```
 
@@ -289,52 +360,55 @@ YES, The translation is incorrect. "Total credit" in the context of Bitcoin usua
         <source>Transaction ID</source>
         <translation>ID</translation>
     
-YES, The translation is too brief and lacks context. The original text "Transaction ID" specifically refers to a transaction identifier in the context of Bitcoin. The translated text "ID" is too generic and could refer to any type of identifier.
-
-Correct translation: ID на трансакцията
+YES  
+The translation "ID" is incomplete and not fully accurate. The source "Transaction ID" refers specifically to the identifier of a transaction, which should be clearly conveyed in Bulgarian. The correct translation is:  
+"Идентификатор на транзакцията"  
+or a shorter but still clear form:  
+"ID на транзакцията"
 ```
 
 ```
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>Неплатим (%1 потвърждения, ще бъде платим след %2)</translation>
     
-YES, the translation is problematic. The Bulgarian word "Неплатим" translates to "unpayable" or "not payable," which is incorrect in this context. In Bitcoin, an immature transaction means it has not yet reached a sufficient number of confirmations to be considered spendable or final. The correct term should convey this idea of not being ready or available yet.
+YES  
+The translation is incorrect in meaning. The English phrase "Immature" in the context of Bitcoin means that the coins or transaction outputs are not yet spendable (not yet mature). The translation "Неплатим" means "not payable," which is close in idea but not the standard term used in Bulgarian Bitcoin terminology. The original "will be available after %2" indicates it will become spendable (mature) after a certain number of confirmations. The phrase "ще бъде платим след %2" means "will be payable after %2", which is misleading because "платим" relates more to payments, not maturity of outputs.
 
-NO
+A better, context-appropriate translation would use "Незрял" for "Immature", which is the typical term for immature/unconfirmed outputs in Bitcoin in Bulgarian, and replace "ще бъде платим" with "ще бъде достъпен" (will become available) or "ще бъде зрел" (will be mature) to better capture the meaning.
+
+Correct translation:  
+Незрял (%1 потвърждения, ще бъде достъпен след %2)
 ```
 
 ```
         <source>Exporting Successful</source>
         <translation>Изнасянето е успешна</translation>
     
-YES, the translation is grammatically incorrect. The noun "изнасянето" is neuter, but the adjective "успешна" is feminine. The correct translation would be "Изнасянето е успешно".
+YES  
+The Bulgarian translation has a gender agreement error. The noun "Изнасянето" (The exporting) is neuter, so the adjective/participle should also be neuter: "успешно" instead of the feminine "успешна".
+
+Correct translation:  
 Изнасянето е успешно
-```
-
-```
-        <source>Send Coins</source>
-        <translation>Изпращане</translation>
-    
-YES, The translation is too brief and does not convey the full meaning of the source text. The word "Изпращане" means "Sending" but lacks context. A more appropriate translation would be "Изпращане на монети".
-
-        <source>Send Coins</source>
-        <translation>Изпращане на монети</translation>
 ```
 
 ```
         <source>The wallet will avoid paying less than the minimum relay fee.</source>
         <translation>Портфейлът няма да плаша по-малко от миналата такса за препредаване.</translation>
     
-YES, erroneous content. The word "плаша" (plashta) should be "плаща" (plashta), which means "pay". Also, "мисли" (misli) should be "минималната" (minimalnata), meaning "minimum".
+YES  
+The Bulgarian translation contains a typo and an incorrect word choice. The word "плаша" means "to scare," which is incorrect here; it should be "плаща" (to pay). Also, "миналата" means "the last" or "past," which is wrong; it should be "минималната" (minimum).  
 
-Correct translation: Портфейлът няма да плаща по-малко от минималната такса за препредаване.
+Correct translation:  
+Портфейлът няма да плаща по-малко от минималната такса за препредаване.
 ```
 
 ```
         <source>User Agent comment (%s) contains unsafe characters.</source>
         <translation>Коментар потребителски агент (%s) съдържа не безопасни знаци. </translation>
     
-YES, The translation contains an extra space at the end of the sentence.
-Коментар потребителски агент (%s) съдържа не безопасни знаци.
+YES  
+The Bulgarian translation is mostly understandable but contains a spacing issue and slightly unnatural phrasing. The phrase "не безопасни" should be combined into one word "небезопасни", and there is an extra trailing space before the closing tag. Also, "потребителски агент" would be better rendered as "потребителски агент" or the phrase could be rearranged for naturalness. A better translation is:
+
+Коментарът на User Agent (%s) съдържа небезопасни знаци.
 ```
 </details>

@@ -14,69 +14,44 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Dette er Bitcoin-adressene dine for å motta betalinger. Bruk knappen ‘Opprett ny mottaksadresse’ i mottaksfanen for å opprette nye adresser.Signering er kun mulig med adresser av typen ‘legacy’.</translation>
     
-YES: The Norwegian translation is missing a space after the period before the second sentence.
-Correct translation: Dette er Bitcoin-adressene dine for å motta betalinger. Bruk knappen ‘Opprett ny mottaksadresse’ i mottaksfanen for å opprette nye adresser. Signering er kun mulig med adresser av typen ‘legacy’.
-```
+YES  
+There is a missing space after the period in the Norwegian translation before the sentence "Signering er kun mulig...". It should have a space to separate the two sentences properly, matching the format and readability of the source.
 
-```
-        <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <extracomment>An error message. %1 is a stand-in argument for the name of the file we attempted to save to.</extracomment>
-        <translation>Det oppstod en feil under forsøk på å lagre adresselisten til %1. Vennligst prøv igjen.</translation>
-    
-YES, The translation is in Norwegian (nb), not the requested language 'no'. The translation is accurate and contextually appropriate for Bitcoin.
-
-NO, The language specified by 'no' is not recognized.
+Correct translation:  
+Dette er Bitcoin-adressene dine for å motta betalinger. Bruk knappen ‘Opprett ny mottaksadresse’ i mottaksfanen for å opprette nye adresser. Signering er kun mulig med adresser av typen ‘legacy’.
 ```
 
 ```
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
         <translation>Advarsel: Hvis du krypterer lommeboken din og mister passordet, vil du 1 MISTE ALLE BITCOINENE DINE 1 !</translation>
     
-YES: The translation incorrectly includes "1" before and after "LOSE ALL OF YOUR BITCOINS". This is likely a misinterpretation of the bold tags. The bold tags should be translated, not replaced with numbers.
+YES
+The translation incorrectly replaces the HTML bold tags (&lt;b&gt; and &lt;/b&gt;) with "1" characters, which is incorrect and breaks the formatting. The passphrase is translated somewhat correctly as "passordet," but it is more accurate to use "passfrasen" as in the source context. The rest is mostly correct but the formatting tags must be preserved.
 
-Correct translation: Advarsel: Hvis du krypterer lommeboken din og mister passordet, vil du <b>MISTE ALLE BITCOINENE DINE</b>!
+Correct translation:
+Advarsel: Hvis du krypterer lommeboken din og mister passfrasen din, vil du &lt;b&gt;MISTE ALLE BITCOINENE DINE&lt;/b&gt;!
 ```
 
 ```
         <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Skriv inn det nye passordet for lommeboken. 1 Vennligst bruk et passord med 2 ti eller flere tilfeldige tegn 2, eller 3 åtte eller flere ord 3.</translation>
     
-YES: The translation includes extraneous numbers (1, 2, 3) that do not appear in the source text.
-Correct translation: Skriv inn det nye passordet for lommeboken.<br/>Please use a passphrase of <b>ten or more random characters</b>, or <b>eight or more words</b>.
-```
-
-```
-        <source>Wallet unlock failed</source>
-        <translation>Låsing av lommebok mislyktes</translation>
-    
 YES
-The translation provided is in Swedish, not 'no'.
-UNK_LANG
-```
+The translation has added extraneous numbers ("1", "2", "3") which are not present in the source and breaks the sentence inappropriately. It omits the HTML formatting tags that add emphasis and a line break, which are important for preserving the original structure and emphasis.
 
-```
-        <source>%1 didn't yet exit safely…</source>
-        <translation>%1 avsluttet ennå ikke trygt…</translation>
-    
-YES. The translation uses the Norwegian word "avsluttet" which translates to "ended" or "concluded". In the context of Bitcoin and software, the intended meaning of "exit safely" is to shut down properly. The correct Norwegian translation for "exit safely" would be "avsluttet trygt" or "lukket trygt".
-
-YES. %1 avsluttet ennå ikke trygt…
-```
-
-```
-        <source>Modify configuration options for %1</source>
-        <translation>Endre konfigurasjonsalternativer for %1</translation>
-    
-YES: The language specified by 'no' is Norwegian, not 'no' (which is an English word). The translation is otherwise accurate.
-Correct translation: NO
+Correct translation:
+Skriv inn det nye passordet for lommeboken.&lt;br/&gt;Vennligst bruk et passord med &lt;b&gt;ti eller flere tilfeldige tegn&lt;/b&gt;, eller &lt;b&gt;åtte eller flere ord&lt;/b&gt;.
 ```
 
 ```
         <source>Sending addresses</source>
         <translation>Åpne node-feilsøkings- og diagnostikkonsoll</translation>
     
-YES - The translation is completely unrelated to the source text. The source text "Sending addresses" likely refers to Bitcoin addresses from which funds are being sent. The translation "Åpne node-feilsøkings- og diagnostikkonsoll" translates to "Open node debugging and diagnostics console".
-Correct translation: Sende adresser
+YES  
+The translation "Åpne node-feilsøkings- og diagnostikkonsoll" means "Open node debugging and diagnostic console," which is unrelated to the source text "Sending addresses." The translation does not match the source phrase in meaning.
+
+Correct translation:  
+"Sender adresser"
 ```
 
 ```
@@ -84,49 +59,43 @@ Correct translation: Sende adresser
         <translation>Vindu 
 </translation>
     
-YES, the translation has trailing whitespace. The correct translation is "Vindu".
-```
+YES  
+The translation contains a trailing whitespace (newline) after "Vindu". The format should not have extra spaces or line breaks.
 
-```
-        <source>Bytes:</source>
-        <translation>Byte:</translation>
-    
-YES: The translation incorrectly changes the plural "Bytes" to the singular "Byte".
-Correct translation: Byte:
+Correct translation:  
+Vindu
 ```
 
 ```
         <source>Change:</source>
         <translation>Veksel</translation>
     
-YES. The translation is incorrect and doesn't fit the context of Bitcoin. In Bitcoin, "change" refers to the remaining amount of Bitcoin after a transaction. "Veksel" in Danish means "bill of exchange" or "exchange note", which is not related to the concept of transaction change.
+YES  
+The translation "Veksel" is incorrect in this context. In Bitcoin terminology, "Change" refers to the leftover amount returned to the sender in a transaction, not the concept of "exchange" or "bill" which "Veksel" implies in Norwegian. The correct translation should reflect the Bitcoin context, typically "Vekslepenger" or simply using "Change:" as "Vekslepenger:" or "Tilbakebetaling:". A more appropriate and commonly used translation in Norwegian Bitcoin contexts is:
 
-The correct translation for "Change" in the context of Bitcoin is:
-
-<translation>Vekselpenge</translation>
+Correct translation:  
+Vekslepenger:
 ```
 
 ```
         <source>Tree mode</source>
         <translation>Trevisning</translation>
     
-YES: The translation "Trevisning" does not accurately convey the meaning of "Tree mode" in the context of Bitcoin. In Bitcoin, "tree mode" likely refers to a way of visualizing or organizing data in a hierarchical structure, such as a Merkle tree. "Trevisning" is not a recognized term in this context and appears to be an invented word.
+YES
+The Norwegian translation "Trevisning" is incorrect for "Tree mode." The correct translation in this Bitcoin-related context should be "Tremodus" or "Treetilstand," where "tre" means "tree" and "modus" or "tilstand" means "mode." "Trevisning" translates more to "tree view," which might not fully capture the intended meaning of "mode" here.
 
-Correct translation: Träd-läge
-```
-
-```
-        <source>Lock unspent</source>
-        <translation>Lås ubrukte</translation>
-    
-YES: The translation is for Norwegian, not the specified language 'no'. The correct translation in Norwegian is "Lås ubrukte". The correct translation for the specified language 'no' is UNK_LANG.
+Correct translation:
+Tremodus
 ```
 
 ```
         <source>Copy fee</source>
         <translation>Kopier gebyr</translation>
     
-YES - The translation is incorrect. "Kopier gebyr" translates to "Copy fee" in Danish, not Norwegian. The correct Norwegian translation is "Kopier avgift".
+YES  
+The Norwegian translation uses a mix of Norwegian and German/Danish-like structure. The correct Norwegian translation for "Copy fee" should be "Kopier gebyr" is understandable but not idiomatic. A more natural Norwegian translation would be "Kopier gebyr" or better "Kopier avgift" where "avgift" is more appropriate for fee. If "Copy fee" means the fee related to copying (in Bitcoin context), "Kopier avgift" fits better.
+
+Correct translation:  
 Kopier avgift
 ```
 
@@ -135,33 +104,32 @@ Kopier avgift
         <translation>Vindu 
 </translation>
     
-YES, the translation has trailing whitespace. The correct translation is "Vindu".
-```
+YES  
+The translation contains a trailing whitespace (newline) after "Vindu". The format should not have extra spaces or line breaks.
 
-```
-        <source>Bytes:</source>
-        <translation>Byte:</translation>
-    
-YES: The translation incorrectly changes the plural "Bytes" to the singular "Byte".
-Correct translation: Byte:
+Correct translation:  
+Vindu
 ```
 
 ```
         <source>Change:</source>
         <translation>Veksel</translation>
     
-YES. The translation is incorrect and doesn't fit the context of Bitcoin. In Bitcoin, "change" refers to the remaining amount of Bitcoin after a transaction. "Veksel" in Danish means "bill of exchange" or "exchange note", which is not related to the concept of transaction change.
+YES  
+The translation "Veksel" is incorrect in this context. In Bitcoin terminology, "Change" refers to the leftover amount returned to the sender in a transaction, not the concept of "exchange" or "bill" which "Veksel" implies in Norwegian. The correct translation should reflect the Bitcoin context, typically "Vekslepenger" or simply using "Change:" as "Vekslepenger:" or "Tilbakebetaling:". A more appropriate and commonly used translation in Norwegian Bitcoin contexts is:
 
-The correct translation for "Change" in the context of Bitcoin is:
-
-<translation>Vekselpenge</translation>
+Correct translation:  
+Vekslepenger:
 ```
 
 ```
         <source>Copy fee</source>
         <translation>Kopier gebyr</translation>
     
-YES - The translation is incorrect. "Kopier gebyr" translates to "Copy fee" in Danish, not Norwegian. The correct Norwegian translation is "Kopier avgift".
+YES  
+The Norwegian translation uses a mix of Norwegian and German/Danish-like structure. The correct Norwegian translation for "Copy fee" should be "Kopier gebyr" is understandable but not idiomatic. A more natural Norwegian translation would be "Kopier gebyr" or better "Kopier avgift" where "avgift" is more appropriate for fee. If "Copy fee" means the fee related to copying (in Bitcoin context), "Kopier avgift" fits better.
+
+Correct translation:  
 Kopier avgift
 ```
 </details>

@@ -13,9 +13,11 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
         <translation>Signer meldingene med Bitcoin adresse for å bevise at diu eier dem</translation>
     
-YES
-The translation contains a spelling error ("diu" should be "du").
-Signer meldingene med Bitcoin-adressen din for å bevise at du eier dem.
+YES  
+The Norwegian Bokmål translation contains errors: "Bitcoin adresse" should be plural ("Bitcoin-adresser") to match "messages" and "diu" is incorrect (it should be "du"). Also, "dem" is incorrect and should be "dem" changed to "dem" (although "dem" is the object form of "de" in Norwegian, here "dem" refers to "meldingene" or "adressene", so "dem" is acceptable but "dem" is an old-fashioned or dialectal form—more standard would be "dem"). However, more consistent would be to use "dem" or "dem" depending on style, but in this context, "dem" is acceptable. The phrase should also have a hyphen in "Bitcoin-adresser".
+
+Correct translation:  
+Signer meldingene med dine Bitcoin-adresser for å bevise at du eier dem
 ```
 
 ```
@@ -23,20 +25,11 @@ Signer meldingene med Bitcoin-adressen din for å bevise at du eier dem.
         <extracomment>A context menu item.</extracomment>
         <translation>Klikk for å deaktivere nettverksaktivitet</translation>
     
-YES, The provided translation is problematic. It is adding extra words that are not present in the original English text. The original text is a menu item, and the translation turns it into a clickable instruction, which is not appropriate for a menu item.
+YES  
+The source text is a simple imperative phrase "Disable network activity," likely a menu item or toggle command. The translation "Klikk for å deaktivere nettverksaktivitet" means "Click to disable network activity," which adds the word "Klikk for" ("Click to"), not present in the source. This addition changes the meaning and is unnecessary. The correct translation should be a direct imperative:
 
-Correct translation:
-Slå av nettverksaktivitet
-```
-
-```
-        <source>Change:</source>
-        <translation>Veksel:</translation>
-    
-YES, The Norwegian word "Veksel" translates to "bill of exchange" or "exchange" in English, which is not the correct term for "change" in the context of Bitcoin transactions. In Bitcoin, "change" refers to the unspent transaction output (UTXO) that is returned to the sender after a transaction. The correct Norwegian term for this is "veksel" is a financial term and not suitable here. A more appropriate term would be "rest" or "tilbakebetaling" for change in this context.
-
-The correct translation should be:
-<translation>Rest:</translation>
+Correct translation:  
+Deaktiver nettverksaktivitet
 ```
 
 ```
@@ -44,43 +37,74 @@ The correct translation should be:
         <extracomment>Descriptive text of the create wallet progress window which indicates to the user which wallet is currently being created.</extracomment>
         <translation>Lager lommebok &lt;b&gt;%1&lt;b&gt;...</translation>
     
-YES, The translation is problematic due to a syntax error in the HTML tag. The closing tag for bold should be `</b>` instead of `</b>`.
-Lager lommebok &lt;b&gt;%1&lt;/b&gt;...
+YES
+The translation contains an error in the use of the word "Lager," which means "store" or "warehouse," rather than "creating." The correct Norwegian Bokmål verb would be "Oppretter" to mean "Creating." Additionally, the closing HTML tag is incorrect: it uses &lt;b&gt; instead of &lt;/b&gt; to close the bold tag. The ellipsis should be the single character "…" as in the source, not three dots.
+
+Correct translation:
+Oppretter lommebok &lt;b&gt;%1&lt;/b&gt;…
 ```
 
 ```
         <source>Disable private keys for this wallet. Wallets with private keys disabled will have no private keys and cannot have an HD seed or imported private keys. This is ideal for watch-only wallets.</source>
         <translation>Deaktiver private nøkler for denne lommeboken. Lommebøker med private nøkler er deaktivert vil ikke ha noen private nøkler og kan ikke ha en HD seed eller importerte private nøkler. Dette er ideelt for loomebøker som kun er klokker.</translation>
     
-YES - The word "loomebøker" is a misspelling of "lommebøker". The word "klokker" is also a misspelling of "klokke".
-Deaktiver private nøkler for denne lommeboken. Lommebøker med private nøkler deaktivert vil ikke ha noen private nøkler og kan ikke ha en HD seed eller importerte private nøkler. Dette er ideelt for lommebøker som kun er klokke.
+YES  
+There are several issues in the translation:
+
+1. "Deaktiver private nøkler" should be "Deaktiver private nøkler" but the verb form is incorrect; it should be an imperative or infinitive form consistent with the English "Disable". Normally, "Deaktiver" is the imperative form meaning "Disable," so that is okay.
+
+2. The phrase "Lommebøker med private nøkler er deaktivert" is incorrect grammar; it should be "Lommebøker med deaktiverte private nøkler" or "Lommebøker med private nøkler deaktivert" to convey "Wallets with private keys disabled." The current phrase literally means "Wallets with private keys are disabled," which is wrong.
+
+3. "kan ikke ha en HD seed" – the phrase "seed" should be preceded by the Norwegian equivalent or stay as "seed" but preceded by "en" which is singular indefinite. "HD seed" is accepted terminology but might be italicized or left as is.
+
+4. "loomebøker som kun er klokker" contains a typo - "loomebøker" should be "lommebøker" and "klokker" literally means "clocks," which is incorrect. The intended phrase is "watch-only wallets," which can be translated as "lommebøker som kun kan følges (eller overvåkes)" or "se kun lommebøker." The common accepted translation is "lommebøker som kun kan overvåkes" or "lommebøker kun for overvåkning." Alternatively, "lese-lommebøker" (read-only wallets) might be used. The current translation is inaccurate.
+
+Corrected translation:
+
+Deaktiver private nøkler for denne lommeboken. Lommebøker med deaktiverte private nøkler vil ikke ha noen private nøkler og kan ikke ha en HD-seed eller importerte private nøkler. Dette er ideelt for lommebøker som kun kan overvåkes.
+
+Note: Added a hyphen in "HD-seed" for clarity but "HD seed" may also be acceptable.
+
+Alternatively:
+
+Deaktiver private nøkler for denne lommeboken. Lommebøker med deaktiverte private nøkler vil ikke ha private nøkler og kan verken ha en HD-seed eller importerte private nøkler. Dette er ideelt for overvåkingslommebøker.
+
+Either is acceptable.
 ```
 
 ```
         <source>Reverting this setting requires re-downloading the entire blockchain. It is faster to download the full chain first and prune it later. Disables some advanced features.</source>
         <translation>Gjenoppretting av denne innstillingen krever at du laster ned hele blockchain på nytt. Det er raskere å laste ned hele kjeden først og beskjære den senere Deaktiver noen avanserte funksjoner.</translation>
     
-YES - The translation has a grammatical error. The sentence "Det er raskere å laste ned hele kjeden først og beskjære den senere Deaktiver noen avanserte funksjoner." should be two separate sentences. The second sentence "Deaktiver noen avanserte funksjoner." is a command, but it's placed directly after the first sentence without proper punctuation.
+YES  
+The translation misses a period (full stop) between the sentences "senere" and "Deaktiver". Also, "blockchain" is left in English, which can be understandable but inconsistent as "blokkjeden" is commonly used in Norwegian Bokmål. The term "beskjære" (to crop) is not the best choice in this context; a better term would be "beskjære" replaced with "beskjære" or "rydde opp i" isn't typical here. A better term is "beskjære" replaced with "beskjære" might be fine but "rydde opp i" is more informal and "kutte" or "beskjære" is commonly used regarding pruning. However, the established Norwegian Bitcoin community term for "prune" in this technical context is "beskjære". 
 
-Correct translation: Gjenoppretting av denne innstillingen krever at du laster ned hele blockchain på nytt. Det er raskere å laste ned hele kjeden først og beskjære den senere. Deaktiverer noen avanserte funksjoner.
+Corrected translation with punctuation fixed and "blockchain" translated:  
+Gjenoppretting av denne innstillingen krever at du laster ned hele blokkjeden på nytt. Det er raskere å laste ned hele kjeden først og beskjære den senere. Deaktiverer noen avanserte funksjoner.
 ```
 
 ```
         <source>Unknown. Pre-syncing Headers (%1, %2%)…</source>
         <translation>Ukjent.Synkroniser blokkhoder (%1,%2%)...</translation>
     
-YES, The translation is missing a space after "Ukjent." and before "Synkroniser". It also has a missing space after the comma before "%2".
-Ukjent. Synkroniser blokkhoder (%1, %2%)...
+YES
+There are spacing issues in the translation. There should be a space after "Ukjent." and also after the commas within the parentheses. The ellipsis is typically represented as "…" (single character) and should have a non-breaking space before it or at least a space before to match the source style.
+
+Correct translation:
+Ukjent. Pre-synkroniserer blokkhoder (%1, %2%)…
 ```
 
 ```
         <source>Prune block storage to</source>
         <translation>Beskjær og blokker lagring til</translation>
     
-YES, The translation is incorrect. The word "Prune" means to trim or cut back, and in the context of Bitcoin, it refers to reducing the size of the blockchain. The Norwegian translation "Beskjær og blokker lagring til" translates to "Prune and block storage to", which introduces the word "and" and changes the meaning.
+YES  
+The Norwegian Bokmål translation is incorrect and somewhat confusing. "Beskjær og blokker lagring til" translates back as "Prune and block storage to," which adds an unintended conjunction "og" ("and") and changes the meaning. The English phrase "Prune block storage to" means to reduce or trim the block storage size to a certain amount, not to block it.
 
-The correct translation should be:
-Beskjær blokklagring til
+Correct translation:  
+"Beskjær blokk-lagring til"  
+or simply  
+"Beskjær blokk-lagringen til"
 ```
 
 ```
@@ -88,43 +112,43 @@ Beskjær blokklagring til
         <extracomment>Secondary shortcut to increase the RPC console font size.</extracomment>
         <translation>Cltr+=</translation>
     
-YES, The translation contains a typographical error in the word "Ctrl". It is misspelled as "Cltr".
+YES
+The translation contains a typo: "Cltr" should be "Ctrl" to correctly reflect the English shortcut key abbreviation.
+
+Correct translation:
 Ctrl+=
-```
-
-```
-        <source>Change:</source>
-        <translation>Veksel:</translation>
-    
-YES, The Norwegian word "Veksel" translates to "bill of exchange" or "exchange" in English, which is not the correct term for "change" in the context of Bitcoin transactions. In Bitcoin, "change" refers to the unspent transaction output (UTXO) that is returned to the sender after a transaction. The correct Norwegian term for this is "veksel" is a financial term and not suitable here. A more appropriate term would be "rest" or "tilbakebetaling" for change in this context.
-
-The correct translation should be:
-<translation>Rest:</translation>
 ```
 
 ```
         <source>Create Unsigned</source>
         <translation>Cr  eate Usignert</translation>
     
-YES, there are spelling errors in the translation. The word "Create" is misspelled as "Cr eate" and "Unsigned" is misspelled as "Usignert".
-Create Unsigned
+YES  
+The translation is incorrect and contains typographical errors and does not reflect the Norwegian Bokmål language. It appears to be a corrupted or mistyped version of the English source text rather than a proper translation.  
+
+Correct translation:  
+Opprett usignert
 ```
 
 ```
         <source>The amount to send in the selected unit</source>
         <translation>beløpet som skal sendes inn den valgte enheten.</translation>
     
-YES: The preposition "in" is incorrectly translated as "inn". "i" is the correct translation for "in". The trailing period is also an issue.
-The amount to send in the selected unit
-beløpet som skal sendes i den valgte enheten.
+YES  
+The translation is slightly inaccurate and contains unnecessary whitespace before the last period. The phrase "inn den valgte enheten" suggests "into the selected unit," which is not correct. It should be "i den valgte enheten" meaning "in the selected unit." Also, the initial word should be capitalized as in the source.
+
+Correct translation:  
+Beløpet som skal sendes i den valgte enheten.
 ```
 
 ```
         <source>The signed message to verify</source>
         <translation>Den signerte meldingen for å bekfrefte</translation>
     
-YES, the translation contains a misspelling. The word "bekfrefte" should be "bekrefte".
-The signed message to verify
+YES  
+There is a typo in the Norwegian Bokmål translation: "bekfrefte" should be "bekrefte".  
+
+Correct translation:  
 Den signerte meldingen for å bekrefte
 ```
 
@@ -132,25 +156,42 @@ Den signerte meldingen for å bekrefte
         <source>The signature did not match the message digest.</source>
         <translation>Signaturen samsvarer ikke med meldingsporteføljen.</translation>
     
-YES, the translation has an erroneous word choice. "Meldingsporteføljen" translates to "message portfolio" which is not the intended meaning. The correct translation for "message digest" in this context is "meldingssammendrag".
+YES  
+The word "meldingsporteføljen" is incorrect for "message digest." The correct Norwegian Bokmål term for "message digest" in a cryptographic context is "meldingsdigest" or "meldingsoppsummering." Additionally, "Signaturen samsvarer ikke med meldingsdigesten." is more accurate and grammatically correct.
 
-NO
+Correct translation:  
+Signaturen samsvarer ikke med meldingsdigesten.
 ```
 
 ```
         <source>Fee rate (%s) is lower than the minimum fee rate setting (%s)</source>
         <translation>Avgiftsrate (%s) er lavere enn den minimume avgiftsrate innstillingen (%s)</translation>
     
-YES - The translation uses "avgiftsrate" instead of the more appropriate "gebyrsats" when referring to Bitcoin transaction fees. Additionally, it uses "innstillingen" which is not the correct grammatical form in this context. The correct translation should use "gebyrsats" and "innstillingen" should be "innstilling".
-NO - Fee rate (%s) is lower than the minimum fee rate setting (%s)
+YES  
+The Norwegian Bokmål translation has a few issues:  
+1. "Avgiftsrate" is understandable but the correct Norwegian term in the context of Bitcoin transaction fees is "Gebyrrate" or simply "Gebyrsats".  
+2. "minimume" is a typo and should be "minimum".  
+3. There should be a preposition "for" before "innstillingen" for clarity: "den minimum gebyrrateinnstillingen" or better "den minimale gebyrrateinnstillingen".  
+4. The phrase is slightly awkward and could be more natural.
+
+A more natural and correct translation would be:  
+"Gebyrsatsen (%s) er lavere enn den minimale gebyrsats-innstillingen (%s)"  
+
+Alternatively:  
+"Gebyrsatsen (%s) er lavere enn den minimale gebyrsatsinnstillingen (%s)"  
+
+Complete corrected translation:  
+<translation>Gebyrsatsen (%s) er lavere enn den minimale gebyrsatsinnstillingen (%s)</translation>
 ```
 
 ```
         <source>Unknown -blockfilterindex value %s.</source>
         <translation>Ukjent -blokkfilterindex-verdi 1 %s.</translation>
     
-YES - The translation incorrectly includes the number "1" before the format specifier "%s". This is not present in the source text.
+YES  
+There is an extra "1" before the placeholder "%s" that is not present in the source text, making the translation inaccurate.
 
-Correct translation: Ukjent -blockfilterindex-verdi %s.
+Correct translation:  
+Ukjent -blokkfilterindex-verdi %s.
 ```
 </details>

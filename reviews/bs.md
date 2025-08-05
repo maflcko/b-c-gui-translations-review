@@ -13,25 +13,31 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Sent transaction</source>
         <translation>Pošalji transakciju</translation>
     
-YES. The translation uses an imperative verb ("Pošalji" - Send) where the source text uses a noun phrase ("Sent transaction" - Poslana transakcija). This is not a direct or accurate translation.
+YES
+The translation "Pošalji transakciju" means "Send transaction" in Bosnian, which is an imperative form. The English source "Sent transaction" refers to a transaction that has already been sent (past tense, adjective/noun phrase), so the correct translation should reflect that.
 
-Pošalji transakciju
+Correct translation:
+Poslana transakcija
 ```
 
 ```
         <source>Create wallet warning</source>
         <translation>Stvorite upozorenje novčanika</translation>
     
-YES, The translation is problematic. The source text "Create wallet warning" is a title or a heading. The translation "Stvorite upozorenje novčanika" translates to "Create a wallet warning" which is grammatically incorrect and doesn't make sense in the context of Bitcoin. A more appropriate translation would be "Upozorenje o stvaranju novčanika" which means "Wallet creation warning".
+YES  
+The translation "Stvorite upozorenje novčanika" is incorrect. "Stvorite" is the imperative plural form of "to create," which is inappropriate here as the phrase is a noun phrase, not a command. The correct translation for "Create wallet warning" (as a noun phrase, e.g., a dialog title) would be:
 
-Upozorenje o stvaranju novčanika
+"Upozorenje o stvaranju novčanika"
 ```
 
 ```
         <source>The configuration file could not be opened.</source>
         <translation>Konfiguracijski falj nije bilo moguce otvoriti.</translation>
     
-YES, The translation is problematic because it uses the English word "falj" instead of the Bosnian word for "file".
-The correct translation is: Konfiguracijski fajl nije bilo moguće otvoriti.
+YES  
+There is a spelling mistake in the word "falj" which should be "fajl" in Bosnian. Also, the phrase "nije bilo moguće otvoriti" is slightly awkward; a more natural phrasing is "nije se mogao otvoriti" (if referring to the file, masculine noun) or "nije bilo moguće otvoriti" is understandable but less common.
+
+Correct translation:  
+Konfiguracijski fajl se nije mogao otvoriti.
 ```
 </details>

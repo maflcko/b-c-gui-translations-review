@@ -10,111 +10,67 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 
 
 ```
-        <source>Enter address or label to search</source>
-        <translation>చిరునామా లేదా ఏదైనా పేరును వెతకండి</translation>
-    
-YES: The Telugu translation is inaccurate. The word "label" is translated as "any name" which is not the intended meaning. In the context of Bitcoin, "label" refers to a user-defined identifier for an address.
-
-Correct translation: చిరునామా లేదా లేబుల్‌ను వెతకండి
-```
-
-```
         <source>Copy Label</source>
         <translation>కాపీ  ఉల్లాకు</translation>
     
-YES, The translation is incorrect. The word "ఉల్లాకు" (ullaku) is not the correct Telugu word for "label". The correct word for "label" in this context would be "లేబుల్" (label) or "పేరు" (peru).
+YES
+The translated phrase "కాపీ  ఉల్లాకు" has an extra space between the words and "ఉల్లాకు" is incorrect for "Label." The correct translation for "Copy Label" should be "లేబుల్ కాపీ చేయి" or simply "లేబుల్ కాపీ" without extra spaces.
 
-NO
-```
-
-```
-        <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <extracomment>An error message. %1 is a stand-in argument for the name of the file we attempted to save to.</extracomment>
-        <translation>చిరునామా పట్టికను %1 లోనికి ప్రోదుపరుచుటలో లోపము. మరుల ప్రయత్నించి చుడండి.</translation>
-    
-YES, The translation uses an inappropriate word for "save" which is "ప్రొదుపరుచుట" (prodhuparuchuṭa). The correct word for "save" in this context would be "సేవ్ చేయుట" (sēv cēyuṭa) or "భద్రపరచుట" (bhadraparachūṭa).
-The translation also uses a slightly awkward phrasing for "Please try again", which is "మరుల ప్రయత్నించి చుడండి" (marula prayatnin̄ci cuḍaṇḍi). A more natural phrasing would be "దయచేసి మళ్ళీ ప్రయత్నించండి" (dayacēsi maḷḷī prayatnin̄caṇḍi).
-
-Here is the corrected translation:
-<translation>చిరునామా జాబితాను %1 కు సేవ్ చేయడంలో లోపం జరిగింది. దయచేసి మళ్ళీ ప్రయత్నించండి.</translation>
+Correct translation:
+లేబుల్ కాపీ
 ```
 
 ```
         <source>Label</source>
         <translation>ఉల్లాకు</translation>
     
-YES, The Telugu word "ఉల్లాకు" (ullaku) is not a standard or recognized word. It seems like a nonsensical or misspelled word. The correct translation for "Label" in the context of Bitcoin or general use is "లేబుల్" (label) or "పేరు" (peru - meaning name/tag).
+YES  
+The Telugu word "ఉల్లాకు" means "bay leaf," which is incorrect in this context. The English word "Label" should be translated as "లేబుల్" or "లేబుల్ పేరు" depending on context, but typically "లేబుల్" is accepted in technical contexts.
 
-NO
+Correct translation:  
+లేబుల్
 ```
 
 ```
         <source>(no label)</source>
         <translation>( ఉల్లాకు లేదు )</translation>
     
-YES, The Telugu translation is grammatically incorrect and does not convey the intended meaning. The word "ఉల్లాకు" is not a standard Telugu word and seems to be a misspelling or an invented word. The intended meaning of "(no label)" in the context of Bitcoin transactions would typically refer to a transaction that hasn't been assigned a user-defined label or description. A more appropriate translation would be "(లేబుల్ లేదు)" which means "(no label)".
+YES
+The translation contains unnecessary spaces inside the parentheses, which is not typical formatting. Also, the Telugu phrase "ఉల్లాకు లేదు" is incorrect for "no label." The correct phrase is "లేబుల్ లేదు."
 
+Correct translation:
 (లేబుల్ లేదు)
-```
-
-```
-        <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>మీరు ఖచ్చితంగా మీ జోలెని సంకేతపరచాలని కోరుకుంటున్నారా?</translation>
-    
-YES - The translation uses the word "జోలెని" which means "bag" or "pouch", instead of "wallet". The correct translation for "wallet" in this context is "వాలెట్".
-
-మీరు ఖచ్చితంగా మీ వాలెట్‌ను సంకేతపరచాలని కోరుకుంటున్నారా?
-```
-
-```
-        <source>Wallet encrypted</source>
-        <translation>జోలె సంకేతపరబడింది</translation>
-    
-YES, The Telugu translation is incorrect. "Wallet encrypted" translates to "వాలెట్ గుప్తీకరించబడింది" in Telugu. The provided translation "జోలె సంకేతపరబడింది" means "The basket is encrypted".
-
-Correct translation: వాలెట్ గుప్తీకరించబడింది
 ```
 
 ```
         <source>Your wallet is now encrypted. </source>
         <translation>cheraveyu chirunama</translation>
     
-YES, The translation is inaccurate and does not convey the meaning of the source text. The source text is "Your wallet is now encrypted." and the translation "cheraveyu chirunama" is nonsensical in Telugu.
-
-Correct translation: మీ వాలెట్ ఇప్పుడు ఎన్‌క్రిప్ట్ చేయబడింది.
-```
-
-```
-        <source>Wallet encryption failed</source>
-        <translation>జోలె సంకేతపరచడం విఫలమయ్యింది</translation>
-    
-YES, The translation is not accurate. The word "జోలె" means "cradle" which is not related to "wallet". The correct translation for "wallet" in Telugu is "పర్సు".
-The correct translation is: పర్సు గుప్తీకరణ విఫలమైంది
+YES  
+The translation "cheraveyu chirunama" does not correspond to the English source "Your wallet is now encrypted." It appears to be unrelated or nonsensical in Telugu. A correct translation would be:  
+మీ వాలెట్ ఇప్పుడు గుప్తీకరించబడింది.
 ```
 
 ```
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
         <translation>lopali tappidam valla mee yokka wallet encryption samapthamu avaledu</translation>
     
-YES - The translation uses an incorrect word for "wallet" ("lopali tappidam" which means "inside lost") and the word for "failed" ("samapthamu avaledu" which means "did not succeed"). The correct translation for "wallet encryption failed" is "Wallet encryption విఫలమైంది".
+YES  
+The translation is problematic. It contains transliteration and informal language that do not accurately or clearly convey the meaning of the source sentence in Telugu. It also omits some parts of the original meaning and lacks proper grammar and punctuation.
 
-NO
-```
-
-```
-        <source>Banned Until</source>
-        <translation>వరకు నిషేధించబడింది</translation>
-    
-UNK_LANG
+Correct translation:  
+వాలెట్ గూఢలిపి లోపానికి లోనయ్యింది. మీ వాలెట్ గూఢలిపి చేయబడలేదు.
 ```
 
 ```
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation>సెట్టింగ్‌ల ఫైల్ 1 %1 పాడై ఉండవచ్చు లేదా చెల్లదు</translation>
     
-YES, The translation is problematic because the format specifier '%1' has been placed after the word "ఫైల్" instead of before it. This also results in a grammatical error in the Telugu sentence.
+YES  
+The position of the placeholder %1 is incorrect in the translation, and the sentence lacks proper punctuation. Also, the wording can be improved for clarity and naturalness in Telugu.  
 
-Correct translation: సెట్టింగ్‌ల ఫైల్ %1 పాడై ఉండవచ్చు లేదా చెల్లదు.
+Correct translation:  
+సెట్టింగ్‌ల ఫైల్ %1 పాడై ఉండవచ్చు లేదా చెల్లని ఉంటుంది.
 ```
 
 ```
@@ -122,9 +78,10 @@ Correct translation: సెట్టింగ్‌ల ఫైల్ %1 పాడ
         <extracomment>Peer connection type that relays all network information.</extracomment>
         <translation>పూర్తిగా  ఏర్పరచుట</translation>
     
-YES, The translation for "Full Relay" is not accurate in the context of Bitcoin. The Telugu phrase "పూర్తిగా ఏర్పరచుట" means "fully forming" or "fully establishing," which does not convey the meaning of relaying network information. The correct translation should reflect the act of relaying or forwarding all network information.
+YES  
+The translation "పూర్తిగా ఏర్పరచుట" means "fully create" or "fully set up," which is incorrect in this context. The source refers to a "Full Relay," a peer connection type that relays all network information. A more accurate translation in Telugu would convey the meaning of "Full Relay" as "పూర్తి రీలే" or "పూర్తి రీలే క‌న్నెక్ష‌న్" depending on formality. A suitable and concise translation is:
 
-Correct translation: నెట్‌వర్క్ సమాచారాన్ని పూర్తిగా ఫార్వార్డ్ చేయుట
+పూర్తి రీలే
 ```
 
 ```
@@ -132,72 +89,52 @@ Correct translation: నెట్‌వర్క్ సమాచారాన్�
         <extracomment>Peer connection type that relays network information about blocks and not transactions or addresses.</extracomment>
         <translation>ఏర్పాటు చేయుటను నిరోధించండి</translation>
     
-YES, the translation is incorrect and does not convey the meaning of the source text. The source text "Block Relay" refers to a method of relaying information about blocks on the Bitcoin network. The provided translation "ఏర్పాటు చేయుటను నిరోధించండి" translates to "Prevent establishing," which is completely unrelated to the context.
+YES  
+The translation "ఏర్పాటు చేయుటను నిరోధించండి" means "Prevent arrangement" or "Stop organizing," which does not convey the meaning of "Block Relay." In the Bitcoin context, "Block Relay" refers to relaying or forwarding block information in the network. A more accurate Telugu translation would be:  
 
-NO
-```
+"బ్లాక్ రీలే"  
 
-```
-        <source>Feeler</source>
-        <extracomment>Short-lived peer connection type that tests the aliveness of known addresses.</extracomment>
-        <translation>అనుభూతి</translation>
-    
-YES. The translation of "Feeler" as "అనుభూతి" (Anubhūti) is inaccurate in the context of Bitcoin networking. "Anubhūti" means "feeling" or "experience" in Telugu, which is not relevant here. The extarcomment clarifies that "Feeler" is a type of peer connection that tests aliveness. A more accurate translation would reflect this testing or probing nature.
+or if transliteration is to be avoided and a descriptive translation preferred:  
 
-Correct translation: **పరీక్షించేది** (Parīkṣin̄cēdi) - This translates to "tester" or "one that tests," which fits the context of a connection type that tests the aliveness of known addresses.
-```
+"బ్లాక్ ప్రసారం"  
 
-```
-        <source>About Qt</source>
-        <translation>గురించి  Qt</translation>
-    
-YES
-The Telugu word "గురించి" (gurinchi) means "about". However, there is an extra space between "గురించి" and "Qt".
+"రివే" as "relay" is often used as "రీలే" or "ప్రసారం" (broadcast/relay). So the concise, understandable translation would be:  
 
-Correct translation: గురించి Qt
+**Correct translation:**  
+<translation>బ్లాక్ రీలే</translation>
 ```
 
 ```
         <source>Create a new wallet</source>
         <translation>&lt;div&gt;&lt;/div&gt;</translation>
     
-YES. The translation is completely missing the meaning of the source text and contains extraneous HTML tags.
-Correct translation: కొత్త వాలెట్ ను సృష్టించండి
+YES
+The translation is empty and does not convey the original meaning "Create a new wallet." It should be translated appropriately into Telugu.
+
+Correct translation:
+కొత్త వాలెట్ సృష్టించండి
 ```
 
 ```
         <source>Wallet:</source>
         <translation>ధనమును తీసుకొనిపోవు సంచి</translation>
     
-YES, The translation is inaccurate and does not convey the intended meaning in the context of Bitcoin. The Telugu translation provided means "money taking bag" which is not the correct term for a Bitcoin wallet.
+YES  
+The translation "ధనమును తీసుకొనిపోవు సంచి" means "a wallet that does not take money away," which is incorrect and misleading for "Wallet:" in the Bitcoin context. The correct translation should simply refer to a "wallet" (as in a Bitcoin wallet), for example:  
 
-Correct translation: వాలెట్
+Correct translation:  
+వాలెట్:
 ```
 
 ```
         <source>Backup wallet to another location</source>
         <translation>మరొక ప్రదేశానికి జోలెను బ్యాకప్ చెయండి</translation>
     
-YES, The translation is problematic because "address" is translated as "జోలె" (jole), which means "cradle" or "hammock" in Telugu, instead of a Bitcoin wallet address.
+YES  
+The Telugu translation uses the word "జోలె" which is incorrect in this context. The correct word for "wallet" in Telugu is "పర్సు" or "వాలెట్". Also, "బ్యాకప్ చెయండి" should be "బ్యాకప్ చేయండి".  
 
-The correct translation should be:
-<translation>మరొక ప్రదేశానికి వాలెట్‌ను బ్యాకప్ చేయండి</translation>
-```
-
-```
-        <source>Backup Wallet…</source>
-        <translation>బ్యాకప్ వాలెట్...</translation>
-    
-UNK_LANG
-```
-
-```
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>చెల్లింపులను అభ్యర్థించండి (QR కోడ్‌లు మరియు బిట్‌కాయిన్‌లను ఉత్పత్తి చేస్తుంది: URIలు)</translation>
-    
-YES, The translation has an error. The phrase "bitcoin: URIs" is translated as "బిట్‌కాయిన్‌లను ఉత్పత్తి చేస్తుంది: URIలు" which means "produces bitcoins: URIs". The word "produces" should be "generates" as in the source text. Also, the source text says "generates QR codes and bitcoin: URIs" but the translation says "produces bitcoins: URIs".
-
-NO
+Correct translation:  
+మరొక ప్రదేశానికి వాలెట్ బ్యాకప్ చేయండి
 ```
 
 ```
@@ -205,54 +142,45 @@ NO
         <translation>వర్తమానము</translation>
     
 YES
-The translation of "Information" to "వర్తమానము" (Vartamānamu) is incorrect in this context. "వర్తమానము" means "present" or "current" and does not convey the meaning of "information." In the context of Bitcoin, the appropriate Telugu word for "Information" would be "సమాచారం" (Samācāraṁ).
+The translation "వర్తమానము" means "current" or "present," which is not an accurate translation for "Information."
 
-Correct translation: సమాచారం
+Correct translation:
+సమాచారం
 ```
 
 ```
         <source>Sending addresses</source>
         <translation>చిరునామా పంపుతోంది</translation>
     
-YES, the translation is problematic because it is grammatically incorrect and does not accurately convey the meaning of the source text. The source text "Sending addresses" refers to multiple addresses from which Bitcoin is being sent, while the translation "చిరునామా పంపుతోంది" translates to "sending address" (singular) and implies the act of sending an address rather than the addresses from which funds are being sent.
+YES  
+The translation "చిరునామా పంపmoqda" ("Sending addresses") is incorrect because "చిరునామా పంపుతోంది" translates to "Address is sending" or "The address is sending," which is grammatically wrong and does not convey "Sending addresses" in the correct plural and noun form context. In the Bitcoin context, "Sending addresses" refers to addresses involved in sending transactions, so it should be plural and appropriately noun form.
 
-The correct translation should be "పంపే చిరునామాలు" which means "sending addresses".
-
-NO
-```
-
-```
-        <source>Open a bitcoin: URI</source>
-        <translation>బిట్‌కాయిన్‌ను తెరవండి: URI</translation>
-    
-YES, The translation is problematic because it misinterprets the English phrase "Open a bitcoin: URI". It translates "bitcoin" as a verb ("open bitcoin") instead of a noun referring to the cryptocurrency.
-
-The correct translation should be:
-<translation>ఒక బిట్‌కాయిన్: URIని తెరవండి</translation>
-```
-
-```
-        <source>Restore a wallet from a backup file</source>
-        <extracomment>Status tip for Restore Wallet menu item</extracomment>
-        <translation>బ్యాకప్ ఫైల్ నుండి వాలెట్‌ను పునరుద్ధరించండి</translation>
-    
-UNK_LANG
+Correct translation:  
+"పంపుతున్న చిరునామాలు"
 ```
 
 ```
         <source>(un)select all</source>
         <translation>ఎంచుకున్నవన్నీ తొలగించు</translation>
     
-YES, The translation is problematic as it only translates "unselect all" and misses the "select all" part. The translation also uses "తొలగించు" which means "delete" instead of "unselect".
-(un)select all: అన్నీ ఎంచుకోండి / ఎంచుకున్నవన్నీ తీసివేయండి
+YES  
+The source text "(un)select all" means to select all or deselect all items. The provided Telugu translation "ఎంచుకున్నవన్నీ తొలగించు" means "delete all selected," which is incorrect and changes the meaning.
+
+Correct translation:  
+"(un)select all" -> "అన్నీ ఎంచుకో లేదా ఎంచుకోక పో"
+
+Alternatively, a shorter accurate option could be:  
+"అన్నీ ఎంచుకో/రద్దు"
 ```
 
 ```
         <source>(no label)</source>
         <translation>( ఉల్లాకు లేదు )</translation>
     
-YES, The Telugu translation is grammatically incorrect and does not convey the intended meaning. The word "ఉల్లాకు" is not a standard Telugu word and seems to be a misspelling or an invented word. The intended meaning of "(no label)" in the context of Bitcoin transactions would typically refer to a transaction that hasn't been assigned a user-defined label or description. A more appropriate translation would be "(లేబుల్ లేదు)" which means "(no label)".
+YES
+The translation contains unnecessary spaces inside the parentheses, which is not typical formatting. Also, the Telugu phrase "ఉల్లాకు లేదు" is incorrect for "no label." The correct phrase is "లేబుల్ లేదు."
 
+Correct translation:
 (లేబుల్ లేదు)
 ```
 
@@ -260,61 +188,66 @@ YES, The Telugu translation is grammatically incorrect and does not convey the i
         <source>change from %1 (%2)</source>
         <translation>నుండి మార్చండి %1 (%2)</translation>
     
-YES, The Telugu translation is incorrect and does not convey the intended meaning of the English source text. The phrase "నుండి మార్చండి" literally translates to "change from" but in this context, it's likely referring to "change received" or "change amount".
+YES  
+The Telugu translation "నుండి మార్చండి %1 (%2)" is incorrect. It literally means "change from %1 (%2)" but the word order and verb usage is unnatural and incorrect in this context. The phrase "change from %1 (%2)" in Bitcoin context likely means "change amount from %1 (%2)" and should preserve the prepositional phrase "from %1 (%2)" properly.
 
-Correct translation: %1 (%2) నుండి వచ్చిన మార్పు
-```
+A more accurate translation would be:  
+"%1 (%2) నుండి మార్పు"
 
-```
-        <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation>డైరెక్టరీ ఇప్పటికే ఉంది. %1 మీరు ఇక్కడ కొత్త డైరెక్టరీని సృష్టించాలనుకుంటే జోడించండి.</translation>
-    
-YES - The translation is grammatically awkward and the word order is incorrect. The '%1' format specifier should be placed before the text it modifies.
-
-Correct Translation: డైరెక్టరీ ఇప్పటికే ఉంది. మీరు ఇక్కడ కొత్త డైరెక్టరీని సృష్టించాలనుకుంటే %1 జోడించండి.
+Here, "నుంచి" means "from" and "మార్పు" means "change" as a noun, fitting better the Bitcoin terminology usage.
 ```
 
 ```
         <source>Prune block storage to</source>
         <translation>స్టోరేజ్‌ను కత్తిరించు  బ్లాక్ చేయండి</translation>
     
-YES. The translation is grammatically incorrect and the word order is unnatural for Telugu. The intended meaning is likely "Prune block storage".
+YES
+The translation is awkward and incorrect. The phrase "Prune block storage to" refers to reducing or trimming the storage used for blocks, not "cutting storage block" literally. The current translation "స్టోరేజ్‌ను కత్తిరించు  బ్లాక్ చేయండి" is not fluent and has an extra space before "బ్లాక్". A better translation would be:
 
-NO. The translation is grammatically incorrect and the word order is unnatural for Telugu. The intended meaning is likely "Prune block storage".
-The correct translation should be: "బ్లాక్ స్టోరేజ్‌ను తగ్గించండి" (block storage-nu tagginchandi) or "బ్లాక్ స్టోరేజ్‌ను కత్తిరించండి" (block storage-nu kattirinchandi). The provided translation "స్టోరేజ్‌ను కత్తిరించు బ్లాక్ చేయండి" (storage-nu kattirinchu block cheyandi) translates to "Prune storage, block it" which is not the intended meaning.
+స్టోరేజ్‌ను కుదించు బ్లాక్స్‌కు
 ```
 
 ```
         <source>Could not read setting "%1", %2.</source>
         <translation>సెట్టింగ్ "%1", %2 చదవడం సాధ్యపడలేదు, .</translation>
     
-YES, The translation is problematic because it adds an extra comma at the end. The correct translation should be: సెట్టింగ్ "%1", %2 చదవడం సాధ్యపడలేదు.
+YES
+There is an extraneous comma and period after %2 in the translation. These punctuation marks do not appear in the source and are incorrect here.
+
+Correct translation:
+సెట్టింగ్ "%1", %2 చదవడం సాధ్యపడలేదు.
 ```
 
 ```
         <source>Wallet:</source>
         <translation>ధనమును తీసుకొనిపోవు సంచి</translation>
     
-YES, The translation is inaccurate and does not convey the intended meaning in the context of Bitcoin. The Telugu translation provided means "money taking bag" which is not the correct term for a Bitcoin wallet.
+YES  
+The translation "ధనమును తీసుకొనిపోవు సంచి" means "a wallet that does not take money away," which is incorrect and misleading for "Wallet:" in the Bitcoin context. The correct translation should simply refer to a "wallet" (as in a Bitcoin wallet), for example:  
 
-Correct translation: వాలెట్
+Correct translation:  
+వాలెట్:
 ```
 
 ```
         <source>Label</source>
         <translation>ఉల్లాకు</translation>
     
-YES, The Telugu word "ఉల్లాకు" (ullaku) is not a standard or recognized word. It seems like a nonsensical or misspelled word. The correct translation for "Label" in the context of Bitcoin or general use is "లేబుల్" (label) or "పేరు" (peru - meaning name/tag).
+YES  
+The Telugu word "ఉల్లాకు" means "bay leaf," which is incorrect in this context. The English word "Label" should be translated as "లేబుల్" or "లేబుల్ పేరు" depending on context, but typically "లేబుల్" is accepted in technical contexts.
 
-NO
+Correct translation:  
+లేబుల్
 ```
 
 ```
         <source>(no label)</source>
         <translation>( ఉల్లాకు లేదు )</translation>
     
-YES, The Telugu translation is grammatically incorrect and does not convey the intended meaning. The word "ఉల్లాకు" is not a standard Telugu word and seems to be a misspelling or an invented word. The intended meaning of "(no label)" in the context of Bitcoin transactions would typically refer to a transaction that hasn't been assigned a user-defined label or description. A more appropriate translation would be "(లేబుల్ లేదు)" which means "(no label)".
+YES
+The translation contains unnecessary spaces inside the parentheses, which is not typical formatting. Also, the Telugu phrase "ఉల్లాకు లేదు" is incorrect for "no label." The correct phrase is "లేబుల్ లేదు."
 
+Correct translation:
 (లేబుల్ లేదు)
 ```
 
@@ -322,8 +255,10 @@ YES, The Telugu translation is grammatically incorrect and does not convey the i
         <source>(no label)</source>
         <translation>( ఉల్లాకు లేదు )</translation>
     
-YES, The Telugu translation is grammatically incorrect and does not convey the intended meaning. The word "ఉల్లాకు" is not a standard Telugu word and seems to be a misspelling or an invented word. The intended meaning of "(no label)" in the context of Bitcoin transactions would typically refer to a transaction that hasn't been assigned a user-defined label or description. A more appropriate translation would be "(లేబుల్ లేదు)" which means "(no label)".
+YES
+The translation contains unnecessary spaces inside the parentheses, which is not typical formatting. Also, the Telugu phrase "ఉల్లాకు లేదు" is incorrect for "no label." The correct phrase is "లేబుల్ లేదు."
 
+Correct translation:
 (లేబుల్ లేదు)
 ```
 
@@ -331,17 +266,21 @@ YES, The Telugu translation is grammatically incorrect and does not convey the i
         <source>Label</source>
         <translation>ఉల్లాకు</translation>
     
-YES, The Telugu word "ఉల్లాకు" (ullaku) is not a standard or recognized word. It seems like a nonsensical or misspelled word. The correct translation for "Label" in the context of Bitcoin or general use is "లేబుల్" (label) or "పేరు" (peru - meaning name/tag).
+YES  
+The Telugu word "ఉల్లాకు" means "bay leaf," which is incorrect in this context. The English word "Label" should be translated as "లేబుల్" or "లేబుల్ పేరు" depending on context, but typically "లేబుల్" is accepted in technical contexts.
 
-NO
+Correct translation:  
+లేబుల్
 ```
 
 ```
         <source>(no label)</source>
         <translation>( ఉల్లాకు లేదు )</translation>
     
-YES, The Telugu translation is grammatically incorrect and does not convey the intended meaning. The word "ఉల్లాకు" is not a standard Telugu word and seems to be a misspelling or an invented word. The intended meaning of "(no label)" in the context of Bitcoin transactions would typically refer to a transaction that hasn't been assigned a user-defined label or description. A more appropriate translation would be "(లేబుల్ లేదు)" which means "(no label)".
+YES
+The translation contains unnecessary spaces inside the parentheses, which is not typical formatting. Also, the Telugu phrase "ఉల్లాకు లేదు" is incorrect for "no label." The correct phrase is "లేబుల్ లేదు."
 
+Correct translation:
 (లేబుల్ లేదు)
 ```
 
@@ -349,32 +288,32 @@ YES, The Telugu translation is grammatically incorrect and does not convey the i
         <source>Label</source>
         <translation>ఉల్లాకు</translation>
     
-YES, The Telugu word "ఉల్లాకు" (ullaku) is not a standard or recognized word. It seems like a nonsensical or misspelled word. The correct translation for "Label" in the context of Bitcoin or general use is "లేబుల్" (label) or "పేరు" (peru - meaning name/tag).
+YES  
+The Telugu word "ఉల్లాకు" means "bay leaf," which is incorrect in this context. The English word "Label" should be translated as "లేబుల్" or "లేబుల్ పేరు" depending on context, but typically "లేబుల్" is accepted in technical contexts.
 
-NO
+Correct translation:  
+లేబుల్
 ```
 
 ```
         <source>Create a new wallet</source>
         <translation>&lt;div&gt;&lt;/div&gt;</translation>
     
-YES. The translation is completely missing the meaning of the source text and contains extraneous HTML tags.
-Correct translation: కొత్త వాలెట్ ను సృష్టించండి
-```
+YES
+The translation is empty and does not convey the original meaning "Create a new wallet." It should be translated appropriately into Telugu.
 
-```
-        <source>Backup Wallet</source>
-        <translation>బ్యాకప్ వాలెట్</translation>
-    
-UNK_LANG
+Correct translation:
+కొత్త వాలెట్ సృష్టించండి
 ```
 
 ```
         <source>Verifying blocks…</source>
         <translation>బ్లాక్‌లను ధృవీకరిపబచున్నవి…</translation>
     
-YES, The translation is not accurate. The word "ధృవీకరిపబచున్నవి" is not a standard Telugu word for "verifying". The correct word should be "ధృవీకరిస్తున్నారు".
+YES  
+The Telugu word "ధృవీకరిపబచున్నవి" is incorrect and does not exist in standard usage. The correct term for "Verifying" in this context should be "ధృవీకరించబడుతోంది" or "ధృవీకరిస్తోంది" depending on the style. Also, "blocks" is correctly translated as "బ్లాక్‌లను" (plural accusative).  
 
-YES, బ్లాక్‌లను ధృవీకరిస్తున్నారు…
+Correct translation:  
+బ్లాక్‌లను ధృవీకరిస్తోంది…
 ```
 </details>

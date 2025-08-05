@@ -13,170 +13,159 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Right-click to edit address or label</source>
         <translation>I-right click ban alilan ing address o label</translation>
     
-YES. The translation is inaccurate and does not convey the intended meaning. The word "ban" means "to ban" or "prohibit," which is the opposite of what "edit" means.
-
-Correct translation: "I-right click ban alilan ing address o label" should be "I-right click para alilan ing address o label".
+UNK_LANG, not familiar with the Kapampangan language 'pam'.
 ```
 
 ```
         <source>New</source>
         <translation>Bayu</translation>
     
-YES, the translation is problematic. The Pam word 'Bayu' does not accurately translate the English word 'New' in the context of Bitcoin. It seems to be a personal name or a completely unrelated word.
-
-The correct translation for "New" in this context would depend on the specific nuance intended. However, without more context, a general translation for "New" in Pam that could fit a Bitcoin context (e.g., new transaction, new address) is not readily available and 'Bayu' is not a suitable option. If the intent is to convey something being newly created or introduced, a word like "Baru" (which is often used in Malay and Indonesian for "new" and might have cognates or similar words in Pam depending on its linguistic family) would be more appropriate, but confirmation of this is needed. Given the lack of direct translation and the potential for misinterpretation, it's best to avoid 'Bayu'.
-
-Correct translation: **UNK_LANG** (as a suitable translation for "New" in a Bitcoin context in Pam is not identifiable without further linguistic knowledge of Pam).
+UNK_LANG, not familiar with the Kapampangan language 'pam'.
 ```
 
 ```
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>Kopyan me ing makalage address king system clipboard</translation>
     
-YES, The translation is problematic due to grammatical errors and awkward phrasing in the target language (Pam). The word "me" is used incorrectly, and the sentence structure is not natural.
+YES  
+The translation contains minor issues: "address" should be translated or adapted properly if the language has a specific term, otherwise it can stay as is. "Kopyan me ing makalage address king system clipboard" is somewhat understandable but slightly awkward. The phrase "makalage" seems to be "selected" or "highlighted," but "currently selected" might be better translated more precisely.
 
-The correct translation should be: "Kopyan ing menaus a address king system clipboard"
+Also, consider the phrase "king system clipboard" – "king" meaning "in" or "to" is correct, but consistent spacing should be checked.
+
+A more precise translation would be:  
+"Kopyan deng makalage a address king system clipboard"  
+("Copy the selected address to the system clipboard")
+
+If "address" is commonly used as is, it can remain.
+
+Corrected translation:  
+Kopyan deng makalage a address king system clipboard
 ```
 
 ```
         <source>Delete the currently selected address from the list</source>
         <translation>Ilako me ing kasalungsungang makalage address king listaan</translation>
     
-YES, the translation is problematic. The source text "Delete the currently selected address from the list" has been translated to "Ilako me ing kasalungsungang makalage address king listaan". The verb "makalage" (which seems to be used for "selected") is not a standard or commonly used word in Kapampangan. The more appropriate translation for "selected" in this context would be "pilî" or "pikuan".
+YES  
+The translation incorrectly mixes languages and has untranslated or unclear parts ("Ilako me ing kasalungsungang makalage" does not correspond well to the source text). The word "address" and "listaan" seem borrowed from English or Tagalog but may be acceptable in context if they are common loanwords in 'pam'. However, the phrase lacks clarity and correctness.
 
-Correct translation: "Ilako me ing kasalungsungang pilîng address king listaan"
+A better translation in Kapampangan (pam) would be:  
+"Burakan ya ing makalage a address king listaan"  
+(This means: "Delete the currently selected address from the list")
 ```
 
 ```
         <source>Export the data in the current tab to a file</source>
         <translation>Export me ing data king tab a ini anting metung a file</translation>
     
-YES. The translation is nonsensical and contains no recognizable words from any known language. The format specifiers are also missing from the translation.
-Correct translation: "Export the data in the current tab to a file"
+UNK_LANG, not familiar with the Kapampangan language 'pam'.
 ```
 
 ```
         <source>Export</source>
         <translation>IExport</translation>
     
-YES, The translation is incorrect and should be "Eksport".
-YES, Eksport
+YES
+The translation "IExport" incorrectly includes a capital "I" attached to the English word "Export," which is not appropriate for 'pam' (Kapampangan) or a proper translation. The correct translation for "Export" in Kapampangan is simply "I-export," using a hyphen and lowercase 'i', which is the common verb prefix in Kapampangan.
+
+Correct translation:
+I-export
 ```
 
 ```
         <source>Choose the address to send coins to</source>
         <translation>Mamili kang address a mamarlang coins</translation>
     
-YES - The translation is inaccurate and doesn't convey the intended meaning. "Mamarlang" does not mean "send to" in a way that makes sense in this context.
+YES
+The translation mixes English and 'pam' language words ("address" and "coins" are left untranslated), which is inconsistent and problematic. The phrase should be fully translated into Kapampangan ('pam' language), avoiding English words unless they are commonly used loanwords. Also, "mamarlang" seems to mean "to send," but the phrase structure could be more natural.
 
-Correct translation: "Piliin ang address na padadalhan ng coins"
-```
+Correct translation:
+"Pili kang address a padalang gagamit deng coins"
 
-```
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Oreni ring Bitcoin address mu king pamamarla karing bayad. Lawan mong masalese ring ulaga ra ampon ing address na ning mananggapan bayad bayu ka mamarla.</translation>
-    
-YES, The translation is problematic. The translation uses a verb "king pamamarla" (for sending) which is not grammatically correct in the context of the sentence. It should be "para king pamamarla" (for sending).
-
-The correct translation is:
-Oreni ring Bitcoin address mu para king pamamarla karing bayad. Lawan mong masalese ring ulaga ra ampon ing address na ning mananggapan bayad bayu ka mamarla.
+(Note: If "address" and "coins" have no direct translation, ensure consistent use of loanwords and proper syntax.)
 ```
 
 ```
         <source>(no label)</source>
         <translation>(alang label)</translation>
     
-YES: The translation does not accurately convey the meaning of the source text. The source text "(no label)" implies the absence of a label, while the translation "(alang label)" suggests the presence of a label named "alang", which is incorrect and potentially misleading in a Bitcoin context.
-(walay label)
-```
-
-```
-        <source>Enter passphrase</source>
-        <translation>Mamalub kang passphrase</translation>
-    
 YES
-The word "mamalub" is likely a mistranslation or an invented word, as it doesn't appear to be a standard word in any commonly recognized language. The intended meaning is to "enter" or "input" a passphrase.
+The translation "(alang label)" is incorrect. In Kapampangan ('pam'), "no" is typically translated as "ala" or "alang" can be acceptable as a negation meaning "no" or "without." However, the phrase "(no label)" in this context means "(no label)" as in "no label assigned," so it should reflect "no" or "without" plus the word for "label" properly.
 
-Correct translation: **Mamalub kang passphrase** is an incorrect translation. A more appropriate translation would be **Maglagay ng passphrase**.
-```
+If "label" is borrowed, it might be okay, but "alang" should be corrected to "ala" which is more common for negation in Kapampangan.
 
-```
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>Kapabaluan: Istung in-encrypt me ing kekang wallet at meala ya ing passphrase na, ma-&lt;b&gt;ALA NO NGAN RING KEKANG BITCOINS&lt;/b&gt;</translation>
-    
-YES: The translation uses "Kapabaluan" which means "Knowledge" instead of "Warning". The correct translation for "Warning" would be "Babala".
-
-Correct translation: Babala: Istung in-encrypt me ing kekang wallet at meala ya ing passphrase na, ma-&lt;b&gt;ALA NO NGAN RING KEKANG BITCOINS&lt;/b&gt;!
+A better translation would be:
+(ala label)
 ```
 
 ```
         <source>Wallet encryption failed</source>
         <translation>Memali ya ing pamag-encrypt king wallet </translation>
     
-YES
-The word "Memali" is not a recognized word in the Tagalog language for "Wallet". The correct Tagalog word for wallet is "Wallet" or "Bolsa".
+YES  
+The translation contains extra trailing whitespace after "wallet" and the phrase "pamag-encrypt" is a partial anglicism mixed with local language, which might be acceptable depending on the usage, but the extra whitespace is definitely problematic. Also, the phrase could be more concise if the local term for "encryption" is used throughout.  
+
+Correct translation:  
 Memali ya ing pamag-encrypt king wallet
-Correct translation: Wallet ya ing pamag-encrypt king wallet or Bolsa ya ing pamag-encrypt king wallet
 ```
 
 ```
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
         <translation>Memali ya ing encryption uli na ning ausan dang internal error. E ya me-encrypt ing wallet yu.</translation>
     
-YES: The translation uses "Memali ya ing encryption uli" which roughly translates to "Wallet encryption has failed". However, the correct wording for "Wallet encryption failed" in the context of Bitcoin would be "E ya encrypti ing wallet", which means "The wallet has been encrypted". The original sentence states that the wallet was *not* encrypted, so the translation should reflect that. Additionally, "ausan dang internal error" is a literal translation of "due to an internal error", which can be improved for fluency.
+YES  
+The translation contains unnecessary English words ("encryption," "internal error," "wallet," "encrypt") mixed with 'pam' language, reducing clarity and naturalness. Also, the phrase structure is awkward and partially translated. A better translation should fully convey the message in the 'pam' language, avoid redundant English insertions, and maintain accuracy.
 
-Correct translation: "E ya encrypti ing wallet uli ka reng internal error. E ya me-encrypt ing wallet yu."
+Correct translation (suggested):  
+"Memali ya pagse kan ing wallet alang makasambut ning lekam a kamali. E ala ne me-encrypt ing wallet mu."
 ```
 
 ```
         <source>The supplied passphrases do not match.</source>
         <translation>E la mitutugma ring mibieng passphrase</translation>
     
-YES, The translation is problematic because it is not an accurate representation of the source text. The source text is in English, and the translation is in a language that does not appear to be 'pam' based on the provided output. Therefore, the language is unknown. UNK_LANG
+YES
+The translation is somewhat unclear and may contain grammatical issues. The phrase "do not match" should be clearly conveyed in the language. A more accurate translation would ensure the negative agreement is clear and the sentence is natural.
+
+Correct translation:  
+E la mitutugma ring mibie a passphrase
 ```
 
 ```
         <source>Wallet unlock failed</source>
         <translation>Memali ya ing pamag-unlock king wallet </translation>
     
-YES, The translation is problematic because it uses an incorrect word for "failed". The correct word for "failed" in this context would be "mali".
+YES  
+The translation has unnecessary trailing whitespace after "wallet". Also, the phrase "Memali ya ing pamag-unlock king wallet" mixes English "unlock" and "wallet" untranslated, which may be acceptable depending on borrowing, but ideally these terms should be either consistently translated or borrowed. However, since "pam" appears to use code-switching in technical contexts, this might be acceptable. Still, the extra space at the end is incorrect and should be removed.
 
-Correct translation: Memali ya ing pamag-unlock king wallet
-```
-
-```
-        <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>E ya istu ing passphrase a pepalub da para king wallet decryption</translation>
-    
-YES, The translation is problematic. It contains erroneous content and is not an accurate translation of the source English text. The provided 'pam' text is a garbled attempt at translation that doesn't convey the intended meaning of the original English sentence.
-
-Correct translation: Ing passphrase a miparas para king wallet decryption ay ali tutuk.
+Correct translation:  
+Memali ya ing pamag-unlock king wallet
 ```
 
 ```
         <source>Wallet passphrase was successfully changed.</source>
         <translation>Mi-alilan ne ing passphrase na ning wallet.</translation>
     
-YES - The translation is grammatically incorrect and does not convey the intended meaning. The phrase "Mi-alilan ne ing passphrase na ning wallet" translates to "The passphrase of the wallet was changed," but it's missing the word "successfully." The correct translation should indicate that the change was successful.
+YES  
+The translation does not correctly convey that the wallet passphrase was "successfully changed." The original English sentence indicates a completed action with success, whereas the translation provided seems incomplete or incorrect in meaning.
 
-NO - Wallet passphrase was successfully changed.
-```
-
-```
-        <source>Warning: The Caps Lock key is on!</source>
-        <translation>Kapabaluan: Makabuklat ya ing Caps Lock key!</translation>
-    
-YES: The translation contains erroneous content. The word "Kapabaluan" is not a valid word in Tagalog, and the phrase "Makabuklat ya ing Caps Lock key!" is also grammatically incorrect and nonsensical.
-
-The correct translation should be: "Babala: Naka-on ang Caps Lock key!"
+Correct translation:  
+Passphrase ning wallet ay na-alilan nang maayos.
 ```
 
 ```
         <source>Quit application</source>
         <translation>Tuknangan ing aplikasyon</translation>
     
-YES: The translation is inaccurate. The word "Tuknangan" in the target language means "support" or "help", not "quit". The correct translation for "Quit application" should be something like "Lumabas sa aplikasyon" or "Isara ang aplikasyon".
-UNK_LANG
+YES  
+The translation "Tuknangan ing aplikasyon" is inaccurate in the context of "Quit application." The correct translation should convey the action of exiting or closing the application, rather than "tuknangan" which is not appropriate here.  
+
+A better translation would be:  
+"Ubusan ing aplikasyon"  
+or  
+"Isarak ing aplikasyon"  
+
+Both mean "Quit application" or "Exit application" in Kapampangan (the 'pam' language).
 ```
 
 ```
@@ -184,563 +173,566 @@ UNK_LANG
         <translation>Gamit para king Tabs</translation>
     
 YES
-The translation is inaccurate. "Gamit para king Tabs" translates to "Use for Tabs" or "Tool for Tabs", which is not a correct translation of "Tabs toolbar". The context is Bitcoin, and "toolbar" refers to a bar of tools or commands.
+The translation "Gamit para king Tabs" appears to mix another language (likely Kapampangan, a language spoken in the Philippines) rather than 'pam' which is the code for Pampanga language (Kapampangan). However, considering pam is Kapampangan, the phrase is understandable but somewhat literal and not common for UI terms. Specifically, "Tabs toolbar" refers to a toolbar that contains tabs. A more accurate and natural translation in Kapampangan would be:
 
-NO
+"Toolbar da reng Tabs" 
+
+or
+
+"Toolbar ning Tabs"
+
+This keeps the English computer term "toolbar" (commonly used in localized computing contexts) combined with Kapampangan possessive construction and plural "Tabs." Alternatively, if "toolbar" is to be translated, it should be consistent and meaningful in Kapampangan.
+
+Hence the currently provided translation is somewhat literal and potentially unclear for users.
+
+Correct translation:
+Toolbar ning Tabs
 ```
 
 ```
         <source>Command-line options</source>
         <translation>Pipamilian command-line</translation>
     
-YES
-The translation is not accurate. "Pipamilian" is not a standard or understandable term in this context.
+YES  
+The translation has a word order issue and does not fully translate "Command-line options." The word "command-line" is left in English, and "Pipamilian" appears to be a partial or incorrect form for "options." In Kapampangan (pam), a more accurate translation would fully translate the phrase.
 
-Correct translation:
-Command-line options
+Correct translation:  
+"Pagpipamilian king command-line"  
+(or if "command-line" is kept as is, the phrase should still properly reflect "options" as "Pagpipamilian" or "Pipamilian" without stray spacing)
 ```
 
 ```
         <source>Last received block was generated %1 ago.</source>
         <translation>Ing tatauling block a metanggap,  me-generate ya %1 ing milabas</translation>
     
-YES - The translation is inaccurate and contains erroneous content. The sentence structure and word choice do not correctly convey the meaning of the original English sentence.
-Correct translation: Ing tauli tanggap a block, migawa ya %1 pa.</translation>
-```
+YES  
+The translation has spacing issues and some incorrect or unnatural phrasing. For example, "Ing tatauling block a metanggap," should be "Ing tahuling block a metanggap," (correct spelling for 'last'), and "me-generate ya %1 ing milabas" mixes English and local language elements awkwardly ("me-generate" is a direct borrowing and may not be correct or natural). A better phrasing would be fully native or clearer.
 
-```
-        <source>Information</source>
-        <translation>Impormasion</translation>
-    
-YES, The translation has a spelling mistake. The correct translation should be "Informasion".
-YES, Impormasion
+Correct translation:  
+Ing tahuling block a metanggap ya me-generate %1 ing milabas.
 ```
 
 ```
         <source>Up to date</source>
         <translation>Makatuki ya king aldo</translation>
     
-UNK_LANG
+YES  
+The translation "Makatuki ya king aldo" appears to be erroneous or nonsensical in the context of "Up to date." It does not correctly convey the meaning of being current or fully updated, which is what "Up to date" means in the context of Bitcoin software synchronization or status.
+
+A better 'pam' translation for "Up to date" would be:  
+**"Kasalukuyan o napapanahon"**
+
+(Note: Since 'pam' refers to Kapampangan, in which "Kasalukuyan" means current or up to date, this is a more appropriate translation.)
 ```
 
 ```
         <source>Copy amount</source>
         <translation>Kopyan ing alaga</translation>
     
-YES: The translation is incorrect. "Ing alaga" means "the care" or "the health" in Kapampangan, which is not related to "amount". The correct translation for "amount" in Kapampangan is "penaun" or "lakad". The correct translation for "copy" in this context would be "kopyan".
+YES  
+The translation "Kopyan ing alaga" is problematic. "Copy amount" in the Bitcoin context refers to copying the numeric value of an amount, not copying "alaga" which means "pet" or "care" in Kapampangan ('pam'). The word "alaga" is incorrect here.
 
-Correct translation: Kopyan ing penaun
+A more accurate translation would be:  
+"Kopyan ing halaga"  
+
+Here, "halaga" means "amount" or "value" in Kapampangan.
 ```
 
 ```
         <source>(no label)</source>
         <translation>(alang label)</translation>
     
-YES: The translation does not accurately convey the meaning of the source text. The source text "(no label)" implies the absence of a label, while the translation "(alang label)" suggests the presence of a label named "alang", which is incorrect and potentially misleading in a Bitcoin context.
-(walay label)
+YES
+The translation "(alang label)" is incorrect. In Kapampangan ('pam'), "no" is typically translated as "ala" or "alang" can be acceptable as a negation meaning "no" or "without." However, the phrase "(no label)" in this context means "(no label)" as in "no label assigned," so it should reflect "no" or "without" plus the word for "label" properly.
+
+If "label" is borrowed, it might be okay, but "alang" should be corrected to "ala" which is more common for negation in Kapampangan.
+
+A better translation would be:
+(ala label)
 ```
 
 ```
         <source>Edit receiving address</source>
         <translation>Alilan ya ing address king pamagpadala</translation>
     
-YES, The translation contains erroneous content. The verb "alilan" means "to buy" or "to sell" and is not appropriate in this context. The phrase "king pamagpadala" means "for sending" and is also not appropriate.
+YES  
+The translation mixes English ("address") with the target language and partially transliterates or uses borrowed words without clear adaptation. Also, it lacks clarity and may not accurately convey "Edit receiving address" in 'pam'. A more accurate translation should fully render the phrase in kapampangan, maintaining meaning and clarity.
 
-The correct translation should be:
-
-<translation>Bandal ya ing address</translation>
-```
-
-```
-        <source>Edit sending address</source>
-        <translation>Alilan ya ing address king pamagpadala</translation>
-    
-YES: The translation is not accurate and contains a grammatical error. The word "king" is unnecessary and makes the sentence grammatically incorrect.
-
-Correct translation: Alilan ya ing address para king pamagpadala
-```
-
-```
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Ing pepalub yung address "%1" ali ya katanggap-tanggap a Bitcoin address.</translation>
-    
-YES - The translation contains a grammatical error. The correct translation should use "a" instead of "ya" before "katanggap-tanggap".
-Ing pepalub yung address "%1" ali ya katanggap-tanggap a Bitcoin address.
+Correct translation:  
+"I-edit ing tanggapan a address"  
+(or, depending on local usage: "Editan ing address a tatanggap")
 ```
 
 ```
         <source>New key generation failed.</source>
         <translation>Memali ya ing pamangaua king key</translation>
     
-YES: The translation is inaccurate and doesn't convey the meaning of the source text. The word "ing" is a definite article in Kapampangan and "pamangaua" means "creation" or "generation". The preposition "king" is used instead of "ing" to refer to the key.
+YES  
+The translation "Memali ya ing pamangaua king key" does not accurately convey "New key generation failed." and contains an untranslated English word "key." Also, the grammar and word choice seem incorrect or confusing for the intended meaning.  
 
-The correct translation should be:
-"Generated key failed."
-Corrected translation: Ing key a banua me, dela."
+A better translation would be:  
+"Pamamugus ning bayung yabe e naki-palyari."  
+
+(This assumes 'pamangaua' relates to generation, 'ing' as a linker, 'key' should be properly translated or borrowed clearly. 'E naki-palyari' means 'has failed.')
 ```
 
 ```
         <source>version</source>
         <translation>bersion</translation>
     
-YES, The translation is incorrect. The correct translation for "version" is "bersiyon" in the context of Bitcoin terminology.
-bersiyon
+YES
+The translation "bersion" is incorrect and appears to be a typographical error or a misspelling of the English word "version." The correct translation should be the equivalent of "version" in the 'pam' language, but if 'pam' is closely related to Tagalog or Kapampangan, often loanwords are similar or the English word is used as-is. However, the misspelling with "b" instead of "v" is clearly incorrect.
+
+Correct translation:
+version
 ```
 
 ```
         <source>Command-line options</source>
         <translation>Pipamilian command-line</translation>
     
-YES
-The translation is not accurate. "Pipamilian" is not a standard or understandable term in this context.
+YES  
+The translation has a word order issue and does not fully translate "Command-line options." The word "command-line" is left in English, and "Pipamilian" appears to be a partial or incorrect form for "options." In Kapampangan (pam), a more accurate translation would fully translate the phrase.
 
-Correct translation:
-Command-line options
-```
-
-```
-        <source>Show only a tray icon after minimizing the window.</source>
-        <translation>Ipakit mu ing tray icon kaibat meng pelatian ing awang.</translation>
-    
-YES, The translation is inaccurate and does not convey the intended meaning of the source text. The phrase "pelatian ing awang" literally translates to "leave the space," which is not the correct way to express minimizing a window in this context.
-
-The correct translation should be:
-
-"Ipakit mu kabud ing icon keng tray kapag paliiti mu ya ing bintana."
-```
-
-```
-        <source>Minimize on close</source>
-        <translation>Palatian istung isara</translation>
-    
-YES, The translation is inaccurate and does not convey the intended meaning of "Minimize on close" in the context of Bitcoin. The translation seems to be a literal, word-for-word interpretation that doesn't make sense.
-
-Correct translation: Palahī ma pīni
+Correct translation:  
+"Pagpipamilian king command-line"  
+(or if "command-line" is kept as is, the phrase should still properly reflect "options" as "Pagpipamilian" or "Pipamilian" without stray spacing)
 ```
 
 ```
         <source>Unit to show amounts in:</source>
         <translation>Ing Unit a ipakit king alaga ning:</translation>
     
-YES - The translation is grammatically incorrect and nonsensical in the context of Bitcoin. The word "Ing" is a definite article in Kapampangan, but its placement and the subsequent phrasing "Unit a ipakit king alaga ning" do not form a coherent or meaningful phrase for "Unit to show amounts in."
+YES  
+The translation contains some unnecessary spacing issues ("Ing Unit a ipakit king alaga ning:"). Also, the translation does not correctly convey the intended meaning likely due to direct word substitution. A better translation would ensure that the concept "Unit to show amounts in:" (referring to units in which amounts are displayed, e.g., BTC, mBTC) is clearly expressed.  
 
-Correct translation:
-<translation>Unit a lalabas king beluan:</translation>
+A corrected version (assuming "unit" is untranslated or translated as "fungsi" or "unit" and "show amounts" is properly rendered):  
+
+Correct translation:  
+"Ing unit a gagamitin para ipakit ang halaga king:"  
+
+Note: If "pam" refers to Kapampangan (Pampanga language), this is a more natural phrasing.
 ```
 
 ```
         <source>The supplied proxy address is invalid.</source>
         <translation>Ing milageng proxy address eya katanggap-tanggap.</translation>
     
-YES - The translation uses "milageng" which means "miraculous" and is not appropriate in this context. The correct translation should convey that the address is invalid.
+YES  
+The translation contains a mix of Tagalog/Filipino ("Ing", "katanggap-tanggap") and is not in Kapampangan ('pam'). Also, "address" is not translated or adapted, and "proxy address" as a technical term should be carefully translated. The phrase means "The supplied proxy address is invalid," but "katanggap-tanggap" means "acceptable," which is the opposite meaning of "invalid." Therefore, the translation is incorrect both linguistically and semantically.
 
-Correct translation: Ing proxy address a mesadia ya basi ya basi.
+Correct translation in Kapampangan (pam):  
+"Ing ipinamigay a proxy address ali ya balu."  
+(or)  
+"Ing ipinamalakad a proxy address e ya balu."  
+
+"Ali ya balu" means "is not valid/invalid."
 ```
 
 ```
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Ing makaltong impormasion mapalyaring luma ne. Ing kekang wallet otomatiku yang mag-synchronize keng Bitcoin network istung mekakonekta ne king network, oneng ing prosesung ini ali ya pa kumpletu.</translation>
     
-YES - The translation incorrectly uses the word "makaltong" which means "bad" or "wrong" when the source intended "displayed". The correct translation for "displayed" in this context would be "pamakuan" or "impormasion a makalabas".
+YES
+The translation contains some spacing issues with repeated spaces and some minor phrasing inconsistencies that might affect clarity. Also, "istung mekakonekta ne king network" translates roughly to "when connected to the network," which could be more naturally phrased, and "ali ya pa kumpletu" is a bit informal and unclear.
 
-NO
-```
+A more natural and clear translation would be:
 
-```
-        <source>Your current spendable balance</source>
-        <translation>Ing kekang kasalungsungan balanse a malyari mung gastusan</translation>
-    
-UNK_LANG
+Ing makaltong impormasion mapalyaring luma ne. Ing kekang wallet otomatiku yang mag-synchronize keng Bitcoin network nung metung yang koneksion king network, alayu pa reng prosesung ini para kumpletu.
+
+This version maintains proper spacing, clearer phrasing, and conveys the meaning accurately.
 ```
 
 ```
         <source>Your current total balance</source>
         <translation>Ing kekang kasalungsungan kabuuang balanse</translation>
     
-YES, the translation is erroneous. The phrase "Ing kekang kasalungsungan kabuuang balanse" does not accurately translate "Your current total balance" in the context of Bitcoin. The words used appear to be from a different language, not related to Bitcoin terminology or standard Tagalog.
+YES  
+The translation uses Kapampangan (pam) language but the source text in English is "Your current total balance." The translation "Ing kekang kasalungsungan kabuuang balanse" correctly conveys "Your current total balance" meaning-wise but contains a spacing issue and a mixing of Kapampangan and Tagalog.
 
-A more appropriate translation in Tagalog for "Your current total balance" in a Bitcoin context would be:
+- "kabuuang" is Tagalog, while the rest is Kapampangan. For purity and consistency, either fully Kapampangan or Tagalog should be used.
+- "kasalungsungan" means "current" in Kapampangan.
+- "kabuuang" means "total" but is a Tagalog word.
+- "balanse" is borrowed from Spanish and is used in both languages.
 
-"Ang iyong kasalukuyang kabuuang balanse"
+A fully Kapampangan translation might be:
+
+"Ing kekang kasalungsungan kabuuan a balanse"
+
+or
+
+"Ing kekang kasalungsungan kabuuang balanse" (acceptable but mixing)
+
+Alternatively, if the translator intended to keep kabuuang, spacing and flow are correct.
+
+No format specifiers are involved.
+
+Given the mixture and potential lack of consistency, it is best to correct to pure Kapampangan.
+
+Correct translation (pure Kapampangan):
+
+"Ing kekang kasalungsungan kabuuan a balanse"
+
+(Note: "kabuuan" is Kapampangan for "total".)
+
+Hence:
+
+YES  
+The translation mixes Kapampangan and Tagalog terms, reducing clarity. A consistent Kapampangan translation is:  
+"Ing kekang kasalungsungan kabuuan a balanse"
 ```
 
 ```
         <source>Client version</source>
         <translation>Bersion ning Cliente</translation>
     
-YES - The translation uses "Bersion" which appears to be a misspelling of "Version". The correct translation should be "Versión del cliente".
-YES - Bersion ning Cliente
-```
+YES
+The translation contains errors: "Bersion" should be "Bersyon" (version), and "ning Cliente" uses "Cliente," which is a Spanish loanword; a more appropriate term in Kapampangan (language code 'pam') would be "kliente" or "klayente." The correct translation should be:
 
-```
-        <source>Information</source>
-        <translation>Impormasion</translation>
-    
-YES, The translation has a spelling mistake. The correct translation should be "Informasion".
-YES, Impormasion
+Bersyon ning Kliente
 ```
 
 ```
         <source>To</source>
         <translation>Para kang</translation>
     
-YES, The translation is inaccurate and does not convey the intended meaning of "To".
-Correct translation: Para sa
-```
+YES  
+The English source "To" is a short, likely standalone preposition often used in contexts such as "To address," "To send," or simply indicating direction or recipient. The translation "Para kang" is Tagalog or a related Filipino language phrase meaning "for the," which is longer and more specific than just "To." The language code 'pam' refers to Kapampangan, a Philippine language, but "Para kang" is not correct Kapampangan and seems out of place, suggesting a possible confusion with Tagalog or another language.
 
-```
-        <source>Message</source>
-        <translation>Mensayi</translation>
-    
-YES. The translation is incorrect. The correct translation for "Message" in Pam is "Mensaje".
-YES. The translation is incorrect. The correct translation for "Message" in Pam is "Mensaje".
+Also, the translation is not a faithful equivalent of the simple English preposition "To" and may be contextually incorrect.
+
+Correct translation (Kapampangan) for "To" in this context would commonly be:
+
+<translation>Para</translation> 
+
+If more specificity is needed, it depends on usage, but "Para" suffices as "To" in most cases.
+
+Hence, correction:
+
+<translation>Para</translation>
 ```
 
 ```
         <source>(no label)</source>
         <translation>(alang label)</translation>
     
-YES: The translation does not accurately convey the meaning of the source text. The source text "(no label)" implies the absence of a label, while the translation "(alang label)" suggests the presence of a label named "alang", which is incorrect and potentially misleading in a Bitcoin context.
-(walay label)
+YES
+The translation "(alang label)" is incorrect. In Kapampangan ('pam'), "no" is typically translated as "ala" or "alang" can be acceptable as a negation meaning "no" or "without." However, the phrase "(no label)" in this context means "(no label)" as in "no label assigned," so it should reflect "no" or "without" plus the word for "label" properly.
+
+If "label" is borrowed, it might be okay, but "alang" should be corrected to "ala" which is more common for negation in Kapampangan.
+
+A better translation would be:
+(ala label)
 ```
 
 ```
         <source>Add Recipient</source>
         <translation>Maglage Tumanggap</translation>
     
-YES: The translation is problematic because it does not accurately convey the intended meaning of "Add Recipient" in the context of Bitcoin. "Maglage Tumanggap" literally translates to "Always Receive," which is not the correct phrase for adding a recipient in a transaction. A more accurate translation would be "Magdagdag ng Tatanggap" or "Magdagdag ng Padadalhan."
-
-Correct translation: Magdagdag ng Tatanggap
+UNK_LANG
 ```
 
 ```
         <source>Clear All</source>
         <translation>I-Clear Eganagana</translation>
     
-YES. The translation uses an invented word "Eganagana" which is not a standard or recognizable word in any language. The correct translation for "Clear All" in a Bitcoin context is likely "Clear All" itself, or if a translation is required, a more appropriate term depending on the specific language used for other parts of the UI. Without knowing the specific target language indicated by 'pam', it is impossible to provide a definitive correct translation.
+YES
+The translation mixes English ("I-Clear") with a non-English term, leading to inconsistency and potential confusion. A fully translated and appropriate phrase in 'pam' should be used, or if a direct equivalent does not exist, it should be clearly indicated. As 'pam' is Kapampangan, a more natural translation for "Clear All" would be:
 
-However, if 'pam' refers to a placeholder for "unknown language," then the output should be:
-UNK_LANG
+"Buruan Lahat"
 ```
 
 ```
         <source>Copy amount</source>
         <translation>Kopyan ing alaga</translation>
     
-YES: The translation is incorrect. "Ing alaga" means "the care" or "the health" in Kapampangan, which is not related to "amount". The correct translation for "amount" in Kapampangan is "penaun" or "lakad". The correct translation for "copy" in this context would be "kopyan".
+YES  
+The translation "Kopyan ing alaga" is problematic. "Copy amount" in the Bitcoin context refers to copying the numeric value of an amount, not copying "alaga" which means "pet" or "care" in Kapampangan ('pam'). The word "alaga" is incorrect here.
 
-Correct translation: Kopyan ing penaun
+A more accurate translation would be:  
+"Kopyan ing halaga"  
+
+Here, "halaga" means "amount" or "value" in Kapampangan.
 ```
 
 ```
         <source>The amount to pay must be larger than 0.</source>
         <translation>Ing alaga na ning bayaran dapat mung mas matas ya king 0.</translation>
     
-YES - The translation uses informal language ("dapat mung") which might not be appropriate for a technical context like Bitcoin. The phrase "mas matas ya king 0" is a bit awkward and could be more direct.
-
-A more appropriate translation would be: "Ing alaga na ning bayaran dapat mas matas ya king 0." or "Ang halaga ng bayarin ay dapat mas malaki sa 0."
+UNK_LANG, not familiar with the Kapampangan language 'pam'.
 ```
 
 ```
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
         <translation>Ing kabuuan mipasobra ya king kekang balanse istung inabe ya ing %1 a bayad king transaksion </translation>
     
-YES - The translation has an extra space before the "%1" format specifier, and a space at the end. The correct translation should be: "Ing kabuuan mipasobra ya king kekang balanse istung inabe ya ing %1 a bayad king transaksion."
+YES  
+The translation has extra spaces at the end, and the phrase structure is somewhat awkward and informal. Also, the format specifier %1 is correctly included but should be immediately followed by the noun without extra spacing or insertion errors. The original meaning — "The total exceeds your balance when the %1 transaction fee is included." — is not clearly and accurately conveyed.
+
+A more accurate and cleaner translation would be:  
+"Ing kabuuan mipasobra king kekang balanse nung isali ya ing %1 a bayad king transaksion."
 ```
 
 ```
         <source>(no label)</source>
         <translation>(alang label)</translation>
     
-YES: The translation does not accurately convey the meaning of the source text. The source text "(no label)" implies the absence of a label, while the translation "(alang label)" suggests the presence of a label named "alang", which is incorrect and potentially misleading in a Bitcoin context.
-(walay label)
+YES
+The translation "(alang label)" is incorrect. In Kapampangan ('pam'), "no" is typically translated as "ala" or "alang" can be acceptable as a negation meaning "no" or "without." However, the phrase "(no label)" in this context means "(no label)" as in "no label assigned," so it should reflect "no" or "without" plus the word for "label" properly.
+
+If "label" is borrowed, it might be okay, but "alang" should be corrected to "ala" which is more common for negation in Kapampangan.
+
+A better translation would be:
+(ala label)
 ```
 
 ```
         <source>Signatures - Sign / Verify a Message</source>
         <translation>Pirma - Pirman / I-beripika ing mensayi</translation>
     
-YES - The translation uses incorrect words for "Sign" and "Verify". The correct translation for "Sign" in this context is "Simak", and for "Verify" it is "Kiti".
-Pirma - Simak / Kiti ing mensayi
+YES
+The translation contains errors and inconsistent transliterations. The English word "Signatures" is translated as "Pirma," which seems incorrect in the context of the 'pam' language or Kapampangan. The translated terms "Pirman" and "I-beripika ing mensayi" appear to be borrowed from other languages or misspelled.
+
+A better translation in Kapampangan ('pam') would be:
+
+Signatures - Lagyu / Beripikayan ne ning Mensayi
+
+Explanation:
+- "Signatures" can be translated as "Lagu" (sign) or "Lagyu" (signature).
+- "Sign" as a verb is "Pirman" or "Lagyu" (to sign).
+- "Verify" corresponds to "Beripikayan."
+- "Message" is "Mensayi."
+
+Therefore, the corrected translation is:
+
+Pirma - Pirman / Beripikayan ne ning Mensayi
 ```
 
 ```
         <source>Reset all sign message fields</source>
         <translation>Ibalik keng dati reng ngan fields keng pamamirmang mensayi</translation>
     
-YES, the translation uses a slightly unnatural phrasing in Kapampangan. The word order and conjunction usage could be improved for better flow.
+YES  
+The translation contains a mix of languages (likely Kapampangan mixed with Tagalog or another language) and some awkward phrasing. Also, "fields" is left in English and "sign message" is not clearly translated, which could cause confusion in the Bitcoin context. A clearer translation in Kapampangan would be:  
 
-The correct translation should be: "Ibalik keng dati reng campi ning pamamirmang mensayi."
+Correct translation:  
+"Ibalik king dati ang eganaganang sign message a patse"  
+
+or if "sign message fields" refers to the fields used to sign a message, it would be better to translate both "sign message" and "fields" properly.
 ```
 
 ```
         <source>Clear All</source>
         <translation>I-Clear Eganagana</translation>
     
-YES. The translation uses an invented word "Eganagana" which is not a standard or recognizable word in any language. The correct translation for "Clear All" in a Bitcoin context is likely "Clear All" itself, or if a translation is required, a more appropriate term depending on the specific language used for other parts of the UI. Without knowing the specific target language indicated by 'pam', it is impossible to provide a definitive correct translation.
+YES
+The translation mixes English ("I-Clear") with a non-English term, leading to inconsistency and potential confusion. A fully translated and appropriate phrase in 'pam' should be used, or if a direct equivalent does not exist, it should be clearly indicated. As 'pam' is Kapampangan, a more natural translation for "Clear All" would be:
 
-However, if 'pam' refers to a placeholder for "unknown language," then the output should be:
-UNK_LANG
-```
-
-```
-        <source>Verify Message</source>
-        <translation>Beripikan ing Mensayi</translation>
-    
-YES, the translation is erroneous. The word "Beripikan" is not a standard word in any recognized language and appears to be a misspelling or corruption of "Verify". The word "Mensayi" is also not a standard word and is likely a misspelling or corruption of "Message".
-
-The correct translation should be:
-Verify Message
+"Buruan Lahat"
 ```
 
 ```
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
         <translation>Beripikan ing mensayi ban asiguradu a me pirma ya ini gamit ing mepiling Bitcoin address</translation>
     
-YES. The translation is problematic due to inaccuracies and potential misunderstanding of the source text. The Pam translation does not accurately convey the meaning of "verify the message" and "signed with the specified Bitcoin address".
+YES  
+The translation has minor spelling and grammar issues: "Beripikan" should be "Beripika" (correct imperative form of "verify"), "asiguradu a me" is awkward and should be "asiguradu na" (to ensure that). Also, "gamit ing mepiling Bitcoin address" is acceptable but could be clearer as "gamit ang napiling Bitcoin address" for better clarity.
 
-The correct translation should be:
-
-"Tan-awa ing mensayi para sigurado keng mepirma ya gamit ing Bitcoin address a mepili"
-```
-
-```
-        <source>Verify Message</source>
-        <translation>Beripikan ing Mensayi</translation>
-    
-YES, the translation is erroneous. The word "Beripikan" is not a standard word in any recognized language and appears to be a misspelling or corruption of "Verify". The word "Mensayi" is also not a standard word and is likely a misspelling or corruption of "Message".
-
-The correct translation should be:
-Verify Message
-```
-
-```
-        <source>Please check the address and try again.</source>
-        <translation>Maliaring pakilawe pasibayu ing address at pasibayuan ya iti.</translation>
-    
-YES. The translation is grammatically incorrect and doesn't convey the intended meaning clearly. The word "maliaring" seems out of place, and the sentence structure is awkward.
-
-Correct translation: "Pakilala at subukan muli ang address."
+Correct translation:  
+Beripika ing mensayi ban asiguradu na me pirma ya ini gamit ang napiling Bitcoin address
 ```
 
 ```
         <source>Private key for the entered address is not available.</source>
         <translation>Ing private key para king milub a address, ala ya.</translation>
     
-YES - The translation uses informal phrasing that is inappropriate for a technical context like Bitcoin. A more formal and direct translation is needed.
+YES  
+The translation contains substantial errors and unnatural phrasing. Words like "Ing" and "milub a" are not correct or coherent in Kapampangan (pam). Also, the phrase structure is incorrect and does not clearly convey the meaning: "Private key for the entered address is not available."
 
-Correct translation: Ing private key para king milub a address ali ya kailangan.
+A better Kapampangan translation would be:  
+"Ala yang pribadu a susi para king ipinasuk a address."
+
+This preserves the meaning and reads naturally in pam.
 ```
 
 ```
         <source>Message signing failed.</source>
         <translation>Me-mali ya ing pamag-pirma king mensayi .</translation>
     
-YES, The translation is problematic due to a spacing issue. The word "Me-mali" should be separated from "ya".
+YES  
+There is a stray space before the period in the translation ("mensayi ."). Also, the translation should maintain concise spacing without extra spaces before punctuation.  
+
+Correct translation:  
 Me-mali ya ing pamag-pirma king mensayi.
-```
-
-```
-        <source>Please check the signature and try again.</source>
-        <translation>Maliaring pakilawe pasibayu ing pirma kaibat pasibayuan ya iti.</translation>
-    
-YES. The translation is inaccurate and does not convey the intended meaning of checking the signature. The phrase "pasibayuan ya iti" seems to mean "it was updated" or "it was renewed," which is not relevant to checking a signature.
-
-Correct translation: "Pakisuri kang pasibayu ing pirma at subukan mong muli."
-```
-
-```
-        <source>Message verification failed.</source>
-        <translation>Me-mali ya ing pamag-beripika king mensayi.</translation>
-    
-YES
-The translation is grammatically incorrect and does not convey the intended meaning accurately. The phrasing "Me-mali ya ing pamag-beripika king mensayi" is awkward and doesn't directly translate to "Message verification failed."
-
-A more appropriate translation would be:
-"Me-mali ing pamag-beripika ning mensayi."
 ```
 
 ```
         <source>To</source>
         <translation>Para kang</translation>
     
-YES, The translation is inaccurate and does not convey the intended meaning of "To".
-Correct translation: Para sa
+YES  
+The English source "To" is a short, likely standalone preposition often used in contexts such as "To address," "To send," or simply indicating direction or recipient. The translation "Para kang" is Tagalog or a related Filipino language phrase meaning "for the," which is longer and more specific than just "To." The language code 'pam' refers to Kapampangan, a Philippine language, but "Para kang" is not correct Kapampangan and seems out of place, suggesting a possible confusion with Tagalog or another language.
+
+Also, the translation is not a faithful equivalent of the simple English preposition "To" and may be contextually incorrect.
+
+Correct translation (Kapampangan) for "To" in this context would commonly be:
+
+<translation>Para</translation> 
+
+If more specificity is needed, it depends on usage, but "Para" suffices as "To" in most cases.
+
+Hence, correction:
+
+<translation>Para</translation>
 ```
 
 ```
         <source>not accepted</source>
         <translation>ali metanggap</translation>
     
-YES, The provided translation is incorrect. The correct translation for "not accepted" in this context should be something similar to "dili dawaton" or "wala ginbaton".
+YES  
+The translation "ali metanggap" appears incorrect and resembles Indonesian/Malay rather than Kapampangan (pam). The English phrase "not accepted" should be translated accurately into Kapampangan. A more correct Kapampangan translation for "not accepted" is: "e tinanggap" or "ali tinanggap".
 
-The word "metanggap" means "received" or "accepted" and is the opposite of "not accepted".
-
-Correct translation: dili dawaton
+Correct translation:  
+<translation>ali tinanggap</translation>
 ```
 
 ```
         <source>Net amount</source>
         <translation>Alaga dareng eganagana</translation>
     
-YES, The translation is problematic because "Alaga dareng eganagana" does not accurately translate "Net amount". It seems to be a nonsensical or incorrect phrase in the target language.
+YES  
+The translation "Alaga dareng eganagana" does not accurately convey the meaning of "Net amount" in the Bitcoin context. The phrase is unclear or incorrect in 'pam' language.  
 
-A more appropriate translation for "Net amount" in a financial or transactional context would be:
+A better translation in 'pam' for "Net amount" (the amount after all deductions) would be:  
+"Netto konektura" or "Netto kantidad" (depending on local usage), but since exact terms vary, a literal usage with recognizable loanwords for "net" and "amount" would be preferable.
 
-<translation>Netong balor</translation>
-```
+If these are not acceptable, a more precise translation could be:  
+"Net alaga"  
 
-```
-        <source>Message</source>
-        <translation>Mensayi</translation>
-    
-YES. The translation is incorrect. The correct translation for "Message" in Pam is "Mensaje".
-YES. The translation is incorrect. The correct translation for "Message" in Pam is "Mensaje".
+So a corrected version might be:  
+<translation>Net alaga</translation>
 ```
 
 ```
         <source>Transaction ID</source>
         <translation>ID</translation>
     
-YES - The translation is too brief and lacks context. The correct translation should reflect "Transaction ID".
-Correct translation: Transaction ID
-```
+YES
+The translation is incomplete and inaccurate. The source text "Transaction ID" should be fully translated or at least preserved as "ID ng Transaksyon" or a complete equivalent in 'pam', not shortened to just "ID".
 
-```
-        <source>true</source>
-        <translation>tutu</translation>
-    
-YES: The translation is incorrect. The word "true" translates to "matue" in the 'pam' language.
-Correct translation: matue
+Correct translation:
+Transaksyon ID
 ```
 
 ```
         <source>false</source>
         <translation>e tutu</translation>
     
-YES, The translation is incorrect. The word "false" translates to "malo" in pam.
-malo
-```
+YES  
+The English word "false" in a Bitcoin context should be translated to a word meaning "not true" or "incorrect." The provided translation "e tutu" does not correspond to "false." The correct translation for false in 'pam' language (Kapampangan) is "ali" or "e metung" depending on dialect and context, but commonly "ali" is used for "not" or "false."
 
-```
-        <source>This pane shows a detailed description of the transaction</source>
-        <translation>Ining pane a ini magpakit yang detalyadung description ning transaksion</translation>
-    
-YES: The translation is not a correct translation of the source text. The words used appear to be a mix of Filipino (Tagalog) and Kapampangan. The Kapampangan translation for the source text should be "Ing pane a ini miliyag yang detalyadung deskripsion ning transaksion."
-Here is the corrected translation:
-
-<translation>Ing pane a ini miliyag yang detalyadung deskripsion ning transaksion</translation>
+Correct translation:  
+<translation>ali</translation>
 ```
 
 ```
         <source>Received with</source>
         <translation>Atanggap kayabe ning</translation>
     
-YES, The translation is problematic. The Pam translation has an incorrect translation.
-Correct translation: Natanggap kayabe ning
+YES  
+The translation mixes Tagalog ("Atanggap") and Kapampangan ("kayabe ning"), which is inconsistent. The language code 'pam' stands for Kapampangan, so the entire translation should be in Kapampangan only. A correct Kapampangan translation for "Received with" would be:
+
+"Katunggaling kayabe ning"
 ```
 
 ```
         <source>(no label)</source>
         <translation>(alang label)</translation>
     
-YES: The translation does not accurately convey the meaning of the source text. The source text "(no label)" implies the absence of a label, while the translation "(alang label)" suggests the presence of a label named "alang", which is incorrect and potentially misleading in a Bitcoin context.
-(walay label)
+YES
+The translation "(alang label)" is incorrect. In Kapampangan ('pam'), "no" is typically translated as "ala" or "alang" can be acceptable as a negation meaning "no" or "without." However, the phrase "(no label)" in this context means "(no label)" as in "no label assigned," so it should reflect "no" or "without" plus the word for "label" properly.
+
+If "label" is borrowed, it might be okay, but "alang" should be corrected to "ala" which is more common for negation in Kapampangan.
+
+A better translation would be:
+(ala label)
 ```
 
 ```
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
         <translation>Status ning Transaksion: Itapat me babo na ning field a ini ban ipakit dala reng bilang dareng me-kumpirma na</translation>
     
-YES: The translation uses the word "babo" which is a Kapampangan word for "head" or "top". In this context, it should be translated to "on" or "over" to accurately convey the meaning of hovering over a field. The use of "dala reng" is also grammatically incorrect for this context.
+YES  
+The translation contains some issues affecting clarity and correctness. The phrase "Hover over this field to show number of confirmations" is translated as "Itapat me babo na ning field a ini ban ipakit dala reng bilang dareng me-kumpirma na," which is confusing and uses awkward phrasing. A more natural and accurate translation in Pampangan would be:  
 
-Correct translation: Transaction status. Hover over this field to show number of confirmations. -> Status ning Transaksion: Itapat me keng field a ini ban ipakit la reng bilang dareng me-kumpirma na.
-```
-
-```
-        <source>Date and time that the transaction was received.</source>
-        <translation>Aldo at oras nung kapilan me tanggap ya ing transaksion</translation>
-    
-YES: The translation is inaccurate and does not convey the intended meaning. The phrase "Aldo at oras nung kapilan me tanggap ya ing transaksion" roughly translates to "Day and time when we received the transaction," which is close but not a direct or natural translation of "Date and time that the transaction was received."
-
-A more accurate and natural translation in the context of Bitcoin would be:
-
-<translation>Petsa at oras kung kailan natanggap ang transaksyon.</translation>
+Status ning transaksion. Itapat ku ing cursor king field a ini para ipakit ing bilang da reng kumpirmasion.
 ```
 
 ```
         <source>Received with</source>
         <translation>Atanggap kayabe ning</translation>
     
-YES, The translation is problematic. The Pam translation has an incorrect translation.
-Correct translation: Natanggap kayabe ning
-```
+YES  
+The translation mixes Tagalog ("Atanggap") and Kapampangan ("kayabe ning"), which is inconsistent. The language code 'pam' stands for Kapampangan, so the entire translation should be in Kapampangan only. A correct Kapampangan translation for "Received with" would be:
 
-```
-        <source>Range:</source>
-        <translation>Angga:</translation>
-    
-YES
-The Pam translation is incorrect. The word "Angga" does not translate to "Range". A more appropriate translation for "Range" in this context would be "Sakop" or "Had".
-
-Correct translation: Sakop:
+"Katunggaling kayabe ning"
 ```
 
 ```
         <source>to</source>
         <translation>para kang</translation>
     
-YES: The translation is inaccurate and nonsensical in the context of Bitcoin. The word "to" in this context should be translated to "sa" or "kay" depending on the grammatical structure. The provided translation "para kang" means "you are like" or "you seem like" in Tagalog, which is completely unrelated.
-Correct translation: sa
+YES
+The English source "to" is a very short and context-dependent preposition that typically translates to a single word in most languages. The provided translation "para kang" appears to be a phrase consisting of two words, which is unusual and likely inaccurate for a simple preposition like "to." It may also introduce incorrect spacing or conveys a meaning different from the simple directional or relational preposition.
+
+Correct translation (suggested based on the common use of "to" as a preposition in Filipino languages related to 'pam', Kapampangan):  
+"king"
+
+If "pam" is Kapampangan (Pangasinan or Pampangan), "king" is a typical preposition equivalent to "to" in English.  
+Alternatively, if a specific dialect variation is expected, a single suitable word should be used rather than a phrase.
+
+Corrected translation:  
+<translation>king</translation>
 ```
 
 ```
         <source>Export</source>
         <translation>IExport</translation>
     
-YES, The translation is incorrect and should be "Eksport".
-YES, Eksport
+YES
+The translation "IExport" incorrectly includes a capital "I" attached to the English word "Export," which is not appropriate for 'pam' (Kapampangan) or a proper translation. The correct translation for "Export" in Kapampangan is simply "I-export," using a hyphen and lowercase 'i', which is the common verb prefix in Kapampangan.
+
+Correct translation:
+I-export
 ```
 
 ```
         <source>Export the data in the current tab to a file</source>
         <translation>Export me ing data king tab a ini anting metung a file</translation>
     
-YES. The translation is nonsensical and contains no recognizable words from any known language. The format specifiers are also missing from the translation.
-Correct translation: "Export the data in the current tab to a file"
-```
-
-```
-        <source>Corrupted block database detected</source>
-        <translation>Mekapansin lang me-corrupt a block database</translation>
-    
-YES: The translation uses informal language ("mekapansin lang me-corrupt") which is inappropriate for a technical error message. It should be more direct and formal.
-
-Correct translation: Nakita na may sira ang block database.
+UNK_LANG, not familiar with the Kapampangan language 'pam'.
 ```
 
 ```
         <source>Error opening block database</source>
         <translation>Kamalian king pamag buklat king block database</translation>
     
-YES, The translation is problematic. The Tagalog word for "opening" is "pagbuklat" or "pagbubukas". The translation provided, "pamag buklat", is not a standard Tagalog word. The correct translation should be "Kamalian sa pagbuklat ng block database".
+YES  
+The translation is partly incorrect and awkward. "Kamalian" means "error," and "king" means "in" or "on," but "pamag buklat" is not a correct phrase for "opening" in the context of opening a database. A better translation should clearly convey an error occurring while opening the block database, using proper Pam phraseology for "opening" or "accessing."
 
-NO
+Correct translation:  
+Kamalian king pamagbukas ning block database
 ```
 
 ```
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Memali ya ing pamakiramdam kareng gang nanung port. Gamita me ini -listen=0 nung buri me ini.</translation>
     
-YES, The translation is problematic. The Pamglish translation of "listen" as "pamakiramdam" (which means "feeling" or "perception") is incorrect in the context of networking or software. The correct term should relate to actively listening for connections.
+YES  
+The translation "Memali ya ing pamakiramdam kareng gang nanung port. Gamita me ini -listen=0 nung buri me ini." contains some inconsistencies and awkward phrasing. The word "gang nanung port" seems to be incorrect or redundant ("gang" may be a filler or error). The phrase "Gamita me ini" should be "Gamita ini" without "me" to be grammatically correct. The translation generally conveys the meaning but could be made clearer and more natural.  
 
-NO
-```
-
-```
-        <source>Transaction too large</source>
-        <translation>Maragul yang masiadu ing transaksion</translation>
-    
-YES. The translation is erroneous. The word 'maliadu' should be 'malubay'. The correct translation is: "Maragul yang masiadu ing transaksion".
+Correct translation:  
+"Memali ya ing pamakiramdam kareng aliwang port. Gamita ini -listen=0 nung buri mu ini."
 ```
 </details>

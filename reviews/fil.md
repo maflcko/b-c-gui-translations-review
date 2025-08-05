@@ -13,68 +13,71 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Copy</source>
         <translation>gayahin</translation>
     
-YES, The translation is incorrect. The Filipino word for "Copy" in this context should be "Kopyahin".
+YES  
+The translation "gayahin" means "to imitate" or "to mimic," which is incorrect for the command "Copy" as used in a UI context (like copying text or data). The appropriate Filipino translation for the command "Copy" is "Kopya" or "Kopyahin."
 
-gayahin
+Correct translation:  
+Kopya
 ```
 
 ```
         <source>Export the data in the current tab to a file</source>
         <translation>I-exporte yung datos sa kasalukuyang tab doon sa pila</translation>
     
-YES, The translation is inaccurate and uses the wrong word for "file". The word "pila" in Filipino means "queue" or "pile", not "file".
-The correct translation for "file" in this context would be "file" or "talaan".
+YES  
+The translation has errors and awkward phrasing. Specifically:  
+- "I-exporte" is a spanglish or informal use; the correct Tagalog/Filipino term should be "I-export" or "I-export ang".  
+- "yung" is colloquial; formal Filipino usually uses "ang" instead.  
+- "doon sa pila" is incorrect for "to a file". "pila" means "line" or "queue". The correct word for "file" is "file" (often borrowed) or "sanggunian" or "talaksan". Commonly, "file" is used directly in technical contexts.  
+- The phrase should better be "I-export ang datos sa kasalukuyang tab sa isang file."
 
-Corrected translation: I-export ang datos sa kasalukuyang tab sa isang file.
-```
-
-```
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>I-enter ang Bitcoin address (e.g. %1)</translation>
-    
-YES: The translation is not in the Filipino language. The phrase "I-enter ang" appears to be Taglish, a mix of Tagalog and English.
-Correct translation: Maglagay ng Bitcoin address (hal. %1)
+Correct translation:  
+I-export ang datos sa kasalukuyang tab sa isang file
 ```
 
 ```
         <source>%1 and %2</source>
         <translation>%1 at %2</translation>
     
-YES, The translation is incorrect. The English text "%1 and %2" translates to "%1 at %2" in Filipino. The Filipino translation should be "%1 at %2".
-Correct translation: %1 at %2
+YES  
+The English conjunction "and" is translated as "at," which means "and" but is typically used to indicate location or time in Filipino and does not correctly convey the logical conjunction "and" in this context. The proper Filipino equivalent for "and" when connecting two items is "at" with no spacing issues, but here it is incorrectly interpreted as "at" meaning "at" or "in" (preposition). However, since "at" is the correct Filipino word for "and," the translation is actually correct. The spacing is also correct.
+
+On closer review, "%1 and %2" -> "%1 at %2" is correct in Filipino since "at" means "and."
+
+Therefore, no issue exists.
+
+NO
 ```
 
 ```
         <source>default wallet</source>
         <translation>walet na default</translation>
     
-YES: The translation is grammatically incorrect. In Filipino, "default wallet" should be translated to "default na wallet".
-default na wallet
+YES
+The translation incorrectly mixes English and Filipino words and does not follow proper Filipino grammar. "Default wallet" in Filipino is more naturally translated as "default na pitaka" or "panimulang pitaka."
+
+Correct translation:
+panimulang pitaka
 ```
 
 ```
         <source>About %1</source>
         <translation>Mga %1</translation>
     
-YES
-The translation is grammatically incorrect and doesn't convey the intended meaning. The word "Mga" in Filipino is a plural marker, and it's not appropriate to use it as a translation for "About".
+YES  
+The translation "Mga %1" is incorrect for "About %1". "Mga" is a plural marker in Filipino and does not mean "About". The correct translation for "About %1" (as in "Information about %1" or "Regarding %1") would be:
 
-Correct translation: Tungkol sa %1
-```
-
-```
-        <source>Wallet:</source>
-        <translation>Pitaka:</translation>
-    
-UNK_LANG
+Tungkol sa %1
 ```
 
 ```
         <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
         <translation>Ang proxy ay &lt;b&gt;in-inable&lt;/b&gt;: %1</translation>
     
-YES: The word "in-inable" is not a valid Tagalog word. It seems like a misspelling or mistranslation of "enabled". The correct Tagalog word for "enabled" is "nakakabisa" or "pinagana".
+YES  
+The translation uses "in-inable," which is not a correct Tagalog/Filipino term for "enabled." The correct translation for "enabled" in this context could be "pinagana" or simply "enabled" borrowed as "enabled" is also commonly understood, but "pinagana" is more appropriate and natural.
 
+Correct translation:  
 Ang proxy ay &lt;b&gt;pinagana&lt;/b&gt;: %1
 ```
 
@@ -83,16 +86,10 @@ Ang proxy ay &lt;b&gt;pinagana&lt;/b&gt;: %1
         <translation>Setting</translation>
     
 YES
-The translation uses the singular form "Setting" instead of the plural form "Settings".
-Correct translation: Settings
-```
+The translation "Setting" is incorrect because it is singular and in English, not Filipino. The correct Filipino translation for "Settings" (plural) is "Mga setting" or "Mga pagsasaayos." Since "Settings" in this context typically refers to configuration options, the common usage in Filipino tech contexts is "Mga setting."
 
-```
-        <source>%1 client</source>
-        <translation>%1 kliyente</translation>
-    
-YES: The translation of "client" to "kliyente" is incorrect. The correct Tagalog word for "client" is "kliyente".
-%1 kliyente
+Correct translation:
+Mga setting
 ```
 
 ```
@@ -101,8 +98,10 @@ YES: The translation of "client" to "kliyente" is incorrect. The correct Tagalog
         <translation>Datiles: %1
 </translation>
     
-YES: The translation uses a misspelling of "Date". The correct translation for "Date" in Filipino is "Petsa".
+YES
+The word "Datiles" is incorrect in Filipino; the correct translation for "Date" is "Petsa".
 
+Correct translation:
 Petsa: %1
 ```
 
@@ -112,46 +111,43 @@ Petsa: %1
         <translation>Walet: %1
 </translation>
     
-YES, the translation is problematic because "Walet" is a misspelling of "Wallet".
-Wallet: %1
-```
-
-```
-        <source>Type: %1
-</source>
-        <translation>Uri: %1
-</translation>
-    
-YES. The translation of "Type" to "Uri" is incorrect in the context of Bitcoin. In Bitcoin, "type" would refer to the type of address or transaction. "Uri" (Uniform Resource Identifier) is not a common term in this context.
+YES
+The word "Wallet" in English is translated as "Walet" in the provided 'fil' translation. The correct Tagalog (Filipino) word for "Wallet" is "Pitaka."
 
 Correct translation:
-Uri: %1
-Type: %1
+Pitaka: %1
 ```
 
 ```
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Ang pitaka ay &lt;b&gt;na-enkriptuhan&lt;/b&gt; at kasalukuyang &lt;b&gt;naka-lock&lt;/b&gt;</translation>
     
-YES: The word "unlocked" was incorrectly translated as "naka-lock" (locked). The correct translation should be "hindi naka-lock" (unlocked).
-Ang pitaka ay &lt;b&gt;na-enkriptuhan&lt;/b&gt; at kasalukuyang &lt;b&gt;hindi naka-lock&lt;/b&gt;
+YES  
+The translation mixes English and Filipino unnecessarily and uses a non-standard term "na-enkriptuhan" which is not commonly used in Filipino for "encrypted." Also, "naka-lock" is a direct borrowing and should be "naka-unlock" or better translated as "nabuksan" or "nakabukas." A better translation would fully adapt the technical terms or keep them consistent.
+
+Correct translation:  
+Ang pitaka ay &lt;b&gt;naka-encrypt&lt;/b&gt; at kasalukuyang &lt;b&gt;naka-unlock&lt;/b&gt;
 ```
 
 ```
         <source>After Fee:</source>
         <translation>Bayad sa pagtapusan:</translation>
     
-YES, the translation is problematic. The Tagalog word "bayad" means payment, and "pagtapusan" means end or conclusion. The phrase "Bayad sa pagtapusan" literally translates to "payment at the end". This is an inaccurate translation for "After Fee". A more accurate translation would be "Pagkatapos ng bayad" or "Matapos ang bayad", which means "After the fee/payment".
+YES
+The translation "Bayad sa pagtapusan:" is not accurate in the context of Bitcoin transaction fees. The source "After Fee:" refers to the amount remaining or relevant after deducting the fee, not "payment at the end" which is what the translation implies.
 
-Pagkatapos ng bayad:
+A more accurate translation in Filipino (Tagalog) would be:
+"Pagkatapos ng Bayad:"
 ```
 
 ```
         <source>Date</source>
         <translation>Datiles</translation>
     
-YES
-The translation is inaccurate. "Date" in English should be translated to "Petsa" in Filipino.
+YES  
+The translation "Datiles" is incorrect. The correct Filipino (Tagalog) word for "Date" (as in a calendar date) is "Petsa."
+
+Correct translation:  
 Petsa
 ```
 
@@ -160,7 +156,8 @@ Petsa
         <translation>Kopyahin and address</translation>
     
 YES
-The translation is problematic because "address" is a loanword and should not be translated.
+The Filipino translation uses "and" which is incorrect; it should be "ang" for the definite article. Also, it is better to translate "address" to "address" using the appropriate Filipino term "address" or "adres" with a local touch, but "address" is commonly understood. The correct translation should be:
+
 Kopyahin ang address
 ```
 
@@ -168,52 +165,38 @@ Kopyahin ang address
         <source>Copy fee</source>
         <translation>Kopyahin ang halaga</translation>
     
-YES
-The translation is inaccurate and doesn't convey the intended meaning of "Copy fee". The Tagalog phrase "Kopyahin ang halaga" translates to "Copy the amount" or "Copy the value", which is not the same as "Copy fee".
+YES  
+The English source "Copy fee" refers specifically to copying the fee amount, where "fee" is best translated as "bayad" or "singil" in Filipino/Tagalog, which are common words for fee/charge. The translation "Kopyahin ang halaga" literally means "Copy the amount," which is less precise as it translates "fee" as "halaga" (amount/value) instead of "fee." Also, "Kopyahin" is the imperative form "Copy," which is acceptable if this is a button label or command.
 
-Correct translation:
-Kopyahin ang bayarin
+A more accurate translation would be:  
+"Kopyahin ang bayad" or "Kopyahin ang singil"  
+
+If brevity is important and "fee" must be retained in terms related to Bitcoin transactions, "bayad" is the better choice.
+
+Correct translation:  
+Kopyahin ang bayad
 ```
 
 ```
         <source>Copy after fee</source>
         <translation>Kopyahin ang after fee</translation>
     
-YES: The translation uses the English word "after fee" directly, which is not a proper Tagalog translation. The correct translation should convey the meaning of "copying an amount or value that remains after the fee has been deducted."
-Kopyahin pagkatapos ng bayarin
-```
+YES
+The phrase "after fee" is untranslated and left in English within the Tagalog translation, which makes it incomplete and inconsistent. The word "Copy" is translated as "Kopyahin," which is correct as an imperative verb, but the phrase should be fully translated.
 
-```
-        <source>change from %1 (%2)</source>
-        <translation>sukli mula sa %1 (%2)</translation>
-    
-YES: The translation is inaccurate. The Tagalog word for "change" in the context of transactions is "sukli" or "bayad". However, "sukli mula sa" would translate to "change from", which is grammatically correct. The English source text "change from %1 (%2)" implies a change in the transaction, and "sukli mula sa %1 (%2)" accurately conveys this meaning in Tagalog. The original assessment might have been confused by a different meaning of "sukli".
-
-Correct translation: sukli mula sa %1 (%2)
-```
-
-```
-        <source>(change)</source>
-        <translation>(sukli)</translation>
-    
-YES - The word "sukli" means "change" in the context of giving or returning something. In the context of Bitcoin transactions, the term "change" refers to the leftover amount that is returned to the sender. A more appropriate translation would be "pera" or "kembalian".
-(pera)</translation>
+Correct translation:
+Kopyahin ang pambayad
 ```
 
 ```
         <source>Disable Private Keys</source>
         <translation>Huwag paganahin ang Privbadong susi</translation>
     
-YES: The translation is problematic because "Privbadong susi" is a misspelling of "pribadong susi" which means "private key".
-Huwag paganahin ang pribadong susi
-```
+YES  
+The translation contains a typo: "Privbadong" should be "Pribadong".  
 
-```
-        <source>Could not unlock wallet.</source>
-        <translation>Hindi magawang ma-unlock ang walet.</translation>
-    
-YES, the translation uses the word "Hindi" which means "not" in Tagalog. However, the correct translation should be in Filipino. The word "walet" is also a colloquial spelling of "wallet".
-Hindi magawang ma-unlock ang wallet.
+Correct translation:  
+Huwag paganahin ang Pribadong susi
 ```
 
 ```
@@ -221,102 +204,164 @@ Hindi magawang ma-unlock ang wallet.
         <translation>salin</translation>
     
 YES
-The translation of "version" to "salin" is incorrect. "Salin" in Filipino means "copy". The correct translation for "version" in the context of Bitcoin would be "bersyon" or "balangkas".
+The translation "salin" means "copy" rather than "version" in Filipino. The correct translation for "version" is "bersyon". 
 
-Correct translation: bersyon
+Correct translation:
+bersyon
 ```
 
 ```
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
         <translation>IP address ng proxy (e.g. IPv4: 127.0.0.1 / IPv6:::1)</translation>
     
-YES - The IPv6 address format in the translation has an extra colon.
-Correct translation: IP address ng proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)
+YES
+There is an erroneous spacing and punctuation issue. The translation missed "ng" after "IP address" and included an incorrect triple colon "IPv6:::1" instead of "IPv6: ::1".
+
+Correct translation:
+IP address ng proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)
 ```
 
 ```
         <source>Prune block storage to</source>
         <translation>I-prune and block storage sa</translation>
     
-YES: The translation is inaccurate and nonsensical. It seems to be a literal, word-for-word translation that doesn't form a coherent phrase in Tagalog. The term "I-prune" is not a standard Tagalog verb, and "block storage sa" is also grammatically incorrect.
+YES  
+The translation mixes English and Filipino incorrectly by keeping "and" in English instead of using the Filipino equivalent "at" or restructuring the sentence appropriately. The phrase "I-prune and block storage sa" does not make sense because "and" is out of place and "sa" is used without an object or clear connection.
 
-Correct translation: "I-prune ang imbakan ng block" or "Bawasan ang imbakan ng block"
+Correct translation:  
+"I-prune ang imbakan ng block sa"
 ```
 
 ```
         <source>Spendable:</source>
         <translation>Puedeng gastusin:</translation>
     
-UNK_LANG
+YES
+The Tagalog translation uses a Spanish-derived word "Puedeng," which is a non-standard or colloquial form mixing Spanish and Tagalog. The correct Tagalog word for "Spendable" in this context (amount of Bitcoin that can be spent) is "Magagamit" or "Maaaring gastusin."
+
+Correct translation:
+Magagamit:
 ```
 
 ```
         <source>Mined balance in watch-only addresses that has not yet matured</source>
         <translation>Mga naminang balanse na nasa mga watch-only address na hindi pa ligtas gastusin</translation>
     
-YES - The translation is not accurate and is problematic because it implies that Bitcoin funds are unsafe to spend, which is not the intended meaning of "matured" in this context. "Matured" in Bitcoin refers to the confirmation status of a transaction, not its safety. The phrase "ligtas gastusin" (safe to spend) is an incorrect interpretation.
+YES  
+The term "matured" in the Bitcoin context refers to mined coins that are confirmed and spendable, not just "safe to spend" ("ligtas gastusin"). The translated phrase "hindi pa ligtas gastusin" ("not yet safe to spend") is a good attempt but somewhat informal and less precise. Also, "watch-only address" should be consistent in plural or singular form; the source plural "addresses" is translated as singular "address," which is inconsistent.
 
-The correct translation should focus on the confirmation status of the funds, implying that they are not yet fully confirmed and thus might not be available for immediate use or transfer.
+A more accurate translation would maintain the plural form and use a term closer to the technical meaning of "matured," such as "hindi pa ganap na malaya gamitin" or "hindi pa ganap na mature."
 
-Correct translation: Mga na-mine na balanse sa mga watch-only address na hindi pa napoproseso.
+Correct translation:  
+"Mga naminang balanse sa mga watch-only na address na hindi pa ganap na mature"
 ```
 
 ```
         <source>Privacy mode activated for the Overview tab. To unmask the values, uncheck Settings-&gt;Mask values.</source>
         <translation>Na-activate ang mode ng privacy para sa tab na Pangkalahatang-ideya.  Upang ma-unkkan ang mga halaga, alisan ng check ang Mga Setting-&gt; Mga halaga ng mask.</translation>
     
-YES, The translation is problematic due to the incorrect translation of "unmask". The Filipino translation "ma-unkkan" is not a standard or understandable word. The phrase "unmask the values" implies revealing hidden information, not directly translating "unmask" as an action.
+YES
+The translation contains some erroneous and unnatural wording in Filipino:
+- "Na-activate" is an unnatural anglicism; better to use "Na-activate" → "Na-activate" could be replaced with "Na-activate" or better "Nakapag-activate ng" or simply "Naka-activate".
+- "mode ng privacy" is understandable but a more natural phrase would be "mode ng pagiging pribado" or "pribadong mode".
+- "tab na Pangkalahatang-ideya" is correct.
+- "Upang ma-unkkan" seems to be a typo; it should be "Upang i-unmask" or "Upang alisin ang pagtatakip" but "unmask" does not have a direct Filipino equivalent and often is used as "i-unmask".
+- "alisan ng check" is a mix of Filipino and English phrasing and not idiomatic; better is "huwag i-check" or "tanggalin ang tsek" or "alisin ang tsek" or "huwag lagyan ng tsek".
+- "Mga Setting-&gt; Mga halaga ng mask." is awkward and inconsistent in spacing; better: "Mga Setting -> Mask ng mga halaga."
 
 Correct translation:
-Na-activate ang mode ng privacy para sa tab na Pangkalahatang-ideya. Upang ipakita ang mga halaga, alisin ang check sa Mga Setting->Itago ang mga halaga.
+
+"Naka-activate ang privacy mode para sa tab na Pangkalahatang-ideya. Upang ipakita ang mga halaga, huwag lagyan ng tsek ang Mga Setting -> Mask ng mga halaga."
+
+Or more formal:
+
+"Naka-activate ang privacy mode para sa tab na Pangkalahatang-ideya. Upang ipakita ang mga halaga, i-uncheck ang Mga Setting -> Mask ng mga halaga."
+
+Therefore:
+
+YES  
+The translation contains unnatural and erroneous phrasing including a typo ("ma-unkkan") and awkward code-mixing in "alisan ng check". It would be better phrased as:
+
+"Naka-activate ang privacy mode para sa tab na Pangkalahatang-ideya. Upang ipakita ang mga halaga, alisin ang tsek sa Mga Setting -> Mask ng mga halaga."
 ```
 
 ```
         <source>Transaction broadcast successfully! Transaction ID: %1</source>
         <translation>%1</translation>
     
-YES, The translation is incomplete. It is missing the phrase "Transaction broadcast successfully! Transaction ID: ". The correct translation is "Matagumpay na na-broadcast ang transaksyon! Transaction ID: %1".
-```
+YES  
+The translation is incomplete and does not convey the meaning of the source text. It only contains the placeholder %1 without the rest of the message.  
 
-```
-        <source>Type</source>
-        <extracomment>Title of Peers Table column which describes the type of peer connection. The "type" describes why the connection exists.</extracomment>
-        <translation>Uri</translation>
-    
-YES: The translation is incorrect and misleading. "Uri" does not accurately translate "Type" in the context of Bitcoin peers. The correct translation should describe the nature of the peer connection.
-Uri
-```
-
-```
-        <source>QR code support not available.</source>
-        <translation>Hindi magagamit ang suporta ng QR code.</translation>
-    
-YES, the translation is incorrect. "Hindi magagamit ang suporta ng QR code" translates to "QR code support is not available" in English, but the Filipino word for "support" is "suporta", not "suporta ng". The correct translation should be "Hindi magagamit ang suporta para sa QR code."
+Correct translation:  
+"Matagumpay na naipadala ang transaksyon! Transaction ID: %1"
 ```
 
 ```
         <source>To specify a non-default location of the blocks directory use the '%1' option.</source>
         <translation>Upang tukuyin and non-default na lokasyon ng direktoryo ng mga block, gamitin ang '%1' na opsyon.</translation>
     
-YES - The translation uses the English word "non-default" instead of translating it into Filipino. The correct translation should be "hindi default".
-
-Corrected translation: Upang tukuyin ang hindi default na lokasyon ng direktoryo ng mga block, gamitin ang '%1' na opsyon.
+YES  
+There is an error in the translation: the word "and" should be "ang" in Filipino. The correct translation should be:  
+Upang tukuyin ang non-default na lokasyon ng direktoryo ng mga block, gamitin ang '%1' na opsyon.
 ```
 
 ```
         <source>In:</source>
         <translation>Sa loob:</translation>
     
-YES, The translation is not accurate. The Filipino word for "in" in this context should be "Sa loob ng" or simply "Sa" depending on the sentence structure, but "Sa loob:" is not the appropriate translation.
-The correct translation is "Sa loob ng:".
+YES
+The translation "Sa loob:" is incorrect for the context of "In:" as a label, presumably referring to an input or incoming transaction. "Sa loob" in Filipino means "inside" or "within" in a temporal or spatial sense and is not appropriate for labeling transaction inputs.
+
+A more accurate translation for "In:" in the Bitcoin context (e.g., inputs or incoming) would be simply "Sa:" or "Input:" depending on the exact usage. Since "In:" is used as a label, the most straightforward and common translation is:
+
+Correct translation:
+Sa:
 ```
 
 ```
         <source>Out:</source>
         <translation>Labas:</translation>
     
-YES - The Tagalog translation for "Out:" is typically "Labas:" or "Lumabas:". However, in the context of Bitcoin, "Out" likely refers to an outgoing transaction, which would be more accurately translated as "Palabas:" or "Nagbabayad:" or "Nagpadala:". "Labas" can mean "outside" or "exit," which doesn't fit the context.
-Correct translation: Palabas:
+YES  
+The translation "Labas:" is incorrect for the English word "Out:" in the context of Bitcoin. "Labas" means "Hello" or "Hi" in Lithuanian, not Filipino (tagalog/fil). The correct Filipino translation for "Out:" could depend on context but generally would be "Labas:" only if used as "outside"; however, in Bitcoin context (likely output), "Out:" is best rendered as "Labas:" only if intended as "output," but this is not the standard. The common translation for "Out:" indicating "Output" is just "Output:" or "Labas:" is not correct in Filipino.
+
+A better Filipino translation would be:
+
+"Labas:" → "Labas:" is a Lithuanian word, so instead use:
+
+"Labas:" → "Labas:" → Remove incorrect word.
+
+More proper translations would use "Labas" only if the original word "Out:" means "outside." For Bitcoin context, to indicate outputs, a generic term like "Labas:" won't work.
+
+Better translation:
+
+<translation>Labas:</translation> → Replace with "Labas:" → This is not in Filipino.
+
+The correct Filipino translation for "Out:" in Bitcoin context (output) is either "Labas:" or "Output:" — but "Labas" is foreign.
+
+Therefore, correct translation:
+
+<translation>Labas:</translation>
+
+Note: The correct Filipino word for "Out" is "Labas" (note the spelling), not "Labas" (which appears the same), and definitely not "Labas" from Lithuanian. Given "Labas" (Polish or Lithuanian greeting) is not Filipino, this is wrong.
+
+Hence, the correction is spelling "Labas:" not "Labas:"
+
+Since "Labas:" as given is probably an error for "Labas:"
+
+So, corrected translation:
+
+<translation>Labas:</translation>  
+
+"Labas" (with a single 'b') means outside or out in Filipino.
+
+Therefore:
+
+YES  
+The provided translation "Labas:" is incorrect; it is a Lithuanian greeting, not Filipino. The correct Filipino translation for "Out:" (as in an output) is "Labas:".  
+
+Correct translation:  
+<translation>Labas:</translation>
 ```
 
 ```
@@ -324,33 +369,31 @@ Correct translation: Palabas:
         <extracomment>Context menu action to copy the address of a peer.</extracomment>
         <translation>Kopyahin and address</translation>
     
-YES - The word "and" is not translated correctly, it should be "ang". The correct translation is "Kopyahin ang address".
+YES  
+The translation mixes Filipino and English, using "and" instead of the correct Filipino particle "ang". Also, "address" should be translated as "address" (commonly retained in tech contexts) or "address" could be translated as "address" if it’s specific jargon; however, better is to either retain "address" or translate to "address" in Filipino ("address" is a loanword and commonly used as-is). The word "Kopyahin" is correct for "Copy".  
+
+Correct translation:  
+Kopyahin ang address
 ```
 
 ```
         <source>Executing command without any wallet</source>
         <translation>Isinasagawa ang command nang walang anumang walet.</translation>
     
-YES, The word "walet" is not a Filipino word. The correct translation for "wallet" is "wallet" or "bayong". The translation of the sentence should be: "Isinasagawa ang command nang walang anumang wallet."
+YES  
+The word "command" should be translated into Filipino for consistency and clarity; leaving it in English is less ideal. Also, "walet" is a misspelling of "wallet." A better translation is:  
+Isinasagawa ang utos nang walang anumang pitaka.
 ```
 
 ```
         <source>Executing command using "%1" wallet</source>
         <translation>Isinasagawa ang command gamit ang "%1" walet</translation>
     
-YES, the translation contains a spelling error. The word "wallet" is misspelled as "walet".
-Isinasagawa ang command gamit ang "%1" wallet
-```
+YES  
+The translation mixes English and Filipino unnecessarily by keeping "command" and "walet" (misspelled) in English. The correct Filipino word for "command" is "utos" and for "wallet" is "pitaka." Also, "walet" is a misspelling.  
 
-```
-        <source>No</source>
-        <translation>Hindi</translation>
-    
-YES
-The translation is inaccurate. "No" in Filipino is "Hindi".
-Hindi is a language spoken in India.
-
-Correct translation: Hindi
+Correct translation:  
+Isinasagawa ang utos gamit ang "%1" pitaka
 ```
 
 ```
@@ -358,101 +401,91 @@ Correct translation: Hindi
         <translation>Kopyahin and address</translation>
     
 YES
-The translation is problematic because "address" is a loanword and should not be translated.
+The Filipino translation uses "and" which is incorrect; it should be "ang" for the definite article. Also, it is better to translate "address" to "address" using the appropriate Filipino term "address" or "adres" with a local touch, but "address" is commonly understood. The correct translation should be:
+
 Kopyahin ang address
-```
-
-```
-        <source>Could not unlock wallet.</source>
-        <translation>Hindi magawang ma-unlock ang walet.</translation>
-    
-YES, the translation uses the word "Hindi" which means "not" in Tagalog. However, the correct translation should be in Filipino. The word "walet" is also a colloquial spelling of "wallet".
-Hindi magawang ma-unlock ang wallet.
-```
-
-```
-        <source>Wallet:</source>
-        <translation>Pitaka:</translation>
-    
-UNK_LANG
 ```
 
 ```
         <source>Date</source>
         <translation>Datiles</translation>
     
-YES
-The translation is inaccurate. "Date" in English should be translated to "Petsa" in Filipino.
-Petsa
-```
+YES  
+The translation "Datiles" is incorrect. The correct Filipino (Tagalog) word for "Date" (as in a calendar date) is "Petsa."
 
-```
-        <source>Insufficient funds!</source>
-        <translation>Hindi sapat na pondo!</translation>
-    
-YES, The translation is incorrect. The word "Hindi" means "no" or "not" and is not part of the Filipino language. The correct translation is "Kulang sa pondo!".
-Kulang sa pondo!
+Correct translation:  
+Petsa
 ```
 
 ```
         <source>After Fee:</source>
         <translation>Bayad sa pagtapusan:</translation>
     
-YES, the translation is problematic. The Tagalog word "bayad" means payment, and "pagtapusan" means end or conclusion. The phrase "Bayad sa pagtapusan" literally translates to "payment at the end". This is an inaccurate translation for "After Fee". A more accurate translation would be "Pagkatapos ng bayad" or "Matapos ang bayad", which means "After the fee/payment".
+YES
+The translation "Bayad sa pagtapusan:" is not accurate in the context of Bitcoin transaction fees. The source "After Fee:" refers to the amount remaining or relevant after deducting the fee, not "payment at the end" which is what the translation implies.
 
-Pagkatapos ng bayad:
+A more accurate translation in Filipino (Tagalog) would be:
+"Pagkatapos ng Bayad:"
 ```
 
 ```
         <source>Copy fee</source>
         <translation>Kopyahin ang halaga</translation>
     
-YES
-The translation is inaccurate and doesn't convey the intended meaning of "Copy fee". The Tagalog phrase "Kopyahin ang halaga" translates to "Copy the amount" or "Copy the value", which is not the same as "Copy fee".
+YES  
+The English source "Copy fee" refers specifically to copying the fee amount, where "fee" is best translated as "bayad" or "singil" in Filipino/Tagalog, which are common words for fee/charge. The translation "Kopyahin ang halaga" literally means "Copy the amount," which is less precise as it translates "fee" as "halaga" (amount/value) instead of "fee." Also, "Kopyahin" is the imperative form "Copy," which is acceptable if this is a button label or command.
 
-Correct translation:
-Kopyahin ang bayarin
+A more accurate translation would be:  
+"Kopyahin ang bayad" or "Kopyahin ang singil"  
+
+If brevity is important and "fee" must be retained in terms related to Bitcoin transactions, "bayad" is the better choice.
+
+Correct translation:  
+Kopyahin ang bayad
 ```
 
 ```
         <source>Copy after fee</source>
         <translation>Kopyahin ang after fee</translation>
     
-YES: The translation uses the English word "after fee" directly, which is not a proper Tagalog translation. The correct translation should convey the meaning of "copying an amount or value that remains after the fee has been deducted."
-Kopyahin pagkatapos ng bayarin
-```
+YES
+The phrase "after fee" is untranslated and left in English within the Tagalog translation, which makes it incomplete and inconsistent. The word "Copy" is translated as "Kopyahin," which is correct as an imperative verb, but the phrase should be fully translated.
 
-```
-        <source>Not signalling Replace-By-Fee, BIP-125.</source>
-        <translation>Hindi sumesenyas ng Replace-By-Fee, BIP-125.</translation>
-    
-YES: The translation is incorrect. "Hindi sumesenyas ng" translates to "Does not signal of". The correct translation should be "Hindi sumesenyas ng" which translates to "Does not signal".
-
-Correct translation: Hindi sumesenyas ng Replace-By-Fee, BIP-125.
+Correct translation:
+Kopyahin ang pambayad
 ```
 
 ```
         <source>Confirm send coins</source>
         <translation>Kumpirmahin magpadala ng coins</translation>
     
-YES. The word order is unnatural in Filipino.
-Kumpirmahin ang pagpapadala ng mga coins
+YES  
+The translation mixes Filipino and English unnecessarily by keeping "coins" in English, which is not ideal when a corresponding Filipino term exists. Also, "magpadala" (to send) is in the infinitive form, but the English source is a command ("Confirm send coins"), so an imperative or a better phrase structure would be more accurate. A more natural Filipino translation would be:
+
+"Kumpirmahin ang pagpapadala ng mga barya"  
+
+Here, "barya" is a suitable translation for "coins" in the Bitcoin context or general coins, and "pagpapadala" (the act of sending) makes the phrase flow better. Alternatively, if "coins" specifically refers to cryptocurrency and the term "coins" is commonly used in Filipino Bitcoin context, it could stay, but ideally it should be adapted.
 ```
 
 ```
         <source>Warning: Unknown change address</source>
         <translation>Babala: Hindi alamang address ng sukli</translation>
     
-YES: The translation is problematic as "Hindi alamang address ng sukli" is grammatically incorrect and awkward in Tagalog. A more natural and accurate translation would be "Babala: Hindi kilalang address ng sukli".
-Babala: Hindi kilalang address ng sukli
+YES  
+The word "alang" is incorrect in this context and should be "alam." The phrase "Hindi alamang" is not a proper negation and sounds ungrammatical in Filipino. Also, "address" can be translated as "address" or "adres," but here it is acceptable to keep the term as is due to technical context.  
+
+Correct translation:  
+Babala: Hindi alam ang address ng sukli
 ```
 
 ```
         <source>Subtract fee from amount</source>
         <translation>Ibawas ang bayad mula sa halagaq</translation>
     
-YES, there is a typo in the translation. The word "halagaq" should be "halaga".
+YES  
+The word "halagaq" is incorrect; it should be "halaga" (amount). The rest of the translation is accurate and retains the meaning of "Subtract fee from amount."
 
+Correct translation:  
 Ibawas ang bayad mula sa halaga
 ```
 
@@ -460,17 +493,24 @@ Ibawas ang bayad mula sa halaga
         <source>Signatures - Sign / Verify a Message</source>
         <translation>Pirma - Pumirma / Patunayan ang Mensahe</translation>
     
-YES - The translation uses "Pirma" which means "signature" in Tagalog. However, the context of Bitcoin transactions often involves signing messages with a private key, which is usually referred to as "pagpirma" or "magpirma" for the act of signing. "Pirma" can also refer to a physical signature. While "Pirma" is not entirely wrong, "Pagpirma" would be a more accurate and contextually appropriate term for the act of signing a message in a digital/cryptocurrency context.
-Pagpirma - Pirmahan / Patunayan ang Mensahe
+YES  
+The translation is partially incorrect: "Pirma" is correct for "Signatures," but "Pumirma" is a misspelling or improper form. The correct Filipino verb for "Sign" is "Pumirma". However, "Patunayan ang Mensahe" means "Verify the message," which is correct.
+
+There is also inconsistency in spelling: "Pirma" is a noun, but "Pumirma" is a verb meaning "to sign". The slash "/" is retained, which is appropriate.
+
+Correct translation:  
+Pirma - Pumirma / Patunayan ang Mensahe
 ```
 
 ```
         <source>Copy the current signature to the system clipboard</source>
         <translation>Kopyahin ang kasalukuyang address sa system clipboard</translation>
     
-YES, The translation is inaccurate. The source text refers to a "signature", but the translation uses the word "address", which is a different concept in Bitcoin. The word "signature" in the context of Bitcoin refers to the cryptographic proof of ownership of funds, while "address" refers to a destination for sending funds. The correct translation should reflect "signature".
+YES  
+The translation incorrectly translates "signature" as "address" ("address" is "address" in English, but the translation uses "address" instead of "signature"). The correct translation should use the word for "signature," which is "pirma." The rest of the translation is correct.
 
-NO, Kopyahin ang kasalukuyang signature sa system clipboard
+Correct translation:  
+Kopyahin ang kasalukuyang pirma sa system clipboard
 ```
 
 ```
@@ -478,26 +518,21 @@ NO, Kopyahin ang kasalukuyang signature sa system clipboard
         <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents an abandoned transaction.</extracomment>
         <translation>inabandona</translation>
     
-YES: The provided Filipino translation is incorrect and doesn't accurately convey the meaning of "abandoned" in the context of Bitcoin transactions. The correct translation for "abandoned" in this context would be "iniwan" or "tinalikuran".
+YES  
+The translation "inabandona" is incorrect/incomplete in Filipino (Tagalog). The correct word for "abandoned" in this context is "inabandona" is a misspelling or non-standard form. The correct Filipino translation for "abandoned" (past tense, adjective) is "iniwan" or "pinabayaan." Since the context is about transaction status ("abandoned transaction"), "iniwan" or "pinabayaan" is appropriate.
 
-Correct translation: iniwan
-```
-
-```
-        <source>%1/unconfirmed</source>
-        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in at least one block, but less than 6 blocks.</extracomment>
-        <translation>%1/hindi nakumpirma</translation>
-    
-YES: The translation uses the word "hindi" which means "not" in Filipino. The source text means "1/unconfirmed", so the translation should be "1/hindi pa nakukumpirma".
-%1/hindi pa nakukumpirma
+Correct translation:  
+<translation>iniwan</translation>
 ```
 
 ```
         <source>Date</source>
         <translation>Datiles</translation>
     
-YES
-The translation is inaccurate. "Date" in English should be translated to "Petsa" in Filipino.
+YES  
+The translation "Datiles" is incorrect. The correct Filipino (Tagalog) word for "Date" (as in a calendar date) is "Petsa."
+
+Correct translation:  
 Petsa
 ```
 
@@ -505,17 +540,21 @@ Petsa
         <source>Credit</source>
         <translation>Pautang</translation>
     
-YES, Pautang means loan, while Credit means something that is a blessing or a source of honor, fame, or respect. The better translation is Kredito.
-        <source>Credit</source>
-        <translation>Kredito</translation>
+YES  
+The translation "Pautang" primarily means "loan" in Filipino and does not accurately convey the meaning of "Credit" in the Bitcoin or financial context where it usually refers to an incoming amount or balance credit. A more appropriate translation would be "Kredit," which is a loanword commonly used in Filipino to mean "credit" in financial contexts.
+
+Correct translation:  
+Kredit
 ```
 
 ```
         <source>Date</source>
         <translation>Datiles</translation>
     
-YES
-The translation is inaccurate. "Date" in English should be translated to "Petsa" in Filipino.
+YES  
+The translation "Datiles" is incorrect. The correct Filipino (Tagalog) word for "Date" (as in a calendar date) is "Petsa."
+
+Correct translation:  
 Petsa
 ```
 
@@ -523,7 +562,42 @@ Petsa
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>Hindi pa ligtas gastusin (%1 pagkumpirma, magagamit pagkatapos ng %2)</translation>
     
-YES, The translation is problematic because it uses a Tagalog word "Hindi pa ligtas gastusin" which means "not yet safe to spend" instead of the direct translation of "immature". Additionally, it incorrectly translates "confirmations" to "pagkumpirma" which means "confirmation" in singular form. A more accurate translation would be "Hindi pa ligtas gastusin (%1 kumpirmasyon, magagamit pagkatapos ng %2)".
+YES  
+The translation is somewhat inaccurate and may cause confusion. The English term "Immature" in the Bitcoin context refers to coins that are not yet spendable because they haven't reached enough confirmations. The translated phrase "Hindi pa ligtas gastusin" means "Not yet safe to spend," which captures the intent but is less precise than "Immature." The rest of the translation properly conveys the confirmation count and availability after a number of confirmations, maintaining format specifiers correctly.
+
+A more accurate and commonly used translation for "Immature" in Bitcoin context is "Hindi pa matanda" or simply "Immature" transliterated, but "Hindi pa matanda" may sound odd. Another approach is to reflect the exact meaning using "Hindi pa matured" or "Hindi pa matured ang coins," but since "mature" is not a commonly used term in Tagalog, an explicit phrasing may be better.
+
+Suggested improved translation:
+
+"Immature (%1 pagkumpirma, magagamit pagkatapos ng %2)"
+
+or if needing clarity:
+
+"Hindi pa matured (%1 pagkumpirma, magagamit pagkatapos ng %2)"
+
+However, as "Immature" is a technical term, many localized Bitcoin apps use English or a direct transliteration.
+
+Alternatively, maintaining the original meaning with a more formal phrase like:
+
+"Hindi pa mabisa (%1 pagkumpirma, magagamit pagkatapos ng %2)"
+
+("Hindi pa mabisa" means "Not yet effective" or "Not yet valid.")
+
+Final corrected translation suggestion:
+
+Immature (%1 confirmations, will be available after %2)
+
+=>
+
+"Immature (%1 pagkumpirma, magagamit pagkatapos ng %2)"
+
+Or to keep the original English term (which might be preferable given the technical context):
+
+"Immature (%1 pagkumpirma, magagamit pagkatapos ng %2)"
+
+Hence, a fully corrected translation without interpretive changes:
+
+<translation>Immature (%1 pagkumpirma, magagamit pagkatapos ng %2)</translation>
 ```
 
 ```
@@ -531,7 +605,8 @@ YES, The translation is problematic because it uses a Tagalog word "Hindi pa lig
         <translation>Kopyahin and address</translation>
     
 YES
-The translation is problematic because "address" is a loanword and should not be translated.
+The Filipino translation uses "and" which is incorrect; it should be "ang" for the definite article. Also, it is better to translate "address" to "address" using the appropriate Filipino term "address" or "adres" with a local touch, but "address" is commonly understood. The correct translation should be:
+
 Kopyahin ang address
 ```
 
@@ -539,8 +614,10 @@ Kopyahin ang address
         <source>Date</source>
         <translation>Datiles</translation>
     
-YES
-The translation is inaccurate. "Date" in English should be translated to "Petsa" in Filipino.
+YES  
+The translation "Datiles" is incorrect. The correct Filipino (Tagalog) word for "Date" (as in a calendar date) is "Petsa."
+
+Correct translation:  
 Petsa
 ```
 
@@ -548,119 +625,61 @@ Petsa
         <source>Could not commit transaction</source>
         <translation>Hindi makagawa ng transaksyon</translation>
     
-YES
-The translation is inaccurate. The Filipino phrase "Hindi makagawa ng transaksyon" means "Cannot make a transaction" which is slightly different from "Could not commit transaction". A more accurate translation would be "Hindi maisagawa ang transaksyon" or "Hindi matagumpay na naisagawa ang transaksyon".
+YES  
+The translation "Hindi makagawa ng transaksyon" literally means "Cannot make/produce transaction," which does not capture the specific meaning of "Could not commit transaction" in the Bitcoin context. "Commit" here refers to finalizing or recording a transaction, not just making one. A more accurate translation would convey the failure to commit or finalize the transaction.
 
-YES
-Hindi maisagawa ang transaksyon
+Correct translation:  
+"Hindi maisagawa ang pag-commita ng transaksyon"  
+or more naturally:  
+"Hindi maisagawa ang pag-commit ng transaksyon"  
+(Note: "commit" is often used as is in Filipino technical jargon.)
 ```
 
 ```
         <source>Export the data in the current tab to a file</source>
         <translation>I-exporte yung datos sa kasalukuyang tab doon sa pila</translation>
     
-YES, The translation is inaccurate and uses the wrong word for "file". The word "pila" in Filipino means "queue" or "pile", not "file".
-The correct translation for "file" in this context would be "file" or "talaan".
+YES  
+The translation has errors and awkward phrasing. Specifically:  
+- "I-exporte" is a spanglish or informal use; the correct Tagalog/Filipino term should be "I-export" or "I-export ang".  
+- "yung" is colloquial; formal Filipino usually uses "ang" instead.  
+- "doon sa pila" is incorrect for "to a file". "pila" means "line" or "queue". The correct word for "file" is "file" (often borrowed) or "sanggunian" or "talaksan". Commonly, "file" is used directly in technical contexts.  
+- The phrase should better be "I-export ang datos sa kasalukuyang tab sa isang file."
 
-Corrected translation: I-export ang datos sa kasalukuyang tab sa isang file.
+Correct translation:  
+I-export ang datos sa kasalukuyang tab sa isang file
 ```
 
 ```
         <source>Backup Wallet</source>
         <translation>Backup na walet</translation>
     
-YES, The translation is problematic as it uses a loanword from English ("walet") instead of the correct Filipino term for "wallet".
+YES  
+The word "walet" is a misspelling of "wallet." Also, "Backup na walet" is a literal phrase mixing English and Filipino particles and is not natural. A better translation would be "Backup ng pitaka" where "pitaka" means wallet and "ng" is the correct linker.  
 
-Correct translation: Backup ng wallet
+Correct translation:  
+Backup ng pitaka
 ```
 
 ```
         <source>Warning: Private keys detected in wallet {%s} with disabled private keys</source>
         <translation>Babala: Napansin ang mga private key sa walet { %s} na may mga hindi pinaganang private key</translation>
     
-YES: The translation for "disabled private keys" is redundant and awkward. A more natural and accurate translation would be "may mga nakatayong private key" (with private keys that are turned off/disabled).
+YES  
+There is a spacing issue before the format specifier %s. Also, "walet" should be spelled as "wallet," and "hindi pinaganang" is not the correct translation for "disabled." A better translation would use "hindi pinagana" or "naka-disable" for "disabled." Additionally, the phrase could be smoother and more natural.
 
-Babala: Napansin ang mga private key sa walet { %s} na may mga nakatayong private key
+Correct translation:  
+Babala: Napansin ang mga private key sa wallet {%s} na may naka-disable na mga private key
 ```
 
 ```
         <source>Cannot resolve -%s address: '%s'</source>
         <translation>Hindi malutas - %s address: ' %s'</translation>
     
-YES
-The translation uses "Hindi malutas" which is a mix of Filipino and Hindi. The correct Filipino translation for "Cannot resolve" is "Hindi malutas". Also, there is an extra space before the second '%s'.
+YES  
+There are unnecessary spaces after the hyphen and before the second placeholder '%s' in the translation. Also, the English word "address" is untranslated, which might be acceptable if it's a technical term widely used as is, but ideally should be translated or consistent.
 
-Hindi malutas - %s address: '%s'
-```
-
-```
-        <source>Insufficient funds</source>
-        <translation>Hindi sapat na pondo</translation>
-    
-YES
-The translation is inaccurate and does not convey the meaning of the original English text. The Tagalog phrase "Hindi sapat na pondo" translates to "Not enough funds," which is a correct translation of "Insufficient funds." However, the provided translation uses "Hindi sapat na pondo," which is not a standard Tagalog phrase. A more natural and common way to express "Insufficient funds" in Tagalog is "Walang sapat na pondo."
-
-Correct translation: Walang sapat na pondo
-```
-
-```
-        <source>Invalid -onion address or hostname: '%s'</source>
-        <translation>Hindi wastong -onion address o hostname: '%s'</translation>
-    
-YES - The translation uses the word "Hindi" which is the name of the language itself, and not a Tagalog word for "invalid". The correct translation should be "Hindi wasto".
-Hindi wasto -onion address o hostname: '%s'
-```
-
-```
-        <source>Invalid -proxy address or hostname: '%s'</source>
-        <translation>Hindi wastong -proxy address o hostname: '%s'</translation>
-    
-YES - The translation incorrectly uses "Hindi wastong" which means "Not correct" in Hindi, instead of the Filipino translation for "Invalid". The correct Filipino translation for "Invalid" is "Hindi wasto".
-
-Hindi wasto -proxy address o hostname: '%s'
-```
-
-```
-        <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
-        <translation>Hindi wastong halaga para sa -%s=&lt;amount&gt;: '%s'</translation>
-    
-YES: The translation uses "Hindi wastong halaga" which directly translates to "not correct amount". While understandable, the more natural and commonly used phrasing in Filipino for "Invalid amount" is "Hindi wasto ang halaga" or "Mali ang halaga". Also, the word "para sa" (for) is redundant in this context and can be omitted for a more concise translation.
-
-Correct translation: Hindi wasto ang halaga para sa -%s=&lt;amount&gt;: '%s'
-```
-
-```
-        <source>Invalid netmask specified in -whitelist: '%s'</source>
-        <translation>Hindi wastong netmask na tinukoy sa -whitelist: '%s'</translation>
-    
-YES
-The translation uses Hindi instead of Filipino.
-
-NO
-```
-
-```
-        <source>Unable to create the PID file '%s': %s</source>
-        <translation>Hindi makagawa ng PID file '%s': %s</translation>
-    
-YES, The translation is problematic because the target language is specified as 'fil' which is the ISO 639-1 code for Filipino, but the translation provided is in Hindi. The correct translation into Filipino should be: Hindi makagawa ng PID file '%s': %s.
-```
-
-```
-        <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>Hindi kilalang network na tinukoy sa -onlynet: '%s'</translation>
-    
-YES, The provided translation uses "Hindi kilalang" which is a direct translation of "Unknown" but it's not the most natural or commonly used phrasing in Tagalog for this context. A more idiomatic translation would be "Hindi kilala". Also, the word "network" is a loanword and "specified" is translated as "tinukoy". The format specifier '%s' is correctly transferred.
-
-Correct translation: Hindi kilala ang network na tinukoy sa -onlynet: '%s'
-```
-
-```
-        <source>Unsupported logging category %s=%s.</source>
-        <translation>Hindi suportadong logging category %s=%s.</translation>
-    
-YES. The translation uses "Hindi suportadong" which means "Not supported" in Tagalog. The correct translation for "Unsupported" in Tagalog is "Hindi suportado".
-
-NO
+Correct translation:  
+Hindi malutas -%s address: '%s'
 ```
 </details>

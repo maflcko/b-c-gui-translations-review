@@ -13,57 +13,44 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Create a new address</source>
         <translation>Crea un'incarreramentu nou</translation>
     
-YES, The translation is incorrect and does not make sense in the context of Bitcoin addresses. The word "incarreramentu" is not a recognized term for an address in Sardinian.
-
-Correct translation: Crea un indirizzu novu
-```
-
-```
-        <source>Enter address or label to search</source>
-        <translation>Poni s'incarreramentu o s'etiketa po circai</translation>
-    
-YES: The translation is inaccurate and does not convey the intended meaning. The phrase "Poni s'incarreramentu o s'etiketa po circai" does not translate to "Enter address or label to search" in a way that is understandable in the context of Bitcoin.
-
-Correct translation: Introduci s'indiritzu o s'eticheta po circai
+UNK_LANG
 ```
 
 ```
         <source>Choose the address to send coins to</source>
         <translation>Scebera a cali incarreramentu bolis mandai is monedas</translation>
     
-YES, The translation is incorrect and does not convey the intended meaning. The source text is asking the user to select an address to send coins to, which is a common operation in Bitcoin transactions. The provided translation appears to be in Sardinian, but it's nonsensical and doesn't relate to the context of sending cryptocurrency.
+YES
+The translation is problematic. The phrase "Scebera a cali incarreramentu bolis mandai is monedas" is not standard in Sardinian ('sc'). "Scebera a cali incarreramentu" is a literal and awkward construction for "Choose the address"—"incarreramentu" is not a recognized term for "address" in Sardinian, and the structure as a whole is unclear. Also, "bolis mandai" is a literal rendering and ungrammatical.
 
-Correct translation: "Scebera s'indiritzu a chi bolis ispedire is arretzas"
+Correct translation:
+Scebera s'indiritzu a su quali imbiare is monedas
+
+Explanation: 
+- "Scebera" = "Choose"
+- "s'indiritzu" = "the address"
+- "a su quali" = "to which"
+- "imbiare" = "to send"
+- "is monedas" = "the coins"
 ```
 
 ```
         <source>Choose the address to receive coins with</source>
         <translation>Sciobera s'incarreramentu po arrici is monedas cun</translation>
     
-YES, The translation is grammatically incorrect and does not convey the intended meaning. The word "Sciobera" is not a recognized word in any language, and the rest of the sentence is a jumble of words that do not form a coherent thought.
+YES
+The translation has inaccuracies and is problematic. Specifically, "S'incarreramentu" is not an accurate translation of "address" in this context. The wording and grammar are also awkward; "arrici" is not standard for "to receive" ("arriòiri" or "arrèciri" would be more correct, depending on the Sardinian variant). "Po arrici is monedas cun" is not idiomatic Sardinian.
 
-Correct translation: Sceber s'incarreramentu po arriciu is monedasa cun
+Correct translation:
+Scegi s'indiritzu cun su cale recìvere is monedas
+
+This uses "indiritzu" (the Sardinian word for "address") and "recìvere" (to receive), keeping the meaning intact and the grammar correct.
 ```
 
 ```
         <source>Choose</source>
         <translation>Sciobera</translation>
     
-YES
-The provided translation is incorrect. "Sciobera" is not a valid word in any known language and does not translate to "Choose".
-
-NO
-```
-
-```
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Custus funt is incarreramentu Bitcoin tuus po mandai pagamentus. Càstia sempri sa cantidadi e s'incarreramentu destinatàriu antis de inviais is monedas</translation>
-    
-YES
-The translation appears to be in Sardinian. While the translation captures the general meaning of the source text, the phrasing and vocabulary used are not entirely idiomatic for a Bitcoin context. Specifically, "Custus funt is incarreramentu Bitcoin tuus po mandai pagamentus" is a literal translation that sounds awkward. A more natural phrasing would be closer to "Custus est s'indiritzu Bitcoin tuu po mandare pagamentos." Similarly, "Càstia sempri sa cantidadi e s'incarreramentu destinatàriu antis de inviais is monedas" could be improved for naturalness.
-
-A more contextually appropriate and fluent translation in Sardinian would be:
-
-<translation>Custu est s'indiritzu Bitcoin tuu pro mandare pagamentos. Controlla semper sa cantidade e s'indiritzu de destinatariu in antis de mandare sas monedas.</translation>
+UNK_LANG
 ```
 </details>

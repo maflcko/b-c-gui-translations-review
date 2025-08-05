@@ -13,56 +13,58 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Repeat new passphrase</source>
         <translation>Повтори ја лозинката</translation>
     
-YES - The translation is missing the word "new" and the word "passphrase" is translated as "password". The correct translation should be "Повтори ја новата лозинка".
-```
+YES
+The translation "Повтори ја лозинката" translates back as "Repeat the passphrase", but the source is "Repeat new passphrase", which specifically asks to repeat the *new* passphrase (i.e., not just any passphrase, but the one just entered as new). The translation is missing the "new" ("нова").
 
-```
-        <source>A fatal error occurred. %1 can no longer continue safely and will quit.</source>
-        <translation>Настана голема грешка. %1 не може безбедно да продолжи и ќе се затвори.</translation>
-    
-YES - The translation is problematic because it uses the word "голема" which means "big" or "large" instead of "fatal" or "critical" for an error. The correct translation for "fatal error" would be "фатална грешка".
-
-NO - Настана фатална грешка. %1 не може безбедно да продолжи и ќе се затвори.
+Correct translation:
+Повтори ја новата лозинка
 ```
 
 ```
         <source>%1 didn't yet exit safely…</source>
         <translation>%1не излезе безбедно...</translation>
     
-YES, The space between "%1" and "не" is missing.
-Correct translation: %1 не излезе безбедно...
+YES
+There is a missing space between "%1" and "не", which creates an issue with readability and format. The ellipsis character in the translation is three dots ("...") instead of the ellipsis character ("…") used in the source.
+
+Correct translation:
+%1 не излезе безбедно…
 ```
 
 ```
         <source>Options…</source>
         <translation>Поставки...</translation>
     
-YES: The Macedonian translation "Поставки..." means "Supplies..." or "Deliveries...". The correct translation for "Options..." in the context of Bitcoin and software interfaces is "Опции...".
-Опции...
+YES
+The translation of "Options…" as "Поставки..." is incorrect. The correct Macedonian word for "Options" in this context (application/software options or settings) is "Опции". Additionally, the ellipsis character should match the original style (the source uses the Unicode ellipsis “…” not three dots “...”); it is preferable to use the Unicode ellipsis for consistency.
+
+Correct translation:
+<translation>Опции…</translation>
 ```
 
 ```
         <source>Backup Wallet…</source>
         <translation>Сигурносен паричник...</translation>
     
-YES - The translation is inaccurate. "Сигурносен паричник" translates to "Security wallet" or "Safe wallet" in English, not "Backup Wallet". The correct translation should be "Резервна копија на паричник..." which translates to "Backup wallet...".
-Резервна копија на паричник...
-```
+YES
+The translation "Сигурносен паричник..." is incorrect for several reasons:
+1. "Сигурносен паричник" translates to "Secure wallet", which does not convey the meaning of "Backup Wallet".
+2. The ellipsis in the source uses a single Unicode character (…), but the translation uses three dots (...). Consistency is preferable.
+3. The correct translation for "Backup Wallet" in Macedonian should convey the meaning of "Make a backup of the wallet".
 
-```
-        <source>Change Passphrase…</source>
-        <translation>Промени лозинка...</translation>
-    
-YES, The translation is inaccurate. The Macedonian word for "passphrase" is "лозинка" but the translation has used "лозинка" which refers to "password". The correct translation should be "Промени лозинка..."
+Correct translation:
+Резервна копија на паричникот…
 ```
 
 ```
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
         <translation>Потврдување на пораките за да се знае дека се напишани со дадените биткоин-адреси.</translation>
     
-YES - The translation is inaccurate and uses "напишани" (written) instead of "потпишани" (signed).
+YES
+The translation is inaccurate. The source says "ensure they were signed with specified Bitcoin addresses," but the translation uses "се напишани" ("were written"), which changes the meaning. Also, it uses the noun "Потврдување" instead of an imperative or infinitive.
 
-Correct translation: Потврдување на пораките за да се знае дека се потпишани со дадените биткоин-адреси.
+Correct translation:
+Потврдете пораки за да се осигурате дека се потпишани со одредените Биткоин-адреси.
 ```
 
 ```
@@ -70,8 +72,11 @@ Correct translation: Потврдување на пораките за да се
         <extracomment>Name of the menu item that restores wallet from a backup file.</extracomment>
         <translation>Обнови паричник...</translation>
     
-YES - The Macedonian word "Обнови" means "Update" or "Renew", not "Restore". The correct translation for "Restore Wallet" would be "Врати паричник".
-Врати паричник...
+YES
+The Macedonian word "Обнови" means "Update" or "Renew," not "Restore." The correct word for "Restore" is "Врати" or "Врати од резервна копија". Also, the ellipsis should use the proper Unicode character (…).
+
+Correct translation:
+Врати паричник…
 ```
 
 ```
@@ -79,56 +84,54 @@ YES - The Macedonian word "Обнови" means "Update" or "Renew", not "Restore
         <extracomment>A context menu item. The "Peers tab" is an element of the "Node window".</extracomment>
         <translation>Исклучи ја мрежната активност</translation>
     
-YES - The translation is completely inaccurate and unrelated to the source text. The source text "Show Peers tab" refers to displaying a tab showing network peers, while the translation "Исклучи ја мрежната активност" means "Turn off network activity".
-Correct translation: Покажи го табот за конекции
+YES
+The translation is incorrect. The source text is "Show Peers tab", which means to display the "Peers" tab in a user interface. The provided translation "Исклучи ја мрежната активност" means "Disable network activity", which is unrelated.
+
+Correct translation:
+Прикажи ја јазичето „Рамноправни“
 ```
 
 ```
         <source>After Fee:</source>
         <translation>После Провизија:</translation>
     
-UNK_LANG
-```
+YES
+The translation is problematic. In Macedonian, the word "Провизија" is generally used for "commission," but in the Bitcoin context (transaction fees), "такса" is the more accurate and commonly used term. Also, "Провизија" is capitalized incorrectly; it should be in lowercase after the preposition.
 
-```
-        <source>Change:</source>
-        <translation>Кусур:</translation>
-    
-YES - The translation of "Change:" to "Кусур:" is incorrect in the context of Bitcoin. "Кусур" generally refers to a defect or flaw. In Bitcoin transactions, the "change" refers to the unspent output returned to the sender. A more appropriate translation would be "Промена:" or "Враќање:" (return).
-
-Correct translation: Промена:
+Correct translation:
+После такса:
 ```
 
 ```
         <source>List mode</source>
         <translation>список Режим</translation>
     
-YES, The translation is problematic because the word order is incorrect. The correct translation should be "Режим список".
-Режим список
+YES
+The translation improperly orders the words. In Macedonian, the correct term is "Режим на список" or "Списочен режим".
+
+Correct translation:
+Режим на список
 ```
 
 ```
         <source>Edit Address</source>
         <translation>Измени Адреса</translation>
     
-YES - The translation "Измени Адреса" is grammatically incorrect in Macedonian for the English phrase "Edit Address". The noun "Адреса" (Address) is in the plural genitive case, which is not appropriate here. The imperative verb "Измени" (Edit) should be followed by the singular accusative case of the noun.
+YES
+The translation "Измени Адреса" is problematic. In Macedonian, "Адреса" is singular, but the definite article is used ("Адресата" would be "the address"). The English "Edit Address" does not use the definite article. Also, in menu/UI context, Macedonian typically does not use definite articles, and capitalization of both words is not standard in UI.
 
-Correct translation: Измени адреса
+Correct translation:
+Измени адреса
 ```
 
 ```
         <source>After Fee:</source>
         <translation>После Провизија:</translation>
     
-UNK_LANG
-```
+YES
+The translation is problematic. In Macedonian, the word "Провизија" is generally used for "commission," but in the Bitcoin context (transaction fees), "такса" is the more accurate and commonly used term. Also, "Провизија" is capitalized incorrectly; it should be in lowercase after the preposition.
 
-```
-        <source>Change:</source>
-        <translation>Кусур:</translation>
-    
-YES - The translation of "Change:" to "Кусур:" is incorrect in the context of Bitcoin. "Кусур" generally refers to a defect or flaw. In Bitcoin transactions, the "change" refers to the unspent output returned to the sender. A more appropriate translation would be "Промена:" or "Враќање:" (return).
-
-Correct translation: Промена:
+Correct translation:
+После такса:
 ```
 </details>

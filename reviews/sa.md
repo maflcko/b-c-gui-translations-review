@@ -10,144 +10,168 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 
 
 ```
-        <source>Right-click to edit address or label</source>
-        <translation>दक्षिणक्लिक् कृत्वा पताक्षेत्रं वा लेबलं सम्पादयेत्।</translation>
-    
-YES, The translation is problematic because it uses Sanskrit words that are not commonly understood in a modern technical context. The use of "दक्षिणक्लिक्" (dakṣiṇaklik) for "right-click" is an awkward literal translation that doesn't fit modern computer terminology. The phrase "सम्पादयेत्" (sampādayet) is also a bit formal. A more appropriate and understandable translation would use more common or direct terms.
-
-NO, The translation is problematic.
-The translation uses overly formal and literal Sanskrit that is not idiomatic for a modern user interface.
-Correct translation: उजवी-क्लिक करा पत्ता किंवा लेबल संपादित करण्यासाठी.
-```
-
-```
         <source>Create a new address</source>
         <translation>नवं पताक्षेत्रं निर्मिञ्चतु।</translation>
     
-YES: The word "निर्मिञ्चतु" is a Sanskrit verb form and doesn't fit the context of creating a Bitcoin address in modern Marathi. The word "पताक्षेत्रं" is also not a standard Marathi term for "address" in this context.
+YES
+The Sanskrit translation "नवं पताक्षेत्रं निर्मिञ्चतु।" is somewhat unusual and awkward for "Create a new address." The word "पताक्षेत्रं" (patākṣetraṃ) is not a standard term for "address" (in the context of Bitcoin addresses). A better translation should use a more general or modern term for "address," such as "पता" (patā), which is commonly used in modern Sanskrit to mean "address."
 
-Correct translation: नवीन पत्ता तयार करा.
-```
+Also, the verb "निर्मिञ्चतु" (let him/her create) is in an imperative form, which is good for a command, but "नवं" (new) and "पता" (address) would be simpler and clearer.
 
-```
-        <source>Copy the currently selected address to the system clipboard</source>
-        <translation>वर्तमानतः चयनितं पताक्षेत्रं प्रणाली क्लिपबोर्डे प्रतिलिप्यताम्।</translation>
-    
-YES, the translation is problematic because it uses archaic Sanskrit grammar for a modern technical context, making it difficult to understand for a typical user. It also misinterprets "address" as "address field" and "copy" as "let it be copied".
+Suggested correct translation:
+नवीनं पतं निर्माय।
 
-Correct translation: वर्तमान निवडलेला पत्ता सिस्टम क्लिपबोर्डवर कॉपी करा.
+This translates literally to "Create a new address," with "नवीनं" (new), "पतं" (address), and "निर्माय" (imperative form of 'to create').
+
+Alternatively:
+नवं पत्त्रम् निर्मातुम्।
+
+But "पतं" is commonly used for address in modern Sanskrit usage.
+
+Therefore, the original is awkward and non-standard. A clearer translation is recommended.
 ```
 
 ```
         <source>Delete the currently selected address from the list</source>
         <translation>वर्तमानतः चयनितं पताक्षेत्रं सूचीतः अपसार्यताम्।</translation>
     
-YES, The translation is not accurate. The word "पताक्षेत्रं" means "area of address" or "domain of address" and not "address". The word "अपसार्यताम्" also has a passive construction which doesn't fit the context.
-
-Correct translation: वर्तमानतः चयनितं पतां सूचीतः अपसारयतु।
-```
-
-```
-        <source>Export the data in the current tab to a file</source>
-        <translation>वर्तमानताभिहितपृष्ठे स्थितान् विवरणान् सञ्चिकायां निर्यातयतु।</translation>
-    
 YES
-The translation is grammatically incorrect and awkward in Sanskrit. It uses overly formal and complex Sanskrit vocabulary that is not appropriate for the context of a user interface or technical instruction.
+The translation uses overly formal and complex Sanskrit, and the word "पताक्षेत्रं" (meaning "field of letters") is incorrect for "address" in the Bitcoin context. The term for address in this context should more appropriately be "पत्त्रम्" or a transliteration like "पता" to indicate network or wallet address. Also, the imperative "अपसार्यताम्" (let it be removed) is fine but can be simpler.
 
-Correct translation:
-<translation>वर्तमान पृष्ठातील डेटा फाइलमध्ये एक्सपोर्ट करा.</translation>
+A better translation would be:
+वर्तमानतः चयनितः पत्त्रम् सूचीतः अपसार्यताम्।
 ```
 
 ```
         <source>Delete</source>
         <translation>हन्तव्यं</translation>
     
-UNK_LANG
-```
+YES  
+The Sanskrit translation "हन्तव्यं" means "to be killed" or "must be killed," which is not appropriate for the English word "Delete," especially in a computing or Bitcoin context. A more suitable Sanskrit word for "Delete" (meaning remove or erase) would be "अप्सृत्य" (apsṛtya) or "मेटय" (meṭaya, imperative form meaning "erase" or "remove").  
 
-```
-        <source>Choose the address to send coins to</source>
-        <translation>नाणकानि प्रेषयितुं पताक्षेत्रं चयनयतु।</translation>
-    
-YES, The translation is problematic. The word "पताक्षेत्रं" (patakshetraṃ) translates to "field of address" or "address area", which is not a natural or accurate way to refer to a Bitcoin address. The correct word for "address" in this context is "पते" (pate). Additionally, the verb "चयनयतु" (chayanayatu) is an imperative form of "to choose", but a more common and natural imperative form would be "चिनुत" (chinuta) or "चयनं कुरुत" (chayanaṃ kuruta).
-
-NO
+Correct translation:  
+अप्सृत्य  
+or  
+मेटय
 ```
 
 ```
         <source>Choose the address to receive coins with</source>
         <translation>नाणकानि प्राप्तुं पताक्षेत्रं चयनयतु।</translation>
     
-UNK_LANG
+YES  
+The Sanskrit translation is somewhat literal and awkward for the context (Bitcoin wallets/addresses). The phrase "पताक्षेत्रं" (literally meaning "field of arrows") is not correct for "address." A more appropriate Sanskrit term for "address" in this modern context could be "संकेतस्थानं" (location or address) or simply "पता" (address). Additionally, "Choosing the address to receive coins with" implies selecting an address for receiving coins, so a clearer translation could be:
+
+"नाणकानि प्राप्तुम् उपयोज्यं संकेतस्थानं चयनयतु।"  
+(Choose the address to be used to receive coins.)
+
+This preserves the intended meaning and is more understandable in Sanskrit.
+
+Correct translation:  
+नाणकानि प्राप्तुम् उपयोज्यं संकेतस्थानं चयनयतु।
 ```
 
 ```
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>एते तव बिटकॉइन पताक्षेत्राणि प्रेषणाय। नाणकानि प्रेषयणस्य पूर्वं सदैव राशिं च प्राप्तिपताक्षेत्रं च परीक्षणं कुर्वीत।</translation>
     
-YES. The translation is problematic because the Sanskrit phrasing and vocabulary are unnatural and do not accurately convey the intended meaning in the context of Bitcoin. Specifically, "पताक्षेत्राणि" (address areas) is an awkward construction, and the overall sentence structure feels forced.
+YES  
+The Sanskrit translation has some issues:
 
-Here's a corrected translation:
+1. "पताक्षेत्राणि" is an incorrect compound for "addresses." The correct classical term would be "पताः" or "प्रेषणपतेः" (addresses for sending). The word "पताक्षेत्राणि" is an unnatural, compounded form that is not standard.
 
-<translation>इमानि तव बिटकॉइन-प्रेषण-पत्तन-स्थानानि सन्ति। धनं प्रेषयितुं पूर्वं राशिं च प्राप्ति-पत्तन-स्थानं च सर्वदा परीक्षयतु।</translation>
-```
+2. The phrase "एते तव बिटकॉइन पताक्षेत्राणि प्रेषणाय।" lacks a proper verb indicating "are" or "these are." Sanskrit would usually require a copula or a clearer sentence structure.
 
-```
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
-Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>एते तव बिटकॉइन पताक्षेत्राणि प्राप्तिप्रतियोगाय। 'नवं प्राप्तिपताक्षेत्रं निर्मीयताम्' बटनं प्राप्तिपृष्ठे उपयोगयित्वा नवानि पताक्षेत्राणि निर्मीयताम्। हस्ताक्षरणं केवलं 'प्राचीन' प्रकारेण पताक्षेत्राणि उपयोग्यं अस्ति।</translation>
-    
-YES: The translation uses Sanskrit, which is not the intended language. The correct translation should be in Hindi.
-एते आपके बिटकॉइन पते हैं जिनका उपयोग भुगतान प्राप्त करने के लिए किया जाता है। नए पते बनाने के लिए 'प्राप्त करें' टैब में 'नया प्राप्त करने वाला पता बनाएँ' बटन का उपयोग करें। हस्ताक्षर केवल 'लेगेसी' प्रकार के पतों से ही संभव हैं।
+3. The phrase "नाणकानि प्रेषयणस्य पूर्वं" is awkward; "नाणकानि" (coins) should be in the accusative plural to indicate the object of sending and should be linked properly.
+
+4. "प्राप्तिपताक्षेत्रं" is also an unnatural compound for "receiving address." A better phrasing would be "प्राप्ने पतः" or "प्राप्तिपतिः" or "प्राप्तिपता" in context.
+
+5. Overall, the sentence is not fluid or idiomatic Sanskrit.
+
+A better translation would be:
+
+एतानि तव बिटकॉइनप्रेषणपता भवन्ति। नाणकानि प्रेषयितुं पूर्वं, राशिं च प्राप्तिपतं च सदैव परीक्षस्व।
+
+Breaking down:
+
+- एतानि तव बिटकॉइनप्रेषणपता भवन्ति। — These are your Bitcoin addresses for sending payments.
+
+- नाणकानि प्रेषयितुं पूर्वं, — Before sending coins,
+
+- राशिं च प्राप्तिपतं च सदैव परीक्षस्व। — always check the amount and the receiving address.
+
+This translation is more grammatical, idiomatic, and preserves the meaning.
+
+Hence, the output is:
+
+YES  
+The Sanskrit translation is awkward and contains incorrect compounds. It lacks clarity and proper sentence structure to convey the meaning faithfully and idiomatically.
+
+Correct translation:  
+एतानि तव बिटकॉइनप्रेषणपता भवन्ति। नाणकानि प्रेषयितुं पूर्वं, राशिं च प्राप्तिपतं च सदैव परीक्षस्व।
 ```
 
 ```
         <source>Copy Address</source>
         <translation>पताक्षेत्रं प्रतिलिप्य</translation>
     
-YES
-The provided translation is problematic because it does not accurately convey the meaning of "Copy Address" in the context of Bitcoin. The Telugu word "क्षेत्रं" (kshetram) means "area" or "field", which is not relevant to copying an address. The word "प्रतिलिप्य" (pratilipya) means "having copied" or "to be copied", which is also not the correct form.
+YES  
+The translation "पताक्षेत्रं प्रतिलिप्य" is incorrect for "Copy Address." The word "पताक्षेत्रं" does not correctly mean "address" in this context, and "प्रतिलिप्य" is not the proper imperative form for "copy." A more accurate Sanskrit translation would use "सञ्चिका" (meaning document or file) or "संकेतस्थानम्" for address, but in the context of a Bitcoin address, it is common to transliterate or use "पता" (patā) for address.
 
-A more accurate translation for "Copy Address" in Telugu, especially in a technical or digital context like Bitcoin, would be:
+A better translation for "Copy Address" in Sanskrit would be:  
+"पता प्रतिलिप्य" or more formally imperative: "पतं प्रति (प्रतिलिपि) कुरु" ("Make a copy of the address")
 
-<translation>முகவரியை நகலெடுக்கவும்</translation>
+However, keeping it concise and fitting UI button style:  
+"पता प्रतिलिपि" (Copy Address)
+
+Therefore, correct translation:  
+<translation>पता प्रतिलिपि</translation>
 ```
 
 ```
         <source>Export Address List</source>
         <translation>पताक्षेत्रसूची निर्यातयतु</translation>
     
-UNK_LANG
-```
+YES  
+The translation "पताक्षेत्रसूची निर्यातयतु" is problematic. The term "पताक्षेत्र" is not a standard or commonly used term for "address" in Sanskrit. In the context of Bitcoin or general address usage, "पता" (patā) or "संकेत-पता" (saṃketa-patā) would be more appropriate. Also, the imperative "निर्यातयतु" (let it be exported) may be correct but is somewhat formal and classical. A more natural and clear phrase for "Export Address List" could be:  
 
-```
-        <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <extracomment>An error message. %1 is a stand-in argument for the name of the file we attempted to save to.</extracomment>
-        <translation>पताक्षेत्रसूची %1 प्रति सुरक्षितुं प्रयासे दोषः अभवत्। कृपया पुनः प्रयासं कुर्वीत।</translation>
-    
-YES: The translation contains a grammatical error. The verb "अभवत्" (abhavat) is in the past tense, but the sentence structure implies a present or ongoing error. Additionally, "safeguard" is an awkward translation for "save".
+पता-सूची निर्यातः  
 
-A more accurate translation would be:
-पताक्षेत्रसूची %1 प्रति सुरक्षितुं प्रयासे दोषः वर्तते। कृपया पुनः प्रयासं कुर्वीत।
+or to keep the imperative form consistent,  
+
+पता-सूची निर्यातयतु  
+
+Thus, a corrected version:  
+पता-सूची निर्यातयतु
 ```
 
 ```
         <source>Sending addresses - %1</source>
         <translation>पताक्षेत्राणि प्रेषणं कुर्वन्ति - %1</translation>
     
-UNK_LANG
+YES  
+The translation is incorrect and awkward in Sanskrit. "पताक्षेत्राणि प्रेषणं कुर्वन्ति" literally means "addresses are sending" which is a nonsensical phrase in this context.
+
+In the Bitcoin context, "Sending addresses - %1" refers to the addresses that are sending (funds), so it should be more like "प्रेषक पताः - %1" (Sender addresses - %1) or "प्रेषण पताः - %1" (Sending addresses - %1).
+
+Correct translation:  
+प्रेषण पताः - %1
 ```
 
 ```
         <source>Address</source>
         <translation>पताक्षेत्रम्</translation>
     
-YES
-The translation is inaccurate and does not correctly convey the meaning of "address" in the context of Bitcoin. The word "पताक्षेत्रम्" (patākshetram) in Sanskrit means "area of address" or "addressing area," which is not a direct or appropriate translation for a Bitcoin address.
+YES  
+The translation "पताक्षेत्रम्" is incorrect for "Address" in the context of Bitcoin (a network or wallet address). "पताक्षेत्रम्" means "battlefield" or "place of battle" in Sanskrit, which is inaccurate here. The correct word should convey the meaning of an address/location or a network address.
 
-A more suitable translation for "Address" in the context of Bitcoin would be "पता" (patā) or "वि ayn" (vividha-āyan) which refers to a specific wallet address.
+A better translation would be:  
+पत्तः (pattaḥ) — meaning "address" or "location"  
+or  
+पत्तालयः (pattālayaḥ) — "address/place"
 
-Corrected translation: पता
+Correct translation:  
+<translation>पत्तः</translation>
 ```
 
 ```
@@ -155,31 +179,26 @@ Corrected translation: पता
         <extracomment>Title of Peers Table column which contains the IP/Onion/I2P address of the connected peer.</extracomment>
         <translation>पताक्षेत्रम्</translation>
     
-YES, The translation uses an incorrect term for "address" in the context of Bitcoin. The term "पताक्षेत्रम्" (patākṣetram) means "address area" or "field of address", which is not accurate for a Bitcoin address or IP address. A more appropriate translation for "Address" in this context would be "पत्ता" (pattā), which simply means "address".
+YES  
+The translation "पताक्षेत्रम्" is incorrect for the term "Address" in the Bitcoin context (network or wallet address). "पताक्षेत्रम्" means "battlefield" or "field of action" in Sanskrit (sa). The correct word for address, particularly in the context of a network or location, should be something like "पत्ता" (pattā) meaning "address" or "location."  
 
-NO
+Correct translation:  
+पत्ता
 ```
 
 ```
         <source>Address</source>
         <translation>पताक्षेत्रम्</translation>
     
-YES
-The translation is inaccurate and does not correctly convey the meaning of "address" in the context of Bitcoin. The word "पताक्षेत्रम्" (patākshetram) in Sanskrit means "area of address" or "addressing area," which is not a direct or appropriate translation for a Bitcoin address.
+YES  
+The translation "पताक्षेत्रम्" is incorrect for "Address" in the context of Bitcoin (a network or wallet address). "पताक्षेत्रम्" means "battlefield" or "place of battle" in Sanskrit, which is inaccurate here. The correct word should convey the meaning of an address/location or a network address.
 
-A more suitable translation for "Address" in the context of Bitcoin would be "पता" (patā) or "वि ayn" (vividha-āyan) which refers to a specific wallet address.
+A better translation would be:  
+पत्तः (pattaḥ) — meaning "address" or "location"  
+or  
+पत्तालयः (pattālayaḥ) — "address/place"
 
-Corrected translation: पता
-```
-
-```
-        <source>Export the data in the current tab to a file</source>
-        <translation>वर्तमानताभिहितपृष्ठे स्थितान् विवरणान् सञ्चिकायां निर्यातयतु।</translation>
-    
-YES
-The translation is grammatically incorrect and awkward in Sanskrit. It uses overly formal and complex Sanskrit vocabulary that is not appropriate for the context of a user interface or technical instruction.
-
-Correct translation:
-<translation>वर्तमान पृष्ठातील डेटा फाइलमध्ये एक्सपोर्ट करा.</translation>
+Correct translation:  
+<translation>पत्तः</translation>
 ```
 </details>

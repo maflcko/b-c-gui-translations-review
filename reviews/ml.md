@@ -14,55 +14,59 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
         <translation>കോമയാൽ വേർതിരിച്ച ഫയൽ (* .csv)</translation>
     
-YES, The translation is incorrect and does not convey the meaning of "Comma separated file". The Malayalam translation is "Comma separated file (*.csv)", which is redundant and grammatically incorrect. The correct translation should simply be "കോമ വേർതിരിച്ച ഫയൽ" or "CSV ഫയൽ".
+YES  
+There is an incorrect whitespace in the translation: there is an unwanted space between the asterisk (*) and the file extension (.csv), written as "* .csv" instead of "*.csv". Also, the phrase "കോമയാൽ വേർതിരിച്ച ഫയൽ" is a reasonable translation for "Comma separated file", but it can be slightly improved for clarity by explicitly including "CSV ഫയൽ" to align with common usage.
 
-Correct Translation: കോമ വേർതിരിച്ച ഫയൽ
+Correct translation:  
+കോമയാൽ വേർതിരിച്ച ഫയൽ (*.csv)
 ```
 
 ```
         <source>Sending addresses - %1</source>
         <translation>സ്വീകരിക്കുന്ന വിലാസങ്ങൾ - %1</translation>
     
-YES - The translation is inaccurate. The source text "Sending addresses" translates to "അയയ്ക്കുന്ന വിലാസങ്ങൾ" in Malayalam, but the provided translation is "സ്വീകരിക്കുന്ന വിലാസങ്ങൾ" which means "Receiving addresses".
-Correct translation: അയയ്ക്കുന്ന വിലാസങ്ങൾ - %1
+YES  
+The English source "Sending addresses - %1" is translated as "സ്വീകരിക്കുന്ന വിലാസങ്ങൾ - %1" which means "Receiving addresses - %1" in Malayalam. The verb "സ്വീകരിക്കുന്ന" means "receiving," not "sending." This results in an incorrect translation of the key term "Sending."  
+
+Correct translation:  
+**അയയ്ക്കുന്ന വിലാസങ്ങൾ - %1**
 ```
 
 ```
         <source>Passphrase Dialog</source>
         <translation>രഹസ്യപദ  സൂചന </translation>
     
-YES
-The translation is inaccurate and doesn't convey the intended meaning of "Passphrase Dialog" in the context of Bitcoin. "രഹസ്യപദ സൂചന" translates to "passphrase hint," which is not the same as a dialog box for entering a passphrase.
+YES  
+The Malayalam translation "രഹസ്യപദ  സൂചന" is not accurate for "Passphrase Dialog." It translates to "Passphrase Hint" or "Passphrase Suggestion," which is different from a dialog or prompt window. Also, there is an extra space between "പദ" and "സൂചന."  
 
-Correct translation: പാസ്‌ഫ്രേസ് സംഭാഷണ പെട്ടി
+Correct translation:  
+"പാസ്ഫ്രേസ് ഡയലോഗ്"  
+or more formally,  
+"പാസ്ഫ്രേസ് ഡയലോഗ് বাক്സ്" (Passphrase Dialog Box)  
+
+Since "Dialog" is a technical term often transliterated, the first is acceptable and correct.
 ```
 
 ```
         <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>വാലറ്റിൽ പുതിയ രഹസ്യവാക്യം നൽകുക.  പത്തോ അതിലധികമോ അക്ഷരങ്ങൾ  അല്ലെങ്കിൽ  എട്ടോ  കൂടുതലോ വാക്കുകൾ </translation>
     
-YES: The translation is missing a crucial part of the original sentence, specifically the emphasis on "random characters" and the specific quantity of characters and words. Additionally, it lacks the proper formatting (bolding) present in the source text.
+YES  
+The translation is incomplete and partially inaccurate. It does not properly convey the full original meaning, especially the use of formatting tags (&lt;br/&gt;, &lt;b&gt;) and the instructions about the passphrase requirements are not fully or correctly translated. Also, spacing issues exist (extra spaces).  
 
-Here's the corrected translation:
-
-വാലറ്റിൽ പുതിയ പാസ്‌ഫ്രേസ് നൽകുക. ദയവായി **പത്തോ അതിലധികമോ റാൻഡം അക്ഷരങ്ങൾ** അല്ലെങ്കിൽ **എട്ടോ അതിലധികമോ വാക്കുകൾ** ഉപയോഗിക്കുക.
+Correct translation:  
+വാലറ്റിനുള്ള പുതിയ രഹസ്യവാക്യം നൽകുക.&lt;br/&gt;&lt;br/&gt;ദയവായി &lt;b&gt;പത്ത് അല്ലെങ്കിൽ അതിലധികം യാദൃച്ഛിക അക്ഷരങ്ങൾ&lt;/b&gt; ഉപയോഗിക്കുക, അല്ലെങ്കിൽ &lt;b&gt;എട്ട് അല്ലെങ്കിൽ അതിൽ കൂടുതലായ പദങ്ങൾ&lt;/b&gt; ഉപയോഗിക്കുക.
 ```
 
 ```
         <source>Wallet encryption failed</source>
         <translation>വാലറ്റ് എന്ക്രിപ്റ് പരാജയപെട്ടു  .</translation>
     
-YES: The translation contains extra spaces before the period and the word "എന്ക്രിപ്റ്" is not the correct Malayalam word for "encrypt".
-Correct translation: വാലറ്റ് എൻക്രിപ്ഷൻ പരാജയപ്പെട്ടു.
-```
+YES  
+The Malayalam translation has a spelling error and an unnecessary space before the punctuation. The word "എന്ക്രിപ്റ്" should be "എൻ‌ക്രിപ്ഷൻ" or a correct transliteration of "encryption". Also, there is an extra space before the period.
 
-```
-        <source>The passphrase entered for the wallet decryption is incorrect. It contains a null character (ie - a zero byte). If the passphrase was set with a version of this software prior to 25.0, please try again with only the characters up to — but not including — the first null character. If this is successful, please set a new passphrase to avoid this issue in the future.</source>
-        <translation>വാലറ്റ് ഡീക്രിപ്ഷനായി നൽകിയ പാസ്ഫ്രെയ്സ് തെറ്റാണ്. അതിൽ ഒരു ശൂന്യ പ്രതീകം അടങ്ങിയിരിക്കുന്നു (അതായത് - ഒരു സീറോ ബൈറ്റ്). 25.0-ന് മുമ്പ് ഈ സോഫ്‌റ്റ്‌വെയറിൻ്റെ ഒരു പതിപ്പ് ഉപയോഗിച്ചാണ് പാസ്‌ഫ്രെയ്‌സ് സജ്ജീകരിച്ചതെങ്കിൽ, ആദ്യത്തെ അസാധുവായ പ്രതീകം വരെയുള്ള - എന്നാൽ ഉൾപ്പെടുത്താതെയുള്ള പ്രതീകങ്ങൾ മാത്രം ഉപയോഗിച്ച് വീണ്ടും ശ്രമിക്കുക. ഇത് വിജയകരമാണെങ്കിൽ, ഭാവിയിൽ ഈ പ്രശ്‌നം ഒഴിവാക്കുന്നതിന് ദയവായി ഒരു പുതിയ പാസ്‌ഫ്രെയ്‌സ് സജ്ജീകരിക്കുക.</translation>
-    
-YES - The phrase "അസാധുവായ പ്രതീകം" (invalid character) is used instead of "null character" or "zero byte". The correct translation for "null character" or "zero byte" would be "ശൂന്യമായ പ്രതീകം" or "സീറോ ബൈറ്റ്".
-
-NO
+Correct translation:  
+വാലറ്റ് എൻ‌ക്രിപ്ഷൻ പരാജയപ്പെട്ടു.
 ```
 
 ```
@@ -70,15 +74,21 @@ NO
         <translation>ആന്തരിക പിശക്
  </translation>
     
-YES: The translation is problematic because there is an extra space at the end of the translated text, which is not present in the source text.
-Correct translation: ആന്തരിക പിശക്
+YES  
+The translation contains trailing whitespace (a space or non-breaking space character) after the word "പിശക്", which should be removed for proper formatting.
+
+Correct translation:  
+ആന്തരിക പിശക്
 ```
 
 ```
         <source>Error: %1</source>
         <translation>തെറ്റ് : %1 </translation>
     
-YES - The translation has an extra space before the format specifier.
+YES  
+There is an extra space before and after the colon in the translation, which is inconsistent with the source format. The colon should have no space before it and exactly one space after it, matching the source style.  
+
+Correct translation:  
 തെറ്റ്: %1
 ```
 
@@ -86,61 +96,52 @@ YES - The translation has an extra space before the format specifier.
         <source>Minimize</source>
         <translation> ഒപ്പം ചെറുതാക്കുക</translation>
     
-YES - The translation "ഒപ്പം ചെറുതാക്കുക" is incorrect. "Minimize" in the context of Bitcoin would likely refer to reducing something, for example, minimizing fees or minimizing the size of a transaction. "ഒപ്പം ചെറുതാക്കുക" translates to "and make small," which is not the intended meaning of minimize. A more accurate translation for "minimize" in this context would be "കുറയ്ക്കുക" (kuraykkuka) or "ചെറിയതാക്കുക" (cheriyathakkuka).
-Correct translation: കുറയ്ക്കുക
+YES  
+The Malayalam translation contains an unnecessary leading space and the word "ഒപ്പം" means "together/with," which is incorrect in this context. The correct translation for "Minimize" in Malayalam is simply "ചെറുതാക്കുക" without any prefix.
+
+Correct translation:  
+<translation>ചെറുതാക്കുക</translation>
 ```
 
 ```
         <source>Backup Wallet…</source>
         <translation> ബാക്കപ്പ് വാലറ്റും…</translation>
     
-YES - The translation is problematic because it adds an unnecessary word "വാലറ്റും" (valattum) which means "wallet also" or "and wallet". The source text "Backup Wallet…" simply means "Backup Wallet…". The correct translation should be "ബാക്കപ്പ് വാലറ്റ്…" (Backup valatt…).
-NO
+YES  
+The Malayalam translation contains an extra and incorrect suffix "ഉം" attached to "വാലറ്റ്" which changes the meaning and is unnatural in this context. Also, there is an extra leading space before the text. The ellipsis character (…) is correctly used.  
+
+Correct translation:  
+ബാക്കപ്പ് വാലറ്റ്…
 ```
 
 ```
         <source>Sign message…</source>
         <translation>ഒപ്പിടുക, സന്ദേശം നൽകുക</translation>
     
-YES: The translation is not accurate for the context provided. "Sign message…" in the context of Bitcoin implies signing a message with a private key associated with a Bitcoin address. The provided Malayalam translation "ഒപ്പിടുക, സന്ദേശം നൽകുക" which translates to "Sign, provide message" is too generic and doesn't capture the Bitcoin-specific action.
+YES  
+The translation "ഒപ്പിടുക, സന്ദേശം നൽകുക" means "Sign, give message," which is inaccurate and unnecessarily combines two verbs separated by a comma. The English source "Sign message…" refers to the action of digitally signing a message, typically used in Bitcoin or other cryptographic contexts. The correct Malayalam translation for "Sign message…" should be concise and reflect the imperative/action, best rendered as:  
 
-A more accurate translation would be:
-<translation>സന്ദേശത്തിൽ ഒപ്പിടുക...</translation>
+"സന്ദേശത്തിന് ഒപ്പ് ഇടുക…"
 ```
 
 ```
         <source>Load PSBT from file…</source>
         <translation> തുറന്ന് URL</translation>
     
-YES
-The translation is completely inaccurate and does not reflect the meaning of the source text. The source text "Load PSBT from file…" means to load a Partially Signed Bitcoin Transaction from a file. The translation "തുറന്ന് URL" means "Open URL", which is unrelated to the source text.
+YES  
+The translation "തുറന്ന് URL" means "open URL," which is incorrect and unrelated to the source text "Load PSBT from file…". It neither conveys loading a PSBT (Partially Signed Bitcoin Transaction) nor mentions loading from a file. Also, there is an extra leading space.
 
-NO
-The translation is problematic. The Malayalam translation "തുറന്ന് URL" (meaning "Open URL") is completely inaccurate and unrelated to the English source text "Load PSBT from file…". The correct translation should be something like "ഫയലിൽ നിന്ന് PSBT ലോഡ് ചെയ്യുക…" (Load PSBT from file...).
-```
-
-```
-        <source>Connecting to peers…</source>
-        <translation>സമപ്രായക്കാരുമായി ബന്ധിപ്പിക്കുന്നു...</translation>
-    
-UNK_LANG
-```
-
-```
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>പേയ്‌മെന്റുകൾ അഭ്യർത്ഥിക്കുക (QR കോഡുകളും ബിറ്റ്കോയിനും സൃഷ്ടിക്കുന്നു: URI- കൾ)</translation>
-    
-YES, the translation contains erroneous content. The phrase "ബിറ്റ്കോയിനും സൃഷ്ടിക്കുന്നു" translates to "creates bitcoin also", which is not an accurate translation of "generates QR codes and bitcoin: URIs". The corrected translation should reflect the generation of both QR codes and bitcoin: URIs.
-
-NO
+Correct translation:  
+ഫയലിൽ നിന്ന് PSBT ലോഡ് ചെയ്യുക...
 ```
 
 ```
         <source>Receiving addresses</source>
         <translation>വിലാസങ്ങൾ അയയ്ക്കുന്നു</translation>
     
-YES, The translation is incorrect. The source text "Receiving addresses" translates to "വിലാസങ്ങൾ സ്വീകരിക്കുന്നു" in Malayalam. The provided translation "വിലാസങ്ങൾ അയയ്ക്കുന്നു" means "Sending addresses".
-Correct translation: വിലാസങ്ങൾ സ്വീകരിക്കുന്നു
+YES  
+The translation "വിലാസങ്ങൾ അയയ്ക്കുന്നു" means "Sending addresses" rather than "Receiving addresses." The correct Malayalam translation for "Receiving addresses" would be:  
+"സ്വീകരിക്കുന്ന വിലാസങ്ങൾ"
 ```
 
 ```
@@ -148,15 +149,21 @@ Correct translation: വിലാസങ്ങൾ സ്വീകരിക്ക�
         <translation>പുതിയ വാലറ്റ് സൃഷ്ടിക്കാൻ കഴിയില്ല, സ്‌ക്ലൈറ്റ്
 പിന്തുണയില്ലാതെ സോഫ്‌റ്റ്‌വെയർ കംപൈൽ ചെയ്‌തു (ഡിസ്‌ക്രിപ്‌റ്റർ വാലറ്റുകൾക്ക് ആവശ്യമാണ്)</translation>
     
-YES, The translation contains an extra newline character between "സ്‌ക്ലൈറ്റ്" and "പിന്തുണയില്ലാതെ".
-Correct translation: പുതിയ വാലറ്റ് സൃഷ്ടിക്കാൻ കഴിയില്ല, സ്‌ക്ലൈറ്റ് പിന്തുണയില്ലാതെ സോഫ്‌റ്റ്‌വെയർ കംപൈൽ ചെയ്‌തു (ഡിസ്‌ക്രിപ്‌റ്റർ വാലറ്റുകൾക്ക് ആവശ്യമാണ്)
+YES  
+The Malayalam translation has a line break in the middle of "സ്‌ക്ലൈറ്റ്\nപിന്തുണയില്ലാതെ", which is incorrect and disrupts readability. The word "sqlite" is transliterated as "സ്‌ക്ലൈറ്റ്" which is acceptable, but the spacing and line break issue should be fixed. Also, "descriptor" is incorrectly transliterated as "ഡിസ്‌ക്രിപ്‌റ്റർ" instead of "ഡിസ്ക്രിപ്റ്റർ" (closer to English pronunciation).  
+
+Correct translation:  
+പുതിയ വാലറ്റ് സൃഷ്ടിക്കാൻ കഴിയില്ല, sqlite പിന്തുണയില്ലാതെ സോഫ്റ്റ്‌വെയർ കംപൈൽ ചെയ്തിരിക്കുന്നു (ഡിസ്ക്രിപ്റ്റർ വാലറ്റുകൾക്ക് ആവശ്യമാണ്)
 ```
 
 ```
         <source>Error: %1</source>
         <translation>തെറ്റ് : %1 </translation>
     
-YES - The translation has an extra space before the format specifier.
+YES  
+There is an extra space before and after the colon in the translation, which is inconsistent with the source format. The colon should have no space before it and exactly one space after it, matching the source style.  
+
+Correct translation:  
 തെറ്റ്: %1
 ```
 
@@ -166,9 +173,11 @@ YES - The translation has an extra space before the format specifier.
         <translation>തരങ്ങൾ: %1
 </translation>
     
-YES
-The translation uses the plural form "തരങ്ങൾ" (types) instead of the singular form "തരം" (type) as indicated by the source text "Type".
-Correct translation: തരം: %1
+YES  
+The English source "Type: %1" translates to "തരം: %1" in Malayalam, where "തരം" means "Type" (singular). The provided translation uses "തരങ്ങൾ" which is plural ("Types"), which changes the meaning. Also, ensure the colon matches and spacing is correct.
+
+Correct translation:  
+തരം: %1
 ```
 
 ```
@@ -177,126 +186,88 @@ Correct translation: തരം: %1
         <translation>മേൽവിലാസം : %1 
 </translation>
     
-YES, The translation has an extra space before the colon and a space after the colon. The correct translation should be:
-മേൽവിലാസം: %1
+YES
+There is an extra space before and after the colon in the translation, which is inconsistent with typical Malayalam punctuation conventions and the source formatting. Also, there is an unnecessary trailing space after %1 and before the newline.
+
+Correct translation:
+മേൽവിലാസം: %1\n
 ```
 
 ```
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Wallet &lt;b&gt;എൻ‌ക്രിപ്റ്റ് ചെയ്തു&lt;/b&gt;നിലവിൽ&lt;b&gt;അൺലോക്കുചെയ്‌തു&lt;/b&gt;</translation>
     
-YES, The translation is grammatically incorrect and awkward. The words "encrypted" and "unlocked" are not translated properly.
-Wallet &lt;b&gt;എൻ‌ക്രിപ്റ്റ് ചെയ്‌തതാണ്&lt;/b&gt; കൂടാതെ നിലവിൽ &lt;b&gt;അൺലോക്ക് ചെയ്‌തതുമാണ്&lt;/b&gt;
+YES
+The Malayalam translation merges words without proper spacing and has inconsistent spacing around the HTML tags. It also leaves the English word "Wallet" untranslated, which may be acceptable depending on style, but ideally it should be localized. Correct spacing is required after the HTML tags and between words.
+
+Correct translation:
+&lt;b&gt;വാലറ്റ്&lt;/b&gt; &lt;b&gt;എൻ‌ക്രിപ്റ്റ് ചെയ്തു&lt;/b&gt;  നിലവിൽ &lt;b&gt;അൺലോക്കുചെയ്‌തു&lt;/b&gt;
 ```
 
 ```
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Wallet &lt;b&gt;എൻ‌ക്രിപ്റ്റ് ചെയ്തു&lt;/b&gt;നിലവിൽ&lt;b&gt;പൂട്ടി&lt;/b&gt;</translation>
     
-YES, The translation is problematic because it uses words in English instead of Malayalam.
-Wallet <b > <b>എൻ‌ക്രിപ്റ്റ് ചെയ്തു</b></b> നിലവിൽ <b > <b>പൂട്ടി</b></b>
-```
+YES  
+The Malayalam translation is problematic due to missing spaces around the HTML tags and slight unnatural phrasing. The tags &lt;b&gt; and &lt;/b&gt; should be separated properly from the surrounding words to maintain readability and correct formatting. Also, a more natural phrasing for "encrypted" is "പാതിവര വാങ്ങിയത്" (though encryption is commonly called എൻ‌ക്രിപ്റ്റ് ചെയ്യപ്പെട്ട) and "currently locked" can be better rendered as "ഇപ്പോൾ കണക്കുകൂട്ടിയാണ് പൂട്ടിയിട്ടുള്ളത്" but keeping it simple is fine if spacing is fixed.
 
-```
-        <source>Bytes:</source>
-        <translation>ബൈറ്റ്സ്:</translation>
-    
-YES, The translation is in Korean not Malayalam.
-UNK_LANG
+Corrected translation with proper spacing and better clarity:  
+Wallet &lt;b&gt;എൻ‌ക്രിപ്റ്റ് ചെയ്യപ്പെട്ട&lt;/b&gt;യും നിലവിൽ &lt;b&gt;പൂട്ടിയ&lt;/b&gt;വഴിലാണ്
+
+Or more simply:  
+Wallet &lt;b&gt;എൻ‌ക്രിപ്റ്റ് ചെയ്തു&lt;/b&gt;യും നിലവിൽ &lt;b&gt;പൂട്ടിയ&lt;/b&gt;വഴിയാണ്
+
+(The key correction is adding spaces between the elements and using "ചെയ്തു" + "യും" for 'and currently')
 ```
 
 ```
         <source>(un)select all</source>
         <translation>എല്ലാം തിരഞ്ഞു (എടുക്കുക /എടുക്കാതിരിക്കുക)</translation>
     
-YES - The translation "എല്ലാം തിരഞ്ഞു (എടുക്കുക /എടുക്കാതിരിക്കുക)" is problematic. "തിരഞ്ഞു" means "searched" or "looked for", which is incorrect in this context. The intended meaning of "(un)select all" is to select or deselect all items. The correct translation should convey this selection action.
+YES  
+The translation is somewhat unclear and does not convey the meaning of "(un)select all" accurately. The phrase "(un)select all" means to either select all items or deselect all items, typically in a toggle action. The Malayalam translation given, "എല്ലാം തിരഞ്ഞു (എടുക്കുക /എടുക്കാതിരിക്കുക)", translates roughly as "Select all (take / not take)", which is confusing and awkward.
 
-Correct translation: എല്ലാം തിരഞ്ഞെടുക്കുക / തിരഞ്ഞെടുക്കാതിരിക്കുക
-```
+A better, clearer translation would be:
 
-```
-        <source>Copy after fee</source>
-        <translation>ശേഷമുള്ള ഫീ പകർത്തു</translation>
-    
-YES, The translation uses 'പകർത്തു' which means 'copy' in English, but it is used as a verb instead of a noun. The correct translation for 'Copy after fee' should be 'ഫീക്ക് ശേഷം പകർപ്പ്'.
+എല്ലാം തിരഞ്ഞെടുക്കുക/തിരഞ്ഞെടുക്കാതിരിക്കുക
 
-The correct translation is:
-<translation>ഫീക്ക് ശേഷം പകർപ്പ്</translation>
-```
+This conveys "select all / deselect all" clearly and concisely, suitable for UI contexts.
 
-```
-        <source>Copy bytes</source>
-        <translation>ബൈറ്റ്സ് പകർത്തു</translation>
-    
-YES
-The translation is incorrect. The source text is "Copy bytes", which means to copy the bytes. The Malayalam translation provided is "ബൈറ്റ്സ് പകർത്തു", which contains Korean characters and does not accurately convey the meaning. The correct translation should be "ബൈറ്റ്സ് പകർത്തു".
-
-Correct translation: ബൈറ്റ്സ് പകർത്തു
+Correct translation:  
+എല്ലാം തിരഞ്ഞെടുക്കുക/തിരഞ്ഞെടുക്കാതിരിക്കുക
 ```
 
 ```
         <source>Encrypt the wallet. The wallet will be encrypted with a passphrase of your choice.</source>
         <translation>എൻ‌ക്രിപ്റ്റ് വാലറ്റ്</translation>
     
-YES. The translation is incomplete and does not convey the full meaning of the source text. It also lacks the second sentence of the source text entirely.
+YES  
+The translation "എൻ‌ക്രിപ്റ്റ് വാലറ്റ്" ("Encrypt wallet") is incomplete and does not convey the full meaning of the source text. The source mentions that the wallet will be encrypted with a passphrase of the user's choice, which is missing in the translation.
 
-The correct translation should be:
-"നിങ്ങളുടെ ഇഷ്ടത്തിനനുസരിച്ചുള്ള പാസ്‌വേഡ് ഉപയോഗിച്ച് വാലറ്റ് എൻ‌ക്രിപ്റ്റ് ചെയ്യുക."
-```
-
-```
-        <source>Recent transactions</source>
-        <translation>സമീപ കാല ഇടപാടുകൾ</translation>
-    
-UNK_LANG
+Correct translation:  
+വാലറ്റ് എൻ‌ക്രിപ്റ്റ് ചെയ്യുക. വാലറ്റ് നിങ്ങൾ തിരഞ്ഞെടുക്കുന്ന പാസ്‌ഫ്രേസിനാൽ എൻ‌ക്രിപ്റ്റ് ചെയ്യും.
 ```
 
 ```
         <source>Sent</source>
         <translation>അയക്കുക </translation>
     
-YES. The translation is grammatically incorrect and does not convey the intended meaning of "Sent" in the context of Bitcoin transactions. The word "അയക്കുക" (ayikkuka) means "to send" in its infinitive form and is not appropriate here.
+YES  
+The translation "അയക്കുക" means "to send" (an imperative or infinitive verb form), whereas the English source "Sent" is the past tense or past participle, typically used as an adjective or status indicator. A more accurate Malayalam translation for "Sent" (as in a status label) would be "അയച്ചത്" or "അയച്ചു". Also, there's an extra trailing space after the Malayalam word which should be removed.
 
-The correct translation for "Sent" in this context would be "അയച്ചു" (ayachu), which is the past tense of the verb "to send".
-
-Correct translation:
-<translation>അയച്ചു</translation>
+Correct translation:  
+അയച്ചത്
 ```
 
 ```
         <source>Permissions</source>
         <translation>അനുവാത്തംനൽകൾ</translation>
     
-YES. The translation for "Permissions" is incorrect. The correct translation is "അനുമതികൾ". The provided translation "അനുവാത്തംനൽകൾ" appears to be a nonsensical combination of letters.
-NO.
-```
+YES  
+The provided Malayalam translation "അനുവാത്തംനൽകൾ" is incorrect and unnatural. The correct word for "Permissions" in Malayalam is "അനുമതികൾ".  
 
-```
-        <source>Bytes:</source>
-        <translation>ബൈറ്റ്സ്:</translation>
-    
-YES, The translation is in Korean not Malayalam.
-UNK_LANG
-```
-
-```
-        <source>Copy after fee</source>
-        <translation>ശേഷമുള്ള ഫീ പകർത്തു</translation>
-    
-YES, The translation uses 'പകർത്തു' which means 'copy' in English, but it is used as a verb instead of a noun. The correct translation for 'Copy after fee' should be 'ഫീക്ക് ശേഷം പകർപ്പ്'.
-
-The correct translation is:
-<translation>ഫീക്ക് ശേഷം പകർപ്പ്</translation>
-```
-
-```
-        <source>Copy bytes</source>
-        <translation>ബൈറ്റ്സ് പകർത്തു</translation>
-    
-YES
-The translation is incorrect. The source text is "Copy bytes", which means to copy the bytes. The Malayalam translation provided is "ബൈറ്റ്സ് പകർത്തു", which contains Korean characters and does not accurately convey the meaning. The correct translation should be "ബൈറ്റ്സ് പകർത്തു".
-
-Correct translation: ബൈറ്റ്സ് പകർത്തു
+Correct translation:  
+അനുമതികൾ
 ```
 
 ```
@@ -304,34 +275,21 @@ Correct translation: ബൈറ്റ്സ് പകർത്തു
         <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
         <translation>കോമയാൽ വേർതിരിച്ച ഫയൽ (* .csv)</translation>
     
-YES, The translation is incorrect and does not convey the meaning of "Comma separated file". The Malayalam translation is "Comma separated file (*.csv)", which is redundant and grammatically incorrect. The correct translation should simply be "കോമ വേർതിരിച്ച ഫയൽ" or "CSV ഫയൽ".
+YES  
+There is an incorrect whitespace in the translation: there is an unwanted space between the asterisk (*) and the file extension (.csv), written as "* .csv" instead of "*.csv". Also, the phrase "കോമയാൽ വേർതിരിച്ച ഫയൽ" is a reasonable translation for "Comma separated file", but it can be slightly improved for clarity by explicitly including "CSV ഫയൽ" to align with common usage.
 
-Correct Translation: കോമ വേർതിരിച്ച ഫയൽ
-```
-
-```
-        <source>Invalid netmask specified in -whitelist: '%s'</source>
-        <translation>-whitelist: '%s' ൽ രേഖപ്പെടുത്തിയിരിക്കുന്ന netmask തെറ്റാണ് </translation>
-    
-YES, The translation contains a grammatical error. The word "തെറ്റാണ്" should be placed after "netmask".
-
--whitelist: '%s' ൽ രേഖപ്പെടുത്തിയിരിക്കുന്ന netmask തെറ്റാണ്
-```
-
-```
-        <source>Need to specify a port with -whitebind: '%s'</source>
-        <translation>-whitebind: '%s' നൊടൊപ്പം ഒരു പോർട്ട് കൂടി നിർദ്ദേശിക്കേണ്ടതുണ്ട് </translation>
-    
-YES: The translation is grammatically incorrect and awkward. The word order is unnatural for Malayalam.
-
--whitebind: '%s' എന്നതിനോടൊപ്പം ഒരു പോർട്ട് നിർദ്ദേശിക്കേണ്ടതുണ്ട്
+Correct translation:  
+കോമയാൽ വേർതിരിച്ച ഫയൽ (*.csv)
 ```
 
 ```
         <source>Section [%s] is not recognized.</source>
         <translation>Section [%s]  തിരിച്ചറിഞ്ഞില്ല.</translation>
     
-YES: The translation has an extra space before the Malayalam word.
-Section [%s] തിരിച്ചറിഞ്ഞില്ല.
+YES  
+There is an extra space after the closing bracket [%s] which is not present in the source text. Also, the word "Section" is untranslated and can be translated to Malayalam as "അദ്ധ്യായം" or "വിഭാഗം" depending on context. Given the context is Bitcoin configuration or section headings, "വിഭാഗം" (meaning "section") is appropriate.
+
+Correct translation:  
+<translation>വിഭാഗം [%s] തിരിച്ചറിഞ്ഞില്ല.</translation>
 ```
 </details>

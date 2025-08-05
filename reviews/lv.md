@@ -13,52 +13,21 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Ievadiet savu paroli Jūsu maciņam, lūdzu lietojiet vismaz desmit simbolus, astoņus vai vairāk vārdus.</translation>
     
-YES. The translation is missing key information from the source text. Specifically, it omits the emphasis on "random characters" and the phrase "or more". It also misses the structure of the sentence in the source.
+YES  
+The translation is incomplete and omits important formatting and emphasis from the source. Specifically, the source instructs to enter a new passphrase and use either ten or more random characters or eight or more words, with parts emphasized in bold and separated by a line break. The translation merges these instructions into a single sentence without specifying that a new passphrase is needed, missing the formatting, and without correctly replicating the conditional "or" phrase.
 
-NO. Ievadiet jaunu maciņa paroli. Lūdzu, izmantojiet vismaz desmit nejaušus rakstzīmes vai astoņus vai vairāk vārdus.
-```
-
-```
-        <source>Window</source>
-        <translation>Logs</translation>
-    
-YES, the translation is problematic. The English word "Window" is translated to "Logs" in Latvian. This is an inaccurate translation as "Window" and "Logs" have distinct meanings. In the context of Bitcoin or software in general, "Window" refers to a graphical user interface element, while "Logs" refers to a record of events.
-
-NO
-```
-
-```
-        <source>Edit Address</source>
-        <translation>Mainīt adrese</translation>
-    
-YES, the translation is problematic. The verb "Mainīt" (to change) is not in the correct grammatical form for this context. It should be the imperative form "Mainiet" (Change, plural/formal) or the infinitive "Mainīt" used as an imperative, but "Mainīt" alone is incorrect.
-
-NO
+Correct translation:  
+Ievadiet jauno paroli maciņam.&lt;br/&gt;Lūdzu, lietojiet paroli ar &lt;b&gt;desmit vai vairāk nejaušiem simboliem&lt;/b&gt; vai &lt;b&gt;astoņiem vai vairāk vārdiem&lt;/b&gt;.
 ```
 
 ```
         <source>Port:</source>
         <translation>Ports:</translation>
     
-YES
-The translation incorrectly translates "Port" (singular) to "Ports" (plural).
-Correct translation: Port:
-```
+YES  
+The original English text "Port:" is singular and refers to a single port, while the Latvian translation "Ports:" is plural (means "Ports:"). The correct translation should be singular to match the source.  
 
-```
-        <source>Window</source>
-        <translation>Logs</translation>
-    
-YES, the translation is problematic. The English word "Window" is translated to "Logs" in Latvian. This is an inaccurate translation as "Window" and "Logs" have distinct meanings. In the context of Bitcoin or software in general, "Window" refers to a graphical user interface element, while "Logs" refers to a record of events.
-
-NO
-```
-
-```
-        <source>Signatures - Sign / Verify a Message</source>
-        <translation>Paraksti - Parakstīt / Pabaudīt Ziņojumu</translation>
-    
-YES, The word "Pabaudīt" is incorrect in this context. It means "to enjoy" or "to savor", while the intended word is "Pārbaudīt" which means "to verify".
-Paraksti - Parakstīt / Pārbaudīt Ziņojumu
+Correct translation:  
+Ports:
 ```
 </details>

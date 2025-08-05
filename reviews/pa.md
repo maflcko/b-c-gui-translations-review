@@ -13,19 +13,32 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>ਚੁਣੇ ਪਤੇ ਦੀ ਸਿਸਟਮ ਦੀ ਚੂੰਢੀ-ਤਖਤੀ 'ਤੇ ਨਕਲ ਲਾਹੋ</translation>
     
-YES - The translation uses an incorrect and nonsensical term for "clipboard". "ਚੂੰਢੀ-ਤਖਤੀ" (chuṇḍī-takhatī) does not mean clipboard. The correct term is "ਕਲਿੱਪਬੋਰਡ" (klippedbored) or a more descriptive Punjabi phrase.
+YES
+The translation uses "ਚੂੰਢੀ-ਤਖਤੀ" for "system clipboard", which is not the standard or commonly understood term in Punjabi. A clearer and more accurate translation would be:
 
-NO - ਚੁਣੇ ਪਤੇ ਨੂੰ ਸਿਸਟਮ ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਕਰੋ
+ਚੁਣੇ ਪਤੇ ਨੂੰ ਸਿਸਟਮ ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਕਰੋ
+
+Explanation: 
+- "ਚੁਣੇ ਪਤੇ ਦੀ" = "of the selected address" (correct).
+- "ਨਕਲ ਲਾਹੋ" is unnatural Punjabi for "Copy" – better is "ਕਾਪੀ ਕਰੋ".
+- "ਚੂੰਢੀ-ਤਖਤੀ" is an awkward calque of "clipboard"; "ਕਲਿੱਪਬੋਰਡ" (transliteration) is widely understood.
+
+Correct translation:
+ਚੁਣੇ ਪਤੇ ਨੂੰ ਸਿਸਟਮ ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਕਰੋ
 ```
 
 ```
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>ਏਸ ਕਾਰੇ ਲਈ ਤੁਹਾਡਾ ਵੱਲੇਟ ਖੋਲਣ ਵਾਸਤੇ ਵੱਲੇਟ ਪਾਸ ਲੱਗੇਗਾ </translation>
     
-YES - The translation uses "ਪਾਸ ਲੱਗੇਗਾ" which means "pass will be needed". The correct translation should be "ਪਾਸਫਰੇਜ਼ ਦੀ ਲੋੜ ਹੈ" which means "passphrase is needed". Also, "ਏਸ ਕਾਰੇ ਲਈ" means "for this work" which is not accurate. It should be "ਇਹ ਕਾਰਵਾਈ" which means "this operation".
+YES
+The translation contains a few issues:
+1. "ਏਸ ਕਾਰੇ" is an incorrect and awkward translation for "this operation".
+2. There is inconsistent terminology for "Wallet", sometimes spelled as "ਵੱਲੇਟ", sometimes as "wallet" in English;
+3. "ਪਾਸ" is an incomplete translation for "passphrase". "ਪਾਸਫਰੇਜ਼" or "ਪਾਸਫਰੇਜ਼" would be more accurate.
+4. The sentence structure is awkward and omits the nuance of "to unlock the wallet".
 
-Correct translation: ਇਹ ਕਾਰਵਾਈ ਨੂੰ ਤੁਹਾਡਾ ਵੱਲੇਟ ਪਾਸਫਰੇਜ਼ ਲੱਗੇਗਾ 
-        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>ਇਹ ਕਾਰਵਾਈ ਨੂੰ ਤੁਹਾਡਾ ਵੱਲੇਟ ਪਾਸਫਰੇਜ਼ ਲੱਗੇਗਾ</translation>
+Correct translation:
+ਇਹ ਕਾਰਵਾਈ ਤੁਹਾਡੇ ਵਾਲਟ ਨੂੰ ਅਣਲੌਕ ਕਰਨ ਲਈ ਤੁਹਾਡੀ ਵਾਲਟ ਪਾਸਫਰੇਜ਼ ਦੀ ਲੋੜ ਹੈ।
 ```
 </details>

@@ -10,63 +10,74 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 
 
 ```
-        <source>Right-click to edit address or label</source>
-        <translation>पते या लेबल में बदलाव करने के लिए राइट-क्लिक करें</translation>
-    
-YES, The translation incorrectly uses the word "बदलाव" (badlav), which means "change" or "alteration", instead of "संपादित" (sampadit) which means "edit". This makes the translation inaccurate in the context of editing an address or label.
-Correct translation: पते या लेबल को संपादित करने के लिए राइट-क्लिक करें
-```
-
-```
-        <source>New</source>
-        <translation>नया </translation>
-    
-YES
-The translation contains trailing whitespace.
-<source>New</source>
-<translation>नया</translation>
-```
-
-```
         <source>There was an error trying to save the address list to %1. Please try again.</source>
         <extracomment>An error message. %1 is a stand-in argument for the name of the file we attempted to save to.</extracomment>
         <translation>पता सूची को %1यहां सहेजने का प्रयास करते समय एक त्रुटि हुई . कृपया पुन: प्रयास करें।</translation>
     
-YES, The Hindi translation is incorrect and includes extraneous words. The word "यहां" (here) is not present in the source text and makes the translation nonsensical. The spacing around "%1" is also incorrect.
+YES
+There are spacing issues in the translation: "%1यहां" should have a space between the placeholder %1 and the following word "यहां". Also, the punctuation spacing is inconsistent; there should be no space before the full stop, and "पुन:" should have the correct spacing around the colon.
 
-NO, There was an error trying to save the address list to %1. Please try again.
+Correct translation:
+पता सूची को %1 यहां सहेजने का प्रयास करते समय एक त्रुटि हुई। कृपया पुन: प्रयास करें।
 ```
 
 ```
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
         <translation>चेतावनी: यदि आप अपना वॉलेट एन्क्रिप्ट करते हैं और अपना पासफ़्रेज़ खो देते हैं, तो आपअपने सभी बिटकॉइन &lt;b&gt; खो देंगे&lt;/b&gt; !</translation>
     
-YES, The translation has a spacing error. There should be a space between "आप" and "अपने".
-Correct translation: चेतावनी: यदि आप अपना वॉलेट एन्क्रिप्ट करते हैं और अपना पासफ़्रेज़ खो देते हैं, तो आप अपने सभी बिटकॉइन &lt;b&gt; खो देंगे&lt;/b&gt; !
+YES
+The translation has spacing issues: "आपअपने" should be "आप अपने" (with a space). Also, the placement of the formatting tags and wording can be improved for clarity and correctness.
+
+Correct translation:
+चेतावनी: यदि आप अपना वॉलेट एन्क्रिप्ट करते हैं और अपना पासफ़्रेज़ खो देते हैं, तो आप &lt;b&gt; अपने सभी बिटकॉइन खो देंगे &lt;/b&gt;!
 ```
 
 ```
         <source>Banned Until</source>
         <translation>तक प्रतिबंधित</translation>
     
-YES, The translation is missing the word "Banned" which is important in this context.
-Correct translation: <translation>तब तक प्रतिबंधित</translation>
+YES  
+The translation is incomplete and inaccurate. "Banned Until" means that the ban lasts until a certain time, so the correct Hindi should reflect the "until" aspect, indicating a time limit. The current translation "तक प्रतिबंधित" is missing the beginning and does not make sense on its own.  
+
+Correct translation:  
+"प्रतिबंधित तक" or more naturally, "प्रतिबंधित समाप्ति तक" (meaning "Banned until [time]"). Usually in context, "तक" is placed after the time, so "बैनेड तक" is not very natural without a time attached. A more typical phrasing would be:  
+"प्रतिबंध की अवधि" (Ban duration) or "प्रतिबंध समाप्ति" (Ban expiration) if context allows, but to be literal:  
+"प्रतिबंधित (यहाँ तक)" or "प्रतिबंधित की अवधि"  
+
+However, the best direct translation of "Banned Until" as a label would be:  
+"प्रतिबंधित तक"
 ```
 
 ```
         <source>An internal error occurred. %1 will attempt to continue safely. This is an unexpected bug which can be reported as described below.</source>
         <translation>एक आंतरिक त्रुटि हुई। %1सुरक्षित रूप से जारी रखने का प्रयास करेगा। यह एक अप्रत्याशित बग है जिसे नीचे वर्णित के रूप में रिपोर्ट किया जा सकता है।</translation>
     
-YES - The format specifier %1 is incorrectly placed in the translation. It should be placed immediately after the word "प्रयास करेगा" to correctly reflect the English source.
+YES  
+There is a missing space after the format specifier %1 (" %1सुरक्षित" should be "%1 सुरक्षित"). The rest of the translation is accurate and appropriate.
 
+Correct translation:  
 एक आंतरिक त्रुटि हुई। %1 सुरक्षित रूप से जारी रखने का प्रयास करेगा। यह एक अप्रत्याशित बग है जिसे नीचे वर्णित के रूप में रिपोर्ट किया जा सकता है।
+```
+
+```
+        <source>Show general overview of wallet</source>
+        <translation>वॉलेट का सामान्य अवलोकन दिखाएं |</translation>
+    
+YES  
+The translation is mostly accurate but has an unnecessary trailing space and a vertical bar (|) at the end, which is not present in the source and is inappropriate as punctuation here. It should be removed to match the source's format and punctuation style.
+
+Correct translation:  
+वॉलेट का सामान्य अवलोकन दिखाएं
 ```
 
 ```
         <source>Quit application</source>
         <translation> एप्लिकेशन छोड़ें |</translation>
     
-YES. The translation contains extraneous characters and lacks proper word separation.
+YES  
+The translation contains a leading space before "एप्लिकेशन" and an unnecessary trailing vertical bar "|" at the end, both of which are formatting issues. Also, a more natural Hindi translation for "Quit application" would be "एप्लिकेशन बंद करें" or "एप्लिकेशन छोड़ें" without extra punctuation.
+
+Correct translation:  
 एप्लिकेशन छोड़ें
 ```
 
@@ -74,34 +85,35 @@ YES. The translation contains extraneous characters and lacks proper word separa
         <source>Modify configuration options for %1</source>
         <translation>%1 के लिए विन्यास विकल्प संशोधित करें |</translation>
     
-YES, The translation contains an extra pipe character at the end.
+YES  
+The translated sentence is mostly correct but the trailing vertical bar "|" is unnecessary and out of place in Hindi punctuation. Removing it improves the naturalness and correctness of the sentence.
+
+Correct translation:  
 %1 के लिए विन्यास विकल्प संशोधित करें
-```
-
-```
-        <source>Minimize</source>
-        <translation>मिनीमाइज़</translation>
-    
-YES, The translation is problematic as it is a direct transliteration of the English word "Minimize" into Devanagari script and does not convey the intended meaning in Hindi. In the context of Bitcoin, "Minimize" would likely refer to reducing something or making it smaller, for which there are appropriate Hindi words.
-
-Correct translation: कम करें (Kam Karen)
 ```
 
 ```
         <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
         <translation>प्रॉक्सी &lt;b&gt;अक्षम&lt;/b&gt; है: %1</translation>
     
-YES, The translation is incorrect and uses the wrong word for "enabled". The word "अक्षम" means "disabled" instead of "enabled".
-The correct translation is: प्रॉक्सी &lt;b&gt;सक्षम&lt;/b&gt; है: %1
+YES
+The translation is incorrect because "अक्षम" means "disabled" or "inactive," which is the opposite of "enabled." The correct Hindi translation for "enabled" in this context is "सक्रिय" or "चालू".
+
+Correct translation:
+प्रॉक्सी &lt;b&gt;सक्रिय&lt;/b&gt; है: %1
 ```
 
 ```
         <source>Backup wallet to another location</source>
         <translation>किसी अन्य स्थान पर वॉलेट  बैकअप करे |</translation>
     
-YES: The translation uses a pipe symbol (|) at the end of the sentence which is not present in the source text. The word "बैकअप" is also an English word that is not translated to Hindi.
+YES  
+The translation is mostly correct in meaning, but there are two issues:  
+1. There is an extra space before "बैकअप".  
+2. The use of the vertical bar " | " at the end is unnecessary and not typically used in Hindi sentence endings.  
 
-Correct translation: किसी अन्य स्थान पर वॉलेट का बैकअप लें
+Correct translation:  
+किसी अन्य स्थान पर वॉलेट बैकअप करें
 ```
 
 ```
@@ -109,7 +121,10 @@ Correct translation: किसी अन्य स्थान पर वॉल�
         <translation>विकल्प
  </translation>
     
-YES, The translation has a stray space at the end.
+YES
+The translation has an unwanted newline and stray space after the word "विकल्प". The source text "Options…" includes an ellipsis, which should be preserved or appropriately represented in Hindi.
+
+Correct translation:
 विकल्प…
 ```
 
@@ -117,16 +132,22 @@ YES, The translation has a stray space at the end.
         <source>Sends %1 to %2</source>
         <translation>%1 को %2 के पास भेजता है </translation>
     
-YES, The translation is problematic because of extra space before "के पास".
-%1 को %2 के पास भेजता है
+YES  
+The translation has an unnecessary space before the closing punctuation and could be more natural. Also, "के पास" (near) is not typically used for sending to an address in this context. A better translation would simply use "को" to indicate sending to an address or recipient.
+
+Correct translation:  
+%1 को %2 भेजता है
 ```
 
 ```
         <source>The BIP324 session ID string in hex.</source>
         <translation>Hex में BIP324 सत्र आई.डी. स्ट्रिंग |</translation>
     
-YES - The "|" at the end of the translation is an extraneous character.
-Hex में BIP324 सत्र आई.डी. स्ट्रिंग
+YES  
+The translation has an unnecessary pipe character "|" at the end, which is not present in the source and appears to be stray punctuation. Also, "आई.डी." can be better written as "आईडी" without the dots, as it is commonly used. The phrase "string" can be translated to "स्ट्रिंग" or "स्ट्रिंग" is acceptable in technical context, but to keep consistency, transliteration is fine.
+
+Correct translation:  
+Hex में BIP324 सत्र आईडी स्ट्रिंग।
 ```
 
 ```
@@ -134,96 +155,74 @@ Hex में BIP324 सत्र आई.डी. स्ट्रिंग
         <extracomment>Tooltip text for the Last Transaction field in the peer details area.</extracomment>
         <translation>हमारे मेमपूल में स्वीकार किए गए एक उपन्यास लेनदेन के बाद से इस सहकर्मी से प्राप्त हुआ समय बीत चुका है।</translation>
     
-YES - The Hindi translation is grammatically incorrect and awkward. It should be: "हमारे मेमपूल में स्वीकार किए गए एक नए लेनदेन के इस सहकर्मी से प्राप्त होने के बाद से बीता हुआ समय।"
+YES  
+The Hindi translation is awkward and incorrect for the context. The phrase "एक उपन्यास लेनदेन" incorrectly translates "a novel transaction" literally, where "novel" here means "new" or "recent," not "a novel" as in literature. Additionally, the sentence structure is unnatural and confusing. A better translation would convey the elapsed time since a new transaction was received from this peer for the mempool.
+
+Correct translation:  
+"इस सहकर्मी से हमारे मेमपूल में स्वीकार किए गए एक नए लेनदेन के प्राप्त होने के बाद से बीता हुआ समय।"
 ```
 
 ```
         <source>Open</source>
         <translation>खुला हुआ</translation>
     
-YES, The translation is not accurate. "Open" as a verb should be translated as "खोलें" or "खोलना" in Hindi, whereas "खुला हुआ" translates to "opened" or "is open", which is the past participle or adjective form.
+YES  
+The translation "खुला हुआ" means "open" in the sense of "opened" or "that which has been opened," which is a past participle form and does not suit the context if "Open" is used as a command or a label (e.g., a button or menu item). The correct translation for the imperative or label "Open" in Hindi would be simply:
 
-खुला हुआ
-```
-
-```
-        <source>Outbound Address Fetch: short-lived, for soliciting addresses</source>
-        <extracomment>Explanatory text for a short-lived outbound peer connection that is used to request addresses from a peer.</extracomment>
-        <translation>आउटबाउंड एड्रेस फ़ेच: अल्पकालिक, याचना पतों के लिए</translation>
-    
-YES: The word "याचना" (yachana) which means "pleading" or "begging" is an inappropriate translation for "soliciting" in this context. "Soliciting" here refers to requesting or asking for addresses.
-
-Correct translation: आउटबाउंड एड्रेस फ़ेच: अल्पकालिक, पते मांगने के लिए
-```
-
-```
-        <source>Welcome to the %1 RPC console.
-Use up and down arrows to navigate history, and %2 to clear screen.
-Use %3 and %4 to increase or decrease the font size.
-Type %5 for an overview of available commands.
-For more information on using this console, type %6.
-
-%7WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.%8</source>
-        <extracomment>RPC console welcome message. Placeholders %7 and %8 are style tags for the warning content, and they are not space separated from the rest of the text intentionally.</extracomment>
-        <translation>%1 आरपीसी कंसोल में आपका स्वागत है।
-इतिहास नेविगेट करने के लिए ऊपर और नीचे तीरों का उपयोग करें, और स्क्रीन को साफ़ करने के लिए %2 का उपयोग करें।
-फॉन्ट साइज बढ़ाने या घटाने के लिए %3 और %4 का प्रयोग करें।
-उपलब्ध कमांड के ओवरव्यू के लिए %5 टाइप करें।
-इस कंसोल का उपयोग करने के बारे में अधिक जानकारी के लिए %6 टाइप करें।
-
-%7 चेतावनी: स्कैमर्स सक्रिय हैं, उपयोगकर्ताओं को यहां कमांड टाइप करने के लिए कह रहे हैं, उनके वॉलेट सामग्री को चुरा रहे हैं। कमांड के प्रभाव को पूरी तरह समझे बिना इस कंसोल का उपयोग न करें। %8</translation>
-    
-YES: The Hindi translation has a grammatical error in the second sentence. The word "इतिहास" (history) should be followed by the postposition "में" (in) for correct grammar. Additionally, the phrase "नेविगेट करने के लिए" (to navigate) is a direct translation and could be more naturally phrased. A more natural phrasing for the entire sentence would be: "इतिहास में नेविगेट करने के लिए ऊपर और नीचे तीरों का प्रयोग करें, और स्क्रीन साफ़ करने के लिए %2 का प्रयोग करें।"
-
-%1 आरपीसी कंसोल में आपका स्वागत है।
-इतिहास में नेविगेट करने के लिए ऊपर और नीचे तीरों का प्रयोग करें, और स्क्रीन साफ़ करने के लिए %2 का प्रयोग करें।
-फॉन्ट साइज बढ़ाने या घटाने के लिए %3 और %4 का प्रयोग करें।
-उपलब्ध कमांड के ओवरव्यू के लिए %5 टाइप करें।
-इस कंसोल का उपयोग करने के बारे में अधिक जानकारी के लिए %6 टाइप करें।
-
-%7 चेतावनी: स्कैमर्स सक्रिय हैं, उपयोगकर्ताओं को यहां कमांड टाइप करने के लिए कह रहे हैं, उनके वॉलेट सामग्री को चुरा रहे हैं। कमांड के प्रभाव को पूरी तरह समझे बिना इस कंसोल का उपयोग न करें। %8
+खोलें
 ```
 
 ```
         <source>Clear</source>
         <translation>क्लिअर </translation>
     
-YES
-The translation has an extra space at the end of the word "क्लिअर".
-क्लिअर
+YES  
+The translation "क्लिअर " is a transliteration of the English word "Clear" rather than a proper Hindi translation. Also, there is an extra trailing space after the word. The correct Hindi translation should be:
+
+"साफ़ करें"
 ```
 
 ```
         <source>Could not generate new %1 address</source>
         <translation>नया पता उत्पन्न नहीं कर सका %1 </translation>
     
-YES, The translation incorrectly places the format specifier "%1" at the end of the sentence.
-Correct translation: नया %1 पता उत्पन्न नहीं कर सका
+YES  
+The position of the format specifier %1 is incorrect and the sentence structure is unnatural in Hindi. The %1 should come before "पता" to correctly indicate "new %1 address". Also, there is an extra space at the end.  
+
+Correct translation:  
+"नया %1 पता उत्पन्न नहीं कर सका"
 ```
 
 ```
         <source>Copy Address</source>
         <translation>कॉपी  अड्रेस</translation>
     
-YES
-The translation contains an unnecessary space before "अड्रेस".
-Correct translation: कॉपी अड्रेस
+YES  
+The translation uses a double space between "कॉपी" and "अड्रेस," which is a formatting issue. Additionally, while "अड्रेस" is a transliteration of "address," a more commonly used and semantically accurate Hindi term is "पता" especially in the Bitcoin context.
+
+Correct translation:  
+कॉपी पता
 ```
 
 ```
         <source>Verify this address on e.g. a hardware wallet screen</source>
         <translation>इस पते को वेरीफाय करें उदा.  एक हार्डवेयर वॉलेट स्क्रीन</translation>
     
-YES - The translation is missing the word "on" and the word "e.g." is not translated properly.
-The correct translation is "इस पते को हार्डवेयर वॉलेट स्क्रीन जैसी चीज़ पर वेरीफाई करें".
+YES  
+The translation mixes English ("वेरीफाय", "उदा.") unnecessarily, and lacks proper conjunction or punctuation to connect the parts naturally. The phrase "e.g." should be translated as "जैसे कि" or "उदाहरण के लिए" and the sentence should be more fluent.
+
+Correct translation:  
+"इस पते को, जैसे कि हार्डवेयर वॉलेट स्क्रीन पर, सत्यापित करें"
 ```
 
 ```
         <source>Add Recipient</source>
         <translation>अड रिसिपिएंट</translation>
     
-YES
-The translation is a transliteration and not a translation. The correct translation for "Add Recipient" in Hindi is "प्राप्तकर्ता जोड़ें".
+YES  
+The translation uses English words written in Devanagari script and is not a proper Hindi translation. It should be translated into proper Hindi.  
+
+Correct translation:  
 प्राप्तकर्ता जोड़ें
 ```
 
@@ -231,17 +230,30 @@ The translation is a transliteration and not a translation. The correct translat
         <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <translation>उदाहरण के लिए उपयोग के लिए आंशिक रूप से हस्ताक्षरित बिटकॉइन लेनदेन (PSBT) बनाता है। एक ऑफ़लाइन% 1 %1  वॉलेट, या एक PSBT-संगत हार्डवेयर वॉलेट।</translation>
     
-YES. The translation is grammatically incorrect and has duplicate placeholders.
-Correct translation: ऑफ़लाइन %1 वॉलेट, या PSBT-संगत हार्डवेयर वॉलेट जैसे उपयोग के लिए आंशिक रूप से हस्ताक्षरित बिटकॉइन लेनदेन (PSBT) बनाता है।
+YES  
+The translation has multiple issues:  
+- Incorrect spacing around the format specifier "%1" (should be without a space, i.e., "ऑफ़लाइन%1" → "ऑफ़लाइन %1")  
+- Repetition of "%1" twice is incorrect.  
+- The sentence structure is broken and fragmented due to the misplaced period after "बनाता है।" leading to two incomplete sentences.  
+- The Hindi translation is not fully coherent and natural.
+
+Correct translation:  
+उदाहरण के लिए, ऑफ़लाइन %1 वॉलेट या PSBT-संगत हार्डवेयर वॉलेट के साथ उपयोग के लिए आंशिक रूप से हस्ताक्षरित बिटकॉइन लेनदेन (PSBT) बनाता है।
 ```
 
 ```
         <source>%1 to '%2'</source>
         <translation>%1टु '%2'</translation>
     
-YES, The Hindi translation is incorrect. The word "टु" is not a valid Hindi word and does not make sense in this context. It seems like an attempt to transliterate "to" but it's done incorrectly.
+YES  
+The translation incorrectly transliterates "to" as "टु" which is not appropriate in this context. The correct Hindi preposition for "to" in this phrase is "से" or the word "से" can be omitted if the phrase represents a range or direction and left as "to" in English within quotes is also acceptable if no natural Hindi equivalent fits. Given the context, the proper approach is to use the English word "to" without transliteration or replace it with the Hindi equivalent "से" with proper spacing.
 
-Correct translation: %1 से '%2'
+Also, there is no space between %1 and "टु".
+
+Correct translation:  
+%1 से '%2'  
+OR  
+%1 to '%2'  (if preferred to keep "to" in English)
 ```
 
 ```
@@ -250,17 +262,11 @@ Correct translation: %1 से '%2'
         <translation>पीएसबीटी सहेजा गया
  </translation>
     
-YES, The trailing whitespace is not correctly handled.
-PSBT सहेजा गया
-```
+YES  
+The translation contains an unnecessary trailing whitespace/newline after "पीएसबीटी सहेजा गया" which could cause formatting issues. Also, a more common and clear Hindi phrasing would be "PSBT सहेजा गया" (keeping "PSBT" as is, since it is an acronym) or "PSBT सुरक्षित किया गया" if a more formal tone is desired. The current translation is comprehensible but can be improved by removing extraneous whitespace and standardizing the script usage.
 
-```
-        <source>Not signalling Replace-By-Fee, BIP-125.</source>
-        <translation>रिप्लेसमेंट-बाय-फी, बीआईपी-125 सिग्नलिंग नहीं।</translation>
-    
-YES, The translation is not grammatically correct. The sentence structure is reversed.
-
-Correct translation: रिप्लेस-बाय-फी, बीआईपी-125 सिग्नलिंग नहीं कर रहा है।
+Correct translation:  
+पीएसबीटी सहेजा गया
 ```
 
 ```
@@ -271,68 +277,42 @@ Correct translation: रिप्लेस-बाय-फी, बीआईपी-
  </translation>
     
 YES
-The translation includes an extra space at the end of the text.
-Correct translation: अहस्ताक्षरित लेनदेन
+The translation "अहस्ताक्षरित लेनदेन" is correct for "Unsigned Transaction," but there is an unwanted trailing whitespace (a non-breaking space) at the end of the translation after "लेनदेन". This stray space should be removed to maintain formatting consistency.
+
+Correct translation:
+अहस्ताक्षरित लेनदेन
 ```
 
 ```
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
         <translation> %1 जब लेन-देन शुल्क शामिल किया जाता है, तो कुल आपकी शेष राशि से अधिक हो जाती है।</translation>
     
-YES: The translation is problematic because the format specifier %1 is placed incorrectly. It should be placed at the beginning of the sentence as in the source text.
-%1 लेन-देन शुल्क सहित, कुल राशि आपकी शेष राशि से अधिक है।
-```
+YES  
+There is an unwanted leading space before "%1" in the translation, and the sentence structure can be improved for better clarity and natural flow in Hindi. Also, the placement of "%1" is correct but should not have a leading space.
 
-```
-        <source>Alt+A</source>
-        <translation>Alt+A </translation>
-    
-YES
-The translation contains an extraneous space at the end.
-Alt+A
-```
-
-```
-        <source>Alt+P</source>
-        <translation>Alt+P </translation>
-    
-YES, The translation has an extra space at the end.
-Alt+P
-```
-
-```
-        <source>Alt+A</source>
-        <translation>Alt+A </translation>
-    
-YES
-The translation contains an extraneous space at the end.
-Alt+A
-```
-
-```
-        <source>Alt+P</source>
-        <translation>Alt+P </translation>
-    
-YES, The translation has an extra space at the end.
-Alt+P
+Correct translation:  
+"%1 लेन-देन शुल्क शामिल होने पर कुल आपकी शेष राशि से अधिक हो जाता है।"
 ```
 
 ```
         <source>Verify Message</source>
         <translation>सत्यापित करें और संदेश</translation>
     
-YES
-The translation is inaccurate and does not convey the intended meaning of "Verify Message". It seems to have translated "Verify" and "Message" separately and combined them incorrectly.
+YES  
+The translation "सत्यापित करें और संदेश" means "Verify and message," which is incorrect. The correct translation for "Verify Message" should be "संदेश सत्यापित करें".
 
-Correct translation: संदेश सत्यापित करें
+Correct translation:  
+संदेश सत्यापित करें
 ```
 
 ```
         <source>The entered address does not refer to a legacy (P2PKH) key. Message signing for SegWit and other non-P2PKH address types is not supported in this version of %1. Please check the address and try again.</source>
         <translation>दर्ज किया गया पता किसी लीगेसी (P2PKH) कुंजी को संदर्भित नहीं करता है। SegWit और अन्य गैर-P2PKH पता प्रकारों के लिए संदेश हस्ताक्षर %1 के इस संस्करण में समर्थित नहीं है | कृपया पते की जांच करें और पुनः प्रयास करें।</translation>
     
-YES: The translation incorrectly uses a pipe symbol "|" instead of a period "." at the end of the sentence.
-दर्ज किया गया पता किसी लीगेसी (P2PKH) कुंजी को संदर्भित नहीं करता है। SegWit और अन्य गैर-P2PKH पता प्रकारों के लिए संदेश हस्ताक्षर %1 के इस संस्करण में समर्थित नहीं है। कृपया पते की जांच करें और पुनः प्रयास करें।
+YES
+The translation uses an incorrect symbol "|" instead of a proper sentence-ending punctuation mark. Also, the phrase "संदेश हस्ताक्षर" should be "संदेश पर हस्ताक्षर" for better clarity in Hindi. Here is the corrected translation:
+
+दर्ज किया गया पता किसी लीगेसी (P2PKH) कुंजी को संदर्भित नहीं करता है। SegWit और अन्य गैर-P2PKH पता प्रकारों के लिए संदेश पर हस्ताक्षर %1 के इस संस्करण में समर्थित नहीं हैं। कृपया पते की जांच करें और पुनः प्रयास करें।
 ```
 
 ```
@@ -340,8 +320,10 @@ YES: The translation incorrectly uses a pipe symbol "|" instead of a period "." 
         <translation>kB/s </translation>
     
 YES
-The translation has an extra space at the end.
-Correct translation: kB/s
+There is an extra trailing whitespace in the translation ("kB/s ") which should be removed to match the source exactly.
+
+Correct translation:
+kB/s
 ```
 
 ```
@@ -349,57 +331,54 @@ Correct translation: kB/s
         <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents an unconfirmed transaction that conflicts with a confirmed transaction.</extracomment>
         <translation> %1 पुष्टिकरण के साथ लेन-देन के साथ विरोधाभासी</translation>
     
-YES
-The translation uses an incorrect word for "conflicted". The correct word in Hindi would be "टकराव" (takrav) or "विरोधाभासी" (virodhabhasi).
+YES  
+The translated text has an extra space at the beginning which should be removed, and the phrase sounds a bit unnatural in Hindi. A clearer and more natural translation would be:  
 
-%1 पुष्टि के साथ लेन-देन से टकराव
-```
-
-```
-        <source>%1/unconfirmed</source>
-        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in at least one block, but less than 6 blocks.</extracomment>
-        <translation>%1/अपुष्ट</translation>
-    
-YES
-The Hindi translation is incorrect. The source text "%1/unconfirmed" indicates a transaction that has been confirmed in at least one block but less than six blocks. The provided translation "%1/अपुष्ट" translates to "%1/unconfirmed" in a general sense but doesn't specifically convey the nuances of Bitcoin transaction confirmations.
-
-A more accurate translation for this specific context would be:
-%1/अपुष्ट
+Correct translation:  
+%1 पुष्टिकरणों के साथ लेन-देन के साथ टकराव हुआ
 ```
 
 ```
         <source>Source</source>
         <translation>सॉSस</translation>
     
-YES
-The translation is nonsensical and appears to be a phonetic misspelling of "Source".
-Correct translation: स्रोत
+YES  
+The translation "सॉSस" is incorrect and looks like a mistyped or corrupted form of the word. The correct Hindi translation for "Source" in the Bitcoin context (such as source of funds, or source address) is "स्रोत".  
+
+Correct translation:  
+स्रोत
 ```
 
 ```
         <source>Debit</source>
         <translation>जमा</translation>
     
-YES, The translation is incorrect. "Debit" in the context of financial transactions means withdrawing money, while the translation "जमा" means "credit" or "deposit". The correct translation for "Debit" in Hindi is "डेबिट" or "नाम".
+YES  
+The English term "Debit" refers to an outgoing amount, such as money spent or deducted, while the Hindi translation "जमा" means "Deposit," which is the opposite meaning. The correct Hindi translation for "Debit" in this context would be "डेबिट" or "निकासी".  
 
-Correct translation: डेबिट
+Correct translation:  
+डेबिट
 ```
 
 ```
         <source>Abandoned</source>
         <translation>छोड़ दिया </translation>
     
-YES, The translation is problematic. There is an extra space at the end of the translation.
-Correct translation: छोड़ दिया
+YES  
+The translation has an extra trailing space after "छोड़ दिया" which should be removed to avoid whitespace issues. Also, "छोड़ दिया" is an acceptable and common translation for "Abandoned" in this context.
+
+Correct translation:  
+छोड़ दिया
 ```
 
 ```
         <source>Confirmed (%1 confirmations)</source>
         <translation>की पुष्टि की (%1 पुष्टिकरण)</translation>
     
-YES, the translation is problematic. The word "की" (ki) is a feminine possessive marker and is used incorrectly here. It should be removed.
+YES  
+The Hindi translation is incorrect and awkwardly phrased. The phrase "की पुष्टि की" is grammatically wrong and incomplete. A correct and natural translation for "Confirmed (%1 confirmations)" would be:
 
-NO
+"पुष्ट (%1 पुष्टिकरण)"
 ```
 
 ```
@@ -407,8 +386,10 @@ NO
         <translation>एक दूसरे के विरोध में</translation>
     
 YES
-The translation "एक दूसरे के विरोध में" (ek doosre ke virodh mein) means "in opposition to each other". In the context of Bitcoin, "Conflicted" refers to a transaction that has been double-spent or is in a state of conflict on the blockchain. A more appropriate translation would be "टकराव" (takrav), which means conflict or collision.
-Correct translation: टकराव
+The translation "एक दूसरे के विरोध में" literally means "against each other" or "in opposition to each other," which is too verbose and not appropriate for the context of "Conflicted" in Bitcoin terminology. In this context, "Conflicted" usually refers to a transaction or state that conflicts with another, so a more concise and accurate Hindi term would be "विवादित" or "टकराव."
+
+Correct translation:
+विवादित
 ```
 
 ```
@@ -416,8 +397,10 @@ Correct translation: टकराव
         <translation>Signer error/हस्ताक्षरकर्ता त्रुटि</translation>
     
 YES
-The translation includes an English phrase "Signer error/" which should not be present in the Hindi translation. The correct translation is:
-हस्ताक्षरकर्ता त्रुटि
+The translation mixes English and Hindi unnecessarily. It should be fully translated into Hindi for clarity and consistency.
+
+Correct translation:
+हस्ताक्षרकर्ता त्रुटि
 ```
 
 ```
@@ -425,110 +408,149 @@ The translation includes an English phrase "Signer error/" which should not be p
         <translation>-assumeutxo snapshot state को सत्यापित करने में %sविफल रहा |  यह हार्डवेयर समस्या, या सॉफ्टवेयर में बग, या खराब सॉफ्टवेयर संशोधन को इंगित करता है जिसके कारण अमान्य स्नैपशॉट लोड हो गया। इसके परिणामस्वरूप, नोड बंद हो जाएगा और स्नैपशॉट पर निर्मित किसी भी स्थिति का उपयोग करना बंद कर देगा, जिससे चेन की ऊंचाई %d से %d पर रीसेट हो जाएगी। अगली बार पुनः आरंभ करने पर, नोड किसी भी स्नैपशॉट डेटा का उपयोग किए बिना %d से सिंक करना फिर से शुरू कर देगा। कृपया इस घटना की रिपोर्ट %s को करें, जिसमें यह भी शामिल है कि आपने स्नैपशॉट कैसे प्राप्त किया। अमान्य स्नैपशॉट चेनस्टेट को डिस्क पर छोड़ दिया जाएगा, ताकि यह उस समस्या का निदान करने में सहायक हो, जिसके कारण यह त्रुटि हुई।</translation>
     
 YES
-The format specifier %s is missing a space after it.
--assumeutxo snapshot state को सत्यापित करने में %s विफल रहा | यह हार्डवेयर समस्या, या सॉफ्टवेयर में बग, या खराब सॉफ्टवेयर संशोधन को इंगित करता है जिसके कारण अमान्य स्नैपशॉट लोड हो गया। इसके परिणामस्वरूप, नोड बंद हो जाएगा और स्नैपशॉट पर निर्मित किसी भी स्थिति का उपयोग करना बंद कर देगा, जिससे चेन की ऊंचाई %d से %d पर रीसेट हो जाएगी। अगली बार पुनः आरंभ करने पर, नोड किसी भी स्नैपशॉट डेटा का उपयोग किए बिना %d से सिंक करना फिर से शुरू कर देगा। कृपया इस घटना की रिपोर्ट %s को करें, जिसमें यह भी शामिल है कि आपने स्नैपशॉट कैसे प्राप्त किया। अमान्य स्नैपशॉट चेनस्टेट को डिस्क पर छोड़ दिया जाएगा, ताकि यह उस समस्या का निदान करने में सहायक हो, जिसके कारण यह त्रुटि हुई।
+There are spacing issues around "%s" after "में" ("%sविफल" should be "%s विफल"). Also, a few Hindi stylistic improvements can be made for clarity and consistency:
+
+Correct translation:
+-assumeutxo snapshot state को सत्यापित करने में %s विफल रहा। यह हार्डवेयर समस्या, सॉफ़्टवेयर में बग, या कोई खराब सॉफ़्टवेयर संशोधन है जिसके कारण अमान्य स्नैपशॉट लोड हो गया। इसके परिणामस्वरूप, नोड shutdown हो जाएगा और स्नैपशॉट पर निर्मित किसी भी स्थिति का उपयोग करना बंद कर देगा, जिससे चेन की ऊंचाई %d से %d पर रीसेट हो जाएगी। अगली बार पुनः आरंभ करने पर, नोड बिना किसी स्नैपशॉट डेटा के %d से सिंक करना फिर से शुरू करेगा। कृपया इस घटना की रिपोर्ट %s को करें, जिसमें यह भी शामिल हो कि आपने स्नैपशॉट कैसे प्राप्त किया। अमान्य स्नैपशॉट चेनस्टेट डिस्क पर छोड़ दिया जाएगा ताकि यह उस समस्या के निदान में सहायक हो, जिसके कारण यह त्रुटि हुई।
+```
+
+```
+        <source>%s request to listen on port %u. This port is considered "bad" and thus it is unlikely that any peer will connect to it. See doc/p2p-bad-ports.md for details and a full list.</source>
+        <translation>%s अनुरोध %u पोर्ट पर सुनने का. इस बंदरगाह को "खराब" माना जाता है और इस प्रकार यह संभावना नहीं है कि कोई भी सहकर्मी इससे जुड़ेगा। विवरण और पूरी सूची के लिए doc/p2p-bad-ports.md देखें।</translation>
+    
+YES
+The translation incorrectly translates "port" as "बंदरगाह," which typically means a seaport or harbor in Hindi, not a network port. The correct term for a network port in this context is "पोर्ट." Also, the phrase "सुनने का" is incomplete and unnatural; it should be "सुनने का अनुरोध" or "सुनने के लिए अनुरोध." The rest of the translation is mostly accurate but could be made more fluent.
+
+Correct translation:
+%s %u पोर्ट पर सुनने के लिए अनुरोध। इस पोर्ट को "खराब" माना जाता है और इसलिए संभावना नहीं है कि कोई भी सहकर्मी इससे जुड़ेगा। विवरण और पूरी सूची के लिए doc/p2p-bad-ports.md देखें।
 ```
 
 ```
         <source>Error loading wallet. Wallet requires blocks to be downloaded, and software does not currently support loading wallets while blocks are being downloaded out of order when using assumeutxo snapshots. Wallet should be able to load successfully after node sync reaches height %s</source>
         <translation>बटुआ लोड करने में त्रुटि. वॉलेट को डाउनलोड करने के लिए ब्लॉक की आवश्यकता होती है, और सॉफ्टवेयर वर्तमान में लोडिंग वॉलेट का समर्थन नहीं करता है, जबकि ब्लॉक्स को ऑर्डर से बाहर डाउनलोड किया जा रहा है, जब ग्रहणुत्सो स्नैपशॉट का उपयोग किया जाता है। नोड सिंक के %s ऊंचाई तक पहुंचने के बाद वॉलेट को सफलतापूर्वक लोड करने में सक्षम होना चाहिए</translation>
     
-YES, The word "ग्रहणुत्सो" is not a valid Hindi word. It seems to be a misspelling or misinterpretation of "assumeutxo". The correct translation should replace it with an appropriate Hindi term or a transliteration if no direct equivalent exists.
+YES
+The translation contains literal and awkward phrases that do not read naturally in Hindi, and some key technical terms are mistransliterated or unclear ("ग्रहणुत्सो" should be "assumeutxo", transliterated accurately). Also, the sentence structure is confusing and the word "वॉलेट" and "बटुआ" are inconsistently used (should stick to one term, preferably "वॉलेट" as it is widely used in cryptocurrency context). The phrase "ब्लॉक्स को ऑर्डर से बाहर डाउनलोड किया जा रहा है" can be improved for clarity.
 
 Correct translation:
-बटुआ लोड करने में त्रुटि. वॉलेट को डाउनलोड करने के लिए ब्लॉक की आवश्यकता होती है, और सॉफ्टवेयर वर्तमान में लोडिंग वॉलेट का समर्थन नहीं करता है, जबकि ब्लॉक्स को ऑर्डर से बाहर डाउनलोड किया जा रहा है, जब assumeutxo स्नैपशॉट का उपयोग किया जाता है। नोड सिंक के %s ऊंचाई तक पहुंचने के बाद वॉलेट को सफलतापूर्वक लोड करने में सक्षम होना चाहिए
+बटुआ लोड करने में त्रुटि। वॉलेट को ब्लॉकों को डाउनलोड करने की आवश्यकता है, और सॉफ़्टवेयर वर्तमान में assumeutxo स्नैपशॉट्स का उपयोग करते समय ब्लॉकों को असंकुलित क्रम में डाउनलोड किए जाने पर वॉलेट लोड करने का समर्थन नहीं करता है। नोड सिंक जब %s हाइट तक पहुँच जाएगा, तब वॉलेट सफलतापूर्वक लोड हो जाना चाहिए।
+```
+
+```
+        <source>%s is set very high! Fees this large could be paid on a single transaction.</source>
+        <translation>%sबहुत अधिक निर्धारित है! इतनी बड़ी फीस एक ही लेनदेन पर चुकाई जा सकती है।</translation>
+    
+YES  
+There is a missing space after the format specifier %s, causing it to run into the following word. Also, "फीस" can be better translated as "शुल्क" in this formal context. 
+
+Correct translation:  
+%s बहुत अधिक निर्धारित है! इतनी बड़ी शुल्क एक ही लेनदेन पर चुकाई जा सकती है।
 ```
 
 ```
         <source>Maximum transaction weight is too low, can not accommodate change output</source>
         <translation>अधिकतम लेनदेन भार बहुत कम है, change output को समायोजित नहीं कर सकता</translation>
     
-YES, The translation uses the English word "change" instead of translating it to Hindi. The word "change" in the context of Bitcoin transactions refers to the leftover amount of Bitcoin after a transaction.
+YES  
+The translation mixes Hindi and English unnecessarily by keeping "change output" in English, which is inconsistent and can confuse the reader. It should be fully translated into Hindi, maintaining technical terms in a way that is commonly used or understood by the target audience. Also, the sentence should be grammatically appropriate and natural in Hindi.
 
-Correct translation: अधिकतम लेनदेन भार बहुत कम है, शेष राशि आउटपुट को समायोजित नहीं कर सकता
-```
-
-```
-        <source>Unexpected legacy entry in descriptor wallet found. Loading wallet %s
-
-The wallet might have been tampered with or created with malicious intent.
-</source>
-        <translation>डिस्क्रिप्टर वॉलेट में अप्रत्याशित विरासत प्रविष्टि मिली। %s बटुआ लोड हो रहा है
-
-हो सकता है कि वॉलेट से छेड़छाड़ की गई हो या दुर्भावनापूर्ण इरादे से बनाया गया हो।
-</translation>
-    
-YES - The translation incorrectly translates "descriptor wallet" as "डिस्क्रिप्टर वॉलेट" when it should be "विवरणक वॉलेट" for better accuracy in the context of Bitcoin. Also, "wallet" is repeated in the second sentence of the translation, which is redundant.
-
-Correct translation: विवरणक वॉलेट में अप्रत्याशित विरासत प्रविष्टि मिली। %s वॉलेट लोड हो रहा है। हो सकता है कि वॉलेट से छेड़छाड़ की गई हो या दुर्भावनापूर्ण इरादे से बनाया गया हो।
+Correct translation:  
+अधिकतम लेनदेन भार बहुत कम है, इसलिए छुट देय राशि (चेंज आउटपुट) को समायोजित नहीं किया जा सकता है।
 ```
 
 ```
         <source>Block verification was interrupted</source>
         <translation>ब्लॉक verification अन्तरायित हुआ</translation>
     
-YES - The translation uses an English word "verification" which should have been translated into Hindi. The correct translation is: ब्लॉक सत्यापन बाधित हुआ।
+YES  
+The translation mixes Hindi and English unnecessarily. The word "verification" should be translated into Hindi for consistency and clarity. Also, "interrupted" is better translated as "रुका" or "रोक दिया गया" in this context. A more natural and accurate Hindi translation would be:
+
+ब्लॉक सत्यापन रुक गया
 ```
 
 ```
         <source>Elliptic curve cryptography sanity check failure. %s is shutting down.</source>
         <translation>Elliptic curve cryptography sanity check विफलता | %sबंद हो रही है |</translation>
     
-YES. The translation is problematic. The Hindi text contains a mix of English and incorrectly translated Hindi, along with extraneous characters.
+YES  
+The Hindi translation mixes English and Hindi inconsistently and uses the wrong punctuation ("|") instead of appropriate Hindi punctuation (e.g., "।"). Also, spacing issues are present between "%s" and surrounding words.
 
-Correct translation:
+Correct translation:  
 Elliptic curve cryptography sanity check विफलता। %s बंद हो रहा है।
+```
+
+```
+        <source>Error: Unable to write watchonly wallet best block locator record</source>
+        <translation>त्रुटि: watchonly वॉलेट best  ब्लॉक लोकेटर रिकॉर्ड लिखने में असमर्थ</translation>
+    
+YES  
+The translation mixes English and Hindi unnecessarily and awkwardly. Terms like "watchonly," "best," and "ब्लॉक लोकेटर रिकॉर्ड" should either be fully translated or transliterated consistently. Also, "watchonly" is a technical term that can be transliterated or explained better. The word "best" should be translated as "श्रेष्ठ" or omitted if it refers to a specific term known in English.
+
+A better translation would be:  
+"त्रुटि: watchonly वॉलेट के सर्वश्रेष्ठ ब्लॉक लोकेटर रिकॉर्ड को लिखने में असमर्थ"
 ```
 
 ```
         <source>Failed to connect best block (%s).</source>
         <translation>best ब्लॉक (%s) से कनेक्ट करने में विफल |</translation>
     
-YES. The Hindi translation contains an extra pipe symbol at the end, which is not present in the source text.
+YES  
+The translation mixes English and Hindi unnaturally by using "best" in English and "ब्लॉक" transliterated, which can be confusing. Also, the vertical bar '|' at the end is unnecessary and not used in the original sentence. A more natural and accurate Hindi translation would fully translate the phrase and follow natural Hindi grammar.
 
-best ब्लॉक (%s) से कनेक्ट करने में विफल।
+Correct translation:  
+"सर्वश्रेष्ठ ब्लॉक (%s) से कनेक्ट करने में विफल।"
 ```
 
 ```
         <source>Failed to read block.</source>
         <translation>ब्लॉक पढ़ने में विफल |</translation>
     
-YES - The translation contains an extraneous vertical bar at the end.
-Correct translation: ब्लॉक पढ़ने में विफल।
+YES  
+The translation contains an incorrect punctuation mark. The source sentence ends with a period ('.'), but the translation ends with a vertical bar (|). Also, there is an extra space before the punctuation in Hindi which is not standard.
+
+Correct translation:  
+ब्लॉक पढ़ने में विफल।
 ```
 
 ```
         <source>Failed to write to block index database.</source>
         <translation>ब्लॉक इंडेक्स डेटाबेस में लिखने में विफल |</translation>
     
-YES - The translation has an extraneous pipe character at the end.
-<source>Failed to write to block index database.</source>
-<translation>ब्लॉक इंडेक्स डेटाबेस में लिखने में विफल।</translation>
+YES  
+The translation contains an incorrect trailing pipe symbol "|" which is unnecessary and incorrect punctuation in Hindi. Also, it would be better to use a full stop (।) instead of pipe or no punctuation if the source has a period.
+
+Correct translation:  
+ब्लॉक इंडेक्स डेटाबेस में लिखने में विफल।
 ```
 
 ```
         <source>Invalid port specified in %s: '%s'</source>
         <translation>में निर्दिष्ट अमान्य पोर्ट %s:'%s'</translation>
     
-YES: The Hindi translation is grammatically incorrect and does not convey the intended meaning. The word "में" (in) should not precede "specified" (निर्दिष्ट) and the order of the arguments is also incorrect.
+YES  
+The Hindi translation is incorrect and has incorrect word order, missing some words needed for clarity, and improper placement of format specifiers. The original source states "Invalid port specified in %s: '%s'", meaning "%s" represents a location ("in %s"), so it should appear properly in the sentence.
 
-Correct translation: %s में निर्दिष्ट अमान्य पोर्ट: '%s'
+Correct translation:  
+"%s में निर्दिष्ट अमान्य पोर्ट: '%s'"
 ```
 
 ```
         <source>Signer did not echo address</source>
         <translation>Signer ने पता की echo नहीं की</translation>
     
-YES, The Hindi translation is grammatically incorrect. The correct translation should be "Signer ने पता echo नहीं किया" which correctly uses the masculine verb form.
-
-NO
+YES  
+The Hindi translation mixes English and Hindi improperly and uses "echo" without translation, which is uncommon in Hindi technical translations. A more natural and accurate translation would be:  
+"सिग्नर ने पता पुनः नहीं दिखाया"
 ```
 
 ```
         <source>Specified data directory "%s" does not exist.</source>
         <translation>निर्दिष्ट डेटा निर्देशिका "%s" मौजूद नहीं है |</translation>
     
-YES: The translation uses a pipe symbol "|" at the end of the sentence, which is not appropriate in Hindi. It should be a full stop.
+YES  
+The Hindi translation uses a vertical bar " | " at the end, which is unnecessary and incorrect punctuation in this context. Also, a period (।) should be used instead of a vertical bar to properly end the sentence.  
+
+Correct translation:  
 निर्दिष्ट डेटा निर्देशिका "%s" मौजूद नहीं है।
 ```
 
@@ -536,7 +558,8 @@ YES: The translation uses a pipe symbol "|" at the end of the sentence, which is
         <source>System error while saving block to disk: %s</source>
         <translation>ब्लॉक को डिस्क पर सहेजते समय सिस्टम error: %s</translation>
     
-YES: The word "error" has been incorrectly translated as "error". It should be translated to "त्रुटि".
+YES  
+The translation mixes English and Hindi unnecessarily by using the English word "error" instead of the Hindi equivalent "त्रुटि". The correct and more natural translation would be:  
 ब्लॉक को डिस्क पर सहेजते समय सिस्टम त्रुटि: %s
 ```
 
@@ -544,23 +567,32 @@ YES: The word "error" has been incorrectly translated as "error". It should be t
         <source>Error: cannot remove legacy wallet records</source>
         <translation>Error: leagcy वॉलेट रिकॉर्ड को हटाया नहीं जा सकता है</translation>
     
-YES, The translation contains a spelling error. The word "legacy" is misspelled as "leagcy". The correct translation is:
-Error: legacy वॉलेट रिकॉर्ड को हटाया नहीं जा सकता है
+YES  
+The translation contains a typo in the word "legacy" (spelled as "leagcy") and mixes English and Hindi unnecessarily. It is better to fully translate the word "Error" as well for consistency. Also, "wallet" is commonly transliterated as "वॉलेट" which is acceptable, and the rest is correctly translated.
+
+Correct translation:  
+त्रुटि: पारंपरिक वॉलेट रिकॉर्ड हटाए नहीं जा सकते हैं
 ```
 
 ```
         <source>Settings file could not be read</source>
         <translation>सेटिंग्स फ़ाइल को पढ़ा नहीं जा सका |</translation>
     
-YES - The translation has an unnecessary pipe symbol at the end.
-Correct translation: सेटिंग्स फ़ाइल को पढ़ा नहीं जा सका
+YES  
+The translation includes an unnecessary trailing space before the vertical bar (|) and uses a vertical bar improperly at the end, which is not standard punctuation in Hindi. Also, the translation is understandable but could be made more natural by replacing "सेटिंग्स फ़ाइल" with a more Hindi-friendly term or keeping it as is since "सेटिंग्स" is commonly used in software contexts. The vertical bar should be removed.
+
+Correct translation:  
+सेटिंग्स फ़ाइल को पढ़ा नहीं जा सका।
 ```
 
 ```
         <source>Settings file could not be written</source>
         <translation>सेटिंग्स फ़ाइल नहीं लिखी जा सकी |</translation>
     
-YES: The translation includes an extraneous vertical bar "|", which is not present in the source text.
-Settings file could not be written
+YES  
+The translation contains an unnecessary trailing vertical bar "|" which is not present in the source text and is not appropriate here. Also, to improve clarity and fluency, it is better to translate as: "सेटिंग्स फ़ाइल नहीं लिखी जा सकी।" (with a proper Hindi full stop).  
+
+Correct translation:  
+सेटिंग्स फ़ाइल नहीं लिखी जा सकी।
 ```
 </details>

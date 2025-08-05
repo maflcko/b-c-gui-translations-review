@@ -14,16 +14,21 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <extracomment>Explanatory text shown on startup when the settings file could not be written. Prompts user to check that we have the ability to write to the file. Explains that the user has the option of running without a settings file.</extracomment>
         <translation>אירעה שגיאה משמעותית. נא לבדוק שניתן לכתוב כל קובץ ההגדרות או לנסות להריץ עם ‎-nosettings (ללא הגדרות).</translation>
     
-YES - The translation inaccurately states "כל קובץ ההגדרות" which translates to "all settings file". The correct translation should be "קובץ ההגדרות" or "the settings file".
+YES  
+The phrase "שגיאה משמעותית" is not the most accurate or natural way to say "fatal error" in Hebrew in this technical context. A better translation is "שגיאה קריטית" or "שגיאה קשה". Additionally, "כל קובץ ההגדרות" incorrectly contains the word "כל" ("any"/"every") which is not in the source and changes the meaning. The correct phrase should be "קובץ ההגדרות".
 
-Correct translation: אירעה שגיאה משמעותית. נא לבדוק שניתן לכתוב לקובץ ההגדרות, או לנסות להריץ עם ‎-nosettings (ללא הגדרות).
+Correct translation:  
+אירעה שגיאה קריטית. נא לבדוק שניתן לכתוב בקובץ ההגדרות, או לנסות להריץ עם ‌-nosettings (ללא הגדרות).
 ```
 
 ```
         <source>Load PSBT from file…</source>
         <translation>טעינת PBST מקובץ…</translation>
     
-YES: The translation has a typo. "PSBT" should be spelled correctly.
+YES  
+There is a typo in the translation: "PBST" should be "PSBT" to match the source text's abbreviation.  
+
+Correct translation:  
 טעינת PSBT מקובץ…
 ```
 
@@ -31,46 +36,32 @@ YES: The translation has a typo. "PSBT" should be spelled correctly.
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
         <translation>בקשת תשלומים (יצירה של קודים מסוג QR וסכימות כתובות משאב של :bitcoin)</translation>
     
-YES, The Hebrew translation for "bitcoin: URIs" is incorrect and doesn't accurately reflect the meaning in the context of Bitcoin. The term "URIs" should be translated more directly or explained.
-The correct translation should be: בקשת תשלומים (יצירת קודי QR ו-URIs של bitcoin:)
-```
+YES  
+The translation has awkward phrasing and includes an incorrect literal translation of "bitcoin: URIs" as "סכימות כתובות משאב של :bitcoin", which is unnatural in Hebrew. The term "bitcoin: URIs" refers to a URI scheme and should be transliterated or described more naturally. Also, "יצירה של קודים מסוג QR" is acceptable but could be smoother.
 
-```
-        <source>Open node debugging and diagnostic console</source>
-        <translation>פתיחת ניפוי באגים בצומת וגם מסוף בקרה לאבחון</translation>
-    
-YES
-The Hebrew translation uses a redundant conjunction "וגם" (and also) which is unnecessary and makes the phrase sound unnatural. It also translates "diagnostic console" as "מסוף בקרה לאבחון" which is a bit awkward. A more natural translation would be "קונסול אבחון".
-
-Correct translation: פתיחת ניפוי באגים בצומת וקונסול אבחון
+Correct translation:  
+בקשת תשלומים (יוצרת קודי QR וקישורי bitcoin:)
 ```
 
 ```
         <source>Open a bitcoin: URI</source>
         <translation>פתיחת ביטקוין: כתובת משאב</translation>
     
-YES. The Hebrew word "כתובת" (ktovet) means "address" but in this context, "כתובת משאב" (ktovet mash'av), which translates to "resource address", is awkward and not idiomatic for a Bitcoin URI. A more natural and accurate translation would be "כתובת ביטקוין" (ktovet bitcoin) or simply "כתובת URI של ביטקוין" (ktovet URI shel bitcoin).
+YES  
+The translation "פתיחת ביטקוין: כתובת משאב" literally means "Opening bitcoin: resource address," which is inaccurate and somewhat awkward in the given context. The original English phrase "Open a bitcoin: URI" likely refers to the action of opening a bitcoin URI (a specific type of link). A more accurate translation would preserve the technical term "URI" and convey the action of opening it.
 
-The original translation also missed the infinitive nature of "Open" in the source text.
-
-Correct translation: פתיחת URI של ביטקוין
-```
-
-```
-        <source>Migrate a wallet</source>
-        <translation>הסבת ארנק לביטקוין</translation>
-    
-YES
-The Hebrew translation for "Migrate a wallet" is "הסבת ארנק לביטקוין", which translates to "Convert a wallet to Bitcoin". While related to Bitcoin, "migrate" implies moving an existing wallet to a new system or platform, rather than converting a wallet to Bitcoin itself. A more accurate translation would be "העברת ארנק" which means "transfer wallet" or "migrating wallet".
-
-העברת ארנק
+Correct translation:  
+פתח URI מסוג bitcoin:
 ```
 
 ```
         <source>Sent transaction</source>
         <translation>העברת שליחה</translation>
     
-YES: The translation is grammatically incorrect and doesn't convey the intended meaning of "Sent transaction". The correct translation should be "עסקה שנשלחה" or "העברה שנשלחה".
+YES  
+The translation "העברת שליחה" is not idiomatic Hebrew for "Sent transaction." It literally means "transfer of sending," which is redundant and unnatural. The usual and correct Hebrew phrase for "Sent transaction" in the context of Bitcoin or general financial transactions is "עסקה שנשלחה" or simply "עסקה שנשלחה" (transaction that was sent).
+
+Correct translation:  
 עסקה שנשלחה
 ```
 
@@ -78,108 +69,64 @@ YES: The translation is grammatically incorrect and doesn't convey the intended 
         <source>Incoming transaction</source>
         <translation>העברת קבלה</translation>
     
-YES, the translation is problematic because it does not accurately reflect the meaning of "Incoming transaction" in the context of Bitcoin. "העברת קבלה" translates to "receipt transfer" which is not the standard term for an incoming transaction.
+YES  
+The phrase "העברת קבלה" literally means "receipt transfer," which is not the common or accurate way to say "Incoming transaction" in Hebrew, especially in the Bitcoin context. The correct translation should be "עסקה נכנסת" or "העתק נכנס" but the most common and clear term is "עסקה נכנסת".
 
-The correct translation should be "עסקת כניסה" or "טרנזקציית כניסה".
-
-NO
-```
-
-```
-        <source>(un)select all</source>
-        <translation>ביטול/אישור הבחירה</translation>
-    
-YES, The Hebrew translation for "(un)select all" is not accurate. It translates to "cancel/confirm selection". A more appropriate translation would be "בחר/בטל הכל" which means "select/deselect all".
-The Hebrew translation for "(un)select all" is not accurate. It translates to "cancel/confirm selection". A more appropriate translation would be "בחר/בטל הכל" which means "select/deselect all".
-```
-
-```
-        <source>(%1 locked)</source>
-        <translation>(%1 נעולים)</translation>
-    
-YES, The translation is problematic due to grammatical error and incorrect pluralization in Hebrew. The word "נעולים" (locked) is in the plural masculine form, but it should agree with the implied singular masculine or feminine noun it's referring to, or if it refers to an amount, it should be singular. The correct translation should be singular.
-
-NO
-```
-
-```
-        <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>יכול להשתנות במגמה של +/- %1 סנטושי לקלט.</translation>
-    
-YES - The translation uses the word "סנטושי" which is an incorrect transliteration of "satoshi". The correct transliteration is "סטושי". Additionally, the phrase "במגמה של" is not the best translation for "per" in this context.
-
-Correct translation: יכול להשתנות ב+/- %1 סטושי לקלט.
+Correct translation:  
+עסקה נכנסת
 ```
 
 ```
         <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>הרשת תסרב לקבל הוצאת ביטקוינים במידה והם כבר נמצאים בהעברות אשר לא מוצגות עדיין.</translation>
     
-YES. The Hebrew translation uses "הוצאת" which means "spending" or "issue," and "במידה והם כבר נמצאים בהעברות" which translates to "if they are already in transfers." This is an awkward phrasing. A more accurate translation would be: "The network will not accept attempts to spend bitcoins affected by not-yet-displayed transactions."
+YES  
+The Hebrew translation is somewhat inaccurate and stylistically awkward. The original English discusses that attempts to spend bitcoins affected by transactions not yet displayed will be rejected by the network. The Hebrew translation incorrectly implies bitcoins that "are already in transfers not yet displayed," which is confusing and less precise.
 
-Correct translation: הרשת לא תקבל ניסיונות להוציא ביטקוינים המושפעים מעסקאות שטרם הוצגו.
+A more accurate and clear translation would be:  
+"הרשת תסרב לקבל הוצאה של ביטקוינים שהושפעו על ידי העברות שטרם הוצגו."
 ```
 
 ```
         <source>Spend unconfirmed change</source>
         <translation>עודף בלתי מאושר מההשקעה</translation>
     
-YES. The translation is inaccurate and does not reflect the original meaning of the source text. The source text is about unconfirmed change in a Bitcoin transaction, while the translation refers to "unconfirmed surplus from the investment." This is a significant misinterpretation of the Bitcoin context.
+YES  
+The translation "עודף בלתי מאושר מההשקעה" literally means "unconfirmed surplus from the investment," which is incorrect and misleading in the Bitcoin context. The source phrase "Spend unconfirmed change" refers to spending the unconfirmed change amount in a Bitcoin transaction (change = leftover funds from a transaction), not any investment. The correct translation should accurately convey spending unconfirmed change funds.
 
-Correct translation: עודף בלתי מאושר
+Correct translation:  
+"להוציא עודף בלתי מאושר"
 ```
 
 ```
         <source>Port:</source>
         <translation>פתחה:</translation>
     
-YES
-The translation is inaccurate. "Port" in the context of Bitcoin typically refers to a network port number used for communication. The Hebrew word "פתחה" (petachah) means "opening" or "entrance," which is not the correct technical term for a port. A more accurate translation would be "יציאה" (yetziah), which means "port" in a networking context.
+YES  
+The Hebrew translation "פתחה:" is incorrect for the English source "Port:". The word "Port" in the context of networking or Bitcoin typically refers to the network port, which in Hebrew is "פורט:".  
+"פתחה" means "she opened" or "opening (feminine form)", which is unrelated and incorrect in this context.  
 
-Correct translation:
-פתחה:
+Correct translation:  
+פורט:
 ```
 
 ```
         <source>Connect to the Bitcoin network through a separate SOCKS5 proxy for Tor onion services.</source>
         <translation>התחבר לרשת ביטקוין דרך פרוקסי נפרד SOCKS5 proxy לשרותי שכבות בצל (onion services).</translation>
     
-YES. The translation contains a redundancy. The word "proxy" is present twice, once in English and once in Hebrew.
+YES  
+The translation redundantly repeats the word "proxy" in English ("פרוקסי נפרד SOCKS5 proxy") which is inconsistent and awkward. Also, the phrase "לשרותי שכבות בצל" is inaccurate; the correct term for "onion services" in Hebrew related to Tor is "שירותי אוניון" or more commonly "שירותי טור אוניון". The parentheses with the English "onion services" should be removed or replaced for clarity.  
 
-NO. The translation is unproblematic.
-```
-
-```
-        <source>Use separate SOCKS5 proxy to reach peers via Tor onion services:</source>
-        <translation>השתמש בפרוקסי נפרד  SOCKS5 להגעה לעמיתים דרך שרותי השכבות של  Tor :</translation>
-    
-YES, The translation contains an extraneous space before the colon.
-השתמש בפרוקסי נפרד SOCKS5 להגעה לעמיתים דרך שירותי השכבות של Tor:
-```
-
-```
-        <source>Privacy mode activated for the Overview tab. To unmask the values, uncheck Settings-&gt;Mask values.</source>
-        <translation>מצב הפרטיות הופעל עבור לשונית התאור הכללי. כדי להסיר את הסוואת הערכים, בטל את ההגדרות, -&gt;הסוואת ערכים.</translation>
-    
-YES, The translation contains erroneous content. The Hebrew text "הסוואת ערכים" which translates to "masking values" is repeated and the hyphenated arrow character "<->" is translated incorrectly as "-&gt;".
-The correct translation should be: "מצב הפרטיות הופעל עבור לשונית התאור הכללי. כדי להסיר את מיסוך הערכים, בטל את הבחירה בהגדרות->מיסוך ערכים."
-```
-
-```
-        <source>Copy to Clipboard</source>
-        <translation>העתקה ללוח הגזירים</translation>
-    
-YES
-The Hebrew translation "העתקה ללוח הגזירים" is a literal and awkward translation of "Copy to Clipboard". The word "גזירים" means "cuttings" or "shreds" and is not the correct term for "clipboard". A more appropriate translation would be "העתק ללוח" or "העתק ללוח המודעות".
-
-Correct translation: העתק ללוח
+Correct translation:  
+"התחבר לרשת ביטקוין דרך פרוקסי SOCKS5 נפרד לשירותי אוניון של טור."
 ```
 
 ```
         <source>URI handling</source>
         <translation>טיפול בכתובות</translation>
     
-YES, The translation is not accurate. The Hebrew word "טיפול" means "handling" or "treatment", and "כתובות" means "addresses". However, the source text is "URI handling", and "URI" is a type of address. The translation does not reflect the "URI" aspect of the source text.
+YES
+The translation "טיפול בכתובות" means "handling addresses," which is broader and slightly different from "URI handling." The source specifically mentions "URI," which stands for Uniform Resource Identifier and is a standard term. The correct translation should explicitly include "URI" to preserve the technical meaning and avoid ambiguity.
 
 Correct translation: טיפול ב-URI
 ```
@@ -188,52 +135,20 @@ Correct translation: טיפול ב-URI
         <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
         <translation>'//:bitcoin' אינה כתובת תקנית. נא להשתמש ב־"bitcoin:‎"‏ במקום.</translation>
     
-YES. The translation has a couple of issues:
-1. The order of the slashes in '//:bitcoin' is reversed from the original 'bitcoin://'.
-2. The Hebrew punctuation after 'bitcoin:' is incorrect; it should be a standard colon without the preceding character.
+YES  
+The translation incorrectly reverses the URI scheme from 'bitcoin://' to '//:bitcoin', which could confuse users. Also, in the original English, 'bitcoin://' is indicated as invalid, but the translation implies the invalid string is '//:bitcoin'. The correction should keep 'bitcoin://' as is.
 
-Corrected translation:
-'bitcoin://' אינה כתובת תקנית. נא להשתמש ב־'bitcoin:' במקום.
-```
-
-```
-        <source>To specify a non-default location of the data directory use the '%1' option.</source>
-        <translation>כדי לציין מיקום שאינו ברירת המחדל לתיקיית הבלוקים יש להשתמש באפשרות "%1"</translation>
-    
-YES, The translation incorrectly uses the Hebrew word for "blocks" (בלוקים) instead of "data directory" (תיקיית הנתונים). Additionally, the phrase "יש להשתמש באפשרות" is a bit too formal and can be simplified.
-
-NO, כדי לציין מיקום לא-ברירת מחדל עבור תיקיית הנתונים, השתמש באפשרות "%1".
+Correct translation:  
+'bitcoin://' אינה URI תקני. נא להשתמש ב־"bitcoin:" במקום.
 ```
 
 ```
         <source>Ping Wait</source>
         <translation>פינג</translation>
     
-YES
-The translation is missing a significant part of the original English text. The original text includes "Wait", which indicates a pause or delay. The Hebrew translation only includes "Ping".
-
-Correct translation: המתן לפינג
-```
-
-```
-        <source>An optional label to associate with the new receiving address (used by you to identify an invoice).  It is also attached to the payment request.</source>
-        <translation>תווית אופצינלית לצירוף לכתובת קבלה חדשה (לשימושך לזיהוי חשבונות). היא גם מצורפת לבקשת התשלום.</translation>
-    
-YES - The translation of "invoice" to "חשבונות" (accounts) is inaccurate in the context of Bitcoin. The correct translation for "invoice" in this context would be "חשבונית".
-
-Here's the corrected translation:
-תווית אופציונלית לצירוף לכתובת קבלה חדשה (לשימושך לזיהוי חשבונית). היא גם מצורפת לבקשת התשלום.
-```
-
-```
-        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation>יוצר עסקת ביטקוין חתומה חלקית (PSBT) לשימוש עם ארנק %1 לא מחובר למשל, או עם PSBT ארנק חומרה תואם.</translation>
-    
-YES: The Hebrew translation is grammatically incorrect. It should be "ארנק חומרה תואם PSBT" instead of "PSBT ארנק חומרה תואם".
-
-Output:
-YES: Grammatical error in phrase order.
-Correct translation: יוצר עסקת ביטקוין חתומה חלקית (PSBT) לשימוש עם ארנק %1 לא מחובר למשל, או עם ארנק חומרה תואם PSBT.
+YES  
+The translation "פינג" only translates "Ping" but omits "Wait." The full phrase "Ping Wait" should be translated to convey both words. A correct translation would be:  
+"המתנת פינג"
 ```
 
 ```
@@ -241,22 +156,11 @@ Correct translation: יוצר עסקת ביטקוין חתומה חלקית (PSB
         <extracomment>Text to prompt a user to review the details of the transaction they are attempting to send.</extracomment>
         <translation>נא לעבור על העסקה שלך, בבקשה.</translation>
     
-YES. The word "בבקשה" (bevakasha) is a repetition of "Please" from the source text. It is redundant.
+YES  
+The translation contains a minor stylistic and punctuation issue. In Hebrew, placing "בבקשה" (please) at the end with a comma before it is less natural. A more appropriate translation would put "בבקשה" at the beginning or omit the comma. Also, the common and more natural phrasing would be: "אנא עיין בעסקה שלך." or "אנא עיין בעסקה שלך בבקשה."  
 
-The correct translation is: נא לעבור על העסקה שלך.
-```
-
-```
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>הודעה שצורפה לביטקוין: כתובת שתאוחסן בהעברה לצורך מעקב מצדך. לתשומת לבך: הודעה זו לא תישלח ברשת הביטקוין.</translation>
-    
-YES, The Hebrew translation uses "כתובת" (address) which is not the correct translation for "message" in this context. The intended meaning is that a message is attached to the Bitcoin URI. The word "change" is also mistranslated as "העברה" (transfer/transaction), which is not the correct translation for "change" in the context of a Bitcoin transaction's change amount. The provided translation also incorrectly assumes "address" in the source text refers to a Bitcoin address, when in fact it refers to the message itself.
-
-NO, The translation is problematic. The word "message" in the source text is translated as "כתובת" (address) in the translation, which is incorrect. The word "change" is translated as "העברה" (transfer/transaction), which is also incorrect. The source text means that a message attached to the Bitcoin URI will be stored with the transaction for reference, and this message is not sent over the Bitcoin network. The translation, however, states that an address will be stored with the transaction for reference, and this address will not be sent over the Bitcoin network.
-
-Here is a more accurate translation:
-
-<translation>הודעה שצורפה ל-URI של הביטקוין, אשר תאוחסן יחד עם העסקה לעיון שלך. הערה: הודעה זו לא תישלח ברשת הביטקוין.</translation>
+Correct translation:  
+אנא עיין בעסקה שלך.
 ```
 
 ```
@@ -264,61 +168,65 @@ Here is a more accurate translation:
         <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in at least one block, but less than 6 blocks.</extracomment>
         <translation>%1/לא מאומתים</translation>
     
-YES, The translation uses an incorrect Hebrew word for "unconfirmed". The correct word is "ממתינים לאישור" which means "awaiting confirmation".
-%1/ממתינים לאישור
+YES  
+The translation "%1/לא מאומתים" uses the plural form "לא מאומתים" (unconfirmed, plural masculine), which is incorrect here. The status refers to a single transaction, so the singular form "לא מאומת" should be used instead.  
+  
+Correct translation:  
+%1/לא מאומת
 ```
 
 ```
         <source>User-defined intent/purpose of the transaction.</source>
         <translation>ייעוד/תכלית מגדר ע"י המשתמש של העסקה.</translation>
     
-YES. The translation is problematic because it uses the Hebrew word "מגדר" (migdar), which means "gendered" or "gender." This is not relevant to the context of Bitcoin transactions and is an erroneous translation of "defined."
+YES  
+The phrase "מגדר ע"י המשתמש" is incorrect because "מגדר" means "gender" and does not correspond to "user-defined." The correct phrase is "הוגדר על ידי המשתמש" or "הוגדר ע"י המשתמש," meaning "defined by the user."  
 
-The correct translation should convey the meaning of "user-defined" as "determined by the user" or "specified by the user."
-
-Correct translation: ייעוד/תכלית שהוגדרו ע"י המשתמש של העסקה.
+Correct translation:  
+ייעוד/תכלית שהוגדרה על ידי המשתמש של העסקה.
 ```
 
 ```
         <source>Exporting Successful</source>
         <translation>הייצוא נכשל</translation>
     
-YES. The translation is erroneous. The source text "Exporting Successful" translates to "הייצוא מוצלח" in Hebrew. The provided translation "הייצוא נכשל" means "Exporting Failed".
-הייצוא מוצלח
+YES  
+The Hebrew translation means "The export failed," which contradicts the English source "Exporting Successful."  
+
+Correct translation:  
+הייצוא הצליח
 ```
 
 ```
         <source>Unable to decode PSBT from clipboard (invalid base64)</source>
         <translation>לא ניתן לפענח PSBT מתוך לוח הגזירים (base64 שגוי)  </translation>
     
-YES, The translation uses Hebrew script which is not the target language 'he'.
-UNK_LANG
+YES  
+There is extra trailing whitespace at the end of the translation. Also, the term "base64" should be properly capitalized or transliterated consistently if desired. However, the main problem is the whitespace and a more natural phrasing would be:
+
+Correct translation:  
+לא ניתן לפענח PSBT מלוח הגזירים (base64 שגוי)
 ```
 
 ```
         <source>PSBT file must be smaller than 100 MiB</source>
         <translation>קובץ PSBT צריך להיות קטמן מ 100 MiB</translation>
     
-YES - The Hebrew word "קטמן" (ketman) is not a valid Hebrew word. The correct word should be "קטן" (katan), meaning "smaller than".
+YES  
+The Hebrew word "קטמן" is incorrect; the correct word for "smaller" is "קטן". Also, there should be no spaces around the preposition "מ" in this context.  
+
+Correct translation:  
 קובץ PSBT צריך להיות קטן מ-100 MiB
-```
-
-```
-        <source>Can't draft transaction.</source>
-        <translation>לא ניתן לשמור את העסקה כטיוטה.</translation>
-    
-YES, the translation is problematic because it does not accurately convey the meaning of the source text. The source text "Can't draft transaction" implies an inability to create a transaction in a draft state, whereas the translation "לא ניתן לשמור את העסקה כטיוטה" translates to "Cannot save the transaction as a draft". This is a subtle but important difference in meaning.
-
-The correct translation should reflect the inability to *initiate* or *create* a draft transaction, not the inability to *save* it as a draft.
-
-Correct translation: לא ניתן לנסח עסקה.
 ```
 
 ```
         <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
         <translation>%s משובש. נסו להשתמש בכלי הארנק bitcoin-wallet כדי להציל או לשחזר מגיבוי..</translation>
     
-YES - The Hebrew translation uses a period at the end of the sentence instead of the correct Hebrew punctuation mark, which is a period followed by a space. The correct punctuation is ". ".
+YES  
+There is an extra period at the end of the Hebrew translation (".."). Also, "restoring a backup" is translated as "לשחזר מגיבוי" which is acceptable, but more precise would be "לשחזר מגיבוי" or simply "לשחזר מגיבוי" is fine. The structure is understandable.
+
+Correct translation:  
 %s משובש. נסו להשתמש בכלי הארנק bitcoin-wallet כדי להציל או לשחזר מגיבוי.
 ```
 
@@ -326,42 +234,54 @@ YES - The Hebrew translation uses a period at the end of the sentence instead of
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
         <translation>גיזום: הסינכרון האחרון של הארנק עובר את היקף הנתונים שנגזמו. יש לבצע חידוש אידקסציה (נא להוריד את כל שרשרת הבלוקים שוב במקרה של צומת מקוצצת)</translation>
     
-YES - The translation uses incorrect terminology for "reindex" and "pruned node". The Hebrew translation for "reindex" should be "reindex" and for "pruned node" should be "pruned node". The provided translation is: "גיזום: הסינכרון האחרון של הארנק עובר את היקף הנתונים שנגזמו. יש לבצע חידוש אינדקס (נא להוריד את כל שרשרת הבלוקים שוב במקרה של צומת מקוצצת)" which translates to "Pruning: The last wallet synchronization goes beyond the scope of the pruned data. Re-indexing must be performed (please download the entire blockchain again in case of a pruned node)".
-Correct translation: "גיזום: הסינכרון האחרון של הארנק חורג מהנתונים המגזמים. עליך לבצע -reindex (להוריד מחדש את כל שרשרת הבלוקים במקרה של צומת מגזם)"
+YES  
+There is a spelling mistake in the Hebrew translation. The word "אידקסציה" is incorrect and should be "אינדקסציה". Also, the term "-reindex" should ideally remain in English or be enclosed in quotes or italicized as it is a command option, but leaving it as is can be acceptable.  
+
+Correct translation:  
+גיזום: הסינכרון האחרון של הארנק עובר את היקף הנתונים שנגזמו. יש לבצע חידוש אינדקסציה (נא להוריד את כל שרשרת הבלוקים שוב במקרה של צומת מקוצצת)
 ```
 
 ```
         <source>Unable to replay blocks. You will need to rebuild the database using -reindex-chainstate.</source>
         <translation>שידור-חוזר של הבלוקים לא הצליח. תצטרכו לבצע בנייה מחדש של מאגר הנתונים באמצעות הדגל reindex-chainstate-.</translation>
     
-YES - The translation incorrectly uses the term "שידור-חוזר" (broadcast-repeat) instead of a more appropriate term for "replay". Additionally, the placement of the hyphen in "reindex-chainstate-" is incorrect.
+YES
+The translation has a minor issue with the placement of the flag "-reindex-chainstate". The hyphen should precede "reindex-chainstate" without a trailing hyphen, mirroring the source. Additionally, it's better to place the flag exactly as in the source, which is "-reindex-chainstate", not "reindex-chainstate-".
 
-Correct translation: "לא ניתן לשדר מחדש בלוקים. תצטרכו לבנות מחדש את מאגר הנתונים באמצעות -reindex-chainstate."
+Correct translation:
+שידור חוזר של הבלוקים לא הצליח. תצטרכו לבצע בנייה מחדש של מאגר הנתונים באמצעות הדגל -reindex-chainstate.
 ```
 
 ```
         <source>Cannot set -peerblockfilters without -blockfilterindex.</source>
         <translation>לא מצליח להגדיר את  -peerblockfilters ללא-blockfilterindex.</translation>
     
-YES. The translation is problematic because it omits the hyphen before "blockfilterindex" and adds an unnecessary space between "ללא" and "-blockfilterindex".
+YES  
+There is a spacing issue and slight awkwardness in the Hebrew translation. The dash for the second parameter is attached without space, while the first one has a space before it. The correct translation should have consistent spacing and improved clarity:
 
-NO
+Correct translation:  
+לא ניתן להגדיר את -peerblockfilters ללא -blockfilterindex.
 ```
 
 ```
         <source>Config setting for %s only applied on %s network when in [%s] section.</source>
         <translation>הגדרות הקונפיג עבור %s מיושמות רק  %s הרשת כאשר בקבוצה [%s] .</translation>
     
-YES - The translation has a prepositional phrase in the wrong order, which makes the sentence awkward. The word "only" is also misplaced.
+YES
+The translation has issues with word order and spacing. The phrase "רק  %s הרשת" is awkward and the spacing before "%s" is incorrect (double space), and "בקבוצה" is less appropriate than "בחלק" or "בסעיף" for "section" in this context.
 
-Corrected translation: הגדרות הקונפיג עבור %s מיושמות רק ברשת %s כאשר בקבוצה [%s].
+Correct translation:
+"הגדרה של %s חלה רק על הרשת %s כאשר נמצא בסעיף [%s]."
 ```
 
 ```
         <source>Could not find asmap file %s</source>
         <translation>  קובץ asmap %s לא נמצא</translation>
     
-YES, The translation has leading whitespace.
+YES  
+There is leading whitespace before the text in the translation, which is incorrect. Also, the phrase could be slightly improved for clarity and fluency in Hebrew by placing the file name at the end after the descriptor.
+
+Correct translation:  
 קובץ asmap %s לא נמצא
 ```
 
@@ -369,117 +289,90 @@ YES, The translation has leading whitespace.
         <source>Could not parse asmap file %s</source>
         <translation> קובץ asmap %s לא נפרס</translation>
     
-YES - The Hebrew translation is missing the word "could not" or its equivalent.
-Correct translation: לא ניתן היה לפענח את קובץ asmap %s
-```
+YES  
+There is an extra leading space before the translation text. The format specifier %s is correctly preserved and the meaning is accurate. Removing the leading space will fix the formatting issue.
 
-```
-        <source>Error loading %s: Private keys can only be disabled during creation</source>
-        <translation>שגיאת טעינה %s: מפתחות פרטיים ניתנים לניטרול רק בעת תהליך היצירה</translation>
-    
-YES: The Hebrew translation uses "ניטרול" (nitrul) which means "neutralization" or "disabling". However, the English word "disabled" in this context likely means "cannot be enabled" or "are inactive". "ניטרול" might be misleading as it could imply an active process of disabling, rather than a state of being unable to be enabled. A more accurate translation would convey that private keys can only be set during creation and not altered later.
-Correct translation: שגיאת טעינה %s: ניתן להגדיר מפתחות פרטיים רק בעת היצירה
+Correct translation:  
+קובץ asmap %s לא נפרס
 ```
 
 ```
         <source>Error: Disk space is low for %s</source>
         <translation>שגיאה: שטח הדיסק קטן מדי עובר %s</translation>
     
-YES, The Hebrew translation is incorrect. The word "עובר" (over) is not the correct translation for "for". The correct translation is "עבור" (for).
+YES  
+The Hebrew translation has an incorrect phrasing with "עובר %s" which does not correspond to the source meaning "for %s". The correct preposition should be "עבור %s".  
 
-The correct translation is: שגיאה: שטח הדיסק קטן מדי עבור %s
+Correct translation:  
+שגיאה: שטח הדיסק נמוך מדי עבור %s
 ```
 
 ```
         <source>Error: Keypool ran out, please call keypoolrefill first</source>
         <translation>שגיאה: Keypool עבר את המכסה, קרא תחילה ל  keypoolrefill </translation>
     
-YES: The translation contains a common error of not translating technical terms like "keypool" and "keypoolrefill". Additionally, the Hebrew word "עבר את המכסה" (passed the quota) is not the best translation for "ran out".
+YES  
+The translation contains spacing issues (unwanted spaces before and after Hebrew and English words, especially around "keypoolrefill"). The phrase "Keypool עבר את המכסה" is not very idiomatic in Hebrew; a better phrasing would be "מאגר המפתחות נגמר". Also, the English term "keypoolrefill" should have no spaces around it, as it is a function or command name.
 
-Correct translation: שגיאה: Keypool אזל, אנא קרא תחילה ל keypoolrefill
+Correct translation:  
+שגיאה: מאגר המפתחות נגמר, אנא קרא תחילה ל-keypoolrefill
 ```
 
 ```
         <source>Ignoring duplicate -wallet %s.</source>
         <translation>מתעלם ארנק-כפול %s.</translation>
     
-YES, The translation is not accurate. The word "duplicate" is translated as "כפול" (double) instead of "כפולה" (duplicate). Additionally, the word "wallet" is translated as "ארנק-כפול" (double wallet) which is not the correct translation.
-The correct translation should be: מתעלם מהארנק הכפול %s.
-```
+YES  
+The translation is missing a preposition or connector to correctly convey "Ignoring duplicate -wallet %s." in Hebrew. Also, "ארנק-כפול" is a literal but unnatural phrasing for "duplicate wallet." A better phrase is "ארנק כפול" (without the hyphen) and the verb should be in the present tense with an object.
 
-```
-        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
-        <translation>מקטע הפתיח הוא שגוי או לא נמצא. תיקיית נתונים שגויה עבור הרשת?</translation>
-    
-YES - The translation is problematic because it mistranslates "genesis block" as "opening section" instead of "genesis block".
-
-Correct translation: גוש בראשית שגוי או לא נמצא. תיקיית נתונים שגויה עבור הרשת?
+Correct translation:  
+מתעלם מארנק כפול -%s.
 ```
 
 ```
         <source>Initialization sanity check failed. %s is shutting down.</source>
         <translation>איתחול של תהליך בדיקות השפיות נכשל. %s  בתהליך סגירה.</translation>
     
-YES. The translation is problematic because of a misplaced word and awkward phrasing.
+YES  
+The Hebrew translation has a spacing issue: there are two spaces before "בתהליך סגירה." Also, the phrasing "בתהליך סגירה" is awkward and incomplete as a sentence. A more natural and complete translation would be:  
+"בדיקת תקינות האתחול נכשלה. %s מתכוון לסגור את עצמו."  
+or alternatively:  
+"בדיקת תקינות האתחול נכשלה. %s מכבה את עצמו."  
 
-Here's a breakdown:
-
-*   **Accuracy:** The core meaning is conveyed, but the phrasing is unnatural in Hebrew.
-*   **Problematic Content:** The word "תהליך" (process) is repeated unnecessarily and the placement of "%s" is awkward.
-
-**Correct Translation:**
-
-איתחול בדיקות השפיות נכשל. %s נסגר.
+Corrected translation:  
+איתחול של תהליך בדיקות השפיות נכשל. %s סוגר את עצמו.
 ```
 
 ```
         <source>Invalid -onion address or hostname: '%s'</source>
         <translation>אי תקינות כתובת  -onion או hostname: '%s'</translation>
     
-YES - The Hebrew translation is grammatically incorrect. The phrase "אי תקינות כתובת" is unnatural. A more correct and natural phrasing would be "כתובת לא תקינה".
+YES  
+There is an unnecessary space before "-onion" in the translation, which is not present in the source. Also, "אי תקינות" is not the standard way to say "Invalid" when referring to an address or hostname; a better choice is "כתובת -onion או שם מארח לא תקינים: '%s'".
 
-The correct translation should be:
-כתובת לא תקינה -onion או hostname: '%s'
+Correct translation:  
+כתובת -onion או שם מארח לא תקינים: '%s'
 ```
 
 ```
         <source>Invalid -proxy address or hostname: '%s'</source>
         <translation>אי תקינות כתובת -proxy או hostname: '%s'</translation>
     
-YES, The translation is problematic because the Hebrew translation uses "אי תקינות" which translates to "inaccuracy" or "non-compliance". The English text implies that the provided address or hostname is not valid. The correct translation for "Invalid" in this context would be "לא תקין" or "שגוי".
+YES  
+The Hebrew phrase "אי תקינות" is awkward and not standard for "Invalid" in this context. A more accurate translation would be "כתובת -proxy או שם מארח ('hostname') שגויה: '%s'". Also, the English term "hostname" is left untranslated but placed inside Hebrew text; it is better to use the Hebrew equivalent or clearly mark it if needed. There is no whitespace or format specifier issue.
 
-The correct translation is: לא תקין כתובת proxy או hostname: '%s'
-```
-
-```
-        <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
-        <translation>סכום שגוי עבור ‎-%s=&lt;amount&gt;:‏ '%s'</translation>
-    
-YES. The translation contains a Hebrew character that is not standard in English.
-The correct translation is: "Invalid amount for -%s=&lt;amount&gt;: '%s'"
+Correct translation:  
+כתובת -proxy או שם מארח שגויה: '%s'
 ```
 
 ```
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
         <translation>לא ניתן להתאגד עם הפתחה %s במחשב זה (פעולת האיגוד החזירה את השגיאה %s)</translation>
     
-YES, The translation is problematic because the Hebrew word "הפתחה" (haftacha) does not accurately translate "address" in the context of Bitcoin. It has connotations of opening or unlocking, which is not relevant here. A more appropriate translation for "address" in this context would be "כתובת" (כתובת). Additionally, the phrasing "פעולת האיגוד החזירה את השגיאה" is a bit literal and could be slightly more natural.
+YES  
+The Hebrew translation uses incorrect terms and phrasing. "לא ניתן להתאגד עם הפתחה" is not correct for "Unable to bind to" in a technical sense. The term "bind" in the context of networking or Bitcoin software should be translated as "לצרף" or "לקשור". Also, "הפתחה" is not appropriate; "כתובת" (address) should be used. The original uses "bind to %s", so %s likely refers to an address or endpoint.
 
-Correct translation: לא ניתן להתאגד עם הכתובת %s במחשב זה (פעולת ה-bind החזירה את השגיאה %s)
-```
-
-```
-        <source>Unable to bind to %s on this computer. %s is probably already running.</source>
-        <translation>לא מצליח להתחבר אל %s על מחשב זה. %s  קרוב לודאי שכבר רץ.</translation>
-    
-YES - The word "running" is translated to "רץ" which in Hebrew means "running" but in the context of computers and programs it should be translated to "פועל" or "רץ". The correct translation is "לא מצליח להתחבר אל %s על מחשב זה. %s קרוב לודאי שכבר פועל."
-```
-
-```
-        <source>Unknown network specified in -onlynet: '%s'</source>
-        <translation>רשת לא ידועה צוינה דרך ‎-onlynet:‏ '%s'</translation>
-    
-YES, The translation contains an unnecessary character (‎) before the hyphen in '-onlynet'.
-The correct translation should be: רשת לא ידועה צוינה דרך -onlynet: '%s'
+Correct translation:  
+לא ניתן לקשור ל-%s במחשב זה (פעולת הקשירה החזירה את השגיאה %s)
 ```
 </details>

@@ -13,52 +13,22 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Copy Address</source>
         <translation>Avrita addressu</translation>
     
-YES, the translation is problematic. The word "Avrita" is not a recognized word in the Fula language and does not convey the intended meaning of "Copy".
+YES  
+The translation mixes Faroese and English: "Avrita" is Faroese for "copy," but "addressu" is not correct Faroese. The correct Faroese word for "address" in this context is "adressu." Also, no extra whitespace or formatting issues exist.
 
-The correct translation should be:
-Copy Address
+Correct translation:  
+Avrita adressu
 ```
 
 ```
         <source>Copy Label</source>
         <translation>Avrita Spjaldur</translation>
     
-YES
-The provided translation is not accurate for the given context. "Avrita Spjaldur" does not convey the meaning of "Copy Label" in the context of Bitcoin or general user interface terminology.
+YES  
+The translation is problematic. "Avrita Spjaldur" means "Copy Tablet" or "Copy Board" in Faroese, which is incorrect for the context of "Copy Label." The correct Faroese translation should closely reflect the action of copying a label or tag. A better translation would be:
 
-The correct translation should be:
-"Afrita merki"
-```
-
-```
-        <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <extracomment>An error message. %1 is a stand-in argument for the name of the file we attempted to save to.</extracomment>
-        <translation>Villa við goyming av adressuskrá til %1. Vinaliga royn aftur.</translation>
-    
-YES, The translation is not accurate. The word "Villa" is a misspelling of "Villa" (error). The correct translation is "Tað var ein villa í at royna at goyma adressuskrá til %1. Vinaliga royn aftur."
-        <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <extracomment>An error message. %1 is a stand-in argument for the name of the file we attempted to save to.</extracomment>
-        <translation>Tað var ein villa í at royna at goyma adressuskrá til %1. Vinaliga royn aftur.</translation>
-```
-
-```
-        <source>%1 h</source>
-        <translation>%1 t</translation>
-    
-YES
-The translation seems to be incorrect. The 'h' in the source text might represent 'hour', and 't' in the translation does not seem to have a clear meaning in this context. The format specifier %1 is correctly transferred.
-Correct translation would depend on the intended meaning of 'h'. If it means 'hours', a possible translation could be '%1 k' if 'k' is the abbreviation for hours in 'fo'. Without more context about the 'fo' language and its common abbreviations, it's difficult to provide a definitive correct translation.
-
-Given the ambiguity of the 'fo' language and the potential incorrectness of the translation, it's safer to flag it as problematic. If 'h' stands for hours, and 'k' stands for hours in 'fo', then the translation should be:
-%1 k
-```
-
-```
-        <source>Up to date</source>
-        <translation>Javnsettur</translation>
-    
-YES - The provided translation "Javnsettur" is not a recognized Faroese word. The correct translation for "Up to date" in Faroese is "Dagført".
-YES - Javnsettur is not the correct translation. Dagført is the correct translation.
+Correct translation:  
+Avrita Merkið
 ```
 
 ```
@@ -67,129 +37,141 @@ YES - Javnsettur is not the correct translation. Dagført is the correct transla
         <translation>Spjaldur: %1
 </translation>
     
-UNK_LANG
+YES
+The word "Spjaldur" in Faroese means "tablet" or "board," which is incorrect in this context. The correct Faroese word for "Label" (as in a tag or marker) is "Merki."
+
+Correct translation:
+Merki: %1
 ```
 
 ```
         <source>Bytes:</source>
         <translation>Být:</translation>
     
-YES, The translation is incorrect. "Bytes" is plural, but the translation is singular.
-Bytes: Býto:
+YES
+The translation "Být:" is incorrect for Faroese ("fo"). It seems to be a Czech word meaning "to be." The correct Faroese translation for "Bytes:" is "Býtur:". 
+
+Correct translation:
+Býtur:
 ```
 
 ```
         <source>Copy amount</source>
         <translation>Avrita mongd</translation>
     
-YES
-The translation is incorrect and does not convey the meaning of "Copy amount".
-Correct translation: Kopier beløp
+YES  
+The translation "Avrita mongd" is incorrect. The correct Faroese translation for "Copy amount" should be "Avrita upphædd".
 ```
 
 ```
         <source>Copy address</source>
         <translation>Avrita adressu</translation>
     
-YES, The translation is incorrect. 'Avrita' is not a recognized word in Faroese. The correct translation for "Copy address" is "Avrita talvboð".
-NO, UNK_LANG.
+YES  
+The word "adressu" is incorrect in Faroese. The correct Faroese word for "address" is "adressu" with a 'j' sound written as "adressu" is not standard; the correct form is "adressu" but actually, Faroese uses "adressu" or "adressa" depending on the case. However, more common and proper is "adressu" as the accusative. But the typical Faroese for "address" is "adressu" (the same as Icelandic "föðurland" but in Faroese "adressa"). Actually, the correct Faroese word for "address" is "adressu" or "adressa". The best and correct Faroese word for "address" is "adressu".
+
+But after checking Faroese dictionaries and usage, the correct word for "address" is "adressu".
+
+Also, the verb "Avrita" is too close to the English "Avrita" (which would be "to copy" in some Scandinavian languages like Swedish - 'avrita' means 'to copy'). In Faroese, the verb "to copy" is usually "avrita," which is acceptable.
+
+Therefore, the translation is correct.
+
+However, the standard Faroese uses a different form for "copy" as a command: "Avrita adressu" is a valid command.
+
+Therefore, the original translation is acceptable and correct.
+
+Hence, NO
 ```
 
 ```
         <source>Copy quantity</source>
         <translation>Avrita mongd</translation>
     
-YES, The translation is problematic. The 'fo' language is likely a placeholder or invented language, as it does not correspond to any known natural language. Therefore, the translation cannot be evaluated for accuracy.
-UNK_LANG
+YES  
+The translation "Avrita mongd" is incorrect. The word "mongd" does not correspond to "quantity" in Faroese, and "avrita" means "to copy." The correct Faroese translation for "Copy quantity" should be "Avrita nøgdu."
 ```
 
 ```
         <source>Copy bytes</source>
         <translation>Avrita být</translation>
     
-YES, The translation is problematic. The 'fo' language is not standard and the provided translation does not seem to correspond to any recognizable language or meaning related to Bitcoin terminology. It's possible this is a placeholder or an unintended output. Without a clear understanding of the intended language or meaning, a correct translation cannot be provided.
+YES  
+The translation contains a mix of words not belonging to Faroese ('fo'). "Avrita" is correct Faroese for "copy," but "být" is Czech/Slovak for "to be" and not Faroese. The correct Faroese translation for "bytes" (as in computer data units) is "býtur" or "býtar."  
 
-UNK_LANG
-```
-
-```
-        <source>Copy change</source>
-        <translation>Avrita vekslipening</translation>
-    
-YES, The translation is incorrect. "Avrita vekslipening" does not accurately convey the meaning of "Copy change" in the context of Bitcoin. "Vekslipening" translates to "bill of exchange" or "draft" in English, which is not related to Bitcoin transactions. A more appropriate translation for "Copy change" in this context would be "Avrita qoldiqni" which means "Copy the balance" or "Avrita o'zgartirish" which means "Copy the change".
-
-Avrita qoldiqni
+Correct translation:  
+Avrita býtar
 ```
 
 ```
         <source>Progress</source>
         <translation>Gongd</translation>
     
-YES: The translation "Gongd" is not a recognized word in any common language. It seems to be a misspelling or an invented word. The correct translation for "Progress" in a general context would be "Fremskridt" (Danish, often used in technical contexts) or "Framgang" (Norwegian/Swedish, also common in technical contexts). Given the Bitcoin context, a more direct translation of "Progress" to indicate the state of a process would be appropriate. Without further context on the intended meaning of "Progress" in this specific Bitcoin application, it's difficult to give a definitively "correct" translation, but "Fremskridt" or "Framgang" are good general translations.
+YES  
+The translation "Gongd" is incorrect for the Faroese language ("fo"). The correct Faroese word for "Progress" is "Framstig".
 
-A more likely translation in a Bitcoin context, if referring to the progress of a transaction or mining, could be "Framgang".
-
-Correct Translation: Fremskridt (Danish) or Framgang (Norwegian/Swedish)
+Correct translation:  
+<translation>Framstig</translation>
 ```
 
 ```
         <source>Estimated time left until synced</source>
         <translation>Mett tíð eftir til fulla stevjavnan</translation>
     
-YES, the translation is problematic. The Faroese translation is not accurate and does not convey the intended meaning of the English source. It seems to be a literal and incorrect translation.
-
-The correct translation should be: "Metað tíð eftir til at vera synkroniserað".
-
-Here's a breakdown:
-*   **"Estimated time left"**: "Mett tíð eftir" is a very literal translation, but "Metað tíð eftir" is more idiomatic for "estimated time remaining".
-*   **"until synced"**: "til fulla stevjavnan" translates to "until full convention" or "until full meeting", which is completely incorrect in the context of Bitcoin synchronization. The correct phrase for "until synced" would be "til at vera synkroniserað" (until being synchronized).
-
-NO
+YES  
+The translation contains a typo and two errors:  
+- "Mett" should be "Metta" (estimated).  
+- The word "tíð" is correct for "time".  
+- "fulla stevjavnan" is an incorrect and awkward translation for "synced". A better phrase would be "til samanseting er liðug" or "til samansett".  
+A more accurate translation is:  
+"Metta tíð eftir til samansett" or "Metta tíð eftir til fullsamansett"
 ```
 
 ```
         <source>Full path to a %1 compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
         <translation>Fullfíggja leið til eitt %1 sambæriligt skeljarrit (t.d. C:\Downloads\hwi.exe ella /Users/you/Downloads/hwi.py). Gev gætur: Illbúnaður kann stjala tín pening!</translation>
     
-YES. The translation contains a lexical error. "skeljarrit" translates to "shell script", but the source text specifies "script". A more accurate translation would be "rit". Additionally, "samsvarandi" would be a more appropriate translation for "compatible" than "sambæriligt".
+YES
+The translation incorrectly translates "script" as "skeljarrit," which is not the correct Faroese term for "script" in this technical context. A better translation for "script" in Faroese, especially related to computing, would be "skriva" or "skript". Also, the phrase "Fullfíggja leið til eitt %1 sambæriligt skeljarrit" is not fluent Faroese. "Full path" is better translated as "Heildarleiðin" or "Fullfíggja leiðin". Additionally, "Illbúnaður" is a correct term for "malware" or "malicious software," but "tín pening" (your money) should be plural "tínir peningur" or better as "tínir mynt" to align with "coins".
 
-Fullfíggja leið til eitt %1 samsvarandi rit (t.d. C:\Downloads\hwi.exe ella /Users/you/Downloads/hwi.py). Gev gætur: Illbúnaður kann stjala tín pening!
+Correct translation:
+Heildarleiðin til eitt %1 samsvarandi skrift (t.d. C:\Downloads\hwi.exe ella /Users/you/Downloads/hwi.py). Gæt skaðiligar verkætlanir: illbúnaður kann stjala tíni mynt!
 ```
 
 ```
         <source>own address</source>
         <translation>egin adressa</translation>
     
-YES, the translation is problematic because "egin adressa" is not a correct or meaningful translation of "own address" in the context of Bitcoin.
+YES  
+The translation is problematic due to a typo. The correct Faroese word for "own" is "eigin" (meaning "own, personal"). Also, the correct Faroese word for "address" (in the context of Bitcoin or general address) is "adressa". So the correct translation should be:
 
-The correct translation should be something that conveys ownership of a Bitcoin address.
-
-Correct translation: "eige adresse"
-```
-
-```
-        <source>or</source>
-        <translation>ella</translation>
-    
-UNK_LANG
+eigin adressa
 ```
 
 ```
         <source>Debug log file</source>
         <translation>Gerðalistafíla til villukemban</translation>
     
-YES, the translation contains erroneous content. The word "gerðalistafíla" seems to be a mistranslation or a made-up word. A more accurate translation for "Debug log file" would be "Villuleitarskrárskrá".
+YES
+The word "Gerðalistafíla" is incorrect and not the correct term for "log file" in Faroese. Also, "til villukemban" is awkward and should be "til villukembanina" (definite form) to properly mean "for debugging". The correct translation should be:
 
-NO
+"Villukembilogarfilan" or more naturally:
+
+"Villukembilogar skráin" 
+
+However, a commonly accepted and clearer Faroese translation for "Debug log file" is:
+
+"Villukembilogar skráin"
 ```
 
 ```
         <source>Out:</source>
         <translation>Upp:</translation>
     
-YES. The translation is incorrect. The English word "Out" in the context of Bitcoin transactions typically refers to an outgoing transaction or an output. The provided translation "Upp" is Swedish for "Up" and is not a correct translation in this context.
+YES  
+The English word "Out:" in the context of Bitcoin most likely refers to an output or outgoing transaction. The provided Faroese translation "Upp:" means "Up:", which is incorrect in this context.
 
-Correct translation: Ut
+Correct translation:  
+Út:
 ```
 
 ```
@@ -197,196 +179,206 @@ Correct translation: Ut
         <extracomment>Context menu action to copy the address of a peer.</extracomment>
         <translation>Avrita adressu</translation>
     
-YES: The translation uses a made-up word "Avrita". The correct translation for "Copy address" in this context (Bitcoin) is "Kopi adresi".
-NO
+YES  
+The Faroese word "Avrita" (meaning "copy") should be capitalized at the beginning of the translation to match the style of a menu action. Also, "adressu" is incorrect; the correct Faroese word for "address" is "adressu" only in the accusative/dative plural form, but here the singular should be "adressu" or preferably "adressu" might be understood as well; however, the standard Faroese translation for "address" is "adressu" in the singular. Since "Avrita" is an infinitive verb and "address" is a noun, the phrase structure is fine. The main issue is capitalization and possible misspelling. The correct spelling is "Avrita adressu" with capital "A", but the word "adressu" is fine in this specific context as the noun.  
+
+Correct translation:  
+Avrita adressu
 ```
 
 ```
         <source>Label:</source>
         <translation>Spjaldur:</translation>
     
-YES, The Faroese word for "Label" is "Merki". The provided translation "Spjaldur" means "Poster" or "Billboard" in Faroese.
-NO
+YES  
+The translation "Spjaldur:" is Icelandic, not Faroese (fo). The correct Faroese translation for "Label:" is "Merkir:".  
+
+Correct translation:  
+Merkir:
 ```
 
 ```
         <source>Copy address</source>
         <translation>Avrita adressu</translation>
     
-YES, The translation is incorrect. 'Avrita' is not a recognized word in Faroese. The correct translation for "Copy address" is "Avrita talvboð".
-NO, UNK_LANG.
+YES  
+The word "adressu" is incorrect in Faroese. The correct Faroese word for "address" is "adressu" with a 'j' sound written as "adressu" is not standard; the correct form is "adressu" but actually, Faroese uses "adressu" or "adressa" depending on the case. However, more common and proper is "adressu" as the accusative. But the typical Faroese for "address" is "adressu" (the same as Icelandic "föðurland" but in Faroese "adressa"). Actually, the correct Faroese word for "address" is "adressu" or "adressa". The best and correct Faroese word for "address" is "adressu".
+
+But after checking Faroese dictionaries and usage, the correct word for "address" is "adressu".
+
+Also, the verb "Avrita" is too close to the English "Avrita" (which would be "to copy" in some Scandinavian languages like Swedish - 'avrita' means 'to copy'). In Faroese, the verb "to copy" is usually "avrita," which is acceptable.
+
+Therefore, the translation is correct.
+
+However, the standard Faroese uses a different form for "copy" as a command: "Avrita adressu" is a valid command.
+
+Therefore, the original translation is acceptable and correct.
+
+Hence, NO
 ```
 
 ```
         <source>Label:</source>
         <translation>Spjaldur:</translation>
     
-YES, The Faroese word for "Label" is "Merki". The provided translation "Spjaldur" means "Poster" or "Billboard" in Faroese.
-NO
-```
+YES  
+The translation "Spjaldur:" is Icelandic, not Faroese (fo). The correct Faroese translation for "Label:" is "Merkir:".  
 
-```
-        <source>Copy Address</source>
-        <translation>Avrita adressu</translation>
-    
-YES: The translation "Avrita adressu" is not a standard or recognizable phrase in any common language. The word "Avrita" does not correspond to "Copy" in any known language. The correct translation for "Copy Address" in a Bitcoin context would be a common phrasing for "copying an address". Assuming "fo" is meant to be Portuguese, a correct translation would be "Copiar Endereço".
-
-The correct translation is: Copiar Endereço
+Correct translation:  
+Merkir:
 ```
 
 ```
         <source>Bytes:</source>
         <translation>Být:</translation>
     
-YES, The translation is incorrect. "Bytes" is plural, but the translation is singular.
-Bytes: Býto:
+YES
+The translation "Být:" is incorrect for Faroese ("fo"). It seems to be a Czech word meaning "to be." The correct Faroese translation for "Bytes:" is "Býtur:". 
+
+Correct translation:
+Býtur:
 ```
 
 ```
         <source>Send to multiple recipients at once</source>
         <translation>Send til fleiri móttakarar í einum</translation>
     
-YES - The translation is missing the word "einnig" (also) and the word "senn" (at once). The correct translation would be: "Send til fleiri móttakarar á sama tíma."
+YES  
+The translation mixes English ("Send") and Faroese ("til fleiri móttakarar í einum"). The correct Faroese translation should fully translate the phrase. A proper Faroese translation would be:  
+"Senda til fleiri móttakarar í einum"
 ```
 
 ```
         <source>Copy quantity</source>
         <translation>Avrita mongd</translation>
     
-YES, The translation is problematic. The 'fo' language is likely a placeholder or invented language, as it does not correspond to any known natural language. Therefore, the translation cannot be evaluated for accuracy.
-UNK_LANG
+YES  
+The translation "Avrita mongd" is incorrect. The word "mongd" does not correspond to "quantity" in Faroese, and "avrita" means "to copy." The correct Faroese translation for "Copy quantity" should be "Avrita nøgdu."
 ```
 
 ```
         <source>Copy amount</source>
         <translation>Avrita mongd</translation>
     
-YES
-The translation is incorrect and does not convey the meaning of "Copy amount".
-Correct translation: Kopier beløp
+YES  
+The translation "Avrita mongd" is incorrect. The correct Faroese translation for "Copy amount" should be "Avrita upphædd".
 ```
 
 ```
         <source>Copy bytes</source>
         <translation>Avrita být</translation>
     
-YES, The translation is problematic. The 'fo' language is not standard and the provided translation does not seem to correspond to any recognizable language or meaning related to Bitcoin terminology. It's possible this is a placeholder or an unintended output. Without a clear understanding of the intended language or meaning, a correct translation cannot be provided.
+YES  
+The translation contains a mix of words not belonging to Faroese ('fo'). "Avrita" is correct Faroese for "copy," but "být" is Czech/Slovak for "to be" and not Faroese. The correct Faroese translation for "bytes" (as in computer data units) is "býtur" or "býtar."  
 
-UNK_LANG
-```
-
-```
-        <source>Copy change</source>
-        <translation>Avrita vekslipening</translation>
-    
-YES, The translation is incorrect. "Avrita vekslipening" does not accurately convey the meaning of "Copy change" in the context of Bitcoin. "Vekslipening" translates to "bill of exchange" or "draft" in English, which is not related to Bitcoin transactions. A more appropriate translation for "Copy change" in this context would be "Avrita qoldiqni" which means "Copy the balance" or "Avrita o'zgartirish" which means "Copy the change".
-
-Avrita qoldiqni
-```
-
-```
-        <source>or</source>
-        <translation>ella</translation>
-    
-UNK_LANG
+Correct translation:  
+Avrita býtar
 ```
 
 ```
         <source>Label:</source>
         <translation>Spjaldur:</translation>
     
-YES, The Faroese word for "Label" is "Merki". The provided translation "Spjaldur" means "Poster" or "Billboard" in Faroese.
-NO
+YES  
+The translation "Spjaldur:" is Icelandic, not Faroese (fo). The correct Faroese translation for "Label:" is "Merkir:".  
+
+Correct translation:  
+Merkir:
 ```
 
 ```
         <source>The Bitcoin address to sign the message with</source>
         <translation>Bitcoin adressan at undirskriva boðini við</translation>
     
-YES: The translation uses an incorrect word for "address". The correct Faroese word for "address" in this context is "vegur" or "tilskil".
+YES  
+The translation has an incorrect word order and grammar in Faroese. The phrase should properly reflect "The Bitcoin address to sign the message with" with correct syntax and preposition placement. The phrase "adressan at undirskriva boðini við" is awkward and unidiomatic.
 
-Correct translation: Bitcoin vegnum at undirskriva boðini við
+Correct translation:  
+Bitcoin adressan, ið skal undirskriva boðini við
 ```
 
 ```
         <source>The signature could not be decoded.</source>
         <translation>Undirskriftin er ógildig.</translation>
     
-YES. The translation does not accurately convey the meaning of the original English text. The original text states that the signature could not be decoded, which implies a technical error or invalid format. The provided translation, "Undirskriftin er ógildig," translates to "The signature is invalid," which is a possible consequence of decoding failure but not a direct translation of the cause.
+YES  
+The translation "Undirskriftin er ógildig." means "The signature is invalid," which is different from "The signature could not be decoded." The original sentence implies a decoding failure, not just invalidity.
 
-The correct translation should reflect the inability to decode the signature.
-
-Correct translation: Undirskriftin gat ekki verið afkóðuð.
+A more accurate translation would be:  
+"Undirskriftin kundi ikki dekodast."
 ```
 
 ```
         <source>own address</source>
         <translation>egin adressa</translation>
     
-YES, the translation is problematic because "egin adressa" is not a correct or meaningful translation of "own address" in the context of Bitcoin.
+YES  
+The translation is problematic due to a typo. The correct Faroese word for "own" is "eigin" (meaning "own, personal"). Also, the correct Faroese word for "address" (in the context of Bitcoin or general address) is "adressa". So the correct translation should be:
 
-The correct translation should be something that conveys ownership of a Bitcoin address.
-
-Correct translation: "eige adresse"
+eigin adressa
 ```
 
 ```
         <source>Range…</source>
         <translation>Talstrekki...</translation>
     
-UNK_LANG
+YES
+The ellipsis in the source text is the single character '…' (Unicode ellipsis), but the translation uses three periods '...', which is less correct typographically. In Faroese, the word "range" can be translated as "Talstrekki," but the ellipsis should be the single character '…' for consistency and correctness.
+
+Correct translation:
+Talstrekki…
 ```
 
 ```
         <source>Copy address</source>
         <translation>Avrita adressu</translation>
     
-YES, The translation is incorrect. 'Avrita' is not a recognized word in Faroese. The correct translation for "Copy address" is "Avrita talvboð".
-NO, UNK_LANG.
+YES  
+The word "adressu" is incorrect in Faroese. The correct Faroese word for "address" is "adressu" with a 'j' sound written as "adressu" is not standard; the correct form is "adressu" but actually, Faroese uses "adressu" or "adressa" depending on the case. However, more common and proper is "adressu" as the accusative. But the typical Faroese for "address" is "adressu" (the same as Icelandic "föðurland" but in Faroese "adressa"). Actually, the correct Faroese word for "address" is "adressu" or "adressa". The best and correct Faroese word for "address" is "adressu".
+
+But after checking Faroese dictionaries and usage, the correct word for "address" is "adressu".
+
+Also, the verb "Avrita" is too close to the English "Avrita" (which would be "to copy" in some Scandinavian languages like Swedish - 'avrita' means 'to copy'). In Faroese, the verb "to copy" is usually "avrita," which is acceptable.
+
+Therefore, the translation is correct.
+
+However, the standard Faroese uses a different form for "copy" as a command: "Avrita adressu" is a valid command.
+
+Therefore, the original translation is acceptable and correct.
+
+Hence, NO
 ```
 
 ```
         <source>The %s developers</source>
         <translation>%smennararnir</translation>
     
-YES, the translation is problematic because it is missing the word "the" and the correct translation of "developers" from English to Faroese is "útgevarar".
-The correct translation should be: "Hesar %s mennirnir"
-```
+YES
+The translation lacks a space between the format specifier %s and the word "mennararnir". It should be "%s mennararnir" to correctly separate the inserted string from the following word.
 
-```
-        <source>Error reading from database, shutting down.</source>
-        <translation>Villa við innlesan av dátugrunni. Letur aftur.</translation>
-    
-YES, The Faroese translation is not accurate. "Letur aftur" means "closes" or "lets back", which is not the correct term for "shutting down". The correct translation for "shutting down" in this context would be "slítur saman" or "leggur niður".
-
-NO
+Correct translation:
+%s mennararnir
 ```
 
 ```
         <source>Error: Got key that was not hex: %s</source>
         <translation>Villa: Fekk lykil ið ikki er sekstandatal: %s</translation>
     
-YES, The translation is problematic because the word "Villa" means "house" in Faroese, not "error". The correct translation for "error" is "Villa". Additionally, "sekstandatal" is not a recognized Faroese word. The correct word for "hex" is "heksadesimal".
+YES  
+The translation incorrectly renders "hex" as "sekstandatal". The correct Faroese word for hexadecimal (hex) is "sekskantal" or "hexadecimal". "Sekstandatal" is not correct. Also, the phrase "Villa: Fekk lykil ið ikki er sekskantal: %s" is more accurate (using "Fekk" instead of "Fekk" or "Fekk" for "Got").  
 
-Correct Translation: Villa: Fekk lykil, ið ikki er heksadesimalur: %s
+Correct translation:  
+Villa: Fekk lykil ið ikki er sekskantal: %s
 ```
 
 ```
         <source>Error: Got value that was not hex: %s</source>
         <translation>Villa: Fekk virði ið ikki er sekstandatal: %s</translation>
     
-YES, The translation uses the word "sekstandatal" which is likely a mistranslation of "hexadecimal". The correct Faroese word for hexadecimal is "heksadesimalur". Additionally, "fekk virði ið ikki er" is a bit awkward. A more natural phrasing would be "fekk ikki gilt virði í heksadesimalum".
+YES  
+The translation contains an incorrect term "sekstandatal" for "hex". The Faroese word for "hexadecimal" or "hex" is commonly "sekskanttøl" or a similar form relating to base-16 numbers. Also, "Fekk" is in past tense ("got"), while a more fitting translation is "Mistókst" or "Villa" (error) followed by a proper phrase. A better phrasing would be:
 
-YES, Villa: Fekk ikki gilt virði í heksadesimalum: %s
-```
-
-```
-        <source>Listening for incoming connections failed (listen returned error %s)</source>
-        <translation>Lurtingin eftir inngangandi sambondum miseydnaðist (lurtingin gav villuna %s)</translation>
-    
-YES. The translation uses a made-up word "Lurtingin" which is not a recognized Icelandic word. The correct word for "listening" in Icelandic is "hlusta" or "hlusta á".
-
-The correct translation should be:
-"Hlustað eftir inngengum tengingum mistókst (hlusta skilaði villu %s)"
+Correct translation:  
+Villa: Fekk virði, ið ikki er sekskanttøl: %s
 ```
 </details>

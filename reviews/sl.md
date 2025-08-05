@@ -13,125 +13,87 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Vnesite novo geslo za denarnico. &lt;br/&gt;Prosimo, uporabite geslo z vsaj &lt;b&gt;10 ali več naključnimi simboli&lt;/b&gt; ali vsaj osmimi besedami.&lt;b&gt;</translation>
     
-YES, The translation incorrectly translates "characters" to "simboli" (symbols) instead of "znaki" (characters). Additionally, there is a stray closing &lt;/b&gt; tag.
-Vnesite novo geslo za denarnico.&lt;br/&gt;Prosimo, uporabite geslo z vsaj &lt;b&gt;10 ali več naključnimi znaki&lt;/b&gt; ali vsaj osmimi besedami.
-```
+YES
+The translation is incomplete and has formatting issues. The translated text ends abruptly with an opening <b> tag without closing it. Also, the original English distinguishes between "ten or more random characters" and "eight or more words," whereas the translation says "10 ali več naključnimi simboli" (10 or more random symbols), which is acceptable, but it lacks the closing tag for </b>. Furthermore, the conjunction "or" should be clearly included between the two bold phrases as in the source.
 
-```
-        <source>Runaway exception</source>
-        <translation>Pobegla napaka</translation>
-    
-YES, The translation is problematic because "Pobegla napaka" is not the correct Slovenian translation for "Runaway exception". A more appropriate translation would be "Izredna napaka" or "Nevidena napaka".
-Correct translation: Izredna napaka
-```
+Correct translation:
+Vnesite novo geslo za denarnico.&lt;br/&gt;Prosimo, uporabite geslo z vsaj &lt;b&gt;desetimi ali več naključnimi znaki&lt;/b&gt; ali &lt;b&gt;osmimi ali več besedami&lt;/b&gt;.
 
-```
-        <source>Do you want to reset settings to default values, or to abort without making changes?</source>
-        <extracomment>Explanatory text shown on startup when the settings file cannot be read. Prompts user to make a choice between resetting or aborting.</extracomment>
-        <translation>Želite ponastaviti nastavitve na privzete vrednosti ali prekiniti urejanje brez sprememb?</translation>
-    
-YES - The translation uses "urejanje" which means "editing" but the source text is "making changes", so it should be "sprememb" instead of "urejanje brez sprememb". The correct translation would be: Želite ponastaviti nastavitve na privzete vrednosti ali prekiniti brez sprememb?
-```
-
-```
-        <source>%1 and %2</source>
-        <translation>%1 in %2</translation>
-    
-YES: The translation uses the incorrect preposition "in" instead of "and".
-%1 and %2
+(Note: I replaced "10" with "desetimi" for stylistic consistency since the source uses "ten," but "10" digit is acceptable too.)
 ```
 
 ```
         <source>Verify message…</source>
         <translation>Preveri podpis...</translation>
     
-YES, The Slovenian word "podpis" means "signature". The English source text "Verify message…" translates to "Preveri sporočilo…" in Slovenian.
-Preveri sporočilo…
+YES
+The source text "Verify message…" indicates an action to verify a message, but the translation "Preveri podpis..." means "Verify signature...," which is incorrect and changes the meaning.
+
+Correct translation:
+Preveri sporočilo...
 ```
 
 ```
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
         <translation>Preverite, če je bilo prejeto sporočilo podpisano z določenim bitcoin-naslovom.</translation>
     
-YES - The translation is inaccurate and incomplete. The source text uses the plural "addresses", while the translation uses the singular "bitcoin-naslovom". Additionally, the translation omits the phrase "to ensure they were signed with specified".
+YES  
+The translation changes the meaning slightly and is less direct. The source implies verifying multiple messages to ensure each was signed with specific Bitcoin addresses, while the translation focuses on checking if "the received message" was signed by a specified Bitcoin address. Also, "bitcoin" should be capitalized as "Bitcoin" to match the source. The translation should also reflect the plural where appropriate.
 
-Correct translation: Preverite sporočila, da zagotovite, da so bila podpisana z določenimi bitcoin naslovi.
-```
-
-```
-        <source>Load PSBT from file…</source>
-        <translation>Naloži DPBT iz datoteke...</translation>
-    
-YES
-The translation uses "DPBT" instead of "PSBT".
-Naloži PSBT iz datoteke…
+Correct translation:  
+Preverite sporočila, da zagotovite, da so bila podpisana z določenimi Bitcoin-naslovi.
 ```
 
 ```
         <source>Synchronizing with network…</source>
         <translation>Dohitevam omrežje ...</translation>
     
-YES, The translation uses an invented word "Dohitevam" which does not exist in the Slovenian language. The correct translation should be "Sinhroniziram z omrežjem…".
-Dohitevam omrežje ...
-Sinhroniziram z omrežjem…
-```
-
-```
-        <source>Load PSBT from clipboard…</source>
-        <translation>Naloži DPBT z odložišča...</translation>
-    
-YES: The translation incorrectly uses "DPBT" instead of "PSBT".
-Naloži PSBT z odložišča...
-```
-
-```
-        <source>Cannot create new wallet, the software was compiled without sqlite support (required for descriptor wallets)</source>
-        <translation>Ne morem ustvariti nove datoteke. Programska oprema je bila prevedena brez podpore za sqlite, ki je potrebna za denarnice z deskriptorji.</translation>
-    
-YES: The word "wallet" is translated to "datoteke" (files) instead of the correct term "denarnice" (wallets).
-Ne morem ustvariti nove denarnice, programska oprema je bila prevedena brez podpore za sqlite, ki je potrebna za denarnice z deskriptorji.
+YES  
+The Slovenian translation is incorrect and contains a misspelling. The correct verb is "Dohitevam," not "Dohitevam." Also, the ellipsis should be the single Unicode character (…) without spaces before or after. The correct translation is:  
+Dohitevam omrežje…
 ```
 
 ```
         <source>Quantity:</source>
         <translation>Št. vhodov:</translation>
     
-YES, The translation is incorrect and uses the wrong word. "Št. vhodov" translates to "Number of inputs" in English, whereas the source text "Quantity:" means "Količina:" in Slovenian.
+YES  
+The English source "Quantity:" is a general term, typically translated as "Količina:" in Slovenian. The provided translation "Št. vhodov:" means "Number of inputs:", which is more specific and context-dependent. Unless the context explicitly requires specifying "Number of inputs," this translation is inaccurate.
+
+Correct translation:  
 Količina:
-```
-
-```
-        <source>Change:</source>
-        <translation>Vračilo:</translation>
-    
-YES, The translation of "Change:" to "Vračilo:" is incorrect in the context of Bitcoin. "Vračilo" translates to "refund" or "return," which is not the correct term for the change amount in a Bitcoin transaction. The correct term for change in Bitcoin is "Vzdrževanje" or "Drobiž," but "Vzdrževanje" is more commonly used.
-
-Correct translation: Vzdrževanje:
 ```
 
 ```
         <source>Received with label</source>
         <translation>Oznaka priliva</translation>
     
-YES - The translation is inaccurate and doesn't convey the original meaning. "Received with label" in the context of Bitcoin would translate to something like "Prejeto z oznako" or "Prejeto z nalepko". The provided translation "Oznaka priliva" translates to "Label of inflow," which is not the correct meaning.
+YES  
+The translation "Oznaka priliva" is not correct Slovene for "Received with label." It appears to be a literal, but inaccurate translation possibly mixing other languages. The correct Slovene translation should convey the meaning of receiving something associated with a label.
 
-Correct translation: Prejeto z oznako
+Correct translation:  
+Prejeto z oznako
 ```
 
 ```
         <source>Received with address</source>
         <translation>Naslov priliva</translation>
     
-YES, The translation is inaccurate. The source text "Received with address" implies receiving something (likely Bitcoin) associated with a specific address. The translation "Naslov priliva" means "Title of inflow" or "Address of inflow", which doesn't convey the intended meaning of receiving *with* an address. A more accurate translation would reflect receiving something at or using a given address.
+YES  
+The translation "Naslov priliva" is incorrect for the context of Bitcoin. "Naslov" means "address," which is correct, but "priliva" means "inflow" or "income," which is not an appropriate translation of "Received with" here. The English phrase "Received with address" in Bitcoin context generally means "received using the address" or "received at the address."
 
-The correct translation should be: "Prejeto na naslov".
+A more accurate Slovene translation would be:  
+"Prejeto z naslovom"
 ```
 
 ```
         <source>External signer</source>
         <translation>Zunanji podpisni</translation>
     
-YES, The translation is grammatically incorrect. The word "podpisni" is an adjective and should be a noun. The correct translation for "signer" is "podpisnik".
+YES  
+The Slovenian translation is grammatically incorrect. "Zunanji podpisni" is incomplete and does not appropriately convey "External signer." It should be "Zunanji podpisnik."
+
+Correct translation:  
 Zunanji podpisnik
 ```
 
@@ -140,62 +102,33 @@ Zunanji podpisnik
         <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
         <translation>Prevedeno brez podpore za zunanje podpisovanje</translation>
     
-YES - The translation is missing a crucial part of the original text. It should also include the parenthetical explanation.
-Prevedeno brez podpore za zunanje podpisovanje (potrebno za zunanje podpisovanje)
-```
+YES
+The translation "Prevedeno brez podpore za zunanje podpisovanje" means "Translated without support for external signing," which is incorrect. The English source says "Compiled without external signing support (required for external signing)," referring to software compilation, not translation.
 
-```
-        <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation>Oznaka tega naslova. Urejate jo lahko le pri naslovih za pošiljanje.</translation>
-    
-YES - The translation incorrectly translates "address associated with this address list entry" to "Oznaka tega naslova" which means "Label of this address". The correct translation for "address" should be "naslov".
-
-NO
+Correct translation:
+"Sestavljeno brez podpore za zunanje podpisovanje (zahtevano za zunanje podpisovanje)"
 ```
 
 ```
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
         <translation>V  tem direktoriju bo shranjenih vsaj %1 GB podatkov, količina podatkov pa bo s časom naraščala.</translation>
     
-YES: The word "V" at the beginning of the translation is an extra space.
-V tem direktoriju bo shranjenih vsaj %1 GB podatkov, količina podatkov pa bo s časom naraščala.
+YES  
+The translation uses "V  tem direktoriju" with an extra space after "V", which is a formatting issue. Also, "v tem direktoriju" is incorrect Slovenian; the correct locative form is "v tem imeniku" or "v tem imeniku" (for directory), but commonly "v tem imeniku" is acceptable. The rest of the sentence is accurate.
+
+Correct translation:  
+"V tem imeniku bo shranjenih vsaj %1 GB podatkov, količina podatkov pa bo s časom naraščala."
 ```
 
 ```
         <source>%1 is currently syncing.  It will download headers and blocks from peers and validate them until reaching the tip of the block chain.</source>
         <translation>%1 trenutno dohiteva omrežje. Od soležnikov bodo preneseni in preverjeni zaglavja in bloki do vrha verige.</translation>
     
-YES - The translation incorrectly states "%1 trenutno dohiteva omrežje." which translates to "%1 is currently downloading the network." The English source states "%1 is currently syncing." which implies the process of synchronizing data, not downloading the entire network.
+YES  
+The Slovene translation has an issue with the word "dohiteva omrežje," which translates to "catching up with the network" rather than synchronizing. Also, "od soležnikov" is misspelled; it should be "od sodelavcev" or preferably "od sodelujočih" or simply "od sodelujočih vozlišč" (from peers). The original English phrase is about syncing, downloading headers and blocks from peers, and validating them until the tip of the blockchain is reached. The translation also has a missing subject or extra spacing and slight awkwardness.
 
-Correct translation: %1 se trenutno sinhronizira. Od soležnikov bodo preneseni in preverjeni zaglavja in bloki do vrha verige.
-```
-
-```
-        <source>Maximum database cache size. Make sure you have enough RAM. A larger cache can contribute to faster sync, after which the benefit is less pronounced for most use cases. Lowering the cache size will reduce memory usage. Unused mempool memory is shared for this cache.</source>
-        <extracomment>Tooltip text for Options window setting that sets the size of the database cache. Explains the corresponding effects of increasing/decreasing this value.</extracomment>
-        <translation>Največja dovoljena velikost predpomnilnika podatkovne baze. Imeti morate dovolj velik delovni pomnilnik (RAM). Povečanje predpomnilnika lahko prispeva k hitrejši začetni sinhronizaciji, kasneje pa večinoma manj pomaga. Znižanje velikosti predpomnilnika bo zmanjšalo porabo pomnilnika. Za ta predpomnilnik se uporablja tudi neporabljeni predpomnilnik za transakcije.</translation>
-    
-YES: The last sentence contains a mistranslation. "Unused mempool memory is shared for this cache" should be translated as "Neporabljeni pomnilnik iz mempool-a se deli za ta predpomnilnik." instead of "Za ta predpomnilnik se uporablja tudi neporabljeni predpomnilnik za transakcije."
-
-NO.
-```
-
-```
-        <source>Prune block storage to</source>
-        <translation>Obreži velikost podatkovne baze na</translation>
-    
-YES - The translation is inaccurate and misleading. "Prune block storage to" refers to reducing the size of the blockchain data, not the database size in general.
-
-Correct translation: "Obreži shranjevanje blokov na"
-```
-
-```
-        <source>This allows you or a third party tool to communicate with the node through command-line and JSON-RPC commands.</source>
-        <extracomment>Tooltip text for Options window setting that enables the RPC server.</extracomment>
-        <translation>RPC-strežnik omogoča vam in raznim orodjem komunikacijo z vozliščem prek ukazne vrstice in ukazov JSON-RPC.</translation>
-    
-YES: The translation is a significant departure from the source text. It rephrases the sentence and changes the subject from the ability to communicate to the RPC server itself enabling communication. Additionally, it uses "raznim orodjem" (various tools) instead of "a third party tool".
-Correct translation: To vam omogoča ali orodje tretje osebe, da komunicirate z vozliščem prek ukazne vrstice in ukazov JSON-RPC.
+Correct translation:  
+%1 trenutno sinhronizira. Prenesel bo glave in bloke od sodelujočih ter jih preverjal, dokler ne doseže vrha verige blokov.
 ```
 
 ```
@@ -203,8 +136,11 @@ Correct translation: To vam omogoča ali orodje tretje osebe, da komunicirate z 
         <extracomment>An options window setting to enable PSBT controls.</extracomment>
         <translation>Omogoči nastavitve DPBT</translation>
     
-YES - The translation incorrectly translates "PSBT" to "DPBT". The correct translation for PSBT is also PSBT.
-NO - Omogoči nastavitve PSBT
+YES  
+The abbreviation "PSBT" is not translated correctly; it has been changed to "DPBT," which is incorrect and misleading. The correct translation should keep "PSBT" as is because it is a standard acronym in Bitcoin terminology. Also, "Enable controls" is better translated as "Omogoči kontrole" or "Omogoči upravljanje," but "nastavitve" means "settings," which slightly changes the meaning. "Controls" refers to user interface controls rather than settings.
+
+Correct translation:  
+Omogoči kontrole PSBT
 ```
 
 ```
@@ -212,18 +148,22 @@ NO - Omogoči nastavitve PSBT
         <extracomment>Tooltip text for options window setting that enables PSBT controls.</extracomment>
         <translation>Ali naj se prikaže upravljanje z DPBT</translation>
     
-YES. The translation uses the abbreviation "DPBT" which is not the correct abbreviation for "PSBT" in Slovenian. PSBT stands for Partially Signed Bitcoin Transaction. The correct Slovenian term for this would be "delno podpisana bitcoin transakcija" or a similar variation, and the abbreviation would typically be DPDT.
-
-NO. Ali naj se prikaže upravljanje z DPBT.
+YES
+The translation is missing a question mark or a verb form to clearly indicate the conditional or interrogative nature of "Whether to show PSBT controls." A clearer, more accurate translation in Slovene would be:
+"Ali naj se prikažejo kontrolniki PSBT."
 ```
 
 ```
         <source>Third-party transaction URLs</source>
         <translation>Zunanji URL-ji</translation>
     
-YES: The translation is inaccurate and lacks context. It fails to convey the meaning of "third-party transaction URLs" in the context of Bitcoin.
+YES  
+The translation "Zunanji URL-ji" means "External URLs" rather than "Third-party transaction URLs". It omits the concept of "transaction" which is important in the context of Bitcoin. A more accurate translation would include the word for "transaction" (transakcija).  
 
-Correct translation: Zunanji URL-ji transakcij
+Correct translation:  
+"Tretji strani URL-ji transakcij"  
+or more naturally:  
+"URL-ji transakcij tretjih oseb"
 ```
 
 ```
@@ -231,16 +171,22 @@ Correct translation: Zunanji URL-ji transakcij
         <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
         <translation>Prevedeno brez podpore za zunanje podpisovanje</translation>
     
-YES - The translation is missing a crucial part of the original text. It should also include the parenthetical explanation.
-Prevedeno brez podpore za zunanje podpisovanje (potrebno za zunanje podpisovanje)
+YES
+The translation "Prevedeno brez podpore za zunanje podpisovanje" means "Translated without support for external signing," which is incorrect. The English source says "Compiled without external signing support (required for external signing)," referring to software compilation, not translation.
+
+Correct translation:
+"Sestavljeno brez podpore za zunanje podpisovanje (zahtevano za zunanje podpisovanje)"
 ```
 
 ```
         <source>none</source>
         <translation>jih ni</translation>
     
-YES - The translation is incorrect and nonsensical in the context of Bitcoin. The correct translation for "none" in Slovene, especially in a technical context like Bitcoin, would be "nič" or "brez".
- jih ni
+YES
+The translation "jih ni" does not correspond to the English word "none" in Slovenian. The correct Slovenian translation for "none" is "noben" (for masculine singular), or simply "nič" depending on context, but commonly "noben" or "ni" is used. "jih ni" means "they are not" or "there are none of them," which is a phrase, not a direct translation of the word "none."
+
+Correct translation:
+noben
 ```
 
 ```
@@ -248,97 +194,54 @@ YES - The translation is incorrect and nonsensical in the context of Bitcoin. Th
         <extracomment>Text asking the user to confirm if they would like to proceed with a client shutdown.</extracomment>
         <translation>Program bo zaustavljen. Želite nadaljevati z izhodom?</translation>
     
-YES. The translation includes an unnecessary and potentially confusing phrase "z izhodom" (with exiting) which is not present in the source text. The format specifiers are also missing.
+YES  
+The translation "Program bo zaustavljen. Želite nadaljevati z izhodom?" has issues:  
+- "zaustavljen" is not standard Slovenian; the correct Slovenian word for "shut down" in this context is "ustavljen" or "izklopljen".  
+- "Program" is less common than "Odjemalec" (client) for "Client" in the Bitcoin context.  
+- The second sentence literally means "Do you want to continue with exiting?" whereas the source asks "Do you want to proceed?" which is more general; a better translation would not specify "izhodom" (exiting) unless the source explicitly mentions that.  
 
-NO. Program bo zaustavljen. Želite nadaljevati?
-```
-
-```
-        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>Skupni znesek sredstev, s katerimi še ne razpolagate prosto, ker so del še nepotrjenih transakcij.</translation>
-    
-YES - The translation is inaccurate and misleading. It states that the funds are not freely available because they are part of unconfirmed transactions, but the source text refers to unconfirmed transactions that *do not yet count toward the spendable balance*. The translation implies the funds are in unconfirmed transactions and therefore not spendable, which is not quite the same.
-
-A more accurate translation would be:
-Skupni znesek transakcij, ki še niso potrjene in se še ne vštevajo v razpoložljivo stanje.
-```
-
-```
-        <source>Broadcast Tx</source>
-        <translation>Oddaj transakcijo v omrežje</translation>
-    
-UNK_LANG
-```
-
-```
-        <source>PSBT copied to clipboard.</source>
-        <translation>DPBT kopirana v odložišče.</translation>
-    
-YES - The translation uses "DPBT" instead of "PSBT".
-The English text is "PSBT copied to clipboard.".
-The translation should be "PSBT kopirana v odložišče.".
+Correct translation:  
+"Odjemalec bo ustavljen. Želite nadaljevati?"
 ```
 
 ```
         <source>own address</source>
         <translation>lasten naslov</translation>
     
-YES, The translation "lasten naslov" is incorrect. The correct translation for "own address" in the context of Bitcoin in Slovene is "lastni naslov". The word "lasten" is not a standard Slovene word, and "lastni" means "own".
+YES  
+The Slovenian translation "lasten naslov" is incorrect in this Bitcoin context. The English "own address" refers to "your own address" (e.g., wallet or network address). The correct Slovenian phrase is "lasten naslov" would mean "private address" or "own address" literally, but in the Bitcoin context the accepted translation is "lasten naslov" or better "lasten naslov" is actually correct. However, to confirm, "own address" is correctly translated as "lasten naslov" in Slovenian. So is it unproblematic?
 
-NO, lastni naslov
-```
+Actually, "lasten naslov" is the correct Slovenian translation of "own address" and is commonly used in Bitcoin software in Slovenian localization.
 
-```
-        <source>Pays transaction fee: </source>
-        <translation>Vsebuje transakcijsko provizijo:</translation>
-    
-YES - The Slovenian translation is inaccurate. "Pays transaction fee" means "Plača transakcijsko provizijo" or "Nese transakcijsko provizijo". The provided translation "Vsebuje transakcijsko provizijo" translates to "Contains transaction fee".
-Vsebuje transakcijsko provizijo:
+No format specifiers are involved, and no extra whitespace issues.
+
+Therefore, the translation is correct and unproblematic.
+
+Corrected output:
+
+NO
 ```
 
 ```
         <source>Cannot start bitcoin: click-to-pay handler</source>
         <translation>Ni mogoče zagnati rokovalca plačilnih povezav tipa bitcoin:.</translation>
     
-YES - The translation is problematic due to an incorrect interpretation of "click-to-pay handler". In the context of Bitcoin, this likely refers to a feature that allows clicking on a Bitcoin payment link to initiate a transaction. The provided Slovenian translation "rokovalca plačilnih povezav tipa bitcoin:" can be interpreted as a "Bitcoin payment link handler," but the addition of "tipa" (type) and the colon at the end makes it awkward and grammatically incorrect in this context.
+YES  
+The translation contains a grammatical error and an unnecessary colon at the end. The phrase "Ni mogoče" is incorrect in Slovene; it should be "Ni mogoče zagnati" or more naturally "Ni mogoče zagnati bitcoin: upravljalnika click-to-pay" or "Ni mogoče zagnati upravljalnika bitcoin click-to-pay". The colon in the source is part of the original phrase and should not be duplicated or followed by an extra colon in Slovene.
 
-A more accurate translation would be: "Ne morem zagnati upravljalnika klikni-za-plačilo za bitcoin."
-```
-
-```
-        <source>Received</source>
-        <extracomment>Title of Peers Table column which indicates the total amount of network information we have received from the peer.</extracomment>
-        <translation>Prejeto</translation>
-    
-YES: The translation of "Received" to "Prejeto" is incorrect. "Prejeto" means "project" or "proposal" in Slovene. The correct translation for "Received" in this context would be "Prejeto" (past participle of "prejeti" - to receive).
-NO: Prejeto
-```
-
-```
-        <source>Received</source>
-        <translation>Prejeto</translation>
-    
-YES, the translation is incorrect. The Slovenian word "Prejeto" means "Received" in English, which is exactly what the source text says. However, the provided translation seems to be a typo of the correct word. The correct translation for "Received" in Slovenian is "Prejeto".
-
-NO
+Correct translation:  
+Ni mogoče zagnati bitcoin upravljalnika click-to-pay
 ```
 
 ```
         <source>Open the %1 debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Odpre %1 razhroščevalni dnevnik debug.log, ki se nahaja v trenutni podatkovni mapi. Če je datoteka velika, lahko postopek traja nekaj sekund.</translation>
     
-YES - The translation "Odpre %1 razhroščevalni dnevnik debug.log, ki se nahaja v trenutni podatkovni mapi. Če je datoteka velika, lahko postopek traja nekaj sekund." is problematic because the phrase "razhroščevalni dnevnik debug.log" is redundant and awkward. The word "razhroščevalni" translates to "debugging" and "debug.log" already indicates a debug log. A more natural translation would be to simply refer to the debug log file.
+YES  
+The translation mixes English and Slovenian incorrectly and does not correctly translate "debug log file." The phrase "razhroščevalni dnevnik debug.log" combines Slovenian "razhroščevalni dnevnik" and English "debug.log" unnecessarily and is somewhat redundant or confusing. Also, "debug log file" should be fully translated (e.g., "dnevnik odpravljanja napak") or retain "debug log datoteka" consistently. The source only refers to "%1 debug log file," so "%1" should directly precede "datoteka dnevnika odpravljanja napak" or a similar phrasing.
 
-Correct translation: Odpre %1 datoteko dnevnika odpravljanja napak iz trenutne podatkovne mape. Če je datoteka velika, lahko postopek traja nekaj sekund.
-```
-
-```
-        <source>Last Send</source>
-        <translation>Nazadje oddano</translation>
-    
-YES, The translation "Nazadje oddano" is incorrect. The Slovenian word for "Last" is "Zadnja" or "Nazadnje", and "Send" translates to "Pošlji". Therefore, "Last Send" should be translated to "Zadnja pošiljka" or "Nazadnje poslano".
-The correct translation is:
-Nazadnje poslano
+Correct translation:  
+Odprite %1 datoteko dnevnika odpravljanja napak iz trenutne podatkovne mape. Za velike datoteke lahko postopek traja nekaj sekund.
 ```
 
 ```
@@ -346,78 +249,55 @@ Nazadnje poslano
         <extracomment>Explanatory text for a short-lived outbound peer connection that is used to request addresses from a peer.</extracomment>
         <translation>Odhodna dostavljalka naslovov: krakoživa, zaproša za naslove</translation>
     
-YES - The translation uses "dostavljalka" which means "delivery person" or "courier", which is not appropriate for "fetch" in this context. The correct translation for "fetch" in the sense of retrieving data is "pridobivanje" or "priklic".
+YES  
+The translation has issues with word choice and spacing. "Odhodna dostavljalka naslovov" is awkward and not standard Slovenian. A better wording for "Outbound Address Fetch" would be "Odhodno pridobivanje naslovov". Also, "krakoživa" should be "kratkotrajna" to correctly translate "short-lived". Moreover, a comma should be used as in the source text to separate the clauses.
 
-NO
-Odhodno pridobivanje naslovov: kratkotrajno, za pridobivanje naslovov
+Correct translation:  
+Odhodno pridobivanje naslovov: kratkotrajno, za zahtevanje naslovov
 ```
 
 ```
         <source>no high bandwidth relay selected</source>
         <translation>ni posredovanja na visoki pasovni širini</translation>
     
-YES: The translation is missing the word "selected" from the original English sentence.
-The correct translation is: "ni izbrana posredovanja na visoki pasovni širini"
-```
+YES  
+The Slovene translation is incomplete and omits the negation and verb. The source means "no high bandwidth relay selected," which implies that no relay with high bandwidth was selected. The correct translation should clearly convey "no" and "selected."  
 
-```
-        <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation>Prikaz izbranega zahtevka. (Isto funkcijo opravi dvojni klik na zapis.)</translation>
-    
-YES - The translation is incorrect and uses Croatian instead of Slovenian. The correct Slovenian translation would be: "Prikaži izbrano zahtevo (isto kot pri dvojnem kliku na vnos)".
+Correct translation:  
+"ni izbran posrednik z visoko pasovno širino"
 ```
 
 ```
         <source>Base58 (Legacy)</source>
         <translation>Base58 (podedovano)</translation>
     
-YES, The translation is incorrect. The Slovenian word "podedovano" means "inherited" or "legacy" but in a way that implies inheritance from family, not in the technical sense of a legacy system. The correct term for a legacy Bitcoin address format is "staro" which means "old".
+YES
+The English term "Legacy" in the Bitcoin context refers to the older or original format, and should be translated into Slovene accordingly. "podedovano" is a misspelling and incorrect Slovene word. The correct Slovene word is "dedni" or "stari" to convey "legacy." 
 
-Base58 (Legacy) -> Base58 (staro)
+Correct translation:
+Base58 (dedni)
 ```
 
 ```
         <source>Request payment to …</source>
         <translation>Zahtevaj plačilo prejmeniku ...</translation>
     
-YES. The translation is inaccurate and uses an incorrect word for "address" in the context of Bitcoin. The word "prejmenik" does not have a relevant meaning in this context.
+YES  
+The Slovene translation incorrectly translates "to …" as "prejmeniku," which means "to the rename" and is unrelated to the context. The correct word for "to" in this context (request payment to an address) should be "na" or omitted depending on the phrase structure. Also, ellipsis should use the single Unicode character "…" instead of three dots "..." for consistency.
 
-Correct translation: Zahtevaj plačilo na naslov ...
+Correct translation:  
+Zahtevaj plačilo na …
 ```
 
 ```
         <source>Quantity:</source>
         <translation>Št. vhodov:</translation>
     
-YES, The translation is incorrect and uses the wrong word. "Št. vhodov" translates to "Number of inputs" in English, whereas the source text "Quantity:" means "Količina:" in Slovenian.
+YES  
+The English source "Quantity:" is a general term, typically translated as "Količina:" in Slovenian. The provided translation "Št. vhodov:" means "Number of inputs:", which is more specific and context-dependent. Unless the context explicitly requires specifying "Number of inputs," this translation is inaccurate.
+
+Correct translation:  
 Količina:
-```
-
-```
-        <source>Change:</source>
-        <translation>Vračilo:</translation>
-    
-YES, The translation of "Change:" to "Vračilo:" is incorrect in the context of Bitcoin. "Vračilo" translates to "refund" or "return," which is not the correct term for the change amount in a Bitcoin transaction. The correct term for change in Bitcoin is "Vzdrževanje" or "Drobiž," but "Vzdrževanje" is more commonly used.
-
-Correct translation: Vzdrževanje:
-```
-
-```
-        <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation>Ustvari delno podpisano bitcoin-transakcijo (DPBT, angl. PSBT), ki jo lahko kopirate in potem podpišete n.pr. z nepovezano (offline) %1 denarnico ali pa s hardversko denarnico, ki podpira DPBT.</translation>
-    
-YES: The translation introduces an acronym "DPBT" and claims it's the English abbreviation for PSBT, which is incorrect. The correct translation should reflect that PSBT is the English term. Additionally, the phrasing "ki jo lahko kopirate in potem podpišete" is a bit verbose and could be more direct.
-
-Correct translation: Ustvari delno podpisano bitcoin-transakcijo (PSBT) za uporabo n.pr. z nepovezano (offline) %1 denarnico ali s hardversko denarnico, ki podpira PSBT.
-```
-
-```
-        <source>%1 to %2</source>
-        <translation>%1 v %2</translation>
-    
-YES: The translation is inaccurate. The Slovenian word "v" means "in" or "at", which does not convey the intended meaning of "to" in the context of a range or connection between two points. The correct translation for "to" in this context is "do".
-
-%1 do %2
 ```
 
 ```
@@ -425,84 +305,51 @@ YES: The translation is inaccurate. The Slovenian word "v" means "in" or "at", w
         <extracomment>Popup message when a PSBT has been saved to a file</extracomment>
         <translation>DPBT shranjena</translation>
     
-YES: The translation is incorrect. "PSBT" is a specific technical term in the Bitcoin context and should not be translated as "DPBT".
-NO
-```
+YES  
+The acronym "PSBT" is incorrectly translated as "DPBT" in Slovene. The correct translation should keep the acronym as "PSBT" because it stands for "Partially Signed Bitcoin Transaction" and should not be altered.  
 
-```
-        <source>The PSBT has been copied to the clipboard. You can also save it.</source>
-        <translation>DPBT je bila skopirana na odložišče. Lahko jo tudi shranite.</translation>
-    
-YES: The abbreviation "PSBT" is not translated into Slovene. The correct translation should be: "PSBT je bil kopiran na odložišče. Lahko ga tudi shranite."
+Correct translation:  
+PSBT shranjena
 ```
 
 ```
         <source>PSBT saved to disk</source>
         <translation>DPBT shranjena na disk</translation>
     
-YES, The translation is incorrect. The acronym "PSBT" refers to Partially Signed Bitcoin Transactions. The translation used "DPBT" which is incorrect.
-PSBT shranjen na disk
-```
+YES
+The acronym "PSBT" is mistranslated as "DPBT" in Slovene; it should remain "PSBT" as it is a technical term. Also, the verb should agree with the feminine noun "PSBT" (if treated as feminine), making it "shranjena". The rest of the translation is correct.
 
-```
-        <source>Duplicate address found: addresses should only be used once each.</source>
-        <translation>Naslov je že bil uporabljen. Vsak naslov naj bi se uporabil samo enkrat.</translation>
-    
-YES - The translation is grammatically incorrect and does not accurately convey the meaning of the source text. The source text uses the word "duplicate" to indicate that an address has been encountered more than once, implying an error or a potential problem. The translation uses "Naslov je že bil uporabljen" which translates to "The address has already been used." While this is somewhat similar, it lacks the implication of duplication and the corrective tone of the original. Furthermore, the phrase "addresses should only be used once each" is translated as "Vsak naslov naj bi se uporabil samo enkrat," which is grammatically awkward.
-
-A more accurate translation would be: "Ponavljajoč se naslov: naslove je treba uporabiti samo enkrat." This translates to "Duplicate address: addresses should be used only once."
-```
-
-```
-        <source>Subtract fee from amount</source>
-        <translation>Odštej provizijo od zneska</translation>
-    
-YES: The translation is incorrect. The language specified by 'sl' is not Slovenian. It appears to be Czech.
-UNK_LANG
+Correct translation:
+PSBT shranjena na disk
 ```
 
 ```
         <source>Sign the message to prove you own this Bitcoin address</source>
         <translation>Podpišite sporočilo, da dokažete lastništvo zgornjega naslova.</translation>
     
-YES - The translation is missing a crucial part of the original message. It says "the above address" instead of "this Bitcoin address."
+YES  
+The translation is not fully accurate. The original English specifies "this Bitcoin address," implying the specific address being referenced, whereas the Slovene translation uses "zgornjega naslova" ("the above address"), which may not be appropriate or accurate depending on the context. Moreover, it omits the mention of "Bitcoin," which is important for clarity in this context.
 
-Correct translation: Podpišite sporočilo, da dokažete lastništvo tega Bitcoin naslova.
-```
+A better translation would explicitly mention "Bitcoin naslov" and keep the wording closer to the original meaning:
 
-```
-        <source>conflicted with a transaction with %1 confirmations</source>
-        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents an unconfirmed transaction that conflicts with a confirmed transaction.</extracomment>
-        <translation>v sporu s transakcijo z %1 potrditvami</translation>
-    
-YES - The Slovenian translation uses "v sporu s" which means "in dispute with" or "in conflict with", but the English phrase "conflicted with" in this context means that the transaction is invalid because it conflicts with another valid transaction, not that it is in a dispute. The correct translation should convey this invalidity.
-
-Correct translation: "neveljavna zaradi konflikta s transakcijo s %1 potrditvami"
+Correct translation:  
+Podpišite sporočilo, da dokažete, da ste lastnik tega Bitcoin naslova.
 ```
 
 ```
         <source>own address</source>
         <translation>lasten naslov</translation>
     
-YES, The translation "lasten naslov" is incorrect. The correct translation for "own address" in the context of Bitcoin in Slovene is "lastni naslov". The word "lasten" is not a standard Slovene word, and "lastni" means "own".
+YES  
+The Slovenian translation "lasten naslov" is incorrect in this Bitcoin context. The English "own address" refers to "your own address" (e.g., wallet or network address). The correct Slovenian phrase is "lasten naslov" would mean "private address" or "own address" literally, but in the Bitcoin context the accepted translation is "lasten naslov" or better "lasten naslov" is actually correct. However, to confirm, "own address" is correctly translated as "lasten naslov" in Slovenian. So is it unproblematic?
 
-NO, lastni naslov
-```
+Actually, "lasten naslov" is the correct Slovenian translation of "own address" and is commonly used in Bitcoin software in Slovenian localization.
 
-```
-        <source>Received with</source>
-        <translation>Prejeto z</translation>
-    
-YES: The translation is inaccurate and does not convey the original meaning of "Received with". In the context of Bitcoin, "Received with" implies that an amount was received from a certain source. The Slovenian translation "Prejeto z" literally means "Rejected with", which is the opposite of the intended meaning.
+No format specifiers are involved, and no extra whitespace issues.
 
-Correct translation: Prejeto z
-```
+Therefore, the translation is correct and unproblematic.
 
-```
-        <source>Received from</source>
-        <translation>Prejeto od</translation>
-    
-YES, The translation of "Received from" to "Prejeto od" is incorrect. "Prejeto od" translates to "Rejected from" in English. The correct translation for "Received from" in Slovenian, in the context of Bitcoin transactions, is "Prejeto od".
+Corrected output:
 
 NO
 ```
@@ -511,180 +358,156 @@ NO
         <source>Sent to</source>
         <translation>Poslano na </translation>
     
-YES, There is an extra space at the end of the translation.
+YES
+The translation includes a trailing space after "na", which is unnecessary and inconsistent with the source text formatting. The source text "Sent to" does not have a trailing space.
+
+Correct translation:
 Poslano na
-```
-
-```
-        <source>Received with</source>
-        <translation>Prejeto z</translation>
-    
-YES: The translation is inaccurate and does not convey the original meaning of "Received with". In the context of Bitcoin, "Received with" implies that an amount was received from a certain source. The Slovenian translation "Prejeto z" literally means "Rejected with", which is the opposite of the intended meaning.
-
-Correct translation: Prejeto z
 ```
 
 ```
         <source>Sent to</source>
         <translation>Poslano na </translation>
     
-YES, There is an extra space at the end of the translation.
+YES
+The translation includes a trailing space after "na", which is unnecessary and inconsistent with the source text formatting. The source text "Sent to" does not have a trailing space.
+
+Correct translation:
 Poslano na
-```
-
-```
-        <source>Unable to decode PSBT from clipboard (invalid base64)</source>
-        <translation>Ne morem dekodirati DPBT z odložišča (neveljaven format base64)</translation>
-    
-YES - The translation contains an error as "PSBT" is incorrectly translated as "DPBT". The correct translation for "PSBT" is "PSBT" or "deljeno nadzorovano denarnico" if context allows for a more descriptive translation, but keeping the acronym is generally preferred in technical contexts.
-
-NO - The translation is unproblematic.
 ```
 
 ```
         <source>PSBT file must be smaller than 100 MiB</source>
         <translation>Velikost DPBT ne sme presegati 100 MiB.</translation>
     
-YES. The translation incorrectly uses "DPBT" instead of "PSBT".
-The correct translation should be: "Velikost PSBT ne sme presegati 100 MiB."
-```
+YES  
+The abbreviation "PSBT" (Partially Signed Bitcoin Transaction) is mistranslated as "DPBT" in Slovenian, which is incorrect. The correct abbreviation "PSBT" should be retained as is. Additionally, the original English states "must be smaller than 100 MiB," while the translation says "ne sme presegati 100 MiB" meaning "must not exceed 100 MiB," which is acceptable, but the abbreviation is wrong.
 
-```
-        <source>Warning: This may pay the additional fee by reducing change outputs or adding inputs, when necessary. It may add a new change output if one does not already exist. These changes may potentially leak privacy.</source>
-        <translation>Opozorilo: za dodatno provizijo je včasih potrebno odstraniti izhode za vračilo ali dodati vhode. Lahko se tudi doda izhod za vračilo, če ga še ni. Te spremembe lahko okrnijo zasebnost.</translation>
-    
-YES: The phrase "za dodatno provizijo je včasih potrebno odstraniti izhode za vračilo ali dodati vhode" is a bit awkward and could be phrased more naturally in Slovenian. The word "zmanjšanje" (reduction) for "reducing" is missing, and the translation implies that removing outputs or adding inputs is always necessary, rather than done when necessary.
-
-A more accurate translation would be: "Opozorilo: To lahko plača dodatno provizijo z zmanjšanjem izhodov za vračilo ali dodajanjem vhodov, ko je to potrebno. Lahko doda nov izhod za vračilo, če ga že ni. Te spremembe lahko potencialno ogrozijo zasebnost."
+Correct translation:  
+PSBT datoteka mora biti manjša od 100 MiB.
 ```
 
 ```
         <source>Can't draft transaction.</source>
         <translation>Ne morem shraniti osnutka transakcije</translation>
     
-YES - The translation uses a literal interpretation of "draft transaction" which is not idiomatic in Slovenian. The word "shraniti" (save) is also not the most accurate translation for "draft" in this context. The more appropriate translation would be to indicate the inability to create or prepare the transaction.
-Ne morem ustvariti osnutka transakcije.
-```
+YES
+The translation "Ne morem shraniti osnutka transakcije" means "I cannot save the draft of the transaction," which deviates from the source "Can't draft transaction." The source implies inability to create or draft a transaction, not specifically failing to save it.
 
-```
-        <source>Fee-bump PSBT copied to clipboard</source>
-        <translation>DPBT z višjo provizijo kopirana v odložišče.</translation>
-    
-YES, "DPBT" is not a correct or standard abbreviation in the context of Bitcoin. The correct abbreviation for Partially Signed Bitcoin Transaction is PSBT.
-
-DPBT z višjo provizijo kopirana v odložišče.
+A more accurate Slovenian translation would be:
+"Ne morem sestaviti osnutka transakcije."
 ```
 
 ```
         <source>File %s already exists. If you are sure this is what you want, move it out of the way first.</source>
         <translation>Datoteka %s že obstaja. Če stre prepričani, da to želite, obstoječo datoteko najprej odstranite oz. premaknite.</translation>
     
-YES: The translation contains a spelling error: "stre" should be "ste".
-Datoteka %s že obstaja. Če ste prepričani, da to želite, obstoječo datoteko najprej odstranite oz. premaknite.
+YES
+There is a small typo in the Slovene translation: "stre" should be "ste". Also, the phrase "obstoječo datoteko najprej odstranite oz. premaknite" is acceptable but slightly less direct than "najprej jo odstranite ali premaknite" (using "jo" to directly refer to the file).
+
+Correct translation:
+Datoteka %s že obstaja. Če ste prepričani, da to želite, jo najprej odstranite ali premaknite iz poti.
 ```
 
 ```
         <source>More than one onion bind address is provided. Using %s for the automatically created Tor onion service.</source>
         <translation>Nastavljen je več kot en onion-naslov. Za samodejno ustvarjeno storitev na Toru uporabljam %s.</translation>
     
-YES: The Slovenian translation incorrectly states "Nastavljen je več kot en onion-naslov" which translates to "More than one onion address is set". The original English states "More than one onion bind address is provided", which is more accurately translated as "Več kot en onion-naslov za vezavo je bil posredovan".
+YES  
+The translation is somewhat inaccurate and awkward. The source mentions "More than one onion bind address is provided" and "Using %s for the automatically created Tor onion service." The current translation translates "More than one onion bind address is provided" as "Nastavljen je več kot en onion-naslov," which is not entirely correct because "nastavljen je" means "is set" rather than "is provided." It also incorrectly translates "using %s" as "Uporabljam %s," which is first-person singular ("I am using %s") rather than an impersonal or passive construction appropriate here.
 
-The corrected translation is:
-Nastavljen je več kot en onion-naslov za vezavo. Za samodejno ustvarjeno storitev na Toru uporabljam %s.
-```
+A better translation would be:  
+"Podanih je več kot en onion bind naslov. Za samodejno ustvarjeno storitev Tor onion uporabljam %s."  
 
-```
-        <source>No wallet file format provided. To use createfromdump, -format=&lt;format&gt; must be provided.</source>
-        <translation>Potrebno je določiti obliko izvozne (dump) datoteke. Z ukazom createfromdump morate uporabiti možnost -format=&lt;format&gt;.</translation>
-    
-YES - The translation is missing the format specifier "<format>".
-NO - Potrebno je določiti obliko izvozne (dump) datoteke. Z ukazom createfromdump morate uporabiti možnost -format=<%format%>.
-```
+Or slightly more natural:  
+"Podanih je več kot en naslov onion bind. Za samodejno ustvarjeno storitev Tor onion uporabljam %s."
 
-```
-        <source>This is the maximum transaction fee you pay (in addition to the normal fee) to prioritize partial spend avoidance over regular coin selection.</source>
-        <translation>To je najvišja transakcijska provizija, ki jo plačate (poleg običajne provizije) za prednostno izogibanje delni porabi pred rednim izbiranjem kovancev.</translation>
-    
-UNK_LANG
+Note also: "storitev na Toru" should be "storitev Tor onion" or "storitev Torovega onion." Since the source says "Tor onion service," the phrase "storitev Tor onion" is acceptable.
+
+Corrected translation:  
+<translation>Podanih je več kot en onion bind naslov. Za samodejno ustvarjeno Tor onion storitev uporabljam %s.</translation>
 ```
 
 ```
         <source>Unknown wallet file format "%s" provided. Please provide one of "bdb" or "sqlite".</source>
         <translation>Nastavljena je neznana oblika datoteke denarnice "%s". Prosimo, uporabite "bdb" ali "sqlite".</translation>
     
-YES
-The translation is not accurate and misinterprets the English sentence. The English sentence states that an unknown wallet file format was *provided*, whereas the Slovenian translation implies that the wallet file format was *set* or *configured*.
+YES  
+The translation contains an incorrect phrase "Nastavljena je neznana oblika datoteke denarnice", which translates to "An unknown wallet file format has been set." The source says "Unknown wallet file format "%s" provided," implying that the format provided is unknown, not that it was set. The verb choice and sentence structure are misleading in this context.
 
-Correct translation: Nepredvidena oblika datoteke denarnice "%s". Prosimo, predložite "bdb" ali "sqlite".
-```
-
-```
-        <source>Warning: Private keys detected in wallet {%s} with disabled private keys</source>
-        <translation>Opozorilo: v denarnici {%s} z onemogočenimi zasebnimi ključi so prisotni zasebni ključi.</translation>
-    
-YES - The Slovenian translation is grammatically incorrect and the word order is unnatural. The correct translation should be: "Opozorilo: V denarnici {%s} so zaznani zasebni ključi z onemogočenimi zasebnimi ključi."
-```
-
-```
-        <source>Error loading %s: External signer wallet being loaded without external signer support compiled</source>
-        <translation>Napaka pri nalaganu %s: Denarnica za zunanje podpisovanje naložena, podpora za zunanje podpisovanje pa ni prevedena</translation>
-    
-YES: The translation of "compiled" is incorrect. "Prevedena" means "translated", but in this context, it should refer to the software being compiled.
-
-Correct translation: Napaka pri nalaganju %s: Denarnica za zunanje podpisovanje naložena, podpora za zunanje podpisovanje pa ni prevedena
+Correct translation:  
+Neznan format datoteke denarnice "%s" je bil posredovan. Prosimo, navedite enega od "bdb" ali "sqlite".
 ```
 
 ```
         <source>Error loading %s: Wallet corrupted</source>
         <translation>Napaka pri nalaganju %s: Denarnica ovkarjena</translation>
     
-YES, The translation of "Wallet corrupted" to "Denarnica ovkarjena" is not standard in Slovenian. The more appropriate translation for "corrupted" in this context would be "poškodovana" or "poškodovana datoteka".
+YES  
+The word "ovkarjena" is incorrect in Slovenian and does not mean "corrupted." The correct word for "corrupted" in this context is "poškodovana" or better "pokvarjena." A good translation would be:
 
-NO
+Napaka pri nalaganju %s: Denarnica je poškodovana
 ```
 
 ```
         <source>Error: No %s addresses available.</source>
         <translation>Napaka: na voljo ni nobenega naslova '%s'</translation>
     
-YES - The translation is missing the closing punctuation mark.
-Error: No %s addresses available. -> Napaka: na voljo ni nobenega naslova '%s'.
+YES
+The translation incorrectly places the format specifier '%s' inside single quotes, which is not reflective of the source text. Also, the phrase "Error: No %s addresses available." implies a lack of any addresses of a certain type, so the translation should reflect the plural "addresses" properly and include "%s" without quotes.
+
+Correct translation:
+Napaka: na voljo ni nobenih naslovov %s.
 ```
 
 ```
         <source>Failed to rescan the wallet during initialization</source>
         <translation>Med inicializacijo denarnice ni bilo mogoče preveriti zgodovine (rescan failed).</translation>
     
-YES, the translation uses a literal translation of "rescan" as "preveriti zgodovine", which is not a standard or clear term in the context of Bitcoin wallets in Slovenian. It also adds an unnecessary English parenthetical. The more appropriate translation would be to keep "rescan" or use a more common term for this operation if one exists in Slovenian Bitcoin jargon.
+YES  
+The translation is partially in Slovenian, but it incorrectly uses the word "Med" (which means "during" in Slovenian) with the incorrect capitalization and mixes English within parentheses "rescan failed" which should be translated or omitted. Also, "denarnice" is Slovenian for "wallet," but "preveriti zgodovine" literally means "check history," which is acceptable but "rescan" is more precise as "ponovno pregledati" or "ponovno skenirati." The phrase "ni bilo mogoče preveriti zgodovine" translates as "it was not possible to check the history," which is close but less direct than "failed to rescan."
 
-NO, Failed to rescan the wallet during initialization
+A better Slovenian translation that respects the original meaning and style is:
+
+"Med inicializacijo denarnice ni bilo mogoče znova pregledati."
+
+or, to be more explicit about "rescan":
+
+"Med inicializacijo denarnice ni bilo mogoče opraviti ponovnega skeniranja."
+
+Correct translation:  
+Med inicializacijo denarnice ni bilo mogoče opraviti ponovnega skeniranja.
 ```
 
 ```
         <source>Invalid amount for %s=&lt;amount&gt;: '%s'</source>
         <translation>Neveljaven znesek za %s=&lt;amount&gt;:'%s'</translation>
     
-YES - The translation uses an apostrophe within the quoted string for the second %s, which is incorrect. The apostrophe should not be there, and there is an extra space before the closing apostrophe.
-Correct translation: Neveljaven znesek za %s=&lt;amount&gt;: '%s'
+YES  
+There is a missing space after the colon in the translation. In the source, there is a space after the colon before the quoted amount: ": '%s'". The translation omits the space after the colon, which can reduce readability.
+
+Correct translation:  
+Neveljaven znesek za %s=&lt;amount&gt;: '%s'
 ```
 
 ```
         <source>Loading P2P addresses…</source>
         <translation>Nalagam P2P naslove ...</translation>
     
-YES, the translation is problematic because the Slovenian word for "loading" is typically "nalaganje", not "nalagam". "Nalaganje" is the gerund form which is more appropriate here.
+YES  
+The translation contains spacing issues and an incorrect word choice. "Nalagam" seems incorrect for "Loading," and "naslove" typically means "headings" or "titles," not "addresses." The correct Slovenian translation for "Loading P2P addresses…" would be "Nalaganje P2P naslovov…" without extra spaces before the ellipsis.
 
-NO
+Correct translation:  
+Nalaganje P2P naslovov…
 ```
 
 ```
         <source>Pruning blockstore…</source>
         <translation>Obrezujem ...</translation>
     
-YES, the translation is problematic. The Slovenian word "Obrezujem" means "I am pruning" or "I am trimming." While technically a correct translation of "pruning," in the context of Bitcoin and blockstores, a more specific and appropriate term would be "Blokovni pomnilnik se obrezuje..." which translates to "The blockstore is pruning..." or "Obrezovanje blokovnega pomnilnika..." which translates to "Pruning of the blockstore...".
+YES
+The translation "Obrezujem ..." is incomplete and omits the object "blockstore," which is necessary for clarity. Also, there is an unnecessary space before the ellipsis. A better translation would be:
 
-The provided translation is also missing the word "blockstore" entirely.
-
-NO
+"Obrezujem blokovno skladišče…"
 ```
 </details>

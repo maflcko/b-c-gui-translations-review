@@ -13,59 +13,46 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>Одоогоор сонгогдсон байгаа хаягуудыг сануулах</translation>
     
-YES, The translation is inaccurate and does not convey the original meaning. The original text instructs the user to copy an address to the system clipboard, while the translation says "Remember the currently selected addresses", which is a different action.
+YES
+The translation is incorrect and does not match the source meaning. The source talks about copying the currently selected address to the system clipboard. The provided translation means roughly "Remind the currently selected addresses," which is unrelated.
 
-Correct translation: Одоогоор сонгогдсон хаягийг системийн санах төхөөрөмж рүү хуулах
+Correct translation:
+Одоогоор сонгогдсон хаягийг системийн самбар руу хуулна уу
 ```
 
 ```
         <source>Choose the address to send coins to</source>
         <translation>Зооснуудыг илгээх хаягийг сонгоно уу</translation>
     
-YES: The translation is inaccurate. "Зооснуудыг илгээх хаягийг сонгоно уу" translates to "Choose the address to send animals to", which is not the intended meaning. The correct translation should refer to sending coins.
-NO
-```
+YES  
+The translation "Зооснуудыг илгээх хаягийг сонгоно уу" means "Please choose the address to send the coins" which is understandable but slightly unnatural and could be improved for clarity and formality in the Bitcoin context.
 
-```
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Эдгээр Биткойн хаягууд нь илгээх хаягууд. Хүлээн авах хаяг болон тоо хэмжээг илгээхээсээ өмнө сайн нягталж үзэж байна уу</translation>
-    
-YES: The Mongolian translation omits the meaning of "sending payments". The phrase "Эдгээр Биткойн хаягууд нь илгээх хаягууд" translates to "These Bitcoin addresses are sending addresses", which is grammatically awkward and incomplete.
-Correct translation: Эдгээр нь төлбөр илгээх Биткойн хаягууд юм. Зоос илгээхээсээ өмнө гүйлгээний хэмжээ болон хүлээн авах хаягаа үргэлж шалгаж байгаарай.
+A better translation would be:  
+"Зоос илгээх хаягийг сонгоно уу"  
+This removes the plural suffix on "зоос" (coins) which is typically not needed here, and sounds more natural in Mongolian.  
+Alternatively, to be more precise:  
+"Зоос илгээх хаягийг сонгоно уу"
 ```
 
 ```
         <source>Sending addresses - %1</source>
         <translation>хаягуудииг Илгээж байна - %1</translation>
     
-YES, The word "хаягуудииг" is plural and in accusative case, which is not suitable for the context. The correct translation should be "хаяг - %1".
-хаяг - %1
+YES
+The translation is problematic because "хаягуудииг" contains an extra "и" and the word should be plural "хаягуудыг" to properly mean "addresses" in Mongolian. Also, the case marking "-ыг" (accusative) is appropriate here, but the word as given is misspelled.
+
+Correct translation:
+хаягуудыг Илгээж байна - %1
 ```
 
 ```
         <source>Wallet passphrase was successfully changed.</source>
         <translation>Түрүйвчийн нууц үг амжилттай ѳѳр</translation>
     
-YES, The translation is incomplete. The Mongolian phrase is missing the verb "боллоо" which means "became" or "is".
-Түрүйвчийн нууц үг амжилттай ѳѳр боллоо.
-```
+YES  
+The translation is incomplete and cut off. The phrase "амжилттай ѳѳр" translates as "successfully other" but does not complete the thought "was successfully changed." A correct full translation would be:
 
-```
-        <source>N/A</source>
-        <translation>Алга Байна</translation>
-    
-YES
-The Mongolian translation "Алга Байна" means "Going Away" or "Disappeared". This is not an appropriate translation for "N/A" in the context of Bitcoin. "N/A" typically signifies "Not Available" or "Not Applicable".
-
-A more accurate translation for "N/A" in Mongolian would be:
-
-- **Боломжгүй** (Bolomjgüi) - meaning "Not possible" or "Unavailable"
-- **Хэрэглэх боломжгүй** (Kherglekh bolomjgüi) - meaning "Not usable" or "Not applicable"
-- **Оюунгүй** (Oyuungüi) - meaning "Not available" (less common, but can be used)
-
-For the specific context of Bitcoin, where "N/A" might indicate data that isn't present or applicable, "Боломжгүй" is likely the most fitting.
-
-Correct translation: Боломжгүй
+Түрүүвчний нууц үг амжилттай өөрчлөгдлөө.
 ```
 
 ```
@@ -73,43 +60,34 @@ Correct translation: Боломжгүй
         <translation>Илгээх
  </translation>
     
-YES, the translation has an extraneous space character at the end.
+YES
+There is an unnecessary trailing whitespace (a non-breaking space) after the word "Илгээх". The translation should have no extra spaces or line breaks.
+
+Correct translation:
 Илгээх
-```
-
-```
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Түрүйвч &lt;b&gt;цоожтой&lt;/b&gt; ба одоогоор цоож &lt;b&gt;онгорхой&lt;/b&gt; байна</translation>
-    
-YES - The Mongolian translation incorrectly states that the wallet is locked and the lock is open, which is a contradiction. It should reflect that the wallet is encrypted and unlocked.
-
-Correct translation: Түрүйвч &lt;b&gt;нууцлагдсан&lt;/b&gt; ба одоогоор &lt;b&gt;тайлагдсан&lt;/b&gt; байна
 ```
 
 ```
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Түрүйвч &lt;b&gt;цоожтой&lt;/b&gt; ба одоогоор цоож &lt;b&gt;хаалттай&lt;/b&gt; байна</translation>
     
-YES, The Mongolian translation is problematic because it uses the word "Түрүйвч" which means "wallet" in Mongolian, however, it is redundant with the word "цоож" which also means "lock" in Mongolian. The corrected translation is: "Хэтэвч &lt;b&gt;цоожилсон&lt;/b&gt; бөгөөд одоогоор &lt;b&gt;хүлээн авагч&lt;/b&gt; байна".
+YES
+The translation inaccurately reverses the meanings of "encrypted" and "locked." The correct terms should reflect that the wallet is first "encrypted" and then "locked." The phrase "цоожтой" means "locked," and "хаалттай" means "closed," which is not appropriate for "encrypted."
+
+Correct translation:
+Түрүйвч &lt;b&gt;шивэгдсэн&lt;/b&gt; ба одоогоор &lt;b&gt;цоожтой&lt;/b&gt; байна
 ```
 
 ```
         <source>Copy change</source>
         <translation>Ѳѳрчлѳлтийг санах</translation>
     
-YES. The translation is inaccurate and does not convey the meaning of "Copy change" in the context of Bitcoin. The Mongolian translation seems to mean "Remember the change" or "Memorize the change," which is not the intended action of copying a value.
+YES  
+The translation "Ѳѳрчлѳлтийг санах" means "remember the change," which is incorrect for the Bitcoin context. The English phrase "Copy change" refers to copying the change amount (the leftover amount in a transaction), not memorizing or recalling it.
 
-The correct translation for "Copy change" in a Bitcoin context would be:
-
-<translation>Өөрчлөлтийг хуулах</translation>
-```
-
-```
-        <source>(change)</source>
-        <translation>(ѳѳрчлѳх)</translation>
-    
-YES - The translation of "change" as "ѳѳрчлѳх" is incorrect in the context of Bitcoin transactions. In Bitcoin, "change" refers to the unspent output returned to the sender. A more accurate translation would be "(хаягдал)" or "(буцаалт)".
-(хаягдал)
+A more accurate translation would be:  
+"Ѳѳрчлѳлийг хуулах"  
+(where "хуулах" means "to copy" and "Ѳѳрчлѳл" means "change" in the context of amounts).
 ```
 
 ```
@@ -117,8 +95,11 @@ YES - The translation of "change" as "ѳѳрчлѳх" is incorrect in the contex
         <extracomment>Tooltip text for button that allows you to paste an address that is in your clipboard.</extracomment>
         <translation>Копидсон хаягийг буулгах</translation>
     
-YES, The translation is inaccurate. The Mongolian word "Копидсон" means "copied" but it should be "Clipboard". Also, the word "хаягийг" means "address" but it should be "address from". The word "буулгах" means "paste" but it should be "paste address". The correct translation should be "Clipboard-оос хаяг буулгах".
-Clipboard-оос хаяг буулгах
+YES
+The translation "Копидсон хаягийг буулгах" is problematic. The word "Копидсон" is a transliteration and does not correspond to the proper Mongolian word for "clipboard." Additionally, "буулгах" means "to unload" or "to bring down," which is not the correct verb for "paste" in this context.
+
+Correct translation:
+Тавиурнаас хаягыг наах
 ```
 
 ```
@@ -126,92 +107,92 @@ Clipboard-оос хаяг буулгах
         <extracomment>Text explaining that the settings changed will not come into effect until the client is restarted.</extracomment>
         <translation>Ѳѳрчлѳлтүүдийг идэвхижүүлхийн тулд клиентийг ахин эхлүүлэх шаардлагтай</translation>
     
-YES, The translation uses archaic Cyrillic characters ("Ѳ") which are not standard in modern Mongolian. The correct characters should be "Ө".
-Өөрчлөлтүүдийг идэвхижүүлэхийн тулд клиентийг ахин эхлүүлэх шаардлагатай.
+YES
+The translation has a typo: "шаардлагтай" should be "шаардлагатай". Also, there is a missing period at the end, which is present in the source text.
+
+Correct translation:
+Ѳѳрчлѳлтүүдийг идэвхижүүлхийн тулд клиентийг ахин эхлүүлэх шаардлагатай.
 ```
 
 ```
         <source>This change would require a client restart.</source>
         <translation>Энэ ѳѳрчлѳлтийг оруулахын тулд кли1нт програмыг ахин эхлүүлэх шаардлагтай</translation>
     
-YES, The translation contains an error in the word "кли1нт" which should be "клиент".
-Энэ ѳѳрчлѳлтийг оруулахын тулд клиент програмыг ахин эхлүүлэх шаардлагатай.
-```
+YES  
+There is a typo in the translation: "кли1нт" should be "клиент". Also, the word "шаардлагтай" should be "шаардлагатай".  
 
-```
-        <source>N/A</source>
-        <translation>Алга Байна</translation>
-    
-YES
-The Mongolian translation "Алга Байна" means "Going Away" or "Disappeared". This is not an appropriate translation for "N/A" in the context of Bitcoin. "N/A" typically signifies "Not Available" or "Not Applicable".
-
-A more accurate translation for "N/A" in Mongolian would be:
-
-- **Боломжгүй** (Bolomjgüi) - meaning "Not possible" or "Unavailable"
-- **Хэрэглэх боломжгүй** (Kherglekh bolomjgüi) - meaning "Not usable" or "Not applicable"
-- **Оюунгүй** (Oyuungüi) - meaning "Not available" (less common, but can be used)
-
-For the specific context of Bitcoin, where "N/A" might indicate data that isn't present or applicable, "Боломжгүй" is likely the most fitting.
-
-Correct translation: Боломжгүй
+Correct translation:  
+Энэ өөрчлөлтийг оруулахын тулд клиент програмыг ахин эхлүүлэх шаардлагатай.
 ```
 
 ```
         <source>Copy change</source>
         <translation>Ѳѳрчлѳлтийг санах</translation>
     
-YES. The translation is inaccurate and does not convey the meaning of "Copy change" in the context of Bitcoin. The Mongolian translation seems to mean "Remember the change" or "Memorize the change," which is not the intended action of copying a value.
+YES  
+The translation "Ѳѳрчлѳлтийг санах" means "remember the change," which is incorrect for the Bitcoin context. The English phrase "Copy change" refers to copying the change amount (the leftover amount in a transaction), not memorizing or recalling it.
 
-The correct translation for "Copy change" in a Bitcoin context would be:
-
-<translation>Өөрчлөлтийг хуулах</translation>
+A more accurate translation would be:  
+"Ѳѳрчлѳлийг хуулах"  
+(where "хуулах" means "to copy" and "Ѳѳрчлѳл" means "change" in the context of amounts).
 ```
 
 ```
         <source>Paste address from clipboard</source>
         <translation>Копидсон хаягийг буулгах</translation>
     
-YES, the translation is problematic because it uses an incorrect word for "paste". The correct word for "paste" in Mongolian in this context is "буулгах" (buulgah), not "копидсон" (kopidson), which means "copied".
+YES
+The translation contains a non-Mongolian script word "Копидсон," which appears to be a transliteration of "copied" but is inappropriate and unidiomatic in Mongolian. The phrase "Paste address from clipboard" should be translated in clear Mongolian without mixing Cyrillic transliteration of English words.
 
-NO
+Correct translation:
+Хаягийг самбарнаас наах
 ```
 
 ```
         <source>Paste address from clipboard</source>
         <translation>Копидсон хаягийг буулгах</translation>
     
-YES, the translation is problematic because it uses an incorrect word for "paste". The correct word for "paste" in Mongolian in this context is "буулгах" (buulgah), not "копидсон" (kopidson), which means "copied".
+YES
+The translation contains a non-Mongolian script word "Копидсон," which appears to be a transliteration of "copied" but is inappropriate and unidiomatic in Mongolian. The phrase "Paste address from clipboard" should be translated in clear Mongolian without mixing Cyrillic transliteration of English words.
 
-NO
+Correct translation:
+Хаягийг самбарнаас наах
 ```
 
 ```
         <source>Transaction ID</source>
         <translation>Тодорхойлолт</translation>
     
-YES, The translation of "Transaction ID" to "Тодорхойлолт" is incorrect and misleading in the context of Bitcoin. "Тодорхойлолт" means "Description" or "Definition". The correct translation for "Transaction ID" in Mongolian is "Гүйлгээний дугаар" or "Транзакцын дугаар".
-NO, Гүйлгээний дугаар
+YES
+The translation "Тодорхойлолт" means "Description" or "Definition," which is incorrect for "Transaction ID." The correct translation for "Transaction ID" in Mongolian should be "Гүйлгээний ID" or "Гүйлгээний дугаар."
+
+Correct translation:
+<translation>Гүйлгээний ID</translation>
 ```
 
 ```
         <source>Received with</source>
         <translation>Хүлээн авсан хаяг</translation>
     
-YES, The translation is inaccurate and does not convey the intended meaning. The English phrase "Received with" in a Bitcoin context typically refers to how an amount was received (e.g., "Received with thanks"). The provided Mongolian translation "Хүлээн авсан хаяг" translates to "Received address," which is not a meaningful phrase in this context.
+YES  
+The translation "Хүлээн авсан хаяг" means "Received address," which introduces "address" explicitly, but the source text "Received with" is incomplete on its own and likely meant to be followed by something (e.g., "Received with address" or "Received with label"). Translating it as "Хүлээн авсан хаяг" may misrepresent or prematurely specify the meaning by adding "address."
 
-The correct translation should reflect the idea of receiving something. Without further context, a direct and neutral translation of "Received with" is difficult, but it likely implies a positive or neutral reception.
+A better translation that captures "Received with" as a standalone phrase without adding extra words would be:  
+"Хүлээн авсан"  
 
-Correct Translation: Хүлээн авсан
+If more context is needed (e.g., "Received with address"), it should be included in the source or translated accordingly.
 ```
 
 ```
         <source>Received with</source>
         <translation>Хүлээн авсан хаяг</translation>
     
-YES, The translation is inaccurate and does not convey the intended meaning. The English phrase "Received with" in a Bitcoin context typically refers to how an amount was received (e.g., "Received with thanks"). The provided Mongolian translation "Хүлээн авсан хаяг" translates to "Received address," which is not a meaningful phrase in this context.
+YES  
+The translation "Хүлээн авсан хаяг" means "Received address," which introduces "address" explicitly, but the source text "Received with" is incomplete on its own and likely meant to be followed by something (e.g., "Received with address" or "Received with label"). Translating it as "Хүлээн авсан хаяг" may misrepresent or prematurely specify the meaning by adding "address."
 
-The correct translation should reflect the idea of receiving something. Without further context, a direct and neutral translation of "Received with" is difficult, but it likely implies a positive or neutral reception.
+A better translation that captures "Received with" as a standalone phrase without adding extra words would be:  
+"Хүлээн авсан"  
 
-Correct Translation: Хүлээн авсан
+If more context is needed (e.g., "Received with address"), it should be included in the source or translated accordingly.
 ```
 </details>

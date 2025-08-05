@@ -10,147 +10,133 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 
 
 ```
-        <source>Exporting Failed</source>
-        <translation>Экспартаванне няўдалае</translation>
-    
-YES, The Belarusian translation "Экспартаванне няўдалае" is a literal and awkward translation of "Exporting Failed". While understandable, it's not natural-sounding Belarusian. A more idiomatic translation would be "Не атрымалася экспартаваць" (It was not possible to export) or "Памылка экспартавання" (Exporting error).
-
-Correct translation: Памылка экспартавання
-```
-
-```
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>Гэтая аперацыя патрабуе кодавую фразу, каб рзблакаваць гаманец.</translation>
     
-YES: The Belarusian translation contains a typo ("рзблакаваць" should be "разблакаваць").
-NO
+YES
+There is a typo in the translation: "рзблакаваць" should be "разблакаваць". Also, to be fully accurate and natural in Belarusian, "патрэбна" is preferable over "патрабуе", but "патрабуе" is still understandable. For clarity, the direct translation should also refer to "вашага гаманца" ("your wallet") for completeness, since the English mentions "your wallet passphrase".
+
+Correct translation:
+Гэтая аперацыя патрабуе вашу кодавую фразу для разблакавання гаманца.
 ```
 
 ```
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
         <translation>Падпісаць паведамленне з дапамогай Біткойн-адраса каб даказаць, што яно належыць вам</translation>
     
-YES, The translation is inaccurate and potentially misleading. The original English sentence implies signing *multiple* messages with *multiple* Bitcoin addresses to prove ownership of *all* of them. The Belarusian translation, however, suggests signing *one* message with *one* Bitcoin address to prove ownership of *that message* (which doesn't make sense in the context of proving address ownership).
+YES
+The translation inaccurately uses the singular form "паведамленне" (message) instead of the plural "паведамленні" (messages) from the source. Also, it says "што яно належыць вам" (that it belongs to you), which refers to "message" (but in reality, the address/ownership is being proven), not the address. The wording could be clearer and more accurate.
 
-Correct translation: Падпісвайце паведамленні вашымі Біткойн-адрасамі, каб даказаць, што яны належаць вам.
+Correct translation:
+Падпісвайце паведамленні сваімі Біткойн-адрасамі, каб даказаць, што яны належаць вам
+
+OR
+
+Падпісвайце паведамленні сваімі Біткойн-адрасамі, каб даказаць, што вы імі валодаеце
 ```
 
 ```
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
         <translation>Спраўдзіць паведамленне з дапамогай Біткойн-адраса каб даказаць, што яно належыць вам</translation>
     
-YES - The translation is inaccurate and does not convey the meaning of the source text. The source text is about verifying messages using Bitcoin addresses, while the translation suggests using a Bitcoin address to prove ownership of a message. The translation also misses the plural "addresses" from the source.
-The correct translation should be: "Verify messages to ensure they were signed with specified Bitcoin addresses"
-Correct translation: "Праверце паведамленні, каб пераканацца, што яны былі падпісаны з указаных біткойн-адрасоў"
+YES
+The translation is inaccurate. The source refers to verifying messages to ensure they were signed with specified Bitcoin addresses, not about proving ownership of a message. Additionally, "message" should be plural, and the purpose (ensuring they were signed with specified Bitcoin addresses) should be kept.
+
+Correct translation:
+Правярайце паведамленні, каб пераканацца, што яны былі падпісаны пазначанымі Біткойн-адрасамі
 ```
 
 ```
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
         <translation>Запатрабаваць плацёж (генеруецца QR-код для біткойн URI)</translation>
     
-YES - The translation is grammatically incorrect and missing the plural form of "QR codes" and the singular form of "Bitcoin URIs". Additionally, the phrase "bitcoin: URIs" is not translated correctly. The correct translation should be "Запытваць плацяжы (стварае QR-коды і біткойн: URI)".
+YES  
+The translation is mostly correct, but the Belarusian translation uses "генеруецца" (is generated) in the passive voice, while the English uses the active "generates" and also mentions both "QR codes" (plural) and "bitcoin: URIs" (plural). The translation only refers to generating a single QR-code for "біткойн URI" (singular), missing the plural and the fact that it generates both QR-codes and URIs, not just one QR code for a URI.
+
+Correct translation:  
+Запатрабаваць плацяжы (генеруе QR-коды і bitcoin: URI)
 ```
 
 ```
         <source>%1 behind</source>
         <translation>%1 таму</translation>
     
-YES, The translation is problematic. The Belarusian translation "%1 таму" does not accurately convey the meaning of "%1 behind" in the context of Bitcoin. In Bitcoin, "behind" typically refers to the number of confirmations a transaction has received, meaning it's still waiting to be fully processed. "%1 таму" translates to "%1 ago" which is related to time, not confirmation status. A more appropriate translation would be related to confirmations or blocks.
+YES
+The translation "%1 таму" is incorrect. The phrase "%1 behind" in the context of Bitcoin typically means that something is lagging or behind by %1 blocks/units/etc. The word "таму" means "therefore" or "so" in Belarusian, which is not a correct translation of "behind."
 
-Correct translation: %1 пацверджанняў
+Correct translation:
+%1 ззаду
+
+Alternatively, if it's about being behind by (e.g., blocks), a more contextually accurate translation would be:
+%1 адстае
+
+So the most neutral would be:
+%1 ззаду
 ```
 
 ```
         <source>Transactions after this will not yet be visible.</source>
         <translation>Транзакцыи пасля гэтай не будуць бачныя.</translation>
     
-YES: The Belarusian translation uses an archaic spelling of "Transactions" ("Транзакцыи" instead of the modern "Транзакцыі"). Also, the word order feels slightly unnatural. A more natural translation would be "Транзакцыі пасля гэтай яшчэ не будуць бачныя."
-NO: Транзакцыі пасля гэтай яшчэ не будуць бачныя.
+YES
+The translation is problematic: there is a typo in the word "Транзакцыи" (should be "Транзакцыі"), and "після гэтай" is inaccurate; more accurate would be "пасля гэтага". Also, "will not yet be visible" translates better as "яшчэ не будуць бачныя" to reflect "not yet". 
+
+Correct translation:
+Транзакцыі пасля гэтага яшчэ не будуць бачныя.
 ```
 
 ```
         <source>Sent transaction</source>
         <translation>Дасланыя транзакцыі</translation>
     
-YES: The translation is plural ("transactions") while the source is singular ("transaction").
-The correct translation should be "Дасланая транзакцыя".
+YES
+The translation "Дасланыя транзакцыі" means "Sent transactions" (plural) in Belarusian, while the source is "Sent transaction" (singular). The translation should match the singular form.
+
+Correct translation:
+Дасланая транзакцыя
 ```
 
 ```
         <source>Incoming transaction</source>
         <translation>Прынятыя транзакцыі</translation>
     
-YES - The translation is incorrect and does not convey the meaning of "Incoming transaction". The Belarusian phrase "Прынятыя транзакцыі" translates to "Accepted transactions".
-The correct translation for "Incoming transaction" would be "Уваходная транзакцыя".
+YES
+The translation uses the plural form "Прынятыя транзакцыі" ("Accepted transactions" or "Received transactions"), while the source is singular: "Incoming transaction." The translation should mirror the singular.
+
+Correct translation:
+Прыходная транзакцыя
 ```
 
 ```
         <source>Received with label</source>
         <translation>Прыняць праз метку</translation>
     
-YES, The translation is not accurate for the context of Bitcoin. "Received with label" in Bitcoin usually means that an amount was received and associated with a specific label or tag in a wallet. The provided translation "Прыняць праз метку" means "Accept via label," which is not the correct meaning. A more accurate translation would be "Атрымана з пазнакай".
-Атрымана з пазнакай
-```
+YES  
+The translation "Прыняць праз метку" is incorrect. The English phrase "Received with label" refers to items that have been received and are associated with a specific label, often seen in transaction lists. The translation "Прыняць праз метку" reads as "Receive via label", which does not convey the intended meaning. The correct translation should better reflect the idea of items received that have a label.
 
-```
-        <source>Copy after fee</source>
-        <translation>Капіяваць з выняткам камісіі</translation>
-    
-YES, The translation is problematic. The word "Copy" is translated as "Капіяваць", which means "to copy", but the phrase "Copy after fee" implies copying the amount *excluding* the fee. The translation "Капіяваць з выняткам камісіі" literally means "Copy with the exclusion of the fee". A more accurate translation would be "Капіяваць без камісіі" which means "Copy without the fee".
-
-NO
-```
-
-```
-        <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation>Каталог ужо існуе. Дадайце %1 калі вы збіраецеся стварыць тут новы каталог.</translation>
-    
-YES, The translation is problematic as it translates "Add %1" to "Дадайце %1" which is not a suitable translation in this context. The meaning of "add" here is to append something to the directory name or path, not to add an item. The correct translation should reflect this.
-
-NO, Каталог ужо існуе. Дадайце %1, калі вы збіраецеся стварыць тут новы каталог.
-```
-
-```
-        <source>Copy after fee</source>
-        <translation>Капіяваць з выняткам камісіі</translation>
-    
-YES, The translation is problematic. The word "Copy" is translated as "Капіяваць", which means "to copy", but the phrase "Copy after fee" implies copying the amount *excluding* the fee. The translation "Капіяваць з выняткам камісіі" literally means "Copy with the exclusion of the fee". A more accurate translation would be "Капіяваць без камісіі" which means "Copy without the fee".
-
-NO
+Correct translation:  
+Атрымана з меткай
 ```
 
 ```
         <source>Transaction ID</source>
         <translation>ID</translation>
     
-YES: The translation is too brief and does not accurately convey the meaning of "Transaction ID". The correct translation should include the word "transaction".
+YES
+The translation is incomplete; "Transaction ID" should be translated fully into Belarusian, not just "ID". 
 
-Correct translation: Transaction ID
-```
-
-```
-        <source>Confirmed (%1 confirmations)</source>
-        <translation>Пацверджана (%1 пацверджанняў)</translation>
-    
-YES. The translation uses an incorrect grammatical form for "confirmations". It should be the genitive plural.
-
-Correct translation: Пацверджана (%1 пацверджання)
-```
-
-```
-        <source>Exporting Failed</source>
-        <translation>Экспартаванне няўдалае</translation>
-    
-YES, The Belarusian translation "Экспартаванне няўдалае" is a literal and awkward translation of "Exporting Failed". While understandable, it's not natural-sounding Belarusian. A more idiomatic translation would be "Не атрымалася экспартаваць" (It was not possible to export) or "Памылка экспартавання" (Exporting error).
-
-Correct translation: Памылка экспартавання
+Correct translation:
+Ідэнтыфікатар транзакцыі
 ```
 
 ```
         <source>Error initializing wallet database environment %s!</source>
         <translation>Памалка ініцыялізацыі асяроддзя базы звестак гаманца %s!</translation>
     
-YES, The Belarusian word for "Error" is spelled incorrectly. The correct spelling is "Памылка".
- Памылка ініцыялізацыі асяроддзя базы звестак гаманца %s!
+YES
+The translation contains an error: "Памалка" is a typo and should be "Памылка", which means "Error" in Belarusian. The rest of the translation is accurate and retains the format specifier %s.
+
+Correct translation:
+Памылка ініцыялізацыі асяроддзя базы звестак гаманца %s!
 ```
 </details>

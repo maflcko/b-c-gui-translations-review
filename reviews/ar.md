@@ -10,184 +10,183 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 
 
 ```
-        <source>%1 didn't yet exit safely…</source>
-        <translation>‫%1 لم يغلق بامان بعد…‬</translation>
-    
-YES, The translation is problematic. The Arabic word "يغلق" (yaghliq) which means "to close" is not the correct translation for "exit" in this context. The sentence implies that a process or application is not safely shutting down, not that it's not closing safely.
-
-The correct translation should use a verb that conveys the meaning of safely leaving or exiting a state.
-
-Correct translation: ‫%1 لم يخرج بأمان بعد…‬
-```
-
-```
         <source>Block Relay</source>
         <extracomment>Peer connection type that relays network information about blocks and not transactions or addresses.</extracomment>
         <translation>‫موصل طابق‬</translation>
     
-YES
-The translation is incorrect. "Block Relay" refers to relaying information about blocks, not a "floor connector". The Arabic word "طابق" means "floor" or "level".
+YES  
+The translation "‫موصل طابق‬" is incorrect and does not convey the meaning of "Block Relay." "موصل" means "connector" and "طابق" means "floor" or "level," which is unrelated to the Bitcoin context. The correct translation for "Block Relay" in the context of relaying block data should be "توصيل الكتل" or "إعادة توصيل الكتل."
 
-NO
-```
-
-```
-        <source>Feeler</source>
-        <extracomment>Short-lived peer connection type that tests the aliveness of known addresses.</extracomment>
-        <translation>‫تفقدي‬</translation>
-    
-YES: The translation is too literal and doesn't capture the technical meaning of "feeler" in the context of Bitcoin P2P network connections. A "feeler" is a type of probe or test connection.
-
-Correct translation: ‫مستطلع‬
+Correct translation:  
+توصيل الكتل
 ```
 
 ```
         <source>Show information about Qt</source>
         <translation>اظهر المعلومات</translation>
     
-YES - The translation is incomplete. It omits the word "Qt".
-Correct translation: اظهر معلومات عن Qt
+YES  
+The translation is incomplete and does not accurately convey the full meaning of the source text. The source requests showing information "about Qt," but the translation simply says "Show the information" without specifying "about Qt." The keyword "Qt" should be included to maintain context.
+
+Correct translation:  
+اظهر المعلومات عن Qt
 ```
 
 ```
         <source>Modify configuration options for %1</source>
         <translation>تغيير خيارات الإعداد لأساس ل%1</translation>
     
-YES
-The Arabic translation incorrectly includes the word "أساس" which means "foundation" or "basis" and is not relevant to the context of modifying configuration options.
-Correct translation: تعديل خيارات الإعداد لـ %1
+YES  
+The translation contains an erroneous phrase "لأساس ل%1" which does not make sense in Arabic. The phrase "for %1" should be correctly translated as "لـ%1" without the extra words. The correct translation is:  
+تغيير خيارات الإعداد لـ%1
 ```
 
 ```
         <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
         <translation>%1 اتصال نشط بشبكة البيتكوين</translation>
     
-YES: The Arabic translation is inaccurate and does not convey the original meaning. The English text states that a proxy is enabled and provides a value '%1'. The Arabic translation says '%1 is connected to the Bitcoin network', which is a misinterpretation.
+YES
+The translation does not accurately reflect the original text. The source means "Proxy is <b>enabled</b>: %1", indicating that the proxy is enabled and then shows the proxy info (%1). The given translation means "%1 active connection to the Bitcoin network," which changes the meaning and omits the information about the proxy being enabled.
 
-Correct translation: الوكيل &lt;b&gt;مُمَكَّن&lt;/b&gt;: %1
+Correct translation:
+"الوكيل &lt;b&gt;مفعل&lt;/b&gt;: %1"
 ```
 
 ```
         <source>Change Passphrase…</source>
         <translation>وتغيير العبارات...</translation>
     
-YES, The translation is problematic. The word "Passphrase" has been translated to "العبارات" which means "phrases" or "statements" and is not an accurate translation in the context of Bitcoin security. The correct translation should reflect the meaning of a "passphrase" used to protect a Bitcoin wallet or private key.
+YES  
+The translation is incomplete and inaccurate. The source "Change Passphrase…" means "تغيير عبارة المرور…" or "تغيير كلمة المرور…". The current translation "وتغيير العبارات..." starts with a conjunction "و" (and) which is unnecessary and incorrect here, and "العبارات" (phrases) is plural and doesn't fit well. Also, the ellipsis in Arabic should be the proper Unicode character (…).
 
-The correct translation for "Change Passphrase…" in the context of Bitcoin is:
-تغيير عبارة المرور...
+Correct translation:  
+تغيير عبارة المرور…
 ```
 
 ```
         <source>Sign message…</source>
         <translation>علامة ورسالة...</translation>
     
-YES
-The translation is inaccurate and uses an incorrect word order. The English phrase "Sign message…" means to sign a message, not to mark and message.
-Correct translation: رسالة التوقيع...
+YES  
+The translation "علامة ورسالة..." is incorrect. It translates back as "Sign and message..." which does not convey the intended meaning of "Sign message…". The correct translation should convey the imperative or action of signing a message, such as:
+
+وقع الرسالة…
 ```
 
 ```
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
         <translation>وقَع الرسائل بواسطة ال: Bitcoin الخاص بك لإثبات امتلاكك لهم</translation>
     
-YES - The Arabic translation is grammatically incorrect and omits the word "addresses". The colon after "ال" is also misplaced.
+YES  
+The translation contains unnecessary spacing and an incorrect article usage before "Bitcoin". The colon after "ال" is incorrect and "Bitcoin" should not be separated with colons or spaces. Additionally, "ال" should not be used before "Bitcoin" here; it is better to say "عناوين البيتكوين الخاصة بك" for "your Bitcoin addresses". Also, "امتلاكك لهم" should refer to "عناوين" which is feminine plural, so "امتلاكك لها" is preferred.  
 
-Correct translation: وقّع الرسائل باستخدام عناوين البيتكوين الخاصة بك لإثبات ملكيتك لها
+Correct translation:  
+وقّع الرسائل بعناوين البيتكوين الخاصة بك لإثبات امتلاكك لها
 ```
 
 ```
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
         <translation>تحقق من الرسائل للتأكد من أنَها وُقعت برسائل Bitcoin محدَدة</translation>
     
-YES - The translation is inaccurate and problematic. The Arabic word "رسائل" (rasa'il) which means "messages" is repeated unnecessarily and incorrectly in the translation. The phrase "specified Bitcoin addresses" should be translated as "عناوين بيتكوين محددة" (anawin Bitcoin muhaddadah).
+YES  
+The translation contains an error in the last phrase: "وُقعت برسائل Bitcoin محدَدة" literally means "signed with specified Bitcoin messages," which is incorrect. It should say "signed with specified Bitcoin addresses" to match the source. The word "addresses" is "عناوين" in Arabic.  
 
-Correct translation: تحقق من الرسائل للتأكد من أنها وُقعت بعناوين بيتكوين محددة
+Correct translation:  
+تحقق من الرسائل للتأكد من أنها وُقعت بعناوين Bitcoin محددة
 ```
 
 ```
         <source>Open URI…</source>
         <translation>فتح ورابط...</translation>
     
-YES
-The translation is inaccurate and grammatically incorrect. It translates "Open URI…" to "Open and links..." which does not convey the intended meaning.
-Correct translation: فتح URI...
+YES  
+The translation is incorrect. The word "ورابط" is not suitable here and seems to be a typo or misinterpretation. The English "Open URI…" should be translated as "فتح عنوان URI…" or simply "فتح URI…" because URI (Uniform Resource Identifier) is often transliterated or left as is. The ellipsis character … should also be the correct single character, not three dots or mixed characters.
+
+Correct translation:  
+فتح URI…
 ```
 
 ```
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
         <translation>‫أطلب مدفوعات (أنشئ رموز استجابة (QR Codes) وعناوين بتكوين)‬</translation>
     
-YES: The translation is problematic because it incorrectly translates "bitcoin: URIs" as "عناوين بتكوين" (Bitcoin addresses). The original text refers to URIs (Uniform Resource Identifiers) which are a type of web address, not Bitcoin addresses themselves. The correct translation should reflect the concept of "bitcoin URIs".
+YES
+The translation inaccurately translates "Request payments" as "أطلب مدفوعات" which feels like an imperative ("Order payments") rather than the noun phrase "Request payments" referring to a feature or command label in the software. Also, "QR Codes" should consistently be in Arabic or clear with "رموز QR" rather than mixing English and Arabic parentheses. The phrase "bitcoin: URIs" is translated as "عناوين بتكوين" which means "Bitcoin addresses," but it should refer to "bitcoin: URIs" indicating URI links, not just addresses.
 
-Correct translation: ‫أطلب مدفوعات (أنشئ رموز استجابة (QR Codes) و URIs بتكوين)‬
+A more accurate translation preserving the meaning and technical terms would be:
+
+‫طلب المدفوعات (يُنشئ رموز QR وروابط bitcoin:)‬
+
+This uses the noun phrase "طلب المدفوعات" and translates "generates" properly with "يُنشئ"، "QR codes" as "رموز QR" and keeps "bitcoin:" as is to reflect the URI scheme.
+
+Correct translation:
+‫طلب المدفوعات (يُنشئ رموز QR وروابط bitcoin:)‬
 ```
 
 ```
         <source>Show the list of used receiving addresses and labels</source>
         <translation>‫عرض قائمة العناوين المستلمة والمذكرات (المستخدمة سابقا)‬</translation>
     
-YES: The translation incorrectly translates "used" as "used before" and omits the word "labels" from the translation. The word "labels" is present in the source text but missing from the translation.
+YES  
+The Arabic translation contains an unnecessary use of parentheses and a slight awkwardness in phrasing. The source mentions "used receiving addresses and labels," so "used" should clearly refer to both addresses and labels, not be an afterthought. Also, "مذكرات" means "notes" or "memoranda," which is not equivalent to "labels" in the Bitcoin context. A better translation for "labels" in Bitcoin context is "تسميات".
 
-The correct translation should be: ‫عرض قائمة العناوين المستلمة والتسميات (المستخدمة)‬
-```
-
-```
-        <source>%1 behind</source>
-        <translation>‫متأخر‬ %1</translation>
-    
-YES - The translation is inaccurate and problematic. The Arabic translation does not convey the intended meaning of "%1 behind" in the context of Bitcoin. It translates to "behind %1" which is grammatically incorrect and nonsensical.
-
-Correct translation: %1 خلف
+Correct translation:  
+‫عرض قائمة العناوين المستلمة والتسميات المستخدمة‬
 ```
 
 ```
         <source>Last received block was generated %1 ago.</source>
         <translation>‫آخر طابق مستلم تم بناءه قبل %1.</translation>
     
-YES: The translation uses "طابق" which means "floor" or "level" instead of "block". The correct translation should use "كتلة" for block.
+YES  
+The Arabic word "طابق" means "floor" (as in building floors), which is incorrect in this context. The correct word should be "كتلة" meaning "block" (in the blockchain context). Also, the phrase "قبل %1" is awkward here; a better phrasing is "منذ %1" to mean "ago %1." Additionally, the formatting and spacing should be fixed.
 
-The English text is: "Last received block was generated %1 ago."
-The Arabic text is: "آخر طابق مستلم تم بناءه قبل %1."
-
-The problematic word is "طابق" which means "floor". The correct word for "block" in this context is "كتلة".
-
-Corrected translation:
-‫آخر كتلة مستلمة تم إنشاؤها قبل %1.</translation>
+Correct translation:  
+‫آخر كتلة مستلمة تم إنشاؤها منذ %1.
 ```
 
 ```
         <source>Change:</source>
         <translation>تعديل:</translation>
     
-YES, The translation is incorrect. "Change:" in the context of Bitcoin refers to the remaining amount after a transaction, not an edit or modification.
-The correct translation is:
-تغيير:
+YES  
+The English term "Change" in the Bitcoin context refers to the amount of leftover bitcoins returned to the sender after a transaction, not a general term like "تعديل" which means "edit" or "modification."  
+A more accurate translation would be:  
+"الباقي:" or "المتبقي:" or simply "المبلغ المتبقي:" depending on the preferred terminology in Bitcoin Arabic translations.  
+Recommended correction:  
+<translation>المتبقي:</translation>
 ```
 
 ```
         <source>Received with label</source>
         <translation>‫استُلم وله مذكرة‬</translation>
     
-YES: The translation "استُلم وله مذكرة" (received and it has a note) is grammatically incorrect and unnatural for the context of receiving Bitcoin with a label. A more accurate and natural translation would be "تم الاستلام مع تسمية" (received with a label).
-The correct translation is: ‫تم الاستلام مع تسمية‬
+YES  
+The translation "‫استُلم وله مذكرة‬" is somewhat awkward and inaccurate. The phrase "Received with label" in the Bitcoin context usually means something like "Received [payment] with a label," where "label" refers to a tag or identifier for the transaction or address.
+
+The word "وله" here is incorrect; it means "and he has" or "for him," which does not fit. "مذكرة" means "note" or "memo," but the better term in this context is "تسمية" (label) or "وصف" (description).
+
+A more accurate and natural translation would be:
+
+"مُستلم مع التسمية"  
+or  
+"تم الاستلام مع التسمية"
+
+Either is acceptable, but the first is more concise.
+
+Correct translation:  
+مُستلم مع التسمية
 ```
 
 ```
         <source>(change)</source>
         <translation>(تغير)</translation>
     
-YES - The translation of "(change)" to "(تغير)" is a literal translation and does not accurately reflect the Bitcoin context. In Bitcoin, "change" refers to the remaining unspent transaction output (UTXO) that is returned to the sender. The Arabic word "تغير" means "change" in a general sense (like a change in state or a coin), but it does not convey the specific technical meaning of Bitcoin change. The correct translation should reflect the concept of "Baqaya" or "Al-Baqaaya" which refers to the remaining amount or change in transactions.
+YES  
+The English word "change" in the context of Bitcoin transactions typically refers to "الباقي" or "المبلغ الباقي" (the leftover amount returned to the sender), not the general term "تغير" which means "change" as in alteration or transformation.  
 
+Correct translation:  
 (الباقي)
-```
-
-```
-        <source>Options set in this dialog are overridden by the command line:</source>
-        <translation>‫التفضيلات المعينة عن طريق سطر الأوامر لها أولوية أكبر وتتجاوز التفضيلات المختارة هنا:‬</translation>
-    
-YES: The translation conveys the meaning of the original English sentence but uses a more verbose and less direct phrasing. The phrase "لها أولوية أكبر وتتجاوز" (has greater priority and overrides) is a bit redundant. A more concise and direct translation would be better.
-
-Correct translation: ‫تُستخدم خيارات سطر الأوامر لتجاوز الخيارات المعينة في هذا الحوار:‬
 ```
 
 ```
@@ -195,47 +194,32 @@ Correct translation: ‫تُستخدم خيارات سطر الأوامر لتج
         <translation>‫اختصار تخزين الطابق</translation>
     
 YES
-The translation is erroneous. The Arabic word for "block" is "كتلة" and the Arabic word for "storage" is "تخزين". "طابق" means "floor".
+The Arabic translation of "Prune block storage to" is incorrect and does not convey the intended meaning. The term "اختصار" means "shortcut" rather than "prune" or "reduce," and "الطابق" means "floor" rather than "block." In the context of Bitcoin, "block" refers to a data block, not a physical floor.
 
-The correct translation is:
-‫تقليم تخزين الكتلة إلى‬
+A more accurate translation would be:
+"تقليص تخزين الكتل إلى"
 ```
 
 ```
         <source>Reverting this setting requires re-downloading the entire blockchain.</source>
         <translation>‫العودة الى هذا الاعداد تتطلب إعادة تنزيل الطوابق المتتالية بالكامل.‬</translation>
     
-YES: The Arabic translation incorrectly uses "الطوابق المتتالية" (consecutive floors) which is not a valid translation for "blockchain" in the context of Bitcoin. The correct term is "سلسلة الكتل".
+YES  
+The translation contains an error in the term "الطوابق المتتالية", which literally means "consecutive floors" instead of "blockchain". The correct translation for "blockchain" in Arabic is "سلسلة الكتل". Also, "العودة الى" should be written as "العودة إلى" with the correct hamza and preposition spacing.
 
-The Arabic translation should be:
-العودة إلى هذا الإعداد تتطلب إعادة تنزيل سلسلة الكتل بأكملها.
-```
-
-```
-        <source>Show tray icon</source>
-        <translation>‫اعرض الأيقونة في الزاوية‬</translation>
-    
-YES, The translation is too literal and doesn't convey the intended meaning of "tray icon" in a user interface context. In Arabic, a more appropriate translation would be "Show tray icon" which means "أظهر أيقونة شريط المهام".
-The correct translation is: ‫أظهر أيقونة شريط المهام‬
+Correct translation:  
+‫العودة إلى هذا الإعداد تتطلب إعادة تنزيل سلسلة الكتل بالكامل.‬
 ```
 
 ```
         <source>Third-party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
         <translation>‫عناوين أطراف أخرى (مثل: مستكشف الطوابق) تظهر في النافذة المبوبة للعمليات كخيار في القائمة المنبثقة. %s في الرابط تُستبدل بمعرف التجزئة. سيتم فصل العناوين بخط أفقي |.‬</translation>
     
-YES: The translation incorrectly translates "block explorer" as "مستكشف الطوابق" (floor explorer) instead of "مستكشف الكتل" (block explorer). Additionally, "transaction hash" is translated as "معرف التجزئة" which is acceptable, but "معرف المعاملة" is more contextually appropriate for Bitcoin transactions.
+YES  
+The term "مستكشف الطوابق" is incorrect; it translates to "floor explorer" instead of "block explorer." The correct term for "block explorer" in the Bitcoin context is "مستكشف الكتل." Also, "خط أفقي" literally means "horizontal line," but the source says "vertical bar," which should be translated as "علامة عمودية" or "الشريط العمودي." Additionally, "في الرابط" is acceptable but "في عنوان URL" would be more precise for "in the URL."
 
-Corrected translation:
-‫عناوين أطراف أخرى (مثل: مستكشف الكتل) تظهر في النافذة المبوبة للمعاملات كخيار في القائمة المنبثقة. %s في الرابط تُستبدل بمعرف المعاملة. سيتم فصل العناوين بخط أفقي |.‬
-```
-
-```
-        <source>Whether to show coin control features or not.</source>
-        <translation>‫ما اذا أردت إظهار ميزات التحكم في وحدات البتكوين أم لا.‬</translation>
-    
-YES - The translation uses the word "وحدات" which means "units" and is not the correct translation for Bitcoin. It should be "بيتكوين" instead of "وحدات البتكوين".
-
-The correct translation is: ‫ما اذا أردت إظهار ميزات التحكم في بيتكوين أم لا.‬
+Correct translation:  
+‫عناوين أطراف أخرى (مثل: مستكشف الكتل) تظهر في علامة التبويب العمليات كخيار في القائمة السياقية. %s في عنوان URL تُستبدل بمعرف التجزئة. يتم فصل العناوين بعلامة عمودية |.‬
 ```
 
 ```
@@ -243,142 +227,98 @@ The correct translation is: ‫ما اذا أردت إظهار ميزات الت
         <extracomment>Text explaining to the user that the client's current settings will be backed up at a specific location. %1 is a stand-in argument for the backup location's path.</extracomment>
         <translation>‫سيتم النسخ الاحتياطي للاعدادات على “%1”.‬".</translation>
     
-YES: The translation includes an unnecessary quotation mark at the end.
-‫سيتم النسخ الاحتياطي للإعدادات على "%1".‬
-```
+YES
+There is an extra closing quotation mark and period at the end of the Arabic translation causing a formatting error. Also, a more natural phrasing in Arabic would be:
 
-```
-        <source>Could not read setting "%1", %2.</source>
-        <translation>‫لا يمكن قراءة الاعدادات “%1”, %2.‬</translation>
-    
-YES: The Arabic translation incorrectly uses the plural form of "setting" ("الاعدادات") when the English source uses the singular form ("setting").
-
-Correct translation: ‫لا يمكن قراءة الإعداد "%1", %2.‬
-```
-
-```
-        <source>Signed %1 inputs, but more signatures are still required.</source>
-        <translation>‫تم توقيع %1 مدخلات، مطلوب توقيعات اضافية.‬</translation>
-    
-YES. The translation is problematic because it uses the wrong Arabic word for "inputs". The correct word is "مدخلات" and not "مدخل".
-
-Signed %1 inputs, but more signatures are still required.
-تم توقيع %1 مدخلات، مطلوب توقيعات إضافية.
-```
-
-```
-        <source>PSBT saved to disk.</source>
-        <translation>‫تم حفظ المعاملة الموقعة جزئيا على وحدة التخزين.‬</translation>
-    
-YES: The translation uses "المعاملة الموقعة جزئيا" which directly translates to "partially signed transaction". While a PSBT is a partially signed transaction, in the context of Bitcoin, it's generally referred to as a "PSBT" or "transaction builder". The current translation is a bit too literal and not the most common terminology.
-
-A more accurate and contextually appropriate translation would be:
-"تم حفظ PSBT على القرص."
+Correct translation:
+‫سيتم نسخ الإعدادات الحالية احتياطيًا في “%1”.‬
 ```
 
 ```
         <source>own address</source>
         <translation>عنوانه</translation>
     
-YES, the translation is problematic. The Arabic word "عنوانه" translates to "his address", which is not an accurate or complete translation of "own address". The possessive pronoun "his" is not implied in the English source.
-
-A more accurate translation would be "عنوان خاص بك" which means "your own address" or "العنوان الخاص" meaning "the own address".
-
-NO
+YES  
+The translation "عنوانه" literally means "his address," which is incorrect in this context. The source "own address" refers to "address owned by oneself" or "العنوان الخاص بي." A more appropriate translation would be:  
+"العنوان الخاص"  
+or simply  
+"العنوان الخاص بي"  
+if more explicit.
 ```
 
 ```
         <source>URI handling</source>
         <translation>التعامل مع العنوان</translation>
     
-YES
-The Arabic translation "التعامل مع العنوان" which translates to "Handling the Address" is not the most accurate translation for "URI handling" in the context of Bitcoin. "URI handling" refers to how the system manages Uniform Resource Identifiers, which can include Bitcoin payment URIs. A more appropriate translation would be "معالجة عنوان URI" or "التعامل مع معرفات URI".
+YES  
+The original English "URI handling" refers to managing or processing "Uniform Resource Identifiers," which are similar to URLs or addresses. The Arabic translation "التعامل مع العنوان" means "handling the address," which is less precise and may confuse users because "العنوان" usually means "address" in general, not specifically a URI.
 
-معالجة عنوان URI
-```
+A more accurate translation would be:  
+"معالجة URI"  
+or  
+"إدارة URI"  
+if you want to keep "URI" as is, which is common in technical contexts. Alternatively, you could write:  
+"التعامل مع معرّف الموارد الموحد (URI)"  
+but that may be too long.  
 
-```
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>'bitcoin://' هو ليس عنوان URL صالح. استعمل 'bitcoin:' بدلا من ذلك.</translation>
-    
-YES. The translation uses the word "عنوان URL" which translates to "URL address". While technically correct, it is redundant as URL itself implies an address. A more concise and natural translation would be "عنوان" which translates to "address".
-
-'bitcoin://' هو ليس عنوان URL صالح. استعمل 'bitcoin:' بدلا من ذلك.
-'bitcoin://' ليس عنوانًا صالحًا. استخدم 'bitcoin:' بدلاً من ذلك.
-```
-
-```
-        <source>Cannot process payment request because BIP70 is not supported.
-Due to widespread security flaws in BIP70 it's strongly recommended that any merchant instructions to switch wallets be ignored.
-If you are receiving this error you should request the merchant provide a BIP21 compatible URI.</source>
-        <translation>‫لا يمكن معالجة طلب الدفع لأن BIP70 غير مدعوم.
-‬‫‫‫نظرًا لوجود عيوب أمنية كبيرة في ‫BIP70 يوصى بشدة بتجاهل أي تعليمات من المستلمين لتبديل المحافظ.
-‬‫‫‫إذا كنت تتلقى هذا الخطأ ، يجب أن تطلب من المستلم تقديم عنوان URI متوافق مع BIP21.‬</translation>
-    
-YES: The translation mistakenly translates "merchant" as "المستلمين" (recipients) instead of "التاجر" (merchant). Additionally, the phrase "switch wallets" is translated as "تبديل المحافظ" which can be ambiguous and less precise than "تغيير المحافظ" (changing wallets) or "الانتقال إلى محافظ أخرى" (switching to other wallets) in this context.
-
-The correct translation should be:
-‫لا يمكن معالجة طلب الدفع لأن BIP70 غير مدعوم.
-‫‫‫نظرًا لوجود عيوب أمنية كبيرة في ‫BIP70 يوصى بشدة بتجاهل أي تعليمات من التاجر لتبديل المحافظ.
-‫‫‫إذا كنت تتلقى هذا الخطأ ، يجب أن تطلب من التاجر تقديم عنوان URI متوافق مع BIP21.
+Correct translation suggestion:  
+<translation>معالجة URI</translation>
 ```
 
 ```
         <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
         <translation>‫لا يمكن تحليل العنوان (URI)! يمكن أن يحدث هذا بسبب عنوان بتكوين غير صالح أو محددات عنوان غير صحيحة.‬</translation>
     
-YES, The word "address" is translated as "العنوان" which is a general term. In the context of Bitcoin, "address" can mean a Bitcoin wallet address. However, the source text refers to a URI, which is a Uniform Resource Identifier. The word "URI" is used in the source text, but it is translated as "العنوان" in the target text. It would be better to keep "URI" as it is or translate it more accurately to avoid confusion.
+YES  
+The translation incorrectly translates "URI parameters" as "محددات عنوان" which means "address parameters" instead of "URI parameters". Also, the Arabic word "بتكوين" should be "بتكوين" without unnecessary spaces, although this is minor. The original English emphasizes "URI parameters" (parameters of the URI), not "address parameters". A more accurate translation would be:  
 
-Here's a more accurate translation:
-YES, The word "address" is translated as "العنوان" which is a general term. In the context of Bitcoin, "address" can mean a Bitcoin wallet address. However, the source text refers to a URI, which is a Uniform Resource Identifier. The word "URI" is used in the source text, but it is translated as "العنوان" in the target text. It would be better to keep "URI" as it is or translate it more accurately to avoid confusion.
-
-Correct translation: ‫تعذر تحليل معرف الموارد الموحد (URI)! يمكن أن يحدث هذا بسبب عنوان بيتكوين غير صالح أو معلمات URI غير صحيحة.‬
+‫لا يمكن تحليل URI! قد يكون السبب عنوان بيتكوين غير صالح أو معلمات URI غير صحيحة.‬
 ```
 
 ```
         <source>Change:</source>
         <translation>تعديل:</translation>
     
-YES, The translation is incorrect. "Change:" in the context of Bitcoin refers to the remaining amount after a transaction, not an edit or modification.
-The correct translation is:
-تغيير:
+YES  
+The English term "Change" in the Bitcoin context refers to the amount of leftover bitcoins returned to the sender after a transaction, not a general term like "تعديل" which means "edit" or "modification."  
+A more accurate translation would be:  
+"الباقي:" or "المتبقي:" or simply "المبلغ المتبقي:" depending on the preferred terminology in Bitcoin Arabic translations.  
+Recommended correction:  
+<translation>المتبقي:</translation>
 ```
 
 ```
         <source>own address</source>
         <translation>عنوانه</translation>
     
-YES, the translation is problematic. The Arabic word "عنوانه" translates to "his address", which is not an accurate or complete translation of "own address". The possessive pronoun "his" is not implied in the English source.
-
-A more accurate translation would be "عنوان خاص بك" which means "your own address" or "العنوان الخاص" meaning "the own address".
-
-NO
+YES  
+The translation "عنوانه" literally means "his address," which is incorrect in this context. The source "own address" refers to "address owned by oneself" or "العنوان الخاص بي." A more appropriate translation would be:  
+"العنوان الخاص"  
+or simply  
+"العنوان الخاص بي"  
+if more explicit.
 ```
 
 ```
         <source>Export</source>
         <translation>و إستخرج</translation>
     
-YES: The word order is unnatural in Arabic. "Export" as a command should be translated to "صدّر" or "استخرج".
-صدّر
-```
+YES  
+The translation "و إستخرج" is incorrect for the single English word "Export." The word starts with the conjunction "و" meaning "and," which is unnecessary and incorrect here, and the verb form "إستخرج" means "extract" rather than the noun or command "Export." A better translation would be either:  
+- "تصدير" (the noun for "Export")  
+- or "تصدير" if used as a button label or command.
 
-```
-        <source>Error starting/committing db txn for wallet transactions removal process</source>
-        <translation>خطأ بدء/ارتكاب DB TXN لعملية إزالة معاملات المحفظة</translation>
-    
-YES - The translation is problematic because the word "committing" is mistranslated as "ارتكاب" which means "committing a crime". The correct translation should be "تثبيت" which means "committing" in the context of a database transaction.
-
-Correct Translation: خطأ بدء/تثبيت DB TXN لعملية إزالة معاملات المحفظة
+Correct translation:  
+تصدير
 ```
 
 ```
         <source>Invalid value detected for '-wallet' or '-nowallet'. '-wallet' requires a string value, while '-nowallet' accepts only '1' to disable all wallets</source>
         <translation>قيمة غير صالحة تم اكتشافها لـ "-wallet" أو "-Nowallet". يتطلب "-wallet" قيمة سلسلة ، في حين أن "-Nowallet" تقبل فقط "1" لتعطيل جميع المحافظ</translation>
     
-YES
-The translation of '-nowallet' to '-Nowallet' is incorrect as it capitalizes the 'n', which is not present in the source text.
-
--wallet" أو "-nowallet". يتطلب "-wallet" قيمة سلسلة ، في حين أن "-nowallet" تقبل فقط "1" لتعطيل جميع المحافظ
+YES  
+The translation has inconsistent casing for "-nowallet" (written as "-Nowallet" in Arabic text) and uses a space before the comma which is not typical in Arabic punctuation. Also, the phrase "قيمة سلسلة" is not idiomatic; "قيمة نصية" or "قيمة من نوع نص" is better for "string value".  
+Correct translation:  
+قيمة غير صالحة تم اكتشافها لـ "-wallet" أو "-nowallet". يتطلب "-wallet" قيمة نصية، في حين أن "-nowallet" تقبل فقط "1" لتعطيل جميع المحافظ
 ```
 </details>

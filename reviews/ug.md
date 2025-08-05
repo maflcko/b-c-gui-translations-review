@@ -10,30 +10,20 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 
 
 ```
-        <source>Copy the currently selected address to the system clipboard</source>
-        <translation>نۆۋەتتە تاللىغان ئادرېسنى سىستېما چاپلاش تاختىسىغا كۆچۈرىدۇ</translation>
-    
-YES - The translation appears to have a missing final verb, making it grammatically incomplete and potentially nonsensical in context. The term "system clipboard" also seems to be translated as "system printing board," which is likely an incorrect interpretation.
-
-Correct translation: نۆۋەتتە تاللانغان ئادرېسنى سىستېما ۋاگونىغا كۆچۈرۈڭ
-(Nöwette tallanğan adresni sistema wargonigha köçürüñ)
-
-Alternatively, depending on the exact nuance intended for "clipboard", a more direct translation might be:
-نۆۋەتتە تاللانغان ئادرېسنى سىستېما ئۇچۇر لېنتىسىغا كۆچۈرۈڭ
-(Nöwette tallanğan adresni sistema uchur lentisigha köçürüñ)
-```
-
-```
         <source>Close</source>
         <translation>تاقا(L)</translation>
     
-YES, The translation is incorrect. The Uyghur word for "Close" is "يېپىڭ" (yépíng). The provided translation "تاقا(L)" seems to be a misspelling of "تاققا" (taqqa), which means "alone" or "single".
+YES
+The translation "تاقا(L)" is problematic. "تاقا" means "window" or sometimes "door" in Uyghur, which is incorrect in this context. The literal translation of "Close" in Uyghur, as used for closing a window or dialogue, is "ياپ" or "تاقاش".
 
-The correct translation is:
-"YES
-The Uyghur word for "Close" is "يېپىڭ" (yépíng), not "تاقا(L)".
-<source>Close</source>
-<translation>يېپىڭ</translation>"
+Correct translation:
+ياپ
+
+If you must include a shortcut "(L)", ensure it's justified in context (for example, if "L" is actually the shortcut key, and if so, should be after the Uyghur word without English letters unless the UI requires it), e.g.:
+ياپ(L) 
+
+But typically, the correct and simple translation would be:
+ياپ
 ```
 
 ```
@@ -41,26 +31,22 @@ The Uyghur word for "Close" is "يېپىڭ" (yépíng), not "تاقا(L)".
         <translation>تاللا(H)</translation>
     
 YES
-The translation is incorrect and does not convey the meaning of "Choose" in the context of Bitcoin. The provided Uighur text "تاللا(H)" does not appear to be a valid Uighur word for "choose" and might be nonsensical or spam.
+The translation contains an error: "تاللا(H)" is not the correct translation for "Choose". The added "(H)" appears extraneous and the verb is misspelled. The correct translation should be:
 
-Correct translation: تاللاڭ (tallang)
-```
+تاللا
 
-```
-        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
-Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>بۇ Bitcoin تاپشۇرۇۋېلىشقا ئىشلىتىدىغان ئادرېسىڭىز. «قوبۇللاش» بەتكۈچتىكى «يېڭى تاپشۇرۇۋېلىش ئادرېسى قۇر» توپچىنى چېكىپ يېڭى ئادرېس قۇرالايسىز.
-پەقەت «ئەنئەنىۋى(legacy)» تىپتىكى ئادرېسلا ئىمزانى قوللايدۇ.</translation>
-    
-UNK_LANG
+If a shortcut key ("H") is being referenced, ensure it matches the English source or local UI practice. Otherwise, omit it.
 ```
 
 ```
         <source>Copy Address</source>
         <translation>ئادرېس كۆچۈر(C)</translation>
     
-YES - The translation is grammatically incorrect and lacks the intended meaning. The "(C)" at the end is likely a misplaced shortcut indicator. The correct translation should be "ئادرېسنى كۆچۈر" which means "Copy Address".
-ئادرېسنى كۆچۈر
+YES
+The translation includes an unnecessary "(C)" at the end, which does not exist in the source and is not required. Also, "ئادرېس كۆچۈر" is an accurate translation for "Copy Address".
+
+Correct translation:
+ئادرېس كۆچۈر
 ```
 
 ```
@@ -68,38 +54,21 @@ YES - The translation is grammatically incorrect and lacks the intended meaning.
         <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
         <translation>ھۆججەت پەش بىلەن ئايرىلىدۇ</translation>
     
-YES - The translation is grammatically incorrect and doesn't accurately convey the meaning of "Comma separated file". The word "پەش" (pesh) is not standard Uyghur for "comma".
+YES
+The translation is incorrect. The provided 'ug' translation means "the document is separated by a whip" or "the document is separated by a stick", which is a mistranslation. The word for "comma" in Uyghur is "پەش". The correct translation for "Comma separated file" should be:
 
-Correct translation: ھۆججەتنى تاش بىلەن ئايرىدۇ (Hۆjjitni tash bilən ayridu) or چېكىش بىلەن ئايرىلغان ھۆججەت (Chəkiş bilən ayrilgan hۆjjit)
+پەش بىلەن ئايرىلغان ھۆججەت
 ```
 
 ```
         <source>Change passphrase</source>
         <translation>ئىم ئىبارە ئۆزگەرت</translation>
     
-YES, the translation is problematic. The Uyghur translation "ئىم ئىبارە ئۆزگەرت" literally translates to "change the symbol" or "change the phrase". While "phrase" can sometimes be used interchangeably with "passphrase," it's not the most accurate or idiomatic translation. A more direct and appropriate translation for "passphrase" in the context of Bitcoin would be "ئوۋ ئۈچۈن پارول" (password for login/access) or a similar phrase that implies security and access.
-
-Correct translation: ئوۋ ئۈچۈن پارول ئۆزگەرت
-```
-
-```
-        <source>Confirm wallet encryption</source>
-        <translation>ھەميان شىفىرىنى جەزملە</translation>
-    
-YES. The translation is problematic. The word "ھەميان" is a transliteration of "Hamideyan" which is likely a proper noun or surname and doesn't translate to "wallet". The correct term for wallet in Uyghur is "total".
+YES
+The translation is problematic. The correct translation for "Change passphrase" should be closer to "ئىم ئىبارىنى ئۆزگەرت," where "ئىم ئىبارە" means "passphrase" and "ئۆزگەرت" means "change." The current translation "ئىم ئىبارە ئۆزگەرت" is missing the possessive or object marker, so it reads as "passphrase change" rather than an imperative "Change passphrase."
 
 Correct translation:
-"total شىفىرىنى جەزملە"
-```
-
-```
-        <source>Wallet to be encrypted</source>
-        <translation>ھەميان شىفىرلىنىدۇ</translation>
-    
-YES. The translation is problematic. The Uyghur translation does not accurately convey the meaning of the English source text "Wallet to be encrypted". Instead, it translates to "The purse will be encrypted", which is not the intended meaning in the context of Bitcoin.
-
-The correct translation should be:
-Wallet to be encrypted: ھەمياننى شىفىرلاش كېرەك
+ئىم ئىبارىنى ئۆزگەرت
 ```
 
 ```
@@ -107,8 +76,9 @@ Wallet to be encrypted: ھەمياننى شىفىرلاش كېرەك
         <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
         <translation>ھۆججەت پەش بىلەن ئايرىلىدۇ</translation>
     
-YES - The translation is grammatically incorrect and doesn't accurately convey the meaning of "Comma separated file". The word "پەش" (pesh) is not standard Uyghur for "comma".
+YES
+The translation is incorrect. The provided 'ug' translation means "the document is separated by a whip" or "the document is separated by a stick", which is a mistranslation. The word for "comma" in Uyghur is "پەش". The correct translation for "Comma separated file" should be:
 
-Correct translation: ھۆججەتنى تاش بىلەن ئايرىدۇ (Hۆjjitni tash bilən ayridu) or چېكىش بىلەن ئايرىلغان ھۆججەت (Chəkiş bilən ayrilgan hۆjjit)
+پەش بىلەن ئايرىلغان ھۆججەت
 ```
 </details>

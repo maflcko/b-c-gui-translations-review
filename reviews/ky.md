@@ -14,35 +14,25 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <extracomment>Tooltip text for button that allows you to paste an address that is in your clipboard.</extracomment>
         <translation>Даректи алмашуу буферинен коюу</translation>
     
-YES - The translation is grammatically incorrect and does not accurately convey the meaning of the original English text. It seems to be a literal translation of "paste address from clipboard" but uses incorrect Kyrgyz words.
+YES  
+The translation "Даректи алмашуу буферинен коюу" literally means "Insert address from swap buffer," which is somewhat awkward and not the correct phrasing for "Paste address from clipboard" in Kyrgyz. The phrase "алмашуу буфери" literally translates "swap buffer" but the standard term for "clipboard" in Kyrgyz is "кыскача сактоочу" or more commonly "чейрек" is not used, but the standard term used in computing is "буюмдар буфер" or "буфер" or "чыкма буфер".
 
-Correct translation: Даректи алмашуу буферинен койуңуз
+A better, more natural and accurate translation would be:  
+"Даректи буферден кыстоо"  
+("кыстоо" is the verb "to paste" in Kyrgyz)
+
+Correct translation:  
+Даректи буферден кыстоо
 ```
 
 ```
         <source>default</source>
         <translation>жарыяланбаган</translation>
     
-UNK_LANG
-```
+YES  
+The translation "жарыяланбаган" means "unpublished" or "not announced" in Kyrgyz, which is incorrect for the English word "default" in the given Bitcoin context. The correct translation for "default" (as in the standard or preset option) in Kyrgyz is "демейки".  
 
-```
-        <source>Paste address from clipboard</source>
-        <translation>Даректи алмашуу буферинен коюу</translation>
-    
-YES - The translation uses a word "Даректи" that does not seem to be a valid Kyrgyz word. The correct word for "address" in Kyrgyz is "дарек". Also, "алмашуу буферинен" means "from the exchange buffer", which is understandable, but a more natural phrasing for "clipboard" in Kyrgyz is "кыстыргычтан" or " алмашуу буферинен" or "буферден". The word "кошуу" means "to add" which is not the intended meaning of "paste". The correct word for "paste" is "чаптоо".
-
-Correct translation: Даректи алмашуу буферинен чаптаңыз
-Or: Даректи кыстыргычтан чаптаңыз
-```
-
-```
-        <source>Paste address from clipboard</source>
-        <translation>Даректи алмашуу буферинен коюу</translation>
-    
-YES - The translation uses a word "Даректи" that does not seem to be a valid Kyrgyz word. The correct word for "address" in Kyrgyz is "дарек". Also, "алмашуу буферинен" means "from the exchange buffer", which is understandable, but a more natural phrasing for "clipboard" in Kyrgyz is "кыстыргычтан" or " алмашуу буферинен" or "буферден". The word "кошуу" means "to add" which is not the intended meaning of "paste". The correct word for "paste" is "чаптоо".
-
-Correct translation: Даректи алмашуу буферинен чаптаңыз
-Or: Даректи кыстыргычтан чаптаңыз
+Correct translation:  
+демейки
 ```
 </details>

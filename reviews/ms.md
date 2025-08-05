@@ -14,26 +14,31 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <translation>Masukkan alamat atau label untuk memulakan pencarian
 </translation>
     
-YES - The translation includes an extra newline character at the end of the sentence.
-Masukkan alamat atau label untuk memulakan pencarian
+YES  
+The translation changes the meaning of "to search" to "to start a search" ("untuk memulakan pencarian"), which is not accurate. The original simply instructs to enter an address or label to search, not to start or initiate searching explicitly. Also, there is an unnecessary trailing newline at the end.  
+
+Correct translation:  
+Masukkan alamat atau label untuk mencari
 ```
 
 ```
         <source>Export the data in the current tab to a file</source>
         <translation>Alihkan fail data ke dalam tab semasa</translation>
     
-YES, The translation is problematic. It incorrectly translates "Export the data in the current tab to a file" as "Alihkan fail data ke dalam tab semasa" which means "Switch the data file into the current tab". The correct translation should be "Eksportkan data dalam tab semasa ke fail".
-
-Correct translation: Eksportkan data dalam tab semasa ke fail
+YES  
+The translation is inaccurate. The source means to export the data from the current tab to a file, but the translation says "Transfer the data file into the current tab," which reverses the meaning. A correct translation would be:  
+Eksport data dalam tab semasa ke fail
 ```
 
 ```
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Ini adalah alamat Bitcoin anda untuk pembayaran. Periksa jumlah dan alamat penerima sebelum membuat penghantaran koin sentiasa.</translation>
     
-YES. The word order in the translation is awkward and unnatural in Malay. The phrase "sentiasa" (always) is misplaced at the end of the sentence.
+YES  
+The translation has misplaced the adverb "sentiasa" (always) at the end, which sounds awkward and changes the intended meaning. The original English instructs to "always check" before sending, so "sentiasa" should modify "periksa" (check) and appear earlier in the sentence for natural flow. Also, "membuat penghantaran koin" is less natural than "menghantar syiling" for "sending coins."
 
-Correct translation: Ini adalah alamat Bitcoin anda untuk pembayaran. Sentiasa periksa jumlah dan alamat penerima sebelum membuat penghantaran koin.
+Correct translation:  
+Ini adalah alamat Bitcoin anda untuk membuat pembayaran. Sentiasa periksa jumlah dan alamat penerima sebelum menghantar syiling.
 ```
 
 ```
@@ -41,91 +46,88 @@ Correct translation: Ini adalah alamat Bitcoin anda untuk pembayaran. Sentiasa p
         <translation>Salin Aamat</translation>
     
 YES
-The translation contains a spelling error. The correct spelling for "address" in Malay is "Alamat", not "Aamat".
-Salin Alamat
+The Malay word for "address" in the Bitcoin context should be "Alamat," not "Aamat." The correct translation for "Copy Address" is "Salin Alamat."
 ```
 
 ```
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
         <translation>Amaran: Jika anda enkripkan dompet anda dan hilangkan frasa laluan, anda akan &lt;b&gt;ANDA AKAN HILANGKAN SEMUA BITCOIN ANDA&lt;/b&gt;!</translation>
     
-YES, the translation is problematic because it repeats the phrase "ANDA AKAN" which is redundant and grammatically incorrect.
+YES  
+The translation contains redundancy with "anda akan" (you will) being repeated twice, which is unnecessary and incorrect. The phrase should directly translate the warning without repeating the subject "anda". A better translation would be:
 
-The correct translation is:
+Correct translation:  
 Amaran: Jika anda enkripkan dompet anda dan hilangkan frasa laluan, anda akan &lt;b&gt;HILANGKAN SEMUA BITCOIN ANDA&lt;/b&gt;!
-```
-
-```
-        <source>The old passphrase entered for the wallet decryption is incorrect. It contains a null character (ie - a zero byte). If the passphrase was set with a version of this software prior to 25.0, please try again with only the characters up to — but not including — the first null character.</source>
-        <translation>Frasa-laluan lama yang dimasukkan untuk dinyahsulitkan dompet tidak tepat. Ia mengandungi karakter nul (ie- byte kosong). Jika frasa-laluan disetkan dengan versi perisian sebelum ini hingga ke 25.0, sila cuba lagi hanya dengan karakter hingga ke — tapi tak termasuk — karakter nul pertama.</translation>
-    
-YES - The translation uses "hingga ke 25.0" which translates to "up to 25.0" but the source says "prior to 25.0". The correct translation should be "sebelum 25.0".
-
-The old passphrase entered for the wallet decryption is incorrect. It contains a null character (ie - a zero byte). If the passphrase was set with a version of this software prior to 25.0, please try again with only the characters up to — but not including — the first null character.
-Frasa-laluan lama yang dimasukkan untuk dinyahsulitkan dompet tidak tepat. Ia mengandungi karakter nul (ie- byte kosong). Jika frasa-laluan disetkan dengan versi perisian sebelum ini **sebelum** 25.0, sila cuba lagi hanya dengan karakter hingga ke — tapi tak termasuk — karakter nul pertama.
-```
-
-```
-        <source>default wallet</source>
-        <translation>dompet lalai
-</translation>
-    
-YES, The translation contains a trailing space.
-The correct translation is: dompet lalai
 ```
 
 ```
         <source>About %1</source>
         <translation>Mengenai%1</translation>
     
-YES, The translation is missing a space after the '%' symbol.
-About %1
+YES
+There is a whitespace issue between "Mengenai" and "%1". In Malay, there should be a space separating the word and the placeholder.
+
+Correct translation:
+Mengenai %1
 ```
 
 ```
         <source>Show information about %1</source>
         <translation>Menunjuk informasi mengenai%1</translation>
     
-YES, The translation is problematic. The word "Menunjuk" means "pointing" or "indicating", which is not the correct translation for "Show". The correct translation for "Show" in this context would be "Tunjukkan". Also, there is a missing space between "mengenai" and "%1".
+YES  
+There is a spacing issue before the format specifier %1 in the translation. In Malay, a space should be present before %1. Also, "Menunjuk" is less appropriate in this context; "Tunjukkan" (imperative form of "show") is more commonly used for UI actions.
 
-The correct translation is:
-Tunjukkan maklumat mengenai %1
+Correct translation:  
+Tunjukkan informasi mengenai %1
 ```
 
 ```
         <source>Show information about Qt</source>
         <translation>Menunjuk informasi megenai Qt</translation>
     
-YES
-The translation contains a spelling error. "megenai" should be "mengenai".
-Menunjukkan informasi mengenai Qt
+YES  
+The Malay word "Menunjuk" is incorrect in this context; it means "point to" or "show by pointing," which is not proper for "Show information about Qt." The correct verb should be "Tunjukkan," which means "Show" in commands or instructions. Also, "megenai" is misspelled; the correct word is "mengenai."
+
+Correct translation:  
+Tunjukkan maklumat mengenai Qt
 ```
 
 ```
         <source>Encrypt the private keys that belong to your wallet</source>
         <translation>sulitkan kata laluan milik peribadi anda</translation>
     
-YES - The translation incorrectly translates "private keys" as "password". The correct translation should be "kunci peribadi".
-sulitkan kunci peribadi yang dimiliki dompet anda
+YES  
+The translation is inaccurate and partially incorrect. The source talks about "Encrypt the private keys that belong to your wallet," but the translation says "sulitkan kata laluan milik peribadi anda" which means "make your personal password confidential," which is not the same.
+
+Correct translation:  
+Enkripsikan kekunci peribadi yang dimiliki oleh dompet anda
 ```
 
 ```
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
         <translation>sahkan mesej bersama alamat bitcoin anda untuk menunjukkan alamat ini anda punya</translation>
     
-YES - The translation is grammatically incorrect and unnatural in Malay. The phrase "alamat ini anda punya" is awkward. A more natural translation would be "untuk membuktikan anda memiliki alamat tersebut" or "untuk membuktikan kepemilikan alamat tersebut".
+YES
+The translation contains several issues:
+1. The first word "sahkan" should be capitalized as it begins the sentence.
+2. "sahkan mesej bersama alamat bitcoin anda" is an unnatural phrase and not a good translation for "Sign messages with your Bitcoin addresses".
+3. The phrase "untuk menunjukkan alamat ini anda punya" is awkward and not a natural way to say "to prove you own them" in Malay. Also, "alamat ini" ("this address") is singular and not plural to match "addresses".
+4. "Bitcoin" should be capitalized.
 
-Correct translation: Sahkan mesej dengan alamat Bitcoin anda untuk membuktikan anda memilikinya.
+A better translation would be:
+"Tandatangani mesej dengan alamat Bitcoin anda untuk membuktikan anda memilikinya"
 ```
 
 ```
         <source>File</source>
         <translation>fail</translation>
     
-YES
-The translation is incorrect. The correct translation of "File" in Malay is "Fail".
-<source>File</source>
-<translation>Fail</translation>
+YES  
+In Malay, "file" when referring to a computer file or data file should be capitalized as "Fail" because it is a noun and typically capitalized in UI contexts. The lowercase "fail" might cause confusion as it means "fail" (verb) in English transliteration or resembles the English word "fail" meaning unsuccessful.
+
+Correct translation:  
+Fail
 ```
 
 ```
@@ -133,42 +135,54 @@ The translation is incorrect. The correct translation of "File" in Malay is "Fai
         <translation>Tunjukkan senarai alamat dan label yang digunakan
 </translation>
     
-YES - The translation is missing the word "sending". The context implies "sending addresses".
-Tunjukkan senarai alamat menghantar dan label yang digunakan
+YES  
+The translation omits the mention of "sending" in "sending addresses," which is important in the Bitcoin context to distinguish from other types of addresses (e.g., receiving addresses). The full meaning should be preserved.
+
+Correct translation:  
+Tunjukkan senarai alamat penghantaran dan label yang digunakan
 ```
 
 ```
         <source>Hide</source>
         <translation>Sorok</translation>
     
-YES, The translation is incorrect. The Malay word for "Hide" is "Sembunyikan" or "Copot". "Sorok" is a Sundanese word meaning "hide".
-        <translation>Sembunyikan</translation>
+YES
+The Malay word for "Hide" is "Sembunyi" or "Sorokkan" depending on context. "Sorok" is informal and may be considered less appropriate in formal contexts like software UI.
+
+Correct translation:  
+Sembunyi
 ```
 
 ```
         <source>Pre-syncing Headers (%1%)…</source>
         <translation>Pra-laras tajuk (%1%)...</translation>
     
-YES
-The word "Pra-laras" is not a standard Malay word and seems to be a mistranslation of "Pre-syncing". "Tajuk" is correct for "Headers". The "…" should be retained.
+YES  
+The translation uses "Pra-laras tajuk," which is incorrect in Malay. "Pre-syncing" should be translated as "Pra-penyegerakan" or "Sedang pra-penyegerakan." Additionally, "tajuk" is not the correct term for "headers" in the Bitcoin/blockchain context; "kepala blok" or simply "header" (transliterated) is more appropriate. The ellipsis in Malay is typically three dots "...", matching the source format, but it's represented differently here as "...". The spacing is correct.
 
-Correct translation: Pra-sinkronisasi pengepala (%1%)…
+Correct translation:  
+Pra-penyegerakan header (%1%)...
 ```
 
 ```
         <source>Cannot create new wallet, the software was compiled without sqlite support (required for descriptor wallets)</source>
         <translation>Dompet baru tidak boleh dicipta, perisian disusun tanpa sokongan sqlite (diperlukan untuk dinyahskrip dompet)</translation>
     
-YES - The translation uses "dinyahskrip dompet" which directly translates to "descripted wallets" instead of "descriptor wallets". The term "descriptor wallets" is a technical term within Bitcoin and should ideally be kept as is or translated using a more appropriate technical equivalent if one exists in Malay.
+YES
+The translation inaccurately translates "descriptor wallets" as "dinyahskrip dompet," which means "decoded wallets," not "descriptor wallets." The term "descriptor wallets" should be kept as is or properly translated to maintain the original meaning, as it is a technical term in Bitcoin context.
 
-NO
+Correct translation:
+Dompet baru tidak boleh dicipta, perisian disusun tanpa sokongan sqlite (diperlukan untuk descriptor wallets)
 ```
 
 ```
         <source>Copy transaction ID and output index</source>
         <translation>Salin ID transakksi dan indek keluaran </translation>
     
-YES, The word "transakksi" is a typo, it should be "transaksi".
+YES  
+There is a typo in the word "transakksi" which should be "transaksi". Also, there is a trailing space at the end of the translation which should be removed.
+
+Correct translation:  
 Salin ID transaksi dan indeks keluaran
 ```
 
@@ -176,35 +190,38 @@ Salin ID transaksi dan indeks keluaran
         <source>Unlock unspent</source>
         <translation>Unlock tak dibelanjakan</translation>
     
-YES, The translation is inaccurate and does not convey the intended meaning in the context of Bitcoin. The term "tak dibelanjakan" is not a standard or meaningful term in Malay for unspent in this context. The correct translation should refer to unspent outputs.
+YES
+The translation mixes English and Malay improperly. "Unlock tak dibelanjakan" is incorrect; "tak" is informal and "dibelanjakan" means "spent." The correct phrase should translate "Unlock unspent" as "Buka kunci yang tidak dibelanjakan" or more succinctly "Buka kunci belum dibelanjakan."
 
-Correct translation: Buka kunci output yang belum dibelanjakan
+Correct translation:
+Buka kunci belum dibelanjakan
 ```
 
 ```
         <source>Can't list signers</source>
         <translation>Penandatangan tidak boleh disenaraikan</translation>
     
-YES, The translation is problematic as it has a slightly different meaning than the source text. The source text means that the system is unable to list the signers, whereas the translation implies that signers are not allowed to be listed.
-
-Correct translation: Tidak dapat menyenaraikan penandatangan
+YES  
+The translation "Penandatangan tidak boleh disenaraikan" means "Signers are not allowed to be listed," which changes the meaning of "Can't list signers." The source expresses an inability or failure to list signers, not a prohibition. A more accurate Malay translation would be:  
+"Tak dapat menyenaraikan penandatangan" or "Tidak dapat menyenaraikan penandatangan"
 ```
 
 ```
         <source>Edit Address</source>
         <translation>Alamat</translation>
     
-YES: The translation is incomplete. The English text "Edit Address" implies an action of modification or editing, which is not captured by the single word "Alamat" (Address).
+YES
+The translation "Alamat" means "Address" but the source text "Edit Address" implies an action to modify the address. The correct translation should convey this action, for example:
 
-Correct translation: Edit Alamat
+Edit Address = "Sunting Alamat"
 ```
 
 ```
         <source>Export the data in the current tab to a file</source>
         <translation>Alihkan fail data ke dalam tab semasa</translation>
     
-YES, The translation is problematic. It incorrectly translates "Export the data in the current tab to a file" as "Alihkan fail data ke dalam tab semasa" which means "Switch the data file into the current tab". The correct translation should be "Eksportkan data dalam tab semasa ke fail".
-
-Correct translation: Eksportkan data dalam tab semasa ke fail
+YES  
+The translation is inaccurate. The source means to export the data from the current tab to a file, but the translation says "Transfer the data file into the current tab," which reverses the meaning. A correct translation would be:  
+Eksport data dalam tab semasa ke fail
 ```
 </details>

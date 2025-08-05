@@ -13,129 +13,92 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Pulqabınızı şifrədən çıxarmaq istədiyinizə əminsiniz?</translation>
     
-YES. The translation is incorrect and conveys the opposite meaning of the source text. The source asks about encryption, while the translation asks about decryption.
+YES
+The translation is incorrect. The English source asks if the user wants to encrypt (şifrələmək) the wallet, but the translation asks if the user wants to decrypt (şifrədən çıxarmaq) it, which is the opposite meaning.
 
-NO. Pulqabınızı şifrələmək istədiyinizə əminsiniz?
+Correct translation:
+Pulqabınızı şifrələmək istədiyinizə əminsiniz?
 ```
 
 ```
         <source>Minimize</source>
         <translation>Yığın</translation>
     
-YES, The translation is incorrect and the word 'Yığın' in Azerbaijani means 'stack' or 'pile' in English. The correct translation for 'Minimize' is 'Minimallaşdırmaq'.
+YES
+The translation is incorrect. "Yığın" means "Stack" or "Heap" in Azerbaijani and does not correspond to "Minimize". The correct translation should be:
 
-UNK_LANG
+"Daxil et" or "Kiçilt" depending on context, but for UI buttons, "Minimize" is best translated as "Kiçilt".
+
+Correct translation:
+<translation>Kiçilt</translation>
 ```
 
 ```
-        <source>Close Wallet…</source>
-        <translation>Cüzdanı bağlayın...</translation>
+        <source>Network activity disabled.</source>
+        <extracomment>A substring of the tooltip.</extracomment>
+        <translation>İnternet bağlantısı söndürülüb.</translation>
     
-YES, The translation is problematic because "bağlayın" means "connect" and not "close". The correct translation for "Close Wallet" is "Cüzdanı kapatın".
-        <source>Close Wallet…</source>
-        <translation>Cüzdanı kapatın...</translation>
-```
+YES
+The translation is inaccurate. "Network activity" should be translated more precisely as "Şəbəkə fəaliyyəti" rather than "İnternet bağlantısı". The current translation suggests "Internet connection," which is not the intended technical meaning.
 
-```
-        <source>Close All Wallets…</source>
-        <translation>Bütün cüzdanları bağlayın...</translation>
-    
-YES, the translation is problematic. The English word "Close" translates to "Bağlayın" in Azerbaijani, which means "Connect" or "Link". The correct translation for "Close" in this context would be "Bağlayın" (Close).
-
-Bütün cüzdanları bağlayın...
+Correct translation:
+Şəbəkə fəaliyyəti söndürülüb.
 ```
 
 ```
         <source>Up to date</source>
         <translation>Eyniləşdirildi</translation>
     
-YES, The translation is incorrect. The English phrase "Up to date" means current or modern. The Azerbaijani translation "Eyniləşdirildi" means "Made the same" or "Standardized", which is not a correct translation in this context.
+YES
+"Eyniləşdirildi" translates to "Updated," which is not the same as "Up to date." The correct translation for "Up to date" in Azerbaijani (Latin script) would be "Aktualdır" or "Güncəldir."
 
-A more accurate translation for "Up to date" in the context of Bitcoin, implying current information or status, would be "Güncəl" or "Ayliq".
-
-Here's the breakdown:
-
-*   **Source:** Up to date
-*   **Translation:** Eyniləşdirildi
-*   **Problem:** The translation does not accurately convey the meaning of "Up to date".
-*   **Correct Translation:** Güncəl
-
-NO
+Correct translation:
+Aktualdır
 ```
 
 ```
         <source>Load Partially Signed Bitcoin Transaction</source>
         <translation>Qismən imzalanmış Bitcoin köçürmələrini yükləyin</translation>
     
-YES, The translation is problematic because "köçürmələrini" (transfers) is an incorrect translation for "Transaction". The correct translation should be "əməliyyatlarını".
+YES
+There is a minor issue: The source is singular ("Transaction"), but the translation is plural ("köçürmələrini" = "transactions"). It should match the singular in the original.
 
-NO, Qismən imzalanmış Bitcoin əməliyyatlarını yükləyin
-```
-
-```
-        <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
-        <translation>Qismən İmzalanmış Bitcoin Köçürməsini (PSBT) mübadilə yaddaşından yükləmək</translation>
-    
-YES, The translation is problematic. The word "Köçürməsini" means "transfer" or "remittance" which is not the correct translation for "Transaction" in the context of Bitcoin. The correct translation for "Transaction" would be "Əməliyyat". Also, "mübadilə yaddaşından" is a literal translation of "clipboard" which sounds unnatural in Azerbaijani. A more natural translation for "clipboard" would be "clipboard".
-
-Qismən İmzalanmış Bitcoin Əməliyyatını (PSBT) clipboard-dan yükləmək
+Correct translation:
+Qismən imzalanmış Bitcoin köçürməsini yükləyin
 ```
 
 ```
         <source>Open a bitcoin: URI</source>
         <translation>Bitcoin açın: URI</translation>
     
-YES, The translation incorrectly translates "Open a bitcoin: URI" as "Bitcoin açın: URI" which means "Open Bitcoin: URI" in Azerbaijani. The correct translation should be "Bir bitcoin: URI açın" which means "Open a bitcoin: URI" in Azerbaijani.
-Açın: URI
-```
+YES
+The translation has a word order issue. In Azerbaijani, the correct form should be: "Bitcoin URI açın" or "Bir bitcoin URI açın". The given translation "Bitcoin açın: URI" is misleading and ungrammatical.
 
-```
-        <source>Close wallet</source>
-        <translation>Cüzdanı bağlayın</translation>
-    
-YES: The translation means "Connect wallet", which is the opposite of "Close wallet".
-Correct translation: Cüzdanı kapat
-```
-
-```
-        <source>Close all wallets</source>
-        <translation>Bütün cüzdanları bağlayın</translation>
-    
-YES, The translation is incorrect. The source text "Close all wallets" means to close all existing Bitcoin wallets, but the translated text "Bütün cüzdanları bağlayın" means "Connect all wallets". The correct translation should be "Bütün cüzdanları bağlayın".
-Bütün cüzdanları kapatın
+Correct translation:
+Bir bitcoin URI açın
+or
+Bitcoin URI açın
 ```
 
 ```
         <source>(un)select all</source>
         <translation>seçim</translation>
     
-YES. The translation is inaccurate and does not convey the intended meaning of "select all" or "unselect all". The provided translation "seçim" only means "selection".
+YES
+The translation "seçim" does not accurately convey the meaning of "(un)select all". "Seçim" means "selection" in Azerbaijani, but the appropriate translation should reflect the action of selecting or deselecting all items.
 
-Correct translation: Hamısını seçin / heç birini seçməyin
-```
-
-```
-        <source>Close wallet</source>
-        <translation>Cüzdanı bağlayın</translation>
-    
-YES: The translation means "Connect wallet", which is the opposite of "Close wallet".
-Correct translation: Cüzdanı kapat
-```
-
-```
-        <source>Close all wallets</source>
-        <translation>Bütün cüzdanları bağlayın</translation>
-    
-YES, The translation is incorrect. The source text "Close all wallets" means to close all existing Bitcoin wallets, but the translated text "Bütün cüzdanları bağlayın" means "Connect all wallets". The correct translation should be "Bütün cüzdanları bağlayın".
-Bütün cüzdanları kapatın
+Correct translation:
+Hamısını seç / seçimdən çıxar
 ```
 
 ```
         <source>GB</source>
         <translation>QB</translation>
     
-YES. The translation of "GB" to "QB" is incorrect and nonsensical in the context of Bitcoin. "GB" likely refers to "Gigabyte," which is a unit of data storage. There is no direct translation of this into a meaningful term in Bitcoin in this context.
+YES
+The abbreviation "GB" stands for "Gigabyte" and is commonly used internationally without translation, even in Azerbaijani (az@latin). "QB" does not have meaning in this context and is incorrect.
 
-NO.
+Correct translation:
+GB
 ```
 </details>

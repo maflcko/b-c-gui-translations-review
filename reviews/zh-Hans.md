@@ -13,506 +13,458 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Close</source>
         <translation>关闭(L)</translation>
     
-YES: The translation is problematic because it adds an extra "(L)" after the translated word "关闭". This is not present in the source text and is likely an unintended artifact from a translation system. The correct translation should be "关闭" without any additional characters.
+YES  
+The addition of "(L)" in the translation is not present in the source and seems out of place in Chinese UI terminology. It may confuse users as it is likely intended to indicate a shortcut key in English but is not localized or explained.
 
-Correct Translation: 关闭
+Correct translation:  
+关闭
 ```
 
 ```
         <source>Export</source>
         <translation>导出(E)</translation>
     
-YES, The translation includes an unnecessary English parenthetical "(E)" which is likely a leftover from a UI element and not appropriate for the meaning of "Export" in this context.
+YES
+The "(E)" is unnecessary and non-standard in Simplified Chinese UI translations, as keyboard shortcuts are typically not indicated in parentheses like this. The correct translation should simply be:
 
-Correct translation: 导出
+导出
 ```
 
 ```
         <source>Banned Until</source>
         <translation>在此之前保持封禁:</translation>
     
-YES, The translation is inaccurate. The source text "Banned Until" refers to a specific point in time when a ban will end, not a state of being kept banned until a certain point. The Chinese translation conveys the latter meaning.
+YES
+The translation "在此之前保持封禁:" is awkward and overly literal. It can be improved to better convey "Banned Until" in the context of a ban expiration time.
 
-Correct translation: 封禁至
-```
-
-```
-        <source>An internal error occurred. %1 will attempt to continue safely. This is an unexpected bug which can be reported as described below.</source>
-        <translation>发生了一个内部错误。%1将会尝试安全地继续运行。关于这个未知的错误我们有以下的描述信息用于参考。</translation>
-    
-YES, The translation is problematic. The phrase "This is an unexpected bug which can be reported as described below." was translated to "关于这个未知的错误我们有以下的描述信息用于参考。" which does not accurately convey the meaning. The original text implies that the bug can be reported and provides a way to do so, whereas the translation states that there is descriptive information for reference.
-
-Correct translation: 发生了一个内部错误。%1将会尝试安全地继续运行。这是一个意外的错误，可以按照下文所述进行报告。
+Correct translation:
+封禁至
 ```
 
 ```
         <source>About %1</source>
         <translation>关于 %1 (A)</translation>
     
-YES, the translation is problematic because it includes an unnecessary and potentially confusing parenthetical "(A)". In the context of Bitcoin, this doesn't add clarity and could be misinterpreted.
+YES  
+The translation contains an unnecessary and unclear "(A)" which is not present in the source and may confuse users. Also, there is an extra space after "关于" before %1, which is not needed in Chinese formatting.
 
-The correct translation should simply be:
-关于 %1
-```
-
-```
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>用比特币地址关联的私钥为消息签名，以证明您拥有这个比特币地址</translation>
-    
-YES - The translation is overly specific and implies that signing a message directly proves ownership of the *address* itself, rather than the *private key* associated with the address. The phrase "比特币地址关联的私钥" (the private key associated with the Bitcoin address) is too long and cumbersome for a concise translation. A more accurate and natural translation would be to say you prove ownership of the *private key* that controls the address.
-
-Correct translation: 用您的比特币地址签名消息，以证明您拥有对应的私钥。
+Correct translation:  
+关于%1
 ```
 
 ```
         <source>Load PSBT from file…</source>
         <translation>从文件加载PSBT(L)...</translation>
     
-YES, The translation is problematic because it adds an extra parenthesis "L" at the end of PSBT which is not present in the source text.
+YES  
+The ellipsis character in the source is the Unicode ellipsis (…) but the translation uses "(L)...", which is incorrect and adds an unnecessary "(L)". The correct translation should simply end with an ellipsis character and no additional letters.
 
-NO, from file...
+Correct translation:  
+从文件加载PSBT…
 ```
 
 ```
         <source>Command-line options</source>
         <translation>命令行选项(C)</translation>
     
-YES, The Chinese translation contains an extra character 'C)' that is not present in the original English text and is also not a format specifier.
-Command-line options
+YES  
+The translation adds an unnecessary "(C)" which is not present in the source text and may cause confusion. The translation should strictly reflect the source meaning without extra characters.  
+
+Correct translation:  
+命令行选项
 ```
 
 ```
         <source>Load PSBT from clipboard…</source>
         <translation>从剪贴板加载PSBT(C)...</translation>
     
-YES: The translation is problematic as it adds an extra "(C)" which is not present in the source text and serves no clear purpose in this context. The presence of this extra character could be confusing to the user.
+YES  
+The translation uses "(C)" which is incorrect and adds extra characters not present in the source text. The ellipsis "…" should be preserved as is, not replaced by "(C)". Also, the original text uses an ellipsis (…) which is a single Unicode character, but the translation replaces it with "(C)", which is wrong.
 
-Correct translation: 从剪贴板加载PSBT...
+Correct translation:  
+从剪贴板加载PSBT…
 ```
 
 ```
         <source>Sending addresses</source>
         <translation>付款地址(S)</translation>
     
-YES
-The translation is not accurate and uses a non-standard format for the "(S)". In Bitcoin context, "Sending addresses" would typically refer to the addresses from which the funds are being sent. A more accurate and common translation would be "发送地址".
+YES  
+The original English source "Sending addresses" likely refers to the addresses that are set as sending (i.e., the addresses from which bitcoins are sent). The provided translation "付款地址(S)" means "payment address(es)" followed by an "(S)", which is unclear and unnecessary. Also, the "(S)" likely comes from a misinterpretation of a keyboard shortcut or mnemonic and should not be included in the translation unless explicitly specified.
 
-Correct translation: 发送地址
+A more accurate translation would be simply "发送地址" which directly corresponds to "sending addresses."
+
+Correct translation:  
+发送地址
 ```
 
 ```
         <source>Open a bitcoin: URI</source>
         <translation>打开bitcoin:开头的URI</translation>
     
-YES
-The translation is overly literal and doesn't convey the intended meaning of opening a Bitcoin URI. "Bitcoin:开头的URI" literally means "URI starting with bitcoin:". A better translation would be "打开比特币 URI" or "打开 Bitcoin URI".
+YES  
+The translation mixes English and Chinese and does not fully localize "bitcoin" into Chinese, which is commonly translated as "比特币". Also, "bitcoin:" is a scheme prefix and should be clearly indicated. A more natural and accurate translation would be:
 
-Correct translation: 打开比特币:URI
+打开以 bitcoin: 开头的 URI
+
+or fully localized:
+
+打开以比特币（bitcoin:）开头的 URI
 ```
 
 ```
         <source>Close wallet</source>
         <translation>卸载钱包</translation>
     
-YES, The translation of "Close wallet" to "卸载钱包" is incorrect. "卸载钱包" means "uninstall wallet". The correct translation for "Close wallet" in the context of Bitcoin is "关闭钱包".
-NO
+YES  
+The translation "卸载钱包" means "Uninstall wallet," which is incorrect in this context. The English phrase "Close wallet" refers to closing or shutting the wallet application or interface, not uninstalling it. The correct translation should be "关闭钱包."
 ```
 
 ```
         <source>Show</source>
         <translation>显示(H)</translation>
     
-YES: The translation adds an English letter "(H)" to the Chinese text "显示", which is not part of the original English text "Show". This is likely an error. The correct translation should be "显示".
+YES
+The source text "Show" is a simple imperative or label and does not include additional characters. The translation "显示(H)" adds "(H)", which is not present in the source and may confuse users unless "(H)" is intended as a shortcut key or mnemonic. Such additional notation should only appear if it corresponds to the source or established UI conventions, and in that case, the source would have indicated it.
 
-Correct Translation: 显示
-```
-
-```
-        <source>After Fee:</source>
-        <translation>加上交易费用后:</translation>
-    
-YES: The translation is inaccurate. "After Fee" means "in the amount remaining after the fee is deducted", not "adding the transaction fee".
-
-Correct translation: 扣除费用后:
+Correct translation:
+显示
 ```
 
 ```
         <source>Lock unspent</source>
         <translation>锁定未花费(O)</translation>
     
-YES
-The translation uses non-standard characters and punctuation that might cause issues in a technical context. The parenthetical "(O)" is also unclear and unnecessary.
+YES  
+The "(O)" in the translation seems out of place and unnecessary, as it does not appear in the source text. There should be no extra characters or parentheses in the translation. Also, there is no format specifier to consider here.  
 
-Correct translation: 锁定未花费UTXO
+Correct translation:  
+锁定未花费
 ```
 
 ```
         <source>Close wallet</source>
         <translation>卸载钱包</translation>
     
-YES, The translation of "Close wallet" to "卸载钱包" is incorrect. "卸载钱包" means "uninstall wallet". The correct translation for "Close wallet" in the context of Bitcoin is "关闭钱包".
-NO
+YES  
+The translation "卸载钱包" means "Uninstall wallet," which is incorrect in this context. The English phrase "Close wallet" refers to closing or shutting the wallet application or interface, not uninstalling it. The correct translation should be "关闭钱包."
 ```
 
 ```
         <source>Closing the wallet for too long can result in having to resync the entire chain if pruning is enabled.</source>
         <translation>启用修剪时，如果一个钱包被卸载太久，就必须重新同步整条区块链才能再次加载它。</translation>
     
-YES: The translation uses "卸载" (unloaded/uninstalled) which is not the correct term in the context of a Bitcoin wallet. The source implies closing the wallet application, not uninstalling it. A more accurate translation would be "关闭" (closed) or "闲置" (idle).
+YES  
+The translation is somewhat inaccurate and changes the meaning. The source says "closing the wallet for too long can result in having to resync the entire chain if pruning is enabled." The translation implies the wallet is "unloaded" (卸载) for too long, which is not the same as "closing" and might confuse readers to think of uninstalling or removing the wallet software. Also, "才能再次加载它" ("in order to load it again") is an added explanation not present in the source and slightly changes the meaning.
 
-Correct translation: 启用修剪时，如果一个钱包闲置太久，就必须重新同步整条区块链才能再次加载它。
+A better translation would be more literal and keep the focus on "closing the wallet" and the resulting need to resync.
+
+Correct translation:  
+启用修剪时，长时间关闭钱包可能导致需要重新同步整条区块链。
 ```
 
 ```
         <source>Address</source>
         <translation>地址(A)</translation>
     
-YES - The translation is inaccurate because it includes an unnecessary parenthetical "(A)" which is not present in the source text and could be confusing in the context of Bitcoin addresses. The correct translation should be simply "地址".
+YES  
+The translation adds "(A)" which is not present in the source and is generally unnecessary unless it has a specific contextual meaning, which is not indicated here. The correct translation should simply be:  
 地址
-```
-
-```
-        <source>Number of script verification threads</source>
-        <translation>脚本验证线程数(V)</translation>
-    
-YES, The translation is problematic. The "(V)" appended to the translation is extraneous and does not appear in the source text. It's also unclear what "(V)" signifies in this context, as it's not a standard notation in Bitcoin terminology for script verification threads.
-
-NO
-```
-
-```
-        <source>This allows you or a third party tool to communicate with the node through command-line and JSON-RPC commands.</source>
-        <extracomment>Tooltip text for Options window setting that enables the RPC server.</extracomment>
-        <translation>这允许作为用户的你或第三方工具通过命令行和JSON-RPC命令行与节点通信。</translation>
-    
-YES: The translation uses "命令行" (command-line) twice, making the sentence redundant and awkward. It also incorrectly uses "命令行" (command-line) to modify "JSON-RPC", which is a protocol, not a command-line interface. A more accurate and natural translation would be:
-"这允许你或第三方工具通过命令行和JSON-RPC命令与节点通信。"
 ```
 
 ```
         <source>Wallet</source>
         <translation>钱包(A)</translation>
     
-YES: The translation is inaccurate as it includes an unnecessary character "(A)" which does not appear in the source text. The correct translation should be "钱包".
+YES
+The translation adds "(A)" which is not present in the source and is unnecessary. The correct translation should simply be:
+
+钱包
 ```
 
 ```
         <source>Spend unconfirmed change</source>
         <translation>动用尚未确认的找零资金(S)</translation>
     
-YES: The translation is a bit too literal and doesn't flow naturally in Chinese. The "(S)" at the end is also unnecessary.
+YES
+The translation includes an unnecessary "(S)" at the end, which is not present in the source and could cause confusion. Also, "动用" is understandable but less commonly used in Bitcoin context. A more standard translation would be:
 
-Corrected translation:  动用未确认的找零
+尚未确认的找零资金可用
+
+Or more simply:
+
+使用尚未确认的找零金额
+
+Correct translation:
+使用尚未确认的找零金额
 ```
 
 ```
         <source>External signer script path</source>
         <translation>外部签名器脚本路径(E)</translation>
     
-YES, the translation is problematic because it adds "(E)" at the end of the translated text. This appears to be an artifact or an unintended addition.
+YES  
+The translation includes an unnecessary "(E)" which does not appear in the source text and may confuse users. It should simply translate the phrase without additional characters.
 
-Correct translation: 外部签名器脚本路径
+Correct translation:  
+外部签名器脚本路径
 ```
 
 ```
         <source>Third-party transaction URLs</source>
         <translation>第三方交易网址(T)</translation>
     
-YES, The translation is problematic. The "(T)" at the end of the translation is an unexplained abbreviation and is likely an error or noise.
+YES  
+The translation incorrectly includes "(T)", which is not present in the source text and seems unrelated. Also, "网址" means "website URLs," but in the context of Bitcoin, "transaction URLs" usually refers to URLs related to transactions, so "交易链接" (transaction links) could be more appropriate and natural.  
 
-Correct translation: 第三方交易网址
+Correct translation:  
+第三方交易链接
 ```
 
 ```
         <source>Your current balance in watch-only addresses</source>
         <translation>您当前在仅观察观察地址中的余额</translation>
     
-YES - The translation is redundant. "watch-only addresses" is translated as "仅观察观察地址", which repeats the word "observe" (观察). The correct translation should be "您当前在仅观察地址中的余额".
+YES  
+The translation contains a redundancy with "仅观察观察地址" ("watch-only watch addresses"). This is repetitive and incorrect. The correct translation should be concise and clear. The phrase "watch-only addresses" should be translated as "仅观察地址".
+
+Correct translation:  
+您当前仅观察地址中的余额
 ```
 
 ```
         <source>Mined balance in watch-only addresses that has not yet matured</source>
         <translation>仅观察地址中尚未成熟的挖矿收入余额:</translation>
     
-YES, The translation incorrectly adds a colon at the end of the sentence, which is not present in the source text. The phrase "挖矿收入" (mining income) is also a more specific interpretation than "mined balance" and may not be entirely accurate depending on the exact context of "mined balance." However, the primary issue is the extraneous colon.
+YES  
+The translation introduces an unnecessary colon (:) at the end, which is not present in the source and may cause formatting issues. Also, "观察地址" is not the standard term for "watch-only addresses" in Bitcoin context. The commonly accepted term is "仅观察地址" or "仅观看地址" but "仅观察地址" is acceptable. The phrase "挖矿收入余额" is somewhat understandable but "挖矿余额" or "已挖余额" might be better; however, this is minor.
 
-NO, Mined balance in watch-only addresses that has not yet matured
+Correct translation:  
+仅观察地址中尚未成熟的挖矿余额
 ```
 
 ```
         <source>Privacy mode activated for the Overview tab. To unmask the values, uncheck Settings-&gt;Mask values.</source>
         <translation>“概况”标签页已启用隐私模式。要明文显示数值，请在设置中取消勾选“不明文显示数值”。</translation>
     
-YES - The translation contains a contradiction in the phrase "不明文显示数值" (do not display in clear text) which negates the user's action of unchecking the setting.
+YES
+The translation is mostly correct, but "不明文显示数值" is not a natural or standard way to say "Mask values." A better term would be "掩码数值" or "隐藏数值" to align with "Mask values."
 
-Correct translation: “概况”标签页已启用隐私模式。要明文显示数值，请在设置中取消勾选“隐藏数值”。
+Correct translation:
+“概况”标签页已启用隐私模式。要显示数值，请在设置中取消勾选“掩码数值”。
 ```
 
 ```
         <source>Cannot start bitcoin: click-to-pay handler</source>
         <translation>无法启动 bitcoin: 协议的“一键支付”处理程序</translation>
     
-YES, The translation is problematic because it adds an extra unnecessary word "协议的" (protocol's) before "一键支付" (click-to-pay). This makes the translation less direct and slightly awkward in the context of Bitcoin.
+YES  
+The translation adds "协议的" (“protocol’s”) which is not present in the source and alters the meaning slightly. Also, "bitcoin" should be capitalized as "Bitcoin" to follow the original styling, and the term "click-to-pay" is better translated as "点击支付" or kept as "click-to-pay" for clarity, rather than "一键支付" which means "one-click payment" and could convey a different idea. A more accurate translation would be concise and faithful to the source.
 
-The correct translation should be: 无法启动 bitcoin: “一键支付”处理程序
+Correct translation:  
+无法启动 Bitcoin: click-to-pay 处理程序
 ```
 
 ```
         <source>Peers</source>
         <translation>节点(P)</translation>
     
-YES - The translation is not accurate and is problematic. The original English word "Peers" in the context of Bitcoin refers to other nodes in the network that a user's node is connected to. The provided Chinese translation "节点(P)" literally translates to "Node (P)". While "节点" means "node," the "(P)" part is unclear and doesn't accurately convey the meaning of "peers" in this context. A more appropriate translation for "Peers" in Bitcoin would be "节点" or "网络节点" (network nodes).
+YES  
+The translation "节点(P)" includes an unnecessary "(P)" which does not appear in the source and could confuse users. The source text "Peers" in the context of Bitcoin usually refers to network nodes or peers, which can be simply translated as "节点". There is no need to add "(P)".
 
-Correct translation: 节点
+Correct translation:  
+节点
 ```
 
 ```
         <source>Hide Peers Detail</source>
         <translation>隐藏其他人的详细信息</translation>
     
-YES, The translation is not accurate. "Peers" refers to connected nodes in the Bitcoin network, not other people.
+YES  
+The translation "隐藏其他人的详细信息" literally means "Hide other people's detailed information," which changes the meaning. The English "Peers" here refers to network peers or nodes, not "other people" in a general sense. A more accurate translation would preserve the technical meaning with a focus on peers (节点 or 对等节点).
 
-Correct translation: 隐藏节点详细信息
+Correct translation:  
+隐藏节点详情
 ```
 
 ```
         <source>Network Traffic</source>
         <translation>网络流量(N)</translation>
     
-YES
-The translation is inaccurate because the "(N)" is an unnecessary addition that is not present in the source text.
-network traffic
-```
+YES  
+The translation "网络流量(N)" includes an unnecessary and unexplained "(N)" at the end, which is not present in the source text and may confuse users. The term "网络流量" correctly translates "Network Traffic" and is sufficient on its own.
 
-```
-        <source>Outbound Manual: added using RPC %1 or %2/%3 configuration options</source>
-        <extracomment>Explanatory text for an outbound peer connection that was established manually through one of several methods. The numbered arguments are stand-ins for the methods available to establish manual connections.</extracomment>
-        <translation>出站手动: 加入使用RPC %1 或 %2/%3 配置选项</translation>
-    
-YES - The word "加入" (jiārù) translates to "join" or "add to", which is not the correct verb for establishing a connection. The intended meaning is "added" or "established". A more accurate translation would be "添加" (tiānjiā) or "建立" (jiànlì).
-
-Correct translation: 出站手动: 使用 RPC %1 或 %2/%3 配置选项添加
+Correct translation:  
+网络流量
 ```
 
 ```
         <source>1 hour</source>
         <translation>1 小时(H)</translation>
     
-YES - The translation is problematic due to the inclusion of "(H)" which is not present in the source text and is unnecessary.
+YES
+The translation adds "(H)" which is not present in the source and is unnecessary. The source "1 hour" is simply "1小时" in Simplified Chinese without parentheses or extra letters.
 
-Correct translation: 1 小时
+Correct translation:  
+1小时
 ```
 
 ```
         <source>1 day</source>
         <translation>1 天(A)</translation>
     
-YES: The translation adds an extra character "(A)" that is not present in the source text.
-Correct translation: 1 天
+YES  
+The translation contains an unnecessary and unexplained "(A)" which is not present in the source text and makes the translation look erroneous or confusing.  
+Correct translation:  
+1 天
 ```
 
 ```
         <source>1 year</source>
         <translation>1 年(Y)</translation>
     
-YES, The translation is problematic because it incorrectly adds "(Y)" after the year. This is likely a misunderstanding of how to format dates in Chinese or an artifact from a translation tool. The correct translation should simply be "1 年".
+YES  
+The translation includes an unnecessary and unclear suffix "(Y)" which is not present in the source text and may confuse users. The source simply states "1 year," which should be translated straightforwardly without extra characters.  
 
+Correct translation:  
 1 年
-```
-
-```
-        <source>After Fee:</source>
-        <translation>加上交易费用后:</translation>
-    
-YES: The translation is inaccurate. "After Fee" means "in the amount remaining after the fee is deducted", not "adding the transaction fee".
-
-Correct translation: 扣除费用后:
-```
-
-```
-        <source>Specify a custom fee per kB (1,000 bytes) of the transaction's virtual size.
-
-Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satoshis per kvB" for a transaction size of 500 virtual bytes (half of 1 kvB) would ultimately yield a fee of only 50 satoshis.</source>
-        <translation>指定交易虚拟大小的每kB (1,000字节) 自定义费率。
-
-附注：因为矿工费是按字节计费的，所以如果费率是“每kvB支付100聪”，那么对于一笔500虚拟字节 (1kvB的一半) 的交易，最终将只会产生50聪的矿工费。（译注：这里就是提醒单位是字节，而不是千字节，如果搞错的话，矿工费会过低，导致交易长时间无法确认，或者压根无法发出）</translation>
-    
-YES, The translation is problematic because the explanation in parentheses "(译注：这里就是提醒单位是字节，而不是千字节，如果搞错的话，矿工费会过低，导致交易长时间无法确认，或者压根无法发出)" is an added explanation that is not present in the source text.
-
-NO
 ```
 
 ```
         <source>The Bitcoin address to send the payment to</source>
         <translation>付款目的地址</translation>
     
-YES, The translation is missing the context of "Bitcoin address". A more accurate translation would be "发送付款的比特币地址".
+YES  
+The translation "付款目的地址" literally means "the payment destination address," which is understandable but less precise. A more accurate and commonly used translation for "The Bitcoin address to send the payment to" is:  
+"接收付款的比特币地址"  
+This explicitly mentions "Bitcoin address" and clarifies that it is the address to receive the payment.
 ```
 
 ```
         <source>Subtract fee from amount</source>
         <translation>从金额中减去交易费(U)</translation>
     
-YES, The translation includes an extraneous character "(U)" which is not present in the source text and is likely an error or spam.
-
-Correct translation: 从金额中减去交易费
+YES  
+The added "(U)" in the Chinese translation is unnecessary and does not appear in the source text. It may confuse users. The translation should be concise and faithful to the source. A better translation is:  
+从金额中减去手续费
 ```
 
 ```
         <source>Verify Message</source>
         <translation>验证消息签名(M)</translation>
     
-YES - The translation is problematic because it adds an unnecessary "(M)" at the end of the phrase. The source text "Verify Message" does not contain this.
-The correct translation should be "验证消息签名".
-```
+YES  
+The source text "Verify Message" is translated as "验证消息签名(M)". The translation adds "签名" (signature) and the shortcut key "(M)", which are not present in the source. The translation should be a direct rendering of "Verify Message" without extra terms or shortcut keys unless explicitly present in the source.
 
-```
-        <source>%1/unconfirmed</source>
-        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in at least one block, but less than 6 blocks.</extracomment>
-        <translation>%1/未确认</translation>
-    
-YES - The translation is incorrect. The English text "%1/unconfirmed" refers to a transaction that has been confirmed in at least one block but less than six blocks. The Chinese translation "%1/未确认" means "%1/unconfirmed" or "%1/not confirmed", which is inaccurate.
-%1/已确认 (至少一个区块)</translation>
+Correct translation:  
+验证消息
 ```
 
 ```
         <source>Generated</source>
         <translation>挖矿生成</translation>
     
-YES: The translation is inaccurate. "Generated" in the context of Bitcoin typically refers to the creation of new blocks through mining, or the generation of new Bitcoin addresses. "挖矿生成" specifically translates to "mining generated," which is too narrow. The more appropriate translation for "Generated" in a general Bitcoin context would be "生成" (shēngchéng), meaning "generated" or "created."
-Correct translation: 生成
-```
+YES  
+The English word "Generated" is general and can refer to anything produced or created. However, the translation "挖矿生成" specifically means "mined and generated," which is more specific to mining in a cryptocurrency context. If the original term is used broadly (e.g., "Generated" as in generated transaction, generated key, or generated data), this translation is too narrow and potentially misleading.  
 
-```
-        <source>Confirming (%1 of %2 recommended confirmations)</source>
-        <translation>确认中 (推荐 %2个确认，已经有 %1个确认)</translation>
-    
-YES. The translation incorrectly swaps the order of the numbers in the confirmation count. The source text indicates "%1 of %2 recommended confirmations", meaning the current number of confirmations is the first number and the recommended number is the second. The translation states "%2个确认，已经有 %1个确认", which implies there are %2 confirmations and %1 is the current count, reversing the intended meaning.
-
-NO.
-The translation is correct.
-The source text is "Confirming (%1 of %2 recommended confirmations)".
-The translation is "确认中 (推荐 %2个确认，已经有 %1个确认)".
-This translates to "Confirming (Recommended %2 confirmations, currently has %1 confirmations)".
-This accurately conveys the meaning of the original sentence, with %1 representing the current number of confirmations and %2 representing the recommended number of confirmations. The format specifiers are also correctly placed.
+Correct translation:  
+生成
 ```
 
 ```
         <source>Show transaction details</source>
         <translation>显示交易详情(S)</translation>
     
-YES: The translation includes an unnecessary English letter in parentheses.
-Correct translation: 显示交易详情
+YES  
+The source text "Show transaction details" is a neutral command or label without any additional letters. The translation includes an extraneous "(S)" at the end, which is not present in the source and could confuse users. This "(S)" likely suggests a shortcut key or mnemonic in English, but in Chinese translations, such hints are typically not included or should match the source.
+
+Correct translation:  
+显示交易详情
 ```
 
 ```
         <source>Increase transaction fee</source>
         <translation>增加矿工费(F)</translation>
     
-YES - The translation uses "矿工费" which translates to "miner fee". While Bitcoin transactions do pay a fee to miners, the more common and accurate term for the fee paid by a user to facilitate a transaction is "交易费" (transaction fee) or "手续费" (handling fee). "矿工费" can be technically correct in that the fee goes to miners, but it's less direct and less commonly used in user-facing contexts for the fee a user pays. The '(F)' is also an unclear addition.
+YES  
+The source text "Increase transaction fee" does not specify "miner fee" explicitly; it refers generally to the transaction fee. The translation adds "矿工费(F)" which means "miner fee (F)", and the "(F)" is unexplained and unnecessary, possibly confusing. Moreover, the source does not mention "(F)" or any shortcut key.
 
-Correct translation: 增加交易费
+A more accurate and neutral translation is:  
+增加交易费用
 ```
 
 ```
         <source>Export</source>
         <translation>导出(E)</translation>
     
-YES, The translation includes an unnecessary English parenthetical "(E)" which is likely a leftover from a UI element and not appropriate for the meaning of "Export" in this context.
+YES
+The "(E)" is unnecessary and non-standard in Simplified Chinese UI translations, as keyboard shortcuts are typically not indicated in parentheses like this. The correct translation should simply be:
 
-Correct translation: 导出
-```
-
-```
-        <source>Cannot upgrade a non HD split wallet from version %i to version %i without upgrading to support pre-split keypool. Please use version %i or no version specified.</source>
-        <translation>无法在不支持“拆分前的密钥池”（pre split keypool）的情况下把“非拆分HD钱包”（non HD split wallet）从版本%i升级到%i。请使用版本号%i，或者压根不要指定版本号。</translation>
-    
-YES, The translation is problematic because it incorrectly translates "non HD split wallet" and "pre-split keypool". The context of Bitcoin suggests these are technical terms that should be translated more accurately.
-
-Correct translation:
-无法在不支持预拆分密钥池的情况下，将非HD拆分钱包从版本%i升级到版本%i。请使用版本%i，或不指定版本。
+导出
 ```
 
 ```
         <source>Error: Dumpfile format record is incorrect. Got "%s", expected "format".</source>
         <translation>错误: 转储文件格式不正确。得到是"%s"，而预期本应得到的是 "format"。</translation>
     
-YES: The translation is grammatically awkward and uses overly literal phrasing. A more natural and accurate translation is provided.
-错误：转储文件格式不正确。收到 "%s"，但预期格式为 "format"。
+YES  
+The phrase "得到是"%s"" is awkward and unnatural in Chinese. A better translation would be more concise and clearer. Also, the whitespace around the colon ":" and before the quotes should be standardized.
+
+Correct translation:  
+错误：转储文件格式记录不正确。得到 "%s"，预期应为 "format"。
 ```
 
 ```
         <source>More than one onion bind address is provided. Using %s for the automatically created Tor onion service.</source>
         <translation>提供多个洋葱路由绑定地址。对自动创建的洋葱服务用%s</translation>
     
-YES, the translation is problematic because it is incomplete and grammatically incorrect in Chinese. The phrase "用%s" at the end of the sentence is not a complete thought and doesn't make sense in this context.
-
-Here's a corrected translation:
-
-More than one onion bind address is provided. Using %s for the automatically created Tor onion service.
-provided more than one onion bind address, the automatically created Tor onion service will use %s.
-
-Corrected translation:
-提供了多个 Onion 绑定地址。将使用 %s 作为自动创建的 Tor Onion 服务。
-```
-
-```
-        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
-        <translation>修剪:上次同步钱包的位置已经超出（落后于）现有修剪后数据的范围。你需要进行-reindex（对于已经启用修剪节点，就需要重新下载整个区块链）</translation>
-    
-YES: The translation contains a grammatical error and is unnatural. The phrase "已经超出（落后于）现有修剪后数据的范围" is awkward. A more natural and accurate translation would be "上次钱包同步的位置已超出修剪后的数据范围". Also, the parenthetical explanation for `-reindex` could be clearer.
-
-Corrected translation: 修剪: 上次钱包同步的位置已超出修剪后的数据范围。你需要运行 -reindex（对于已启用修剪的节点，这会重新下载整个区块链）。
+YES  
+The translation is incomplete and sounds unnatural. It misses a verb after "用%s" and lacks clarity. A more accurate and natural translation would be:  
+"提供了多个洋葱绑定地址。自动创建的 Tor 洋葱服务将使用 %s。"
 ```
 
 ```
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
         <translation>区块数据库包含未来的交易，这可能是由本机的日期时间错误引起。若确认本机日期时间正确，请重新建立区块数据库。</translation>
     
-YES, The translation is problematic because it mistranslates "block" to "transaction".
-The correct translation should be: "区块数据库包含一个未来的区块，这可能是由本机的日期时间错误引起。若确认本机日期时间正确，请重新建立区块数据库。"
+YES  
+The word "交易" (transaction) is incorrect in this context; the source mentions a "block," not a "transaction." The correct term should be "区块" (block). Also, the translation slightly condenses the original and omits the conditional "Only rebuild the block database if you are sure..." as a conditional instruction; this reduces clarity. A more faithful translation preserving the original meaning would be:
+
+区块数据库包含一个看似来自未来的区块。这可能是由于您的计算机日期和时间设置不正确所致。只有当您确定计算机的日期和时间是正确的，才重新构建区块数据库。
 ```
 
 ```
         <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
         <translation>找零低于当前粉尘阈值时会被舍弃，并计入手续费，这些交易手续费就是在这种情况下产生的。</translation>
     
-YES, The translation is grammatically incorrect and does not accurately convey the meaning of the original English sentence. The Chinese sentence is also longer and more complex than necessary.
+YES  
+The translation adds explanatory content not present in the source and changes the original meaning. The source sentence states that "this is the transaction fee you may discard if change is smaller than dust at this level," which implies the fee applies if the change is discarded because it's dust-sized. The translation implies a different causal relationship and introduces phrases like "这些交易手续费就是在这种情况下产生的" ("these transaction fees are generated in such cases"), which is not in the original. Also, the source indicates "this is the transaction fee you may discard," but the translation says the change "will be discarded and counted into the fee," which slightly changes the meaning.
 
-Correct translation: 找零低于此阈值时，这些交易手续费会被舍弃。
-```
-
-```
-        <source>Cannot provide specific connections and have addrman find outgoing connections at the same time.</source>
-        <translation>在使用地址管理器(addrman)寻找出站连接时，无法同时提供特定的连接。</translation>
-    
-YES, The translation is problematic because it misses the meaning of "specific connections". The correct translation should be "无法在寻找出站连接时同时提供指定连接。", which means "Cannot provide specific connections and have addrman find outgoing connections at the same time.".
-```
-
-```
-        <source>Outbound connections restricted to Tor (-onlynet=onion) but the proxy for reaching the Tor network is not provided: none of -proxy, -onion or -listenonion is given</source>
-        <translation>出站连接被限制为仅使用 Tor (-onlynet=onion)，但是未提供到达 Tor 网络的代理：没有提供 -proxy=, -onion= 或 -listenonion 参数</translation>
-    
-YES, The translation is problematic because it is missing the equals sign after the parameters in the latter part of the sentence.
-Correct translation: 出站连接被限制为仅使用 Tor (-onlynet=onion)，但是未提供到达 Tor 网络的代理：没有提供 -proxy=, -onion= 或 -listenonion 参数。
+A more accurate and concise translation would be:  
+找零金额若小于此层级的尘埃阈值，则可将该交易费用舍弃。
 ```
 
 ```
         <source>Error loading %s: Wallet requires newer version of %s</source>
         <translation>%s 加载错误:请升级到最新版 %s</translation>
     
-YES, The translation is grammatically incorrect. The original sentence implies that the wallet requires a newer version of the specified software, but the translation states that the user should upgrade to the latest version of the software to load the content. A more accurate translation would be:
+YES  
+The translation does not correctly reflect the structure and meaning of the source. The source says "Error loading %s: Wallet requires newer version of %s", meaning the first %s failed to load, and specifically because the wallet needs a newer version of the second %s.
 
-%s 加载错误: 钱包需要新版本的 %s
+The translation "%s 加载错误:请升级到最新版 %s" translates back as "%s loading error: please upgrade to the latest version of %s," which omits the connection to the wallet and changes the meaning from a specific error related to the wallet requiring a newer version.
+
+A more accurate translation would be:  
+"%s 加载错误：钱包需要较新版的 %s"
 ```
 
 ```
         <source>Error: Missing checksum</source>
         <translation>错误：跳过检查检验和</translation>
     
-YES, The translation is problematic because it does not accurately convey the meaning of the source text. "跳过检查检验和" translates to "skip check checksum", which is not the same as "missing checksum".
+YES  
+The translation "错误：跳过检查检验和" means "Error: skip checksum verification," which changes the meaning and is inaccurate. The source phrase "Error: Missing checksum" indicates a missing checksum, not skipping it.
 
-The correct translation should be:
+Correct translation:  
 错误：缺少校验和
 ```
 
@@ -520,59 +472,52 @@ The correct translation should be:
         <source>Error: Unable to parse version %u as a uint32_t</source>
         <translation>错误：无法把版本号%u作为unit32_t解析</translation>
     
-YES: The translation incorrectly uses "unit32_t" instead of "uint32_t".
-错误：无法把版本号%u作为uint32_t解析
+YES
+The translation has a typo in "unit32_t" which should be "uint32_t". Also, it is more natural to say "解析为" rather than "作为…解析".
+
+Correct translation:
+错误：无法将版本号%u解析为uint32_t
 ```
 
 ```
         <source>Error: Unable to write data to disk for wallet %s</source>
         <translation>错误：无法将数据写入钱包的磁盘%s。</translation>
     
-YES, The format specifier "%s" is misplaced in the translation. It should be placed at the end of the string to correctly represent the wallet address.
-The correct translation is: 错误：无法将数据写入钱包磁盘 %s。
+YES  
+The placement of "%s" is incorrect in the translation. It should directly follow "钱包" indicating the wallet name or identifier, not after "磁盘". Also, the extra "的" before "磁盘" is unnatural. The correct translation should clearly indicate that the data cannot be written to the disk for the specified wallet.
+
+Correct translation:  
+错误：无法将数据写入钱包 %s 的磁盘。
 ```
 
 ```
         <source>Fee rate (%s) is lower than the minimum fee rate setting (%s)</source>
         <translation>手续费率 (%s) 低于最大手续费率设置 (%s)</translation>
     
-YES. The translation incorrectly uses "maximum" instead of "minimum". The correct translation should reflect that the fee rate is lower than the *minimum* fee rate setting.
+YES  
+The translation incorrectly renders "minimum fee rate" as "最大手续费率" which means "maximum fee rate." The correct translation should refer to the minimum fee rate setting.
 
-NO
+Correct translation:  
+手续费率 (%s) 低于最小手续费率设置 (%s)
 ```
 
 ```
         <source>Invalid -onion address or hostname: '%s'</source>
         <translation>无效的 -onion 地址: '%s'</translation>
     
-YES - The translation misses the "or hostname" part of the original English sentence. The correct translation should include "或主机名" (or hostname).
+YES  
+The original source mentions "Invalid -onion address or hostname: '%s'", but the translation only covers "无效的 -onion 地址: '%s'" ("Invalid -onion address: '%s'") and omits "hostname" (主机名). This omission reduces accuracy and completeness.
 
-NO
-```
-
-```
-        <source>Not solvable pre-selected input %s</source>
-        <translation>无法求解的预先选择输入%s</translation>
-    
-YES, The translation is inaccurate. The phrase "pre-selected input" should be translated as "预选输入" or "预先选择的输入" rather than "预先选择输入".
-The correct translation is: 无法求解的预选输入%s
+Correct translation:  
+无效的 -onion 地址或主机名：'%s'
 ```
 
 ```
         <source>Transaction amounts must not be negative</source>
         <translation>交易金额不不可为负数</translation>
     
-YES, The translation has a grammatical error. The character "不" is repeated unnecessarily.
-The correct translation should be: "交易金额不可为负数".
-```
-
-```
-        <source>Unknown new rules activated (versionbit %i)</source>
-        <translation>不明的交易规则已经激活 (versionbit %i)</translation>
-    
-YES, the word "交易" (transaction) is not present in the source text. The correct translation should be:
-
-"NO"
-"不明的新规则已激活 (versionbit %i)"
+YES  
+The translation contains a double negation "不不可," which is incorrect and confusing. The correct translation should be concise and clear:  
+交易金额不得为负数
 ```
 </details>

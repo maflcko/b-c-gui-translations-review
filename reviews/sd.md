@@ -10,59 +10,24 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 
 
 ```
-        <source>Address</source>
-        <translation>پتو</translation>
+        <source>or</source>
+        <translation>يہ</translation>
     
-YES. The translation is incorrect and nonsensical in the context of Bitcoin. "پتو" means "blanket" in Sindhi.
+YES
+The translation is incorrect. The English word "or" should be translated as "يا" in Sindhi ('sd'). The provided translation "يہ" means "this" in Urdu, not "or" in Sindhi.
 
-The correct translation for "Address" in the context of Bitcoin would be "پتو" (pato).
-
-However, the provided translation is "پتو" (pato). This is the correct translation. My previous assessment was incorrect due to a misunderstanding of the Sindhi word.
-
-NO
+Correct translation:
+يا
 ```
 
 ```
         <source>or</source>
         <translation>يہ</translation>
     
-YES. The translation is incorrect. 'yih' in Sindhi typically means 'this'. The correct translation for 'or' in Sindhi is 'yā'.
+YES
+The translation is incorrect. The English word "or" should be translated as "يا" in Sindhi ('sd'). The provided translation "يہ" means "this" in Urdu, not "or" in Sindhi.
 
-YES. The translation is incorrect. 'yih' in Sindhi typically means 'this'. The correct translation for 'or' in Sindhi is 'yā'.
-        <source>or</source>
-        <translation>يا</translation>
-```
-
-```
-        <source>Address</source>
-        <extracomment>Title of Peers Table column which contains the IP/Onion/I2P address of the connected peer.</extracomment>
-        <translation>پتو</translation>
-    
-YES - The translation is incorrect. "پتو" means "blanket" in Sindhi. The correct translation for "Address" in this context would be related to a network or wallet address.
-Correct translation: ايڊريس
-```
-
-```
-        <source>or</source>
-        <translation>يہ</translation>
-    
-YES. The translation is incorrect. 'yih' in Sindhi typically means 'this'. The correct translation for 'or' in Sindhi is 'yā'.
-
-YES. The translation is incorrect. 'yih' in Sindhi typically means 'this'. The correct translation for 'or' in Sindhi is 'yā'.
-        <source>or</source>
-        <translation>يا</translation>
-```
-
-```
-        <source>Address</source>
-        <translation>پتو</translation>
-    
-YES. The translation is incorrect and nonsensical in the context of Bitcoin. "پتو" means "blanket" in Sindhi.
-
-The correct translation for "Address" in the context of Bitcoin would be "پتو" (pato).
-
-However, the provided translation is "پتو" (pato). This is the correct translation. My previous assessment was incorrect due to a misunderstanding of the Sindhi word.
-
-NO
+Correct translation:
+يا
 ```
 </details>
