@@ -14,17 +14,12 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <translation>ਚੁਣੇ ਪਤੇ ਦੀ ਸਿਸਟਮ ਦੀ ਚੂੰਢੀ-ਤਖਤੀ 'ਤੇ ਨਕਲ ਲਾਹੋ</translation>
     
 YES
-The translation uses "ਚੂੰਢੀ-ਤਖਤੀ" for "system clipboard", which is not the standard or commonly understood term in Punjabi. A clearer and more accurate translation would be:
+The translation is inaccurate. "ਚੂੰਢੀ-ਤਖਤੀ" is not the standard term for clipboard in Punjabi, and the sentence construction is awkward. A more accurate and natural translation would be:
 
-ਚੁਣੇ ਪਤੇ ਨੂੰ ਸਿਸਟਮ ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਕਰੋ
-
-Explanation: 
-- "ਚੁਣੇ ਪਤੇ ਦੀ" = "of the selected address" (correct).
-- "ਨਕਲ ਲਾਹੋ" is unnatural Punjabi for "Copy" – better is "ਕਾਪੀ ਕਰੋ".
-- "ਚੂੰਢੀ-ਤਖਤੀ" is an awkward calque of "clipboard"; "ਕਲਿੱਪਬੋਰਡ" (transliteration) is widely understood.
+ਚੁਣੇ ਗਏ ਪਤੇ ਨੂੰ ਸਿਸਟਮ ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਕਰੋ
 
 Correct translation:
-ਚੁਣੇ ਪਤੇ ਨੂੰ ਸਿਸਟਮ ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਕਰੋ
+ਚੁਣੇ ਗਏ ਪਤੇ ਨੂੰ ਸਿਸਟਮ ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਕਰੋ
 ```
 
 ```
@@ -32,13 +27,18 @@ Correct translation:
         <translation>ਏਸ ਕਾਰੇ ਲਈ ਤੁਹਾਡਾ ਵੱਲੇਟ ਖੋਲਣ ਵਾਸਤੇ ਵੱਲੇਟ ਪਾਸ ਲੱਗੇਗਾ </translation>
     
 YES
-The translation contains a few issues:
-1. "ਏਸ ਕਾਰੇ" is an incorrect and awkward translation for "this operation".
-2. There is inconsistent terminology for "Wallet", sometimes spelled as "ਵੱਲੇਟ", sometimes as "wallet" in English;
-3. "ਪਾਸ" is an incomplete translation for "passphrase". "ਪਾਸਫਰੇਜ਼" or "ਪਾਸਫਰੇਜ਼" would be more accurate.
-4. The sentence structure is awkward and omits the nuance of "to unlock the wallet".
+The translation, while generally understandable, contains a few issues:
+1. "ਏਸ ਕਾਰੇ" should be "ਇਸ ਕਾਰਵਾਈ" or "ਇਸ ਕਾਰਵਾਈ ਲਈ" for "This operation".
+2. "ਤੁਹਾਡਾ ਵੱਲੇਟ ਖੋਲਣ ਵਾਸਤੇ ਵੱਲੇਟ ਪਾਸ ਲੱਗੇਗਾ" is a bit redundant and informal. It translates roughly to "To open your wallet, wallet pass will be needed". Instead, it should specifically refer to "passphrase" and not just "pass".
+3. The sentence is missing proper punctuation (the translation does not end with a period).
+4. The extra space before the end quote should be removed.
 
 Correct translation:
-ਇਹ ਕਾਰਵਾਈ ਤੁਹਾਡੇ ਵਾਲਟ ਨੂੰ ਅਣਲੌਕ ਕਰਨ ਲਈ ਤੁਹਾਡੀ ਵਾਲਟ ਪਾਸਫਰੇਜ਼ ਦੀ ਲੋੜ ਹੈ।
+ਇਸ ਕਾਰਵਾਈ ਲਈ ਤੁਹਾਨੂੰ ਆਪਣਾ ਵਾਲਿਟ ਪਾਸਫਰੇਜ਼ ਦੁਰਲੱਭ ਕਰਨ ਲਈ ਚਾਹੀਦਾ ਹੈ।
+
+Alternative more literal correct translation:
+ਇਸ ਕਾਰਵਾਈ ਲਈ ਤੁਹਾਨੂੰ ਵਾਲਿਟ ਅਣਲਾਕ ਕਰਨ ਵਾਸਤੇ ਆਪਣਾ ਵਾਲਿਟ ਪਾਸਫਰੇਜ਼ ਚਾਹੀਦਾ ਹੈ।
 ```
 </details>
+
+Number of issues: 2.

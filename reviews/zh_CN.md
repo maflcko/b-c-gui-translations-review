@@ -14,7 +14,7 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <translation>关于 %1 (A)</translation>
     
 YES
-The translation includes an extraneous " (A)" at the end, which is not present in the source and could cause confusion or formatting issues.
+The translation adds "(A)" which is not present in the English source text, making it inaccurate. This is unnecessary and could be confusing.
 
 Correct translation:
 关于 %1
@@ -24,10 +24,10 @@ Correct translation:
         <source>Sending addresses</source>
         <translation>付款地址(S)</translation>
     
-YES  
-The source text "Sending addresses" refers to addresses used for sending Bitcoin, typically meaning "发出地址" or "发送地址" (addresses from which payments are sent). The translation "付款地址(S)" means "payment address(es)" and adds "(S)" which is not present in the source and appears as an unwanted extraneous character. Also, "付款地址" usually means addresses for payment (receiving payment), which may not capture the nuance of "Sending addresses."
+YES
+The translation adds "(S)" which is not present in the source, and which could be confusing or nonstandard in Chinese translations. The standard translation should be straightforward and without extra characters.
 
-Correct translation:  
+Correct translation:
 发送地址
 ```
 
@@ -35,8 +35,9 @@ Correct translation:
         <source>Close wallet</source>
         <translation>卸载钱包</translation>
     
-YES  
-The translation "卸载钱包" means "uninstall wallet," which is incorrect in this context. The source text "Close wallet" means to close or shut the wallet application or interface, not to uninstall it. A more accurate translation would be:  
+YES
+The translation of "Close wallet" as "卸载钱包" is incorrect. "卸载钱包" means "uninstall wallet," which is not the same as "close wallet." The correct translation should be:
+
 关闭钱包
 ```
 
@@ -45,21 +46,29 @@ The translation "卸载钱包" means "uninstall wallet," which is incorrect in t
         <extracomment>A context menu item. The "Peers tab" is an element of the "Node window".</extracomment>
         <translation>显示节点标签</translation>
     
-YES  
-The translation "显示节点标签" literally means "Show node label/tab," but a more accurate and idiomatic translation for "Show Peers tab" should use "对等节点" (peers) and "标签页" for tab. Also, "标签" alone is ambiguous and less common for UI tabs; "标签页" or "选项卡" is more standard.
+YES
+The translation "显示节点标签" means "Show node label/tab", but "Peers tab" specifically refers to the tab for "Peers" (connected peers), not the node in general. "节点" means "node", while "Peers" should be translated as "节点" (peers/connected nodes) or more commonly "连接节点" or just "节点" in the context of Bitcoin, but to be accurate and consistent, it's often translated as "节点" but "Peers" specifically is usually "连接" or "连接节点" or simply "节点" when used as a tab name.
 
-Correct translation:  
-显示对等节点标签页
+However, to distinguish clearly, the correct translation for "Show Peers tab" should be:
+显示“节点”标签页
+
+or, if the software calls the tab literally "Peers" instead of "节点":
+显示“Peers”标签页
+
+So the translation is misleading and should be improved.
+
+Correct translation:
+显示“节点”标签页
 ```
 
 ```
         <source>Lock unspent</source>
         <translation>锁定未花费(O)</translation>
     
-YES  
-The "(O)" at the end of the translation is extraneous and does not appear in the source text. It should be removed to match the source accurately.  
+YES
+The translation adds "(O)" at the end, which is not present in the source. This "(O)" is likely a mistaken mnemonic/shortcut key, not indicated in the English source. Otherwise, the translation "锁定未花费" is accurate.
 
-Correct translation:  
+Correct translation:
 锁定未花费
 ```
 
@@ -67,30 +76,20 @@ Correct translation:
         <source>Close wallet</source>
         <translation>卸载钱包</translation>
     
-YES  
-The translation "卸载钱包" means "uninstall wallet," which is incorrect in this context. The source text "Close wallet" means to close or shut the wallet application or interface, not to uninstall it. A more accurate translation would be:  
+YES
+The translation of "Close wallet" as "卸载钱包" is incorrect. "卸载钱包" means "uninstall wallet," which is not the same as "close wallet." The correct translation should be:
+
 关闭钱包
-```
-
-```
-        <source>Spend unconfirmed change</source>
-        <translation>动用尚未确认的找零资金(S)</translation>
-    
-YES  
-The translation adds an extraneous "(S)" at the end, which is not present in the source and may confuse users. Also, "动用" is acceptable, but the more common and clearer translation for "Spend" in this Bitcoin context might be "使用". The rest is accurate and clear.
-
-Correct translation:  
-动用尚未确认的找零资金
 ```
 
 ```
         <source>Your current balance in watch-only addresses</source>
         <translation>您当前在仅观察观察地址中的余额</translation>
     
-YES  
-The translation contains a redundant repetition of "观察" ("watch") and is somewhat unnatural. The phrase "仅观察观察地址" should be "仅观察地址" to correctly mean "watch-only addresses."
+YES
+There is a redundancy in the phrase "仅观察观察地址" ("watch-only watch address") and awkward wording. The correct and natural translation should be:
 
-Correct translation:  
+Correct translation:
 您当前在仅观察地址中的余额
 ```
 
@@ -99,17 +98,21 @@ Correct translation:
         <translation>隐藏其他人的详细信息</translation>
     
 YES
-The translation "隐藏其他人的详细信息" means "Hide other people's detailed information," which introduces an unintended meaning. The source "Hide Peers Detail" likely refers to hiding the details of network peers or nodes, not necessarily "other people." A more accurate translation would be:
+The Chinese translation "隐藏其他人的详细信息" means "Hide other people's detailed information," which is incorrect. The correct translation for "Hide Peers Detail" in the context of Bitcoin (referring to peer nodes) should be:
 
 隐藏节点详细信息
+
+This translates back as "Hide node detail/information," which is in line with the intended meaning regarding network peers.
 ```
 
 ```
         <source>1 day</source>
         <translation>1 天(A)</translation>
     
-YES  
-The translation includes an unnecessary "(A)" which is not present in the source text and is not appropriate here. The correct translation should simply be:  
+YES
+The translation "1 天(A)" contains an unnecessary "(A)", which is not present in the original English source and appears to be erroneous. There is also no whitespace format issue.
+
+Correct translation:
 1 天
 ```
 
@@ -117,8 +120,10 @@ The translation includes an unnecessary "(A)" which is not present in the source
         <source>Subtract fee from amount</source>
         <translation>从金额中减去交易费(U)</translation>
     
-YES  
-The extra "(U)" in the translation is unnecessary and does not appear in the source. It should be removed to maintain accuracy and clarity. The correct translation is:  
+YES
+The translation adds "(U)", which is not present in the original text and could confuse users. The rest of the translation is otherwise accurate.
+
+Correct translation:
 从金额中减去交易费
 ```
 
@@ -127,7 +132,7 @@ The extra "(U)" in the translation is unnecessary and does not appear in the sou
         <translation>错误：跳过检查检验和</translation>
     
 YES  
-The translation is inaccurate and misleading. The English source indicates a missing checksum error, but the Chinese translation means "Error: skip checksum verification," which is incorrect.
+The translation is problematic. The source says "Error: Missing checksum" (meaning the checksum is not present), but the translation says "错误：跳过检查检验和" ("Error: skipped checksum"), which means the checksum was intentionally skipped. This changes the meaning.
 
 Correct translation:  
 错误：缺少校验和
@@ -137,10 +142,10 @@ Correct translation:
         <source>Error: Unable to parse version %u as a uint32_t</source>
         <translation>错误：无法把版本号%u作为unit32_t解析</translation>
     
-YES  
-The translation contains a typo in "unit32_t" which should be "uint32_t". Also, typically in Chinese technical translations, there should be a space before and after the format specifier %u for better readability, but it's optional. The phrase "把版本号" is acceptable but can be more concise.
+YES
+There is a typo in "unit32_t"; it should be "uint32_t" (the 'i' and 'n' are inverse). Also, there should be a space between the Chinese text and the format specifier for better readability.
 
-Correct translation:  
+Correct translation:
 错误：无法将版本号 %u 解析为 uint32_t
 ```
 
@@ -148,11 +153,11 @@ Correct translation:
         <source>Error: Unable to write data to disk for wallet %s</source>
         <translation>错误：无法将数据写入钱包的磁盘%s。</translation>
     
-YES  
-The placement of %s is incorrect. The %s placeholder is meant for the wallet identifier and should appear immediately after "钱包", not after "磁盘". The phrase "钱包的磁盘%s" is awkward and misleading. Also, the original English does not imply the disk belongs to the wallet but that the data cannot be written to disk for that wallet.
+YES
+There is a slight word order issue. The phrase "写入钱包的磁盘%s" translates to "write to the wallet's disk %s", which can be misleading because %s is a placeholder for the wallet's name, not a particular disk. Also, the period should match the style (no period in the English).
 
-Correct translation:  
-错误：无法将数据写入钱包 %s 的磁盘。
+Correct translation:
+错误：无法将数据写入钱包 %s 的磁盘
 ```
 
 ```
@@ -160,30 +165,32 @@ Correct translation:
         <translation>%s删除交易时失败: </translation>
     
 YES
-The word order and punctuation in the translation are incorrect. The source means a failure occurred while removing the transaction identified by %s, so %s should be placed after "删除交易" and before "失败", without the colon at the end. Also, the space before the colon is unnecessary and incorrect.
+The placement of %s is incorrect. In the English source, "%s" is at the end of the sentence, serving as extra information (usually an error message). In the Chinese translation, "%s" is at the beginning, which is unidiomatic and may confuse users. Also, the colon at the end is not necessary unless more content follows.
 
 Correct translation:
-删除交易 %s 失败
+删除交易时失败: %s
 ```
 
 ```
         <source>Fee rate (%s) is lower than the minimum fee rate setting (%s)</source>
         <translation>手续费率 (%s) 低于最大手续费率设置 (%s)</translation>
     
-YES  
-The translation incorrectly renders "minimum fee rate" as "最大手续费率" which means "maximum fee rate." The correct translation should reflect "minimum" instead of "maximum."  
+YES
+The translation incorrectly states "低于最大手续费率设置" ("lower than the maximum fee rate setting") instead of "低于最小手续费率设置" ("lower than the minimum fee rate setting"). The word "最大" means "maximum", but "minimum" should be "最小".
 
-Correct translation:  
-手续费率 (%s) 低于最小手续费率设置 (%s)
+Correct translation:
+手续费率（%s）低于最小手续费率设置（%s）
 ```
 
 ```
         <source>Transaction amounts must not be negative</source>
         <translation>交易金额不不可为负数</translation>
     
-YES  
-The translation contains a double negative ("不不可"), which is incorrect and confusing. The correct translation should be simple and clear:  
-交易金额不得为负数
+YES
+The translation contains a double negative "不不可", which is erroneous. It should be "交易金额不可为负数" or "交易金额不得为负数".
+
+Correct translation:
+交易金额不可为负数
 ```
 
 ```
@@ -191,9 +198,11 @@ The translation contains a double negative ("不不可"), which is incorrect and
         <translation>钱包文件创建失败：1%s</translation>
     
 YES  
-The translation adds an extraneous '1' before the format specifier %s, which is not present in the source and is incorrect. The format specifier %s must be copied exactly, without any extra characters preceding it.
+The translation incorrectly includes "1" before %s in "钱包文件创建失败：1%s", which appears to be an erroneous character. It should be "钱包文件创建失败：%s" with the %s format specifier directly following the colon.
 
-Correct translation:  
+Correct translation:
 钱包文件创建失败：%s
 ```
 </details>
+
+Number of issues: 17.

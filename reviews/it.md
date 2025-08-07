@@ -10,35 +10,26 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 
 
 ```
-        <source>Right-click to edit address or label</source>
-        <translation>Click destro del mouse per modificare l'indirizzo oppure l'etichetta</translation>
-    
-YES  
-The Italian translation is understandable but it is not idiomatic and mixes English and Italian ("Click destro del mouse"). A better and more natural translation would be:  
-"Fai clic con il tasto destro per modificare l'indirizzo o l'etichetta"
-```
-
-```
         <source>Address Fetch</source>
         <extracomment>Short-lived peer connection type that solicits known addresses from a peer.</extracomment>
         <translation>Trova l’indirizzo </translation>
     
-YES  
-The translation has an extra trailing space and is not precise. "Address Fetch" refers to the action or process of retrieving addresses, not just "Find the address" (singular). A better translation would be more literal and noun-focused, such as "Recupero indirizzo" or "Recupero degli indirizzi" (if plural is intended). Since the source is singular ("Address Fetch"), the singular form is preferable.
+YES
+The translation "Trova l’indirizzo" means "Find the address", which is not accurate for "Address Fetch" in this context. It also introduces an unnecessary space at the end. The correct translation should reflect the process of fetching or retrieving addresses, not just finding a single address.
 
-Correct translation:  
-Trova l’indirizzo
+Correct translation:
+Recupero indirizzi
 ```
 
 ```
         <source>Backup wallet to another location</source>
         <translation>Effettua il backup del portafoglio</translation>
     
-YES  
-The translation "Effettua il backup del portafoglio" means "Perform the wallet backup" rather than specifying "to another location," which is part of the original English text. The phrase "to another location" is omitted and should be included to preserve the meaning.
+YES
+The translation omits "to another location," which should be included to match the original meaning.
 
-Correct translation:  
-"Effettua il backup del portafoglio in un'altra posizione"
+Correct translation:
+Effettua il backup del portafoglio in un'altra posizione
 ```
 
 ```
@@ -46,20 +37,20 @@ Correct translation:
         <translation>Mostra la lista degli indirizzi di ricezione utilizzati</translation>
     
 YES
-The translation is incomplete and misses "e delle etichette" (and labels), which is part of the source sentence.
+The translation omits the "and labels" part from the original English source. The correct translation should include "etichette" for "labels".
 
 Correct translation:
-Mostra la lista degli indirizzi di ricezione utilizzati e delle etichette
+Mostra la lista degli indirizzi di ricezione e delle etichette utilizzati
 ```
 
 ```
         <source>Show</source>
         <translation>Scome</translation>
     
-YES  
-The Italian translation is incorrect. The English word "Show" should be translated as "Mostra" or "Visualizza" in Italian, not "Scome," which is not an Italian word.
+YES
+The translation is incorrect. "Scome" is not an Italian word, and does not mean "Show". The correct translation is "Mostra".
 
-Correct translation:  
+Correct translation:
 Mostra
 ```
 
@@ -68,7 +59,7 @@ Mostra
         <translation>Pre-sincronizzazione intestazioni  (%1%)…</translation>
     
 YES
-There is an extra space before the opening parenthesis that does not exist in the source text, which causes a formatting discrepancy. The Italian translation should avoid the space before the parentheses.
+There is an unwanted extra space before the opening parenthesis in the Italian translation. It should be: "Pre-sincronizzazione intestazioni (%1%)…"
 
 Correct translation:
 Pre-sincronizzazione intestazioni (%1%)…
@@ -78,37 +69,35 @@ Pre-sincronizzazione intestazioni (%1%)…
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
         <translation>L'indirizzo "%1" esiste già come indirizzo di setinazione con l'etichetta "%2" e quindi non può essere aggiunto come indirizzo mittente.</translation>
     
-YES  
-There is a typo in the word "setinazione" which should be "destinazione". Also, the phrase "indirizzo mittente" is less common; it is more natural to say "indirizzo di invio" or "indirizzo mittente" is acceptable but "indirizzo di invio" fits better stylistically in this context.
+YES
+There is a typo in the translation: "setinazione" should be "destinazione". Also, while the meaning is mostly carried over, changing "indirizzo di setinazione" to "indirizzo di ricezione" more accurately reflects "receiving address", and "indirizzo mittente" is fine for "sending address".
 
-Correct translation:  
-L'indirizzo "%1" esiste già come indirizzo di destinazione con l'etichetta "%2" e quindi non può essere aggiunto come indirizzo di invio.
+Correct translation:
+L'indirizzo "%1" esiste già come indirizzo di ricezione con l'etichetta "%2" e quindi non può essere aggiunto come indirizzo mittente.
 ```
 
 ```
         <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
         <translation>Mostra se il proxy SOCK5 di default che p stato fornito è usato per raggiungere i contatti attraverso questo tipo di rete.</translation>
     
-YES  
-The translation contains errors:  
-- "SOCK5" should be "SOCKS5" to match the source.  
-- The phrase "che p stato fornito" contains "p" instead of "è" (missing accent), which is a typo.  
-- "contatti" (contacts) is less appropriate in the Bitcoin network context; "peer" or "nodi" (nodes) would be better.  
-- Overall, the sentence can be improved for clarity and correctness.
+YES
+There is a typographical error: "che p stato fornito" should be "che è stato fornito". Also, "peers" in this context is better translated as "peer" or "nodi" rather than "contatti". "Di default" is acceptable but "predefinito" is preferable.
 
-Correct translation:  
-Mostra se il proxy SOCKS5 predefinito fornito è utilizzato per raggiungere i peer tramite questo tipo di rete.
+Correct translation:
+Mostra se il proxy SOCKS5 predefinito fornito è utilizzato per raggiungere i peer attraverso questo tipo di rete.
 ```
 
 ```
         <source>Prune block storage to</source>
         <translation>Modalità "prune": elimina i blocchi dal disco dopo</translation>
     
-YES  
-The translation adds extra information ("Modalità 'prune': elimina i blocchi dal disco dopo") that is not present in the source text, which is shorter and more neutral ("Prune block storage to"). This makes the translation less accurate and potentially misleading. The original phrase is likely a label or prompt indicating setting a pruning target size and should remain concise.
+YES
+The translation omits the numeric or size-specifying value that should follow "to" in the source. The source refers to reducing block storage to a certain size, whereas the translation explains pruning generally and not the actionable limit.
 
-Correct translation:  
-Pruning dello spazio di archiviazione blocchi a
+Correct translation:
+Elimina lo storage dei blocchi fino a
+or
+Riduci l'archivio dei blocchi a
 ```
 
 ```
@@ -116,10 +105,10 @@ Pruning dello spazio di archiviazione blocchi a
         <translation>Non posso leggere l'impostazione "%1", %2,</translation>
     
 YES
-The translation incorrectly ends with a comma instead of a period, which differs from the source punctuation. Also, the source phrase "Could not read setting ..." conveys a past inability; "Non posso leggere ..." is present tense ("I cannot read ..."), which is not accurate. The correct tense is past ("Non ho potuto leggere ...").
+The Italian translation incorrectly uses "Non posso leggere" ("I cannot read"), which is more personal and less formal than appropriate. The standard for error messages is "Impossibile leggere". Also, the sentence ends with a comma instead of a period, which is inconsistent.
 
 Correct translation:
-Non ho potuto leggere l'impostazione "%1", %2.
+Impossibile leggere l'impostazione "%1", %2.
 ```
 
 ```
@@ -128,79 +117,33 @@ Non ho potuto leggere l'impostazione "%1", %2.
         <translation>Transizione Parzialmente Firmata (Binaria)</translation>
     
 YES
-The Italian word for "Transaction" is "Transazione," not "Transizione," which means "transition." 
+There is a spelling error in the Italian translation. "Transizione" means "transition" rather than "transaction". The correct term is "Transazione". Additionally, "Binaria" is correct for "Binary".
 
 Correct translation:
 Transazione Parzialmente Firmata (Binaria)
 ```
 
 ```
-        <source>(But no wallet is loaded.)</source>
-        <translation>(Ma nessun portafogli è stato caricato.)</translation>
-    
-YES  
-The Italian word for "wallet" is singular and masculine, so it should be "portafoglio" (singular) instead of "portafogli" (plural). Also, "Ma" is correct at the beginning, but the sentence would be more natural without capitalization after the opening parenthesis, or simply lowercase "ma" if inside parentheses. The original English places emphasis with parentheses, so keeping that is fine.  
-
-Correct translation:  
-(Ma nessun portafoglio è stato caricato.)
-```
-
-```
-        <source>Transaction Relay</source>
-        <translation>Relay di transazione</translation>
-    
-YES
-The term "Relay" should be translated into Italian to maintain consistency and avoid mixing languages. The correct translation is:
-
-"Rete di trasmissione delle transazioni" 
-
-or more simply:
-
-"Trasmissione delle transazioni" 
-
-If brevity is needed and the concept corresponds specifically to "Transaction Relay," then:
-
-"Relay di transazioni" (using "transazioni" plural) is acceptable, but ideally the English word "Relay" should be replaced by the Italian equivalent "Trasmissione" or "Inoltro".
-
-Corrected translation:
-
-"Relay di transazioni" 
-
-or better:
-
-"Inoltro delle transazioni"
-```
-
-```
-        <source>Disconnect</source>
-        <translation>Disconnetti</translation>
-    
-YES
-The Italian translation contains a typo. The correct spelling is "Disconnetti" with two 'n's.
-
-Correct translation:
-Disconnetti
-```
-
-```
         <source>Unban</source>
         <translation>Elimina Ban</translation>
     
-YES  
-The translation is inaccurate and unnatural. "Unban" in Italian is better translated as "Rimuovi il ban" or simply "Sblocca". "Elimina Ban" incorrectly mixes English "Ban" with Italian, and "Elimina" usually means "Delete" rather than "Unban".
+YES
+The translation "Elimina Ban" is understandable but not the standard or most accurate in Italian for the context of "Unban". A better translation would be simply "Sblocca" or "Rimuovi ban".
 
-Correct translation:  
-Rimuovi il ban
+Correct translation:
+Sblocca
+or
+Rimuovi ban
 ```
 
 ```
         <source>Ctrl+I</source>
         <translation>Ctrl+W</translation>
     
-YES
-The translation incorrectly changes the shortcut from "Ctrl+I" to "Ctrl+W". Shortcut keys should be preserved exactly as in the source.
+YES  
+The translation is incorrect. "Ctrl+I" should be kept as "Ctrl+I" because keyboard shortcuts do not change between languages unless the application assigns different shortcuts for the Italian version (which is rare). "Ctrl+W" refers to a different keyboard shortcut.
 
-Correct translation:
+Correct translation:  
 Ctrl+I
 ```
 
@@ -208,8 +151,10 @@ Ctrl+I
         <source>Copy message</source>
         <translation>Copia message</translation>
     
-YES  
-The English phrase "message" should be translated to the Italian equivalent "messaggio." The correct translation is:  
+YES
+The word "message" is not translated into Italian; it should be "messaggio".
+
+Correct translation:
 Copia messaggio
 ```
 
@@ -217,13 +162,10 @@ Copia messaggio
         <source>Could not generate new %1 address</source>
         <translation>Non è stato possibile generare il nuovo %1 indirizzo</translation>
     
-YES  
-The word order in Italian is incorrect. "indirizzo" (address) should immediately follow "%1" without intervening words. Also, "nuovo" should come after "%1" and before "indirizzo" as an adjective, but the phrase "il nuovo %1 indirizzo" is unnatural and incorrect because "%1" represents a placeholder (likely something like "Bitcoin"), so it should be "%1 nuovo indirizzo" or ideally "%1 indirizzo nuovo" is not idiomatic. The best way to say this in Italian is:  
-"Non è stato possibile generare un nuovo indirizzo %1"  
-or if "%1" is an adjective describing the type of address, then place it before "indirizzo":  
-"Non è stato possibile generare un nuovo indirizzo %1"  
+YES
+The word order in Italian is incorrect; the adjective "nuovo" should precede the noun "indirizzo". It should be "nuovo indirizzo %1" or more naturally "un nuovo indirizzo %1" if indefinite is appropriate.
 
-Correct translation:  
+Correct translation:
 Non è stato possibile generare un nuovo indirizzo %1
 ```
 
@@ -232,9 +174,12 @@ Non è stato possibile generare un nuovo indirizzo %1
         <translation>Input...</translation>
     
 YES
-The translation uses "Input" in English rather than the correct Italian term. Also, the ellipsis character differs: the source uses the proper single character "…" (Unicode U+2026), while the translation uses three dots "...". The Italian word for "Inputs" (plural) in this Bitcoin context is "Input" (often used as is in Italian technical jargon), but if plural is intended, it should remain "Input" as it can be invariant in plural, or clarify with context. However, the main issue is the use of English rather than Italian. A better translation keeping the original ellipsis character would be:
+The word "Inputs…" should be translated as "Input…" is not correct in Italian ('Input' is singular), and the ellipsis characters differ (use the typographical '…' rather than three dots). The correct plural form in Italian could be "Input…" (borrowing the word as invariable, but better would be "Input…" OR "Ingressi…", depending on context—commonly "input" is used in Italian, but "Ingresso" or "Ingressi" is correct for clarity).
 
+Correct translation:
 Input…
+or
+Ingressi…
 ```
 
 ```
@@ -243,7 +188,7 @@ Input…
         <translation>Transizione Parzialmente Firmata (Binaria)</translation>
     
 YES
-The Italian word for "Transaction" is "Transazione," not "Transizione," which means "transition." 
+There is a spelling error in the Italian translation. "Transizione" means "transition" rather than "transaction". The correct term is "Transazione". Additionally, "Binaria" is correct for "Binary".
 
 Correct translation:
 Transazione Parzialmente Firmata (Binaria)
@@ -253,21 +198,20 @@ Transazione Parzialmente Firmata (Binaria)
         <source>Duplicate address found: addresses should only be used once each.</source>
         <translation>Rilevato un indirizzo duplicato Ciascun indirizzo dovrebbe essere utilizzato una sola volta.</translation>
     
-YES  
-The translation is missing proper punctuation and a connecting conjunction or pause between the two sentences, making it feel rushed and unclear. It should have a period or semicolon after "duplicato" and be rewritten for natural flow.
+YES
+There is a missing period after "duplicato" in the Italian translation, which makes the sentence structure off. Also, a comma or period should separate the two clauses.
 
-Correct translation:  
-Rilevato un indirizzo duplicato. Ciascun indirizzo dovrebbe essere utilizzato una sola volta.
+Correct translation:
+Rilevato un indirizzo duplicato: ciascun indirizzo dovrebbe essere utilizzato una sola volta.
 ```
 
 ```
         <source>Confirm custom change address</source>
         <translation>Conferma il cambio di indirizzo</translation>
     
-YES  
-The translation "Conferma il cambio di indirizzo" is inaccurate in this Bitcoin context. "Change" refers to the leftover amount returned to the sender in a transaction, not a "change" of address. A correct translation should reflect "custom change address" as a specific type of Bitcoin address.
+YES
+The translation is inaccurate. "change address" in the context of Bitcoin refers to a specific address where the change from a transaction is sent, not "cambio di indirizzo" ("change of address"). The correct translation is:
 
-Correct translation:  
 Conferma l'indirizzo di resto personalizzato
 ```
 
@@ -275,48 +219,45 @@ Conferma l'indirizzo di resto personalizzato
         <source>Sign Message</source>
         <translation>Firma Messaggio</translation>
     
-YES  
-The Italian translation "Firma Messaggio" is understandable but not idiomatic. The correct translation for "Sign Message" in this Bitcoin context (to digitally sign a message) is "Firma messaggio" (with lowercase 'm' in "messaggio") or better "Firma il messaggio" to be more natural.
+YES
+The translation is not entirely accurate. In Italian, "Firma Messaggio" is awkward and literal; it should be "Firma messaggio" (with a lowercase "m"), or more naturally, "Firma il messaggio".
 
-Correct translation:  
-Firma messaggio
+Correct translation:
+Firma il messaggio
 ```
 
 ```
         <source>Sign Message</source>
         <translation>Firma Messaggio</translation>
     
-YES  
-The Italian translation "Firma Messaggio" is understandable but not idiomatic. The correct translation for "Sign Message" in this Bitcoin context (to digitally sign a message) is "Firma messaggio" (with lowercase 'm' in "messaggio") or better "Firma il messaggio" to be more natural.
+YES
+The translation is not entirely accurate. In Italian, "Firma Messaggio" is awkward and literal; it should be "Firma messaggio" (with a lowercase "m"), or more naturally, "Firma il messaggio".
 
-Correct translation:  
-Firma messaggio
+Correct translation:
+Firma il messaggio
 ```
 
 ```
         <source>Inputs</source>
         <translation>Input</translation>
     
-YES  
-The English source is plural "Inputs," but the Italian translation "Input" is singular. The correct plural form in Italian should be "Input" as well, since "input" is an invariable noun in Italian and remains the same in singular and plural. However, in this context, the plural is implied by the English source. To clarify plurality in Italian, you can use "Input" (as is) or add a clarifying phrase if needed. But usually "Input" is accepted for both singular and plural.
+YES
+The translation is incorrect because "Inputs" is plural, but the Italian translation "Input" is singular. The correct plural form in Italian is also "Input" (the word does not change in plural), but in context, it's better to use "Input" for plural, as is common in technical Italian usage. However, "Input" in the plural would still be "Input" without an 's', so technically, the translation is acceptable, but if you want to clarify plurality for Italian speakers, you could use "Ingressi".
 
-So, the translation "Input" is acceptable and widely used. However, if explicitly needed, "Ingressi" could be used to specify plural "Inputs," though this is less common in Bitcoin terminology.
+Correct translation:
+Input
 
-Because "Input" is uncountable and used in singular and plural in Italian technical language, no error occurs.
-
-Given that, the initial translation is correct and not problematic.
-
-Therefore, the answer is NO.
+Or alternatively, for more clarity:
+Ingressi
 ```
 
 ```
         <source>Copy transaction ID</source>
         <translation>Copia la transazione ID</translation>
     
-YES  
-The translation is slightly inaccurate and unnatural in Italian. "ID" should be translated as "ID" or "identificativo" and placed properly. The phrase "Copy transaction ID" is best translated as "Copia l'ID della transazione" or "Copia l'identificativo della transazione" for clarity and correctness.
+YES
+The translation is not fully accurate. In Italian, "transaction ID" should be translated as "ID della transazione," and the article "la" is unnecessary. The correct translation should be:
 
-Correct translation:  
 Copia l'ID della transazione
 ```
 
@@ -324,27 +265,29 @@ Copia l'ID della transazione
         <source>Cannot upgrade a non HD split wallet from version %i to version %i without upgrading to support pre-split keypool. Please use version %i or no version specified.</source>
         <translation>impossibile aggiornare un portafoglio non diviso e non HD dalla versione %i alla versione %i senza fare l'aggiornamento per supportare il pre-split keypool. Prego usare la versione %i senza specificare la versione</translation>
     
-YES  
-The translation is mostly clear but contains some inaccuracies and awkward phrasing:  
-- It should start with a capital letter ("Impossibile").  
-- "portafoglio non diviso e non HD" is incorrect; the original says "non HD split wallet," meaning a wallet that is both non-HD and non-split (or at least "non-HD split wallet"). A better phrasing is "un portafoglio non HD e non diviso" or "un portafoglio non HD e non split".  
-- The phrase "senza fare l'aggiornamento per supportare il pre-split keypool" sounds unnatural; better is "senza aggiornarlo per supportare il pre-split keypool."  
-- The ending "Prego usare la versione %i senza specificare la versione" is contradictory ("usare la versione %i senza specificare la versione"). The original "Please use version %i or no version specified" means "utilizzare la versione %i o non specificare alcuna versione."  
-- Also, punctuation and capitalization could be improved.  
+YES
+There are two issues:
+1. The translation omits "or no version specified" at the end, changing the meaning.
+2. Minor stylistic improvement for clarity and formal register.
 
-Corrected translation:  
-Impossibile aggiornare un portafoglio non HD e non diviso dalla versione %i alla versione %i senza aggiornarlo per supportare il pre-split keypool. Si prega di usare la versione %i oppure di non specificare alcuna versione.
+Correct translation:
+Impossibile aggiornare un portafoglio non HD diviso dalla versione %i alla versione %i senza aggiornare per supportare il pre-split keypool. Utilizzare la versione %i oppure nessuna versione specificata.
 ```
 
 ```
         <source>Error: Dumpfile identifier record is incorrect. Got "%s", expected "%s".</source>
         <translation>Errore: l'identificativo rispetto la registrazione del dumpfile è incorretta.  ricevuto "%s", sarebbe dovuto essere "%s".</translation>
     
-YES  
-The Italian translation contains awkward phrasing and some minor grammatical issues. The phrase "l'identificativo rispetto la registrazione del dumpfile" is unnatural and should be corrected. Also, there is an extra space before "ricevuto", and the verb agreement should be adjusted to match the feminine noun "identificativo" (masculine) or rephrase for clarity.
+YES
+The Italian translation is problematic for several reasons:
+- "rispetto la registrazione del dumpfile" is not grammatically correct or natural in Italian.
+- There is a double space before "ricevuto".
+- "ricevuto" is not capitalized to match the English source.
+- The technical term "record" should be kept as "record" (not "registrazione").
+- The phrase structure does not reflect the technical tone of the source sentence.
 
-Correct translation:  
-Errore: il record identificativo del dumpfile non è corretto. Ricevuto "%s", era previsto "%s".
+Correct translation:
+Errore: il record identificativo del dumpfile non è corretto. Ricevuto "%s", previsto "%s".
 ```
 
 ```
@@ -352,57 +295,57 @@ Errore: il record identificativo del dumpfile non è corretto. Ricevuto "%s", er
         <translation>Errore: la versione di questo dumpfile non è supportata. Questa versione del bitcoin-wallet supporta solo la versione 1 dei dumpfile. Ricevuto un dumpfile di versione%s</translation>
     
 YES
-There is a missing space before the format specifier "%s" in the translation, causing a formatting issue.
+There is a minor formatting issue: in the phrase "Ricevuto un dumpfile di versione%s", there should be a space between "versione" and the format specifier "%s". Also, "bitcoin-wallet" should not have the article "del", and "dumpfile" should be in Italian quotation marks for clarity, though this is optional.
 
 Correct translation:
-Errore: la versione di questo dumpfile non è supportata. Questa versione del bitcoin-wallet supporta solo la versione 1 dei dumpfile. Ricevuto un dumpfile di versione %s
+Errore: la versione di questo dumpfile non è supportata. Questa versione di bitcoin-wallet supporta solo la versione 1 dei dumpfile. Ricevuto un dumpfile di versione %s
 ```
 
 ```
         <source>File %s already exists. If you are sure this is what you want, move it out of the way first.</source>
         <translation>file %s esistono già. Se desideri continuare comunque, prima rimuovilo.</translation>
     
-YES  
-The translation contains errors: "file" should be capitalized as it starts the sentence, and "esistono" (plural) is incorrect because "%s" refers to a single file. Also, "Se desideri continuare comunque" is less precise than "Se sei sicuro che è quello che vuoi fare." The original meaning about "moving it out of the way first" is better rendered as "spostalo da un'altra parte prima."  
+YES
+The translation has some issues:
+1. "file %s esistono già" is incorrect. "File" should be capitalized, and "%s" is singular, so the singular form "esiste già" should be used.
+2. The translation omits the phrase "If you are sure this is what you want".
+3. "move it out of the way" is better translated as "spostalo altrove" rather than "rimuovilo", which means "remove it".
 
-Correct translation:  
-"File %s esiste già. Se sei sicuro che è quello che vuoi fare, spostalo da un'altra parte prima."
+Correct translation:
+Il file %s esiste già. Se sei sicuro che sia questo ciò che vuoi, spostalo altrove prima di continuare.
 ```
 
 ```
         <source>More than one onion bind address is provided. Using %s for the automatically created Tor onion service.</source>
         <translation>Viene fornito più di un indirizzo di associazione onion. L'utilizzo di %s per il servizio Tor onion viene creato automaticamente.</translation>
     
-YES  
-The Italian translation is awkward and partially inaccurate. The phrase "indirizzo di associazione onion" is unnatural; a better term would be "indirizzo onion di binding" or "indirizzo onion vincolato." The second sentence lacks clarity and is phrased awkwardly; it should reflect that "%s" is being used for the automatically created Tor onion service.
+YES
+The translation is not accurate and is awkwardly worded in Italian. The English sentence means: if more than one "onion bind address" is given, only one (%s) is used for the automatically created onion service. The translation somewhat distorts the meaning by suggesting that the Tor onion service is created by the act of using %s, and "indirizzo di associazione onion" is an awkward calque.
 
-Correct translation:  
-"È stato fornito più di un indirizzo onion di binding. Verrà utilizzato %s per il servizio Tor onion creato automaticamente."
+Correct translation:
+Viene fornito più di un indirizzo bind onion. Verrà utilizzato %s per il servizio onion Tor creato automaticamente.
 ```
 
 ```
         <source>No dump file provided. To use createfromdump, -dumpfile=&lt;filename&gt; must be provided.</source>
         <translation>Nessun dump file fornito. Per usare creadumpfile, -dumpfile=&lt;filename&gt; deve essere fornito.</translation>
     
-YES  
-The Italian translation has some issues:  
-- "dump file" should be translated consistently ("file di dump" is common in Italian).  
-- The command "createfromdump" is mistranslated as "creadumpfile" which is incorrect; it should remain "createfromdump" as it is a command/option.  
-- The sentence structure can be improved for clarity and naturalness.
+YES
+The translation contains an error: "creadumpfile" is incorrect; it should be "createfromdump" as in the source. Also, "dump file" should be rendered in a consistent way – "file di dump" or "dumpfile". There are minor English/Italian consistency issues.
 
-Correct translation:  
-Nessun file di dump fornito. Per usare createfromdump, deve essere specificato -dumpfile=&lt;filename&gt;.
+Correct translation:
+Nessun file di dump fornito. Per usare createfromdump, -dumpfile=&lt;filename&gt; deve essere fornito.
 ```
 
 ```
         <source>Unknown wallet file format "%s" provided. Please provide one of "bdb" or "sqlite".</source>
         <translation>Il formato “%s” del file portafoglio fornito non è riconosciuto. si prega di fornire uno che sia “bdb” o “sqlite”. </translation>
     
-YES  
-The translation has a lowercase "si" at the beginning of the second sentence, which should be capitalized as it starts a new sentence. There's also a trailing space before the period at the end, which should be removed.  
+YES
+The translation is mostly accurate but has minor issues with capitalization and punctuation. "si prega" should be capitalized as it's the start of a new sentence. Also, it's slightly more natural to write: "Si prega di fornire 'bdb' o 'sqlite'." Furthermore, there is a stray space at the end.
 
-Correct translation:  
-Il formato “%s” del file portafoglio fornito non è riconosciuto. Si prega di fornire uno che sia “bdb” o “sqlite”.
+Correct translation:
+Il formato "%s" del file portafoglio fornito non è riconosciuto. Si prega di fornire “bdb” o “sqlite”.
 ```
 
 ```
@@ -410,7 +353,7 @@ Il formato “%s” del file portafoglio fornito non è riconosciuto. Si prega d
         <translation>Impossobile risolvere l'indirizzo -%s: '%s'</translation>
     
 YES
-There is a spelling error in the Italian translation: "Impossobile" should be "Impossibile".
+There is a typographical error in the Italian word "Impossobile"; it should be "Impossibile". Additionally, the word order in Italian is generally "Impossibile risolvere l'indirizzo -%s: '%s'", which is correct apart from the typo.
 
 Correct translation:
 Impossibile risolvere l'indirizzo -%s: '%s'
@@ -422,72 +365,48 @@ Impossibile risolvere l'indirizzo -%s: '%s'
         <translation>Impossibile rimuovere la directory dello stato della catena dello snapshot (1%s). Rimuovilo manualmente prima di riavviare.
 </translation>
     
-YES  
-The placeholder "%s" in the source is incorrectly translated as "1%s" in the Italian text, which is erroneous. Also, "Rimuovilo" refers to a masculine singular object, but "directory" is feminine in Italian, so it should be "Rimuovila".
+YES
+There are two issues:
 
-Correct translation:  
-Impossibile rimuovere la directory dello stato della catena dello snapshot (%s). Rimuovila manualmente prima di riavviare.
+1. The format specifier is incorrect: the source uses (%s), but the translation uses (1%s) — the '1' is extraneous and incorrect.
+2. The word 'snapshot' is left untranslated. In Italian, it is often kept as 'snapshot', but can also be translated as 'istantanea'. However, consistent usage is recommended.
+3. "lo stato della catena dello snapshot" is an awkward expression in Italian. A better translation would be "catena degli snapshot" or "catena degli stati snapshot".
+
+Correct translation:
+Impossibile rimuovere la directory della catena di stato snapshot (%s). Rimuovila manualmente prima di riavviare.
 ```
 
 ```
         <source>Transaction requires one destination of non-0 value, a non-0 feerate, or a pre-selected input</source>
         <translation>La transazione richiede una destinazione di valore diverso da -0, una tariffa diversa da -0 o un input preselezionato</translation>
     
-YES  
-The translation incorrectly uses "-0" to represent "non-0," which is not correct in Italian. The source means "non-zero" value, so it should be translated as "diverso da 0" without the minus sign. Also, "feerate" is a technical term and should be translated clearly, preferably as "tasso di commissione" or "fee rate" kept in English if commonly used. "Tariffa" can be misleading, as it usually means "price" or "rate" in a general sense, while "feerate" in Bitcoin context is specifically the transaction fee rate.
+YES
+The translation incorrectly says "valore diverso da -0" and "tariffa diversa da -0", which means "value different from -0" and "fee different from -0". The source intends "non-0" as "nonzero" (i.e., not zero), not "not negative zero".
 
-Correct translation:  
-La transazione richiede una destinazione con valore diverso da 0, un tasso di commissione diverso da 0 o un input preselezionato
-```
-
-```
-        <source>Elliptic curve cryptography sanity check failure. %s is shutting down.</source>
-        <translation>Errore nel controllo di integrità della crittografia a curva ellittica. %s in spegnimento. </translation>
-    
-YES  
-The phrase "in spegnimento" is not idiomatic Italian for "is shutting down." A more natural and correct translation is "si sta spegnendo" or simply "si sta chiudendo." Also, there is an extra trailing space at the end of the sentence, which should be removed.
-
-Correct translation:  
-Errore nel controllo di integrità della crittografia a curva ellittica. %s si sta spegnendo.
+Correct translation:
+La transazione richiede una destinazione con valore diverso da zero, una commissione diversa da zero o un input preselezionato.
 ```
 
 ```
         <source>Error: Got value that was not hex: %s</source>
         <translation>Errore: Ricevuta un valore che non ha hex:%s</translation>
     
-YES  
-There is a missing space before the format specifier %s in the translation. Also, the phrase "non ha hex" is awkward in Italian; a better translation would use "non era esadecimale" or "non è esadecimale" to clearly convey "was not hex."  
+YES
+The Italian translation has grammatical issues and a slightly awkward structure. "Ricevuta" should agree with "valore" (masculine), and "un valore che non ha hex" is not idiomatic. Also, there is a missing space before %s.
 
-Correct translation:  
-Errore: Ricevuto un valore che non era esadecimale: %s
+Correct translation:
+Errore: Ricevuto un valore che non è esadecimale: %s
 ```
 
 ```
         <source>Error: No %s addresses available.</source>
         <translation>Errore:  Nessun %s indirizzo disponibile</translation>
     
-YES  
-There is an extra space after the colon and before "Nessun," and the word order is incorrect. In Italian, the noun usually precedes the adjective, so "indirizzi" (plural of "indirizzo") should be used as well since "No" corresponds to "Nessun" meaning "no" or "none," but in Italian, it implies singular; however, "addresses" is plural and should be plural too. The correct plural form is "indirizzi," and the correct negative form is "Nessun" only for singular masculine nouns; for plural, "Nessun" is not correct—actually, Italian typically uses "Nessun" for singular, but "Nessun indirizzo" (singular) vs. "Nessun indirizzo" (singular). Since the English is plural "addresses," the correct negative plural expression is "Nessun" doesn't have a plural form, so better to use "Nessun" with singular or "Nessun indirizzo" meaning no address, or "Nessun indirizzo %s disponibile." But to mirror the plural English, it's more natural to say "Non ci sono indirizzi %s disponibili." Alternatively, you can rearrange to "Errore: Non ci sono indirizzi %s disponibili."
+YES
+There is an unwanted double space after the colon in "Errore:  Nessun %s indirizzo disponibile". Also, in Italian, the adjective "disponibile" should agree in number with "indirizzi" if more than one is implied; since it's "no addresses", plural is correct.
 
-Also ensure no double spaces.
-
-Correct translation:  
-Errore: nessun indirizzo %s disponibile.  
-
-Alternatively, to reflect plural "addresses":  
-Errore: nessun indirizzo %s disponibile. (singular, common usage)  
-Or:  
-Errore: nessun indirizzo %s disponibile.  
-
-Since the source says "addresses," plural, the singular in Italian is typical.
-
-Hence, the corrected translation with proper spacing and order is:  
-Errore: nessun indirizzo %s disponibile.
-
-Note the lowercase "nessun" because it follows colon and standard Italian style.
-
-Final correction:  
-Errore: nessun indirizzo %s disponibile.
+Correct translation:
+Errore: Nessun indirizzo %s disponibile.
 ```
 
 ```
@@ -495,10 +414,10 @@ Errore: nessun indirizzo %s disponibile.
         <translation> 
 Errore nella scrittura dei dati di ripristino.</translation>
     
-YES  
-The translation contains an unnecessary leading whitespace before "Errore". Also, the English "undo data" is correctly rendered as "dati di ripristino" which is appropriate in the Bitcoin context, but the extra whitespace should be removed.
+YES
+There is an unwanted leading whitespace in the translation, which should be removed. Otherwise, the translation is accurate.
 
-Correct translation:  
+Correct translation:
 Errore nella scrittura dei dati di ripristino.
 ```
 
@@ -506,33 +425,22 @@ Errore nella scrittura dei dati di ripristino.
         <source>Fee rate (%s) is lower than the minimum fee rate setting (%s)</source>
         <translation>Il tasso di conversione(%s) è inferiore al minore tasso di conversione delle impostazioni(%s)</translation>
     
-YES  
-The translation is incorrect in terminology and spacing. The English source refers to "Fee rate" which in Bitcoin context means the transaction fee rate, not "tasso di conversione" (conversion rate). Also, there should be a space before each parenthesis. Additionally, "minore" is not the right adjective here; "minimo" (minimum) should be used to match "minimum fee rate setting".
+YES
+The translation for "fee rate" as "tasso di conversione" is incorrect; "fee rate" in the context of Bitcoin should be translated as "commissione" or more precisely "commissione per byte" or "commissione per unità". Additionally, "minore tasso" is awkward and should be replaced with "tasso minimo". There is also a missing space before the parentheses.
 
-Correct translation:  
-Il tasso di commissione (%s) è inferiore all'impostazione del tasso di commissione minimo (%s)
-```
-
-```
-        <source>Invalid -i2psam address or hostname: '%s'</source>
-        <translation>Indirizzo --i2psam o hostname non valido: '%s'</translation>
-    
-YES  
-The source uses a single hyphen for the option "-i2psam", but the translation has a double hyphen "--i2psam". The translation should reflect the single hyphen as in the source to maintain accuracy.
-
-Correct translation:  
-Indirizzo -i2psam o hostname non valido: '%s'
+Correct translation:
+Il tasso di commissione (%s) è inferiore al tasso minimo di commissione impostato (%s)
 ```
 
 ```
         <source>Signer did not echo address</source>
         <translation>Signer non ha generato un indirizzo di ritorno</translation>
     
-YES  
-The translation introduces a meaning not present in the source. The English source means the "Signer" did not repeat (echo) the address, not that they generated a return address. Also, "echo address" should be kept as "ripetuto l'indirizzo" or similar, avoiding additional interpretation.
+YES
+The translation is inaccurate. "Signer non ha generato un indirizzo di ritorno" means "Signer did not generate a return address," which is not the same as "Signer did not echo address." The term "echo" in this context typically means to repeat or send back the same address.
 
-Correct translation:  
-Signer non ha ripetuto l'indirizzo
+Correct translation:
+Il firmatario non ha restituito l'indirizzo
 ```
 
 ```
@@ -540,32 +448,34 @@ Signer non ha ripetuto l'indirizzo
         <translation> 
 Errore di sistema in fase di salvataggio del blocco nel disco: %s</translation>
     
-YES  
-There is unwanted leading whitespace before the translation text. Also, "nel disco" should be "su disco" or "sul disco" for natural Italian.
+YES
+There is an unwanted leading whitespace/newline before the translation text. Otherwise, the translation is accurate and the format specifier is correctly transferred.
 
-Correct translation:  
-Errore di sistema in fase di salvataggio del blocco su disco: %s
+Correct translation:
+Errore di sistema in fase di salvataggio del blocco nel disco: %s
 ```
 
 ```
         <source>Transaction change output index out of range</source>
         <translation>La transazione cambia l' indice dell'output fuori dal limite.</translation>
     
-YES  
-The translation adds unnecessary words and changes the meaning. The source means that the index of the change output is out of range, but the translation reads as "The transaction changes the output index out of range," which is incorrect. Also, spacing around apostrophes is incorrect in Italian.
+YES
+The translation is awkward and incorrect. In Italian, "change" as noun in Bitcoin context should not be translated as the verb "cambia" but as "resto". Also, there should not be a space after the apostrophe, and the phrase structure should follow the original for clarity. 
 
-Correct translation:  
-Indice dell'output del resto della transazione fuori intervallo
+Correct translation:
+Indice dell’output di resto della transazione fuori dall’intervallo
 ```
 
 ```
         <source>Unsupported global logging level %s=%s. Valid values: %s.</source>
         <translation>Livello di logging globale non supportato %s=%s. Regole valide: %s.</translation>
     
-YES  
-The translation incorrectly uses "Regole valide" which means "Valid rules," whereas the source text says "Valid values." The correct Italian word for "values" in this context is "valori."  
+YES
+The translation of "Valid values: %s." as "Regole valide: %s." is inaccurate. The correct translation should be "Valori validi: %s." since "Regole" means "rules" and not "values".
 
-Correct translation:  
+Correct translation:
 Livello di logging globale non supportato %s=%s. Valori validi: %s.
 ```
 </details>
+
+Number of issues: 40.

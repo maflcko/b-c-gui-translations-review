@@ -13,10 +13,10 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Right-click to edit address or label</source>
         <translation>Adresi veya etiketi düzenlemek için sağ tıklayın.</translation>
     
-YES  
-The translation is in Turkish, not Swedish ('sv'). It should be in Swedish.
+SPAM
+The translation provided is in Turkish, not Swedish ('sv').
 
-Correct translation:  
+Correct translation:
 Högerklicka för att redigera adress eller etikett
 ```
 
@@ -24,32 +24,31 @@ Högerklicka för att redigera adress eller etikett
         <source>Choose the address to send coins to</source>
         <translation>Välj en adress att skicka transaktionen till</translation>
     
-YES  
-The translation introduces the word "transaktionen" (the transaction), which is not present in the source text. The source only mentions "the address to send coins to," without specifying "the transaction." The correct translation should be more literal and avoid adding new elements.  
+YES
+The translation incorrectly specifies "skicka transaktionen" ("send the transaction") rather than "skicka mynt" ("send coins"). It also adds "en" ("an address"), which is not present in the source.
 
-Correct translation:  
-Välj den adress som du vill skicka mynt till
+Correct translation:
+Välj adressen att skicka mynt till
 ```
 
 ```
         <source>Choose the address to receive coins with</source>
         <translation>Välj en adress att ` emot transaktionen med</translation>
     
-YES  
-The Swedish translation is incorrect and contains nonsensical text: "` emot transaktionen med" is meaningless and does not correspond to the source. The source means "Choose the address to receive coins with," which should indicate selecting an address for receiving coins.
+YES
+There is an erroneous backtick (`) in "att ` emot", and "emot transaktionen" (receive the transaction) is not as accurate as "ta emot mynt" (receive coins). Also, "address" is indefinite in the source, so "en adress" is okay, but "att ta emot" should not be split up. Correct translation:
 
-Correct translation:  
-Välj en adress att ta emot mynt med
+Välj den adress du vill ta emot mynt med
 ```
 
 ```
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation>Konfigurationsfil %1 verkar vara korrupt</translation>
     
-YES  
-The translation is incomplete and missing the "or invalid" part from the source text. Additionally, the Swedish word "Konfigurationsfil" is fine but it would be more natural to say "inställningsfil" for "settings file". The word "verkar" ("seems") is less direct than "kan vara" ("might be") in this context.  
+YES
+The translation omits "or invalid" from the original meaning. It should also be "konfigurationsfil" with two n's, not "konfigurationsfil".
 
-Correct translation:  
+Correct translation:
 Inställningsfilen %1 kan vara korrupt eller ogiltig.
 ```
 
@@ -59,32 +58,36 @@ Inställningsfilen %1 kan vara korrupt eller ogiltig.
         <translation>Återställt en plånbok från en backup-fil</translation>
     
 YES
-The translation uses the past tense "Återställt" (restored), while the English source is an imperative/infinitive phrase "Restore." It should be in the imperative or infinitive form to match the source's intended meaning.
+The translation is incorrect. The Swedish phrase "Återställt en plånbok från en backup-fil" means "Restored a wallet from a backup file" (past tense), while the English source is an instruction or option in present/future ("Restore a wallet from a backup file"). The translation should use imperative or infinitive form.
 
 Correct translation:
-"Återställ en plånbok från en backup-fil"
+Återställ en plånbok från en backup-fil
 ```
 
 ```
         <source>Hide</source>
         <translation>och göm</translation>
     
-YES  
-The translation "och göm" means "and hide," which is incorrect in this context. The source word "Hide" is a command or label and should be translated simply as "Göm" without the conjunction "och" (which means "and").  
+YES
+The translation is incorrect. The English word "Hide" should be translated as "Dölj" in Swedish. "och göm" means "and hide" or "and conceal", which adds unwanted content.
 
-Correct translation:  
-Göm
+Correct translation:
+Dölj
 ```
 
 ```
         <source>Pre-syncing Headers (%1%)…</source>
         <translation>Förhandsinkoppling av rubriker ( %1 %)...</translation>
     
-YES  
-The translation has incorrect spacing around the format specifier %1 and an incorrect choice of wording. The English "Pre-syncing Headers (%1%)…" implies a process of downloading or synchronizing the headers, commonly translated as "Förhandsynkroniserar rubriker (%1%)…" or "Förinladdning av rubriker (%1%)…". Additionally, there should be no spaces inside the parentheses around %1%.
+YES
+The translation is problematic: 
+1. The format specifier %1 should not be surrounded by spaces unless present in the source.
+2. The English word "Headers" in this Bitcoin context is better translated as "blockhuvuden" or "huvuden" rather than "rubriker" (which usually means "headlines" or "titles" in Swedish).
+3. Pre-syncing is more naturally translated as "Försynkroniserar" or "Försynkronisering av".
+4. The ellipsis should use the unicode character "…" as in the source, not three dots "...".
 
-Correct translation:  
-Förhandsynkroniserar rubriker (%1%)…
+Correct translation:
+Försynkroniserar blockhuvuden (%1)…
 ```
 
 ```
@@ -98,36 +101,36 @@ Om den här plånboken innehåller watchonly-skript skapas en ny plånbok som in
 Om den här plånboken innehåller lösbara</translation>
     
 YES
-The Swedish translation is incomplete and abruptly cut off ("Om den här plånboken innehåller lösbara" without completing the sentence). This leaves the translation erroneous and unusable as is.
+The Swedish translation is incomplete; it ends abruptly after "innehåller lösbara", which omits the remainder of the English text. This truncation leads to loss of crucial information about "solvable but not watched scripts", the migration process, backup file naming, and restoration instructions.
 
 Correct translation:
-Migrering av plånboken kommer att konvertera denna plånbok till en eller flera deskriptorplånböcker. En ny säkerhetskopia av plånboken måste skapas.
-Om den här plånboken innehåller några watchonly-skript skapas en ny plånbok som innehåller dessa watchonly-skript.
-Om den här plånboken innehåller några lösbara men inte övervakade skript skapas en annan och ny plånbok som innehåller dessa skript.
+Migrering av plånboken kommer att konvertera denna plånbok till en eller flera deskriptorplånböcker. En ny säkerhetskopia av plånboken måste skapas.  
+Om den här plånboken innehåller några "watchonly"-skript skapas en ny plånbok som innehåller dessa "watchonly"-skript.  
+Om den här plånboken innehåller några lösbara men ej övervakade ("watched") skript, kommer en annan ny plånbok att skapas som innehåller dessa skript.  
 
-Migreringsprocessen kommer att skapa en säkerhetskopia av plånboken innan migreringen. Denna säkerhetskopieringsfil kommer att heta &lt;plånboksnamn&gt;-&lt;tidsstämpel&gt;.legacy.bak och kan hittas i katalogen för denna plånbok. Vid en felaktig migrering kan säkerhetskopian återställas med funktionen "Återställ plånbok".
+Migrationsprocessen skapar en säkerhetskopia av plånboken innan migreringen. Denna säkerhetskopia namnges &lt;plånboksnamn&gt;-&lt;tidsstämpel&gt;.legacy.bak och kan hittas i katalogen för denna plånbok. Vid felaktig migrering kan säkerhetskopian återställas med funktionen "Återställ plånbok".
 ```
 
 ```
         <source>The wallet '%1' was migrated successfully.</source>
         <translation>Migrering av plånboken ' %1 ' genomförd.</translation>
     
-YES  
-There are extra spaces inside the single quotes around %1 in the translation, which is inconsistent with the source. Also, the translation word order and clarity can be slightly improved.
+YES
+There are unnecessary spaces inside the single quotes around %1. In Swedish, this is uncommon, and the format should be consistent with the source. Also, "genomförd" on its own is a little less direct than "lyckades" or "har slutförts" for "was migrated successfully", but it's acceptable. For clarity and correctness, it should be:
 
-Correct translation:  
-Migreringen av plånboken '%1' genomfördes framgångsrikt.
+Correct translation:
+Migreringen av plånboken '%1' slutfördes framgångsrikt.
 ```
 
 ```
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
         <translation>Minst %1 GB data kommer att sparas i den här katalogen, och de växer över tiden.</translation>
     
-YES  
-The translation uses the plural pronoun "de" ("they") referring to "data," which in Swedish is generally treated as singular (or uncountable) in this context. Also, "över tiden" is less common and less natural than "med tiden" or "över tid" when referring to growth over time. The correct Swedish translation should treat "data" as singular and use a more natural phrase for "over time."
+YES
+The pronoun "de" ("they") in "och de växer över tiden" is incorrect; it refers to "data" in plural, but what will grow is the stored amount, not the "data" as a countable object. Furthermore, "över tiden" is a less common way to say "over time"; "med tiden" is more idiomatic. The English "it will grow" refers to the storage requirement, not to the data.
 
-Correct translation:  
-Minst %1 GB data kommer att sparas i den här katalogen, och det kommer att växa med tiden.
+Correct translation:
+Minst %1 GB data kommer att sparas i den här katalogen, och det kommer att öka med tiden.
 ```
 
 ```
@@ -135,31 +138,31 @@ Minst %1 GB data kommer att sparas i den här katalogen, och det kommer att väx
         <translation>Vid avstängning av denna inställning kommer den fullständiga blockkedjan behövas laddas ned igen.</translation>
     
 YES
-The Swedish translation is somewhat awkward and does not convey the meaning clearly. The phrase "Vid avstängning av denna inställning" is incorrect since "avstängning" means "turning off" or "shutting down," which does not fit well with "reverting this setting." Also, the word order and phrasing could be more natural.
+The translation is understandable but not entirely accurate. The English says "Reverting this setting requires re-downloading the entire blockchain," which means if you change the setting back, you have to re-download the blockchain. The Swedish translation instead says "When disabling this setting, the entire blockchain will need to be downloaded again," changing the nuance from "reverting" (could be enable or disable) to specifically "turning off" (disable).
 
-A better translation would be:
-"Att återställa denna inställning kräver att hela blockkedjan laddas ner igen."
+Correct translation:
+Att återställa denna inställning kräver att hela blockkedjan laddas ned igen.
 ```
 
 ```
         <source>Privacy mode activated for the Overview tab. To unmask the values, uncheck Settings-&gt;Mask values.</source>
         <translation>Privat läge aktiverad för fliken Översikt. För att visa data, bocka ur Inställningar &gt; Dölj data.</translation>
     
-YES  
-There is a spelling error in the translation: "Privat läge" should be "Integritetsläge" or "Integritetsläge aktiverat". "Privat läge" is not a correct Swedish phrase in this context. Also, "lägen" was written as "läge" but the correct phrasing is "Integritetsläge aktiverad" (Privacy mode activated). The rest is mostly correct, but the phrase "För att visa data" is acceptable but "För att avmaskera värden" (to unmask the values) would be more precise.
+YES
+There is a minor issue: "Privat läge" should be one word, "Privatl&auml;ge". "Visa data" is a good paraphrase for "unmask the values", and "bocka ur Inställningar > Dölj data" is acceptable, though "värden" would be more accurate than "data" for "values".
 
-Correct translation:  
-Integritetsläge aktiverat för fliken Översikt. För att avmaskera värden, bocka ur Inställningar &gt; Dölj värden.
+Correct translation:
+Privatläge aktiverat för fliken Översikt. För att visa värden, bocka ur Inställningar &gt; Dölj värden.
 ```
 
 ```
         <source>Transaction has %1 unsigned inputs.</source>
         <translation>Transaktion %1 har osignerad indata.</translation>
     
-YES  
-The translation misplaces the format specifier and mistranslates "unsigned inputs." The English sentence means the transaction has a certain number (%1) of unsigned inputs (inputs not signed). The correct Swedish translation should keep %1 next to "osignerade indata" and properly pluralize "indata" (plural of input) to match the context.
+YES
+The translation is incorrect and does not accurately reflect the plural ("inputs") and structure of the source sentence. "%1" should indicate the number of unsigned inputs and appears before "osignerad indata", making the sentence unclear.
 
-Correct translation:  
+Correct translation:
 Transaktionen har %1 osignerade indata.
 ```
 
@@ -167,38 +170,21 @@ Transaktionen har %1 osignerade indata.
         <source>(But no wallet is loaded.)</source>
         <translation>&lt;br&gt;(</translation>
     
-YES  
-The translation is incomplete and incorrect. The source text is "(But no wallet is loaded.)", but the translation only contains an HTML line break tag and an opening parenthesis, which do not convey the meaning.  
+YES
+The translation is incomplete; it only contains "<br>(" which does not accurately convey the English sentence "(But no wallet is loaded.)" in Swedish.
 
-Correct translation:  
-(But no wallet is loaded.)  
-→  
-(Men ingen plånbok är inläst.)
-```
-
-```
-        <source>Ban for</source>
-        <translation>Bannlys i</translation>
-    
-YES  
-The Swedish translation "Bannlys i" is incorrect and appears to be Danish or Norwegian ("Bannlys" means "ban" in those languages, not Swedish). The correct Swedish translation for "Ban for" (likely meaning "Ban for [duration]" or "Ban for [reason]") should be:
-
-"Blockera i" or "Avstängd i"  
-
-Depending on context, the typical term for "ban" in Swedish Bitcoin or network contexts is "Blockera".
-
-Correct translation:  
-Blockera i
+Correct translation:
+(Men ingen plånbok är laddad.)
 ```
 
 ```
         <source>Payment information</source>
         <translation>Betalinformaton</translation>
     
-YES  
-There is a typo in the Swedish translation: "Betalinformaton" should be "Betalinformation".  
+YES
+There is a spelling error in the Swedish translation. "Betalinformaton" is missing an 'i' and should be "Betalinformation".
 
-Correct translation:  
+Correct translation:
 Betalinformation
 ```
 
@@ -206,21 +192,27 @@ Betalinformation
         <source>%1 (%2 blocks)</source>
         <translation>%1 (%2 block)</translation>
     
-YES  
-The Swedish translation uses "block" as singular, but the source indicates plural ("%2 blocks"). In Swedish, the plural of "block" is also "block" (same form), so it should remain "block" in plural form without changing.
+YES
+The plural form "blocks" should be translated as "block" in singular ("ett block") or "block" in plural ("block" is both singular and plural in Swedish, but the article changes), but considering the context "(%2 blocks)" should be translated as "(%2 block)" only when %2 > 1. For this generic UI string, the translation is acceptable, but for clarity, it's better Swedish to write "%1 (%2 block)" for plural.
 
-Correct translation:  
-%1 (%2 block)
+Explanation:
+"block" is both singular and plural in Swedish, but to be more natural, using "%2 block" is correct—so the translation is fine in terms of grammar.
+
+So: NO
+
+But since the singular/plural is not affected in Swedish, this translation is in fact unproblematic.
+
+NO
 ```
 
 ```
         <source>The amount to send in the selected unit</source>
         <translation>Beloppett att skicka i vald enhet</translation>
     
-YES  
-The Swedish translation contains a typo: "Beloppett" should be "Beloppet".  
+YES
+There is a typo in the translation: "Beloppett" should be "Beloppet" (with one 't').
 
-Correct translation:  
+Correct translation:
 Beloppet att skicka i vald enhet
 ```
 
@@ -228,53 +220,43 @@ Beloppet att skicka i vald enhet
         <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
         <translation>Detta är transaktionsavgiften som slängs borta om det är mindre än damm på denna nivå</translation>
     
-YES  
-The translation is somewhat inaccurate and awkward. The phrase "may discard" implies a possibility or option, which is not properly conveyed in Swedish by "slängs borta" (is thrown away) without indicating it is conditional or optional. Also, "dust" in the Bitcoin context is a technical term and should ideally be kept or explained rather than translated literally as "damm" (which means dust in the physical sense). A better translation would also clarify that the change amount is being referred to.
+YES
+The translation is inaccurate and awkward. The phrase "slängs borta" is unnatural in Swedish. Also, "change" should be "växel" (referring to Bitcoin transaction change), and "damm" is generally fine but the subject is missing in the "är mindre än damm".
 
-Correct translation:  
-Detta är transaktionsavgiften som du kan bortse från om växeln är mindre än dust på denna nivå
+Correct translation:
+Detta är transaktionsavgiften du kan bortse från om växeln är mindre än damm på denna nivå.
 ```
 
 ```
         <source>Warning: Private keys detected in wallet {%s} with disabled private keys</source>
         <translation>Varning: Privata nycklar upptäcktes i plånbok (%s) vilken har dessa inaktiverade</translation>
     
-YES  
-The translation is inaccurate and somewhat unclear. The source mentions "wallet {%s} with disabled private keys," meaning the wallet identified by the placeholder %s has private keys disabled, but private keys were detected anyway. The current translation uses parentheses instead of curly braces and the phrasing "vilken har dessa inaktiverade" ("which has these disabled") is vague and unnatural.
+YES
+There is a slight mistranslation issue. The Swedish translation "vilken har dessa inaktiverade" makes it sound like 'these' private keys are deactivated, which is not how the source reads. The source means that the wallet has the "private keys disabled" setting, not the keys themselves. Additionally, the translation uses parentheses instead of curly braces, but that's a minor formatting issue if the software supports it.
 
-A better translation would maintain the placeholder curly braces and clearly state that the wallet {%s} has private keys disabled:
-
-Correct translation:  
-Varning: Privata nycklar upptäcktes i plånbok {%s} med inaktiverade privata nycklar
+Correct translation:
+Varning: Privata nycklar upptäcktes i plånboken {%s} där privata nycklar är inaktiverade
 ```
 
 ```
         <source>Maximum transaction weight is too low, can not accommodate change output</source>
         <translation>Maximal transaktionsvikt är för låg, kan inte tillgodose ändrad utdata</translation>
     
-YES  
-The translation contains inaccuracies related to terminology and phrasing:
+YES
+The Swedish translation incorrectly translates "change output" as "ändrad utdata". In the context of Bitcoin, "change" refers to the remaining amount returned to the sender, not "changed" output. The correct Swedish term for "change output" is "växelutgång".
 
-1. "transaktionsvikt" is a literal and uncommon translation for "transaction weight" in this Bitcoin context; the more accepted term is "transaktionsvikt" or "transaktionsvikt" can be used, but it is better to keep consistent with Bitcoin terminology. "transaktionsvikt" is acceptable but the phrase could be improved.  
-2. "ändrad utdata" incorrectly translates "change output." Here "change" means the 'change amount' returned to sender in a Bitcoin transaction. In Swedish Bitcoin terminology, "change output" is best translated as "växelutgång."  
-3. Some of the syntax and wording is slightly awkward and could be clarified.
-
-A better translation:  
-"Maximal transaktionsvikt är för låg för att rymma växelutgången"
-
-or, to keep the original flavor:  
-"Maximal transaktionsvikt är för låg och kan inte rymma växelutgången"
-
-Hence, corrected translation:  
-<translation>Maximal transaktionsvikt är för låg och kan inte rymma växelutgången</translation>
+Correct translation:
+Maximal transaktionsvikt är för låg, kan inte tillgodose växelutgång
 ```
 
 ```
         <source>Insufficient funds</source>
         <translation>Otillräckligt med bitcoins</translation>
     
-YES  
-The translation adds the word "bitcoins," which is not present in the original and might be misleading, as "Insufficient funds" generally refers to lack of any funds, not specifically bitcoins. A more accurate and faithful translation would be:  
+YES
+The translation is incorrect. "Otillräckligt med bitcoins" literally means "Insufficient with bitcoins," which is not idiomatic Swedish and could also be misunderstood as "enough" due to "med". The standard and clear translation would be:
+
+Correct translation:
 Otillräckliga medel
 ```
 
@@ -282,10 +264,12 @@ Otillräckliga medel
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>Port måste anges med -whitelist: '%s'</translation>
     
-YES  
-The source uses "-whitebind" but the translation incorrectly uses "-whitelist". The correct translation should keep the option name as "-whitebind".
+YES
+The translation uses "-whitelist" instead of the correct switch "-whitebind" as in the source. This is an erroneous translation that may mislead users.
 
-Correct translation:  
+Correct translation:
 Port måste anges med -whitebind: '%s'
 ```
 </details>
+
+Number of issues: 22.

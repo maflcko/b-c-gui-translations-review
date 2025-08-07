@@ -13,22 +13,11 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Create a new address</source>
         <translation>רעכט-קנעפּל דריקט צו רעדאַקטירן אַדרעס אָדער לייבל</translation>
     
-YES  
-The translation does not accurately represent the source text "Create a new address." Instead, it reads as "Right-click button clicks to edit address or label," which is unrelated and potentially confusing.  
+YES
+The translation is incorrect. The given 'yi' translation means "Right-click to edit address or label," which does not correspond to "Create a new address."
 
-Correct translation:  
-א נײַע אַדרעס שאַפֿן
-```
-
-```
-        <source>Delete</source>
-        <translation> אַרויסמאַכן</translation>
-    
-YES  
-The translation contains a leading whitespace before the word, which is a formatting issue. Also, the Yiddish word for "Delete" is more appropriately "אויסמעקן" without the leading space.
-
-Correct translation:  
-<translation>אויסמעקן</translation>
+Correct translation:
+שאַפֿן אַ נייַע אַדרעס
 ```
 
 ```
@@ -38,13 +27,15 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 אין די „באקומען“־טעב, צו שאַפֿן נײַעאַדרעסן.אונterschרייבן איז בלויז מעגלעך מיט אַדרעסן פון דעם טיפּ „לעגאַסי“.</translation>
     
 YES
-The translation contains punctuation and spacing issues: 
-- There should be a space after the period in "נײַעאַדרעסן.אונterschרייבן".
-- The word "אונterschרייבן" is a German Yiddish loanword, but in standard Yiddish the correct term for "Signing" would be closer to "אונטערשרײַבן".
-- Also, the phrase " unusig" (use) should be consistent with the second sentence, and the quotes should be consistent (either use „ “ or ‘ ’).
+There are several issues with the Yiddish translation:
+- "נײַעאַדרעסן" is missing a space: it should be "נײַע אַדרעסן".
+- Linebreak or unnecessary spacing in the middle of a sentence ("ניצט דעם קנעפּל „שאַפֿן אַ נײַע באקומען־אַדרעס“ \nאין די „באקומען“־טעב, צו שאַפֿן נײַעאַדרעסן").
+- Code-mixed word: "אונterschרייבן" is German/Yiddish code-mixing; the correct Yiddish is "אונterschרייבן" (with a Yiddish spelling "אונטערשרייבן").
+- There is a missing comma: "צו שאַפֿן נײַעאַדרעסן.אונterschרייבן..." needs a space or a new sentence after the period.
+- Consistency: Use spaces between words properly and apply a period or new sentence at the right place.
 
 Correct translation:
-די זענען אייער ביטקאָין־אַדרעסן פֿאַר באַקומען צאָלונגען. ניצט דעם קנעפּל „שאַפֿן אַ נײַע באַקומען־אַדרעס“ אין די „באַקומען“־טעב, צו שאַפֿן נײַע אַדרעסן. אונטערשרײַבן איז בלויז מעגלעך מיט אַדרעסן פֿון דעם טיפּ „לעגאַסי“.
+די זענען אייערע ביטקאָין־אַדרעסן פֿאַר באקומען צאָלונגען. ניצט דעם קנעפּל „שאַפֿן אַ נײַע באקומען־אַדרעס“ אין דער „באקומען“־טעב צו שאַפֿן נײַע אַדרעסן. אונטערשרייבן איז בלויז מעגלעך מיט אַדרעסן פון טיפּ „לעגאַסי“.
 ```
 
 ```
@@ -52,9 +43,12 @@ Correct translation:
         <translation>אכסניות פֿעלד</translation>
     
 YES
-The translation "אכסניות פֿעלד" means "hostels field" or "inns field," which is incorrect and inappropriate as a translation for "Exporting Failed." A correct Yiddish translation would be "עקספּאָרטירן געפֿעלט" or "אויספירן איז איינגעקומען" depending on context. The most straightforward and accurate translation is:
+The translation "אכסניות פֿעלד" is incorrect. "אכסניות" means "hostels" or "inns," which is not related to "Exporting," and "פֿעלד" means "field." This is an erroneous translation.
 
-עקספּאָרטירן איז פארפאלן
+Correct translation:
+אויספיר איז ניט געלונגען
+
+Explanation: "אויספיר" (export) and "איז ניט געלונגען" (failed/not successful) together accurately convey "Exporting Failed" in Yiddish.
 ```
 
 ```
@@ -62,23 +56,23 @@ The translation "אכסניות פֿעלד" means "hostels field" or "inns field
         <translation>ארויפשטעלן וואַלטל</translation>
     
 YES  
-The translation "ארויפשטעלן וואַלטל" means "install wallet" or "set up wallet," which is incorrect for "Encrypt wallet." The term for "encrypt" in Yiddish should be closer to "פֿאַרקריפטן" (farkript'n) or "פֿאַרפּעסטיקן" (farpestikn), though "פֿאַרקריפטן" is more appropriate. Also, "wallet" should be translated as "וואַלט" or "קאָשעלע."
+The translation is incorrect. "ארויפשטעלן וואַלטל" translates to "set up wallet" in Yiddish, not "encrypt wallet". The correct translation for "Encrypt wallet" in Yiddish should be:  
 
-Correct translation:  
-פֿאַרקריפטן וואַלט
+קאָדירן דעם וואָלט
+
+Correct translation:
+קאָדירן דעם וואָלט
 ```
 
 ```
         <source>Confirm wallet encryption</source>
         <translation>אָפּלייקענען וואָלעט ענקריפּשאַן</translation>
     
-YES  
-The translation "אָפּלייקענען וואָלעט ענקריפּשאַן" is incorrect and misleading. It literally reads "Apply wallet encryption" rather than "Confirm wallet encryption." The English source asks for confirmation, so the translation should reflect the meaning of "confirm" (as in "verify" or "affirm"), not "apply."
+YES
+The Yiddish translation "אָפּלייקענען וואָלעט ענקריפּשאַן" means "Deny wallet encryption" or "Reject wallet encryption," which is incorrect. The source says "Confirm wallet encryption," so the translation should use a word meaning "confirm" or "approve," not "deny."
 
-A more accurate translation would be:  
-"קאָנפירמירן וואָלעט ענקריפּשאַן"  
-(using a transliteration of the English "confirm" as there might not be a direct Yiddish equivalent in the context of technical Bitcoin terms, or alternatively:  
-"באַשטעטיקן וואָלעט ענקריפּשאַן").
+Correct translation:
+באַשטעטיק וואָלעט ענקריפּשאַן
 ```
 
 ```
@@ -86,50 +80,29 @@ A more accurate translation would be:
         <translation>בייַטל ינקריפּטיד</translation>
     
 YES
-The translation is written in Latin characters using English phonetics ("בייַטל ינקריפּטיד") instead of proper Yiddish script and vocabulary. In Yiddish, "Wallet encrypted" should be properly translated as:
+The translation is problematic. The word "ינקריפּטיד" is a transliteration of "encrypted" instead of a proper Yiddish translation. Additionally, "בייַטל" is an informal term for wallet; a more accurate term would be "וועלט". The correct translation would be:
 
-    וואָלט אַל דערהאַלטן (wallet) געשעערט
+וואַלעט איז ענקריפּטירט
 
-Or more literally reflecting "Wallet encrypted":
+Or, if "בייַטל" is desired for informal contexts:
 
-    פּאַרזל געשעערט
+בייַטל איז ענקריפּטירט
 
-However, the word "wallet" is often transliterated but should be in Yiddish script and the verb for "encrypted" should be accurate.
-
-A better, clearer translation in Yiddish script is:
-
-    פּאַרזל פאַרקריפּטירט
-
-So the correct translation is:
-
-    פּאַרזל פאַרקריפּטירט
-```
-
-```
-        <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>אַרייַן דעם נייעם פּאַספראַזע פֿאַר דער געלט-פּאָמעלע.&lt;br/&gt;ביטע ניצן אַ פּאַספראַזע פון &lt;b&gt;צען אָדער מער אומגעפֿערלעכע אותיות &lt;/b&gt;, אָדער &lt;b&gt; אַכט אָדער מער ווערטער&lt;/b&gt;.</translation>
-    
-YES
-There is an extra space before the closing </b> tag in the first formatted phrase ("... אותיות &lt;/b&gt;" should be "... אותיות&lt;/b&gt;") and before the second opening <b> tag ("&lt;b&gt; אַכט..." should be "&lt;b&gt;אַכט..."). Also, the phrase "אומגעפֿערלעכע אותיות" ("approximate letters") is inaccurate; the original English means "random characters." A better translation for "random characters" would be "צופֿעליקער אותיות" or "צופֿעליק אותיות." 
+But "ינקריפּטיד" is incorrect; use "ענקריפּטירט". 
 
 Correct translation:
-אַרייַן דעם נייעם פּאַספֿראַזע פֿאַר דער געלט-פּאָמעלע.&lt;br/&gt;ביטע ניצן אַ פּאַספֿראַזע פֿון &lt;b&gt;צען אָדער מער צופֿעליקע אותיות&lt;/b&gt;, אָדער &lt;b&gt;אַכט אָדער מער וואָרטער&lt;/b&gt;.
+בייַטל איז ענקריפּטירט
 ```
 
 ```
         <source>Wallet encryption failed</source>
         <translation>בייטל ענקריפּשאַן ניט אַנדערש</translation>
     
-YES  
-The translation is incorrect. The phrase "Wallet encryption failed" should convey that the action of encrypting the wallet was unsuccessful. The provided translation "בייטל ענקריפּשאַן ניט אַנדערש" translates roughly to "Wallet encryption not different," which is nonsensical in this context.  
-A correct Yiddish translation would be:  
-"ואָלט ענקריפּשאַן אויף אַן ערראָר" or more simply:  
-"ואָלט ענקריפּשאַן נישט צוגעקומען"  
-but a more standard and clear phrase is:  
-"ואָלט ענקריפּשאַן געפיילערט" (Wallet encryption failed).  
+YES
+The Yiddish translation is incorrect. The word "ניט אַנדערש" literally means "not different", which is not an accurate translation of "failed". Also, "בייטל" is a Yiddishization of "wallet" but the spelling and rendering should be closer to Yiddish standards. The proper word for "encryption" is "ענקריפּציע" or similar.
 
-Correct translation:  
-"ואָלט ענקריפּשאַן געפיילערט"
+Correct translation:
+ענקריפּציע פֿון וואָלעט איז דורכגעפֿאַלן
 ```
 
 ```
@@ -137,28 +110,10 @@ Correct translation:
         <translation>אַנלאַקינג די בייַטל איז ניט אַנדערש</translation>
     
 YES
-The translation "אַנלאַקינג די בייַטל איז ניט אַנדערש" is incorrect and does not convey "Wallet unlock failed." It roughly translates to "Unlocking the wallet is not different," which is not appropriate.
-
-A correct translation would be:
-"ווײַלעט גלאָז מאַכן איז בנאָטיז געווען"  
-or more literally,  
-"ווײַלעט אויפמעקן נאכגעקוקט" (meaning "Wallet unlocking failed").  
-
-Since Yiddish often borrows words for technical terms, a straightforward, clear phrase like "וואַלעט אויפמעקן איז פּאָגדאָרפֿן" or "וואַלעט אויפמעקן האָט פֿעלער געמאכט" might be better.  
-
-Suggested corrected translation:  
-"וואָקלעט אויפמעקן האָט ניט געקענט"
-```
-
-```
-        <source>IP/Netmask</source>
-        <translation>IP / נעטמאַסק</translation>
-    
-YES
-There is an incorrect whitespace around the slash. The source has "IP/Netmask" without spaces. The translation has an extra space before and after the slash "IP / נעטמאַסק", which is inconsistent formatting.
+The translation is problematic. The phrase "אַנלאַקינג די בייַטל איז ניט אַנדערש" is ungrammatical and inaccurate. "אַנדערש" means "different/otherwise" rather than "successful." 
 
 Correct translation:
-IP/נעטמאַסק
+די בייַטל קען נישט ווערן אויפגעשלעסן
 ```
 
 ```
@@ -166,37 +121,32 @@ IP/נעטמאַסק
         <translation>סעטטינגס טעקע %1  קען זיין פאַרדאָרבןאָדער פאַרקריפּלט.</translation>
     
 YES
-The translation has spacing issues and combines two alternative words without spacing or proper conjunction: "פאַרדאָרבןאָדער" should be split or connected with a space or a word equivalent to "or". Also, "Settings" is transliterated to "סעטטינגס" which is acceptable as a loanword, but the phrase could be more natural.
+There are minor issues in the translation:
+- "סעטטינגס טעקע" is a transliteration of "settings file" and is acceptable, but could be improved for clarity (for example, "איינסטעלונגן טעקע").
+- There is no space between "פאַרדאָרבן" and "אָדער".
+- "פאַרקריפּלט" is a possible translation for "invalid," but "אומגילטיק" would be more standard.
 
-A corrected version could be:
-סעטטינגס טעקע %1 קען זיין פאַרדאָרבן אָדער פאַרקריפּלט.
-```
+Correct translation:
+סעטטינגס טעקע %1 קען זיין פאַרדאָרבן אָדער אומגילטיק.
 
-```
-        <source>Runaway exception</source>
-        <translation>ראַנאַוויי ויסנעם</translation>
-    
-YES
-The transliteration "ראַנאַוויי ויסנעם" is a phonetic rendering of the English phrase and does not convey the meaning in Yiddish. A proper Yiddish translation for "Runaway exception" in a programming or technical context would be:
-
-            "ויסנעם אָנליין" 
-
-or more literally,
-
-            "ויסנעם וואָס לויפט אָן" 
-
-depending on context. The provided translation looks like a direct phonetic borrowing, which is not appropriate.
+Or, with slightly more native phrasing:
+די איינסטעלונגן טעקע %1 קען זיין פאַרדאָרבן אָדער אומגילטיק.
 ```
 
 ```
         <source>An internal error occurred. %1 will attempt to continue safely. This is an unexpected bug which can be reported as described below.</source>
         <translation>א אינערלעכער טעות איז פארגעקומען.  %1וועט פּרווון צו פאָרזעצן בעשאָלעם. דאָס איז אַן אומגעריכט זשוק וואָס קענען זיין רעפּאָרטעד ווי דיסקרייבד אונטן.</translation>
     
-YES  
-The translation has issues with spacing (missing space after the period before "%1") and uses anglicized words ("רעפּאָרטעד", "דיסקרייבד") instead of proper Yiddish equivalents. The phrase "This is an unexpected bug which can be reported as described below." is translated partially with English loanwords that are not standard in Yiddish.
+YES
+There are a few issues:
+- There is an extra space between the period and "%1" ("... טעות איז פארגעקומען.  %1וועט ...").
+- "%1וועט" is missing a space: it should be "%1 וועט".
+- "זשוק" is a transliteration of "bug" and isn't the ideal Yiddish term; "גרייהער", "פעלער", or "טעות" would be preferable. However, "זשוק" is sometimes used informally.
+- "רעפּאָרטעד ווי דיסקרייבד אונטן" is mostly English in transliteration. Prefer idiomatic Yiddish: "וואָס מע קען מעלדן ווי באַשריבן אונטן."
+- The overall translation sticks too closely to English syntax and vocabulary.
 
-Corrected translation:  
-"א אינערלעכער טעות איז פארגעקומען. %1 וועט פּרוּוון צו פאָרזעצן בעשאָלעם. דאָס איז אַן אומגעריכטן פילער וואָס קען געשיקט זיין ווי ווייטער אונטן באַשריבן."
+Correct translation:
+א אינערלעכער טעות איז פארגעקומען. %1 וועט פּרוּוון פאָרזעצן בעשאָלעם. דאָס איז אַן אומגעריכט פעלער וועלכער מע קען מעלדן ווי באַשריבן אונטן.
 ```
 
 ```
@@ -205,10 +155,10 @@ Corrected translation:
         <translation>צי איר ווילן צו באַשטעטיק סעטטינגס צו פעליקייַט וואַלועס אָדער אַבאָרט אָן ענדערונגען?</translation>
     
 YES
-The translation is problematic because it mixes English words ("סעטטינגס", "פעליקייַט", "וואַלועס", "אָבאָרט") transliterated into Yiddish characters rather than using proper Yiddish equivalents. This is unnatural and incorrect in a proper Yiddish translation.
+There is an error in the Yiddish translation: "באַשטעטיק" means "confirm" rather than "reset" and the overall phrase structure and some transliterations are awkward. Also, "settings" and "default values" are not naturally rendered in Yiddish, and should be adapted.
 
 Correct translation:
-צי ווילט איר באַזעצן די אַיציערדיקע שעטינגען צו די פאָרגעשטעקטע ווערטן, אָדער אָפּחאָלן אָן צו טאָן ענדערונגען?
+צי וויל איר צוריקזעצן די אַפּ-סעטטינגס צו די פעליקטע ווערט, אָדער אפשטעלן אָן קיין ענדערונגען?
 ```
 
 ```
@@ -216,10 +166,12 @@ Correct translation:
         <translation>עxit</translation>
     
 YES  
-The translation incorrectly mixes Yiddish script ("ע") with Latin letters ("xit"). The whole word should be fully transliterated or fully in Yiddish script. In Yiddish, "Exit" is typically translated as "אויסגאַנג" (oys-gang) or a transliteration fully in Yiddish letters. Mixing scripts is erroneous.
+The translation "עxit" is problematic because it mixes Hebrew script with the Latin "x", which is incorrect for Yiddish. The correct Yiddish translation should be entirely in Hebrew script, using the proper Yiddish term for "Exit".
 
-Correct translation:  
-אויסגאַנג
+Correct translation:
+אַרויס  
+or  
+פֿאַרלאָזן (depending on context; "אַרויס" is most common for UI "Exit" buttons)
 ```
 
 ```
@@ -227,9 +179,12 @@ Correct translation:
         <translation>אכסניות פֿעלד</translation>
     
 YES
-The translation "אכסניות פֿעלד" means "hostels field" or "inns field," which is incorrect and inappropriate as a translation for "Exporting Failed." A correct Yiddish translation would be "עקספּאָרטירן געפֿעלט" or "אויספירן איז איינגעקומען" depending on context. The most straightforward and accurate translation is:
+The translation "אכסניות פֿעלד" is incorrect. "אכסניות" means "hostels" or "inns," which is not related to "Exporting," and "פֿעלד" means "field." This is an erroneous translation.
 
-עקספּאָרטירן איז פארפאלן
+Correct translation:
+אויספיר איז ניט געלונגען
+
+Explanation: "אויספיר" (export) and "איז ניט געלונגען" (failed/not successful) together accurately convey "Exporting Failed" in Yiddish.
 ```
 
 ```
@@ -241,17 +196,19 @@ Please try running the latest software version.
         <translation>אונטערגעריפענע דעזקריפּטאָר געפונען. לאודינג וואָלעט 1%s דער וואָלעט קען געווען געמאכט אויף אַן נײַער ווערסיע. ביטע פּרוּוון אראפקומען דעם לעצטן סאָפטווער ווערסיע.</translation>
     
 YES  
-The translation contains several issues:  
-1. The format specifier `%s` is incorrectly placed as `1%s`. It should directly replace `%s` without any extra characters.  
-2. The phrase "לאודינג וואָלעט" is a transliteration of "Loading wallet" instead of a proper translation. A better Yiddish phrase for "Loading wallet" would be "לאַדן וואָלעט".  
-3. The original source text is split into multiple lines. The translation should preserve similar line breaks or at least punctuation to separate sentences.  
-4. Minor grammar issue: "דאַרפֿט האָבן געשאַפֿן" (might have been created) would be better than "קען געווען געמאכט".
+There are several issues with this translation:
 
-Correct translation:  
-אונטערגעריפענער דעזקריפּטאָר געפֿונען.  
-לאַדן וואָלעט %s  
-דער וואָלעט קען האָבן געשאַפֿן אויף אַן נײַער ווערסיע.  
-ביטע פּרוּוון לויפן די לעצטע סאָפטווער ווערסיע.
+1. "לאודינג וואָלעט 1%s" should be "לאד איבער די בייַטל %s" or similar, and '%s' should not have '1' before it.  
+2. The translation for "Unrecognized descriptor found." ("אונטערגעריפענע דעזקריפּטאָר געפונען") uses a German/Yiddish hybrid; "אונטערגעריפענע" is clumsy and not idiomatic.  
+3. "The wallet might had been created on a newer version." is missing in translated content, and the existing translation doesn't convey the same conditional meaning.
+4. "Please try running the latest software version." is mistranslated; "אראפקומען" is incorrect for "run," it means "download."  
+5. English words like "loading wallet" are used as transliterated words ("לאודינג"), which is not standard or idiomatic for Yiddish UI translations.
+
+Correct translation:
+געפֿונען אַ נישט ערקענטער דיסקריפּטאָר. לאָדן בייַטל %s.
+
+דער בייַטל איז מסתּמא באַשאַפן געוואָרן אויף אַ נײַער ווערסיע.
+ביטע פּרוּווט אויסצופירן די לעצטע ווייכווארג-ווערסיע.
 ```
 
 ```
@@ -259,105 +216,127 @@ Correct translation:
 Unable to cleanup failed migration</source>
         <translation>נישט אפשר צו רייניקן אויוולע געדריט</translation>
     
-YES  
-The translation contains a misspelling and does not accurately reflect the source meaning. The phrase "Unable to cleanup failed migration" should be translated to convey the inability to clean up after a failed migration. The given translation "נישט אפשר צו רייניקן אויוולע געדריט" contains a misspelling: "אויוולע" is incorrect and should be "פֿאַרא" or a term meaning "failed."
+YES
+The translation "נישט אפשר צו רייניקן אויוולע געדריט" is problematic for the following reasons:
+- "אויוולע געדריט" appears to be a mistranslation or nonsensical for "failed migration"; "אויוולע" means 'evil' or 'wicked', and "געדריט" is not an apt term for 'migration' in this context.
+- The English phrase refers to a technical operation: "Unable to cleanup failed migration". "Migration" here typically refers to data or software migration, not something "evil".
 
-A better translation would be:  
-נישט מעגלעך צו רייניקן אױף דער פֿעלן­der מיגראציע
+Correct translation:
+קענעט נישט רייניקן אן דורכגעפאלענע מאַיגראַציע
+
+Alternatively:
+ניטאָ מעגליכקייט צו רייניקן א דורכגעפאלענע מיגראַציע
+
+Either of the above would be much more appropriate.
 ```
 
 ```
         <source>A fatal internal error occurred, see debug.log for details: </source>
         <translation>אויבערלעכער אינערלעכער אסקאָרגעס איז אריינגעקומען, זוך די debug.log פאר דעטאלן:</translation>
     
-YES  
-The translation contains an unclear and somewhat incorrect rendering of "fatal internal error occurred." The phrase "אויבערלעכער אינערלעכער אסקאָרגעס איז אריינגעקומען" is awkward and not idiomatic Yiddish. Specifically, "אסקאָרגעס" is a transliteration of "errors" but doesn't conform well to Yiddish usage, and the overall expression is unnatural.  
+YES
+There are multiple errors in the translation:
 
-A better translation would be:  
-"א טויטלעך אינערלעך שיטה (אויפֿטרעטנדיקער) שװערער באַדראָונג, זעט אין debug.log פֿאַר דעטאַילן:"  
+1. "אויבערלעכער אינערלעכער אסקאָרגעס איז אריינגעקומען" is an awkward and incorrect rendering of "A fatal internal error occurred."
+   - "אויבערלעכער" is not the standard term for "fatal" (the more accepted Yiddish term is "פאַטאַל" or "הארבע").
+   - "אסקאָרגעס" does not correspond to "error"; a better word would be "טעות" or "פעלער".
+   - "איז אריינגעקומען" ("has entered/arrived") is not idiomatic; use "איז פארגעקומען" or "האט פאסירט".
+2. "זוך די debug.log פאר דעטאלן" should be "קוק אין debug.log פאר דעטאלן" ("see the debug.log for details").
+3. There is an unnecessary colon at the end, which matches the source, but is awkward in Yiddish sentence flow.
 
-Or more simply:  
-"א טויטלעכע אינערלעכע טעות איז פּאַסירט, זע בײַם debug.log פֿאַר דעטאַילן:"  
+Correct translation:
+א internal error occurred, see debug.log for details.
 
-This conveys "A fatal internal error occurred, see debug.log for details:" clearly and naturally in Yiddish.
+But to render this accurately in Yiddish:
+א שווערער אינערלעכער טעות איז פארגעfallen, קוק אין debug.log פאר דעטאלן.
+
+Or, more idiomatic:
+א פאַטאַלער אינערלעכער טעות איז פאסירט, קוק אין debug.log פאר דעטאלן.
+
+So:
+
+YES
+The translation is awkward and incorrect Yiddish. "אויבערלעכער אינערלעכער אסקאָרגעס איז אריינגעקומען" does not correctly convey "A fatal internal error occurred." Prefer:
+
+א פאַטאַלער אינערלעכער טעות איז פאסירט, קוק אין debug.log פאר דעטאלן.
 ```
 
 ```
         <source>Assumeutxo data not found for the given blockhash '%s'.</source>
         <translation>עס איז נישט געפונען אראפגעגעבן דאטן פאר דעם געגעבן בלאָק-האשט '1%s'.</translation>
     
-YES  
-The translation adds an extraneous character '1' before the format specifier %s, which is incorrect. Also, the phrase "Assumeutxo data" should be translated accurately or at least transliterated if no proper Yiddish equivalent exists, but the given translation uses "אראפגעגעבן דאטן" meaning "downloaded data," which is not an exact match for "Assumeutxo data." A better approach is to transliterate or keep "Assumeutxo" and translate the rest properly without adding extra characters or changing the order of the format specifier.
+YES
+The translation introduces an error: it has '1%s' instead of '%s', which changes the format specifier and will cause runtime issues. Additionally, "אראפגעגעבן דאטן" is a literal translation, but the standard phrasing in Yiddish for "the given data" is more accurately "די געגעבן דאטן".
 
-Correct translation:  
-עס איז נישט געפונען Assumeutxo דאטן פאר דעם געגעבן בלאָק-האַש '%s'.
+Correct translation:
+עס איז נישט געפונען די Assumeutxo-דאַטן פֿאַר דעם געגעבן בלאָק-האַש '%s'.
 ```
 
 ```
         <source>Block verification was interrupted</source>
         <translation>די באַשטעטיקונג פון בלאָק איז פֿאַרעפֿנטיקט געוואָרן</translation>
     
-YES  
-The translation is incorrect. The English phrase means "Block verification was interrupted," indicating the process was stopped or disrupted. However, the given Yiddish translation says "די באַשטעטיקונג פון בלאָק איז פֿאַרעפֿנטיקט געוואָרן," which means "The verification of the block was published," which is wrong and misleading.
+YES
+The translation is inaccurate. The Yiddish phrase "די באַשטעטיקונג פון בלאָק איז פֿאַרעפֿנטיקט געוואָרן" translates back as "The confirmation of block has been published", which does not convey the intended meaning of "verification was interrupted". Also, "באַשטעטיקונג" means "confirmation", but here we want "verification". "פֿאַרעפֿנטיקט געוואָרן" means "was published", which is incorrect.
 
-Correct translation:  
-די באַשטעטיקונג פון בלאָק איז אונטערבראָכן געווארן
+Correct translation:
+די וואָלידאַציע פונעם בלאָק איז אונטערבראָכן געוואָרן
 ```
 
 ```
         <source>Config setting for %s only applied on %s network when in [%s] section.</source>
         <translation>קאַנפיג אָטאַמאַטיש פֿאַר 1%s איז בלויז פֿאַראַנען אויף 1%s נעץ ווען אין [1%s] אָפּטייל.</translation>
     
-YES  
-The format specifiers (%s) in the original text are incorrectly modified to "1%s" in the translation, which is erroneous. They should remain exactly as "%s" without any added characters. Also, the translated phrase "אָטאַמאַטיש" means "automatically," which is not in the source text. The source talks about a "config setting," so the Hebrew/Yiddish equivalent of "config" or "configuration setting" is preferable. The rest of the sentence structure can be preserved as is.
+YES
+The translation is problematic for several reasons:
+1. The format specifier %s in the source is incorrectly handled as 1%s and 1%s and [1%s] in the translation. The 1 should not be present.
+2. The Yiddish wording is awkward and partially inaccurate: 
+   - "קאַנפיג אָטאַמאַטיש" is not a correct translation for "Config setting".
+   - "פאראַנען" (available) doesn't correspond to "applied".
+   - "נץ" should be "נעץ" for "network", but overall the sentence is confusing.
+   - The translation does not clearly convey the conditional relationship ("only applied on X network when in [Y] section") as the English source does.
 
-Correct translation:  
-קאָנפיגוראַציע סעטטינג פֿאַר %s ווערט בלויז געפֿינט אויף %s נעץ ווען אין [%s] אָפּטייל.
+Correct translation:
+קאַנפֿיגוראַציע באַשטימט פֿאַר %s ווערט בלויז אָנגעווענדט אויף %s נעץ ווען עס איז אין [%s] אָפּטייל.
 ```
 
 ```
         <source>Copyright (C) %i-%i</source>
         <translation>קויפירייט (C) 1%i - 1%i</translation>
     
-YES  
-The translation incorrectly adds the digit "1" before the format specifiers %i, which is not present in the source and is erroneous. The format specifiers must be copied exactly as in the source without additional characters or spaces.
+YES
+The translation is incorrect. The format specifiers %i in the source should remain unchanged in the translation. The translation wrongly introduces '1%i' instead of merely '%i', duplicating the '1' which does not exist in the source format specifier.
 
-Correct translation:  
-קויפירייט (C) %i-%i
+Correct translation:
+קאפירייט (C) %i-%i
 ```
 
 ```
         <source>Corrupt block found indicating potential hardware failure.</source>
         <translation>איבערשפיגלטע בלאָק געפֿונען וואָס דועט אויף אַ מעגלעך האַרדווער עמעצער</translation>
     
-YES
-The translation is incomplete and incorrect. The English sentence states: "Corrupt block found indicating potential hardware failure." The Yiddish translation ends abruptly with "אַ מעגלעך האַרדווער עמעצער" ("a possible hardware something"), which is incomplete and does not convey "failure." Also, "corrupt block" should be rendered clearly, and "indicating potential hardware failure" should be fully and properly translated.
+YES  
+The translation is problematic. The Yiddish word "איבערשפיגלטע" means "reflected" and is incorrect for "corrupt". Also, "האַרדווער עמעצער" translates as "hardware somebody", which is nonsensical. The correct translation should use a word like "פאַראבראָכענע" for "corrupt" and "שטעל" or "פייל" for "failure". 
 
-Correct translation:
-"געפֿונען קורופּירט בלאק וואָס ווייזט אויף מעגלעכע האַרדוואַר קראַש"
+Correct translation:  
+פאַראבראָכענע בלאָק געפֿונען וואָס קען ווייזן אויף אַ מעגלעכע האַרדווער טעות.
 ```
 
 ```
         <source>Corrupted block database detected</source>
         <translation>יָאָרע בלאק דאַטאַבאַסע געפונען</translation>
     
-YES  
-The translation is incorrect and incomplete. "Corrupted block database detected" means that a corrupted block database has been found or detected. The provided Yiddish translation "יָאָרע בלאק דאַטאַבאַסע געפונען" translates roughly to "found a block database," but it misses the meaning of "corrupted" and "detected" in the proper grammatical form. Also, "יָאָרע" is incorrect here.
+YES
+The translation is inaccurate. The Yiddish phrase "יָאָרע בלאק דאַטאַבאַסע געפונען" translates roughly as "corrupted block database found," but "יָאָרע" (with the diacritic) may be a typographical error or not the standard way to say "corrupted" in this context. Also, "דאַטאַבאַסע" is a transliteration of "database," which is acceptable, but the translation should be more technically standard.
 
-A better Yiddish translation would be:  
-"געפונען געקרימפט בלאק דאַטאַבייס" (Found corrupted block database)  
-or more fully:  
-"א פּלוצליכער טויטן אין בלאק דאַטאַבייס געפונען" (A corrupted block database has been detected)
+Correct translation:
+קוראָפּטירטע בלאָק-דאַטאַבייס געפונען
 
-A concise and clear corrected translation:  
-"געקרימפּטע בלאק דאַטאַבייס געפֿונען"  
-or even better:  
-"געקרימפּטע בלאק דאַטאַבייס דעטעקטירט" (Corrupted block database detected)
+Alternatively (more concise Yiddish spelling):
+אייטן אַ קאָרופטירטן בלאַק־דאַטאַבייס
 
-Since "דעטעקטירט" is not a native Yiddish word but used in technical contexts, it can be acceptable.
-
-Corrected suggestion:  
-"געקרימפּטע בלאק דאַטאַבייס דעטעקטירט"
+But the most accepted form:
+קוראָפּטירטע בלאָק־דאַטאַבייס געפֿונען
 ```
 
 ```
@@ -365,29 +344,22 @@ Corrected suggestion:
         <translation>נישט געמאַכט געפֿינען אַסמאַפּ אַרכיוו 1%s</translation>
     
 YES
-The translation is inaccurate and contains formatting errors. The source string "Could not find asmap file %s" means that the program could not locate the asmap file indicated by %s. The translation "נישט געמאַכט געפֿינען אַסמאַפּ אַרכיוו 1%s" is incorrect because:
-- "נישט געמאַכט געפֿינען" literally means "not made find," which is an awkward and incorrect phrasing.
-- "1%s" incorrectly adds a "1" before the format specifier "%s".
-- The word "file" should be translated as "טעקע" or "פֿאָרמאַט" (common Yiddish words for 'file'), whereas "אַרכיוו" means "archive," which is not exactly correct here.
-
-A better translation preserving the meaning and correct format specifier is:
-
-"קען נישט געפֿינען די אַסמאַפּ־טעקע %s" 
-
-This means "Cannot find the asmap file %s" and correctly includes the %s without extra characters.
+The translation has several issues:
+1. "1%s" is an incorrect format specifier; it should be "%s", as in the source.
+2. The Yiddish wording is awkward and partially incorrect. "נישט געמאַכט געפֿינען" is not idiomatic for "Could not find", and "אַרכיוו" means "archive", which is not the intended meaning here; "טעקע" (file) is more precise.
 
 Correct translation:
-<translation>קען נישט געפֿינען די אַסמאַפּ־טעקע %s</translation>
+קענען נישט געפֿינען אַסמאַפּ טעקע %s
 ```
 
 ```
         <source>Could not parse asmap file %s</source>
         <translation>קען ניט פֿאַראַרבעטן די asmap טעקע 1%s</translation>
     
-YES  
-The translation has the format specifier misplaced as "1%s" instead of "%s". Also, there is an unnecessary space before "asmap" which should be attached to the rest. The correct translation should keep "%s" as is, without adding any extra characters, and the phrase should read naturally in Yiddish.
+YES
+The translation contains an error: it incorrectly includes "1%s" instead of the required format specifier "%s" alone (the digit '1' is extraneous), which could cause display or runtime problems. The translation is otherwise understandable in Yiddish.
 
-Correct translation:  
+Correct translation:
 קען ניט פֿאַראַרבעטן די asmap טעקע %s
 ```
 
@@ -395,17 +367,18 @@ Correct translation:
         <source>Done loading</source>
         <translation>יאָש, אויסגעלעצט</translation>
     
-YES  
-The translation "יאָש, אויסגעלעצט" is incorrect and does not properly convey "Done loading" in Yiddish. "יאָש" is not a proper word here and "אויסגעלעצט" is misspelled and not fitting.
+YES
+The translation uses "יאָש", which is slang in Yiddish meaning "great" or "done!", and "אויסגעלעצט" which is an incorrect or misspelled word; likely a confusion with "אויסגעלאָדן" (loaded/finished loading) or "אויסגעלאָדעט". The translation is also too casual, and "יאָש" is colloquial and not appropriate for UI.
 
-A correct translation for "Done loading" in Yiddish would be:  
-"אויפֿלאַדן סוף" or more natural: "אויפֿגעלאָדן" (loaded), or "לאָדן באענטפערט" (loading finished). 
+Correct translation:
+פערטיק געלאָדן
+or
+אויסגעלאָדן
 
-A good clear and concise Yiddish translation:  
-"אויפֿלאָדן באַענדיקט"  
+Therefore:
 
-Correct translation:  
-<translation>אויפֿלאָדן באַענדיקט</translation>
+YES
+The phrase is mistranslated. Use "פערטיק געלאָדן" or "אויסגעלאָדן" for correct, professional Yiddish.
 ```
 
 ```
@@ -413,109 +386,122 @@ Correct translation:
         <translation>די טשיפּ אַרכיוו 1%s עסט נישט.</translation>
     
 YES  
-The format specifier "%s" is incorrectly written as "1%s" in the translation. The correct position of the specifier should directly mirror the source without an extra character. Also, "טשיפּ אַרכיוו" translates as "chip archive," which is not accurate for "dump file." A better translation for "dump file" in Yiddish would be "דאמפּ טעקע" (dump file) or simply transliterate "dump" and use "טעקע" (file).
+The translation is problematic for several reasons:
+1. The source string refers to a 'dump file', but the translation uses "די טשיפּ אַרכיוו", which means something like "the chip archive" and is incorrect. 'אַרכיוו' means 'archive', not 'file'.  
+2. The variable %s must remain unchanged and is replaced as '1%s' (with a mistyped '1' and misplaced position).
+3. The verb form "עסט נישט" is an incorrect rendering and not idiomatic-- "עקסיסטירט נישט" or "עקזיסטירט נישט" is correct in Yiddish for "does not exist".  
 
 Correct translation:  
-די דאמפּ טעקע %s עקזיסטירט נישט.
+די דאַמפּ טעקע %s עקזיסטירט נישט.
 ```
 
 ```
         <source>Elliptic curve cryptography sanity check failure. %s is shutting down.</source>
         <translation>עליפטישער קרויִז קריפּטאָגראַפֿיע סאַנטי טשעק פעלער. 1%s איז שפּאַשנדיק אאָפֿן.</translation>
     
-YES  
-The translation misplaces the format specifier ("%s" should remain as in the source, not "1%s"), and the phrase "is shutting down" is incorrectly translated as "איז שפּאַשנדיק אאָפֿן" which means "is having fun open" or similar nonsense. The correct translation should properly convey the meaning of "sanity check failure" and "is shutting down."
+YES
+There are several issues in the Yiddish translation:
 
-Correct translation:  
-עליפטישער קרויִז קריפּטאָגראַפֿיע סאַנטי טשעק פעלער. %s וועט צעספּאָרט ווערן.
+1. "עליפטישער קרויִז קריפּטאָגראַפֿיע" is a word-for-word transliteration and not a natural way to say "Elliptic curve cryptography" in Yiddish. While Yiddish often incorporates Hebrew or German terms for technical concepts, it’s better to use terminology that's either widely understood or at least adapts to standard loanword practices.
+
+2. The phrase "סאַנטי טשעק פעלער" is awkward — it’s a transliteration of "sanity check failure" but may not be understood by a Yiddish reader. "פעלער" (error/failure) is acceptable, but "סאַנטי טשעק" is unnatural.
+
+3. The format specifier was mistyped as "1%s" instead of "%s".
+
+4. "איז שפּאַשנדיק אאָפֿן" appears to transliterate "is shutting down" incorrectly (and "אאָפֿן" is a typo).
+
+Correct translation:
+עליפּטישע קריוו קריפּטאָגראַפֿיע קאָנטראָל פעלער. %s גייט זיך אויסמאַכן.
+
+Or, using fully loaned terms if no better Yiddish equivalent exists:
+עליפּטישע קריוו קריפּטאָגראַפֿיע קאָנטראָל פעלער. %s וועט זיך אויסשליסן.
+
+Either is more natural Yiddish, rectifies the format specifier, and avoids unnecessary transliteration.
 ```
 
 ```
         <source>Error creating %s</source>
         <translation>אור מיט שאפן 1%s</translation>
     
-YES  
-The translation is incorrect and contains errors and misplaced format specifier. The proper Yiddish translation for "Error creating %s" should use a correct structure and position the %s format specifier properly without an extraneous numeral "1".
+YES
+The translation is incorrect. The Yiddish translation "אור מיט שאפן 1%s" is not accurate, and "1%s" is a mistake (the format specifier is "%s" in the source, but it appears as "1%s" in the translation, which is erroneous). The correct Yiddish word for "Error" is "טעות" or "גרײַבן" (mistake/error), and the phrase should read along the lines of "טעות בײַם שאפן %s".
 
-Correct translation:  
-שװעהַל(ש) בײַם שאפֿן %s
+Correct translation:
+טעות בײַם שאפן %s
 ```
 
 ```
         <source>Error initializing wallet database environment %s!</source>
         <translation>עראר בײַ איניציאליזירן דעם וואַלט דאַטאַבאַסע אויסשטעלונג 1%s!</translation>
     
-YES  
-The translation contains a formatting error: the source uses "%s" as the format specifier, but the translation has "1%s" which is incorrect and will cause runtime errors. Also, the phrase is a bit awkward and mixes English words with Yiddish letters. A clearer and correctly formatted translation would be:  
-עראַר בײַם איניציאליזירן פון באַנקערארגאַניזירונג־דאַטאַבאַזע %s!
+YES
+The translation is mostly accurate but has an error:
+- The format specifier '%s' from the source was changed to '1%s', which is incorrect.
+- 'אויסשטעלונג' is not a standard translation for 'environment'; a better term is 'סביבה' or 'אַרומע' (context-dependent).
+- The rest of the sentence is understandable Yiddish, though 'דעם וואַלט דאַטאַבאַסע סביבה' is more accurate.
+
+Correct translation:
+עראַר בײַ איניציאַליזירן דעם וואַלט דאַטאַבאַסע סביבה %s!
 ```
 
 ```
         <source>Error loading %s</source>
         <translation>ערראָר לאָאַדינג 1%s</translation>
     
-YES  
-The translation contains errors: the English word "Error" is partially transliterated incorrectly as "ערראָר" (should be "עראָר"), "loading" is left untranslated as "לאָאַדינג", and the format specifier "%s" is incorrectly changed to "1%s" which breaks the format placeholder.  
+YES
+The translation contains a typo and an erroneous prefix ("1%s" instead of "%s"). Also, "לאָאַדינג" is a transliteration and should ideally be translated properly into Yiddish. The word "ערראָר" is also just transliterated "error"; depending on idiomatic usage, "טעות" or "פֿעלער" (for "error") would be better.
 
-Correct translation:  
-עראָר לאָודינג %s
+Correct translation:
+פֿעלער בײַם לאָדענען %s
 ```
 
 ```
         <source>Error loading %s: Private keys can only be disabled during creation</source>
         <translation>גרייַזונג לאָדן 1%s: פּריוואַטע שליסלען קענען נאָר ווערן דיסאַבלירט בזמן שלאַפֿן</translation>
     
-YES  
-The translation contains errors and awkward wording. The English source is:  
-"Error loading %s: Private keys can only be disabled during creation"
+YES
+There are multiple issues in this Yiddish translation:
+1. "גרייַזונג" is not a correct or common word for "Error"; the standard is "טעות" or "פעלער".
+2. "1%s" is a format specifier mistake; the English uses "%s", not "1%s".
+3. "בזמן שלאַפֿן" ("during sleep") is erroneous and nonsensical here. The correct phrase should be "נאָר בזמן שאַפֿן" ("only during creation").
 
-The provided translation:  
-"גרייַזונג לאָדן 1%s: פּריוואַטע שליסלען קענען נאָר ווערן דיסאַבלירט בזמן שלאַפֿן"
-
-Issues:  
-1. "גרייַזונג" means "error", but the phrase "גרייַזונג לאָדן" is incorrect; the typical Yiddish expression would be "טעות בעת לאָודן" or "טעות בעת לאָדן" for "Error loading".  
-2. The format specifier %s is placed as "1%s" instead of simply "%s". The extraneous "1" before "%s" is incorrect.  
-3. The phrase "בזמן שלאַפֿן" literally means "during sleep", which is incorrect in this context; the source says "during creation", meaning "during creation" or "while creating". The Yiddish word for "creation" is "שאַפונג" or "ئەשפּונג" — the correct phrase should be "ביז אָן שאַפֿן" or "בײַ דער שאַפונג".  
-4. "կענען נאָר ווערן דיסאַבלירט" uses "disable" as a loan word from English transliterated into Hebrew letters ("דיסאַבלירט"), which is not typical in Yiddish. A better Yiddish term might be "אויסמאַכן" (to disable, turn off) or "אָפּשאַצן" depending on context. However, loanwords are sometimes used but it's better to at least keep usage consistent and natural.
-
-Corrected translation:  
-"טעות בעת לאָודן %s: פּריוואַטע שליסלען קענען נאָר ווערן פֿונקט אין שאַפונג"
-
-More natural full version:  
-"טעות בעת לאָודן %s: פּריוואַטע שליסלען קענען נאָר בעת דער שאַפונג געוואַלט ווערן אָפּגעשטעלט"
-
-Or more succinctly:  
-"טעות בעת לאָודן %s: פּריוואַטע שליסלען קענען נאָר בעת דער שאַפונג דיסאַבלירט ווערן"
-
-Given the domain and for clarity, a good translation would be:  
-"טעות בעת לאָודן %s: פּריוואַטע שליסלען קענען נאָר בעת דער שאַפונג דיסאַבלירט ווערן"
-
-Summary: fix "גרייַזונג" to "טעות בעת", remove "1" before "%s", replace "בזמן שלאַפֿן" with "בײַ דער שאַפונג" and keep "דיסאַבלירט" if loanword is acceptable.  
-
-Final correct translation:  
-טעות בעת לאָודן %s: פּריוואַטע שליסלען קענען נאָר בעת דער שאַפונג דיסאַבלירט ווערן
+Correct translation:
+פֿעלער בעת לאָדן %s: פּריוואַטע שליסלען קענען נאָר ווערן אויסגעשאַלט בעת שאַפֿן
 ```
 
 ```
         <source>Error loading %s: Wallet corrupted</source>
         <translation>Ошибка לאָדן 1%s: װאַלעט קראָופּטעד</translation>
     
-YES  
-The translation contains mixed languages: the first word "Ошибка" is Russian, not Yiddish (yi). Also, the format specifier "%s" is incorrectly written as "1%s". The Yiddish text "לאָדן" (loading) and "וואַלעט קראָופּטעד" (wallet corrupted, using an anglicism) is mixed with Russian, which is inconsistent and likely problematic. The correct Yiddish translation should be fully in Yiddish script and preserve the format specifier "%s" properly.
+YES
+The translation is problematic for several reasons:
+- It mixes Russian ("Ошибка" means "Error") with Yiddish. The translation should be fully in Yiddish.
+- The format specifier is incorrectly written as "1%s" instead of "%s".
+- "Wallet corrupted" is transliterated (קראָופּטעד) not translated, which is not ideal.
 
-Correct translation:  
-שטרעקל בייַ לאָדן %s: וואַלעט צעבראכן
+Correct translation:
+טעות בײַם לאָדן %s: בייַטל איז פארשליסן
+
+Explanation:
+- "טעות בײַם לאָדן" means "Error loading".
+- "%s" is preserved as in the source.
+- "בייַטל איז פארשליסן" means "wallet is corrupted".
 ```
 
 ```
         <source>Error loading %s: Wallet requires newer version of %s</source>
         <translation>טעות אין לאָאַדינג 1%s: וואָלאַט דאַרף אַ נײַער ווערסיע פון 1%s</translation>
     
-YES  
-The placeholders "%s" are incorrectly written as "1%s" in the translation, which breaks the format specifier integrity. Also, the phrase "Error loading" is partially translated as "טעות אין לאָאַדינג" which mixes English and Yiddish ("loading" is left untranslated). A better Yiddish translation would use "טעות בייטע לאָדן" ("Error while loading") or a more natural phrasing.  
+YES
+There are two issues:
+1. The format specifiers have been incorrectly rendered as '1%s' instead of '%s', which could cause runtime errors.
+2. The use of 'טעות' is an acceptable translation for 'Error', and 'וואָלאַט' for 'Wallet' is fine, but 'לאָאַדינג' is a Yiddishized English word—while often used for technical software UI, more idiomatic Yiddish would use something like 'אַרײַנלאָדן'. However, usage of such transliterations is common in digital contexts, so it's borderline, but still acceptable.
 
-Correct translation:  
-טעות בייטע לאָדן %s: וואָלטשע וועט אַ נײַערע ווערסיע פון %s פאַרלאנגט
+Correct translation:
+טעות בײַם לאָדן %s: די וואָלעט דאַרף אַ נייער ווערסיע פֿון %s
+
+- Fixed the format specifiers from '1%s' to '%s'
+- Adjusted word order and spelling for natural Yiddish flow
 ```
 
 ```
@@ -523,88 +509,76 @@ Correct translation:
         <translation>Ошибка בעת טעילונג פון בלאָק דאַטאַבייס</translation>
     
 YES
-The translation mixes Russian ("Ошибка") and Yiddish ("בעת טעילונג פון בלאָק דאַטאַבייס"). This is inconsistent and unacceptable for a pure Yiddish translation.
+The translation is problematic for two reasons:
+1. It incorrectly mixes Russian ("Ошибка" means "Error" in Russian) with Yiddish, which is inappropriate.
+2. The rest of the translation is a transliterated Yiddish version for "Error loading block database", but it contains some non-standard phrasing and inconsistent word choice.
 
 Correct translation:
-פאַרשפּרייטונג בלעטער דאַטאַבייס לאָדן פֿעלער
-```
+טעות בעת לאָדן די בלאָק דאַטאַבייס
 
-```
-        <source>Error opening block database</source>
-        <translation>אַ ערראָר בעת עפענען בלאָק דאַטאַבייס</translation>
-    
-YES  
-The translation mixes English ("ערראָר", "בלאָק", "דאַטאַבייס") with Yiddish transliteration, which is not appropriate. The phrase should be fully translated into Yiddish using proper Yiddish terminology and script.
-
-A correct translation would be:  
-"שײַכטןע טעות בײַם עפֿענען פֿון בלאָק־דאַטאַבייס"
+Explanation:
+- Remove the Russian word "Ошибка" and use "טעות" or "Fehler" (German Yiddish variant) for "Error".
+- "בעת לאָדן" appropriately means "while loading".
+- "די בלאָק דאַטאַבייס" refers to "the block database".
 ```
 
 ```
         <source>Error reading configuration file: %s</source>
         <translation>יֶתֶר שְׁגוּת בַּקרִיאָה של קובץ ההגדרות: 1%s</translation>
     
-YES  
-The translation is problematic. It contains Hebrew characters instead of Yiddish (which uses the Hebrew alphabet but different orthography and has different vocabulary), and the format specifier `%s` is incorrectly prefixed by the number `1`, making it `1%s` instead of `%s`. Also, "Error reading configuration file:" should be correctly reflected in Yiddish.  
+YES
+The translation is problematic for several reasons:
+1. The translation is a mixture of Yiddish and Hebrew, with words and diacritics that are not typical of proper Yiddish orthography (e.g., "יֶתֶר שְׁגוּת בַּקרִיאָה" uses modern Hebrew spelling and vowels).
+2. "1%s" is incorrect usage of the format specifier; it should remain as "%s" as in the original.
+3. The word "יתר" (yetér) means "surplus" or "extra" in Hebrew, which is unrelated. The phrase is not an accurate translation of "Error reading configuration file: %s". 
+4. The phrase "של קובץ ההגדרות" is also modern Hebrew, not Yiddish.
 
-Correct translation:  
-שטראָף לייענען קאַנפיגוראַציע טעקע: %s
-```
+Correct translation:
+שָׁטֶע בעת דעם לייענען פֿון דער קאָנפֿיגוראַציע־טעקע: %s
 
-```
-        <source>Error reading from database, shutting down.</source>
-        <translation>טעעות לייענען פֿון דער דאטן-בנק, פֿאַראָפנט זיך.</translation>
-    
-YES  
-The translation contains errors and is problematic. The phrase "shutting down" is incorrectly translated as "פֿאַראָפנט זיך" which means "opens" instead of "shuts down" or "closing". Also, "דאטן-בנק" is a calque from English "data-bank", but the more appropriate Yiddish term for "database" could be "דאטענבנק" or a more understandable phrasing.  
+Or, using standard Yiddish orthography:
+טעות ביים לייענען פון דער קאנוּפיגוראַציע טעקע: %s
 
-Correct translation:  
-"טעות בײַם לייענען פֿון דער דאַטאַבאַנק, פּאָטשלאָסן."  
-or alternatively:  
-"טעות בײַם לייענען פֿון דער דאַטאבייס, פּאָטשלאָסן."
-```
-
-```
-        <source>Error: Cannot extract destination from the generated scriptpubkey</source>
-        <translation>טרוט: קענען נישט ארויסנעמען דעם דעסטינאציע פון ​​דער דזשענערירט סקрипטפּובקיי</translation>
-    
-YES  
-The translation contains a whitespace formatting issue: there is an unwanted space after the Hebrew "פֿון" (פון) and before "דער" which is joined incorrectly. Also, the phrase "דעסטינאציע" is a transliteration of "destination," which is acceptable given Yiddish usage, but "סקрипטפּובקיי" is a transliteration of "scriptpubkey" that might be better hyphenated or spaced for clarity. Additionally, the word "Error" is translated as "טרוט" which is incorrect; the correct Yiddish word for "Error" is "טעות" (to'es).
-
-Correct translation:  
-טעות: קענען נישט ארויסנעמען דעם דעסטינאציע פֿון דער דזשענערירט סקрипטפּובקיי
+Either version is more accurate Yiddish.
 ```
 
 ```
         <source>Error: Disk space is low for %s</source>
         <translation>גרייַז: דיסק פּלאַץ איז נידעריק פֿאַר 1%s</translation>
     
-YES  
-The translation has an incorrect placement of the format specifier. The source has `%s`, but the translation has `1%s`, which is wrong. Also, the rest of the sentence is accurate, but the stray '1' before `%s` is an error.
+YES
+There are two issues:
+1. The number '1' appears before %s, which should not be present. The correct translation should reproduce the format specifier %s exactly as in the source, with no stray characters.
+2. The Yiddish word for "Error" is more commonly "טעות" or "פעלער" rather than "גרייַז" (which is an uncommon or possibly erroneous transliteration).
 
-Correct translation:  
-גרייַז: דיסק פּלאַץ איז נידעריק פֿאַר %s
+Correct translation:
+פעלער: דיסק פלאץ איז נידעריק פֿאַר %s
 ```
 
 ```
         <source>Error: Dumpfile checksum does not match. Computed %s, expected %s</source>
         <translation>טעות: דער טשעקזאַם פון דעם דאטעי איז נישט גלייך. רעכנט 1%s, ערווארטעט 1%s</translation>
     
-YES  
-The translation incorrectly adds '1' before the format specifiers %s, which is not present in the source and is erroneous. The rest of the translation accurately conveys the message. The format specifiers should match exactly.  
+YES
+There are two issues in the translation:
+1. The format specifiers "%s" were incorrectly replaced with "1%s", which is wrong and may break format substitution.
+2. The translation is not fully accurate: "דאטעי" is a literal Yiddishization of "file" but is uncommon; "טעקע" is the proper term for "file" in Yiddish. Additionally, the error message's structure could be closer to the English source. 
 
-Correct translation:  
-טעות: דער טשעקזאַם פֿון דער דאטעי פּאַרטע שטימט נישט צו. רעכנט %s, ערוואַרט %s
+Correct translation:
+טעות: דער טשעקזאַם פֿון דער טעקע שטימט נישט. באמערקט %s, ערווארטעט %s
 ```
 
 ```
         <source>Error: Got key that was not hex: %s</source>
         <translation> טעות: באקומען אַ שליסל וואָס איז נישט העקס: 1%s</translation>
     
-YES  
-The translation contains an erroneous addition of "1" before the format specifier "%s", which is incorrect and breaks the placeholder usage. Also, the format specifier should be copied exactly from the source without any added characters.  
+YES
+There are a few issues:
+1. The format specifier "%s" in the source text must be preserved as "%s" in the translation, but here it appears as "1%s", adding an extra "1", which is incorrect.
+2. There is an unwanted leading space at the beginning of the translation.
+3. The rest of the translation appears accurate.
 
-Correct translation:  
+Correct translation:
 טעות: באקומען אַ שליסל וואָס איז נישט העקס: %s
 ```
 
@@ -612,60 +586,40 @@ Correct translation:
         <source>Error: Got value that was not hex: %s</source>
         <translation>טעות: באקומען אַ ווערט וואָס איז נישט העקס: 1%s</translation>
     
-YES  
-The translation incorrectly includes a stray "1" before the format specifier "%s" and the phrase "Got value" is translated as "באקומען אַ ווערט" ("received a value") instead of a more neutral "Got value" or "Received a value". Also, there should be no extra space before the colon (although in Yiddish colon usage often follows the same pattern as English). The format specifier "%s" should be exactly as in the source and without a leading "1".
+YES
+There are two issues with this translation:
 
-Correct translation:  
-טעות: געהאט אַ ווערט וואָס איז נישט העקס: %s
-```
+1. The format specifier '%s' was incorrectly replaced with '1%s', which is erroneous.
+2. Otherwise, the translation is mostly accurate, but should use the correct specifier.
 
-```
-        <source>Error: Missing checksum</source>
-        <translation>אַ עירור: מענגלען טשעקסום</translation>
-    
-YES  
-The translation contains a typo: "אַ עירור" should be "אַ פּראָבלעם" or "טעקע" instead of "אַ עירור" ("אַ עירור" literally means "a city" or "a disturbance," which is incorrect here). Also, "מענגלען" is slightly off; the correct Yiddish word for "missing" is "פעלן" or "פעלן דעם". "טשעקסום" for "checksum" is acceptable as a transliteration, but "טעקע" or "טעקע" might be better depending on context.
-
-Correct translation:  
-"טעקע: פֿעלן טשעקזאַם"  
-or more formally:  
-"פֿאַרקערט: קינדערדיקער באַזע פֿעלן"  
-But keeping close to original:  
-"טעקע: פֿעלן טשעקזאַם"
+Correct translation:
+טעות: באקומען אַ ווערט וואָס איז נישט העקס: %s
 ```
 
 ```
         <source>Error: No %s addresses available.</source>
         <translation>טע mistake: קיין 1%s אַדרעסן ניט פארfügbar.</translation>
     
-YES  
-The translation contains English ("mistake") and mixes format specifier incorrectly ("1%s" instead of "%s"). The correct placement of the format specifier "%s" must match the source, and foreign words should be consistent. The word "טע" (te) is Yiddish for "the", but "mistake" is English and should be replaced by the Yiddish equivalent, e.g., "פאַרקער" (error/mistake).
-
-Correct translation:  
-שיטעך: קיין %s אַדרעסן פאַראַנונטער.  
-(Alternatively, using "אויפֿפֿאַל" or "פאַרקער" for error depending on dialect:  
-"אפֿער: קיין %s אַדדרעסן ניט פאַראַנונטער." )
-```
-
-```
-        <source>Error: Unable to parse version %u as a uint32_t</source>
-        <translation>אורור: נישט קענען פארשטיין ווערסיע %u אלס א uint32_t</translation>
-    
 YES
-The Yiddish word for "Error" is spelled "טעות" or "פֿעלער" rather than "אורור," which appears to be a typo or nonsense. Also, "נישט קענען פארשטיין" is a literal and awkward translation of "Unable to parse." A better phrasing would be "נישט מעגלעך צו אַרייַננעמען" or "נישט מעגלעך צו פּאַרסירן." The format specifier %u is correctly preserved.
+The translation is problematic for the following reasons:
+- The Yiddish word "טע mistake" incorrectly mixes Yiddish ("טע") and English ("mistake"). Only one is needed: "טע" alone means "error" or "mistake."
+- The format specifier order is wrong: "1%s" instead of "%s".
+- The phrase "ניט פארfügbar" mixes Yiddish ("ניט") and German ("פארfügbar" = "verfügbar"). The correct Yiddish would use "נישט בנימצא" or "נישט פארהאן" for "not available".
+- Unnecessary space after "טע".
+- There should be no double space.
 
 Correct translation:
-טעקע: נישט מעגלעך צו פּאַרסירן ווערסיע %u אלס אַ uint32_t
+טע: קיין %s אַדרעסן זענען נישט פארהאן.
 ```
 
 ```
         <source>Error: database transaction cannot be executed for wallet %s</source>
         <translation>טעות: די דאטאבאזע טראַנזאַקשאַן קען נישט דורכגעפֿירט ווערן פֿאַר וואַלעט 1%s</translation>
     
-YES  
-The format specifier "%s" is incorrectly changed to "1%s" in the translation, which is an error. Also, the translation mixes English ("דאטאבאזע טראַנזאַקשאַן") with the rest of the text in Yiddish (which is the 'yi' language). While some technical terms may be borrowed, it is better to keep the format specifier intact and correctly positioned.
+YES
+The translation contains an error: there is an unnecessary "1" before the %s format specifier, changing it to "1%s", which does not match the source.
 
-Correct translation:  
+Correct translation:
 טעות: די דאטאבאזע טראַנזאַקשאַן קען נישט דורכגעפֿירט ווערן פֿאַר וואַלעט %s
 ```
 
@@ -674,29 +628,21 @@ Correct translation:
         <translation>ניט הצלחה צו פאַרבינדן דעם בעסטן בלאָק (1%s).</translation>
     
 YES
-The format specifier "%s" is incorrectly written as "1%s" in the translation. Also, the phrase "ניט הצלחה צו פאַרבינדן" is a bit unnatural; a more standard Yiddish phrasing would use "ניט מצליח צו פאַרבינדן" or "פֿאַרמאָגט נישט צו פֿאַרבינדן".
+The translation incorrectly includes "1" before %s in the parentheses, which is not present in the original. Also, "ניט הצלחה צו פאַרבינדן" is a literal and somewhat awkward way to say "Failed to connect". A more natural Yiddish translation would be "מע האָט זיך נישט געקאָנט פֿאַרבינדן מיטן בעסטן בלאָק (%s)."
 
-Correct translation:  
-ניט מצליח צו פֿאַרבינדן דעם בעסטן בלאָק (%s).
+Correct translation:
+מע האָט זיך נישט געקאָנט פֿאַרבינדן מיטן בעסטן בלאָק (%s).
 ```
 
 ```
         <source>Failed to disconnect block.</source>
         <translation>פֿאַרפאַלן צונויפֿרובֿן בלאָק</translation>
     
-YES  
-The translation "פֿאַרפאַלן צונויפֿרובֿן בלאָק" is not an accurate or natural rendering of "Failed to disconnect block." in Yiddish. The phrase "פֿאַרפאַלן" means "lost" or "failed" in some contexts but is not used as a verb here, and "צונויפֿרובֿן" is a very literal and awkward construction meaning something like "to connect together" (not "disconnect"). The English concept "disconnect" should be translated more clearly. A better translation would emphasize failure to disconnect or separate a block.
+YES
+The Yiddish translation is incorrect. The word "צונויפֿרובֿן" means "to assemble" or "to put together," which is the opposite of "disconnect." The correct verb for "disconnect" should be "אָפּטרענען" (optrenen). Also, "פֿאַרפאַלן" is a direct transliteration of "failed," but the correct way to say "Failed to disconnect block" would be to use a phrase like "איז נישט געלונגען אָפּצוטרענען דעם בלאָק" (it was not successful to disconnect the block), which is idiomatic in Yiddish.
 
-Correct translation:  
-פֿאַרהאַלטן אָפּצונײַדן בלאָק.  
-(or)  
-ניט גענוג צו עפֿענען דעם בלאָק.  
-
-Given the Bitcoin context, a clearer and more direct expression:  
-ניט געלונגען דעם בלאָק צו טרענען.  
-
-Among these, the last is likely the clearest:  
-ניט געלונגען דעם בלאָק צו טרענען.
+Correct translation:
+נישט געלונגען אָפּצוטרענען דעם בלאָק
 ```
 
 ```
@@ -704,48 +650,58 @@ Among these, the last is likely the clearest:
         <translation>יאָר נישט קריגן בלאָק</translation>
     
 YES  
-The provided Yiddish translation "יאָר נישט קריגן בלאָק" is incorrect and does not convey the intended meaning. "יאָר" means "year," which is not appropriate here, and the verb form is also incorrect for "Failed to read block." The correct translation should convey the failure to read a block, typically using a negative past form of "to read" or "to get."
+The Yiddish translation is incorrect. "יאָר נישט קריגן בלאָק" literally means "Year not get block," which is not a correct or idiomatic rendering of "Failed to read block." Additionally, the translation does not convey the failure to read or access the block.
 
-Correct translation:  
-ניט צוגעקענט ליינען דעם בלאָק.  
-(or)  
-ניט געקענט ליינען בלאָק.
+Correct translation:
+קאַנען נישט לייענען דעם בלאָק
+
+Explanation: "קאַנען נישט לייענען דעם בלאָק" directly translates to "Cannot read the block," which is suitable for the context of a block reading failure in software.
 ```
 
 ```
         <source>Failed to verify database</source>
         <translation>פֿעלן צו פאַראַוואָרטן די דאַטאַבאַזע</translation>
     
-YES  
-The translation "פֿעלן צו פאַראַוואָרטן די דאַטאַבאַזע" is problematic. The phrase "פֿעלן צו" is not the correct way to say "Failed to" in Yiddish. Also, "פֿאַראַוואָרטן" is not a standard Yiddish verb for "verify." A better translation would be:  
-"ניט מצליח צו פאַרשטיין די דאַטאַבאַזע" or more precisely "פֿאַרפאַלן צו פֿאַרשטיין די דאַטאַבאַזע" although "verify" is better translated as "פאַרשאַפֿן" or "בודק" is not idiomatic in Yiddish. A more suitable phrase for "Failed to verify database" could be:  
+YES
+The translation is incorrect. The Yiddish phrase "פֿעלן צו פאַראַוואָרטן די דאַטאַבאַזע" literally means "to be missing to maintain the database," which is not a correct or idiomatic translation for "Failed to verify database." It also confuses "verify" with "maintain." The correct translation should accurately reflect "verify" as "פֿאַריפֿן" (to verify or check).
 
-"ניט מצליח צו קאָנטראָלירן די דאַטאַבאַזע"  
+Correct translation:
+ניט אַנדערע טאָן די דאַטאַבאַזע
+or 
+פֿאַרפעַלן אָפּצופּרווון די דאַטאַבאַזע
 
-So the correct translation is:  
-"ניט מצליח צו קאָנטראָלירן די דאַטאַבאַזע"
+A more natural translation:
+אַפּרווון פון דער דאַטאַבאַזע איז ניט געלונגען
+
+Alternative:
+ס׳איז ניט געלונגען אָפּצופּרווון די דאַטאַבאַזע
 ```
 
 ```
         <source>Failure removing transaction: %s</source>
         <translation>פאלשיקייט אויבן ארויף די טראַנסאַקשאַן: 1%s</translation>
     
-YES  
-The translation incorrectly places "1" before the format specifier "%s" and uses a mistranslation for "Failure" ("פאלשיקייט" means "failure" but the phrase structure is unnatural). The phrase should clearly convey "Failure removing transaction: %s" without extra characters. Also, the verb or action "removing" is missing or unclear in the translation.
+YES
+The translation is problematic for the following reasons:
+- "פאלשיקייט אויבן ארויף די טראַנסאַקשאַן" is not a natural or accurate rendering of "Failure removing transaction" in Yiddish. "פאלשיקייט" is not standard Yiddish for "failure", and "אויבן ארויף" ("up above") makes no sense in this context.
+- The format specifier is changed from %s to 1%s, which is incorrect.
+- The wording does not sound idiomatic or correct for the Bitcoin context.
 
-Correct translation:  
-פֿאַלשיקייַט ביים פֿאַרבייַטן דעם טראַנסאַקשאַן: %s
+Correct translation:
+פעלער בײַם אַוועקנעמען טראַנסאַקשאַן: %s
 ```
 
 ```
         <source>Fee rate (%s) is lower than the minimum fee rate setting (%s)</source>
         <translation>פֿיע-ראַטע (1%s) איז נידעריקער ווי די מינימום-פֿיע-ראַטע באַשטעטיקן (1%s)</translation>
     
-YES  
-The translation incorrectly inserts a "1" before the format specifiers "%s". The placeholders should be copied exactly as in the source without additional characters.  
+YES
+The translation has two main issues:
+1. The format specifier '%s' from the source is incorrectly rendered as '1%s' in both instances, which is an error.
+2. The Yiddish for "fee rate" should be written as "פֿי־ראַטע" (with a makaf/dash; though some variation exists), and "setting" is better translated as "אײַנשטעלונג" or "אַרײַנשטעלונג", rather than "באַשטעטיקן" which means "to confirm".
 
-Correct translation:  
-פֿיע-ראַטע (%s) איז נידעריקער ווי די מינימום-פֿיע-ראַטע באַשטעטיקן (%s)
+Correct translation:
+פֿי־ראַטע (%s) איז נידעריקער ווי די מינימום־פֿי־ראַטע אײַנשטעלונג (%s)
 ```
 
 ```
@@ -753,10 +709,10 @@ Correct translation:
         <translation>ניט באַמערקן דופליקאַט -וואָלעט 1%s.</translation>
     
 YES
-The translation incorrectly adds "1" before the %s format specifier and mistranslates "Ignoring" as "ניט באַמערקן" (which means "not notice" or "not remark"). The phrase "Ignoring duplicate -wallet %s." should convey that a duplicate wallet argument is being ignored, not just unnoticed.
+The translation incorrectly adds "1" before the %s specifier ("-וואָלעט 1%s"), which is not present in the source. Also, the phrase "ניט באַמערקן" is not a natural way to say "Ignoring" in Yiddish; "אויסגעלאָזן" or "איבערגיין" would be more appropriate. 
 
 Correct translation:
-"עכענען אויס דופליקאַט -וואָלעט %s."
+אויסגעלאָזן דופליקאַט -וואָלעט %s.
 ```
 
 ```
@@ -764,38 +720,42 @@ Correct translation:
         <translation>נאכאמלק נישט קיין גענעזיס בלאָק געפֿונען, אָדער נישט קיין געלעגנהייט. פֿאַרוואָן דאטע-דירעקטאָריע פֿאַר נעץ?</translation>
     
 YES
-The translation contains inaccuracies and awkward phrasing. "נאכאמלק נישט קיין גענעזיס בלאָק געפֿונען, אָדער נישט קיין געלעגנהייט." is unclear and does not correctly convey "Incorrect or no genesis block found." The original message refers to an incorrect or missing genesis block related to blockchain data, not "no opportunity" (געלעגנהייט).
+The translation contains errors and awkward wording. Specifically:
+- "נאַכאַמלק" is not a recognizable Yiddish word and seems to be gibberish.
+- "נישט קיין גענעזיס בלאָק געפֿונען" is close, but "נאכאמלק" at the beginning makes no sense.
+- "אָדער נישט קיין געלעגנהייט" ("or no opportunity") is a mistranslation of "or no genesis block found".
+- "פֿאַרוואָן דאטע-דירעקטאָריע פֿאַר נעץ?" ("Wrong data directory for network?") is close but awkwardly constructed.
 
-A better translation would be:
-"אונקארעקט אָדער קיינער גענעזיס בלאָק געפונען. פאַלשער דאטאַדיר פאַר נעץ?"
-
-This correctly reflects the original meaning and retains the technical terms appropriately.
+Correct translation:
+נישט געפֿונען קיין גענעזיס-בלאָק אָדער געפֿונען נישט ריכטיק. אפשר די דאטע דירעקטעריע איז נישט גוט פֿאַר דעם נעץ?
 ```
 
 ```
         <source>Initialization sanity check failed. %s is shutting down.</source>
         <translation>יוזע אָנפאַנג סאַנטי טשעק איז פעלל געווען. 1%s איז זיך אונטערגעשטעלט.</translation>
     
-YES  
-The translation contains errors:  
-1. The phrase "יוזע אָנפאַנג סאַנטי טשעק" is a direct transliteration of "Initialization sanity check," which is not idiomatic or clear in Yiddish.  
-2. "פעלל געווען" should be "געפעלט" for "failed."  
-3. The format specifier "%s" is incorrectly written as "1%s." The "1" is extraneous and should be removed.  
-4. "איז זיך אונטערגעשטעלט" is an awkward way to say "is shutting down"; a better phrasing would be "איז אָנטשאָלטן" or "גייט אַוועק."  
+YES
+There are two issues:
+1. The format specifier from the source (%s) was changed to 1%s in the translation, which is incorrect.
+2. There is a whitespace formatting issue—there should not be a space at the start of the line.
 
-Correct translation:  
-"פֿאַרשטעלן-געפֿאַלן סאַנטקייט־פּרובירן. %s גייט אַוועק."
+Correct translation:
+יָצאָג־אָנפאַנג סאַניטי־טשעק איז דורכגעפֿאַלן. %s שטערט זיך אָפּ.
 ```
 
 ```
         <source>Invalid -i2psam address or hostname: '%s'</source>
         <translation>אַרויסגעבן -i2psam אַדרעס אָדער האָסטניימע: '1%s' איז אומגערעכט.</translation>
     
-YES  
-The translation introduces an incorrect prefix "אַרויסגעבן" which means "output" or "export" rather than "Invalid". Additionally, the '%s' format specifier is incorrectly changed to '1%s'. Also, the sentence structure should reflect that the address or hostname is invalid, similar to the source.  
+YES
+The translation has multiple problems:
+1. "אַרויסגעבן" means "to issue" or "to publish," not "invalid".
+2. The word "אומגערעכט" is a bit awkward for "invalid"; a more common term would be "אומגילטיק".
+3. There is an erroneous "1" in '1%s'.
+4. The word order is awkward; it should stick close to the original.
 
-Correct translation:  
-אומגעלאנג -i2psam אַדרעס אָדער האָסטנימע: '%s'
+Correct translation:
+אומגילטיק -i2psam אַדרעס אָדער האָסטניימע: '%s'
 ```
 
 ```
@@ -803,10 +763,14 @@ Correct translation:
         <translation>יולעזער -אוןיאָן אדרעס אדער הוסטנאַם: '1%s'</translation>
     
 YES
-The translation incorrectly adds a "1" before the %s format specifier, which is not present in the source and breaks the format. Also, "יולעזער" is a transliteration of "user," not the translation of "Invalid," which should be something like "איין אומגעלונגען" or "אינוואַלידעץ" if transliterated. The word "hostname" is transliterated correctly as "הוסטנאַם," and "address" as "אדרעס" is acceptable.
+The translation is problematic for the following reasons:
+- "יולעזער" is an incorrect transliteration and does not mean "invalid" in Yiddish.
+- The translation uses "1%s" instead of the correct "%s" format specifier.
+- The dash before "אוןיאָן" ("-אוןיאָן") is a literal and should match the context of the original string.
+- The rest of the translation, "אדרעס אדער הוסטנאַם" for "address or hostname", is a fair translation.
 
 Correct translation:
-אינוואַליד -אוןיאָן אדרעס אדער הוסטנאַם: '%s'
+אומגילטיקער -onion אַדרעס אָדער האָסטנאַם: '%s'
 ```
 
 ```
@@ -814,49 +778,40 @@ Correct translation:
         <translation>אין גültיק -פּראָקסי אַדרעס אָדער האָסטנײם: '1%s'</translation>
     
 YES
-The translation contains a mix of Hebrew/Yiddish script and German ("גültיק" means "valid" in German) and incorrectly adds an extra "1" before the %s format specifier. The format specifier should be exactly as in the source ("%s") without extra characters. Also, the German word is inappropriate here; the correct Yiddish equivalent would be used instead of "גולטיק" or "גוט".
+There are several issues:
+1. "גültיק" is a mix of Yiddish and German (should be "גילטיק" or more properly "אויגעטיק" for "invalid").
+2. The format specifier '%s' in the source was changed to '1%s' in the translation, which is incorrect.
+3. The hyphen before "פּראָקסי" should be maintained together with the word, as in the source.
+4. "האָסטנײם" is an attempt at "hostname," but using "האָסטנאַם" is better for Yiddish.
 
 Correct translation:
-אונגילטיק -פּראָקסי אַדרעס אָדער האָסטןיים: '%s'
+אויסגילטיקע -פּראָקסי אַדרעס אָדער האָסטנאַם: '%s'
 ```
 
 ```
         <source>Invalid P2P permission: '%s'</source>
         <translation>יוצרים פּ2פּ זכּות: '1%s'</translation>
     
-YES
-The translation is incorrect and contains errors. The English phrase "Invalid P2P permission: '%s'" should convey that the permission is invalid, but the translated phrase "יוצרים פּ2פּ זכּות: '1%s'" means "Creators P2P rights: '1%s'", which is both semantically wrong and contains an extraneous "1" before the format specifier.
+YES  
+The translation is incorrect. The word "יוצרים" means "creating" or "creators" and "זכּות" means "right" or "privilege", but here the translation is not faithfully translating "Invalid P2P permission: '%s'". Also, the format specifier '%s' was changed to '1%s', which is not faithful to the original.
 
 Correct translation:
-אינוואַלאַד פּ2פּ באַוויליקונג: '%s'
+פאַרקריפּלטע פּ2פּ-בירעכטיקונג: '%s'
 ```
 
 ```
         <source>Invalid amount for %s=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>ניט גאָלדיגער בטראַכט פֿאַר 1%s=: '1%s' (מוז זײַן בּאַלד נישט ווייניקער ווי 1%s)</translation>
     
-YES  
-The translation has multiple issues:  
-1. Erroneous insertion of numeral '1' before each %s placeholder (e.g., "1%s"), which is incorrect and distorts the placeholders. The placeholders must be identical to the source: %s.
+YES
+The translation contains multiple errors:
+1. The translation uses "ניט גאָלדיגער בטראַכט" which is not idiomatic in Yiddish for "Invalid amount". A better term is "אומגילטיק סומע" or "אומגילטיקער סכום".
+2. It incorrectly uses "1%s" several times instead of simply "%s", which would break format specifiers.
+3. The phrase "מוז זײַן בּאַלד נישט ווייניקער ווי" is too wordy and awkward for "must be at least %s". The usual Yiddish is "מוז זיין לפּחות %s".
+4. The placement and format of specifiers does not match the source.
 
-2. The phrase structure is unnatural and does not clearly convey "Invalid amount for %s=<amount>".
-
-3. The last part "(must be at least %s)" is rendered as "(מוז זײַן בּאַלד נישט ווייניקער ווי 1%s)" – "בּאַלד" means "soon" and is incorrect here.
-
-A correct translation would keep the placeholders intact and express the meaning properly:  
-
-ניט תקין סומע פֿאַר %s=&lt;amount&gt;: '%s' (מוזן זיין מינימום %s)
-```
-
-```
-        <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
-        <translation>אין ואלידער בטראָג פֿאַר -%s=&lt;amount&gt;: '%s'</translation>
-    
-YES  
-The translation contains the English word "וואalidער" which is a transliteration of "valid" and is not standard Yiddish. The phrase "אין ואלידער" is incorrect; a proper Yiddish translation for "Invalid amount" should use the Yiddish word for "invalid" (e.g., "אונגלײַכטער", "אינוואלידער" or "אונגילטיקער") and "בטראָג" (amount) is correct. Also, the use of single quotes around '%s' is correct and format specifiers are preserved.
-
-Correct translation:  
-אונגילטיקער בטראָג פֿאַר -%s=&lt;amount&gt;: '%s'
+Correct translation:
+אומגילטיקע סומע פֿאַר %s=&lt;amount&gt;: '%s' (מוז זיין לפּחות %s)
 ```
 
 ```
@@ -864,21 +819,27 @@ Correct translation:
         <translation>ניט גיטע נעטמאַסק געבאַטן אין -ווייטליסט: '1%s'</translation>
     
 YES
-The format specifier in the source is '%s', but in the translation it appears as '1%s', which is incorrect and would cause formatting errors. The '1' should be removed.
+There are several problems with the translation:
+1. The correct placeholder is '%s' from the source, but in the translation it's written as '1%s', which is incorrect.
+2. The translation is not entirely accurate. "ניט גיטע נעטמאַסק געבאַטן" literally means "not good netmask given" which is nonstandard and a bit awkward.
+3. The term "נעטמאַסק" is usable but could be more idiomatically "נעטמאַסק" or clarify further, and "געבאַטן" should ideally be "אַנגעגעבן" or "אַנגעצייגט" for "specified".
 
 Correct translation:
-ניט גיטע נעטמאַסק געבאַטן אין -ווייטליסט: '%s'
+אומגילטיקער נעטמאַסק ספּעציפיצירט אין -ווייטליסט: '%s'
 ```
 
 ```
         <source>Invalid port specified in %s: '%s'</source>
         <translation>יערור פּאָרט פארמאַטער אין 1%s: '1%s'</translation>
     
-YES  
-The translation is incorrect and contains erroneous format specifiers "1%s" instead of "%s", which breaks the placeholders used in the source. The word "יערור" means "error" but does not directly translate "Invalid" accurately in this context. The phrase "פּאָרט פארמאַטער" (port parameter) is understandable, but the format specifiers must be exact. Also, the quotes around '%s' are correct as in the source.
+YES
+The translation is problematic for several reasons:
+1. The format specifiers '%s' were replaced with '1%s', which is incorrect and not standard in Yiddish or general translation practice; they must remain as '%s'.
+2. The phrase is incorrectly translated: "יערור פּאָרט פארמאַטער אין 1%s: '1%s'" doesn't make sense in Yiddish, both in grammar and word choice.
+3. Yiddish transliteration for "Invalid port specified in %s: '%s'" should be much closer in meaning and structure.
 
-Correct translation:  
-אינפֿאַליד פּאָרט אינדיקירט אין %s: '%s'
+Correct translation:
+אונבילדיקע פּאָרט אנגעגעבן אין %s: '%s'
 ```
 
 ```
@@ -886,10 +847,13 @@ Correct translation:
         <translation>ניט געלטיק פּרע-געקליבן אַרײַן 1%s</translation>
     
 YES  
-The translation incorrectly places the format specifier as "1%s" instead of "%s". The correct translation should keep the format specifier exactly as in the source without additional characters. Also, the use of "1" before "%s" is a mistake.
+There is an error in the translation:  
+- "אַרײַן 1%s" mistakenly inserts a "1" before the "%s" placeholder, which is not present in the source and thus erroneous.
+- The English term "input" should be better rendered as "איינצוג" (or occasionally other yiddishizations for the technical term).
+- The rest of the text is otherwise mostly correct.
 
 Correct translation:  
-ניט געלטיק פּרע-געקליבן אַרײַן %s
+ניט געלטיק פּרע-געקליבן איינצוג %s
 ```
 
 ```
@@ -897,22 +861,13 @@ Correct translation:
         <translation>פֿאַרענטפֿערס פֿאַר אָנקומען קאָנעקציעס איז געשלאגן (הערן האט צוריקגעגעבן טעות 1%s)</translation>
     
 YES
-The translation erroneously adds a '1' before the format specifier '%s', which is not present in the original source text. Also, the phrase "הערן האט צוריקגעגעבן טעות" literally means "listening returned error," but more natural phrasing would be preferable. The correct translation should preserve the format specifier exactly as in source and read smoothly in Yiddish.
+There are several issues:
+- The translation mistranslates "Listening" as "פֿאַרענטפֿערס", which means "responses"; the correct word should be "הערן" (to listen).
+- The translation introduces "1" before %s ("טעות 1%s"), which is not in the original and is erroneous.
+- The word order and terminology do not sound natural in Yiddish for technical content.
 
 Correct translation:
-פֿאַרענטפֿערס פֿאַר אָנקומען קאָנעקציעס איז געשלאגן (הערן האט צוריקגעגעבן פֿעלער %s)
-```
-
-```
-        <source>Loading block index…</source>
-        <translation>יִדעוועקט דעם בלאָק אינדעקס…</translation>
-    
-YES  
-The translation uses "יִדעוועקט" which appears to be a borrowing or incorrect form and not a proper Yiddish verb equivalent to "loading." A more accurate translation for "Loading block index…" in Yiddish could be:  
-"לאַדינג בלאָק אינדעקס…" is too anglicized; better to use "לאָדירנדיק בלאָק אינדעקס…" or "לאָדן בלאָק אינדעקס…"  
-
-Correct translation:  
-"לאָדן בלאָק אינדעקס…"
+הערן אויף אָנקומענדיקע פֿאַרבינדונגען איז דורכגעפֿאַלן (הערן האָט צוריקגעגעבן דער טעות %s)
 ```
 
 ```
@@ -920,53 +875,49 @@ Correct translation:
         <translation>דער מקסימום פון טערנזאַקטיאָן וואָג מוז זיין צווישן 1%d און 1%d</translation>
     
 YES
-The translation incorrectly adds a "1" before the format specifiers (%d), which does not exist in the source text. Additionally, the phrase "דער מקסימום פון טערנזאַקטיאָן וואָג" is understandable but slightly unnatural. A more natural Yiddish translation would be:
-
-מאַקסימום טראַנסאַקציע וואָג מוז זיין צווישן %d און %d
-```
-
-```
-        <source>Missing solving data for estimating transaction size</source>
-        <translation>פֿעלן די פתרון דאטן פֿאַר דערשיידן טראַנסאַקשאַן גרייס</translation>
-    
-YES
-The translation has some issues: the word "דערשיידן" literally means "to distinguish" rather than "estimating" or "estimating/calculating." A more appropriate verb to convey "estimating" would be "שאַצן" (to estimate). Also, the phrase "Missing solving data" should be clearer in Yiddish; "Missing" is better translated as "פעלן" (missing) but the word order and phrasing can be improved for clarity.
+The translation is problematic. The numbers (%d) in the translation source are prefixed with '1', which is incorrect and will cause formatting errors. Also, the word "טערנזאַקטיאָן" should be spelled "טראַנסאַקטיאָן" in standard Yiddish, and "וואָג" should remain "וואָג". The structure "דער מקסימום פון ..." is a bit awkward; a smoother translation would be:
 
 Correct translation:
-פֿעלן לייזונג דאטן פֿאַר שאַצן טראַנסאַקשאַן גרייס
+דער מאַקסימום טראַנסאַקטיאָן וואָג דאַרף זײַן צווישן %d און %d
+
+Explanation: The format specifiers are now correctly retained, the wording is improved, and the spelling standard.
 ```
 
 ```
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>מוז מען צושטעלן אַ פּאָרט מיט -whitebind: '1%s'</translation>
     
-YES  
-The format specifier %s from the source is incorrectly changed to '1%s' in the translation, which is a formatting error that can lead to runtime issues. The translation should preserve the exact format specifier.
+YES
+There is an error in the translation: '%s' in the source becomes '1%s' in the translation. The stray '1' is incorrect and should be removed. Also, the translation should keep the variable placeholder formatting exactly as in the source.
 
-Correct translation:  
-מוז מען צושטעלן אַ פּאָרט מיט -whitebind: '%s'
+Correct translation:
+מוז מען ספּעציפיצירן אַ פּאָרט מיט -whitebind: '%s'
 ```
 
 ```
         <source>Not found pre-selected input %s</source>
         <translation>נישט געפֿונען פֿאַר-ערקלערטע אַפּגראַדע 1%s</translation>
     
-YES  
-The translation is inaccurate and does not correspond to the source text. The source sentence "Not found pre-selected input %s" refers to an input (likely in Bitcoin context) that was pre-selected but not found, whereas the translation "נישט געפֿונען פֿאַר-ערקלערטע אַפּגראַדע 1%s" reads as "Not found pre-declared upgrade 1%s," which uses incorrect terminology ("אַפּגראַדע" meaning "upgrade") and incorrectly places the format specifier after the number 1, which was not in the source text. 
+YES
+The Yiddish translation is incorrect and introduces the untranslated word "אַפּגראַדע" (upgrade), which is unrelated to the original text. "פֿאַר-ערקלערטע" attempts to mean "pre-selected", but the word for "input" is missing, and the number formatting (%s) is off (should be kept as %s, not 1%s).
 
-Correct translation:  
-נישט געפֿונען פּרע-סעלעקטעד אינפּוט %s
+Correct translation:
+נישט געפֿונען פֿאַר-אויסגעקליבן אַרײַנפֿיר %s
 ```
 
 ```
         <source>Not solvable pre-selected input %s</source>
         <translation>נישט אָסאָלוועבל פּרע-רעבחרטע אינפּוט 1%s</translation>
     
-YES  
-The translation incorrectly places the format specifier as "1%s" instead of "%s". Also, the phrase "נישט אָסאָלוועבל" is a transliteration of "not solvable" but may be better expressed in proper Yiddish as "ניט לייזלעך". The "pre-selected input" can be translated as "פֿאַראויסגערופענע אינפּוט" or "פֿאַראויסגעקליבן אינפּוט".  
+YES
+There are problems with the translation:
+- The correct Yiddish for 'Not solvable' is 'ניט פארהאנעמבאר' or 'ניט אָפּצולעזן' (though more technical speakers may prefer a different phrase).
+- '%s' must not be altered; '1%s' is incorrect formatting.
+- 'פּרע-רעבחרטע' should be 'פרי-אויסגעקליבענע' for 'pre-selected'.
+- 'אינפּוט' is acceptable, though 'אַרײַנפֿיר' may also be used, but 'אינפּוט' is generally used for technical translations.
 
-Correct translation:  
-ניט לייזלעך פֿאַראויסגעקליבן אינפּוט %s
+Correct translation:
+ניט אויסצולעזן פרי-אויסגעקליבענע אינפּוט %s
 ```
 
 ```
@@ -974,37 +925,14 @@ Correct translation:
         <translation>נור פֿאַרלויף איז אופן, קיין רעכט נישט: '1%s'</translation>
     
 YES
-The placeholder in the source is '%s', but in the translation it appears as '1%s', which is incorrect and could cause errors when formatting the string. Also, the phrase "Only direction was set, no permissions" should be accurately rendered without added or misplaced characters.
+There is a translation error:
+- "נור פֿאַרלויף איז אופן" is not correct Yiddish for "Only direction was set".
+- "רעכט" generally means "rights" or "law"; in this context, "permissions" is better as "דערלויבענישן".
+- The format specifier '%s' should be retained as '%s' and must not be changed to '1%s' (this looks like an error).
+- Also, "נור" should be "נאָר" ("only").
 
 Correct translation:
-נור דעם ריכטונג איז איינגעשטעלט געווארן, קיין דערלויבעניש: '%s'
-```
-
-```
-        <source>Prune mode is incompatible with -txindex.</source>
-        <translation>פּרון מצב איז אומגעפּאַראַט מיט -txindex.</translation>
-    
-YES  
-The translation contains a mix of Hebrew/Yiddish script and English, and the phrase "פּרון מצב" (which seems to be trying to render "Prune mode") is not idiomatic nor correct Yiddish. The word "אָומגעפּאַראַט" is a transliteration of "incompatible" but is not standard or correct Yiddish usage. The English command line argument "-txindex" is correctly copied.  
-
-A more accurate Yiddish translation would be:  
-"פּרון מאָדע איז נישט קאַמפּאַטיביל מיט -txindex."  
-
-This uses "מאָדע" for "mode" and "נישט קאַמפּאַטיביל" (not compatible) which is understandable in technical contexts or alternatively:  
-"פּרון מאָדע פֿונקטיאָנירן נישט מיט -txindex." (Prune mode does not work with -txindex.)  
-
-Corrected:  
-<translation>פּרון מאָדע איז נישט קאַמפּאַטיביל מיט -txindex.</translation>
-```
-
-```
-        <source>Pruning blockstore…</source>
-        <translation>פאַרקייַטונג בלאקסטאָר</translation>
-    
-YES  
-The translation "פאַרקייַטונג בלאקסטאָר" literally means "pruning blockstore" but is missing the ellipsis (…) which is present in the source and usually indicates an ongoing process. Also, the English "blockstore" is transliterated rather than fully translated or adapted. In Yiddish, it would be better to either transliterate consistently or use an appropriate term. A more natural translation would be:
-
-פאַרקייַטונג בלאקסטאָר…
+נאָר דער ריכטונג איז געזעצט געווארן, קיין דערלויבענישן נישט: '%s'
 ```
 
 ```
@@ -1012,10 +940,10 @@ The translation "פאַרקייַטונג בלאקסטאָר" literally means "p
         <translation>מינעערן -maxconnections פון 1%d צו 1%d, צוליב סיסטעם גרעניצונגען.</translation>
     
 YES
-The translation incorrectly prefixes the format specifiers %d with an extra '1' (i.e., "1%d" instead of "%d"), which is not correct and will cause formatting errors. The rest of the translation is appropriate.
+The format specifiers in the translation are incorrect. In the source, %d is used, but in the translation, 1%d is used, which is an error. Also, "מינעערן" is a reasonable rendering of "reducing," and the rest of the translation is largely accurate, though "צוליב סיסטעם גרעניצונגען" could use a slight improvement for clarity ("סיסטעם באַגרענעצונגען"). The spacing and order are correct otherwise.
 
 Correct translation:
-מינעערן -maxconnections פון %d צו %d, צוליב סיסטעם גרעניצונגען.
+מינעערן -maxconnections פון %d צו %d, צוליב סיסטעם באַגרענעצונגען.
 ```
 
 ```
@@ -1023,44 +951,59 @@ Correct translation:
         <translation>ייִדן בלאָקען נאָך</translation>
     
 YES  
-The translation "ייִדן בלאָקן נאָך" is incorrect and problematic. It roughly means "Yidden block after" or "Jews blocks after," which is unrelated and potentially misleading. The English phrase "Replaying blocks…" in the context of Bitcoin means reprocessing or replaying blockchain blocks. A better Yiddish translation would be:  
-"געשפּילן לעבן בלאָקעס…"  
+The translation is incorrect. "ייִדן בלאָקען נאָך" translates to "Jews blocks after" or nonsensical/Yiddish gibberish. The word for "replaying" should be something like "וויידערשפּילן" or "נאָכמאל דורכגיין".  
+A more accurate translation would be:  
+וויידערשפּילן בלאָקען…  
 or  
-"רעפערירן בלאָקעס…"  
-to convey the sense of replaying or reprocessing blocks.
+דורכגיין בלאָקען נאָך…  
+So,  
+Correct translation:  
+וויידערשפּילן בלאָקען…
 ```
 
 ```
         <source>SQLiteDatabase: Failed to execute statement to verify database: %s</source>
         <translation>SQLiteDatabase: אויב עס איז נישט מיטגעקומען מיטן אויספירן דעקלאראַציע צו אויפריכטען די דאטן-בנק: 1%s</translation>
     
-YES  
-The translation is inaccurate and problematic. The phrase "אָויב עס איז נישט מיטגעקומען מיטן אויספירן דעקלאראַציע צו אויפריכטען די דאטן-בנק: 1%s" incorrectly translates "Failed to execute statement to verify database" and adds an extraneous "אָויב" ("if") and a misplaced "1%s" instead of "%s." The format specifier "%s" is incorrectly changed to "1%s," which is wrong.
+YES
+The translation is inaccurate and problematic. The phrase "אויב עס איז נישט מיטגעקומען מיטן אויספירן דעקלאראַציע צו אויפריכטען די דאטן-בנק: 1%s" is awkward, not idiomatic, and contains errors.
 
-Correct translation:  
-SQLiteDatabase: פאַרטויגן צו דורכפירן דער באַפֿעלן צו קאָנטראָלירן דעם דאַטאַבאַזע: %s
+Problems:
+- The translation is more like "If it didn't succeed with executing the declaration to set up the data bank: 1%s", which changes the meaning.
+- The insertion of "1" before "%s" is erroneous, distorting the format specifier.
+- "דאטן-בנק" is a correct term for "database", but "אויפריכטען" means "to set up", not "to verify".
+- "Failed to execute statement to verify database: %s" should more faithfully describe a failure in running a verification statement.
+
+Correct translation:
+SQLiteDatabase: דורכפאַל צו אויספירן דער קלערונג-זאַץ צו באשטעטיגן די דאטן-באַנק: %s
 ```
 
 ```
         <source>SQLiteDatabase: Failed to prepare statement to verify database: %s</source>
         <translation>SQLiteDatabase: עס איז נישט מצליח צו פארהערן דער אויסשטרעלונג צו באשטעטיגן דעם דאטאבייס: 1%s</translation>
     
-YES  
-The translation includes an incorrect placement of the format specifier "%s" as "1%s" which is erroneous. The original "%s" must be preserved exactly and not changed or prefixed with "1". Also, the phrase "עס איז נישט מצליח צו פארהערן" is literal but awkward Yiddish ("it is not successful to prepare"). A better phrasing would be more natural and closer to the original meaning.
+YES
+The translation has several issues:
+- "עס איז נישט מצליח צו פארהערן דער אויסשטרעלונג" is not a correct or idiomatic Yiddish rendering of "Failed to prepare statement".
+- The word "אויסשטרעלונג" does not fit the context of "statement" (as in SQL statement).
+- The format specifier "%s" has an erroneous "1" prefixed in the translation ("1%s"), which is incorrect.
 
-Correct translation:  
-SQLiteDatabase: עס איז נישט מצליאן צו צוגרייטן אַן אויסשטרעלונג צו באשטעטיקן דעם דאטאבייס: %s
+Correct translation:
+SQLiteDatabase: נישט געלונגען צוגרייטן דער סטאַטעמענט צו באשטעטיגן דעם דאטאבייס: %s
 ```
 
 ```
         <source>SQLiteDatabase: Failed to read database verification error: %s</source>
         <translation>SQLiteDatabase: עס איז נישט מצליח צו פארהערן דער אויסשטרעלונג צו באשטעטיגן דעם דאטאבייס: 1%s</translation>
     
-YES  
-The translation contains erroneous content: the source placeholder "%s" is incorrectly altered to "1%s" and the sentence structure is unnatural and confusing in Yiddish. Also, "פארהערן" is incorrect here; a more appropriate word for "read" in this context would be "לייענען" (to read). The phrase "verification error" should be translated more clearly as "באַשטעטיקונג פאַלקער" or "באַשטעטיקונג ערראָר".
+YES
+There are several issues:
+1. The translation is inaccurately structured and semantically problematic. The phrase "עס איז נישט מצליח צו פארהערן דער אויסשטרעלונג צו באשטעטיגן דעם דאטאבייס" is an incorrect rendering of "Failed to read database verification error: %s". For instance, "אויששטרעלונג" is not the correct word for "verification error", and "פארהערן" is not appropriate for "read" in this context.
+2. There is a spurious "1" in "1%s", which does not exist in the source and is a likely typo.
+3. The translation is clumsy and hard to understand for a native Yiddish speaker.
 
-Correct translation:  
-SQLiteDatabase: עס איז נישט מצליח צו לייענען באַשטעטיקונג ערראָר פֿון דער דאטאַבייס: %s
+Correct translation:
+SQLiteDatabase: נישט געקענט לייענען די דאטאבייס-באשטעטיקונגס-פעלער: %s
 ```
 
 ```
@@ -1068,21 +1011,27 @@ SQLiteDatabase: עס איז נישט מצליח צו לייענען באַשטע
         <translation> SQLiteDatabase: אומפאַרווארפן אַפּליקאַציע אייר. ציפער 1%u, באקומען 1%u</translation>
     
 YES
-The translation has spacing issues (leading space before "SQLiteDatabase:"), and the format specifiers %u are incorrectly placed with extraneous characters ("1%u" instead of "%u"). The phrase "Unexpected application id. Expected %u, got %u" is mistranslated as "אָמפאַרווארפן אַפּליקאַציע אייר. ציפער 1%u, באקומען 1%u", which is not accurate Yiddish.
+There are several issues:
+- "אומפאַרווארפן אַפּליקאַציע אייר" is a mistranslation and awkward. "אייר" is probably a typo intended for "ID" (should be "ID" or "איידי" in Yiddish).
+- The text does not preserve the order and usage of the format specifiers; "%u" is wrongly positioned and has an unnecessary "ציפער 1" ("number 1") which is inaccurate.
+- There is an unnecessary space at the start of the translation string.
+- The word "Unexpected" should be something like "נישט דערוואַרטער", and "expected" should use "דערוואַרט".
 
 Correct translation:
-SQLiteDatabase: אומגעראכט איינטרעטן אַפּלאַקאַציע אידענטיפיקאַטאָר. ציפער %u, באקומען %u
+SQLiteDatabase: נישט דערוואַרטער אַפּליקאַציע איידי. דערוואַרט %u, באקומען %u
 ```
 
 ```
         <source>Section [%s] is not recognized.</source>
         <translation>סעקטאָר [1%s] איז נישט אנערקענט.</translation>
     
-YES  
-The translation incorrectly includes "1" before the "%s" format specifier, which does not exist in the source text. The format specifier should be copied exactly as "%s" without added characters.  
+YES
+The translation is problematic: "סעקטאָר [1%s] איז נישט אנערקענט." has two issues:
+1. The English word "Section" should not be "סעקטאָר" (which means "sector" and not "section" in Yiddish/Hebrew usage). "Section" in this context is better rendered as "סעקציע".
+2. The format specifier is incorrect: "[1%s]" instead of "[%s]".
 
-Correct translation:  
-סעקטאָר [%s] איז נישט אנערקענט.
+Correct translation:
+סעקציע [%s] איז נישט אנערקענט.
 ```
 
 ```
@@ -1090,10 +1039,13 @@ Correct translation:
         <translation>Yiddish: סײַנער האָט צוריקגעגעבן עראָר: 1%s</translation>
     
 YES
-The translation incorrectly adds "Yiddish:" at the beginning and inserts a stray '1' before the format specifier '%s'. The format specifier should be preserved exactly as in the source without additional characters. Also, the English word "error" should be properly translated into Yiddish, for example, as "פארטאָן" or "טעות" instead of "עראָר".
+The translation is problematic for several reasons:
+1. It includes the word 'Yiddish:', which is unnecessary and not part of a proper translation.
+2. The format specifier '%s' is incorrectly rendered as '1%s'; the '1' is an error.
+3. The translation itself is awkward and not idiomatic Yiddish.
 
 Correct translation:
-סײַנער האָט צוריקגעגעבן טעות: %s
+סײַנער האָט צוריקגעגעבן אַ טעות: %s
 ```
 
 ```
@@ -1101,28 +1053,29 @@ Correct translation:
         <translation>דער אָנשטיין פון דער טרנזקציע איז אויווד</translation>
     
 YES  
-The translation is incorrect and awkward. It uses a phrase that literally means "The ignition of the transaction is failed," which does not correctly convey "Signing transaction failed." The proper translation should directly state that the signing process failed.
+The translation is problematic. The Yiddish text "דער אָנשטיין פון דער טרנזקציע איז אויווד" is incorrect both in word choice and meaning:
 
-Correct translation:  
-אונמעגליך צו אונטערשרײַבן די טרנזקציע
+1. "אָנשטיין" is not the correct term for "signing" in this context.
+2. "איז אויווד" means "is lost", which does not correspond to "failed".
+
+Correct translation:
+דער אונטערשרייבן פֿון דער טראַנזאַקשאַן איז ניט געגלונגען
 ```
 
 ```
         <source>Specified -walletdir "%s" does not exist</source>
         <translation>יאָוולעט דיר '-walletdir "1%s"' עקזיסטירט נישט.</translation>
     
-YES  
-The translation is incorrect in several ways:  
-- The placeholder `%s` is altered to `1%s`, which is wrong; format specifiers must be identical to the source.  
-- There is an improper addition of a Hebrew/Yiddish-like term "יאָוולעט דיר" instead of a transliteration or proper Yiddish equivalent for "-walletdir".  
-- The dash before "walletdir" is missing or misplaced in the translation.  
-- The sentence structure is awkward.
+YES
+There are several errors in this translation:
+1. The translation incorrectly introduces 'יאָוולעט דיר' which is a literal transliteration of 'walletdir', but it is not standard Yiddish. The source path should be kept as a technical term or just quoted.
+2. The format specifier is wrong: '1%s' instead of '%s'.
+3. There are unnecessary single quotes.
+4. The original message says "Specified", which is not translated.
+5. The order of elements is off, and the translation is awkward.
 
-A better translation would be a direct and clear statement preserving the format specifier and the option name as in the source, for example:  
-
-יילאזט -walletdir "%s" עקזיסטירט נישט.  
-
-(Note: Yiddish often borrows technical terms in Latin characters; keeping "-walletdir" as is is acceptable.)
+Correct translation:
+דער אָנגעגעבןער -walletdir "%s" עקזיסטירט נישט.
 ```
 
 ```
@@ -1130,7 +1083,7 @@ A better translation would be a direct and clear statement preserving the format
         <translation>די צוגעגעבענע -walletdir "1%s" איז אַ רעלאַטיווע פּאַט.</translation>
     
 YES
-The format specifier "%s" is incorrectly translated as "1%s" with an added "1" before the percent sign. This alters the intended placeholder and is erroneous.
+There is an error in the format specifier: the source uses "%s" but the translation has "1%s". The "1" should not be present; it looks like either a typo or a mistaken attempt at a positional specifier. Also, the translation is otherwise correct.
 
 Correct translation:
 די צוגעגעבענע -walletdir "%s" איז אַ רעלאַטיווע פּאַט.
@@ -1140,10 +1093,10 @@ Correct translation:
         <source>Specified -walletdir "%s" is not a directory</source>
         <translation>דער באשטימטער -walletdir '1%s' איז נישט אַ דירעקטאָריע</translation>
     
-YES  
-The format specifier "%s" is incorrectly changed to "1%s" in the translation, which is a critical error. The specifier must remain exactly as in the source to function correctly. Also, the quotation marks around "%s" in the source should be mirrored properly in the translation.  
+YES
+The translation is mostly correct, but there is a formatting error: the format specifier is '1%s', which is incorrect. It should just be '%s' as in the source. Also, the quotation marks should be consistent with the original (use double quotes as in the source). Additionally, the rest of the translation is accurately rendered.
 
-Correct translation:  
+Correct translation:
 דער באשטימטער -walletdir "%s" איז נישט אַ דירעקטאָריע
 ```
 
@@ -1151,22 +1104,24 @@ Correct translation:
         <source>Specified blocks directory "%s" does not exist.</source>
         <translation>געווויערן בלאָק דיירעקטאָריע '1%s' עקזיסטירט נישט.</translation>
     
-YES  
-The translation incorrectly includes '1%s' instead of '%s'. The format specifier from the source ("%s") must be preserved exactly in the translation without adding any extra characters. Additionally, the Yi language typically uses the Latin alphabet for transliteration, and the quotation marks should match as in the source.
+YES
+The translation is problematic for two reasons:
+1. The word "געווויערן" is a nonstandard or erroneous transliteration and is not the correct way to say "specified" in Yiddish.
+2. The format specifier is written as '1%s' instead of '%s', resulting in an incorrect output.
 
-Correct translation:  
-געוו speci פאַרבאָרגן בלאָק דיירעקטאָריע "%s" עקזיסטירט נישט.
+Correct translation:
+ספּעציפיצירטע בלאָק־דירעקטאָריע "%s" עקזיסטירט נישט.
 ```
 
 ```
         <source>Specified data directory "%s" does not exist.</source>
         <translation>Yiddish: דער באַשטימטער דאַטע דירעקטאָריע "1%s" עקזיסטירט נישט.</translation>
     
-YES  
-The translation incorrectly includes the English word "Yiddish:" at the beginning and incorrectly prepends a "1" before the format specifier %s. The format specifier should be preserved exactly as "%s" without changes. Also, the unnecessary "1" should be removed, and the prefix "Yiddish:" is not part of the translation.  
+YES
+The translation is problematic. It improperly includes "Yiddish:" in the translation, which is unnecessary and nonstandard. Furthermore, it mistranslates the format specifier: "1%s" should be "%s" as in the source. The remainder of the Yiddish translation is acceptable, but should not include English text or erroneous format specifiers.
 
-Correct translation:  
-דער באַשטימטער דאַטע דירעקטאָריע "%s" עקזיסטירט נישט.
+Correct translation:
+דער באַשטימטער דאַטע־דירעקטאָריע "%s" עקזיסטירט נישט.
 ```
 
 ```
@@ -1174,31 +1129,31 @@ Correct translation:
         <translation>ייִדיש: סיסטעם עראר בעת פלושטשינג: 1%s</translation>
     
 YES
-The translation contains erroneous content: the word "ייִדיש:" (meaning "Yiddish:") is incorrectly included at the start, which is unnecessary. Also, "פלושטשינג" is a transliteration of the English "flushing," but a better Yiddish equivalent or clearer phrasing should be used. The format specifier "%s" is misplaced as "1%s". 
+The translation is problematic. The prefix "ייִדיש:" ("Yiddish:") is unnecessary and incorrect. The word "פלושטשינג" is a literal transliteration of "flushing" and may not be clear in Yiddish. Additionally, the format specifier "%s" should be preserved exactly as in the source, but "1%s" is present, which is incorrect.
 
-Correct translation:  
-סיסטעם שטײַרט בעת אָפּשאַפן: %s
+Correct translation:
+סיסטעמען טעות בעת פלישן: %s
 ```
 
 ```
         <source>System error while loading external block file: %s</source>
         <translation>יִשׁוּב סִיסטֶם בעת לאָדן אָפּזעצער בלאָק-פֿײַל: 1%s</translation>
     
-YES  
-The format specifier `%s` is incorrectly changed to `1%s` in the translation. It should remain exactly `%s` to match the source. Also, the transliteration "לאָדן" for "loading" and "אָפּזעצער" for "external" appear acceptable, but the prefix "1" before `%s` is an error.  
+YES
+The translation is problematic. The Yiddish translation uses a mixture of Hebrew and phonetic Yiddish, and there is a formatting error with "1%s" (should be "%s", and number placement appears incorrect). Also, "אָפּזעצער בלאָק-פֿײַל" is not an accurate technical rendering of "external block file," and "יִשׁוּב סִיסטֶם" is not standard Yiddish for "system error."
 
-Correct translation:  
-יִשׁוּב סִיסטֶם בעת לאָדן אָפּזעצער בלאָק-פֿײַל: %s
+Correct translation:
+סיסטעם-טעות ביים לאָډן אַן עקסטערנעם בלאָק-טעקע: %s
 ```
 
 ```
         <source>System error while saving block to disk: %s</source>
         <translation>סיסטעם ערראָר בעת שמירה בלאָק אויף דיסק: 1%s</translation>
     
-YES  
-The translation incorrectly places the format specifier as "1%s" instead of "%s". The "1" is extraneous and should be removed. Also, the rest of the translation accurately conveys the meaning "System error while saving block to disk".  
+YES
+There is an error with the format specifier. The source uses "%s" but the translation uses "1%s" (which is not a valid placeholder and may cause issues). It should be "%s" in both.
 
-Correct translation:  
+Correct translation:
 סיסטעם ערראָר בעת שמירה בלאָק אויף דיסק: %s
 ```
 
@@ -1206,112 +1161,81 @@ Correct translation:
         <source>The source code is available from %s.</source>
         <translation>די מקור קאָד איז בנימצא פון 1%s.</translation>
     
-YES  
-The translation incorrectly places the format specifier as "1%s" instead of "%s". The correct format specifier should be kept exactly as in the source. The word order and phrasing are otherwise fine, but the "%s" must not be altered.
+YES
+The translation incorrectly inserts "1" before %s ("פון 1%s"), which does not appear in the original English and is erroneous. The format specifier %s is also misplaced.
 
-Correct translation:  
-די מקור קאָד איז בנימצא פֿון %s.
+Correct translation:
+די מקור קאָד איז בנימצא פון %s.
 ```
 
 ```
         <source>The specified config file %s does not exist</source>
         <translation>דער צוגעגעבענע קאנפיג־טעקסט 1%s עקזיסטירט נישט.</translation>
     
-YES  
-The format specifier %s is incorrectly placed as "1%s" and should be "%s" in the translation. Also, the period at the end was not present in the source and should be removed for consistency.  
+YES
+The translation has two issues:
+1. The format specifier %s should appear exactly as in the source. The translation has '1%s' which is incorrect.
+2. The word "טעקסט" is not appropriate for "file"; the usual term for "file" in Yiddish is "טעקע".
 
-Correct translation:  
-דער צוגעגעבענער קאַנפיג־טעקסט %s עקזיסטירט נישט
-```
-
-```
-        <source>The transaction amount is too small to pay the fee</source>
-        <translation>דער טראַנזאַקשאַן בetrאָג איז צו קליין כדי צו באַצאָלן די פֿיס.</translation>
-    
-YES  
-The transliteration "בetrאָג" mixes Latin and Hebrew scripts, which is inappropriate. It should be fully in Hebrew script. The correct Yiddish word for "amount" is "באַטראָג" or "סומע". Additionally, "פֿיס" (feet) is incorrect for "fee"; the correct term in financial context is "פֿע" (fee) or "אפֿשר "פֿי".
-
-Correct translation:  
-דער טראַנזאַקשאַן באַטրאָג איז צו קליין כדי צו באַצאָלן די פֿעי.
+Correct translation:
+דער אנגעגעבןער קאנפיג־טעקע %s עקזיסטירט נישט.
 ```
 
 ```
         <source>The wallet will avoid paying less than the minimum relay fee.</source>
         <translation>די וואַלטעוועט וועט אויסמאַכן נישט צאָלן פחות ווי דער מינימום פֿאַרבינדונג קאָסטן.</translation>
     
-YES  
-The translation contains some inaccuracies:  
-- "וואַלטעוועט" mixes English and Yiddish-like elements and is not correct for "wallet" in Yiddish ('וואַלט' or 'פּאָרטל' would be better).  
-- "אויסמאַכן" means "to settle" or "decide", not "will avoid". A better verb for "avoid" is "אויסהאַלטן" or "פארמיידן".  
-- "פחות" is a Hebrew word meaning "less", but in Yiddish "קיניגער" or "ווייניקער" would be more appropriate.  
-- "פֿאַרבינדונג קאָסטן" means "connection costs" rather than "relay fee". The correct term for relay fee should be closer to "רעלייַ פֿיס".  
-- The sentence also has grammatical and word order issues.
+YES
+The translation has multiple issues:
+- "די וואַלטעוועט וועט אויסמאַכן נישט צאָלן" is awkward and not idiomatic Yiddish; "wallet" should be "וועלט" or "בייַטל", not "וואַלטעוועט".
+- "מינימום פֿאַרבינדונג קאָסטן" means "minimum connection cost", which does not match "minimum relay fee" (a specific term in Bitcoin transactions). The relay fee should be transliterated or explained (e.g. "רעליי-פֿי" or "מינימום רעליי-שטער") for clarity.
+- There is no spelling or double space error, but the translation is semantically incorrect.
 
-Correct translation:  
-די פּאָרטל וועט פאַרמיידן צו באַצאָלן ווייניקער ווי די מינימום רעלייַ פאָר.
+Correct translation:
+דער בייַטל וועט נישט צאָלן ווייניקער ווי דעם מינימום רעליי-שטער.
 ```
 
 ```
         <source>This is experimental software.</source>
         <translation>דערהייַנטיק איז עקספּערימענטאַלע ווייכווארג.</translation>
     
-YES  
-The translation "דערהייַנטיק איז עקספּערימענטאַלע ווייכווארג." means "The current is experimental software," where "דערהייַנטיק" translates to "current" or "up-to-date," which does not accurately reflect "This." A better translation is:  
-"דאָס איז עקספּערימענטאַל ווייכווארג."
-```
+YES
+The translation has a grammatical error: "דערהייַנטיק" means "current" or "updated", rather than "this".
 
-```
-        <source>This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>אַזוי איז דער טראַנסאַקשאַן פייַעך וואָס איר וועט צאָלן אויב איר שיקט אַ טראַנסאַקשאַן.</translation>
-    
-YES  
-The word "פייַעך" is a transliteration of the English word "fee" but is not a standard or accurate Yiddish term. In Yiddish, "fee" is better translated as "פֿיי” or more appropriately "פֿיז" or "פֿי". Also, the sentence structure can be smoothed for better readability and correctness in Yiddish.
-
-Correct translation:  
-"דאָס איז דער טראַנסאַקשאַן־פֿיז וואָס איר וועט צאָלן אויב איר שיקט אַ טראַנסאַקשאַן."
+Correct translation:
+דאס איז אַ עקספּערימענטעלע ווייכווארג.
 ```
 
 ```
         <source>Transaction %s does not belong to this wallet</source>
         <translation>טראַנסאַקטיאָן 1%s איז נישט פֿאַר די וואָלט</translation>
     
-YES  
-The translation has a formatting error: the source uses "%s" as a format specifier, but the translation uses "1%s", which is incorrect and will break formatting. Also, the phrase "איז נישט פֿאַר די וואָלט" ("is not for the wallet") is less precise than the source "does not belong to this wallet". A better phrasing would explicitly say it "does not belong to this wallet" (example: "טראנזאקציע %s גייט נישט צו דעם וואָלקעט").
+YES
+The translation is incorrect. The numeral "1" appears erroneously before "%s", and "די וואָלט" should be "דעם וואָלט" to match the original meaning ("this wallet"). Also, the phrase should use the possessive construct.
 
-Correct translation:  
-טראַנסאַקציע %s גייט נישט צו דעם וואָלקעט
-```
-
-```
-        <source>Transaction must have at least one recipient</source>
-        <translation>א פּראָצעס מוז האָבן לפּחות איין רעציפּיענט.</translation>
-    
-YES  
-The translation uses "א פּראָצעס" which means "a process" rather than "a transaction," which is contextually incorrect for Bitcoin terminology. Also, "רעציפּיענט" is a transliteration of "recipient" but not the common Yiddish word; a better term might be "א עמחל" (a recipient) or a more contextually accurate phrase. The original sentence means a Bitcoin transaction must have at least one recipient.
-
-Correct translation:  
-טראַנזאַקשאַן מוז האָבן לפּחות איין עמחל.
+Correct translation:
+טראַנסאַקטיאָן %s געהערט נישט צו דעם וואָלט
 ```
 
 ```
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
         <translation>ניט מעגלעך צו בינדן צו 1%s אויף דעם קאָמפּיוטער (בינדן האָט צוריקגעגעבן אַ גרייַז 1%s)</translation>
     
-YES  
-The translation incorrectly adds a leading "1" before the %s format specifiers, which alters the intended placeholder and breaks the format. Also, the word "גרייַז" means "error" but is a strange or uncommon spelling here; the correct Yiddish word for "error" is "אַרויספֿאַל" (failure) or "פֿעלער" (error). The translation should also avoid unnecessary insertions or typos.
+YES
+The translation is mostly correct but contains two format specifier mistakes. The source uses "%s", but the translation renders them as "1%s", which is incorrect and will break runtime behavior. The "%s" should be carried over exactly as in the source.
 
-Correct translation:  
-ניט מעגלעך צו בינדן צו %s אויף דעם קאָמפּיוטער (בינדן האָט צוריקגעגעבן אַ פֿעלער %s)
+Correct translation:
+ניט מעגלעך צו בינדן צו %s אויף דעם קאָמפּיוטער (בינדן האָט צוריקגעגעבן אַ גרייַז %s)
 ```
 
 ```
         <source>Unable to bind to %s on this computer. %s is probably already running.</source>
         <translation>ניט מעגלעך צו בינדן צו 1%s אויף דעם קאָמפּיוטער. 1%s לויפט מסתּמא שוין.</translation>
     
-YES  
-The format specifiers are incorrect in the translation. Instead of "1%s", it should be "%s" to match the source placeholders exactly.
+YES
+The translation contains errors with respect to format specifiers. The original source uses "%s" twice, but the translation uses "1%s" twice instead, which is not correct and could cause formatting issues. Additionally, the remainder of the translation is generally accurate.
 
-Correct translation:  
+Correct translation:
 ניט מעגלעך צו בינדן צו %s אויף דעם קאָמפּיוטער. %s לויפט מסתּמא שוין.
 ```
 
@@ -1320,32 +1244,40 @@ Correct translation:
         <translation>נישט קאָנען שאַפֿן די PID טעקע '1%s': 1%s</translation>
     
 YES  
-The translation incorrectly adds the digit '1' before the format specifiers '%s', which does not exist in the source text and breaks the format specifiers. The correct translation should preserve the original format specifiers exactly without any added characters.
+The translation is problematic for two reasons:
 
-Correct translation:  
-נישט קענען שאַפֿן די PID טעקע '%s': %s
+1. The format specifiers in the translation are incorrect. In the source, the placeholders are '%s' but in the translation, they appear as '1%s', which is not standard and could break program functionality.
+2. The Yiddish wording could be improved for clarity and correctness. "נישט קאָנען שאַפֿן" is a literal calque from English and may sound unnatural; a better phrasing is "קענען נישטשאַפֿן" or "קענען נישט מאַכן."
+
+Correct translation:
+קענען נישט מאַכן די PID טעקע '%s': %s
 ```
 
 ```
         <source>Unable to generate initial keys</source>
         <translation>ניט אפשריק צו générירן אָרײַנקע לאַרגעלע</translation>
     
-YES  
-The translation contains non-Yiddish words and a mix of Latin and Hebrew scripts that is inappropriate. The word "générer" is French, and "אָרײַנקע לאַרגעלע" is incorrect Yiddish for "initial keys." Also, "ניט אפשריק" is incorrect; the correct form is "ניט מעגלעך" or "ניט מעגלעך צו."  
+YES
+The translation is problematic for several reasons:
+1. The word "גערןירן" (génériren) is a Yiddish transliteration of the French/English "generate," but it is not standard usage in Yiddish. The standard Yiddish term for "to generate" or "to create" would be "שאַפֿן" (shafn) or "הערויסברענגען" (heroysbrengen).
+2. "אָרײַנקע לאַרגעלע" does not convey the meaning of "initial keys". "אָנהייביקע שליסלען" would be appropriate for "initial keys".
+3. The sentence structure does not accurately translate the source meaning.
 
-Correct translation:  
-ניט מעגלעך צו לייגן אָרענטע שליסלען
+Correct translation:
+ניט מעגליך צו שאַפֿן אָנהייביקע שליסלען
 ```
 
 ```
         <source>Unable to open %s for writing</source>
         <translation>קענט ניט עפענען 1%s פֿאַר געשריבן</translation>
     
-YES  
-The format specifier `%s` is incorrectly written as `1%s` in the translation. It should be `%s` without the leading `1`. Also, the translation for the phrase "for writing" is more naturally represented as "צו שרייבן" rather than "פֿאַר געשריבן," which sounds unnatural or incorrect in Yiddish.
+YES
+The translation is problematic in two ways:
+1. The placeholder '%s' is incorrectly written as '1%s' instead of '%s'. The '1' is extraneous.
+2. The phrase "פֿאַר געשריבן" is not idiomatic in Yiddish; the correct phrase should be "פאר שרייבן" which means 'for writing'.
 
-Correct translation:  
-קענט ניט עפענען %s צו שרייבן
+Correct translation:
+קענט ניט עפענען %s פֿאַר שרייבן
 ```
 
 ```
@@ -1353,23 +1285,25 @@ Correct translation:
         <translation>קענט נישט פֿאַראַרבעטן -maxuploadtarget: '1%s'</translation>
     
 YES
-The translation incorrectly adds a '1' before the '%s' format specifier, changing the intended placeholder and causing a formatting error.
+There is a problem with the format specifier. The source text uses '%s', but the translation contains '1%s', which appears to be a typo or error (the '1' is extraneous). Also, the translation for "parse" should more accurately be "פּאַרסירן" in this context, not "פֿאַראַרבעטן" ("process").
 
 Correct translation:
-קענט נישט פֿאַראַרבעטן -maxuploadtarget: '%s'
+קענט נישט פּאַרסירן -maxuploadtarget: '%s'
 ```
 
 ```
         <source>Unable to unload the wallet before migrating</source>
         <translation>נישט אפשר צו אויסלאָדן דעם וואַלעט ווען קודם פּונקטירן</translation>
     
-YES  
-The translation contains errors and awkward phrasing. The phrase "before migrating" is incorrectly translated as "ווען קודם פּונקטירן" ("when first puncturing/clicking"), which is not related to migration. Also, "נישט אפשר" is awkward; the more natural negation is "ניט אוממעגלעך" or "ניט מעגלעך". The word "וואלעט" (wallet) is correct.
+YES
+There is a problematic translation: The Yiddish "נישט אפשר צו אויסלאָדן דעם וואַלעט ווען קודם פּונקטירן" is not accurate. "פונקטירן" usually means "to punctuate" or "to mark," and does not accurately convey "migrating." The translation should reflect "before migrating" more accurately. Also, the sentence structure could be improved.
 
-Correct translation:  
-**ניט מעגלעך אויסלאָדן דעם וואָלעט לפני מיגרירן**  
-(or, more smoothly)  
-**ניט מעגלעך אויסלאָדן דעם וואָלעט איידער מיגרירן**
+Correct translation:
+ניט מעגליך ארויסצולאָדן דעם וועלעט איבערצופירן
+Or, more literally:
+ניט מעגליך אויסלאָדן דעם וועלעט איידער איבערפירן
+
+Either is much clearer.
 ```
 
 ```
@@ -1377,10 +1311,10 @@ Correct translation:
         <translation>יידנט -בלאָקפֿילטער אינדעקס ווערט 1%s.</translation>
     
 YES
-The translation incorrectly adds the numeral "1" before the format specifier "%s" and mistranslates the word "Unknown." The English word "Unknown" should be translated appropriately to Yiddish (e.g., "אָונוועסט"), and the format specifier "%s" should appear exactly as in the source without any added characters.
+The translation is problematic. The word "יידנט" ("ident" or similar) does not mean "unknown" in Yiddish, and there is a problem with the placement of "1" before %s ("1%s" instead of "%s"). The translation also has format and wording errors.
 
 Correct translation:
-"אונבאַקאַנט -blockfilterindex ווערט %s."
+אומבאַקאַנט -בלאָקפֿילטער אינדעקס ווערט %s.
 ```
 
 ```
@@ -1388,32 +1322,28 @@ Correct translation:
         <translation>אומדעוקט אדרעס טיפּ '1%s'</translation>
     
 YES  
-The translation has a few issues:  
-1. The English source has one format specifier '%s', but the translation has '1%s', which incorrectly adds a '1' prefix before the placeholder. The '1' should be removed to match the source.  
-2. The translation "אומדעוקט" is not the correct word for "Unknown". The correct Yiddish word for "unknown" is "Unbekannt" (in Yiddish script: "אומבאַקאַנט" or transliterated "אונבאַקאַנט").  
-3. The phrase "address type" should be translated correctly as "אדרעס טיפּ" is acceptable for "address type".  
-4. The single quotes around '%s' in the source are correctly preserved.  
-
+There are several issues:  
+1. The '%s' format specifier in the source is incorrectly translated as '1%s', which is erroneous.  
+2. The Yiddish spelling of "Unknown" should be 'אונbekannt' or 'אומבקאנט', but 'אומדעוקט' is not a Yiddish word.  
+3. The word "address" in Yiddish is "אַדרעס", not "אדרעס".  
+4. The word "type" should be "טיפּ".  
 Correct translation:  
-אונבאַקאַנט אדרעס טיפּ '%s'
+אומבקאנט אַדרעס טיפּ '%s'
 ```
 
 ```
         <source>Unknown change type '%s'</source>
         <translation>יידישע: אנבעלשערט טייפל פון ענדערונג '1%s'</translation>
     
-YES  
-The translation is problematic. The source phrase is "Unknown change type '%s'", where '%s' is a format specifier that must be preserved exactly in the translation. The provided translation incorrectly includes '1%s' instead of '%s'. Also, the phrase starts with "יידישע:" which means "Yiddish:" in the translation itself, which is unnecessary and incorrect in this context.
+YES
+The translation has several issues:
+1. It starts with "יידישע:" which means "Yiddish:"—this is not part of the original message and should not be present.
+2. The content "אַנבעלשערט טייפל פון ענדערונג" does not match standard Yiddish and is a literal mix. "אַנבעלשערט" means "unbound," but "unknown" would be better translated as "אומבאַקאַנט".
+3. The variable is changed from '%s' to '1%s'—this is incorrect; the format specifier should be preserved exactly as in the source.
+4. "טייפל" (teypl) is likely a transcription error or a nonstandard form for "טיפּ" (tip), meaning "type".
 
-A better translation would be:  
-"אונבעטראכט טיפּ פון ענדערונג '%s'"
-
-(assuming "אונבעטראכט" = "unknown", "טיפּ פון ענדערונג" = "change type")
-
-Final corrected translation:  
-יידישע: אונבעטראכט טיפּ פון ענדערונג '%s'  
-But without the "יידישע:" prefix, the proper translation is:  
-אונבעטראכט טיפּ פון ענדערונג '%s'
+Correct translation:
+אומבאַקאַנט ענדערונג־טיפּ '%s'
 ```
 
 ```
@@ -1421,10 +1351,10 @@ But without the "יידישע:" prefix, the proper translation is:
         <translation>אומפֿרידן נעץ איז צוגעגעבן אין -onlynet: '1%s'</translation>
     
 YES
-The translation incorrectly adds a "1" before the %s format specifier ('1%s' instead of '%s'), which breaks the placeholder usage. Also, the Yiddish word for "Unknown" should be "אומבאַקאַנט" or a similar term, as "אומפֿרידן" means "unsatisfied," which is incorrect here.
+There is a translation error: 'אומפֿרידן נעץ' translates to 'unsatisfied network', which is not correct for 'Unknown network'. Also, the specifier has erroneously become '1%s' instead of '%s'. The rest of the sentence structure is also off.
 
 Correct translation:
-אומבאַקאַנט נעץ איז צוגעגעבן אין -onlynet: '%s'
+אונbekanntע נעץ ספּעציפֿיצירט אין -onlynet: '%s'
 ```
 
 ```
@@ -1432,10 +1362,14 @@ Correct translation:
         <translation>נישט באקאנטע נייע רשימות אַקטיווי (װערסיעביט 1%i)</translation>
     
 YES
-The format specifier %i is incorrect in the translation as "1%i" instead of "%i". Also, the phrase "רשימות" (lists) is incorrect for "rules" in this context; the correct term should be "רעגולעס" or "רולעס" (rules). The correct translation should maintain the wording for "Unknown new rules activated" and fix the format specifier:
+There is an error in the translation:
+- "רשימות" means "lists", but the correct term in the Bitcoin context is "רעגולות" (rules).
+- The format specifier "%i" is incorrectly rendered as "1%i".
+- There is an awkward and incorrect translation of "activated" as "אַקטיווי", which should be "אַקטיווירט".
+- The rest of the translation has minor spelling issues (e.g. "נישט באקאנטע" should use "אומבאקאנטע").
 
 Correct translation:
-נישט באַקאַנטע נייַע רולעס אַקטיוואַטירט (װערסיעביט %i)
+אומבאקאנטע נייע רגולות זענען אַקטיווירט (ווערסיעביט %i)
 ```
 
 ```
@@ -1443,7 +1377,10 @@ Correct translation:
         <translation>ניט דערקענט אָפּציע "1%s" צוגעשטעלט אין - פּרובירן=&lt;option&gt;.</translation>
     
 YES  
-The translation incorrectly adds a '1' before the format specifier %s ("1%s"), which is not present in the source and should be exactly "%s". Also, there is an extra space after the dash in "- פּרובירן", whereas the source has "-test=" with no space or word break. Moreover, the word "פּרובירן" literally means "test", which is correct, but it must be attached properly as "-test=" without space.  
+There are several issues with the translation:  
+1. "1%s" is incorrect. It should be "%s", matching the format specifier in the source.
+2. The translation for "option" and "test" should be more precise; ײִדיש speakers are more likely to use "אָפּציע" for "option", but "פּרובירן" is more of a verb ("to try/test") rather than a noun for the flag.  
+3. The translation awkwardly adds spaces and doesn't preserve the structure.
 
 Correct translation:  
 ניט דערקענט אָפּציע "%s" צוגעשטעלט אין -test=&lt;option&gt;.
@@ -1454,7 +1391,9 @@ Correct translation:
         <translation>נישט געשטיצט גלאבאלע לאָגגינג מדרגה 1%s=1%s. גילטיקע ווערטן: 1%s.</translation>
     
 YES
-The translation incorrectly inserts the digit "1" before all format specifiers (%s), which is not present in the source and is erroneous. The format specifiers must be copied exactly as in the source.
+The translation has several issues:
+1. The format specifiers (%s) are incorrectly changed to 1%s=1%s. They should remain as %s (no leading number or equal sign).
+2. The rest of the sentence is fairly accurate, but the errors in format specifiers may cause runtime issues in the application.
 
 Correct translation:
 נישט געשטיצט גלאבאלע לאָגגינג מדרגה %s=%s. גילטיקע ווערטן: %s.
@@ -1464,32 +1403,23 @@ Correct translation:
         <source>Wallet file creation failed: %s</source>
         <translation>דער שאַפֿן וואָלעט טעקע איז פאַרפאַלן: 1%s</translation>
     
-YES  
-The translation mistakenly includes "1" before the format specifier "%s" and has order issues. The correct translation should properly place "%s" without an extraneous character and follow natural Yiddish syntax.  
+YES
+There are several issues:
+1. "פאַרפאַלן" is not a natural word for "failed" in this context; "ניט געלונגען" or "אײַנשאַפֿן טעקע פאַרוואָלעט איז ניט געלונגען" is better.
+2. The format specifier "%s" is incorrectly prefixed with a "1", resulting in "1%s", which is not present in the source and is a formatting error.
 
-Correct translation:  
-דער שאַפֿן פון וואָלעט טעקע איז פאַרפאַלן: %s
-```
-
-```
-        <source>acceptstalefeeestimates is not supported on %s chain.</source>
-        <translation>אַננעמען-שטערקייט-פֿאַרמעסטונגן איז נישט געשטיצט אויף %s קייט.</translation>
-    
-YES  
-The translation inaccurately segments and translates "acceptstalefeeestimates." The source word is a single configuration option and should be transliterated or adapted as one term rather than broken into parts. Also, "%s chain" should be translated so that "chain" is clearly understood in the context of a blockchain network. The translated phrase "קייט" is an acceptable transliteration of "chain," but the first word should be kept as one unit to preserve meaning.
-
-Correct translation:  
-acceptstalefeeestimates איז נישט געשטיצט אויף %s קייט.
+Correct translation:
+די שאפֿן פֿון דער וואלעט-טעקע איז ניט געלונגען: %s
 ```
 
 ```
         <source>Unsupported logging category %s=%s.</source>
         <translation>נישט געשטיצט לאָגינג קאַטעגאָריע 1%s=1%s.</translation>
     
-YES  
-The translation incorrectly uses "1%s=1%s" instead of the format specifiers "%s=%s" as in the source. Also, the numbers "1" before "%s" are wrong. The correct translation should preserve the format specifiers exactly as in the source.
+YES
+The translation is problematic because it incorrectly includes "1" before the format specifiers, changing "%s" to "1%s". This is not present in the original and will break format substitution. Also, the correct Yiddish translation should accurately reflect the source.
 
-Correct translation:  
+Correct translation:
 נישט געשטיצט לאָגינג קאַטעגאָריע %s=%s.
 ```
 
@@ -1498,10 +1428,19 @@ Correct translation:
         <translation>אַ טעות: קען נישט לייגען די וואָטשט-נאָר איבערגעשיקט 1%s אין דער וואָטשט-נאָר וואָלעט</translation>
     
 YES
-The translation incorrectly places the format specifier "%s" after the numeral "1", which is not in the original source and changes the meaning. The correct position and form of "%s" must be retained exactly as in the source.
+There are a few issues in the Yiddish translation:
+
+1. The format specifier "%s" is replaced incorrectly by "1%s". The "1" should not be present.
+2. The translation uses "וואָטשט-נאָר איבערגעשיקט", which is not a direct or common translation for "watchonly tx". "tx" stands for "transaction" and could be better rendered as "טראַנסאַקציע".
+3. The overall sentence structure and terminology could be improved for clarity and accuracy.
 
 Correct translation:
-א פיילער: קען נישט לייגן watchonly טראַנסאקציע %s אין watchonly וואָלעט
+אַ טעות: קען נישט צולייגן די watchonly טראַנסאַקציע %s אין דער watchonly וואָלעט
+
+Explanation:
+- Kept "watchonly" in transliteration as is common in technical parlance.
+- Used "טראַנסאַקציע" for "transaction" (tx).
+- Ensured "%s" is carried over correctly with no preceding '1'.
 ```
 
 ```
@@ -1509,21 +1448,24 @@ Correct translation:
         <translation>אנהייב: באַמערקונג פון באַניצער אַגענט (1%s) כּולל אומזיכערע אותיות.</translation>
     
 YES
-The source string contains the format specifier "%s", but in the translation it is rendered as "1%s", which is incorrect; the "1" should not be added. Also, the word "אנהייב:" means "beginning:" or "start:", which is not present in the source and is an erroneous addition.
+There are several issues:
+1. The translation incorrectly inserts 'אנהייב:' ("Start:") at the beginning, which is not present in the English.
+2. The format specifier is translated as '1%s' instead of '%s'—the '1' is erroneous.
+3. The translation, while understandable, is slightly off in phrasing and does not closely match the English syntax.
 
 Correct translation:
-באַמערקונג פֿון באַניצער אַגענט (%s) כּולל אומזיכערע אותיות.
+באַניצער־אַגענט באַמערקונג (%s) כּולל אומזיכערע אותיות.
 ```
 
 ```
         <source>Wallet needed to be rewritten: restart %s to complete</source>
         <translation>די וואָלעט דאַרף ווערן איבערגעשריבן: פאַרהייב 1%s צו פאַרענדיקן</translation>
     
-YES  
-The format specifier "%s" is incorrectly changed to "1%s" in the translation. Also, "restart" is better translated as "ריסטאַרט" (a transliteration) or an appropriate Yiddish equivalent, whereas "פאַרהייב" means "raise" or "lift," which is incorrect here.  
+YES
+The translation uses "1%s" instead of "%s", incorrectly introducing the numeral "1" before the format specifier. This is an error, and "%s" should be preserved as in the source.
 
-Correct translation:  
-די וואָלעט דאַרף ווערן איבערגעשריבן: ריסטאַרט %s צו פאַרענדיקן
+Correct translation:
+די וואָלעט דאַרף ווערן איבערגעשריבן: פאַרהייב %s צו פאַרענדיקן
 ```
 
 ```
@@ -1531,9 +1473,11 @@ Correct translation:
         <translation>  די באַשטעטיקונגען טעקע קען נישט געשריבן ווערן</translation>
     
 YES
-There is an unnecessary leading whitespace in the translation before the text "די". Also, the phrase can be made more natural in Yiddish by adjusting word order.
+There is a leading unnecessary space in the translation, which is a whitespace formatting issue. Also, the translation might be slightly improved for flow in Yiddish.
 
 Correct translation:
 די באַשטעטיקונגען טעקע קען נישט געשריבן ווערן
 ```
 </details>
+
+Number of issues: 106.

@@ -13,44 +13,51 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Choose the address to receive coins with</source>
         <translation>Одабери адресу за примање</translation>
     
-YES  
-The translation is incomplete and unclear. It should fully convey "Choose the address to receive coins with," implying the address used for receiving coins.  
+YES
+The translation omits the word "coins" ("новци" or "новчићи") present in the source, which makes the sentence less clear in the Bitcoin context. The phrase "за примање" is incomplete in conveying the full meaning "to receive coins with". Additionally, the aspect "to receive coins with" is somewhat more idiomatically rendered in Serbian as "адресу на коју ћете примити новчиће".
 
-Correct translation:  
-Одабери адресу за примање новчића
+Correct translation:
+Одаберите адресу на коју ћете примити новчиће
 ```
 
 ```
         <source>Copy Label</source>
         <translation>Копирај  Обележи</translation>
     
-YES  
-The translation includes two words "Копирај  Обележи" which means "Copy Label" and "Mark/Label" separately, with an extra double space between them. The source text "Copy Label" is a single phrase that means "copy the label," so the translation should be a single verb phrase that conveys "Copy Label" without splitting it into two words or adding extra spacing.
+YES
+There is a double space between "Копирај" and "Обележи". Furthermore, "Copy Label" should be translated as "Копирај ознаку" (where "ознака" is the appropriate translation for "label" in this context), not "Обележи" ("Обележи" means "Mark" or "Highlight").
 
-Correct translation:  
-Копирај обележје
+Correct translation:
+Копирај ознаку
 ```
 
 ```
         <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Унеси нову приступну фразу за новчаник&lt;br/&gt;Молимо користи приступну фразу од десет или више насумичних карактера&lt;b&gt;,или&lt;b&gt;осам или више речи&lt;/b&gt;.</translation>
     
-YES  
-The translation has formatting errors: the HTML tags are not correctly placed and spaced. The opening <b> tags are attached to the words without spaces and the closing </b> tags are missing after "програмских карактера" and before "или". Also, there is no space after the comma before "или". The corrected translation should properly mirror the source's HTML and spacing:
+YES
+There are several issues with the Serbian translation:
+- "приступну фразу за новчаник" should be "приступну фразу за новчаник." (missing period at the end of the first sentence)
+- HTML tags are misplaced: "&lt;b&gt;" is not properly closed around "десет или више насумичних карактера" (it is closing after "или").
+- Extra spacing issues after punctuation (missing space after a comma).
+- The sentence "или осам или више речи" is missing proper context and HTML formatting.
 
-Correct translation:  
-Унеси нову приступну фразу за новчаник.&lt;br/&gt;Молимо користи приступну фразу од &lt;b&gt;десет или више насумичних карактера&lt;/b&gt;, или &lt;b&gt;осам или више речи&lt;/b&gt;.
+Correct translation:
+Унесите нову приступну фразу за новчаник.&lt;br/&gt;Молимо вас да користите приступну фразу од &lt;b&gt;десет или више насумичних карактера&lt;/b&gt; или &lt;b&gt;осам или више речи&lt;/b&gt;.
 ```
 
 ```
         <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
         <translation>Упамти, шифрирање новчаника не може у потуности заштити твоје биткоине од крађе од стране малвера инфицира твој рачунар.</translation>
     
-YES  
-The translation contains grammatical errors and awkward phrasing. For example, "инфицира" (infects) is a verb in present tense and singular third person, but it's incorrectly used without proper connection; the phrase "малева инфицира твој рачунар" is ungrammatical. Also, "упамти" is not the best choice in Serbian for "remember" in this context; "Запамти" or "Имај на уму" would be better. The phrase "не може у потуности заштити" is somewhat unnatural; "не може у потпуности да заштити" is more idiomatic.
+YES
+There are several issues:
+1. "у потуности" should be "у потпуности" (spelling error).
+2. "малвера инфицира твој рачунар" is ungrammatical; it should be "малвер који инфицира твој рачунар" or simply "малвера који је инфицирао твој рачунар".
+3. The formal tone is inconsistent; the source is somewhat neutral, but the translation uses informal "твоје". If the UI uses "ви", use "ваш".
 
-Correct translation:  
-Запамти да шифровање твог новчаника не може у потпуности да заштити твоје биткоине од крађе уз помоћ малвера који инфицира твој рачунар.
+Correct translation:
+Упамтите да шифрирање новчаника не може у потпуности заштитити ваше биткоине од крађе од стране малвера који инфицира ваш рачунар.
 ```
 
 ```
@@ -58,8 +65,10 @@ Correct translation:
         <translation>Упозорање Caps Lock дугме укључено!</translation>
     
 YES
-The translation misses a preposition and sounds incomplete or unnatural in Serbian. It should clearly state that the Caps Lock key is on. A better translation would be:  
-"Упозорење: Caps Lock дугме је укључено!"
+The translation is mostly correct, but it is missing the verb "је" ("is") for full clarity, which matches the original phrase structure. Also, the phrase should ideally be: "Упозорење: Caps Lock дугме је укључено!"
+
+Correct translation:
+Упозорење: Caps Lock дугме је укључено!
 ```
 
 ```
@@ -67,9 +76,8 @@ The translation misses a preposition and sounds incomplete or unnatural in Serbi
         <translation>Унеси Биткоин адресу, (нпр %1)</translation>
     
 YES
-There is an unnecessary comma after "адресу" which is not present in the English source and disrupts the natural flow of the sentence. Also, "нпр" should be capitalized as "нпр." with a period to denote abbreviation properly.
+There is an unnecessary comma after "адресу" and missing period at the end. In Serbian, it is also more idiomatic to use "на пример" or "например" rather than "нпр", which is less formal. Additionally, the abbreviation should be followed by a period. The correct translation should be:
 
-Correct translation:
 Унеси Биткоин адресу (нпр. %1)
 ```
 
@@ -78,63 +86,50 @@ Correct translation:
         <extracomment>Peer connection type that relays network information about blocks and not transactions or addresses.</extracomment>
         <translation>Блокирана предаја</translation>
     
-YES  
-The translation "Блокирана предаја" literally means "blocked transmission" or "blocked relay," which is incorrect in this context. The source term "Block Relay" refers to a peer connection type that relays block information in the Bitcoin network. A better translation would be "Пренос блокова" or "Релеј блокова," which correctly convey "Block Relay" as relaying or forwarding blocks rather than blocking something.
+YES
+The translation "Блокирана предаја" means "Blocked relay" or "Blocked transmission" in Serbian, which is incorrect. The correct translation of "Block Relay" (as in a peer connection type relaying block data) should be "Релеј блокова" or "Пренос блокова".
 
-Correct translation:  
-Пренос блокова
+Correct translation:
+Релеј блокова
 ```
 
 ```
         <source>Create a new wallet</source>
         <translation>Направи нови ночаник</translation>
     
-YES  
-The translation contains an error: the word "ночаник" is incorrect and does not mean "wallet" in Serbian. The correct word is "новчаник". Also, the adjective "нови" should agree in gender with "новчаник," which is masculine, so "нови" is correct here.  
+YES
+There is a spelling error in the translation: "ночаник" should be "новчаник". Also, "направи" is understandable but "креирај" or "направите" (formal) is more commonly used in software contexts. 
 
-Correct translation:  
-Направи нови новчаник
+Correct translation:
+Креирај нови новчаник
 ```
 
 ```
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
         <translation>Потписуј поруку са своје Биткоин адресе као доказ да си њихов власник</translation>
     
-YES  
-The translation uses singular forms "поруку" (message) and "адресе" (address), but the source text is plural "messages" and "addresses". Also, "као доказ да си њихов власник" is informal ("ти" form) while the source tone is neutral; it's better to keep neutral or consistent tone, preferably formal or neutral in instructions.  
+YES
+The translation has a few issues:
+1. The original text is plural: "addresses" and "messages", but the translation is singular ("поруку", "адресе").
+2. The pronoun "њихов" (their) refers to addresses, which should agree in number.
+3. The instruction voice ("Sign messages") in English is imperative, but the translation uses the informal singular "Потписуј", which can imply habitual action, rather than a direct imperative ("Потпиши").
+4. The translation says "са своје Биткоин адресе" ("from your Bitcoin address") instead of "with your Bitcoin addresses".
+5. The translation switches between singular and plural inconsistently.
 
-Correct translation:  
-Потписујте поруке са својих Биткоин адреса као доказ да их поседујете
-```
-
-```
-        <source>Show the list of used sending addresses and labels</source>
-        <translation>Прегледајте листу коришћених адреса и етикета за слање уплата</translation>
-    
-YES  
-The translation is somewhat inaccurate and slightly awkward. Specifically, "етикета" is less commonly used in Serbian for "labels" in this context; "налепнице" or simply "ознаке" might work better, but "етикета" is acceptable though less natural. More importantly, "за слање уплата" translates to "for sending payments," which is not exactly the intended meaning. The source says "sending addresses and labels," referring to addresses used to send Bitcoin and their associated labels—not specifically "sending payments." Also, "Прегледајте" ("Review" or "Browse") is more of an imperative and doesn't fit the neutral "Show" as well as "Прикажите" or "Прикажи" ("Show").  
-
-A more accurate and natural translation would be:  
-"Прикажите листу коришћених адреса и ознака за слање"
-
-Or if labels must be "етикете":  
-"Прикажите листу коришћених адреса и етикета за слање"
-
-No format specifiers or whitespace issues noted.
-
-Correct translation:  
-<translation>Прикажите листу коришћених адреса и етикета за слање</translation>
+Correct translation:
+Потпишите поруке својим Биткоин адресама да докажете да сте њихов власник
 ```
 
 ```
         <source>Load PSBT from clipboard…</source>
         <translation>Учитај ”PSBT” из привремене меморије</translation>
     
-YES  
-The translation uses the Latin alphabet term "PSBT" in quotes, which is acceptable, but the ellipsis is missing (the source ends with an ellipsis '…', and the translation does not). Also, "привремене меморије" literally means "temporary memory," which is a literal but less common way to say "clipboard"; the usual Serbian term for clipboard is "међуспeминa" or "међуспоменик".  
+YES
+The translation uses quotation marks around "PSBT" instead of leaving it unquoted, which isn't necessary or idiomatic in Serbian. Also, "привремена меморија" is technically correct for "clipboard", but "клипборд" is more recognizable in the context of software UI, or "међу меморију" is sometimes used.
+The ellipsis in the source is a single Unicode character (…); this is missing in the translation.
 
-A better and more natural translation would be:  
-Учитај PSBT из међуспемина…
+Correct translation:
+Учитај PSBT из клипборда…
 ```
 
 ```
@@ -142,10 +137,10 @@ A better and more natural translation would be:
         <translation>Ноде прозор</translation>
     
 YES
-The word "Node" is not translated into Serbian; it should be adapted to Serbian Cyrillic or Serbian language rather than left in English transliteration. Also, "прозор" (window) is correct. The proper Serbian translation for "Node window" would be "Везни прозор" or "Прозор нода" depending on context, but "Ноде прозор" mixes English and Serbian incorrectly.
+"Ноде прозор" transliterates the English word "Node" instead of translating it into Serbian. The correct translation for "Node" in Serbian, in the context of Bitcoin, is "Чвор".
 
 Correct translation:
-Ноде прозор -> Прозор нода
+Прозор чвора
 ```
 
 ```
@@ -153,10 +148,10 @@ Correct translation:
         <translation>Филтрирај вредности у картици за преглед</translation>
     
 YES  
-The English source says "Mask the values in the Overview tab," which means to hide or obscure the values, but the Serbian translation "Филтрирај вредности у картици за преглед" means "Filter the values in the Overview tab," which changes the meaning entirely. The correct translation should convey "mask" (скриј/маскирај) rather than "filter."
+The translation is inaccurate. "Mask the values" means to hide or obscure them, not to filter. The Serbian translation says "Filter the values in the overview tab," which changes the meaning.
 
 Correct translation:  
-Маскирај вредности у картици за преглед
+Маскирај вредности на картици прегледа
 ```
 
 ```
@@ -164,23 +159,21 @@ Correct translation:
         <extracomment>A context menu item. The "Peers tab" is an element of the "Node window".</extracomment>
         <translation>Прикажи картицу са ”Клијентима”</translation>
     
-YES  
-The word "Клијентима" (Clients) is not accurate in the Bitcoin context here; "Peers" should be translated as "Чворови" or "Пеери" since it refers to nodes or peers in the Bitcoin network, not clients. Also, the quotation marks are inconsistent: the English source does not have them, so they should be omitted or standardized in Serbian.
+YES
+The translation uses "Клијентима" for "Peers", which is inaccurate in the Bitcoin context. "Peers" should be "чворови" (nodes/peers), not "клијенти" (clients).
 
-Correct translation:  
-Прикажи картицу са „Пеерима“  
-or  
-Прикажи картицу са „Чворовима“
+Correct translation:
+Прикажи картицу са „чворовима“
 ```
 
 ```
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>Новчаник јс &lt;b&gt;шифриран&lt;/b&gt; и тренутно &lt;b&gt;откључан&lt;/b&gt;</translation>
     
-YES  
-The translation contains a typo in the word "јс" which should be "је" (the verb "is" in Serbian).  
+YES
+There is a typo in the translation: "јс" should be "је" ("is" in Serbian). The rest of the translation is correct, including the formatting and spacing.
 
-Correct translation:  
+Correct translation:
 Новчаник је &lt;b&gt;шифриран&lt;/b&gt; и тренутно &lt;b&gt;откључан&lt;/b&gt;
 ```
 
@@ -188,24 +181,11 @@ Correct translation:
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Новчаник јс &lt;b&gt;шифрован&lt;/b&gt; и тренутно &lt;b&gt;закључан&lt;/b&gt;</translation>
     
-YES  
-The translation has a typo: "јс" should be "је". Also, the word "шифрован" is a direct borrowing from Russian; the correct Serbian word is "шифрован" with Serbian Cyrillic spelling is questionable, better use "шифрован" or preferably "шифрован" depending on dialect, but more standard and commonly used is "шифрован" or the verb form "шифрован". However, more appropriate Serbian term is "шифрован" (from "шифровати") is acceptable, but the more natural Serbian adjective for encrypted is "шифрован". So the better phrase is:  
+YES
+There is a typo in the translation: "јс" should be "је".
 
-Новчаник је &lt;b&gt;шифрован&lt;/b&gt; и тренутно &lt;b&gt;закључан&lt;/b&gt;  
-
-Correct translation:  
+Correct translation:
 Новчаник је &lt;b&gt;шифрован&lt;/b&gt; и тренутно &lt;b&gt;закључан&lt;/b&gt;
-```
-
-```
-        <source>change from %1 (%2)</source>
-        <translation>Измени од %1 (%2)</translation>
-    
-YES  
-The translation "Измени од %1 (%2)" is incorrect. The English phrase "change from %1 (%2)" refers to the Bitcoin transaction "change" (i.e., the leftover amount returned to the sender), and should be translated in Serbian as "Промена са %1 (%2)" or "Каса са %1 (%2)". The current translation uses "Измени," which is the imperative form of the verb "to change," not a noun meaning "change" in the transaction sense.
-
-Correct translation:  
-Промена од %1 (%2)
 ```
 
 ```
@@ -213,31 +193,32 @@ Correct translation:
         <translation>Направи упозорење за новчаник</translation>
     
 YES
-The translation is incorrect and misleading. "Направи упозорење за новчаник" literally means "Make/Create a warning for the wallet," which does not convey the intended meaning of a warning message titled "Create wallet warning."
+The translation is inaccurate. The original phrase "Create wallet warning" refers to a warning about wallet creation, not the action of making a warning for a wallet. The translation suggests creating (making) a warning, which changes the meaning.
 
-A better translation for "Create wallet warning" in this context would be:
-"Упозорење о креирању новчаника"
+Correct translation:
+Упозорење при креирању новчаника
 ```
 
 ```
         <source>Are you sure you wish to migrate the wallet &lt;i&gt;%1&lt;/i&gt;?</source>
         <translation>Da li si siuran da želiš da preneseš novčanik &lt;i&gt;%1&lt;/i&gt;? </translation>
     
-YES  
-There is a typo in the translation: "siuran" should be "siguran". Also, there is an unnecessary trailing space at the end of the sentence.  
+YES
+There are minor issues with spelling and formality in the Serbian translation. "Siuran" is a typo; the correct word is "siguran". Also, the style is somewhat informal ("da želiš da"), which can be replaced with a more standard form. Additionally, there is an unnecessary trailing whitespace at the end.
 
-Correct translation:  
-Da li si siguran da želiš da preneseš novčanik &lt;i&gt;%1&lt;/i&gt;?
+Correct translation:
+Da li ste sigurni da želite da migrirate novčanik &lt;i&gt;%1&lt;/i&gt;?
 ```
 
 ```
         <source>Migration Successful</source>
         <translation>Prenošenje novčanika je uspešno</translation>
     
-YES  
-The translation adds extra information ("novčanika" meaning "of the wallet") that is not present in the source text "Migration Successful," which is more general and could refer to any migration, not specifically a wallet. A more accurate and neutral translation would be:
+YES
+The translation is inaccurate. The source text "Migration Successful" is translated as "Prenošenje novčanika je uspešno", which means "Wallet transfer is successful". The word "novčanika" (wallet) is not present in the source and is an addition. Additionally, the translation is more verbose than necessary.
 
-Uspešna migracija
+Correct translation:
+Migracija je uspešna
 ```
 
 ```
@@ -245,10 +226,10 @@ Uspešna migracija
         <extracomment>Descriptive text of the open wallet progress window which indicates to the user which wallet is currently being opened.</extracomment>
         <translation>Отвањаре новчаника &lt;b&gt;%1&lt;/b&gt;</translation>
     
-YES  
-The translation contains a typographical error in the Serbian word "Отвањаре". The correct form should be "Отварање" which means "Opening". Also, the ellipsis ("…") at the end of the source text is missing in the translation, which changes the nuance of ongoing action.
+YES
+There is a spelling error in the Serbian word "Отвањаре". The correct word is "Отварање". Additionally, the ellipsis (…) from the source is missing in the translation. The rest, including the %1 specifier, is correct.
 
-Correct translation:  
+Correct translation:
 Отварање новчаника &lt;b&gt;%1&lt;/b&gt;…
 ```
 
@@ -257,64 +238,63 @@ Correct translation:
         <translation>Онемогући приватни кључ за овај новчаник. Новчаници са онемогућеним приватним кључем неће  имати приватни кључ и не могу имати HD семе или увезени приватни кључ. Ова опција идеална је за новчанике који су искључиво за посматрање.</translation>
     
 YES
-There are spacing issues before "имати" and "увезени" (extra space after "неће" and before "имати", and before "увезени приватни кључ"). Also, the singular "приватни кључ" should be plural "приватне кључеве" to match meaning ("no private keys"). The verb phrase "Онемогући приватни кључ" should be "Онемогући приватне кључеве" since keys is plural. Corrected translation:
+There are inconsistencies between the plural and singular forms used for "private keys" and spacing errors (double space after "неће"). "Приватни кључ" (singular) is used instead of "приватни кључеви" (plural) which can mislead the meaning. Also, the original English references "wallets" (plural), and the translation sometimes shifts between singular and plural inconsistently. 
 
-Онемогући приватне кључеве за овај новчаник. Новчаници са онемогућеним приватним кључевима неће имати приватне кључеве и не могу имати HD семе или увезене приватне кључеве. Ова опција идеална је за новчанике који су искључиво за посматрање.
-```
-
-```
-        <source>Make a blank wallet. Blank wallets do not initially have private keys or scripts. Private keys and addresses can be imported, or an HD seed can be set, at a later time.</source>
-        <translation>Направи празан новчаник. Празни новчанци немају приватане кључеве или скрипте. Приватни кључеви могу се увести, или HD семе може бити постављено касније.</translation>
-    
-YES  
-There is a minor typo and some inconsistent terminology in the translation. The phrase "приватане кључеве" should be "приватне кључеве." The plural form of "wallets" is translated as "новчанци," which is somewhat informal; "новчаници" or "новчанци" can be accepted in Serbian, but "новчаници" is more standard. Also, the phrase "направи празан новчаник" is informal and imperative; it is acceptable if the context is instructive, but otherwise, "Креирај празан новчаник" might be more neutral/formal. The abbreviation "HD" is untranslated, which is acceptable because it's a technical term.
-
-Corrected translation:  
-Направи празан новчаник. Празни новчаници немају приватне кључеве или скрипте. Приватни кључеви и адресе могу се увести, или HD семе може бити постављено касније.
+Correct translation:
+Онемогући приватне кључеве за овај новчаник. Новчаници са онемогућеним приватним кључевима неће имати приватне кључеве и не могу имати HD семе или увезене приватне кључеве. Ово је идеално за новчанике који служе само за посматрање.
 ```
 
 ```
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
         <translation>Најмање %1 GB подататака биће складиштен у овај директорјиум који ће временом порасти.</translation>
     
-YES  
-The word "директорјиум" is an incorrect or non-standard Serbian word for "directory." The correct Serbian word is "директоријум." Also, the sentence can be slightly improved for naturalness and clarity.
+YES
+There are several issues with the Serbian translation:
+1. "подататака" is a typo; it should be "података".
+2. "директорјиум" is also a typo/misspelling; it should be "директоријум".
+3. The structure "биће складиштен у овај директорјиум" is awkward; more appropriate would be "ће бити сачувано у овом директоријуму".
+4. The English source uses "will be stored", so "ће бити сачувано" is better than "биће складиштен".
+5. The plural form of "ГБ" should be "GB" (Latin letters, as is often kept in Serbian technical usage), but that is minor and acceptable.
 
-Correct translation:  
-Најмање %1 GB података биће сачувано у овом директоријуму, и његова величина ће временом расти.
+Correct translation:
+Најмање %1 GB података ће бити сачувано у овом директоријуму и количина ће с временом расти.
 ```
 
 ```
         <source>Approximately %1 GB of data will be stored in this directory.</source>
         <translation>Најмање %1 GB подататака биће складиштен у овај директорјиум.</translation>
     
-YES  
-The translation contains an error with "Најмање," which means "at least," while the source says "Approximately." Also, "директорјиум" is a less common and somewhat awkward transliteration of "directory." A better and more natural Serbian term is "директоријум."  
+YES
+The translation contains several errors:
+1. "Најмање" means "at least", not "approximately". The correct word for "approximately" in Serbian is "Приближно" or "Око".
+2. "подататака" is a typo, the correct word is "података".
+3. "биће складиштен" should be "биће сачувано" or "ће бити сачувано" for "will be stored".
+4. "у овај директорјиум" should be "у овај директоријум".
 
-Correct translation:  
-Приближно %1 GB података биће складиштено у овај директоријум.
+Correct translation:
+Приближно %1 GB података ће бити сачувано у овом директоријуму.
 ```
 
 ```
         <source>%1 will download and store a copy of the Bitcoin block chain.</source>
         <translation>%1 биће преузеће и складиштити копију Биткоин ланца блокова.</translation>
     
-YES  
-The translation contains a redundancy: both "биће" (will be) and "преузеће" (will download) are used together, which is incorrect. The phrase should have only one future tense verb. Also, "лања блокова" is a more common and clearer phrasing than "ланца блокова."
+YES
+The translation has grammatical issues; specifically, "биће преузеће и складиштити" is incorrect. "Преузеће" and "биће" are redundant, and the verb "складиштити" should be coordinated properly.
 
-Correct translation:  
-%1 ће преузети и сачувати копију Биткоин ланца блокова.
+Correct translation:
+%1 ће преузети и сачувати копију Биткоин блокчејна.
 ```
 
 ```
         <source>Error: Specified data directory "%1" cannot be created.</source>
         <translation>Грешка: Одабрана датотека  "%1" не може бити креирана.</translation>
     
-YES  
-The Serbian translation incorrectly uses "датотека" which means "file" instead of "директоријум" or "папка" which mean "directory" or "folder". The source text says "data directory," so the correct term should be "директоријум" or "фасцикла". Also, there is an extra space before the quotation mark in the translation that should be removed.
+YES
+The translation uses "датотека" which means "file" instead of "директоријум" which means "directory". Also, the correct phrase for "specified" here should be "наведени", not "одабрана". There is also an extra space after the word "датотека".
 
-Correct translation:  
-Грешка: Одабрани директоријум „%1“ не може бити креиран.
+Correct translation:
+Грешка: Намењени директоријум „%1“ не може бити креиран.
 ```
 
 ```
@@ -322,21 +302,21 @@ Correct translation:
         <extracomment>Tooltip text for button that allows you to paste an address that is in your clipboard.</extracomment>
         <translation>Налепите адресу из базе за копирање</translation>
     
-YES  
-The Serbian translation uses "Налепите адресу из базе за копирање," which is incorrect. "база за копирање" literally means "database for copying," which is not the correct phrase for "clipboard." The correct translation for "clipboard" in Serbian is "међуспремник" or "међуспремник за копирање."
+YES
+The translation "Налепите адресу из базе за копирање" is inaccurate. The term "база за копирање" is not a correct term for "clipboard" in Serbian; the correct word is "клипборд" or "привремена меморија." Additionally, "Налепите" could be replaced with "Налепи" to match common UI imperative tone.
 
-Correct translation:  
-Налепите адресу из међуспремника
+Correct translation:
+Налепи адресу из клипборда
 ```
 
 ```
         <source>Number of script verification threads</source>
         <translation>Број скрипти и CPU за верификацију</translation>
     
-YES  
-The translation is inaccurate and adds content not present in the source. The original source refers to the "Number of script verification threads," which means how many threads (concurrent processing units) are used for verifying scripts. The provided translation "Број скрипти и CPU за верификацију" means "Number of scripts and CPU for verification," which is incorrect and changes the meaning.
+YES
+The translation is inaccurate. The English source says "Number of script verification threads," which refers specifically to the number of processing threads used for script verification. The provided Serbian translation, "Број скрипти и CPU за верификацију," translates back as "Number of scripts and CPU for verification," which introduces erroneous and unnecessary elements ("CPU" and "scripts" instead of "threads").
 
-Correct translation:  
+Correct translation:
 Број нити за верификацију скрипти
 ```
 
@@ -344,92 +324,95 @@ Correct translation:
         <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
         <translation>Приказује се ако је испоручени уобичајени SOCKS5 проxy коришћен ради проналажења клијената преко овог типа мреже. </translation>
     
-YES  
-The translation is mostly correct but could be improved for clarity and style, and there is a trailing whitespace at the end that should be removed. Also, "проxy" mixes Cyrillic and Latin letters; it should be fully in Cyrillic as "проки".
+YES
+There are a few problems with the translation:
+1. The original English says "Shows if the supplied...", which is impersonal, but the Serbian uses a more personal/active voice ("Приказује се ако је...").
+2. Incorrect rendering of "proxy" as "проxy" (the "x" is not in Cyrillic).
+3. "клијената" translates to "clients", but the appropriate term for "peers" in the context of Bitcoin is "чворова" (nodes/peers).
+4. Minor format issue: stray space at the end of the sentence.
 
-Correct translation:  
-Приказује се ако је испоручени подразумевани SOCKS5 прокси коришћен за повезивање са чворовима преко овог типа мреже.
+Correct translation:
+Показује да ли се испоручени подразумевани SOCKS5 прокси користи за повезивање са чворовима преко ове врсте мреже.
 ```
 
 ```
         <source>Prune block storage to</source>
         <translation>Сакрати block складиштење на</translation>
     
-YES  
-The word "block" is untranslated and left in English, which is inconsistent and should be translated or adapted. Also, "складиштење" is correct for "storage," but it would be better to write "блок" in Cyrillic instead of "block" in Latin script for consistency. The verb "Сакрати" should be "Скрати" (correct infinitive form meaning "to prune"/"to shorten").  
+YES
+The translation partially translates the text: "block storage" is left in English, while it should be in Serbian. Additionally, the word order is odd, and the infinitive "Prune" is usually rendered as an imperative or descriptive action.
 
-Correct translation:  
-Скрати блок складиштење на
+Correct translation:
+Скратити складиштење блокова на
+
+Or, to match familiar UI phrasing:
+
+Скратити складиштење блокова на
 ```
 
 ```
         <source>Reverting this setting requires re-downloading the entire blockchain.</source>
         <translation>Враћање ове опције захтева да поновно преузимање целокупонг блокчејна.</translation>
     
-YES  
-There is an erroneous word "целокупонг" which appears to be a typo or misspelling. The correct word is "целокупног". Also, the phrase would be more natural as "понoвно преузимање целокупног блокчејна."
+YES
+There is a grammatical error in the translation, specifically in "понвно преузимање целокупонг блокчејна" - "целокупонг" is incorrect; the correct form is "целокупног", and sentence structure can be improved for clarity.
 
-Correct translation:  
-Враћање ове опције захтева да поновно преузимање целокупног блокчејна.
+Correct translation:
+Враћање ове опције захтева поновно преузимање целокупног блокчејна.
 ```
 
 ```
         <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
         <translation>Конектуј се на Биткоин мрежу кроз SOCKS5 проксијем.</translation>
     
-YES  
-The translation contains a grammatical error in the instrumental case usage. In Serbian, when expressing "through a SOCKS5 proxy," the word "прокси" should be in the instrumental case "проксијем" but without the preposition "кроз," which requires accusative. Proper wording would use "помоћу" + instrumental or "преко" + genitive.
+YES
+The translation uses the informal imperative "Конектуј се", but a more standard and formal Serbian phrasing would use "Повежите се". Also, "кроз SOCKS5 проксијем" is incorrect; it should be "преко SOCKS5 проксија". 
 
-Correct translation:  
-Конектуј се на Биткоин мрежу преко SOCKS5 проксија.  
-OR  
-Конектуј се на Биткоин мрежу помоћу SOCKS5 проксија.
+Correct translation:
+Повежите се на Биткоин мрежу преко SOCKS5 проксија.
 ```
 
 ```
         <source>Minimize to the tray instead of the taskbar</source>
         <translation>минимизирај у доњу линију, уместо у програмску траку</translation>
     
-YES  
-The translation is understandable but could be improved for clarity and naturalness in Serbian. The phrase "доњу линију" ("bottom line") is not the usual way to refer to the system tray. The term "tray" in the context of minimizing an application typically refers to the system tray, which is best translated as "системску траку" or "икону пријава" depending on the context. Also, the original phrase uses "taskbar" (progamska traka), which is correct, but "доњу линију" is not an appropriate translation for "tray."
+YES
+The translation is inaccurate. In Serbian, "system tray" is commonly referred to as "системску траку" or "област обавештења", while "taskbar" is "програмска трака" or "дно екрана". The phrase "доња линија" is not standard for "tray".
 
-A better translation would be:
-
-Минимизирај у системску траку уместо у програмску траку
-
-This clarifies minimizing to the system tray instead of the taskbar and is more idiomatic for Serbian users.
+Correct translation:
+Минимизуј у системску траку уместо у програмску траку
 ```
 
 ```
         <source>Mined balance in watch-only addresses that has not yet matured</source>
         <translation>Салдорударења у адресама које су у моду само гледање, који још увек није доспео</translation>
     
-YES  
-The translation contains erroneous and awkward wording: "Салдорударења" is not a correct Serbian word for "balance," and the phrase "у моду само гледање" is an unnatural and incorrect translation for "watch-only." The phrase "који још увек није доспео" correctly translates "has not yet matured," but the rest needs correction for clarity and accuracy.
+YES
+There is a minor issue with the translation: "Салдорударења" is a concatenation and should be split. The correct term for "mined balance" would be "ископани салдо" or "салдо од рударења". The rest of the translation is generally accurate, but it can be made smoother.
 
-Correct translation:  
-"Миновани износ на адресама само за праћење који још увек није доспео"
+Correct translation:
+Ископани салдо на адресама у режиму само за гледање који још увек није доспео
 ```
 
 ```
         <source>Signed %1 inputs, but more signatures are still required.</source>
         <translation>Потписано %1 поље, али је потребно још потписа.</translation>
     
-YES  
-The word "поље" translates to "field," which is incorrect in this Bitcoin context. The correct term for "inputs" in Serbian when referring to Bitcoin transactions should be "улаза" (inputs). Also, the spacing and format specifier %1 are correctly used.  
+YES
+The translation is inaccurate. The word "inputs" in the Bitcoin context rarely translates as "поље" ("field") in Serbian; the proper term is "улаза" ("inputs"). Additionally, the plural form should be used. The rest of the sentence is acceptable.
 
-Correct translation:  
-Потписано %1 улаза, али је потребно још потписа.
+Correct translation:
+Потписано је %1 улаза, али је потребно још потписа.
 ```
 
 ```
         <source>Transaction has %1 unsigned inputs.</source>
         <translation>Трансакција има %1 непотписана поља.</translation>
     
-YES  
-The translation contains an inaccurate term. The word "поља" means "fields" or "areas," which is incorrect for the context of Bitcoin transactions. The correct translation should use the term for "inputs," which is "улиза" in Serbian.
+YES
+The translation is inaccurate. The term "inputs" in Bitcoin context should be "улази" (inputs), not "поља" (fields). "Поља" is misleading in this context. Also, the format specifier %1 is correctly preserved.
 
-Correct translation:  
+Correct translation:
 Трансакција има %1 непотписаних улаза.
 ```
 
@@ -437,10 +420,10 @@ Correct translation:
         <source>Save Image…</source>
         <translation>Сачували слику…</translation>
     
-YES  
-The translation "Сачували слику…" is incorrect because it uses the past tense ("Saved the image") instead of the imperative or infinitive form which matches the English command "Save Image…". A correct translation should use the imperative form.
+YES
+The translation is inaccurate. "Сачували слику…" means "Saved the image…" (past tense), rather than the imperative form "Save Image…". The correct translation should be in the imperative mood.
 
-Correct translation:  
+Correct translation:
 Сачувај слику…
 ```
 
@@ -448,33 +431,38 @@ Correct translation:
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
         <translation>Дати резултат URI  предуг, покушај да сманиш текст за ознаку / поруку.</translation>
     
-YES  
-The translated sentence contains a typo and awkward phrasing: "Дати резултат URI предуг" is incorrect and unclear. The phrase should properly convey "Resulting URI too long". The word "предуг" seems to be a truncated or misspelled form of "предугачак" (too long). Also, there is an unnecessary non-breaking space after "URI". The verb "сманиш" is an informal imperative, which is acceptable but could be replaced with a more neutral/standard "скратиш".
+YES
+The Serbian translation is problematic for multiple reasons:
+- "Дати резултат URI предуг" is not grammatically correct or idiomatic. It should convey that the resulting URI is too long.
+- The word "URI" is left in Latin script, although it's common to transliterate/leave as URI, this is acceptable but the structure is still awkward.
+- "Дати резултат" is not a natural way to say "resulting".
+- There is a double space after "URI", which is a whitespace formatting issue.
+- "предуг" is a typo; the correct word is "предугачак" or "предугачак".
 
-Correct translation:  
-Резултујући URI је превише дуг, покушај да срежеш текст за ознаку / поруку.
+Correct translation:
+Резултујући URI је предугачак, покушај да скратиш текст за ознаку/поруку.
 ```
 
 ```
         <source>Memory Pool</source>
         <translation>Удружена меморија</translation>
     
-YES  
-The translation "Удружена меморија" means "associated memory" or "combined memory," which is incorrect in the Bitcoin context. The correct term for "Memory Pool" (the pool of unconfirmed Bitcoin transactions) in Serbian is commonly translated as "пул меморије" or more precisely "меморијски пул" or "пул трансакција."
+YES
+The translation "Удружена меморија" is incorrect. "Memory Pool" in the context of Bitcoin refers to "мемпул" or "меморијски пул", not "удружена меморија" ("pooled/joined memory"), which does not convey the intended technical meaning.
 
-Correct translation:  
-Пул меморије
+Correct translation:
+Мемпул
 ```
 
 ```
         <source>Select a peer to view detailed information.</source>
         <translation>Одабери колегу да би видели детаљне информације</translation>
     
-YES  
-The translation is mostly correct but the word "колегу" more commonly means "colleague" in a professional context rather than a "peer" in a P2P network or Bitcoin context. A better choice would be "члана" (member) or "једног од учесника" (one of the peers/participants). Also, the sentence is missing a period at the end, which is present in the source. The phrase "да би видели" should agree in number with the subject; better is to say "да бисте видели" (formal/polite form).
+YES
+The translation is problematic: "колега" is not the correct translation for "peer" in the context of Bitcoin. "Пир" (the transliterated term widely used in this context) or "чвор" ("node") would be more appropriate. Also, "да би видели" is grammatically incorrect; it should match the (you) imperative, so "да видите" is correct.
 
-Correct translation:  
-Одаберите једног од учесника да бисте видели детаљне информације.
+Correct translation:
+Одаберите пира да видите детаљне информације.
 ```
 
 ```
@@ -482,33 +470,10 @@ Correct translation:
         <translation>Ноде прозор</translation>
     
 YES
-The word "Node" is not translated into Serbian; it should be adapted to Serbian Cyrillic or Serbian language rather than left in English transliteration. Also, "прозор" (window) is correct. The proper Serbian translation for "Node window" would be "Везни прозор" or "Прозор нода" depending on context, but "Ноде прозор" mixes English and Serbian incorrectly.
+"Ноде прозор" transliterates the English word "Node" instead of translating it into Serbian. The correct translation for "Node" in Serbian, in the context of Bitcoin, is "Чвор".
 
 Correct translation:
-Ноде прозор -> Прозор нода
-```
-
-```
-        <source>The direction and type of peer connection: %1</source>
-        <translation>Смер и тип конекције клијената: %1</translation>
-    
-YES  
-The Serbian translation contains a typo and a slight inaccuracy. The word "Смер" should be "Смер" (direction) which is correct, but "конекције" is a transliteration from English "connection" which is not natural Serbian. The proper Serbian word is "везе" for "connection". Also, "клијената" means "clients," but in the Bitcoin context, "peers" are often referred to as "чворови" (nodes) or simply "peer-ови".  
-
-Correct translation:  
-Смер и тип везе пира: %1
-```
-
-```
-        <source>Outbound Block Relay: does not relay transactions or addresses</source>
-        <extracomment>Explanatory text for an outbound peer connection that relays network information about blocks and not transactions or addresses.</extracomment>
-        <translation>Оутбоунд Блоцк Релаи: не преноси трансакције или адресе</translation>
-    
-YES  
-The translation uses untranslated English loanwords "Оутбоунд Блоцк Релаи" (Outbound Block Relay) written in Cyrillic, which is not appropriate or clear. These terms should be translated or transliterated properly in Serbian for clarity and naturalness. Also, "преноси" is acceptable but "преноси" generally means "transports"; "преносити" can be used, but "преноси" here is fine. However, translating the key technical terms into Serbian is better.
-
-Correct translation:  
-"Излазни пренос блока: не преноси трансакције или адресе"
+Прозор чвора
 ```
 
 ```
@@ -527,33 +492,31 @@ For more information on using this console, type %6.
 За више информација о коришћењу конзоле, притисни %6
 %7 УПОЗОРЕЊЕ: Преваранти су се активирали, говорећи корисницима да уносе команде овде, и тако краду садржај новчаника. Не користи ову конзолу без потпуног схватања комплексности ове команде. %8</translation>
     
-YES  
-The translation contains several issues:
+YES
+There are several issues with this translation:
 
-1. The word "команди" in "преглед доступних комади" is incorrect; it should be "команди" (genitive plural of "команда") instead of "комади" (which means "pieces" or "parts").  
-2. The phrase "говорећи корисницима да уносе команде овде" is slightly unnatural; better phrasing is "упућујући кориснике да овде уносе команде".  
-3. The warning sentence "и тако краду садржај новчаника" is understandable but could be smoother as "крадући садржај њихових новчаника".  
-4. The wording "потпуног схватања комплексности ове команде" is awkward and should be "потпуног разумевања последица команди" or "потпуног разумевања последица неке команде" because "complexity of this command" is not a perfect match for "рамфикације" (ramifications).  
-5. Some punctuation and spacing issues appear around %7 and %8 tags: in the source, there is no space after %7 and before the warning, but the translation adds a space ("%7 УПОЗОРЕЊЕ"). The warning should immediately follow %7 with no space, to preserve styling.
+1. Typo/Mistranslation: "комади" should be "команди" (commands), not "комади" (pieces).
+2. Missing period and misplaced line break after "притисни %6" (should have a period).
+3. The translation adds extra spaces at the beginning and end of the warning tags (%7 %8), which may break the intended formatting. The tags should not be separated by space from the warning text.
+4. "complexности ове команде" should be "последица команде" or "последица наредбе", as "complexности" (complexity) does not convey the meaning of "ramifications".
 
-Corrected translation:
-
-Добродошли у %1 RPC конзолу.  
-Користи тастере за горе и доле да наводиш историју, и %2 да очистиш екран.  
-Користи %3 и %4 да увећаш и смањиш величину фонта.  
-Унеси %5 за преглед доступних команди.  
-За више информација о коришћењу конзоле, притисни %6.  
-%7УПОЗОРЕЊЕ: Преваранти су били активни, упућујући кориснике да овде уносе команде, крадући садржај њихових новчаника. Не користи ову конзолу без потпуног разумевања последица неког наређења.%8
+Correct translation:
+Добродошли у %1 RPC конзолу.
+Користите тастере горе и доле за навигацију кроз историју, и %2 за чишћење екрана.
+Користите %3 и %4 да повећате или смањите величину фонта.
+Укуцајте %5 за преглед доступних команди.
+За више информација о коришћењу ове конзоле, укуцајте %6.
+%7УПОЗОРЕЊЕ: Преваранти су били активни, говорећи корисницима да овде унесу команде, чиме краду садржај њихових новчаника. Не користите ову конзолу без потпуног разумевања последица команде.%8
 ```
 
 ```
         <source>Save Image…</source>
         <translation>Сачували слику…</translation>
     
-YES  
-The translation "Сачували слику…" is incorrect because it uses the past tense ("Saved the image") instead of the imperative or infinitive form which matches the English command "Save Image…". A correct translation should use the imperative form.
+YES
+The translation is inaccurate. "Сачували слику…" means "Saved the image…" (past tense), rather than the imperative form "Save Image…". The correct translation should be in the imperative mood.
 
-Correct translation:  
+Correct translation:
 Сачувај слику…
 ```
 
@@ -561,11 +524,11 @@ Correct translation:
         <source>Inputs…</source>
         <translation>Поља...</translation>
     
-YES  
-The English source "Inputs…" refers to "inputs" in a Bitcoin transaction context, which should translate to "Улази…" in Serbian, reflecting the correct technical term for transaction inputs. The provided translation "Поља..." means "Fields...", which is incorrect in this context.
+YES
+The English word "Inputs" in the context of Bitcoin refers to "улази" (inputs to a transaction), not "поља" (which means "fields"). The translation is incorrect.
 
-Correct translation:  
-Улази…
+Correct translation:
+Улази...
 ```
 
 ```
@@ -573,57 +536,47 @@ Correct translation:
         <extracomment>"External signer" means using devices such as hardware wallets.</extracomment>
         <translation>Подси екстерну скрипту за потписивање у : Options -&gt; Wallet</translation>
     
-YES  
-The translation contains errors and formatting issues:  
-- "Подси" is incorrect and seems like a typo or incomplete word. It should be "Подеси" (which means "Set").  
-- The colon before "Options" is incorrectly spaced and not necessary; it should be omitted or replaced with a proper dash or simply left as plain text.  
-- The English words "Options" and "Wallet" should be either translated or written consistently; usually in Serbian UI translations they are either left in English or transliterated, but since the source uses English UI labels, it is acceptable to keep them.  
-- The phrase should read smoothly and naturally in Serbian.
+YES
+The Serbian translation is problematic. The phrase "Подси екстерну скрипту за потписивање у : Options -> Wallet" contains several issues:
+1. "Подси" is not a correct Serbian word for "Set". It should be "Поставите".
+2. The order and structure are confusing, and there is an unnecessary space before the colon.
+3. Options and Wallet are untranslated, but could be left as-is if keeping UI terms in English is the convention.
 
-Correct translation:  
-Подеси путању до екстерног скрипта за потписивање у Options -&gt; Wallet
-```
-
-```
-        <source>The Bitcoin address to send the payment to</source>
-        <translation>Биткоин адреса на коју се шаље уплата</translation>
-    
-YES  
-The translation uses the genitive singular form "адреса" instead of the accusative "адресу" which is required as the direct object of the verb phrase "to send the payment to". Also, "уплата" (payment) is in nominative, but the preposition "на" requires accusative "уплату". The corrected translation preserves the meaning and correct case usage:
-
-Correct translation:  
-Биткоин адресу на коју се шаље уплату
+Correct translation:
+Поставите путању до скрипте за екстерно потписивање у Options -> Wallet
 ```
 
 ```
         <source>Paste address from clipboard</source>
         <translation>Налепите адресу из базе за копирање</translation>
     
-YES  
-The phrase "база за копирање" is not the correct or natural term for "clipboard" in Serbian. The proper term is "међуспремник" or simply "међуспремника" (genitive case) to mean "from clipboard". The correct translation is:
+YES
+The translation of "clipboard" as "база за копирање" is incorrect and unidiomatic in Serbian. The correct term for "clipboard" is "клипборд" or "привремена меморија". Furthermore, the verb "налепите" is properly used but may be more common as "налепи" in UI commands for consistency with imperative forms. Also, there is no whitespace issue or format specifier.
 
-Налепите адресу из међуспремника
+Correct translation:
+Налепи адресу из клипборда
 ```
 
 ```
         <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
         <translation>Порука која је приложена биткоину: URI која ће бити сачувана уз трансакцију ради референце. Напомена: Ова порука се шаље преко Биткоин мреже.</translation>
     
-YES  
-The translation contains an error in the second sentence. The English source says: "Note: This message will not be sent over the Bitcoin network." The translation instead says: "This message is sent over the Bitcoin network," which reverses the meaning.
+YES
+The translation is problematic. The phrase "Ова порука се шаље преко Биткоин мреже." translates as "This message is sent over the Bitcoin network," which is the opposite of the source text meaning ("This message will not be sent over the Bitcoin network.").
 
-Correct translation:  
-Порука која је приложена биткоину: URI која ће бити сачувана уз трансакцију ради референце. Напомена: Ова порука неће бити послата преко Биткоин мреже.
+Correct translation:
+Порука која је приложена bitcoin: URI-ју и која ће бити сачувана уз трансакцију ради ваше референце. Напомена: Ова порука неће бити послата преко Биткоин мреже.
 ```
 
 ```
         <source>Paste address from clipboard</source>
         <translation>Налепите адресу из базе за копирање</translation>
     
-YES  
-The phrase "база за копирање" is not the correct or natural term for "clipboard" in Serbian. The proper term is "међуспремник" or simply "међуспремника" (genitive case) to mean "from clipboard". The correct translation is:
+YES
+The translation of "clipboard" as "база за копирање" is incorrect and unidiomatic in Serbian. The correct term for "clipboard" is "клипборд" or "привремена меморија". Furthermore, the verb "налепите" is properly used but may be more common as "налепи" in UI commands for consistency with imperative forms. Also, there is no whitespace issue or format specifier.
 
-Налепите адресу из међуспремника
+Correct translation:
+Налепи адресу из клипборда
 ```
 
 ```
@@ -631,10 +584,10 @@ The phrase "база за копирање" is not the correct or natural term f
         <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in 6 or more blocks.</extracomment>
         <translation>%1 порврде</translation>
     
-YES  
-There is a typographical error in the translation. The correct Serbian word for "confirmations" is "потврде", not "порврде".
+YES
+There is a typo in the translation: "порврде" should be "потврде". The word "порврде" is not a valid Serbian word.
 
-Correct translation:  
+Correct translation:
 %1 потврде
 ```
 
@@ -642,10 +595,10 @@ Correct translation:
         <source>Credit</source>
         <translation>Заслуге</translation>
     
-YES  
-The Serbian translation "Заслуге" means "merits" or "accolades," which is incorrect in the Bitcoin context where "Credit" refers to an amount of value added or credited (e.g., to a wallet). The correct translation in this context would be "Кредит".  
+YES
+The Serbian translation "Заслуге" means "merits" or "accomplishments" rather than "credit" in the financial sense, which in this context is likely referring to a credited amount or incoming funds.
 
-Correct translation:  
+Correct translation:
 Кредит
 ```
 
@@ -654,31 +607,14 @@ Correct translation:
         <translation>Генерисани новчићи морају доспети %1 блокова пре него што могу бити потрошени. Када генеришете овај блок, он се емитује у мрежу, да би био придодат на ланац блокова. Укупно не успе да се придода на ланац, његово стање се мења у "није прихваћен" и неће га бити могуће потрошити. Ово се може повремено десити уколико други чвор генерише блок у периоду од неколико секунди од вашег.</translation>
     
 YES
-There are small issues with idiomatic clarity and a confusing phrase in the translation:
+There are a few errors:
+1. "Укупно не успе да се придода на ланац" is incorrect and awkward; "уколико не успе да се придода на ланац" or "ако не успе да се придода на ланац" is correct.
+2. The sentence flow is somewhat unnatural, and "он се емитује у мрежу, да би био придодат на ланац блокова" would be better as "он је емитован у мрежу да би био додат у ланац блокова".
+3. "доспети %1 блокова" is unnatural; it should be "сазрети %1 блокова" or more commonly "сазрети током %1 блокова".
+4. "периоду од неколико секунди од вашег" should be "у року од неколико секунди након вашег".
 
-1. "морају доспети %1 блокова" is a bit awkward; more natural Serbian would be "морају да сазреју %1 блокова" or "морају да прођу %1 блокова" (the meaning is that the generated coins must mature/age).
-2. "емитује у мрежу, да би био придодат на ланац блокова" sounds unnatural and slightly incorrect. Better: "преноси на мрежу како би био додат у блокчејн" or "преноси на мрежу да би био додат у ланац блокова".
-3. "Укупно не успе да се придода" contains a typo/"унатно не" which makes no sense ("Укупно" means "in total", not "if"). It should be "Ако не успе да се придода", i.e. "If it fails to be added...".
-4. "његово стање се мења у "није прихваћен"" → properly agreement is "није прихваћен" is masculine singular, but "он" (the block) is masculine, so that's fine. Just typographically quotes should be „“ in Serbian, but this is minor.
-5. "неће га бити могуће потрошити." - better: "неће бити могуће потрошити" (remove "га" which is unnecessary).
-
-A polished version:
-
-Генерисани новчићи морају да сазреју %1 блокова пре него што могу бити потрошени. Када генеришете овај блок, он се преноси на мрежу да би био додат у ланац блокова. Ако не успе да се додат у ланац, његово стање се мења у „није прихваћен“ и неће бити могуће потрошити. Ово се повремено може десити ако други чвор генерише блок у року од неколико секунди после вашег.
-
-Correct translation:  
-Генерисани новчићи морају да сазреју %1 блокова пре него што могу бити потрошени. Када генеришете овај блок, он се преноси на мрежу да би био додат у ланац блокова. Ако не успе да се додат у ланац, његово стање се мења у „није прихваћен“ и неће бити могуће потрошити. Ово се повремено може десити ако други чвор генерише блок у року од неколико секунди после вашег.
-```
-
-```
-        <source>Conflicted</source>
-        <translation>Неуслагашен</translation>
-    
-YES  
-The Serbian translation uses "Неуслагашен," which is not a standard or commonly understood Serbian word for "Conflicted." A more accurate translation in this Bitcoin context would be "Сукобљен" (meaning conflicted, as in conflicting states) or "У сукобу."  
-
-Correct translation:  
-<translation>Сукобљен</translation>
+Correct translation:
+Генерисани новчићи морају сазрети током %1 блокова пре него што могу бити потрошени. Када генеришете овај блок, он је емитован у мрежу да би био додат у ланац блокова. Ако не успе да уђе у ланац, његово стање ће бити промењено у „није прихваћен“ и неће га бити могуће потрошити. Ово се може повремено десити ако неки други чвор генерише блок у року од неколико секунди након вашег.
 ```
 
 ```
@@ -686,8 +622,7 @@ Correct translation:
         <translation>Статус трансакције. Пређи мишем преко поља за приказ броја трансакција.</translation>
     
 YES  
-The translation misinterprets the second sentence. The original English says "Hover over this field to show number of confirmations," but the translation says "Hover over the field to show number of transactions" ("броја трансакција" means "number of transactions," not "number of confirmations"). Also, "Hover over this field" should be translated as "Преместите курсор преко овог поља" or "Пређите мишем преко овог поља" for clarity.
-
+The translation is inaccurate. The phrase "пређи мишем преко поља за приказ броја трансакција" translates as "hover over the field to display the number of transactions." However, the original English says "number of confirmations," not "number of transactions."  
 Correct translation:  
 Статус трансакције. Пређите мишем преко овог поља да бисте видели број потврда.
 ```
@@ -697,21 +632,24 @@ Correct translation:
         <translation>Без обзира да ли је у ову трансакције укључена или није - адреса само за гледање.</translation>
     
 YES
-The Serbian translation has grammatical and stylistic issues. The phrase "у ову трансакције" is incorrect because "трансакције" is plural/genitive but "овa" is singular feminine accusative, so they do not agree. Also, "адреса само за гледање" is awkward and less common; the established Bitcoin-related term is "адреса само за праћење" or "само за праћење адреса". The translation is also somewhat unnatural and could be more fluid.
+The Serbian translation is not accurate and sounds unnatural. There is also a grammatical error: "трансакције" should be "трансакцију" (accusative case). The construction "или није - адреса само за гледање" is not idiomatic and adds unnecessary complexity.
 
 Correct translation:
-Без обзира да ли је адреса само за праћење укључена у ову трансакцију или није.
+Да ли је у ову трансакцију укључена адреса само за посматрање.
+
+Alternative:
+Да ли је у ову трансакцију укључена watch-only адреса.
 ```
 
 ```
         <source>Copy transaction ID</source>
         <translation>Копирај трансакцију ID</translation>
     
-YES  
-The abbreviation "ID" should be translated or adapted consistently in Serbian Cyrillic and preferably in lowercase as "ИД" or fully translated as "идентификатор" depending on context. Since "ID" is an English abbreviation, it is better to transliterate it into Cyrillic as "ИД" to keep consistency and avoid mixing Latin and Cyrillic scripts in one phrase.
+YES
+There is a minor issue in the translation: the word order is incorrect. "ID" in Serbian should usually come before the noun as "ID трансакције" or the phrase should be "Копирај ID трансакције" to accurately mean "Copy transaction ID". Additionally, "ID" can be transliterated or left, but it is usually left as "ID". There is also an unnecessary mixing of Latin and Cyrillic scripts (since "ID" is in Latin, and the rest is in Cyrillic, which is acceptable in Serbian IT context but not ideal stylistically).
 
-Correct translation:  
-Копирај трансакцију ИД
+Correct translation:
+Копирај ID трансакције
 ```
 
 ```
@@ -719,71 +657,55 @@ Correct translation:
         <translation>Promeni adresu etikete</translation>
     
 YES
-The translation is not fully accurate and is somewhat unnatural. "Edit address label" in this context means to change the label/name assigned to an address, not "change the address of the label."
+The translation is incorrect. The phrase "Edit address label" means to edit the label (name or description) assigned to an address, not to change the address of a label. The correct Serbian translation should be "Izmeni oznaku adrese" or "Uredi oznaku adrese".
 
-A more accurate and natural Serbian translation would be:
-"Измени опис адресу" or "Измени ознаку адресе"
-
-In Latin script: "Izmeni oznaku adrese"
+Correct translation:
+Izmeni oznaku adrese
 ```
 
 ```
         <source>Create a new wallet</source>
         <translation>Направи нови ночаник</translation>
     
-YES  
-The translation contains an error: the word "ночаник" is incorrect and does not mean "wallet" in Serbian. The correct word is "новчаник". Also, the adjective "нови" should agree in gender with "новчаник," which is masculine, so "нови" is correct here.  
+YES
+There is a spelling error in the translation: "ночаник" should be "новчаник". Also, "направи" is understandable but "креирај" or "направите" (formal) is more commonly used in software contexts. 
 
-Correct translation:  
-Направи нови новчаник
+Correct translation:
+Креирај нови новчаник
 ```
 
 ```
         <source>Confirm fee bump</source>
         <translation>Потврдите ударну провизију</translation>
     
-YES  
-The phrase "Confirm fee bump" in the context of Bitcoin typically means to confirm an increase in the transaction fee. The translation "Потврдите ударну провизију" uses "ударну" which literally means "impact" or "strike," and doesn't convey the intended meaning of a "bump" or increase in fee.
-
-A more accurate and natural Serbian translation would be:  
-"Потврдите повећање провизије"  
-(which means "Confirm increase of fee") or  
-"Потврдите повећање накнаде" (using "накнада" as fee).  
-
-Preferred correction:  
-Потврдите повећање провизије
-```
-
-```
-        <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
-        <translation>Ову провизију можете обрисати уколико је кусур мањи од нивоа прашине</translation>
-    
 YES
-The translation partially conveys the meaning but is not fully accurate. The original sentence talks about the transaction fee that may be discarded if the change amount is smaller than dust at this level. The translation omits the part about "This is the transaction fee" and uses "кусур" (change), which is correct for 'change,' but the phrasing is somewhat informal and the sentence structure is incomplete. Also, the phrase "на овом нивоу" (at this level) is more correct than "од нивоа".
+The translation "Потврдите ударну провизију" is problematic. The phrase "ударну провизију" literally means "impact fee" or "hit fee", which is not an accurate or idiomatic rendering of "fee bump" in the Bitcoin context. In Bitcoin, "fee bump" refers to increasing the transaction fee. The correct translation in this context should convey the idea of confirming an increase in the transaction fee, typically accomplished with terms like "повећање накнаде".
 
 Correct translation:
-Ово је накнада за трансакцију коју можете одбацити уколико је кусур мањи од прашине на овом нивоу
+Потврдите повећање накнаде
 ```
 
 ```
         <source>The transaction amount is too small to pay the fee</source>
         <translation>Износ трансакције је сувише мали да се плати трансакција</translation>
     
-YES  
-The translation is slightly inaccurate and misleading. The source says "The transaction amount is too small to pay the fee," meaning the amount is insufficient to cover the fee. The current translation "да се плати трансакција" means "to pay the transaction," which is incorrect. It should reflect paying the fee ("такса" or "надокнада" in Serbian).
+YES
+The translation is problematic: the phrase "да се плати трансакција" means "to pay the transaction," which is incorrect. It should refer to paying the fee, not the transaction itself. Also, "суviše мали" (too small) is fine, but "трансакција" at the end should be "такса" or "надокнада" (fee).
 
-Correct translation:  
-Износ трансакције је сувише мали да би се платила такса
+Correct translation:
+Износ трансакције је сувише мали да плати таксу.
 ```
 
 ```
         <source>This is experimental software.</source>
         <translation>Ово је експерименталн софтвер.</translation>
     
-YES  
-There is a typo in the Serbian translation: "експерименталн" should be "експерименталан".  
+YES
+There is a spelling error in the Serbian translation. The word "експерименталн" is missing the last letter "и" to correctly spell "експериментални".
 
-Correct translation:  
-Ово је експерименталан софтвер.
+Correct translation:
+Ово је експериментални софтвер.
 ```
 </details>
+
+Number of issues: 57.

@@ -13,10 +13,10 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>New</source>
         <translation>新增 N</translation>
     
-YES  
-The translation adds an extraneous "N" after "新增," which is not present in the source and is unnecessary. The word "新增" alone correctly translates "New" in this context.
+YES
+The translation "新增 N" is incorrect. The "N" is extraneous and not standard in Cantonese ('yue'). It should be simply "新增", which correctly conveys "New" in this context.
 
-Correct translation:  
+Correct translation:
 新增
 ```
 
@@ -25,7 +25,9 @@ Correct translation:
         <translation>刪除 D</translation>
     
 YES
-The translation contains an extraneous "D" which is not part of the original English text and appears to be an error or typo.
+The translation "刪除 D" is problematic. The "D" does not belong in the translation and appears to be an error. The correct translation in Cantonese ('yue'), using Chinese characters, would be simply:
+
+刪除
 
 Correct translation:
 刪除
@@ -35,30 +37,22 @@ Correct translation:
         <source>Passphrase change failed</source>
         <translation>修改密码失败</translation>
     
-YES  
-The translation "修改密码失败" is in Simplified Chinese, not in Cantonese (yue). Additionally, it translates to "Password change failed," while the source refers to "Passphrase change failed." In Bitcoin context, "passphrase" is more specific and usually not just "password." A more accurate Cantonese (written in traditional characters) translation would be:
+YES
+The translation is in Simplified Chinese (zh_CN), not Cantonese (yue). While "修改密码失败" means "Passphrase change failed" in Mandarin, the Cantonese translation should use appropriate wording and vocabulary.
 
-密碼短語更改失敗
+Correct translation:
+更改密碼失敗
 ```
 
 ```
         <source>Runaway exception</source>
         <translation>未捕获的异常</translation>
     
-YES  
-The translation is in Simplified Chinese ("未捕获的异常") rather than Cantonese (Yue). It means "uncaught exception" instead of "runaway exception". A more accurate Cantonese translation for "Runaway exception" could be:  
-「失控嘅異常」
-```
+YES
+The translation "未捕获的异常" is in Simplified Chinese (Mandarin), not Cantonese ('yue'), and it is also more formal than typical conversational Cantonese. Additionally, "未捕获的异常" translates to "uncaught exception," which is not the same nuance as "runaway exception." A better Cantonese translation would reflect the meaning and use colloquial 'yue'.
 
-```
-        <source>%1 MB</source>
-        <translation>%1 MB (百萬位元組)</translation>
-    
-YES  
-The addition "(百萬位元組)" is unnecessary and was not present in the source. It adds extra explanatory text that changes the format of the translation. Since "%1 MB" is a standard unit expression and the source only includes "%1 MB", the translation should match exactly without additional parentheses or explanations.
-
-Correct translation:  
-%1 MB
+Correct translation:
+有异常走甩咗
 ```
 
 ```
@@ -66,7 +60,7 @@ Correct translation:
         <translation>关于 %1 (A)</translation>
     
 YES
-The translation mixes simplified Chinese "关于" instead of using Cantonese (yue) language, which should use traditional characters and more natural Cantonese phrasing. Also, the added " (A)" is unnecessary and was not present in the source.
+The translation uses "关于", which is Mandarin ("zh_CN"), not Cantonese ('yue'). Also, "(A)" is extraneous and should not be present. 
 
 Correct translation:
 關於 %1
@@ -77,21 +71,21 @@ Correct translation:
         <translation>修改密码(C)</translation>
     
 YES
-The translation "修改密码(C)" means "Change Password (C)" in Mandarin rather than Cantonese (yue), and it translates "Passphrase" as "密码" which usually means "password" in a general sense, not specifically a passphrase. Also, the added "(C)" is not present in the source and appears to be out of context.
+The translation "修改密码(C)" is in Simplified Chinese, not in Cantonese ('yue'). Also, the original uses an ellipsis (…), but the translation omits it and adds "(C)", which is not present in the source.
 
-A better Cantonese translation for "Change Passphrase…" would be:
-更改通行碼…
+Correct translation:
+換密碼…
 ```
 
 ```
         <source>Close wallet</source>
         <translation>卸载钱包</translation>
     
-YES  
-The translation "卸载钱包" means "uninstall wallet," which is incorrect for "Close wallet." The correct translation should reflect the action of closing or shutting the wallet, not uninstalling it.
+YES
+The translation "卸载钱包" means "uninstall wallet", which is incorrect. The correct translation for "Close wallet" in Cantonese ('yue') should be "關閉錢包" or, in a more colloquial way, "收埋錢包".
 
-Correct translation:  
-"關閉錢包"
+Correct translation:
+關閉錢包
 ```
 
 ```
@@ -100,9 +94,9 @@ Correct translation:
         <translation>關閉網路紀錄</translation>
     
 YES
-The translation "關閉網路紀錄" means "Disable network logging," which is opposite to the source text "Enable network activity." 
+The translation is incorrect. The English "Enable network activity" means to turn ON network activity, but the translation "關閉網路紀錄" means "Turn OFF network record/log," which is the opposite and uses "紀錄" which more accurately means "record" or "log" rather than "activity". There is also a change in meaning.
 
-Correct translation:  
+Correct translation:
 啟用網絡活動
 ```
 
@@ -111,75 +105,72 @@ Correct translation:
         <translation>复制和数量</translation>
     
 YES
-The translation "复制和数量" means "copy and amount," which adds an incorrect conjunction "和" (and) that is not present in the original phrase "Copy amount." The correct translation should be concise and reflect only the command to copy the amount.
+The translation "复制和数量" means "Copy and amount", which is incorrect. The correct translation for "Copy amount" in Cantonese ('yue') should be "複製金額" or "複製數量" depending on the context (usually "複製金額" for Bitcoin). Also, the translation used Simplified Chinese "复制" instead of the usual Traditional "複製" that is more standard in Cantonese contexts.
 
 Correct translation:
-复制数量
+複製金額
 ```
 
 ```
         <source>Close wallet</source>
         <translation>卸载钱包</translation>
     
-YES  
-The translation "卸载钱包" means "uninstall wallet," which is incorrect for "Close wallet." The correct translation should reflect the action of closing or shutting the wallet, not uninstalling it.
+YES
+The translation "卸载钱包" means "uninstall wallet", which is incorrect. The correct translation for "Close wallet" in Cantonese ('yue') should be "關閉錢包" or, in a more colloquial way, "收埋錢包".
 
-Correct translation:  
-"關閉錢包"
+Correct translation:
+關閉錢包
 ```
 
 ```
         <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2 GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
         <translation>當你點擊「確認」，%1會開始下載，並從%3年最早的交易，處裡整個%4區塊鏈(大小:%2GB)</translation>
     
-YES  
-The translation is mostly understandable but contains minor issues in fluency and formatting:
+YES
+There are translation issues:
 
-1. "點擊「確認」" is acceptable but "點擊「OK」" would be a more accurate match of "click OK".  
-2. The comma after "下載" is unnecessary in Cantonese and breaks the flow.  
-3. The phrase "並從%3年最早的交易，處裡整個%4區塊鏈(大小:%2GB)" is awkward. The English says the download and processing start from the earliest transactions in %3 (probably a date/time), but the translation reads like "start from the earliest transactions in the year %3" - it would be better to separate the notions properly.  
-4. There's a spacing issue: no space before the open parenthesis, and no space after the colon inside the parentheses. In Cantonese it is common to not add unnecessary spaces, but in English source and in typical translations the colon and the number GB should have a space after colon or be consistent with original.
+1. The wording "處裡" should be the Cantonese term "處理".
+2. The translation omits essential details such as "starting with the earliest transactions in %3 when %4 initially launched" (the launch time and association with %4).
+3. The parenthesis and formatting around "%2 GB" does not match the English source.
+4. There is inconsistent use of punctuation/spaces; e.g., “(大小:%2GB)” introduces unnecessary wording and omits the space before 'GB'.
 
-A better translation could be:
+Correct translation:
+當你點擊「確認」，%1會開始下載並處理完整的%4區塊鏈（%2 GB），由%4最初推出時%3年最早的交易開始。
 
-當你點擊「OK」，%1會開始下載及處理完整嘅%4區塊鏈（大小：%2 GB），由%4首次啟動時嘅最早交易（%3）開始。
-
-This preserves the intended meaning while clarifying the order and improving naturalness. Note also the use of full-width parentheses and spacing that is typical in Chinese text.
-
-Final corrected translation:  
-當你點擊「OK」，%1會開始下載及處理完整嘅%4區塊鏈（大小：%2 GB），由%4首次啟動時嘅最早交易（%3）開始。
+Explanation: This keeps the meaning, includes all necessary format specifiers, and uses proper punctuation/formatting per the source.
 ```
 
 ```
         <source>Full path to a %1 compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
         <translation>与%1兼容的脚本文件路径（例如 C:\Downloads\hwi.exe 或者 /Users/you/Downloads/hwi.py ）。注意：恶意软件可以偷币！</translation>
     
-YES  
-The translation is in Simplified Chinese, not in Yue (Cantonese). Additionally, in the translation there is an unnecessary space before the closing parenthesis. The format specifier %1 is handled correctly. The style is simplified Chinese, while yue should be a Cantonese phrasing which differs significantly.  
+YES
+The translation is in Simplified Chinese, not Cantonese ('yue'). It uses Mandarin vocabulary (e.g., "兼容", "脚本文件路径", "恶意软件", "偷币"), not Cantonese.
 
-Correct translation in Yue (Cantonese) could be:  
-與 %1 兼容嘅腳本文件全路徑（例如 C:\Downloads\hwi.exe 或 /Users/you/Downloads/hwi.py）。小心：惡意軟件會偷你嘅錢！
+Correct translation:
+%1兼容嘅script完整路径（例如 C:\Downloads\hwi.exe 或 /Users/you/Downloads/hwi.py）。留意：恶意软件可以偷你啲币！
 ```
 
 ```
         <source>Spend unconfirmed change</source>
         <translation>动用尚未确认的找零资金(S)</translation>
     
-YES  
-The translation mixes simplified Chinese characters with a parenthetical "(S)", which appears to be an artifact or misplaced. The original English phrase is short and direct: "Spend unconfirmed change." The translation should be in Cantonese (Yue), using appropriate characters and phrasing without extraneous symbols. Also, the simplified Chinese character "动用" is more common in Mandarin; the Cantonese equivalent would better use traditional characters and phrasing.
+YES
+The translation is in Simplified Chinese, not in Cantonese (Yue). It uses formal Mandarin phrasing rather than colloquial Cantonese.
 
-Correct translation:  
-花未確認嘅找續
+Correct translation:
+用未確認嘅找續银（S）
 ```
 
 ```
         <source>Your current balance in watch-only addresses</source>
         <translation>您当前在仅观察观察地址中的余额</translation>
     
-YES  
-The translation is repetitive and slightly awkward ("仅观察观察地址", meaning "watch-only watch addresses"). Also, it uses formal Mandarin ("您当前") rather than Yue (Cantonese) phrasing. A more natural and accurate Yue translation for "Your current balance in watch-only addresses" would be:
+YES
+The translation is in Simplified Chinese and not in the Cantonese 'yue' language as expected. Additionally, it repeats "观察" (observe) twice, which is awkward.
 
-您喺只可觀察嘅地址入面嘅現有餘額
+Correct translation:
+你而家喺僅供觀察地址嘅餘額
 ```
 
 ```
@@ -187,22 +178,21 @@ The translation is repetitive and slightly awkward ("仅观察观察地址", mea
         <translation>拯救...</translation>
     
 YES
-The translation is incorrect. "Save…" in the context of a computer interface usually means "save a file" or "save changes," and should be translated as "儲存…" in Cantonese (yue), not "拯救...," which means "to rescue" or "to save someone" literally.
+The translation "拯救..." is incorrect. The English word "Save" in the context of software (e.g. saving a file) should be translated as "儲存" or "保存" in Cantonese ('yue'), not "拯救" which means "rescue" or "save (from danger)". Also, the ellipsis should be the Chinese version "…" not three periods "...".
 
-Correct translation: 儲存…
+Correct translation:
+儲存…
 ```
 
 ```
         <source>Cannot start bitcoin: click-to-pay handler</source>
         <translation>无法启动 bitcoin: 协议的“一键支付”处理程序</translation>
     
-YES  
-The translation is in Simplified Chinese, not Cantonese (yue). Also, the original English uses the phrase "click-to-pay handler" which is translated as "协议的‘一键支付’处理程序" meaning "protocol's 'one-click payment' handler," which adds but changes the meaning slightly. The original does not mention "protocol" and is more limited. Additionally, the original says "Cannot start bitcoin: click-to-pay handler" suggesting an inability to start that handler, but the translation lacks the negative modal "cannot" in a proper Cantonese expression.
+YES
+The translation is written in Simplified Chinese (Mandarin), not in 'yue' (Cantonese). Furthermore, for a proper Cantonese translation, the register should be more conversational and regionally accurate.
 
-Correct translation in Cantonese (yue) could be:  
-「無法啟動 bitcoin: click-to-pay 處理程序」  
-or more colloquial:  
-「無法啟動 bitcoin：click-to-pay 處理器」
+Correct translation:
+冇办法启动bitcoin：click-to-pay处理程序
 ```
 
 ```
@@ -210,21 +200,16 @@ or more colloquial:
         <translation>隐藏其他人的详细信息</translation>
     
 YES
-The translation is in Simplified Chinese ("隐藏其他人的详细信息"), not in Cantonese (yue). A proper Cantonese (yue) translation should be in traditional characters and reflect the phrasing typical to the language.
+The translation is problematic. The 'yue' language is Cantonese, and this translation is in Simplified Chinese suitable for Mandarin ("隐藏其他人的详细信息"), which is not colloquial Cantonese and does not match the tone or vocabulary expected for a 'yue' translation. 
 
 Correct translation:
-隱藏節點詳情
-```
+收埋節點詳情
 
-```
-        <source>The transport layer version: %1</source>
-        <translation>传输层版本: %1</translation>
-    
-YES
-The translation uses Simplified Chinese ("传输层版本: %1"), but the target language "yue" refers to Cantonese, which is typically written in Traditional Chinese characters and uses different phrasing.
-
-Correct translation:
-傳輸層版本：%1
+Explanation:
+- "Peers" should be "節點" in a Bitcoin context (meaning network nodes/peers).
+- "Hide" in Cantonese is commonly "收埋".
+- "詳情" means "details" in Cantonese.
+- "其他人" means "other people", which is not accurate for "peers" in this context.
 ```
 
 ```
@@ -233,38 +218,37 @@ Correct translation:
         <translation>Outbound 地址取得: 用於短暫，暫時 測試地址</translation>
     
 YES
-The translation is somewhat unclear and includes unnecessary words that might confuse the meaning. The original phrase refers to a short-lived outbound connection used specifically to request or solicit addresses. The translation "用於短暫，暫時 測試地址" translates to "used for short-lived, temporarily testing addresses," which deviates from the intended meaning.
+The translation is inaccurate and awkward in its structure:
+- The phrase "暫時 測試地址" means "temporarily test address," which changes the meaning from "soliciting" (requesting addresses). 
+- The translation fails to convey "for soliciting addresses," which refers to requesting, not testing.
+- Also, "Outbound" should be translated or explained, especially in a Chinese context.
 
-A more accurate translation would be:
-"Outbound 地址取得：短暫嘅，用嚟索取地址"
-
-This preserves the idea of "short-lived" and "for soliciting addresses" appropriately in Cantonese.
+Correct translation:
+"外發地址獲取：短暫，用嚟向其他節點請求地址"
 ```
 
 ```
         <source>1 hour</source>
         <translation>1 小时(H)</translation>
     
-YES  
-The translation uses "小时(H)" which is Simplified Chinese and includes an unnecessary "(H)". In Cantonese (yue), a more natural and appropriate translation for "1 hour" is "1 小時" without parentheses or additional letters. Also, it should use traditional characters as is customary in Cantonese.
+YES
+The translation uses "小时", which is Mandarin, not Cantonese (Yue). The correct Cantonese word for hour is "鐘" (or "個鐘" in colloquial speech). Also, the "(H)" annotation is unnecessary unless it is present in the source.
 
-Correct translation:  
-1 小時
+Correct translation:
+1個鐘
 ```
 
 ```
         <source>Ban for</source>
         <translation>禁止連線</translation>
     
-YES  
-The English source "Ban for" is typically followed by a duration (e.g., "Ban for 24 hours"), so the phrase should reflect this incomplete phrase. The translation "禁止連線" means "ban connection" or "block connection," which is a complete action and does not correspond to the incomplete phrase "Ban for."  
-A better translation preserving the context and leaving the phrase open for a duration could be:  
-"封鎖 %1" or  
-"封禁 %1"  
-where %1 would be the duration appended later. If the "%1" or similar format specifier is missing in the source, the phrase should remain incomplete similarly, e.g., "封鎖 " or "封禁 " (with a trailing space).  
+YES
+The translation "禁止連線" means "prohibit connection" or "ban connection", which does not accurately reflect the original source "Ban for", which typically expects a duration or context after "for" (e.g., "Ban for 1 hour"). The translation omits the sense of duration implied by "for" and is therefore incomplete.
 
-Correct translation:  
-"封鎖 "
+Correct translation:
+封禁時長
+
+This better preserves the meaning, implying "Ban duration" or "Ban for (time)".
 ```
 
 ```
@@ -272,10 +256,10 @@ Correct translation:
         <translation>复制和数量</translation>
     
 YES
-The translation "复制和数量" means "copy and amount," which adds an incorrect conjunction "和" (and) that is not present in the original phrase "Copy amount." The correct translation should be concise and reflect only the command to copy the amount.
+The translation "复制和数量" means "Copy and amount", which is incorrect. The correct translation for "Copy amount" in Cantonese ('yue') should be "複製金額" or "複製數量" depending on the context (usually "複製金額" for Bitcoin). Also, the translation used Simplified Chinese "复制" instead of the usual Traditional "複製" that is more standard in Cantonese contexts.
 
 Correct translation:
-复制数量
+複製金額
 ```
 
 ```
@@ -283,38 +267,31 @@ Correct translation:
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can only create a PSBT. This string is displayed when private keys are disabled and an external signer is not available.</extracomment>
         <translation>請檢查您的交易提案。這將產生部分簽名的比特幣交易（PSBT），您可以儲存或複製該交易，然後使用簽名。離線%1錢包或與PSBT相容的硬體錢包。</translation>
     
-YES
-The translation is incomplete and awkward in phrasing. The original sentence explains that the user can save or copy the PSBT and then sign it with an offline %1 wallet or a PSBT-compatible hardware wallet. The current translation ends abruptly after "使用簽名" (using signature), missing the clear connection to "e.g. an offline %1 wallet" and "or a PSBT-compatible hardware wallet."
+YES  
+There are two issues with the translation:  
+1. The sentence "然後使用簽名。" is incomplete and unnatural. The meaning of "然後使用簽名。" (then use signing) has missing information—it's unclear what is being signed or how, and it was meant to continue to the next part about the offline wallet or hardware wallet.  
+2. The phrase "離線%1錢包" is missing the proper spacing. Also, the original text says "with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet," but the translation separates these items poorly.  
 
-Correct translation:
-請檢查您的交易提案。這將產生部分簽名的比特幣交易（PSBT），您可以儲存或複製該交易，然後使用例如離線的%1錢包或相容PSBT的硬體錢包來簽署。
+Correct translation:  
+請檢查您嘅交易提案。呢個操作會產生一個部分簽名嘅比特幣交易（PSBT），您可以儲存或者複製佢，之後好似用離線%1錢包，又或者支持PSBT嘅硬件錢包簽名。
+
+Explanation:  
+- The structure is now clear and colloquial for 'yue'.  
+- The usage of %1 is preserved and placed appropriately.  
+- There are no stray spaces or double spaces.  
+- The meaning is faithful and clear.
 ```
 
 ```
         <source>The Bitcoin address to send the payment to</source>
         <translation>將支付發送到的比特幣地址給</translation>
     
-YES  
-The translation "將支付發送到的比特幣地址給" is awkward and ungrammatical in Cantonese. It literally translates back to something like "the Bitcoin address to which the payment is sent" but the phrasing is unnatural and incomplete.
-
-A more natural and accurate Cantonese translation would be:  
-"發送支付嘅比特幣地址"  
-or more explicitly:  
-"用嚟發送支付嘅比特幣地址"  
-
-This conveys clearly that it is the Bitcoin address used to send the payment to.
-```
-
-```
-        <source>%1/unconfirmed</source>
-        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in at least one block, but less than 6 blocks.</extracomment>
-        <translation>%1 次/未確認</translation>
-    
 YES
-The translation "%1 次/未確認" uses "次" which usually means "times" or "occurrences" and is not appropriate for representing a fraction or ratio in this context (e.g., "confirmed/unconfirmed" count).
+The translation is awkward and includes an unnecessary particle "給" at the end, which is ungrammatical in Cantonese. A more natural translation would be:
+用嚟收款嘅比特幣地址 or 將支付發送去嘅比特幣地址
 
 Correct translation:
-%1/未確認
+用嚟收款嘅比特幣地址
 ```
 
 ```
@@ -322,10 +299,10 @@ Correct translation:
         <translation>复制和数量</translation>
     
 YES
-The translation "复制和数量" means "copy and amount," which adds an incorrect conjunction "和" (and) that is not present in the original phrase "Copy amount." The correct translation should be concise and reflect only the command to copy the amount.
+The translation "复制和数量" means "Copy and amount", which is incorrect. The correct translation for "Copy amount" in Cantonese ('yue') should be "複製金額" or "複製數量" depending on the context (usually "複製金額" for Bitcoin). Also, the translation used Simplified Chinese "复制" instead of the usual Traditional "複製" that is more standard in Cantonese contexts.
 
 Correct translation:
-复制数量
+複製金額
 ```
 
 ```
@@ -335,10 +312,10 @@ Correct translation:
 %s。</translation>
     
 YES
-The translation has formatting and spacing issues. The placeholders %s should remain adjacent to the text without line breaks or extra spaces. Also, the punctuation and spacing in Chinese (Cantonese) should be consistent, and the placeholders should be in quotes as in the source.
+There is a formatting issue: unnecessary newlines and missing proper format specifier integration. Also, the use of "獲得" is not natural in Cantonese for "got". "得到" or simply quoting is more natural. The translation should be concise, and "%s" should be integrated naturally.
 
 Correct translation:
-錯誤：轉存檔案識別記錄不正確。獲得「%s」，預期「%s」。
+錯誤：轉存檔案標識記錄唔正確。實際為「%s」，預期為「%s」。
 ```
 
 ```
@@ -346,67 +323,38 @@ Correct translation:
         <translation>提供多數TOR路由綁定位址。 對自動建立的Tor服務用%s</translation>
     
 YES
-The translation is missing some parts and has extra spacing issues. It should fully convey the original meaning and keep the format specifier in place without extra spaces. The phrase "More than one onion bind address is provided." should be translated more clearly, and "Using %s for the automatically created Tor onion service." should also be complete and natural.
+The translation is understandable but has several issues:
+- "提供多數TOR路由綁定位址。" is awkward and not colloquial in Cantonese ('yue').
+- "TOR路由" is not the optimal or widely used term in Cantonese; using "onion" or transliterating "onion address" is more common.
+- There is an extraneous space before "對自動建立的Tor服務用%s".
+- "%s" is preserved correctly, but the translation doesn't reflect "the automatically created Tor onion service" clearly and specifically.
 
 Correct translation:
-提供多於一個 Onion 綁定地址。自動建立嘅 Tor Onion 服務會用 %s。
-```
+提供咗多個onion綁定地址。會用%s做自動建立嘅Tor onion服務。
 
-```
-        <source>This is the maximum transaction fee you pay (in addition to the normal fee) to prioritize partial spend avoidance over regular coin selection.</source>
-        <translation>這是您支付的最高交易手續費（除了正常手續費外），優先於避免部分花費而不是定期選取幣。</translation>
-    
-YES  
-The translation is mostly understandable but contains minor inaccuracies and awkward phrasing. The phrase "partial spend avoidance over regular coin selection" is rendered somewhat unclearly as "優先於避免部分花費而不是定期選取幣," which could be interpreted as "prioritize avoiding partial spend instead of regular coin selection" but the wording "定期選取幣" (regular coin selection) is less idiomatic in Yue.
-
-A clearer and more natural translation would be:  
-這係你支付嘅最高交易手續費（除咗正常手續費之外），用嚟優先避免部分消費，而唔係普通揀選貨幣。
-
-This better captures "prioritize partial spend avoidance over regular coin selection" in the correct context.
-```
-
-```
-        <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
-        <translation>找零低于当前粉尘阈值时会被舍弃，并计入手续费，这些交易手续费就是在这种情况下产生的。</translation>
-    
-YES  
-The provided translation is in Simplified Chinese, not in Cantonese (yue), and thus does not match the requested language code. Additionally, the translation expands on the meaning and changes the sentence structure, which might alter the nuance. The original English sentence is:
-
-"This is the transaction fee you may discard if change is smaller than dust at this level"
-
-A more direct and accurate Cantonese (yue) translation would be:  
-"呢個係交易費，如果找零細過呢個層級嘅塵埃，可以拎走唔理佢。"
-```
-
-```
-        <source>Error loading %s: Private keys can only be disabled during creation</source>
-        <translation>載入 %s 時發生錯誤: 只有在造新錢包時能夠指定不允許私鑰</translation>
-    
-YES
-The translation omits the explicit term "disable" and doesn't clearly convey that private keys can only be disabled during creation. A more accurate translation would be:
-
-載入 %s 時發生錯誤：私鑰只可以喺造新錢包嗰陣先至可以禁用
+This version is more conversational and closer to expected Cantonese usage, and correctly reflects the source meaning.
 ```
 
 ```
         <source>Error: Dumpfile checksum does not match. Computed %s, expected %s</source>
         <translation>錯誤：轉存檔案的校驗和不匹配。%s計算得%s</translation>
     
-YES  
-The translation is incomplete and does not properly convey the full meaning of the source text. It also has formatting issues around the %s specifiers and lacks the "expected %s" part. The correct translation should preserve both computed and expected values clearly:
+YES
+The translation is inaccurate and incomplete. It omits "expected %s" (預期為%s) and does not preserve the original English format. Additionally, there should be a space after the colon for better readability, which is common in Cantonese localization.
 
-錯誤：轉存檔案的校驗和不匹配。計算值為 %s，預期為 %s
+Correct translation:
+錯誤：轉存檔案的校驗和不匹配。計算得%s，預期為%s
 ```
 
 ```
         <source>Failure removing transaction: %s</source>
         <translation>%s删除交易时失败: </translation>
     
-YES  
-The translation has an incorrect word order and a missing space before the colon. Also, the placement of %s should match the source, which comes after the colon. The proper structure in Yue (Cantonese) would be closer to "删除交易失败: %s" or "移除交易失敗: %s" to align with the source meaning "Failure removing transaction: %s".  
+YES
+There are two issues: (1) The format specifier %s has been moved to the front, which changes the intended sentence structure, (2) there is an unnecessary space before the colon, and (3) the translation omits part of the message after the colon.
 
-Correct translation:  
-移除交易失敗: %s
+Correct translation:
+删除交易时失败：%s
 ```
 
 ```
@@ -414,30 +362,21 @@ Correct translation:
         <translation>手续费率 (%s) 低于最大手续费率设置 (%s)</translation>
     
 YES
-The translation incorrectly renders "lower than the minimum fee rate setting (%s)" as "低于最大手续费率设置 (%s)", which means "lower than the maximum fee rate setting (%s)". It should say "低于最小手续费率设置 (%s)" to match the original meaning.
+The translation incorrectly translates "minimum fee rate setting" as "最大手续费率设置," which means "maximum fee rate setting." It should be "最低手续费率设置" to accurately convey "minimum fee rate setting" in Cantonese.
 
 Correct translation:
-手续费率 (%s) 低于最小手续费率设置 (%s)
-```
-
-```
-        <source>Not found pre-selected input %s</source>
-        <translation>找不到预先选择输入%s</translation>
-    
-YES  
-The translation is entirely in Simplified Chinese ("找不到预先选择输入%s") rather than Cantonese (Yue), which typically uses traditional characters and distinct grammar and vocabulary. It also lacks appropriate spacing before the format specifier %s. A more accurate Yue translation in traditional characters and natural phrasing would be:  
-"搵唔到預先揀定嘅輸入%s"
+手续费率 (%s) 低于最低手续费率设置 (%s)
 ```
 
 ```
         <source>Transaction amounts must not be negative</source>
         <translation>交易金额不不可为负数</translation>
     
-YES  
-The translation contains a double negation ("不不可"), which is incorrect and unnatural in Yue (Cantonese) as well as in written Chinese. The original English sentence states that transaction amounts must not be negative, which should be translated without using double negation.
+YES
+The translation contains a redundancy: "不不可为负数" is a double negative, which is incorrect. In Cantonese (yue), it should simply state "唔可以係負數" or "不得為負數". Also, "金额" can be "金額" or colloquially "數額", but "金额" is still understandable.
 
-Correct translation:  
-交易金额唔可以係负数
+Correct translation:
+交易金額唔可以係負數
 ```
 
 ```
@@ -445,26 +384,27 @@ Correct translation:
         <translation>交易尋找零輸出項超出範圍</translation>
     
 YES
-The translation "交易尋找零輸出項超出範圍" inaccurately conveys the original meaning. The original phrase means "Transaction change output index out of range," referring to an index related to the change output in a Bitcoin transaction being outside the valid range. The word "尋找" means "to search" and "零輸出項" literally means "zero output item," which deviates from the intended technical meaning.
+The translation is inaccurate. The phrase "交易尋找零輸出項超出範圍" literally means "Transaction finding zero output item out of range", which does not accurately render "Transaction change output index out of range". "Change output" should refer to the change output in a Bitcoin transaction (the output returning the remaining funds to the user), not "尋找零" (finding zero).
 
-A more accurate translation in Yue (Cantonese) would be:
-"交易嘅找零輸出索引超出範圍"
+Correct translation:
+交易找續輸出索引超出範圍
 
-This keeps the technical terms clear:
-- "交易" (transaction)
-- "找零" (change, i.e., the change output)
-- "輸出索引" (output index)
-- "超出範圍" (out of range)
+Explanation:
+- "找續" is the accurate Cantonese term for "change" (as in money returned).
+- "輸出索引" for "output index".
+- The rest keeps the meaning and technical accuracy.
 ```
 
 ```
         <source>Wallet file creation failed: %s</source>
         <translation>钱包文件创建失败：1%s</translation>
     
-YES  
-The translation contains an erroneous '1' before the format specifier '%s', which is incorrect and not present in the source. Also, the use of simplified Chinese (钱包文件创建失败) is not consistent with 'yue' (Yue Chinese/Cantonese), which typically uses traditional Chinese characters.
+YES
+There is an error in the translation: "1%s" appears to be a typographical mistake. The correct translation should preserve the format specifier as in the source, i.e., "%s" without the extra "1".
 
-A more appropriate translation in 'yue' (Cantonese) with traditional characters would be:  
-錢包檔案建立失敗：%s
+Correct translation:
+钱包文件创建失败：%s
 ```
 </details>
+
+Number of issues: 32.

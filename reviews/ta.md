@@ -13,44 +13,44 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Right-click to edit address or label</source>
         <translation>முகவரியை மாற்ற ரைட் கிளிக் செய்யவும்</translation>
     
-YES  
-The translation lacks the "or label" part and does not clearly convey "Right-click to edit". The phrase only says "Right click to change the address" which is incomplete and less precise. A better translation would include both "address or label" and the "edit" meaning.
+YES
+The translation inaccurately renders "edit" as "மாற்ற" (change), which means "change" or "modify" rather than "edit". It also omits "label" from the translation, which should be included.
 
-Correct translation:  
-"முகவரி அல்லது லேபலை திருத்த ரைட் கிளிக் செய்யவும்"
+Correct translation:
+முகவரி அல்லது பெயர்ச்சீட்டில் திருத்த ரைட்-கிளிக் செய்யவும்
 ```
 
 ```
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>பணப்பையை திறக்க, உங்கள் செயல்பாடு உங்கள் பணப்பை கடவுச்சொல்லை தேவை.</translation>
     
-YES  
-The translation is erroneous and unnatural. It incorrectly structures the sentence and repeats the word “wallet” (பணப்பை) unnecessarily. The English sentence means: "This operation needs your wallet passphrase to unlock the wallet." The correct translation should clearly state that the passphrase is needed to unlock the wallet for this operation.
+YES
+The translation is somewhat confusing and does not accurately reflect the source. It reverses the subject ("your operation needs..." instead of "this operation needs...") and is less clear.
 
-Correct translation:  
-இந்த செயல்பாட்டிற்கான பணப்பை திறக்க உங்கள் பணப்பை கடவுச்சொல் தேவை.
+Correct translation:
+இந்த செயல்பாட்டை செய்ய, உங்கள் பணப்பை கடவுச்சொல்லை வழங்கி பணப்பையை திறக்க வேண்டும்.
 ```
 
 ```
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
         <translation>எச்சரிக்கை: உங்கள் பணப்பையை குறியாக்கி உங்கள் கடவுச்சொற்றொடரை இழந்தால், நீங்கள் உங்கள் பைட்கோனை இழக்கலாம்!</translation>
     
-YES  
-The translation is inaccurate and downplays the severity of the warning. The source emphatically states that you will "LOSE ALL OF YOUR BITCOINS" if you lose your passphrase, emphasized with <b> tags, but the Tamil translation says "you may lose your bitcoins" (இழக்கலாம்), which is less certain and less strong. Also, the word "bitcoin" is misspelled as "பைட்கோன்" instead of the correct "பிட்காயின்" or a more accepted transliteration.
+YES
+The translation is understandable but inaccurate and downplays the importance. The original says you will "LOSE ALL OF YOUR BITCOINS", but the translation weakens it to "நீங்கள் உங்கள் பைட்கோனை இழக்கலாம்!" ("you may lose your Bitcoin"), using singular for Bitcoin and saying "may" instead of "will". Also, the bold tags (&lt;b&gt;...&lt;/b&gt;) are omitted.
 
-Correct translation:  
-எச்சரிக்கை: உங்கள் பணப்பையை குறியாக்கி, உங்கள் கடவுச்சொற்றொடரை இழந்தால், நீங்கள் &lt;b&gt;உங்கள் அனைத்து பிட்காயின்களையும் இழப்பீர்கள்&lt;/b&gt;!
+Correct translation:
+எச்சரிக்கை: உங்கள் பணப்பையை குறியாக்கி, உங்கள் கடவுச்சொற்றொடரை இழந்தால், நீங்கள் &lt;b&gt;உங்கள் அனைத்து பிட்காயின்களையும் இழந்து விடுவீர்கள்&lt;/b&gt;!
 ```
 
 ```
         <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>வாலட்டை பாதுகாக்க புதிய கடவுச்சொல்லை உல்லிடவும். பத்து அல்லது அதற்கு மேற்பட்ட எழுத்துகள் அல்லது எட்டு அல்லது அதற்கு மேற்பட்ட எழுத்துக்களை கடவுச்சொல்லாக பயன்படுத்தவும்.</translation>
     
-YES  
-The translation is incomplete and inaccurate. It misses formatting tags, and the second sentence does not match the original's meaning. The original requests a passphrase of "ten or more random characters" or "eight or more words," but the translation says "ten or more characters or eight or more characters," which is incorrect.
+YES
+The translation is mostly accurate but slightly incorrect regarding "eight or more words"—it says "எட்டு ... எழுத்துக்களை" (eight or more characters) instead of "words." Additionally, the separation into two sentences loses the structure/clarity of the original.
 
-Correct translation (including formatting tags and accurate meaning):  
-வாலட் பாதுகாப்புக்காக புதிய கடவுச்சொல்லை உள்ளிடவும்.&lt;br/&gt;தயவுசெய்து &lt;b&gt;பத்து அல்லது அதற்கு மேற்பட்ட சீரற்ற எழுத்துக்கள்&lt;/b&gt; அல்லது &lt;b&gt;எட்டு அல்லது அதற்கு மேற்பட்ட சொற்கள்&lt;/b&gt; கொண்ட கடவுச்சொல்லை பயன்படுத்தவும்.
+Correct translation:
+வாலட்டிற்காக புதிய கடவுச்சொல்லை உள்ளிடவும்.&lt;br/&gt;தயவுசெய்து &lt;b&gt;பத்து அல்லது அதற்கு அதிகமான சீரற்ற எழுத்துகள்&lt;/b&gt; அல்லது &lt;b&gt;எட்டு அல்லது அதற்கு அதிகமான சொற்கள்&lt;/b&gt; கொண்ட கடவுச்சொல்லை பயன்படுத்தவும்.
 ```
 
 ```
@@ -58,10 +58,10 @@ Correct translation (including formatting tags and accurate meaning):
         <translation>பழைய கடவுச்சொல் மற்றும் புதிய கடுவுசொல்லை உள்ளிடுக.</translation>
     
 YES
-The word "கடுவுசொல்லை" is a misspelling; it should be "கடவுச்சொல்லை" to correctly mean "passphrase." Also, the phrase does not mention "wallet" explicitly as in the source.
+There is a typo in the translation: "கடுவுசொல்லை" should be "கடவுச்சொல்லை". Also, the translation omits the explicit mention that both old and new passphrases are for the wallet.
 
 Correct translation:
-பழைய கடவுச்சொல்லையும் புதிய கடவுச்சொல்லையும் பணப்பையை உள்ளிடவும்.
+பணப்பை için பழைய கடவுச்சொல் மற்றும் புதிய கடவுச்சொல்லை உள்ளிடவும்.
 ```
 
 ```
@@ -69,10 +69,10 @@ Correct translation:
         <translation>வாலட்டை குறியாக்கம் செய்தால் மட்டும் உங்கள் பிட்காயினை வைரஸிடம் இருந்து பாதுகாக்க இயலாது.</translation>
     
 YES
-The translation is incomplete and somewhat inaccurate. It states only "Encrypting the wallet alone cannot protect your bitcoins from viruses," which is a partial meaning. The source mentions malware infecting the computer and that encrypting the wallet cannot fully protect bitcoins from theft.
+The translation uses "வாலட்டை" for "wallet" and "பிட்காயினை" for "bitcoins," which is acceptable as a transcription. However, "வைரஸ்" only refers to "virus," not broadly to "malware" (which covers all types of malicious software). Also, the original says "cannot fully protect," but the translation says "cannot protect at all" ("பாதுகாக்க இயலாது") rather than "cannot fully protect" ("முழுமையாக பாதுகாக்க முடியாது").
 
 Correct translation:
-உங்கள் வாலட்டை குறியாக்கம் செய்வது உங்கள் கணினியை பூச்சிகளால் பாதிக்கப்படுவதைத் தவிர்க்க முடியாது; அதனால் உங்கள் பிட்காயின்கள் திருடப்படுவதிலிருந்து முழுமையாக பாதுகாக்க முடியாது.
+உங்கள் வாலட்டை குறியாக்கம் செய்தாலும், உங்கள் பிட்காயின்கள் கணினியில் மால்வேர் தொற்று ஏற்பட்டால் திருடப்படுவதை முழுமையாகக் கவனிப்பது சாத்தியமல்ல.
 ```
 
 ```
@@ -80,99 +80,77 @@ Correct translation:
         <translation>முக்கியமானது: உங்கள் பணப்பரிமாற்றத்தை நீங்கள் உருவாக்கிய முந்தைய காப்புப்பிரதி புதிதாக உருவாக்கப்பட்ட, மறைகுறியாக்கப்பட்ட பணப்பரிமாற்றத்துடன் மாற்றப்பட வேண்டும். பாதுகாப்பு காரணங்களுக்காக, நீங்கள் புதிய, மறைகுறியாக்கப்பட்ட பணப்பையைப் பயன்படுத்த ஆரம்பித்தவுடன், மறைகுறியாக்கப்பட்ட பணப்பல் கோப்பின் முந்தைய காப்புப்பிரதிகள் பயனற்றதாகிவிடும்.</translation>
     
 YES
-The translation incorrectly uses "பணப்பரிமாற்றம்" (transaction) instead of "பணப்பைய" or "பணப்பையில்" (wallet) for "wallet". Also, there are some minor inconsistencies in terminology and grammar.
+There are errors in meaning and terminology in the translation:
+1. "wallet file" is inconsistently and incorrectly translated as "பணப்பரிமாற்றம்" (which means "transaction"), rather than "பணப்பை கோப்பு" or "பணப்பைச் ச(mcumbnail)ைப்பு".
+2. "backups" as "காப்புப்பிரதி" is singular; the plural "காப்புப்பிரதிகள்" should be used consistently.
+3. Last sentence erroneously says "மறைகுறியாக்கப்பட்ட பணப்பல் கோப்பின் முந்தைய காப்புப்பிரதிகள்" which mixes ideas. It is about the *unencrypted* wallet backups, not the encrypted ones.
+4. Need improvement on fluency and terminology.
 
 Correct translation:
-முக்கியமானது: உங்கள் பணப்பை கோப்பின் முந்தைய எந்த காப்புப்பிரதிகளும், புதிதாக உருவாக்கப்பட்ட, மறைகுறியாக்கப்பட்ட பணப்பை கோப்பால் மாற்றப்பட வேண்டும். பாதுகாப்பு காரணங்களுக்காக, நீங்கள் புதிய, மறைகுறியாக்கப்பட்ட பணப்பை பயன்படுத்த ஆரம்பித்தவுடன், மறைகுறியாக்கப்படாத பணப்பை கோப்பின் முந்தைய காப்புப்பிரதிகள் பயனற்றதாகிவிடும்.
+முக்கியமானது: நீங்கள் உங்கள் பணப்பை கோப்பை ஏற்கனவே மேற்கொண்ட அனைத்து காப்புப்பிரதிகளும், தற்போது உருவாக்கப்பட்ட மறைகுறியாக்கப்பட்ட (encrypted) பணப்பை கோப்புடன் மாற்றப்பட வேண்டும். பாதுகாப்பு காரணங்களுக்காக, மறைகுறியாக்கப்படாத (unencrypted) பணப்பை கோப்பின் முந்தைய காப்புப்பிரதிகள், நீங்கள் புதிய மறைகுறியாக்கப்பட்ட பணப்பையைப் பயன்படுத்த ஆரம்பித்தவுடன் பயனற்றவையாகிவிடும்.
 ```
 
 ```
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
         <translation>பணப்பைக் குறியாக்கத்திற்கு அனுப்பப்பட்ட கடவுச்சொல் தவறானது.</translation>
     
-YES  
-The translation has semantic inaccuracies. The original sentence means "The passphrase entered for the wallet decryption was incorrect." The provided Tamil translation says "The password sent for money encryption was incorrect," which is erroneous and misleading in the Bitcoin context. It should refer to "wallet decryption" and "passphrase," not "money encryption."
+YES
+The translation is understandable, but the phrase "பணப்பைக் குறியாக்கத்திற்கு அனுப்பப்பட்ட" is awkward and incorrect. A more natural and accurate translation would be:
 
-Correct translation:  
-"கைவலை மறைமுன்னறிக்க ல் உள்ளிடப்பட்ட கடவுச்சொல் தவறானது."  
-or more naturally:  
-"பணப்பையைக் குறியாக்கம் முடியும் கடவுச்சொல் தவறானது."
+Correct translation:
+திரையில் உள்ள பணப்பை உள்நுழைவு கடவுச்சொல் தவறானது. 
+
+Or, even better and direct:
+
+பணப்பையை டிக்ரிப்ட் செய்ய உள்ளிடப்பட்ட கடவுச்சொல் தவறானது.
 ```
 
 ```
         <source>Wallet passphrase was successfully changed.</source>
         <translation>Wallet குறியாக்கம் தோல்வியடைந்தது</translation>
     
-YES  
-The translation "Wallet குறியாக்கம் தோல்வியடைந்தது" means "Wallet encryption failed," which is incorrect. The source states that the wallet passphrase was successfully changed, so the translation should convey success, not failure.
+YES
+The translation is incorrect. The English text says "Wallet passphrase was successfully changed.", but the Tamil translation says "Wallet encryption failed" ("Wallet குறியாக்கம் தோல்வியடைந்தது"), which is the opposite meaning.
 
-Correct translation:  
-"Wallet கடவுச்சொல் வெற்றிகரமாக மாற்றப்பட்டது."
+Correct translation:
+வாலெட் கடவுச்சொல் வெற்றிகரமாக மாற்றப்பட்டது.
 ```
 
 ```
         <source>Banned Until</source>
         <translation>வரை தடை செய்யப்பட்டது</translation>
     
-YES  
-The translation "வரை தடை செய்யப்பட்டது" means "Banned until" but misses the temporal component indicating "until" as a preposition relating to a time or date following it. The phrase should explicitly convey the meaning "Banned Until [time]" as in a label before a date or time value.
-
-A better translation would be:  
-"வரை தடைசெய்யப்பட்டது" (one word) or more clearly  
-"வரை தடை செய்யப்பட்டது" could be acceptable, but it is more natural and concise in Tamil to use:  
-"வரை தடைசெய்" or  
-"தடை imposed until" → "வரை தடை"  
-
-However, the closest and clearer translation preserving the meaning and context is:  
-"வரை தடை செய்யப்பட்டது" → literally "Banned until" (past tense), which is somewhat awkward.  
-Better would be in noun form or label form:  
-"தடைசெய்தி காலம்" (Ban period) or "தடை காலம் வரை"  
-
-But the most appropriate for UI label is:  
-"தடை காலம்" or  
-"வரை தடை செய்யப்பட்டுள்ளது"  
-
-Since the English phrase is a label preceding a time or date, the safest and most natural Tamil label is:  
-"தடைச்செய்யப்பட்ட காலம்" or simply  
-"தடைநாள்" (Ban Until)  
-
-Hence, the correction:  
-"தடை காலம்"  
-
-Corrected translation:  
-<translation>தடை காலம்</translation>
-```
-
-```
-        <source>Runaway exception</source>
-        <translation>ரனவே எக்ஸெப்ஷன்</translation>
-    
 YES
-The translation uses a transliteration "ரனவே எக்ஸெப்ஷன்" which is not a proper Tamil translation and resembles English words phonetically written in Tamil script. A more accurate Tamil translation for "Runaway exception" (an unexpected or uncontrolled error) would be something like "தப்பிவிட்ட தவறு" or "கட்டுப்பாடில்லா தவறு".
+The translation "வரை தடை செய்யப்பட்டது" directly means "Banned has been until," which is awkward and not a natural way to convey "Banned Until" in Tamil. The meaning should be clear that it refers to the time or date up to which the ban is in effect.
 
 Correct translation:
-தப்பிவிட்ட தவறு
+"தடை செய்யப்பட்டது முடிவடையும் வரை" or simply "தடை செய்யப்படும் வரை" or, for brevity and proper UI context, "தடை முடிவின் தேதி" (Ban End Date). 
+
+Best fit:
+தடை செய்யப்படும் வரை
 ```
 
 ```
         <source>Internal error</source>
         <translation>உள் எறர்</translation>
     
-YES  
-The translation "உள் எறர்" is incorrect and appears to be a literal or incorrect transliteration rather than a proper Tamil translation. "Internal error" in Tamil should be translated as "உள்விளைவு பிழை" or more commonly simply "உள் பிழை".
+YES
+The translation uses the informal and incorrect transliteration "உள் எறர்", which is not proper Tamil. "எறர்" is just a phonetic rendering of "error" and not a typically accepted term. A more suitable Tamil translation for "Internal error" would be:
 
-Correct translation:  
-உள் பிழை
+Correct translation:
+உள் குறைவு
+
+Alternatively, "உள்ளகப் பிழை" is also commonly used for "Internal error".
 ```
 
 ```
         <source>%1 didn't yet exit safely…</source>
         <translation>%1இன்னும் பாதுகாப்பாக வெளியேரவில்லை ...</translation>
     
-YES  
-There is a spacing issue before "%1" and before the ellipsis in the translation. Also, the word "வெளியேரவில்லை" is incorrect Tamil; the correct verb should be "வெளியேறவில்லை" meaning "didn't exit". The ellipsis should have no spaces before it in Tamil.  
+YES
+There is a missing space between "%1" and the Tamil text. Additionally, the ellipsis at the end should be '…' (single character) instead of '...'. Also, the Tamil translation could be more natural.
 
-Correct translation:  
+Correct translation:
 %1 இன்னும் பாதுகாப்பாக வெளியேறவில்லை…
 ```
 
@@ -181,55 +159,55 @@ Correct translation:
         <translation>விலை</translation>
     
 YES
-The translation of "Amount" as "விலை" is incorrect. "விலை" means "price" in Tamil, which is not appropriate in the Bitcoin context where "Amount" usually refers to the quantity or value, e.g., of Bitcoin.
-
-A more accurate translation would be:
-"மொத்தம்" or "தொகை"
+The translation "விலை" means "price" in Tamil, which is not the correct term for "amount" in the context of Bitcoin transactions. The term "தொகை" is more appropriate for "amount".
 
 Correct translation:
-<translation>மொத்தம்</translation>
+தொகை
 ```
 
 ```
         <source>Enter a Bitcoin address (e.g. %1)</source>
         <translation>ஒரு விக்கிபீடியா முகவரியை உள்ளிடவும் (எ.கா. %1)</translation>
     
-YES  
-The translation incorrectly uses "விக்கிபீடியா" which means "Wikipedia" instead of "Bitcoin". It should refer to Bitcoin address, not Wikipedia address.
+YES
+The translation incorrectly uses "விக்கிபீடியா" (Wikipedia) instead of "பிட்கொயின்" (Bitcoin). This is an erroneous substitution and changes the meaning.
 
-Correct translation:  
-ஒரு பிட்ட்காயின் முகவரியை உள்ளிடவும் (எ.கா. %1)
+Correct translation:
+ஒரு பிட்கொயின் முகவரியை உள்ளிடவும் (உதாரணம்: %1)
 ```
 
 ```
         <source>None</source>
         <translation>யாரும்</translation>
     
-YES  
-The English word "None" here likely means "nothing" or "no value," and in the Bitcoin context, it could indicate the absence of something (like no addresses, no transactions, etc.). The Tamil translation "யாரும்" means "no one" or "anyone," which is typically used to refer to people, not a null or empty value.  
+YES
+The translation "யாரும்" means "no one" (as in "no person") in Tamil, but the context is "None" (probably as a selectable option meaning "nothing" or "no selection"). The correct term should be "எதுவும் இல்லை" or simply "இல்லை".
 
-A more accurate Tamil translation for "None" in this context would be: "எதுவும் இல்லை" (which means "nothing" or "none").
+Correct translation:
+எதுவும் இல்லை
+or
+இல்லை
 ```
 
 ```
         <source>Browse transaction history</source>
         <translation>பணப்பை பொது கண்ணோட்டத்தை காட்டு</translation>
     
-YES  
-The translation "பணப்பை பொது கண்ணோட்டத்தை காட்டு" means "Show general overview of the wallet" rather than "Browse transaction history". The source refers specifically to browsing through the history of transactions, not a general overview of the wallet.
+YES
+The translation is inaccurate. The source says "Browse transaction history," but the translation says "Show wallet overview" ("பணப்பை பொது கண்ணோட்டத்தை காட்டு"), which is incorrect.
 
-A more accurate translation would be:  
-"பரிவர்த்தனை வரலாற்றைக் காண்க"
+Correct translation:
+பரிவர்த்தனை வரலாற்றை ஆராய்க
 ```
 
 ```
         <source>Send coins to a Bitcoin address</source>
         <translation>ஒரு விக்கிபீடியா முகவரிக்கு நாணயங்களை அனுப்பவும்</translation>
     
-YES  
-The translation incorrectly uses "விக்கிபீடியா" which means "Wikipedia" instead of "Bitcoin." This is a significant error in the context of Bitcoin transactions. The correct word for Bitcoin should be "பிட்காயின்."  
+YES
+The translation incorrectly uses "விக்கிபீடியா" (Wikipedia) instead of "பிட்காயின்" (Bitcoin). Also, "coins" can be translated as "நாணயங்கள்", and "address" as "முகவரி". The translation should directly refer to Bitcoin, not Wikipedia.
 
-Correct translation:  
+Correct translation:
 ஒரு பிட்காயின் முகவரிக்கு நாணயங்களை அனுப்பவும்
 ```
 
@@ -237,126 +215,93 @@ Correct translation:
         <source>Backup wallet to another location</source>
         <translation>வேறொரு இடத்திற்கு காப்புப் பெட்டகம்</translation>
     
-YES  
-The translation is incomplete and incorrect. "Backup wallet to another location" implies an action (to back up the wallet), but the Tamil translation "வேறொரு இடத்திற்கு காப்புப் பெட்டகம்" literally means "Backup box to another place," which is nonsensical and does not convey the action.
+YES
+The translation is incomplete; it only says "wallet to another location" without conveying the action "backup." The term "காப்புப் பெட்டகம்" alone literally means "safe/vault" or "wallet," and does not mean "backup wallet." The verb “backup” (as in to create a backup) is missing.
 
-Correct translation:  
-"பணப்பை வேறொரு இடத்திற்கு காப்புப்பிரதி எடு"  
-(This means "Take a backup of the wallet to another location.")
+Correct translation:
+வேறொரு இடத்துக்குப் பற் பதி உருவாக்கவும் (or) பங்கிடவும்
+
+Alternatively, for more clarity:
+வாலட்டின் பின்பற்றுப் பிரதியை வேறு இடத்திற்கு எடுக்கவும்
+
+Either would be contextually correct.
 ```
 
 ```
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
         <translation>உங்கள் பிட்டினின் முகவரியுடன் செய்திகளை உங்களிடம் வைத்திருப்பதை நிரூபிக்க</translation>
     
-YES  
-The translation is incomplete and somewhat incorrect. It misses the verb "to sign" as an action and does not clearly convey the meaning of proving ownership by signing messages. Also, "Bitcoin addresses" is mistranslated as "பிட்டினின் முகவரி" which is not the correct transliteration or common term used for "Bitcoin" in Tamil.
+YES
+The Tamil translation is incomplete and inaccurate. It omits the verb and the instruction to "sign messages" using the Bitcoin address, and also "addresses" should be plural.
 
-Correct translation:  
-உங்கள் Bitcoin முகவரிகளுடன் செய்திகளை கையொப்பமிட்டு, அவை உங்கள் சொந்தமானவை என்பதை நிரூபிக்கவும்
+Correct translation:
+உங்களது பிட்ட்காயின் முகவரிகளைப் பயன்படுத்தி செய்திகளுக்கு கையொப்பமிடுங்கள், இது அவற்றை உங்களுக்கு சொந்தமானவை என்று நிரூபிக்க உதவும்.
 ```
 
 ```
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
         <translation>குறிப்பிடப்பட்ட விக்கிபீடியா முகவர்களுடன் கையொப்பமிடப்பட்டதை உறுதிப்படுத்த, செய்திகளை சரிபார்க்கவும்</translation>
     
-YES  
-The translation incorrectly refers to "Bitcoin addresses" as "விக்கிபீடியா முகவர்கள்" which means "Wikipedia addresses" in Tamil. This is erroneous and misleading.
+YES
+The translation is problematic for two reasons:
+1. The translation wrongly refers to "விக்கிபீடியா" (Wikipedia) instead of "பிட்காயின்" (Bitcoin).
+2. The wording can be improved for clarity and naturalness.
 
-Correct translation:  
-குறிப்பிடப்பட்ட பிட்காயின் முகவரிகளுடன் கையொப்பமிடப்பட்டதை உறுதிப்படுத்த, செய்திகளை சரிபார்க்கவும்
+Correct translation:
+குறிப்பிடப்பட்ட பிட்காயின் முகவர்களுடன் கையொப்பமிடப்பட்டுள்ளதை உறுதிப்படுத்த, செய்திகளை சரிபார்க்கவும்
 ```
 
 ```
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
         <translation>கொடுப்பனவுகளை கோருதல் (QR குறியீடுகள் மற்றும் bitcoin உருவாக்குகிறது: URI கள்)</translation>
     
-YES  
-The Tamil translation is somewhat awkward and not fully accurate. The phrase "bitcoin: URIs" should be integrated correctly, and the grammar needs improvement to reflect the meaning properly. The part "bitcoin: URIs" should not be split or altered; it should appear as is after a space or colon. Also, the verb "generates" is better translated more naturally.
+YES
+The translation has issues:
+1. "bitcoin உருவாக்குகிறது: URI கள்" incorrectly makes it seem like "bitcoin" is producing something. The original refers to generating "bitcoin: URIs".
+2. There is excess spacing and a pluralization error: "URI கள்" should be "URIகளை".
+3. The phrase is more naturally translated as "பணம் கேட்கும் கோரிக்கை (QR குறியீடுகள் மற்றும் bitcoin: URI களை உருவாக்குகிறது)" but better to keep the sentence accurate and simple.
 
-Correct translation:  
-கொடுப்பனவுகளை கோருதல் (QR குறியீடுகள் மற்றும் bitcoin: URI களை 생성ிக்கிறது)
+Correct translation:
+பணம் கோருதல் (QR குறியீடுகள் மற்றும் bitcoin: URIகளை உருவாக்குகிறது)
 ```
 
 ```
         <source>Up to date</source>
         <translation>தேதி வரை</translation>
     
-YES  
-The translation "தேதி வரை" literally means "up to the date" or "until the date," which does not correctly convey the English meaning "Up to date" as in "current" or "updated." In Tamil for the context of "Up to date," a more appropriate translation is "புதுப்பிக்கப்பட்டது" or "புதுப்பிக்கப்பட்டதை," but the common short phrase is "நவீனமாக உள்ளது" or simply "புதுமையானது."
+YES
+The translation "தேதி வரை" literally means "till date" or "until date," but "Up to date" in software/UI context usually means "நவீனமடைந்தது" or "இப்போதைய நிலை." The current translation is not idiomatic for this context.
 
-Correct translation:  
-நவீனமானது
-```
-
-```
-        <source>Open node debugging and diagnostic console</source>
-        <translation>திற நோட் பிழைத்திருத்தம் மற்றும் கண்டறியும் பணியகம்</translation>
-    
-YES  
-The Tamil translation is somewhat literal and unusual. The word "node" is transliterated as "நோட்" which is not common in Tamil technical usage; the more accurate transliteration would be "கழுத்து" or better to keep "node" as "நோடு" (closer phonetic) or simply transliterate as "நோடு". The phrase "பிழைத்திருத்தம் மற்றும் கண்டறியும் பணியகம்" for "debugging and diagnostic console" is awkward and not standard. A more natural and accurate translation for "Open node debugging and diagnostic console" in Tamil (especially in Bitcoin or technical context) would be:
-
-"கழுத்து பிழைதிருத்தம் மற்றும் கண்டறிதல் பணியகம் திற" or  
-if "node" is kept as "நோடு":  
-"நோடு பிழைதிருத்தம் மற்றும் கண்டறிதல் கன்சோல் திற"  
-
-Using "கன்சோல்" (console) is common in Tamil technical translations rather than "பணியகம்" which means "office" or "facility" and is out of context here.
-
-Correct translation:  
-திற நோடு பிழைதிருத்தம் மற்றும் கண்டறிதல் கன்சோல்
+Correct translation:
+நவீனமடைந்தது
 ```
 
 ```
         <source>Sending addresses</source>
         <translation>முகவரிகள் அனுப்புகிறது</translation>
     
-YES  
-The translation "முகவரிகள் அனுப்புகிறது" means "Address is sending" or "Sending addresses" in a singular/continuous tense which is not appropriate as a label or noun phrase. The English source "Sending addresses" likely refers to a list or group of addresses being sent, so it should be a noun phrase.
+YES
+The translation is incorrect. The given translation "முகவரிகள் அனுப்புகிறது" translates back as "addresses is sending", which is grammatically wrong and unclear in Tamil. It should refer to "addresses used for sending" (i.e., "sending addresses").
 
-A better translation would be a nominal form like:  
-"அனுப்பும் முகவரிகள்"  
-which means "Sending addresses" as a plural noun phrase.
+Correct translation:
+அனுப்பும் முகவரிகள்
 ```
 
 ```
         <source>Open a bitcoin: URI</source>
         <translation>திற பிட்காயின்: URI</translation>
     
-YES  
-The Tamil translation is inaccurate and contains errors. The English phrase "Open a bitcoin: URI" is an instruction or command to open a URI (Uniform Resource Identifier) that starts with "bitcoin:". The Tamil translation "திற பிட்காயின்: URI" attempts to translate "Open" but "திற" is incomplete or incorrect for "Open" in this context and "பிட்காயின்" is a non-standard transliteration for "bitcoin" (usually "பிட்காயின்" is acceptable, but it should be handled carefully), and the structure does not read naturally. Also, the colon ":" should remain as is, immediately following "bitcoin" without a space.
+YES
+The Tamil translation "திற பிட்காயின்: URI" is inaccurate and unnatural. The word "Open" should be translated as "திற" (which is correct), but the phrase "பிட்காயின்: URI" is awkward and does not match the natural usage in Tamil. The English format "bitcoin: URI" refers to a type of resource identifier, and the ":" should remain joined to "bitcoin" without an intervening space, and "URI" can either be transliterated or kept as-is if not commonly translated.
 
-A more accurate and natural Tamil translation would be:  
-"bitcoin: URI ஐத் திற"  
+Correct translation:
+பிட்காயின்: URI-ஐ திற
 
-Explanation:  
-- "bitcoin:" remains as "bitcoin:" (in English letters without translation since it's a technical identifier).  
-- "URI" remains as is.  
-- "ஐத் திற" means "open (the)" with the accusative case marker for "URI".  
-
-Correct translation:  
-<translation>bitcoin: URI ஐத் திற</translation>
-```
-
-```
-        <source>HD key generation is &lt;b&gt;enabled&lt;/b&gt;</source>
-        <translation>HD முக்கிய தலைமுறை &lt;b&gt;இயக்கப்பட்டது&lt;/b&gt;</translation>
-    
-YES  
-The translation is incomplete and improperly formatted. It misses the closing </translation> tag and is a fragment rather than a full sentence equivalent to the source. The English source "HD key generation is <b>enabled</b>" should be translated fully and correctly in Tamil, preserving the emphasis tags and meaning.
-
-Correct translation:  
-HD விசை தலைமுறை &lt;b&gt;இயக்கப்பட்டுள்ளது&lt;/b&gt;
-```
-
-```
-        <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
-        <translation>HD முக்கிய தலைமுறை &lt;b&gt;முடக்கப்பட்டுள்ளது&lt;/b&gt;</translation>
-    
-YES  
-The translation has a missing closing tag for the <translation> element and the phrase "HD key generation" is better translated as "HD முக்கிய விசை உருவாக்கம்" to accurately reflect "key generation". Also, the original uses "disabled" and translates it correctly as "முடக்கப்பட்டுள்ளது" but the phrase feels incomplete without "உருவாக்கம்" (generation).  
-
-Correct translation:  
-HD முக்கிய விசை உருவாக்கம் &lt;b&gt;முடக்கப்பட்டுள்ளது&lt;/b&gt;
+Explanation: 
+- Retains the "bitcoin:" part as "பிட்காயின்:"
+- The URI is left as-is, which is acceptable in technical contexts.
+- The verb is more naturally placed last, as is common in Tamil sentence structure.
+- Added "-ஐ" to mark the accusative case (object marker), making the sentence grammatically correct.
 ```
 
 ```
@@ -364,34 +309,23 @@ HD முக்கிய விசை உருவாக்கம் &lt;b&gt;�
         <translation>விலை</translation>
     
 YES
-The translation "விலை" means "price" or "cost," which is incorrect in this context. The English source "Amount:" refers to a quantity or sum, not price.
+The translation "விலை" means "price" in Tamil, which is not the same as "amount". In the context of Bitcoin and finance, "Amount" should be translated as "தொகை".
 
 Correct translation:
-"மொத்தம்:" or "தொகை:"
+தொகை
 ```
 
 ```
         <source>(un)select all</source>
         <translation>(அனைத்தையும் தேர்வுநீக்கு)</translation>
     
-YES  
-The translation "(அனைத்தையும் தேர்வுநீக்கு)" is incomplete and incorrect for "(un)select all". It only conveys "deselect all" or a phrase related to deselecting everything within parentheses, but it does not properly represent the dual meaning "(un)select all" indicating both select and unselect. The parentheses are likely literal here and should be preserved outside the translated text.
+YES
+The translation "(அனைத்தையும் தேர்வுநீக்கு)" only covers "deselect all" (unselect all) and does not cover the meaning of both "select all" and "unselect all". The term "(un)select all" is typically used to indicate a toggle action between selecting and unselecting everything.
 
-A better translation that covers both "select all" and "unselect all" in Tamil, with the parentheses preserved, would be:  
+Correct translation:
+(அனைத்தையும் தேர்வு/தேர்வுநீக்கு)
 
-"(அனைத்தையும் தேர்வு / தேர்வுநீக்கு)"  
-
-or a compact translation representing toggle select/unselect:
-
-"(அனைத்தையும் தேர்வு செய்யவும் / தேர்வை நீக்கவும்)"  
-
-However, since the source is "(un)select all", a commonly accepted way is to keep parentheses and translate the core words accordingly.  
-
-Correct translation:  
-"(அனைத்தையும் (தேர்வு / தேர்வுநீக்கு))"  
-
-Or simply:  
-"(அனைத்தையும் தேர்வு / தேர்வுநீக்கு)"
+This properly represents both actions—Select all (அனைத்தையும் தேர்வு) and Deselect all (அனைத்தையும் தேர்வுநீக்கு).
 ```
 
 ```
@@ -399,36 +333,39 @@ Or simply:
         <translation>விலை</translation>
     
 YES
-The translation of "Amount" as "விலை" is incorrect. "விலை" means "price" in Tamil, which is not appropriate in the Bitcoin context where "Amount" usually refers to the quantity or value, e.g., of Bitcoin.
-
-A more accurate translation would be:
-"மொத்தம்" or "தொகை"
+The translation "விலை" means "price" in Tamil, which is not the correct term for "amount" in the context of Bitcoin transactions. The term "தொகை" is more appropriate for "amount".
 
 Correct translation:
-<translation>மொத்தம்</translation>
+தொகை
 ```
 
 ```
         <source>Received with address</source>
         <translation>முகவரி பெற்றார்</translation>
     
-YES  
-The translation "முகவரி பெற்றார்" means "received (he/she) address" or "address received (he/she)," which is grammatically awkward and does not convey the intended meaning in the context of Bitcoin transactions ("Received with address"). The phrase is likely referring to funds or amount received associated with a particular address.
+YES
+The translation "முகவரி பெற்றார்" is incorrect. In Tamil, this means "address received (by)" or "address was received", which distorts the intended meaning. The correct translation in the context of Bitcoin ("Received with address" means the coins were received via a specific address) should be:
 
-A better translation would be:  
-"முகவரியுடன் பெற்றது"  
-which literally means "Received with address," preserving the intended context.
+Correct translation:
+முகவரியில் பெற்றதும்
+
+Alternatively:
+முகவரியில் பெறப்பட்டது
+
+Either would properly convey "Received with address" in this context.
 ```
 
 ```
         <source>Copy amount</source>
         <translation>நகல் நகல்</translation>
     
-YES  
-The translation "நகல் நகல்" literally means "copy copy," which is a repetition and not a natural or accurate translation of "Copy amount." The correct translation should convey the action of copying an amount. A more appropriate translation would be:  
-"தொகையை நகலெடுக்க" or simply "தொகையை நகலெடு" depending on context.  
-Correct translation:  
-"தொகையை நகலெடுக்க"
+YES
+The translation "நகல் நகல்" is incorrect. It literally means "copy copy" and does not convey the intended meaning of "Copy amount". The correct translation should be:
+
+மொத்தத்தை நகலெடுக்கவும்
+
+Correct translation:
+மொத்தத்தை நகலெடுக்கவும்
 ```
 
 ```
@@ -436,30 +373,32 @@ Correct translation:
         <translation>அளவு அளவு</translation>
     
 YES
-The translation "அளவு அளவு" literally means "quantity quantity," which is a repetition and not an accurate translation of the English phrase "Copy quantity." The word "Copy" in this context is a verb instructing the user to copy the quantity, so it should be translated accordingly.
+The translation duplicates the word "அளவு" (quantity), resulting in "அளவு அளவு", which means "quantity quantity." This is incorrect.
 
 Correct translation:
-"அளவை நகலெடுக்கவும்"
+அளவை நகலெடு
 ```
 
 ```
         <source>Copy after fee</source>
         <translation>நகல் கட்டணம்</translation>
     
-YES  
-The translation "நகல் கட்டணம்" literally means "copy fee" or "copy payment," which does not accurately convey the meaning of "Copy after fee." The source phrase likely means to "Copy [amount or value] after deducting the fee," so "after fee" should be clearly indicated. A better translation would be:  
-"கட்டணத்திற்கு பிறகு நகல்"
+YES
+The translation "நகல் கட்டணம்" means "copy fee" which inaccurately translates "Copy after fee". The correct meaning is to copy the amount remaining after the fee has been deducted. The translation does not reflect the "after fee" concept.
+
+Correct translation:
+கட்டணத்தைக் கழித்த பிறகு நகலெடு
 ```
 
 ```
         <source>Copy bytes</source>
         <translation>நகல் கட்டணம்</translation>
     
-YES  
-The translation "நகல் கட்டணம்" means "copy fee" or "copy charge," which is incorrect for "Copy bytes." The correct translation should reflect the action of copying bytes (data units), not a fee or charge.
+YES
+The translation is incorrect. "நகல் கட்டணம்" means "copy fee," not "Copy bytes." The correct translation for "Copy bytes" in Tamil should be "பைட்டுகளை நகலெடு".
 
-Correct translation:  
-நகல் பைட்டுகள்
+Correct translation:
+பைட்டுகளை நகலெடு
 ```
 
 ```
@@ -467,10 +406,10 @@ Correct translation:
         <translation>முகவரி முகவரியுடன் தொடர்புடைய முகவரி முகவரி. முகவரிகள் அனுப்புவதற்கு இது மாற்றியமைக்கப்படலாம்.</translation>
     
 YES
-The translation is redundant and awkward, repeating the word "முகவரி" (address) multiple times unnecessarily, which makes it confusing and inaccurate. Also, the original meaning about "the address associated with this address list entry" and "can only be modified for sending addresses" is not clearly conveyed.
+The translation is problematic. The word "முகவரி" (address) is unnecessarily repeated, making it redundant and confusing. The sentence is not clear and does not convey the original message accurately.
 
 Correct translation:
-"இந்த முகவரி பட்டியல் பதிவுடன் தொடர்புடைய முகவரி. அனுப்பும் முகவரிகளுக்குப் பயன்படுத்தப்படும் போது மட்டுமே இது மாற்றக்கூடியது."
+இந்த முகவரி பட்டியல் உள்ளீட்டுடன் தொடர்புடைய முகவரி. இது அனுப்பும் முகவரிகளுக்காக மட்டுமே மாற்றியமைக்க முடியும்.
 ```
 
 ```
@@ -478,102 +417,65 @@ Correct translation:
         <translation>முகவரி அனுப்பும் புதியது</translation>
     
 YES
-The translation "முகவரி அனுப்பும் புதியது" is somewhat literal and unnatural in Tamil. It incorrectly breaks down to "address sending new," which doesn't sound correct or clear. The phrase "New sending address" in the context of Bitcoin wallet addresses is best translated as:
+The translation is not natural and the word order is incorrect. "New sending address" should be translated as "புதிய அனுப்பும் முகவரி" in Tamil.
 
+Correct translation:
 புதிய அனுப்பும் முகவரி
-
-This places the adjective "புதிய" (new) before "அனுப்பும் முகவரி" (sending address), making it clear and natural.
 ```
 
 ```
         <source>Edit receiving address</source>
         <translation>முகவரியைப் பெறுதல் திருத்து</translation>
     
-YES  
-The translation "முகவரியைப் பெறுதல் திருத்து" literally means "Edit receiving of the address," which is somewhat unnatural and awkward in Tamil. The phrase does not clearly convey "Edit receiving address" as intended (where "receiving address" is a noun phrase referring to a Bitcoin wallet or network address used for receiving funds).
+YES
+The Tamil translation is incorrect and unnatural. The correct translation should convey "Edit the receiving address" (i.e., edit an address used for receiving funds). The given translation awkwardly phrases "to receive, edit address".
 
-A more accurate and natural Tamil translation would be:  
-"பெறுமுகவரியை திருத்து"  
-
-Here, "பெறுமுகவரி" means "receiving address," and "திருத்து" means "edit." This correctly reflects the intended meaning without awkward phrasing.
+Correct translation:
+பெறும் முகவரியை திருத்து
 ```
 
 ```
         <source>The entered address "%1" is not a valid Bitcoin address.</source>
         <translation>உள்ளிட்ட முகவரி "%1" என்பது செல்லுபடியாகும் விக்கிபீடியா முகவரி அல்ல.</translation>
     
-YES  
-The translation incorrectly refers to "விக்கிபீடியா முகவரி" (Wikipedia address) instead of "Bitcoin address." This is erroneous and could confuse the user. The correct translation should refer to a valid Bitcoin address.
+YES
+The translation is problematic because it translates "Bitcoin address" as "விக்கிபீடியா முகவரி" (Wikipedia address), which is incorrect. It should be "பிட்ட்காயின் முகவரி" (Bitcoin address).
 
-Correct translation:  
-உள்ளிட்ட முகவரி "%1" செல்லுபடியாகும் Bitcoin முகவரி அல்ல.
-```
-
-```
-        <source>The wallet will also be stored in this directory.</source>
-        <translation>பணத்தாள் இந்த அடைவில் சேமிக்கப்படும்.</translation>
-    
-YES  
-The translation "பணத்தாள் இந்த அடைவில் சேமிக்கப்படும்." translates back roughly as "The wallet will be stored in this folder" but misses the word "also" which is important for indicating that in addition to something else, the wallet will be stored here as well. Additionally, the term "அடைவில்" (folder/directory) is correct. To better capture the meaning including "also," a more accurate translation would be:
-
-"பணத்தாள் இதே அடைவிலும் சேமிக்கப்படும்."  
-or  
-"பணத்தாள் இதற்கு கூட சேமிக்கப்படும்."  
-
-Including words like "கூட" (also) or "இதே" (this) to clarify "also in this directory."
-
-Correct translation:  
-பணத்தாள் இதே அடைவிலும் சேமிக்கப்படும்.
+Correct translation:
+உள்ளிடப்பட்ட முகவரி "%1" என்பது செல்லுபடியாகும் பிட்ட்காயின் முகவரி இல்லை.
 ```
 
 ```
         <source>Estimated time left until synced</source>
         <translation>ஒத்திசைக்கப்படும் வரை மதிப்பிடப்பட்ட நேரங்கள் உள்ளன</translation>
     
-YES  
-The Tamil translation is awkward and slightly inaccurate. The source phrase "Estimated time left until synced" refers to the amount of time remaining for synchronization to complete, which is a singular duration (time), not plural ("நேரங்கள்" means "times/hours" plural). Moreover, the phrasing should clearly convey the remaining estimated time until synchronization is complete.
+YES
+The translation is somewhat erroneous and awkward. The source says "Estimated time left until synced," but the Tamil translation reads "ஒத்திசைக்கப்படும் வரை மதிப்பிடப்பட்ட நேரங்கள் உள்ளன" which literally means "There are estimated times until it will be synced." It's better to say "ஒத்திசைக்கப்படும் வரை மதிப்பிடப்பட்ட நேரம்" which means "Estimated time until synced." The plural "நேரங்கள்" and "உள்ளன" are inappropriate here.
 
-A more natural and accurate translation would be:  
-"ஒத்திசைவு முடியும் வரை மதிப்பிடப்பட்ட காலம்"  
-which literally means "Estimated time until synchronization completes."
-
-Correct translation:  
-<translation>ஒத்திசைவு முடியும் வரை மதிப்பிடப்பட்ட காலம்</translation>
-```
-
-```
-        <source>Open bitcoin URI</source>
-        <translation>பிட்காயின் யூ. ஆர். ஐ.யை திர</translation>
-    
-YES  
-The Tamil translation is incomplete and incorrect. The intended meaning is "Open bitcoin URI," but the translation "பிட்காயின் யூ. ஆர். ஐ.யை திர" is cut off and does not form a complete or meaningful phrase.  
-
-Correct translation:  
-பிட்காயின் URI-ஐ திறக்
+Correct translation:
+ஒத்திசைக்கப்படும் வரை மதிப்பிடப்பட்ட நேரம்
 ```
 
 ```
         <source>Prune block storage to</source>
         <translation>பிரவுன்  தடுப்பு சேமிப்பு</translation>
     
-YES  
-The translation "பிரவுன் தடுப்பு சேமிப்பு" is incorrect and unclear in Tamil. It does not convey the intended meaning of "Prune block storage to," where "prune" refers to reducing or trimming block storage. The term "பிரவுன்" is just a transliteration of "prune" and does not have meaning in Tamil. Also, the phrase is incomplete and misses the target of setting a limit or value (implied by "to").
+YES
+The translation is incomplete and does not convey the meaning of "to" (which indicates a size or limit). "Prune" is also transliterated instead of translated. 
 
-Correct translation:  
-"பிளாக்குச் சேமிப்பை சுருக்கவும்"  
-or more explicitly, if indicating a limit:  
-"பிளாக்குச் சேமிப்பை %1 வரை சுருக்கவும்"  
-
-(Note: The "%1" should be included if the source continues with a size or number after "to.")
+Correct translation:
+தடுப்பு சேமிப்பை குறைத்து கொண்டிருக்க (to a size)
 ```
 
 ```
         <source>Allow incoming connections</source>
         <translation>Incomin  g இணைப்புகளை அனுமதிக்கவும்</translation>
     
-YES  
-The translation contains a spacing error in the word "Incoming" which is split into "Incomin  g". The correct Tamil translation for "Allow incoming connections" would be:  
-"உள்ளே வரும் இணைப்புகளை அனுமதிக்கவும்"
+YES
+There is a typographical error: "Incomin  g" has an unnecessary space and is in English instead of Tamil. The translation should be entirely in Tamil.
+
+Correct translation:
+செயல்படுத்தும் இணைப்புகளை அனுமதிக்கவும்
 ```
 
 ```
@@ -581,43 +483,43 @@ The translation contains a spacing error in the word "Incoming" which is split i
         <translation> போர்ட்:</translation>
     
 YES
-There is an extra leading whitespace before the translated word "போர்ட்:". The translation should not have leading spaces.
+There is an unnecessary leading space before "போார்ட்:". There should be no space at the start of the translation.
 
 Correct translation:
-<translation>போர்ட்:</translation>
+போர்்ட்:
 ```
 
 ```
         <source>Minimize to the tray instead of the taskbar</source>
         <translation> Taskbar க்கு பதிலாக தட்டில் குறைக்கவும்</translation>
     
-YES  
-The translation has a leading space before "Taskbar", which is a whitespace format issue. Also, "தட்டில்" is a literal translation of "tray," but in UI context, "tray" (system tray) is often kept as "System Tray" or translated as "சிஸ்டம் ட்ரே". Also, the word "taskbar" appears in English instead of being transliterated or translated, which is acceptable if the term is well known, but a more consistent approach is recommended. The phrase is understandable but can be polished for clarity and formatting.
+YES
+There is an unnecessary space at the beginning of the translation. Also, "tray" can be better translated as "System Tray" for clarity, "தட்டி" (thatti) is not a commonly used term for 'system tray' in Tamil; "சிஸ்டம் டிரே" is preferred. 
 
-Correct translation:  
-Taskbar க்கு பதிலாக டிரேயில் குறைக்கவும்
+Correct translation:
+பணிப் பட்டிக்குப் பதிலாக சிஸ்டம் டிரேவில் குறைக்கவும்
 ```
 
 ```
         <source>Minimize on close</source>
         <translation>எம்  நெருக்கமாக உள்ளமை</translation>
     
-YES  
-The translation "எம்  நெருக்கமாக உள்ளமை" is incorrect and does not convey the meaning "Minimize on close." The phrase contains unnecessary extra spacing and is not a proper translation.
+YES
+The translation is incorrect. The provided Tamil translation ("எம்  நெருக்கமாக உள்ளமை") does not convey the meaning of "Minimize on close". There is also an unnecessary extra space after "எம்".
 
-Correct translation:  
-"மூடும்போது குறைக்கவும்"
+Correct translation:
+மூடும்போது குறைத்து வைக்கவும்
 ```
 
 ```
         <source>Unit to show amounts in:</source>
         <translation> அளவு:</translation>
     
-YES  
-The translation is incomplete and does not convey the meaning of "Unit to show amounts in:". It only translates as "Amount:" with a leading space, which is unnecessary formatting-wise and incorrect in content.
+YES
+The translation is incomplete and does not convey the full meaning of the source text. The phrase "Unit to show amounts in:" provides context that is missing in the translation, which only says "amount:".
 
-Correct translation:  
-அளவுகள் காண்பிக்கும் அலகு:
+Correct translation:
+அளவை காண்பிக்க வேண்டிய அலகு:
 ```
 
 ```
@@ -626,12 +528,10 @@ Correct translation:
         <translation>GUI அமைப்புகளை மேலெழுதக்கூடிய மேம்பட்ட பயனர் விருப்பங்களைக் குறிப்பிட கட்டமைப்பு கோப்பு பயன்படுத்தப்படுகிறது. கூடுதலாக, எந்த கட்டளை வரி விருப்பங்கள் இந்த கட்டமைப்பு கோப்பு புறக்கணிக்க வேண்டும்.</translation>
     
 YES
-The Tamil translation is somewhat awkward and partially inaccurate. In particular, the phrase "இந்த கட்டமைப்பு கோப்பு புறக்கணிக்க வேண்டும்" literally means "this configuration file must be ignored," which is incorrect. The source says "any command-line options will override this configuration file," meaning command-line options take priority over the config file.
-
-A better translation would clarify that command-line options override the configuration file, not ignore it.
+There are issues in translation accuracy and clarity. The last sentence is grammatically incorrect and changes the meaning; it should state that command-line options override the configuration file, not that they "must ignore" it. Also, "override" is better translated as "மீறுகிறது" or similar terms for clarity.
 
 Correct translation:
-"GUI அமைப்புகளை மேலெழுதக்கூடிய மேம்பட்ட பயனர் விருப்பங்களை குறிப்பிட இந்த கட்டமைப்பு கோப்பு பயன்படுத்தப்படுகிறது. கூடுதலாக, எந்த கட்டளை வரி விருப்பங்களும் இந்த கட்டமைப்பு கோப்பை மேலெழுதும்."
+GUI அமைப்புகளை மீறக்கூடிய மேம்பட்ட பயனர் விருப்பங்களை குறிப்பிடும் வகையில் கட்டமைப்பு கோப்பு பயன்படுத்தப்படுகிறது. அதனைத் தவிர, எந்த கட்டளை வரி விருப்பங்களும் இந்த கட்டமைப்பு கோப்பை மீறும்.
 ```
 
 ```
@@ -639,31 +539,20 @@ Correct translation:
         <translation>இன்னும் முதிர்ச்சியடைந்த மின்கல சமநிலை</translation>
     
 YES
-The translation incorrectly translates "Mined balance that has not yet matured" as "இன்னும் முதிர்ச்சியடைந்த மின்கல சமநிலை," which means "Mined balance that has already matured," reversing the intended meaning. The correct translation should convey that the mined balance is *not yet* matured.
+The translation in Tamil means "the matured mined balance", which is the opposite of the intended meaning "mined balance that has not yet matured".
 
 Correct translation:
-இன்னும் முதிராத மின்கல் சமநிலை
-```
-
-```
-        <source>Mined balance in watch-only addresses that has not yet matured</source>
-        <translation>இன்னும் முதிர்ச்சியடையாமல் இருக்கும் கண்காணிப்பு மட்டும் முகவரிகளில் மின்தடப்பு சமநிலை</translation>
-    
-YES  
-The translation incorrectly uses "மின்தடப்பு" which means "electric shock" instead of referring to a "mined" balance in Bitcoin context. Also, the phrase "கண்காணிப்பு மட்டும் முகவரிகளில்" is an awkward literal translation for "watch-only addresses." A more appropriate phrase for "mined balance" and "watch-only addresses" should be used to convey the technical Bitcoin terminology clearly.
-
-Correct translation:  
-இன்னும் முதிர்ச்சி அடையாத கண்காணிப்பு முகவரிகளில் சுரண்டப்பட்ட இருப்பு
+இன்னும் முதிர்ச்சி அடையாத மையப்பட்ட சமநிலை
 ```
 
 ```
         <source>Close</source>
         <translation>நெருக்கமான</translation>
     
-YES  
-The Tamil translation "நெருக்கமான" means "close" as in "tight" or "intimate," which is incorrect for a UI button or command meaning "Close" (to shut a window or dialog). The correct Tamil translation for a "Close" button is "மூடு".  
+YES
+The Tamil translation "நெருக்கமான" means "close" as in "near" or "intimate", not "to close" as an action (e.g., closing a window). The correct translation for the verb "Close" in UI contexts is "மூடு".
 
-Correct translation:  
+Correct translation:
 மூடு
 ```
 
@@ -672,31 +561,35 @@ Correct translation:
         <translation>Bitcoin தொடங்க முடியாது: கிளிக் க்கு ஊதியம் கையாளுதல்</translation>
     
 YES
-The translation inaccurately renders "click-to-pay handler." The phrase "கிளிக் க்கு ஊதியம் கையாளுதல்" literally means "click for payment handling," which is a poor and misleading translation of "click-to-pay handler." A better and clearer translation, preserving the technical meaning, could be:
+The Tamil translation is awkward and not fully accurate. The phrase "கிளிக் க்கு ஊதியம் கையாளுதல்" is a word-for-word rendition and does not clearly convey the idea of a "click-to-pay handler" in technical context. Also, spacing around "க்கு" is incorrect; it should be one word.
 
-Bitcoin தொடங்க முடியவில்லை: கிளிக்-டூ-பெய் ஹேண்ட்லர்
+Correct translation:
+Bitcoin ஐத் தொடங்க முடியவில்லை: கிளிக்-பே செய்யும் நிரலை இயக்க முடியவில்லை
 ```
 
 ```
         <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
         <translation>'bitcoin: //' சரியான URI அல்ல. அதற்கு பதிலாக 'பிட்கின்:' பயன்படுத்தவும்.</translation>
     
-YES  
-The translation incorrectly adds a space between 'bitcoin:' and '//', which changes the original meaning and is incorrect formatting for the URI scheme. Also, 'பிட்கின்:' is a mistransliteration of 'bitcoin:' which should be 'பிட்காய்:' or better, simply use 'bitcoin:' as is.  
+YES
+There are a couple of issues:
+- There is an extra space in "'bitcoin: //'". It should be "'bitcoin://'" (no space).
+- The translation says 'பிட்கின்:' for 'bitcoin:', but the commonly used transliteration for Bitcoin in Tamil is 'பிட்காயின்'. However, using 'bitcoin:' itself is often retained in technical usage.
+- The rest of the translation is acceptable, but it's clearer and more standard if kept closer to the source.
 
-Correct translation:  
-'bitcoin://' சரியான URI அல்ல. அதற்கு பதிலாக 'bitcoin:' பயன்படுத்தவும்.
+Correct translation:
+'bitcoin://' ஒரு சரியான URI அல்ல. அதற்கு பதிலாக 'bitcoin:' ஐ பயன்படுத்தவும்.
 ```
 
 ```
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
         <translation>யு.ஐ.ஐ. முடிவுக்கு நீண்ட காலம், லேபிள் / செய்திக்கு உரைகளை குறைக்க முயற்சிக்கவும்.</translation>
     
-YES  
-The translation is inaccurate and somewhat confusing. The term "URI" should remain as is or be transliterated properly. The phrase "Resulting URI too long" indicates that the URI generated is excessively long, but the translation "முடிவுக்கு நீண்ட காலம்" literally means "long to the end time," which is incorrect. Also, "யு.ஐ.ஐ." is an incorrect transliteration for URI. It should be "URI" or "யூர்ஐ". The second part "try to reduce the text for label / message" is roughly translated but can be clearer and more natural.
+YES
+The translation is problematic. The English text is about the URI (Uniform Resource Identifier) being too long, not about a "long time" ("நீண்ட காலம்" means "long period/time" in Tamil). Also, "யு.ஐ.ஐ." is a literal transliteration of "URI", which is nonstandard in Tamil technical contexts, where "URI" is typically used as is or translated as "முகவரி".
 
-Correct translation:  
-"உண்டாகும் URI மிகவும் நீளமாகியுள்ளது, லேபிள் / செய்திக்கான உரையை குறைக்க முயற்சிக்கவும்."
+Correct translation:
+URI மிக நீளமாக உள்ளது, லேபிள் அல்லது செய்திக்கான உரையை குறைக்கும் முயற்சி செய்யவும்.
 ```
 
 ```
@@ -704,74 +597,70 @@ Correct translation:
         <translation>கடைசியாக பெறவும்</translation>
     
 YES
-The translation "கடைசியாக பெறவும்" incorrectly adds a verb form "also receive" (imperative). The English phrase "Last Receive" likely refers to the last received amount or event, implying a noun or adjective usage, not an imperative verb.
+The translation "கடைசியாக பெறவும்" literally means "Lastly, receive (imperative)", which is not appropriate for the context where "Last Receive" actually refers to the most recent time something was received (e.g., payment, data). The correct rendering should be noun-based, not imperative.
 
 Correct translation:
-"கடைசி பெறுதல்" or simply "கடைசி பெறல்" (meaning "Last Receive" as a noun phrase)
+கடைசியாக பெற்றது
 ```
 
 ```
         <source>None</source>
         <translation>யாரும்</translation>
     
-YES  
-The English word "None" here likely means "nothing" or "no value," and in the Bitcoin context, it could indicate the absence of something (like no addresses, no transactions, etc.). The Tamil translation "யாரும்" means "no one" or "anyone," which is typically used to refer to people, not a null or empty value.  
+YES
+The translation "யாரும்" means "no one" (as in "no person") in Tamil, but the context is "None" (probably as a selectable option meaning "nothing" or "no selection"). The correct term should be "எதுவும் இல்லை" or simply "இல்லை".
 
-A more accurate Tamil translation for "None" in this context would be: "எதுவும் இல்லை" (which means "nothing" or "none").
-```
-
-```
-        <source>Executing command without any wallet</source>
-        <translation>எந்த பணமும் இல்லாமல் கட்டளையை நிறைவேற்றும்</translation>
-    
-YES  
-The Tamil word "எந்த பணமும்" translates to "any money," which is incorrect in this context. The intended meaning refers to "any wallet," not "money." The correct Tamil word for "wallet" in this context should be "பணப்பைத்தியம்" or the transliterated form "வாலட்." Also, the translation should clearly convey "without any wallet," not "without any money."
-
-Correct translation:  
-"எந்த பணப்பைத்தியமுமില്ലாமல் கட்டளையை நிறைவேற்றுதல்"  
-(or)  
-"எந்த வாலட் இல்லாமல் கட்டளையை நிறைவேற்றுதல்"
+Correct translation:
+எதுவும் இல்லை
+or
+இல்லை
 ```
 
 ```
         <source>Executing command using "%1" wallet</source>
         <translation>கட்டளையை "%1" பணியகத்தை பயன்படுத்துகிறது</translation>
     
-YES  
-The translation has an erroneous word choice: "பணியகத்தை" means "office" or "department," which is incorrect in the context of a Bitcoin wallet. The correct Tamil word for "wallet" in this context is " பணப்பையை" or "பணப்பை". Also, the sentence is in present continuous form, but the English phrase implies a progressive action related to executing a command using the wallet. A more natural and accurate translation would be:
+YES
+The Tamil translation is inaccurate. The source sentence is "Executing command using "%1" wallet", which means an action is being performed now. The provided translation translates to "Using the \"%1\" wallet", missing the action of executing a command and is in the present continuous instead of present participle or passive.
 
-கட்டளையை "%1" பணப்பையை பயன்படுத்தி செயல்படுத்துகிறது
+Correct translation:
+"%1" பணியகத்தை பயன்படுத்தி கட்டளை இயங்குகிறது
+
+Or a more accurate passive construction:
+"%1" பணியகத்தை பயன்படுத்தி கட்டளை இயக்கப்படுகிறது
 ```
 
 ```
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation>கோரிக்கைக்கு விருப்பமான தொகை. ஒரு குறிப்பிட்ட தொகையை கோர வேண்டாம் இந்த வெற்று அல்லது பூஜ்ஜியத்தை விடு.</translation>
     
-YES  
-The translation is somewhat awkward and not fully clear in Tamil. The phrase "இந்த வெற்று அல்லது பூஜ்ஜியத்தை விடு" is unnatural and incorrect as a translation of "Leave this empty or zero". Also, the sentence structure is not smooth, which can cause confusion.
+YES
+The translation is awkward and not entirely accurate. The second sentence lacks clarity and proper structure in Tamil. Specifically, "இந்த வெற்று அல்லது பூஜ்ஜியத்தை விடு" is not colloquial Tamil, and it doesn't clearly convey "Leave this empty or zero".
 
-A better translation would be:  
-"கோரிக்கைக்காக விருப்பமான தொகை. குறிப்பிட்ட தொகையை கோர வேண்டாமெனில், இதை வெறுமையாகவோ அல்லது பூஜ்ஜியமாகவோ வைக்கவும்."
+Correct translation:
+கோரிக்கைக்கான விருப்பத்தேர்ந்த தொகை. ஒரு குறிப்பிட்ட தொகையை கோர விரும்பாவிட்டால், இதை வெறும்/பூஜ்ஜியமாக வையுங்கள்.
 ```
 
 ```
         <source>Show the selected request (does the same as double clicking an entry)</source>
         <translation>தேர்ந்தெடுக்கப்பட்ட கோரிக்கையை காட்டு (இரட்டை இடுகையை இரட்டை கிளிக் செய்தால்)</translation>
     
-YES  
-The phrase "இரட்டை இடுகையை இரட்டை கிளிக் செய்தால்" is incorrect and unclear. The source phrase "does the same as double clicking an entry" implies that the action is equivalent to double-clicking an entry, not "if double-clicked". Also, "entry" should be correctly translated as "நுழைவு" or "பதிவு" in this context.  
-Correct translation:  
-தேர்ந்தெடுக்கப்பட்ட கோரிக்கையை காட்டு (ஒரு நுழைவைக் இரட்டை கிளிக் செய்வதைப் போன்றது)
+YES
+The translation is problematic. The phrase "இரட்டை இடுகையை இரட்டை கிளிக் செய்தால்" translates to "if you double-click the double entry," which is incorrect and redundant. The correct meaning is "does the same as double clicking an entry."
+
+Correct translation:
+தேர்ந்தெடுக்கப்பட்ட கோரிக்கையை காட்டு (ஒரு பதிவை இரட்டை கிளிக் செய்வதற்கு சமமானது)
 ```
 
 ```
         <source>Copy URI</source>
         <translation>நகலை URI</translation>
     
-YES  
-The translation "நகலை URI" is incomplete and incorrect. The English phrase "Copy URI" means to copy the URI (Uniform Resource Identifier). A correct Tamil translation should use the verb "பதிப்பி" (copy) or a phrase like "URI ஐ நகல் எடு".  
-Correct translation:  
-URI ஐ நகல் எடு
+YES
+The translation "நகலை URI" is incorrect. "நகலை" means "copy" as a noun, not as a verb, and the phrasing is unnatural. The correct translation should use the verb form, and ideally translate "URI" as is (since it's a technical term).
+
+Correct translation:
+URI ஐ நகலெடு
 ```
 
 ```
@@ -779,31 +668,34 @@ URI ஐ நகல் எடு
         <translation>விலை</translation>
     
 YES
-The translation "விலை" means "price" or "cost," which is incorrect in this context. The English source "Amount:" refers to a quantity or sum, not price.
+The translation "விலை" means "price" in Tamil, which is not the same as "amount". In the context of Bitcoin and finance, "Amount" should be translated as "தொகை".
 
 Correct translation:
-"மொத்தம்:" or "தொகை:"
+தொகை
 ```
 
 ```
         <source>Copy URI</source>
         <translation>நகலை URI</translation>
     
-YES  
-The translation "நகலை URI" is incomplete and incorrect. The English phrase "Copy URI" means to copy the URI (Uniform Resource Identifier). A correct Tamil translation should use the verb "பதிப்பி" (copy) or a phrase like "URI ஐ நகல் எடு".  
-Correct translation:  
-URI ஐ நகல் எடு
+YES
+The translation "நகலை URI" is incorrect. "நகலை" means "copy" as a noun, not as a verb, and the phrasing is unnatural. The correct translation should use the verb form, and ideally translate "URI" as is (since it's a technical term).
+
+Correct translation:
+URI ஐ நகலெடு
 ```
 
 ```
         <source>Copy Address</source>
         <translation>நகலை விலாசம்</translation>
     
-YES  
-The translation is incorrect in structure and meaning. "நகலை விலாசம்" translates roughly as "copy address" but in an unnatural and confusing word order; it literally means "copy of address" but with misplaced word order. A better and natural Tamil translation for "Copy Address" (as a command or button label) would be:  
-"விலாசத்தை நகலெடுக்கவும்" or simply "விலாசம் நகலெடு".  
-Preferred concise translation:  
-விலாசம் நகலெடு
+YES
+The Tamil translation "நகலை விலாசம்" is incorrect. It means "copy replica/address" or "duplicate address," which does not convey the imperative "Copy Address" as a button label or command.
+
+Correct translation:
+முகவரியை நகலெடுக்க
+
+This precisely means "Copy the address."
 ```
 
 ```
@@ -811,21 +703,23 @@ Preferred concise translation:
         <translation>விலை</translation>
     
 YES
-The translation "விலை" means "price" or "cost," which is incorrect in this context. The English source "Amount:" refers to a quantity or sum, not price.
+The translation "விலை" means "price" in Tamil, which is not the same as "amount". In the context of Bitcoin and finance, "Amount" should be translated as "தொகை".
 
 Correct translation:
-"மொத்தம்:" or "தொகை:"
+தொகை
 ```
 
 ```
         <source>Add Recipient</source>
         <translation>சேர்  பெறுக</translation>
     
-YES  
-The translation "சேர்  பெறுக" is incorrect and contains a double space issue. "Add Recipient" in Tamil should be translated as "பெறுநரை சேர்க்கவும்" or simply "பெறுநரை சேர்க்க" depending on context. The provided translation mistakenly combines "சேர்" (add) and "பேறுக" (which is a misspelling; likely intended "பெறுக" meaning "receive" or an imperative form from the verb "to get") which does not correctly convey "Add Recipient".  
+YES
+There is an unnecessary space between "சேர்" and "பெறுக". Also, "பெறுக" means "receive", which isn't correct in this context; "Add Recipient" should be translated as "பெறுநரை சேர்க்கவும்" or "பெறுநர் சேர்".
 
-Correct translation:  
-பெறுநரை சேர்க்கவும்
+Correct translation:
+பெறுநர் சேர்க்கவும்
+or 
+பெறுநர் சேர்
 ```
 
 ```
@@ -833,21 +727,20 @@ Correct translation:
         <translation>ஒரு மிக குறைந்த கட்டணம் ஒரு உறுதி பரிவர்த்தனை விளைவாக (உதவிக்குறிப்பு வாசிக்க)</translation>
     
 YES
-The translation is incomplete and grammatically incorrect. It literally means "A very low fee a confirmed transaction result (read the tooltip)" with missing parts and wrong word order. The phrase "might result in a never confirming transaction" is not accurately conveyed.
+The translation has grammar and meaning issues. The Tamil text doesn't accurately convey "might result in a never confirming transaction", and the phrase order is off. A more accurate translation is:
 
-Correct translation:
-ஒரு மிகக் குறைந்த கட்டணம் ஒருபோதும் உறுதிசெய்யப்படாத பரிவர்த்தனைக்கு காரணமாக இருக்கலாம் (உதவிக்குறிப்பைக் படிக்கவும்)
+மிக குறைந்த கட்டணம் செலுத்துவது, பரிவர்த்தனை உறுதிப்படுத்தப்படாமல் இருக்க வழிவகுப்பதாக இருக்கலாம் (உதவிக்குறிப்பைப் படிக்கவும்)
 ```
 
 ```
         <source>Clear All</source>
         <translation>அழி அனைத்து</translation>
     
-YES  
-The translation "அழி அனைத்து" is incorrect and unnatural in Tamil. The correct phrase for "Clear All" is "அனைத்தையும் அழி" which properly conveys the meaning to clear everything.  
+YES
+The translation is understandable but not natural in Tamil. The phrase "அழி அனைத்து" is a literal word-for-word translation ("Delete all") instead of the more idiomatic or commonly used phrase for "Clear All". Also, the word order is unnatural in Tamil.
 
-Correct translation:  
-அனைத்தையும் அழி
+Correct translation:
+அனைத்தையும் நீக்கு
 ```
 
 ```
@@ -855,70 +748,70 @@ Correct translation:
         <translation>அளவு அளவு</translation>
     
 YES
-The translation "அளவு அளவு" literally means "quantity quantity," which is a repetition and not an accurate translation of the English phrase "Copy quantity." The word "Copy" in this context is a verb instructing the user to copy the quantity, so it should be translated accordingly.
+The translation duplicates the word "அளவு" (quantity), resulting in "அளவு அளவு", which means "quantity quantity." This is incorrect.
 
 Correct translation:
-"அளவை நகலெடுக்கவும்"
+அளவை நகலெடு
 ```
 
 ```
         <source>Copy amount</source>
         <translation>நகல் நகல்</translation>
     
-YES  
-The translation "நகல் நகல்" literally means "copy copy," which is a repetition and not a natural or accurate translation of "Copy amount." The correct translation should convey the action of copying an amount. A more appropriate translation would be:  
-"தொகையை நகலெடுக்க" or simply "தொகையை நகலெடு" depending on context.  
-Correct translation:  
-"தொகையை நகலெடுக்க"
+YES
+The translation "நகல் நகல்" is incorrect. It literally means "copy copy" and does not convey the intended meaning of "Copy amount". The correct translation should be:
+
+மொத்தத்தை நகலெடுக்கவும்
+
+Correct translation:
+மொத்தத்தை நகலெடுக்கவும்
 ```
 
 ```
         <source>Copy after fee</source>
         <translation>நகல் கட்டணம்</translation>
     
-YES  
-The translation "நகல் கட்டணம்" literally means "copy fee" or "copy payment," which does not accurately convey the meaning of "Copy after fee." The source phrase likely means to "Copy [amount or value] after deducting the fee," so "after fee" should be clearly indicated. A better translation would be:  
-"கட்டணத்திற்கு பிறகு நகல்"
+YES
+The translation "நகல் கட்டணம்" means "copy fee" which inaccurately translates "Copy after fee". The correct meaning is to copy the amount remaining after the fee has been deducted. The translation does not reflect the "after fee" concept.
+
+Correct translation:
+கட்டணத்தைக் கழித்த பிறகு நகலெடு
 ```
 
 ```
         <source>Copy bytes</source>
         <translation>நகல் கட்டணம்</translation>
     
-YES  
-The translation "நகல் கட்டணம்" means "copy fee" or "copy charge," which is incorrect for "Copy bytes." The correct translation should reflect the action of copying bytes (data units), not a fee or charge.
+YES
+The translation is incorrect. "நகல் கட்டணம்" means "copy fee," not "Copy bytes." The correct translation for "Copy bytes" in Tamil should be "பைட்டுகளை நகலெடு".
 
-Correct translation:  
-நகல் பைட்டுகள்
+Correct translation:
+பைட்டுகளை நகலெடு
 ```
 
 ```
         <source>You can increase the fee later (signals Replace-By-Fee, BIP-125).</source>
         <translation>நீங்கள் கட்டணத்தை பின்னர் அதிகரிக்கலாம் (என்கிறது மாற்று கட்டணம், பிப்-125).</translation>
     
-YES  
-The translation partially conveys the meaning but has issues:  
-- The phrase "(signals Replace-By-Fee, BIP-125)" is mistranslated or incomplete as "என்கிறது மாற்று கட்டணம், பிப்-125", which literally reads "does replace fee, BIP-125" and misses the sense of "signals" and the technical term "Replace-By-Fee" (which can be transliterated or explained properly).  
-- "Replace-By-Fee" should be transliterated or explained clearly, as it is a proper noun in Bitcoin terminology and not just "மாற்று கட்டணம்" (which means "alternate fee").  
-- The word "signals" in this context implies "indicates support for Replace-By-Fee according to BIP-125" and should be translated accordingly.  
+YES
+The translation "என்கிறது மாற்று கட்டணம், பிப்-125" is an inaccurate rendering of "signals Replace-By-Fee, BIP-125." The phrase "என்கிறது" ("it says") is unnecessary, and "மாற்று கட்டணம்" is not a standard translation for "Replace-By-Fee." "BIP-125" should remain as-is, but "Replace-By-Fee" should be transliterated or explained as a concept relevant to Bitcoin.
 
-A better translation:  
-நீங்கள் கட்டணத்தை பின்னர் அதிகரிக்கலாம் (Replace-By-Fee என்பதைக் குறிக்கும், BIP-125).  
-
-This keeps the technical term as is and clarifies the meaning of "signals" as "குறிக்கிறது" ("indicates").  
-
-Correct translation:  
-நீங்கள் கட்டணத்தை பின்னர் அதிகரிக்கலாம் (Replace-By-Fee என்பதைக் குறிக்கும், BIP-125).
+Correct translation:
+நீங்கள் கட்டணத்தை பின்னர் உயர்த்த முடியும் (Replace-By-Fee, BIP-125-ஐச் சுட்டுகிறது).
 ```
 
 ```
         <source>Send</source>
         <translation>அனுப்புவும்</translation>
     
-YES  
-The translation "அனுப்புவும்" is incorrect for "Send." The correct Tamil verb for "Send" (imperative form) is "அனுப்பு" or "அனுப்பு" (command form). The given translation uses a verb form that is not appropriate and adds an unnecessary suffix.
+YES
+The translation "அனுப்புவும்" is incorrect for the English word "Send". The correct translation should be "அனுப்பு".
 
-Correct translation:  
+Explanation:
+- "அனுப்புவும்" is a verb form indicating "will send" or is close to "and send", which is inappropriate in this menu/button context. 
+- The menu action "Send" should be translated as the imperative "அனுப்பு" (meaning "Send" as a command).
+
+Correct translation:
 அனுப்பு
 ```
 
@@ -926,11 +819,11 @@ Correct translation:
         <source>Clear All</source>
         <translation>அழி அனைத்து</translation>
     
-YES  
-The translation "அழி அனைத்து" is incorrect and unnatural in Tamil. The correct phrase for "Clear All" is "அனைத்தையும் அழி" which properly conveys the meaning to clear everything.  
+YES
+The translation is understandable but not natural in Tamil. The phrase "அழி அனைத்து" is a literal word-for-word translation ("Delete all") instead of the more idiomatic or commonly used phrase for "Clear All". Also, the word order is unnatural in Tamil.
 
-Correct translation:  
-அனைத்தையும் அழி
+Correct translation:
+அனைத்தையும் நீக்கு
 ```
 
 ```
@@ -938,37 +831,34 @@ Correct translation:
         <translation>விலை</translation>
     
 YES
-The translation of "Amount" as "விலை" is incorrect. "விலை" means "price" in Tamil, which is not appropriate in the Bitcoin context where "Amount" usually refers to the quantity or value, e.g., of Bitcoin.
-
-A more accurate translation would be:
-"மொத்தம்" or "தொகை"
+The translation "விலை" means "price" in Tamil, which is not the correct term for "amount" in the context of Bitcoin transactions. The term "தொகை" is more appropriate for "amount".
 
 Correct translation:
-<translation>மொத்தம்</translation>
+தொகை
 ```
 
 ```
         <source>Confirming (%1 of %2 recommended confirmations)</source>
         <translation>உறுதிப்படுத்துகிறது (%1 ன் %2 பரிந்துரைக்கப்பட்ட உறுதிப்படுத்தல்கல்)</translation>
     
-YES  
-The Tamil word "உறுதிப்படுத்தல்கல்" is incorrect; it contains an extra "க்" in the plural form. The correct plural form for "confirmations" is "உறுதிப்படுத்தல்கள்". Also, there is an unnecessary space before "%1".  
+YES
+There is a spelling error and misuse of pluralization in the Tamil translation. The word "உறுதிப்படுத்தல்கல்" is incorrect; the correct plural form is "உறுதிப்படுத்தல்கள்". Also, it is better to use "உறுதிப்படுத்தல்கள்" to match the English "confirmations", and the phrase should indicate that %1 out of %2 recommended confirmations are happening.
 
-Correct translation:  
-உறுதிப்படுத்துகிறது (%1ன் %2 பரிந்துரைக்கப்பட்ட உறுதிப்படுத்தல்கள்)
+Correct translation:
+உறுதிப்படுத்துகிறது (%2 பரிந்துரைக்கப்பட்ட உறுதிப்படுத்தல்கள் இல் %1)
+Alternatively, to keep closer to the English sentence order:
+உறுதிப்படுத்துகிறது (%2 பரிந்துரைக்கப்பட்ட உறுதிப்படுத்தல்களில் %1)
 ```
 
 ```
         <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
         <translation>இது பரிவர்த்தனைக் கட்டணம் ஆகும் அதன் வேறுபாடு தூசியை விட சிறியதாக இருந்தால் நீங்கள் அதை நிராகரிக்கலாம்.</translation>
     
-YES  
-The translation is partially correct but somewhat unclear and awkward in Tamil. The original sentence says: "This is the transaction fee you may discard if change is smaller than dust at this level." The term "change" and "dust" are specific Bitcoin terms and the translation does not clearly specify "change" or "dust" at the appropriate places. Also, the phrase "அதன் வேறுபாடு" literally means "its difference," which is not accurate for "change" in the Bitcoin context.
+YES
+The translation is not accurate. The original sentence means "This is the transaction fee you may discard if change is smaller than dust at this level", specifically mentioning "change" in the Bitcoin transaction context—not "its difference" as the Tamil translation says. The structure is a bit off and introduces confusion.
 
-A better translation that conveys the same meaning clearly is:  
-"இது பரிவர்த்தனை கட்டணம் ஆகும்; மாற்று தொகை இந்த அளவில் தூசியைப் போன்ற அளவுக்கு இறுதியாக குறைவாக இருந்தால் நீங்கள் இதை நிராகரிக்கலாம்."
-
-This uses "மாற்று தொகை" to correctly indicate "change", and "தூசி" for dust, with proper sentence structure and punctuation for clarity.
+Correct translation:
+இது, இந்த நிலையில் மாறுதல் (change) தூசியை விடக் குறைவாக இருந்தால் நீங்கள் நிராகரிக்கக்கூடிய பரிவர்த்தனை கட்டணமாகும்.
 ```
 
 ```
@@ -976,9 +866,11 @@ This uses "மாற்று தொகை" to correctly indicate "change", and 
         <translation>-blockfiltersindex இல்லாத -peerblockfilters அமைப்பு முடியாது </translation>
     
 YES
-The translation inaccurately rearranges and merges the option names and has spacing issues. The source options "-peerblockfilters" and "-blockfilterindex" must be kept exact and separate in the translation for clarity. Also, the sentence is missing the proper negative construction and clarity.
+There is an error in the Tamil translation: "-blockfiltersindex" is a typographical mistake; the correct option is "-blockfilterindex". The Tamil sentence omits the definite nature ("இல்லாமல்" or "இல்லாத நிலையில்") of the prerequisite, and the pause at the end is missing. There is also a missing period at the end of the Tamil sentence, and there is an extra space at the end.
 
 Correct translation:
--blockfilterindex இல்லாமல் -peerblockfilters அமைக்க முடியாது.
+-blockfilterindex இல்லாமல் -peerblockfilters ஐ அமைக்க முடியாது.
 ```
 </details>
+
+Number of issues: 73.

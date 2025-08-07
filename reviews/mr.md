@@ -14,10 +14,10 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <translation>ज्या पत्त्यावर नाणी प्राप्त करायची आहेत तो</translation>
     
 YES
-The translation is incomplete and does not convey the imperative "Choose the address". It just says "the address on which to receive coins". Also, the format ends abruptly and lacks the command/instruction.
+The Marathi translation is incomplete and awkward. It omits the verb "choose" and is not a full sentence. The translation does not fully convey the meaning of "Choose the address to receive coins with".
 
 Correct translation:
-कोणत्या पत्त्यावर नाणी प्राप्त करायची आहेत ते निवडा
+ज्या पत्त्यावर नाणी प्राप्त करायची आहेत, तो पत्ता निवडा
 ```
 
 ```
@@ -25,7 +25,7 @@ Correct translation:
         <translation>शिक्का कॉपी करा</translation>
     
 YES
-The translation is incorrect. "शिक्का" means "coin" in Marathi, not "label". The correct translation for "Copy Label" is "लेबल कॉपी करा".
+The translation is incorrect. "शिक्का" means "coin," not "label." The correct Marathi translation for "Copy Label" should be "लेबल कॉपी करा".
 
 Correct translation:
 लेबल कॉपी करा
@@ -37,7 +37,7 @@ Correct translation:
  </translation>
     
 YES
-There is a stray whitespace character (newline and possibly non-breaking space) after the translation text. Remove any unnecessary whitespace.
+There is unwanted whitespace (a stray newline and possibly an extra space) at the end of the translation. The translation itself is correct.
 
 Correct translation:
 वॉलेट एन्क्रिप्शनची पुष्टी करा
@@ -48,13 +48,11 @@ Correct translation:
         <translation>स्वाक्षरी आणि संदेश...</translation>
     
 YES
-The translation is problematic. "Sign message" refers to digitally signing a message, but the given Marathi translation "स्वाक्षरी आणि संदेश..." means "Sign and message...". The word "आणि" means "and", which is incorrect and changes the meaning. Also, the English uses an ellipsis (…), which should match in Marathi.
+The translation is inaccurate. "Sign message..." in the context of Bitcoin should mean "Sign the message..." (i.e., digitally sign). The provided translation means "Signature and message...", which changes the meaning.
 
 Correct translation:
-संदेशावर स्वाक्षरी करा...
-OR
 संदेशावर स्वाक्षरी करा…
-
-Either "संदेशावर स्वाक्षरी करा..." (Sign the message...) or "संदेशावर स्वाक्षरी करा…" is appropriate.
 ```
 </details>
+
+Number of issues: 4.

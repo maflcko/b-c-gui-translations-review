@@ -116,3 +116,5 @@ Correct translation:
 Adres Bitcoin, na który chcesz posłać płatność
 ```
 </details>
+
+Number of issues: 5.

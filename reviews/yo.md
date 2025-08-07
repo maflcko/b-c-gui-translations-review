@@ -13,10 +13,10 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Create a new address</source>
         <translation>si adireesi tuntun</translation>
     
-YES  
-The translation is missing the verb "Create" or an equivalent action word. "si adireesi tuntun" translates roughly as "this new address" or an incomplete phrase. The correct translation should include a verb that means "Create," such as "Ṣẹda" or "Ṣẹ́dá."
+YES
+The translation is not accurate. "si adireesi tuntun" literally means "do new address" or "make new address", but the imperative verb "Create" in Yoruba should be "Ṣẹda" or "Ṣẹda adirẹsi tuntun".
 
-Correct translation:  
+Correct translation:
 Ṣẹda adirẹsi tuntun
 ```
 
@@ -24,66 +24,42 @@ Correct translation:
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>da adiresi tuntun ti o sayan ko si eto sileti </translation>
     
-YES  
-The translation is inaccurate and contains grammatical errors. It does not convey the meaning of "Copy the currently selected address to the system clipboard." Also, it misses the concept of copying and "system clipboard" is missing or mistranslated.
+YES
+The translation is understandable but contains some errors:
+- "adiresi tuntun" translates to "new address", but the source says "currently selected address".
+- "sileti" should be "kílípọ́ọ̀bù" (clipboard).
+- There is unnecessary spacing at the end, and the wording is less natural.
 
-Correct translation:  
-"Da adirẹsi ti a ti yan lọwọlọwọ si àpótí àtẹ̀jáde eto"
+Correct translation:
+Da àdírẹ́sì tí o yàn sí kílípọ́ọ̀bù eto pọ́n
+
+If you want it more literally: 
+Da àdírẹ́sì tí o yàn lóri lọ sí kílípọ́ọ̀bù eto
+
+Either are acceptable.
 ```
 
 ```
         <source>Close</source>
         <translation>paade</translation>
     
-YES  
-The translation "paade" is incorrect for "Close" in Yoruba. The correct translation for the command or button label "Close" (as in closing a window or dialog) is "Pa" or "Ti" depending on context, but typically "Pa" is used to mean "Close" (as in close a window or application).
+YES
+The translation is problematic. The word "paade" is not correct in Yoruba for "Close" (as in to close a window or action). The correct term is "Pa". If meant in the UI sense for closing a window/tab, "Pa" is the accurate translation.
 
-Correct translation:  
+Correct translation:
 Pa
-```
-
-```
-        <source>Delete the currently selected address from the list</source>
-        <translation>samukuro adiresi ti o sese sayan kuro ninu akojo</translation>
-    
-YES  
-The translation contains multiple errors:  
-- "samukuro" should be "pa" to mean "delete" in Yoruba.  
-- "ti o sese sayan" is incorrect Yoruba for "currently selected". "sese" should be "ṣeṣé" but the phrase is awkward and "ti a ti yan lọwọlọwọ" or "ti a yan lọwọlọwọ" would be better.  
-- "adiresi" is correct for "address".  
-- "akojo" is correct for "list".  
-- The correct phrase for "Delete the currently selected address from the list" in Yoruba is:  
-"Pa adirẹsi tí a ti yan lọwọlọwọ kúrò ní àkójọ"
-```
-
-```
-        <source>Open a wallet</source>
-        <translation>sii apamowo</translation>
-    
-YES  
-The translation "sii apamowo" is problematic. The verb "sii" means "lift" or "raise," which is not appropriate for "open" in the context of opening a wallet. The better verb for "open" when referring to opening something like a wallet or file is "ṣii." Also, "apamowo" correctly means "wallet."
-
-Correct translation:  
-"Ṣii apamowo"
-```
-
-```
-        <source>Open Wallet</source>
-        <extracomment>Title of window indicating the progress of opening of a wallet.</extracomment>
-        <translation>sii apamowo</translation>
-    
-YES  
-The translation "sii apamowo" is not an accurate or natural rendering of "Open Wallet" in Yoruba ('yo'). The word "apamowo" correctly means "wallet," but "sii" generally means "open" as a verb related to opening doors or physical objects, which can be used here. However, Yoruba verbs are usually capitalized at the beginning of titles and the phrase should reflect the natural noun phrase or command form.
-
-A more natural and correct translation would be:  
-"Sii Apamowo"
 ```
 
 ```
         <source>1 year</source>
         <translation>okan ati odun</translation>
     
-YES  
-The translation "okan ati odun" means "one and year," which is incorrect for "1 year." The correct Yoruba translation for "1 year" is "ọ̀dún kan."
+YES
+The translation "okan ati odun" literally means "one and year," but is not idiomatic or standard for "1 year" in Yoruba. A better translation would be "odun kan".
+
+Correct translation:
+odun kan
 ```
 </details>
+
+Number of issues: 4.

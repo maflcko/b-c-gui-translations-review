@@ -9,3 +9,5 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 [If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bgd%5D%20low%20quality)
 
 </details>
+
+Number of issues: 0.

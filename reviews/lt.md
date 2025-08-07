@@ -14,50 +14,52 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <extracomment>An error message. %1 is a stand-in argument for the name of the file we attempted to save to.</extracomment>
         <translation>Bandant išsaugoti adresų sąrašą - įvyko klaida keliant į %1. Prašome bandyti dar kartą.</translation>
     
-YES  
-The phrase "įvyko klaida keliant į %1" is incorrect and awkward in Lithuanian. The verb "kelti" (to raise/lift) is not appropriate for this context. The correct verb for saving a file is "išsaugoti" or "rašyti". Also, the dash after "adresų sąrašą" is unnecessary and breaks the sentence flow.
+YES
+The translation is mostly correct in meaning, but the structure is awkward and adds unnecessary wording ("keliant į", which means "uploading to", instead of "saving to"). The dash after "adresų sąrašą" is also unnecessary. The format specifier %1 is correctly transferred.
 
-Correct translation:  
-"Bandant išsaugoti adresų sąrašą %1 įvyko klaida. Prašome bandyti dar kartą."
+Correct translation:
+Įvyko klaida bandant išsaugoti adresų sąrašą į %1. Prašome bandyti dar kartą.
 ```
 
 ```
         <source>Enter the old passphrase and new passphrase for the wallet.</source>
         <translation>Įveskite seną ir naują slaptažodį.</translation>
     
-YES  
-The translation is incomplete and less precise. The English source specifically mentions "passphrase" and "for the wallet," while the translation uses a generic term "slaptažodį" (password) instead of "slaptafrazė" (passphrase) and omits "for the wallet." The nuance is important in the Bitcoin context.
+YES
+The translation omits "for the wallet" ("piniginės" in Lithuanian), which could clarify which passphrases are meant. Also, the structure loses the explicit separation between old and new passphrase.
 
-Correct translation:  
-Įveskite senuosius ir naujus slaptafrazę piniginei.  
-
-Alternatively, to be more natural:  
-Įveskite seną ir naują slaptafrazę piniginei.
+Correct translation:
+Įveskite seną ir naują piniginės slaptažodį.
 ```
 
 ```
         <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
         <translation>Atminkite kad piniginės užšifravimas neužtrikrina kad jūsų bitkoinai negali būti pavogti dėl kenkėjiškų programų užkrėtusių jūsų kompiuterį.</translation>
     
-YES  
-The Lithuanian translation contains errors and awkward phrasing. Specifically:  
-- "neužtrikrina" is not a correct word; likely intended "neužtikrina" (does not guarantee).  
-- The phrase "kad jūsų bitkoinai negali būti pavogti" translates as "that your bitcoins cannot be stolen," which contradicts the source meaning. The source says encryption "cannot fully protect" bitcoins from being stolen, implying a risk remains. The translation implies bitcoins cannot be stolen, which is incorrect.  
-- The structure is awkward and difficult to understand.
+YES
+The Lithuanian translation contains several issues:
+- "neu��trikrina" is a typo and should be "neužtikrina".
+- There are missing commas for proper sentence structure.
+- The sentence structure could be improved for clarity and flow.
+- The negative construction "kad jūsų bitkoinai negali būti pavogti" translates as "that your bitcoins cannot be stolen", but the original merely says encryption cannot fully protect them from being stolen.
+- The translation of "malware infecting your computer" as "kenkėjiškų programų užkrėtusių jūsų kompiuterį" is awkward and the participle is not well-placed.
 
-Correct translation:  
-"Atminkite, kad piniginės užšifravimas negali visiškai apsaugoti jūsų bitkoinų nuo vagystės dėl kenkėjiškų programų, kurios gali užkrėsti jūsų kompiuterį."
+Correct translation:
+Atminkite, kad piniginės užšifravimas negali visiškai apsaugoti jūsų bitkoinų nuo vagystės, jei jūsų kompiuterį užkrečia kenkėjiška programa.
 ```
 
 ```
         <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
         <translation>Užkraukite dalinai pasirašytas Bitcoin transakcijas iš iškarpinės...</translation>
     
-YES  
-The source refers to loading a single "Partially Signed Bitcoin Transaction" (singular), but the translation uses the plural form "dalinai pasirašytas Bitcoin transakcijas" (transactions), which is incorrect. Additionally, the translation adds "..." at the end, which is not present in the source and may be misleading or unnecessary.
+YES
+There are several issues:
+1. "Užkraukite" is an unusual word in this context; "Įkelkite" is more appropriate for 'Load' when referring to data.
+2. The English text is singular ("Transaction"), the translation uses plural ("transakcijas").
+3. The ellipsis ("...") is not present in the source and should be omitted for consistency.
 
-Correct translation:  
-Užkraukite dalinai pasirašytą Bitcoin transakciją iš iškarpinės
+Correct translation:
+Įkelkite dalinai pasirašytą Bitcoin transakciją iš iškarpinės
 ```
 
 ```
@@ -66,12 +68,10 @@ Užkraukite dalinai pasirašytą Bitcoin transakciją iš iškarpinės
         <translation>Spausti: %1
 </translation>
     
-YES  
-The English word "Type" refers to a category or kind, especially in the context of Bitcoin (e.g., address type). The Lithuanian translation "Spausti" means "Press" or "Click," which is incorrect here. The correct Lithuanian translation for "Type" in this context is "Tipas."
+YES
+The Lithuanian word "Spausti" means "Press" or "Click", which is incorrect for "Type". The correct translation for "Type" in this context is "Tipas".
 
-Correct translation:  
-Spausdinimas: %1  
-or more accurately simply:  
+Correct translation:
 Tipas: %1
 ```
 
@@ -81,21 +81,21 @@ Tipas: %1
         <translation>Antraštė: %1
 </translation>
     
-YES  
-The translation "Antraštė" is Lithuanian for "headline" or "title," not "label" in the sense of a tag or descriptor as used in Bitcoin context. The correct Lithuanian word for "Label" (a tag or descriptor) is "Žymė."
+YES
+The translation of "Label" as "Antraštė" is incorrect in this context. "Antraštė" means "headline" or "title," not "label." The correct Lithuanian word for "label" (particularly in the Bitcoin UI context) is "Etiketė."
 
-Correct translation:  
-Žymė: %1
+Correct translation:
+Etiketė: %1
 ```
 
 ```
         <source>Copy change</source>
         <translation>Kopijuoti keisti</translation>
     
-YES  
-The translation "Kopijuoti keisti" incorrectly translates the phrase. In the Bitcoin context, "change" refers to the leftover amount returned in a transaction, not the verb "to change." Here, "Copy change" means "copy the change amount," so "change" should be a noun. The correct Lithuanian translation should use a noun form for "change," for example:  
+YES
+The translation "Kopijuoti keisti" is inaccurate in Lithuanian. The English term "change" in the Bitcoin context means "likutis" or "grąža" (the returned amount in a transaction), not "keisti" (which means "to change" as a verb).
 
-Correct translation:  
+Correct translation:
 Kopijuoti grąžą
 ```
 
@@ -103,71 +103,46 @@ Kopijuoti grąžą
         <source>change from %1 (%2)</source>
         <translation>pakeisti nuo %1 (%2)</translation>
     
-YES  
-The translation "pakeisti nuo %1 (%2)" is incorrect in this context. In Bitcoin terminology, "change" refers to the leftover money returned to the sender after a transaction, not the verb "to change." The correct Lithuanian translation should reflect the noun "change" as in "change from %1 (%2)," meaning the change amount from an address or transaction.
+YES
+The Lithuanian translation "pakeisti nuo %1 (%2)" means "to change from %1 (%2)", which misinterprets "change" in the context of Bitcoin transactions. Here, "change" refers to the remainder (change amount) returned in a transaction, not the verb "to change." 
 
-Correct translation:  
-"grąža iš %1 (%2)"  
-
-Alternatively, a more contextual phrase might be:  
-"grąža nuo %1 (%2)"  
-
-Both "grąža" (change/return) and the preposition "iš" or "nuo" ("from") properly convey the meaning in context.
-```
-
-```
-        <source>Disable Private Keys</source>
-        <translation>Atjungti Privačius Raktus</translation>
-    
-YES  
-The Lithuanian translation has incorrect capitalization. In Lithuanian, only the first word and proper nouns are capitalized in titles or phrases like this. Also, "Atjungti" (meaning "to disconnect") is not the best verb choice for "Disable" in this context. A better word for "Disable" would be "Išjungti" or "Deaktyvuoti."  
-
-Correct translation:  
-Išjungti privačius raktus
+Correct translation:
+grąža iš %1 (%2)
 ```
 
 ```
         <source>Number of script verification threads</source>
         <translation>Patvirtinimų skaičius</translation>
     
-YES  
-The translation "Patvirtinimų skaičius" means "Number of verifications," which is incomplete and does not convey that it specifically refers to "script verification threads." The original English phrase specifies the number of threads dedicated to verifying scripts, so the translation should reflect this.  
+YES
+The translation is inaccurate. "Patvirtinimų skaičius" translates to "Number of confirmations," which is not the same as "Number of script verification threads." The correct Lithuanian translation should reflect the "script verification threads" (i.e., threads/processes used to verify scripts).
 
-Correct translation:  
-"Skriptų patikros gijų skaičius"
+Correct translation:
+Skriptų tikrinimo gijų skaičius
 ```
 
 ```
         <source>Prune block storage to</source>
         <translation>blokuokite saugyklą į</translation>
     
-YES  
-The translation is inaccurate and somewhat awkward. The English phrase "Prune block storage to" is a technical instruction referring to reducing/block pruning the storage used for blocks. The Lithuanian verb "blokuokite" means "block" in the sense of "to block or prevent," which is incorrect here. The correct translation should use a verb related to pruning or trimming storage.
+YES
+The translation is problematic. The English phrase "Prune block storage to" in the context of Bitcoin typically means to reduce the disk usage of block storage to a specified size. The Lithuanian translation "blokuokite saugyklą į" means "block the storage to", which is incorrect and misleading.
 
-Correct translation:  
-"Sutrumpinkite bloko saugyklą iki"
-```
+Correct translation:
+Apkarpykite blokų saugyklą iki
 
-```
-        <source>Port of the proxy (e.g. 9050)</source>
-        <translation>Tarpinio serverio preivadas (pvz, 9050)</translation>
-    
-YES  
-The Lithuanian word "preivadas" is misspelled. The correct word is "prievadas". Also, there should be a period after "pvz" (abbreviation for "pavyzdžiui"). The comma should be replaced with a period.  
-
-Correct translation:  
-Tarpinio serverio prievadas (pvz. 9050)
+This preserves the technical meaning ("prune" as in "trim" or "reduce", not "block") and matches the intent in the Bitcoin context.
 ```
 
 ```
         <source>Minimize to the tray instead of the taskbar</source>
         <translation>M sumažinti langą bet ne užduočių juostą</translation>
     
-YES  
-The translation is incorrect and incomplete. The English phrase "Minimize to the tray instead of the taskbar" means that the application should minimize to the system tray rather than the taskbar. The provided translation "M sumažinti langą bet ne užduočių juostą" is incomplete ("M" at the beginning is likely a typo or stray character), and it literally means "To reduce the window but not the taskbar," which is inaccurate and awkward.  
+YES
+The translation is incorrect and ungrammatical in Lithuanian. "M sumažinti" is not a meaningful phrase; likely "Minimizuoti į sistemos dėklą, o ne užduočių juostą" is intended. The format specifiers are not an issue here.
 
-Correct translation:  
-"Minimizuoti į dėklą, o ne į užduočių juostą"
+Correct translation:
+Minimizuoti į sistemos dėklą, o ne į užduočių juostą
 ```
 
 ```
@@ -175,10 +150,10 @@ Correct translation:
         <translation>Rodomų ir siunčiamų monetų kiekio matavimo vienetai</translation>
     
 YES  
-The translation is incomplete and inaccurate. It translates to "Units of measurement for amounts of received and sent coins," which does not convey the instruction to "Choose the default subdivision unit to show in the interface and when sending coins."
+The Lithuanian translation does not accurately capture the meaning of the source text, which is about "choosing" the default subdivision unit; the translation simply describes "units for displaying and sending coins". Also, the imperative or instruction "Choose" is missing.
 
 Correct translation:  
-Pasirinkite numatytąją dalinimo vienetą, kuris bus rodomas sąsajoje ir siunčiant monetas.
+Pasirinkite numatytąjį monetų padalijimo vienetą, kuris bus rodomas sąsajoje ir siunčiant monetas.
 ```
 
 ```
@@ -186,47 +161,21 @@ Pasirinkite numatytąją dalinimo vienetą, kuris bus rodomas sąsajoje ir siun�
         <translation>Jūsų dabartinis balansas tik stebimų adresų</translation>
     
 YES
-The translation uses Lithuanian ("Jūsų dabartinis balansas tik stebimų adresų"), but 'lt' stands for Lithuanian, and the text is actually in Lithuanian. However, Lithuanian translation is incorrect in grammar and form.
-
-1. "Jūsų" means "your", which is correct.
-2. "dabartinis balansas" means "current balance", correct.
-3. "tik stebimų adresų" literally translates as "only (of) watched addresses", but in Lithuanian the phrasing is awkward and incomplete. It misses a preposition or additional words to connect properly.
-
-A better Lithuanian translation would directly translate "Your current balance in watch-only addresses" as:
-
-"Jūsų dabartinis likutis tik stebimų adresų sąskaitose"
-
-("likutis" is often used for "balance" in financial contexts; "adresas" is the direct translation for address but commonly, "sąskaita" (account) or "adresai" is used in Bitcoin wallet contexts.)
-
-Alternatively, to keep it closer:
-
-"Jūsų dabartinis balansas tik stebimų adresų sąskaitose"
-
-This means: "Your current balance in watch-only addresses' accounts." This is more idiomatic.
-
-Also, the original translation lacks a preposition like "in" between "balance" and "addresses".
+The Lithuanian translation is ungrammatical. The prepositional phrase "tik stebimų adresų" is awkward and incorrect; it should be in the correct genitive structure and more clearly modified to match "watch-only addresses".
 
 Correct translation:
-
-Jūsų dabartinis balansas tik stebimų adresų sąskaitose
+Jūsų dabartinis balansas tik stebimuose adresuose
 ```
 
 ```
         <source>Cannot start bitcoin: click-to-pay handler</source>
         <translation>Negalima paleisti bitcoin: paspauskite sumokėti tvarkytojui</translation>
     
-YES  
-The translation is inaccurate and somewhat misleading. The English phrase refers to the inability to start the "click-to-pay handler" related to Bitcoin. The current translation "paspauskite sumokėti tvarkytojui" means "click to pay to the handler," which does not convey the intended meaning.
+YES
+The phrase "paspauskite sumokėti tvarkytojui" is a literal translation and does not convey the intended technical meaning of "click-to-pay handler" (i.e., a software handler for click-to-pay functionality). Also, "bitcoin" should be capitalized ("Bitcoin") in Lithuanian, following naming conventions. The translation should convey that the "click-to-pay handler" component of Bitcoin could not be started.
 
-A better translation would be:  
-"Negalima paleisti bitcoin: „click-to-pay“ tvarkyklės"  
-or  
-"Negalima paleisti bitcoin: paspauskite mokėti tvarkyklės"  
-
-However, since "click-to-pay" is a technical term, it is often better to keep it untranslated or in quotes and translate "handler" as "tvarkyklė" (handler). Also "bitcoin" should be capitalized as "Bitcoin".
-
-Correct translation:  
-Negalima paleisti Bitcoin: „click-to-pay“ tvarkyklės
+Correct translation:
+Negalima paleisti Bitcoin: nepavyksta paleisti „click-to-pay“ tvarkyklės
 ```
 
 ```
@@ -234,7 +183,7 @@ Negalima paleisti Bitcoin: „click-to-pay“ tvarkyklės
         <translation>„bitcoin: //“ nėra galiojantis URI. Vietoj to naudokite „bitcoin:“.</translation>
     
 YES
-There should be no spaces around the slashes in the URL scheme 'bitcoin://'. The source text correctly uses 'bitcoin://', but the translation shows it as 'bitcoin: //', which is incorrect and changes the meaning. The format specifiers are not applicable here.
+There is an erroneous space in "bitcoin: //" – it should be "bitcoin://", without the space. Also, Lithuanian quotation marks („...“) are correctly used, but the space inside the quotes is problematic.
 
 Correct translation:
 „bitcoin://“ nėra galiojantis URI. Vietoj to naudokite „bitcoin:“.
@@ -244,13 +193,11 @@ Correct translation:
         <source>Custom change address</source>
         <translation>Pakeisti adresą</translation>
     
-YES  
-The original source "Custom change address" refers to a specific Bitcoin wallet or P2P network address for the 'change' output in a transaction. The Lithuanian translation "Pakeisti adresą" means "Change address" in the sense of a command (imperative) "Change the address," which is incorrect here. The translation should reflect the noun phrase "Custom change address."  
+YES
+The translation "Pakeisti adresą" means "Change address" (as in "to change the address"), not "Custom change address". It misses both the "custom" aspect and the nuance that this is a special type of address in Bitcoin ("change address" is a technical term).
 
-Correct translation:  
-"Individualizuotas keitimo adresas"  
-or  
-"Tinkintas keitimo adresas"
+Correct translation:
+Individualus grąžos adresas
 ```
 
 ```
@@ -258,20 +205,22 @@ or
         <translation>Naudojant backbackfee gali būti siunčiamas sandoris, kuris užtruks kelias valandas ar dienas (arba niekada), kad patvirtintų. Apsvarstykite galimybę pasirinkti mokestį rankiniu būdu arba palaukite, kol patvirtinsite visą grandinę.</translation>
     
 YES
-The term "backbackfee" in the translation is incorrect and looks like a typographical error or mistranslation of "fallbackfee." Additionally, the phrase "kad patvirtintų" is incorrect in this context; it should reflect that the transaction will take time to be confirmed (i.e., passive voice, "kad bus patvirtintas"). Also, the polite imperative form "apsvarstykite galimybę" is somewhat awkward here; a better phrasing would be more natural in Lithuanian.
+There are multiple issues in the translation:
+1. Typo: "backbackfee" should be "fallbackfee" or a correct Lithuanian equivalent. The original term should be kept ("fallbackfee", as there is no standard Lithuanian equivalent).
+2. The phrase "kad patvirtintų" is grammatically awkward in this sentence and does not accurately render "to confirm". Better: "kad būtų patvirtintas" (so that the transaction is confirmed), or "kad būtų patvirtinta" referring to the action.
+3. The sentence about waiting until validating the complete chain should be improved for clarity in Lithuanian.
 
 Correct translation:
-Naudojant fallbackfee gali būti išsiųstas sandoris, kurio patvirtinimas užtruks kelias valandas ar dienas (arba niekada). Apsvarstykite galimybę pasirinkti mokestį rankiniu būdu arba palaukite, kol bus patvirtinta visa grandinė.
+Naudojant fallbackfee gali būti išsiųsta transakcija, kurios patvirtinimas gali užtrukti kelias valandas, dienas ar net niekada neįvykti. Apsvarstykite galimybę pasirinkti mokestį rankiniu būdu arba palaukite, kol patvirtinsite visą blokų grandinę.
 ```
 
 ```
         <source>Add Recipient</source>
         <translation>A Pridėti gavėją</translation>
     
-YES  
-The translation contains an unnecessary and incorrect leading "A". The correct translation for "Add Recipient" in Lithuanian is simply "Pridėti gavėją".
+YES
+There is an erroneous "A" at the beginning of the translation which does not belong there. The correct translation into Lithuanian is:
 
-Correct translation:  
 Pridėti gavėją
 ```
 
@@ -279,58 +228,47 @@ Pridėti gavėją
         <source>Enable Replace-By-Fee</source>
         <translation>Įgalinti keitimąsi mokesčiu</translation>
     
-YES  
-The translation is in Lithuanian ("Įgalinti keitimąsi mokesčiu"), but it contains a Polish character "Į" instead of the correct Lithuanian "Į" (note: "Į" is used in Lithuanian, but the phrase meaning "Enable Replace-By-Fee" is not fully correct). More importantly, the phrase "keitimąsi mokesčiu" translates roughly as "exchange with fee," which is not an accurate or natural way to express the Bitcoin term "Replace-By-Fee."
+YES
+The translation "Įgalinti keitimąsi mokesčiu" is not accurate. In the context of Bitcoin, "Replace-By-Fee" refers to a feature that allows transactions to be replaced with another transaction that pays a higher fee. The term "keitimąsi mokesčiu" suggests "exchange with fee" rather than enabling the Replace-By-Fee option.
 
-A more accurate Lithuanian translation, common in Bitcoin context, is:
-
-Įgalinti mokesčio pakeitimą
-
-("Enable fee replacement" or "Enable Replace-By-Fee")
-
-Correct translation:  
-<translation>Įgalinti mokesčio pakeitimą</translation>
+Correct translation:
+Įgalinti pakaitą pagal mokestį
 ```
 
 ```
         <source>With Replace-By-Fee (BIP-125) you can increase a transaction's fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.</source>
         <translation>Naudojant Replace-by-Fend (BIP-125) galite išsiųsti sandorio mokestį vėliau. Be jo, gali būti rekomenduojamas didesnis mokestis, kad būtų kompensuota padidėjusi sandorio vėlavimo rizika.</translation>
     
-YES  
-The term "Replace-By-Fee" is mistranslated as "Replace-by-Fend" ("Fend" is incorrect). The correct phrase is "Replace-By-Fee" (or the Lithuanian equivalent if any established term exists). Also, "išsiųsti sandorio mokestį vėliau" ("send the transaction fee later") is inaccurate; the English means "increase a transaction's fee after it is sent," not "send it later."
+YES
+There is an error in the translation:
 
-A better translation would be:  
-"Naudodami Replace-By-Fee (BIP-125) galite padidinti sandorio mokestį po to, kai sandoris jau išsiųstas. Be to, gali būti rekomenduojamas didesnis mokestis, kad kompensuotumėte padidėjusią sandorio vėlavimo riziką."
+1. "Replace-by-Fend" is incorrect. It should be "Replace-by-Fee".
+2. The phrase "galite išsiųsti sandorio mokestį vėliau" mistranslates the meaning. It should convey the idea of increasing the fee after sending the transaction, not sending the fee later.
+3. The rest of the translation is acceptable, but to increase accuracy and maintain the original meaning, the sentence structure should be revised.
+
+Correct translation:
+Naudodami Replace-by-Fee (BIP-125) galite padidinti sandorio mokestį po jo išsiuntimo. Be šios galimybės gali būti rekomenduojamas didesnis mokestis, kad būtų kompensuota padidėjusi sandorio vėlavimo rizika.
 ```
 
 ```
         <source>Copy change</source>
         <translation>Kopijuoti keisti</translation>
     
-YES  
-The translation "Kopijuoti keisti" incorrectly translates the phrase. In the Bitcoin context, "change" refers to the leftover amount returned in a transaction, not the verb "to change." Here, "Copy change" means "copy the change amount," so "change" should be a noun. The correct Lithuanian translation should use a noun form for "change," for example:  
+YES
+The translation "Kopijuoti keisti" is inaccurate in Lithuanian. The English term "change" in the Bitcoin context means "likutis" or "grąža" (the returned amount in a transaction), not "keisti" (which means "to change" as a verb).
 
-Correct translation:  
+Correct translation:
 Kopijuoti grąžą
-```
-
-```
-        <source>Duplicate address found: addresses should only be used once each.</source>
-        <translation>Rastas dublikatas: adresai turėtų būti naudojami tik vieną kartą.</translation>
-    
-YES  
-The Lithuanian translation contains an error in the noun form and the verb agreement. The source phrase "Duplicate address found" implies a single duplicate address, so "dublikatas" is fine, but the phrase "adresai turėtų būti naudojami tik vieną kartą" uses "adresai" (plural), which conflicts with the singular "dublikatas." It should be singular "adresas" to match "dublikatas." Also, the verb "turėtų būti naudojami" (plural form) should be singular "turėtų būti naudojamas" to agree with the singular noun "adresas."
-
-Correct translation:  
-Rastas dublikatas: adresas turėtų būti naudojamas tik vieną kartą.
 ```
 
 ```
         <source>Paste address from clipboard</source>
         <translation>Įvesti adresą iš mainų atminties</translation>
     
-YES  
-The translation "Įvesti adresą iš mainų atminties" means "Enter address from clipboard," which is inaccurate because "Paste" implies inserting the copied content, not manually entering it. A better translation that correctly conveys "Paste address from clipboard" would be:  
+YES
+The Lithuanian translation "Įvesti adresą iš mainų atminties" means "Enter address from clipboard". The verb "Įvesti" is "enter" or "input," whereas "Paste" should be translated as "Įklijuoti." The remainder of the translation is correct.
+
+Correct translation:
 Įklijuoti adresą iš mainų atminties
 ```
 
@@ -338,10 +276,9 @@ The translation "Įvesti adresą iš mainų atminties" means "Enter address from
         <source>The Bitcoin address to sign the message with</source>
         <translation>Bitcoin adresas, kuriuo bus pasirašytas pranešimas su</translation>
     
-YES  
-The Lithuanian translation has incorrect word order and an awkward ending "su" ("with") placed at the end, which is not natural in Lithuanian. The English phrase "The Bitcoin address to sign the message with" means "Bitcoin address that will be used to sign the message," so "su" should precede "pranešimas" and the sentence structure should be corrected for clarity and grammar.
+YES
+The Lithuanian translation "Bitcoin adresas, kuriuo bus pasirašytas pranešimas su" is grammatically incorrect; the word "su" ("with") is redundant at the end and makes the sentence ungrammatical. Correct translation should be:
 
-Correct translation:  
 Bitcoin adresas, kuriuo bus pasirašytas pranešimas
 ```
 
@@ -349,8 +286,10 @@ Bitcoin adresas, kuriuo bus pasirašytas pranešimas
         <source>Paste address from clipboard</source>
         <translation>Įvesti adresą iš mainų atminties</translation>
     
-YES  
-The translation "Įvesti adresą iš mainų atminties" means "Enter address from clipboard," which is inaccurate because "Paste" implies inserting the copied content, not manually entering it. A better translation that correctly conveys "Paste address from clipboard" would be:  
+YES
+The Lithuanian translation "Įvesti adresą iš mainų atminties" means "Enter address from clipboard". The verb "Įvesti" is "enter" or "input," whereas "Paste" should be translated as "Įklijuoti." The remainder of the translation is correct.
+
+Correct translation:
 Įklijuoti adresą iš mainų atminties
 ```
 
@@ -358,57 +297,43 @@ The translation "Įvesti adresą iš mainų atminties" means "Enter address from
         <source>Sign the message to prove you own this Bitcoin address</source>
         <translation>Registruotis žinute įrodymuii, kad turite šį adresą</translation>
     
-YES  
-The Lithuanian translation contains several issues:  
-- "Registruotis" means "to register" or "to sign up," which is incorrect here. The correct verb is "Pasirašyti" (to sign).  
-- "žinute" should be in the instrumental case: "žinute" → "žinute" (correct form is "žinute" instrumental, but note that in Lithuanian "žinutę" (accusative) is usually used after "pasirašyti," so better to say "žinutę").  
-- "įrodymuii" is misspelled; extra 'i' at the end and the word order is awkward. The phrase should be "įrodant, kad" (meaning "to prove that").  
-- The phrase "kad turite šį adresą" is too generic; it should specify "Bitcoin adresą" to match the source.  
+YES
+The translation is inaccurate. "Registruotis žinute" does not correctly convey "Sign the message" (should be "Pasirašykite žinutę"). "įrodymuii" is a typo and not correct. Also, it omits "Bitcoin" and "adresas/adresą", making it inaccurate for the Bitcoin context.
 
-Correct translation:  
-"Pasirašykite žinutę, kad įrodytumėte, jog esate šio Bitcoin adreso savininkas"  
-
-Alternatively shorter:  
-"Pasirašykite žinutę, kad įrodytumėte, jog turite šį Bitcoin adresą"  
-
-Full corrected version:  
-<translation>Pasirašykite žinutę, kad įrodytumėte, jog turite šį Bitcoin adresą</translation>
+Correct translation:
+Pasirašykite žinutę, kad įrodytumėte, jog valdote šį Bitcoin adresą
 ```
 
 ```
         <source>The signature did not match the message digest.</source>
         <translation>Parašas neatitinka žinutės.</translation>
     
-YES  
-The translation "Parašas neatitinka žinutės." is incomplete and inaccurate. The source sentence means "The signature did not match the message digest." The phrase "message digest" refers to a cryptographic hash of the message, which should be preserved in translation. The given translation omits "digest" ("santrauka" or "apibendrinimas") and simplifies "did not match" to present tense "neatitinka" ("does not match") instead of past tense "neišėjo atitikti" or similar.  
+YES
+The translation is inaccurate. The source refers specifically to the message digest (a cryptographic hash of the message), but the translation omits "digest" and only refers to the "message" ("žinutės"), which reduces clarity regarding cryptographic context.
 
-A better translation would be:  
-"Parašas nesutapo su žinutės santrauka."  
-or  
-"Parašas nesutapo su žinutės apibendrinimu."  
-
-This preserves the past tense and correct technical meaning.
+Correct translation:
+Parašas neatitinka žinutės santraukos.
 ```
 
 ```
         <source>This pane shows a detailed description of the transaction</source>
         <translation>Šis langas sandorio detalų aprašymą</translation>
     
-YES
-The translation is incomplete and ungrammatical. It literally says "This window transaction detailed description" without a verb. A correct translation would include a verb such as "shows" (rodo).
+YES  
+The Lithuanian translation is missing a verb and is grammatically incorrect. It should read as a full sentence.
 
-Correct translation:
-Šis langas rodo sandorio detalų aprašymą
+Correct translation:  
+Šiame lange rodomas išsamus sandorio aprašymas
 ```
 
 ```
         <source>Confirming (%1 of %2 recommended confirmations)</source>
         <translation>Patvirtinima (%1 iš rekomenduojamų patvirtinimų %2)</translation>
     
-YES  
-The noun "Patvirtinima" is in the accusative case, but here it should be nominative ("Patvirtinimas") as it is the subject of the sentence. Also, the order of the phrase is more fluent as "Patvirtinama (%1 iš %2 rekomenduojamų patvirtinimų)" to properly convey "Confirming (%1 of %2 recommended confirmations)" in Lithuanian.  
+YES
+The word "Patvirtinima" is incorrectly rendered and should be "Patvirtinama". The structure of the translation is unnatural, and the order of elements does not match the source. The correct translation should preserve the format specifiers and accurately reflect the original structure.
 
-Correct translation:  
+Correct translation:
 Patvirtinama (%1 iš %2 rekomenduojamų patvirtinimų)
 ```
 
@@ -416,21 +341,21 @@ Patvirtinama (%1 iš %2 rekomenduojamų patvirtinimų)
         <source>Confirmed (%1 confirmations)</source>
         <translation>Patvirtinta (%1 patvirtinimas)</translation>
     
-YES  
-The translation is incorrect in the use of the plural form and case of the word "patvirtinimas". In Lithuanian, the word for "confirmations" (plural) should match the number and be in the genitive plural form. Since the source is "%1 confirmations" (plural), it should be "patvirtinimai" in the nominative plural or "patvirtinimų" in the genitive plural depending on context. Here, using the genitive plural after a number is correct, so it should be "patvirtinimų".
+YES
+The translation does not correctly reflect the plural form "confirmations." The Lithuanian translation uses the singular "patvirtinimas," but it should be plural to match the English source.
 
-Correct translation:  
-Patvirtinta (%1 patvirtinimų)
+Correct translation:
+Patvirtinta (%1 patvirtinimai)
 ```
 
 ```
         <source>Enter address, transaction id, or label to search</source>
         <translation>Įveskite adresą ar žymę į paiešką</translation>
     
-YES  
-The translation is in Lithuanian, but the source text includes "transaction id" which is missing in the translation. Also, the translation uses only "adresą" (address) and "žymę" (label), missing "transaction id" (sandorio ID or transakcijos ID). This omission changes the meaning and makes the translation incomplete.
+YES
+The translation omits "transaction id" (sandorio ID) from the source, making it incomplete. The English "or" ("ar") should also consistently separate all options.
 
-Correct translation:  
+Correct translation:
 Įveskite adresą, sandorio ID arba žymę paieškai
 ```
 
@@ -438,10 +363,12 @@ Correct translation:
         <source>Error loading %s: Wallet requires newer version of %s</source>
         <translation>Klaida įkeliant %s: Piniginei reikia naujesnės%s versijos</translation>
     
-YES  
-There is a missing space between "naujesnės" and "%s" in the translation, causing a formatting issue. Also, "Klaida" is Lithuanian for "error", but the provided translation is a mixture of Lithuanian and Latvian ("Piniginei" is Latvian). The Lithuanian word for "wallet" is "Piniginė" (with an ogonek on the "e"). The correct form would be:  
+YES
+There is a spacing error in the translation: "naujesnės%s versijos" should be "naujesnės %s versijos" (a space is missing before %s). Additionally, the word order is a bit awkward; a clearer translation would be:
 
-Correct translation:  
-Klaida įkeliant %s: Piniginė reikalauja naujesnės %s versijos
+Correct translation:
+Klaida įkeliant %s: piniginei reikia naujesnės %s versijos
 ```
 </details>
+
+Number of issues: 31.

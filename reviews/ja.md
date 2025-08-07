@@ -14,24 +14,22 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <translation> 
 右クリックしてアドレスまたはラベルを編集します。</translation>
     
-YES  
-The translation has an unnecessary leading whitespace character before the text. Also, the translation uses a polite form "編集します" (will edit), which is somewhat unnatural in instructional contexts. A more appropriate and concise imperative form would be better.
+YES
+There is an unwanted leading whitespace in the translation, which can cause formatting issues. The translation itself is accurate, but the whitespace should be removed.
 
-Correct translation:  
-右クリックしてアドレスまたはラベルを編集する
+Correct translation:
+右クリックしてアドレスまたはラベルを編集します。
 ```
 
 ```
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>これらは、あなたが知っている送信先の Bitcoin アドレスです。コインを送る前に必ず、金額と受取用アドレスを確認してください。</translation>
     
-YES  
-The translation is somewhat inaccurate and could be misleading in the Bitcoin context. The source says: "These are your Bitcoin addresses for sending payments," which means the addresses belong to the user (their own Bitcoin addresses used to send payments). However, the Japanese translation says "これらは、あなたが知っている送信先の Bitcoin アドレスです," which translates back to "These are Bitcoin addresses of the destinations you know," implying these are recipients' addresses, not the user's own addresses.
+YES
+The translation contains an error in meaning. The English source states "These are your Bitcoin addresses for sending payments," but the Japanese translation says "これらは、あなたが知っている送信先の Bitcoin アドレスです。" ("These are the Bitcoin addresses of recipients you know"), which changes the meaning from "your own addresses" to "known recipient addresses." This is problematic.
 
-A more accurate translation would preserve that these are *your own* Bitcoin addresses used to send payments, not just addresses you know or target addresses.
-
-Correct translation:  
-これらは、支払い送信用のあなたの Bitcoin アドレスです。コインを送る前に必ず、金額と受取先のアドレスを確認してください。
+Correct translation:
+これらは支払いを送るためのあなたのBitcoinアドレスです。コインを送信する前に、必ず金額と受取アドレスを確認してください。
 ```
 
 ```
@@ -40,29 +38,30 @@ Correct translation:
         <translation>取引履歴を %1 へ保存する際にエラーが発生しました。再試行してください。</translation>
     
 YES
-The original English text refers specifically to "the address list," but the Japanese translation says "取引履歴" (transaction history), which is incorrect and changes the meaning. The translation should reference the address list instead.
+The translation is inaccurate. "取引履歴" means "transaction history", not "address list". The source talks about saving the "address list". The rest of the sentence is adequately translated, but the subject is wrong.
 
 Correct translation:
-アドレス一覧を %1 に保存しようとしたときにエラーが発生しました。再度お試しください。
+アドレスリストを %1 に保存する際にエラーが発生しました。もう一度お試しください。
 ```
 
 ```
         <source>An internal error occurred. %1 will attempt to continue safely. This is an unexpected bug which can be reported as described below.</source>
         <translation>内部エラーが発生。 %1 は安全な継続をトライ中。これは予期せぬバグであり、次に説明するようにリポートできます。</translation>
     
-YES  
-The translation has minor spacing issues around the placeholder (%1) and could be more natural in Japanese. Specifically, there should be no space before %1, and "安全な継続をトライ中" sounds unnatural; a better phrasing would be "安全に続行しようとします" which directly reflects "will attempt to continue safely." Also, "リポート" is a loanword but "報告" is more common in formal contexts.
+YES
+The translation is understandable but sounds unnatural and uses casual, telegraphic expressions inappropriate for an application error message. The phrase "発生" should be "発生しました" for the correct tense; "トライ中" is an unnatural direct translation for "will attempt" and not standard in Japanese UI messages; likewise, "リポートできます" is less common than "報告できます".
 
-Correct translation:  
-内部エラーが発生しました。%1 は安全に続行しようとします。これは予期せぬバグであり、以下に示す方法で報告できます。
+Correct translation:
+内部エラーが発生しました。%1 は安全に継続を試みます。これは予期しないバグであり、以下の方法で報告できます。
 ```
 
 ```
         <source>Minimize</source>
         <translation>最小化 M</translation>
     
-YES  
-The translation "最小化 M" includes an unnecessary "M" at the end, which is not present in the source text "Minimize" and could confuse users. The correct Japanese translation for "Minimize" in the context of UI buttons is simply:  
+YES
+The translation includes an unnecessary "M" character at the end, which is not present in the source text and could be confusing. The correct translation is:
+
 最小化
 ```
 
@@ -71,45 +70,51 @@ The translation "最小化 M" includes an unnecessary "M" at the end, which is n
         <translation>対応するラベル</translation>
     
 YES  
-The translation "対応するラベル" means "corresponding label," which does not convey the same meaning as "Received with label." The source phrase indicates an action or status related to receiving something associated with a label, likely referring to a transaction or payment received that has a label attached. A more accurate translation would clearly express this context.
+The translation "対応するラベル" means "corresponding label" or "the applicable label", which does not convey the original meaning of "Received with label" in the context of Bitcoin (i.e., an amount received that is associated with a particular label/tag). The translation omits the notion of "received".
 
 Correct translation:  
-ラベル付きで受信
+ラベル付き受取
 ```
 
 ```
         <source>Received with address</source>
         <translation>対応するアドレス</translation>
     
-YES  
-The translation "対応するアドレス" means "corresponding address" or "associated address," which does not convey the meaning of "Received with address." The original English phrase likely implies "Received [funds/messages] with the address," indicating an action or status involving receipt associated with a specific address. A more accurate translation would be:  
-受信したアドレスで
+YES
+The translation "対応するアドレス" means "corresponding address" in Japanese, which does not accurately convey "Received with address." The correct translation should communicate that something was received to/with a particular address.
+
+Correct translation:
+受取アドレス
+
+Or, if more context is needed:
+このアドレスで受信
+
+Either of these better fits the original English meaning.
 ```
 
 ```
         <source>Lock unspent</source>
         <translation>コインをロック(o)</translation>
     
-YES  
-The translation "コインをロック(o)" includes an extraneous "(o)" which is not present in the source and appears to be an error or leftover artifact. Also, "Lock unspent" specifically refers to locking unspent outputs (UTXOs) rather than just "coins," so a more accurate and natural translation would be:
+YES
+The translation "コインをロック(o)" translates to "Lock coin(s) (o)", which adds an "(o)" suffix not present in the source. Furthermore, "Lock unspent" is more accurately and commonly translated in Bitcoin context as "未使用コインをロック" ("Lock unspent coins"), specifically referring to 'unspent' coins (Unspent Transaction Outputs, or UTXO), not just any coins. The source does not mention a shortcut "(o)", and that should not be included.
 
-未使用の出力をロックする
-
-Or, more concisely:
-
-未使用分をロック
-
-If brevity is preferred and "unspent" is understood in context, "未使用分をロック" is acceptable. The key is removing "(o)" and ensuring clarity regarding the "unspent" term.
+Correct translation:
+未使用コインをロック
 ```
 
 ```
         <source>Unlock unspent</source>
         <translation>コインをアンロック(U)</translation>
     
-YES  
-The source text "Unlock unspent" refers to unlocking unspent transaction outputs, not simply "coin". The translation "コインをアンロック(U)" literally means "Unlock coin (U)", which is inaccurate and introduces unnecessary English within parentheses. A better translation that respects the Bitcoin context and omits extraneous characters would be:
+YES
+The translation adds "コイン" (coin) and includes "アンロック(U)" ("Unlock (U)") as a menu item, which is common in Japanese software UIs, but the source "Unlock unspent" is a technical, Bitcoin-specific phrase. The translation should closely reflect "Unspent" as "未使用" or "未使用コイン", not just "コイン". While "アンロック" works as "Unlock", the translation loses the "unspent" nuance as a technical term for unspent outputs, not just generically "coins".
 
-未使用の出力をロック解除
+Correct translation:
+未使用の出力をアンロック
+
+Or, if brevity as a menu item is important:
+未使用をアンロック
 ```
 
 ```
@@ -117,22 +122,11 @@ The source text "Unlock unspent" refers to unlocking unspent transaction outputs
         <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
         <translation>外部署名のサポート(外部署名に必要)なしでコンパイルされています </translation>
     
-YES  
-The translation contains extra trailing whitespace and the wording can be improved for clarity and naturalness. The phrase "外部署名のサポート" is understandable but "外部署名" is more natural. Also, the phrase in parentheses is slightly unclear and should be more precise like "外部署名に必要な". The trailing space at the end should be removed.
+YES
+The translation contains errors in wording and style. "外部署名" is not natural Japanese for "external signing", and "外部" should be used instead. Also, the sentence should be more formal and concise, and there is a stray space at the end.
 
-Correct translation:  
-外部署名のサポート（外部署名に必要）なしでコンパイルされています
-```
-
-```
-        <source>Limit block chain storage to</source>
-        <translation>ブロックチェーンのストレージを次に限定する: </translation>
-    
-YES  
-The translation includes unnecessary trailing whitespace before the colon, which is inconsistent with typical Japanese punctuation spacing (no space before a colon). Also, the phrase "次に限定する" is somewhat unnatural and overly literal for this context. A more natural translation would be without the trailing space and with a clearer phrasing:
-
-Correct translation:  
-ブロックチェーンのストレージを次のサイズに制限する:
+Correct translation:
+外部署名のサポートなしでコンパイルされています（外部署名には必要です）
 ```
 
 ```
@@ -140,10 +134,15 @@ Correct translation:
         <translation>ブロックの保存容量を次の値までに剪定する(b): </translation>
     
 YES
-The translation unnecessarily includes "(b): " at the end, which does not appear in the source text and looks like extraneous content that could confuse users. Additionally, the phrase is slightly awkward and could be more concise.
+The translation unnecessarily adds "保存容量" (storage capacity) and "(b):", and translates "to" as "までに" (by/within), not indicating the destination/amount clearly. The added "(b):" is also not present in the source.
 
 Correct translation:
-ブロックの保存容量を次の値までに削減する
+ブロックストレージを次の値まで剪定する
+
+Or, if contextually referring to the size:
+ブロックストレージを指定サイズまで剪定する
+
+This translation should avoid adding words not present in the original text and should not include unnecessary formatting.
 ```
 
 ```
@@ -151,42 +150,31 @@ Correct translation:
         <translation>HWIのパス(E)</translation>
     
 YES
-The translation does not accurately reflect the original English text. The source text "External signer script path" refers to the file path of an external signing script, whereas the translation "HWIのパス(E)" specifically refers to "Path of HWI (E)", which is a particular tool (Hardware Wallet Interface) and adds an unexplained "(E)". This is too narrow and adds unclear information.
+The translation is inaccurate. "External signer script path" refers to the file path of an external script used for signing. "HWIのパス(E)" means "Path of HWI (E)", which is both too specific (only referencing HWI hardware wallet interface) and omits "script," making it misleading. Also, the "(E)" in Japanese UI typically represents an access key, not needed unless consistent within the UI.
 
-A better translation is:
-外部署名者スクリプトのパス
-```
-
-```
-        <source>Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>SOCKS5 プロキシ経由で接続する（デフォルトプロキシ）(C):</translation>
-    
-YES  
-The translation incorrectly includes "(C)" at the end, which is not present in the source and seems extraneous. Also, "（デフォルトプロキシ）" should ideally include "（デフォルトのプロキシ）" to sound more natural in Japanese.  
-
-Correct translation:  
-SOCKS5 プロキシ経由で接続する（デフォルトのプロキシ）：
+Correct translation:
+外部署名スクリプトのパス
 ```
 
 ```
         <source>Use separate SOCKS5 proxy to reach peers via Tor onion services:</source>
         <translation>Tor onion serviceを介してピアに到達するために別のSOCKS5プロキシを使用する(5):</translation>
     
-YES  
-The translation has an erroneous "(5)" at the end, which does not correspond to anything in the source and looks like a typo or misplaced character. Also, "onion service" is better translated as "オニオンサービス" or kept as "onionサービス" for clarity in the Japanese Bitcoin context. The phrase can be improved for naturalness and clarity.  
+YES
+The translation is mostly accurate but has unnecessary "(5)" at the end and could be slightly more natural in Japanese. The "(5)" seems like a stray character, possibly from the word "SOCKS5". Also, the term "onion service" should ideally be rendered as "オンションサービス" or "Onionサービス" in Japanese for clarity. 
 
-Correct translation:  
-Torオニオンサービスを介してピアに接続するために、別のSOCKS5プロキシを使用する:
+Correct translation:
+TorのOnionサービス経由でピアに接続するために、別のSOCKS5プロキシを使用する:
 ```
 
 ```
         <source>1 day</source>
         <translation>1 日(a)</translation>
     
-YES  
-The translation includes an extraneous "(a)" which is not present in the source and is unnecessary. The correct and natural Japanese translation for "1 day" is simply "1日". The extra characters could confuse users.
+YES
+The translation has an erroneous extra "(a)" after "1 日". The correct translation should just be "1日" (with no space and no "(a)"), which is the standard way of writing "1 day" in Japanese.
 
-Correct translation:  
+Correct translation:
 1日
 ```
 
@@ -194,8 +182,8 @@ Correct translation:
         <source>1 week</source>
         <translation>1 週間(w)</translation>
     
-YES  
-The translation contains an unnecessary space between the number and the unit and includes an unexplained "(w)" which is not present in the source. The correct translation should simply be:
+YES
+The translation includes unnecessary "(w)", which is not standard in Japanese and may confuse users. Also, there is an extra space between "1" and "週間". The correct translation should be:
 
 1週間
 ```
@@ -204,11 +192,11 @@ The translation contains an unnecessary space between the number and the unit an
         <source>1 year</source>
         <translation>1 年(y)</translation>
     
-YES  
-The translation adds an unnecessary "(y)" which does not appear in the source and is uncommon in Japanese date expressions. The correct Japanese simply uses "1年" without parenthetical notation.  
+YES
+The inclusion of "(y)" is unnecessary and does not match standard Japanese usage. "1 年" alone is sufficient and correct.
 
-Correct translation:  
-1年
+Correct translation:
+1 年
 ```
 
 ```
@@ -216,7 +204,7 @@ Correct translation:
         <translation>内向き</translation>
     
 YES  
-The English word "From" in the context of Bitcoin transactions typically refers to the source or origin of funds or addresses. The given Japanese translation "内向き" literally means "inward-facing" or "inward," which is not an appropriate or natural translation for "From" in this context. A more accurate and commonly used translation for "From" (e.g., as in "From address") in Bitcoin or transaction contexts would be simply "差出人" (sender), "送信元" (sending source), or just "送信元" to denote "From."
+The translation "内向き" means "inward" or "inbound," which is not a natural or accurate translation for "From" in this context. For transaction lists or email contexts, "From" is usually translated as "差出人" (sender) or "送信元" (source/sender). In the context of Bitcoin transactions, "送信元" is most appropriate.
 
 Correct translation:  
 送信元
@@ -227,33 +215,11 @@ Correct translation:
         <extracomment>"External signer" means using devices such as hardware wallets.</extracomment>
         <translation>設定-&gt;オプション-&gt;ウォレット タブにHWIのパスを設定してください</translation>
     
-YES  
-The translation shifts the order and meaning compared to the source. The source is "Set external signer script path in Options -> Wallet", indicating navigation to the "Options" menu, then the "Wallet" tab, to set the external signer script path. The translation rearranges the navigation as "設定 -> オプション -> ウォレット" and specifically says "タブにHWIのパスを設定してください" ("Please set the HWI path in the tab"), which adds the specific "HWI" (Hardware Wallet Interface) and "please" that are not present in the source. "External signer script path" is translated as "HWIのパス" which is more specific and not necessarily correct.
+YES
+The translation replaces "external signer script path" with "HWIのパス", which assumes the external signer is specifically HWI (Hardware Wallet Interface). However, "external signer" could refer to other software or devices as well, not just HWI. The translation should remain general and true to the original.
 
-A more accurate translation would preserve the original structure and terminology:
-
-Correct translation:  
-設定 -> オプション -> ウォレット で外部署名者のスクリプトパスを設定してください
-
-Alternatively, if the imperative "設定してください" is too strong or unnecessary (because the English is a command or an instruction), one could say:
-
-設定 -> オプション -> ウォレット で外部署名者のスクリプトパスを設定する
-
-But typically in UI instructions, "してください" is acceptable.
-
-Also, the order in the original is "Options -> Wallet", whereas the translation says "設定 -> オプション -> ウォレット", adding an extra "設定" layer.
-
-If "設定" corresponds to "Settings" and "Options" is "オプション", then the navigation in the original might mean "Options" menu, then "Wallet" tab. Adding "設定" could be redundant or confusing.
-
-Hence, the minimal correction is:
-
-オプション -> ウォレット で外部署名者のスクリプトパスを設定してください
-
-If the top menu is "Options" (オプション) and inside that is a "Wallet" tab (ウォレット), this matches the source.
-
-Therefore, the final corrected translation:
-
-オプション -> ウォレット で外部署名者のスクリプトパスを設定してください
+Correct translation:
+オプション-&gt;ウォレットで外部署名者スクリプトのパスを設定してください
 ```
 
 ```
@@ -261,11 +227,15 @@ Therefore, the final corrected translation:
         <translation>%1 送金先: %2</translation>
     
 YES  
-The source text "%1 to %2" is a neutral expression typically indicating a connection or a range, for example, "from %1 to %2". The translation "%1 送金先: %2" adds extra meaning by explicitly saying "sending destination" (送金先), which is not present in the source and may be misleading or too specific.
-
-A more accurate and neutral translation should preserve the simplicity and placeholder structure without adding extra terms:
+The translation "%1 送金先: %2" changes the meaning of the original text. The English "%1 to %2" is a generic format (e.g., "1 BTC to Alice"). The Japanese translation introduces "送金先:", meaning "destination of remittance," which changes the format and meaning.
 
 Correct translation:  
+%1 から %2 へ
+
+This preserves the original structure ("from %1 to %2"). If only "to" should be translated, then:  
+%1 から %2 へ
+
+Or, if contextually just "%1 to %2":  
 %1 から %2 へ
 ```
 
@@ -274,16 +244,16 @@ Correct translation:
         <extracomment>"External signer" means using devices such as hardware wallets.</extracomment>
         <translation>HWIのエラー</translation>
     
-YES  
-The translation "HWIのエラー" specifically refers to an error involving HWI (Hardware Wallet Interface), which is a specific external signer tool, but the source text "External signer failure" is more general and not limited to HWI. It means any external signing device or mechanism, such as various hardware wallets or signing tools, not just HWI.
+YES
+The translation "HWIのエラー" specifically refers to "HWI" (Hardware Wallet Interface), which may not encompass all types of "external signers" (the English source is broader; it could be any device or method). The translation should convey the general notion of "external signer failure" rather than limit it to HWI.
 
-A more accurate and general translation would be:  
+Correct translation:
+外部署名ツールのエラー
+
+Or, more literally:
 外部署名者の失敗
 
-Or to maintain a natural expression:  
-外部署名機のエラー
-
-Both convey a failure related to an external signing device without limiting to HWI specifically.
+Either of the above would be more accurate and inclusive.
 ```
 
 ```
@@ -291,22 +261,22 @@ Both convey a failure related to an external signing device without limiting to 
         <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents an abandoned transaction.</extracomment>
         <translation>取消しされました</translation>
     
-YES  
-The translation "取消しされました" is grammatically incorrect and unnatural in Japanese. The proper form for "abandoned" in the context of a transaction status would be "破棄されました" or simply "放棄されました," both meaning "has been abandoned" or "discarded."  
+YES
+The translation "取消しされました" is incorrect and unnatural in Japanese. It redundantly combines the noun "取消し" (cancellation) with the passive "-されました" and does not properly convey "abandoned" in the context of a transaction. The correct term used in Japanese Bitcoin wallets for "abandoned" is usually "放棄されました".
 
-Correct translation:  
-破棄されました
+Correct translation:
+放棄されました
 ```
 
 ```
         <source>Generated</source>
         <translation>採掘</translation>
     
-YES
-The English word "Generated" in the context of Bitcoin typically refers to blocks or coins that have been created, not specifically "mined" in a direct translation sense. The Japanese translation "採掘" means "mining" (literally "mining" or "excavation") and is more specific to the act of mining rather than the broader or passive sense of "generated." A more accurate and neutral translation for "Generated" would be "生成済み" or simply "生成," which means "generated" or "created."
+YES  
+The translation is inaccurate. "Generated" in the context of Bitcoin typically refers to coins that have been newly created, usually via mining, but "採掘" means "mining." The correct translation for "Generated" in this context would be "生成済み" or "生成された."
 
-Correct translation:
-生成
+Correct translation:  
+生成済み
 ```
 
 ```
@@ -314,7 +284,7 @@ Correct translation:
         <translation>内向き</translation>
     
 YES  
-The English word "From" in the context of Bitcoin transactions typically refers to the source or origin of funds or addresses. The given Japanese translation "内向き" literally means "inward-facing" or "inward," which is not an appropriate or natural translation for "From" in this context. A more accurate and commonly used translation for "From" (e.g., as in "From address") in Bitcoin or transaction contexts would be simply "差出人" (sender), "送信元" (sending source), or just "送信元" to denote "From."
+The translation "内向き" means "inward" or "inbound," which is not a natural or accurate translation for "From" in this context. For transaction lists or email contexts, "From" is usually translated as "差出人" (sender) or "送信元" (source/sender). In the context of Bitcoin transactions, "送信元" is most appropriate.
 
 Correct translation:  
 送信元
@@ -324,32 +294,24 @@ Correct translation:
         <source>Received with</source>
         <translation>受取(通常)</translation>
     
-YES  
-The English source "Received with" is an incomplete phrase generally used as a prefix followed by a payment method or address label in the context of Bitcoin. The provided translation "受取(通常)" translates back roughly as "Receipt (normal)" which adds a qualifier "normal" (通常) not present in the source, thus altering the meaning inaccurately. Moreover, the phrase "Received with" should be simply translated to something like "～で受取" or "受取済み" depending on context.
+YES
+The translation "受取(通常)" is inaccurate. "Received with" in the context of Bitcoin usually appears as a column header and refers to the address, label, or account associated with the received transaction, not the "normal" way of receipt.
 
-A more neutral and accurate translation would be:  
-"～で受取" (if used as a prefix before the payment method)  
-or simply  
-"受取"  
+Correct translation:
+受取先
 
-If more context is known, for example, if it's "Received with label", then "～で受取" is suitable.
-
-Correct translation:  
-受取済み   (Received)  
-or  
-～で受取   (Received with ～)  
-
-Since the original phrase likely expects a following label, "受取済み" or "～で受取" fits better than the provided translation.
+Explanation:
+"受取先" means "recipient" or "received with", which is the common header in Japanese Bitcoin wallets.
 ```
 
 ```
         <source>Received from</source>
         <translation>受取(その他)</translation>
     
-YES  
-The translation "受取(その他)" means "Received (others)" which adds "(others)" not present in the source "Received from". The source is likely a phrase used to indicate the sender or origin (e.g., "Received from [someone]"). A more accurate and natural translation would be "から受信" or "受取元" depending on context. Since "受取元" is a common phrase meaning "sender" or "origin of receipt," it fits well.
+YES
+The translation "受取(その他)" means "Received (Other)" and does not accurately convey the meaning of "Received from." The correct Japanese translation should clarify the source, such as by using "受取元" or "送信元".
 
-Correct translation:  
+Correct translation:
 受取元
 ```
 
@@ -357,43 +319,25 @@ Correct translation:
         <source>Received with</source>
         <translation>受取(通常)</translation>
     
-YES  
-The English source "Received with" is an incomplete phrase generally used as a prefix followed by a payment method or address label in the context of Bitcoin. The provided translation "受取(通常)" translates back roughly as "Receipt (normal)" which adds a qualifier "normal" (通常) not present in the source, thus altering the meaning inaccurately. Moreover, the phrase "Received with" should be simply translated to something like "～で受取" or "受取済み" depending on context.
+YES
+The translation "受取(通常)" is inaccurate. "Received with" in the context of Bitcoin usually appears as a column header and refers to the address, label, or account associated with the received transaction, not the "normal" way of receipt.
 
-A more neutral and accurate translation would be:  
-"～で受取" (if used as a prefix before the payment method)  
-or simply  
-"受取"  
+Correct translation:
+受取先
 
-If more context is known, for example, if it's "Received with label", then "～で受取" is suitable.
-
-Correct translation:  
-受取済み   (Received)  
-or  
-～で受取   (Received with ～)  
-
-Since the original phrase likely expects a following label, "受取済み" or "～で受取" fits better than the provided translation.
+Explanation:
+"受取先" means "recipient" or "received with", which is the common header in Japanese Bitcoin wallets.
 ```
 
 ```
         <source>Increase transaction fee</source>
         <translation>取引手数料を追加(f)</translation>
     
-YES  
-The Japanese translation "取引手数料を追加(f)" is problematic. The "(f)" at the end is likely unintended or wrongly included and does not make sense in Japanese. Additionally, "追加" means "add" or "additionally," which may be understandable but is less natural in this context. A more precise and natural translation for "Increase transaction fee" would be:
-
-取引手数料を増やす
-```
-
-```
-        <source>Prune mode is incompatible with -reindex-chainstate. Use full -reindex instead.</source>
-        <translation>剪定モードは -reindex-chainstate と互換性がありません。代わりに完全な再インデックス -reindex を使用してください。</translation>
-    
 YES
-The translation contains an unnecessary and incorrect Chinese word "剪定" at the start, which is not Japanese. The correct Japanese term for "prune mode" in this context would be "プルーンモード" or simply "pruneモード" as used commonly in Bitcoin Japanese documentation.
+The translation is not accurate. "取引手数料を追加(f)" means "Add transaction fee (f)" and the "(f)" is unexplained and not present in the source text. The correct translation should be:
 
 Correct translation:
-プルーンモードは -reindex-chainstate と互換性がありません。代わりに完全な再インデックス -reindex を使用してください。
+取引手数料を増やす
 ```
 
 ```
@@ -401,41 +345,50 @@ Correct translation:
         <translation>ウォレットが正常にロードされました。 レガシーウォレットタイプは非推奨となり、レガシーウォレットの作成と使用のサポートは将来削除される予定です。 レガシーウォレットは、「mergewallet」を使用してディスクリプターウォレットに移行できます。</translation>
     
 YES
-The translation incorrectly uses "mergewallet" instead of "migratewallet," which is the correct command/tool name from the source. Also, there is a leading space after each sentence period that should be removed for proper spacing.
+There are several issues with the translation:
+
+1. Incorrect command: The source mentions "migratewallet", but the translation says 「mergewallet」, which is a significant error.
+2. Some slight nuance issues: "作成と使用のサポート" should rather be "作成およびオープンのサポート" or similar, to match "creating and opening".
+3. Unnecessary space after periods: There is a full-width space after "ました。" and "です。", which is not standard in Japanese (should not be there).
 
 Correct translation:
-ウォレットが正常にロードされました。レガシーウォレットタイプは非推奨となり、レガシーウォレットの作成と使用のサポートは将来削除される予定です。レガシーウォレットは、「migratewallet」を使用してディスクリプターウォレットに移行できます。
+ウォレットが正常にロードされました。レガシーウォレットタイプは非推奨となっており、今後はレガシーウォレットの作成およびオープンのサポートが削除される予定です。レガシーウォレットは、「migratewallet」を使用してディスクリプターウォレットに移行できます。
 ```
 
 ```
         <source>Maximum transaction weight is less than transaction weight without inputs</source>
         <translation>最大トランザクションweightがインプットのないトランザクションweightよりも小さい</translation>
     
-YES  
-The translation uses the English word "weight" instead of the appropriate Japanese word, which is inconsistent and less natural for Japanese readers. Also, "インプット" is better replaced with the commonly used Japanese term "入力". Finally, the sentence lacks proper particles and a natural Japanese sentence flow.
+YES
+The translation uses the English word "weight" directly in "トランザクションweight" and "トランザクションweight", which is unnatural in Japanese. It's better to translate "weight" as "重量" (jūryō). Also, "インプット" is understandable but "入力" is more standard for "inputs".
 
-Correct translation:  
-最大トランザクションの重みは、入力のないトランザクションの重みよりも小さい
+Correct translation:
+最大トランザクション重量が入力なしのトランザクション重量よりも小さいです
 ```
 
 ```
         <source>Maximum transaction weight must be between %d and %d</source>
         <translation>最大トランザクションweightは%dから%dの間でなければなりません。</translation>
     
-YES  
-The word "weight" should be translated into Japanese for consistency and clarity, rather than left in English. A natural and clear translation would be:
+YES
+There is a minor issue: "weight" is not translated into Japanese, which could be confusing. In Japanese, the term "weight" is often translated as "重量" in technical contexts regarding Bitcoin. Also, the phrase "から...の間でなければなりません" would sound more natural as "の間でなければなりません" without "から".
 
-最大トランザクションの重みは%dから%dの間でなければなりません。
+Correct translation:
+最大トランザクション重量は%dから%dの間でなければなりません。
 ```
 
 ```
         <source>Unknown change type '%s'</source>
         <translation>不明なお釣りのアドレス形式 '%s' </translation>
     
-YES  
-The translation incorrectly interprets "change type" as "お釣りのアドレス形式" ("change address format"), which is too specific and changes the meaning. The original refers to an unknown *type* of change (typically the change in a Bitcoin transaction), not specifically an "address format." Also, there is an unnecessary trailing space before the closing quotation mark in Japanese.
+YES
+The Japanese translation translates "change type" as "お釣りのアドレス形式", which means "change address format". However, "change type" here likely refers to the type/category of 'change' in a transaction, not specifically an "address format". The translation also adds the word "アドレス" (address) which is not present in the source, and has a stray space before the closing quotation.
 
-Correct translation:  
-不明なお釣りの種類 '%s'
+Correct translation:
+不明な変更タイプ '%s'
+or, if specifically referring to Bitcoin change outputs:
+不明なお釣りタイプ '%s'
 ```
 </details>
+
+Number of issues: 31.

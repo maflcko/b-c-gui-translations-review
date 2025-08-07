@@ -14,7 +14,7 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <translation>يہ</translation>
     
 YES
-The translation is incorrect. The English word "or" should be translated as "يا" in Sindhi ('sd'). The provided translation "يہ" means "this" in Urdu, not "or" in Sindhi.
+The translation is incorrect. The provided Sindhi ('sd') translation "يہ" actually means "this" in Urdu, not "or". The correct Sindhi translation for "or" is "يا".
 
 Correct translation:
 يا
@@ -25,9 +25,11 @@ Correct translation:
         <translation>يہ</translation>
     
 YES
-The translation is incorrect. The English word "or" should be translated as "يا" in Sindhi ('sd'). The provided translation "يہ" means "this" in Urdu, not "or" in Sindhi.
+The translation is incorrect. The provided Sindhi ('sd') translation "يہ" actually means "this" in Urdu, not "or". The correct Sindhi translation for "or" is "يا".
 
 Correct translation:
 يا
 ```
 </details>
+
+Number of issues: 2.

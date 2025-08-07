@@ -13,10 +13,10 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Repeat new passphrase</source>
         <translation>Pasahitz berria errepiikatu</translation>
     
-YES  
-The word "errepiikatu" is incorrect in Basque. The correct verb to use for "repeat" is "errepikatu" (with one 'i' after 'rep'). Also, "Pasahitz berria" is correct for "new passphrase."  
+YES
+There is a minor spelling error in the Basque word for "repeat". It should be "errepikatu" rather than "errepiikatu" (one too many 'i's).
 
-Correct translation:  
+Correct translation:
 Pasahitz berria errepikatu
 ```
 
@@ -25,10 +25,16 @@ Pasahitz berria errepikatu
         <translation>Diruzorroaren pasahitz berria sartu. &lt;br/&gt;Mesedez &lt;b&gt; hamar edo gehiago ausazko hizkiko&lt;/b&gt; pasahitza erabili, edo &lt;b&gt; gutxienez zortzi hitz&lt;/b&gt;</translation>
     
 YES
-The translation is incomplete and misses the end of the sentence. The English source ends with "eight or more words," but the Basque translation ends abruptly after "gutxienez zortzi hitz" ("at least eight words") without repeating or including "pasahitza erabili" or equivalent, making it incomplete and unclear.
+The Basque translation contains grammar and fluency issues:
+- "Diruzorroaren" is an uncommon (literal) translation for "wallet" in Basque; "zorro" is more common.
+- The sentence structure and word order are not fully natural.
+- There is a missing full stop at the end, and "erabili" is not capitalized otherwise.
+- The translation omits "Please use a passphrase of ...", which should be "Erabili mesedez ..." or similar.
+- The phrase "hogeita hamar edo gehiago ausazko hizkiko" is awkward and should be "... hamar karaktere edo gehiago ausazkoak ..." (characters) and similarly for words.
+- The tag and bold markup are transferred correctly.
 
 Correct translation:
-Diruzorroaren pasahitz berria sartu.&lt;br/&gt;Mesedez &lt;b&gt;hamar edo gehiago ausazko karaktere&lt;/b&gt; edo &lt;b&gt;gutxienez zortzi hitz&lt;/b&gt; dituzten pasahitzen bat erabili.
+Sartu zorroaren pasahitz berria.&lt;br/&gt;Mesedez, erabili &lt;b&gt;hamar karaktere edo gehiago ausazkoak&lt;/b&gt; dituen pasahitza, edo &lt;b&gt;gutxienez zortzi hitz&lt;/b&gt;.
 ```
 
 ```
@@ -36,70 +42,73 @@ Diruzorroaren pasahitz berria sartu.&lt;br/&gt;Mesedez &lt;b&gt;hamar edo gehiag
         <translation>GARRANTZITSUA: Diruzorroaren segurtasun-kopia, wallet.dat, erabilezina bihurtuko da enkriptazioa burutu ondoren. Ondorioz, segurtasun-kopia berriekin ordezkatu beharko zenituzke zure jada eginik dituzun diruzorroaren kopiak.</translation>
     
 YES
-The translation is not fully accurate and omits key details from the source. The source emphasizes replacing previous backups of the wallet file with the newly generated encrypted wallet file and warns that previous unencrypted backups become useless once you start using the new encrypted wallet. The translation only partially conveys these ideas and uses "wallet.dat" specifically, which is not present in the source. Also, the logical flow is somewhat altered.
+The translation does not accurately render the original English message. It omits several important details: specifically, the instructions to replace old backups with the newly generated encrypted wallet, and it does not mention explicitly that unencrypted backups become useless, nor the reason ("for security reasons"). It also adds "wallet.dat" which is not specified in the source.
 
 Correct translation:
-GARRANTZITSUA: Zure diruzorroaren fitxategiaren aurreko segurtasun-kopiak leundu berri eta enkriptatutako fitxategiarekin ordezkatu beharko dituzu. Segurtasun-arrazoiak direla eta, enkriptatu gabeko diruzorroaren kopia zaharrak erabilgarriak izango dira bakarrik zure diruzorro enkriptatua erabiltzen hasi arte.
+GARRANTZITSUA: Zure diruzorro fitxategiaren aurretik egindako segurtasun-kopiak ordezkatu behar dituzu orain sortutako, zifratutako diruzorro fitxategiarekin. Segurtasun arrazoiengatik, zifratugabea den diruzorro fitxategiaren aurretiko segurtasun-kopiak baliogabe bihurtuko dira zifratutako berria erabiltzen hasten zarenean.
 ```
 
 ```
         <source>The passphrase entered for the wallet decryption is incorrect. It contains a null character (ie - a zero byte). If the passphrase was set with a version of this software prior to 25.0, please try again with only the characters up to — but not including — the first null character. If this is successful, please set a new passphrase to avoid this issue in the future.</source>
         <translation>Kartera deszifratzeko sartu den pasahitza ez da zuzena. Karaktere nulua du (adib - zero byte). Passphrasak software honen bertsio bat bazuen 25.0 bertsioaren aurretik, mesedez, saia zaitez berriro karaktere hutsekin, lehen karaktere nulua barne hartu gabe. Arrakasta izanez gero, jar ezazu passphrase berri bat etorkizunean hori saihesteko.</translation>
     
-YES  
-The translation contains some errors and unnatural phrasing in Basque (eu). Also, format specifiers such as "ie - a zero byte" should be properly translated or explained, and some English words like "passphrase" and "software" appear untranslated or inconsistent with common Basque usage. The instruction about "characters up to — but not including — the first null character" is unclear and partly incorrect in the translation.
+YES
+There are some inaccuracies and style issues in the translation:
+- "adib" is likely an attempt at "adibidez" ("for example"), but the English says "(ie - a zero byte)", meaning "that is", which in Basque should be "hau da".
+- "karaktere hutsak" means "blank/empty characters", which does not convey "characters up to (but not including) the first null character".
+- The structure and precision of the English has not been fully preserved.
 
-Correct translation:  
-"Kartera deszifratzeko sartu den pasahitza ez da zuzena. Karaktere nulua dauka (hau da, zero byte bat). Software honen 25.0 bertsioaren aurretik pasahitza ezarri bazen, mesedez, saiatu berriro lehen karaktere nulura arteko karaktereekin — lehen karaktere nulua barne hartu gabe. Arrakasta izanez gero, ezarri mesedez pasahitz berri bat etorkizunean arazo hau saihesteko."
-
-Notes:  
-- "pasahitza" is preferable to "passphrase" (Basque word).  
-- "hau da" better than "adib" (adib. = adibidez = for example), as original says "ie - a zero byte", meaning "that is".  
-- Clearer instruction regarding characters before the first null character.  
-- Removes awkward "karaktere hutsekin" (empty characters) and clarifies meaning.
+Correct translation:
+Kartera deszifratzeko sartu duzun pasahitza ez da zuzena. Karaktere nulu bat dauka (hau da, zero byte bat). Pasahitza software honen 25.0 bertsioa baino lehenagoko bertsio batekin ezarri bazen, saiatu berriro, lehen karaktere nuluaraino, baina hura barne hartu gabe, dagoen karaktereak bakarrik sartzen. Honek funtzionatzen badu, ezarri pasahitz berri bat etorkizunean arazo hau saihesteko.
 ```
 
 ```
         <source>Banned Until</source>
         <translation>Honarte debekatua </translation>
     
-YES  
-The translation adds an unnecessary trailing space and "Honarte" is incorrect. The correct Basque translation for "Banned Until" in this Bitcoin context (likely referring to a ban expiry) is "Debekatua arte" or "Debekatua izan arte" depending on formality. "Honarte" is not correct here.
+YES
+The translation is incorrect and has a spelling mistake. "Honarte debekatua" does not convey the meaning of "Banned Until" in Basque, and "Honarte" should be "honaino" if attempting "until", but "honaino debekatua" is still not idiomatic.
 
-Correct translation:  
-Debekatua arte
+Correct translation:
+Debekatua honaino
+or, more naturally,
+Debekatuta (epea: [insert date/time here])
+or
+Debekatua data hau arte
+
+If the intention is to indicate a date until which the ban lasts, "Debekatua data hau arte" ("Banned until this date") is the clearest.
 ```
 
 ```
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation>%1 Konfigurazio fitxategian akatsa edo baliogabea izan daiteke</translation>
     
-YES  
-The translation has minor issues with word order and missing punctuation. The phrase "might be corrupt or invalid" is better translated as "korrupzioa edo baliogabea izan daiteke" or similar, maintaining the meaning clearly. Also, the placement of "%1" at the start without any article or connector sounds unnatural in Basque.
+YES
+The translation is missing an article and does not properly convey the meaning of "might be corrupt or invalid." It also drops the word "file" ("fitxategi"), and the structure is unnatural.
 
-A better translation would be:  
-"%1 konfigurazio-fitxategia hondatuta edo baliogabea izan daiteke."
+Correct translation:
+%1 konfigurazio-fitxategia hondatuta edo baliogabea egon daiteke.
 ```
 
 ```
         <source>Runaway exception</source>
         <translation>Ranaway exception</translation>
     
-YES  
-The translation incorrectly copies the English phrase but misspells "Runaway" as "Ranaway." Moreover, this is not a translation into Basque (language code 'eu'); it is just an English phrase with a typo.
+YES
+The translation is erroneous; it simply repeats the original English phrase with a typo ("Ranaway" instead of "Runaway") rather than translating it into Basque.
 
-Correct translation:  
-"Irteerako salbuespena"
+Correct translation:
+Salbuespen iheslaria
 ```
 
 ```
         <source>%1 d</source>
         <translation>%1 e</translation>
     
-YES  
-The source text "%1 d" likely stands for "%1 days" or similar, where "d" is an abbreviation for "days." The translated text "%1 e" uses "e," which is not a standard abbreviation for "day" or "days" in Basque ('eu'). In Basque, "day" is "egun," and a common abbreviation might be "eg" or "eg." The letter "e" alone is not appropriate and changes the meaning.
+YES
+The translation is problematic. The English source "%1 d" likely stands for "%1 days", where "d" is an abbreviation for "days". In Basque ('eu'), the abbreviation for "days" is "eg" (from "egun"), not "e". 
 
-Correct translation:  
+Correct translation:
 %1 eg
 ```
 
@@ -107,34 +116,35 @@ Correct translation:
         <source>Change Passphrase…</source>
         <translation>aldatu pasahitza</translation>
     
-YES  
-The original English text uses an ellipsis ("…") indicating that the action will lead to another step or dialog, which is lost in the translation. Additionally, the translation lacks capitalization at the beginning, and the ellipsis should be included. A suitable corrected translation would be:
+YES
+The translation "aldatu pasahitza" means "change the password" but does not include the ellipsis and lacks capitalization. Also, "Passphrase" is better translated as "sarrerako esapidea" or "pasahitz esapide". The correct translation with ellipsis and proper capitalization would be:
 
-Aldatu pasahitza…
+Correct translation:
+Pasahesa aldatu…
+or
+Pasahitz esapidea aldatu…
 ```
 
 ```
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
         <translation>Egiaztatu mesua Bitcoin helbide espezifikoarekin erregistratu direla ziurtatzeko</translation>
     
-YES  
-The translation has some minor issues: "mesua" should be plural ("mezuak") to correspond to "messages," and "Bitcoin helbide espezifikoarekin erregistratu direla" translates as "registered with the specified Bitcoin address," which is inaccurate because the source says "signed with specified Bitcoin addresses." Also, the source uses plural "addresses," so the translation should reflect that. The phrase "ziurtatzeko" ("to ensure") is correct in meaning but the syntax is not very natural in Basque.
+YES
+The translation is not accurate. The English source says "Verify messages to ensure they were signed with specified Bitcoin addresses". The Basque ('eu') translation says "Egiaztatu mesua Bitcoin helbide espezifikoarekin erregistratu direla ziurtatzeko", which means "Verify the message to ensure that it has been registered with a specific Bitcoin address". The translation misses the plural 'messages', changes 'signed' to 'registered', and otherwise loses precision.
 
-A better translation would be:  
-"Egiaztatu mezuak, Bitcoin helbide zehatzekin sinatu direla bermatzeko"  
-
-This means "Verify messages to ensure they were signed with specified Bitcoin addresses," correctly reflecting plurality and terminology.
+Correct translation:
+Mezuak egiaztatu, zehaztutako Bitcoin helbideekin sinatu direla ziurtatzeko
 ```
 
 ```
         <source>Fee:</source>
         <translation>Ordainketa:</translation>
     
-YES  
-The translation "Ordainketa" means "order" or "ordering" in Basque, which is incorrect in this context. The correct term for "Fee" (as in a charge or commission) in Basque is "Komisioa" or "Tasa".  
+YES
+The translation is inaccurate. 'Ordainketa' means 'payment', not 'fee' (which would be 'komisio' or 'tasak' in Basque). 'Fee:' should be translated as 'Komisioa:' or 'Tasa:' in this context.
 
-Correct translation:  
-<translation>Komisioa:</translation>
+Correct translation:
+Komisioa:
 ```
 
 ```
@@ -142,22 +152,21 @@ Correct translation:
         <translation>zenbatekoaren kopia</translation>
     
 YES
-The translation is incorrect. "Copy amount" in the Bitcoin context should imply the action of copying the amount (verb), but "zenbatekoaren kopia" means "copy of the amount" (a noun phrase). The translation should convey the imperative or noun phrase consistent with interface actions.
+The Basque translation "zenbatekoaren kopia" is not idiomatic and does not clearly convey the imperative "Copy amount". It reads like "copy of the amount" rather than giving a command.
 
-A better translation is:
-"Kopiatu zenbatekoa"  
-which means "Copy the amount" (imperative verb form).
+Correct translation:
+Zenbatekoa kopiatu
 ```
 
 ```
         <source>%1 is shutting down…</source>
         <translation>%1Itzaltzen ari da...</translation>
     
-YES  
-There is a spacing issue: "%1" and "Itzaltzen" are joined without a space. Also, the ellipsis in the source is a single character "…" (U+2026), but the translation uses three dots "...". It is better to use the proper ellipsis character to match the source format.
+YES
+There is a missing space between the format specifier and the translation text ("%1Itzaltzen" instead of "%1 Itzaltzen"). Additionally, the ellipsis should match the source ("…" vs "..."). The correct form in Basque would also make the translation more natural.
 
-Correct translation:  
-%1 Itzaltzen ari da…
+Correct translation:
+%1 itzaltzen ari da…
 ```
 
 ```
@@ -165,10 +174,10 @@ Correct translation:
         <translation>Proxyaren IP helbidea  (IPv4: 127.0.0.1 / IPv6: ::1 adibidez )</translation>
     
 YES
-There are extra spaces before the opening parenthesis and before the closing parenthesis in the translation, which is improper formatting. Also, the placement of "adibidez" (meaning "for example") should be immediately after the colon without spaces.
+There are minor whitespace issues and the position of "adibidez" (e.g.) is inconsistent with the English source. In Basque, "adibidez" should directly follow the examples, not be at the end in parenthesis. Also, there is an unnecessary double space after "helbidea".
 
 Correct translation:
-Proxyaren IP helbidea (IPv4: 127.0.0.1 / IPv6: ::1 adibidez)
+Proxyaren IP helbidea (adibidez, IPv4: 127.0.0.1 / IPv6: ::1)
 ```
 
 ```
@@ -176,21 +185,21 @@ Proxyaren IP helbidea (IPv4: 127.0.0.1 / IPv6: ::1 adibidez)
         <translation>Aldaketa honek clienta berriro piztea eskatzen du</translation>
     
 YES
-The word "clienta" is not the correct Basque term; Basque typically adapts foreign words more natively or uses loanwords with appropriate suffixes. Additionally, the sentence misses ending punctuation (a period). A better translation uses "bezeroa" or "klientea" for "client," and also adds the missing period.
+The translation uses "clienta," which is a mix of Basque and Spanish/English ("client"). In Basque, the correct term would be "bezeroa" for "client." Furthermore, a period is missing at the end of the sentence to match the source punctuation.
 
 Correct translation:
-Aldaketa honek bezeroa berriro piztea eskatzen du.
+Aldaketa honek bezeroa berrabiaraztea eskatzen du.
 ```
 
 ```
         <source>Fee:</source>
         <translation>Ordainketa:</translation>
     
-YES  
-The translation "Ordainketa" means "order" or "ordering" in Basque, which is incorrect in this context. The correct term for "Fee" (as in a charge or commission) in Basque is "Komisioa" or "Tasa".  
+YES
+The translation is inaccurate. 'Ordainketa' means 'payment', not 'fee' (which would be 'komisio' or 'tasak' in Basque). 'Fee:' should be translated as 'Komisioa:' or 'Tasa:' in this context.
 
-Correct translation:  
-<translation>Komisioa:</translation>
+Correct translation:
+Komisioa:
 ```
 
 ```
@@ -198,11 +207,10 @@ Correct translation:
         <translation>zenbatekoaren kopia</translation>
     
 YES
-The translation is incorrect. "Copy amount" in the Bitcoin context should imply the action of copying the amount (verb), but "zenbatekoaren kopia" means "copy of the amount" (a noun phrase). The translation should convey the imperative or noun phrase consistent with interface actions.
+The Basque translation "zenbatekoaren kopia" is not idiomatic and does not clearly convey the imperative "Copy amount". It reads like "copy of the amount" rather than giving a command.
 
-A better translation is:
-"Kopiatu zenbatekoa"  
-which means "Copy the amount" (imperative verb form).
+Correct translation:
+Zenbatekoa kopiatu
 ```
 
 ```
@@ -210,21 +218,21 @@ which means "Copy the amount" (imperative verb form).
         <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in 6 or more blocks.</extracomment>
         <translation>%1 konfirmazio</translation>
     
-YES  
-The Basque (eu) translation for "%1 confirmations" should use the plural form, since the number (%1) can be more than one. The correct plural form is "konfirmazioak". Also, there shouldn't be a trailing space or missing letter.  
+YES
+The translation is incorrect because "konfirmazio" is not correct in Basque for "confirmations". The correct translation should be "konfirmazio" for singular, but for plural it should be "konfirmazio", which is still not quite right; the correct plural form in Basque is "konfirmazio". However, the actual Basque for "confirmation" is "berrespen", and the plural form is "berrespen". Additionally, the word is missing the plural suffix and adaptation for "%1" (e.g. "%1 berrespen").
 
-Correct translation:  
-%1 konfirmazioak
+Correct translation:
+%1 berrespen
 ```
 
 ```
         <source>Mined</source>
         <translation>Meatua</translation>
     
-YES  
-The Basque word "Meatua" is incorrect and does not correspond to "Mined." The correct translation for "Mined" in the Bitcoin context (referring to coins or blocks obtained through mining) is "Meatutako."  
+YES
+The translation "Meatua" is incorrect in Basque. The correct term for "Mined" in the context of Bitcoin (referring to coins that have been produced through mining) is "Meatua". However, "Meatua" in Basque more often means "mine" (noun: a mine, as in a coal mine). The correct translation for the verb "Mined" (as in "has been mined") is "Meatutako".
 
-Correct translation:  
+Correct translation:
 Meatutako
 ```
 
@@ -232,10 +240,10 @@ Meatutako
         <source>This week</source>
         <translation>Aste honetankoak</translation>
     
-YES  
-The translation "Aste honetankoak" is incorrect. The correct Basque translation for "This week" is "Aste hau" or "Aste honetakoa" if emphasizing "the one belonging to this week." The suffix "-ko" or "-tako" indicates belonging, but the plural suffix "-ak" at the end makes "honetankoak" incorrect and awkward.
+YES
+The translation "Aste honetankoak" is incorrect and ungrammatical in Basque. The correct translation for "This week" is "Aste hau".
 
-Correct translation:  
+Correct translation:
 Aste hau
 ```
 
@@ -243,21 +251,12 @@ Aste hau
         <source>Mined</source>
         <translation>Meatua</translation>
     
-YES  
-The Basque word "Meatua" is incorrect and does not correspond to "Mined." The correct translation for "Mined" in the Bitcoin context (referring to coins or blocks obtained through mining) is "Meatutako."  
+YES
+The translation "Meatua" is incorrect in Basque. The correct term for "Mined" in the context of Bitcoin (referring to coins that have been produced through mining) is "Meatua". However, "Meatua" in Basque more often means "mine" (noun: a mine, as in a coal mine). The correct translation for the verb "Mined" (as in "has been mined") is "Meatutako".
 
-Correct translation:  
+Correct translation:
 Meatutako
 ```
-
-```
-        <source>Unable to generate initial keys</source>
-        <translation>hasierako giltzak sortzeko ezgai</translation>
-    
-YES  
-The translation is incomplete and ungrammatical in Basque ('eu'). "hasierako giltzak sortzeko ezgai" literally means "unable to generate initial keys," but "ezgai" is an incorrect or non-standard form for "unable." The correct Basque term for "unable" in this context is "ezinean" (meaning "incapable of" or "unable to").  
-
-Correct translation:  
-Hasierako giltzak sortzeko ezinean.
-```
 </details>
+
+Number of issues: 21.

@@ -13,45 +13,33 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Create a new address</source>
         <translation>Stvoriti  novu adresu</translation>
     
-YES  
-The word "Stvoriti" is incorrectly written as "Stvoriti " with an uppercase "S" and a stray space before "novu". Also, in Croatian, the verb should be in the imperative form and capitalized only if it starts the sentence, but the stray space after "Stvoriti" is incorrect. The correct phrase is "Stvori novu adresu".
-
-Correct translation:  
-Stvori novu adresu
-```
-
-```
-        <source>A fatal error occurred. Check that settings file is writable, or try running with -nosettings.</source>
-        <extracomment>Explanatory text shown on startup when the settings file could not be written. Prompts user to check that we have the ability to write to the file. Explains that the user has the option of running without a settings file.</extracomment>
-        <translation>Dogodila se kobna greška. Provjerite je li datoteka za postavke otvorena za promjene ili pokušajte pokrenuti s -nosettings.</translation>
-    
 YES
-The translation slightly misinterprets "writable" as "opened for changes" ("otvorena za promjene"), which is not accurate. The original means that the file should be writable (implying file permissions). The translation should reflect the ability to write to the file, not just that it is open for editing.
+There is an unnecessary space between "Stvoriti" and "novu", and the verb form should be imperative ("Stvori") instead of infinitive ("Stvoriti") to match the context.
 
 Correct translation:
-Dogodila se kobna greška. Provjerite je li datoteka s postavkama upisiva ili pokušajte pokrenuti s -nosettings.
+Stvori novu adresu
 ```
 
 ```
         <source>Show information about %1</source>
         <translation>Prikažite informacije o programu %1</translation>
     
-YES  
-The English source is generic: "Show information about %1". The translation unnecessarily adds the word "programu" (program), which is not present in the source and changes the meaning. It may be appropriate if %1 always refers to a program, but generally it should match the source literally and flexibly.  
+YES
+The translation adds "programu" ("program"), which is not present in the source text. The original talks about showing information about %1, which could refer to more than just a program (for example, a network or transaction).
 
-Correct translation:  
-Prikažite informacije o %1
+Correct translation:
+Prikaži informacije o %1
 ```
 
 ```
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
         <translation>Provjerite poruku da je potpisana s navedenom Bitcoin adresom</translation>
     
-YES  
-The translation is not fully accurate and does not exactly convey the meaning of the source. The source is in plural ("messages" and "addresses"), but the translation is singular ("poruku" and "adresom"). Also, the source implies verifying multiple messages to ensure they were signed with the specified Bitcoin addresses, a more general instruction. The correct Croatian translation should use plural forms and express the action clearly:  
+YES
+The translation is inaccurate: the source refers to "messages" (plural), but the translation uses the singular "poruku". Also, "to ensure they were signed" is not precisely captured; the translation says "that it is signed", missing the verification aspect. For greater accuracy and correct pluralization:
 
-Correct translation:  
-"Provjerite poruke kako biste bili sigurni da su potpisane navedenim Bitcoin adresama"
+Correct translation:
+Provjerite poruke kako biste bili sigurni da su potpisane s navedenim Bitcoin adresama
 ```
 
 ```
@@ -59,25 +47,22 @@ Correct translation:
         <extracomment>A context menu item. The "Peers tab" is an element of the "Node window".</extracomment>
         <translation>Pokaži Peers tab </translation>
     
-YES  
-The translation contains an unnecessary trailing space and mixes Croatian with English ("Peers tab"). A more appropriate and consistent Croatian translation would be:  
-"Pokaži karticu Peers"  
-or if "Peers" is left as a proper noun:  
-"Pokaži karticu Peers"  
-This uses "karticu" which is a commonly used Croatian word for "tab" in software contexts, instead of English "tab".
+YES
+The translation leaves "Peers tab" untranslated, which is not idiomatic in Croatian. "Peers" can be translated as "Čvorovi" or "Sudionici", and "tab" as "kartica". It also has a stray space at the end.
+
+Correct translation:
+Pokaži karticu Čvorovi
 ```
 
 ```
         <source>Copy bytes</source>
         <translation>Kopirajte količinu bajtova</translation>
     
-YES  
-The translation "Kopirajte količinu bajtova" is too literal and somewhat misleading. The English phrase "Copy bytes" in the Bitcoin context most likely refers to copying raw byte data or a number of bytes as a command or instruction (e.g., a button label). The Croatian translation implies copying an amount or quantity of bytes, which can be confusing.
+YES
+The translation is misleading. The English "Copy bytes" refers to copying the actual bytes (data), but the Croatian translation "Kopirajte količinu bajtova" means "Copy the amount of bytes," which wrongly suggests copying a number or quantity rather than the data itself.
 
-A more accurate and natural Croatian translation for "Copy bytes" (as a command, e.g., for a button) would be simply:  
-"Kopiraj bajtove"  
-
-This keeps it concise and imperative, matching the typical style for UI labels.
+Correct translation:
+Kopiraj bajtove
 ```
 
 ```
@@ -86,32 +71,21 @@ This keeps it concise and imperative, matching the typical style for UI labels.
         <translation>Kompajlirano bez mogućnosti vanjskog potpisivanje (potrebno za vanjsko potpisivanje)</translation>
     
 YES
-The phrase "vanjskog potpisivanje" is grammatically incorrect in Croatian; it should be "vanjskog potpisivanja" to match the genitive case required by "bez". Also, "mogućnosti" is singular feminine, so the following noun must be in genitive singular as well.
+There is a grammatical error: "vanjskog potpisivanje" should be "vanjskog potpisivanja" (genitive case consistency). Also, for clarity, "mogućnosti vanjskog potpisivanja" could be better as "podrške za vanjsko potpisivanje".
 
 Correct translation:
-Kompajlirano bez mogućnosti vanjskog potpisivanja (potrebno za vanjsko potpisivanje)
+Kompajlirano bez podrške za vanjsko potpisivanje (potrebno za vanjsko potpisivanje)
 ```
 
 ```
         <source>%1 is shutting down…</source>
         <translation>%1 do zatvaranja...</translation>
     
-YES  
-The translation "%1 do zatvaranja..." is incorrect and unclear. The original English means "%1 is shutting down…" indicating that the application or process named %1 is in the process of closing. In Croatian, a proper translation would use a verb form indicating the ongoing action of shutting down.
+YES
+The translation "do zatvaranja..." implies "until closing..." rather than "[is] shutting down." Also, the ellipsis uses three periods instead of the correct Unicode ellipsis (as in the source, "…"). The translation should accurately reflect the continuous action.
 
-Correct translation:  
-%1 se isključuje…
-```
-
-```
-        <source>Shows if the supplied default SOCKS5 proxy is used to reach peers via this network type.</source>
-        <translation>Prikazuje se ako je isporučeni uobičajeni SOCKS5 proxy korišten radi dohvaćanja klijenata preko ovog tipa mreže.</translation>
-    
-YES  
-The translation has some inaccuracies and awkward phrasing. "Isporučeni uobičajeni" is an unnatural way to say "supplied default," and "klijenata" ("clients") is less appropriate than "čvorova" or "ključeva" (peers in P2P networks). Also, "korišten radi dohvaćanja klijenata" ("used for fetching clients") is not idiomatic; better would be "koristi se za povezivanje s vršnjacima". Lastly, "Prikazuje se ako" is awkward; "Prikazuje" or "Prikazuje da" fits better.
-
-Correct translation:  
-Prikazuje koristi li se zadani SOCKS5 proxy za povezivanje s vršnjacima putem ovog tipa mreže.
+Correct translation:
+%1 se gasi…
 ```
 
 ```
@@ -119,20 +93,23 @@ Prikazuje koristi li se zadani SOCKS5 proxy za povezivanje s vršnjacima putem o
         <translation>Stručne postavke</translation>
     
 YES
-The English source "Expert" is a single word referring to a level or category, likely an expertise level or mode. The Croatian translation "Stručne postavke" means "Expert settings," which is a phrase rather than a direct translation of the single word "Expert." A more accurate translation for "Expert" in this context would be:
+The translation "Stručne postavke" means "Brief settings" and does not correspond to the English term "Expert". The correct Croatian translation for "Expert" would be "Stručnjak" or, if it refers to an "Expert" mode or setting, "Napredno" or "Ekspert".
 
-Stručnjak
+Correct translation:
+Ekspert
+
+(or if used as a label for a mode: "Napredno" or "Ekspertni način" depending on context)
 ```
 
 ```
         <source>Enable coin control features</source>
         <translation>Uključite postavke kontroliranja inputa</translation>
     
-YES  
-The translation is somewhat accurate but not fully appropriate. The source phrase "Enable coin control features" refers to enabling features related to coin control in Bitcoin, which is better translated as "Uključite značajke kontrole kovanica" or "Omogući značajke kontrole kovanica." The current translation "Uključite postavke kontroliranja inputa" incorrectly uses "inputa" (inputs) and "postavke" (settings), which is less precise and may confuse the user.
+YES
+The translation is understandable but not entirely accurate and can be improved. "Coin control" in Bitcoin context refers specifically to selecting which "coins" (unspent outputs, ili UTXOs) to spend in a transaction, not just "input control." The term "kontrola novčića" or "upravljanje novčićima" is more idiomatic in Bitcoin communities. Also, "postavke" means "settings", but the source refers to enabling features, not settings.
 
-Correct translation:  
-Uključite značajke kontrole kovanica
+Correct translation:
+Omogući mogućnosti kontrole novčića
 ```
 
 ```
@@ -140,9 +117,10 @@ Uključite značajke kontrole kovanica
         <extracomment>An options window setting to enable PSBT controls.</extracomment>
         <translation>Uključi  PBST opcije za upravljanje</translation>
     
-YES  
-There is a letter transposition error in the abbreviation "PSBT" which is translated as "PBST". Additionally, there is an extra space between "Uključi" and "PBST". The correct translation should be:
+YES
+There is a typographical error in the translation: "PBST" should be "PSBT" to accurately reflect the original term. Additionally, there is an unnecessary extra space between "Uključi" and "PBST".
 
+Correct translation:
 Uključi PSBT opcije za upravljanje
 ```
 
@@ -152,9 +130,10 @@ Uključi PSBT opcije za upravljanje
         <translation>Za prikazivanje PSBT opcija za upravaljanje. </translation>
     
 YES
-The translation contains a spelling error and unnecessary trailing space. "upravaljanje" should be "upravljanje". Also, the sentence is incomplete and sounds unnatural. A more accurate and natural translation would be:
+There is a typo in the word "upravljanje" (written as "upravaljanje"). Also, the translation could be more concise and natural. The extra space before the period should be removed.
 
-Za prikaz PSBT opcija za upravljanje.
+Correct translation:
+Za prikazivanje PSBT kontrola.
 ```
 
 ```
@@ -162,10 +141,10 @@ Za prikaz PSBT opcija za upravljanje.
         <translation>Korišten za dohvaćanje klijenata preko:</translation>
     
 YES
-The translation uses "korišten" (utilized) correctly but "dohvaćanje klijenata" translates to "fetching clients," which is inaccurate and misleading in the Bitcoin context. The original source refers to "reaching peers," where "peers" means network nodes or participants, not "clients." A better Croatian translation would use "dohvat" or "povezivanje" with "čvorova" (nodes) or "vršnjaka" (peers).
+The word "peers" in the Bitcoin context means "čvorovi" or "peerovi" (nodes/peers) rather than "klijenati" (clients), which is a misinterpretation in Bitcoin networking.
 
 Correct translation:
-"Korišteno za povezivanje s vršnjacima preko:"
+Korišten za dohvaćanje čvorova preko:
 ```
 
 ```
@@ -174,21 +153,23 @@ Correct translation:
         <translation>Kompajlirano bez mogućnosti vanjskog potpisivanje (potrebno za vanjsko potpisivanje)</translation>
     
 YES
-The phrase "vanjskog potpisivanje" is grammatically incorrect in Croatian; it should be "vanjskog potpisivanja" to match the genitive case required by "bez". Also, "mogućnosti" is singular feminine, so the following noun must be in genitive singular as well.
+There is a grammatical error: "vanjskog potpisivanje" should be "vanjskog potpisivanja" (genitive case consistency). Also, for clarity, "mogućnosti vanjskog potpisivanja" could be better as "podrške za vanjsko potpisivanje".
 
 Correct translation:
-Kompajlirano bez mogućnosti vanjskog potpisivanja (potrebno za vanjsko potpisivanje)
+Kompajlirano bez podrške za vanjsko potpisivanje (potrebno za vanjsko potpisivanje)
 ```
 
 ```
         <source>Select a peer to view detailed information.</source>
         <translation>Odaberite klijent kako biste vidjeli detaljne informacije.</translation>
     
-YES  
-The word "klijent" (client) is incorrect in this context; the source says "peer," which refers to a network participant, not a client. The correct Croatian term for "peer" in a P2P network context is "čvora" (node) or "člana" (member), depending on common usage. Here "čvora" is appropriate. Also, the verb "vidjeli" should agree with the subject "vi" (you plural), so "vidjeli" is correct, but the phrase "kako biste vidjeli" is correct as a conditional form.
+YES
+The translation uses "klijent" (client) instead of "peer". In the Bitcoin context, "peer" should be translated as "peer" or "čvor" (node), not "klijent". Also, "kako biste" can simply be "za prikaz".
 
-Correct translation:  
-Odaberite čvora kako biste vidjeli detaljne informacije.
+Correct translation:
+Odaberite peer za prikaz detaljnih informacija.
+or
+Odaberite čvor za prikaz detaljnih informacija.
 ```
 
 ```
@@ -196,76 +177,82 @@ Odaberite čvora kako biste vidjeli detaljne informacije.
         <extracomment>Explanatory text for an outbound peer connection that was established manually through one of several methods. The numbered arguments are stand-ins for the methods available to establish manual connections.</extracomment>
         <translation>Priručnik za izlazeće (?): dodano koristeći RPC %1 ili %2/%3 konfiguracijske opcije</translation>
     
-YES  
-The translation uses "Priručnik za izlazeće (?)" which is unclear and incorrect in this context. "Manual" here refers to a manual/outbound peer connection, not a "manual" as in a handbook. The phrase should clearly indicate an outbound manual connection.
+YES
+The translation is inaccurate and awkward. "Priručnik za izlazeće (?)" incorrectly renders "Outbound Manual"—it suggests something like "Manual for outgoing (?),” which does not fit the context. The correct translation should capture the notion that the outbound connection was manually added, not refer to a manual (booklet).
 
-Correct translation:  
-"Izlazni ručni: dodano korištenjem RPC %1 ili %2/%3 konfiguracijskih opcija"
+Correct translation:
+Izlazna veza (ručno): dodano korištenjem RPC %1 ili %2/%3 konfiguracijskih opcija
 ```
 
 ```
         <source>no high bandwidth relay selected</source>
         <translation>brzopodatkovni prijenos nije odabran</translation>
     
-YES  
-The Croatian translation contains a lexical error. The English phrase "no high bandwidth relay selected" means that a relay with high data transfer capacity has not been selected. The correct Croatian term for "high bandwidth" is "velika propusnost" or "visoka propusnost," not "brzopodatkovni," which is a nonstandard and confusing neologism. A better and clear translation would be:
+YES
+The translation is inaccurate. "brzopodatkovni prijenos nije odabran" means "high data transfer is not selected," which does not reflect the original context regarding selecting a high bandwidth relay. 
 
-nema odabranog releja s visokom propusnošću
+Correct translation:
+"Nije odabran relej s velikom propusnošću"
 ```
 
 ```
         <source>Ban for</source>
         <translation>Zabranite za</translation>
     
-YES  
-The translation "Zabranite za" is incorrect. It translates to an imperative "You ban for," which does not fit the context if the phrase is meant as a label or part of a phrase like "Ban for [time]" rather than a command. A more appropriate translation is "Zabrana za" which means "Ban for" as a noun phrase.  
+YES
+The translation "Zabranite za" is not idiomatic and does not accurately convey "Ban for" in Croatian. It should use a form that matches context, e.g., "Zabrana na" (if referring to duration, e.g., "Ban for 24 hours" → "Zabrana na 24 sata").
 
-Correct translation:  
-Zabrana za
+Correct translation:
+Zabrana na
 ```
 
 ```
         <source>Custom change address</source>
         <translation>Zadana adresa u koju će ostatak biti poslan</translation>
     
-YES  
-The translation is more of an explanatory phrase rather than a direct, concise translation of "Custom change address." It is longer and adds an explanation ("address to which the change will be sent") that is not present in the source. Also, it does not literally translate "Custom," which implies that the address is user-defined or manually specified.
+YES
+The translation is understandable, but it is not accurate. The English phrase "Custom change address" refers specifically to a user-specified "change address" in the context of Bitcoin. The provided translation ("Zadana adresa u koju će ostatak biti poslan") expands the meaning and does not explicitly mention that it's a change address, which could confuse users familiar with the term.
 
-A more accurate and concise translation would be:  
-"Prilagođena adresa za ostatak"
+Correct translation:
+Prilagođena adresa za ostatak
 ```
 
 ```
         <source>Send to multiple recipients at once</source>
         <translation>Pošalji novce većem broju primatelja u jednoj transakciji</translation>
     
-YES  
-The translation adds the concept of "money" (novce) and "transaction" (transakciji), which are not present in the source. The source simply says "Send to multiple recipients at once," which could apply to sending Bitcoin or data without specifying "novce" or "transakciji." A more precise and direct translation is:  
-Pošalji višestrukim primateljima odjednom
+YES
+The translation adds extra information ("u jednoj transakciji" meaning "in one transaction") that is not present in the source. Also, "novce" ("money") is implied but not explicit in the source.
+
+Correct translation:
+Pošalji više primatelja odjednom
 ```
 
 ```
         <source>Copy bytes</source>
         <translation>Kopirajte količinu bajtova</translation>
     
-YES  
-The translation "Kopirajte količinu bajtova" is too literal and somewhat misleading. The English phrase "Copy bytes" in the Bitcoin context most likely refers to copying raw byte data or a number of bytes as a command or instruction (e.g., a button label). The Croatian translation implies copying an amount or quantity of bytes, which can be confusing.
+YES
+The translation is misleading. The English "Copy bytes" refers to copying the actual bytes (data), but the Croatian translation "Kopirajte količinu bajtova" means "Copy the amount of bytes," which wrongly suggests copying a number or quantity rather than the data itself.
 
-A more accurate and natural Croatian translation for "Copy bytes" (as a command, e.g., for a button) would be simply:  
-"Kopiraj bajtove"  
-
-This keeps it concise and imperative, matching the typical style for UI labels.
+Correct translation:
+Kopiraj bajtove
 ```
 
 ```
         <source>Create Unsigned</source>
         <translation>Create nije potpisan</translation>
     
-YES  
-The translation mixes English ("Create") and Croatian ("nije potpisan"). It should be fully translated into Croatian.
+YES
+The translation is incorrect. "Create nije potpisan" is a literal mix of English and Croatian and does not make sense in Croatian. The correct translation should be: 
 
-Correct translation:  
-"Napravi nepotpisano"
+Kreiraj nepotpisano
+
+Or if a noun is expected (e.g., "Unsigned"), it could be:
+
+Kreiraj nepotpisani
+
+But "Kreiraj nepotpisano" is usually the most appropriate for this context.
 ```
 
 ```
@@ -274,10 +261,10 @@ Correct translation:
         <translation>Molimo pregledajte svoj prijedlog transakcije. Ovo će stvoriti djelomično potpisanu Bitcoin transakciju (PBST) koju možete spremiti ili kopirati i zatim potpisati sa npr. novčanikom %1 koji nije povezan s mrežom ili sa PSBT kompatibilnim hardverskim novčanikom.</translation>
     
 YES
-The abbreviation "PSBT" is incorrectly translated as "PBST" in the Croatian translation. It should remain "PSBT" to match the English acronym. 
+There is a typographical error: "PBST" should be "PSBT". Additionally, "sa npr." would be better as "npr. s". The phrase "novčanikom %1 koji nije povezan s mrežom" translates to "a %1 wallet that is not connected to the network", which is a correct interpretation of "an offline %1 wallet", but a more faithful translation would be "offline novčanikom %1". Also, PSBT-compatible should include a hyphen: "PSBT-kompatibilnim".
 
 Correct translation:
-Molimo pregledajte svoj prijedlog transakcije. Ovo će stvoriti djelomično potpisanu Bitcoin transakciju (PSBT) koju možete spremiti ili kopirati i zatim potpisati sa npr. novčanikom %1 koji nije povezan s mrežom ili sa PSBT kompatibilnim hardverskim novčanikom.
+Molimo, pregledajte svoj prijedlog transakcije. Ovo će stvoriti djelomično potpisanu Bitcoin transakciju (PSBT) koju možete spremiti ili kopirati, a zatim potpisati npr. offline novčanikom %1 ili PSBT-kompatibilnim hardverskim novčanikom.
 ```
 
 ```
@@ -286,21 +273,29 @@ Molimo pregledajte svoj prijedlog transakcije. Ovo će stvoriti djelomično potp
         <translation>Molimo pregledajte svoju transakciju. Možete kreirarti i poslati ovu transakciju ili kreirati djelomično potpisanu Bitcoin transakciju (PBST) koju možete spremiti ili kopirati i zatim potpisati sa npr. novčanikom %1 koji nije povezan s mrežom ili sa PSBT kompatibilnim hardverskim novčanikom.</translation>
     
 YES
-There is a typo in the translation with the word "kreirarti" which should be "kreirati". Also, the acronym "PSBT" is mistranslated as "PBST"; it should remain "PSBT" to match the source and standard terminology.
+There are a few issues:
+1. Typo: "kreirarti" should be "kreirati".
+2. Abbreviation error: should be "PSBT", not "PBST" — the original uses "PSBT".
+3. Style: "sa npr. novčanikom %1 koji nije povezan s mrežom" is fine, but "offline novčanikom %1" is clearer for "offline %1 wallet".
+4. "sa PSBT kompatibilnim hardverskim novčanikom" should be "PSBT-kompatibilnim hardverskim novčanikom".
 
 Correct translation:
-Molimo pregledajte svoju transakciju. Možete kreirati i poslati ovu transakciju ili kreirati djelomično potpisanu Bitcoin transakciju (PSBT) koju možete spremiti ili kopirati i zatim potpisati sa npr. novčanikom %1 koji nije povezan s mrežom ili sa PSBT kompatibilnim hardverskim novčanikom.
+Molimo pregledajte svoju transakciju. Možete kreirati i poslati ovu transakciju ili kreirati djelomično potpisanu Bitcoin transakciju (PSBT), koju možete spremiti ili kopirati i zatim potpisati, npr. s offline novčanikom %1 ili s PSBT-kompatibilnim hardverskim novčanikom.
 ```
 
 ```
         <source>Transaction creation failed!</source>
         <translation>Neuspješno stvorenje transakcije!</translation>
     
-YES  
-The Croatian translation uses "Neuspješno stvorenje transakcije!", where "stvorenje" means "creature" and is incorrect here. The correct term for creation (of a transaction) is "stvaranje".  
+YES
+The translation is understandable but is not idiomatic Croatian. "Neuspješno stvorenje" is awkward and not correct; the noun "stvorenje" means "creature". A more natural translation would be:
 
-Correct translation:  
-Neuspješno stvaranje transakcije!
+Transakcija nije uspjela!
+or
+Stvaranje transakcije nije uspjelo!
+
+Correct translation:
+Stvaranje transakcije nije uspjelo!
 ```
 
 ```
@@ -308,37 +303,22 @@ Neuspješno stvaranje transakcije!
         <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents an unconfirmed transaction that conflicts with a confirmed transaction.</extracomment>
         <translation>subokljen s transakcijom broja potvrde %1</translation>
     
-YES  
-The Croatian translation is inaccurate and unclear. The source phrase "conflicted with a transaction with %1 confirmations" means that the current (unconfirmed) transaction conflicts with another transaction that has %1 confirmations. The translation "subokljen s transakcijom broja potvrde %1" is incorrect and uses a non-existent or wrong form "subokljen" (possibly a misspelling of "suprotstavljen" or confusion with "sukobljen" which is also not standard Croatian). It also omits the preposition "with" and renders "confirmations" inaccurately as "broja potvrde" (which translates to "number of confirmation" but grammatically incorrect and awkward).
+YES
+The translation is problematic. The word "subokljen" is incorrect in Croatian; likely a typo of "sukobljen" (conflicted). Additionally, "broja potvrde %1" is an incorrect structure; it should reflect "with %1 confirmations." A correct and natural translation would be:
 
-A correct Croatian translation should be along the lines of:  
-"sukobljen s transakcijom koja ima %1 potvrdu"  
-or more fluently:  
-"sukobljen s transakcijom s %1 potvrda"
-
-Since "potvrda" (confirmation) counts are plural, and "%1" is the count, the plural form must be chosen correctly:
-
-If %1 can be singular or plural, a neutral and commonly used phrase is:  
-"sukobljen s transakcijom s %1 potvrdom" (using instrumental singular, but not accurate if %1 >1)  
-
-Better to use plural form:  
-"sukobljen s transakcijom s %1 potvrda"
-
-Therefore, the corrected translation is:  
-<sukobljen s transakcijom s %1 potvrda>
-
-Full corrected translation:  
-<sukobljen s transakcijom s %1 potvrda>
+Correct translation:
+Sukobljen s transakcijom koja ima %1 potvrda
 ```
 
 ```
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
         <translation>Status transakcije</translation>
     
-YES  
-The translation "Status transakcije" only translates "Transaction status" and omits the rest of the sentence "Hover over this field to show number of confirmations." which is important information. A more complete and accurate translation would be:  
+YES
+The translation is incomplete; it only translates "Transaction status" and omits "Hover over this field to show number of confirmations." The user would miss important information.
 
-"Status transakcije. Zadržite pokazivač miša iznad ovog polja za prikaz broja potvrda."
+Correct translation:
+Status transakcije. Zadržite pokazivač miša iznad ovog polja kako biste prikazali broj potvrda.
 ```
 
 ```
@@ -350,23 +330,12 @@ Idi na Datoteka &gt;  Otvori novčanik za učitanje novčanika.
 - ILI -</translation>
     
 YES
-There is an extra space before "Otvori novčanik" that should be removed to avoid formatting issues.
+There is an unnecessary double space after "&gt;" and the phrase "za učitanje novčanika" is awkward; "kako biste učitali novčanik" would be more natural. Also, "ILI" is a valid alternative for "- OR -" in Croatian.
 
 Correct translation:
 Nijedan novčanik nije učitan.
-Idi na Datoteka &gt; Otvori novčanik za učitanje novčanika.
+Idi na Datoteka &gt; Otvori novčanik kako biste učitali novčanik.
 - ILI -
-```
-
-```
-        <source>Warning: This may pay the additional fee by reducing change outputs or adding inputs, when necessary. It may add a new change output if one does not already exist. These changes may potentially leak privacy.</source>
-        <translation>Upozorenje: Ovo može platiti dodatnu naknadu smanjenjem change outputa ili dodavanjem inputa, po potrebi. Može dodati novi change output ako jedan već ne postoji. Ove promjene bi mogle smanjiti privatnost.</translation>
-    
-YES
-The translation uses untranslated English terms "change outputa" and "inputa," which can be replaced with appropriate Croatian terms to improve clarity and consistency. Also, the phrase "mogu smanjiti privatnost" ("can reduce privacy") is less precise than "potentially leak privacy," which relates more to "curenje privatnosti" (leaking privacy).
-
-Correct translation:
-Upozorenje: Ovo može platiti dodatnu naknadu smanjenjem izlaza za povrat ili dodavanjem unosa, po potrebi. Može dodati novi izlaz za povrat ako jedan već ne postoji. Ove promjene mogu potencijalno otkriti privatne podatke.
 ```
 
 ```
@@ -374,79 +343,90 @@ Upozorenje: Ovo može platiti dodatnu naknadu smanjenjem izlaza za povrat ili do
         <translation>%s korumpirano. Pokušajte koristiti bitcoin-wallet alat za novčanike kako biste ga spasili ili pokrenuti sigurnosnu kopiju.</translation>
     
 YES  
-The translation is slightly awkward and contains minor inaccuracies. The phrase "pokrenuti sigurnosnu kopiju" literally means "run the backup," which is not appropriate in this context. The source suggests "restoring a backup," which should be translated as "vratiti sigurnosnu kopiju" or "obnoviti sigurnosnu kopiju." Also, the infinitive verb forms should be consistent and more natural.
+The translation has some issues:
+1. The phrase "spasili ili pokrenuti sigurnosnu kopiju" is incorrect. "Pokrenuti sigurnosnu kopiju" doesn't make sense in Croatian; the intended meaning is to restore from a backup, not to start a backup.
+2. "bitcoin-wallet alat za novčanike" is a confusing expression. It would be clearer as simply "alat bitcoin-wallet" or "alat bitcoin-wallet za oporavak novčanika".
+3. The format specifier "%s" is carried over correctly.
 
 Correct translation:  
-%s korumpiran. Pokušajte upotrijebiti alat bitcoin-wallet za novčanike kako biste ga spasili ili vratili sigurnosnu kopiju.
+%s je oštećen. Pokušajte koristiti alat bitcoin-wallet za spašavanje ili vratite iz sigurnosne kopije.
 ```
 
 ```
         <source>File %s already exists. If you are sure this is what you want, move it out of the way first.</source>
         <translation>Datoteka %s već postoji. Ako ste sigurni da ovo želite, prvo ju maknite, </translation>
     
-YES  
-The translation is incomplete and cuts off abruptly after "prvo ju maknite," missing the rest of the sentence "move it out of the way first." A correct translation should fully convey the meaning of the source text.   
+YES
+The translation is incomplete and ends with a comma, leaving the sentence unfinished. Additionally, the pronoun "ju" is correct for "datoteka" (feminine), but the sentence should not end with a comma.
 
-Correct translation:  
-Datoteka %s već postoji. Ako ste sigurni da ovo želite, prvo ju maknite s puta.
+Correct translation:
+Datoteka %s već postoji. Ako ste sigurni da je to ono što želite, najprije je premjestite.
 ```
 
 ```
         <source>No dump file provided. To use createfromdump, -dumpfile=&lt;filename&gt; must be provided.</source>
         <translation>Dump datoteka nije automatski dostupna. Kako biste koristili createfromdump, -dumpfile=&lt;filename&gt; mora biti osiguran. </translation>
     
-YES  
-The phrase "nema dump datoteke" is a more natural and accurate translation for "No dump file provided." The current translation "Dump datoteka nije automatski dostupna" implies the dump file is not automatically available, which changes the meaning. Additionally, there is a trailing space at the end of the translation that should be removed.
+YES
+The translation is understandable but has issues:
+1. The English "No dump file provided." is translated as "Dump datoteka nije automatski dostupna," which changes the meaning; it should directly state that no dump file was provided, not that it's "not automatically available."
+2. The English "must be provided" is translated as "mora biti osiguran," which is less idiomatic than "mora biti naveden."
+3. There is an unnecessary space before the closing tag.
 
-Correct translation:  
-Nema dump datoteke. Za korištenje createfromdump, -dumpfile=&lt;filename&gt; mora biti naveden.
+Correct translation:
+Nije navedena dump datoteka. Da biste koristili createfromdump, morate navesti -dumpfile=&lt;filename&gt;.
 ```
 
 ```
         <source>No wallet file format provided. To use createfromdump, -format=&lt;format&gt; must be provided.</source>
         <translation>Format datoteke novčanika nije dostupan. Kako biste koristili reatefromdump, -format=&lt;format&gt; mora biti osiguran.</translation>
     
-YES  
-The translation has a typographical error: "reatefromdump" should be "createfromdump". Also, "nije dostupan" (is not available) is less appropriate than "nije naveden" (not provided) to match the source "No ... provided." The phrase "mora biti osiguran" is a bit awkward here; "mora biti naveden" or "mora se navesti" is more natural for command line arguments.
+YES
+There are two issues:
+1. There is a typo: "reatefromdump" should be "createfromdump".
+2. The word "osiguran" is not the best choice; "naveden" (provided/specified) would be more appropriate.
 
-Correct translation:  
-Format datoteke novčanika nije naveden. Za korištenje createfromdump, -format=&lt;format&gt; mora biti naveden.
+Correct translation:
+Format datoteke novčanika nije naveden. Da biste koristili createfromdump, morate navesti -format=&lt;format&gt;.
 ```
 
 ```
         <source>Error: Couldn't create cursor into database</source>
         <translation>Greška: Nije moguće kreirati cursor u batu podataka</translation>
     
-YES  
-The translation contains an incorrect word: "batu podataka" should be "bazu podataka" (database). Also, the English word "cursor" should be translated or at least adapted to Croatian as "kursor" for consistency.
+YES
+There is an error in the translation: "cursor" is left untranslated, and "batu podataka" is incorrect—it should be "baz u podataka". The correct translation of "cursor" would be "kursor" or "pokazivač".
 
-Correct translation:  
-Greška: Nije moguće kreirati kursor u bazu podataka
+Correct translation:
+Greška: Nije moguće kreirati kursor u bazi podataka
 ```
 
 ```
         <source>Pruning blockstore…</source>
         <translation>Pruning blockstore-a...</translation>
     
-YES  
-The translation contains an untranslated English word "Pruning" and incorrectly uses "blockstore-a" with an English word and an incorrect suffix. In Croatian, a better translation would fully translate or adapt the phrase in a natural way. A possible correct translation is:  
-"Izrezivanje pohrane blokova..."  
-or more simply:  
-"Orezivanje blokovne pohrane..."  
-depending on usage. Since "Pruning" is a technical term in Bitcoin usually translated as "orezivanje," use that for clarity. Also, the ellipsis should be three dots without extra spacing.  
-Correct translation:  
-Izrezivanje pohrane blokova...
+YES
+The translation uses an English loanword ("Pruning") instead of the correct Croatian term, and the ellipsis should be three dots (as in original), but using the Croatian ellipsis character (…) is also acceptable. However, "blockstore-a" is somewhat awkward; a better translation would Croatianize both terms or at least "pruning".
+
+Correct translation:
+Smanjujem spremište blokova...
+or more literally,
+Obrezujem spremište blokova...
+or, if you want to be more technical,
+Prerađujem spremište blokova...
+
+Any of the above would be clearer and better localized than retaining English terms.
 ```
 
 ```
         <source>The transaction amount is too small to pay the fee</source>
         <translation>Transakcijiski iznos je premalen da plati naknadu</translation>
     
-YES  
-The Croatian translation contains a non-standard and somewhat incorrect form "Transakcijiski." The correct Croatian adjective for "transaction" is "Transakcijski" without the extra 'i'. Also, while the sentence is mostly understandable, a more natural phrasing in Croatian for this context is:  
+YES
+The word "Transakcijiski" is incorrect; the correct adjective form in Croatian is "Transakcijski". Furthermore, "da plati naknadu" sounds awkward. A more natural phrasing would be "za plaćanje naknade".
 
-Correct translation:  
-Transakcijski iznos je preslab da plati naknadu
+Correct translation:
+Transakcijski iznos je premalen za plaćanje naknade
 ```
 
 ```
@@ -454,42 +434,44 @@ Transakcijski iznos je preslab da plati naknadu
         <translation>Transakciji je potrebna change adresa, ali ju ne možemo generirati.</translation>
     
 YES
-The translation mixes Croatian and English by keeping "change" untranslated, which is inconsistent and unidiomatic. The word "change" in the Bitcoin context should be translated to "promjenska" or "adresa za povrat" to convey "change address" correctly.
+The term "change adresa" uses the English word "change" instead of its proper Croatian equivalent. The correct translation for "change address" in the Bitcoin context is "adresa za ostatak" or "adresa za povrat ostatka".
 
 Correct translation:
-Transakciji je potrebna adresa za promjenu, ali je ne možemo generirati.
+Transakciji je potrebna adresa za ostatak, ali ju ne možemo generirati.
 ```
 
 ```
         <source>Unknown new rules activated (versionbit %i)</source>
         <translation> Nepoznata nova pravila aktivirana (versionbit %i)</translation>
     
-YES  
-The translation has an extra leading space before "Nepoznata" which should be removed to avoid formatting issues. Otherwise, the translation is accurate and preserves the format specifier correctly.  
+YES
+There is an unwanted leading space before the translation and an unnecessary trailing space at the end. Otherwise, the translation is accurate and correct.
 
-Correct translation:  
-<Nepoznata nova pravila aktivirana (versionbit %i)> (without leading space)
+Correct translation:
+Nepoznata nova pravila aktivirana (versionbit %i)
 ```
 
 ```
         <source>Wallet needed to be rewritten: restart %s to complete</source>
         <translation>Novčanik je trebao prepravak: ponovo pokrenite %s</translation>
     
-YES  
-The Croatian translation is incomplete and slightly inaccurate. The source implies that restarting %s is necessary to complete the rewriting process, which is not fully conveyed in the translation. The phrase "trebao prepravak" is unnatural; a better phrasing would be "trebalo je prepisati novčanik" or "novčanik je trebao biti prepisan". Also, the instruction "ponovo pokrenite %s" should include "da dovršite" (to complete) as in the source.
+YES
+The translation omits the "to complete" part of the source, which indicates that the restart is needed to finish the rewriting process.
 
-Correct translation:  
-Novčanik je trebao biti prepisan: ponovo pokrenite %s da dovršite
+Correct translation:
+Novčanik je trebao biti prepravljen: za dovršetak ponovo pokrenite %s
 ```
 
 ```
         <source>Settings file could not be written</source>
         <translation>Datoteka postavke se ne može mijenjati</translation>
     
-YES  
-The translation is inaccurate. The English source says "Settings file could not be written," which implies a failure to write/save the file. The Croatian translation means "The settings file cannot be changed," which is not the same and could cause confusion.
+YES
+The translation is inaccurate. The source says the "settings file could not be written," meaning the file could not be saved or written to. The translation "Datoteka postavke se ne može mijenjati" means "Settings file cannot be changed," which is not precise and omits the concept of a failed write operation.
 
-A better translation would be:  
-"Datoteka postavki se ne može zapisati"
+Correct translation:
+Datoteku s postavkama nije moguće zapisati
 ```
 </details>
+
+Number of issues: 38.

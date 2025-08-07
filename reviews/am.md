@@ -15,12 +15,15 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <translation>በንዑስ ሰረዝ የተለዩ ፋይሎች</translation>
     
 YES
-The Amharic translation "በንዑስ ሰረዝ የተለዩ ፋይሎች" literally means "Files that are separated by comma," which is understandable. However, the English source refers to the file format (i.e., "Comma separated file" or ideally "Comma-separated values file"), not the files themselves.
+The translation "በንዑስ ሰረዝ የተለዩ ፋይሎች" translates to "files separated by comma", but in a plural and generic sense ("files" rather than "file"), and does not capture the intended format specification as precisely as possible.
 
-A more accurate and idiomatic translation that is used for CSV (Comma-separated values) files in Amharic is:
+A more accurate translation for "Comma separated file" in Amharic would be:
 በንዑስ ሰረዝ የተለየ ፋይል
 
-So, the correct translation should be:
+This keeps the singular "file", directly corresponding to the source. If you want to make it clear it's an actual file format, you might use:
+በንዑስ ሰረዝ የተለየ ፋይል (CSV)
+
+But for literal translation:
 በንዑስ ሰረዝ የተለየ ፋይል
 ```
 
@@ -29,7 +32,7 @@ So, the correct translation should be:
         <translation>አይፒ/ኔትማስክ  IP/Netmask</translation>
     
 YES
-The translation redundantly includes both the Amharic translation and the original English text, which is unnecessary. Also, there is an extra space before "IP/Netmask". The correct translation should only be in Amharic, unless technical terms like "IP" and "Netmask" are not localized; in that case, transliteration may be used or the English terms may be retained, but not duplicated.
+The translation unnecessarily duplicates the source English text after the Amharic translation, which is redundant and may confuse users. The correct translation should only be in Amharic, unless some technical terms are commonly left in English, but duplication is not standard practice.
 
 Correct translation:
 አይፒ/ኔትማስክ
@@ -40,7 +43,7 @@ Correct translation:
         <translation>ነባሪ የስርዓት ቅርጸ-ቁምፊ "%1</translation>
     
 YES
-The quotation marks in the translation are not balanced; the closing quote after %1 is missing. This can cause formatting issues.
+The Amharic translation is missing the closing quotation mark after %1, which is present in the source. This creates a formatting inconsistency.
 
 Correct translation:
 ነባሪ የስርዓት ቅርጸ-ቁምፊ "%1"
@@ -51,15 +54,18 @@ Correct translation:
         <translation>ዋሌትዎን ለፍጠር ተሳስተዋል </translation>
     
 YES
-The translation is not fully accurate. The English "Error creating wallet" is a statement about an error that happened during wallet creation, but the translation "ዋሌትዎን ለፍጠር ተሳስተዋል" is more like "There was a mistake to create your wallet", which is slightly awkward and informal in Amharic.
+The translation has an error in the verb tense and format. The original English says "Error creating wallet," which is a short error message, essentially "Failed to create wallet." The Amharic translation says "ዋሌትዎን ለፍጠር ተሳስተዋል", which awkwardly translates as "There was a mistake to create your wallet." Also, there is an unnecessary space at the end.
 
-A more precise and natural translation would be:
-ዋሌት ሲፈጠር ስህተት ተፈጥሯል
+A better, concise translation would be:
+ዋሌት ማፍረር ተሳናቸው
 
-Also, there is a stray space at the end of the translation.
+Or, more directly:
+ዋሌት ማፍጠር ስህተት ተከስቷል
+
+So:
 
 Correct translation:
-ዋሌት ሲፈጠር ስህተት ተፈጥሯል
+ዋሌት ማፍጠር ስህተት ተከስቷል
 ```
 
 ```
@@ -67,13 +73,12 @@ Correct translation:
         <translation>ክፍያው ቅዳ</translation>
     
 YES
-The translation "ክፍያው ቅዳ" is problematic. "Copy fee" should refer to copying (i.e., transferring to clipboard) the fee value, not an instruction to "cut" or "remove" the fee. "ቅዳ" more closely translates to "cut" rather than "copy." The correct translation should be:
+The translation "ክፍያው ቅዳ" literally means "cut the fee" instead of "copy fee". The verb "ቅዳ" means "cut", not "copy". The correct translation should use the verb for "copy", which is "ቅዳተ" or "ግልባጭ አድርግ".
 
 Correct translation:
-"ክፍያውን ቅዳ" should be replaced with "ክፍያውን ቅዳል" or "ክፍያውን ቅዳ" if "copy" is meant as an instruction. However, the correct word for "copy" in Amharic is "ገልብጥ" or "ቅዳው".
-
-Best translation:
-ክፍያውን ገልብጥ
+ክፍያውን ቅዳተ
+or
+ክፍያውን ግልባጭ አድርግ
 ```
 
 ```
@@ -85,15 +90,18 @@ The migration process will create a backup of the wallet before migrating. This 
         <translation>ዋሌትን ማዛወር ይህንን ዋሌት አንድ ወይም ከዚያ በላይ ወደሆነ ገላጭ ዋሌቶች ይቀይረዋል።አዲስ ዋሌት ማዘጋጀት ያስፈልጋል ።ይህ ዋሌት ምንም ዓይነት የመመልከት ብቻ ስክሪፕቶችን የያዘ ከሆነ፣እነዚያን የመመልከት ብቻ ስክሪፕቶችን የያዘ አዲስ ዋሌት ይፈጠራል።ይህ ዋሌት ሊፈቱ የሚችሉ ነገር ግን የመመልከት ብቻ ያልሆኑ ስክሪፕቶችን የያዘ ከሆነ ፣ እነዚህን የያዘ አዲስ እና ልዩ የሆነ ዋሌት ይፈጠራል ።የማዛወር ሂደቱ ማዘዋወር ከመፈጸሙ በፊት የነዚህን ዋሌቶች መጠባበቂያ ቅጂ ይይዛል።ይህ መጠባበቂያ ቅጂ 1-2 legacy.bak ተብሎ ተሰይሞ በዋሌቱ ማውጫ ውስጥ ይገኛል።የተሳሳተ ዝውውር በሚከሰትበት ጊዜየመጠባበቂያ ቅጂው በ ዋሌት መመለሻ መተግበሪያ ውስጥ ይከማቻል።</translation>
     
 YES
-The translation has several issues:
-- There are spacing issues, such as missing spaces after periods and commas, and some unnecessary spaces before punctuation marks.
-- The backup file name in the translation ("1-2 legacy.bak") does not accurately reflect the format in the source ("<wallet name>-<timestamp>.legacy.bak").
-- The sentence structure in places is hard to understand and could confuse users (e.g., "ሊፈቱ የሚችሉ ነገር ግን የመመልከት ብቻ ያልሆኑ ስክሪፕቶችን").
-- Terms such as "restore" and "backup" could be better localized.
-- General clarity and accuracy could be improved for technical users.
+The translation is generally understandable, but it has several issues:
+
+1. Punctuation issues: Missing spaces after sentence-ending punctuation (።), creating run-on sentences.
+2. Literal translations: Key technical terms such as "descriptor wallet", "watchonly scripts", or "solvable but not watched scripts" are not clearly and accurately rendered in Amharic; some are mistranslated or omitted.
+3. Filename template "&lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak" is incorrectly rendered as "1-2 legacy.bak", which is inaccurate and omits critical information.
+4. Unnecessary whitespace within sentences.
+5. Some semantic drift, e.g. "የማዛወር ሂደቱ ማዘዋወር ከመፈጸሙ በፊት የነዚህን ዋሌቶች" is awkward.
 
 Corrected translation:
-<translation>ዋሌትን ማዛወር ይህን ዋሌት ወደ አንድ ወይም ከአንዱ በላይ የገላጭ ዋሌቶች ይለውጣል። አዲስ ዋሌት ቅፅ ማዘጋጀት ያስፈልጋል። ይህ ዋሌት ብቻ እንዲታዩ የተባሉ ስክሪፕቶችን ካሳየ፣ እነዚህን የመመልከት ብቻ የሆኑ ስክሪፕቶች የያዘ አዲስ ዋሌት ይፈጠራል። ይህ ዋሌት በሚፈቱ ነገር ግን የመመልከት ብቻ ያልሆኑ ስክሪፕቶችን ካሳየ፣ እነዚህን የያዘ በተለየ አዲስ ዋሌት ይፈጠራል። የማዛወር ሂደት ከመጀመሩ በፊት የዋሌቱን ቅርጸ መቆጣጠሪያ ይፈጥራል። ይህ የሚገኙት ማያውቅ መቅረጽ &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak የተባለ ስም ያለው በዚህ ዋሌት መያዣ አድራሻ ውስጥ ይገኛል። በሚያሳውቅ ተሳሳት የዘውውር ሂደት ሲከሰት ቅብራ መመዝገቢያውን በ "ዋሌት መመለሻ" ተግባር ማመልከት ይችላሉ።</translation>
+ዋሌትን ማዛወር ይህንን ዋሌት ወደ አንድ ወይም ከዚያ በላይ የመግለጫ (descriptor) ዋሌቶች ያስቀድማል። አዲስ የዋሌት ቅጂ (backup) ማድረግ ይኖርቦታል። ይህ ዋሌት የመመልከት ብቻ (watchonly) ስክሪፕቶች ካሉበት በፊት፣ እነዚህን የመመልከት ብቻ ስክሪፕቶች የያዘ አዲስ ዋሌት ይፈጠራል። ይህ ዋሌት ማፍቃት የሚችሉ ነገር ግን የመመልከት ብቻ ያልሆኑ ስክሪፕቶች ካሉበት፣ እነዚህን የያዘ የተለየ አዲስ ዋሌት ይፈጠራል።
+
+የማዛወር ሂደቱ ከመጀመሩ በፊት የዋሌት ቅጂ ይመስራል። ይህ የቅጂ ፋይል &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak ተብሎ በዋሌቱ ማውጫ ውስጥ ይገኛል። በስህተት ዝውውር ቢፈጠር፣ የቅጂው ፋይል በ “ዋሌት መመለሻ” ተግባር መድረሻ ሊመለስ ይችላል።
 ```
 
 ```
@@ -101,21 +109,10 @@ Corrected translation:
         <translation>የመመልከት ብቻ ስክሪፕቶች'%1'.ወደ ተሰኘው ዋሌት ተዛውረዋል </translation>
     
 YES
-There are spacing and punctuation format issues in the translation. There should be a space before and after '%1'. The Amharic translation also has minor awkward phrasing; it would be clearer and more natural to phrase it as "የመመልከት ብቻ ስክሪፕቶች ወደ '%1' ተብሎ የተሰኘው አዲስ ዋሌት ተዛውረዋል።"
+There are whitespace and punctuation format issues in the translation. The apostrophe in '%1' should be followed by a space before "ወደ", and there should be a space after "ስክሪፕቶች". Also, the Amharic translation could be made smoother. Additionally, there shouldn't be a period after '%1'.
 
 Correct translation:
-የመመልከት ብቻ ስክሪፕቶች ወደ '%1' ተብሎ የተሰኘው አዲስ ዋሌት ተዛውረዋል።
-```
-
-```
-        <source>Welcome to %1.</source>
-        <translation>እንኳን  ወድ %1 በደህና መጣህ።</translation>
-    
-YES
-There are formatting issues in the translation: there are double spaces after "እንኳን" and around "%1". The correct Amharic greeting does not require these extra spaces.
-
-Correct translation:
-እንኳን ወደ %1 በደህና መጣህ።
+የመመልከት ብቻ ስክሪፕቶች ወደ '%1' ተብሎ የተሰኘው አዲስ ዋሌት ተዛውረዋል
 ```
 
 ```
@@ -123,7 +120,7 @@ Correct translation:
         <translation>ስለ እኛ %1</translation>
     
 YES
-The translation "ስለ እኛ %1" means "About us %1", which changes the meaning of the original English text. The correct translation for "About %1" (where %1 is likely a program or application's name) should be:
+The translation "ስለ እኛ %1" is problematic. "ስለ እኛ" means "about us" rather than "about %1", where %1 is a variable (e.g., "About Bitcoin Core"). The correct translation should be "ስለ %1".
 
 Correct translation:
 ስለ %1
@@ -134,10 +131,10 @@ Correct translation:
         <translation>ከ</translation>
     
 YES
-The translation is incorrect. "Form" in English (referring to a form or document, not "from") should be translated as "ቅፅ" or "ቅጽ" in Amharic. The given translation "ከ" means "from" (a preposition), which is completely incorrect in this context.
+The translation "ከ" means "from" or "of" in Amharic, which is not equivalent to "Form." This is an erroneous translation.
 
 Correct translation:
-<translation>ቅጽ</translation>
+ቅጽ
 ```
 
 ```
@@ -145,10 +142,10 @@ Correct translation:
         <translation>ከ</translation>
     
 YES
-The translation is incorrect. "Form" in English (referring to a form or document, not "from") should be translated as "ቅፅ" or "ቅጽ" in Amharic. The given translation "ከ" means "from" (a preposition), which is completely incorrect in this context.
+The translation "ከ" means "from" or "of" in Amharic, which is not equivalent to "Form." This is an erroneous translation.
 
 Correct translation:
-<translation>ቅጽ</translation>
+ቅጽ
 ```
 
 ```
@@ -156,13 +153,12 @@ Correct translation:
         <translation>ክፍያው ቅዳ</translation>
     
 YES
-The translation "ክፍያው ቅዳ" is problematic. "Copy fee" should refer to copying (i.e., transferring to clipboard) the fee value, not an instruction to "cut" or "remove" the fee. "ቅዳ" more closely translates to "cut" rather than "copy." The correct translation should be:
+The translation "ክፍያው ቅዳ" literally means "cut the fee" instead of "copy fee". The verb "ቅዳ" means "cut", not "copy". The correct translation should use the verb for "copy", which is "ቅዳተ" or "ግልባጭ አድርግ".
 
 Correct translation:
-"ክፍያውን ቅዳ" should be replaced with "ክፍያውን ቅዳል" or "ክፍያውን ቅዳ" if "copy" is meant as an instruction. However, the correct word for "copy" in Amharic is "ገልብጥ" or "ቅዳው".
-
-Best translation:
-ክፍያውን ገልብጥ
+ክፍያውን ቅዳተ
+or
+ክፍያውን ግልባጭ አድርግ
 ```
 
 ```
@@ -170,10 +166,10 @@ Best translation:
         <translation>%1 ከዋሌት %2'</translation>
     
 YES
-The translation is missing the opening single quote before "%2", resulting in a format inconsistency. The English source has single quotes around %2 ('%2'), but the Amharic translation only has the closing quote. It should also more clearly indicate "from wallet" in Amharic.
+The translation is missing the opening single quote before %2 and has an extra or misplaced single quote after %2. It also lacks the word "from" ("ከ") formatted properly with both parameters and doesn't encapsulate the wallet name in single quotes as in the source.
 
 Correct translation:
-%1 ከዋሌት '%2'
+%1 ከ'ዋሌት '%2'
 ```
 
 ```
@@ -182,12 +178,15 @@ Correct translation:
         <translation>በንዑስ ሰረዝ የተለዩ ፋይሎች</translation>
     
 YES
-The Amharic translation "በንዑስ ሰረዝ የተለዩ ፋይሎች" literally means "Files that are separated by comma," which is understandable. However, the English source refers to the file format (i.e., "Comma separated file" or ideally "Comma-separated values file"), not the files themselves.
+The translation "በንዑስ ሰረዝ የተለዩ ፋይሎች" translates to "files separated by comma", but in a plural and generic sense ("files" rather than "file"), and does not capture the intended format specification as precisely as possible.
 
-A more accurate and idiomatic translation that is used for CSV (Comma-separated values) files in Amharic is:
+A more accurate translation for "Comma separated file" in Amharic would be:
 በንዑስ ሰረዝ የተለየ ፋይል
 
-So, the correct translation should be:
+This keeps the singular "file", directly corresponding to the source. If you want to make it clear it's an actual file format, you might use:
+በንዑስ ሰረዝ የተለየ ፋይል (CSV)
+
+But for literal translation:
 በንዑስ ሰረዝ የተለየ ፋይል
 ```
 
@@ -196,11 +195,11 @@ So, the correct translation should be:
         <translation>ከክፍያ-ነፃ PSBT ወደ ቅንጥብ ሰሌዳ ተቀድቷል።</translation>
     
 YES
-The translation "ከክፍያ-ነፃ PSBT ወደ ቅንጥብ ሰሌዳ ተቀድቷል።" translates back to "Fee-free PSBT copied to clipboard". This is incorrect, as "fee-bump" refers to increasing the transaction fee, not making it "fee-free."
+The translation incorrectly renders "Fee-bump" as "ክፍያ-ነፃ", which means "free of charge" or "payment-free" in Amharic. However, "Fee-bump" in the context of Bitcoin refers to an increase in the transaction fee (e.g., to speed up confirmation). The translation should reflect the correct technical meaning.
 
 Correct translation:
-የክፍያ ጨምሮ የተሰራው PSBT ወደ ቅንጥብ ሰሌዳ ተገልቧል።
-
-This ensures accuracy in the Bitcoin context.
+"የክፍያ መጨመሪያ PSBT ወደ ቅንጥብ ሰሌዳ ተቀድቷል።"
 ```
 </details>
+
+Number of issues: 14.

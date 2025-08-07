@@ -13,110 +13,103 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Passphrase Dialog</source>
         <translation>Změna hesla</translation>
     
-YES  
-The English source "Passphrase Dialog" refers to a dialog window related to entering or managing a passphrase, not "Change password." The Czech translation "Změna hesla" means "Change password," which is inaccurate.
+YES
+The translation is inaccurate. "Passphrase Dialog" means the dialog window related to the passphrase, not necessarily "Change Password". The translation "Změna hesla" specifically means "Change Password".
 
-Correct translation:  
-"Dialog pro zadání hesla" or "Dialog pro passphrase"
+Correct translation:
+Dialog pro zadání hesla
 ```
 
 ```
         <source>Repeat new passphrase</source>
         <translation>Totéž heslo ještě jednou</translation>
     
-YES  
-The translation "Totéž heslo ještě jednou" means "The same password once again," which is not an accurate or natural translation for "Repeat new passphrase." The source instructs the user to repeat the *new* passphrase (i.e., enter it again for confirmation), whereas the translation implies repeating the *same password*, which is less clear and less formal.
+YES
+The translation is understandable but not entirely accurate or direct. "Totéž heslo ještě jednou" translates more like "The same password once again," which is less precise than the more standard "Zopakujte nové heslo" or "Opakujte nové heslo," meaning "Repeat new passphrase."
 
-A more appropriate translation would be:  
-"Zopakujte novou passphrasu"  
-or  
-"Zopakujte nové heslo"  
-
-If "passphrase" should remain untranslated as a technical term, "passphrasu" is acceptable; otherwise "heslo" (password) can be used if appropriate. Given context, "Zopakujte novou passphrasu" is best.
+Correct translation:
+Zopakujte nové heslo
 ```
 
 ```
         <source>Copy after fee</source>
         <translation>Kopíruj čistou částku</translation>
     
-YES  
-The translation "Kopíruj čistou částku" means "Copy the net amount," which is not an accurate or appropriate translation of "Copy after fee." The phrase "Copy after fee" typically refers to copying the amount or value after subtracting the transaction fee, not specifically the "net amount" as a phrase to be copied or an imperative "copy."
+YES
+The translation is not a literal or accurate rendering of the source. "Copy after fee" refers to copying the amount remaining after the fee is deducted, not just "Copy net amount" (which may be implied but not stated).
 
-A more accurate translation, maintaining the imperative tone and context (likely a button or command), would be:
-
-"Kopírovat částku po poplatku"  
-or  
-"Kopírovat po poplatku"  
-
-depending on the exact UI context, but the first is more precise.
-
-Correct translation:  
-<Kopírovat částku po poplatku>
+Correct translation:
+Zkopírovat částku po odečtení poplatku
 ```
 
 ```
         <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>Utrácení bitcoinů, které už utratily zatím nezobrazené transakce, nebude bitcoinovou sítí umožněno.</translation>
     
-YES  
-The translation is misleading and incorrect. It says "Spending bitcoins that have already been spent by not-yet-displayed transactions," which is incorrect and confusing. The original English means "Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network," i.e., the bitcoins are affected by transactions that have not yet been displayed (or processed/shown).
+YES
+The translation alters the meaning of the original sentence. The source states that bitcoins affected by not-yet-displayed transactions will not be accepted for spending. The Czech translation implies that bitcoins "which have already been spent by not-yet-displayed transactions" are being spent, which doesn't exactly match the original and may be confusing.
 
-A better translation would be:  
-"Pokus o utrácení bitcoinů, které jsou ovlivněny zatím nezobrazenými transakcemi, nebude sítí akceptován."
+Correct translation:
+Pokus o utracení bitcoinů, které jsou ovlivněny dosud nezobrazenými transakcemi, nebude sítí akceptován.
 ```
 
 ```
         <source>Font in the Overview tab: </source>
         <translation>Písmo s pevnou šířkou v panelu Přehled:</translation>
     
-YES  
-The English source "Font in the Overview tab: " simply refers to the font used in the Overview tab. The translation "Písmo s pevnou šířkou v panelu Přehled:" means "Monospaced font in the Overview panel:", which adds the meaning of "monospaced font" that is not present in the original. Additionally, "tab" is better translated as "záložka" (tab) rather than "panel," which usually means "panel" or "pane."  
+YES
+The translation incorrectly adds "s pevnou šířkou" (monospace/fixed-width) which is not implied by the source. The source simply refers to a "font" in general, not specifically a fixed-width one.
 
-Correct translation:  
-Písmo v záložce Přehled:
+Correct translation:
+Písmo na kartě Přehled:
 ```
 
 ```
         <source>Expert</source>
         <translation>Pokročilá nastavení</translation>
     
-YES  
-The source word "Expert" is a noun meaning an expert, typically masculine or neutral in Czech. The translation "Pokročilá nastavení" means "Advanced settings," which is a phrase and not an equivalent of "Expert." The translation is therefore inaccurate and misleading.  
+YES
+The translation "Pokročilá nastavení" means "Advanced settings," not "Expert." The translation is incorrect.
 
-Correct translation:  
+Correct translation:
 Expert
+
+Alternatively, you could use "Odborník" if you want to translate it as a noun, or leave it as "Expert" if it is intended as a label.
 ```
 
 ```
         <source>Spendable:</source>
         <translation>Běžné:</translation>
     
-YES  
-The translation "Běžné:" means "Common:" or "Ordinary:", which is not an accurate translation of "Spendable:". In the Bitcoin context, "Spendable" refers to the amount of coins that are available to be spent. A better Czech translation would be:
+YES
+The translation "Běžné:" means "Ordinary:" or "Regular:", which does not accurately reflect "Spendable" in the context of Bitcoin, where it usually refers to the balance that can be spent.
 
-"Utratitelné:"
+Correct translation:
+K dispozici:
 ```
 
 ```
         <source>Save Transaction Data</source>
         <translation>Zachovej procesní data</translation>
     
-YES  
-The Czech translation uses "procesní data," which is an uncommon and somewhat awkward expression in this context. A more natural and accurate translation for "Save Transaction Data" would be "Uložit data transakce" or "Uložit data transakce."  
+YES
+The Czech translation "Zachovej procesní data" is inaccurate. "Procesní data" does not mean "Transaction Data" (it could mislead as "process data"). The correct translation should be:
 
-Correct translation:  
-Uložit data transakce
+Uložit údaje o transakci
+
+So, the correct translation is:  
+Uložit údaje o transakci
 ```
 
 ```
         <source>(But this wallet does not have the right keys.)</source>
         <translation>Ale tenhle vstup nemá správné klíče</translation>
     
-YES  
-The Czech translation uses "vstup" which means "input" rather than "wallet" ("peněženka"). The English source clearly refers to a wallet, so the correct translation should use "peněženka". Also, the source ends with a period inside the parentheses, which is missing in the translation.  
+YES
+The translation is inaccurate; it translates "this input" instead of "this wallet." Also, the parentheses are missing, and it lacks the period at the end.
 
-Correct translation:  
-(Ale tahle peněženka nemá správné klíče.)
+Correct translation:
+(Ale tato peněženka nemá správné klíče.)
 ```
 
 ```
@@ -124,10 +117,10 @@ Correct translation:
         <extracomment>An Inbound Connection from a Peer.</extracomment>
         <translation>Sem</translation>
     
-YES  
-The translation "Sem" is incorrect for the English term "Inbound" in the context of a network or peer connection. The correct Czech translation for "Inbound" (as in "incoming connection") is "Příchozí".
+YES
+The translation "Sem" is incorrect and unrelated to the meaning of "Inbound" as described ("An Inbound Connection from a Peer"). "Sem" means "here" in Czech, which does not fit the context.
 
-Correct translation:  
+Correct translation:
 Příchozí
 ```
 
@@ -135,22 +128,27 @@ Příchozí
         <source>To specify a non-default location of the blocks directory use the '%1' option.</source>
         <translation>Pro specifikaci neklasické lokace pro data použij možnost '%1'</translation>
     
-YES  
-The translation has a slight issue with tone and phrasing for clarity and naturalness in Czech. The phrase "neklasické lokace pro data" is not the best choice here, and "použij" is informal and missing a period at the end. A better translation would explicitly mention "adresáře bloků" (blocks directory) as in the source text and use formal phrasing appropriate for documentation.
+YES
+The translation is inaccurate: "neklasické lokace pro data" does not convey "non-default location of the blocks directory" correctly. "neklasické" is not idiomatic, and "pro data" is too vague. Also, the sentence is missing the full stop at the end, differing from the source, and the formulation is not ideal in Czech.
 
-Correct translation:  
-Pro určení nestandardního umístění adresáře bloků použijte možnost „%1“.
+Correct translation:
+Pro zadání jiného umístění adresáře s bloky použijte volbu '%1'.
 ```
 
 ```
         <source>The mapped Autonomous System used for diversifying peer selection.</source>
         <translation>Mapovaný nezávislý - Autonomní Systém používaný pro rozšírení vzájemného výběru protějsků.</translation>
     
-YES  
-The translation is problematic due to incorrect capitalization, mistranslation of terms, and grammatical issues. "Autonomous System" should be "autonomní systém" (not capitalized as a proper noun here), "diversifying" is better translated as "diverzifikaci" or "rozmanitost," and "peer selection" should be "výběru protějšků" but without "vzájemného," which adds an unnecessary notion of mutuality. Also, the punctuation and spacing have an unnecessary space before the dash and inconsistent use of dashes.
+YES
+There are inaccuracies and awkward phrasing in the Czech translation:
 
-Correct translation:  
-Mapovaný autonomní systém používaný k diverzifikaci výběru protějšků.
+- "nezávislý" is not needed here, and the dash between "nezávislý - Autonomní Systém" is incorrect.
+- "rozšírení vzájemného výběru protějsků" translates more as "expansion of mutual selection of counterparts" and does not accurately reflect "diversifying peer selection."
+- "protějsků" is unusual; "uzlů" or "peerů" is more standard in technical/Bitcoin context.
+- "Autonomní Systém" should not be capitalized except for the first word ("autonomní systém").
+
+Correct translation:
+Mapovaný autonomní systém používaný ke zpestření výběru peerů.
 ```
 
 ```
@@ -159,16 +157,17 @@ Mapovaný autonomní systém používaný k diverzifikaci výběru protějšků.
         <translation>Adresy s omezením počtu přijatých adres</translation>
     
 YES
-The translation is inaccurate and redundant. The source text "Addresses Rate-Limited" refers to addresses that have been rate-limited (i.e., limited in processing due to rate limits). The provided translation "Adresy s omezením počtu přijatých adres" literally means "Addresses with a limitation on the number of received addresses," which is confusing and repeats "addresses" redundantly.
-
-A better translation would be concise and clear, for example:
-"Adresy omezené kvůli rychlostnímu limitu" 
-or
-"Adresy omezené rychlostí"
-
-These capture the idea that the addresses are rate-limited (limited by rate).
+The translation is problematic because it changes the meaning of the original. "Addresses Rate-Limited" means that the addresses have been subject to rate limiting (their rate is limited), not that it is an "address with a limit on the number of received addresses". The current translation also introduces ambiguity and awkwardness.
 
 Correct translation:
+Adresy omezené rychlostí
+or
+Adresy omezené kvůli omezení rychlosti
+
+A more context-accurate option:
+Adresy omezené rate-limitem
+
+Choose the most context-appropriate, with the first one generally preferred in technical UI:
 Adresy omezené rychlostí
 ```
 
@@ -176,61 +175,63 @@ Adresy omezené rychlostí
         <source>Current block height</source>
         <translation>Velikost aktuálního bloku</translation>
     
-YES  
-The translation "Velikost aktuálního bloku" means "Size of the current block," which is inaccurate. The source "Current block height" refers to the block number or the height of the blockchain, not its size. A more accurate translation would be:  
-"Výška aktuálního bloku"
+YES
+The translation is inaccurate. "Current block height" should be translated as "Aktuální výška bloku" in Czech. The provided translation "Velikost aktuálního bloku" means "Current block size," which is incorrect.
+
+Correct translation:
+Aktuální výška bloku
 ```
 
 ```
         <source>Ban for</source>
         <translation>Uval klatbu na</translation>
     
-YES  
-The translation "Uval klatbu na" is incorrect and does not correspond to Czech. It appears to be gibberish or a mix of unrelated words. The correct Czech translation for "Ban for" (as in a ban for a specific reason) would be:  
+YES
+The translation "Uval klatbu na" is incorrect and unnatural in Czech. "Ban for" here refers to a period or duration (e.g., "Ban for 1 hour"), not an action. The correct translation for the duration context would be "Zákaz na" or "Ban na", for example, "Zákaz na 1 hodinu" ("Ban for 1 hour").
 
-"Zákaz na" or "Blokace na"  
-
-So the corrected translation could be:  
-
-<translation>Zákaz na</translation>
+Correct translation:
+Zákaz na
 ```
 
 ```
         <source>An optional label to associate with the new receiving address (used by you to identify an invoice).  It is also attached to the payment request.</source>
         <translation>Volitelný popis který sa přidá k téjo nové přijímací adrese (pro jednoduchší identifikaci). Tenhle popis bude také přidán do výzvy k platbě.</translation>
     
-YES  
-The translation contains errors and informal style that are not appropriate for this context:
+YES
+There are several issues:
+1. The word "sa" is incorrect in Czech; it should be "se".
+2. "téjo" is a misspelling; the correct form is "této".
+3. "jednoduchší" is not standard; "snadnější" or a more precise wording should be used.
+4. "Tenhle" is informal and should be replaced with "Tento".
+5. "popis" ("description/label") could be improved as "štítek" ("label") for accuracy.
+6. The translation is less formal than the source and deviates in details.
 
-1. "který sa přidá" – In Czech, the reflexive pronoun is "se," not "sa."  
-2. "téjo" – should be "té" (correct demonstrative form).  
-3. "Tenhle" – very informal; better to use "Tento" or rephrase to a more neutral style.  
-4. The original mentions "label," literally "popisek" or "štítek," and "used by you to identify an invoice," which is not fully conveyed by "pro jednoduchší identifikaci."  
-5. Slight punctuation fixes by adding commas for clarity.
-
-Correct translation:  
-Volitelný popis, který se přidá k nové přijímací adrese (používaný vámi k identifikaci faktury). Tento popis je také připojen k žádosti o platbu.
+Correct translation:
+Volitelný štítek k přiřazení nové přijímací adrese (použijete jej k identifikaci faktury). Je také připojen k platební žádosti.
 ```
 
 ```
         <source>Remove the selected entries from the list</source>
         <translation>Smaž zvolené požadavky ze seznamu</translation>
     
-YES  
-The Czech word "Smaž" is correct for "Remove," but "požadavky" means "requests" rather than "entries." The correct term for "entries" is "záznamy" or "položky."  
+YES
+The translation uses "požadavky" (which means "requests") instead of a more neutral "položky" (which means "entries" or "items"). Also, "odstranit" is a better verb for "remove" in UI contexts than "smazat" (which is "delete"). "Zvolené" is acceptable for "selected", but "vybrané" is also commonly used.
 
-Correct translation:  
-Smaž zvolené položky ze seznamu
+Correct translation:
+Odstraňte vybrané položky ze seznamu
 ```
 
 ```
         <source>Hide transaction fee settings</source>
         <translation>Schovat nastavení poplatků transakce - transaction fee</translation>
     
-YES  
-The translation is partly in Czech ("Schovat nastavení poplatků transakce") but then unnecessarily repeats the English phrase " - transaction fee," which is redundant and breaks the normalization of the text. The phrase "Schovat" is a colloquial form; a more standard Czech verb would be "Skrýt."
+YES
+The translation is problematic. It includes an unnecessary English phrase ("- transaction fee"), which is redundant since "poplatků transakce" already means "transaction fee". The correct translation is:
 
-Correct translation:  
+Schovat nastavení poplatků transakce
+
+Alternatively, a more natural Czech phrasing would be:
+
 Skrýt nastavení poplatků za transakci
 ```
 
@@ -239,178 +240,171 @@ Skrýt nastavení poplatků za transakci
         <translation>Když je zde měně transakcí než místa na bloky, mineři stejně tak relay-e mohou nasadit minimální poplatky. Zaplacením pouze minimálního poplatku je v pohodě, ale mějte na paměti že toto může mít za následek nikdy neověřenou transakci pokud zde bude více bitcoinových transakcí než může síť zvládnout.</translation>
     
 YES
-The translation contains several issues:
-1. The word "měně" should be "méně" (correct spelling).
-2. "relay-e" is an anglicism awkwardly adapted; the correct Czech term is "přeposílací uzly" or simply "uzly" or "relé uzly".
-3. "poplatky" is plural ("fees"), but the source says "a minimum fee" (singular). It should be "minimální poplatek".
-4. Minor punctuation is missing: a comma is needed before "že".
-5. The phrase "nikdy neověřenou transakci" is understandable but "nikdy nepotvrzenou transakci" better fits Bitcoin context ("unconfirmed transaction").
-6. The sentence can be made more fluent and natural in Czech.
+There are several linguistic issues in the Czech translation:
+- "měně transakcí" should be "méně transakcí" (typo).
+- "místa na bloky" is inaccurate; the correct phrase is "místa v blocích".
+- "mineři stejně tak relay-e" is awkward and mixes English/Czech (should be "těžaři stejně jako uzly předávající transakce" or similar).
+- "nasadit minimální poplatky" is not fully appropriate; better is "mohou vyžadovat minimální poplatek".
+- "je v pohodě" is too colloquial; "je v pořádku" is better.
+- Several awkward or ungrammatical phrases ("nikdy neověřenou transakci" vs "transakci, která nikdy nebude potvrzena").
 
 Correct translation:
-Když je v blocích méně transakcí než místa, mohou těžaři i přeposílací uzly vynucovat minimální poplatek. Zaplacení pouze tohoto minimálního poplatku je v pořádku, ale mějte na paměti, že to může vést k nikdy nepotvrzené transakci, pokud bude poptávka po bitcoinových transakcích větší, než síť dokáže zpracovat.
+Když je menší objem transakcí než je místa v blocích, mohou těžaři i uzly, které transakce předávají, vyžadovat minimální poplatek. Zaplatit pouze tento minimální poplatek je v pořádku, ale mějte na paměti, že to může vést k tomu, že vaše transakce nikdy nebude potvrzena, pokud bude větší poptávka po bitcoinových transakcích, než kolik síť zvládne zpracovat.
 ```
 
 ```
         <source>Copy after fee</source>
         <translation>Kopíruj čistou částku</translation>
     
-YES  
-The translation "Kopíruj čistou částku" means "Copy the net amount," which is not an accurate or appropriate translation of "Copy after fee." The phrase "Copy after fee" typically refers to copying the amount or value after subtracting the transaction fee, not specifically the "net amount" as a phrase to be copied or an imperative "copy."
+YES
+The translation is not a literal or accurate rendering of the source. "Copy after fee" refers to copying the amount remaining after the fee is deducted, not just "Copy net amount" (which may be implied but not stated).
 
-A more accurate translation, maintaining the imperative tone and context (likely a button or command), would be:
-
-"Kopírovat částku po poplatku"  
-or  
-"Kopírovat po poplatku"  
-
-depending on the exact UI context, but the first is more precise.
-
-Correct translation:  
-<Kopírovat částku po poplatku>
+Correct translation:
+Zkopírovat částku po odečtení poplatku
 ```
 
 ```
         <source>Save Transaction Data</source>
         <translation>Zachovej procesní data</translation>
     
-YES  
-The Czech translation uses "procesní data," which is an uncommon and somewhat awkward expression in this context. A more natural and accurate translation for "Save Transaction Data" would be "Uložit data transakce" or "Uložit data transakce."  
+YES
+The Czech translation "Zachovej procesní data" is inaccurate. "Procesní data" does not mean "Transaction Data" (it could mislead as "process data"). The correct translation should be:
 
-Correct translation:  
-Uložit data transakce
+Uložit údaje o transakci
+
+So, the correct translation is:  
+Uložit údaje o transakci
 ```
 
 ```
         <source>Enter a label for this address to add it to the list of used addresses</source>
         <translation>Zadej označení této adresy; obojí se ti pak uloží do adresáře</translation>
     
-YES  
-The translation introduces content not present in the source and changes the meaning. The source instructs to enter a label to add the address to the list of used addresses, whereas the translation says "Enter a label for this address; both will then be saved in the address book," which adds "both" and "address book," deviating from the original meaning. Also, the source does not mention "address book" but "list of used addresses."
+YES
+The translation does not accurately reflect the English source. The original says to "Enter a label for this address to add it to the list of used addresses"—it does not mention "oboji" ("both") nor does it mention an "adresář" ("directory"), which is misleading. The English intent is to assign a label to an address to be able to add it to the list of used addresses.
 
-Correct translation:  
-Zadej označení této adresy, aby se přidala do seznamu použitých adres
+Correct translation:
+Zadej popisek pro tuto adresu, aby byla přidána do seznamu použitých adres
 ```
 
 ```
         <source>Reset all sign message fields</source>
         <translation>Vymaž všechna pole formuláře pro podepsání zrávy</translation>
     
-YES  
-There is a typo in the translation: "zrávy" should be "zprávy". The corrected translation is:  
-Vymaž všechna pole formuláře pro podepsání zprávy
+YES
+There is a typographical error in the translation: "zrávy" should be "zprávy" ("message"). The rest of the translation is correct. Also, "Vymaž" (Erase) can be replaced with "Obnovit" (Reset) for accuracy, but "Vymaž" might still be acceptable depending on the UI context.
+
+Correct translation:
+Resetuj všechna pole formuláře pro podepsání zprávy
 ```
 
 ```
         <source>Reset all verify message fields</source>
         <translation>Vymaž všechna pole formuláře pro ověření zrávy</translation>
     
-YES  
-The Czech word "zrávy" is a typo and should be "zprávy" (meaning "message").  
+YES
+There is a typographical error in the Czech word "zrávy"; it should be "zprávy" (message). Also, "vymaž" is more informal/direct, while "obnovit" or "resetovat" is closer to "reset". The rest of the translation is otherwise acceptable, but correcting the typo is essential.
 
-Correct translation:  
-Vymaž všechna pole formuláře pro ověření zprávy
+Correct translation:
+Resetovat všechna pole formuláře pro ověření zprávy
 ```
 
 ```
         <source>Please check the address and try again.</source>
         <translation>Zkontroluj ji prosím a zkus to pak znovu.</translation>
     
-YES  
-The translation "Zkontroluj ji prosím a zkus to pak znovu." is informal and uses "ji" (her/it) without explicitly stating what should be checked, which can be unclear in the context. The source specifically says "Please check the address and try again," so the word "address" should be explicitly mentioned for clarity and accuracy. A more appropriate translation would be:
+YES
+The translation omits the direct translation of "address" ("adresa" in Czech), making the sentence less clear in context. The source says "Please check the address and try again," but the translation simply says "Check it please and try again," without specifying what to check.
 
-"Zkontrolujte prosím adresu a zkuste to znovu."
+Correct translation:
+Zkontrolujte prosím adresu a zkuste to znovu.
 ```
 
 ```
         <source>Increasing transaction fee failed</source>
         <translation>Nepodařilo se navýšeit poplatek</translation>
     
-YES  
-The Czech translation contains a typo: "navýšeit" should be "navýšit". Also, the sentence is incomplete because it misses the object "transaction fee" ("poplatek za transakci"). A more accurate translation would be:  
+YES
+There is a typographical error in the Czech translation: "navýšeit" should be "navýšit".
 
-Nepodařilo se navýšit poplatek za transakci
+Correct translation:
+Nepodařilo se navýšit poplatek
 ```
 
 ```
         <source>Could not commit transaction</source>
         <translation>Nemohl jsem uložit transakci do peněženky</translation>
     
-YES  
-The translation is inaccurate and introduces first-person ("Nemohl jsem" = "I could not"), which is not present in the source. The source is a general statement without specifying the subject. Also, "commit" in this context means to finalize or submit the transaction, not specifically "save to wallet."  
+YES
+The translation "Nemohl jsem uložit transakci do peněženky" literally means "I could not save the transaction into the wallet," which is more specific and differs from the source "Could not commit transaction". The translation also uses the first person "jsem", which is not used in typical UI/system messages (should be impersonal or passive).
 
-Correct translation:  
-"Nebylo možné potvrdit transakci"  
-(or)  
-"Nepodařilo se potvrdit transakci"
+Correct translation:
+Nelze potvrdit transakci
 ```
 
 ```
         <source>%s request to listen on port %u. This port is considered "bad" and thus it is unlikely that any peer will connect to it. See doc/p2p-bad-ports.md for details and a full list.</source>
         <translation> %s Žádost o poslech na portu 2 %u . Tento port je považován za "špatný", a proto je nepravděpodobné, že by se k němu připojil nějaký peer. Viz doc/p2p-bad-ports.md pro podrobnosti a úplný seznam.</translation>
     
-YES  
-There are spacing errors and an erroneous character in the translation. Specifically:
+YES
+There is an erroneous "2" inserted before "%u" in the translation ("na portu 2 %u"). Also, there are unnecessary spaces at the start of the translation and around the format specifiers. Otherwise, the translation is mostly accurate.
 
-- There is an extra space before `%s` at the start.
-- The word "Žádost" is capitalized incorrectly mid-sentence.
-- The number "2" before `%u` is incorrect and should be removed.
-- There are spaces before `%u` and the period that shouldn't be there.
-
-Correct translation:  
-`%s žádost o poslech na portu %u. Tento port je považován za "špatný", a proto je nepravděpodobné, že by se k němu připojil nějaký peer. Viz doc/p2p-bad-ports.md pro podrobnosti a úplný seznam.`
+Correct translation:
+%s žádost o poslech na portu %u. Tento port je považován za "špatný", a proto je nepravděpodobné, že by se k němu připojil nějaký peer. Viz doc/p2p-bad-ports.md pro podrobnosti a úplný seznam.
 ```
 
 ```
         <source>This is the maximum transaction fee you pay (in addition to the normal fee) to prioritize partial spend avoidance over regular coin selection.</source>
         <translation>Jedná se o maximální poplatek, který zaplatíte (navíc k běžnému poplatku), aby se upřednostnila útrata z dosud nepoužitých adres oproti těm už jednou použitých.</translation>
     
-YES  
-The translation deviates from the original meaning. The source talks about a "maximum transaction fee" paid "to prioritize partial spend avoidance over regular coin selection." The original focuses on the fee for avoiding partial spends rather than selecting coins normally. The translation wrongly explains it as prioritizing spending from "unused addresses" versus "those already used," which is not equivalent and may mislead users.
+YES
+The translation introduces an unintended meaning. The English source says "to prioritize partial spend avoidance over regular coin selection", which refers to techniques to avoid making partial spends (to avoid creating small leftover coins, UTXOs). The translation refers to "útrata z dosud nepoužitých adres oproti těm už jednou použitých" (spending from never-before-used addresses rather than those already used), which is inaccurate.
 
-Correct translation:  
-Jedná se o maximální transakční poplatek, který zaplatíte (navíc k běžnému poplatku) za upřednostnění vyhnutí se částečné útratě před běžným výběrem mincí.
+Correct translation:
+Jedná se o maximální poplatek, který zaplatíte (navíc k běžnému poplatku), abyste upřednostnili vyhýbání se částečnému utrácení před běžným výběrem mincí.
 ```
 
 ```
         <source>Outbound connections restricted to CJDNS (-onlynet=cjdns) but -cjdnsreachable is not provided</source>
         <translation>Odchozí připojení omezená na CJDNS (-onlynet=cjdns), ale -cjdnsreachable nejsou k dispozici</translation>
     
-YES  
-There is a grammatical and number agreement error in the Czech translation. The English source uses "is not provided" (singular), but the Czech translation says "jsou k dispozici" (are available, plural) which contradicts the negation. Also, "jsou k dispozici" means "are available," which doesn't align well with "is not provided." A better translation would use singular negation and a phrase closer to "není poskytnut" or "není k dispozici."
+YES
+There is a grammatical error and slight inaccuracy in the translation. "-cjdnsreachable" is singular in the source, but in the translation it's treated as plural ("nejsou k dispozici"). Also, the phrase "nejsou k dispozici" translates as "are not available", which does not fully capture "is not provided".
 
-Correct translation:  
-Odchozí připojení omezená na CJDNS (-onlynet=cjdns), ale -cjdnsreachable není poskytnut
+Correct translation:
+Odchozí připojení jsou omezena na CJDNS (-onlynet=cjdns), ale -cjdnsreachable není zadán
 ```
 
 ```
         <source>Error: Unable to write data to disk for wallet %s</source>
         <translation>Chyba: Nepodařilo se zapsat data peněženky %sna disk</translation>
     
-YES  
-The translation has spacing and word order issues. The phrase "%sna disk" should have a space ("%s na disk") and the phrase "data peněženky %s na disk" is somewhat ambiguous and unnatural in Czech. The English phrase means "data to disk for wallet %s," so the wallet identifier should be clearly associated with writing data to disk.
+YES
+There is a minor formatting error in the translation: there should be a space between '%s' and 'na disk'. Also, the word order more naturally reflects the original meaning if we keep "pro peněženku %s".
 
-Correct translation:  
-Chyba: Nepodařilo se zapsat data peněženky %s na disk
+Correct translation:
+Chyba: Nepodařilo se zapsat data na disk pro peněženku %s
 ```
 
 ```
         <source>Invalid P2P permission: '%s'</source>
         <translation>Neplatné oprávnenie P2P: '%s'</translation>
     
-YES  
-The translation uses Slovak ("Neplatné oprávnenie P2P...") instead of Czech. In Czech, "Invalid P2P permission" should be translated as:  
-"Neplatné P2P oprávnění: '%s'"
+YES
+The translation uses the Slovak word "oprávnenie" instead of the Czech equivalent "oprávnění". "oprávnenie" is not correct in Czech.
+
+Correct translation:
+Neplatné oprávnění P2P: '%s'
 ```
 
 ```
         <source>Invalid amount for %s=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>Neplatná částka %s=&lt;amount&gt;:'%s' (musí být alespoň%s)</translation>
     
-YES  
-There is a missing space between "alespoň" and "%s" in the translation. Also, it is better to add a space after the colon for readability.
+YES
+There is a missing space before the last %s in the translation ("alespoň%s" should be "alespoň %s").
 
-Correct translation:  
+Correct translation:
 Neplatná částka pro %s=&lt;amount&gt;: '%s' (musí být alespoň %s)
 ```
 
@@ -418,26 +412,23 @@ Neplatná částka pro %s=&lt;amount&gt;: '%s' (musí být alespoň %s)
         <source>Error: Could not add watchonly tx %s to watchonly wallet</source>
         <translation>Chyba: Nelze přidat pouze-sledovací tx %s do peněženky pro čtení</translation>
     
-YES  
-The term "pouze-sledovací" is an awkward literal translation for "watchonly" in this Bitcoin context. The correct technical term in Czech Bitcoin wallets is typically "pouze ke sledování" or "sledovací". Also, "peněženky pro čtení" is not a proper term for "watchonly wallet"; it literally means "wallet for reading". A better translation would be:  
+YES
+The translation "pouze-sledovací tx" is understandable, but "peněženka pro čtení" is incorrect. The term "watchonly wallet" should be translated as "peněženka pouze pro sledování" or "sledovací peněženka". Additionally, it is better to translate "watchonly tx" as "transakci pouze pro sledování".
 
-Chyba: Nelze přidat watchonly tx %s do watchonly peněženky  
-
-Alternatively, you can translate watchonly more fully:  
-
-Chyba: Nelze přidat watchonly transakci %s do peněženky pouze ke sledování  
-
-This preserves the technical meaning and is clearer to Czech Bitcoin users.
+Correct translation:
+Chyba: Nelze přidat transakci pouze pro sledování %s do peněženky pouze pro sledování
 ```
 
 ```
         <source>Not enough file descriptors available. %d available, %d required.</source>
         <translation>Nedostatek volných file deskriptorů. %dvolných, %dvyžadovaných</translation>
     
-YES  
-The translation has spacing issues around the format specifiers (%d) and mixes English and Czech terms ("file deskriptorů" should be "popisovačů souborů" or fully translated). Also, the formatting should match the source more closely for clarity.
+YES
+There are issues with missing spaces before "volných" and "vyžadovaných", and "file deskriptorů" should be localized as "souborových deskriptorů".
 
-Correct translation:  
-"Nedostatek volných popisovačů souborů. %d dostupných, %d vyžadovaných."
+Correct translation:
+Nedostatek volných souborových deskriptorů. %d volných, %d vyžadovaných.
 ```
 </details>
+
+Number of issues: 35.

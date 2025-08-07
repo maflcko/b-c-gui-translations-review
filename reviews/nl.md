@@ -13,22 +13,22 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>After Fee:</source>
         <translation>Naheffing:</translation>
     
-YES  
-The translation "Naheffing:" is incorrect in this context. The English term "After Fee:" refers to the amount remaining or displayed after deducting the fee, often used in Bitcoin transaction summaries. The correct Dutch translation should convey "After Fee" as in "Na aftrek van kosten" or simply "Na kosten:". 
+YES
+The translation "Naheffing" means "additional assessment" or "supplementary tax assessment," which is not an accurate translation of "After Fee:" in the context of Bitcoin transactions. "After Fee:" indicates the amount remaining after subtracting the transaction fee.
 
-Correct translation:  
-"Na kosten:"
+Correct translation:
+Na aftrek van kosten:
 ```
 
 ```
         <source>(change)</source>
         <translation>(wijzig)</translation>
     
-YES  
-The term "change" in the context of Bitcoin transactions refers to the leftover amount returned to the sender, which is commonly translated in Dutch as "(wissel)" or "(teruggave)" rather than "(wijzig)". The word "wijzig" means "change" as a verb ("to change" or "modify"), which is incorrect here.
+YES
+The term "change" in the Bitcoin context refers to the change output in a transaction (geld terug van een transactie), not "wijzig" (which means "modify" or "edit"). The translation is contextually incorrect.
 
-Correct translation:  
-(change) -> (wissel)
+Correct translation:
+(wisselgeld)
 ```
 
 ```
@@ -39,68 +39,71 @@ Correct translation:
 
 </translation>
     
-YES  
-The translation is incomplete, contains capitalization errors, and is not idiomatic Dutch. The English "Restoring Wallet" should be translated as "Portemonnee herstellen" or "Wallet herstellen" with proper spacing and casing. Also, the trailing "HerstellenL" seems like a typographical error.
+YES
+The translation is problematic: it incorrectly uses "Herstellen wallet" instead of correct Dutch ("Bezig met herstellen van portemonnee" or "Portemonnee wordt hersteld"), and it has an erroneous fragment "…HerstellenL" at the end. Also, "wallet" should be translated as "portemonnee" or "wallet" (if kept untranslated), but not as a direct English word. The extra characters and lack of proper sentence structure make it problematic.
 
-Correct translation:  
-Herstellen van portemonnee &lt;b&gt;%1&lt;/b&gt;…
+Correct translation:
+Portemonnee &lt;b&gt;%1&lt;/b&gt; wordt hersteld…
+or, alternatively:
+Bezig met herstellen van portemonnee &lt;b&gt;%1&lt;/b&gt;…
 ```
 
 ```
         <source>Prune block storage to</source>
         <translation>Prune  block opslag op</translation>
     
-YES  
-The English phrase "Prune block storage to" is a fragment typically followed by a size or limit. The Dutch translation erroneously includes an English word "Prune" and has a double space after it. Also, "prune" should be translated into Dutch (e.g., "Bespaar" or "Snoei") and the phrase "block opslag" should be more naturally phrased as "blokopslag" (one word). The preposition "op" is acceptable, meaning "to" in terms of limiting storage.
+YES
+There is an issue with spacing; there is an unnecessary double space between "Prune" and "block". Also, "Prune" is untranslated and should be "Verklein" or "Snoei" in Dutch. The phrase "op" is not the best preposition here; "tot" would be more accurate for "to". 
 
-Correct translation:  
-"Snoei blokopslag op"  
-or more explicitly:  
-"Beperk blokopslag tot"
+Correct translation:
+Blokopslag verkleinen tot
 ```
 
 ```
         <source>Sends %1 to %2</source>
         <translation>Verzenden %1 van %2</translation>
     
-YES  
-The translation is inaccurate and misleading. The English phrase "Sends %1 to %2" means something is being sent from the subject to a recipient, while "Verzenden %1 van %2" translates as "Send %1 from %2," which changes the meaning and uses an incorrect verb form.
+YES
+The translation is incorrect. The English text means "Sends %1 to %2", implying that %1 is being sent to %2. However, the Dutch translation "Verzenden %1 van %2" means "Send %1 from %2", which reverses the direction of the transaction and changes the meaning. Additionally, "Verzenden" is an infinitive and should be conjugated.
 
-A correct Dutch translation would be:  
-"Stuurt %1 naar %2"
+Correct translation:
+Verstuurt %1 naar %2
 ```
 
 ```
         <source>Unable to calculate transaction fee or total transaction amount.</source>
         <translation>Onmogelijk om de transactie kost of totale bedrag te berekenen.</translation>
     
-YES  
-The translation has issues with word choice and grammar. "transactie kost" should be "transactiekosten" (transaction fees) as a compound noun, and "totale bedrag" should be "totaal bedrag" to correctly reflect "total amount." Also, the phrase "Onmogelijk om ..." is less natural than "Kan ... niet berekenen."
+YES
+The Dutch translation has a couple of issues:
+- "transactie kost" should be "transactiekost" (one word), or preferably "transactiekosten" (plural, as is common in Dutch).
+- "totale bedrag" is incorrect; it should be "het totale bedrag".
+- "Onmogelijk om ... te berekenen." is an awkward structure. A more natural rendering is "Het is niet mogelijk om ... te berekenen."
 
-Correct translation:  
-Kan de transactiekosten of het totale transactiebedrag niet berekenen.
+Correct translation:
+Het is niet mogelijk om de transactiekosten of het totale bedrag te berekenen.
 ```
 
 ```
         <source>After Fee:</source>
         <translation>Naheffing:</translation>
     
-YES  
-The translation "Naheffing:" is incorrect in this context. The English term "After Fee:" refers to the amount remaining or displayed after deducting the fee, often used in Bitcoin transaction summaries. The correct Dutch translation should convey "After Fee" as in "Na aftrek van kosten" or simply "Na kosten:". 
+YES
+The translation "Naheffing" means "additional assessment" or "supplementary tax assessment," which is not an accurate translation of "After Fee:" in the context of Bitcoin transactions. "After Fee:" indicates the amount remaining after subtracting the transaction fee.
 
-Correct translation:  
-"Na kosten:"
+Correct translation:
+Na aftrek van kosten:
 ```
 
 ```
         <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
         <translation>De minimale toeslag betalen is prima mits het transactievolume kleiner is dan de ruimte in de blokken. Let wel op dat dit tot gevolg kan hebben dat een transactie nooit wordt bevestigd als er meer vraag is naar bitcointransacties dan het netwerk kan verwerken.</translation>
     
-YES  
-The Dutch translation omits the part that both miners and relaying nodes may enforce a minimum fee. It also changes "minimum fee" to "minimale toeslag" which is less precise in this context. The original describes that when transaction volume is less than block space, miners and relaying nodes may enforce a minimum fee, and paying only that minimum fee is acceptable, but warns that if demand exceeds network capacity, the transaction may never be confirmed.
+YES
+The translation deviates from the structure and content of the source and omits important details, such as the role of both miners and relaying nodes in enforcing a minimum fee. It also does not mention that paying only the minimum fee is fine but can result in a transaction never confirming "once there is more demand than the network can process." The causal relationship is not fully captured and the part about both miners and relaying nodes is missing.
 
-Correct translation:  
-"Wanneer er minder transactievolume is dan ruimte in de blokken, kunnen miners evenals doorgeefnodes een minimumvergoeding afdwingen. Alleen deze minimumvergoeding betalen is prima, maar wees ervan bewust dat dit kan resulteren in een nooit bevestigde transactie zodra er meer vraag is naar bitcointransacties dan het netwerk kan verwerken."
+Correct translation:
+Wanneer er minder transactievolume is dan ruimte in de blokken, kunnen zowel miners als relayende knooppunten een minimumbedrag aan transactiekosten afdwingen. Alleen deze minimale vergoeding betalen is prima, maar wees ervan bewust dat dit kan resulteren in een transactie die nooit wordt bevestigd zodra er meer vraag is naar bitcointransacties dan het netwerk aankan.
 ```
 
 ```
@@ -108,11 +111,14 @@ Correct translation:
         <extracomment>"External signer" means using devices such as hardware wallets.</extracomment>
         <translation>Externe ondertekenaars fout</translation>
     
-YES  
-The Dutch translation has a grammatical error and awkward phrasing. It translates to "External signers fault," which is incorrect. A better translation would be "Externe ondertekenaar fout" (singular) or more naturally "Fout bij externe ondertekenaar" to clearly indicate a failure. Since the English phrase is "External signer failure," the best concise translation is:
+YES
+The translation "Externe ondertekenaars fout" is incorrect as "ondertekenaars" is plural, whereas "signer" is singular, and the word order is awkward. The correct translation should be:
 
-Correct translation:  
-Externe ondertekenaarfout
+Correct translation:
+Externe ondertekenaar fout
+
+Alternatively, to make it even more natural in Dutch:
+Fout met externe ondertekenaar
 ```
 
 ```
@@ -120,7 +126,7 @@ Externe ondertekenaarfout
         <translation>Dubbel adres gevonden: adressen mogen maar één keer worden gebruikt worden.</translation>
     
 YES
-The translation contains a redundancy with the phrase "worden gebruikt worden." The second "worden" is unnecessary and grammatically incorrect.
+The Dutch translation contains a redundancy: "worden gebruikt worden" repeats the verb "worden". The correct translation should use "worden gebruikt" only once.
 
 Correct translation:
 Dubbel adres gevonden: adressen mogen maar één keer worden gebruikt.
@@ -130,39 +136,38 @@ Dubbel adres gevonden: adressen mogen maar één keer worden gebruikt.
         <source>Enter the receiver's address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
         <translation>Voer het adres van de ontvanger in, bericht (zorg ervoor dat de regeleinden, spaties, tabs etc. precies kloppen) en onderteken onderaan om het bericht te verifiëren. Wees voorzicht om niet meer in de ondertekening te lezen dan in het getekende bericht zelf, om te voorkomen dat je wordt aangevallen met een man-in-the-middle attack. Houd er mee rekening dat dit alleen de ondertekende partij bewijst met het ontvangen adres, er kan niet bewezen worden dat er een transactie heeft plaatsgevonden!</translation>
     
-YES
-The translation has multiple issues:
-- "onderteken onderaan" means "sign below," but the source says to enter the signature below to verify the message, not to sign again. A better phrase is "handtekening onderaan" or "handtekening hieronder".
-- "Wees voorzicht" should be "Wees voorzichtig".
-- "man-in-the-middle attack" should be translated as "man-in-the-middle-aanval" or "man-in-the-middle aanval".
-- "Houd er mee rekening" should be "Houd er rekening mee".
-- The phrase "dit alleen de ondertekende partij bewijst met het ontvangen adres" is awkward and unclear. The source says "only proves the signing party receives with the address," suggesting the signer controls the address, not that he received with it.
-- The second sentence should be clearer and more accurate.
+YES  
+There are several issues:  
+- "onderteken onderaan" is a mistranslation of "signature below". It should be "handtekening hieronder".  
+- "Wees voorzicht" should be "Wees voorzichtig".  
+- The sentence structure "om te voorkomen dat je wordt aangevallen met een man-in-the-middle attack" is awkward and unnecessarily literal; "door een man-in-the-middle aanval" is better.  
+- "Houd er mee rekening" should be "Houd er rekening mee".  
+- "de ondertekende partij bewijst met het ontvangen adres" is unclear. A closer rendering would be: "alleen bewijst dat de ondertekenende partij over het adres beschikt".  
+- The translation omits "it cannot prove sendership of any transaction", which is closer to "het kan niet bewijzen dat er transacties mee zijn verzonden".  
 
-Correct translation:
-
-Voer hieronder het adres van de ontvanger, bericht (zorg ervoor dat je regeleinden, spaties, tabs, enz. exact kopieert) en handtekening in om het bericht te verifiëren. Wees voorzichtig om niet meer in de handtekening te lezen dan in het ondertekende bericht zelf, om te voorkomen dat je wordt misleid door een man-in-the-middle-aanval. Houd er rekening mee dat dit alleen bewijst dat de ondertekenaar beschikt over het adres, maar niets zegt over het verzenden van een transactie!
+Correct translation:  
+Voer hieronder het adres van de ontvanger, het bericht (zorg ervoor dat u regeleinden, spaties, tabs, enzovoort exact overneemt) en de handtekening in om het bericht te verifiëren. Wees voorzichtig om niet meer betekenis aan de handtekening toe te kennen dan aan het ondertekende bericht zelf, om te voorkomen dat je slachtoffer wordt van een man-in-the-middle-aanval. Let op: dit bewijst alleen dat de ondertekenende partij het adres bezit; het kan het verzenden van transacties niet bewijzen!
 ```
 
 ```
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation>Niet beschikbaar (%1 bevestigingen, zal beschikbaar zijn na %2)</translation>
     
-YES  
-The translation changes the meaning. The source "Immature (%1 confirmations, will be available after %2)" refers to a transaction output that is not yet spendable because it is immature, but will become available after the specified number of confirmations. The Dutch translation "Niet beschikbaar" means "Not available," which is less precise and does not convey the nuance of immaturity related to confirmations.
+YES
+The translation is not entirely accurate. "Immature" in the context of Bitcoin refers to coins that are not yet spendable, not necessarily "not available". The term "Onvolwassen" is conventionally used for "immature" in Dutch Bitcoin contexts.
 
-Correct translation:  
-"Onrijp (%1 bevestigingen, zal beschikbaar zijn na %2)"
+Correct translation:
+Onvolwassen (%1 bevestigingen, wordt beschikbaar na %2)
 ```
 
 ```
         <source>PSBT file must be smaller than 100 MiB</source>
         <translation>Het PSBT bestand moet kleiner dan 100 MiB te zijn.</translation>
     
-YES  
-The Dutch translation has incorrect word order and grammatical structure. The infinitive clause "te zijn" is misplaced and unnecessary here. A better translation would be a simpler and more direct sentence matching the English source:  
+YES
+The Dutch translation is grammatically incorrect. The phrase "moet kleiner dan ... te zijn" is not proper Dutch. It should be "moet kleiner zijn dan 100 MiB."
 
-Correct translation:  
+Correct translation:
 Het PSBT-bestand moet kleiner zijn dan 100 MiB.
 ```
 
@@ -170,25 +175,25 @@ Het PSBT-bestand moet kleiner zijn dan 100 MiB.
         <source>Error starting/committing db txn for wallet transactions removal process</source>
         <translation>Fout bij starten/toekennen db txn voor verwijderproces wallettransacties</translation>
     
-YES  
-The Dutch translation is partly inaccurate and unnatural. The English "committing" is incorrectly translated as "toekennen," which means "assign" or "allocate," not "commit" in a database transaction context. Also, the phrase order is awkward, and "wallet transactions removal process" is better translated with proper word order and articles.
+YES
+The translation uses "toekennen" for "committing," which is incorrect. "Toekennen" means "to assign" rather than "to commit" in the transaction context. A more accurate translation would use "committen" or "voltooien". Also, "verwijderproces wallettransacties" omits a preposition. A more natural phrasing is "verwijderproces van wallettransacties".
 
-Correct translation:  
-Fout bij starten/toevoeren van db-transactie voor het verwijderingsproces van wallettransacties
+Correct translation:
+Fout bij starten/committen van db-tx voor het verwijderproces van wallettransacties
 ```
 
 ```
         <source>Wallet loaded successfully. The legacy wallet type is being deprecated and support for creating and opening legacy wallets will be removed in the future. Legacy wallets can be migrated to a descriptor wallet with migratewallet.</source>
         <translation>Wallet succesvol aangemaakt. Het oude wallettype wordt uitgefaseerd en ondersteuning voor het maken en openen van verouderde wallets zal in de toekomst komen te vervallen. Oude wallettypes kan gemigreerd worden naar een descriptor wallet met migratewallet.</translation>
     
-YES
-The translation contains slight inaccuracies and awkward phrasing:
-- "Wallet succesvol aangemaakt" translates to "Wallet successfully created," which is not the same as "Wallet loaded successfully."
-- "Oude wallettypes kan gemigreerd worden" has a grammatical error ("kan" should be "kunnen" to match plural "wallettypes").
-- "komt te vervallen" is less idiomatic than "zal vervallen" in this context.
+YES  
+The translation has several issues:
+1. "Wallet succesvol aangemaakt" means "Wallet successfully created," which does not match the source "Wallet loaded successfully."
+2. The plural use "oude wallettypes kan" is grammatically incorrect; it should either be singular or properly conjugated for plural.
+3. "aangemaakt" (created) does not fit as well in this context as "geladen" (loaded).
 
-Correct translation:
-Wallet succesvol geladen. Het oude wallettype wordt uitgefaseerd en ondersteuning voor het maken en openen van verouderde wallets zal in de toekomst vervallen. Oude wallettypes kunnen gemigreerd worden naar een descriptor wallet met migratewallet.
+Correct translation:  
+Wallet succesvol geladen. Het verouderde wallettype wordt uitgefaseerd en ondersteuning voor het aanmaken en openen van verouderde wallets zal in de toekomst worden verwijderd. Legacy wallets kunnen worden gemigreerd naar een descriptor-wallet met migratewallet.
 ```
 
 ```
@@ -196,10 +201,10 @@ Wallet succesvol geladen. Het oude wallettype wordt uitgefaseerd en ondersteunin
         <translation>Opgegeven -blockmaxweight (%d) oveschrijdt consensus maximum block weight (%d)</translation>
     
 YES
-The Dutch translation contains a spelling error: "oveschrijdt" should be "overschrijdt". Also, "consensus maximum block weight" is left partially untranslated; it would be more consistent to translate the whole phrase.
+There is a typo in the Dutch translation: "oveschrijdt" should be "overschrijdt". Additionally, "block weight" should be translated into Dutch ("blokgewicht") for consistency and clarity. Also, an extra space may be preferred ("consensusmaximum" as one word, or "consensus maximum" as two, but "block weight" should match source formatting).
 
 Correct translation:
-Opgegeven -blockmaxweight (%d) overschrijdt het maximale consensusblokgewicht (%d)
+Opgegeven -blockmaxweight (%d) overschrijdt het consensus maximum voor blokgewicht (%d)
 ```
 
 ```
@@ -214,16 +219,16 @@ De portemonnee is mogelijk gemaakt op een nieuwere versie.
 Probeer de nieuwste softwareversie te starten.
 </translation>
     
-YES  
-The Dutch translation has multiple issues:  
-1. Missing space between "Portemonnee" and "%s laden" which merges "Portemonnee%sladen" into one word. It should be separated with a space: "Portemonnee %s laden".  
-2. The phrase "De portemonnee is mogelijk gemaakt op een nieuwere versie." is incorrect or unnatural Dutch. It attempts to translate "might had been created on a newer version" but the grammar and word choice are wrong. A better phrase is: "De portemonnee is mogelijk aangemaakt met een nieuwere versie." ("aangemaakt" means "created," and "mogelijk" suitably conveys "might").  
-3. The last sentence "Probeer de nieuwste softwareversie te starten." is understandable but a more natural expression would be: "Probeer de nieuwste softwareversie uit te voeren." ("uitvoeren" is commonly used for running software).  
+YES
+There are several issues in the Dutch translation:
+- Missing space: "Portemonnee%sladen" should be "Portemonnee %s laden".
+- "De portemonnee is mogelijk gemaakt op een nieuwere versie" is unnatural; a better translation would be "De portemonnee is mogelijk aangemaakt met een nieuwere versie."
+- "Probeer de nieuwste softwareversie te starten" is understandable but a more natural translation is "Probeer de nieuwste softwareversie uit te voeren."
 
-Correct translation:  
+Correct translation:
 Onbekende descriptor gevonden. Portemonnee %s laden
 
-De portemonnee is mogelijk aangemaakt met een nieuwere versie.  
+De portemonnee is mogelijk aangemaakt met een nieuwere versie.
 Probeer de nieuwste softwareversie uit te voeren.
 ```
 
@@ -231,11 +236,11 @@ Probeer de nieuwste softwareversie uit te voeren.
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Mislukt om op welke poort dan ook te luisteren. Gebruik -listen=0 as u dit wilt.</translation>
     
-YES  
-The Dutch translation contains a spelling mistake: "as" should be "als".  
+YES
+The translation uses "as u dit wilt" which is incorrect. It should be "als u dit wilt". Also, "Mislukt om op welke poort dan ook te luisteren" is awkward; a better translation would be "Het is niet gelukt om op een poort te luisteren".
 
-Correct translation:  
-Mislukt om op welke poort dan ook te luisteren. Gebruik -listen=0 als u dit wilt.
+Correct translation:
+Het is niet gelukt om op een poort te luisteren. Gebruik -listen=0 als u dit wilt.
 ```
 
 ```
@@ -243,31 +248,20 @@ Mislukt om op welke poort dan ook te luisteren. Gebruik -listen=0 als u dit wilt
         <translation>Ongeldig -onion adress of hostnaam: '%s'</translation>
     
 YES
-There is a spelling mistake in the Dutch translation. "Ongeldig" is misspelled as "Ongeldig" should have a capital 'O' but more importantly, the actual correct spelling is "Ongeldig" (the first letter capitalized or not depends on context, but since it is at the start of the sentence, lowercase is fine if it is a continuation; however, in this context, it looks like a complete sentence, so capital "O" is correct). Furthermore, there is a typo in "adress" which should be "adres" in Dutch. The rest of the translation is correct and the format specifier '%s' is preserved properly.
+The Dutch word for "address" is "adres," not "adress." There's a spelling mistake.
 
-Correct translation:  
+Correct translation:
 Ongeldig -onion adres of hostnaam: '%s'
-```
-
-```
-        <source>SQLiteDatabase: Failed to execute statement to verify database: %s</source>
-        <translation>SQLite Databank: mislukt om het statement uit te voeren dat de de databank verifieert: %s</translation>
-    
-YES  
-The Dutch translation is somewhat awkward and contains minor issues: "mislukt om het statement uit te voeren dat de de databank verifieert" is not idiomatic Dutch. "Databank" is less common than "database" in Dutch technical contexts. Also, there is a duplicate "de de" which is incorrect. A more natural translation would be:  
-
-Correct translation:  
-SQLiteDatabase: mislukt om de instructie uit te voeren om de database te verifiëren: %s
 ```
 
 ```
         <source>Transaction amounts must not be negative</source>
         <translation>Transactiebedragen moeten positief zijn</translation>
     
-YES  
-The original English text states "Transaction amounts must not be negative," which means the amounts can be zero or positive, just not less than zero. The Dutch translation "Transactiebedragen moeten positief zijn" means "Transaction amounts must be positive," implying strictly greater than zero, excluding zero itself. This is more restrictive and changes the meaning.
+YES
+The translation changes the meaning of the source sentence. The English source states that amounts "must not be negative" (they can be zero or positive), but the Dutch translation says amounts "must be positive" (implying greater than zero).
 
-Correct translation:  
+Correct translation:
 Transactiebedragen mogen niet negatief zijn
 ```
 
@@ -275,20 +269,23 @@ Transactiebedragen mogen niet negatief zijn
         <source>Transaction change output index out of range</source>
         <translation>Transactie change output is buiten bereik</translation>
     
-YES  
-The translation mixes Dutch and English terms improperly. The word "change" should be translated into Dutch to keep consistency and clarity. Also, the phrase "index out of range" should be translated more naturally. A better translation would be:  
+YES
+The translation is somewhat problematic. The English phrase "Transaction change output index out of range" specifically refers to the "index" of the change output in a transaction. The Dutch translation omits "index" making the message less precise.
 
-Correct translation:  
-"Index van transactie-wisseluitgang buiten bereik"
+Correct translation:
+Transactie change output-index buiten bereik
 ```
 
 ```
         <source>Unable to start HTTP server. See debug log for details.</source>
         <translation>Niet mogelijk ok HTTP-server te starten. Zie debuglogboek voor details.</translation>
     
-YES  
-The translation contains a typo: "ok" should be "om". Also, "debug log" is translated as "debuglogboek," which is understandable, but "debuglog" or "debuglogbestand" might be more commonly used. A better translation would be:
+YES
+The translation contains a minor grammatical error and a typo: "ok" should be "om" ("om HTTP-server te starten"), and "debuglogboek" is an awkward rendering for "debug log" in Dutch; "debuglog" is more standard.
 
-"Niet mogelijk om HTTP-server te starten. Zie het debuglogboek voor details."
+Correct translation:
+Niet mogelijk om HTTP-server te starten. Zie debuglog voor details.
 ```
 </details>
+
+Number of issues: 22.

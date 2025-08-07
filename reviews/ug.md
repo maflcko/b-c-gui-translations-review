@@ -14,16 +14,15 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <translation>تاقا(L)</translation>
     
 YES
-The translation "تاقا(L)" is problematic. "تاقا" means "window" or sometimes "door" in Uyghur, which is incorrect in this context. The literal translation of "Close" in Uyghur, as used for closing a window or dialogue, is "ياپ" or "تاقاش".
+The translation is problematic. The word "تاقا" is commonly used for "window" but can be interpreted as "tab" or "pane", not the action "Close". Also, the "(L)" mnemonic indicator is not standard in Uyghur user interfaces and may confuse users.
 
 Correct translation:
-ياپ
+يېپиш
 
-If you must include a shortcut "(L)", ensure it's justified in context (for example, if "L" is actually the shortcut key, and if so, should be after the Uyghur word without English letters unless the UI requires it), e.g.:
-ياپ(L) 
+Or, if a shortcut key (like a mnemonic) is required, typically Uyghur software just uses the letter in parentheses akin to the English. You might see:
+يېپ (L)
 
-But typically, the correct and simple translation would be:
-ياپ
+However, "يېپيش" ("Close") is most natural.
 ```
 
 ```
@@ -31,22 +30,10 @@ But typically, the correct and simple translation would be:
         <translation>تاللا(H)</translation>
     
 YES
-The translation contains an error: "تاللا(H)" is not the correct translation for "Choose". The added "(H)" appears extraneous and the verb is misspelled. The correct translation should be:
-
-تاللا
-
-If a shortcut key ("H") is being referenced, ensure it matches the English source or local UI practice. Otherwise, omit it.
-```
-
-```
-        <source>Copy Address</source>
-        <translation>ئادرېس كۆچۈر(C)</translation>
-    
-YES
-The translation includes an unnecessary "(C)" at the end, which does not exist in the source and is not required. Also, "ئادرېس كۆچۈر" is an accurate translation for "Copy Address".
+The translation "تاللا(H)" is problematic. The correct Uighur word for "Choose" is "تاللاڭ" or simply "تاللا". The addition of "(H)" is unnecessary and may be a mistaken keyboard shortcut or a formatting error.
 
 Correct translation:
-ئادرېس كۆچۈر
+تاللا
 ```
 
 ```
@@ -55,9 +42,13 @@ Correct translation:
         <translation>ھۆججەت پەش بىلەن ئايرىلىدۇ</translation>
     
 YES
-The translation is incorrect. The provided 'ug' translation means "the document is separated by a whip" or "the document is separated by a stick", which is a mistranslation. The word for "comma" in Uyghur is "پەش". The correct translation for "Comma separated file" should be:
+The translation is not accurate. "ھۆججەت پەش بىلەن ئايرىلىدۇ" literally means "The document is separated by comma", but it doesn't represent the file format "Comma separated file/values" (CSV) as used in the context and misses mentioning "comma" explicitly and as a file type name.
 
-پەش بىلەن ئايرىلغان ھۆججەت
+Correct translation:
+پۈتۈن بەلگە بىلەن ئايرىلغان ھۆججەت
+
+Or more clearly for CSV:
+ئۇيغۇرچە: پۈتۈن بەلگە بىلەن ئايرىلىدىغان ھۆججەت
 ```
 
 ```
@@ -65,10 +56,14 @@ The translation is incorrect. The provided 'ug' translation means "the document 
         <translation>ئىم ئىبارە ئۆزگەرت</translation>
     
 YES
-The translation is problematic. The correct translation for "Change passphrase" should be closer to "ئىم ئىبارىنى ئۆزگەرت," where "ئىم ئىبارە" means "passphrase" and "ئۆزگەرت" means "change." The current translation "ئىم ئىبارە ئۆزگەرت" is missing the possessive or object marker, so it reads as "passphrase change" rather than an imperative "Change passphrase."
+The translation is inaccurate. "ئىم ئىبارە ئۆزگەرت" translates to "change (password) phrase" but 'ئىم ئىبارە' is not the standard way to refer to 'passphrase' in Uyghur, and the translation as a whole sounds incomplete and unnatural.
 
 Correct translation:
-ئىم ئىبارىنى ئۆزگەرت
+پارول ئۈزگەرت
+or more precisely,
+ئىم پارولىنى ئۆزگەرت
+
+Either is more accurate for "Change passphrase" in Uyghur.
 ```
 
 ```
@@ -77,8 +72,14 @@ Correct translation:
         <translation>ھۆججەت پەش بىلەن ئايرىلىدۇ</translation>
     
 YES
-The translation is incorrect. The provided 'ug' translation means "the document is separated by a whip" or "the document is separated by a stick", which is a mistranslation. The word for "comma" in Uyghur is "پەش". The correct translation for "Comma separated file" should be:
+The translation is not accurate. "ھۆججەت پەش بىلەن ئايرىلىدۇ" literally means "The document is separated by comma", but it doesn't represent the file format "Comma separated file/values" (CSV) as used in the context and misses mentioning "comma" explicitly and as a file type name.
 
-پەش بىلەن ئايرىلغان ھۆججەت
+Correct translation:
+پۈتۈن بەلگە بىلەن ئايرىلغان ھۆججەت
+
+Or more clearly for CSV:
+ئۇيغۇرچە: پۈتۈن بەلگە بىلەن ئايرىلىدىغان ھۆججەت
 ```
 </details>
+
+Number of issues: 5.

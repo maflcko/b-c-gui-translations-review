@@ -14,60 +14,54 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <translation>საიდუმლო ფრაზის მიმოცვლა</translation>
     
 YES
-The Georgian phrase "საიდუმლო ფრაზის მიმოცვლა" literally means "secret phrase exchange," which misrepresents "Passphrase Dialog." The correct translation should convey that this is a dialog window related to the passphrase.
+The translation "საიდუმლო ფრაზის მიმოცვლა" is inaccurate. "მიმოცვლა" means "exchange", but "dialog" here refers to a "window" or "dialog box" in software UI terms, not an exchange. The word "დიალოგი" is commonly used for "dialog" in software Georgian translations.
 
 Correct translation:
-პაროლის ფრაზის დიალოგი
+საიდუმლო ფრაზის დიალოგი
 ```
 
 ```
         <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>შეიყვანეთ საფულის ახალი საიდუმლო ფრაზა .1 გამოიყენეთ მე –2 ან მეტი შემთხვევითი სიმბოლოების 2 ან 3 – ზე მეტი რვა ან მეტი სიტყვის პაროლი 3.</translation>
     
-YES  
-The translation is incoherent, contains extraneous characters (".1", "მე –2", "2 ან 3 – ზე მეტი", "3."), and does not accurately render the original message. It also misses the HTML formatting cues and the instruction is unclear.
+YES
+The translation is incorrect and contains errors. It has inserted numbers (1, 2, 3) instead of properly translating the structure about the passphrase requirements. The meaning is lost, and the style is not natural Georgian.
 
-Correct translation:  
-შეიყვანეთ საფულის ახალი საიდუმლო ფრაზა.&lt;br/&gt;გთხოვთ გამოიყენოთ&gt;&lt;b&gt;ათი ან მეტი შემთხვევითი სიმბოლო&lt;/b&gt;, ან &lt;b&gt;რვა ან მეტი სიტყვა&lt;/b&gt;.
+Correct translation:
+გთხოვთ, შეიყვანოთ საფულის ახალი საიდუმლო ფრაზა.&lt;br/&gt; გამოიყენეთ &lt;b&gt;ათი ან მეტი შემთხვევითი სიმბოლო&lt;/b&gt; ან &lt;b&gt;რვა ან მეტი სიტყვა&lt;/b&gt; თქვენი ფრაზისთვის.
 ```
 
 ```
         <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
         <translation>გახსოვდეთ, რომ თქვენი საფულის დაშიფვრა ვერ უზრუნველყოფს სრულად დაიცვას თქვენი ბიტკოინების მოპარვა კომპიუტერში მავნე პროგრამებით.</translation>
     
-YES  
-The Georgian translation is awkward and contains grammatical errors. The phrase "არ უზრუნველყოფს სრულად დაიცვას" is incorrect and awkwardly structured. The phrase should be reworded for naturalness and correctness.
+YES
+The translation has some grammatical issues and the meaning is distorted. Specifically, "ვერ უზრუნველყოფს სრულად დაიცვას თქვენი ბიტკოინების მოპარვა კომპიუტერში მავნე პროგრამებით" is awkward and incorrect. It should convey that encryption cannot completely prevent theft by malware on your computer.
 
-Correct translation:  
-გახსოვდეთ, რომ თქვენი საფულის დაშიფვრა ვერ უზრუნველყოფს თქვენს ბიტკოინებზე სრულყოფილ დაცვას კომპიუტერში მავნე პროგრამების მიერ მოპარვისგან.
+Correct translation:
+გახსოვდეთ, რომ საფულის დაშიფვრა ვერ სრულად დაიცავს თქვენს ბიტკოინებს კომპიუტერში მავნე პროგრამების მიერ ქურდობისგან.
 ```
 
 ```
         <source>Wallet to be encrypted</source>
         <translation>დაშიფრულია საფულე</translation>
     
-YES  
-The translation "დაშიფრულია საფულე" means "The wallet is encrypted," which changes the meaning of the original English text "Wallet to be encrypted" (indicating it is about a wallet that needs to be encrypted, not one that already is). This changes the intent from future or imperative to a present state, which is incorrect.  
+YES
+The translation means "The wallet is encrypted" instead of "Wallet to be encrypted". This changes the meaning from a future/pending action to a completed one.
 
-Correct translation:  
-საფულე გასათიშავია  
-(or more explicitly: საფულე, რომელიც უნდა დაიშიფროს)
+Correct translation:
+საფულე დასაშიფრია
 ```
 
 ```
         <source>Your wallet is about to be encrypted. </source>
         <translation>თქვენი საფულე იშიფრება</translation>
     
-YES  
-The source text "Your wallet is about to be encrypted." implies a future or imminent action, while the translation "თქვენი საფულე იშიფრება" means "Your wallet is being encrypted" (present continuous), which changes the meaning. Also, there is an extra space at the end of the English source that is not reflected in the translation, though this is minor.
+YES
+The Georgian translation is inaccurate and changes the meaning. The source says the wallet "is about to be encrypted" (future/impending action), but the translation "თქვენი საფულე იშიფრება" means "Your wallet is being encrypted" (present tense, ongoing action). The translation also omits the final period.
 
-A more accurate translation capturing the future aspect would be:  
-"თქვენი საფულე მალე დაიშიფრება"  
-(literally: "Your wallet will soon be encrypted") or  
-"თქვენი საფულე მალე დაიკონტროლება" (less common).
-
-Preferred correction:  
-<translation>თქვენი საფულე მალე დაიშიფრება.</translation>
+Correct translation:
+თქვენი საფულე მალე დაიშიფრება.
 ```
 
 ```
@@ -75,13 +69,11 @@ Preferred correction:
         <translation>სანამ აიკრძალა</translation>
     
 YES  
-The translation "სანამ აიკრძალა" means "until it was banned" or "while it was banned," which does not convey the intended meaning of "Banned Until" as a label indicating a time or date until which something is banned. A more accurate translation would be:
+The translation "სანამ აიკრძალა" is incorrect; it means "until (it) was banned," which does not convey the intended meaning of "Banned Until" (i.e., the time up to which the ban lasts). The correct translation would be:  
+"აკრძალულია დღემდე" or "აკრძალულია სანამ" or, more naturally, "აკრძალული დღეამდე".
 
-"აკრძალულია მანამდე" or "აკრძალული სანამ"  
-
-However, the most natural and clear translation for "Banned Until" in Georgian in this context is:
-
-"აკრძალულია დრომდე"
+Correct translation:  
+აკრძალულია დღემდე
 ```
 
 ```
@@ -89,21 +81,21 @@ However, the most natural and clear translation for "Banned Until" in Georgian i
         <translation>ჩახურვა</translation>
     
 YES
-The translation "ჩახურვა" means "close" rather than "minimize." The correct Georgian translation for "Minimize" in a computer/window context is "მინიმიზაცია" or "ჩანცვლა" (less common). 
+The translation "ჩახურვა" actually means "Close" in Georgian, not "Minimize." The correct translation for "Minimize" is "მინიმალიზაცია" or more commonly "ჩაკეცვა".
 
 Correct translation:
-მინიმიზაცია
+ჩაკეცვა
 ```
 
 ```
         <source>Sign message…</source>
         <translation>ხელმოწერა შეტყობინება…</translation>
     
-YES  
-The translation "ხელმოწერა შეტყობინება…" literally means "signature message…" or "sign message" in a noun form, which is not the correct imperative form for "Sign message…". The correct translation should use the verb form instructing the user to sign a message.  
+YES
+The Georgian translation has incorrect word order and case. The verb "ხელმოწერა" ("signature" or "to sign") should come after the object with the appropriate postposition. The more natural translation would be:
 
-Correct translation:  
-"შეტყობინებაზე ხელმოწერა…"
+Correct translation:
+შეტყობინებაზე ხელმოწერა…
 ```
 
 ```
@@ -111,19 +103,21 @@ Correct translation:
         <extracomment>A substring of the tooltip. "More actions" are available via the context menu.</extracomment>
         <translation>მეტი...</translation>
     
-YES  
-The translation "მეტი..." means "More..." and does not convey the full meaning of "Click for more actions." The source instructs the user to click to see more actions, not just indicating "more". A better translation would explicitly include the action of clicking, for example:
+YES
+The translation "მეტი..." means "more...", which is incomplete and does not convey the idea of "Click for more actions." It loses context and instruction from the source.
 
-Correct translation:  
-"დაწკაპეთ მეტი მოქმედებებისთვის."
+Correct translation:
+დააწკაპუნეთ მეტი ქმედებების სანახავად.
 ```
 
 ```
         <source>Sent transaction</source>
         <translation>გაგზავნილი ტრანსაქციები</translation>
     
-YES  
-The source text "Sent transaction" is singular, but the translation "გაგზავნილი ტრანსაქციები" is plural ("transactions"). The correct singular form in Georgian would be:  
+YES
+The translation uses the plural form "გაგზავნილი ტრანსაქციები" ("Sent transactions") instead of the singular "Sent transaction". This is an error as the source is singular.
+
+Correct translation:
 გაგზავნილი ტრანსაქცია
 ```
 
@@ -132,32 +126,21 @@ The source text "Sent transaction" is singular, but the translation "გაგ�
         <translation>Coin-ები</translation>
     
 YES
-The translation "Coin-ები" is a mixed-language form combining English "Coin" with the Georgian plural suffix "-ები," which is not appropriate. The correct Georgian translation for "Coin Selection" would be a proper noun phrase or a meaningful term in Georgian. A suitable translation could be:
+The translation "Coin-ები" simply pluralizes the English word "Coin" using a Georgian suffix, which does not accurately reflect the meaning of "Coin Selection" (the process of choosing coins/UTXOs for a transaction). It also omits the term "Selection".
 
-მონეტების არჩევანი
+Correct translation:
+მონეტების არჩევა
 ```
 
 ```
         <source>After Fee:</source>
         <translation>დამატებითი საკომისიო:</translation>
     
-YES  
-The English phrase "After Fee:" indicates an amount or value remaining after subtracting a fee. The provided Georgian translation "დამატებითი საკომისიო:" means "Additional fee:", which changes the meaning significantly. A more accurate translation preserving the original meaning would be:
+YES
+The translation is inaccurate. The English "After Fee:" means "the amount after subtracting the fee," while the Georgian translation "დამატებითი საკომისიო:" means "additional fee," which is incorrect.
 
+Correct translation:
 საკომისიოს შემდეგ:
-```
-
-```
-        <source>Copy label</source>
-        <translation>კოპირება ჭდე</translation>
-    
-YES  
-The Georgian word "ჭდე" means "knot" or "bundle," which is incorrect for translating "label" in this context. The proper word for "label" (as used in Bitcoin wallet labels) is "ნიშანი" or more commonly "ლეგენდა" or simply "ლაბელა" (a transliteration). A suitable translation would be:  
-
-კოპირება ლეიბელის or კოპირება ნიშნის  
-
-Correct translation:  
-კოპირება ლეიბელის
 ```
 
 ```
@@ -165,49 +148,42 @@ Correct translation:
         <translation>ტრანზაქციის კოპირება ID და ინდექსის გამოტანა</translation>
     
 YES
-The translation is inaccurate and awkward. The phrase "Copy transaction ID and output index" should be translated in a way that clearly commands copying both elements, not partially copying one and "outputting" the other.
+The translation is inaccurate and awkward in Georgian. It says "კოპირება" (copying) of the transaction, then "ID and index output", which is not natural or correct. Also, the structure does not match the source.
 
 Correct translation:
-ტრანზაქციის ID-სა და გამოტანის ინდექსის კოპირება
+ტრანზაქციის ID-ისა და გამოშვების ინდექსის კოპირება
 ```
 
 ```
         <source>Copy after fee</source>
         <translation>დამატებითი საკომისიოს კოპირება</translation>
     
-YES  
-The translation "დამატებითი საკომისიოს კოპირება" literally means "Copy of the additional fee," which does not accurately represent the English phrase "Copy after fee." In the Bitcoin context, "Copy after fee" likely means copying the amount or value after deducting the fee, or referring to the amount remaining after the fee. The Georgian translation should reflect that the copying is done of the value "after the fee" and not copying the fee itself.
+YES
+The translation is inaccurate. The English "Copy after fee" (likely referring to copying the amount *after* subtracting the fee) is translated as "დამატებითი საკომისიოს კოპირება", which means "Copy additional fee," not the original intent.
 
-A better translation would be:  
-"საკომისიოდან შემდგომი კოპირება"  
-or  
-"ფულის გადახდის შემდეგ კოპირება" (Copying after payment of the fee)
-
-Depending on the most concise and common terminology in the context, the first is preferred.
-
-Correct translation:  
-<translation>საკომისიოდან შემდგომი კოპირება</translation>
+Correct translation:
+საკომისიოს გამოკლების შემდეგ კოპირება
 ```
 
 ```
         <source>Are you sure you wish to close the wallet &lt;i&gt;%1&lt;/i&gt;?</source>
         <translation>დაიხუროს საფულე&lt;i&gt;%1&lt;/i&gt; ?</translation>
     
-YES  
-The Georgian translation misses the polite/formal phrasing corresponding to "Are you sure you wish to close...?" and contains incorrect spacing before the question mark in Georgian punctuation style (in Georgian, there is no space before the question mark). Also, the subject is omitted (it literally means "Close the wallet %1?"), losing the nuance of "Are you sure you wish to...?"
+YES
+The translation is not accurate. The source asks "Are you sure you wish to close the wallet...?", but the Georgian translation uses an imperative "დაიხუროს", which means "Let the wallet be closed", and does not capture the question or certainty aspect. There is also a space before the question mark that should not be there.
 
-Correct translation:  
-"დარწმუნებული ხართ, რომ გსურთ დახუროთ საფულე&lt;i&gt;%1&lt;/i&gt;?"
+Correct translation:
+დარწმუნებული ხართ, რომ გსურთ საფულე &lt;i&gt;%1&lt;/i&gt; დახურვა?
 ```
 
 ```
         <source>Encrypt Wallet</source>
         <translation>საფულის დაცვა [Encrypt Wallet]</translation>
     
-YES  
-The translation includes the original English text "[Encrypt Wallet]" unnecessarily, which is not typical or appropriate in a translation. The phrase "საფულის დაცვა" translates to "Wallet protection," which is close but not exact. A more precise Georgian translation of "Encrypt Wallet" would be "საფულის დაშიფვრა."
+YES
+The translation is partially problematic. While "საფულის დაცვა" means "Wallet protection," it does not directly convey "Encrypt Wallet." The inclusion of "[Encrypt Wallet]" in brackets is unnecessary and not a proper translation. The text should directly translate "Encrypt Wallet" as "საფულის დაშიფვრა".
 
-Correct translation:  
+Correct translation:
 საფულის დაშიფვრა
 ```
 
@@ -215,130 +191,73 @@ Correct translation:
         <source>Create</source>
         <translation>ახალი</translation>
     
-YES  
-The English word "Create" means to make or produce something. The Georgian translation "ახალი" means "new," which is incorrect in this context.  
+YES
+The translation "ახალი" means "new" in Georgian, not "Create". The correct translation for "Create" is "შექმნა" or "შექმენით" (imperative/formal).
 
-Correct translation:  
-შექმნა
+Correct translation:
+შექმნა (or შექმენით, depending on context)
 ```
 
 ```
         <source>Error: Specified data directory "%1" cannot be created.</source>
         <translation>შეცდომა: მითითებულ მონაცემთა დირექტორია „%1“ არ არის შექმნილი.</translation>
     
-YES  
-The translation incorrectly uses "არ არის შექმნილი" which means "is not created" or "has not been created," implying a current state, rather than an inability to create the directory. The English source indicates an error because the directory cannot be created, i.e., the creation attempt failed.
+YES
+The translation has an inaccuracy. The English source says "cannot be created," which means the directory could not be created (an attempt failed), but the Georgian translation says "არ არის შექმნილი" which means "is not created" (describing its state, not the failed action). The error message should instead indicate the failure to create.
 
-Correct translation:  
-შეცდომა: მითითებული მონაცემთა დირექტორია „%1“ არ არის შესაძლებელი შექმნა.  
-
-Alternatively, a more natural phrasing:  
-შეცდომა: მითითებულ მონაცემთა დირექტორიას „%1“ შექმნა შეუძლებელია.
+Correct translation:
+შეცდომა: მითითებული მონაცემთა დირექტორიის „%1“ შექმნა შეუძლებელია.
 ```
 
 ```
         <source>%1 is shutting down…</source>
         <translation> დახურულია %1...</translation>
     
-YES  
-The translation "დახურულია %1..." means "%1 is closed...", which is incorrect for the English source "%1 is shutting down…". The correct translation should convey the process of shutting down, not just that it is closed. Also, the ellipsis should be the proper Unicode character (…) instead of three dots, matching the source.
+YES
+There are two issues:  
+1. The ellipsis character is not consistent with the source (the source uses a single Unicode ellipsis '…', translation uses three periods '...').
+2. The translation reverses word order and omits the verb. Correct Georgian structure would be to clarify that %1 is shutting down, not that it "is closed".
 
-Correct translation:  
-%1 იხურება…
+Correct translation:
+%1 ითიშება…
 ```
 
 ```
         <source>Progress increase per hour</source>
         <translation>პროგრესი გაუმჯობესდება ერთ საათში</translation>
     
-YES  
-The translation means "Progress will improve in one hour," which adds a future tense and implies an event happening "in" one hour, rather than indicating a rate or amount of progress increase "per hour" as in the source. The source phrase "Progress increase per hour" is a noun phrase indicating a measure or rate, not a prediction.  
+YES
+The translation "პროგრესი გაუმჯობესდება ერთ საათში" means "Progress will improve in one hour" rather than "Progress increase per hour," which is about a rate/amount of progress per hour.
 
-Correct translation:  
-პროგრესის ზრდა ერთ საათში
+Correct translation:
+საათში პროგრესის ზრდა
 ```
 
 ```
         <source>Reset Options</source>
         <translation>დაბრუნების ოპციები</translation>
     
-YES  
-The Georgian translation "დაბრუნების ოპციები" literally means "return options" or "options of returning," which is not an accurate translation for "Reset Options" in the Bitcoin or software context. The word "Reset" here implies restoring options to their default or original state, which should be translated with the Georgian term for "reset" or "revert to original settings."
+YES
+The translation "დაბრუნების ოპციები" means "return options" or "options of returning" in Georgian, which does not accurately convey the intent of "Reset Options". The concept of 'reset' in software (to restore defaults or original state) is generally rendered as "გადატვირთვა" (reset/restart) or "საწყისი პარამეტრების დაბრუნება" (restore default options/settings). 
 
-A more appropriate translation would be:  
-"აპლიკაციის პარამეტრების მიმართვა" (literally "resetting application settings") or simply  
-"პარამეტრების გამეორება" or  
-"პარამეტრების გადაყარება", although the most common usage in software is "გადატვირთვის პარამეტრები" or "პარამეტრების გამორთვა" is incorrect.
+Correct translation:
+პარამეტრების განულება
 
-The best and commonly used Georgian translation for "Reset Options" is:  
-"აირჩიე პარამეტრების დაწყება პირვანდლიდან" (literal and long) or more usable is:  
-"პარამეტრების გადაყენება" (reset/reinitialize settings).
+Or a more expanded version that matches UI conventions:
+პარამეტრების ყურადღით დაბრუნება Defaults-თან
 
-Suggested correction:  
-<translation>პარამეტრების გადაყენება</translation>
+But typically, "პარამეტრების განულება" is used.
 ```
 
 ```
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>აირჩიეთ გასაგზავნი თანხის ნაგულისხმევი ერთეული.</translation>
     
-YES  
-The translation is incomplete and loses information from the original. The source mentions choosing the default subdivision unit for displaying in the interface and when sending coins, but the translation only says "Choose the default unit of amount to be sent," omitting the aspect of showing it in the interface and the idea of "subdivision unit."
+YES
+The translation omits part of the original meaning, specifically the part about the interface display. The original refers to both displaying in the interface and sending coins, but the translation only mentions sending.
 
-A more accurate translation would be:  
-"აირჩიეთ ნაგულისხმევი ქვედანაყოფის ერთეული მომხმარებლის ინტერფეისსა და მონეტების გაგზავნის დროს."
-```
-
-```
-        <source>This change would require a client restart.</source>
-        <translation>ამ ცვლილებების ძალაში შესასვლელად საჭიროა კლიენტის დახურვა და ხელახალი გაშვება.</translation>
-    
-YES  
-The original English sentence states: "This change would require a client restart."  
-The translation says: "ამ ცვლილებების ძალაში შესასვლელად საჭიროა კლიენტის დახურვა და ხელახალი გაშვება." which translates back to English as: "For these changes to take effect, it is necessary to close and restart the client."  
-
-Problems:  
-- The source mentions "This change" (singular), but the translation uses "ამ ცვლილებების" which is plural ("these changes"). This is inconsistent.  
-- The original says "restart," but the translation renders it as "close and restart," which is more verbose but not necessarily wrong.  
-- Suggest a more literal and singular form aligned with the source.  
-
-Correct translation:  
-"ამ ცვლილების გამოსაყენებლად საჭიროა კლიენტის ხელახალი გაშვება."  
-(Literally: "To apply this change, a client restart is required.")  
-
-Alternatively, to retain "restart" explicitly:  
-"ამ ცვლილებას კლიენტის ხელახალი გაშვება სჭირდება."  
-
-Both are valid, depending on style. The key is to make it singular "change" and keep it concise.  
-
-Therefore:  
-YES  
-The translation incorrectly uses plural for "change," which should be singular. The phrase is longer than necessary and slightly changes nuance.  
-
-Correct translation:  
-"ამ ცვლილების გამოსაყენებლად საჭიროა კლიენტის ხელახალი გაშვება."
-```
-
-```
-        <source>Mined balance that has not yet matured</source>
-        <translation>მოპოვებული თანხა, რომელიც ჯერ არ არის მზადყოფნაში</translation>
-    
-YES  
-The phrase "ჯერ არ არის მზადყოფნაში" is awkward and incorrect in Georgian. The English phrase "Mined balance that has not yet matured" refers to mined Bitcoins whose maturity time period has not yet passed. The correct Georgian translation should convey the idea of the mined amount that is not yet "mature" or "available."
-
-Correct translation:  
-მოპოვებული ოდენობა, რომელიც ჯერ არ არის შეწიფული
-```
-
-```
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>ვერ გაიშვა bitcoin: click-to-pay</translation>
-    
-YES  
-The translation is incomplete and does not fully convey the source meaning. The original English states "Cannot start bitcoin: click-to-pay handler," meaning the click-to-pay handler for Bitcoin cannot be started. The translation only says "ვერ გაიშვა bitcoin: click-to-pay," which omits "handler" and leaves "click-to-pay" untranslated, which is not ideal for clarity.
-
-Correct translation:  
-ვერ გაიშვება bitcoin-ის click-to-pay დამტვირთავი (handler)
+Correct translation:
+აირჩიეთ ნაგულისხმევი დანაყოფის ერთეული, რომელიც გამოჩნდება ინტერფეისში და მონეტების გაგზავნისას.
 ```
 
 ```
@@ -346,66 +265,46 @@ Correct translation:
         <extracomment>Title of Peers Table column which contains a unique number used to identify a connection.</extracomment>
         <translation>თანაბარი</translation>
     
-YES  
-The translation "თანაბარი" means "equal" or "peer" in the sense of equality, but in the Bitcoin / P2P networking context, "Peer" refers to a network node or participant, not the concept of equality. A more accurate Georgian translation in this technical context is "პირი" or "გაწონასწორებული" is not appropriate here. The commonly accepted term is "პირი" (meaning "peer" as a participant) or "თანამონაწილე".  
+YES
+The Georgian word "თანაბარი" means "equal" or "equivalent", not "peer" in the context of networking or Bitcoin peers. In Georgian, "Peer" (as in network peer) is better translated as "თანამონაწილე", "პირი", or "პირი (ქსელში)". The most accurate and context-appropriate term is "თანამონაწილე" or simply "პირი".
 
-Correct translation:  
-პირი
+Correct translation:
+თანამონაწილე
 ```
 
 ```
         <source>Open</source>
         <translation>შექმნა</translation>
     
-YES  
-The English word "Open" here typically means to open something, such as a file or a dialog, and should be translated accordingly. The Georgian translation "შექმნა" means "Create," which is incorrect.
+YES
+The translation is incorrect. The English word "Open" was translated as "შექმნა", which means "Create" in Georgian.
 
-Correct translation:  
-გაფართოვება or გახსნა (depending on context, but generally "გახსნა" is used for "Open")
-```
-
-```
-        <source>Copy label</source>
-        <translation>კოპირება ჭდე</translation>
-    
-YES  
-The Georgian word "ჭდე" means "knot" or "bundle," which is incorrect for translating "label" in this context. The proper word for "label" (as used in Bitcoin wallet labels) is "ნიშანი" or more commonly "ლეგენდა" or simply "ლაბელა" (a transliteration). A suitable translation would be:  
-
-კოპირება ლეიბელის or კოპირება ნიშნის  
-
-Correct translation:  
-კოპირება ლეიბელის
-```
-
-```
-        <source>Verify</source>
-        <translation>შემოწმება </translation>
-    
-YES  
-There is an extra trailing whitespace character after the word "შემოწმება" in the translation. This is a formatting issue.
-
-Correct translation:  
-შემოწმება
+Correct translation:
+გახსნა
 ```
 
 ```
         <source>Request payment to %1</source>
         <translation>%1-ის გადაზდის მოთხოვნა</translation>
     
-YES  
-The Georgian translation "%1-ის გადაზდის მოთხოვნა" incorrectly uses "გადაზდის" which means "transfer" rather than "payment." The source text requests a payment to %1, so the correct term should be "გადახდის" (payment).  
+YES
+The translation "%1-ის გადაზდის მოთხოვნა" is problematic. The word "გადაზდის" means "transfer" or "remittance," which is a less precise translation for "payment." Additionally, the construction is somewhat unnatural in Georgian for this context.
 
-Correct translation:  
-%1-ის გადახდის მოთხოვნა
+A more accurate and natural translation would be:
+"%1-თვის გადახდის მოთხოვნა"
+
+Correct translation:
+%1-თვის გადახდის მოთხოვნა
 ```
 
 ```
         <source>After Fee:</source>
         <translation>დამატებითი საკომისიო:</translation>
     
-YES  
-The English phrase "After Fee:" indicates an amount or value remaining after subtracting a fee. The provided Georgian translation "დამატებითი საკომისიო:" means "Additional fee:", which changes the meaning significantly. A more accurate translation preserving the original meaning would be:
+YES
+The translation is inaccurate. The English "After Fee:" means "the amount after subtracting the fee," while the Georgian translation "დამატებითი საკომისიო:" means "additional fee," which is incorrect.
 
+Correct translation:
 საკომისიოს შემდეგ:
 ```
 
@@ -414,7 +313,7 @@ The English phrase "After Fee:" indicates an amount or value remaining after sub
         <translation>ხურდის მისამართი</translation>
     
 YES
-The translation "ხურდის მისამართი" literally means "change address" but omits the adjective "custom" (which is "სივრცული" or "მორგებული" in Georgian depending on context). Since "Custom change address" refers to a specific option to designate a user-defined change address in Bitcoin, the adjective must be included.
+The translation "ხურდის მისამართი" means "change address" but omits "custom" ("საკუთარი" or "მორგებული") from the phrase, which is important to indicate the user-set aspect in the Bitcoin context.
 
 Correct translation:
 მორგებული ხურდის მისამართი
@@ -424,10 +323,10 @@ Correct translation:
         <source>Transaction Fee:</source>
         <translation>ტრანსაქციის საფასური - საკომისიო:</translation>
     
-YES  
-The translation uses a hyphen ("-") which is not present in the source text. The source is simply "Transaction Fee:", so the translation should not add extra punctuation or words like "საკომისიო" unless it is part of the intended meaning. The phrase "ტრანსაქციის საფასური" alone correctly translates "Transaction Fee". Adding "საკომისიო" (meaning "commission" or "fee") is somewhat redundant but could be acceptable if typically used in context, however, the dash in the middle is incorrect formatting.
+YES
+The translation "ტრანსაქციის საფასური - საკომისიო:" introduces redundancy by adding "საკომისიო" (which also means "fee" or "commission") in addition to "ტრანსაქციის საფასური" ("transaction fee"). This is unnecessarily repetitive and diverges from the concise original. The correct translation should simply be:
 
-Correct translation:  
+Correct translation:
 ტრანსაქციის საფასური:
 ```
 
@@ -435,18 +334,11 @@ Correct translation:
         <source>Copy after fee</source>
         <translation>დამატებითი საკომისიოს კოპირება</translation>
     
-YES  
-The translation "დამატებითი საკომისიოს კოპირება" literally means "Copy of the additional fee," which does not accurately represent the English phrase "Copy after fee." In the Bitcoin context, "Copy after fee" likely means copying the amount or value after deducting the fee, or referring to the amount remaining after the fee. The Georgian translation should reflect that the copying is done of the value "after the fee" and not copying the fee itself.
+YES
+The translation is inaccurate. The English "Copy after fee" (likely referring to copying the amount *after* subtracting the fee) is translated as "დამატებითი საკომისიოს კოპირება", which means "Copy additional fee," not the original intent.
 
-A better translation would be:  
-"საკომისიოდან შემდგომი კოპირება"  
-or  
-"ფულის გადახდის შემდეგ კოპირება" (Copying after payment of the fee)
-
-Depending on the most concise and common terminology in the context, the first is preferred.
-
-Correct translation:  
-<translation>საკომისიოდან შემდგომი კოპირება</translation>
+Correct translation:
+საკომისიოს გამოკლების შემდეგ კოპირება
 ```
 
 ```
@@ -454,51 +346,51 @@ Correct translation:
         <translation>საკომისიო [fee] შეგიძლიათ შცვალოთ მოგვიანებით (სიგნალები Replace-By-Fee, BIP-125}.
  </translation>
     
-YES  
-The translation contains a typo and incorrect punctuation: the word "შცვალოთ" should be "შეცვალოთ", and the closing parenthesis is replaced by a closing curly brace "}". Also, the English word "fee" is unnecessarily kept in square brackets and untranslated. It is preferable to either translate or omit the brackets and translate the word properly. The original sentence refers to a fee, so using the Georgian term for "fee" or "საკომისიო" is correct; the brackets around [fee] are unnecessary and inconsistent.
+YES
+There are several issues:
+1. The Georgian word "შცვალოთ" is misspelled, should be "შეცვალოთ".
+2. "[fee]" is not part of the original and should not be inserted; "საკომისიო" alone is fine.
+3. The translation uses a wrong closing bracket (curly bracket instead of parenthesis).
+4. Unwanted whitespace at the end of the translation.
 
-Correct translation:  
-საკომისიოს შეგიძლიათ შეცვალოთ მოგვიანებით (სიგნალები Replace-By-Fee, BIP-125).
+Correct translation:
+საკომისიო შეგიძლიათ შეცვალოთ მოგვიანებით (შეტყობინება Replace-By-Fee, BIP-125).
 ```
 
 ```
         <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
         <translation>მესიჯი, რომელიც თან ერთვის მონეტებს:  URI, რომელიც შეინახება ტრანსაქციასთან ერთად თქვენთვის. შენიშვნა: მესიჯი არ გაყვება გადახდას ბითქოინის ქსელში.</translation>
     
-YES  
-The translation contains a few issues:  
-- "მონეტებს:" (coins) is incorrect instead of "bitcoin:". The source mentions "bitcoin: URI", which should be translated literally or transliterated as "bitcoin:" rather than replacing bitcoin with "monetebi" (coins).  
-- There is an extra space before "URI" ("მონეტებს:  URI")—double space.  
-- The phrase "გაყვა" (to accompany) is used incorrectly in the phrase "მესიჯი არ გაყვება გადახდას"; instead "მესიჯი არ გადაიგზავნება" or "არ იგზავნება" (will not be sent) would be more natural and accurate.  
-- "გადახდა" (payment) is used instead of "ტრანსაქცია" (transaction), but the source says "Bitcoin network" not "payment". Better: "ბითქოინის ქსელში" is correct for "Bitcoin network". The issue is "გაყვა გადახდას" is grammatically odd and semantically inaccurate, as the message is not sent over the network, not that it is not accompanied by a payment.  
+YES
+There are a few issues:
+- "მონეტებს:" should be "bitcoin:" to faithfully translate the URI scheme.
+- The translation omits "for your reference" nuance.
+- "მესიჯი არ გაყვება გადახდას ბითქოინის ქსელში." does not explicitly state "message will not be sent over the Bitcoin network" but instead says "the message will not follow the payment" which is less precise.
+- Double space after ":" in "მონეტებს:  URI".
 
-Corrected translation:  
-მესიჯი, რომელიც თან ერთვის bitcoin: URI-ს და შეინახება ტრანსაქციასთან ერთად თქვენს ცნობაში. შენიშვნა: ეს მესიჯი არ გადაეცემა ბითქოინის ქსელზე.
-
-(Note: Some Georgian translators prefer "გადაეცემა" over "ან იგზავნება" to express "sent over" a network.)
+Correct translation:
+შეტყობინება, რომელიც თან ერთვის bitcoin: URI-ს და შეინახება ტრანსაქციასთან ერთად თქვენი მითითებისთვის. შენიშვნა: ეს შეტყობინება ბიტკოინის ქსელში არ გადაიგზავნება.
 ```
 
 ```
         <source>press q to shutdown</source>
         <translation>დახურვა 'q'</translation>
     
-YES  
-The translation "დახურვა 'q'" literally means "close 'q'" and does not accurately convey the instruction to "press q to shutdown." The verb "press" is missing and should be explicitly stated to guide the user correctly.  
+YES
+The Georgian translation is not accurate. It translates as "close 'q'", which does not clearly instruct the user to "press q" in order to shut down.
 
-Correct translation:  
-'q' დაჭირეთ დასახურად  
-(or more formally)  
-'დაჭირეთ q-ღილაკს დასახურად'
+Correct translation:
+დააჭირეთ q-ს დასახურად
 ```
 
 ```
         <source>Inputs</source>
         <translation>ხარჯები</translation>
     
-YES  
-The Georgian translation "ხარჯები" means "expenses" or "costs," which is incorrect in the Bitcoin context. Here, "Inputs" refers to transaction inputs, not expenses. A more accurate translation for "Inputs" in the Bitcoin context would be "შეყვანები" or "ინპუტები" (the former is more formal and native).  
+YES
+The translation of "Inputs" as "ხარჯები" is incorrect. "ხარჯები" means "expenses" or "expenditures," not "inputs" in the context of Bitcoin transactions. The correct translation for "Inputs" in this context would be "შეყვანები" or "ინპუტები".
 
-Correct translation:  
+Correct translation:
 შეყვანები
 ```
 
@@ -506,56 +398,53 @@ Correct translation:
         <source>Confirming (%1 of %2 recommended confirmations)</source>
         <translation>დადასტურებულია (%1,  რეკომენდებულია %2)</translation>
     
-YES  
-The translation does not accurately convey the meaning of "Confirming (%1 of %2 recommended confirmations)". The original message indicates a process is ongoing, with a partial count of confirmations out of a recommended total. The translated version states "confirmed" (დადასტურებულია), which implies completion rather than an ongoing process, and the structure does not clearly express the fraction of confirmations.
+YES
+The translation does not accurately convey the progressive aspect ("Confirming") and misplaces the confirmation count. The source means that the confirmation is in progress ("Confirming"), showing how many confirmations have happened out of the recommended total.
 
-A better translation would be:  
-დადასტურების პროცესში (%1 מתוך რეკომენდებული %2 დადასტურებისა)
+Correct translation:
+დადასტურება მიმდინარეობს (%1 შესაძლებელია %2 რეკომენდებული დადასტურებიდან)
 ```
 
 ```
         <source>Confirmed (%1 confirmations)</source>
         <translation>დადასტურებულია (%1დასტური)</translation>
     
-YES  
-There is a missing space between the number placeholder %1 and the word "დასტური". In Georgian, a space is generally required between the number and the noun. Also, the word "დასტური" should be plural ("დასტურები") to match the English plural "confirmations."
+YES
+The translation is inaccurate. "%1დასტური" means "%1 confirmation" (singular), but the source says "confirmations" (plural), and the translation omits the word "დადასტურება" or "დადასტურება(ები)" for clarification. Also, there is a missing space after %1. The correct Georgian translation should be:
 
-Correct translation:  
-დადასტურებულია (%1 დასტურები)
-```
+დადასტურებულია (%1 დადასტურება)
 
-```
-        <source>Copy label</source>
-        <translation>კოპირება ჭდე</translation>
-    
-YES  
-The Georgian word "ჭდე" means "knot" or "bundle," which is incorrect for translating "label" in this context. The proper word for "label" (as used in Bitcoin wallet labels) is "ნიშანი" or more commonly "ლეგენდა" or simply "ლაბელა" (a transliteration). A suitable translation would be:  
+Or, to match plural more naturally:
 
-კოპირება ლეიბელის or კოპირება ნიშნის  
+დადასტურებულია (%1 დადასტურება/დადასტურება(ები))
 
-Correct translation:  
-კოპირება ლეიბელის
+But most commonly:
+
+დადასტურებულია (%1 დადასტურება)
 ```
 
 ```
         <source>Copy transaction ID</source>
         <translation>ტრანზაქციის დაკოპირება ID</translation>
     
-YES  
-The translation mixes Georgian and English unnaturally. "ID" should be translated or transliterated consistently with Georgian usage. A better translation would be:  
-"ტრანზაქციის ID-ის დაკოპირება"  
-This correctly reflects "Copy transaction ID" in fluent Georgian.
+YES
+The translation is not idiomatic. The phrase "ტრანზაქციის დაკოპირება ID" is awkward and incorrect in word order; a proper translation would place "ID" before "დაკოპირება". A better, idiomatic translation is:
+
+Correct translation:
+ტრანზაქციის ID-ის დაკოპირება
 ```
 
 ```
         <source>Copy full transaction details</source>
         <translation>სრული ტრანზაქციის კოპირება დეტალები</translation>
     
-YES  
-The Georgian translation word order is incorrect and sounds unnatural. "დეტალები" (details) should precede "კოპირება" (copying) as an object, and "სრული ტრანზაქციის" (full transaction's) should directly modify "დეტალები." The correct phrasing is "კოპირება სრული ტრანზაქციის დეტალების," so the intended meaning "Copy full transaction details" is conveyed properly.
+YES
+The translation is grammatically incorrect. It translates to "Copy transaction details full" or "Full transaction's copying details", which is not natural in Georgian. The correct Georgian translation should have the structure: "დაკოპირება სრული ტრანზაქციის დეტალების" or "დაკოპირეთ სრული ტრანზაქციის დეტალები".
 
-Correct translation:  
-კოპირება სრული ტრანზაქციის დეტალების
+Correct translation:
+სრული ტრანზაქციის დეტალების დაკოპირება
+or
+დააკოპირეთ სრული ტრანზაქციის დეტალები
 ```
 
 ```
@@ -563,10 +452,11 @@ Correct translation:
         <translation>ტრანზაქციის გაზრდა საფასური</translation>
     
 YES
-The Georgian translation has incorrect word order and grammatical construction. The phrase should properly convey "Increase transaction fee" meaning "Increase the fee of the transaction" with the correct structure and case endings.
+The word order in the Georgian translation is incorrect—the phrase "ტრანზაქციის გაზრდა საფასური" literally reads as "transaction's increase fee," which is not proper Georgian syntax. The correct translation should be: 
 
-Correct translation:
-ტრანზაქციის საფარის გაზრდა
+ტრანზაქციის საფასურის გაზრდა
+
+This directly translates back as "increase of transaction fee," matching the source meaning and proper Georgian grammar.
 ```
 
 ```
@@ -574,7 +464,7 @@ Correct translation:
         <translation>შეცდომა%s-ის შექმნისას</translation>
     
 YES
-There is a missing space between "შეცდომა" and "%s-ის". They should be separated by a space for proper formatting.
+There is a formatting issue: there is no space between the word "შეცდომა" (Error) and the format specifier "%s". In Georgian, a space should be present for clarity.
 
 Correct translation:
 შეცდომა %s-ის შექმნისას
@@ -584,21 +474,23 @@ Correct translation:
         <source>Error opening block database</source>
         <translation>ბლოკთა ბაზის შექმნა ვერ მოხერხდა</translation>
     
-YES  
-The English source "Error opening block database" indicates a problem occurred while opening the existing block database, not when creating it. The Georgian translation "ბლოკთა ბაზის შექმნა ვერ მოხერხდა" means "Creation of block database failed," which implies the error occurred during creation rather than opening. This changes the meaning and could confuse users.
+YES
+The translation "ბლოკთა ბაზის შექმნა ვერ მოხერხდა" means "Failed to create block database", which differs from the source "Error opening block database". The source refers to an error in opening (not creating) the database.
 
-Correct translation:  
-ბლოკთა მონაცემთა ბაზის გახსნა ვერ მოხერხდა
+Correct translation:
+ბლოკთა ბაზის გახსნის შეცდომა
 ```
 
 ```
         <source>Transaction amount too small</source>
         <translation>ტრანსაქციების რაოდენობა ძალიან ცოტაა</translation>
     
-YES  
-The translation "ტრანსაქციების რაოდენობა ძალიან ცოტაა" means "The number of transactions is too small," which does not accurately convey the original meaning of "Transaction amount too small." The correct translation should reflect the amount (sum of money), not the number (quantity) of transactions.
+YES
+The translation is incorrect. The original English text "Transaction amount too small" refers to the amount (value) of the transaction, not the number of transactions. The current translation says, "The number of transactions is too small," which is inaccurate.
 
-Correct translation:  
-ტრანზაქციის თანხა ძალიან პატარაა
+Correct translation:
+ტრანსაქციის თანხა ძალიან მცირეა
 ```
 </details>
+
+Number of issues: 41.

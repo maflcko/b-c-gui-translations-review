@@ -14,21 +14,21 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <translation>Introduceţi vechea şi noua parolă pentru portofel.
  </translation>
     
-YES  
-There is an unnecessary trailing whitespace character (a non-breaking space or similar) at the end of the translation, which should be removed. Also, the verb "Introduceţi" should be consistent with the formality and clarity of the source. It might be better to say "Introduceți vechea și noua parolă pentru portofel." without trailing spaces.
+YES
+There is an unwanted whitespace character at the end of the translation (a non-breaking space). Also, "Introduceţi vechea şi noua parolă pentru portofel." omits "Enter the old passphrase and new passphrase" nuance: ideally, the translation should preserve both the request to enter each passphrase and clarity.
 
-Correct translation:  
-Introduceți vechea și noua parolă pentru portofel.
+Correct translation:
+Introduceți vechea parolă și noua parolă pentru portofel.
 ```
 
 ```
         <source>A fatal error occurred. %1 can no longer continue safely and will quit.</source>
         <translation>A apărut o eroare fatală.%1 nu mai poate continua în siguranță și va ieși din program. </translation>
     
-YES  
-There is a missing space after the period before %1 in the translation. Also, there is an extra space at the end of the sentence. Correct spacing is important to match the source formatting and readability.
+YES
+There is a missing space between the sentences: "fatală.%1" should be "fatală. %1". Additionally, there is an extra space at the end of the translation.
 
-Correct translation:  
+Correct translation:
 A apărut o eroare fatală. %1 nu mai poate continua în siguranță și va ieși din program.
 ```
 
@@ -37,10 +37,10 @@ A apărut o eroare fatală. %1 nu mai poate continua în siguranță și va ieș
         <extracomment>Explanatory text shown on startup when the settings file cannot be read. Prompts user to make a choice between resetting or aborting.</extracomment>
         <translation>Vrei să resetezi opțiunile la valorile predeterminate sau sa abordezi fără a face schimbări?</translation>
     
-YES  
-The Romanian translation contains an erroneous word: "sa abordezi" means "to approach," which does not fit the intended meaning of aborting or cancelling. The correct verb should imply "to abort" or "to cancel" rather than "to approach."
+YES
+The word "abordezi" is incorrect in this context; it should be "abortezi" or "renunți", as "abordezi" means "to approach", while here it should be "to abort" or "give up".
 
-Correct translation:  
+Correct translation:
 Vrei să resetezi opțiunile la valorile implicite sau să renunți fără a face schimbări?
 ```
 
@@ -48,23 +48,32 @@ Vrei să resetezi opțiunile la valorile implicite sau să renunți fără a fac
         <source>%1 d</source>
         <translation>%1 z</translation>
     
-YES  
-The translation uses "z" which is not a correct abbreviation for "days" in Romanian. The letter "d" in the source should be preserved since it likely stands for "days" in an abbreviated form and is standard in international usage, or if an abbreviation for "days" is needed in Romanian, it would commonly be "z" for "zile". However, changing "d" to "z" here is inconsistent and potentially confusing, so keeping the "%1 d" is better for clarity.  
+YES
+The translation uses "z" instead of the correct Romanian abbreviation for "days". The English "d" stands for "days" and should be translated to "zile" or abbreviated as "z" only if that's standard in Romanian. However, in Romanian date abbreviations, "z" is sometimes used for "zi" (day), but for "days" (plural) it's more standard to use "zile" or at least confirm local software conventions. If the application uses "z" consistently, it may be acceptable, but "d" should not be changed to "z" solely on an assumption.
 
-Correct translation:  
-%1 d
+Correct translation (most standard):
+%1 z
+or alternatively (fully written):
+%1 zile
+
+However, if local convention is single-letter, "z" can be accepted, but context should be checked. 
+
+So, briefly:
+
+The translation is potentially problematic because "z" may not be a standard plural abbreviation for "zile" in all contexts. To be fully correct:
+
+Correct translation:
+%1 zile
 ```
 
 ```
         <source>Sign message…</source>
         <translation>Semnați și transmiteți un mesaj...</translation>
     
-YES  
-The source text "Sign message…" implies a command or action to digitally sign a message, possibly for authentication or verification purposes. The translation "Semnați și transmiteți un mesaj..." means "Sign and send a message...", which adds the action "send" that is not present in the source and changes the meaning.
+YES
+The translation adds "și transmiteți" ("and send"), which is not present in the original English text. The English is only "Sign message", not "Sign and send message". Also, the ellipsis (three dots) in Romanian should be consistent with the ellipsis used in English ("…", a single character, not three periods), though this is a minor issue.
 
-A more accurate translation should focus solely on "Sign message…" and preserve the ellipsis (indicating continuation or waiting for user input). Also, the ellipsis in Romanian should use the standard three dots without extra spaces.
-
-Correct translation:  
+Correct translation:
 Semnați mesajul…
 ```
 
@@ -72,39 +81,35 @@ Semnați mesajul…
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
         <translation>Cereţi plăţi (generează coduri QR şi bitcoin-uri: URls)</translation>
     
-YES  
-The translation contains errors and awkward phrasing:  
-- "Cereţi" is in plural/formal but might be better as imperative singular "Cere" if addressing the user directly, though plural can be correct depending on context.  
-- "bitcoin-uri" is incorrect pluralization and not necessary here; "bitcoin:" is a URI scheme and should remain as is.  
-- "URIs" is incorrectly translated as "URls" (with lowercase L instead of uppercase I), which is wrong and misleading; it should be "URI-uri" or simply "URI" (plural of URI is often just URI or URI-uri in Romanian).  
-- The parentheses content should mirror the source clearly.  
+YES
+The translation has a few issues:
+- "bitcoin: URIs" refers to the URI scheme "bitcoin:", not "bitcoin-uri", and "URls" has a typographical error ("URls" vs "URI-uri" or "URI").
+- The plural of "plată" should be "plăți", not "plăţi" (although ț and ţ are both used, the correct character is ț - Unicode U+021B).
+- While "Cereți" is acceptable, "Solicită" is a more neutral imperative verb fit for a UI context.
 
-Correct translation:  
-Cere plăţi (generează coduri QR şi URI-uri bitcoin:)  
-
-Alternatively, if plural "Cereţi" is preferred:  
-Cereţi plăţi (generează coduri QR şi URI-uri bitcoin:)
+Correct translation:
+Solicită plăți (generează coduri QR și URI-uri bitcoin:)
 ```
 
 ```
         <source>Sending addresses</source>
         <translation>Adresele de destinatie</translation>
     
-YES  
-The English phrase "Sending addresses" refers to addresses used for sending Bitcoin, not "destination addresses." The Romanian translation "Adresele de destinație" means "Destination addresses," which changes the meaning. A more accurate translation would be "Adresele de expediere" or simply "Adresele de trimitere," which retain the original meaning of "sending addresses."  
+YES
+The translation "Adresele de destinatie" means "Destination addresses", which is not the most accurate translation for "Sending addresses" in the context of Bitcoin. "Sending addresses" refers to the addresses from which coins are sent, not the destination.
 
-Correct translation:  
-Adresele de expediere
+Correct translation:
+Adrese de expediere
 ```
 
 ```
         <source>Open a bitcoin: URI</source>
         <translation>Deschidere bitcoin: o adresa URI sau o cerere de plată</translation>
     
-YES  
-The translation introduces extra content not present in the source. The source is a brief instruction or label: "Open a bitcoin: URI." The translation adds "o adresa URI sau o cerere de plată" (an URI address or a payment request), which doesn't reflect the original meaning and is unnecessarily verbose.
+YES
+The translation introduces extra content ("sau o cerere de plată" means "or a payment request") that is not present in the source text. Also, "Deschidere" should be "Deschide" to correctly translate "Open" in this context.
 
-Correct translation:  
+Correct translation:
 Deschide un bitcoin: URI
 ```
 
@@ -113,65 +118,53 @@ Deschide un bitcoin: URI
         <extracomment>Status tip for Restore Wallet menu item</extracomment>
         <translation>Recupereaza Portofelul din fisierele rezerva</translation>
     
-YES  
-The translation has several issues:  
-1. "Recupereaza" should be "Recuperează" with the correct diacritic on "ă".  
-2. "Portofelul" should be lowercase unless it is a proper noun, so "portofelul".  
-3. "fisierele rezerva" is plural while the source says "a backup file" (singular). It should be singular and with diacritics: "fișier de rezervă".  
-4. A more natural and accurate translation would be: "Restaurează un portofel dintr-un fișier de rezervă".  
+YES
+The Romanian translation contains some errors:
+- "Recupereaza" should have an accent: "Recuperează"
+- "Portofelul" should be lowercase as in the source: "portofel"
+- "fisierele rezerva" sounds odd; it should be "fișierul de backup" or "fișier de rezervă"
+- The translation shifts from singular (wallet) to plural (files) incorrectly.
 
-Correct translation:  
-Restaurează un portofel dintr-un fișier de rezervă
+Correct translation:
+Recuperează un portofel dintr-un fișier de backup
 ```
 
 ```
         <source>(un)select all</source>
         <translation>(de)selectare tot</translation>
     
-YES  
-The translation mixes English and Romanian incorrectly. The prefix "(un)" should be translated or adapted appropriately. The correct Romanian translation for "(un)select all" (which means "select or unselect all") should be:
+YES
+The translation is incorrect. The English phrase "(un)select all" should be accurately translated into Romanian, but "(de)selectare tot" is awkward and not idiomatic. A correct translation would be:
 
-"(de)selectați tot"  
+Selectează/deselectează tot
 
-Here "selectați" is the imperative form for "select" and "de" corresponds to "un" (unselect). Alternatively, more natural would be:
+Alternatively, in concise UI language:
 
-"selectați/deselectați tot"  
+Selectează/deselectează toate
 
-but to keep the original concise style with parentheses:
-
-"(de)selectați tot"
+This uses the imperative forms appropriate for buttons or actions.
 ```
 
 ```
         <source>Copy label</source>
         <translation>Copiaza si eticheteaza</translation>
     
-YES  
-The translation "Copiaza si eticheteaza" means "Copy and label," which does not correctly match the original source "Copy label." The source is a command or prompt to copy the label only, not to both copy and label.
+YES
+The translation is inaccurate. "Copy label" means to copy the label itself, not to copy and label. The correct Romanian translation should be:
 
-Correct translation:  
-"Copiază eticheta"
+Copiază eticheta
 ```
 
 ```
         <source>(change)</source>
         <translation>(rest)</translation>
     
-YES  
-The English source "(change)" in the context of Bitcoin usually refers to the "change" amount returned in a transaction, not "rest" as a general Romanian meaning. The correct Romanian translation for Bitcoin context is "(rest)" only if the source meant "change" as in "spare" or "remainder." However, in Bitcoin wallets, "(change)" is often translated as "(rest)" or sometimes kept as "(change)" since it's a technical term, but "(rest)" is acceptable. Still, since the English source is "(change)", it is better to use the correct Romanian technical term or keep it as "(change)". 
+YES
+The Romanian translation uses "rest", which, while sometimes used informally in the context of financial transactions to mean "change", it is slightly ambiguous and less formal/clear. In the context of Bitcoin and technical terminology, "schimb" or "monedă de schimb" could be used, but more typically, "rest" is understood by Romanian speakers in this context.
 
-If "(rest)" is used, it means the balance leftover, which is acceptable. There's no major error or spam.
+However, if following standard translations in Romanian Bitcoin interfaces, "rest" is widely accepted and not problematic. For clarity and formality, it could be improved to "schimb" or "suma de rest", but strictly speaking, it is not erroneous nor spam.
 
-However, to avoid confusion, the commonly accepted Bitcoin term in Romanian is "(rest)".
-
-Since the translation matches the meaning of "change" in the transaction context as "rest", no formatting errors or spacings are found.
-
-Therefore, the translation is acceptable, but to be more technically precise it could be:
-
-Correct translation:  
-(rest)
-
-Given the above, the current translation is not problematic. So the final output is:
+So, the answer is:
 
 NO
 ```
@@ -181,33 +174,28 @@ NO
         <extracomment>Descriptive text of the create wallet progress window which indicates to the user which wallet is currently being created.</extracomment>
         <translation>Creeaza Protofel&lt;b&gt;%1&lt;/b&gt;</translation>
     
-YES  
-The translation contains several issues:  
-1. "Creeaza" should have a diacritic: "Creează" (correct Romanian spelling).  
-2. "Protofel" is a typo; the correct word is "Portofel".  
-3. Missing ellipsis (…) at the end, which is present in the source.  
-4. Missing spaces before and after the <b> tags; it should be "Creează Portofel <b>%1</b>…" with spaces for readability and consistency.  
+YES
+There are issues with this translation:
+1. "Creeaza" should be "Creează" (diacritic missing).
+2. "Protofel" is a typo; the correct word is "Portofel".
+3. The ellipsis at the end of the sentence ("…") is missing in the translation.
+4. There should be a space between "Portofel" and "<b>".
 
-Correct translation:  
-Creează Portofel &lt;b&gt;%1&lt;/b&gt;…
+Correct translation:
+Creează portofelul &lt;b&gt;%1&lt;/b&gt;…
 ```
 
 ```
         <source>Reverting this setting requires re-downloading the entire blockchain. It is faster to download the full chain first and prune it later. Disables some advanced features.</source>
         <translation>Revenirea la această setare necesită re-descărcarea întregului blockchain. Este mai rapid să descărcați mai întâi rețeaua complet și să o fragmentați  mai târziu. Dezactivează unele funcții avansate.</translation>
     
-YES  
-The translation contains some inaccuracies and awkward phrasing:  
-- "rețeaua complet" should be "lanțul complet" (chain, not network).  
-- "fragmentați" is not the best choice for "prune" in Bitcoin context; "curățați" or "reduceți" would be clearer, but the established term is often "prunare" or "trunchiere" (pruning). "Prunare" is used in Romanian Bitcoin contexts.  
-- There is an extra space before "mai târziu."  
-- "Revenirea la această setare" sounds unnatural; a better alternative is "Revenirea asupra acestei setări" or "Anularea acestei setări".
+YES
+There are two issues:
+1. "să descărcați mai întâi rețeaua complet" should be "să descărcați mai întâi lanțul complet", as "blockchain" is usually translated as "lanțul de blocuri" or just "lanțul".
+2. There is an extra space before "mai târziu" ("fragmentați  mai târziu").
 
-Correct translation:  
-"Anularea acestei setări necesită re-descărcarea întregului blockchain. Este mai rapid să descărcați mai întâi lanțul complet și să îl prunezi mai târziu. Dezactivează unele funcții avansate."  
-
-Alternatively, to keep common terminology:  
-"Anularea acestei setări necesită re-descărcarea întregului blockchain. Este mai rapid să descărcați mai întâi lanțul complet și să îl prunați mai târziu. Dezactivează unele funcții avansate."
+Correct translation:
+Revenirea la această setare necesită re-descărcarea întregului blockchain. Este mai rapid să descărcați mai întâi lanțul complet și să îl fragmentați mai târziu. Dezactivează unele funcții avansate.
 ```
 
 ```
@@ -215,21 +203,21 @@ Alternatively, to keep common terminology:
         <translation>DeschidețI Bitcoin URI</translation>
     
 YES
-There is a capitalization and spacing error in the Romanian translation. The letter "ț" in "DeschidețI" is incorrectly capitalized and combined with the capital "I". It should be "Deschideți" with a lowercase "ț" and lowercase "i" at the end, spaced properly from "Bitcoin". Also, "Bitcoin" should be lowercase if following normal usage, but as it is a proper noun or network term, capitalization is acceptable. 
+The Romanian translation has an incorrect capitalization of "DeschidețI" (should be "Deschideți") and the phrase "Bitcoin URI" would be more natural as "URI Bitcoin".
 
 Correct translation:
-Deschideți Bitcoin URI
+Deschideți un URI Bitcoin
 ```
 
 ```
         <source>Enabling pruning significantly reduces the disk space required to store transactions. All blocks are still fully validated. Reverting this setting requires re-downloading the entire blockchain.</source>
         <translation>A activa "pruning" reduce signifiant spațiul pe disk pentru a stoca tranzacțiile.</translation>
     
-YES  
-The translation is incomplete and inaccurate. It only partially translates the source sentence and omits important information about blocks validation and reverting the setting. Also, the English word "pruning" is left in quotes untranslated, whereas there is a proper Romanian term for this Bitcoin context: "tăiere" or it can be explained as "reducerea istoricului blocurilor" if clarity is needed. The whole message should be translated clearly and fully.
+YES
+The translation omits much of the original content, does not fully convey the meaning, and leaves out important details about full block validation and the need to re-download the blockchain if reverted. Moreover, "A activa 'pruning'" should be phrased more naturally in Romanian.
 
-Correct translation:  
-Activarea tăierii (pruning) reduce semnificativ spațiul pe disc necesar pentru stocarea tranzacțiilor. Toate blocurile sunt totuși validate complet. Revenirea la această setare necesită descărcarea din nou a întregului blockchain.
+Correct translation:
+Activarea modului de pruning reduce semnificativ spațiul pe disc necesar pentru stocarea tranzacțiilor. Toate blocurile sunt totuși complet validate. Revenirea la această setare necesită re-descărcarea întregului blockchain.
 ```
 
 ```
@@ -237,7 +225,7 @@ Activarea tăierii (pruning) reduce semnificativ spațiul pe disc necesar pentru
         <translation>Nu s-a putut calcula comisionul de tranzactie sau suma totala al tranzactiei.</translation>
     
 YES
-There is a minor error in the Romanian translation: "al tranzactiei" should be "a tranzactiei" because "suma" is feminine and requires the feminine genitive article "a". Also, "tranzactie" should have diacritics to be correct: "tranzacție".
+There are issues with the grammatical agreement in the Romanian translation. "tranzactie" should have the proper diacritics ("tranzacție"), and "suma totala al tranzactiei" should use the correct agreement: "suma totală a tranzacției."
 
 Correct translation:
 Nu s-a putut calcula comisionul de tranzacție sau suma totală a tranzacției.
@@ -247,11 +235,10 @@ Nu s-a putut calcula comisionul de tranzacție sau suma totală a tranzacției.
         <source>Datadir</source>
         <translation>Dirdate</translation>
     
-YES  
-The translation "Dirdate" is incorrect and does not reflect the original English term "Datadir," which is a compound of "data" and "dir" (directory). In Romanian, a proper translation should keep the meaning clear, such as "Director de date" or simply "Folder de date," depending on context. "Dirdate" is not a proper Romanian word.
+YES
+The translation is incorrect. "Datadir" should be translated as "Director de date" or left as "Datadir" if it refers to a technical directory name. "Dirdate" does not have meaning in Romanian.
 
-Correct translation:  
-Datadir (if kept as a technical term) or  
+Correct translation:
 Director de date
 ```
 
@@ -259,10 +246,10 @@ Director de date
         <source>Ctrl+I</source>
         <translation>Ctrl+l</translation>
     
-YES  
-The translation changes the key 'I' (uppercase i) to a lowercase 'l', which is incorrect as it changes the shortcut. The correct translation should keep the original shortcut key unchanged:
+YES
+The translation uses a lowercase 'L' (l) instead of the uppercase 'I' (I). In Romanian, shortcut keys should match the source key.
 
-Correct translation:  
+Correct translation:
 Ctrl+I
 ```
 
@@ -283,33 +270,31 @@ Pentru mai multe informații privind folosirea consolei, tastează %6.
 
 %7ATENȚIE: Scammerii au fost activi, cerându-le utilizatorilor să tasteze anumite comenzi, furându-le date din portofel. Nu folosi consola fără a înțelege complet ramificațiile unei comenzi. %8</translation>
     
-YES  
-The translation has several issues related to spacing and terminology:  
-- There is an extra space before the period in the first line after "%1".  
-- In Romanian, "Scammerii" is an anglicism and should be replaced with a proper Romanian term such as "Înșelătorii" or "Escrocii".  
-- The spacing around some format specifiers and punctuation is inconsistent, e.g., "%5pentru" should have a space after %5.  
-- The phrase "furându-le date din portofel" is less precise than the English "stealing their wallet contents"; a better translation would be "fura conținutul portofelului lor" or "le fură conținutul portofelului".  
-- Also, there is an extra space before the period in some places.  
-- The style tags (%7 and %8) must not have spaces separating them from the text as per the comment; the translation preserves that correctly.
+YES
+There are minor formatting and spacing errors, as well as a slight stylistic issue. Specifically:
+- In "%1 .", the space should not be before the period.
+- In "Tastează %5pentru o listă...", there is no space between '%5' and 'pentru'.
+- In "comenzii disponibile .", the space before the period should be removed.
+- In the warning text, there is a space before '%8' that should likely not be there, to preserve the intentional formatting.
 
-Corrected translation:  
-Bine ai venit la consola RPC %1.  
-Folosește săgețile sus și jos pentru a naviga istoricul, iar %2 pentru a curăța ecranul.  
-Folosește %3 și %4 pentru a crește sau scădea dimensiunea textului.  
-Tastează %5 pentru o listă a comenzilor disponibile.  
+Correct translation:
+Bine ai venit la consola RPC %1.
+Folosește săgețile sus și jos pentru a naviga istoricul, iar %2 pentru a curăța ecranul.
+Folosește %3 și %4 pentru a crește sau scădea dimensiunea textului.
+Tastează %5 pentru o listă a comenzilor disponibile.
 Pentru mai multe informații privind folosirea consolei, tastează %6.
 
-%7ATENȚIE: Înșelătorii au fost activi, cerându-le utilizatorilor să tasteze anumite comenzi, furându-le conținutul portofelului. Nu folosi consola fără a înțelege complet ramificațiile unei comenzi.%8
+%7ATENȚIE: Escrocii au fost activi, cerându-le utilizatorilor să tasteze anumite comenzi, furându-le conținutul portofelului. Nu folosi consola fără a înțelege complet ramificațiile unei comenzi.%8
 ```
 
 ```
         <source>Copy URI</source>
         <translation>Copiază URl</translation>
     
-YES  
-The translation mistakenly writes "URl" with a lowercase "l" instead of uppercase "I" in "URI". The acronym URI should be fully capitalized in Romanian as in English.
+YES
+The translation has an incorrect capitalization in "URl": the 'l' should be uppercase 'L' to match 'URI'. There is also a minor terminology issue: "URI" is a technical term and should remain "URI" in Romanian rather than being adapted or partially translated.
 
-Correct translation:  
+Correct translation:
 Copiază URI
 ```
 
@@ -317,29 +302,31 @@ Copiază URI
         <source>Copy label</source>
         <translation>Copiaza si eticheteaza</translation>
     
-YES  
-The translation "Copiaza si eticheteaza" means "Copy and label," which does not correctly match the original source "Copy label." The source is a command or prompt to copy the label only, not to both copy and label.
+YES
+The translation is inaccurate. "Copy label" means to copy the label itself, not to copy and label. The correct Romanian translation should be:
 
-Correct translation:  
-"Copiază eticheta"
+Copiază eticheta
 ```
 
 ```
         <source>Copy message</source>
         <translation>Copie și mesaj</translation>
     
-YES  
-The Romanian translation is incorrect. "Copie și mesaj" translates to "Copy and message," which is wrong. The correct translation for "Copy message" is "Copiază mesajul."
+YES
+The translation is incorrect. "Copie și mesaj" means "Copy and message", which is not accurate.
+
+Correct translation:
+Copiază mesajul
 ```
 
 ```
         <source>Copy URI</source>
         <translation>Copiază URl</translation>
     
-YES  
-The translation mistakenly writes "URl" with a lowercase "l" instead of uppercase "I" in "URI". The acronym URI should be fully capitalized in Romanian as in English.
+YES
+The translation has an incorrect capitalization in "URl": the 'l' should be uppercase 'L' to match 'URI'. There is also a minor terminology issue: "URI" is a technical term and should remain "URI" in Romanian rather than being adapted or partially translated.
 
-Correct translation:  
+Correct translation:
 Copiază URI
 ```
 
@@ -348,33 +335,27 @@ Copiază URI
         <translation>Introduceţi adresa de semnatură, mesajul (asiguraţi-vă că aţi copiat spaţiile, taburile etc. exact) şi semnatura dedesubt pentru a verifica mesajul. Aveţi grijă să nu citiţi mai mult în semnatură decît mesajul în sine, pentru a evita să fiţi păcăliţi de un atac de tip man-in-the-middle. De notat ca aceasta dovedeste doar ca semnatarul primeste odata cu adresa, nu dovedesta insa trimiterea vreunei tranzactii.</translation>
     
 YES
-The translation contains several errors and awkward phrasings:
-
-1. "adresa de semnatură" should be "adresa destinatarului" (the receiver's address).
-2. "taburile" should be "taburile" but with correct diacritics (tabs = “taburi” – no plural form with "taburi" is acceptable, but “taburile” is better).
-3. Some words miss diacritics ("semnatură" should be "semnătură", "citeşti" vs "citiţi", "dedesubt" is okay but could be "mai jos").
-4. The phrase "citiţi mai mult în semnatură decît mesajul" should be more natural: "nu interpretați mai mult în semnătură decât mesajul însuși".
-5. The phrase "de notat ca aceasta dovedeste" should be "Rețineți că aceasta dovedește".
-6. "semnatarul primește odată cu adresa" is unclear and awkward. It should be "partea care semnează este cea care deține adresa".
-7. "nu dovedesta insa trimiterea vreunei tranzactii" - “dovedeste” (accent missing), and better wording: "nu dovedește însă expedierea vreunei tranzacții".
+There are several issues in the translation:
+1. The phrase "adresa de semnatură" is incorrect and should be "adresa destinatarului" ("receiver's address").
+2. It omits "line breaks" from the list of what must be copied exactly.
+3. "că aţi copiat spaţiile, taburile etc. exact" omits the specificity of including newlines, and does not mirror the English precisely.
+4. Double diacritics are missing for Romanian (e.g., "semnatură" → "semnătură", "dedesubt" could be clearer as "mai jos").
+5. "semnatura dedesubt" is awkward Romanian; better: "și semnătura mai jos".
+6. "dovedeste" should have diacritics ("dovedește"), and "primestre" does not literally exist; it should mention "primește cu adresa".
+7. "trimiterea vreunei tranzactii" should be "trimiterea vreunei tranzacții".
 
 Correct translation:
-
-Introduceți adresa destinatarului, mesajul (asigurați-vă că copiați exact întreruperile de linie, spațiile, taburile etc.) și semnătura de mai jos pentru a verifica mesajul. Aveți grijă să nu interpretați mai mult în semnătură decât este în mesajul semnat, pentru a evita să fiți păcăliți de un atac de tip man-in-the-middle. Rețineți că aceasta dovedește doar că partea care semnează deține adresa, dar nu dovedește expedierea vreunei tranzacții!
-
-Also, the format specifiers (% etc.) are not present, so no issue there.
-
-Final output: YES with explanation and corrected translation as above.
+Introduceți mai jos adresa destinatarului, mesajul (asigurați-vă că ați copiat exact toate liniuțele noi, spațiile, taburile etc.) și semnătura pentru a verifica mesajul. Aveți grijă să nu interpretați mai mult în semnătură decât ceea ce se află în mesajul semnat, pentru a evita să fiți păcăliți de un atac de tip man-in-the-middle. Rețineți că acest lucru dovedește doar că partea semnatară primește cu acea adresă, nu poate dovedi trimiterea vreunei tranzacții!
 ```
 
 ```
         <source>The Bitcoin address the message was signed with</source>
         <translation>Introduceţi o adresă Bitcoin</translation>
     
-YES  
-The translation is not accurate and introduces erroneous content. The source text means "The Bitcoin address the message was signed with," but the translation says "Introduceţi o adresă Bitcoin," which means "Enter a Bitcoin address." This changes the meaning entirely and is not appropriate.
+YES
+The translation is incorrect. The source refers to "The Bitcoin address the message was signed with," while the translation says "Introduceţi o adresă Bitcoin" ("Enter a Bitcoin address"), which does not convey the original meaning.
 
-Correct translation:  
+Correct translation:
 Adresa Bitcoin cu care a fost semnat mesajul
 ```
 
@@ -382,22 +363,22 @@ Adresa Bitcoin cu care a fost semnat mesajul
         <source>Reset all verify message fields</source>
         <translation>Resetează toate cîmpurile mesajelor semnate</translation>
     
-YES  
-The translation is inaccurate and partially misleading. The source text says "Reset all verify message fields," which refers to fields related to verifying messages, not specifically "signed messages." The word "verify" should be translated as "verificare," and "fields" as "câmpurile" (using the correct diacritic, not "cîmpurile"). Also, the verb "Resetează" is acceptable but somewhat informal; "Resetați" would be more appropriate for a command in a user interface.
+YES
+The translation changes the meaning. The source refers to "verify message fields", but the translation refers to "fields of signed messages" ("cîmpurile mesajelor semnate"). Furthermore, the correct character in modern Romanian is "î" (not "î" at the beginning, but "â" inside words, so "câmpurilor", not "cîmpurilor").
 
-Correct translation:  
-Resetați toate câmpurile mesajelor de verificare
+Correct translation:
+Resetează toate câmpurile pentru verificarea mesajului
 ```
 
 ```
         <source>The signature did not match the message digest.</source>
         <translation>Semnatura nu se potriveşte cu mesajul.</translation>
     
-YES  
-The translation is not fully accurate. The source refers to the signature not matching the "message digest" (a hash), not just the "message." The correct translation should convey that the signature doesn't match the message digest, not the entire message.  
+YES
+The translation is inaccurate. The English source refers to the message digest (i.e., hash of the message), not just the message. The Romanian translation omits this important term.
 
-Correct translation:  
-Semnătura nu corespunde rezumatului mesajului.
+Correct translation:
+Semnătura nu corespunde cu rezumatul (digestul) mesajului.
 ```
 
 ```
@@ -405,81 +386,64 @@ Semnătura nu corespunde rezumatului mesajului.
         <translation>Monedele generate se pot cheltui doar dupa inca %1 blocuri.  După ce a fost generat, s-a propagat în reţea, urmând să fie adăugat in blockchain.  Dacă nu poate fi inclus in lanţ, starea sa va deveni "neacceptat" si nu va putea fi folosit la tranzacţii.  Acest fenomen se întâmplă atunci cand un alt nod a generat un bloc la o diferenţa de câteva secunde.</translation>
     
 YES
-The translation contains several issues:
-- The phrase "se pot cheltui doar dupa inca %1 blocuri" is inaccurate. The coins don't become spendable "after still %1 blocks," but they require %1 blocks to mature before spending.
-- There are extra double spaces.
-- The translation uses inconsistent diacritics (e.g., "in" instead of "în") and inconsistent spacing around punctuation.
-- The phrase "nu va putea fi folosit la tranzacţii" should be more precise, such as "nu vor putea fi cheltuiți" (coins being spendable).
-- The phrasing could be more natural and more closely match the source meaning.
+There are several issues with the translation:
+- The number of required blocks to mature ("%1 blocks") should be explicitly mentioned, as in the source, not rendered vaguely as "doar dupa inca %1 blocuri" (only after another %1 blocks).
+- Some content is omitted: "When you generated this block" is not translated explicitly; the translation only states "După ce a fost generat" (After it was generated), not making clear the subject "you".
+- "it won't be spendable" is rendered as "nu va putea fi folosit la tranzacţii" (cannot be used for transactions), which is acceptable, but a closer equivalent for "spendable" would be better.
+- The translation turns explanations into more generic phrases, losing the clarity of cause and effect from the original.
+- There's stray double spacing in several places.
+- Word choices such as "blockchain" vs "lanţ" should be consistent (choose either "blockchain" or "lanţ de blocuri" for the Romanian context).
+- The last sentence omits “your block” (ai tău) for clarity.
 
 Correct translation:
-Monedele generate trebuie să ajungă la maturitate timp de %1 blocuri înainte să poată fi cheltuite. Când ai generat acest bloc, acesta a fost transmis în rețea pentru a fi adăugat în blockchain. Dacă nu reușește să intre în lanț, starea sa se va schimba în „neacceptat” și nu va mai putea fi cheltuit. Acest lucru se poate întâmpla ocazional dacă un alt nod generează un bloc la câteva secunde după al tău.
+Monedele generate trebuie să se maturizeze timp de %1 blocuri înainte de a putea fi cheltuite. Când ai generat acest bloc, el a fost transmis în rețea pentru a fi adăugat la lanțul de blocuri. Dacă nu reușește să fie inclus în lanț, starea lui va deveni „neacceptat” și nu va putea fi cheltuit. Acest lucru se poate întâmpla uneori dacă un alt nod generează un bloc la câteva secunde după al tău.
 ```
 
 ```
         <source>Whether or not a watch-only address is involved in this transaction.</source>
         <translation>Indiferent dacă sau nu o adresa doar-suăpraveghere este implicată în această tranzacţie.</translation>
     
-YES  
-The phrase "doar-suăpraveghere" is incorrect and unnatural in Romanian. The correct term for "watch-only address" is "adresă doar-pentru-monitorizare" or simply "adresă doar-pentru-monitorizare" or "adresă doar pentru monitorizare" without hyphens. Also, "Indiferent dacă sau nu" is redundant; more natural is "Indiferent dacă o adresă doar pentru monitorizare este implicată în această tranzacție."
+YES
+There are several issues in the translation:
+- "adresa" should have the correct definite article and diacritics: "adresă".
+- "doar-suăpraveghere" is a misspelling; it should be "doar-pentru-vizualizare" or "doar-supraveghere".
+- The sentence structure is awkward: "Indiferent dacă sau nu" is not idiomatic in Romanian.
+- "în această tranzacţie" is correct, but "tranzacţie" should have a 'ț' with comma, not a cedilla.
 
-Correct translation:  
-Indiferent dacă o adresă doar pentru monitorizare este implicată în această tranzacție.
+Correct translation:
+Fie dacă o adresă doar-pentru-vizualizare este sau nu implicată în această tranzacție.
 ```
 
 ```
         <source>User-defined intent/purpose of the transaction.</source>
         <translation>Intentie/scop al tranzactie definit de user.</translation>
     
-YES  
-The translation contains a few issues:  
-- "Intentie" is incorrect in Romanian; the correct word is "intenție".  
-- "tranzactie" is missing the diacritic "ț" and should be "tranzacție".  
-- "user" should be translated to Romanian as "utilizator" or "user" can be used but it is better to localize in this context.  
-- The phrase could be more naturally structured in Romanian to improve clarity.
+YES
+There are several issues: "tranzactie" should be "tranzacție" (with diacritics), "user" should be translated to "utilizator", and the article should be correct in context ("o tranzacție"). Also, "intenție" and "scop" should be with proper diacritics.
 
-Correct translation:  
-"Intenția/scopul tranzacției definit de utilizator."
+Correct translation:
+Intenție/scop al tranzacției definit de utilizator.
 ```
 
 ```
         <source>Copy label</source>
         <translation>Copiaza si eticheteaza</translation>
     
-YES  
-The translation "Copiaza si eticheteaza" means "Copy and label," which does not correctly match the original source "Copy label." The source is a command or prompt to copy the label only, not to both copy and label.
+YES
+The translation is inaccurate. "Copy label" means to copy the label itself, not to copy and label. The correct Romanian translation should be:
 
-Correct translation:  
-"Copiază eticheta"
+Copiază eticheta
 ```
 
 ```
         <source>Error reading %s! Transaction data may be missing or incorrect. Rescanning wallet.</source>
         <translation>Error citind %s! Data tranzacțieii poate fi lipsă sau incorectă. Rescanând portofel.</translation>
     
-YES  
-There are grammatical errors and awkward phrasing in the translation:
+YES
+There are minor errors: "Error citind" should be in Romanian ("Eroare la citirea"), "tranzacțieii" has a double "i" and should be "tranzacției", "data" should be capitalized only if it starts the sentence, and "Rescanând portofel." is grammatically incomplete; "Rescanez portofelul" or "Se rescanează portofelul" is correct.
 
-- "Error" should be translated to "Eroare" for proper Romanian.
-- "citind" is correct, but the phrase "Data tranzacțieii poate fi lipsă sau incorectă" has mistakes:
-  - "tranzacțieii" is incorrect; the genitive form of "tranzacție" is "tranzacției" (only one 'i' at the end).
-  - "Data" is singular, but the English is plural "Transaction data," so "Datele" would be better.
-- The phrase "poate fi lipsă sau incorectă" is awkward; "pot fi lipsă sau incorecte" is needed because "date" is plural, so verbs and adjectives agree in plural.
-- "Rescanând portofel." is a fragment and awkward. A better translation is "Se scanează din nou portofelul." or "Rescanare portofel." but the first is more natural.
-
-Correct translation:  
-"Eroare la citirea %s! Datele tranzacției pot fi lipsă sau incorecte. Se scanează din nou portofelul."
-```
-
-```
-        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
-        <translation>Reducție: ultima sincronizare merge dincolo de datele reducției. Trebuie să faceți -reindex (să descărcați din nou întregul blockchain în cazul unui nod redus)</translation>
-    
-YES  
-The translation uses "Reducție" and "reducției", which are inappropriate translations for "Prune" in the Bitcoin context. "Prune" refers to pruning blockchain data, and commonly is translated as "tăiere" or "prunează" or using the English term "prune" in Romanian technical contexts. Also, "nod redus" should be "nod tăiat" or "nod cu pruning". The rest of the sentence is mostly correct but can be improved for clarity and terminology accuracy.
-
-Correct translation:  
-Prune: ultima sincronizare a portofelului depășește datele tăiate. Trebuie să folosiți -reindex (pentru a descărca din nou întregul blockchain în cazul unui nod cu pruning)
+Correct translation:
+Eroare la citirea %s! Datele tranzacției pot lipsi sau pot fi incorecte. Se rescanează portofelul.
 ```
 
 ```
@@ -487,7 +451,7 @@ Prune: ultima sincronizare a portofelului depășește datele tăiate. Trebuie s
         <translation>Portofel crreat cu succes. Tipul legacy de portofel va fi deprecat iar suportul pentru crearea și deschiderea portofelelor legacy va fi eliminat în viitor.</translation>
     
 YES
-There is a typo in the word "crreat" which should be "creat". The rest of the translation is accurate and correctly conveys the original message, including the correct use of format and spacing.
+There is a typo in the translation: "crreat" should be "creat". 
 
 Correct translation:
 Portofel creat cu succes. Tipul legacy de portofel va fi deprecat iar suportul pentru crearea și deschiderea portofelelor legacy va fi eliminat în viitor.
@@ -497,27 +461,11 @@ Portofel creat cu succes. Tipul legacy de portofel va fi deprecat iar suportul p
         <source>Failed to verify database</source>
         <translation>Verificarea datei de baze a eșuat</translation>
     
-YES  
-The Romanian translation has word order and grammatical issues. The phrase "datei de baze" is incorrect; the correct phrase is "bazei de date" (genitive construction for "database"). Also, the sentence should start with "Verificarea bazei de date a eșuat" to mean "Failed to verify database".
+YES
+There is a minor grammatical error in the Romanian translation. "datei de baze" should be "bazei de date". The correct translation is:
 
-Correct translation:  
 Verificarea bazei de date a eșuat
 ```
-
-```
-        <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
-        <translation>Incorect sau nici un bloc de geneza găsit. Directorul de retea greşit?</translation>
-    
-YES  
-The word "Incorect" is misspelled; the correct spelling is "Incorect". Also, "nicio" is the proper form for negation with singular countable nouns instead of "nici un". In addition, there should be a space after the question mark. The terms "director" and "rețea" should be capitalized only if they start a sentence or are proper nouns, but here they should be lowercase. Also, the phrasing "Directorul de rețea greșit?" is somewhat unnatural; a better translation would be "Director de date greșit pentru rețea?" to reflect "Wrong datadir for network?", where "datadir" is typically translated as "director de date". The Romanian diacritics must be consistent: "reţea" should be "rețea" and "greşit" should be "greșit".  
-
-Correct translation:  
-"Incorect sau nicio bloc genesis găsit. Director de date greșit pentru rețea?"  
-
-Alternatively, "genesis block" may be left untranslated or explained as "blocul genesis". A more natural version:  
-"Incorect sau niciun bloc genesis găsit. Directorul de date greșit pentru rețea?"  
-
-Putting it all together:  
-"Incorect sau niciun bloc genesis găsit. Directorul de date greșit pentru rețea?"
-```
 </details>
+
+Number of issues: 35.

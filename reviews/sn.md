@@ -14,15 +14,18 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <translation>Kero</translation>
     
 YES
-The translation of "Address" to "Kero" is problematic. In the Shona language ('sn'), the correct word for "Address" is "Kero" only in contexts involving an address for mailing or a physical location, but in the context of Bitcoin, it refers to a cryptocurrency address or wallet address. The correct translation should be "Kero" only if Shona Bitcoin users commonly understand it for a digital/address context. However, in actual cryptocurrency contexts, "Kero" is generally accepted for "address" among Shona speakers.
+The translation "Kero" is incorrect for the English word "Address" in Shona ('sn'). The correct translation should be "Kero" when referring to a postal address, but for cryptocurrency or Bitcoin context, the direct transliteration or usage of the English word "Address" is often preferred, or one can use "Kero" if sufficiently established. However, the word "Kero" means "address" in general, but may lack specificity in the Bitcoin context.
 
-If additional context is needed, "Kero yeBitcoin" (Bitcoin Address) may be used to provide clarity in ambiguous contexts.
+If opting for a more accurate translation considering the context (Bitcoin wallet address), it can be:
 
-So strictly:
-NO
+Correct translation:
+Kero
 
-But with a minor note:
-"Kero" is commonly used in informal/modern contexts for both physical and digital addresses among Shona speakers. If full clarity is needed, you may use "Kero yeBitcoin".
+So, technically, "Kero" is correct for "address", including Bitcoin contexts in Shona. No issue with whitespace or spam.
+
+If strict, output is: NO
+
+(But if your policy is to indicate preference for transliteration for technical terms, you can say "YES", but standard Shona dictionaries list "Kero" for "address", so "NO" is acceptable.)
 ```
 
 ```
@@ -30,7 +33,7 @@ But with a minor note:
         <translation>Buda</translation>
     
 YES
-The translation "Buda" is incorrect for "Exit" in Shona ('sn'). The correct translation should be "Buda" can mean "come out" or "leave," but for interface terminology, a more suitable translation would be "Kubuda" (meaning "to exit/leave") or simply "Buda". However, some users would prefer the infinitive for clarity in interfaces.
+The translation is problematic. "Buda" does not mean "Exit" in Shona ('sn'). The correct term in Shona for "Exit" should be "Buda panze", "Buda", or, more contextually, "Kubuda". However, "Buda" alone might be insufficient or ambiguous.
 
 Correct translation:
 Kubuda
@@ -42,12 +45,22 @@ Kubuda
         <translation>Kero</translation>
     
 YES
-The translation "Kero" is not correct for "Address" in the context of Bitcoin or networking. The correct Shona translation is "Kero ye IP" or simply "Kero", but "Kero" alone is often understandable as "address" (e.g., email address, postal address). However, in the context of Bitcoin or network addresses, to avoid ambiguity, "Kero ye IP" or "Kero ye network" could be clearer.
+The translation of "Address" as "Kero" is incorrect in the context of the Shona ('sn') language. "Kero" is an adaptation, but the more standard and accurate term for "address" (as in IP/network address) in Shona is "Kero yeIndaneti" or simply "Kero" can suffice for a network address, provided it has been explained elsewhere in the UI. However, contextually, "Kero" is borrowed and may be unfamiliar or ambiguous to users unfamiliar with this loanword.
+
+Correct translation (for clarity in IT/Bitcoin context):
+Kero
+
+No major whitespace or format issues, but the rationale and transparency of language usage could be improved for user clarity. If further specificity is needed for peer tech tables: "Kero yeIndaneti" or "Kero yeNetiweki" could be preferable.
+
+Final verdict: NO (if "Kero" is acceptable as a technical term in your target context)
+Or
+YES
+"Kero" may be ambiguous to non-technical users. For exactness, use "Kero yeIndaneti".
 
 Correct translation:
-Kero ye IP
+Kero yeIndaneti
 
-But if "Address" is consistently translated as "Kero" elsewhere in the app, and the meaning is clear to the users, "Kero" might be acceptable. However, "Kero ye IP" is preferable for clarity in a technical context.
+(If your UI already establishes "Kero" as "address": "NO", otherwise, "YES ...")
 ```
 
 ```
@@ -55,14 +68,19 @@ But if "Address" is consistently translated as "Kero" elsewhere in the app, and 
         <translation>Kero</translation>
     
 YES
-The translation of "Address" to "Kero" is problematic. In the Shona language ('sn'), the correct word for "Address" is "Kero" only in contexts involving an address for mailing or a physical location, but in the context of Bitcoin, it refers to a cryptocurrency address or wallet address. The correct translation should be "Kero" only if Shona Bitcoin users commonly understand it for a digital/address context. However, in actual cryptocurrency contexts, "Kero" is generally accepted for "address" among Shona speakers.
+The translation "Kero" is incorrect for the English word "Address" in Shona ('sn'). The correct translation should be "Kero" when referring to a postal address, but for cryptocurrency or Bitcoin context, the direct transliteration or usage of the English word "Address" is often preferred, or one can use "Kero" if sufficiently established. However, the word "Kero" means "address" in general, but may lack specificity in the Bitcoin context.
 
-If additional context is needed, "Kero yeBitcoin" (Bitcoin Address) may be used to provide clarity in ambiguous contexts.
+If opting for a more accurate translation considering the context (Bitcoin wallet address), it can be:
 
-So strictly:
-NO
+Correct translation:
+Kero
 
-But with a minor note:
-"Kero" is commonly used in informal/modern contexts for both physical and digital addresses among Shona speakers. If full clarity is needed, you may use "Kero yeBitcoin".
+So, technically, "Kero" is correct for "address", including Bitcoin contexts in Shona. No issue with whitespace or spam.
+
+If strict, output is: NO
+
+(But if your policy is to indicate preference for transliteration for technical terms, you can say "YES", but standard Shona dictionaries list "Kero" for "address", so "NO" is acceptable.)
 ```
 </details>
+
+Number of issues: 4.

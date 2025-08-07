@@ -10,47 +10,23 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 
 
 ```
-        <source>Export the data in the current tab to a file</source>
-        <translation>Kunaqataki qhanstki uka taban datos mä archivo uka qillqt'aña</translation>
-    
-YES
-The translation is awkward and does not accurately convey the intended meaning. "Kunaqataki qhanstki" is unclear, and the structure does not match the source. A more accurate translation in Aymara would clarify the intent of exporting tab data to a file.
-
-Correct translation:
-Jichha taban utjki ukan datos archivo ukaru apsuña
-```
-
-```
         <source>Export Address List</source>
         <translation>Dirección lista apnaqaña</translation>
     
 YES
-The translation is problematic. "Dirección lista apnaqaña" is a literal and awkward calque from Spanish meaning "To use address list" or just an unclear phrase in Aymara.
-
-A better translation for "Export Address List" in Aymara would be:
-"Dirección jisk'a tantiy qillqañataki" (if addressing an export/write operation for a list of addresses).
-
-However, since Aymara digital and financial terminology is limited, it can also be made clearer via explanation or by borrowing the word "exportar" in some contexts, e.g.: "Dirección lista apaqaña" ("To export address list").
+The translation is problematic because "Dirección lista apnaqaña" does not accurately convey "Export Address List" in Aymara. "Dirección" is a borrowing from Spanish and "apnaqaña" means "to use" rather than "to export". Also, the word order does not match natural Aymara phrasing, and it is not clear or idiomatic.
 
 Correct translation:
-Dirección lista apaqaña
-```
+"Dirección" could be acceptable if no Aymara equivalent exists for "address" in this technical context, but "export" should be properly translated as "apnaqay" or similar (which means "to take out" or "export"), and "list" is "lista" (again, a Spanish loan, but common in technical contexts), or you could use "qillqa" (writing or document).
 
-```
-        <source>Receiving addresses - %1</source>
-        <translation>Dirección jichhatañani - %1</translation>
-    
-UNK_LANG
-```
+A more accurate translation (retaining common technical borrowings):
+"Dirección lista apnaqapxañataki"
+Or
+"Dirección lista apnaqaña" (if space constraints and hybrid technical language are acceptable, but with improved ordering)
 
-```
-        <source>Export the data in the current tab to a file</source>
-        <translation>Kunaqataki qhanstki uka taban datos mä archivo uka qillqt'aña</translation>
-    
-YES
-The translation is awkward and does not accurately convey the intended meaning. "Kunaqataki qhanstki" is unclear, and the structure does not match the source. A more accurate translation in Aymara would clarify the intent of exporting tab data to a file.
-
-Correct translation:
-Jichha taban utjki ukan datos archivo ukaru apsuña
+But ideally:
+"Dirección lista jithqt’aña" (using "jithqt’aña", meaning "to export or take out")
 ```
 </details>
+
+Number of issues: 1.

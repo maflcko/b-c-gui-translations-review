@@ -10,47 +10,16 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 
 
 ```
-        <source>Show passphrase</source>
-        <translation>نیشان دانا ناوه چونه</translation>
-    
-YES
-The translation "نیشان دانا ناوه چونه" is inaccurate and problematic. The correct translation for "Show passphrase" in Kurdish (Sorani, Iraq) should be closer to "پیشاندانی وشەی نهێنی" or "نیشاندانی وشەی نهێنی".
-
-Correct translation:
-پیشاندانی وشەی نهێنی
-```
-
-```
         <source>Encrypt wallet</source>
         <translation>کیف خو یه پاره رمزه دانینه بر</translation>
     
 YES
-The translation has several issues:
-1. The term "wallet" is most commonly translated as "کیف پاره" or just "کیف", but in this translation there is an extraneous space and use of "خو" which means "self", making "کیف خو یه پاره" incorrect or at least awkward.
-2. The verb phrase "رمزه دانینه بر" is awkward and unconventional—the standard form is "رمزدانه‌" or "بەرمز بکە".
-3. There is stray whitespace at the beginning of the translation and within the words.
+The translation has errors and unnatural phrasing. The phrase "کیف خو یه پاره رمزه دانینه بر" is not correct or natural in Central Kurdish (ku_IQ). "کیف" means "bag," and "خو یه پاره" is not idiomatic for "wallet." Also, the grammar is awkward.
 
 Correct translation:
-"کیفی پارە رمزدانه‌"
+کیف پاره‌ت رمز بکە
 
-Or a more commonly accepted form:
-"کیفی پارە بەرمز بکە"
-```
-
-```
-        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>او شوله بو ور کرنا کیف پاره گرکه رمزا کیفه وؤ یه پاره بزانی</translation>
-    
-YES
-The translation is problematic. The text is not accurate, contains Kurdish (Kurmanji or Sorani) mixed with possibly grammatically incorrect or jumbled structure. The sentence should clearly state that to perform this operation, the wallet passphrase is needed to unlock the wallet.
-
-Correct translation:
-ئەم كارە پێویستی بە وشەی نهێنی وەلیتە بۆ كردنەوەی وەلیتەكە.
-
-Or in Kurmanji, if that’s the intended variety:
-Ev kiryar hewce ye ku şîfreya veşartî ya fêrgehê were bikar anîn da ku fêrgeh were vekirin.
-
-Make sure to match the script and dialect your UI uses, usually Sorani script for 'ku_IQ'.
+This phrase directly and naturally means "Encrypt your wallet" in Central Kurdish.
 ```
 
 ```
@@ -58,15 +27,19 @@ Make sure to match the script and dialect your UI uses, usually Sorani script fo
         <translation>به راستی اون هشیارن کا دخازن بو کیف خو یه پاره رمزه دانین</translation>
     
 YES
-The translation contains spelling and grammar mistakes, and the sentence structure is awkward. The phrase "به راستی اون هشیارن کا دخازن بو کیف خو یه پاره رمزه دانین" is incorrect.
+The translation has several issues:
+1. The use of "به راستی اون هشیارن کا دخازن" is awkward and not standard in Kurdish (Kurmanji as used in Iraq, i.e., 'ku_IQ'). It reads more like bad Sorani/Kurmanji mix and includes spelling mistakes.
+2. "کیف خو یه پاره" is nonstandard for "your wallet" and is hard to parse.
+3. The translation of "encrypt" to "رمزه دانین" is awkward and could more naturally use "رمز بکەیت" (remz bikêt) or "پارێزگای بکەیت" (to protect).
+4. The translation suffers from typographical and grammatical errors.
 
 Correct translation:
-ئایا دڵنیایت دەتەوێت جزدانەکەت وشەی نهێنی بکەیت؟ 
+ئایا دڵنیایت دەته‌وێت جزدانەکەت بدرێتە رمز؟ 
 
-or alternatively:
-ئایا دڵنیایت دەتەوێت جزدانەکەت قەلەو بکەیت؟
+Or, more literally:
+ئایا دڵنیایت دا ئەوە جزدانەکەت بكەیت بە رمز؟
 
-Explanation: The original translation has random words, incorrect inflection, and nonstandard wording. The corrected forms above accurately reflect "Are you sure you wish to encrypt your wallet?" in ku_IQ (Kurdish, Sorani, Iraq).
+This is a much clearer Kurmanji (ku_IQ) translation.
 ```
 
 ```
@@ -74,25 +47,10 @@ Explanation: The original translation has random words, incorrect inflection, an
         <translation>دۆخی تایبەتمەندی چالاک کرا بۆ تابی گشتی. بۆ کردنەوەی بەهاکان، بەهاکان ڕێکخستنەکان&gt;ماسک.</translation>
     
 YES
-The translation is inaccurate and partially unclear. The phrase "بۆ کردنەوەی بەهاکان، بەهاکان ڕێکخستنەکان>ماسک." is not a faithful rendering of "To unmask the values, uncheck Settings->Mask values." It also introduces repetition and loses instructional clarity.
+The translation has issues with clarity and accuracy. The phrase "Settings-&gt;Mask values" is not translated clearly and is rendered as a confusing phrase "بەهاکان ڕێکخستنەکان&gt;ماسک". The verb forms in "بۆ کردنەوەی بەهاکان" are awkward, and the mention of "Privacy mode" is not correctly rendered (it only says "دۆخی تایبەتمەندی", which means "special mode", not "privacy mode"). Also, the term "unmask" should be properly translated.
 
 Correct translation:
-دۆخی تایبەتمەندی بۆ تابی پێشوەختە چالاک کرا. بۆ دەرکردنی بەهاکان، ئاراستەکە Settings->Mask values ڕەشنە بکە.
-
-Note: Make sure that "Overview" is translated as "تابی پێشوەختە" or an equivalent in Kurdish (ku_IQ) technical context, and format consistency (like arrows) is preserved.
-```
-
-```
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>ناتوانێت دەست بکات بە bitcoin: کرتە بکە بۆ-پارەدانی کار</translation>
-    
-YES
-The translation is problematic due to unnatural phrasing and awkward splitting. For example, "کرتە بکە بۆ-پارەدانی کار" is an unclear translation of "click-to-pay handler," and "ناتوانێت دەست بکات بە bitcoin" does not properly capture "Cannot start bitcoin". A better translation would be:
-
-ناتوانیم bitcoin: بەرهێنەرێ "کرتە-بۆ-پارەدان" دەست پێ بکەم
-
-Correct translation:
-ناتوانیم bitcoin: بەرهێنەرێ "کرتە-بۆ-پارەدان" دەست پێ بکەم
+دۆخی نهێنی بۆ تابێ گشتی چالاک کرا. بۆ نمایانکردنی بەهاکان، تیکەڵی ڕێکخستنەکان -> ماسککردنی بەهاکان بسڕەوە.
 ```
 
 ```
@@ -136,3 +94,5 @@ Correct translation:
 هەڵە: کتێبەی کلیلیت تەواو بوو، تکایە یەکەم "keypoolrefill" بەکاربهێنە.
 ```
 </details>
+
+Number of issues: 6.

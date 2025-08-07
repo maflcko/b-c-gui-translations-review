@@ -13,33 +13,38 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Choose the address to receive coins with</source>
         <translation>Selecciona o enderezo do que recibir moedas</translation>
     
-YES  
-The translation is slightly off in meaning and structure. The source implies choosing the address with which to receive coins (i.e., the address used for receiving), but the Spanish translation "Selecciona o enderezo do que recibir moedas" literally reads as "Select the address of which to receive coins," which is a bit unclear and unnatural in Galician.
+YES
+The translation is understandable but inaccurate. The phrase "Selecciona o enderezo do que recibir moedas" literally means "Select the address from which to receive coins," which implies the address is the sender, not the receiver. The correct translation should convey "the address with which to receive coins" or "the address where coins are to be received." 
 
-A better translation would be:  
-"Selecciona o enderezo para recibir moedas"  
-which means "Select the address to receive coins with."
+Correct translation:
+Selecciona o enderezo co que recibir moedas
+or
+Selecciona o enderezo no que recibir moedas
 ```
 
 ```
         <source>Wallet to be encrypted</source>
         <translation>Carteira para ser encriptada</translation>
     
-YES  
-The term "Carteira" is Portuguese, not Galician (gl_ES). The Galician word for "wallet" is "Cartera". Also, "encriptada" is not the most appropriate Galician term; "cifrada" is commonly used for "encrypted" in Galician. The phrase should be:
+YES
+The word "carteira" is incorrect in Galician; it is a Portuguese word. The correct Galician term for "wallet" in this context is "moedeiro". Additionally, "encriptada" is acceptable, but "cifrada" is more standard in Galician when referring to cryptographic encryption.
 
-"Cartera para ser cifrada"
+Correct translation:
+Moedeiro para ser cifrado
 ```
 
 ```
         <source>Wallet encryption failed</source>
         <translation>Error na Encriptación da carteira </translation>
     
-YES  
-The translation mixes English and Galician incorrectly and contains unnecessary capitalization and spacing. "Encriptación" should be "encriptación" (lowercase) and "Error na Encriptación da carteira " has an extra trailing space. Also, "encriptación" is acceptable, but "cifrado" is more commonly used in Galician for encryption.
+YES
+There are several issues:
+1. "na" should be "na" (Galician for "in the"), but it's not idiomatic in this context. The preposition is unnecessary.
+2. "Encriptación" is an accepted form, but "Cifrado" (encryption) is more common and preferred in technical Galician contexts.
+3. There is an extra space at the end of the translation.
 
-Correct translation:  
-Error na encriptación da carteira
+Correct translation:
+Erro na cifrado da carteira
 ```
 
 ```
@@ -47,10 +52,10 @@ Error na encriptación da carteira
         <translation>Produciuse un erro non cambio de frase de contrasinal</translation>
     
 YES  
-The translation does not convey the full meaning of the source and misses critical information. It roughly translates to "An error occurred no passphrase change," which is incorrect and incomplete. Also, there is no equivalent of the technical details or instructions from the source text.
+The Galician ('gl_ES') translation is incomplete and erroneous. The provided translation, "Produciuse un erro non cambio de frase de contrasinal", is too short and does not convey the information present in the source, especially regarding the null character and instructions about software version and what the user should do.
 
-Correct translation:  
-"La frase de paso antiga introducida para a descifrado da carteira é incorrecta. Contén un carácter nulo (é dicir, un byte cero). Se a frase de paso foi configurada cunha versión deste software anterior á 25.0, por favor, inténtao de novo só cos caracteres ata — pero sen incluír — o primeiro carácter nulo."
+Correct translation:
+A antiga frase de contrasinal introducida para descifrar a carteira é incorrecta. Contén un carácter nulo (é dicir, un byte cero). Se a frase de contrasinal foi establecida cunha versión deste software anterior á 25.0, inténteo de novo só cos caracteres ata — pero sen incluír — o primeiro carácter nulo.
 ```
 
 ```
@@ -58,7 +63,7 @@ Correct translation:
         <translation>A cerca de %1</translation>
     
 YES
-The translation "A cerca de %1" is incorrect in Galician. The phrase "About %1" in this context means "Acerca de %1" (as in "About" a topic or item), not "a cerca de," which literally means "near" or "around" in a spatial sense.
+The translation incorrectly separates "acerca" into "a cerca", which is not correct in Galician (nor in Spanish). The correct expression is "Acerca de %1". Also, Galician for "About" is usually translated as "Sobre" or "Acerca de".
 
 Correct translation:
 Acerca de %1
@@ -68,10 +73,12 @@ Acerca de %1
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>A carteira está &lt;b&gt;encrypted&lt;/b&gt; e actualmente &lt;b&gt;desbloqueada&lt;/b&gt;</translation>
     
-YES  
-The translation is partly untranslated and mixes English with Galician. The word "encrypted" should be translated into Galician as "cifrada". Additionally, "actualmente" should be "actualmente" or "de momento" (both are correct, but "actualmente" is fine). The rest is correct.  
+YES
+The word "encrypted" is not translated into Galician; this is an untranslated term. For Galician ('gl_ES'), "wallet" is correctly translated as "carteira", "currently" as "actualmente" (not "actualmente" with a c in Galician), and "encrypted" should be translated as "cifrada" or "encriptada".
 
-Correct translation:  
+Correct translation:
 A carteira está &lt;b&gt;cifrada&lt;/b&gt; e actualmente &lt;b&gt;desbloqueada&lt;/b&gt;
 ```
 </details>
+
+Number of issues: 6.

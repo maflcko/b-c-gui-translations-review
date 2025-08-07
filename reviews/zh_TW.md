@@ -13,9 +13,10 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Choose</source>
         <translation>選擇 (h)</translation>
     
-YES  
-The translation includes an unnecessary "(h)" which is not present in the source text and is inappropriate in this context. The correct translation should be simply:
+YES
+The translation adds "(h)", which is not present in the English source. This is erroneous and may confuse users unless "(h)" is a required accelerator/hotkey explicitly stated elsewhere. If there is no contextual justification, this is unwanted content.
 
+Correct translation:
 選擇
 ```
 
@@ -23,11 +24,11 @@ The translation includes an unnecessary "(h)" which is not present in the source
         <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>輸入錢包的新密碼短語。&lt;br/&gt;請使用&lt;b&gt;個或10個以上隨機字符&lt;/b&gt;或&lt;b&gt;個8個以上單詞&lt;/b&gt;的密碼。</translation>
     
-YES  
-The translation is problematic and unclear, especially the parts "個或10個以上隨機字符" and "個8個以上單詞" are incorrect and awkwardly phrased, with extra or misplaced "個" which makes no sense in context. The original means "ten or more random characters" and "eight or more words". The correct phrasing in Traditional Chinese should clearly indicate the quantity and unit properly without confusing extra characters.
+YES
+The translation is problematic. The order and structure of the message are garbled, and the numbers (ten/eight) are transposed and inserted incorrectly. The measure words “個” are placed before numbers, making it awkward. The instruction about using 'ten or more random characters' or 'eight or more words' is not clear.
 
-Correct translation:  
-輸入錢包的新密碼短語。&lt;br/&gt;請使用&lt;b&gt;十個或以上隨機字符&lt;/b&gt;，或&lt;b&gt;八個或以上單詞&lt;/b&gt;的密碼。
+Correct translation:
+輸入錢包的新密碼短語。&lt;br/&gt;請使用&lt;b&gt;十個以上的隨機字符&lt;/b&gt;，或&lt;b&gt;八個以上的單字&lt;/b&gt;作為密碼。
 ```
 
 ```
@@ -35,7 +36,7 @@ Correct translation:
         <translation>错误：%1</translation>
     
 YES
-The translation uses simplified Chinese characters ("错误") instead of traditional Chinese characters expected in zh_TW.
+The translation uses simplified Chinese "错误" instead of the traditional Chinese "錯誤" used in 'zh_TW'.
 
 Correct translation:
 錯誤：%1
@@ -46,7 +47,7 @@ Correct translation:
         <translation>自定义...</translation>
     
 YES
-The translation uses Simplified Chinese ("自定义") instead of Traditional Chinese. Also, the ellipsis character should be consistent: the source uses the single character ellipsis "…", while the translation uses three periods "...".
+The translation uses the simplified Chinese term "自定义" instead of the Traditional Chinese term. Also, the ellipsis should be the full-width "…" as in the source, not three periods.
 
 Correct translation:
 自訂…
@@ -57,7 +58,10 @@ Correct translation:
         <translation>备份钱包(B)</translation>
     
 YES
-The translation is in Simplified Chinese ("备份钱包"), but the requested language is Traditional Chinese (zh_TW). Also, the original text ends with an ellipsis ("…"), which is missing in the translation, and the extra "(B)" does not appear in the source and is unnecessary.
+The translation is problematic:
+1. It uses Simplified Chinese characters ("备份钱包") instead of Traditional Chinese ("備份錢包").
+2. The "(B)" is an unnecessary shortcut indicator that does not appear in the original string.
+3. The ellipsis in the source is the Unicode character U+2026, but it is missing in the translation.
 
 Correct translation:
 備份錢包…
@@ -67,21 +71,22 @@ Correct translation:
         <source>Change Passphrase…</source>
         <translation>修改密码(C)</translation>
     
-YES  
-The original text "Change Passphrase…" implies an action to change the passphrase, and the ellipsis suggests a dialog will follow. The translated text "修改密码(C)" means "Change password (C)" and includes "(C)" which seems to be a keyboard shortcut or an extraneous character not present in the source. Also, "密码" generally means "password," but "密碼" is the traditional Chinese form more appropriate for zh_TW, and "Passphrase" specifically means a sequence of words used as a password which could be translated as "密码短语" or "密碼短語". A better translation that matches the source style and terminology would be:
+YES
+The translation uses "密码", which is the simplified Chinese term for "password". The traditional Chinese term should be "密碼". Also, the original source is "Change Passphrase…", which should be translated accurately as "更改密語…" or "更改通行密語…". "修改密碼(C)" is neither a faithful translation nor is the hotkey indicator "(C)" present in the original.
 
-修改密碼短語…
+Correct translation:
+更改密語…
 ```
 
 ```
         <source>Load PSBT from file…</source>
         <translation>从文件加载PSBT(L)...</translation>
     
-YES  
-The translation uses simplified Chinese characters ("从文件加载PSBT(L)...") instead of traditional Chinese characters suitable for zh_TW. Also, the English ellipsis "…" is a single character and should be preserved instead of using "(L)...". The "(L)" in the translation appears to be an erroneous addition and is not in the source text. It likely comes from a misunderstanding or a placeholder that should be removed.
+YES
+The translation uses Simplified Chinese ('从文件加载PSBT(L)...') rather than Traditional Chinese as used in 'zh_TW'. Also, the '(L)' is not present in the source, nor is it standard in such translations. The ellipsis character is correct, but spacing and stylistic conventions should align with Traditional Chinese UI.
 
-Correct translation:  
-從文件載入PSBT…
+Correct translation:
+從檔案載入 PSBT…
 ```
 
 ```
@@ -89,7 +94,7 @@ Correct translation:
         <translation>关闭钱包...</translation>
     
 YES
-The translation uses simplified Chinese characters (关闭钱包) instead of traditional Chinese characters used in zh_TW. Also, the ellipsis in the source is a single Unicode character (…) but the translation uses three periods (...), which although not incorrect, is inconsistent formatting.
+The translation is in Simplified Chinese ("关闭钱包..."), not Traditional Chinese as used in 'zh_TW'. Also, the ellipsis should use the correct Chinese or Unicode style, and in Traditional Chinese, "關閉" is used instead of "关闭".
 
 Correct translation:
 關閉錢包…
@@ -99,10 +104,10 @@ Correct translation:
         <source>Create Wallet…</source>
         <translation>创建钱包...</translation>
     
-YES  
-The translation uses Simplified Chinese characters ("创建钱包") instead of Traditional Chinese ("建立錢包") as typically used in zh_TW. Also, the ellipsis should use the proper character "…" instead of three periods "...".
+YES
+The translation uses Simplified Chinese ("创建钱包...") instead of Traditional Chinese, and the ellipsis is represented with three dots ("...") instead of the single ideographic ellipsis character or three dots as commonly used in Traditional Chinese.
 
-Correct translation:  
+Correct translation:
 建立錢包…
 ```
 
@@ -111,10 +116,10 @@ Correct translation:
         <translation>处理磁盘上的区块...</translation>
     
 YES
-The translation is in Simplified Chinese (处理磁盘上的区块...) instead of Traditional Chinese as required for 'zh_TW'. Also, the ellipsis should be the proper Unicode character (…) rather than three periods.
+The translation uses Simplified Chinese characters ("处理" and "磁盘") instead of Traditional Chinese characters appropriate for 'zh_TW'. Also, the ellipsis "..." should preferably be the full-width "…" for consistency with the source.
 
 Correct translation:
-正在處理磁碟上的區塊…
+處理磁碟上的區塊…
 ```
 
 ```
@@ -122,25 +127,20 @@ Correct translation:
         <translation>连到同行...</translation>
     
 YES
-The translation uses Simplified Chinese characters ("连到同行"), but the target language is Traditional Chinese for Taiwan ("zh_TW"). Additionally, the terminology "同行" (meaning "peers") is somewhat literal but not the most common term used in a Bitcoin context in Traditional Chinese.
-
-A better Traditional Chinese translation would be:
-"正在連接節點…"
-
-Here, "節點" (nodes) or "節點對等方" (peer nodes) is commonly used in Bitcoin contexts, and the ellipsis is the correct character "…". Also, notice the spacing: no extra spaces needed.
+The translation uses Simplified Chinese characters ("连" and "同行") instead of Traditional Chinese as required for 'zh_TW'. Additionally, the ellipsis character "..." is used rather than the more typographically correct "…" as in the source.
 
 Correct translation:
-正在連接節點…
+連接到節點…
 ```
 
 ```
         <source>Open a wallet</source>
         <translation>打開一個錢包檔</translation>
     
-YES  
-The phrase "打開一個錢包檔" is somewhat unnatural in the context of Bitcoin wallets. The word "錢包檔" (wallet file) emphasizes the file rather than the wallet itself, which may confuse users as Bitcoin users generally refer to "錢包" (wallet) rather than a "錢包檔" (wallet file) when opening a wallet through the software interface. A more natural and commonly accepted translation is simply:  
+YES
+The translation uses "錢包檔" which translates to "wallet file", but the original English phrase is "Open a wallet", which refers to opening a wallet in general, not specifically a wallet file. The word "檔" (file) is added unnecessarily.
 
-Correct translation:  
+Correct translation:
 打開錢包
 ```
 
@@ -148,10 +148,10 @@ Correct translation:
         <source>Hide</source>
         <translation>躲</translation>
     
-YES  
-The translation "躲" means "to hide oneself" or "to hide from someone" and is generally used in the context of avoiding or hiding oneself physically. It is not an appropriate translation for the English UI term "Hide," which generally means to conceal or make an element not visible. A more appropriate translation for UI contexts is "隱藏."  
+YES
+The translation "躲" means "to hide" in the sense of "to physically hide oneself", not in the sense of "hide" as a user interface action (e.g., hiding a window or element). The correct translation for the UI action "Hide" in Traditional Chinese is "隱藏".
 
-Correct translation:  
+Correct translation:
 隱藏
 ```
 
@@ -161,7 +161,8 @@ Correct translation:
         <translation>關閉網路紀錄</translation>
     
 YES  
-The source text says "Enable network activity," which means to turn ON or activate network activity. However, the translation "關閉網路紀錄" means "Disable network logging," which is not only inaccurate but also changes the meaning to turning something OFF rather than ON.  
+The translation is incorrect. "Enable network activity" means to allow network operations, but the provided translation "關閉網路紀錄" means "Turn off network record/log," which has the opposite meaning.  
+
 Correct translation:  
 啟用網路活動
 ```
@@ -171,7 +172,7 @@ Correct translation:
         <translation>错误：%1</translation>
     
 YES
-The translation uses simplified Chinese characters ("错误") instead of traditional Chinese characters expected in zh_TW.
+The translation uses simplified Chinese "错误" instead of the traditional Chinese "錯誤" used in 'zh_TW'.
 
 Correct translation:
 錯誤：%1
@@ -181,17 +182,22 @@ Correct translation:
         <source>Copy label</source>
         <translation>复制和标签</translation>
     
-YES  
-The translation "复制和标签" means "Copy and label," which is incorrect and changes the meaning. The correct translation for "Copy label" should be "複製標籤".
+YES
+The translation is problematic. The Chinese phrase "复制和标签" means "Copy and label," which incorrectly adds the conjunction "and" and changes the meaning.
+
+Correct translation:
+複製標籤
 ```
 
 ```
         <source>Copy amount</source>
         <translation>复制和数量</translation>
     
-YES  
-The translation "复制和数量" means "copy and amount" which is incorrect and awkward for the English phrase "Copy amount". The correct translation should be concise and directly express "Copy amount" as a command or label. A proper translation is:  
-"复制金额"
+YES
+The translation is incorrect. "复制和数量" means "copy and amount," which does not convey the intended action of "Copy amount." The correct translation should reflect the action of copying the amount value.
+
+Correct translation:
+複製金額
 ```
 
 ```
@@ -199,7 +205,7 @@ The translation "复制和数量" means "copy and amount" which is incorrect and
         <translation>創建錢包失敗&lt;br&gt;</translation>
     
 YES
-The translation contains an unnecessary HTML line break tag "&lt;br&gt;" which is not present in the source text and could cause formatting issues.
+The translation adds an unnecessary "<br>" HTML line break tag at the end, which is not present in the source text. This could result in formatting issues in the UI.
 
 Correct translation:
 創建錢包失敗
@@ -209,11 +215,11 @@ Correct translation:
         <source>Watchonly scripts have been migrated to a new wallet named '%1'.</source>
         <translation>仅观察脚本已经被迁移到被命名为“%1”的新钱包中。</translation>
     
-YES  
-The translation is in Simplified Chinese ("仅观察脚本...迁移到被命名为"), not Traditional Chinese as expected for 'zh_TW'. Additionally, the phrase "仅观察脚本" is unnatural and missing the concept of "watchonly scripts" (watch-only scripts). Also, "被命名为" is somewhat awkward; a better phrasing would be "名為" to suit Traditional Chinese style.
+YES
+The translation is in Simplified Chinese (zh_CN), not Traditional Chinese (zh_TW), and uses the wrong character for "watch-only" ("仅观察" is Simplified; in Traditional it should be "僅觀察" or more commonly "僅觀察用"). Quotation marks also use straight quotes instead of the full-width or Chinese style gulled quotes. 
 
-Correct translation:  
-Watchonly scripts 已经被迁移到名為「%1」的新錢包中。
+Correct translation:
+僅觀察腳本已經被遷移到名為「%1」的新錢包中。
 ```
 
 ```
@@ -221,20 +227,27 @@ Watchonly scripts 已经被迁移到名為「%1」的新錢包中。
         <translation>當你點擊「確認」，%1會開始下載，並從%3年最早的交易，處裡整個%4區塊鏈(大小:%2GB)</translation>
     
 YES  
-The translation has a typo and some formatting issues. The word "處裡" should be "處理" (correct character for "process"). Also, there are spacing inconsistencies: no space before the parenthesis and missing "當%4最初啟動時" at the end to fully reflect the source meaning. The full meaning of "%4 initially launched" is omitted. The translation could be improved for clarity and completeness.
+There are several issues in the translation:
 
-Correct translation:  
-當你點擊「確認」，%1會開始下載並處理整個%4區塊鏈（大小：%2 GB），起始於%4最初推出時%3年最早的交易。
+1. "處裡" should be corrected to "處理".
+2. "%4" block chain is missing the "%4" in the translated "%4區塊鏈".
+3. The original sentence is more explicit about the process starting with the earliest transactions when %4 was launched, but this is not fully conveyed.
+4. There is an unnecessary colon in "(大小:%2GB)".
+5. There should be proper spacing around units: "%2 GB" instead of "%2GB".
+6. There is some loss in sequence (the order in which information is presented).
+
+Correct translation:
+當你點擊「確認」時，%1 會開始下載並處理完整的 %4 區塊鏈（%2 GB），從 %3 年 %4 剛啟動時的最早交易開始。
 ```
 
 ```
         <source>Connect through SOCKS5 proxy (default proxy):</source>
         <translation>透過 SOCKS5 代理伺服器連線(預設代理伺服器 C):</translation>
     
-YES  
-The translation incorrectly adds "C" at the end, which does not appear in the source and seems like a typographical error. Also, there should be a space before the parenthesis for correct formatting and natural readability in Traditional Chinese.
+YES
+There is an error in the translation: "預設代理伺服器 C" erroneously adds an extra "C" at the end, which is not present in the source and is likely a typographical error.
 
-Correct translation:  
+Correct translation:
 透過 SOCKS5 代理伺服器連線（預設代理伺服器）：
 ```
 
@@ -242,37 +255,37 @@ Correct translation:
         <source>Proxy IP:</source>
         <translation>代理位址(I):</translation>
     
-YES  
-The translation "代理位址(I):" incorrectly includes "(I)" which does not appear in the source text "Proxy IP:". Also, "位址" is acceptable but the more common traditional Chinese term for IP address is "位址" or "IP 位址" with a space. The "(I)" looks like an erroneous addition, possibly from a misinterpretation of "IP".
+YES
+The translation "代理位址(I):" is problematic. The original English does not include "(I)" and the letter "I" is not a typical hotkey or menu accelerator in this context for traditional Chinese. Such notations are not standard unless used in UI elements with keyboard shortcuts, and it can confuse users.
 
-Correct translation:  
-代理IP:
+Correct translation:
+代理位址：
 ```
 
 ```
         <source>Minimize to the tray instead of the taskbar</source>
         <translation>縮到最小到通知區而不是工作列(M)</translation>
     
-YES  
-The translation adds "(M)" at the end, which does not appear in the source text and may confuse users. Also, "縮到最小到通知區" is slightly awkward; "縮到通知區而非工作列" is smoother.  
+YES
+The translation is mostly understandable, but it contains a slightly awkward structure and an unnecessary "(M)". The phrase "縮到最小到通知區而不是工作列" is redundant ("縮到最小到" is not idiomatic) and the "(M)" does not belong unless it is a designated accelerator key, which is not specified here.
 
-Correct translation:  
-縮到通知區而非工作列
+Correct translation:
+最小化到通知區，而非工作列
 ```
 
 ```
         <source>Use separate SOCKS5 proxy to reach peers via Tor onion services:</source>
         <translation>使用個別的SOCKS＆5代理介由Tor onion服務到達peers：</translation>
     
-YES  
-The translation contains several issues:  
-1. "SOCKS＆5" should be "SOCKS5" (the ampersand character is incorrect).  
-2. "peers" should be translated into Chinese (like "節點" or "節點(peer)" ) rather than left in English.  
-3. The phrase "via Tor onion services" is better rendered as "透過Tor onion服務" rather than "介由Tor onion服務".  
-4. The spacing around terms could be improved; there should be no unnecessary spaces.  
+YES
+There are several issues with the translation:
+- "SOCKS＆5" uses a full-width ampersand ("＆") instead of the correct "SOCKS5" or "SOCKS5代理".
+- "peers" is left untranslated. In zh_TW context, it should be translated as "節點" or "對等端".
+- There is a slight unnaturalness and awkward grammatical structure.
+- "介由Tor onion服務" is understandable but can be improved in fluency.
 
-Correct translation:  
-使用獨立的 SOCKS5 代理來透過 Tor onion 服務連接節點：
+Correct translation:
+使用獨立的 SOCKS5 代理來經由 Tor onion 服務連接至其他節點：
 ```
 
 ```
@@ -280,32 +293,22 @@ Correct translation:
         <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
         <translation>軟體未編譯外接簽證功能所需的軟體庫(外接簽證必須有此功能)</translation>
     
-YES
-The translation contains awkward phrasing and an inaccurate choice of words:
-- "軟體未編譯外接簽證功能所需的軟體庫" literally means "the software did not compile the libraries required for external signing," which is more technical than the original and adds "libraries" (軟體庫) that are not mentioned in the source.
-- "簽證" usually means "visa" (for travel), not "signing." The correct term for "signing" in crypto or digital signature context is "簽名" or "簽署."
-- The phrase lacks clarity and fluency compared to the source.
+YES  
+The translation is inaccurate. "簽證" refers more to "visa" in Chinese, which is not appropriate for "signing" in the context of cryptocurrencies. The message is also somewhat convoluted compared to the English source. "外接簽署" or "外部簽署" is the more proper term for "external signing" in this context.
 
-A better translation could be:
-
-「未編譯外部簽名支援功能（外部簽名必須此功能）」
-
-Or for improved clarity and formality:
-
-「編譯時未包含外部簽名支援功能（外部簽名功能需要此支援）」
-
-This preserves the original meaning, avoids introducing new concepts (like "library"), and uses the correct term for "signing."
+Correct translation:
+未編譯外部簽署支援（外部簽署需要此支援）
 ```
 
 ```
         <source>Mined balance in watch-only addresses that has not yet matured</source>
         <translation>所有只能看的地址還沒已熟成的挖出餘額</translation>
     
-YES  
-The translation contains grammar issues and awkward phrasing. The phrase "還沒已熟成" is incorrect (mixes "not yet" and "already"). Also, "只能看的地址" is a literal but somewhat unnatural translation of "watch-only addresses." A more natural term is "僅監視地址."  
+YES
+The translation is somewhat understandable but contains awkward phrasing and a redundancy ("還沒已熟成"). Also, "只能看的地址" is not the standard way to say "watch-only addresses" in Taiwanese Mandarin; "僅限觀察的地址" or "僅觀察位址" is better. "尚未成熟" is the standard phrase for "has not yet matured".
 
-Correct translation:  
-「尚未成熟的僅監視地址中已挖出的餘額」
+Correct translation:
+觀察地址中尚未成熟的挖礦餘額
 ```
 
 ```
@@ -313,8 +316,10 @@ Correct translation:
         <translation>無法再簽名 input</translation>
     
 YES  
-The translation mixes English ("input") with Chinese, which is inconsistent and potentially confusing. The word "inputs" should be translated into Chinese correctly and consistently. A better translation would be:  
-無法再簽署任何輸入。
+The translation is inaccurate and partially untranslated. The word "input" should be translated to Chinese, and the full sentence should maintain the clarity of the original.
+
+Correct translation:  
+無法再對任何輸入進行簽名。
 ```
 
 ```
@@ -322,7 +327,10 @@ The translation mixes English ("input") with Chinese, which is inconsistent and 
         <translation>節點(P)</translation>
     
 YES  
-The translation "節點(P)" adds a confusing and unexplained "(P)" which is not present in the source and could mislead the user. "Peers" in the context of Bitcoin network usually translates simply as "節點" or "節點數量" if referring to count. The added "(P)" is unnecessary and incorrect.  
+The translation "節點(P)" is problematic.  
+1. "Peers" in the context of Bitcoin network typically refers to other nodes/participants in the network, and is best translated as "節點" or "對等節點".  
+2. The inclusion of "(P)" is unwarranted unless it reflects an accelerator/hotkey in the original user interface, which is not indicated by the given source.  
+3. No format specifiers or whitespace issues present.  
 
 Correct translation:  
 節點
@@ -332,26 +340,22 @@ Correct translation:
         <source>Hide Peers Detail</source>
         <translation>隐藏其他人的详细信息</translation>
     
-YES  
-The English source "Hide Peers Detail" is concise and generally means "hide the details about peers." The translation "隐藏其他人的详细信息" translates back to "hide other people's detailed information," which is somewhat ambiguous and more specific than the original. The term "peers" in the Bitcoin context usually refers to network peers, not "other people" in general. Also, the original source uses "Detail" (singular), which might be better reflected by "详细信息" (detail/information) but the phrase "其他人" (other people) is not accurate.
+YES
+The translation is problematic because it uses Simplified Chinese ("隐藏" instead of Traditional "隱藏") and translates "Peers" as "其他人" (other people), which is inaccurate in the context of Bitcoin where "Peers" refers specifically to network peers/connected nodes. Also, "Peers Detail" should be "對等節點詳細資訊" or similar, not "详细信息" (Simplified; Traditional would be "詳細資訊").
 
-A better translation would be:  
-隐藏節點詳情  
-or  
-隱藏節點詳細信息  
-
-Both mean "Hide Peers Detail" or "Hide Node Details," which is more accurate in this context.
+Correct translation:
+隱藏對等節點詳細資訊
 ```
 
 ```
         <source>Clear console</source>
         <translation>清主控台</translation>
     
-YES  
-The translation "清主控台" is unnatural and somewhat unclear in Traditional Chinese. The proper translation for "Clear console" in the context of software or Bitcoin UI would be "清除主控台" or simply "清除主控台畫面" to indicate clearing the console screen.
+YES
+The translation "清主控台" is inaccurate and omits a key component. The term "主控台" is occasionally used, but the standard translation for "console" in computing contexts in Traditional Chinese is "控制台". More importantly, the translation is missing the verb "clear" or "清除" (to clear or remove).
 
-Correct translation:  
-清除主控台
+Correct translation:
+清除控制台
 ```
 
 ```
@@ -359,13 +363,15 @@ Correct translation:
         <extracomment>Explanatory text for a short-lived outbound peer connection that is used to test the aliveness of known addresses.</extracomment>
         <translation>Outbound Feeler: 用於短暫，暫時 測試地址</translation>
     
-YES
-The translation contains unnecessary spacing and is somewhat awkward in phrasing. The phrase "用於短暫，暫時 測試地址" is redundant ("短暫" and "暫時" mean similar things), and there is an extra space before "測試地址".
+YES  
+The translation has several issues:
+1. It retains "Outbound Feeler" in English instead of localizing.
+2. The word order is unnatural; "用於短暫，暫時 測試地址" is awkward.
+3. The spacing is inconsistent, with an unnecessary space between "暫時" and "測試地址".
+4. "for testing addresses" is not clearly rendered.
 
-A more natural and concise translation is:  
-"Outbound Feeler：用於短暫測試地址的連線"
-
-This preserves the meaning clearly and fixes spacing issues.
+Correct translation:  
+外部探測連線：短暫建立，用於測試地址是否可用
 ```
 
 ```
@@ -373,21 +379,21 @@ This preserves the meaning clearly and fixes spacing issues.
         <extracomment>Explanatory text for a short-lived outbound peer connection that is used to request addresses from a peer.</extracomment>
         <translation>Outbound 地址取得: 用於短暫，暫時 測試地址</translation>
     
-YES  
-The translation is somewhat inaccurate and awkward. "Outbound Address Fetch" should be translated as "發送端地址提取" or "出站地址提取" to convey the meaning of outbound network communication. The phrase "short-lived, for soliciting addresses" is mistranslated as "用於短暫，暫時 測試地址," which implies "used for briefly, temporarily testing addresses" instead of "used for a short duration to solicit (request) addresses."
+YES
+The translation is inaccurate. The phrase "Outbound 地址取得: 用於短暫，暫時 測試地址" introduces "測試地址" (test address) which is not present in the original. It also awkwardly redundantly states "短暫，暫時". The original means the connection is short-lived and is for soliciting (requesting) addresses.
 
-A better translation would be:  
-"出站地址提取：短暫連線，用於請求地址"
+Correct translation:
+Outbound 地址擷取：短暫用於請求地址
 ```
 
 ```
         <source>1 hour</source>
         <translation>1 小時(H)</translation>
     
-YES  
-The original source "1 hour" is simply a duration without any abbreviations. The translation "1 小時(H)" adds an unnecessary "(H)" which is not present in the source and could cause confusion or inconsistency. The correct translation should directly represent the time duration without extra characters:
+YES
+The translation appends an unnecessary "(H)" which is not present in the source and is not standard in 'zh_TW'. It may introduce confusion and is considered erroneous content.
 
-Correct translation:  
+Correct translation:
 1 小時
 ```
 
@@ -395,10 +401,10 @@ Correct translation:
         <source>1 year</source>
         <translation>1 年(Y)</translation>
     
-YES  
-The translation includes an unnecessary "(Y)" which is not present in the source and can cause confusion. The correct translation should simply be "1 年" without the added "(Y)".
+YES
+The translation adds "(Y)", which is unnecessary and inconsistent with common zh_TW usage. It should simply be "1 年" without the "(Y)".
 
-Correct translation:  
+Correct translation:
 1 年
 ```
 
@@ -407,8 +413,10 @@ Correct translation:
         <translation>节点窗口 - [%1]</translation>
     
 YES
-The translation uses Simplified Chinese characters "节点窗口" instead of Traditional Chinese characters expected in 'zh_TW'.  
-Correct translation: 節點視窗 - [%1]
+The translation uses the simplified Chinese character "节点" instead of the traditional Chinese "節點" for 'zh_TW'. 
+
+Correct translation:
+節點視窗 - [%1]
 ```
 
 ```
@@ -429,32 +437,32 @@ For more information on using this console, type %6.
 %7 警告：騙子們很狡猾，告訴用戶在這裡輸入命令，清空錢包。 不要在不完全了解一個命令的後果的情況下使用此控制台。%8</translation>
     
 YES
-The translation is mostly accurate, but there are minor issues with spacing and phrasing that affect readability and naturalness in Traditional Chinese:
+There are minor issues with spacing and style:
 
-1. There should be no space after %7 before "警告".
-2. The phrase "騙子們很狡猾" is less natural and somewhat informal; "騙子們一直活躍" or "詐騙者一直活躍" is closer to the original.
-3. The phrase "清空錢包" is stronger than the original "stealing their wallet contents". Better phrasing is "盜取他們錢包的內容" to reflect theft rather than wiping.
-4. The sentence "不要在不完全了解一個命令的後果的情況下使用此控制台。" can be smoothed as "請勿在不了解命令後果的情況下使用此控制台。"
-5. The spacing around "使用%3 和 %4" should be consistent with other lines: either no space before and after %, or consistent spacing around characters.
+1. In "使用%3 和 %4 以增加或減少字體大小。", there's a missing space before "%3" (should be "使用 %3 和 %4 以增加或減少字體大小。").
+2. The original intentionally keeps %7 and %8 not space-separated from the warning, but in the translation, a space is added after %7 and before "警告：" (should not have a space: "%7警告：...%8").
+3. The English says "stealing their wallet contents", but the translation says "清空錢包" which means "emptying the wallet". While related, "steal the wallet contents" is closer to "竊取他們錢包中的資產".
+4. There's a space before the last sentence: "不要在不完全了解一個命令的後果的情況下使用此控制台。", which in the translation is written as: " 不要在不完全了解一個命令的後果的情況下使用此控制台。" (the space before is unnecessary due to wrong wrapping).
 
 Correct translation:
+歡迎來到 %1 RPC 控制台。
+使用上與下箭頭以進行歷史導航，%2 以清除螢幕。
+使用 %3 和 %4 以增加或減少字體大小。
+輸入 %5 以顯示可用命令的概覽。
+查看更多關於此控制台的資訊，輸入 %6。
 
-歡迎來到 %1 RPC 控制台。  
-使用上與下箭頭以瀏覽歷史記錄，%2 可清除螢幕。  
-使用 %3 和 %4 以增加或減少字體大小。  
-輸入 %5 以顯示可用命令的概覽。  
-查看更多關於此控制台的資訊，請輸入 %6。  
-
-%7警告：詐騙者一直活躍，誘使用戶在此輸入命令，盜取他們錢包的內容。請勿在不了解命令後果的情況下使用此控制台。%8
+%7警告：騙子已經行動，誘導用戶在此輸入命令，竊取他們錢包中的資產。不要在未完全了解命令後果的情況下使用此控制台。%8
 ```
 
 ```
         <source>Copy amount</source>
         <translation>复制和数量</translation>
     
-YES  
-The translation "复制和数量" means "copy and amount" which is incorrect and awkward for the English phrase "Copy amount". The correct translation should be concise and directly express "Copy amount" as a command or label. A proper translation is:  
-"复制金额"
+YES
+The translation is incorrect. "复制和数量" means "copy and amount," which does not convey the intended action of "Copy amount." The correct translation should reflect the action of copying the amount value.
+
+Correct translation:
+複製金額
 ```
 
 ```
@@ -462,19 +470,24 @@ The translation "复制和数量" means "copy and amount" which is incorrect and
         <translation>產生一個原生隔離見證Segwit 位址 (BIP-173) 。 被部分舊版錢包不支援。</translation>
     
 YES
-The translation has unnecessary spacing before the period and awkward sentence structure in the second sentence. A more natural and grammatically correct translation would be:
+The translation introduces spacing and punctuation issues, and could be rephrased for clarity and smoothness. Specifically:
+- "Segwit" should not have a space before "位址".
+- The sentence "被部分舊版錢包不支援。" lacks a subject and is not smooth in Chinese.
+- The period placement is incorrect (there is a space before it).
+- For 'zh_TW', "地址" is also more common than "位址", though both are used.
 
-產生一個原生隔離見證 Segwit 位址（BIP-173）。部分舊版錢包不支援它。
+Correct translation:
+產生一個原生隔離見證地址（BIP-173）。部分舊版錢包不支援此地址。
 ```
 
 ```
         <source>Send</source>
         <translation>付款(E)</translation>
     
-YES  
-The translation "付款(E)" adds an extraneous "(E)" which is not present in the source and may confuse users. The source word "Send" is best translated simply as "發送" or "送出" in the context of Bitcoin transactions rather than "付款" (which means "pay"). Also, "付款" implies "make a payment" rather than the general action "Send."
+YES
+The translation '付款(E)' translates to 'Make Payment (E)', which adds a hotkey '(E)' not present in the source and specifies '付款' (make payment), introducing details not in the simple word "Send".
 
-Correct translation:  
+Correct translation:
 發送
 ```
 
@@ -483,8 +496,9 @@ Correct translation:
         <translation>Cr＆eate未簽名</translation>
     
 YES
-The translation contains Latin characters "Cr＆eate" mixed with Chinese, which is incorrect and unprofessional. The ampersand is a fullwidth character and should not be there. A proper translation for "Create Unsigned" in Traditional Chinese would be:
+The translation is problematic. The translation mixes English and Chinese inappropriately ("Cr＆eate未簽名"), and includes a stray symbol "＆". The word "Create" should be properly translated into Chinese.
 
+Correct translation:
 建立未簽名
 ```
 
@@ -494,46 +508,32 @@ The translation contains Latin characters "Cr＆eate" mixed with Chinese, which 
         <translation>請檢查您的交易提案。這將產生部分簽名的比特幣交易（PSBT），您可以儲存或複製該交易，然後使用簽名。離線%1錢包或與PSBT相容的硬體錢包。</translation>
     
 YES
-The translation is grammatically incomplete and awkward because the part after "然後使用簽名。" ("then use the signature.") is not properly connected to the previous sentence, and the order of "離線%1錢包或與PSBT相容的硬體錢包" is separated improperly. The original means "then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet," but the translation breaks the flow.
+The translation is problematic. The phrase "然後使用簽名。離線%1錢包或與PSBT相容的硬體錢包。" is not smooth and splits the clause inappropriately, making the instructions unclear. The period after "簽名" incorrectly breaks the sentence. The expression "使用簽名" is also inaccurate; it should specify "用...簽名".
 
 Correct translation:
-請檢查您的交易提案。這將產生部分簽名的比特幣交易（PSBT），您可以儲存或複製該交易，然後使用例如離線%1錢包或與PSBT相容的硬體錢包對交易進行簽名。
+請檢查您的交易提案。這將產生一筆部分簽名的比特幣交易（PSBT），您可以將其儲存或複製，然後使用例如離線的 %1 錢包或支援 PSBT 的硬體錢包來簽名。
 ```
 
 ```
         <source>The Bitcoin address to send the payment to</source>
         <translation>將支付發送到的比特幣地址給</translation>
     
-YES  
-The translation is awkward and does not flow naturally in Chinese. It improperly splits the sentence and adds an unnecessary particle "給" at the end, making it sound unnatural. A better and clearer translation would be:  
-將支付發送到的比特幣地址 → 收款的比特幣地址  
-或者更完整自然些：  
-接收付款的比特幣地址  
-Correct translation:  
-接收付款的比特幣地址
+YES
+The translation is awkward and contains an unnecessary "給" at the end, which makes the sentence ungrammatical in Chinese. The "給" suggests "to" but its placement is wrong.
+
+Correct translation:
+要將付款發送到的比特幣地址
 ```
 
 ```
         <source>Send</source>
         <translation>發</translation>
     
-YES  
-The translation "發" (which means "send out", "issue", or "emit") is not commonly used alone to represent the action "Send" in the context of Bitcoin transactions or UI buttons in Traditional Chinese (Taiwan). A more accurate and natural translation for "Send" in this context is "發送" or simply "送出".  
+YES
+The translation "發" is incomplete and incorrect. The English word "Send" in the context of Bitcoin typically means "to send funds" or "to make a payment", and should be translated as "發送" or "發送資金" in Traditional Chinese (zh_TW). The single character "發" is insufficient and may be confusing.
 
-Correct translation:  
+Correct translation:
 發送
-```
-
-```
-        <source>%1/unconfirmed</source>
-        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in at least one block, but less than 6 blocks.</extracomment>
-        <translation>%1 次/未確認</translation>
-    
-YES  
-The translation "%1 次/未確認" is problematic because the English source "%1/unconfirmed" indicates a status related to confirmation blocks, not a count of times. The character "次" means "times" or "occurrences," which could mislead users to think it is a number of attempts or events rather than confirmation status. The correct translation should preserve "%1" followed by "未確認" (unconfirmed) without "次."
-
-Correct translation:  
-%1/未確認
 ```
 
 ```
@@ -541,18 +541,21 @@ Correct translation:
         <translation>范围...</translation>
     
 YES
-The translation uses Simplified Chinese characters "范围" and an ellipsis represented by three periods "...", which is inconsistent with Traditional Chinese and common typographic norms in 'zh_TW'. In Traditional Chinese, "range" should be translated as "範圍" and the ellipsis should use a proper Unicode ellipsis character "…", not three dots.
+The translation uses simplified Chinese characters '范围' instead of traditional Chinese characters used in 'zh_TW'. The ellipsis is also three dots instead of the proper ellipsis character (…).
 
-Correct translation: 範圍…
+Correct translation:
+範圍…
 ```
 
 ```
         <source>Copy amount</source>
         <translation>复制和数量</translation>
     
-YES  
-The translation "复制和数量" means "copy and amount" which is incorrect and awkward for the English phrase "Copy amount". The correct translation should be concise and directly express "Copy amount" as a command or label. A proper translation is:  
-"复制金额"
+YES
+The translation is incorrect. "复制和数量" means "copy and amount," which does not convey the intended action of "Copy amount." The correct translation should reflect the action of copying the amount value.
+
+Correct translation:
+複製金額
 ```
 
 ```
@@ -560,32 +563,32 @@ The translation "复制和数量" means "copy and amount" which is incorrect and
         <translation>%s的硬碟空間可能無法容納區塊文件。 大約要在這個目錄中儲存 %uGB的數據。</translation>
     
 YES
-There is a whitespace formatting issue in the translation. The second sentence has an extra space before "大約" and there should be a space between "%u" and "GB" to match the source style and for better readability.
+There is a spacing issue: there should be a space between "%u" and "GB" in the Chinese text (" %uGB" should be " %u GB"), and there should not be a space at the start of the second sentence. Also, "數據" is more common in Mainland China; "資料" is the more standard term for 'data' in Taiwanese usage.
 
-Correct translation:  
-%s的硬碟空間可能無法容納區塊文件。大約要在這個目錄中儲存 %u GB 的數據。
+Correct translation:
+%s 的硬碟空間可能無法容納區塊檔案。大約有 %u GB 的資料會儲存在此目錄中。
 ```
 
 ```
         <source>More than one onion bind address is provided. Using %s for the automatically created Tor onion service.</source>
         <translation>提供多數TOR路由綁定位址。 對自動建立的Tor服務用%s</translation>
     
-YES  
-The translation has issues with clarity and completeness. It does not fully convey the meaning of "More than one onion bind address is provided," and the latter part "Using %s for the automatically created Tor onion service." is incomplete and awkward.
+YES
+The translation is inaccurate, contains errors, and shows some spacing issues. The phrase "多數TOR路由綁定位址" is not a natural or correct way to say "more than one onion bind address" in Traditional Chinese. Also, the use of "多數" suggests "the majority" instead of "more than one". "TOR路由綁定" is awkward, and "Tor onion service" should be translated more precisely. There is also an irregular space before "對".
 
-Correct translation:  
-提供了多個 onion 綁定位址。已使用 %s 作為自動建立的 Tor onion 服務的位址。
+Correct translation:
+提供了多個 Onioin 綁定位址。將使用 %s 作為自動建立的 Tor onion 服務。
 ```
 
 ```
         <source>This is the maximum transaction fee you pay (in addition to the normal fee) to prioritize partial spend avoidance over regular coin selection.</source>
         <translation>這是您支付的最高交易手續費（除了正常手續費外），優先於避免部分花費而不是定期選取幣。</translation>
     
-YES  
-The translation has some wording issues and unclear phrasing. The phrase "優先於避免部分花費而不是定期選取幣" is confusing and does not correctly convey "to prioritize partial spend avoidance over regular coin selection." The concept of prioritizing avoiding partial spends instead of regular coin selection should be more clearly and accurately expressed.
+YES
+The translation is inaccurate and unclear, especially regarding "prioritize partial spend avoidance over regular coin selection." The translated phrase "優先於避免部分花費而不是定期選取幣" is grammatically incorrect and does not convey the intended meaning.
 
-Correct translation:  
-這是您支付的最高交易手續費（在正常手續費之外），用以優先避免部分花費，而非採用常規硬幣選擇。
+Correct translation:
+這是您為了優先避免部分花費（而不是常規的找零選擇）所支付的最高額外交易手續費（除了正常手續費之外）。
 ```
 
 ```
@@ -593,42 +596,43 @@ Correct translation:
         <translation>不支援的類別限定日誌等級 %1$s=%2$s 。 预期参数 %1$s=&lt;category&gt;:&lt;loglevel&gt;。 有效的類別: %3$s 。有效的日誌等級: %4$s 。</translation>
     
 YES
-The translation mixes traditional Chinese ("不支援的類別限定日誌等級") with simplified Chinese ("预期参数"), which is inconsistent for zh_TW, which should use traditional Chinese throughout. Also, there are unnecessary spaces before some full stops and after some colons which break formatting consistency.
+The translation mixes Simplified and Traditional Chinese: "预期参数" is Simplified; in Traditional Chinese, it should be "預期參數". Also, there are inconsistent spaces before periods and after punctuation, which is not standard in Chinese typographic conventions.
+The % format specifiers are correctly carried over, but punctuation and character set need correction.
 
 Correct translation:
-不支援的類別限定日誌等級 %1$s=%2$s。預期 %1$s=&lt;category&gt;:&lt;loglevel&gt;。有效的類別：%3$s。有效的日誌等級：%4$s。
+不支援的類別限定日誌等級 %1$s=%2$s。預期參數 %1$s=&lt;category&gt;:&lt;loglevel&gt;。有效的類別：%3$s。有效的日誌等級：%4$s。
 ```
 
 ```
         <source>Error loading %s: Private keys can only be disabled during creation</source>
         <translation>載入 %s 時發生錯誤: 只有在造新錢包時能夠指定不允許私鑰</translation>
     
-YES  
-The translation is slightly inaccurate and less literal, which may cause misunderstanding. The original text means "Error loading %s: Private keys can only be disabled during creation," indicating an error with loading something (%s), and clarifying that disabling private keys is only possible during creation. The current translation "載入 %s 時發生錯誤: 只有在造新錢包時能夠指定不允許私鑰" uses "造新錢包" ("create new wallet") which deviates from the source that does not specify "wallet," and phrases "指定不允許私鑰" which is unnatural.
+YES
+The translation is understandable but inaccurate and contains awkward phrasing. Specifically, "造新錢包" is less common than "新建錢包" or "建立錢包", and "指定不允許私鑰" is unclear—it should directly convey "can only disable private keys during creation".
 
-A better translation would be:  
-載入 %s 時發生錯誤：私鑰只能在建立時被禁用
+Correct translation:
+載入 %s 時發生錯誤：只有在建立錢包時才能停用私鑰
 ```
 
 ```
         <source>Error: Dumpfile checksum does not match. Computed %s, expected %s</source>
         <translation>錯誤：轉存檔案的校驗和不匹配。%s計算得%s</translation>
     
-YES  
-The translation is incomplete and does not fully convey the original message. It lacks the "expected %s" part and the sentence structure is awkward. Also, the format specifiers are not correctly positioned and it merges "%s計算得%s" ungrammatically.
+YES
+The translation omits "expected %s" and mistranslates the format. It also lacks proper punctuation and ordering for clarity.
 
-Correct translation:  
-錯誤：轉存檔案的校驗和不匹配。計算值為 %s，預期值為 %s。
+Correct translation:
+錯誤：轉存檔案的校驗和不符。計算值為 %s，預期為 %s
 ```
 
 ```
         <source>Error: Unable to write data to disk for wallet %s</source>
         <translation>错误：无法将数据写入钱包的磁盘%s。</translation>
     
-YES  
-The translation is inaccurate and awkward. The original English means "Unable to write data to disk for wallet %s", implying the disk belongs to the wallet or the wallet identifier is provided. However, the translation mixes the order and includes an unnecessary possessive "的钱包的磁盘%s" which is unnatural and confusing. The %s should directly follow "wallet" as an identifier. Also, it uses simplified Chinese characters ("错误" and "无法"), but the target language is Traditional Chinese (zh_TW). The translation should be in Traditional Chinese and preserve the format and meaning clearly.
+YES
+The translation uses simplified Chinese ("错误：无法将数据写入钱包的磁盘%s。"). For 'zh_TW', traditional Chinese characters should be used. Also, the phrasing is a bit awkward.
 
-Correct translation:  
+Correct translation:
 錯誤：無法將資料寫入錢包 %s 的磁碟。
 ```
 
@@ -637,73 +641,66 @@ Correct translation:
         <translation>%s删除交易时失败: </translation>
     
 YES
-The translation places the placeholder %s at the beginning, which differs from the source where %s is at the end of the sentence. Additionally, there is an unnecessary space before the colon and the phrasing is awkward for traditional Chinese. A more natural and accurate translation would be:
+There are two issues:
+1. The translation is missing the variable placeholder at the end: The format specifier "%s" is at the beginning in the translation, but in the source, it is at the end as ": %s".
+2. The Chinese punctuation and word order are not idiomatic – the colon should be at the end, not left over in the translation.
 
-交易移除失敗: %s
+Correct translation:
+移除交易失敗：%s
 ```
 
 ```
         <source>The wallet will avoid paying less than the minimum relay fee.</source>
         <translation>錢包軟體會付多於最小轉發費用的手續費。</translation>
     
-YES  
-The translation changes the meaning. The source says the wallet will avoid paying *less* than the minimum relay fee, implying it won't pay fees below the minimum threshold. The translation implies the wallet *will pay more* than the minimum fee, which is not exactly the same and introduces a misleading nuance. A more accurate translation would preserve the idea of avoiding fees that are too low.
+YES
+The translation is inaccurate. The original English states the wallet will avoid paying less than the minimum relay fee, i.e., it will not pay a fee below that minimum. The translation reverses the meaning, suggesting the wallet will pay more than the minimum relay fee.
 
-Correct translation:  
-錢包軟體會避免支付低於最小轉發費用的手續費。
+Correct translation:
+錢包將避免支付低於最低轉發手續費的費用。
 ```
 
 ```
         <source>Transaction change output index out of range</source>
         <translation>交易尋找零輸出項超出範圍</translation>
     
-YES  
-The translation is somewhat inaccurate and unclear. The English source refers to the "change output index" of a transaction being out of range. The translation "交易尋找零輸出項超出範圍" literally means "transaction searching zero output item out of range," which does not convey the meaning of the phrase.
-
-A more accurate translation would be:  
-交易找零輸出索引超出範圍
-```
-
-```
-        <source>Unknown change type '%s'</source>
-        <translation>不明的找零位址類型 '%s'</translation>
-    
 YES
-The original English text refers to an "Unknown change type '%s'." The term "change" here means the type of change (amount returned in a Bitcoin transaction), not an "address." However, the translation wrongly includes "找零位址" ("change address"), which is incorrect and misleading.
+The translation is inaccurate. The English phrase "Transaction change output index out of range" refers to the index of the "change output" in a Bitcoin transaction being out of range. The provided translation, "交易尋找零輸出項超出範圍", mistranslates "change" as "尋找零" ("find zero") and does not accurately reflect the technical meaning.
 
 Correct translation:
-未知的找零類型 '%s'
+交易找零輸出索引超出範圍
 ```
 
 ```
         <source>Unknown new rules activated (versionbit %i)</source>
         <translation>未知的交易已經有新規則激活 (versionbit %i)</translation>
     
-YES
-The phrase "未知的交易已經有新規則激活" incorrectly translates "Unknown new rules activated." It mistakenly refers to "unknown transactions" (未知的交易) instead of "unknown new rules." A more accurate translation would be:
+YES  
+The translation is inaccurate. The English source refers to "Unknown new rules activated," but the translation says "未知的交易已經有新規則激活," which translates back to "Unknown transactions already have new rules activated." The word "交易" (transactions) is not in the source. The meaning is distorted.
 
-未知的新規則被激活 (versionbit %i)
+Correct translation:
+未知的新規則已被啟用（versionbit %i）
 ```
 
 ```
         <source>Wallet file creation failed: %s</source>
         <translation>钱包文件创建失败：1%s</translation>
     
-YES  
-The translation contains an erroneous extra character '1' before the format specifier '%s'. The format specifier should be preserved exactly as in the source, without additional characters.
-
-Correct translation:  
-錢包文件創建失敗：%s
+YES
+There is an error in the translation: "1%s" incorrectly inserts a "1" before the format specifier, which should not be present. The correct translation would be:
+錢包檔案建立失敗：%s
 ```
 
 ```
         <source>Error: Could not add watchonly tx %s to watchonly wallet</source>
         <translation>错误：无法添加仅观察交易%s到仅观察钱包</translation>
     
-YES  
-The translation uses simplified Chinese characters ("错误") instead of traditional Chinese characters which are standard in zh_TW. Also, there should be spaces around the format specifier %s to improve readability, consistent with typical Chinese usage for such technical messages.
+YES
+The translation uses simplified Chinese ("错误", "无法", "仅观察"), but 'zh_TW' should use traditional Chinese characters. Additionally, spacing is inconsistent; there should be a space between "交易" and "%s". 
 
-Correct translation:  
-錯誤：無法將僅觀察交易 %s 添加到僅觀察錢包
+Correct translation:
+錯誤：無法將僅觀察交易 %s 新增到僅觀察錢包
 ```
 </details>
+
+Number of issues: 58.

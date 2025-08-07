@@ -14,11 +14,16 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Need on sinu Bitcoin aadressid makse vastuvõtuks.Kasuta ‘Loo uus vastuvõttu aadress’ nuppu vastuvõtmise vahekaardis, et luua uus aadress. Allkirjastamine on võimalik ainult 'pärand' tüüpi aadressidega.</translation>
     
-YES  
-There are spacing issues around punctuation marks, and some phrases can be more naturally phrased in Estonian. Also, the phrase "‘Loo uus vastuvõttu aadress’" contains a typo: "vastuvõttu" should be "vastuvõtu".  
+YES
+There are several issues with this Estonian translation:
 
-Correct translation:  
-Need on sinu Bitcoin'i aadressid maksete vastuvõtuks. Kasuta 'Loo uus vastuvõtu aadress' nuppu vastuvõtmise vahekaardil, et luua uusi aadresse. Allkirjastamine on võimalik ainult 'pärand' tüüpi aadressidega.
+1. There is a missing space after the first period: "makse vastuvõtuks.Kasuta" should be "makse vastuvõtuks. Kasuta".
+2. The expression "'Create new receiving address'" is inaccurately translated as "Loo uus vastuvõttu aadress"—the correct grammatical form is "Loo uus vastuvõtmise aadress".
+3. The word "aaring" (for 'legacy') should be rendered in Estonian as "pärandtüüp" or simply "legacy", not "'pärand' tüüpi".
+4. General phrasing and punctuation should be improved for clarity and naturalness.
+
+Correct translation:
+Need on sinu Bitcoini aadressid maksete vastuvõtmiseks. Uute aadresside loomiseks kasuta vastuvõtuvahekaardil nuppu „Loo uus vastuvõtuaadress“. Allkirjastamine on võimalik ainult 'legacy' tüüpi aadressidega.
 ```
 
 ```
@@ -26,56 +31,39 @@ Need on sinu Bitcoin'i aadressid maksete vastuvõtuks. Kasuta 'Loo uus vastuvõt
         <translation>Sisesta rahakotile uus salafraas.&lt;br/&gt;Kasuta salafraasi millles on&lt;b&gt;kümme või rohkem juhuslikku sümbolit&lt;b&gt;,või&lt;b&gt;kaheksa või rohkem sõna&lt;b/&gt;.</translation>
     
 YES
-The Estonian translation has multiple issues:
-- Missing spaces after punctuation and before or after tags (e.g., "&lt;b&gt;" tags are not properly spaced or closed).
-- The last &lt;b&gt; tag is not correctly closed ("&lt;b/&gt;" should be "&lt;/b&gt;").
-- The phrasing is somewhat awkward and does not match the source precisely.
-- The source says "ten or more random characters" and "eight or more words", which should be reflected clearly.
-- The translation does not take over the structure correctly, especially around HTML tags.
+There are several issues:
+1. Incorrect HTML tag closure: The `<b>` tags are not properly closed. The opening `<b>` tag before "kümme või rohkem juhuslikku sümbolit" is not terminated (should be `</b>`), and the one before "kaheksa või rohkem sõna" is closed as `<b/>`, which is incorrect.
+2. Typo: "millles" should be "milles".
+3. Missing space after periods and commas ("või&lt;b&gt;kaheksa" should be "või &lt;b&gt;kaheksa").
+4. The instruction for spacing between sentences and after punctuation is not properly followed.
+5. The translation for "Please use a passphrase..." is missing "please" ("Palun kasuta...").
+6. Minor stylistic improvements for clarity.
 
-Corrected translation:
-Sisesta rahakoti uus salasõna.&lt;br/&gt;Palun kasuta salasõna, mis sisaldab &lt;b&gt;kümmet või rohkem juhuslikku märki&lt;/b&gt; või &lt;b&gt;kaht või rohkem sõna&lt;/b&gt;.
+Correct translation:
+Sisesta rahakotile uus salasõna.&lt;br/&gt;Palun kasuta salasõna, milles on &lt;b&gt;kümme või rohkem juhuslikku sümbolit&lt;/b&gt; või &lt;b&gt;kaheksa või rohkem sõna&lt;/b&gt;.
 
-Note: "salafraas" can also be translated as "salasõna" or "salafraas". "Salasõna" is more common for "passphrase".  
-Also, "kaht või rohkem sõna" should be "kaheksa või rohkem sõna" following the source number exactly. So:
-
-Sisesta rahakoti uus salasõna.&lt;br/&gt;Palun kasuta salasõna, mis sisaldab &lt;b&gt;kümmet või rohkem juhuslikku märki&lt;/b&gt; või &lt;b&gt;kaheksat või rohkem sõna&lt;/b&gt;.
-
-Final recommended correction:
-
-Sisesta rahakoti uus salasõna.&lt;br/&gt;Palun kasuta salasõna, mis sisaldab &lt;b&gt;kümmet või rohkem juhuslikku märki&lt;/b&gt; või &lt;b&gt;kaheksat või rohkem sõna&lt;/b&gt;.
+Note: "salafraas" and "salasõna" are both valid, but "salasõna" (password) is more common in modern Bitcoin/crypto terminology in Estonian; however, "salafraas" is still acceptable in this context. Adjust as necessary per style guide.
 ```
 
 ```
         <source>Your wallet is now encrypted. </source>
         <translation>Rahakott krüpteeritud.</translation>
     
-YES  
-The translation "Rahakott krüpteeritud." does not include the possessive "Your" ("Sinu" in Estonian) and omits the verb "is now" ("on nüüd"), which are important for preserving the meaning of the source sentence. Also, there is an extra space at the end of the source sentence not carried over (which is fine), but the translation should be a complete sentence in Estonian.
+YES
+The translation is missing the word "now" ("nüüd") and the verb "on" ("is"), which are important for accurate meaning.
 
-Correct translation:  
-Sinu rahakott on nüüd krüpteeritud.
-```
-
-```
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Bitcoini aadressiga</translation>
-    
-YES  
-The translation contains a typo in "Omandi" which should be "Omandi" → "Omandi" is not incorrect, but the phrase "Omandi tõestamiseks" is a bit awkward in Estonian. A more accurate and idiomatic translation would fully reflect the English meaning: "Sign messages with your Bitcoin addresses to prove you own them." The original phrase does not fully capture the plural possessive aspect ("Bitcoin addresses") nor clearly state "prove you own them" in a natural way.
-
-Correct translation:  
-Allkirjasta sõnumid oma Bitcoini aadressidega, et tõestada, et need kuuluvad sulle
+Correct translation:
+Teie rahakott on nüüd krüpteeritud.
 ```
 
 ```
         <source>Close all wallets</source>
         <translation>Sulge rkõik rahakotid</translation>
     
-YES  
-The translation is problematic because "rkõik" is not a valid Estonian word. The correct word for "all" in Estonian is "kõik". The rest of the translation is correct, as "Sulge kõik rahakotid" means "Close all wallets" in Estonian. Also, there is an unnecessary space after "Sulge".
+YES
+There is a typo in the translation: "Sulge rkõik rahakotid" should be "Sulge kõik rahakotid".
 
-Correct translation:  
+Correct translation:
 Sulge kõik rahakotid
 ```
 
@@ -83,10 +71,10 @@ Sulge kõik rahakotid
         <source>Main Window</source>
         <translation>Pea Aken</translation>
     
-YES  
-The Estonian translation is incorrect. "Peaaken" (one word) is the correct translation for "Main Window" in the context of a software application.
+YES
+The translation is incorrect. "Pea Aken" is not Estonian; "Pea" is not used in this context in Estonian, and "Aken" means "window". The correct translation should be "Peaaken", which is the compound noun for "Main Window" in Estonian (no space).
 
-Correct translation:  
+Correct translation:
 Peaaken
 ```
 
@@ -94,10 +82,10 @@ Peaaken
         <source>Close all wallets</source>
         <translation>Sulge rkõik rahakotid</translation>
     
-YES  
-The translation is problematic because "rkõik" is not a valid Estonian word. The correct word for "all" in Estonian is "kõik". The rest of the translation is correct, as "Sulge kõik rahakotid" means "Close all wallets" in Estonian. Also, there is an unnecessary space after "Sulge".
+YES
+There is a typo in the translation: "Sulge rkõik rahakotid" should be "Sulge kõik rahakotid".
 
-Correct translation:  
+Correct translation:
 Sulge kõik rahakotid
 ```
 
@@ -106,10 +94,12 @@ Sulge kõik rahakotid
         <translation>Proxi port (nt 9050)</translation>
     
 YES
-The Estonian translation uses "Proxi port", which is a direct borrowing and does not follow typical Estonian word order or spelling. Also, "nt" is an abbreviation for "näiteks" ("for example"), but it is better to use the full form or maintain the parentheses similar to the source for clarity. The English "proxy" is usually translated as "proksü" or "proksi" in Estonian. Also, "port" is commonly left as "port".
+There are issues with the translation:
+1. "Proxi" should be "Puhverserveri" (the Estonian term for "proxy").
+2. The format inside parentheses should use "nt." (abbreviation for "näiteks") instead of "nt".
 
 Correct translation:
-Proksi port (nt 9050)
+Puhverserveri port (nt. 9050)
 ```
 
 ```
@@ -117,52 +107,57 @@ Proksi port (nt 9050)
         <translation>Minimeeri systray alale.</translation>
     
 YES  
-The translation mixes Estonian ("Minimeeri") and English ("systray alale"), and "systray alale" is not proper Estonian. The term "systray" should be translated or adapted appropriately, and the phrase should convey "Show only a tray icon after minimizing the window."  
+The translation is inaccurate and uses a mix of Estonian and a loanword ("systray"), which is not appropriate Standard Estonian usage. It also loses the detail that only a tray icon is shown after minimizing. 
 
 Correct translation:  
-"Kuva pärast akna minimeerimist ainult süsteemsalve ikoon."
+Kuva akna minimeerimisel ainult tegumiriba ikoon.
 ```
 
 ```
         <source>Unit to show amounts in:</source>
         <translation>Summade kuvamise Unit:</translation>
     
-YES  
-The translation mixes Estonian and English incorrectly. "Unit" should be fully translated or integrated correctly. "Summade kuvamise" means "of amount display," but the phrase is awkward and incomplete without a proper noun or descriptor. The correct Estonian translation should be:
+YES
+The Estonian translation is incorrect and awkward. "Unit" is left untranslated, and the word order is unnatural for Estonian. The proper translation should be:
 
-"Ühik summade kuvamiseks:"
+Koguste kuvamise ühik:
+
+Correct translation:
+Kuvamise ühik summadele:
 ```
 
 ```
         <source>Insufficient funds!</source>
         <translation>Liiga suur summa</translation>
     
-YES  
-The Estonian translation "Liiga suur summa" means "Too large amount," which does not correspond to the English source "Insufficient funds!" The correct translation should convey that there are not enough funds available.
+YES
+The translation "Liiga suur summa" means "Amount too large" in Estonian, which does not accurately capture the meaning of "Insufficient funds!" The correct translation should convey that there is not enough money/funds.
 
-Correct translation:  
-"Puuduvad vahendid!" or "Kontol pole piisavalt raha!"
+Correct translation:
+Pole piisavalt vahendeid!
 ```
 
 ```
         <source>Debug information</source>
         <translation>Debug'imise info</translation>
     
-YES  
-The translation "Debug'imise info" uses an incorrect and unnatural form. In Estonian, the English loanword "debug information" would typically be translated as "Silumisinfo" or "Silumise info" without unnecessary apostrophes or anglicized abbreviations.
+YES
+The translation is understandable but somewhat informal/unnatural. The term "Debug'imise info" uses an inconsistent mix of Estonian and English, and the placement of the apostrophe is not standard. The Estonian word "silumis" is more appropriate for "debug". Also, "teave" or "info" is fine, but "teave" is more formal.
 
-Correct translation:  
-Silumisinfo
+Correct translation:
+Silumise teave
 ```
 
 ```
         <source>Insufficient funds</source>
         <translation>Liiga suur summa</translation>
     
-YES  
-The translation "Liiga suur summa" means "Too large amount" in Estonian, which does not correctly convey the original English phrase "Insufficient funds." The correct translation should indicate a lack of funds.
+YES
+The translation is incorrect. "Liiga suur summa" means "Amount too large," which does not accurately convey "Insufficient funds."
 
-Correct translation:  
-Puuduvad vahendid
+Correct translation:
+Ebapiisavad vahendid
 ```
 </details>
+
+Number of issues: 12.

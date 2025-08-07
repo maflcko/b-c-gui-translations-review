@@ -14,10 +14,10 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <translation>Kopja  Tikketta</translation>
     
 YES
-There is an unnecessary extra space between "Kopja" and "Tikketta". The translation should not have a double space. Also, "Kopja" is not the verb form; the correct imperative form is "Kopja" (copy, as a verb) is actually "Ikkopja".
+There is a whitespace formatting issue: there is an unnecessary double space between "Kopja" and "Tikketta".
 
 Correct translation:
-Ikkopja t-Tikketta
+Kopja Tikketta
 ```
 
 ```
@@ -25,10 +25,7 @@ Ikkopja t-Tikketta
         <translation>Passphrase Djalogu</translation>
     
 YES
-The translation "Passphrase Djalogu" is problematic as it mixes English ('Passphrase') with a phonetic transliteration of 'Dialog' rather than using a fully Maltese translation or a consistent borrowing.
-
-A more appropriate translation in Maltese would be:
-"Djalogu tal-Passphrase"
+The word order is incorrect, and the translation is a transliteration rather than a correct translation. In Maltese, "dialog" is better translated as "Djalogu tal-Passphrase".
 
 Correct translation:
 Djalogu tal-Passphrase
@@ -39,13 +36,10 @@ Djalogu tal-Passphrase
         <translation>Kartiera encrypted</translation>
     
 YES
-The translation is partially incorrect. The word "encrypted" was not translated into Maltese; the English word was reused. The correct translation would use "enkripptata" or "ikkodifikata" for "encrypted". "Wallet" is often translated as "kartiera". The corrected translation is:
+The translation is problematic. The word "encrypted" is not translated into Maltese, and "Kartiera" (wallet) is correct, but the result mixes Maltese with English. The proper Maltese translation for "encrypted" is "ikkodifikata" or "mgħammra b'ċifrar".
 
-Kartiera enkripptata
-
-So, the correct translation:
-
-<translation>Kartiera enkripptata</translation>
+Correct translation:
+Il-kartiera ġiet mgħammra b'ċifrar.
 ```
 
 ```
@@ -53,7 +47,7 @@ So, the correct translation:
         <translation>Il-fajl tas-settings %1jista' jkun korrott jew invalidu.</translation>
     
 YES
-There is a missing space between "%1" and "jista'". It should read "%1 jista'". The rest of the translation is correct.
+There is a missing space between "%1" and "jista'", which causes a formatting issue.
 
 Correct translation:
 Il-fajl tas-settings %1 jista' jkun korrott jew invalidu.
@@ -64,10 +58,10 @@ Il-fajl tas-settings %1 jista' jkun korrott jew invalidu.
         <translation>Sar żball fatali. %1ma tistax tkompli b'mod sigur u se tieqaf.</translation>
     
 YES
-There is a spacing error: "%1ma" should be "%1 ma" (missing space after %1).
+There is a small grammatical issue and a missing space in the translation: "%1ma" should be "%1 ma" (there is no space after %1), and "sar żball fatali" should be "seħħ żball fatali" for better accuracy. Also, "tieqaf" should be "jieqaf" for correct grammar.
 
 Correct translation:
-Sar żball fatali. %1 ma tistax tkompli b'mod sigur u se tieqaf.
+Seħħ żball fatali. %1 ma jistax ikompli b'mod sigur u se jieqaf.
 ```
 
 ```
@@ -75,12 +69,10 @@ Sar żball fatali. %1 ma tistax tkompli b'mod sigur u se tieqaf.
         <translation>Sar żball intern. %1se jipprova jkompli mingħajr periklu. Dan huwa bug mhux mistenni li jista 'jiġi rrappurtat kif deskritt hawn taħt.</translation>
     
 YES
-There are minor spacing issues and a typo:
-- "Sar żball intern." should be "Seħħ żball intern."
-- There should be a space after "%1" (" %1 se jipprova...").
+There is a minor spacing error: There should be a space between '%1' and 'se jipprova'. Currently, it's written as '%1se jipprova', which is incorrect. Also, there is an unnecessary space before the apostrophe in "jista 'jiġi".
 
 Correct translation:
-Seħħ żball intern. %1 se jipprova jkompli mingħajr periklu. Dan huwa bug mhux mistenni li jista' jiġi rrappurtat kif deskritt hawn taħt.
+Sar żball intern. %1 se jipprova jkompli mingħajr periklu. Dan huwa bug mhux mistenni li jista' jiġi rrappurtat kif deskritt hawn taħt.
 ```
 
 ```
@@ -88,9 +80,8 @@ Seħħ żball intern. %1 se jipprova jkompli mingħajr periklu. Dan huwa bug mhu
         <translation>Uri ħarsa ġenerali ġenerali tal-kartiera</translation>
     
 YES
-The translation repeats the word "ġenerali" (general) twice, which is redundant. Also, "Uri" means "Show", which is correct, but a better way would be "Uri ħarsa ġenerali tal-kartiera" ("Show a general overview of the wallet") without repetition.
+The translation repeats the word "ġenerali" unnecessarily, resulting in "ħarsa ġenerali ġenerali" ("general general overview"). The correct translation should be:
 
-Correct translation:
 Uri ħarsa ġenerali tal-kartiera
 ```
 
@@ -99,7 +90,7 @@ Uri ħarsa ġenerali tal-kartiera
         <translation>Dwar%1</translation>
     
 YES
-There is a whitespace formatting issue. In Maltese, "Dwar" ("About") should have a space before the placeholder "%1".
+There is a whitespace formatting issue: there should be a space after "Dwar" before "%1".
 
 Correct translation:
 Dwar %1
@@ -110,8 +101,9 @@ Dwar %1
         <translation>Uri informazzjoni dwar%1</translation>
     
 YES
-There is a missing space between "dwar" and "%1". The correct translation should be:
+There is a spacing issue: there should be a space between "dwar" and "%1". 
 
+Correct translation:
 Uri informazzjoni dwar %1
 ```
 
@@ -120,7 +112,7 @@ Uri informazzjoni dwar %1
         <translation>Immodifika l-għażliet tal-konfigurazzjoni għal%1</translation>
     
 YES
-There is a spacing issue: there should be a space between "għal" and "%1". Also, "Immodifika" is fine, but it might be more natural to say "Immodifika l-għażliet tal-konfigurazzjoni għal %1".
+There is a whitespace format issue: there should be a space between "għal" and "%1".
 
 Correct translation:
 Immodifika l-għażliet tal-konfigurazzjoni għal %1
@@ -131,10 +123,10 @@ Immodifika l-għażliet tal-konfigurazzjoni għal %1
         <translation>Iffirma messaġġi bl-indirizzi Bitcoin tiegħek biex tipprova li inti stess</translation>
     
 YES
-The translation is incomplete. The English phrase "to prove you own them" is not fully translated; "li inti stess" means "that you yourself" or "that you are" but doesn't finish the thought ("own them"). The object ("them"/"the addresses") is missing in the Maltese translation.
+The translation is missing the object ("them") at the end, which makes the sentence incomplete and potentially confusing. The English sentence means "to prove you own them (the addresses)", but the Maltese translation stops at "to prove that you own", without saying what is owned. For clarity and completeness, the translation should specify what "them" refers to.
 
 Correct translation:
-Iffirma messaġġi bl-indirizzi Bitcoin tiegħek biex tipprova li inti s-sid tagħhom
+Iffirma messaġġi bl-indirizzi Bitcoin tiegħek biex tipprova li dawn huma tiegħek
 ```
 
 ```
@@ -142,7 +134,7 @@ Iffirma messaġġi bl-indirizzi Bitcoin tiegħek biex tipprova li inti s-sid tag
         <translation>%1wara</translation>
     
 YES
-There is a missing space between "%1" and "wara". It should be "%1 wara".
+There is a missing space between the number (%1) and the word "wara". It should be "%1 wara".
 
 Correct translation:
 %1 wara
@@ -153,10 +145,10 @@ Correct translation:
         <translation>Uri %1l-messaġġ ta 'għajnuna biex tikseb lista b'għażliet possibbli tal-linja tal-kmand Bitcoin</translation>
     
 YES
-There is a spacing issue: "%1" and "l-messaġġ" are merged ("%1l-messaġġ"), which is incorrect. "%1" should be separated. Also, "Uri %1l-messaġġ ta 'għajnuna" translates as "Show %1the help message", which is ungrammatical.
+The translation is problematic. The placement of "%1" is not correct, and there is a typographical issue with "Uri %1l-messaġġ" (should be "Uri l-messaġġ ta' għajnuna %1"). There are also spacing inconsistencies (e.g., extra space before the apostrophe in "ta 'għajnuna"). The translation is understandable but not natural.
 
 Correct translation:
-Uri l-messaġġ ta’ għajnuna ta’ %1 biex tikseb lista b’għażliet possibbli tal-linja tal-kmand Bitcoin
+Uri l-messaġġ ta’ għajnuna %1 biex tikseb lista b’għażliet possibbli tal-linja tal-kmand Bitcoin
 ```
 
 ```
@@ -165,15 +157,10 @@ Uri l-messaġġ ta’ għajnuna ta’ %1 biex tikseb lista b’għażliet possib
         <translation>Uri tab Peers</translation>
     
 YES
-The translation "Uri tab Peers" is incorrect. The verb "Uri" means "show" in Maltese, but it should reflect natural Maltese syntax and terminology. Also, "Peers tab" should be properly localized or at least capitalized if being borrowed directly.
+The translation is inaccurate. "Uri tab Peers" is not correct Maltese; "Uri" means "show," but "tab" and "Peers" are left untranslated and not natural in Maltese. Also, there is a stray spacing before "tab". The translation should be more idiomatic.
 
 Correct translation:
-Uri t-tab Peers
-
-Or, more fully localized:
-Uri t-tab tal-Pari
-
-Either option is more accurate, but the first is closer to common usage in software contexts in Maltese.
+Uri t-tab tal-Peers
 ```
 
 ```
@@ -183,11 +170,9 @@ Either option is more accurate, but the first is closer to common usage in softw
 </translation>
     
 YES
-There is a missing space after the colon in the Maltese translation, which creates a whitespace formatting issue. The correct translation should be:
+There is a spacing issue after the colon in the Maltese translation; it should match the source and have a space after the colon. Also, "Ammont" is correct for "Amount".
 
-Ammont: %1
-
-Corrected translation:
+Correct translation:
 Ammont: %1
 ```
 
@@ -198,7 +183,7 @@ Ammont: %1
 </translation>
     
 YES
-There is a missing space after the colon in the Maltese translation. It should be "Tip: %1" (with a space).
+There is a missing space after the colon. The translation should include a space after "Tip:" to match the formatting of the source.
 
 Correct translation:
 Tip: %1
@@ -211,11 +196,9 @@ Tip: %1
 </translation>
     
 YES
-There is a missing space after the colon in the Maltese translation. The correct translation should be:
+There is a whitespace formatting issue. In Maltese, after "Tikketta:" there should be a space before the %1, to match the source formatting.
 
-Tikketta: %1
-
-Corrected translation:
+Correct translation:
 Tikketta: %1
 ```
 
@@ -226,7 +209,7 @@ Tikketta: %1
 </translation>
     
 YES
-There is a whitespace format issue: there should be a space after the colon to match the source formatting.
+There is a missing space after the colon in the Maltese translation. It should match the format of the English source.
 
 Correct translation:
 Indirizz: %1
@@ -237,10 +220,10 @@ Indirizz: %1
         <translation>HD key ġenerazzjoni hija&lt;b&gt;b'diżabilità&lt;/b&gt;</translation>
     
 YES
-The Maltese translation is incorrect and does not accurately reflect the English source. The phrase "HD key ġenerazzjoni hija b'diżabilità" is not idiomatic; "b'diżabilità" means "with a disability", which is not the intended meaning. The phrase should use the Maltese equivalent of "disabled", which is "diżattivata".
+The Maltese translation is incorrect both in terms of word order and usage. "HD key ġenerazzjoni hija b'diżabilità" is not correct Maltese. It should be:
 
 Correct translation:
-Ġenerazzjoni ta' ċwievet HD hija &lt;b&gt;diżattivata&lt;/b&gt;
+Il-ġenerazzjoni ta’ ċwievet HD hija &lt;b&gt;diżattivata&lt;/b&gt;
 ```
 
 ```
@@ -248,7 +231,7 @@ Correct translation:
         <translation>Ċavetta privata&lt;b&gt;b'diżabilità&lt;/b&gt;</translation>
     
 YES
-The translation is problematic. The phrase should be "Private key <b>disabled</b>", but the translated "Ċavetta privata<b>b'diżabilità</b>" is incorrect. "b'diżabilità" translates to "with a disability" rather than "disabled". The code formatting &lt;b&gt; should also have a space after the key and before the tag.
+There is a formatting and meaning issue. The translation "Ċavetta privata&lt;b&gt;b'diżabilità&lt;/b&gt;" is both grammatically incorrect and fails to accurately translate "disabled". The use of "&lt;b&gt;" is correct as per the source, but there are spacing and wording mistakes ("b'diżabilità" is awkward and literal; a better translation is "diżattivata" or "diżabilitata").
 
 Correct translation:
 Ċavetta privata &lt;b&gt;diżattivata&lt;/b&gt;
@@ -259,10 +242,14 @@ Correct translation:
         <translation>Kartiera hija&lt;b&gt;encrypted&lt;/b&gt;u bħalissa&lt;b&gt;jinfetaħ&lt;/b&gt;</translation>
     
 YES
-There are spacing issues before and after the HTML tags. Additionally, words "encrypted" and "currently" are untranslated. "Jinfetaħ" is singular ("it opens") and should be "miftuħa" ("unlocked"). The definite article "Il-" before "kartiera" is also missing.
+There are several issues with the translation:
+
+1. Accuracy: The word "Wallet" is generally translated as "kartiera" or sometimes kept in English as a loanword, but "encrypted" is not translated. It should be "kripptata".
+2. "currently unlocked" should be "bħalissa miftuħa" or "bħalissa mhux imsakkra" (unlocked), but "jinfetaħ" is a verb meaning "it is being opened", which does not work here.
+3. Format: There is a missing space between "hija" and "&lt;b&gt;encrypted&lt;/b&gt;", and between "&lt;/b&gt;u" and "bħalissa", so the markup is fused with the adjacent words.
 
 Correct translation:
-Il-kartiera hija &lt;b&gt;kkodifikata&lt;/b&gt; u bħalissa &lt;b&gt;miftuħa&lt;/b&gt;
+Il-kartiera hija &lt;b&gt;kripptata&lt;/b&gt; u bħalissa &lt;b&gt;miftuħa&lt;/b&gt;
 ```
 
 ```
@@ -270,10 +257,10 @@ Il-kartiera hija &lt;b&gt;kkodifikata&lt;/b&gt; u bħalissa &lt;b&gt;miftuħa&lt
         <translation>Kartiera hija&lt;b&gt;encrypted&lt;/b&gt;u bħalissa&lt;b&gt;msakkra&lt;/b&gt;</translation>
     
 YES
-There are spacing issues in the Maltese translation. There should be spaces between the Maltese and the HTML tags. Also, the word "encrypted" is untranslated while "msakkra" is translated as "locked", which is correct. "Kartiera hija" means "The wallet is", which is appropriate.
+There are whitespace formatting issues in the translation: missing spaces around the HTML tags, making the sentence less readable. Also, "Wallet" is translated as "Kartiera," which is acceptable in Maltese, but the rest of the structure should mirror the original more closely.
 
 Correct translation:
-Kartiera hija &lt;b&gt;ikkrittata&lt;/b&gt; u bħalissa &lt;b&gt;msakkra&lt;/b&gt;
+Il-kartiera hija &lt;b&gt;encrypted&lt;/b&gt; u bħalissa &lt;b&gt;msakkra&lt;/b&gt;
 ```
 
 ```
@@ -281,9 +268,11 @@ Kartiera hija &lt;b&gt;ikkrittata&lt;/b&gt; u bħalissa &lt;b&gt;msakkra&lt;/b&g
         <translation>Unità biex turi l-ammonti pulzieri Ikklikkja biex tagħżel unità oħra.</translation>
     
 YES
-There is a translation error: "pulzieri" means "inches" in Maltese, which is not relevant here. There should also be a period (full stop) separating the two sentences, as in the source.
+The translation is mostly accurate but contains a slight error: the word "pulzieri" literally means "inches" in Maltese, which is a mistranslation of "in". It should simply mean "amounts in" (i.e., "ammonti f'unità"). Also, a period should be added after "ammonti".
 
 Correct translation:
 Unità biex turi l-ammonti. Ikklikkja biex tagħżel unità oħra.
 ```
 </details>
+
+Number of issues: 23.

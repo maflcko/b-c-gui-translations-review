@@ -13,10 +13,10 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>Kopier den valgte adressen til systemets utklippstavle</translation>
     
-YES  
-The Danish translation has a grammar error. "valgte" should be in the indefinite form "valgte" must agree with "adressen," which is definite singular, so it should be "den valgte adresse" (not "den valgte adressen") or "den valgte adresse." Also, "Kopier" is a correct imperative form but it misses the article 'den' before "valgte adresse," also "adressen" should be "adresse." The correct phrase is:  
+YES
+The translation uses Norwegian ("adressen", "utklippstavle") instead of correct Danish terms. In Danish, "address" is "adresse" (not "adressen"), and "clipboard" is usually "udklipsholder".
 
-Correct translation:  
+Correct translation:
 Kopier den valgte adresse til systemets udklipsholder
 ```
 
@@ -24,25 +24,14 @@ Kopier den valgte adresse til systemets udklipsholder
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation>Indstillings filen 1%1 kan være korrupt eller invalid.</translation>
     
-YES  
-There is a spacing error and incorrect word order in the Danish translation. "Indstillings filen" should be "Indstillingsfilen" (one word), and "%1" should directly follow without "1%" or extra spacing.
-
-Correct translation:  
+YES
+There are multiple issues:
+1. "Indstillings filen" should be "Indstillingsfilen" (no space).
+2. "1%1" is a typographical error; the format specifier %1 should be used as in the source, i.e., "%1".
+3. "korrupt eller invalid" is better phrased as "korrupt eller ugyldig" in Danish.
+   
+Correct translation:
 Indstillingsfilen %1 kan være korrupt eller ugyldig.
-```
-
-```
-        <source>%1 behind</source>
-        <translation>%1 bagud</translation>
-    
-YES  
-The Danish word "bagud" is not commonly used in this technical context. A more accurate and idiomatic translation for "%1 behind" (e.g., blocks behind in a blockchain) would be "%1 efter" or "%1 bagud" could be understood but is less precise and less commonly used in Danish technical texts related to Bitcoin. However, the best and most common phrasing in Danish Bitcoin clients is "%1 bagud" or "%1 efter".  
-
-Given the context, I recommend:  
-%1 efter  
-
-Correct translation:  
-<translation>%1 efter</translation>
 ```
 
 ```
@@ -50,11 +39,14 @@ Correct translation:
         <extracomment>Status tip for Restore Wallet menu item</extracomment>
         <translation>Gendan en pung, fra en backup fil. </translation>
     
-YES  
-The Danish translation has incorrect spacing and a less natural phrasing. Specifically, there should be no space before the comma, and "backup fil" should be combined into the single Danish compound noun "backupfil". Additionally, "en pung" (a purse) is not the usual term for a Bitcoin wallet in Danish; "en wallet" or "en tegnebog" is more appropriate, but "wallet" is commonly used in the Bitcoin context. Also, the English original does not have a period at the end, so the translation should omit it as well.  
+YES
+The translation contains minor issues:
+- "pung," has an unnecessary comma.
+- "backup fil" is not correctly compounded in Danish. It should be "backupfil".
+- There is an extra space at the end.
 
-Correct translation:  
-Gendan en wallet fra en backupfil
+Correct translation:
+Gendan en pung fra en backupfil.
 ```
 
 ```
@@ -63,34 +55,32 @@ Gendan en wallet fra en backupfil
         <translation>Vis værktøjslinjeknuder</translation>
     
 YES
-The Danish translation "Vis værktøjslinjeknuder" is incorrect. It translates to "Show toolbar nodes," which does not correspond to "Show Peers tab." The correct translation should reflect showing the "Peers" tab, likely as "Vis fanen Peers" or "Vis fanen for Peers."
+The translation "Vis værktøjslinjeknuder" is incorrect. It translates to "Show toolbar nodes," which does not correspond to "Show Peers tab." The correct translation should refer specifically to displaying the "Peers" tab.
 
 Correct translation:
-Vis Peers-fanen
+Vis fanen Peers
 ```
 
 ```
         <source>(change)</source>
         <translation>(byttepange)</translation>
     
-YES  
-The Danish word for "change" in the context of Bitcoin transactions is typically "bytte" or simply "change" (often untranslated), but "byttepange" is incorrect and does not exist in Danish. The correct translation should simply be:  
-(change) -> (bytte)  
-or just keep it as "(change)" if it is used as a technical term. However, the most common and straightforward Danish equivalent would be:  
+YES
+The translation "byttepange" is incorrect and not a recognized Danish word. The correct Danish translation for "change" in the context of Bitcoin transactions is "vekselpenge".
 
-Correct translation:  
-<translation>(bytte)</translation>
+Correct translation:
+(vekselpenge)
 ```
 
 ```
         <source>Make Blank Wallet</source>
         <translation>Lav flad tegnebog</translation>
     
-YES  
-The Danish translation "Lav flad tegnebog" is incorrect and awkward in this context. "Make Blank Wallet" in the context of Bitcoin means to create an empty wallet, not a "flat" wallet. The correct translation should convey creating or making a new empty wallet.
+YES
+The Danish translation "Lav flad tegnebog" is incorrect. "Blak" in "Blank Wallet" refers to an empty wallet without any keys or transactions, not "flad" (flat). A more accurate translation would be:
 
-Correct translation:  
-"Lav tom tegnebog"
+Correct translation:
+Opret tom tegnebog
 ```
 
 ```
@@ -98,22 +88,24 @@ Correct translation:
         <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
         <translation>Kompileret uden ekstern underskriver understøttelse (nødvendig for ekstern underskriver)</translation>
     
-YES  
-The Danish translation is slightly awkward and incorrect in phrasing. The term "underskriver" means "signer" (a person who signs) rather than "signing" (the process/action of signing). The correct translation should use "signeringsunderstøttelse" or "understøttelse af ekstern signering" to convey "external signing support." Also, "ekstern" should be consistent with "ekstern signering" and "til ekstern signering." 
+YES
+The Danish translation is awkward and slightly incorrect. "Ekstern underskriver understøttelse" is not idiomatic, and "nødvendig for ekstern underskriver" is unclear in context. A better translation more naturally conveys the concept of "external signing" (digital signature process with hardware wallets):
 
-Correct translation:  
-"Kompileret uden ekstern signeringsunderstøttelse (påkrævet for ekstern signering)"
+Correct translation:
+Kompileret uden understøttelse af ekstern signering (krævet for ekstern signering)
 ```
 
 ```
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
         <translation>Adressen, der er associeret med denne indgang i adresselisten. Denne kan kune ændres for afsendelsesadresser.</translation>
     
-YES  
-There are typographical errors in the Danish translation: "associeret" is misspelled as "associeret" (which is correct) but the sentence structure and word choice could be improved for clarity and correctness. Also, "kune" should be "kun".
+YES
+There are two issues: 
+1. Typo in "kune", should be "kun".
+2. "Adressen" (definite form) should be "Adressen" or better, "Adressen der er tilknyttet denne post i adresselisten". Also, the singular/plural sounds awkward, and "entry" is better translated as "post" or "indgang" (both are OK, but "post" is more common in UI context).
 
-Correct translation:  
-"Adressen, der er associeret med denne post i adresselisten. Den kan kun ændres for afsendelsesadresser."
+Correct translation:
+Adressen, der er associeret med denne post i adresselisten. Denne kan kun ændres for afsendelsesadresser.
 ```
 
 ```
@@ -121,68 +113,65 @@ Correct translation:
         <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
         <translation>Kompileret uden ekstern underskriver understøttelse (nødvendig for ekstern underskriver)</translation>
     
-YES  
-The Danish translation is slightly awkward and incorrect in phrasing. The term "underskriver" means "signer" (a person who signs) rather than "signing" (the process/action of signing). The correct translation should use "signeringsunderstøttelse" or "understøttelse af ekstern signering" to convey "external signing support." Also, "ekstern" should be consistent with "ekstern signering" and "til ekstern signering." 
+YES
+The Danish translation is awkward and slightly incorrect. "Ekstern underskriver understøttelse" is not idiomatic, and "nødvendig for ekstern underskriver" is unclear in context. A better translation more naturally conveys the concept of "external signing" (digital signature process with hardware wallets):
 
-Correct translation:  
-"Kompileret uden ekstern signeringsunderstøttelse (påkrævet for ekstern signering)"
+Correct translation:
+Kompileret uden understøttelse af ekstern signering (krævet for ekstern signering)
 ```
 
 ```
         <source>The mapped Autonomous System used for diversifying peer selection.</source>
         <translation>Afbildning fra Autonome Systemer (et Internet-Protocol-rutefindingsprefiks) til IP-adresser som bruges til at diversificere knudeforbindelser. Den engelske betegnelse er "asmap".</translation>
     
-YES
-The translation adds extra explanatory content not present in the source, including the phrase "Den engelske betegnelse er 'asmap'." and an explanation of Autonomous Systems that is not in the original. It also changes the meaning from describing a single "mapped Autonomous System" to a more general explanation involving prefixes and IP addresses.
+YES  
+The translation is verbose, adds extra explanatory content not present in the source (e.g., the explanation of "Autonome Systemer" and the mention of "asmap"), and changes the structure of the sentence. It also introduces new terms and clarifications that may not be needed or correct for a simple translation.
 
-A more accurate and concise translation would be:
-
-"Afbilledet autonomt system, der bruges til at diversificere peer-udvælgelse."
-
-This preserves the original meaning without adding unsolicited clarifications or definitions.
+Correct translation:  
+Det kortlagte autonome system, der bruges til at diversificere peer-udvælgelse.
 ```
 
 ```
         <source>Ban for</source>
         <translation>Bandlys i</translation>
     
-YES  
-The Danish word for "ban" in this context is typically "Bloker" or "Forbyd". "Bandlys" is incorrect and not a valid Danish word. The preposition "i" does not fit here without further context.
+YES
+The translation "Bandlys i" is problematic. The English phrase "Ban for" indicates a duration (e.g., "Ban for 1 hour"), whereas "Bandlys i" is unnatural and misleading in Danish. The correct translation should be "Bloker i" or "Udeluk i".
 
-Correct translation:  
-Forbyd i
+Correct translation:
+Bloker i
 ```
 
 ```
         <source>Sign Message</source>
         <translation>Singér besked</translation>
     
-YES  
-The Danish translation uses "Singér", which is incorrect and unnatural in this context. The proper verb is "Signér" (without the accent on 'e'), which means "Sign" as a command. Also, "besked" is correct for "message."
+YES
+The Danish word "Singér" is incorrect; the verb "to sign" in this context should be "Underskriv." "Singér" does not exist in Danish and resembles the English word "sign" with a French diacritic.
 
-Correct translation:  
-Signér besked
+Correct translation:
+Underskriv besked
 ```
 
 ```
         <source>watch-only</source>
         <translation>kigge</translation>
     
-YES
-The Danish translation "kigge" means "to look" or "to peek," which does not accurately convey the technical term "watch-only" in the context of Bitcoin (referring to addresses or wallets that can be watched but not spent from). A more appropriate Danish translation would be "kun overvågning" or "kun til overvågning," which better captures the meaning of "watch-only."
+YES  
+The translation "kigge" is inaccurate. "Watch-only" in Bitcoin wallet contexts refers specifically to addresses or wallets that can only be monitored (watched), not spent from. The Danish term "kigge" just means "look" or "watch" in an informal sense and does not capture the wallet context.
 
 Correct translation:
-kun overvågning
+kun-visning
 ```
 
 ```
         <source>Inputs</source>
         <translation>Input</translation>
     
-YES  
-The English source "Inputs" is plural, while the Danish translation "Input" is singular or an uninflected loanword form. The correct Danish plural form should be "Indgange" or "Indtastninger" depending on context. Given the Bitcoin context, "Inputs" refers to transaction inputs, so "Indgange" is appropriate.
+YES
+The translation is incorrect. "Inputs" in English is plural, but "Input" in Danish is singular. The correct Danish translation is "Indgange".
 
-Correct translation:  
+Correct translation:
 Indgange
 ```
 
@@ -190,12 +179,12 @@ Indgange
         <source>true</source>
         <translation>sand</translation>
     
-YES  
-The Danish translation "sand" is incorrect for the English word "true." The correct translation should be "sand" spelled as "sand" in Danish means "sand" in English, the correct word for "true" in Danish is "sand" with all lowercase but it is a false friend here. The word "true" in English translates to "sand" in Danish is false. Actually, in Danish "true" is translated as "sand", so the translation is correct. However, "sand" is lowercase in the translation but the source is lowercase as well, so that's consistent. There is no whitespace or format specifiers issues.
+YES
+The translation is incorrect. The English word "true" should be translated as "sand" only if "sand" means "true" in Danish, which it does not. The correct Danish translation for "true" is "sand", but only as an adjective meaning "true" as in "truthful". However, in programming or logical contexts, "true" is typically left untranslated or translated as "sand".
 
-Wait, but the example shows this is for 'da' (Danish), and "true" translates as "sand" in Danish. That is correct.
+Given the context of Bitcoin software, "true" may refer to a Boolean value, in which case "sand" is technically correct in Danish. However, usage varies: sometimes "true" is left untranslated, while "sand" is the correct literal translation. Since "sand" is used in Danish for Boolean "true", the translation is accurate.
 
-Therefore, the translation is accurate and correct.
+Therefore, the translation can be considered unproblematic.
 
 NO
 ```
@@ -204,129 +193,102 @@ NO
         <source>watch-only</source>
         <translation>kigge</translation>
     
-YES
-The Danish translation "kigge" means "to look" or "to peek," which does not accurately convey the technical term "watch-only" in the context of Bitcoin (referring to addresses or wallets that can be watched but not spent from). A more appropriate Danish translation would be "kun overvågning" or "kun til overvågning," which better captures the meaning of "watch-only."
+YES  
+The translation "kigge" is inaccurate. "Watch-only" in Bitcoin wallet contexts refers specifically to addresses or wallets that can only be monitored (watched), not spent from. The Danish term "kigge" just means "look" or "watch" in an informal sense and does not capture the wallet context.
 
 Correct translation:
-kun overvågning
+kun-visning
 ```
 
 ```
         <source>Copy full transaction details</source>
         <translation>Kopiér alle transaktion oplysninger </translation>
     
-YES  
-There is an unnecessary trailing space at the end of the translation. The correct translation without extra whitespace is:  
-Kopiér alle transaktionsoplysninger
+YES
+There is a whitespace formatting issue: there is an unnecessary space at the end of the translation. Also, a better translation for "full transaction details" would be "fulde transaktionsdetaljer". The current translation ("alle transaktion oplysninger") is understandable but less precise.
+
+Correct translation:
+Kopiér fulde transaktionsdetaljer
 ```
 
 ```
         <source>Watch-only</source>
         <translation>Kigge</translation>
     
-YES  
-The Danish translation "Kigge" is not accurate for the context of Bitcoin "Watch-only." In Bitcoin terminology, "Watch-only" refers to addresses that can be monitored but not spent from. The correct Danish term commonly used is "Kun overvågning" or "Overvågningsadresse."   
-Correct translation:  
-Kun overvågning
+YES
+The translation "Kigge" is inaccurate. "Watch-only" in the context of Bitcoin wallets refers to addresses or wallets that can be watched but not spent from. The correct Danish translation should be "Kun visning" or "Kun se".
+
+Correct translation:
+Kun visning
 ```
 
 ```
         <source>Exporting Successful</source>
         <translation>Eksport problemfri</translation>
     
-YES  
-The Danish translation is incorrect and unnatural. "Eksport problemfri" directly translates back to "Export problem-free," which is not idiomatic Danish nor a proper way to say "Exporting Successful."  
+YES
+The Danish translation "Eksport problemfri" does not accurately convey "Exporting Successful". "Problemfri" means "trouble-free", but it's not idiomatic here, and the verb "Exporting" should be translated more precisely.
 
-A correct Danish translation would be:  
-"Eksport gennemført"  
-or  
-"Export gennemført" (though 'Eksport' is more commonly used).  
-
-Therefore, the corrected translation should be:  
-Eksport gennemført
+Correct translation:
+Eksporten var vellykket
 ```
 
 ```
         <source>Backup Successful</source>
         <translation>Sikkerhedskopiering problemfri</translation>
     
-YES
-The Danish translation "Sikkerhedskopiering problemfri" is not natural and is awkward. A better translation would be "Sikkerhedskopiering lykkedes" or "Sikkerhedskopi succesfuld" to convey "Backup Successful" clearly and correctly.
+YES  
+The phrase "Sikkerhedskopiering problemfri" is not idiomatic Danish for "Backup Successful". The word "problemfri" translates as "trouble-free" or "problem free", which does not accurately convey the same meaning as "successful" in this context.
 
-Correct translation:
-Sikkerhedskopi succesfuld
+Correct translation:  
+Sikkerhedskopiering fuldført  
+or  
+Sikkerhedskopiering lykkedes
 ```
 
 ```
         <source>Error: Dumpfile identifier record is incorrect. Got "%s", expected "%s".</source>
         <translation>Fejl: Dumpfilformat dokument er forkert. Fik "%s", forventet "%s".</translation>
     
-YES  
-The translation is slightly inaccurate. The source refers to an "identifier record" which means a specific record or entry identifying the dumpfile, whereas the translation "Dumpfilformat dokument" translates roughly to "dump file format document," which changes the meaning. A more accurate translation would maintain the focus on the "identifier record" being incorrect.
+YES
+The Danish translation is slightly inaccurate. "Dumpfilformat dokument" does not match the source's "Dumpfile identifier record". The word "identifier record" should be translated more directly (e.g., "identifikatorpost" or "identifikationspost"). The rest of the phrase is acceptable, but "dokument" introduces confusion.
 
-Correct translation:  
-Fejl: Dumpfilens identifikationspost er forkert. Fik "%s", forventet "%s".
-```
-
-```
-        <source>This is the maximum transaction fee you pay (in addition to the normal fee) to prioritize partial spend avoidance over regular coin selection.</source>
-        <translation>Dette er det maksimale transaktionsgebyr, du betaler (ud over det normale gebyr) for, at prioritere partisk forbrugsafvigelse over almindelig møntudvælgelse.</translation>
-    
-YES  
-The Danish translation contains a mistranslation of "partial spend avoidance." The phrase "partisk forbrugsafvigelse" translates to "biased consumption deviation," which is incorrect and confusing in this context. The correct term should reflect the concept of avoiding partial spends (i.e., "delvis forbrug" or "undgåelse af delvis forbrug"). Also, no extra spaces or format specifier errors are present.
-
-Correct translation:  
-Dette er det maksimale transaktionsgebyr, du betaler (ud over det normale gebyr) for at prioritere undgåelse af delvist forbrug frem for almindelig møntudvælgelse.
+Correct translation:
+Fejl: Dumpfilidentifikatorpost er forkert. Fik "%s", forventede "%s".
 ```
 
 ```
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>Nødt til at angive en port med -whitebinde: “%s”</translation>
     
-YES  
-The translation contains an error in the word "-whitebinde," which incorrectly adds an "e" at the end. The correct term is "-whitebind," matching the source exactly. Additionally, quotation marks should be consistent and standard double quotes. The spacing and format specifiers are correct.
+YES
+The translation contains a typographical error with the option "-whitebinde" instead of the correct "-whitebind" from the English source. Also, the quotation marks are different from the standard ones used in the source ("%s" vs. “%s”).
 
-Correct translation:  
-Nødt til at angive en port med -whitebind: "%s"
+Correct translation:
+Nødt til at angive en port med -whitebind: '%s'
 ```
 
 ```
         <source>This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Dette er transaktionsgebyret, som betaler, når du sender en transaktion.</translation>
     
-YES  
-The Danish translation implies "which pays" (som betaler), incorrectly attributing the action of paying to the fee rather than to the user. It should indicate that the user will pay the fee. Correct translation:  
+YES
+The translation omits the subject 'du' (you) before 'betaler'. It should explicitly state who pays the fee for clarity.
+
+Correct translation:
 Dette er transaktionsgebyret, som du betaler, når du sender en transaktion.
-```
-
-```
-        <source>Transaction needs a change address, but we can't generate it.</source>
-        <translation>Transaktionen behøver en byttepenge adresse, men vi kan ikke generere den.</translation>
-    
-YES  
-The Danish translation uses "byttepenge adresse" which is incorrect and unnatural in this context. The correct term for "change address" in the context of Bitcoin transactions is "ændringsadresse" or simply "change-adresse." Also, "Transaktionen" should be singular "Transaktionen" is German; the correct Danish word is "Transaktionen" (note: in Danish "transaktion" is singular, "transaktioner" plural, so "Transaktion" singular would be correct). Here it should be singular as in the source ("Transaction").
-
-Correct translation:  
-Transaktionen har brug for en ændringsadresse, men vi kan ikke generere den.
 ```
 
 ```
         <source>Unable to generate keys</source>
         <translation>U-istand til at generere nøgler</translation>
     
-YES  
-The Danish translation is incorrect. "U-istand" is not a proper Danish word, and the correct translation for "Unable to generate keys" should be:  
-"Kan ikke generere nøgler"
-```
+YES
+The translation contains an error. "U-istand" is not correct Danish. The correct phrase in Danish for "Unable to" is "Kan ikke".
 
-```
-        <source>Unknown change type '%s'</source>
-        <translation>Ukendt byttepengetype ‘%s’</translation>
-    
-YES  
-The translation uses the wrong word "byttepengetype" for "change type". In the Bitcoin context, "change" refers to the leftover amount in a transaction and should be translated as "ændring" or "change" related terms, not "byttepenge" (which means actual physical change like coins). Furthermore, the quotes around %s should be standard ASCII single quotes ('%s'), not the curved quotes (‘%s’), to maintain format consistency.
-
-Correct translation:  
-Ukendt ændringstype '%s'
+Correct translation:
+Kan ikke generere nøgler
 ```
 </details>
+
+Number of issues: 24.

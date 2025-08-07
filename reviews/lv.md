@@ -13,21 +13,29 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Ievadiet savu paroli Jūsu maciņam, lūdzu lietojiet vismaz desmit simbolus, astoņus vai vairāk vārdus.</translation>
     
-YES  
-The translation is incomplete and omits important formatting and emphasis from the source. Specifically, the source instructs to enter a new passphrase and use either ten or more random characters or eight or more words, with parts emphasized in bold and separated by a line break. The translation merges these instructions into a single sentence without specifying that a new passphrase is needed, missing the formatting, and without correctly replicating the conditional "or" phrase.
+YES
+The Latvian translation does not closely follow the source text's structure and misses important information:
 
-Correct translation:  
-Ievadiet jauno paroli maciņam.&lt;br/&gt;Lūdzu, lietojiet paroli ar &lt;b&gt;desmit vai vairāk nejaušiem simboliem&lt;/b&gt; vai &lt;b&gt;astoņiem vai vairāk vārdiem&lt;/b&gt;.
+1. The instruction of "ten or more random characters" and "eight or more words" is combined ambiguously, losing the "random" property for characters.
+2. The translation omits the HTML tags (&lt;br/&gt;, &lt;b&gt;), which could affect formatting.
+3. The pronoun switch ("savu" and "Jūsu") is inconsistent and unnecessary.
+4. "Please use" is translated as a continuous clause rather than a separate instruction.
+5. The direct connection between the requirements (symbols and words) is somewhat unclear.
+
+Correct translation:
+Ievadiet jauno maciņa paroli.&lt;br/&gt;Lūdzu, izmantojiet paroli ar &lt;b&gt;vismaz desmit nejaušiem simboliem&lt;/b&gt; vai &lt;b&gt;vismaz astoņiem vārdiem&lt;/b&gt;.
 ```
 
 ```
         <source>Port:</source>
         <translation>Ports:</translation>
     
-YES  
-The original English text "Port:" is singular and refers to a single port, while the Latvian translation "Ports:" is plural (means "Ports:"). The correct translation should be singular to match the source.  
+YES
+The translation "Ports:" is incorrect because the English word "Port:" (singular) should be translated to the Latvian singular form "Ports:". However, "ports" in Latvian (meaning a network port) is indeed "ports", but without the plural "s" if it is singular, and Latvian would often keep the word "Ports:" with a capital P to match English layout.
 
-Correct translation:  
+Correct translation:
 Ports:
 ```
 </details>
+
+Number of issues: 2.

@@ -14,10 +14,10 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <translation>Pulqabınızı şifrədən çıxarmaq istədiyinizə əminsiniz?</translation>
     
 YES
-The translation is incorrect. The English source asks if the user wants to encrypt (şifrələmək) the wallet, but the translation asks if the user wants to decrypt (şifrədən çıxarmaq) it, which is the opposite meaning.
+The translation is incorrect. The English source asks about encrypting (locking/protecting) the wallet, but the translation means "Are you sure you wish to decrypt your wallet?" which is the opposite.
 
 Correct translation:
-Pulqabınızı şifrələmək istədiyinizə əminsiniz?
+Cüzdanınızı şifrələmək istədiyinizə əminsiniz?
 ```
 
 ```
@@ -25,12 +25,10 @@ Pulqabınızı şifrələmək istədiyinizə əminsiniz?
         <translation>Yığın</translation>
     
 YES
-The translation is incorrect. "Yığın" means "Stack" or "Heap" in Azerbaijani and does not correspond to "Minimize". The correct translation should be:
-
-"Daxil et" or "Kiçilt" depending on context, but for UI buttons, "Minimize" is best translated as "Kiçilt".
+The translation "Yığın" means "Stack" or "Pile" in Azerbaijani, which is incorrect for the English term "Minimize". The correct translation for "Minimize" in Azerbaijani (Latin) would be "Minimize et" or simply "Kiçilt".
 
 Correct translation:
-<translation>Kiçilt</translation>
+Kiçilt
 ```
 
 ```
@@ -39,10 +37,10 @@ Correct translation:
         <translation>İnternet bağlantısı söndürülüb.</translation>
     
 YES
-The translation is inaccurate. "Network activity" should be translated more precisely as "Şəbəkə fəaliyyəti" rather than "İnternet bağlantısı". The current translation suggests "Internet connection," which is not the intended technical meaning.
+The translation "İnternet bağlantısı söndürülüb." inaccurately translates "Network activity disabled." The word "İnternet bağlantısı" specifically refers to "Internet connection," not "network activity" in general, and "söndürülüb" is not a standard Azerbaijani word (it should be "söndürülüb" or better, "deaktiv edilib / söndürülüb"). There is also a slight typographical issue with the verb ending.
 
 Correct translation:
-Şəbəkə fəaliyyəti söndürülüb.
+Şəbəkə fəaliyyəti deaktiv edilib.
 ```
 
 ```
@@ -50,10 +48,10 @@ Correct translation:
         <translation>Eyniləşdirildi</translation>
     
 YES
-"Eyniləşdirildi" translates to "Updated," which is not the same as "Up to date." The correct translation for "Up to date" in Azerbaijani (Latin script) would be "Aktualdır" or "Güncəldir."
+The translation "Eyniləşdirildi" means "Synchronized" or "Updated" in Azerbaijani, but "Up to date" is better translated as "Güncəldir" or "Son vəziyyətdədir". "Eyniləşdirildi" implies a completed action rather than a current state.
 
 Correct translation:
-Aktualdır
+Güncəldir
 ```
 
 ```
@@ -61,7 +59,7 @@ Aktualdır
         <translation>Qismən imzalanmış Bitcoin köçürmələrini yükləyin</translation>
     
 YES
-There is a minor issue: The source is singular ("Transaction"), but the translation is plural ("köçürmələrini" = "transactions"). It should match the singular in the original.
+The translation has a subtle inaccuracy. The English source refers to loading "a" (singular) "Partially Signed Bitcoin Transaction" (PSBT), but the translation uses the plural "köçürmələrini" (transactions).
 
 Correct translation:
 Qismən imzalanmış Bitcoin köçürməsini yükləyin
@@ -72,12 +70,10 @@ Qismən imzalanmış Bitcoin köçürməsini yükləyin
         <translation>Bitcoin açın: URI</translation>
     
 YES
-The translation has a word order issue. In Azerbaijani, the correct form should be: "Bitcoin URI açın" or "Bir bitcoin URI açın". The given translation "Bitcoin açın: URI" is misleading and ungrammatical.
+The translation does not accurately reflect the original English meaning. "Bitcoin açın: URI" is not idiomatic in Azerbaijani and is unclear; also, "açın" is imperative "open!" and does not match the infinitive/noun phrase structure. Additionally, the format differs: the placement of "bitcoin:" should be preserved as part of the URI scheme, not translated as "Bitcoin".
 
 Correct translation:
-Bir bitcoin URI açın
-or
-Bitcoin URI açın
+Bitcoin: URI-ni açın
 ```
 
 ```
@@ -85,10 +81,10 @@ Bitcoin URI açın
         <translation>seçim</translation>
     
 YES
-The translation "seçim" does not accurately convey the meaning of "(un)select all". "Seçim" means "selection" in Azerbaijani, but the appropriate translation should reflect the action of selecting or deselecting all items.
+The translation is incorrect and does not capture the meaning of "(un)select all". "seçim" simply means "selection" and does not convey the instruction to select or deselect all.
 
 Correct translation:
-Hamısını seç / seçimdən çıxar
+Hamısını seç/deselect et
 ```
 
 ```
@@ -96,9 +92,11 @@ Hamısını seç / seçimdən çıxar
         <translation>QB</translation>
     
 YES
-The abbreviation "GB" stands for "Gigabyte" and is commonly used internationally without translation, even in Azerbaijani (az@latin). "QB" does not have meaning in this context and is incorrect.
+The translation is problematic. 'GB' stands for 'gigabyte', and in Azerbaijani (Latin), it is also rendered as 'GB'. 'QB' is incorrect and does not represent 'gigabyte'.
 
 Correct translation:
 GB
 ```
 </details>
+
+Number of issues: 8.

@@ -13,8 +13,10 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>New</source>
         <translation>新增 N</translation>
     
-YES  
-The translation includes an extraneous "N" which is not present in the source text and is unnecessary. The correct translation should simply be:  
+YES
+The translation includes the character "N", which is likely unintended and not part of the correct translation for "New". "新增" alone means "Add" or "New" in Hong Kong Chinese and suffices for UI purposes. There are no format specifiers in the source, so none are required in the translation.
+
+Correct translation:
 新增
 ```
 
@@ -23,8 +25,9 @@ The translation includes an extraneous "N" which is not present in the source te
         <translation>複製 C</translation>
     
 YES
-The translation includes an unnecessary and incorrect trailing " C" which does not appear in the source text. The correct translation should simply be:
+The translation "複製 C" is incorrect. The "C" is unnecessary and likely a typo. The correct translation is simply "複製".
 
+Correct translation:
 複製
 ```
 
@@ -33,7 +36,7 @@ The translation includes an unnecessary and incorrect trailing " C" which does n
         <translation>關閉 l</translation>
     
 YES
-The translation contains an extraneous character "l" at the end, which is not part of the correct translation. The correct translation for "Close" is simply "關閉".
+The translation contains an extraneous "l" at the end, which is erroneous and could confuse users.
 
 Correct translation:
 關閉
@@ -43,10 +46,10 @@ Correct translation:
         <source>Export</source>
         <translation>匯出 E</translation>
     
-YES  
-The translation "匯出 E" is problematic because the English word "Export" should be fully translated without adding extraneous characters like "E". The character "E" appears to be mistakenly included and is not appropriate in this context.
+YES
+The translation "匯出 E" is problematic. The English source is simply "Export". "匯出 E" includes an unnecessary "E" at the end, which could confuse users.
 
-Correct translation:  
+Correct translation:
 匯出
 ```
 
@@ -54,8 +57,10 @@ Correct translation:
         <source>Delete</source>
         <translation>刪除 D</translation>
     
-YES  
-The translation contains an extraneous " D" at the end, which is not in the source text and appears to be a mistake or leftover from some editing process. The correct translation for "Delete" in traditional Chinese (Hong Kong) is simply:  
+YES
+The translation "刪除 D" contains an erroneous extra "D" at the end, which is not present in the English source and is not appropriate in Cantonese (zh_HK). 
+
+Correct translation:
 刪除
 ```
 
@@ -63,8 +68,8 @@ The translation contains an extraneous " D" at the end, which is not in the sour
         <source>Choose</source>
         <translation>選擇 h</translation>
     
-YES
-The translation contains an extraneous "h" character which is not part of the original text and likely a typo.
+YES  
+The translation contains an unwanted extraneous "h" character, which is not correct in the context and not present in the source text.
 
 Correct translation:
 選擇
@@ -75,7 +80,7 @@ Correct translation:
         <translation>複製地址 C</translation>
     
 YES
-The translation includes an extraneous " C" at the end which is not present in the source text. This is likely a typographical error.
+The translation adds an unnecessary "C" at the end, which is not present in the source and is incorrect. It may cause confusion.
 
 Correct translation:
 複製地址
@@ -85,11 +90,11 @@ Correct translation:
         <source>Copy Label</source>
         <translation>複製標記 L</translation>
     
-YES  
-The translation contains an extraneous "L" at the end which is not in the source text, making it inaccurate. Also, "Label" in this context (Bitcoin or UI) is usually translated as "標籤" rather than "標記". "複製標籤" is the more common and accurate translation for "Copy Label."
+YES
+The translation includes an erroneous "L" at the end, which does not exist in the source text. "標記" is an appropriate translation for "Label". No extra whitespace issue is present.
 
-Correct translation:  
-複製標籤
+Correct translation:
+複製標記
 ```
 
 ```
@@ -97,7 +102,7 @@ Correct translation:
         <translation>編輯 E</translation>
     
 YES
-The translation contains an unnecessary and incorrect trailing " E" which is not present in the source and likely erroneous.
+The translation includes an unnecessary "E" at the end, which is not required in Cantonese ('zh_HK'). The correct translation should simply be:
 
 Correct translation:
 編輯
@@ -108,18 +113,20 @@ Correct translation:
         <translation>继续</translation>
     
 YES
-The translation uses Simplified Chinese ("继续"), while 'zh_HK' typically requires Traditional Chinese characters. The correct Traditional Chinese translation should be "繼續".
+The translation "继续" is in Simplified Chinese (zh_CN), not Traditional Chinese as used in Hong Kong (zh_HK). The correct Traditional Chinese translation should be:
+
+繼續
 ```
 
 ```
         <source>An internal error occurred. %1 will attempt to continue safely. This is an unexpected bug which can be reported as described below.</source>
         <translation>發生了內部錯誤%1 將嘗試安全地繼續。 這是一個意外錯誤，可以按如下所述進行報告。</translation>
     
-YES  
-The translation has spacing issues: there should be a space after "錯誤" before "%1" and no extra spaces after the period before "這是一個意外錯誤". Also, "意外錯誤" is slightly less natural than "意外錯誤" (acceptable), but "意外錯誤" is okay. The phrase "按如下所述進行報告" is acceptable but could be more natural as "按照以下說明報告".
+YES
+There is a missing punctuation mark after "發生了內部錯誤". The English sentence separates the two clauses with a period, but the translation omits it, which can cause confusion. Also, there should be no extra space before "這是一個意外錯誤...".
 
-Correct translation:  
-發生了內部錯誤。%1 將嘗試安全地繼續。這是一個意外漏洞，可以按照以下說明進行報告。
+Correct translation:
+發生了內部錯誤。%1 將嘗試安全地繼續。這是一個意外錯誤，可以按如下所述進行報告。
 ```
 
 ```
@@ -127,7 +134,7 @@ Correct translation:
         <translation>自定义...</translation>
     
 YES
-The translation uses simplified Chinese characters "自定义", which is more common in Simplified Chinese (zh_CN). The requested language variant is zh_HK (Traditional Chinese used in Hong Kong), so the phrase should be translated using Traditional Chinese characters. Additionally, the English ellipsis "…" should be preserved as the single character ellipsis (U+2026), not three periods "..." to maintain formatting consistency.
+The translation uses simplified Chinese ("自定义...") instead of traditional Chinese as expected for 'zh_HK'. Also, the ellipsis character "…" in the source should be preserved in the translation for typographical accuracy.
 
 Correct translation:
 自訂…
@@ -138,10 +145,10 @@ Correct translation:
         <extracomment>Peer connection type established manually through one of several methods.</extracomment>
         <translation>手册</translation>
     
-YES  
-The translation "手册" is more commonly used in Simplified Chinese and refers to a "manual" as a booklet or guide. In Traditional Chinese used in Hong Kong, "Manual" in the context of a peer connection type established manually should be translated as "手動" which means "manual" (done by hand or manually).  
+YES
+The translation "手册" means "manual" as in a user guide or handbook, not "manual" as in "done by hand/manually" which is the intended meaning in this context (connection type established manually).
 
-Correct translation:  
+Correct translation:
 手動
 ```
 
@@ -150,10 +157,10 @@ Correct translation:
         <extracomment>Short-lived peer connection type that tests the aliveness of known addresses.</extracomment>
         <translation>触须</translation>
     
-YES  
-The translation "触须" literally means "tentacle" or "feelers" used in a biological sense, which may be confusing in the context of Bitcoin peer connections. A better translation should convey the idea of a short, testing connection, such as "探测连接" (probe connection) or "测试连接" (test connection).
+YES
+The translation "触须" literally means "tentacle" or "antenna", which is not commonly used in Hong Kong Chinese for this network context. The correct translation in the context of Bitcoin (a connection that "feels/test probes" an address) should be more descriptive and locally accurate. In zh_HK, it would be clearer to use "探测连接" or "测试连接".
 
-Correct translation:  
+Correct translation:
 探测连接
 ```
 
@@ -162,7 +169,7 @@ Correct translation:
         <translation>總覽 O</translation>
     
 YES
-The translation contains an extraneous character " O" after the correct word "總覽". This appears to be a typo or accidental insertion.
+The translation includes an extraneous "O" at the end that is not present in the source text, which is an error. The correct translation is:
 
 Correct translation:
 總覽
@@ -173,7 +180,7 @@ Correct translation:
         <translation>交易 T</translation>
     
 YES
-The translation contains an extraneous "T" character, which is not present in the source and is unnecessary.
+The translation includes an unnecessary "T" character at the end, which is not present in the original source and may confuse users.
 
 Correct translation:
 交易
@@ -184,8 +191,9 @@ Correct translation:
         <translation>結束 x</translation>
     
 YES
-The translation includes an extraneous " x" which is not present in the source and is unnecessary. The correct translation should simply be:
+The translation contains an unnecessary "x" character, which is not present in the source and could confuse users. The word "結束" alone is accurate for "Exit" in zh_HK.
 
+Correct translation:
 結束
 ```
 
@@ -193,10 +201,10 @@ The translation includes an extraneous " x" which is not present in the source a
         <source>About %1</source>
         <translation>關於 %1 A</translation>
     
-YES  
-The translation contains an erroneous extra character "A" at the end, which is not present in the source text and is unnecessary.
+YES
+The translation includes an unwanted stray "A" at the end, which is not present in the original English source. This is an error.
 
-Correct translation:  
+Correct translation:
 關於 %1
 ```
 
@@ -204,10 +212,9 @@ Correct translation:
         <source>About Qt</source>
         <translation>關於 Qt Q</translation>
     
-YES  
-There is an erroneous extra "Q" at the end of the translation which is not in the source text and should be removed.
+YES
+The translation incorrectly includes "Q" at the end, which does not belong. The correct translation should be:
 
-Correct translation:  
 關於 Qt
 ```
 
@@ -215,10 +222,10 @@ Correct translation:
         <source>Send</source>
         <translation>付款 S</translation>
     
-YES  
-The English source "Send" is translated as "付款 S", which is problematic because it includes an extraneous "S" at the end that should not be there. The correct translation for "Send" in this context (usually a button or command in a Bitcoin wallet) is simply "付款".  
+YES
+The translation is problematic. "付款" means "payment" or "to pay", which is acceptable, but the appended " S" at the end is unnecessary and incorrect. It may have been an accidental leftover.
 
-Correct translation:  
+Correct translation:
 付款
 ```
 
@@ -227,7 +234,7 @@ Correct translation:
         <translation>收款 R</translation>
     
 YES
-The translation "收款 R" includes an extraneous "R" which is not present in the source and is out of place. The correct and concise translation for "Receive" in the context of Bitcoin (e.g., receiving funds) is simply "收款".
+The translation "收款 R" contains an unnecessary "R" at the end, which does not belong in the user-facing translation and is not present in the source text. 
 
 Correct translation:
 收款
@@ -238,7 +245,7 @@ Correct translation:
         <translation>备份钱包(B)</translation>
     
 YES  
-The translation "备份钱包(B)" is problematic for Hong Kong Chinese (zh_HK) because it uses Simplified Chinese characters ("备份") rather than Traditional Chinese characters, which are standard in Hong Kong. Additionally, the "(B)" is unnecessary unless it relates to a mnemonic or shortcut that was present in the original source, which it is not — the source text is simply "Backup Wallet…", without any shortcut hint.
+The translation is in Simplified Chinese ("备份钱包"), not Traditional Chinese as used in Hong Kong ('zh_HK'). Furthermore, the "…", which is the ellipsis character, is omitted; and the accelerator key "(B)" is added, which is not present in the source.
 
 Correct translation:  
 備份錢包…
@@ -248,19 +255,22 @@ Correct translation:
         <source>Change Passphrase…</source>
         <translation>修改密码(C)</translation>
     
-YES  
-The English source "Change Passphrase…" is translated as "修改密码(C)". There are issues here:  
-1. The ellipsis "…" is missing in the translation, which indicates that clicking this option would open a dialog or further steps. It should be kept or properly represented.  
-2. The "(C)" looks like an access key or mnemonic indicator for keyboard shortcut, but it's not explained or standard in the original. If it's intentional, the English source should have a corresponding indication. Otherwise, it should be removed.  
-3. The term "密码" (password) is a less accurate translation of "Passphrase" in the Bitcoin context, where "Passphrase" is often a longer or more complex security string, and may be better translated as "口令" or "密码短语". However, "密码" is commonly accepted as well. This is acceptable but could be improved.  
+YES
+The translation "修改密码(C)" is problematic for 'zh_HK' (Hong Kong Chinese). 
 
-Suggested correct translation:  
-"修改口令…" or "更改口令…"  
+1. 'Passphrase' should be rendered as「密碼短語」or「密碼片語」in the context of Bitcoin and crypto applications, as it is distinct from a simple 'password'（密碼）. Translating it as '密码' could mislead users.
+2. The '(C)' shortcut marking does not fit the native zh_HK Windows/Mac style—it is neither needed nor local.
+3. The ellipsis ("…") is missing in the translation.
+4. '修改' is accurate for "change", but see above about "Passphrase".
 
-If the "(C)" is intended as shortcut it should be clarified in source or else removed. Also ensure the ellipsis is kept.  
+Correct translation:
+更改密碼短語…
 
-Correct translation:  
-修改口令…
+or
+
+更改密碼片語…
+
+Either can be accepted as the standard for zh_HK, but 密碼短語 is more widely used.
 ```
 
 ```
@@ -268,10 +278,12 @@ Correct translation:
         <translation>从文件加载PSBT(L)...</translation>
     
 YES
-The ellipsis in the source "…" is a single Unicode character (U+2026), but the translation uses "(L)..." which is not appropriate and adds an unnecessary "(L)". The proper translation should maintain the ellipsis character and not add extra letters.
+There are two issues: 
+1. The translation uses Simplified Chinese character "从" instead of the customary Traditional Chinese used in Hong Kong, which should be "從". 
+2. The extra "(L)..." in the translation does not reflect the source and is unnecessary/unexplained.
 
-Correct translation:  
-从文件加载PSBT…
+Correct translation:
+從檔案載入PSBT…
 ```
 
 ```
@@ -279,10 +291,10 @@ Correct translation:
         <translation>打开URI...</translation>
     
 YES
-The ellipsis character in the source is a single Unicode ellipsis (…) which should be preserved in the translation for consistency and proper formatting. The translation uses three periods (...) instead, which is a formatting issue.
+The translation uses simplified Chinese ('打开'), which is 'zh_CN', not traditional Chinese as used in Hong Kong ('zh_HK'). Also, the ellipsis should match the source (which uses the Unicode ellipsis ‘…’ rather than three dots).
 
 Correct translation:
-打开URI…
+開啟 URI…
 ```
 
 ```
@@ -290,7 +302,7 @@ Correct translation:
         <translation>关闭钱包...</translation>
     
 YES
-The translation uses simplified Chinese "关闭钱包..." rather than traditional Chinese, which is standard for 'zh_HK'. Also, the ellipsis in the source is the single-character horizontal ellipsis (…) U+2026, while the translation uses three dots "...", which is less correct in formal writing.
+The translation uses Simplified Chinese characters and an ellipsis made of three periods (...), while the target should be in Traditional Chinese for 'zh_HK', and the ellipsis in Chinese is usually "…" (U+2026). Furthermore, "关闭" (close) is Simplified; in Hong Kong Traditional Chinese, "關閉" should be used.
 
 Correct translation:
 關閉錢包…
@@ -301,10 +313,10 @@ Correct translation:
         <translation>创建钱包...</translation>
     
 YES
-The original English uses an ellipsis character (…) which is a single Unicode character (U+2026), but the translation uses three periods (...). Also, the ellipsis is better preserved for consistency and professional appearance.
+The translation uses Simplified Chinese characters "创建钱包...", which is typical for 'zh_CN', not 'zh_HK'. In Cantonese as used in Hong Kong, Traditional Chinese characters should be used. Also, the ellipsis should be the full-width ellipsis (…).
 
 Correct translation:
-创建钱包…
+建立錢包…
 ```
 
 ```
@@ -312,7 +324,7 @@ Correct translation:
         <translation>檔案 F</translation>
     
 YES
-The translation contains a problematic addition of " F" which is not present in the source text and is unnecessary. The correct translation for "File" in Traditional Chinese (Hong Kong) is simply "檔案".
+The translation "檔案 F" incorrectly includes an extra "F", which is not present in the source and is not standard in Hong Kong Cantonese UI texts. It may have been an attempt to indicate a keyboard shortcut, but it is not correct in this context.
 
 Correct translation:
 檔案
@@ -323,7 +335,7 @@ Correct translation:
         <translation>設定 S</translation>
     
 YES
-The translation contains an extra character "S" which is unnecessary and incorrect.
+The translation "設定 S" contains an unnecessary "S" at the end, which is not appropriate in Cantonese or traditional Chinese as used in Hong Kong. It should simply be "設定".
 
 Correct translation:
 設定
@@ -334,8 +346,9 @@ Correct translation:
         <translation>說明 H</translation>
     
 YES
-The translation includes an extra character "H" that is not present in the source text and is unnecessary. The correct translation for "Help" in traditional Chinese, suitable for Hong Kong, is simply:
+The translation adds an inappropriate "H" character after the Chinese term for "Help" (說明). The "H" is not present in the source, could confuse users, and constitutes a format issue.
 
+Correct translation:
 說明
 ```
 
@@ -344,65 +357,66 @@ The translation includes an extra character "H" that is not present in the sourc
         <translation>连接到节点...</translation>
     
 YES
-The original English text uses an ellipsis character (…) (U+2026) to indicate an ongoing process, which is stylistically more appropriate than three ASCII dots. Also, the term "peers" in the Bitcoin context usually refers to other nodes or participants in the P2P network, and "节点" (nodes) is commonly used in traditional Chinese blockchain terminology.
-
-However, the translation uses three ASCII periods "..." instead of the ellipsis character "…".
+The translation uses Mainland Chinese characters and punctuation ("连接到节点..." with three periods), which is not appropriate for 'zh_HK' (Hong Kong). In zh_HK, it should use traditional Chinese characters and ideally an ellipsis (… or ……), and "节点" is usually rendered as "節點" in traditional Chinese.
 
 Correct translation:
-连接到节点…
+連接到節點…
+or
+正在連接到節點…
 ```
 
 ```
         <source>Sending addresses</source>
         <translation>付款地址(S)</translation>
     
-YES  
-The translation "付款地址(S)" is problematic. The original English text "Sending addresses" likely refers to addresses involved in sending Bitcoin, i.e., addresses from which Bitcoin is sent, not specifically "payment addresses". The addition of "(S)" is unexplained and out of place in the Chinese translation.
+YES
+The translation "付款地址(S)" contains an incorrect format specifier rendering; the "(S)" is unnecessary and misleading. Also, in Cantonese/Hong Kong context, "付款地址" is fine but more natural phrasing would be "付款地址" or "發送地址". No spam or unwanted content.
 
-A more accurate translation would be:  
-"發送地址"  
-
-This directly translates "Sending addresses" without adding unnecessary parts or losing meaning.
+Correct translation:
+付款地址
 ```
 
 ```
         <source>Open a bitcoin: URI</source>
         <translation>打开bitcoin:开头的URI</translation>
     
-YES  
-The translation uses simplified Chinese characters ("打开") which are more common in mainland China (zh_CN), whereas 'zh_HK' translations typically use traditional Chinese characters. Also, "bitcoin" should be capitalized as "Bitcoin" to match proper noun usage in Chinese. A more standard and natural translation in Hong Kong traditional Chinese would be:  
-**打開 Bitcoin: 開頭的 URI**
+YES
+The translation is written in simplified Chinese and does not use Hong Kong (traditional) characters or locale. Also, it's a bit literal.
+
+Correct translation:
+打開以 bitcoin: 開頭的 URI
 ```
 
 ```
         <source>Close wallet</source>
         <translation>卸载钱包</translation>
     
-YES  
-The translation "卸载钱包" means "uninstall wallet," which is not accurate for "Close wallet." The correct translation should convey simply closing or exiting the wallet, without implying removal or uninstallation.
+YES
+The translation "卸载钱包" means "Uninstall wallet," which is incorrect for "Close wallet." The correct translation for "Close wallet" in zh_HK should be "關閉錢包".
 
-Correct translation:  
-关闭钱包
+Correct translation:
+關閉錢包
 ```
 
 ```
         <source>Migrate a wallet</source>
         <translation>迁移一个钱包</translation>
     
-YES  
-The provided translation "迁移一个钱包" is in Simplified Chinese, which is mainly used in Mainland China. The requested language is 'zh_HK' which refers to Traditional Chinese as used in Hong Kong. Additionally, it is better to avoid using the numeral "一个" explicitly unless necessary in this context. A more natural and accurate translation in Traditional Chinese (Hong Kong) for "Migrate a wallet" is:
+YES
+The translation "迁移一个钱包" uses Simplified Chinese, while 'zh_HK' (Hong Kong Chinese) typically uses Traditional Chinese. Also, the measure word "一个" is more common in Mainland usage; in Hong Kong, "一個" is standard, but can be omitted.
 
-錢包遷移
+Correct translation:
+遷移錢包
 ```
 
 ```
         <source>Hide</source>
         <translation>躲</translation>
     
-YES  
-The translation "躲" means "to hide" in the sense of physically hiding oneself or avoiding something, which is somewhat informal or casual. In UI contexts, "Hide" is more commonly translated as "隱藏" in traditional Chinese (Hong Kong), which clearly conveys the action of hiding a UI element or information.  
+YES
+The translation "躲" means "to dodge" or "to hide (oneself physically)," which is not commonly used in user interfaces in Hong Kong Chinese. The term should be contextually appropriate for UI/UX, and the standard translation is "隱藏" for "Hide" in software menus or buttons.
 
-Correct translation:  
+Correct translation:
 隱藏
 ```
 
@@ -411,10 +425,10 @@ Correct translation:
         <extracomment>A context menu item. The network activity was disabled previously.</extracomment>
         <translation>關閉網路紀錄</translation>
     
-YES  
-The English source means to "Enable network activity," but the translation says "關閉網路紀錄," which means "Disable network logging," not enabling network activity. The translation is incorrect and misleading.
+YES
+The translation is incorrect. The English "Enable network activity" means to turn network activity back on, but the translation "關閉網路紀錄" means "Disable network record" or "Close network log." This is the opposite action, and also the wording is inaccurate (紀錄 = log/record, not activity).
 
-Correct translation:  
+Correct translation:
 啟用網絡活動
 ```
 
@@ -422,21 +436,21 @@ Correct translation:
         <source>Copy amount</source>
         <translation>复制和数量</translation>
     
-YES
-The translation "复制和数量" means "copy and amount," which is inaccurate given the source text "Copy amount." The correct translation should be concise and clearly convey the action "copy" related to "amount."
+YES  
+The translation is inaccurate. "复制和数量" means "Copy and amount," which changes the meaning and adds an unwarranted conjunction. The correct translation should simply mean "Copy amount," that is, copying the numerical value.
 
-Correct translation:
-复制金额
+Correct translation:  
+複製金額
 ```
 
 ```
         <source>Lock unspent</source>
         <translation>锁定未花费(O)</translation>
     
-YES  
-The translation "锁定未花费(O)" mixes Simplified Chinese characters ("锁定") with an unclear "(O)" suffix, which is not explained and does not appear in the source text. In traditional Chinese used in Hong Kong, "锁定" should be written as "鎖定". The "(O)" is inappropriate here and likely a leftover or a typo.
+YES
+The translation adds an "(O)" at the end, which is not present in the source text, and is not standard for zh_HK locale translations or English UI context (may be mistaken as a shortcut key indicator, which is not implied in the source). The rest of the translation is accurate.
 
-Correct translation:  
+Correct translation:
 鎖定未花費
 ```
 
@@ -444,10 +458,10 @@ Correct translation:
         <source>Migrate wallet</source>
         <translation>迁移钱包</translation>
     
-YES  
-The translation "迁移钱包" is in Simplified Chinese, whereas 'zh_HK' is expected to use Traditional Chinese used in Hong Kong. The proper Traditional Chinese translation should be "遷移錢包".  
+YES
+The translation uses simplified Chinese characters ("迁移钱包"), which are standard for 'zh_CN', not 'zh_HK'. 'zh_HK' should use traditional Chinese characters and often prefers "移轉" or "遷移" for "migrate".
 
-Correct translation:  
+Correct translation:
 遷移錢包
 ```
 
@@ -456,7 +470,7 @@ Correct translation:
         <translation>迁移钱包 &lt;b&gt;%1&lt;/b&gt;...</translation>
     
 YES
-The translation uses simplified Chinese characters ("迁移钱包") which is not appropriate for the zh_HK locale that typically uses Traditional Chinese characters. Also, the ellipsis used is three dots "..." instead of the proper Chinese ellipsis "…".
+The translation uses Simplified Chinese characters ("迁移") instead of Traditional Chinese, which is standard for 'zh_HK'. "迁移" should be "遷移" in Traditional Chinese. Also, the ellipsis should use the proper Chinese punctuation "…" (U+2026), matching the source.
 
 Correct translation:
 遷移錢包 &lt;b&gt;%1&lt;/b&gt;…
@@ -466,24 +480,22 @@ Correct translation:
         <source>Close wallet</source>
         <translation>卸载钱包</translation>
     
-YES  
-The translation "卸载钱包" means "uninstall wallet," which is not accurate for "Close wallet." The correct translation should convey simply closing or exiting the wallet, without implying removal or uninstallation.
+YES
+The translation "卸载钱包" means "Uninstall wallet," which is incorrect for "Close wallet." The correct translation for "Close wallet" in zh_HK should be "關閉錢包".
 
-Correct translation:  
-关闭钱包
+Correct translation:
+關閉錢包
 ```
 
 ```
         <source>Closing the wallet for too long can result in having to resync the entire chain if pruning is enabled.</source>
         <translation>启用修剪时，如果一个钱包被卸载太久，就必须重新同步整条区块链才能再次加载它。</translation>
     
-YES  
-The original English says "Closing the wallet for too long can result in having to resync the entire chain if pruning is enabled." The translation uses "卸载" which means "uninstall," which is incorrect here. It should refer to "closing" or "shutting" the wallet, not uninstalling it. Also, the phrase "必须重新同步整条区块链才能再次加载它" is a bit verbose and adds the concept of "loading it again" which is not explicitly in the original.
+YES
+The translation is in Simplified Chinese ('启用修剪时，如果一个钱包被卸载太久，就必须重新同步整条区块链才能再次加载它。') rather than in the zh_HK locale, which uses Traditional Chinese. The terminology should also be localized. 
 
-A more accurate translation would be:  
-“启用修剪功能时，钱包关闭时间过长可能需要重新同步整个区块链。”
-
-This keeps the meaning accurate and concise.
+Correct translation:
+啟用修剪功能時，如果錢包長時間關閉，可能需要重新同步整條區塊鏈。
 ```
 
 ```
@@ -491,14 +503,20 @@ This keeps the meaning accurate and concise.
         <translation>當你點擊「確認」，%1會開始下載，並從%3年最早的交易，處裡整個%4區塊鏈(大小:%2GB)</translation>
     
 YES  
-The translation has minor issues:  
-1. "確認" is acceptable but "確定" is more commonly used in Traditional Chinese UI for "OK".  
-2. There should be a space after punctuation marks for readability, especially before the parenthesis.  
-3. The phrase "處裡" is a typo; it should be "處理".  
-4. The source text specifically says "starting with the earliest transactions in %3 **when %4 initially launched**," but the translation only says "從%3年最早的交易" ("from the earliest transactions in year %3") without mentioning the "initial launch" context for %4. This subtle nuance is important and should be included for accuracy.  
+There are issues with accuracy, punctuation, and completeness:
+1. The phrase "starting with the earliest transactions in %3 when %4 initially launched" isn't fully and clearly conveyed.
+2. The word "處裡" is a common typo; the correct form is "處理".
+3. The punctuation and spacing are off: "區塊鏈(大小:%2GB)" should have a space after "區塊鏈" and parentheses should be full-width or match HK norms.
+4. The phrase "並從%3年最早的交易" introduces ambiguity and doesn't specify that %3 is a time.
+5. Missing full stop at the end.
 
-Correct translation:  
-當你點擊「確定」後，%1會開始下載並處理完整的%4區塊鏈（大小：%2 GB），從%4首次啟動時%3的最早交易開始。
+Correct translation:
+當你點擊「確認」，%1 會開始下載和處理整個 %4 區塊鏈（%2 GB），由 %4 最初推出時、%3 年的最早交易開始。
+
+Explanation:
+- The translation has been restructured for clarity and smoothness in Cantonese/HK written Chinese.
+- All format specifiers (%1, %2, %3, %4) have been preserved and placed appropriately.
+- Full-width brackets are used as per HK style, and space issues are fixed.
 ```
 
 ```
@@ -506,21 +524,10 @@ Correct translation:
         <translation>关于 %1</translation>
     
 YES
-The translation uses Simplified Chinese ("关于") instead of Traditional Chinese, which is the standard in the Hong Kong locale (zh_HK). The correct Traditional Chinese term for "About" in this context should be "關於".
+The translation uses Simplified Chinese ("关于") rather than Traditional Chinese as used in Hong Kong ('zh_HK'). In Hong Kong, "關於" is standard.
 
 Correct translation:
 關於 %1
-```
-
-```
-        <source>Start %1 on system login</source>
-        <translation>系统登入时启动 %1 (S)</translation>
-    
-YES
-The phrase "系统登入时启动 %1 (S)" includes an unnecessary "(S)" which does not appear in the source text and causes confusion. Also, the word order and terminology should better reflect natural and clear Traditional Chinese (Hong Kong) usage.
-
-Correct translation:
-系統登入時啟動 %1
 ```
 
 ```
@@ -528,10 +535,10 @@ Correct translation:
         <translation>网络(N)</translation>
     
 YES
-The Chinese translation uses simplified Chinese characters "网络" which is more appropriate for Mainland China (zh_CN), not Hong Kong (zh_HK). In Hong Kong, Traditional Chinese characters should be used. The correct Traditional Chinese translation for "Network" is "網絡" without the "(N)" which appears unnecessary and not typically used as a mnemonic clue in HK usage.
+The translation uses "网络", which is simplified Chinese. For 'zh_HK' (Hong Kong Chinese), the traditional form "網絡" should be used.
 
 Correct translation:
-網絡
+網絡(N)
 ```
 
 ```
@@ -540,21 +547,21 @@ Correct translation:
         <translation>这允许作为用户的你或第三方工具通过命令行和JSON-RPC命令行与节点通信。</translation>
     
 YES
-The translation has a redundancy issue with "命令行和JSON-RPC命令行" which repeats "命令行" twice unnecessarily. The source mentions "command-line and JSON-RPC commands," so it should be "命令行和JSON-RPC命令" without repeating "命令行."
+The translation uses Simplified Chinese ("这允许作为用户的你或第三方工具通过命令行和JSON-RPC命令行与节点通信。"), but 'zh_HK' should use Traditional Chinese characters. Additionally, "JSON-RPC命令行" is awkward; it should be "JSON-RPC 命令" (with a space) and "你作為用戶" would be a better phrasing in Traditional Chinese.
 
 Correct translation:
-這允許你或第三方工具通過命令行和JSON-RPC命令與節點通信。
+這允許你或第三方工具通過命令列和 JSON-RPC 命令與節點通訊。
 ```
 
 ```
         <source>Spend unconfirmed change</source>
         <translation>动用尚未确认的找零资金(S)</translation>
     
-YES  
-The translation adds "(S)" at the end, which does not appear in the source text and could confuse users. The phrase "找零资金" is fine but could be simplified to "找零" as commonly used in Hong Kong for "change" in Bitcoin contexts. Also, "动用" is a Mainland Chinese term; in Hong Kong, "使用" or "花费" is more common.  
+YES
+The translation is understandable but not accurate to Hong Kong Chinese (zh_HK) conventions. The use of “资金(S)” is not typical in Hong Kong, and the addition of “(S)” is unexplained and unnecessary. Also, "找零" is commonly used in Mainland Chinese, while Hong Kong Cantonese would prefer “找續”. 
 
-Correct translation:  
-使用未確認的找零
+Correct translation:
+動用未確認的找續
 ```
 
 ```
@@ -562,8 +569,9 @@ Correct translation:
         <translation>允许传入连接(G)</translation>
     
 YES
-The translation "允许传入连接(G)" is in Simplified Chinese, while 'zh_HK' translation should be in Traditional Chinese. Also, the source text does not include the "(G)" at the end, which seems incorrect and unrelated. The correct Traditional Chinese translation for "Allow incoming connections" is:
+The translation uses simplified Chinese characters ("允许") rather than traditional characters appropriate for 'zh_HK', and it also unnecessarily includes "(G)", which is not present in the source and could be confusing.
 
+Correct translation:
 允許傳入連線
 ```
 
@@ -572,10 +580,10 @@ The translation "允许传入连接(G)" is in Simplified Chinese, while 'zh_HK' 
         <translation>通过 SOCKS5 代理连接(默认代理):</translation>
     
 YES
-The translation uses simplified Chinese characters ("通过", "代理", "默认代理"), but 'zh_HK' typically uses traditional Chinese characters. Additionally, the punctuation should follow traditional Chinese usage, using full-width parentheses and colon.
+The translation is in Simplified Chinese ("通过 SOCKS5 代理连接(默认代理):") instead of Hong Kong Cantonese written in Traditional Chinese, which is the standard for 'zh_HK'. The parentheses used are also Western instead of the full-width punctuation typically used in Traditional Chinese texts.
 
-Correct translation:  
-透過 SOCKS5 代理連線（預設代理）：
+Correct translation:
+透過 SOCKS5 代理連線（預設代理）:
 ```
 
 ```
@@ -583,7 +591,9 @@ Correct translation:
         <translation>继续</translation>
     
 YES
-The translation uses Simplified Chinese ("继续"), while 'zh_HK' typically requires Traditional Chinese characters. The correct Traditional Chinese translation should be "繼續".
+The translation "继续" is in Simplified Chinese (zh_CN), not Traditional Chinese as used in Hong Kong (zh_HK). The correct Traditional Chinese translation should be:
+
+繼續
 ```
 
 ```
@@ -591,31 +601,32 @@ The translation uses Simplified Chinese ("继续"), while 'zh_HK' typically requ
         <translation>您当前在仅观察观察地址中的余额</translation>
     
 YES
-The translation contains a redundancy with "仅观察观察地址" ("watch-only watch address"), repeating "观察" twice, and the phrasing is unnatural. A proper translation would be:
+The translation contains a redundancy ("仅观察观察地址" — "watch-only watch addresses") and uses "当前" (Mainland Chinese) instead of the more Hong Kong-appropriate "現時". The translation is also awkward and not fully localized.
 
-您当前在仅观察地址中的余额
+Correct translation:
+您現時在僅供觀察地址中的結餘
 ```
 
 ```
         <source>Mined balance in watch-only addresses that has not yet matured</source>
         <translation>仅观察地址中尚未成熟的挖矿收入余额:</translation>
     
-YES  
-The translation includes a colon (:) at the end which is not present in the source text, adding unnecessary punctuation. Additionally, "仅观察地址" could be more naturally expressed as "僅監控地址" in Traditional Chinese used in Hong Kong. The phrase "挖矿收入余额" can be simplified to "挖礦餘額" to better fit the context.
+YES
+The translation uses Simplified Chinese ("仅观察地址中尚未成熟的挖矿收入余额:") instead of using the expected Hong Kong Traditional Chinese. Also, stylistically, the colon at the end is not present in the source.
 
-Correct translation:  
-僅監控地址中尚未成熟的挖礦餘額
+Correct translation:
+僅供觀察地址中尚未成熟的挖礦收入餘額
 ```
 
 ```
         <source>Current total balance in watch-only addresses</source>
         <translation>仅观察地址中的当前总余额</translation>
     
-YES  
-The translation uses Simplified Chinese ("仅观察地址中的当前总余额") instead of Traditional Chinese typically used in the 'zh_HK' locale. Also, "watch-only addresses" should be translated as "僅監視地址" or "僅觀察地址" in Traditional Chinese, but "仅" is Simplified Chinese. The phrasing can also be made more natural.
+YES
+The translation uses Simplified Chinese and a Mainland phrasing ("仅观察地址中的当前总余额") instead of Hong Kong Traditional style ('zh_HK'). It lacks proper localization and does not use traditional characters.
 
-Correct translation:  
-"監視地址中的當前總餘額"
+Correct translation:
+僅供觀察地址中的當前總餘額
 ```
 
 ```
@@ -623,19 +634,10 @@ Correct translation:
         <translation>拯救...</translation>
     
 YES
-The translation "拯救..." means "rescue/save (a person in distress)" in a context unrelated to saving a file or data. The correct translation for "Save…" in the context of saving a file or data should be "儲存…".  
-Correct translation: 儲存…
-```
+The translation is incorrect and problematic. "拯救" means "to rescue" or "to save (a life)" in Chinese, which is not appropriate for the context of a software menu "Save…" action. The correct term should be "儲存…", which is commonly used in Hong Kong Cantonese software for "Save…".
 
-```
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>无法启动 bitcoin: 协议的“一键支付”处理程序</translation>
-    
-YES
-The translation's meaning is somewhat altered and less natural. The source states that Bitcoin's "click-to-pay handler" cannot be started, but the translation reads as "Cannot start bitcoin: protocol's 'one-click payment' handler," which changes the nuance and adds "protocol" not present in the source.
-
-A more accurate and natural translation would be:
-無法啟動 bitcoin︰一鍵支付處理器
+Correct translation:
+儲存…
 ```
 
 ```
@@ -643,19 +645,23 @@ A more accurate and natural translation would be:
         <translation>复制图像(C)</translation>
     
 YES
-The translation uses Simplified Chinese characters "复制图像" instead of Traditional Chinese characters, which are standard in Hong Kong. Also, the "(C)" shortcut hint is not localized or confirmed as correct in the context of zh_HK. Typically, shortcuts are either preserved as Latin letters or adapted meaningfully, but "(C)" may confuse users. A better translation in Traditional Chinese would be:
+The translation uses Simplified Chinese characters ("复制图像") instead of Traditional Chinese, which is standard in 'zh_HK' (Hong Kong). Also, '复制' is not commonly used in Hong Kong; '複製' (Traditional) is preferred. The shortcut key "(C)" is often omitted in Cantonese UI, but if included, it should correspond to the local language.
 
-複製影像
+Correct translation:
+複製圖片
+
+or, if keeping the shortcut key:
+複製圖片(C)
 ```
 
 ```
         <source>Information</source>
         <translation>資訊 I</translation>
     
-YES  
-The translated text contains unnecessary and incorrect content. "資訊" alone is sufficient and correct for "Information" in Traditional Chinese used in Hong Kong. The added " I" is extraneous and likely a typo.
+YES
+The translation is incorrect. The addition of " I" after "資訊" is erroneous and does not belong in the translation.
 
-Correct translation:  
+Correct translation:
 資訊
 ```
 
@@ -664,8 +670,9 @@ Correct translation:
         <translation>内存池</translation>
     
 YES
-The translation uses Simplified Chinese characters "内存池," while for 'zh_HK' (Hong Kong), Traditional Chinese characters should be used. The correct Traditional Chinese translation is:
+The translation uses Simplified Chinese characters ("内存池") instead of Traditional Chinese as standard in Hong Kong ('zh_HK'). 
 
+Correct translation:
 記憶池
 ```
 
@@ -674,7 +681,7 @@ The translation uses Simplified Chinese characters "内存池," while for 'zh_HK
         <translation>(无)</translation>
     
 YES
-The translation uses simplified Chinese character "无" which is typical for Mainland China (zh_CN), whereas Hong Kong (zh_HK) typically uses traditional Chinese characters. The correct traditional Chinese translation for "(none)" is "(無)".
+The translation uses Simplified Chinese '(无)' instead of the Traditional Chinese '(無)' appropriate for 'zh_HK' (Hong Kong Chinese). 
 
 Correct translation:
 (無)
@@ -685,22 +692,20 @@ Correct translation:
         <translation>隐藏其他人的详细信息</translation>
     
 YES
-The translation "隐藏其他人的详细信息" literally means "Hide other people's detailed information," which introduces an unintended meaning. The source phrase "Hide Peers Detail" in the Bitcoin context likely refers to hiding the details about connected peers (nodes), not specifically "other people." 
+The translation is using simplified Chinese ("隐藏") instead of the Cantonese (Hong Kong) standard, which should use traditional Chinese characters. Also, "Peers" here refers to "nodes" or "peers" in a network context, not "other people". The translation "其他人的详细信息" is inaccurate; it means "the detailed info of other people".
 
-A more accurate and context-appropriate translation would be:
-"隐藏节点详情" or "隐藏节点详细信息"  
-
-This preserves the technical meaning without implying "people."
+Correct translation:
+隱藏同儕詳情
 ```
 
 ```
         <source>Decrease font size</source>
         <translation>缩小字体大小</translation>
     
-YES  
-The translation "缩小字体大小" is in Simplified Chinese, which is generally used in Mainland China (zh_CN), not Traditional Chinese as used in Hong Kong (zh_HK). The appropriate translation in Traditional Chinese (zh_HK) should use Traditional characters and phrasing more common in Hong Kong.
+YES
+The translation uses Simplified Chinese ("缩小字体大小") instead of Traditional Chinese, which is preferred for 'zh_HK' (Hong Kong). 
 
-Correct translation:  
+Correct translation:
 縮小字體大小
 ```
 
@@ -708,11 +713,11 @@ Correct translation:
         <source>Open</source>
         <translation>打开(O)</translation>
     
-YES  
-The translation uses Simplified Chinese characters "打开" instead of Traditional Chinese characters, which are standard in Hong Kong. Also, the "(O)" is inconsistent with typical Hong Kong software localization, where mnemonic hints are usually indicated without parentheses or by underlining the character directly.  
+YES
+The translation uses Simplified Chinese ('打开') and the Mainland China style for shortcuts ('(O)'), which is not appropriate for 'zh_HK' (Hong Kong Cantonese/Traditional Chinese). It should be in Traditional Chinese and, if a shortcut is included, follow Hong Kong conventions.
 
-Correct translation:  
-打開
+Correct translation:
+開啟
 ```
 
 ```
@@ -720,13 +725,11 @@ Correct translation:
         <extracomment>Explanatory text for a short-lived outbound peer connection that is used to request addresses from a peer.</extracomment>
         <translation>Outbound 地址取得: 用於短暫，暫時 測試地址</translation>
     
-YES  
-The phrase "Outbound 地址取得: 用於短暫，暫時 測試地址" is awkward and inaccurate. The original English refers to a short-lived outbound connection used for soliciting (requesting) addresses from a peer, not "testing addresses." The Chinese translation also has spacing issues with an unnecessary full-width space after the comma.
+YES
+The translation is inaccurate. "用於短暫，暫時 測試地址" means "used for a short time, temporary test address," which doesn't accurately convey "for soliciting addresses" (i.e., for requesting addresses). Also, there is an unnecessary space before "測試地址", and "Outbound" should be translated properly into Chinese.
 
-A better translation would be:  
-"Outbound 地址獲取：短暫， 用於向節點索取地址"  
-
-This conveys the idea of a short-lived outbound operation for requesting addresses. Also note the use of a colon with proper spacing and removing redundant words.
+Correct translation:
+Outbound 地址擷取：短暫使用，用於向對方請求地址
 ```
 
 ```
@@ -735,30 +738,20 @@ This conveys the idea of a short-lived outbound operation for requesting address
         <translation>复制地址(C)</translation>
     
 YES
-The translation includes an unnecessary keyboard shortcut indicator "(C)" which is not present in the source text and may confuse users. The correct translation should simply be:
+The translation "复制地址(C)" uses Simplified Chinese ("复制") instead of the Traditional Chinese character preferred in Hong Kong ("複製"). Also, for Hong Kong standards and convention, the shortcut "(C)" is generally not used unless it matches the actual interface.
 
-复制地址
-```
-
-```
-        <source>Disconnect</source>
-        <translation>断开(D)</translation>
-    
-YES  
-The translation "断开(D)" is simplified Chinese and does not reflect the traditional Chinese characters typically used in the 'zh_HK' locale. Moreover, the inclusion of "(D)" is unclear and not standard for Hong Kong Chinese translations. Also, "断开" means "disconnect," but a more natural and commonly used term in traditional Chinese for "Disconnect" in a technical or networking context is "斷線" or "斷開連線."  
-
-Correct translation:  
-斷線
+Correct translation:
+複製地址
 ```
 
 ```
         <source>1 hour</source>
         <translation>1 小时(H)</translation>
     
-YES  
-The translation mixes Simplified Chinese "小时" (hour) with English "(H)" and is not typical for Traditional Chinese used in Hong Kong. The phrase in 'zh_HK' should use Traditional Chinese characters and avoid unnecessary English letters unless contextually required. Also, there is an unnecessary space between the number and the unit.
+YES
+The translation uses Simplified Chinese "小时" instead of Traditional Chinese "小時" which is standard for 'zh_HK'. Also, "(H)" is unnecessary or confusing in the context, unless the English source includes it.
 
-Correct translation:  
+Correct translation:
 1 小時
 ```
 
@@ -780,22 +773,23 @@ For more information on using this console, type %6.
 %7 警告：骗子们很活跃，告诉用户在这里输入命令，偷走他们钱包中的内容。不要在不完全了解一个命令的后果的情况下使用此控制台。%8</translation>
     
 YES
-The translation is mostly accurate, but there are a few minor issues:
+The translation is mostly accurate, but there is a minor issue with the placement of spaces in format specifiers, particularly for "%3 和 %4", where there is a missing space before "%3", which creates inconsistency. Additionally, '%7警告' should not have a space after '%7' to mimic the original formatting, where '%7WARNING:' has no space between '%7' and 'WARNING'. Also, the tone and style are otherwise appropriate.
 
-1. The space after the style tag %7 before "警告" should be removed to match the source where %7 is directly attached without space.
-2. The phrase "骗子们很活跃" is understandable but "骗子活动频繁" is a more natural way to say "Scammers have been active" in Traditional Chinese.
-3. The phrase "告诉用户在这里输入命令" literally means "telling users to input commands here," which is slightly ambiguous. A more precise wording is "欺骗用户在此处输入命令" ("scamming users into typing commands here").
-4. The usage of punctuation and overall structure are fine.
+Correct translation:
+歡迎來到 %1 RPC 控制台。
+使用上與下箭頭以進行歷史導航，%2 以清除屏幕。
+使用 %3 和 %4 以增加或減小字體大小。
+輸入 %5 以顯示可用命令的概覽。
+查看更多關於此控制台的信息，輸入 %6。
 
-Corrected translation:
+%7警告：騙子活動頻繁，會指示用戶在此輸入指令，竊取他們的錢包資產。未完全了解指令後果前，切勿在此控制台操作。%8
 
-欢迎来到 %1 RPC 控制台。
-使用上与下箭头以进行历史导航，%2 以清除屏幕。
-使用%3 和 %4 以增加或减小字体大小。
-输入 %5 以显示可用命令的概览。
-查看更多关于此控制台的信息，输入 %6。
+主要修正如下：
+- 「%3 和 %4」前後空格統一。
+- 「%7警告」去除多餘空格，以符合原文格式。
+- 用詞稍作地區化（例如「輸入指令」和「錢包資產」會更貼近港澳地區用法）。
 
-%7警告：骗子活动频繁，欺骗用户在此处输入命令，偷走他们钱包中的内容。不要在不完全了解一个命令的后果的情况下使用此控制台。%8
+如果需要繁體中文香港用語風格，可以根據具體情境微調詞彙。
 ```
 
 ```
@@ -803,21 +797,27 @@ Corrected translation:
         <translation>复制消息(M)</translation>
     
 YES
-The translation "复制消息(M)" includes an unnecessary "(M)" which is not present in the source and may confuse the user. Also, there is no need for any letter in parentheses unless it is a shortcut key indicated in the source, which it is not.
+The translation uses Mainland Chinese "复制消息(M)" instead of the appropriate Hong Kong Cantonese form and uses "消息" for "message", which is less natural in the context of software/UI translation in Hong Kong. Also, the hotkey "(M)" may not match the correct Chinese character.
 
-Correct translation:
-复制消息
+A more suitable 'zh_HK' translation would be:
+複製訊息
+
+If a keyboard shortcut is needed, it should be presented as:
+複製訊息(&M)
+ 
+So, the correct translation is:
+複製訊息(&M)
 ```
 
 ```
         <source>Copy amount</source>
         <translation>复制和数量</translation>
     
-YES
-The translation "复制和数量" means "copy and amount," which is inaccurate given the source text "Copy amount." The correct translation should be concise and clearly convey the action "copy" related to "amount."
+YES  
+The translation is inaccurate. "复制和数量" means "Copy and amount," which changes the meaning and adds an unwarranted conjunction. The correct translation should simply mean "Copy amount," that is, copying the numerical value.
 
-Correct translation:
-复制金额
+Correct translation:  
+複製金額
 ```
 
 ```
@@ -825,10 +825,10 @@ Correct translation:
         <translation>自定义找零地址</translation>
     
 YES
-The translation uses simplified Chinese characters "自定义找零地址," which is more appropriate for Mainland China (zh_CN). For Hong Kong (zh_HK), traditional Chinese characters should be used.
+The translation "自定义找零地址" is in simplified Chinese ('zh_CN'), not in traditional Chinese as needed for 'zh_HK'. While the meaning is clear and correct, the characters should be adapted to traditional Chinese for Hong Kong.
 
 Correct translation:
-自訂找零地址
+自訂找贖地址
 ```
 
 ```
@@ -836,7 +836,7 @@ Correct translation:
         <translation>选择...</translation>
     
 YES
-The translation uses simplified Chinese "选择..." instead of traditional Chinese characters appropriate for 'zh_HK'. Also, the ellipsis character "…" should be preserved as in the source.
+The translation uses simplified Chinese characters ("选择..."), while 'zh_HK' should use traditional Chinese characters consistent with the Hong Kong locale. The ellipsis character is also different (should use "…").
 
 Correct translation:
 選擇…
@@ -846,27 +846,21 @@ Correct translation:
         <source>Enable Replace-By-Fee</source>
         <translation>启用手续费追加</translation>
     
-YES  
-The translation "启用手续费追加" is incorrect for "Enable Replace-By-Fee". It translates to "Enable additional fee" or "Enable fee increase", which does not accurately convey the Bitcoin Replace-By-Fee concept (the ability to replace an unconfirmed transaction by another with a higher fee).  
+YES
+The provided translation uses simplified Chinese ("启用") rather than traditional Chinese as customary in 'zh_HK' (Hong Kong). Additionally, "手续费追加" does not clearly express "Replace-By-Fee” (RBF). A more accurate 'zh_HK' translation matching the context would be:
 
-A better translation in traditional Chinese Hong Kong style would be:  
-「啟用交易費率替換」  
-or  
-「啟用 Replace-By-Fee 功能」 (keeping the technical term)  
-
-Preferred corrected translation:  
-<translation>啟用交易費率替換</translation>
+啟用可替代手續費 (RBF)
 ```
 
 ```
         <source>Send</source>
         <translation>发送(E)</translation>
     
-YES  
-The translation uses simplified Chinese characters (发送) instead of traditional Chinese characters expected in 'zh_HK'. Also, the addition of "(E)" is unexplained and possibly unnecessary or incorrect in this context, as there is no indication in the source for such a label or accelerator key.
+YES
+The translation "发送(E)" is not localized for 'zh_HK' (Hong Kong Chinese). In Hong Kong, the term "發送" is traditionally used instead of the simplified "发送" (which is mainland usage). Additionally, the "(E)" is problematic—in Hong Kong software, accelerator keys are rarely denoted this way, and if present, they should correspond to the menu shortcut key, but "E" does not match "Send" in this context.
 
-Correct translation:  
-傳送
+Correct translation:
+發送
 ```
 
 ```
@@ -875,10 +869,10 @@ Correct translation:
         <translation>在設備上簽證</translation>
     
 YES
-The translation "在設備上簽證" is problematic because "簽證" means "visa" (for travel), not "sign" in the context of digitally signing a transaction. The correct translation should use a term that reflects digital signing, such as "簽署".
+The word "簽證" in Chinese means "visa," which is not appropriate in this context. For digital signing, the correct term is "簽名". Also, the phrase is generally correctly translated as "在設備上簽名".
 
 Correct translation:
-在設備上簽署
+在設備上簽名
 ```
 
 ```
@@ -886,10 +880,10 @@ Correct translation:
         <translation>创建未签名交易(E)</translation>
     
 YES
-The translation adds "(E)" which is not present in the source and could confuse users. Also, "创建未签名交易" means "Create unsigned transaction," which is a more specific phrase than just "Create Unsigned." If the context only requires "Create Unsigned," the translation should be more literal.
+The translation is mostly accurate but includes "(E)" at the end, which is not present in the original source text. "(E)" typically denotes a keyboard shortcut in some UI contexts, but since it's not in the source, it should not be present in the translation unless the UI requires it for localization consistency.
 
 Correct translation:
-创建未签名
+創建未簽名交易
 ```
 
 ```
@@ -898,45 +892,45 @@ Correct translation:
         <translation>請檢查您的交易提案。這將產生部分簽名的比特幣交易（PSBT），您可以儲存或複製該交易，然後使用簽名。離線%1錢包或與PSBT相容的硬體錢包。</translation>
     
 YES
-The translation has formatting and grammatical issues. The phrase "然後使用簽名。離線%1錢包或與PSBT相容的硬體錢包。" is incomplete and awkward. The original English says: "... then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet." The translated sentence should clearly indicate the signing action is done with an offline %1 wallet or a PSBT-compatible hardware wallet.
+The translation is problematic. The sentence structure is awkward and the clause "然後使用簽名。離線%1錢包或與PSBT相容的硬體錢包。" introduces a period in the middle of a phrase, which damages clarity. The translation is also missing the connective sense that you can sign with (for example) an offline %1 wallet or a PSBT-compatible hardware wallet.
 
 Correct translation:
-請檢查您的交易提案。這將產生部分簽名比特幣交易（PSBT），您可以儲存或複製該交易，然後使用例如離線%1錢包或與PSBT相容的硬體錢包進行簽名。
+請檢查您的交易提案。這將產生部分簽名的比特幣交易（PSBT），您可以儲存或複製，然後使用例如離線的 %1 錢包或支援 PSBT 的硬件錢包進行簽名。
 ```
 
 ```
         <source>Confirm send coins</source>
         <translation>确认发币</translation>
     
-YES  
-The term "发币" implies "issuing coins," which is misleading in the Bitcoin context. The correct meaning is to "confirm sending coins/amount." A better translation should use language that clearly means "confirm sending coins" or "confirm sending Bitcoin."
+YES
+The translation uses Simplified Chinese ("确认发币") instead of Hong Kong Cantonese/traditional Chinese with localized phrasing. In a Hong Kong context, "确认發送比特幣" or "確認發送貨幣" would be more appropriate. Also, the term "發幣" is not commonly used in formal Hong Kong interfaces; "發送" (send) is better.
 
-Correct translation:  
-确认发送币款
+Correct translation:
+確認發送比特幣
 ```
 
 ```
         <source>The Bitcoin address to send the payment to</source>
         <translation>將支付發送到的比特幣地址給</translation>
     
-YES  
-The translation is awkward and unnatural in Cantonese (Traditional Chinese as used in Hong Kong). The phrase "將支付發送到的比特幣地址給" is not fluent and feels incomplete or incorrectly ordered.
+YES
+The translation has incorrect word order and an extra character "給" at the end, which is unnecessary and ungrammatical in this context. It should be:
 
-A more natural and accurate translation would be:  
-"用作接收付款的比特幣地址"  
-or  
-"用於接收付款的比特幣地址"
+Correct translation:
+用來接收付款的比特幣地址
 
-These versions clearly convey "The Bitcoin address to send the payment to" in a way that is idiomatic for zh_HK.
+or more literally:
+接收付款的比特幣地址
 ```
 
 ```
         <source>Subtract fee from amount</source>
         <translation>從付款金額減去手續費(U)</translation>
     
-YES
-The translation "從付款金額減去手續費(U)" introduces "(U)" which is not present in the source text and appears to be extraneous or an error. Additionally, "付款金額" means "payment amount," which might be less accurate here than simply "金額" (amount), as the source is generic "amount" without specifying payment. A more natural and accurate translation in Traditional Chinese (Hong Kong) for "Subtract fee from amount" would be:
+YES  
+The translation adds "(U)" at the end, which is not present in the source and could be confusing or regarded as unwanted content. Additionally, the translation could be more concise and faithful to the original.
 
+Correct translation:  
 從金額中扣除手續費
 ```
 
@@ -944,62 +938,57 @@ The translation "從付款金額減去手續費(U)" introduces "(U)" which is no
         <source>Send</source>
         <translation>发送</translation>
     
-YES  
-The translation uses Simplified Chinese ("发送"), while the target language 'zh_HK' (Hong Kong Cantonese-based Traditional Chinese) generally uses Traditional Chinese characters. The correct Traditional Chinese translation for "Send" in this context should be "發送".  
+YES
+The translation uses the simplified Chinese character "发送", which is appropriate for 'zh_CN' (Mainland China), but 'zh_HK' (Hong Kong) generally uses traditional characters. The correct traditional Chinese translation should be "發送".
 
-Correct translation:  
-<translation>發送</translation>
+Correct translation:
+發送
 ```
 
 ```
         <source>Verify Message</source>
         <translation>验证消息签名(M)</translation>
     
-YES  
-The translated text "验证消息签名(M)" means "Verify message signature (M)" rather than simply "Verify Message." The original source does not include "(M)" or specify "signature," so it adds extra and potentially confusing information which is inaccurate. Also, the translation uses Simplified Chinese characters ("验证"), while traditional Chinese should be used for Hong Kong ("驗證").
+YES
+The translation is in Simplified Chinese (zh_CN) wording and style, not in Traditional Chinese as used in 'zh_HK'. Also, the term "消息签名" means "message signature" rather than just "message". Additionally, the original text does not have the accelerator "(M)".
 
-Correct translation:  
+Correct translation:
 驗證訊息
-```
 
-```
-        <source>%1/unconfirmed</source>
-        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents a transaction confirmed in at least one block, but less than 6 blocks.</extracomment>
-        <translation>%1 次/未確認</translation>
-    
-YES  
-The translation "%1 次/未確認" is problematic because the English source "%1/unconfirmed" refers to a status showing the number of confirmations, where "%1" represents the count of confirmations (e.g., "0/unconfirmed" or "3/unconfirmed"). In the translation, the character "次" typically means "times" or "occurrences," which is redundant and misleading in this context because the source already uses "%1" as a count. The slash "/" is used in English to denote "x out of unconfirmed" or "x/unconfirmed" as a status.
-
-A more accurate and natural translation would be "%1/未確認" without the "次" character, keeping the format specifier intact and consistent with Bitcoin terminology in traditional Chinese used in Hong Kong.
-
-Correct translation:  
-%1/未確認
+If indicating the hotkey (M) is required based on context/UI guideline, it should be:
+驗證訊息(M)
 ```
 
 ```
         <source>Sent to</source>
         <translation>发送到</translation>
     
-YES  
-The translation "发送到" is simplified Chinese and more commonly used in Mainland China (zh_CN). For Hong Kong (zh_HK), the traditional Chinese form should be used. The appropriate traditional Chinese translation is "發送到".
+YES
+The translation "发送到" is in Simplified Chinese ('zh_CN'), not Traditional Chinese as required for 'zh_HK'. In 'zh_HK', the translation should use Traditional Chinese characters and local phrasing.
+
+Correct translation:
+發送至
 ```
 
 ```
         <source>Sent to</source>
         <translation>发送到</translation>
     
-YES  
-The translation "发送到" is simplified Chinese and more commonly used in Mainland China (zh_CN). For Hong Kong (zh_HK), the traditional Chinese form should be used. The appropriate traditional Chinese translation is "發送到".
+YES
+The translation "发送到" is in Simplified Chinese ('zh_CN'), not Traditional Chinese as required for 'zh_HK'. In 'zh_HK', the translation should use Traditional Chinese characters and local phrasing.
+
+Correct translation:
+發送至
 ```
 
 ```
         <source>Range…</source>
         <translation>范围...</translation>
     
-YES  
-The ellipsis in Chinese should use the proper Chinese ellipsis character '…' (six dots) instead of three periods '...'. Also, the translation uses simplified Chinese characters ("范围") instead of traditional Chinese characters used in Hong Kong.
+YES
+The translation uses Simplified Chinese ("范围") rather than Traditional Chinese as used in 'zh_HK'. Also, the ellipsis character "…" in the source is replaced with three periods "...", which is inconsistent with the source format.
 
-Correct translation:  
+Correct translation:
 範圍…
 ```
 
@@ -1007,43 +996,34 @@ Correct translation:
         <source>Copy amount</source>
         <translation>复制和数量</translation>
     
-YES
-The translation "复制和数量" means "copy and amount," which is inaccurate given the source text "Copy amount." The correct translation should be concise and clearly convey the action "copy" related to "amount."
+YES  
+The translation is inaccurate. "复制和数量" means "Copy and amount," which changes the meaning and adds an unwarranted conjunction. The correct translation should simply mean "Copy amount," that is, copying the numerical value.
 
-Correct translation:
-复制金额
+Correct translation:  
+複製金額
 ```
 
 ```
         <source>Increase transaction fee</source>
         <translation>增加矿工费(F)</translation>
     
-YES  
-The translation "增加矿工费(F)" is in Simplified Chinese ("矿工费") rather than Traditional Chinese used in Hong Kong, where "礦工費" should be used. Also, "(F)" seems like a mnemonic or shortcut key hint in parentheses, which is present in the translation but not in the source text, so it should be removed unless originally present.  
-
-Correct translation:  
-增加交易手續費
-```
-
-```
-        <source>Unable to decode PSBT from clipboard (invalid base64)</source>
-        <translation>无法从剪贴板解码PSBT(Base64值无效)</translation>
-    
 YES
-The translation uses simplified Chinese characters ("无法" and "剪贴板") instead of traditional Chinese characters commonly used in Hong Kong. It should use traditional characters and spacing should be adjusted for better readability.
+The translation of "Increase transaction fee" as "增加矿工费(F)" is problematic for two reasons:
+1. "矿工费" is more commonly used in Mainland China. In Hong Kong Cantonese ('zh_HK'), "手續費" (handling fee/transaction fee) is the standard expression.
+2. The addition of "(F)" is unexplained and not present in the source; it introduces a stray format problem unless it has contextual meaning (like a shortcut indicator), which isn't specified here.
 
 Correct translation:
-無法從剪貼板解碼 PSBT（Base64 值無效）
+增加交易手續費
 ```
 
 ```
         <source>Export</source>
         <translation>匯出 E</translation>
     
-YES  
-The translation "匯出 E" is problematic because the English word "Export" should be fully translated without adding extraneous characters like "E". The character "E" appears to be mistakenly included and is not appropriate in this context.
+YES
+The translation "匯出 E" is problematic. The English source is simply "Export". "匯出 E" includes an unnecessary "E" at the end, which could confuse users.
 
-Correct translation:  
+Correct translation:
 匯出
 ```
 
@@ -1053,55 +1033,47 @@ Correct translation:
 錯誤：轉存檔案識別記錄不正確。獲得%s，預期
 %s。</translation>
     
-YES  
-The translation introduces unnecessary line breaks around the %s format specifiers causing formatting and readability issues. Also, the quotation marks around the format specifiers from the source are missing in the translation, which changes the meaning. Additionally, the whitespace before the translation should be removed.
+YES
+There is an unnecessary line break before "%s" in the translated text, causing a formatting issue. Also, "獲得" is less natural than "收到" or "獲得了". For clarity and conformity with the original structure, the sentence should not break across lines, and the wording can be slightly refined.
 
-Correct translation:  
-錯誤：轉存檔案識別記錄不正確。獲得「%s」，預期「%s」。
+Correct translation:
+錯誤：轉存檔案識別記錄不正確。收到「%s」，預期「%s」。
 ```
 
 ```
         <source>More than one onion bind address is provided. Using %s for the automatically created Tor onion service.</source>
         <translation>提供多數TOR路由綁定位址。 對自動建立的Tor服務用%s</translation>
     
-YES  
-The translation has issues with spacing and wording clarity. The original English means "More than one onion bind address is provided. Using %s for the automatically created Tor onion service." The translation separated the sentence awkwardly and missed connecting the clauses smoothly. Also, there's a stray space before the second part, and "TOR路由綁定位址" is somewhat unclear.
+YES
+1. The Chinese translation uses "多數TOR路由綁定位址", but "onion bind address" should be accurately rendered as "onion 綁定地址" or "onion 綁定位址", not "TOR路由綁定位址".
+2. There is a missing space between sentences: "位址。 對自動建立的..." should remove the space after "。".
+3. The translation omits "onion service", only saying "Tor服務", which is insufficiently specific.
+4. "提供多數" translates to "provide multiple", but "More than one" is better translated as "超過一個".
 
-A better translation would be:  
-"提供了多於一個洋蔥綁定位址。將使用 %s 作為自動建立的 Tor 洋蔥服務位址。"
-```
-
-```
-        <source>This is the maximum transaction fee you pay (in addition to the normal fee) to prioritize partial spend avoidance over regular coin selection.</source>
-        <translation>這是您支付的最高交易手續費（除了正常手續費外），優先於避免部分花費而不是定期選取幣。</translation>
-    
-YES  
-The translation is inaccurate and somewhat confusing, especially the phrase "優先於避免部分花費而不是定期選取幣" which does not clearly convey the meaning of prioritizing partial spend avoidance over regular coin selection. Also, "定期選取幣" is not a suitable translation for "regular coin selection."
-
-Correct translation:  
-這是您額外支付的最高交易手續費（除正常手續費外），用以優先避免部分花費，而非採用常規幣選擇。
+Correct translation:
+提供超過一個 onion 綁定位址。將使用 %s 作為自動建立的 Tor onion 服務。
 ```
 
 ```
         <source>%s is set very high! Fees this large could be paid on a single transaction.</source>
         <translation>%s被设置得很高! 这可是一次交易就有可能付出的手续费。</translation>
     
-YES  
-The translation is mostly understandable but uses simplified Chinese characters ("设置", "交易", "手续费") rather than traditional Chinese characters, which are standard in Hong Kong ('zh_HK'). Also, the spacing and punctuation do not reflect typical Hong Kong format (should use full-width punctuation or spacing consistent with traditional Chinese style). Furthermore, the translation slightly shifts the meaning: the source says "Fees this large could be paid on a single transaction," implying a warning about the fee amount, but the translation sounds more like a statement about possibly paying such a fee.
+YES
+The translation is understandable but has minor stylistic and punctuation issues inconsistent with 'zh_HK' (Hong Kong Cantonese) conventions. The exclamation mark should have a space before it according to CJK standards, and the tone is a bit off for HK Cantonese—should be more colloquial. Also, contextually, "这可是一次交易就有可能付出的手续费。" is awkward and doesn't accurately capture the warning tone or the information conveyed in the original.
 
-Correct translation in traditional Chinese for Hong Kong context:  
-%s 設得太高！如此高額的手續費可能會用於單一交易。
+Correct translation:
+%s 設定得非常高！呢個咁大嘅手續費一單交易都可能要畀晒。
 ```
 
 ```
         <source>Error: Duplicate descriptors created during migration. Your wallet may be corrupted.</source>
         <translation>错误：迁移过程中创建了重复的输出描述符。你的钱包可能已损坏。</translation>
     
-YES  
-The translation is in Simplified Chinese (简体中文), while 'zh_HK' should use Traditional Chinese appropriate for Hong Kong. Also, "错误" is Simplified Chinese, and "输出描述符" is a direct translation of "descriptors" but "描述符" is a somewhat technical term; however, it is commonly used and acceptable. The main issue is the script.
+YES
+The translation uses simplified Chinese ("错误", "迁移", "创建", "描述符", "你的", "已损坏") instead of the expected traditional Chinese appropriate for 'zh_HK'. For Hong Kong ('zh_HK'), the translation should use traditional Chinese characters and local wording.
 
-Correct translation (Traditional Chinese for zh_HK):  
-錯誤：遷移過程中產生了重複的描述子。你的錢包可能已損壞。
+Correct translation:
+錯誤：在遷移過程中建立了重複的描述符。你的錢包可能已損壞。
 ```
 
 ```
@@ -1109,8 +1081,12 @@ Correct translation (Traditional Chinese for zh_HK):
         <translation>磁盘空间太低!</translation>
     
 YES
-The translation uses Simplified Chinese characters ("磁盘"), whereas the target language 'zh_HK' (Hong Kong) typically uses Traditional Chinese characters. The correct Traditional Chinese translation should be:
-磁碟空間太低!
+There are two issues:
+1. The correct term in Hong Kong Cantonese should be "磁碟空間不足！" instead of "磁盘空间太低!", as "磁盘" and "空间太低" are more typical of Mainland Chinese usage ("磁碟" is used in Cantonese/HK, and "空間不足" is the idiomatic expression for "space is too low"/"insufficient space").
+2. The exclamation mark should be a full-width Chinese exclamation mark: ！
+
+Correct translation:
+磁碟空間不足！
 ```
 
 ```
@@ -1118,7 +1094,7 @@ The translation uses Simplified Chinese characters ("磁盘"), whereas the targe
         <translation>错误: 无法在数据库中创建指针</translation>
     
 YES
-The translation uses Simplified Chinese ("错误" and "数据库") instead of Traditional Chinese, which is standard for 'zh_HK'. Also, "cursor" in database contexts is better translated as "游標" rather than "指针" (which typically means pointer in programming). 
+The translation uses Simplified Chinese ("错误: 无法在数据库中创建指针") instead of Traditional Chinese as is standard for 'zh_HK'. Additionally, "指针" should more properly be translated as "游標" (cursor) in database contexts for Chinese.
 
 Correct translation:
 錯誤：無法在資料庫中建立游標
@@ -1129,10 +1105,10 @@ Correct translation:
         <translation>錯誤：轉存檔案的校驗和不匹配。%s計算得%s</translation>
     
 YES
-The translation is incomplete and does not correctly convey the entire original message. The source states two checksum values: "Computed %s, expected %s", but the translation only mentions "%s計算得%s" which is unclear and incomplete.
+The translation is incomplete and does not convey the "expected %s" part from the source. The sentence is also awkward due to word order.
 
 Correct translation:
-錯誤：轉存檔案的校驗和不匹配。計算值為 %s，預期值為 %s
+錯誤：轉存檔案的校驗和不匹配。計算得 %s，應為 %s
 ```
 
 ```
@@ -1140,21 +1116,21 @@ Correct translation:
         <translation>错误：无法把版本号%u作为unit32_t解析</translation>
     
 YES
-The translation has a typo and minor spacing issues. "unit32_t" should be "uint32_t," and a space is recommended after the colon and before the version number specifier to improve readability.
+The translation contains a typo: "unit32_t" should be "uint32_t". Also, in 'zh_HK', it's better to use traditional Chinese and Cantonese writing style.
 
 Correct translation:
-错误：无法把版本号 %u 解析为 uint32_t
+錯誤：無法將版本號 %u 解析為 uint32_t
 ```
 
 ```
         <source>Error: Unable to write data to disk for wallet %s</source>
         <translation>错误：无法将数据写入钱包的磁盘%s。</translation>
     
-YES  
-The translation misplaces the format specifier %s and renders the sentence with incorrect word order and unnecessary characters, which affects clarity and correctness. The %s should directly follow "钱包" (wallet) to indicate which wallet caused the error, not "磁盘" (disk). Also, "磁盘的" is awkward; it should simply say writing data to disk, related to that wallet.
+YES
+The translation is understandable but the word order is unnatural in Chinese (Hong Kong), and the placement of "%s" is awkward. The standard wording would place "%s" immediately after "钱包". Also, the term "错误" is simplified Chinese; in Hong Kong (zh_HK), the traditional form "錯誤" is used.
 
-Correct translation:  
-错误：无法将数据写入钱包 %s 的磁盘。
+Correct translation:
+錯誤：無法將資料寫入錢包 %s 的磁碟。
 ```
 
 ```
@@ -1162,10 +1138,10 @@ Correct translation:
         <translation>%s删除交易时失败: </translation>
     
 YES
-The placement of the format specifier %s is incorrect, and there is an unnecessary colon and space at the end in the translation. The original English phrase indicates "Failure removing transaction: %s" where %s is the transaction identifier. The correct translation should maintain the same order and placement of %s immediately after "移除交易失败" without any trailing colon or extra space.
+The translation does not follow the correct word order and format specifier placement. The colon appears at the end rather than after the failure message. Also, there is a missing space after the format specifier, and the word order is unnatural in Chinese.
 
 Correct translation:
-移除交易失败: %s
+移除交易時失敗：%s
 ```
 
 ```
@@ -1173,7 +1149,7 @@ Correct translation:
         <translation>手续费率 (%s) 低于最大手续费率设置 (%s)</translation>
     
 YES
-The translation incorrectly states "最大手续费率" (maximum fee rate) instead of "minimum fee rate." The source clearly mentions "minimum fee rate setting." 
+The translation has an error: "低于最大手续费率设置" means "lower than the maximum fee rate setting", but the source says "lower than the minimum fee rate setting". The word "最大" (maximum) should be "最低" (minimum).
 
 Correct translation:
 手续费率 (%s) 低于最低手续费率设置 (%s)
@@ -1183,22 +1159,13 @@ Correct translation:
         <source>Not found pre-selected input %s</source>
         <translation>找不到预先选择输入%s</translation>
     
-YES  
-The translation uses Simplified Chinese characters ("预先选择") instead of Traditional Chinese, which is the correct script for 'zh_HK'. Also, a space is recommended before the format specifier "%s" for better readability in Chinese.
-
-Correct translation:  
-找不到預先選擇輸入 %s
-```
-
-```
-        <source>Not solvable pre-selected input %s</source>
-        <translation>无法求解的预先选择输入%s</translation>
-    
 YES
-The translation uses Simplified Chinese characters ("无法求解的预先选择输入%s") instead of Traditional Chinese characters, which are standard for Hong Kong ("zh_HK"). Also, a minor spacing issue exists: there should be a space before the format specifier %s for readability.
+The translation uses "预先选择输入" which is Simplified Chinese, not Traditional Chinese as appropriate for 'zh_HK'. In Cantonese or Hong Kong Traditional Chinese, it should be:
+
+找不到預先選取的輸入 %s
 
 Correct translation:
-無法求解的預先選擇輸入 %s
+找不到預先選取的輸入 %s
 ```
 
 ```
@@ -1206,7 +1173,7 @@ Correct translation:
         <translation>修剪区块存储...</translation>
     
 YES
-The translation uses simplified Chinese characters (区块存储) instead of traditional Chinese characters used in Hong Kong. Also, the ellipsis in Chinese text is preferably the proper full-width character "…" instead of three periods.
+The translation uses simplified Chinese characters ("修剪区块存储..."), which are not standard for 'zh_HK' (Hong Kong Chinese, which prefers traditional Chinese characters). The ellipsis should also match typographically (…).
 
 Correct translation:
 修剪區塊存儲…
@@ -1216,11 +1183,11 @@ Correct translation:
         <source>Transaction amounts must not be negative</source>
         <translation>交易金额不不可为负数</translation>
     
-YES  
-The translation contains a double negative ("不不可"), which is incorrect and confusing in Chinese. The correct translation should be concise and clear without double negatives.
+YES
+There is a redundancy in the phrase "不不可为负数" ("not not allowed to be negative"). The correct expression should be "交易金額不可為負數" in Traditional Chinese used in Hong Kong ('zh_HK').
 
-Correct translation:  
-交易金额不得为负数
+Correct translation:
+交易金額不可為負數
 ```
 
 ```
@@ -1228,9 +1195,9 @@ Correct translation:
         <translation>交易尋找零輸出項超出範圍</translation>
     
 YES
-The translation is slightly inaccurate and unclear. The phrase "transaction change output index out of range" refers to the index of the transaction's change output being out of the valid range. The current translation "交易尋找零輸出項超出範圍" translates roughly to "transaction search zero output item out of range," which is not accurate and introduces the word "尋找" (search) that does not exist in the source.
+The translation is inaccurate. The English "Transaction change output index out of range" means that the index of the change output in the transaction is outside the allowable range. However, "交易尋找零輸出項超出範圍" awkwardly translates to "Transaction seeks zero output item out of range", which is incorrect and confusing in the context of Bitcoin.
 
-A more accurate translation would be:
+Correct translation:
 交易找零輸出索引超出範圍
 ```
 
@@ -1239,9 +1206,11 @@ A more accurate translation would be:
         <translation>钱包文件创建失败：1%s</translation>
     
 YES
-The translation incorrectly adds a digit "1" before the format specifier "%s", which does not exist in the source text and will cause formatting errors.
+The translation has an error: "1%s" is incorrect and introduces an unwanted '1' before the format specifier, which is not in the original string. The proper format specifier should be carried over as "%s".
 
 Correct translation:
-钱包文件创建失败：%s
+錢包文件建立失敗：%s
 ```
 </details>
+
+Number of issues: 102.

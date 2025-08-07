@@ -13,10 +13,10 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Receiving addresses - %1</source>
         <translation>Prijímajúce adresy -%1</translation>
     
-YES  
-There is a missing space before the format specifier %1 in the translation. The source text has a space before the dash and then the placeholder, so the translation should preserve spacing similarly.
+YES
+There is a formatting issue: there should be a space before the dash, as in the source (" - %1"), but the translation has " -%1" without the space after the dash.
 
-Correct translation:  
+Correct translation:
 Prijímajúce adresy - %1
 ```
 
@@ -24,10 +24,10 @@ Prijímajúce adresy - %1
         <source>IP/Netmask</source>
         <translation>IP/Maska stiete</translation>
     
-YES  
-The Slovak word "stiete" is incorrect in this context. The correct translation for "Netmask" in Slovak is "maska siete" (network mask), where "siete" means "of network." Also, note the spacing around the slash should be consistent; in the source, there is no space, so the translation should also not have space around the slash.
+YES
+There is a typo in the translation: "Maska stiete" should be "Maska siete" (the word "siete" means "network" in Slovak, and "stiete" is incorrect).
 
-Correct translation:  
+Correct translation:
 IP/Maska siete
 ```
 
@@ -36,7 +36,7 @@ IP/Maska siete
         <translation>%1 a  %2</translation>
     
 YES
-There is an extra space before %2 in the translation. In Slovak, the conjunction "a" should not have double spaces around it—only single spaces.
+There is an extra space between 'a' and '%2' in the Slovak translation. There should be only one space. 
 
 Correct translation:
 %1 a %2
@@ -46,10 +46,10 @@ Correct translation:
         <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
         <translation>Proxy sú &lt;b&gt;zapnuté&lt;/b&gt;: %1</translation>
     
-YES  
-The adjective "zapnuté" is plural neuter or plural inanimate, but "Proxy" is singular masculine in Slovak, so it should be "zapnutý" (singular masculine) to agree with "Proxy".  
+YES
+The word "Proxy" should be treated as singular ("Proxy je"), not plural ("Proxy sú"), in Slovak when referring to the status of a proxy as a service or feature, not multiple proxies.
 
-Correct translation:  
+Correct translation:
 Proxy je &lt;b&gt;zapnutý&lt;/b&gt;: %1
 ```
 
@@ -57,11 +57,11 @@ Proxy je &lt;b&gt;zapnutý&lt;/b&gt;: %1
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
         <translation>Ukáž %1 zoznam možných nastavení Bitcoinu pomocou príkazového riadku</translation>
     
-YES  
-The translation is incomplete and does not fully convey the original meaning. The source asks to show the %1 help message to get a list of possible Bitcoin command-line options. The Slovak translation says "Show %1 list of possible Bitcoin settings using the command line," which omits the concept of the help message and the purpose of obtaining the list.
+YES
+The translation changes the structure and omits "help message" ("pomocnú správu" or "správu s pomocou"). Also, "get a list" is not literal—"zoznam" is moved and doesn't refer to the help message. "pomocou príkazového riadku" means "using the command line," which is not quite correct contextually; it should express that the options are command-line options, not that you use a command-line.
 
-Correct translation:  
-Ukáž %1 pomocnú správu, aby si získal zoznam možných príkazov príkazového riadku Bitcoinu
+Correct translation:
+Zobraz správu s pomocou %1 pre zoznam možných príkazov pre Bitcoin z príkazového riadku
 ```
 
 ```
@@ -69,7 +69,7 @@ Ukáž %1 pomocnú správu, aby si získal zoznam možných príkazov príkazov�
         <translation>Odoslané transakcie</translation>
     
 YES
-The English source "Sent transaction" is singular, but the Slovak translation "Odoslané transakcie" is plural ("transactions"). The translation should be singular to match the source.
+The translation is plural ("Odoslané transakcie" = "Sent transactions"), but the source is singular ("Sent transaction"). It should match in number.
 
 Correct translation:
 Odoslaná transakcia
@@ -79,33 +79,25 @@ Odoslaná transakcia
         <source>The entered address "%1" is not a valid Bitcoin address.</source>
         <translation>Vložená adresa "%1" nieje platnou adresou Bitcoin.</translation>
     
-YES  
-The word "nieje" is incorrect; the correct form is the two-word phrase "nie je" (with a space). Also, "Bitcoin" here should be in the genitive case as "Bitcoinu" to properly fit Slovak grammar.
+YES
+There is an orthographic error in the word "nieje", which should be "nie je" (spelled as two words in correct Slovak). Also, the phrase "adresou Bitcoin" is unnatural; it is better to say "platná Bitcoin adresa" or "platná adresa Bitcoin". For naturalness and correctness, it's better to translate as:
 
-Correct translation:  
-Vložená adresa „%1“ nie je platnou adresou Bitcoinu.
+Správna preklad:
+Zadaná adresa „%1“ nie je platná Bitcoin adresa.
+
+Alternatively, to be even more natural:
+Zadaná adresa „%1“ nie je platná Bitcoinová adresa.
 ```
 
 ```
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
         <translation>Adresa "%1" už existuje ako prijímacia adresa s označením "%2" .Nemôže tak byť pridaná ako odosielacia adresa.</translation>
     
-YES  
-There is an issue with spacing in the translation. There should be a space after the period following "%2" and before "Nemôže". Also, the translation is slightly less natural due to word order and punctuation.
+YES
+There is a minor issue with whitespace; there should be a space after '%2"' and before the period. Also, the conjunction "a preto" or "takže" is more natural than "Nemôže tak byť". Here is a smoother, corrected version:
 
-Correct translation:  
-Adresa „%1“ už existuje ako prijímacia adresa s označením „%2“ a preto nemôže byť pridaná ako odosielacia adresa.
-```
-
-```
-        <source>Spend unconfirmed change</source>
-        <translation>Minúť nepotvrdený výdavok</translation>
-    
-YES  
-The translation uses "výdavok" which means "expenditure" or "expense" and is not the correct term for "change" in the Bitcoin context. The correct translation for "change" (as in the leftover amount in a transaction) should be "zmenu". Also, the source phrase is a noun phrase or an option label ("Spend unconfirmed change"), so it should be translated in a noun or imperative form without unnecessary words.
-
-Correct translation:  
-Minúť nepotvrdenú zmenu
+Correct translation:
+Adresa "%1" už existuje ako prijímacia adresa s označením "%2", a preto nemôže byť pridaná ako odosielacia adresa.
 ```
 
 ```
@@ -113,35 +105,21 @@ Minúť nepotvrdenú zmenu
         <translation>Zvoľte ako deliť bitcoin pri zobrazovaní pri platbách a užívateľskom rozhraní.</translation>
     
 YES  
-The translation does not accurately convey the meaning of "Choose the default subdivision unit to show in the interface and when sending coins." The original sentence refers to selecting a default unit of subdivision (e.g., BTC, mBTC, satoshi), but the translation says "Choose how to divide bitcoin when displaying at payments and user interface," which is vague and not precise. It also omits the idea of a "unit" and "default" setting and simplifies the context incorrectly.
+The translation is understandable but not adequately accurate, and it omits several concepts from the source, notably "default", "unit", and "when sending coins". A more precise translation would be:
 
-Correct translation:  
-"Zvoľte predvolenú jednotku delenia, ktorá sa zobrazí v rozhraní a pri odosielaní mincí."
-```
-
-```
-        <source>Whether we relay addresses to this peer.</source>
-        <extracomment>Tooltip text for the Address Relay field in the peer details area, which displays whether we relay addresses to this peer (Yes/No).</extracomment>
-        <translation>Postupovanie adries tomuto partnerovi.</translation>
-    
-YES
-The translation "Postupovanie adries tomuto partnerovi." is incomplete and somewhat unclear. It literally means "Forwarding addresses to this partner," but it lacks the conditional or interrogative nuance of "Whether we relay addresses to this peer." The original English implies a yes/no state (whether or not we relay the addresses), which is important, especially given the context as a tooltip. 
-
-A better translation would convey the idea of whether or not addresses are relayed:
-
-"Či adresy posielame tomuto partnerovi." 
-
-This translates to "Whether we send addresses to this peer," better matching the original meaning and context.
+Zvoľte predvolenú jednotku delenia, ktorá sa bude zobrazovať v rozhraní a pri odosielaní mincí.
 ```
 
 ```
         <source>In:</source>
         <translation>Dnu:</translation>
     
-YES  
-The Slovak word "Dnu:" means "inside" or "inwards," which is not appropriate in this Bitcoin transaction context. The source "In:" likely refers to an input (of a transaction) or "incoming," for which the correct Slovak translation is "Vstup:" or "Príjem:" depending on context. Usually, "Vstup:" is used for "In:" when referring to transaction inputs.
+YES
+The translation "Dnu:" is incorrect and not idiomatic in Slovak. The correct translation for "In:" (as in incoming transaction) is "Prichádzajúce:" or simply "Vstup:" depending on the UI context. "Dnu" is not used in this context.
 
-Correct translation:  
+Correct translation:
+Prichádzajúce:
+or
 Vstup:
 ```
 
@@ -149,70 +127,61 @@ Vstup:
         <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until you have validated the complete chain.</source>
         <translation>Použitie núdzového poplatku („fallbackfee“) môže vyústiť v transakciu, ktoré bude trvat hodiny nebo dny (prípadne večnosť), kým bude potvrdená. Zvážte preto ručné nastaveníe poplatku, prípadne počkajte, až sa Vám kompletne zvaliduje reťazec blokov.</translation>
     
-YES  
-There are several errors in the Slovak translation:
-
-1. "ktoré bude trvat" should be "ktorá bude trvať" because "transakciu" (transaction) is feminine singular, so the relative pronoun and verb must agree.
-2. "nebo dny" mixes Czech ("nebo") and Slovak ("dni"). In Slovak, it should be "alebo dni".
-3. Typo in "nastaveníe" - should be "nastavenie".
-4. "zvaliduje" is a borrowed English term that is not commonly used in Slovak. A better verb would be "overíte" (validate, verify) or "potvrdíte".
-5. "kompletne" in Slovak usually is "kompletnú" (accusative feminine to match "reťazec blokov" is masculine, so adjective should be masculine accusative: "kompletný reťazec", but since "reťazec" is masculine, "kompletný" is appropriate).
-6. The phrase "kompletne zvaliduje reťazec blokov" is awkward. A better phrasing would be: "až overíte (alebo potvrdíte) kompletný reťazec blokov."
+YES
+There are several issues:
+- Grammar mix: The translation uses Czech words ("nebo", "nastaveníe", "až se Vám", "zvaliduje") instead of Slovak ("alebo", "nastavenie", "kým sa vám", "overí").
+- Diacritics: "trvat" should be "trvať".
+- In Slovak, the polite form "Vám" is capitalized only in formal letters, less common in technical UI.
+- The source specifies "the complete chain", better as "celý reťazec" or "celý blokový reťazec".
 
 Correct translation:
-
-Použitie núdzového poplatku („fallbackfee“) môže vyústiť v transakciu, ktorá bude trvať hodiny alebo dni (prípadne večnosť), kým bude potvrdená. Zvážte preto ručné nastavenie poplatku, prípadne počkajte, až overíte kompletný reťazec blokov.
-```
-
-```
-        <source>Confirm custom change address</source>
-        <translation>Potvrďte vlastnú výdavkovú adresu</translation>
-    
-YES  
-The Slovak translation uses "výdavkovú adresu," which literally translates to "expense address." In the Bitcoin context, "change" refers to the leftover amount returned in a transaction, not expenses. The correct term for "change address" in Slovak Bitcoin terminology is "adresu na zvyšok" or "adresu na zmenu." A better translation is:  
-Potvrďte vlastnú adresu na zmenu
+Použitie núdzového poplatku („fallbackfee“) môže viesť k tomu, že transakcia bude potvrdená až o niekoľko hodín alebo dní (prípadne nikdy). Zvážte preto ručné nastavenie poplatku alebo počkajte, kým bude celý reťazec blokov overený.
 ```
 
 ```
         <source>The Bitcoin address to send the payment to</source>
         <translation>Zvoľte adresu kam poslať platbu</translation>
     
-YES  
-The source text is a neutral noun phrase "The Bitcoin address to send the payment to," describing what the address represents, not an imperative sentence. The translation says "Choose the address where to send the payment," which changes the meaning by adding an instruction to choose. A more accurate translation would be:
+YES
+The translation does not accurately convey the original meaning. The source specifies "The Bitcoin address to send the payment to," which indicates a specific Bitcoin address. The translation says "Choose the address where to send the payment," which introduces an action ("choose") not found in the source.
 
-Bitcoinová adresa, na ktorú sa má poslať platba
+Correct translation:
+Bitcoin adresa, na ktorú chcete poslať platbu
 ```
 
 ```
         <source>The Bitcoin address to sign the message with</source>
         <translation>Bitcoin adresa pre podpísanie správy s</translation>
     
-YES  
-The Slovak translation is awkward and grammatically incorrect. The preposition "s" ("with") should precede "Bitcoin adresa" or be integrated properly. Also, the phrase should clearly convey "The Bitcoin address with which to sign the message."
+YES
+The Slovak translation is not fully natural and contains a word order issue. The phrase "pre podpísanie správy s" is awkward; it should mirror the English structure that implies "to use in signing the message".
 
-Correct translation:  
-Bitcoinová adresa, ktorou sa podpíše správa
+Correct translation:
+Bitcoin adresa na podpísanie správy
+
+Alternatively (more literal, but natural):
+Bitcoin adresa, ktorou sa má správa podpísať
 ```
 
 ```
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
         <translation>Overím správy sa uistiť že bola podpísaná označenou Bitcoin adresou</translation>
     
-YES  
-The translation contains grammatical errors and awkward phrasing. The verb "Overím" should be "Overiť" (infinitive form) to match "sa uistiť" and the sentence structure. Also, the phrase "sa uistiť že" needs a comma before "že". A clearer and more natural translation would be:
+YES
+The translation is not entirely accurate and has issues with grammar and style. The verb "Overím" is first person singular ("I will verify") instead of an imperative form or descriptive form, and "správy" is plural ("messages") while the original is singular ("message"). The structure "sa uistiť že bola" is not stylistically correct in Slovak.
 
-Correct translation:  
-Overiť správu, aby ste sa uistili, že bola podpísaná uvedenou bitcoinovou adresou
+Correct translation:
+Overte správu, aby ste sa uistili, že bola podpísaná zadanou Bitcoin adresou
 ```
 
 ```
         <source>Private key for the entered address is not available.</source>
         <translation>Súkromný kľúč pre zadanú adresu nieje k dispozícii.</translation>
     
-YES  
-There is a minor grammatical issue in Slovak: "nieje" should be written as two words "nie je".  
+YES
+There is a spelling issue: "nieje" should be written as two words, "nie je" in Slovak.
 
-Correct translation:  
+Correct translation:
 Súkromný kľúč pre zadanú adresu nie je k dispozícii.
 ```
 
@@ -220,11 +189,11 @@ Súkromný kľúč pre zadanú adresu nie je k dispozícii.
         <source>Whether or not a watch-only address is involved in this transaction.</source>
         <translation>Či je v tejto transakcii adresy iba na sledovanie.</translation>
     
-YES  
-The Slovak translation is incorrect and incomplete. The English sentence is conditional ("Whether or not a watch-only address is involved in this transaction."), but the Slovak version lacks a verb and proper structure. Also, "adresy iba na sledovanie" is grammatically incorrect (plural noun with "je," singular verb form missing, and meaning is unclear). The correct translation should express the condition clearly and maintain the original meaning.
+YES
+The translation is grammatically incorrect and somewhat unclear. "Adresy iba na sledovanie" is plural ("addresses"), and it omits the verb that would clarify the meaning. The proper translation should retain the singular "address" and the conditional form.
 
-Correct translation:  
-"Či je v tejto transakcii zapojená iba adresa na sledovanie."
+Correct translation:
+Či sa tejto transakcie zúčastňuje adresa iba na sledovanie.
 ```
 
 ```
@@ -232,44 +201,43 @@ Correct translation:
         <translation>Upraviť popis transakcie</translation>
     
 YES  
-The English source text "Edit address label" refers to editing a label associated with a Bitcoin address, not a transaction. The Slovak translation "Upraviť popis transakcie" means "Edit transaction description," which is incorrect and changes the meaning entirely.
+The translation is inaccurate. "Edit address label" should be referring to editing the label (name or description) of an address, not a transaction description.  
 
 Correct translation:  
-Upraviť označenie adresy
+Upraviť popis adresy
 ```
 
 ```
         <source>Could not commit transaction</source>
         <translation>Nemôzeme uložiť transakciu do peňaženky</translation>
     
-YES  
-The original English text "Could not commit transaction" is a more general error meaning the transaction could not be finalized/committed (to the blockchain or mempool), not necessarily related to saving in a wallet. The Slovak translation "Nemôzeme uložiť transakciu do peňaženky" means "We cannot save the transaction to the wallet," which is more specific and changes the meaning. A better translation keeping the original meaning would be:
+YES
+The translation inaccurately adds "do peňaženky" (to the wallet), which is not present in the source. Also, "Nemôzeme" should correctly be "Nemôžeme".
 
-"Nie je možné potvrdiť transakciu"  
-or  
-"Nie je možné vykonať transakciu"
+Correct translation:
+Nemôžeme potvrdiť transakciu
 ```
 
 ```
         <source>Invalid amount for %s=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
         <translation>Neplatné množstvo pre %s=&lt;amount&gt;: '%s' (musí byť aspoň  vo výške poplatku "minrelay" pre %s, aby sa zabránilo zaseknutým transakciám)</translation>
     
-YES  
-The translation contains a whitespace formatting issue: there is an extra space after "aspoň". Also, the phrase "vo výške poplatku "minrelay" pre %s" is somewhat awkward and unnecessarily complicated. A clearer and more natural Slovak translation would be:
+YES
+There is an unnecessary space before "vo výške", and "poplatku 'minrelay' pre %s" changes the meaning—it's more accurate to keep "%s" as the minrelay fee value, not describe it as "pre %s." The position of the parameter is also different from the original. 
 
-Correct translation:  
-Neplatné množstvo pre %s=&lt;amount&gt;: '%s' (musí byť aspoň poplatok minrelay vo výške %s, aby sa zabránilo zaseknutým transakciám)
+Correct translation:
+Neplatná suma pre %s=&lt;amount&gt;: '%s' (musí byť aspoň minimálnym poplatkom minrelay vo výške %s, aby sa zabránilo zaseknutým transakciám)
 ```
 
 ```
         <source>Maximum transaction weight is too low, can not accommodate change output</source>
         <translation>Maximálna veľkosť transakcie je príliš nízka, nebudú sa do nej zmestiť výstupy </translation>
     
-YES  
-The translation has a trailing space at the end and the term "weight" is inaccurately translated as "veľkosť" (size), which is incorrect in this Bitcoin context where "weight" is a specific technical term ("váha"). Also, "výstupy" (outputs) is plural, but the source says "change output" singular. The translation does not convey that it specifically cannot accommodate the "change output."  
+YES
+The translation is inaccurate. The original mentions "maximum transaction weight" and inability to accommodate the "change output" specifically. The translation changes "weight" to "size", refers non-specifically to "outputs", and omits "change" entirely. There is also an extra space at the end.
 
-Correct translation:  
-Maximálna hmotnosť transakcie je príliš nízka, neumožňuje zahrnúť výstup pre zmenu
+Correct translation:
+Maximálna hmotnosť transakcie je príliš nízka, nie je možné zahrnúť výstup na vydanie
 ```
 
 ```
@@ -277,10 +245,10 @@ Maximálna hmotnosť transakcie je príliš nízka, neumožňuje zahrnúť výst
         <translation>Chyba: Obdržaná hodnota nebola v hex tvare: : %s</translation>
     
 YES
-There is an extra colon before the format specifier "%s" in the translation that does not appear in the source. The double colon ": :" should be corrected to a single colon ":" or removed if not needed.
+There is an extra colon before the format specifier "%s". Also, the phrase "v hex tvare" could be improved for clarity and standard usage. 
 
 Correct translation:
-Chyba: Obdržaná hodnota nebola v hex tvare: %s
+Chyba: Obdržaná hodnota nebola v hexadecimálnom formáte: %s
 ```
 
 ```
@@ -288,10 +256,10 @@ Chyba: Obdržaná hodnota nebola v hex tvare: %s
         <translation>Chyba: Nepodarilo sa zapísať záznam o umiestnení najlepšieho bloku do peňaženky "solvable"</translation>
     
 YES
-The translation adds the English word "solvable" untranslated and includes unnecessary quotation marks, which is inconsistent with the source. Also, the source phrase "solvable wallet best block locator record" should be translated more literally to reflect the technical context accurately.
+The translation introduces a quotation mark around "solvable" and modifies the structure in a way that could lead to confusion. The source refers to a specific type of wallet—likely "solvable wallet"—not a wallet named "solvable". The term "solvable" should be treated as an adjective, not as a name.
 
-Correct translation:  
-Chyba: Nepodarilo sa zapísať záznam o najlepšom lokalizátore bloku riešiteľnej peňaženky
+Correct translation:
+Chyba: Nepodarilo sa zapísať záznam o ukazovateli najlepšieho bloku pre riešiteľnú peňaženku
 ```
 
 ```
@@ -299,20 +267,20 @@ Chyba: Nepodarilo sa zapísať záznam o najlepšom lokalizátore bloku riešite
         <translation>SQLiteDatabase: Neočakávané ID aplikácie: %u. Očakávané:  %u</translation>
     
 YES
-The translation omits the part "got %u" ("dostal %u") which is present in the source and is crucial for the message to be complete. Also, there is an extra space before the second %u in the translation.
+The translation reverses the order of the expected and actual values compared to the English source. Additionally, there is an unnecessary extra space before the second %u.
 
 Correct translation:
-SQLiteDatabase: Neočakávané ID aplikácie. Očakávané: %u, získané: %u
+SQLiteDatabase: Neočakávané ID aplikácie. Očakávané %u, získané %u
 ```
 
 ```
         <source>Signing transaction failed</source>
         <translation>Podpísanie správy zlyhalo</translation>
     
-YES  
-The English source says "Signing transaction failed," which refers to a failure in signing a Bitcoin transaction. The Slovak translation "Podpísanie správy zlyhalo" means "Signing the message failed," which is incorrect in this context. The correct word should be "transakcie" (transaction) instead of "správy" (message).
+YES
+The translation incorrectly translates "transaction" as "správy" (which means "message" in Slovak). The correct word for "transaction" in this Bitcoin context is "transakcie".
 
-Correct translation:  
+Correct translation:
 Podpísanie transakcie zlyhalo
 ```
 
@@ -320,10 +288,12 @@ Podpísanie transakcie zlyhalo
         <source>System error while loading external block file: %s</source>
         <translation>Systémov chyba pri čítaní externého súboru blokov: %s</translation>
     
-YES  
-There is a typo in the Slovak word "Systémov". The correct word should be "Systémová" (feminine adjective agreeing with "chyba"). Also, "pri čítaní" means "while reading," which differs from "while loading" in the source. A more accurate Slovak translation of "while loading" would be "pri načítaní".
+YES
+There is a typo/mistake in the translation: "Systémov chyba" should be "Systémová chyba" (correct adjective agreement). Also, "súboru blokov" is acceptable, but "blokového súboru" (block file) would be a more common phrasing.
 
-Correct translation:  
-Systémová chyba pri načítaní externého súboru blokov: %s
+Correct translation:
+Systémová chyba pri čítaní externého blokového súboru: %s
 ```
 </details>
+
+Number of issues: 25.

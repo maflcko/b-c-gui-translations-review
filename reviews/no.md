@@ -14,10 +14,10 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Dette er Bitcoin-adressene dine for å motta betalinger. Bruk knappen ‘Opprett ny mottaksadresse’ i mottaksfanen for å opprette nye adresser.Signering er kun mulig med adresser av typen ‘legacy’.</translation>
     
-YES  
-There is a missing space after the period in the Norwegian translation before the sentence "Signering er kun mulig...". It should have a space to separate the two sentences properly, matching the format and readability of the source.
+YES
+There is a whitespace formatting issue: there is no space between the two sentences "opprette nye adresser." and "Signering er kun mulig...".
 
-Correct translation:  
+Correct translation:
 Dette er Bitcoin-adressene dine for å motta betalinger. Bruk knappen ‘Opprett ny mottaksadresse’ i mottaksfanen for å opprette nye adresser. Signering er kun mulig med adresser av typen ‘legacy’.
 ```
 
@@ -26,21 +26,25 @@ Dette er Bitcoin-adressene dine for å motta betalinger. Bruk knappen ‘Opprett
         <translation>Advarsel: Hvis du krypterer lommeboken din og mister passordet, vil du 1 MISTE ALLE BITCOINENE DINE 1 !</translation>
     
 YES
-The translation incorrectly replaces the HTML bold tags (&lt;b&gt; and &lt;/b&gt;) with "1" characters, which is incorrect and breaks the formatting. The passphrase is translated somewhat correctly as "passordet," but it is more accurate to use "passfrasen" as in the source context. The rest is mostly correct but the formatting tags must be preserved.
+The translation is problematic. The HTML bold tags (&lt;b&gt;...&lt;/b&gt;) from the source are not retained, and "1" is incorrectly included in place of the bold tags. Additionally, "passordet" is technically "password"; "passphrase" is better translated as "passordfrase" or "passfrase". There is also an extra space before the exclamation mark.
 
 Correct translation:
-Advarsel: Hvis du krypterer lommeboken din og mister passfrasen din, vil du &lt;b&gt;MISTE ALLE BITCOINENE DINE&lt;/b&gt;!
+Advarsel: Hvis du krypterer lommeboken din og mister passordfrasen, vil du &lt;b&gt;MISTE ALLE BITCOINENE DINE&lt;/b&gt;!
 ```
 
 ```
         <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Skriv inn det nye passordet for lommeboken. 1 Vennligst bruk et passord med 2 ti eller flere tilfeldige tegn 2, eller 3 åtte eller flere ord 3.</translation>
     
-YES
-The translation has added extraneous numbers ("1", "2", "3") which are not present in the source and breaks the sentence inappropriately. It omits the HTML formatting tags that add emphasis and a line break, which are important for preserving the original structure and emphasis.
+YES  
+The Norwegian translation contains several issues:
+- It introduces numbers ("1", "2", "3") that are not present in the source; these resemble placeholder errors.
+- The translation uses "passord" ("password") instead of "passphrase" ("passordfrase" or "frasepassord"), which is particularly important in Bitcoin context.
+- The HTML tags (&lt;br/&gt;, &lt;b&gt;) are lost.
+- There's some awkward wording; e.g., "med 2 ti" is not correct Norwegian.
 
 Correct translation:
-Skriv inn det nye passordet for lommeboken.&lt;br/&gt;Vennligst bruk et passord med &lt;b&gt;ti eller flere tilfeldige tegn&lt;/b&gt;, eller &lt;b&gt;åtte eller flere ord&lt;/b&gt;.
+Skriv inn den nye passordfrasen for lommeboken.&lt;br/&gt;Vennligst bruk en passordfrase med &lt;b&gt;ti eller flere tilfeldige tegn&lt;/b&gt;, eller &lt;b&gt;åtte eller flere ord&lt;/b&gt;.
 ```
 
 ```
@@ -48,55 +52,10 @@ Skriv inn det nye passordet for lommeboken.&lt;br/&gt;Vennligst bruk et passord 
         <translation>Åpne node-feilsøkings- og diagnostikkonsoll</translation>
     
 YES  
-The translation "Åpne node-feilsøkings- og diagnostikkonsoll" means "Open node debugging and diagnostic console," which is unrelated to the source text "Sending addresses." The translation does not match the source phrase in meaning.
-
-Correct translation:  
-"Sender adresser"
-```
-
-```
-        <source>Window</source>
-        <translation>Vindu 
-</translation>
-    
-YES  
-The translation contains a trailing whitespace (newline) after "Vindu". The format should not have extra spaces or line breaks.
-
-Correct translation:  
-Vindu
-```
-
-```
-        <source>Change:</source>
-        <translation>Veksel</translation>
-    
-YES  
-The translation "Veksel" is incorrect in this context. In Bitcoin terminology, "Change" refers to the leftover amount returned to the sender in a transaction, not the concept of "exchange" or "bill" which "Veksel" implies in Norwegian. The correct translation should reflect the Bitcoin context, typically "Vekslepenger" or simply using "Change:" as "Vekslepenger:" or "Tilbakebetaling:". A more appropriate and commonly used translation in Norwegian Bitcoin contexts is:
-
-Correct translation:  
-Vekslepenger:
-```
-
-```
-        <source>Tree mode</source>
-        <translation>Trevisning</translation>
-    
-YES
-The Norwegian translation "Trevisning" is incorrect for "Tree mode." The correct translation in this Bitcoin-related context should be "Tremodus" or "Treetilstand," where "tre" means "tree" and "modus" or "tilstand" means "mode." "Trevisning" translates more to "tree view," which might not fully capture the intended meaning of "mode" here.
+The translation is incorrect. The source text "Sending addresses" should be translated as "Sendingsadresser" or "Adresser for sending" in Norwegian ('no'). Instead, the provided translation means "Open node debugging and diagnostics console," which is unrelated.
 
 Correct translation:
-Tremodus
-```
-
-```
-        <source>Copy fee</source>
-        <translation>Kopier gebyr</translation>
-    
-YES  
-The Norwegian translation uses a mix of Norwegian and German/Danish-like structure. The correct Norwegian translation for "Copy fee" should be "Kopier gebyr" is understandable but not idiomatic. A more natural Norwegian translation would be "Kopier gebyr" or better "Kopier avgift" where "avgift" is more appropriate for fee. If "Copy fee" means the fee related to copying (in Bitcoin context), "Kopier avgift" fits better.
-
-Correct translation:  
-Kopier avgift
+Sendingsadresser
 ```
 
 ```
@@ -104,10 +63,10 @@ Kopier avgift
         <translation>Vindu 
 </translation>
     
-YES  
-The translation contains a trailing whitespace (newline) after "Vindu". The format should not have extra spaces or line breaks.
+YES
+The translation adds an unnecessary trailing space/newline after "Vindu", which is a formatting issue. The translation is otherwise correct, but it should not contain trailing whitespace.
 
-Correct translation:  
+Correct translation:
 Vindu
 ```
 
@@ -115,21 +74,35 @@ Vindu
         <source>Change:</source>
         <translation>Veksel</translation>
     
-YES  
-The translation "Veksel" is incorrect in this context. In Bitcoin terminology, "Change" refers to the leftover amount returned to the sender in a transaction, not the concept of "exchange" or "bill" which "Veksel" implies in Norwegian. The correct translation should reflect the Bitcoin context, typically "Vekslepenger" or simply using "Change:" as "Vekslepenger:" or "Tilbakebetaling:". A more appropriate and commonly used translation in Norwegian Bitcoin contexts is:
+YES
+The translation "Veksel" is not accurate in the context of Bitcoin. In Norwegian, "veksel" typically means currency exchange or a bill of exchange, which does not reflect the concept of "change" as the returned amount in a transaction. The correct term is "Vekselbeløp" or "Vekslepenger", but the most commonly used and contextually correct term in Norwegian Bitcoin wallets is "Vekslepenger".
 
-Correct translation:  
+Correct translation:
 Vekslepenger:
 ```
 
 ```
-        <source>Copy fee</source>
-        <translation>Kopier gebyr</translation>
+        <source>Window</source>
+        <translation>Vindu 
+</translation>
     
-YES  
-The Norwegian translation uses a mix of Norwegian and German/Danish-like structure. The correct Norwegian translation for "Copy fee" should be "Kopier gebyr" is understandable but not idiomatic. A more natural Norwegian translation would be "Kopier gebyr" or better "Kopier avgift" where "avgift" is more appropriate for fee. If "Copy fee" means the fee related to copying (in Bitcoin context), "Kopier avgift" fits better.
+YES
+The translation adds an unnecessary trailing space/newline after "Vindu", which is a formatting issue. The translation is otherwise correct, but it should not contain trailing whitespace.
 
-Correct translation:  
-Kopier avgift
+Correct translation:
+Vindu
+```
+
+```
+        <source>Change:</source>
+        <translation>Veksel</translation>
+    
+YES
+The translation "Veksel" is not accurate in the context of Bitcoin. In Norwegian, "veksel" typically means currency exchange or a bill of exchange, which does not reflect the concept of "change" as the returned amount in a transaction. The correct term is "Vekselbeløp" or "Vekslepenger", but the most commonly used and contextually correct term in Norwegian Bitcoin wallets is "Vekslepenger".
+
+Correct translation:
+Vekslepenger:
 ```
 </details>
+
+Number of issues: 8.

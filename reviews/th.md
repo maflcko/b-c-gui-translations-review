@@ -13,21 +13,21 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>นี่คือลิงก์ที่อยู่ Bitcoin ของคุณสำหรับการส่งการชำระเงิน ควรตรวจสอบจำนวนเงินและที่อยู่ผู้รับก่อนการส่งเหรียญ</translation>
     
-YES  
-The translation is mostly accurate but uses the word "ลิงก์ที่อยู่" which means "link address," which is unusual and incorrect in this context. The correct word should be just "ที่อยู่" (address). Also, adding a period or appropriate punctuation after the first sentence improves readability.  
+YES
+The translation introduces the word "ลิงก์" (link), which is not present in the English source and changes the meaning. The source talks about "Bitcoin addresses", not links. The rest is mostly fine, but "ส่งการชำระเงิน" is somewhat redundant ('ส่ง' already implies sending).
 
-Correct translation:  
-นี่คือที่อยู่ Bitcoin ของคุณสำหรับการส่งการชำระเงิน ควรตรวจสอบจำนวนเงินและที่อยู่ผู้รับก่อนส่งเหรียญ
+Correct translation:
+นี่คือที่อยู่ Bitcoin ของคุณสำหรับการส่งการชำระเงิน กรุณาตรวจสอบจำนวนเงินและที่อยู่ผู้รับทุกครั้งก่อนส่งเหรียญ
 ```
 
 ```
         <source>Copy Address</source>
         <translation>ที่อยู่</translation>
     
-YES  
-The translation "ที่อยู่" means "address" but does not convey the command "Copy Address." The phrase should instruct the user to copy the address, not just display the word "address."
+YES
+The translation is incomplete. "ที่อยู่" means "address" but does not include the verb "copy". The action "Copy Address" should be fully translated.
 
-Correct translation:  
+Correct translation:
 คัดลอกที่อยู่
 ```
 
@@ -36,10 +36,10 @@ Correct translation:
         <translation>การส่งออกล้มเหลว</translation>
     
 YES
-The translation "การส่งออกล้มเหลว" means "Export failed," which does not correspond to the source text "Label." 
+The translation is incorrect. "การส่งออกล้มเหลว" means "Export failed", which is unrelated to "Label".
 
 Correct translation:
-ป้ายชื่อ
+ป้ายกำกับ
 ```
 
 ```
@@ -47,10 +47,16 @@ Correct translation:
         <translation>ป้อนวลีรหัสใหม่สำหรับกระเป๋าสตางค์. 1.กรุณาใช้วลีรหัสผ่านของ 2.สิบตัวอักษรสุ่มหรือมากกว่า 2,หรือ 3แปดคำหรือมากกว่านั้น3</translation>
     
 YES
-The translation is problematic because it contains extraneous numbering (1., 2., 2,, 3, 3) that does not appear in the source and disrupts readability. It also improperly uses a period after "กระเป๋าสตางค์" instead of a line break or appropriate punctuation. The HTML tags (<br/>, <b>) from the source are omitted or not properly represented, which may affect formatting in the application.
+The Thai translation is inaccurate and contains several issues:
+- Stray numbers are inserted (e.g., "1.", "2.", "2,", "3", "3") which do not belong.
+- The sentence structure is fragmented and unclear.
+- The formatting with <br/> and <b> from the original is missing.
+- The numbering ("1.", "2.") is not present in the source.
+- It does not fluently convey the meaning of using at least ten random characters or at least eight words.
+- The double space after the period.
 
-Corrected translation:
-ป้อนวลีรหัสใหม่สำหรับกระเป๋าสตางค์&lt;br/&gt;กรุณาใช้วลีรหัสผ่านที่มี&lt;b&gt;สิบตัวอักษรสุ่มหรือมากกว่า&lt;/b&gt; หรือ&lt;b&gt;แปดคำหรือมากกว่านั้น&lt;/b&gt;
+Correct translation:
+กรุณากรอกรหัสผ่านใหม่สำหรับกระเป๋าสตางค์ของคุณ &lt;br/&gt;โปรดใช้รหัสผ่านที่มี &lt;b&gt;อักขระสุ่มสิบตัวขึ้นไป&lt;/b&gt; หรือ &lt;b&gt;อย่างน้อยแปดคำ&lt;/b&gt;
 ```
 
 ```
@@ -59,10 +65,10 @@ Corrected translation:
         <translation>เกิดข้อผิดพลาดร้ายแรง กรุณาตรวจสอบว่าไฟล์การตั้งค่าสามารถเขียนได้หรือไม่ หรือลองรันด้วยคำสั่ง</translation>
     
 YES
-The translation is incomplete and cuts off abruptly after "ลองรันด้วยคำสั่ง" ("try running with command"). It should include the "-nosettings" flag as in the source to fully convey the meaning.
+The translation is incomplete and omits the part "with -nosettings." from the end of the sentence. This can mislead users who need to know about the -nosettings option. Also, it would be clearer to specify the switch as "-nosettings" in the translation.
 
 Correct translation:
-เกิดข้อผิดพลาดร้ายแรง กรุณาตรวจสอบว่าไฟล์การตั้งค่าสามารถเขียนได้หรือไม่ หรือลองรันด้วยคำสั่ง -nosettings
+เกิดข้อผิดพลาดร้ายแรง กรุณาตรวจสอบว่าไฟล์การตั้งค่าสามารถเขียนได้หรือไม่ หรือลองรันด้วย -nosettings
 ```
 
 ```
@@ -71,10 +77,10 @@ Correct translation:
         <extracomment>Name of CJDNS network in peer info</extracomment>
         <translation>CJDNS (แปลงชื่อย่อ)</translation>
     
-YES  
-The original source "CJDNS" is a proper noun and a network name and should remain unchanged. The addition "(แปลงชื่อย่อ)" means "(abbreviation translation)" or "(acronym translation)" which is unnecessary and misleading. It is not part of the original text nor common in translations of network names.  
+YES
+The addition "(แปลงชื่อย่อ)" translates as "(acronym translation)", which is unnecessary and potentially confusing since "CJDNS" is a proper name that should not be expanded or explained in this context.
 
-Correct translation:  
+Correct translation:
 CJDNS
 ```
 
@@ -83,11 +89,13 @@ CJDNS
         <extracomment>An outbound connection to a peer. An outbound connection is a connection initiated by us.</extracomment>
         <translation>ออกเดินทาง (òk dern thāng)</translation>
     
-YES  
-The translation "ออกเดินทาง (òk dern thāng)" literally means "to depart" or "to set out on a journey," which is not accurate in this technical context. "Outbound" here refers to a connection initiated by us, not the act of leaving or traveling. A more precise translation related to networking would be "ขาออก" (khaa òk), which is commonly used in IT contexts to mean "outbound."
+YES
+The translation "ออกเดินทาง (òk dern thāng)" means "to depart" or "departing", which is not accurate in this technical context. Here, "Outbound" refers to a network connection initiated by the user or system, not physical departure.
 
-Correct translation:  
+Correct translation:
 ขาออก
+
+This term is standard in networking contexts to indicate "outbound" connections.
 ```
 
 ```
@@ -95,11 +103,13 @@ Correct translation:
         <extracomment>Peer connection type that relays all network information.</extracomment>
         <translation>การแข่งขันรีเลย์เต็มรูปแบบ</translation>
     
-YES  
-The translation "การแข่งขันรีเลย์เต็มรูปแบบ" means "full relay competition," which is incorrect and adds an unnecessary word "การแข่งขัน" (competition). The correct translation for "Full Relay" in this Bitcoin network context (relaying all network information) should be concise and not include "competition."
+YES
+The translation is inaccurate. "การแข่งขันรีเลย์เต็มรูปแบบ" translates to "Full relay competition," which is incorrect. The term "Full Relay" in the context of Bitcoin peer connection refers to a node that relays all network information, not a competition.
 
-Correct translation:  
+Correct translation:
 รีเลย์เต็มรูปแบบ
+
+This directly conveys the technical meaning without adding unintended wording.
 ```
 
 ```
@@ -107,22 +117,24 @@ Correct translation:
         <extracomment>Peer connection type that relays network information about blocks and not transactions or addresses.</extracomment>
         <translation>การวิ่งผลัดบล็อก</translation>
     
-YES  
-The translation "การวิ่งผลัดบล็อก" literally means "block relay race," which is incorrect and misleading in this technical context. The term "Block Relay" refers to relaying blockchain information, not running a race.
+YES
+The translation "การวิ่งผลัดบล็อก" literally means "block relay" in the context of a relay race, which is not suitable for the technical context of a peer connection type in the Bitcoin network. It should refer to relaying block information across the network, not a physical relay race.
 
-Correct translation:  
-"การส่งต่อบล็อก"
+Correct translation:
+ถ่ายทอดบล็อก
+
+This translation accurately captures the concept of relaying block information in a network context.
 ```
 
 ```
         <source>Sign message…</source>
         <translation>ป้าย  ข้อความ…</translation>
     
-YES  
-The translation "ป้าย  ข้อความ…" is incorrect and unnatural in Thai. The English phrase "Sign message…" in the context of Bitcoin refers to the action of signing a message, not "putting a label on a message." The correct translation should convey the action "sign" (as in digitally signing) a message.
+YES
+The translation "ป้าย ข้อความ…" is incorrect. "ป้าย" means "sign" as in a physical sign, which does not match the intended meaning of "Sign" as in "cryptographically sign" a message. Also, there is unnecessary extra space.
 
-Correct translation:  
-เซ็นข้อความ…
+Correct translation:
+เซ็นชื่อข้อความ…
 ```
 
 ```
@@ -130,60 +142,41 @@ Correct translation:
         <translation>ตัวเลือกคำสั่งในบรรทัดคำสั่ง</translation>
     
 YES  
-The translation "ตัวเลือกคำสั่งในบรรทัดคำสั่ง" means "command line options," which is incorrect for "Receiving addresses." The correct translation should be:  
-"ที่อยู่สำหรับรับ"
+The translation is incorrect. The English source "Receiving addresses" refers to addresses where Bitcoin can be received (i.e., wallet receiving addresses). The provided Thai translation "ตัวเลือกคำสั่งในบรรทัดคำสั่ง" means "command line options", which is unrelated and erroneous.
+
+Correct translation:
+ที่อยู่สำหรับรับเงิน
 ```
 
 ```
         <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
         <translation> การสร้างคีย์ HD คือ&lt;b&gt;พิการ&lt;/b&gt;</translation>
     
-YES  
-The word "พิการ" in Thai means "disabled" in the context of a physical disability or impairment, which is inappropriate here. The correct translation should convey "disabled" in the sense of "turned off" or "deactivated."
+YES
+The translation of "disabled" as "พิการ" is incorrect and inappropriate, since "พิการ" means "disabled" in the context of physical disability, which is not suitable here. There is also a stray leading space in the translated string.
 
-Correct translation:  
-การสร้างคีย์ HD&lt;b&gt;ถูกปิดใช้งาน&lt;/b&gt;
+Correct translation:
+การสร้างคีย์ HD ถูก&lt;b&gt;ปิดใช้งาน&lt;/b&gt;
 ```
 
 ```
         <source>Private key &lt;b&gt;disabled&lt;/b&gt;</source>
         <translation>กุญแจส่วนตัว &lt;b&gt;พิการ&lt;/b&gt;</translation>
     
-YES  
-The translation uses the word "พิการ" which means "disabled" in the context of a physical disability, which is inappropriate and misleading here. In technical contexts, such as a private key being disabled, a better term would be "ถูกปิดใช้งาน" (disabled/inactivated) or "ไม่สามารถใช้งานได้" (cannot be used).  
+YES
+The word "พิการ" in Thai means "disabled" as in "handicapped", which is not appropriate for "disabled" in the sense of "functionality turned off". A more appropriate word is "ถูกปิดใช้งาน" or "ปิดการใช้งาน".
 
-Correct translation:  
+Correct translation:
 กุญแจส่วนตัว &lt;b&gt;ถูกปิดใช้งาน&lt;/b&gt;
-```
-
-```
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>กระเป๋าเงินคือ &lt;b&gt;เข้ารหัส&lt;/b&gt; และปัจจุบัน &lt;b&gt;ปลดล็อก&lt;/b&gt;</translation>
-    
-YES
-The phrase "กระเป๋าเงินคือ" is unnatural in Thai. "คือ" (is) is unnecessary here. A better translation would be more concise and natural:
-
-Correct translation:  
-กระเป๋าเงิน&lt;b&gt;เข้ารหัส&lt;/b&gt; และปัจจุบัน&lt;b&gt;ปลดล็อก&lt;/b&gt;
-```
-
-```
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>กระเป๋าสตางค์คือ &lt;b&gt;เข้ารหัส&lt;/b&gt; และปัจจุบัน &lt;b&gt;ล็อค&lt;/b&gt;</translation>
-    
-YES
-The phrase "กระเป๋าสตางค์คือ" is awkward and unnatural in Thai. A more natural and clear translation would be:
-กระเป๋าสตางค์ &lt;b&gt;ถูกเข้ารหัส&lt;/b&gt; และขณะนี้ &lt;b&gt;ถูกล็อค&lt;/b&gt;
 ```
 
 ```
         <source>Copy address</source>
         <translation>ที่อยู่ Copy</translation>
     
-YES  
-The translation incorrectly places the English word "Copy" after "ที่อยู่" (address), which is unnatural in Thai. The correct translation should convey the command "Copy address" in a natural and clear way, such as "คัดลอกที่อยู่".  
+YES
+The order of words is incorrect; "ที่อยู่ Copy" reads awkwardly in Thai. The term "Copy" should be in a verb position, and Thai commonly uses "คัดลอก" for "Copy". The correct translation should be:
 
-Correct translation:  
 คัดลอกที่อยู่
 ```
 
@@ -192,20 +185,21 @@ Correct translation:
         <translation>คัดลอก  ป้าย</translation>
     
 YES
-There is an extra space between "คัดลอก" and "ป้าย" in the translation. The correct translation should have only one space:
+There is an extra space between "คัดลอก" and "ป้าย" which is a formatting issue. In Thai, there should be no extra space.
 
-คัดลอก ป้าย
+Correct translation:
+คัดลอกป้าย
 ```
 
 ```
         <source>Copy change</source>
         <translation>การเปลี่ยนแปลงข้อความ</translation>
     
-YES  
-The English phrase "Copy change" in the context of Bitcoin typically means copying the amount of "change" (the leftover amount after a transaction). The translation "การเปลี่ยนแปลงข้อความ" means "text change" or "change of message," which is inaccurate and unrelated to the Bitcoin context.  
+YES
+The translation is inaccurate. "Copy change" in the Bitcoin context refers to copying the "change" amount or address from a transaction – not "copying text changes." The provided Thai translation, "การเปลี่ยนแปลงข้อความ," means "change of message/text," which is incorrect.
 
-A better translation would be:  
-คัดลอกทอนเงิน
+Correct translation:
+คัดลอกเงินทอน
 ```
 
 ```
@@ -218,26 +212,27 @@ The migration process will create a backup of the wallet before migrating. This 
 หากกระเป๋านี้มีสคริปต์ที่ดูได้เท่านั้น (watchonly scripts) จะมีกระเป๋าใหม่ที่สร้างขึ้นซึ่งมีสคริปต์เหล่านั้น
 หากกระเป๋านี้มีสคริปต์ที่แก้ไขได้แต่ไม่ได้ติดตาม (solvable but not watched scripts) จะมีกระเป๋าใหม่ที่แตกต่างออกไปซึ่งมีสคริปต์เหล่านั้น</translation>
     
-YES  
-The translation is incomplete and omits the entire last paragraph about the migration process creating a backup file and instructions on restoring it. Additionally, some parts could be more naturally phrased in Thai.
+YES
+The Thai translation omits the last paragraph regarding the creation and location of the backup file and the restore process. This is a significant omission as it contains important information for the user. Additionally, the translation is missing the newline format present in the original, and there is a slight awkwardness in some Thai phrases, especially for technical terms—though this is less significant than the outright omission.
 
 Correct translation:
+การย้ายกระเป๋าสตางค์จะเปลี่ยนกระเป๋านี้เป็นกระเป๋าสตางค์แบบ descriptor หนึ่งใบหรือมากกว่า คุณจะต้องสร้างข้อมูลสำรอง (backup) ของกระเป๋าใหม่
+หากกระเป๋านี้มี script ที่ดูได้เท่านั้น (watchonly scripts) จะมีการสร้างกระเป๋าสตางค์ใหม่ซึ่งมี script เหล่านั้นอยู่ด้วย
+หากกระเป๋านี้มี script ที่สามารถแก้ไขได้แต่ไม่ได้ติดตาม (solvable but not watched scripts) จะมีการสร้างกระเป๋าสตางค์ใหม่ต่างหากสำหรับ script เหล่านั้น
 
-การย้ายกระเป๋าจะทำให้กระเป๋านี้กลายเป็นกระเป๋าแบบคำอธิบายหนึ่งหรือมากกว่านั้น (descriptor wallets) ซึ่งจะต้องสร้างสำรองกระเป๋าใหม่ขึ้น  
-ถ้ากระเป๋านี้มีสคริปต์ที่ดูได้เท่านั้น (watchonly scripts) จะมีการสร้างกระเป๋าใหม่ที่มีสคริปต์เหล่านั้น  
-ถ้ากระเป๋านี้มีสคริปต์ที่แก้ไขได้แต่ไม่ได้ติดตาม (solvable but not watched scripts) จะมีการสร้างกระเป๋าใหม่ที่แตกต่างออกไปซึ่งมีสคริปต์เหล่านั้น  
-
-กระบวนการย้ายจะสร้างสำรองกระเป๋าก่อนทำการย้าย ชื่อไฟล์สำรองจะเป็น &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak และจะอยู่ในโฟลเดอร์ของกระเป๋านี้ หากเกิดการย้ายผิดพลาด สามารถกู้คืนไฟล์สำรองได้โดยใช้ฟังก์ชัน "กู้คืนกระเป๋า" (Restore Wallet)
+กระบวนการย้ายกระเป๋าจะสร้างไฟล์สำรองของกระเป๋าสตางค์ก่อนที่จะย้าย ไฟล์สำรองนี้จะถูกตั้งชื่อเป็น &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak และสามารถพบได้ในไดเรกทอรีของกระเป๋านี้ หากการย้ายเกิดข้อผิดพลาด คุณสามารถเรียกคืนข้อมูลจากไฟล์สำรองโดยใช้ฟังก์ชัน "กู้คืนกระเป๋าสตางค์" ได้
 ```
 
 ```
         <source>Form</source>
         <translation>จาก</translation>
     
-YES  
-The English word "Form" is incorrectly translated as "จาก" which means "from" in Thai. The correct translation for "Form" (as in a document or template) in Thai is "แบบฟอร์ม".
+YES
+The translation is inaccurate. "Form" in English means a document with fields to fill in (like in software), but "จาก" in Thai means "from" (the preposition). The correct translation for "Form" (as in a user or input form) is "ฟอร์ม" or "แบบฟอร์ม".
 
-Correct translation:  
+Correct translation:
+ฟอร์ม
+or
 แบบฟอร์ม
 ```
 
@@ -245,10 +240,13 @@ Correct translation:
         <source>Number of script verification threads</source>
         <translation>จำนวนของสคริปต์และเธรดการตรวจสอบ</translation>
     
-YES  
-The translation introduces an incorrect conjunction "และ" (and) which is not present in the source. The phrase "Number of script verification threads" refers to a count (number) of threads responsible for script verification, not "number of scripts and verification threads." The correct translation should convey just the number of threads for script verification.
+YES
+The translation adds "และ" ("and") which is not present in the source and changes the meaning. The original phrase "Number of script verification threads" specifically refers to the number of threads used for script verification, not separate counts for scripts and threads.
 
-Correct translation:  
+Correct translation:
+จำนวนเธรดตรวจสอบสคริปต์
+
+OR more literally:
 จำนวนเธรดสำหรับการตรวจสอบสคริปต์
 ```
 
@@ -257,8 +255,9 @@ Correct translation:
         <translation>และเครือข่าย</translation>
     
 YES
-The translation "และเครือข่าย" means "and network," which is inaccurate and adds an unnecessary conjunction "and" that is not present in the source. The correct translation should simply be:
+The translation "และเครือข่าย" means "and network" or "and the network", which adds the conjunction "และ" ("and") not present in the source. The correct translation should be simply "เครือข่าย".
 
+Correct translation:
 เครือข่าย
 ```
 
@@ -266,23 +265,26 @@ The translation "และเครือข่าย" means "and network," whic
         <source>Prune block storage to</source>
         <translation>ตัดทอนและบล็อกที่เก็บข้อมูลไปที่</translation>
     
-YES  
-The translation is somewhat awkward and contains an erroneous phrase. The phrase "ตัดทอนและบล็อกที่เก็บข้อมูลไปที่" literally means "cut/prune and block that store data to," which is confusing and incorrect in this context. The source phrase "Prune block storage to" means to reduce the size of the block storage (usually to a certain size limit).
+YES
+The translation is slightly inaccurate and could cause confusion. The correct translation should be more concise and clear, directly relating "prune" to "ลดขนาด" (reduce size) or "ลบข้อมูลที่เก็บบล็อก" (delete block storage data), and the phrase "to" refers to a value/limit. The current translation is awkward and does not preserve the structure.
 
-A better translation would focus on "prune" referring to reducing or trimming storage, especially in a technical setting like Bitcoin.
+Correct translation:
+ปรับลดขนาดการเก็บข้อมูลบล็อกเหลือ
 
-Correct translation:  
-"ตัดแต่งการเก็บข้อมูลบล็อกให้เหลือที่"
+Or, more literally:
+ลดขนาดที่เก็บข้อมูลบล็อกเหลือ
 ```
 
 ```
         <source>Form</source>
         <translation>จาก</translation>
     
-YES  
-The English word "Form" is incorrectly translated as "จาก" which means "from" in Thai. The correct translation for "Form" (as in a document or template) in Thai is "แบบฟอร์ม".
+YES
+The translation is inaccurate. "Form" in English means a document with fields to fill in (like in software), but "จาก" in Thai means "from" (the preposition). The correct translation for "Form" (as in a user or input form) is "ฟอร์ม" or "แบบฟอร์ม".
 
-Correct translation:  
+Correct translation:
+ฟอร์ม
+or
 แบบฟอร์ม
 ```
 
@@ -290,10 +292,10 @@ Correct translation:
         <source>Could not sign any more inputs.</source>
         <translation>ไม่สามารถลงนามการป้อนข้อมูลเพิ่มเติมได้ (Mai samart long nam kan phon khomooht permum dai).</translation>
     
-YES  
-The translation contains transliterated Thai within parentheses, which is unnecessary and inappropriate for a standard translation. The transliteration should be removed. The Thai translation is otherwise clear and accurate.
+YES
+The translation contains a parenthetical transliteration "(Mai samart long nam kan phon khomooht permum dai)", which is not standard for professional UI/localization and is unnecessary. Only the Thai script translation should be provided. 
 
-Correct translation:  
+Correct translation:
 ไม่สามารถลงนามการป้อนข้อมูลเพิ่มเติมได้
 ```
 
@@ -302,10 +304,10 @@ Correct translation:
         <extracomment>An Outbound Connection to a Peer.</extracomment>
         <translation>ออกเดินทาง (òk dern thāng)</translation>
     
-YES  
-The translation "ออกเดินทาง (òk dern thāng)" literally means "depart" or "to go out," which is not appropriate for the context of an "Outbound Connection" in Bitcoin networking. The term "Outbound" here refers to a connection initiated outwardly to a peer, so a more accurate translation would be "ขาออก" which is commonly used in networking to mean "outbound."
+YES
+The translation "ออกเดินทาง (òk dern thāng)" means "depart" or "set off", which is incorrect in this context. In the context of network connections, "Outbound" typically means "ขาออก" or "ภายนอก" in Thai.
 
-Correct translation:  
+Correct translation:
 ขาออก
 ```
 
@@ -313,13 +315,11 @@ Correct translation:
         <source>Whether we relay transactions to this peer.</source>
         <translation>ไม่ว่าความเราจะส่งการทำธุรกรรมไปยังเพื่อนนี้หรือไม่</translation>
     
-YES  
-The translation contains a typo and awkward phrasing. The word "ความเราจะ" is incorrect and should be "เราจะ" (we will). Also, "เพื่อนนี้" is too informal for "this peer" in the context of Bitcoin networking; a better term would be "เพียร์นี้" or "โหนดนี้". The phrase "Whether we relay transactions to this peer." is a query or a statement about the condition of relaying transactions, so the translation should reflect that condition better.
+YES
+The Thai translation is awkward and inaccurate. The phrase "ไม่ว่าความเราจะส่งการทำธุรกรรมไปยังเพื่อนนี้หรือไม่" is grammatically incorrect, and "ไม่ว่าความเราจะ..." is confusing. A more natural translation would be:
 
-Correct translation:  
-"เราจะส่งธุรกรรมไปยังเพียร์นี้หรือไม่"  
-or more formally:  
-"จะส่งธุรกรรมไปยังเพียร์นี้หรือไม่"
+Correct translation:
+เราจะถ่ายทอดธุรกรรมไปยัง peer นี้หรือไม่
 ```
 
 ```
@@ -327,7 +327,7 @@ or more formally:
         <translation>ธุรกรรมล่าสุด (Thurakam lasut)</translation>
     
 YES
-The translation includes an unnecessary transliteration "(Thurakam lasut)" which is not standard or needed. The Thai phrase "ธุรกรรมล่าสุด" correctly means "Last Transaction" and should be used alone without extra phonetic spelling.
+The translation is partially correct as "ธุรกรรมล่าสุด" means "Last Transaction". However, the parenthetical "(Thurakam lasut)" is a phonetic transliteration in Latin script, which is unnecessary and not standard practice in Thai UI translation. It could be confusing for users.
 
 Correct translation:
 ธุรกรรมล่าสุด
@@ -337,11 +337,11 @@ Correct translation:
         <source>Last Send</source>
         <translation>ส่งสุดท้าย (Song Soot Thai)</translation>
     
-YES  
-The translation includes an unnecessary transliteration "(Song Soot Thai)" in parentheses, which is not appropriate in this context. The correct translation should be concise and clear without the transliteration.
+YES
+The parenthetical transliteration "(Song Soot Thai)" is unnecessary and not standard for a native 'th' translation. The Thai script alone suffices.
 
-Correct translation:  
-ส่งสุดท้าย
+Correct translation:
+ส่งล่าสุด
 ```
 
 ```
@@ -349,11 +349,11 @@ Correct translation:
         <extracomment>Explanatory text for an inbound peer connection.</extracomment>
         <translation>ขาเข้า: เริ่มต้นโดยปัสสาวะ</translation>
     
-YES  
-The translation mistakenly uses the word "ปัสสาวะ" which means "urinate," making the phrase nonsensical and inappropriate. The correct term should denote "peer," which in this context is a network peer, not a biological action.
+YES
+The Thai word "ปัสสาวะ" means "urine," which is a mistranslation of "peer" (which should be a network peer, i.e., "เพียร์" or "เพื่อนร่วมเครือข่าย"). The rest of the translation is otherwise accurate, but this error is significant and makes the translation problematic and incorrect.
 
-Correct translation:  
-ขาเข้า: เริ่มต้นโดยเพื่อนร่วมเครือข่าย
+Correct translation:
+ขาเข้า: เริ่มต้นโดยเพียร์
 ```
 
 ```
@@ -362,7 +362,7 @@ Correct translation:
         <translation>ที่อยู่ Copy</translation>
     
 YES
-The translation incorrectly mixes Thai and English by placing the English word "Copy" after "ที่อยู่" (address). The correct translation should use the proper Thai verb for "copy" before "ที่อยู่" or simply translate the phrase as "คัดลอกที่อยู่".
+The translation is incorrect and awkward. "ที่อยู่ Copy" combines Thai and English in an unnatural way and reverses the order of the wording. The correct translation should have "Copy" in Thai and match the context, which is an action.
 
 Correct translation:
 คัดลอกที่อยู่
@@ -372,10 +372,9 @@ Correct translation:
         <source>Copy address</source>
         <translation>ที่อยู่ Copy</translation>
     
-YES  
-The translation incorrectly places the English word "Copy" after "ที่อยู่" (address), which is unnatural in Thai. The correct translation should convey the command "Copy address" in a natural and clear way, such as "คัดลอกที่อยู่".  
+YES
+The order of words is incorrect; "ที่อยู่ Copy" reads awkwardly in Thai. The term "Copy" should be in a verb position, and Thai commonly uses "คัดลอก" for "Copy". The correct translation should be:
 
-Correct translation:  
 คัดลอกที่อยู่
 ```
 
@@ -384,9 +383,10 @@ Correct translation:
         <translation>คัดลอก  ป้าย</translation>
     
 YES
-There is an extra space between "คัดลอก" and "ป้าย" in the translation. The correct translation should have only one space:
+There is an extra space between "คัดลอก" and "ป้าย" which is a formatting issue. In Thai, there should be no extra space.
 
-คัดลอก ป้าย
+Correct translation:
+คัดลอกป้าย
 ```
 
 ```
@@ -394,38 +394,34 @@ There is an extra space between "คัดลอก" and "ป้าย" in the t
         <translation>การส่งออกล้มเหลว</translation>
     
 YES
-The translation "การส่งออกล้มเหลว" means "Export failed," which does not correspond to the source text "Label." 
+The translation is incorrect. "การส่งออกล้มเหลว" means "Export failed", which is unrelated to "Label".
 
 Correct translation:
-ป้ายชื่อ
+ป้ายกำกับ
 ```
 
 ```
         <source>Copy fee</source>
         <translation>ค่าลอกสำเนา (kâa lók sàm-náo)</translation>
     
-YES  
-The translation "ค่าลอกสำเนา (kâa lók sàm-náo)" means "copying fee" or "fee for photocopying," which is not appropriate in the Bitcoin context for "Copy fee." Here, "Copy fee" likely refers to the action of copying the fee amount or fee data, not a literal payment for making a copy.
+YES
+The translation "ค่าลอกสำเนา (kâa lók sàm-náo)" is inaccurate and problematic. "ค่าลอกสำเนา" literally translates to "copying fee" or "fee for duplicating a copy," which is a misunderstanding of the context. In Bitcoin applications, "Copy fee" typically refers to the action of "copying (the value of) the fee" to the clipboard, not a fee for making a copy.
 
-A more accurate translation for "Copy fee" related to copying a fee value (e.g., in a UI button) would be simply:
-
-"คัดลอกค่าธรรมเนียม"  
-
-This means "copy fee" in the sense of copying the fee amount. Also, the transliteration in parentheses is unnecessary in UI text.
-
-Correct translation:  
+Correct translation:
 คัดลอกค่าธรรมเนียม
+
+This means "Copy (the) fee," which matches the user-interface context. No need for transliteration in parentheses.
 ```
 
 ```
         <source>Copy change</source>
         <translation>การเปลี่ยนแปลงข้อความ</translation>
     
-YES  
-The English phrase "Copy change" in the context of Bitcoin typically means copying the amount of "change" (the leftover amount after a transaction). The translation "การเปลี่ยนแปลงข้อความ" means "text change" or "change of message," which is inaccurate and unrelated to the Bitcoin context.  
+YES
+The translation is inaccurate. "Copy change" in the Bitcoin context refers to copying the "change" amount or address from a transaction – not "copying text changes." The provided Thai translation, "การเปลี่ยนแปลงข้อความ," means "change of message/text," which is incorrect.
 
-A better translation would be:  
-คัดลอกทอนเงิน
+Correct translation:
+คัดลอกเงินทอน
 ```
 
 ```
@@ -433,20 +429,19 @@ A better translation would be:
         <translation>การส่งออกล้มเหลว</translation>
     
 YES
-The translation "การส่งออกล้มเหลว" means "Export failed," which does not correspond to the source text "Label." 
+The translation is incorrect. "การส่งออกล้มเหลว" means "Export failed", which is unrelated to "Label".
 
 Correct translation:
-ป้ายชื่อ
+ป้ายกำกับ
 ```
 
 ```
         <source>Copy address</source>
         <translation>ที่อยู่ Copy</translation>
     
-YES  
-The translation incorrectly places the English word "Copy" after "ที่อยู่" (address), which is unnatural in Thai. The correct translation should convey the command "Copy address" in a natural and clear way, such as "คัดลอกที่อยู่".  
+YES
+The order of words is incorrect; "ที่อยู่ Copy" reads awkwardly in Thai. The term "Copy" should be in a verb position, and Thai commonly uses "คัดลอก" for "Copy". The correct translation should be:
 
-Correct translation:  
 คัดลอกที่อยู่
 ```
 
@@ -455,9 +450,10 @@ Correct translation:
         <translation>คัดลอก  ป้าย</translation>
     
 YES
-There is an extra space between "คัดลอก" and "ป้าย" in the translation. The correct translation should have only one space:
+There is an extra space between "คัดลอก" and "ป้าย" which is a formatting issue. In Thai, there should be no extra space.
 
-คัดลอก ป้าย
+Correct translation:
+คัดลอกป้าย
 ```
 
 ```
@@ -465,9 +461,11 @@ There is an extra space between "คัดลอก" and "ป้าย" in the t
         <translation>การส่งออกล้มเหลว</translation>
     
 YES
-The translation "การส่งออกล้มเหลว" means "Export failed," which does not correspond to the source text "Label." 
+The translation is incorrect. "การส่งออกล้มเหลว" means "Export failed", which is unrelated to "Label".
 
 Correct translation:
-ป้ายชื่อ
+ป้ายกำกับ
 ```
 </details>
+
+Number of issues: 38.

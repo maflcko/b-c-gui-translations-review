@@ -13,22 +13,27 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <source>Right-click to edit address or label</source>
         <translation>Xaq-click si aad cinwaanka edit ama qoraalka</translation>
     
-YES  
-The translation is incomplete and partially incorrect. The English phrase "Right-click to edit address or label" means performing a right-click action to edit either the address or label. The current translation says "Xaq-click si aad cinwaanka edit ama qoraalka," where "edit" is left untranslated and grammar is not fully correct in Somali ('so'). Also, "Right-click" should be translated properly, and the structure should reflect Somali grammatical norms.
+YES
+The translation is understandable but contains several issues:
+- "Xaq-click" uses an English/Somali hybrid form; the correct Somali word for "right" is "midig."
+- The format "edit address or label" is not properly rendered; "edit" should be translated.
+- There is some awkward phrasing, and the format is not natural or standard for Somali.
+- It is missing correct translation for "label" ("qoraal" can suffice but "sumad" might be more suitable).
+- The word order and spacing are acceptable.
 
-A better translation would be:  
-"Guji midig si aad u tafatirto cinwaanka ama summada"
+Correct translation:
+Midig-guji si aad u tafatirto cinwaanka ama sumadda
 ```
 
 ```
         <source>New</source>
         <translation>Hormarin</translation>
     
-YES  
-The Somali translation for "New" is incorrect. The provided translation "Hormarin" appears to be a misspelling or inaccurate. The correct Somali word for "New" is "Cusub".
+YES
+The translation "Hormarin" is incorrect for "New." The correct translation for "New" in Somali is "Cusub."
 
-Correct translation:  
-<translation>Cusub</translation>
+Correct translation:
+Cusub
 ```
 
 ```
@@ -36,9 +41,8 @@ Correct translation:
         <translation>CLose</translation>
     
 YES
-The translation contains a case error and is not in Somali ('so'). The correct Somali translation for "Close" (as in a button to close a window) is "Xir". 
+The translation is incorrect—the word "CLose" is simply a misspelled/transliterated English word and is not Somali. Also, it uses a capital "L" unnecessarily. The correct Somali translation would be:
 
-Correct translation:
 Xir
 ```
 
@@ -47,54 +51,49 @@ Xir
         <translation>Sida loo tababbardhigo qaabka loo takhasusay</translation>
     
 YES  
-The translation does not reflect the original English meaning and appears unrelated. The correct translation in Somali ('so') for "Export the data in the current tab to a file" would be:  
-"Dhoofinta xogta ku jirta tabka hadda jirta una dhoofiso fayl"
+The provided translation is inaccurate and does not convey the meaning of the English source, which is about exporting data from the current tab into a file. The Somali text given roughly translates to "How to specialize the way of training", which is unrelated.  
+
+Correct translation:  
+Dhoofinta xogta ku jirta tabka hadda furan ee fayl.
 ```
 
 ```
         <source>Export</source>
         <translation> Dhoofinta</translation>
     
-YES  
-There is an extra leading space before the word "Dhoofinta" in the translation, which is a whitespace formatting issue. The translation should not have leading or trailing spaces.
+YES
+There is an extra leading whitespace in the translation, which is a formatting issue. Also, while "Dhoofinta" means "The export" (noun), in software context "Export" as an action/button is better rendered as "Dhoof", which is the imperative/verb form.
 
-Correct translation:  
-Dhoofinta
+Correct translation:
+Dhoof
+
+Or, if noun is intended (less common for UI buttons):
+Dhoofin
+
+So the best translation here is:
+Dhoof
 ```
 
 ```
         <source>Choose the address to send coins to</source>
         <translation>Dooro cinwaanka u dirto lacagta qadaadiicda ah si ay u</translation>
     
-YES  
-The word order in the Somali translation is incorrect and the sentence is incomplete or awkward. A correct translation of "Choose the address to send coins to" should be:  
-"Dooro cinwaanka lacagta qadaadiicda loo diro"
-```
+YES
+The translation is incomplete and ungrammatical. The Somali translation cuts off at "si ay u", which does not complete the sentence. Additionally, "lacagta qadaadiicda ah" is a literal translation of "the money of coins/coins' money", but "qadaadiic" suffices for "coins" in Somali.
 
-```
-        <source>Choose the address to receive coins with</source>
-        <translation>Dooro cinwaanka si aad u hesho lacagta qadaadiicda leh</translation>
-    
-YES  
-The translation given is in Somali, which corresponds to the language code 'so', so the language is correct. However, the provided translation is more a literal Somali phrase meaning "Choose the address so that you can receive the money with coins," which is understandable but somewhat awkward and not fully corresponding to a natural translation in the Bitcoin context.
-
-A better translation would more clearly reflect the context of choosing a Bitcoin address to receive coins, ensuring clarity and flow in Somali. For example:  
-"Dooro cinwaanka lagu heli doono qadaadiicda"  
-or  
-"Dooro cinwaanka lagu qaadan doono qadaadiicda"
-
-Therefore, the original translation is somewhat inaccurate or unnatural for the Bitcoin context.
-
-Correct translation:  
-Dooro cinwaanka lagu heli doono qadaadiicda
+Correct translation:
+Dooro cinwaanka aad dooneyso inaad u dirto qadaadiicda
 ```
 
 ```
         <source>Choose</source>
         <translation>CAagga</translation>
     
-YES  
-The translation "CAagga" contains inappropriate capitalization and looks incorrect for the Somali language ('so'). The correct translation for "Choose" in Somali is "Doorto".
+YES
+There is a typographical error in the translation: "CAagga" is not correct in Somali, and the capitalization is inconsistent. The correct Somali translation for "Choose" is "Dooro".
+
+Correct translation:
+Dooro
 ```
 
 ```
@@ -103,22 +102,27 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation>Kuwani waa cinwaanada Seeraar in aad ku direyso lacagaha. Marwalba waxaa ka mid ah masuuliyiinta kubadda cagta ah ee hubinaya in ay ka soo horjeedaan tacaddiyadeeda, taas oo ay ku tallaabsato in ay ka qayb qaataan isbedelka taleemooyinka.</translation>
     
 YES
-The translation does not correspond to the source text and introduces unrelated content about football officials and protests, which is incorrect and irrelevant. The original message is about Bitcoin addresses and signing limitations, but the translation talks about something entirely different.
+The translation is problematic. The Somali ('so') translation provided is incorrect, off-topic, and appears to contain unrelated content about football authorities and reforms rather than the meaning of the original Bitcoin-related source. There is also no mention of "legacy" addresses, "receive tab", or correct terminology for Bitcoin addresses.
 
 Correct translation:
-Kuwani waa cinwaanadaaga Bitcoin ee aad ku heli karto lacagaha. Isticmaal batoonka 'Abuur cinwaan cusub oo lagu helo' ee tabka helitaanka si aad u abuurto cinwaanada cusub.
-Saxiixidda waxaa kaliya suurtagal ah cinwaanada nooca 'legacy'.
+Kuwani waa cinwaannadaaga Bitcoin ee lagu helo lacagaha. Isticmaal badhanka 'Abuur cinwaan cusub oo la helo' ee tabta la helayo si aad u abuurto cinwaan cusub.
+Saxeexidda waxay suurtagal u tahay keliya cinwaanada nooca 'legacy'.
 ```
 
 ```
         <source>Copy Address</source>
         <translation> Nuqul Kabaha Cinwaanka</translation>
     
-YES  
-There is an extra leading space before "Nuqul" which causes a whitespace formatting issue. The word "Kabaha" is incorrect in the context of Bitcoin "address." The correct term for "address" in Somali, especially in the Bitcoin context, is "Cinwaanka." The word "Nuqul" means "Copy," so it should be combined without extra spacing and with the correct words.
+YES
+There is an erroneous word in the translation. "Kabaha" means "shoes" in Somali, which is not correct here. Also, there is an extra space at the beginning of the translation.
 
-Correct translation:  
-<translation>Nuqul Cinwaanka</translation>
+Correct translation:
+Nuqul cinwaanka
+
+Explanation:
+- "Nuqul" = "Copy"
+- "cinwaanka" = "the address"
+- Removed erroneous "Kabaha" and the stray leading space.
 ```
 
 ```
@@ -126,10 +130,12 @@ Correct translation:
         <translation>Nuqul  Label</translation>
     
 YES
-There is an extra space before "Label" in the translation which is inconsistent with the source text. The correct translation should remove the extra space for proper formatting.
+There is an unnecessary space between "Nuqul" and "Label". Somali ("so") language does not require this spacing, and keeping it introduces a formatting error. Furthermore, "Nuqul" is the correct term for "Copy", and "Label" can be left as is if there is no established Somali term; however, to avoid code mixing, "Label" could optionally be translated as "Sumad" (meaning "label" or "mark").
 
 Correct translation:
 Nuqul Label
+or, for a more Somali wording:
+Nuqul Sumad
 ```
 
 ```
@@ -138,16 +144,10 @@ Nuqul Label
         <translation>Comma kala file</translation>
     
 YES
-The translation is not accurate. The English term "Comma separated file" refers to a file format where fields are separated by commas, commonly called "CSV" (Comma-Separated Values). The provided translation "Comma kala file" is a mix of English and an incorrect word "kala" which does not mean "separated" in Somali. 
-
-A better translation in Somali would be:
-"Fayl kala soocan oo leh faasiqadaha" 
-or more simply,
-"Fayl isku kala soocan oo leh faasiqado" 
-which means "File separated by commas."
+The translation "Comma kala file" is incorrect in Somali, and does not accurately translate "Comma separated file". "Kala" by itself means "separate" but the phrase does not make sense as written. Also, terms like "comma" and "file" may be localized or more appropriately explained to Somali speakers.
 
 Correct translation:
-Fayl isku kala soocan oo leh faasiqado
+Faylka kooxo lagu kala saaray faasiil (,)
 ```
 
 ```
@@ -155,83 +155,74 @@ Fayl isku kala soocan oo leh faasiqado
         <extracomment>An error message. %1 is a stand-in argument for the name of the file we attempted to save to.</extracomment>
         <translation>Waxaa jiray qalad isku dayaya in uu badbaadiyo liiska cinwaanka si. %1Iskuday mar kale.</translation>
     
-YES  
-The translation contains grammatical errors and formatting issues:  
-- The phrase "isku dayaya in uu badbaadiyo" (trying to save) is awkward and incomplete in this context.  
-- The punctuation and spacing are incorrect: "%1Iskuday" lacks space after %1 and "si." is incomplete and misplaced.  
-- The phrase "liiska cinwaanka si." is unnatural and incomplete; "to %1" should be clearly linked.  
-- The polite request "Please try again." is translated as "Iskuday mar kale." which is acceptable but needs proper spacing.
+YES
+The translation has issues:
+- The format specifier %1 is incorrectly separated from the rest of the sentence, causing readability problems.
+- The sentence structure is awkward and does not flow well in Somali.
+- Missing appropriate punctuation and proper flow in Somali.
 
-Corrected translation:  
-Waxaa jiray qalad markii la isku dayay in liiska cinwaannada lagu kaydiyo %1. Fadlan mar kale isku day.
+Correct translation:
+Waxaa jiray qalad markii la isku dayay in liiska cinwaannada lagu kaydiyo %1. Fadlan isku day mar kale.
 ```
 
 ```
         <source>Sending addresses - %1</source>
         <translation>Cinwaanada diraya%1</translation>
     
-YES  
-The translation merges the words without proper spacing and uses an incorrect form for "sending addresses." The correct translation in Somali should keep a space before the placeholder "%1" and use the proper term for "sending" and "addresses." A better translation would be:
-
-Cinwaanada diraya - %1
-```
-
-```
-        <source>Enter passphrase</source>
-        <translation>Gali Passphrase</translation>
-    
 YES
-The translation "Gali Passphrase" is partially correct but not fully appropriate. In Somali, "Enter" is commonly translated as "Geli" rather than "Gali". Also, "Passphrase" is an English word that may be better translated or left as is depending on context. However, the usual practice is to retain "passphrase" given its technical nature, or provide an explanatory word.
+There is a missing space between "diraya" and "%1", causing a whitespace format issue. Also, the translation would be clearer as "Cinwaanada diraya - %1" to mirror the source formatting.
 
 Correct translation:
-Geli passphrase
+Cinwaanada diraya - %1
 ```
 
 ```
         <source>Repeat new passphrase</source>
         <translation>Ku celi passphrase cusub</translation>
     
-YES  
-The translation mixes Somali ('Ku celi passphrase cusub') with an untranslated English word 'passphrase'. The English phrase "Repeat new passphrase" should be fully translated into Somali for consistency and clarity, especially in a technical context like Bitcoin.
+YES
+The translation "Ku celi passphrase cusub" literally means "Repeat new passphrase," but the construction is awkward in Somali. "Ku celi" means "repeat," but contextually for "Repeat new passphrase" (as in prompting the user to re-enter their new passphrase), a clearer Somali translation would be:
 
-Correct translation:  
-"Ku celi erayga sirta ah ee cusub"
+Soo celi ereyga sirta cusub
+
+Correct translation:
+Soo celi ereyga sirta cusub
 ```
 
 ```
         <source>Encrypt wallet</source>
         <translation>jeebka Encrypt</translation>
     
-YES  
-The translation is problematic because it mixes English and Somali improperly. "Encrypt wallet" in Somali should be fully translated and natural. The word "jeebka" means "the wallet" and should precede the verb. The verb "encrypt" can be translated as "sirta" or "iska sir", meaning "to encrypt" or "make secret."  
+YES
+The translation is problematic. "jeebka Encrypt" mixes Somali and English, and the word order is incorrect. The correct Somali translation should be fully in Somali.
 
-Correct translation:  
-"Jeebka sirta"  
-or more natural imperative:  
-"Jeebka isku sir"
+Correct translation:
+Qarso jeebka
 ```
 
 ```
         <source>Unlock wallet</source>
         <translation>jeebka Unlock</translation>
     
-YES  
-The translation is problematic. The English phrase "Unlock wallet" is translated as "jeebka Unlock," which mixes a Somali word "jeebka" (meaning "the pocket") with the English word "Unlock" untranslated. This is inconsistent and incorrect as the whole phrase should be translated properly into Somali without retaining English words.  
+YES
+The translation simply mixes Somali ("jeebka" which means "pocket" and is sometimes colloquially used for "wallet") with the English word "Unlock". It is neither fully translated nor correct.
 
-Correct translation:  
-"Fur jeebka"  
-(meaning "Unlock the wallet," with "jeebka" used commonly for "wallet" in Somali and "Fur" meaning "Unlock"/"Open")
+Correct translation:
+Fur jeebka
+or
+Fur boorsada
+(Depending on preferred terminology for "wallet" in the Bitcoin context. "Boorsada" is also commonly used for wallet/purse in Somali. "Fur" means "unlock/open".)
 ```
 
 ```
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
         <translation>Digniin: Haddii aad jeebka jeebkaaga qarisid, Oo aad lumiso ereygii,Adigaa sameyn doontaa&lt;b&gt;Lumin oo dhan BITCOINS AAD&lt;/b&gt;!</translation>
     
-YES  
-The translation has issues with grammar, punctuation, and spacing. "jeebka jeebkaaga" is repetitive and awkward; "ereygii" is vague and should be more clearly "furaha sirta" (passphrase). The phrasing "Adigaa sameyn doontaa" is incorrect and unnatural here. The emphasis tags (&lt;b&gt;&lt;/b&gt;) should have a space before them to separate from the previous word.
+YES
+There are issues with repetition ("jeebka jeebkaaga" meaning "your wallet your wallet"), awkward phrasing, and the translation does not fully preserve the original meaning and emphasis. The translation also lacks proper spacing and natural word order in Somali, particularly around the bold warning. Format specifiers are not an issue here, but the syntax and capitalisation do not follow the source's intention.
 
-Correct translation:  
-Digniin: Haddii aad jeebkaaga qariso oo aad lumiso furaha sirta, waxaad &lt;b&gt;LUMIN DOONTAA DHAMMAAN BITCOINS-KAAGA&lt;/b&gt;!
+Correct translation:
+Digniin: Haddii aad qarisid jeebkaaga oo aad lumiso erayga sirta ah, &lt;b&gt;WAXAAD WAAYI DOONTAA DHAMMAAN BITCOIN-KAAGA&lt;/b&gt;!
 ```
 
 ```
@@ -239,10 +230,14 @@ Digniin: Haddii aad jeebkaaga qariso oo aad lumiso furaha sirta, waxaad &lt;b&gt
         <translation>Ma hubtaa in aad jeceshahay in aad jeebka sirta?</translation>
     
 YES
-The translation is inaccurate and awkward in Somali. "Ma hubtaa" means "Are you sure," but "in aad jeceshahay in aad jeebka sirta?" literally translates to "that you want to your pocket the secret?" which is not proper Somali and does not convey "encrypt your wallet."
+The translation is inaccurate and ungrammatical. The Somali translation provided does not clearly convey the intended meaning of "encrypting the wallet"; it translates literally as "Are you sure that you like to encrypt the pocket?", which is not appropriate for the technical term "wallet" (here meaning Bitcoin wallet) or for "encrypt".
 
 Correct translation:
-Ma hubtaa inaad jeebkaaga sir geliso?
+Ma hubtaa inaad rabto inaad jeebkaaga sirgaysato?
+OR (more formally/technically accurate)
+Ma hubtaa inaad rabto inaad kaydkaaga qariso?
+OR
+Ma hubtaa inaad rabto inaad sirgaysato boorsadaada?
 ```
 
 ```
@@ -250,44 +245,48 @@ Ma hubtaa inaad jeebkaaga sir geliso?
         <translation>Ku qor passrase cusub jeebka.&lt;br/&gt;Fadlan isticmaal ereygii passphrase ah &lt;b&gt;toban ama in ka badan characters random&lt;/b&gt;ama&lt;b&gt;sideed ama kabadan&lt;/b&gt;.</translation>
     
 YES
-The translation has multiple issues: "passrase" is a typo for "passphrase"; the phrase "characters random" should be reordered as "characters random ah" or ideally translated properly; the conjunction "ama" ("or") lacks spaces around it; and "sideed ama kabadan" (eight or more) is incomplete and missing the noun, e.g. "words".
+The translation is inaccurate and incomplete. Several elements are missing, such as the words "words" and there is poor handling of spacing around tags and format. The phrase "characters random" should be "xarfo aan la isku xirin". Also, "jeebka" is a literal translation of "wallet" but "jeebka" means "pocket" in Somali, while "wallet" as a crypto wallet should be "boorsada" or "kaydiska" to avoid confusion. "passphrase" should be localized or quoted if no Somali equivalent. Also, missing is the full sentence structure and proper linkage.
 
 Correct translation:
-Ku qor erayga sirta cusub ee jeebka.&lt;br/&gt;Fadlan isticmaal eray sir ah &lt;b&gt;toban ama in ka badan oo xarafyo kala duwan ah&lt;/b&gt; ama &lt;b&gt;sideed ama in ka badan oo erayo ah&lt;/b&gt;.
+Geli erayga sirta cusub ee boorsada.&lt;br/&gt;Fadlan isticmaal &lt;b&gt;toban ama in ka badan xarfo aan la isku xirin&lt;/b&gt;, ama &lt;b&gt;sideed ama in ka badan erayo&lt;/b&gt; oo kala duwan.
 ```
 
 ```
         <source>Enter the old passphrase and new passphrase for the wallet.</source>
         <translation>sideed ula kacsan ama kabadan</translation>
     
-YES  
-The translation provided does not accurately represent the source sentence and is incomplete or nonsensical in Somali ('so'). The source text instructs the user to "Enter the old passphrase and new passphrase for the wallet." The translation should mention entering both the old and new passphrases related to the wallet.
+YES
+The translation is completely incorrect and unrelated to the source sentence. The Somali phrase "sideed ula kacsan ama kabadan" does not translate to "Enter the old passphrase and new passphrase for the wallet." It appears to be nonsensical in this context.
 
-Correct translation:  
-"Geli erayga sirta ah ee hore iyo erayga sirta ah ee cusub ee boorsada."
+Correct translation:
+Geli erayga sirta hore iyo erayga sirta cusub ee boorsada.
 ```
 
 ```
         <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
         <translation>Xusuusnow in encrypting jeebka si buuxda ma uu ilaalin karo bitcoins aad ka xado by furin qaadsiinaya aad computer.</translation>
     
-YES  
-The translation contains a mixture of English and Somali words and is grammatically incorrect. For example, "encrypting" and "wallet" are left in English, and phrases like "si buuxda ma uu ilaalin karo" are unidiomatic. Also, "by furin qaadsiinaya aad computer" is nonsensical and mixes languages improperly.
+YES
+The translation is problematic for the following reasons:
+- It awkwardly mixes Somali and English (“encrypting”, "by", "bitcoins") rather than using Somali equivalents.
+- The phrase "furin qaadsiinaya" is an unclear or incorrect attempt at 'malware infecting'.
+- Sentence structure is not natural in Somali.
+- There are stray spaces ("ka xado by furin").
+- The translation is inaccurate and unclear for Somali speakers.
 
-Correct translation:  
-Xusuusnow in sirgelinta jeebkaaga aysan si buuxda u ilaalin karin bitcoins-kaaga inay xadaan haddii malware uu ku soo galo kombiyuutarkaaga.
+Correct translation:
+Xusuusnow in jeebkaaga la sirayo aysan si buuxda u ilaalin karin bitcoins-kaaga, haddii barnaamij xun uu ku dhaco kombiyuutarkaaga.
 ```
 
 ```
         <source>Wallet to be encrypted</source>
         <translation>Jeebka in la encrypted</translation>
     
-YES  
-The translation is incorrect. "Jeebka in la encrypted" is not grammatically correct in Somali ("so"). The phrase should clearly convey "Wallet to be encrypted" meaning a wallet that needs encryption. A better translation would be:  
-"Jeebka in la qariyo" or "Jeebka la qarinayo" (meaning "Wallet to be encrypted").  
+YES
+The translation is partly Anglicized and ungrammatical. The word "encrypted" is not translated into Somali; it should be localized. Also "Jeebka" means "the pocket" and is not a common translation for "wallet" in the context of Bitcoin—the preferred term is "boorsada" or "boorsada lacagta".
 
-Correct translation:  
-Jeebka in la qarinayo
+Correct translation:
+Boorsada waa in la sirgaxaa
 ```
 
 ```
@@ -295,54 +294,47 @@ Jeebka in la qarinayo
         <translation>Jeebka in aan la xarriiqin</translation>
     
 YES
-The translation misses conveying the future action "is about to be encrypted" and is a fragment meaning roughly "Your wallet will not be encrypted" or "Your wallet is not to be encrypted," which changes the meaning. The source implies an imminent encryption event, which should be clearly expressed in Somali.
+The translation is inaccurate. The English sentence states "Your wallet is about to be encrypted", which means the wallet will soon be encrypted. The Somali translation "Jeebka in aan la xarriiqin" is incorrect; "Jeebka" means "wallet" but "in aan la xarriiqin" may mean "that is not to be drawn" or "not to be crossed out" and does not convey the meaning of encryption.
 
 Correct translation:
-Jeebkaaga waa inuu hadda la sirgaliyaa
+Boorsadaada waa la ilaalinayaa (ama "Boorsadaada waa la qarfinayaa")
 ```
 
 ```
         <source>The supplied passphrases do not match.</source>
         <translation>Supplied passrases ma u dhigma.</translation>
     
-YES  
-The translation is incomplete and contains a misspelling ("passrases" instead of "passphrases"). It also does not convey the full meaning "The supplied passphrases do not match."  
+YES
+The translation is incorrect. It is mostly in English with only "ma u dhigma" in Somali, and contains a spelling error ("passrases" instead of "passphrases"). 
 
-Correct translation:  
-"Furahaarayada la siiyay ma is waafaqaan."
+Correct translation:
+Erayada sirta ah ee la bixiyay isma mid aha.
 ```
 
 ```
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
         <translation>Passrase soo galay for decryption jeebka ahaa mid khaldan.</translation>
     
-YES  
-The translation mixes English and Somali improperly ("Passrase soo galay for decryption jeebka ahaa mid khaldan"). It should be fully in Somali and properly structured. Also, "passphrase" should be translated or adapted correctly, and "wallet" ("jeebka") should be integrated smoothly.
+YES
+The translation contains grammatical errors and an unnatural mix of English and Somali. 'Passrase soo galay for decryption jeebka' is not proper Somali and includes unnecessary English words ("for decryption"). Also, "wallet" is more clearly translated as "boorsada" or "wallet-ka" in Somali.
 
-Correct translation:  
-"Furaha sirta ah ee loo galay furfuridda jeebka ayaa ahaa mid khaldan."
-```
-
-```
-        <source>Warning: The Caps Lock key is on!</source>
-        <translation>Digniin: Furaha Lock Caps waa on!</translation>
-    
-YES  
-The translation contains errors and unnatural phrasing. "Digniin" is incorrect; the correct Somali word for "Warning" is "Digniin" but the spelling is slightly off or may cause confusion with "Digniin". Also, "Furaha Lock Caps" mixes English and Somali unnecessarily. "Caps Lock" is often transliterated or translated as "Furaha Caps Lock" or "Furaha xarafka weyn" to convey the meaning.
-
-A better translation would be:  
-"Digniin: Furaha Caps Lock waa shidan yahay!"
+Correct translation:
+Erayga sirta ah ee loo geliyay furitaanka boorsada waa mid khaldan.
 ```
 
 ```
         <source>Settings file %1 might be corrupt or invalid.</source>
         <translation>Settings file,%1waxaa laga yaabaa in musuqmaasuq ama aan asal ahayn.</translation>
     
-YES  
-The translation has spacing and punctuation issues, as there's no space after the comma and before %1. Also, "musuqmaasuq" typically means "corruption" in a political or moral sense, not "corrupt" as in a file being corrupted. A better choice would be "xumo" or "waxyeello" to refer to a corrupted file. The phrase "aan asal ahayn" is somewhat vague; "aan sax ahayn" (not correct/valid) is clearer.  
+YES
+The translation is problematic for several reasons:
+- The English term "Settings file" is untranslated; it should be rendered in Somali.
+- There is a stray comma after "Settings file", which is not present in the source.
+- "%1" is merged directly with Somali words without appropriate spacing.
+- The tone and choice of "musuqmaasuq" (corruption) is correct, but "aan asal ahayn" is unclear for "invalid".
 
-Correct translation:  
-"Faylka dejinta %1 waxaa laga yaabaa inuu xumoobay ama aanu sax ahayn."
+Correct translation:
+Faylka dejinta %1 waxa laga yaabaa inuu musuqmaasuqmo ama aanu sax ahayn.
 ```
 
 ```
@@ -350,27 +342,13 @@ Correct translation:
         <translation>Qalad gudaha ah ayaa dhacay.%1isku dayi doonaan in ay si ammaan ah u sii socdaan. Kani waa cayil aan la filayn oo la soo sheegi karo sida hoos ku xusan.</translation>
     
 YES
-There are spacing issues and some wording awkwardness in the translation:
-- There should be a space after the period in "dhacay.%1".
-- "%1" refers to a singular entity ("will attempt"), so the verb following it should be singular: "isku dayi doonaa" instead of "isku dayi doonaan".
-- "cayil" means "fat" or "obesity," which is incorrect for "bug." The correct term is "cilad".
-- "sii socdaan" ("to continue") is better expressed as "sii wadi doono" for "will attempt to continue."
-- "an internal error occurred" = "Qalad gudaha ah ayaa dhacay" is acceptable but could better flow as "Waxaa dhacay qalad gudaha ah."
+There are two issues:
+
+1. Missing space after the period: ".%1isku" should be ". %1 isku"
+2. "cayil" is an incorrect term for "bug" in Somali, as "cayil" means "fat." The correct word is "cilad" or "khalad" for "bug."
 
 Correct translation:
-"Waxaa dhacay qalad gudaha ah. %1 isku dayi doonaa in ay si ammaan ah u sii wado. Kani waa cilad aan la filayn oo la soo sheegi karo sida hoos ku xusan."
-```
-
-```
-        <source>Do you want to reset settings to default values, or to abort without making changes?</source>
-        <extracomment>Explanatory text shown on startup when the settings file cannot be read. Prompts user to make a choice between resetting or aborting.</extracomment>
-        <translation>Ma waxaad doonaysaa in aad dib u dejiso goobaha si aad u default qiyamka, ama aad iska xaaqdo adigoon isbeddelin?</translation>
-    
-YES  
-The translation is partly understandable but contains awkward phrasing and some erroneous word order, diminishing clarity and naturalness in Somali. In particular, "si aad u default qiyamka" is incorrect and unnatural; "default" should be translated or integrated properly, and "qiyamka" (values) should precede "default" if used as a loanword or be fully translated. Also, "iska xaaqdo" is not an appropriate verb here for "abort." A better verb would be "joojiso" (stop/abort) or "ka laabato" (cancel).  
-
-Correct translation:  
-"Ma waxaad rabtaa inaad dib u dejiso goobaha qiimayaashii asalka ahaa, ama inaad joojiso adigoon wax isbeddel ah samayn?"
+Qalad gudaha ah ayaa dhacay. %1 waxay isku dayi doonaan inay si ammaan ah u sii socdaan. Kani waa cilad aan la filayn oo la soo sheegi karo sida hoos ku xusan.
 ```
 
 ```
@@ -379,42 +357,37 @@ Correct translation:
         <translation>Waxaa dhacday qalad dilaa ah. Hubi in file settings waa writable, ama isku day inaad la -nosettings socda.</translation>
     
 YES
-The translation mixes English and Somali improperly, using untranslated words such as "file settings," "writable," and the phrase "isku day inaad la -nosettings socda" is awkward and incorrect. The phrase "-nosettings" should be kept as is, but integrated naturally into the Somali sentence. A better translation that is fully in Somali and maintains the technical terms would be:
+The translation contains several issues:
+- "file settings waa writable" mixes English and Somali; "writable" should be rendered in Somali.
+- "la -nosettings socda" is awkward; it would be better as "ku soco" or "isticmaal".
+- The word order/grammar can be improved for clarity.
 
-"Waxaa dhacay qalad halis ah. Hubi in faylka dejinta (settings) la qori karo, ama isku day inaad ku socodsiiso -nosettings."
+Correct translation:
+Waxaa dhacay qalad halis ah. Hubi in faylka dejinta la qori karo, ama isku day inaad ku socoto adigoo isticmaalaya -nosettings.
 ```
 
 ```
         <source>Transactions</source>
         <translation>Transaction-yada</translation>
     
-YES  
-The translation "Transaction-yada" is incorrect and inappropriate for Somali ('so'). It appears to be a mix of English and possibly incorrect suffixes, not a proper Somali word.
+YES
+The translation "Transaction-yada" is incorrect for Somali ('so'). It inappropriately blends English ("Transaction") with a Somali plural suffix ("-yada"). The correct Somali word for "Transactions" is "Xawaaladaha" or "Macamilada" depending on the context, but "Xawaaladaha" is commonly used for financial transactions.
 
-Correct translation:  
-"Xawaaladaha"
-```
-
-```
-        <source>Browse transaction history</source>
-        <translation>Baadh taariikhda transaction-yada</translation>
-    
-YES  
-The word "transaction-yada" is a mix of English and Somali suffix "-yada," which is not standard or correct usage. A more appropriate Somali translation for "transaction" is "hawlgal" or "macnaamil" depending on context. Also, "Baadh" means "search" rather than "browse," which might be acceptable but "Daawo" (view) or "Soo bandhig" (display) could be better choices for "browse."  
-
-Correct translation:  
-Baadh taariikhda macaamilada
+Correct translation:
+Xawaaladaha
 ```
 
 ```
         <source>Exit</source>
         <translation>ka bax</translation>
     
-YES  
-The provided Somali translation "ka bax" is correct for "Exit." However, it should be capitalized as "Ka bax" because it is a standalone command or button label. Also, there is no need for additional words or changes; simply capitalizing the first letter is sufficient.  
+YES
+The translation "ka bax" is understandable in Somali and means "get out" or "leave," but it is more colloquial and less formal than the appropriate imperative or menu context use for "Exit" in software.
 
-Correct translation:  
-Ka bax
+Correct translation:
+Bax
+
+This is more standard for application menus.
 ```
 
 ```
@@ -423,27 +396,27 @@ Ka bax
         <translation>Comma kala file</translation>
     
 YES
-The translation is not accurate. The English term "Comma separated file" refers to a file format where fields are separated by commas, commonly called "CSV" (Comma-Separated Values). The provided translation "Comma kala file" is a mix of English and an incorrect word "kala" which does not mean "separated" in Somali. 
-
-A better translation in Somali would be:
-"Fayl kala soocan oo leh faasiqadaha" 
-or more simply,
-"Fayl isku kala soocan oo leh faasiqado" 
-which means "File separated by commas."
+The translation "Comma kala file" is incorrect in Somali, and does not accurately translate "Comma separated file". "Kala" by itself means "separate" but the phrase does not make sense as written. Also, terms like "comma" and "file" may be localized or more appropriately explained to Somali speakers.
 
 Correct translation:
-Fayl isku kala soocan oo leh faasiqado
+Faylka kooxo lagu kala saaray faasiil (,)
 ```
 
 ```
         <source>Export</source>
         <translation> Dhoofinta</translation>
     
-YES  
-There is an extra leading space before the word "Dhoofinta" in the translation, which is a whitespace formatting issue. The translation should not have leading or trailing spaces.
+YES
+There is an extra leading whitespace in the translation, which is a formatting issue. Also, while "Dhoofinta" means "The export" (noun), in software context "Export" as an action/button is better rendered as "Dhoof", which is the imperative/verb form.
 
-Correct translation:  
-Dhoofinta
+Correct translation:
+Dhoof
+
+Or, if noun is intended (less common for UI buttons):
+Dhoofin
+
+So the best translation here is:
+Dhoof
 ```
 
 ```
@@ -451,7 +424,11 @@ Dhoofinta
         <translation>Sida loo tababbardhigo qaabka loo takhasusay</translation>
     
 YES  
-The translation does not reflect the original English meaning and appears unrelated. The correct translation in Somali ('so') for "Export the data in the current tab to a file" would be:  
-"Dhoofinta xogta ku jirta tabka hadda jirta una dhoofiso fayl"
+The provided translation is inaccurate and does not convey the meaning of the English source, which is about exporting data from the current tab into a file. The Somali text given roughly translates to "How to specialize the way of training", which is unrelated.  
+
+Correct translation:  
+Dhoofinta xogta ku jirta tabka hadda furan ee fayl.
 ```
 </details>
+
+Number of issues: 33.

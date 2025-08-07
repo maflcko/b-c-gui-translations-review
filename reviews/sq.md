@@ -14,7 +14,7 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <translation>afër</translation>
     
 YES
-The translation "afër" means "near" or "close to" in Albanian, which does not match the imperative command "Close" (as in "Close the window"). The correct translation should be in the imperative form, such as "Mbyll".
+The translation "afër" means "near" or "close to" in Albanian, not the imperative "Close" (as in "Close the window"). The correct translation should be "Mbyll".
 
 Correct translation:
 Mbyll
@@ -25,7 +25,7 @@ Mbyll
         <translation>Enkriptimi i portofolit dështoi për shkak të një gabimi të brëndshëm. portofoli juaj nuk u enkriptua.</translation>
     
 YES
-There is a spelling error in the word "brëndshëm" – the correct standard Albanian is "brendshëm" (without the Ë). Also, the second sentence should start with a capital letter to match the source's structure.
+There is a minor spelling error: "brëndshëm" should be "brendshëm". Also, the sentence capitalization should be consistent; "portofoli juaj" should start with a capital letter.
 
 Correct translation:
 Enkriptimi i portofolit dështoi për shkak të një gabimi të brendshëm. Portofoli juaj nuk u enkriptua.
@@ -36,7 +36,7 @@ Enkriptimi i portofolit dështoi për shkak të një gabimi të brendshëm. Port
         <translation>Shiriti i mjeteve</translation>
     
 YES
-The translation "Shiriti i mjeteve" means "Toolbar" or "Tools bar" in Albanian, but it omits the "Tabs" part of the original phrase. The correct translation should explicitly mention "Tabs".
+The translation omits the word "Tabs" ("Skedat" in Albanian), so it only means "Toolbar", not "Tabs toolbar".
 
 Correct translation:
 Shiriti i skedave
@@ -47,10 +47,10 @@ Shiriti i skedave
         <translation>Portofoli po &lt;b&gt; enkriptohet&lt;/b&gt; dhe është &lt;b&gt; i ç'kyçur&lt;/b&gt;</translation>
     
 YES
-The translation states "Portofoli po enkriptohet" which means "Wallet is being encrypted," but the source says "Wallet is encrypted." Also, the translation adds an unnecessary space after "<b>" and before "enkriptohet," and before "i ç'kyçur."
+The translation is inaccurate. The English "Wallet is encrypted and currently unlocked" means that the wallet, which is already encrypted, is now unlocked (open for use). The Albanian translation given conveys that "the wallet is being encrypted and is unlocked," which is incorrect.
 
 Correct translation:
-Portofoli është &lt;b&gt;enkriptuar&lt;/b&gt; dhe aktualisht &lt;b&gt;i ç'kyçur&lt;/b&gt;
+Portofoli është &lt;b&gt; i enkriptuar&lt;/b&gt; dhe aktualisht &lt;b&gt; i ç'kyçur&lt;/b&gt;
 ```
 
 ```
@@ -58,7 +58,7 @@ Portofoli është &lt;b&gt;enkriptuar&lt;/b&gt; dhe aktualisht &lt;b&gt;i ç'ky�
         <translation>Ngjit nga memorja e sistemit</translation>
     
 YES
-The translation omits the word "address" from the source, making it less specific and potentially confusing. The correct translation should include "adresën".
+The translation omits the word "address" ("adresë" in Albanian), which changes the meaning. The correct translation should specify that an address is being pasted, not just anything from the clipboard.
 
 Correct translation:
 Ngjit adresën nga memorja e sistemit
@@ -69,7 +69,7 @@ Ngjit adresën nga memorja e sistemit
         <translation>Ngjit nga memorja e sistemit</translation>
     
 YES
-The translation omits the word "address" from the source, making it less specific and potentially confusing. The correct translation should include "adresën".
+The translation omits the word "address" ("adresë" in Albanian), which changes the meaning. The correct translation should specify that an address is being pasted, not just anything from the clipboard.
 
 Correct translation:
 Ngjit adresën nga memorja e sistemit
@@ -80,9 +80,11 @@ Ngjit adresën nga memorja e sistemit
         <translation>I/E konfirmuar(%1 konfirmime)</translation>
     
 YES
-There is a missing space between "konfirmuar" and the opening parenthesis. The correct translation should include a space for proper formatting.
+There is a formatting issue: missing space after the slash and before the parenthesis. The correct translation should also be consistent with the term "Confirmed". In Albanian, "I/E konfirmuar" is acceptable for gender neutrality, but the slash should have a space on both sides, and there should be a space before the parenthesis.
 
 Correct translation:
 I/E konfirmuar (%1 konfirmime)
 ```
 </details>
+
+Number of issues: 7.

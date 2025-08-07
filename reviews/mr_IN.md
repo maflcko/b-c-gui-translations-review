@@ -14,7 +14,7 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <translation>शिक्का कॉपी करा</translation>
     
 YES
-The translation is incorrect. "शिक्का" means "coin" or "seal" in Marathi, not "label." The correct translation for "Label" is "लेबल" or "चिट्ठी," but "लेबल" is more commonly used in this context.
+The translation is incorrect. "शिक्का" means "coin", which is not the correct translation for "Label". The correct translation for "Label" is "लेबल" in Marathi.
 
 Correct translation:
 लेबल कॉपी करा
@@ -25,10 +25,10 @@ Correct translation:
         <extracomment>An error message. %1 is a stand-in argument for the name of the file we attempted to save to.</extracomment>
         <translation>पत्ता सूची  वर जतन करण्याचा प्रयत्न करताना त्रुटी आली. कृपया पुन्हा प्रयत्न करा.%1</translation>
     
-YES
-The translation has an issue: the format specifier '%1' is not in the correct place within the sentence, and there is an extra space between "सूची" and "वर". The translation should also mention the file (to which the list is being saved). Also, "पत्ता सूची वर" is unnatural and should be "पत्ता सूची %1 वर" or consider rephrasing.
+YES  
+The translation has issues with the sentence order and the placement of the format specifier (%1). In the original, "%1" refers to the filename and comes in the middle of the sentence; in the translation, it's placed at the end, breaking the flow and clarity. There is also a spacing issue before "वर".
 
-Correct translation:
+Correct translation:  
 %1 वर पत्ता सूची जतन करण्याचा प्रयत्न करताना त्रुटी आली. कृपया पुन्हा प्रयत्न करा.
 ```
 
@@ -38,11 +38,10 @@ Correct translation:
  </translation>
     
 YES
-There is an unwanted trailing whitespace (likely a non-breaking space or line break) after the translation. Additionally, "पुष्टी करा" is an acceptable translation, but a more common Marathi term for "Confirm" in such contexts is "निश्चित करा" or "सत्यापन करा". However, "पुष्टी करा" is also clear and widely understood.
+There is an unwanted whitespace (a stray newline or space character) at the end of the translation, which can cause format issues. Otherwise, the translation is correct.
 
-Corrected translation (removing unwanted whitespace):
-
-<translation>वॉलेट एन्क्रिप्शनची पुष्टी करा</translation>
+Correct translation:
+वॉलेट एन्क्रिप्शनची पुष्टी करा
 ```
 
 ```
@@ -50,9 +49,11 @@ Corrected translation (removing unwanted whitespace):
         <translation>स्वाक्षरी आणि संदेश...</translation>
     
 YES
-The translation is inaccurate. The English "Sign message…" means to sign (a) message, not "sign and message...". The correct translation should directly refer to "message signing".
+The translation is inaccurate. The English phrase "Sign message…" means "to digitally sign a message", not "Signature and message...". The correct Marathi ('mr_IN') translation should convey the action to sign a message.
 
 Correct translation:
-संदेशावर स्वाक्षरी करा...
+संदेशावर स्वाक्षरी करा…
 ```
 </details>
+
+Number of issues: 4.

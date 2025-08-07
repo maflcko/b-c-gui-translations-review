@@ -14,19 +14,20 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <translation>pindutin lamang ang kanang pindutan upang i-edit ang address o label.</translation>
     
 YES  
-The translation uses lowercase at the beginning and ends with a period, which is inconsistent with the source style (which has capitalization and no punctuation). Also, "Right-click" should be translated clearly as the action of pressing the right mouse button, commonly "I-right click" or "I-right-click" in Tagalog, rather than "pindutin lamang ang kanang pindutan" (which is a bit literal and sounds awkward). A better translation is:
+The translation uses a conversational phrasing and does not maintain the capital letter at the start. "Pindutin lamang ang kanang pindutan upang i-edit ang address o label." translates more as "Just press the right button to edit the address or label," which adds "lamang/just" and misses the nuance of "right-click" (which refers specifically to clicking the right mouse button, not just pressing it). The translation should adhere more closely to computer terminology.
 
-"I-right-click upang i-edit ang address o label"
+Correct translation:  
+I-right click upang i-edit ang address o label.
 ```
 
 ```
         <source>Create a new address</source>
         <translation>Lumikha ng bagong ♦address♦</translation>
     
-YES  
-The translation incorrectly includes the English word "address" with decorative diamonds (♦), which is unnecessary and inconsistent. It should use the Filipino/Tagalog word for "address," which is "address" (commonly used as is) or "tanggapan" (less common in this context). Since "address" is a borrowed term used literally in Bitcoin contexts, it is acceptable to keep "address" untranslated but without the diamonds. Also, remove the diamonds and extra spacing.
+YES
+The translation incorrectly includes the symbols "♦" around "address", and "address" is not translated into Filipino/Tagalog. It should be translated into proper Filipino, and unnecessary characters should be removed.
 
-Correct translation:  
+Correct translation:
 Lumikha ng bagong address
 ```
 
@@ -34,24 +35,11 @@ Lumikha ng bagong address
         <source>Copy the currently selected address to the system clipboard</source>
         <translation>Gayahin ang pinipiling ♦address♦ sa kasalakuyan sa ♦clipboard♦ ng sistem</translation>
     
-YES  
-The translation contains several issues:  
-- The use of symbols ♦ around "address" and "clipboard" is unnecessary and incorrect in this context. The original text does not include them, so they should be removed.  
-- The phrase "kasalakuyan sa" is awkward; "currently selected address" should be translated as "kasalukuyang napiling address" or fully translated as "kasalukuyang napiling address" (preferably translating "address" if possible).  
-- The word "address" can be translated as "address" (loanword) or "adres" but it is better to either keep it or find an accurate localized term. Given common Bitcoin terminology in Tagalog, "address" is often kept as is.  
-- "Clipboard" can be translated as "clipboard" because it is a borrowed technical term; it should not have ♦ symbols.  
-- The word order and particles should match natural Tagalog phrasing.
+YES
+The translation is inaccurate. The word "address" is unnecessarily enclosed in symbols (♦address♦) instead of being properly translated. "Kasalakuyan" is a misspelling of "kasalukuyan", and "clipboard" is also unnecessarily enclosed in symbols. The sentence contains awkward phrasing and direct transliterations instead of natural Filipino.
 
-Corrected translation:  
-"Gayahin ang kasalukuyang napiling address sa system clipboard"  
-
-Or more natural:  
-"Kopyahin ang kasalukuyang napiling address sa system clipboard"  
-
-Since "copy" is better as "Kopyahin" (imperative verb) rather than "Gayahin" (which means "imitate" or "mimic"), "Kopyahin" is preferred.
-
-Final recommended translation:  
-"Kopyahin ang kasalukuyang napiling address sa system clipboard"
+Correct translation:
+Kopyahin ang kasalukuyang napiling address sa clipboard ng sistema
 ```
 
 ```
@@ -59,7 +47,7 @@ Final recommended translation:
         <translation>(Do you mean: Close?) :isara, sarado </translation>
     
 YES
-The translation contains unwanted content and formatting issues. It includes an English question "(Do you mean: Close?)" and two translated words separated by a comma, which is not appropriate for a clean translation.
+The translation includes unnecessary English text ("(Do you mean: Close?)") and two synonyms ("isara, sarado"), which is awkward and unprofessional. The translation should simply be the Filipino word for "Close".
 
 Correct translation:
 Isara
@@ -69,11 +57,11 @@ Isara
         <source>Choose the address to send coins to</source>
         <translation>Piliin ang ♦address♦ kung saan ipapadala ang mga barya</translation>
     
-YES  
-The translation includes unnecessary decorative symbols (♦) around the word "address," which are not present in the source and can be confusing or unprofessional. Also, the English word "address" should be properly translated into Tagalog or Filipino as "address" can be borrowed but is commonly translated as "address" (sometimes "address" itself is used, but the Tagalog equivalent "adress" is rarely used). The better approach is to use "address" without decoration or translate as "address" or "address" si "address" is a loanword, but if you want formal, "address" in Tagalog context is often "address" but the more understandable is "address." Since in Bitcoin context, "address" is used as is, it is likely acceptable to use just the word without decorations.
+YES
+The translation uses the placeholder "♦address♦" which is unnecessary and incorrect in Filipino; the word "address" should simply be "address" (as borrowed), or "tirahan" if clarified. Also, "barya" for "coins" is technically correct, but in the Bitcoin context, "mga coin" or even just "Bitcoin" is better for clarity. There are no whitespace issues, but the translation introduces a confusing symbol not present in the original.
 
-A better translation would be:  
-"Piliin ang address kung saan ipapadala ang mga barya"
+Correct translation:
+Piliin ang address kung saan ipapadala ang mga coin
 ```
 
 ```
@@ -81,8 +69,12 @@ A better translation would be:
         <translation>(do you mean: CHOOSE?) ;Pumili,Piliin.</translation>
     
 YES
-The translation includes irrelevant content "(do you mean: CHOOSE?) ;" which is not appropriate and looks like a comment or note mistakenly included. Also, the translation gives two variants separated by a comma without clear formatting or necessity. The correct and clean translation for "Choose" in Tagalog (tl) would simply be:
+The translation is problematic for several reasons:
+- It contains English meta-commentary ("(do you mean: CHOOSE?) ;") which is not appropriate in production software.
+- Multiple translations are listed without context ("Pumili,Piliin."). Only the correct one should be used based on the context.
+- There is an unnecessary semicolon and stray punctuation.
 
+Correct translation:
 Pumili
 ```
 
@@ -91,31 +83,38 @@ Pumili
         <translation>Kopyahin ang ♦Address♦</translation>
     
 YES
-The translation introduces unnecessary symbols "♦" around "Address" which are not present in the source text. Also, the English word "Address" is used instead of its Tagalog equivalent, which is inconsistent unless the term is intentionally left untranslated for technical reasons. The more natural and appropriate translation would be:
+The translation incorrectly includes the special characters "♦" around the word "Address", which are not present in the source and may confuse users. Also, "Address" should be translated to Filipino as "address" or "adres", unless referring to a specifically untranslated technical term—but in UI translations, "address" is often rendered as "address" for clarity in the Bitcoin context. There is no whitespace or format specifier issue.
 
-"Kopyahin ang Address" 
+Correct translation:
+Kopyahin ang Address
 
-If "address" is a known technical term left in English, then remove the symbols and keep it as is.
+Alternatively, if "address" is to be localized:
+Kopyahin ang Adres
 ```
 
 ```
         <source>Address</source>
         <translation>♦Address♦</translation>
     
-YES  
-The translation contains unwanted special characters ("♦") around the English word "Address". It should be translated properly into Tagalog or Filipino without extraneous symbols. The correct translation is:  
+YES
+The translation is problematic: the inclusion of "♦" symbols is unnecessary and was not present in the original source. The word "Address" should be translated into Filipino (Tagalog) if an appropriate term exists, or left as is if it's commonly used untranslated in the technical context, but without extraneous symbols.
+
+Correct translation:
 Address
+
+Or, if a Filipino translation is appropriate:
+Adres
 ```
 
 ```
         <source>Passphrase Dialog</source>
         <translation>♦Passphrase♦ na ♦Dialog♦</translation>
     
-YES  
-The translation unnecessarily adds decorative symbols (♦) around words, which is not standard and could confuse users. The phrase "Passphrase Dialog" should be translated clearly and naturally into Tagalog as "Dialogo ng Passphrase" or "Passphrase na Dialogo" without extra symbols.
+YES
+The translation is incorrect and contains extraneous symbols (♦), which are not appropriate. The words "Passphrase" and "Dialog" are left untranslated and simply wrapped with these symbols, which is not standard in Filipino (tl) translations.
 
-Correct translation:  
-Dialogo ng Passphrase
+Correct translation:
+Dialog ng Passphrase
 ```
 
 ```
@@ -123,20 +122,20 @@ Dialogo ng Passphrase
         <translation>Ilagay ang ♦passphrase♦</translation>
     
 YES  
-The word "Ilagay" in Filipino/Tagalog means "put" or "place," which is not the correct verb for "Enter" in the context of entering text or a passphrase. The correct verb should be "Ilagay" only if you are physically placing something, but for typing or entering text, "Ilagay" can be acceptable although "Ipasok" or "Ilagay" can both be used. However, the more common and clearer translation for "Enter passphrase" in this technical context is "Ipasok ang passphrase" or "Ilagay ang passphrase" without the diamonds (♦) around the word "passphrase," as those characters are unusual and don't belong in the translation.
+The translation uses decorative symbols "♦" around "passphrase," which are not present in the source. This is unnecessary and nonstandard for UI localization. Also, "Ilagay ang passphrase" is otherwise appropriate.
 
 Correct translation:  
-Ipasok ang passphrase
+Ilagay ang passphrase
 ```
 
 ```
         <source>New passphrase</source>
         <translation>Bagong ♦passphrase♦</translation>
     
-YES  
-The translation contains unnecessary special characters "♦" around the word "passphrase," which are not present in the source and could be confusing or problematic. Also, "passphrase" can be translated into Tagalog as "susi" or "parol," but it is common to use the English term "passphrase" in tech contexts. The correct translation should not include the ♦ characters.
+YES
+The translation adds unnecessary special characters (♦) around "passphrase", which are not present in the source and may confuse users. Also, "passphrase" is often kept untranslated in localizations for technical contexts, but the extra decoration is problematic.
 
-Correct translation:  
+Correct translation:
 Bagong passphrase
 ```
 
@@ -144,10 +143,10 @@ Bagong passphrase
         <source>Repeat new passphrase</source>
         <translation>Ulitin ang bagong ♦passphrase♦</translation>
     
-YES  
-The translation is mostly correct, but the use of the symbols ♦ around "passphrase" is unusual and unnecessary in Filipino (Tagalog). It could confuse users or be considered erroneous formatting. Also, "Ulitin" is the correct imperative form ("Repeat"), and "bagong passphrase" correctly translates "new passphrase" without extra symbols.
+YES
+The translation introduces unnecessary symbols (♦) around "passphrase", which are not present in the source and could confuse users. Also, "passphrase" is often untranslated in IT contexts, but the extra symbols are problematic.
 
-Correct translation:  
+Correct translation:
 Ulitin ang bagong passphrase
 ```
 
@@ -155,10 +154,10 @@ Ulitin ang bagong passphrase
         <source>Change passphrase</source>
         <translation>Palitan ang ♦passphrase♦</translation>
     
-YES  
-The use of ♦ characters around "passphrase" is unnecessary and incorrect in this context. The word "passphrase" can be used as is or translated to "parirala ng password" for clarity. A proper translation would not have extra symbols.
+YES
+The translation uses unnecessary decorative characters (♦) surrounding "passphrase", which is not standard and may confuse users. The correct translation should be:
 
-Correct translation:  
+Correct translation:
 Palitan ang passphrase
 ```
 
@@ -166,11 +165,11 @@ Palitan ang passphrase
         <source>Confirm wallet encryption</source>
         <translation>Kumpirmahin ang ♦encryption♦ ng pitaka</translation>
     
-YES  
-The translation contains unwanted characters "♦" around the word "encryption," which is unnecessary and incorrect. The correct translation should be clean and clear without special symbols.
+YES
+The translation has unnecessary symbols ("♦") around the word "encryption", which are not present in the source text and should not be there. Also, "encryption" should ideally be translated to "pag-e-encrypt" or "pag-encrypt" for clarity in Filipino.
 
-Correct translation:  
-Kumpirmahin ang encryption ng pitaka
+Correct translation:
+Kumpirmahin ang pag-encrypt ng pitaka
 ```
 
 ```
@@ -178,44 +177,55 @@ Kumpirmahin ang encryption ng pitaka
         <translation>Babala: IKung i-encrypt mo ang iyong pitaka at mawawala ang ♦passphrase♦,  &lt;b&gt;MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN&lt;/b&gt;!</translation>
     
 YES
-The translation contains minor issues:
-- There is an unnecessary uppercase "I" attached to "Kung" making it "IKung"; it should be just "Kung" (If).
-- The word "♦passphrase♦" is incorrectly formatted with diamond symbols; it should remain as plain text "passphrase" or possibly italicized without extra symbols.
-- There is an extra space before the <b> tag.
+There are several issues:
+- "IKung" should be "Kung" (extraneous "I" at the start).
+- The "♦" characters around 'passphrase' are erroneous and unnecessary.
+- "pitaka" is correct for "wallet", but contextually "mawawala" should be "mawala" (future tense is better: "mawawala sa iyo"), but "mawawala" as "will lose" is okay.
+- "MO ANG LAHAT NG IYONG MGA BITCOIN" is a bit wordy; "ang lahat ng iyong Bitcoin" or "lahat ng iyong Bitcoin" is better.
+- Format specifiers are preserved (none), and HTML tags are correctly copied.
+- Whitespace before the HTML tag is slightly incorrect (unnecessary space before "&lt;b&gt;").
 
 Correct translation:
-Babala: Kung i-encrypt mo ang iyong pitaka at mawawala ang passphrase, &lt;b&gt;MAWAWALA MO ANG LAHAT NG IYONG MGA BITCOIN&lt;/b&gt;!
+Babala: Kung i-encrypt mo ang iyong pitaka at mawalan ka ng passphrase, &lt;b&gt;MAWAWALA LAHAT NG IYONG BITCOIN&lt;/b&gt;!
 ```
 
 ```
         <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Ilagay ang bagong ♦passphrase♦ para sa pitaka.&lt;br/&gt;Pakigamit ang ♦passphrase♦ of &lt;b&gt;sampu o higit pa na mga ♦random♦ na mga karakter&lt;/b&gt;, o &lt;b&gt;walo o higit pang mga salita&lt;/b&gt;.</translation>
     
-YES  
-The translation mixes English words ("passphrase," "of," "random") unnecessarily, which affects clarity and naturalness in Tagalog. Additionally, "of" inside the translation is untranslated and should be replaced with "ng." The bullet symbol "♦" is not present in the source text and is incorrect.
+YES
+There are several issues with the translation:
+- The word "♦passphrase♦" and "♦random♦" are not proper in Filipino and seem to be placeholders or erroneous insertions.
+- The phrase "passphrase of sampu o higit pa na mga random na mga karakter" is not fluent. "Random characters" should be translated to proper Filipino, e.g., "hindi magkakaugnay na mga titik o character".
+- "walo o higit pang mga salita" is a correct translation for "eight or more words".
 
-Correct translation:  
-Ilagay ang bagong passphrase para sa pitaka.&lt;br/&gt;Pakigamit ang passphrase na &lt;b&gt;sampu o higit pa na mga random na karakter&lt;/b&gt;, o &lt;b&gt;walo o higit pang mga salita&lt;/b&gt;.
+Correct translation:
+Ilagay ang bagong passphrase para sa pitaka.&lt;br/&gt;Mangyaring gumamit ng passphrase na &lt;b&gt;sampu o higit pang mga hindi magkakaugnay na karakter&lt;/b&gt;, o &lt;b&gt;walo o higit pang mga salita&lt;/b&gt;.
 ```
 
 ```
         <source>The supplied passphrases do not match.</source>
         <translation>Ang mga ibinigay na mga ♦passphrase♦ ay hindi nagtugma.</translation>
     
-YES  
-The word "passphrase" is untranslated and surrounded by unnecessary symbols (♦), which is unidiomatic and disruptive in Tagalog. Also, the plural "mga" is repeated unnecessarily before "passphrase." A more accurate and natural translation would be:  
-"Ang mga ibinigay na passphrase ay hindi nagtugma."
+YES
+The translation uses unnecessary markers "♦" around "passphrase", which are not present in the source. Additionally, "mga" is redundantly used twice with "ibinigay na mga", which can make the phrase sound awkward, and "passphrases" could be better rendered in a more natural way for Filipino users.
+
+Correct translation:
+Ang mga ibinigay na passphrase ay hindi magkatugma.
 ```
 
 ```
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
         <translation>Ang ♦passphrase♦ na ipinasok sa ♦decryption♦ sa pitaka ay hindi tama.</translation>
     
-YES  
-The translation is understandable but problematic due to the unnecessary use of ♦ symbols around "passphrase" and "decryption," which are not present in the source and break the natural flow of the sentence. These symbols should be removed for a proper translation.  
+YES
+The translation contains unnecessary English words "passphrase" and "decryption" that have not been localized, and the use of "♦" is inappropriate and not standard in Filipino ('tl') translations. This could lead to misunderstandings or look unprofessional.
 
-Correct translation:  
-Ang passphrase na ipinasok para sa decryption ng pitaka ay hindi tama.
+Correct translation:
+Ang passphrase na inilagay para sa pag-decrypt ng pitaka ay mali.
+
+Or, for a more natural flow:
+Mali ang ipinasok na passphrase para sa pag-decrypt ng pitaka.
 ```
 
 ```
@@ -223,9 +233,10 @@ Ang passphrase na ipinasok para sa decryption ng pitaka ay hindi tama.
         <translation>Babala: Ang ♦Caps Lock Key♦ ay naka-on!</translation>
     
 YES
-The translation includes unnecessary use of the ♦symbols♦ around "Caps Lock Key," which is not present in the source and is not typical in natural Filipino/Tagalog text. Also, "key" should be translated as "susi" or can be omitted for naturalness. A more natural and accurate translation would be:
+The translation unnecessarily adds "♦" symbols around "Caps Lock Key", which are not present in the original English text. The inclusion of 'Key' is acceptable, but the styling with symbols is not standard and could be considered unwanted formatting.
 
-"Babala: Nakabukas ang Caps Lock!"
+Correct translation:
+Babala: Naka-on ang Caps Lock!
 ```
 
 ```
@@ -233,11 +244,14 @@ The translation includes unnecessary use of the ♦symbols♦ around "Caps Lock 
         <extracomment>Explanatory text shown on startup when the settings file cannot be read. Prompts user to make a choice between resetting or aborting.</extracomment>
         <translation>Gusto mo bang i-reset ang mga ♦setting♦ sa ♦default♦ na mga ♦value♦, o itigil na hindi gumagawa ng mga pagbabago?</translation>
     
-YES  
-The translation incorporates unnecessary and inconsistent use of special characters (♦) around key terms such as "setting," "default," and "value," which are not present in the source and appear as spammy or erroneous. Also, the word "value" in English is translated directly as "value," which is an English loanword rather than the more appropriate Tagalog equivalent "halaga." The phrasing can be improved for natural flow in Tagalog.
+YES
+The translation uses the English words "setting," "default," and "value," surrounded by unconventional symbols (♦) instead of Filipino equivalents. This is awkward and not in standard Tagalog. The format specifier or wording is not carried over precisely. The translation should use Tagalog terms and avoid unnecessary symbols.
 
-Correct translation:  
-Gusto mo bang i-reset ang mga setting sa mga default na halaga, o itigil nang hindi gumagawa ng mga pagbabago?
+Correct translation:
+Gusto mo bang i-reset ang mga setting sa mga default na halaga, o itigil nang hindi gumagawa ng anumang pagbabago?
+
+Alternatively, to localize further (optional):
+Nais mo bang i-reset ang mga setting sa mga paunang halaga, o itigil nang hindi nagbabago ng anuman?
 ```
 
 ```
@@ -245,14 +259,11 @@ Gusto mo bang i-reset ang mga setting sa mga default na halaga, o itigil nang hi
         <extracomment>Explanatory text shown on startup when the settings file could not be written. Prompts user to check that we have the ability to write to the file. Explains that the user has the option of running without a settings file.</extracomment>
         <translation>Isang malubhang pagkakamali ang naganap. Suriin ang mga ♦setting♦ ng ♦file♦ na ♦writable♦, o subukan na patakbuhin sa ♦-nosettings♦.</translation>
     
-YES
-The translation contains unnecessary use of the ♦ character around some English loanwords, which is not appropriate and disrupts readability. Also, the phrasing could be improved for naturalness and clarity, particularly "na writable" which mixes English and Tagalog without clear integration.
+YES  
+The translation uses the English words "setting", "file", "writable", and "-nosettings" wrapped with ♦, which is incorrect for a proper Filipino (Tagalog) translation. These terms should be translated or at least adapted more naturally into Tagalog. It also inaccurately refers to "mga setting ng file" instead of "settings file" ("file ng mga setting"), and doesn't capture the prompt to check if it's writable—"na maaaring sulatan."
 
-A better translation would be:
-
-Isang malubhang error ang naganap. Suriin kung maaaring isulat ang settings file, o subukang patakbuhin gamit ang -nosettings.
-
-This translation avoids unnecessary characters, uses natural Tagalog phrasing, and correctly conveys the meaning.
+Correct translation:  
+Isang malubhang pagkakamali ang naganap. Suriin kung ang file ng mga setting ay maaaring sulatan, o subukang patakbuhin gamit ang -nosettings.
 ```
 
 ```
@@ -260,11 +271,12 @@ This translation avoids unnecessary characters, uses natural Tagalog phrasing, a
         <translation>pitaka na ♦default♦</translation>
     
 YES  
-The translation mixes English ("default") within the Tagalog translation and inserts unusual symbols ("♦"), which are not appropriate. The correct Tagalog translation for "default wallet" would be:  
-"karaniwang pitaka" or "default na pitaka" (if keeping "default" is preferred, it should be adapted properly without symbols).  
+The translation is problematic. "pitaka na ♦default♦" uses mixed language ("pitaka" is Tagalog for "wallet", but "default" is just kept in English, surrounded by decorative symbols "♦"). This is neither standard nor idiomatic in Filipino. Also, the "na" particle is unnecessary. The correct translation should be:
 
 Correct translation:  
-<translation>karaniwang pitaka</translation>
+default na pitaka
+
+(Note: In Filipino UI, "default na pitaka" is standard, but sometimes "nakatalagang pitaka" or "pangunahing pitaka" can be used for "default wallet".)
 ```
 
 ```
@@ -272,10 +284,10 @@ Correct translation:
         <translation>Baguhin ang mga pagpipilian sa ♦configuration♦ para sa %1</translation>
     
 YES  
-The translation contains unnecessary special characters "♦" around the word "configuration," which are not present in the source and are inappropriate. Also, the English loanword "configuration" is better translated directly or adapted without decoration.
+The word "configuration" should be translated to Filipino as "konpigurasyon" or "pagkonpigurasyon". Additionally, the use of the special characters "♦" is unnecessary and problematic.
 
 Correct translation:  
-Baguhin ang mga pagpipilian sa configuration para sa %1
+Baguhin ang mga pagpipilian sa konpigurasyon para sa %1
 ```
 
 ```
@@ -283,14 +295,13 @@ Baguhin ang mga pagpipilian sa configuration para sa %1
         <extracomment>A substring of the tooltip.</extracomment>
         <translation>Na-disable ang aktibidad ng ♦network♦</translation>
     
-YES  
-The translation mixes English ("disable," "network") with Tagalog, which is not ideal for a professional Bitcoin-related software context. The word "disable" should be translated properly, and "network" should be translated or consistently kept in English but without decorative symbols like "♦". Also, the original sentence ends with a period, so the translation should as well.  
+YES
+The translation has two issues:
+1. The English term "disabled" should be translated as "Hindi aktibo" or "Hindi pinagana", which more accurately reflects "disabled" rather than using the borrowed "na-disable".
+2. The use of "♦network♦" is unusual and not idiomatic; "network" should be translated as "network" if the English term is retained intentionally, or "network" can be "network" or "nag-network" in Tagalog, but best is "network" if the interface uses English terms. However, the ♦ symbols are not natural.
 
-Correct translation:  
-"Ipinagpaliban ang aktibidad ng network."  
-
-Alternatively, using a more direct translation of "disabled":  
-"Hindi pinagana ang aktibidad ng network."
+Correct translation:
+Hindi aktibo ang aktibidad ng network.
 ```
 
 ```
@@ -298,20 +309,25 @@ Alternatively, using a more direct translation of "disabled":
         <translation>Magpadala ng mga ♦coin♦ sa ♦address♦ ng Bitcoin</translation>
     
 YES
-The translation is somewhat unnatural and includes unnecessary symbols (♦) around the words "coin" and "address," which are not present in the source and could be confusing or considered as unwanted formatting/spam. Additionally, "magpadala" is understandable but "magpadala ng" is fine; however, "magpadala ng mga coin sa Bitcoin address" reads more naturally without extraneous punctuation marks.
+The translation incorrectly retains English words with surrounding symbols (♦coin♦, ♦address♦), which is not idiomatic in Filipino ('tl'). The correct approach is to use natural Filipino phrasing, possibly keeping "Bitcoin address" untranslated as it is often the convention, but translating "Send coins" into proper Filipino.
 
 Correct translation:
-Magpadala ng mga coin sa address ng Bitcoin
+Magpadala ng mga coin sa Bitcoin address
+
+Or, if "coin" is to be translated:
+Magpadala ng mga barya sa Bitcoin address
+
+Note: If "coins" refers specifically to cryptocurrency, it's standard to leave "coin" as is. Remove the special symbols (♦) and avoid unnecessary English unless standard in the context.
 ```
 
 ```
         <source>Change the passphrase used for wallet encryption</source>
         <translation>Palitan ang ♦passphrase♦ na ginamit para sa pag-encrypt sa pitaka</translation>
     
-YES  
-The translation uses ♦passphrase♦ with unusual symbols, which is unnecessary and inconsistent with standard practice. The rest of the sentence is accurate, but the format specifiers (none here) should be kept as is, and no extra symbols should be added. Also, spacing and grammar are correct.  
+YES
+The translation is mostly correct, but the use of special characters "♦passphrase♦" is unnecessary and not standard in 'tl'. Also, the preposition should be "ng" instead of "sa" for "pag-encrypt ng pitaka".
 
-Correct translation:  
+Correct translation:
 Palitan ang passphrase na ginamit para sa pag-encrypt ng pitaka
 ```
 
@@ -319,10 +335,10 @@ Palitan ang passphrase na ginamit para sa pag-encrypt ng pitaka
         <source>Change Passphrase…</source>
         <translation>Palitan ang ♦Passphrase♦...</translation>
     
-YES  
-The translation incorrectly includes special characters "♦" around "Passphrase," which are not present in the source and are unnecessary. Also, the ellipsis in the source is a single Unicode character (…) while the translation uses three periods (...). It is preferable to match the original Unicode ellipsis character for formatting consistency.
+YES
+The translation introduces unnecessary symbols ("♦") around "Passphrase" and translates "…" (ellipsis) as "..." (three dots), which may not match interface conventions. Furthermore, "Passphrase" does not need to be surrounded by symbols. The word "Passphrase" is commonly left untranslated, but the translation should be clear and natural.
 
-Correct translation:  
+Correct translation:
 Palitan ang Passphrase…
 ```
 
@@ -330,21 +346,21 @@ Palitan ang Passphrase…
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
         <translation>Tanda na mga mensahe sa mga ♦address♦ ng iyong ♦Bitcoin♦ para patunayan na pagmamay-ari mo sila</translation>
     
-YES  
-The translation uses "Tanda" which is a direct translation of "Sign" but in this context, "lagdaan" is the more appropriate and commonly used term in Filipino/Tagalog for the act of digitally signing messages. Also, the usage of "♦address♦" and "♦Bitcoin♦" with diamond symbols is not standard or necessary and may confuse readers. The translation should retain the concepts clearly and naturally without unusual characters.
+YES
+The translation contains unnecessary symbols (♦) around "address" and "Bitcoin", which are not present in the source and make the translation problematic and unnatural. Furthermore, "Tanda na mga mensahe" is not a natural way to say "Sign messages" in Tagalog. The correct term for "sign" in this context is "Lagdaan".
 
-Correct translation:  
-Lagdaan ang mga mensahe gamit ang iyong mga Bitcoin address upang patunayan na pagmamay-ari mo ang mga ito
+Correct translation:
+Lagdaan ang mga mensahe gamit ang iyong mga Bitcoin address upang patunayan na ikaw ang may-ari ng mga ito
 ```
 
 ```
         <source>Load PSBT from file…</source>
         <translation>I-load ang PSBT mula sa ♦file♦...</translation>
     
-YES  
-The translation uses the symbol "♦" around the word "file," which is unnecessary and not standard in Filipino/Tagalog. Also, "file" can be kept as is or translated as "file" (commonly used) or "talaksan," but adding "♦" is inappropriate. The ellipsis should be the Unicode single character "…" rather than three dots.  
+YES
+The translation introduces '♦file♦', which is not present in the source. The ellipsis uses three dots '...' instead of the ellipsis character '…' from the source, and the format specifier should be preserved literally as in the source.
 
-Correct translation:  
+Correct translation:
 I-load ang PSBT mula sa file…
 ```
 
@@ -352,10 +368,10 @@ I-load ang PSBT mula sa file…
         <source>Open URI…</source>
         <translation>Buksan ang ♦URL♦...</translation>
     
-YES  
-The translation uses "♦URL♦" instead of a proper or consistent representation of "URI." Also, the source uses an ellipsis (…) (Unicode character U+2026), but the translation uses three dots (...), which is less typographically correct. Additionally, "URI" is usually kept as "URI" in technical contexts, or translated as "URI" with no special characters, or sometimes "URI" is explained as "Unibersal na Tagatag ng Resource" but that is uncommon and might confuse users. Using diamond symbols (♦) is unusual and incorrect here.  
+YES
+The translation introduces the symbols "♦" around "URL" which do not appear in the source and is non-standard. Also, the ellipsis should be the single Unicode character "…" not three dots ("..."). Furthermore, consistency with standard Filipino UI translations should use "Open" as "Buksan" but "URI" is often not localized. If translated, it would be "Buksan ang URI…"
 
-Correct translation:  
+Correct translation:
 Buksan ang URI…
 ```
 
@@ -363,19 +379,21 @@ Buksan ang URI…
         <source>File</source>
         <translation>♦File♦</translation>
     
-YES  
-The translation includes extraneous characters (♦) that are not present in the source and are unnecessary. The correct translation should be simply:  
-File
+YES
+The translation is problematic because it simply copies the English word "File" and adds unwanted characters (♦) around it, which is inappropriate and not a valid Filipino (tl) translation. Also, "File" as a menu item would typically be translated to "File" (retained in many UI contexts), or, if localization is needed, "File" in Filipino is "Talaksan".
+
+Correct translation:
+Talaksan
 ```
 
 ```
         <source>Settings</source>
         <translation>Mga ♦Setting♦</translation>
     
-YES  
-The translation contains unnecessary symbols "♦" and uses an incorrect form. The correct Filipino (Tagalog) translation for "Settings" in this context is simply "Mga Setting" without the symbols.
+YES
+The translation includes non-standard characters "♦", which are not appropriate and may be considered spammy or erroneous in a UI context. Also, while "Setting" is sometimes left as-is in Filipino, the plural form "Mga Setting" is more appropriate, and the decorative symbols should be removed.
 
-Correct translation:  
+Correct translation:
 Mga Setting
 ```
 
@@ -383,32 +401,30 @@ Mga Setting
         <source>Syncing Headers (%1%)…</source>
         <translation>♦Syncing Headers♦ (%1%)…</translation>
     
-YES  
-The translation contains unwanted content: the diamond characters "♦" are unnecessary and inappropriate, likely indicating a formatting or placeholder error. The original text is in English and should be faithfully translated or at least presented without extraneous symbols if the translation is unavailable. Since the provided text is not translated and simply contains extra symbols, it is problematic.
+YES
+The translation unnecessarily adds "♦" symbols around "Syncing Headers", which are not present in the source and may be considered unwanted content. Additionally, "Syncing Headers" is untranslated and should be in Filipino.
 
-Correct translation (assuming no translation is provided and keeping the English text clean):  
-Syncing Headers (%1%)…
+Correct translation:
+Sinusynchronize ang mga header (%1%)…
 ```
 
 ```
         <source>Synchronizing with network…</source>
         <translation>Sini-siynchronize sa ♦network♦...</translation>
     
-YES  
-The translation uses a non-standard and awkward anglicism "Sini-siynchronize" which is not correct or natural in Tagalog. The English word "network" is enclosed in special characters ♦♦, which is unorthodox and unnecessary. The ellipsis should be consistent (preferably use the single Unicode character … instead of three dots).  
+YES
+There are several issues:
+- The use of "Sini-siynchronize" is not idiomatic Tagalog/Filipino. The correct form is "Sinisynchronize" or better yet, a more natural Filipino translation should be used, like "Sinasabay sa network", "Sumasabay sa network", or "Ipinagsi-synchronize sa network".
+- The phrase "♦network♦" is not appropriate; it should just be "network" or "sa network" if retained.
+- Ellipsis formatting ("...") in Filipino is usually three dots without extra trailing spaces.
+- Unwanted non-standard characters (♦) are present.
 
-A more appropriate translation would be:  
-"Nag-si-synchronize sa network…"  
-or more naturally in Tagalog:  
-"Nagsi-synchronize sa network…"  
-
-Alternatively, replacing "network" with the Tagalog equivalent or a widely understood term:  
-"Nagsi-synchronize sa networ…" (if banking on common usage)  
-or  
-"Nagsi-synchronize sa network…"  
-
-Corrected translation:  
-<translation>Nagsi-synchronize sa network…</translation>
+Correct translation:
+Sinusynchronize sa network...
+or
+Sinasabay sa network...
+or, more formally,
+Sinusunod ang takbo ng network...
 ```
 
 ```
@@ -416,42 +432,42 @@ Corrected translation:
         <translation>Ini-index ang mga bloke sa ♦disk♦...</translation>
     
 YES
-The translation misuse the word "Ini-index" which is an awkward borrowing of the English term "Index". It is better to use a natural Tagalog/Filipino equivalent or a proper transliteration approach. Also, the word "disk" should not be enclosed in ♦ signs, as it is not the original source formatting. Use the correct ellipsis character (…) (U+2026) instead of three dots.
+The translation uses ♦disk♦ which is unusual and nonstandard in Tagalog. It should simply use "disk" or its Filipino equivalent if there is one, but not with special characters. Otherwise, the meaning is clear, but the ellipsis should match the source (use the same number of dots, preferably three).
 
 Correct translation:
-"Iniindeks ang mga bloke sa disk…"
+Ini-index ang mga bloke sa disk...
 ```
 
 ```
         <source>Processing blocks on disk…</source>
         <translation>Pinoproseso ang mga bloke sa ♦disk♦...</translation>
     
-YES  
-The translation includes literal diamonds (♦) around the word "disk," which is not in the source text and is unnecessary. Also, the ellipsis should be consistent with the source — using three dots without extra spaces. The translation should avoid adding symbols that aren't in the original.
+YES
+The translation uses "♦disk♦", which is unidiomatic and contains unnecessary symbols. In Filipino ('tl'), "disk" is commonly translated as "disk" or "disco", depending on context. The ellipsis character "..." should be consistent with the source, which uses "…".
 
-Correct translation:  
-Pinoproseso ang mga bloke sa disk...
+Correct translation:
+Pinoproseso ang mga bloke sa disk…
 ```
 
 ```
         <source>Connecting to peers…</source>
         <translation>Kumokonekta sa mga ♦peers♦...</translation>
     
-YES  
-The term "peers" should be translated or localized appropriately instead of using "♦peers♦" with special characters. The use of "♦" is not standard and looks like placeholder markup or unwanted formatting. Also, the ellipsis should be consistent with the source: the source uses a single ellipsis character (…) rather than three dots (...).
+YES
+The translation contains unnecessary symbols ("♦") around "peers" and did not localize "peers" into Filipino (usually "katambal", "kasamahan", or simply keeping the English "peers" if commonly used in the technical context). The ellipsis formatting ("...") should be aligned with the original, using the single Unicode ellipsis "…" if possible.
 
-Correct translation:  
-Kumokonekta sa mga kalaro…
+Correct translation:
+Kumokonekta sa mga peer…
 ```
 
 ```
         <source>Command-line options</source>
         <translation>♦Command-line♦ na mga pagpipilian</translation>
     
-YES
-The translation contains unwanted symbols "♦" which are not present in the source text and are inappropriate. The phrase "Command-line options" should be translated without extra characters.
+YES  
+The translation includes extraneous characters ("♦") at the start and around "Command-line", which are not present in the source and are unwanted. The phrase "Command-line" should be translated appropriately to Filipino/Tagalog if possible.
 
-Correct translation:
+Correct translation:  
 Mga pagpipilian sa command-line
 ```
 
@@ -460,38 +476,36 @@ Mga pagpipilian sa command-line
         <translation>Ang ♦Load♦ ay Bahagyang Napirmahan na Transaksyon sa ♦Bitcoin♦</translation>
     
 YES  
-The translation contains unnecessary symbols "♦" around "Load" and "Bitcoin" which do not appear in the source and are inappropriate. Also, the phrase "Ang Load ay Bahagyang Napirmahan na Transaksyon sa Bitcoin" is not idiomatic and awkward in Tagalog. A more natural and accurate translation would be:
+The translation is problematic.  
+1. The source phrase is "Load Partially Signed Bitcoin Transaction," which should be a simple imperative or descriptive phrase.
+2. The translation includes unnecessary symbols "♦" and an unnatural structure.
+3. The "Load" is unnecessarily emphasized and translated as if it were a noun ("Ang Load"), while it should be an imperative or a succinct noun phrase.
+4. "na Transaksyon sa Bitcoin" is acceptable, but overall, the phrase is awkward and not natural Filipino.
 
-"Mag-load ng Bahagyang Napirmang Transaksyon sa Bitcoin"
+Correct translation:
+I-load ang Bahagyang Napirmahang Transaksyon sa Bitcoin
 ```
 
 ```
         <source>Load Partially Signed Bitcoin Transaction from clipboard</source>
         <translation>Ang ♦Load♦ ay Bahagyang Napirmahan na Transaksyon sa ♦Bitcoin♦ mula sa ♦clipboard♦</translation>
     
-YES  
-The translation contains unnecessary use of ♦ symbols around English words, which is not correct and looks like leftover markup or emphasis markers. The phrase "Ang Load ay Bahagyang Napirmahan na Transaksyon sa Bitcoin mula sa clipboard" is a direct but awkward and partially untranslated rendering. A better translation would avoid unnecessary articles and try to keep technical terms consistent or use the Filipino equivalent for "clipboard" if needed.
+YES
+The translation introduces unnecessary symbols (♦) and an awkward sentence structure. "Ang Load ay Bahagyang Napirmahan na Transaksyon sa Bitcoin mula sa clipboard" is unnatural in Filipino/Tagalog, and "Load" should be rendered as "I-load" or similar to make it actionable/imperative.
 
-A more natural and clear translation could be:  
-"Mag-load ng Bahagyang Napirmahang Bitcoin Transaksyon mula sa clipboard"
-
-This keeps the meaning intact, uses "Mag-load" as the verb form of "Load," and removes the extraneous symbols. "Bahagyang Napirmahang Bitcoin Transaksyon" is a good rendering of "Partially Signed Bitcoin Transaction." The word "clipboard" is often left as is in Filipino technical contexts.
+Correct translation:
+I-load ang Bahagyang Napirmahang Transaksyong Bitcoin mula sa clipboard
 ```
 
 ```
         <source>Sending addresses</source>
         <translation>Pagpapadalhan na mga ♦address♦</translation>
     
-YES  
-The translation mixes Tagalog ("Pagpapadalhan na mga") with an English word "address" marked with ♦ symbols, which seems unnecessary and inconsistent. The proper Tagalog term for "sending addresses" in the Bitcoin context should translate "sending" concept and use "address" appropriately. A suitable translation would be:  
+YES
+The translation is problematic due to the unnecessary addition of "na" and the use of special symbols ♦ which are not present in the source. The translation should be simple, straightforward, and free of extraneous formatting or words. Also, "address" should usually just be "address," as it is commonly used untranslated in Filipino IT/crypto contexts, or "mga address" if pluralization is preferred.
 
-"Nagpapadalang mga address"  
-
-or more fully localized:  
-
-"Mga address ng pagpapadala"  
-
-Note: "address" is often untranslated in technical contexts, but the ♦ symbols should be removed, and the phrasing should be natural and clear.
+Correct translation:
+Mga address na padadalhan
 ```
 
 ```
@@ -499,20 +513,20 @@ Note: "address" is often untranslated in technical contexts, but the ♦ symbols
         <translation>Pagtatanggapan na mga ♦address♦</translation>
     
 YES
-The word "address" should be translated to the Filipino equivalent "address" or "address" could be translated as "address" or "address" to fit the context. The current translation uses the English word "address" with diamond symbols (♦) around it, which is not appropriate and looks like spam or placeholder text. Also, "Pagtatanggapan" is an uncommon or incorrect term in this context; the correct term for "receiving" in relation to Bitcoin addresses would be "Mga tatanggap na mga address" or simply "Mga tinatanggap na address."
+The translation uses "Pagtatanggapan na mga ♦address♦", which is awkward and includes untranslated English word "address" with special characters. The proper Filipino word for "addresses" should be used, and "receiving addresses" can be translated more naturally.
 
 Correct translation:
-Mga tatanggap na mga address
+Mga address ng pagtanggap
 ```
 
 ```
         <source>Open a bitcoin: URI</source>
         <translation>Buksan ang ♦bitcoin: URI♦</translation>
     
-YES
-The translation unnecessarily adds decorative symbols (♦) around "bitcoin: URI," which are not present in the source and can confuse users. Also, "buksan" properly means "open," so no correction needed there besides removing the extra symbols.
+YES  
+The translation incorrectly includes extra symbols "♦" around "bitcoin: URI". This is not present in the source text and may confuse users. The rest of the translation is otherwise correct.
 
-Correct translation:
+Correct translation:  
 Buksan ang bitcoin: URI
 ```
 
@@ -521,23 +535,21 @@ Buksan ang bitcoin: URI
         <translation>Ipakita ang %1 tumulong sa mensahe na kumuha ng listahan ng posibleng ♦Bitcoin command-line♦ na mga pagpipilian</translation>
     
 YES
-The translation is awkward and contains unnecessary symbols (♦) around "Bitcoin command-line," which do not appear in the source text and create confusion. The phrase "tumulong sa mensahe" is a literal and unnatural translation of "help message." A more natural phrasing would use "mensahe ng tulong" for "help message," and "upang makakuha ng listahan ng mga posibleng pagpipilian para sa Bitcoin command-line" better conveys "to get a list with possible Bitcoin command-line options."
+The translation mixes English and Filipino unnecessarily ("tumulong sa mensahe", "command-line"), contains awkward phrasing, and introduces an extraneous symbol (♦). "tumulong sa mensahe" is not a correct translation for "help message". The format is also confusing.
 
 Correct translation:
-Ipakita ang %1 mensahe ng tulong upang makakuha ng listahan ng mga posibleng pagpipilian para sa Bitcoin command-line
+Ipakita ang mensahe ng tulong ng %1 upang makakuha ng listahan ng mga posibleng pagpipilian sa command-line ng Bitcoin
 ```
 
 ```
         <source>Main Window</source>
         <translation>Pangunahing ♦Window♦</translation>
     
-YES  
-The translation contains unnecessary and incorrect use of symbols "♦" around the word "Window," which is not in the source and looks like formatting noise. Also, it is better to translate the whole phrase into Filipino (Tagalog) for consistency rather than mixing English and Tagalog.
+YES
+The translation unnecessarily retains the English word "Window" and adds inappropriate symbols (♦), which is not standard in Filipino translations. "Main Window" should be translated as "Pangunahing Window" (if 'Window' is used as a proper term in Filipino interfaces), or better yet, fully in Filipino as "Pangunahing Bintana".
 
-Correct translation:  
-"Pangunahing Window"  
-or fully translated, if preferred:  
-"Pangunahing Bintana"
+Correct translation:
+Pangunahing Bintana
 ```
 
 ```
@@ -545,11 +557,15 @@ or fully translated, if preferred:
         <extracomment>A context menu item. The network activity was disabled previously.</extracomment>
         <translation>I-enable ang aktibidad ng ♦network♦</translation>
     
-YES  
-The use of the English word "network" with decorative symbols (♦) is unusual and not standard in Tagalog translations. It is better to translate "network" properly or keep it consistent with the common usage without any extra symbols. Also, "I-enable" is a borrowed verb from English which is commonly used in Filipino tech contexts, but the inclusion of "ang" before "aktibidad" is correct. Removing the symbols and keeping the text clean improves clarity.
+YES
+The translated phrase "I-enable ang aktibidad ng ♦network♦" is problematic:
+1. The word "network" is not translated into Tagalog ("tl"). It should be "network" (as a loanword) only if no better word is applicable, but the diamond symbols (♦) are inappropriate and not present in the original source.
+2. The extra symbols (♦) do not belong and are unwanted content.
 
-Correct translation:  
+Correct translation:
 I-enable ang aktibidad ng network
+
+Alternatively, you may use "I-enable ang aktibidad ng network" if "network" as a loanword is acceptable in local Bitcoin context, but DO NOT add decorative symbols.
 ```
 
 ```
@@ -558,85 +574,89 @@ I-enable ang aktibidad ng network
         <translation>♦Address♦: %1
 </translation>
     
-YES  
-The translation contains extraneous symbols "♦" around the word "Address," which are not present in the source and are inappropriate. The word "Address" should be translated to the Filipino/Tagalog equivalent "Address" (often left untranslated in Bitcoin context) or "Address" can be left as is, but without the diamond symbols.
+YES
+The translation inappropriately adds "♦" symbols around "Address", which are not present in the source and are likely unintended. Additionally, the English word "Address" is retained, which may be acceptable if the term is left untranslated in the software, but typically it should be translated to "Address: %1" → "Address: %1" (if left untranslated), or in Filipino, it should be "Address: %1" → "Address: %1" (since "Address" is commonly used in Filipino Bitcoin contexts and may remain untranslated). However, the main issue is the addition of unwanted symbols.
 
-Correct translation:  
+Correct translation:
 Address: %1
+or, if you prefer a Filipino word,
+Tirahan: %1
 ```
 
 ```
         <source>HD key generation is &lt;b&gt;disabled&lt;/b&gt;</source>
         <translation>♦HD key generation♦ ay &lt;b&gt;na-disable&lt;/b&gt;</translation>
     
-YES  
-The translation mixes English and Tagalog awkwardly and uses the Anglicized form "na-disable" instead of a proper Tagalog equivalent. Also, the "♦" symbols are unnecessary and not present in the source. A better translation would fully reflect the Tagalog language and keep the formatting intact.
+YES
+The translation is problematic because:
+- The "♦" symbols at the start and around "HD key generation" are unwanted and introduce stray characters.
+- "na-disable" is an anglicized and informal term. A more appropriate Filipino translation is "hindi pinagana" or "hindi aktibo".
+- "HD key generation" is a technical term that can be left untranslated for the Filipino audience, but without the stray symbols.
 
-Correct translation:  
-HD key generation ay &lt;b&gt;hindi pinagana&lt;/b&gt;
+Correct translation:
+Ang HD key generation ay <b>hindi pinagana</b>
 ```
 
 ```
         <source>Coin Selection</source>
         <translation>Pagpipilian ng ♦coin♦</translation>
     
-YES  
-The translation contains unwanted special characters (♦) that do not appear in the source and are unnecessary. Also, the word "coin" is better translated or left as is without ornamental marks for clarity and professionalism.
+YES
+The translation is problematic because it literally translates "Coin Selection" as "Pagpipilian ng ♦coin♦", where "coin" is not translated to Filipino/Tagalog and unnecessary decorative symbols (♦) are present. The word "coin" should be translated appropriately for the Bitcoin context (e.g., "barya" or simply kept as "coin" if that is standard in local usage, but without symbols). Also, "Pagpipilian ng" is awkward; a better translation would be "Pagpili ng Barya" or "Pagpili ng Coin" depending on standard usage in the Bitcoin community in the Philippines.
 
-Correct translation:  
-Pagpipilian ng coin
+Correct translation:
+Pagpili ng Barya
 ```
 
 ```
         <source>List mode</source>
         <translation>Listajhan na ♦mode♦</translation>
     
-YES  
-The translation contains nonsensical and irrelevant words ("Listajhan na ♦mode♦") that do not correctly convey "List mode" in Tagalog ('tl'). Also, the English word "mode" should be translated or adapted properly without extraneous symbols.  
+YES
+The translation is incorrect and uses "Listajhan" (which is not a valid Tagalog word) and adds symbols ("♦mode♦") that are not present in the source. The correct translation should use proper Tagalog or a near match if a direct translation isn't standard.
 
-Correct translation:  
-"Paraan ng listahan"
+Correct translation:
+Paraan ng listahan
 ```
 
 ```
         <source>Received with label</source>
         <translation>Natanggap na may kasamang ♦tatak♦</translation>
     
-YES  
-The translation includes unnecessary decorative symbols (♦) around the word "tatak" which are not present in the source text and are inappropriate. The phrase "natanggap na may kasamang tatak" literally means "received with included label," which is less natural and can be simplified for clarity and consistency.
+YES
+The use of "♦tatak♦" is incorrect and non-standard. The diamonds (♦) are not appropriate and may indicate a placeholder or erroneous characters. The word "tatak" is an acceptable translation for "label," but "kasamang" is awkward in this context. The standard phrase should be directly and neutrally translated.
 
-A more accurate and natural Filipino translation for "Received with label" would be:  
-"Natanggap gamit ang tatak"  
-or simply  
-"Natanggap na may tatak"  
-
-Correct translation:  
-<translation>Natanggap na may tatak</translation>
+Correct translation:
+Natanggap na may label
 ```
 
 ```
         <source>Received with address</source>
         <translation>Natanggap na may ♦address♦</translation>
     
-YES  
-The translation incorrectly includes the English word "address" with decorative ♦ symbols, which is inappropriate. The word "address" should be translated into Filipino ("address" can be translated as "address" in Filipino in technical contexts but better is "address" directly or "address" localized as "address" is sometimes used. However, for clarity, "address" can be translated as "address" or "lokasyon" or "tatak" depending on context. In Bitcoin context, "address" is often left as "address" or "address" is acceptable but better would be to maintain the placeholder or translate appropriately without special characters.
+YES
+The translation is problematic because it uses "♦address♦" instead of translating the term or correctly using a format specifier if required. Additionally, "na may" is acceptable but not the standard way to phrase this in Filipino UI.
 
-Correct translation:  
-"Natanggap gamit ang address"  
-or if "address" is left as is:  
-"Natanggap gamit ang address"  
-
-Note: "natanggap na may" literally means "received with," but "gamit ang" ("using the") is more natural in Filipino. Also, removing the ♦ symbols is necessary.
+Correct translation:
+Natanggap sa address
 ```
 
 ```
         <source>Copy address</source>
         <translation>Kopyahin ang ♦address♦</translation>
     
-YES  
-The translation uses the English word "address" instead of translating it into Tagalog, and it unnecessarily adds decorative diamond marks (♦) which are not present in the source and could confuse the user. The phrase "Copy address" in Tagalog is correctly translated as "Kopyahin ang address" without any special characters.  
+YES The translation "Kopyahin ang ♦address♦" is problematic. The word "address" is untranslated, and the use of "♦" is unnecessary and incorrect in this context. 
 
-Correct translation:  
+Correct translation:
+Kopyahin ang address
+
+If you want a more natural translation, you can use:
+Kopyahin ang address
+
+Or, if you want to translate "address" as "address ng pitaka" ("wallet address"):
+Kopyahin ang address
+
+But strictly for "Copy address", the accurate "tl" is:
 Kopyahin ang address
 ```
 
@@ -644,10 +664,10 @@ Kopyahin ang address
         <source>Copy bytes</source>
         <translation>Kopyahin ang ♦bytes♦</translation>
     
-YES  
-The translation is partially incorrect and includes unnecessary symbols (♦) around the word "bytes," which are not present in the source and should be omitted. Also, "bytes" is acceptable to be kept in English or could be translated as "bait" (Filipino adaptation), but since the source uses "bytes," it is acceptable to keep it as is without any extra symbols.
+YES
+The translation is problematic. The phrase "Kopyahin ang ♦bytes♦" includes unnecessary symbols (♦) around "bytes" that are not present in the source. Furthermore, the English word "bytes" is typically used directly in Filipino technical contexts, but the symbols make the translation erroneous.
 
-Correct translation:  
+Correct translation:
 Kopyahin ang bytes
 ```
 
@@ -655,10 +675,10 @@ Kopyahin ang bytes
         <source>Can vary +/- %1 satoshi(s) per input.</source>
         <translation>Maaaring magbago ng +/- %1♦4satoshi(s)♦ kada ♦input♦.</translation>
     
-YES  
-The translation contains extraneous characters ("♦4", "♦") that do not exist in the source and should be removed. Also, the English plural "(s)" was preserved, but in Filipino ("tl") it is better to express plural naturally or rephrase. The term "input" can be translated as "input" for technical contexts, but the stray ♦ characters make the translation erroneous.
+YES
+There are issues with stray and incorrect characters (e.g., "♦4", "♦"), and the English word "input" is unnecessarily wrapped with special symbols. The format specifier "%1" is taken over correctly, but the extra "4" and "♦" are errors and "satoshi(s)" could be localized.
 
-Correct translation:  
+Correct translation:
 Maaaring magbago ng +/- %1 satoshi kada input.
 ```
 
@@ -667,62 +687,65 @@ Maaaring magbago ng +/- %1 satoshi kada input.
         <translation>Ang pagsasarod sa pitaka sa matagal ay maaaring humantong sa pag-resync ng kabuuang ♦chain♦ kung ang pagputol ay na-enable.</translation>
     
 YES  
-The translation contains a few issues:  
-1. The mixing of Tagalog and English ("♦chain♦") is awkward and the English word should be translated or transliterated properly.  
-2. "pagsasarod" is not correct in Tagalog for "closing" (the correct term is "pagsasara").  
-3. "pagputol" is a literal translation of "pruning," but in the Bitcoin context, a better translation or explanation might be needed, e.g., "pruning" transliterated or described as "pagpuputol ng data" or "paglilinis".  
-4. The sentence structure can be more natural.
+The translation contains the following issues:  
+1. The word "pagsasarod" is a typo; it should be "pagsasara".  
+2. The phrase "♦chain♦" should be translated or kept in English only if there's no Filipino equivalent, but the use of "♦♦" is unusual and likely unintended.  
+3. "Pagputol" is not the preferred translation for "pruning" in the context of Bitcoin; "pruning" is best kept in English in technical context, or else clarified.  
+4. The sentence structure and translation for "enabled" is not optimal.  
+5. Minor awkward phrasing throughout.
 
-Correct translation:  
-Ang pagsasara ng pitaka nang matagal ay maaaring magresulta sa kinakailangang i-resync ang buong blockchain kung naka-enable ang pruning.
+Correct translation:
+Ang pagsasara ng pitaka nang matagal ay maaaring magresulta sa kinakailangang i-resync ang buong chain kung naka-enable ang pruning.
 ```
 
 ```
         <source>Encrypt the wallet. The wallet will be encrypted with a passphrase of your choice.</source>
         <translation>I-encrypt ang pitaka. Ang pitaka ay mae-encrypt na may ♦passphrase♦ ng iyong mapipili.</translation>
     
-YES  
-The translation mixes English and Tagalog unnecessarily by keeping the English word "passphrase" and using decorative diamonds (♦) around it, which is unusual and not standard in Tagalog translations. The term "passphrase" can be translated or kept as is, but should not have special symbols. Also, "I-encrypt" is borrowed from English but commonly accepted; however, the sentence structure can be smoother and more natural.
+YES
+The translation uses "♦passphrase♦", which is an unnecessary decoration and is not standard. It should simply use the word "passphrase" or its equivalent. Otherwise, the translation is generally accurate and does not have spacing or format issues.
 
-Correct translation:  
-"I-encrypt ang pitaka. Ang pitaka ay ie-encrypt gamit ang passphrase na iyong pipiliin."
+Correct translation:
+I-encrypt ang pitaka. Ang pitaka ay mae-encrypt gamit ang passphrase na iyong pinili.
 ```
 
 ```
         <source>Disable private keys for this wallet. Wallets with private keys disabled will have no private keys and cannot have an HD seed or imported private keys. This is ideal for watch-only wallets.</source>
         <translation>I-disable ang mga pribadong mga susi para sa pitaka na ito. Ang mga pitaka na may mga pribadong mga susi na na-disable ay mawawalng ng pribadong mga susi at hindi magkakaroon ng ♦HD seed♦ o mga na-import na pribadong mga susi. Ito ay perpekto lamang para sa mga ♦watch-only♦ na mga pitaka.</translation>
     
-YES
-The phrase "mawawalng" is a typo; it should be "mawawalang" (with an extra 'a'). Also, the repeated phrase "pribadong mga susi" can be simplified to "pribadong susi" as "pribadong" already implies plurality, and "mga" is optional or redundant here. The symbol ♦ around "HD seed" and "watch-only" is unnecessary and can be removed for clarity and naturalness. The word "disable" can be translated better as "huwag paganahin" instead of "I-disable" to avoid mixing English and Tagalog.
+YES  
+There are several issues in the translation:
+1. The use of "♦HD seed♦" and "♦watch-only♦" with symbols is unnecessary and not standard in Filipino translations. English terms like "HD seed" and "watch-only" are often retained, but without symbols.
+2. "mawawalng" is misspelled; it should be "mawawalan".
+3. Excessive repetition of "mga" (plural marker) before "pribadong mga susi". It is more natural to say "mga pribadong susi".
 
 Correct translation:
-Huwag paganahin ang mga pribadong susi para sa pitaka na ito. Ang mga pitaka na may hindi paganihang mga pribadong susi ay walang pribadong susi at hindi magkakaroon ng HD seed o mga na-import na pribadong susi. Ito ay perpekto para sa mga watch-only na pitaka.
+I-disable ang mga pribadong susi para sa pitakang ito. Ang mga pitakang may disabled na pribadong susi ay mawawalan ng pribadong susi at hindi magkakaroon ng HD seed o na-import na pribadong susi. Ito ay perpekto para sa mga watch-only na pitaka.
 ```
 
 ```
         <source>Use an external signing device such as a hardware wallet. Configure the external signer script in wallet preferences first.</source>
         <translation>Gumamit ng panlabas na pagpirmang ♦device♦ katulad ng ♦hardware♦ na pitaka. I-configure ang panlabas na ♦signer script♦ sa loob ng ♦preferences♦ ng pitaka n listahan. </translation>
     
-YES  
-The translation has several issues:  
-- The word "device" is untranslated and marked with ♦, which is not appropriate. It should be translated or transliterated properly.  
-- The phrase "hardware wallet" should be translated or left in English consistently; mixing English and Tagalog is inconsistent.  
-- The phrase "wallet preferences" is translated as "preferences ng pitaka n listahan," which is awkward, particularly the "n" which should be "na," and "listahan" (meaning list) is not appropriate here. The correct term for "preferences" in this context is better left as "mga kagustuhan" or simply "preferences."  
-- The sentence ends with an extra space after the period.  
-- The English phrase "Configure the external signer script" is translated as "I-configure ang panlabas na ♦signer script♦," again mixing languages and highlighting with ♦. It should be translated or consistently used.  
+YES
+There are several issues with the translation:
+1. The use of "♦device♦", "♦hardware♦", and "♦signer script♦" is inconsistent and uses unnecessary symbols; these terms can be translated directly or appropriately localized.
+2. "Preferences" can be translated as "mga kagustuhan," and "wallet preferences" as "mga kagustuhan ng pitaka" rather than "preferences ng pitaka n listahan".
+3. The phrase "n listahan" at the end appears to be an erroneous fragment.
+4. The use of English fragments is unnecessarily high; certain terms can be better localized.
 
-A better translation:  
-"Gumamit ng panlabas na aparato para sa pagpirma tulad ng hardware wallet. I-configure muna ang script para sa panlabas na signer sa mga kagustuhan ng pitaka."
+Correct translation:
+Gumamit ng panlabas na kagamitan sa pagpirma tulad ng hardware wallet. I-configure muna ang panlabas na signer script sa mga kagustuhan ng pitaka.
 ```
 
 ```
         <source>External signer</source>
         <translation>Panlabas na ♦signer♦</translation>
     
-YES  
-The term "signer" is incorrectly left in English with decorative diamond symbols (♦) around it, which is inappropriate and inconsistent with normal translation standards. It should be translated into Tagalog or Filipino without any special characters.
+YES
+The word "signer" is not translated and is marked with unusual symbols (♦), which is not standard practice and can be confusing or appear as spam. Additionally, "signer" can be translated for clarity.
 
-Correct translation:  
+Correct translation:
 Panlabas na tagapirma
 ```
 
@@ -731,59 +754,64 @@ Panlabas na tagapirma
         <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
         <translation>Pinagsama-sama na walang suporta ng ♦pag-pirma♦ (kailangan para sa panlabasna pagpirma)</translation>
     
-YES  
-There are spacing and phrasing issues in the translation. The phrase "panlabasna" should be two separate words "panlabas na." Additionally, the term "♦pag-pirma♦" uses unusual symbols (♦) which are not appropriate and not present in the source; it should just be "pagpirma" without hyphen or special characters. The overall phrasing can be smoother and more natural.
+YES
+The translation is problematic due to:
+- Unnecessary use of the symbols "♦" around "pag-pirma", which is incorrect and not present in the source.
+- "Panlabasna" should be "panlabas na" (missing space).
+- The use of "Pinagsama-sama" is not idiomatic in this context; a better term is "Inipon" or directly using "Na-compile" which is more appropriate in a technical context.
 
-Correct translation:  
-Pinagsama-sama nang walang suporta para sa panlabas na pagpirma (kailangan para sa panlabas na pagpirma)
+Correct translation:
+Na-compile nang walang suporta para sa panlabas na pagpirma (kinakailangan para sa panlabas na pagpirma)
 ```
 
 ```
         <source>Edit Address</source>
         <translation>I-edit ang ♦address♦</translation>
     
-YES  
-The word "address" should be translated into Tagalog (tl) rather than left in English and marked with ♦ symbols, which are not standard or appropriate here. Also, "I-edit" is a common loan adaptation, but a more natural translation would avoid the English verb form and simply use "I-edit ang address" without special characters, or better, use a Tagalog equivalent for "Edit" and "Address".
+YES
+The translation "I-edit ang ♦address♦" unnecessarily leaves the word "address" untranslated and adds unwanted symbols (♦), which are not in the source or appropriate. In Tagalog, "address" (especially in the context of Bitcoin) can be translated as "address" (commonly used loan word) or more fully as "adres" if needed, but symbols should not be present.
 
-Correct translation:  
-"I-edit ang address"  
-or more fully localized:  
-"I-edit ang address" (if "address" is a technical term commonly left in English)  
-Alternatively, for full Tagalog:  
-"I-ayos ang address" or "Baguhin ang address"
+Correct translation:
+I-edit ang address
 ```
 
 ```
         <source>The label associated with this address list entry</source>
         <translation>Ang tatak na nauugnay sa ♦entry♦ ng listahan ng ♦address♦</translation>
     
-YES  
-The translation is somewhat literal and includes English words ("entry" and "address") within diamond markers (♦), which is unusual and inconsistent with proper Tagalog style. The markers are unnecessary and disrupt the flow. Also, a clearer and more natural Tagalog translation would avoid using the English words directly and instead use proper Tagalog equivalents or common loanwords without markers.
+YES
+The translation is problematic for multiple reasons:
+- The translation awkwardly maintains the English placeholders "entry" and "address" with ♦, which is not standard practice in Filipino and makes the text sound unnatural.
+- "Entry" and "address" are not translated, and should be.
+- "Address list entry" should be translated as "entry ng listahan ng address", but "address" could also be natively translated as "address" (Filipino usage does sometimes borrow the English term in technical contexts).
 
-Correct translation:  
-"Ang tatak na kaugnay ng entry sa listahan ng address na ito"  
-OR, to maintain the terms as loanwords without markers:  
-"Ang tatak na kaugnay ng entry sa listahan ng address na ito"
+Correct translation:
+Ang label na nauugnay sa entry ng listahan ng address na ito
 ```
 
 ```
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
         <translation>Ang ♦address♦ na may kaugnayan sa ipinasok sa listahan ng ♦address♦. Ito ay maaari lamang ng mabago para sa pagpapadalhan na mga ♦address♦.</translation>
     
-YES  
-The translation uses "♦address♦" instead of translating or keeping the word consistent without these symbols, which is unusual and likely incorrect formatting for a translation. The phrase "ipinasok sa listahan ng ♦address♦" is awkward and should be more naturally phrased. Also, "Ito ay maaari lamang ng mabago" contains a grammatical error; it should be "Ito ay maaari lamang mabago" (remove "ng"). The phrase "para sa pagpapadalhan na mga ♦address♦" is not natural; a better term could be "para sa mga address ng pagpapadala" or simply "para sa mga address na padadalhan."
+YES
+The translation uses the placeholder "♦address♦" instead of the word "address" translated into Filipino/Tagalog (typically "address" is retained or "adres" is used as a loanword in context). Additionally, the phrase structure is awkward and not entirely natural in Filipino. There are also some grammatical issues such as "ng mabago" (should be "lamang mabago").
 
-Correct translation:  
-Ang address na kaugnay ng entry na ito sa listahan ng mga address. Maaari lamang itong baguhin para sa mga address na padadalhan.
+Correct translation:
+Ang address na kaugnay ng entry na ito sa listahan ng address. Maaari lamang itong baguhin para sa mga address na gagamitin sa pagpapadala.
 ```
 
 ```
         <source>Address</source>
         <translation>♦Address♦</translation>
     
-YES  
-The translation contains unwanted special characters ("♦") around the English word "Address". It should be translated properly into Tagalog or Filipino without extraneous symbols. The correct translation is:  
+YES
+The translation is problematic: the inclusion of "♦" symbols is unnecessary and was not present in the original source. The word "Address" should be translated into Filipino (Tagalog) if an appropriate term exists, or left as is if it's commonly used untranslated in the technical context, but without extraneous symbols.
+
+Correct translation:
 Address
+
+Or, if a Filipino translation is appropriate:
+Adres
 ```
 
 ```
@@ -791,20 +819,24 @@ Address
         <translation>Bagong pagpapadalhan na ♦address♦</translation>
     
 YES
-The translation mixes a Tagalog phrase with an English word "address" inserted with special characters (♦address♦), which is inappropriate and inconsistent. The word "address" should be translated or used plainly without such symbols. A correct translation would be:
+The translation is problematic. The use of "♦address♦" is not proper Filipino and seems to include untranslated placeholder text with decorative symbols, which is unnecessary and confusing. The phrase "Bagong pagpapadalhan" is generally understandable, but "address" should be translated as "address" in Filipino contexts ("address" is often used directly, or "adres" can be used). Remove the decorative symbols.
 
-Bagong address ng pagpapadala
+Correct translation:
+Bagong address ng padadalhan
+
+Or optionally, using "adres":
+Bagong adres ng padadalhan
 ```
 
 ```
         <source>The entered address "%1" is not a valid Bitcoin address.</source>
         <translation>Ang naipasok na ♦address♦ "%1" ay hindi wasto na ♦Bitcoin address♦.</translation>
     
-YES  
-The translation uses the English loanwords "address" and "Bitcoin address" with decorative ♦ marks, which is unnecessary and nonstandard. Also, "hindi wasto na" should be "hindi wasto" or "hindi tamang" (correct/valid). The word "na" after "wasto" is incorrect in this context. The translation should use Filipino equivalents where possible or at least avoid unusual punctuation.
+YES
+The translation contains unnecessary symbols "♦address♦" and "♦Bitcoin address♦", which are not standard or appropriate in Tagalog and do not appear in the original English. Also, the structure could be more idiomatic. 
 
-Correct translation:  
-Ang ipinasok na address na "%1" ay hindi isang wastong Bitcoin address.
+Correct translation:
+Ang ipinasok na address na "%1" ay hindi wastong Bitcoin address.
 ```
 
 ```
@@ -812,47 +844,52 @@ Ang ipinasok na address na "%1" ay hindi isang wastong Bitcoin address.
         <translation>Ang naipasok na ♦address♦ "%1" ay nasa aklat na ng ♦address♦ na may tatak "%2".</translation>
     
 YES  
-The translation unnecessarily repeats the word "address" in English ("♦address♦") instead of translating it properly into Tagalog. The Tagalog word for "address" in this context is "address" or "talaan ng address." Also, "tatak" is not the best choice for "label" in this context; "label" can be retained as is or translated as "palatandaan" or "etiketa," but in Bitcoin-related contexts, "label" is commonly used as is or translated as "label."
+The translation incorrectly uses "♦address♦" as placeholders, which is not idiomatic and unnecessary in Filipino ('tl'), and may confuse users. The word "address" should be translated as "address" (since the context of Bitcoin usually keeps the term untranslated), or at least consistently and not surrounded by special characters. The phrase "aklat na ng ♦address♦" is ungrammatical and awkward—"address book" should be translated as "aklat ng mga address" or "address book" (as calque).
 
-A more natural and correct translation would be:  
-Ang naipasok na address na "%1" ay nasa aklat ng mga address na may label na "%2".
+Correct translation:  
+Ang ipinasok na address na "%1" ay nasa address book na may tatak na "%2".
 ```
 
 ```
         <source>New key generation failed.</source>
         <translation>Ang Bagong susi sa ♦generation♦ ay nabigo.</translation>
     
-YES  
-The translation is problematic because it mixes English ("generation") with Tagalog ("Bagong susi ... ay nabigo"). The word "generation" should be translated into Tagalog or omitted for clarity. Also, the use of "sa" before "generation" is incorrect if "generation" is left untranslated. 
+YES
+The translation has several issues:
+- The word "generation" is not translated; it appears as "♦generation♦".
+- "Bagong" should not be capitalized unless at the start.
+- The correct translation of "key generation" is "pagbuo ng susi" or "paggawa ng bagong susi".
+- Format specifiers and spacing are not problematic here, but the translation does not accurately convey the source.
 
-Correct translation:  
-Bagong paggawa ng susi ay nabigo.  
-Or more naturally:  
-Nabigo ang bagong paggawa ng susi.
+Correct translation:
+Nabigo ang pagbuo ng bagong susi.
 ```
 
 ```
         <source>A new data directory will be created.</source>
         <translation>May bagong datos na ♦directory♦ ay magagawa.</translation>
     
-YES
-The translation contains unnecessary symbols "♦" around "directory," which is not correct. Additionally, the phrase "magagawa" is awkward; a better verb would be "gagawa" (will create) or "lilikha" (will create). The word "datos" is a direct borrowing from Spanish and is less commonly used in Tagalog; "data" or "impormasyon" could be considered depending on context, but "datos" is acceptable in technical contexts.
-
-Correct translation:
-"Isang bagong data directory ang gagawin." 
-or 
-"Isang bagong data directory ang lilikhain."
+YES  
+The translation is awkward and contains an untranslated word ("directory") boxed by special characters (♦directory♦), which is not standard in Tagalog ('tl'). It should read more naturally and either translate "directory" (e.g., as "direktoryo") or consistently borrow it if it is common in local usage, but without special characters.  
+  
+Correct translation:  
+Lilikha ng isang bagong direktoryo ng datos.  
+or  
+Isang bagong data directory ang lilikhain.
 ```
 
 ```
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
         <translation>Ang ♦directory♦ ay mayroon na. Magdagdag ng%1kung balak mong gumawa ng bagong ♦directory♦ dito.</translation>
     
-YES  
-There are spacing issues around the format specifier %1 and the word "Magdagdag." Also, the English word "directory" is not translated or localized and is surrounded by ♦ symbols, which seems inconsistent or incorrect. It would be better to translate "directory" to Filipino (e.g., "direktoryo") or keep it consistent without unusual symbols.  
+YES
+There are several issues: 
+- "%1" is not spaced properly ("Magdagdag ng%1kung" should be "Magdagdag ng %1 kung").
+- The word "directory" is not translated or left as is but wrapped in unusual symbols (♦), which is not standard.
+- The tone is slightly awkward in Filipino.
 
-Correct translation:  
-Ang direktoryo ay mayroon na. Magdagdag ng %1 kung balak mong gumawa ng bagong direktoryo dito.
+Correct translation:
+Umiiral na ang directory. Magdagdag ng %1 kung nais mong gumawa ng bagong directory dito.
 ```
 
 ```
@@ -860,20 +897,27 @@ Ang direktoryo ay mayroon na. Magdagdag ng %1 kung balak mong gumawa ng bagong d
         <translation>Hindi makakagawa ng datos na ♦directory♦ dito.</translation>
     
 YES  
-The translation uses a mix of English and Tagalog ("datos na ♦directory♦") which breaks naturalness and clarity. Also, the word "directory" should be translated or adapted properly, and the phrase can be more fluent. The correct translation should use "direktoryo" (commonly accepted Tagalog adaptation of "directory") and avoid unnecessary symbols (♦).  
+The translation is partly problematic. The word "directory" is not translated and is awkwardly surrounded by the characters ♦, which are unnecessary and not standard. In addition, "data directory" should ideally be translated as "directory ng datos" or "folder ng datos," not "datos na directory." A better and more natural translation:
 
 Correct translation:  
-"Hindi makalikha ng direktoryo ng datos dito."
+Hindi maaaring lumikha ng directory ng datos dito.
 ```
 
 ```
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
         <translation>Hindi bababa sa %1 ng ♦GB♦ na dato ay mailalagay sa ♦directory♦, at lalaki sa paglipas ng panahon.</translation>
     
-YES  
-The translation contains untranslated English words "♦GB♦" and "♦directory♦" that should be either translated or properly formatted without special characters. The word "dato" is incorrect (should be "data"). Also, "mailalagay" is not the best word choice here; "itatago" or "itatala" is more appropriate for storing data. A more natural and accurate translation would be:
+YES
+There are several issues with the translation:
+- "♦GB♦" and "♦directory♦" should not be wrapped with such symbols; these are not typical in Tagalog translation and are not present in the source.
+- "ng GB" is incorrect; should be "%1 GB".
+- "dato" should be "data".
+- "directory" should be translated as "direktoryo".
+- The sentence structure could be improved for naturalness.
+- The translation does not preserve the original format specifier "%1" correctly, since it's followed by "ng" without "GB".
 
-"Hindi bababa sa %1 GB ng data ay itatago sa direktoryong ito, at lalaki ito sa paglipas ng panahon."
+Correct translation:
+Hindi bababa sa %1 GB ng data ang itatago sa direktoryong ito, at madaragdagan pa ito habang tumatagal.
 ```
 
 ```
@@ -881,19 +925,7 @@ The translation contains untranslated English words "♦GB♦" and "♦directory
         <translation>Laki ng ♦database cache♦</translation>
     
 YES
-The translation uses "Laki ng" which is an inappropriate or uncommon phrase in Filipino/Tagalog for "Size of". The word "laki" means "size" or "big", but "laki ng" is usually followed by a concrete noun or refers informally to physical size rather than technical concepts like cache size.
-
-Also, the English term "database cache" is left with ♦ marks, which is not standard and appears incorrect or as an error in formatting or placeholder usage.
-
-A more accurate and natural translation would be:
-
-"Laki ng cache ng database"
-
-or alternatively,
-
-"Sukat ng cache ng database"
-
-Here, "Sukat" is also used for "size" and may sound more precise or formal.
+The translation "Laki ng ♦database cache♦" is problematic because it inappropriately uses the English phrase "database cache" without translation or explanation. Additionally, the diamond symbols (♦) are not present in the source and are unnecessary.
 
 Correct translation:
 Laki ng cache ng database
@@ -903,10 +935,11 @@ Laki ng cache ng database
         <source>Number of script verification threads</source>
         <translation>Bilang ng ♦script♦ pagpapatunay na mga ♦threads♦</translation>
     
-YES  
-The translation contains unnecessary symbols "♦" around "script" and "threads," which are not present in the source text and are not appropriate. Additionally, "Bilang ng" should be "Bilang ng mga" to correctly indicate "Number of" followed by plural noun phrase. A more natural, clear translation would be:
+YES
+The translation improperly uses English words "script" and "threads" enclosed in symbols (♦), which is not standard and may confuse users. In Filipino ("tl"), technical terms like "script" and "threads" are sometimes borrowed, but not marked with special symbols, and the word order could be improved.
 
-Bilang ng mga thread para sa beripikasyon ng script
+Correct translation:
+Bilang ng mga thread para sa pagpapatunay ng script
 ```
 
 ```
@@ -914,9 +947,17 @@ Bilang ng mga thread para sa beripikasyon ng script
         <translation>♦Network♦</translation>
     
 YES
-The translation incorrectly includes decorative symbols (♦) and does not translate the English word "Network" into Tagalog ('tl'). The word "Network" can be translated as "Network" (borrowed) or better as "Netwurk" or "Pangunahing Ugnayan" depending on context, but typically "Network" is left as is or translated as "Network" in Bitcoin-related contexts. However, the decorative symbols are inappropriate.
+The translation is problematic. The Tagalog ('tl') translation is simply the English word "Network" with decorative characters (♦) added, which are not present in the original source. This addition is unwarranted and constitutes a format issue.
 
 Correct translation:
+Network
+
+Alternatively, if you prefer a direct Tagalog translation (though English terms are often used in computing contexts in the Philippines):
+
+Correct translation:
+Ugnayan (but "Network" is commonly retained)
+
+So the best choice for software UI is just:
 Network
 ```
 
@@ -924,20 +965,28 @@ Network
         <source>Prune block storage to</source>
         <translation>Putulan i-block ang imbakan sa</translation>
     
-YES  
-The translation uses "Putulan" which is incorrect in this context. The correct verb should be "Putulin" (to cut/prune in Filipino/Tagalog). Also, the phrase "i-block ang imbakan sa" is awkward and unnatural. A better translation is:  
-"Putulin ang imbakan ng block sa"
+YES
+The translation "Putulan i-block ang imbakan sa" is awkward and not entirely accurate. The verb "putulan" is not the commonly used term for "prune" in this technical context, and the structure is unnatural in Filipino. 
+
+A better, more natural and clear translation would be:
+"Putulin ang storage ng block sa"
+
+Correct translation:
+Putulin ang storage ng block sa
 ```
 
 ```
         <source>External signer script path</source>
         <translation>Panlabas na ♦signer script♦ na daanan</translation>
     
-YES  
-The translation uses "♦signer♦" as a loanword with added symbols, which is unnecessary and potentially confusing. The term "signer" can be translated more naturally as "tagapirma" in Tagalog. Also, the phrase order can be made more natural without the symbols.
+YES
+The translation is somewhat awkward and contains the phrase "♦signer script♦" which appears to be a placeholder or markup rather than a translation. The use of "daanan" for "path" is acceptable but could be improved for clarity.
 
-Correct translation:  
-Panlabas na daanan ng script ng tagapirma
+Correct translation:
+Panlabas na landas ng signer script
+
+Or, more fluently:
+Landas ng panlabas na signer script
 ```
 
 ```
@@ -945,11 +994,14 @@ Panlabas na daanan ng script ng tagapirma
         <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
         <translation>Pinagsama-sama na walang suporta ng ♦pag-pirma♦ (kailangan para sa panlabasna pagpirma)</translation>
     
-YES  
-There are spacing and phrasing issues in the translation. The phrase "panlabasna" should be two separate words "panlabas na." Additionally, the term "♦pag-pirma♦" uses unusual symbols (♦) which are not appropriate and not present in the source; it should just be "pagpirma" without hyphen or special characters. The overall phrasing can be smoother and more natural.
+YES
+The translation is problematic due to:
+- Unnecessary use of the symbols "♦" around "pag-pirma", which is incorrect and not present in the source.
+- "Panlabasna" should be "panlabas na" (missing space).
+- The use of "Pinagsama-sama" is not idiomatic in this context; a better term is "Inipon" or directly using "Na-compile" which is more appropriate in a technical context.
 
-Correct translation:  
-Pinagsama-sama nang walang suporta para sa panlabas na pagpirma (kailangan para sa panlabas na pagpirma)
+Correct translation:
+Na-compile nang walang suporta para sa panlabas na pagpirma (kinakailangan para sa panlabas na pagpirma)
 ```
 
 ```
@@ -958,20 +1010,33 @@ Pinagsama-sama nang walang suporta para sa panlabas na pagpirma (kailangan para 
         <translation>Kopyahin ang ♦address♦</translation>
     
 YES
-The translation mixes English and Tagalog unnecessarily by leaving "address" in English, marked with diamond symbols (♦), which is not appropriate or standard. The correct translation should fully translate the phrase without extra symbols.
+The translation "Kopyahin ang ♦address♦" is problematic. The placeholder "♦address♦" is not a proper translation; it should translate "address" as "address" or "adres" in Filipino/Tagalog, but without the special characters. The correct translation is:
 
 Correct translation:
 Kopyahin ang address
+
+Alternatively, if "address" should be perfectly localized:  
+Kopyahin ang adres
+
+However, "address" is often left untranslated in Filipino tech contexts. The use of special characters is unnecessary and incorrect.
 ```
 
 ```
         <source>Copy address</source>
         <translation>Kopyahin ang ♦address♦</translation>
     
-YES  
-The translation uses the English word "address" instead of translating it into Tagalog, and it unnecessarily adds decorative diamond marks (♦) which are not present in the source and could confuse the user. The phrase "Copy address" in Tagalog is correctly translated as "Kopyahin ang address" without any special characters.  
+YES The translation "Kopyahin ang ♦address♦" is problematic. The word "address" is untranslated, and the use of "♦" is unnecessary and incorrect in this context. 
 
-Correct translation:  
+Correct translation:
+Kopyahin ang address
+
+If you want a more natural translation, you can use:
+Kopyahin ang address
+
+Or, if you want to translate "address" as "address ng pitaka" ("wallet address"):
+Kopyahin ang address
+
+But strictly for "Copy address", the accurate "tl" is:
 Kopyahin ang address
 ```
 
@@ -979,10 +1044,10 @@ Kopyahin ang address
         <source>Copy bytes</source>
         <translation>Kopyahin ang ♦bytes♦</translation>
     
-YES  
-The translation is partially incorrect and includes unnecessary symbols (♦) around the word "bytes," which are not present in the source and should be omitted. Also, "bytes" is acceptable to be kept in English or could be translated as "bait" (Filipino adaptation), but since the source uses "bytes," it is acceptable to keep it as is without any extra symbols.
+YES
+The translation is problematic. The phrase "Kopyahin ang ♦bytes♦" includes unnecessary symbols (♦) around "bytes" that are not present in the source. Furthermore, the English word "bytes" is typically used directly in Filipino technical contexts, but the symbols make the translation erroneous.
 
-Correct translation:  
+Correct translation:
 Kopyahin ang bytes
 ```
 
@@ -990,10 +1055,18 @@ Kopyahin ang bytes
         <source>Copy address</source>
         <translation>Kopyahin ang ♦address♦</translation>
     
-YES  
-The translation uses the English word "address" instead of translating it into Tagalog, and it unnecessarily adds decorative diamond marks (♦) which are not present in the source and could confuse the user. The phrase "Copy address" in Tagalog is correctly translated as "Kopyahin ang address" without any special characters.  
+YES The translation "Kopyahin ang ♦address♦" is problematic. The word "address" is untranslated, and the use of "♦" is unnecessary and incorrect in this context. 
 
-Correct translation:  
+Correct translation:
+Kopyahin ang address
+
+If you want a more natural translation, you can use:
+Kopyahin ang address
+
+Or, if you want to translate "address" as "address ng pitaka" ("wallet address"):
+Kopyahin ang address
+
+But strictly for "Copy address", the accurate "tl" is:
 Kopyahin ang address
 ```
 
@@ -1001,24 +1074,29 @@ Kopyahin ang address
         <source>Copy transaction ID</source>
         <translation>Kopyahin ang transaksyon  ng ♦ID♦</translation>
     
-YES  
-The translation has unnecessary spaces and adds decorative characters (♦) around "ID" which are not present in the source and may confuse users. Also, there is an extra space before "ng". The source phrase "Copy transaction ID" is better translated simply as:
+YES
+The translation is problematic because:
+1. The original "transaction ID" should be "ID ng transaksyon" or "transaksyon ID" in Filipino. 
+2. There is an unnecessary space before "ng".
+3. The use of "♦ID♦" is odd and could be confusing or introduce unwanted content.
 
-"Kopyahin ang transaction ID"  
-
-Alternatively, to use the Tagalog word for transaction:  
-
-"Kopyahin ang ID ng transaksyon"  
-
-But the key thing is to avoid the added ♦ characters and fix spacing.
+Correct translation:
+Kopyahin ang ID ng transaksyon
 ```
 
 ```
         <source>Address</source>
         <translation>♦Address♦</translation>
     
-YES  
-The translation contains unwanted special characters ("♦") around the English word "Address". It should be translated properly into Tagalog or Filipino without extraneous symbols. The correct translation is:  
+YES
+The translation is problematic: the inclusion of "♦" symbols is unnecessary and was not present in the original source. The word "Address" should be translated into Filipino (Tagalog) if an appropriate term exists, or left as is if it's commonly used untranslated in the technical context, but without extraneous symbols.
+
+Correct translation:
 Address
+
+Or, if a Filipino translation is appropriate:
+Adres
 ```
 </details>
+
+Number of issues: 85.

@@ -14,25 +14,23 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
         <extracomment>Tooltip text for button that allows you to paste an address that is in your clipboard.</extracomment>
         <translation>Даректи алмашуу буферинен коюу</translation>
     
-YES  
-The translation "Даректи алмашуу буферинен коюу" literally means "Insert address from swap buffer," which is somewhat awkward and not the correct phrasing for "Paste address from clipboard" in Kyrgyz. The phrase "алмашуу буфери" literally translates "swap buffer" but the standard term for "clipboard" in Kyrgyz is "кыскача сактоочу" or more commonly "чейрек" is not used, but the standard term used in computing is "буюмдар буфер" or "буфер" or "чыкма буфер".
+YES
+There is a typo in the translation: "Даректи" should be "Даректини" to match the accusative case required by the verb "коюу" (to paste).
 
-A better, more natural and accurate translation would be:  
-"Даректи буферден кыстоо"  
-("кыстоо" is the verb "to paste" in Kyrgyz)
-
-Correct translation:  
-Даректи буферден кыстоо
+Correct translation:
+Даректини алмашуу буферинен коюу
 ```
 
 ```
         <source>default</source>
         <translation>жарыяланбаган</translation>
     
-YES  
-The translation "жарыяланбаган" means "unpublished" or "not announced" in Kyrgyz, which is incorrect for the English word "default" in the given Bitcoin context. The correct translation for "default" (as in the standard or preset option) in Kyrgyz is "демейки".  
+YES
+The translation of "default" as "жарыяланбаган" is incorrect. "Жарыяланбаган" means "unpublished" in Kyrgyz, which is not the intended meaning of "default" (i.e., the preset or standard option).
 
-Correct translation:  
+Correct translation:
 демейки
 ```
 </details>
+
+Number of issues: 2.
