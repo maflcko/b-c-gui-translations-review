@@ -9,11 +9,12 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 [If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bay%5D%20low%20quality)
 
 
+<!-- cache_translation_check_ay_616729de0ba46799a2151502595f5fdc13b189b656da3c44ffeb3724427b9d42 -->
 ```
         <source>Export Address List</source>
         <translation>Dirección lista apnaqaña</translation>
     
-YES
+ERR
 The translation is problematic because "Dirección lista apnaqaña" does not accurately convey "Export Address List" in Aymara. "Dirección" is a borrowing from Spanish and "apnaqaña" means "to use" rather than "to export". Also, the word order does not match natural Aymara phrasing, and it is not clear or idiomatic.
 
 Correct translation:

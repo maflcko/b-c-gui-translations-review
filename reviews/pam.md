@@ -9,22 +9,24 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 [If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bpam%5D%20low%20quality)
 
 
+<!-- cache_translation_check_pam_6981c1b5a021e132b156421002b1a13bc384f4241656893fa1019907f70668e8 -->
 ```
         <source>Export</source>
         <translation>IExport</translation>
     
-YES
+ERR
 The translation incorrectly includes an extra "I" at the beginning ("IExport"), which is not correct in Kapampangan ('pam'). The word "Export" is commonly borrowed as-is or can be rendered as "Iluwal" (to bring out/export).
 
 Correct translation:
 Iluwal
 ```
 
+<!-- cache_translation_check_pam_9b8fdc24229bb0759ad3f4eda51427028b6c6df448654ffe6c438a872790e876 -->
 ```
         <source>Wallet unlock failed</source>
         <translation>Memali ya ing pamag-unlock king wallet </translation>
     
-YES
+ERR
 There is an issue with the translation:
 1. The word "Memali ya ing" translates more as "It failed the ..." but the phrasing is awkward in Kapampangan ('pam') and adds unnecessary words.
 2. There is an extra space before the closing tag.
@@ -34,11 +36,12 @@ Correct translation:
 E me-unlock ing wallet
 ```
 
+<!-- cache_translation_check_pam_a0ebfbeb1ce7ca82b5d35919ca394b11a8ff8a5b4a559159d4d3e2d3cec72290 -->
 ```
         <source>Wallet passphrase was successfully changed.</source>
         <translation>Mi-alilan ne ing passphrase na ning wallet.</translation>
     
-YES
+ERR
 The translation has accuracy issues.
 
 Explanation:
@@ -48,22 +51,24 @@ Correct translation:
 Me-salikut ya ing passphrase ning wallet.
 ```
 
+<!-- cache_translation_check_pam_68c80f98c5c4600c2e0fa1d04def3e2cff336b5cb858a1b8615c2ee509428b97 -->
 ```
         <source>Last received block was generated %1 ago.</source>
         <translation>Ing tatauling block a metanggap,  me-generate ya %1 ing milabas</translation>
     
-YES
+ERR
 The translation has both grammatical issues and the format specifier "%1" is not well integrated. "Ing tatauling block a metanggap" is awkward, and the phrase "me-generate ya %1 ing milabas" is not idiomatic in Kapampangan ('pam'). There is also a spacing issue in "block a metanggap,  me-generate" (double space after the comma).
 
 Correct translation:
 Ing pekarulang block a receive, me-generate ya %1 a milabas.
 ```
 
+<!-- cache_translation_check_pam_467126be6daabeba4026ecc05465dd58fff9bcbd182633ae0c4db5b279bea74b -->
 ```
         <source>Up to date</source>
         <translation>Makatuki ya king aldo</translation>
     
-YES
+ERR
 The translation "Makatuki ya king aldo" is problematic. "Makatuki" isn't a recognized word in Kapampangan, and "ya king aldo" translates to "today" or "for the day". The phrase "Up to date" in the context of Bitcoin software should convey "latest" or "current", referring to being synchronized with the latest blockchain state.
 
 Correct translation:
@@ -72,11 +77,12 @@ Agpang king bayung datos
 This means "[It is] according to the latest data", which properly captures "Up to date."
 ```
 
+<!-- cache_translation_check_pam_d9e5cea769e9be94049ccb599f60a0259c5bddfb109ff044e88a64d397dd82ce -->
 ```
         <source>Edit receiving address</source>
         <translation>Alilan ya ing address king pamagpadala</translation>
     
-YES
+ERR
 The translation is problematic. "Edit receiving address" refers to editing the address where funds are received, not sent. The translation says "address for sending" ("king pamagpadala"), which is the opposite of what is intended. Also, "alilan" for "edit" is acceptable in some contexts, but "alisan" or "ayusan" may be better for "edit" in Kapampangan (pam).
 
 Correct translation:
@@ -88,11 +94,12 @@ Alilan ya ing address para king pamagpasali
 ("pamagpasali" means "receiving.")
 ```
 
+<!-- cache_translation_check_pam_09ae4dcbd3c533909de535326eade592998c1051d2b8233a413b7498e2495844 -->
 ```
         <source>New key generation failed.</source>
         <translation>Memali ya ing pamangaua king key</translation>
     
-YES
+ERR
 The translation "Memali ya ing pamangaua king key" is inaccurate and awkward. It translates literally to "Failed is the making of key," but in Kapampangan ('pam'), it is more natural and clear to say "Mealbung mag-generate key" or "E meging matagumpe ing pamag-generate ning key." Furthermore, the structure could be improved for clarity.
 
 Correct translation:
@@ -101,22 +108,24 @@ or
 "Mealbung mag-generate key."
 ```
 
+<!-- cache_translation_check_pam_5c302006cc165b08b092cb2c88bb936bffda011bc8a08c5806fc3fa4a023aff1 -->
 ```
         <source>version</source>
         <translation>bersion</translation>
     
-YES
+ERR
 The translation is incorrect. "Bersion" is a misspelling and not the correct Kapampangan ('pam') translation of "version". In Kapampangan, "version" is typically borrowed directly as "bersyun". 
 
 Correct translation:
 bersyun
 ```
 
+<!-- cache_translation_check_pam_90a2048d782ca2840c6908902d10f437606ddca7f27c35e0380c401f5c6e3d42 -->
 ```
         <source>The supplied proxy address is invalid.</source>
         <translation>Ing milageng proxy address eya katanggap-tanggap.</translation>
     
-YES
+ERR
 The translation is inaccurate. "Eya katanggap-tanggap" means "is acceptable," which is the opposite of "is invalid." Additionally, "milageng" is not appropriate; "pilan" or "ibinigay" could be used for "supplied".
 
 Correct translation:
@@ -126,11 +135,12 @@ A better and direct translation would be:
 Ing ibinigay a proxy address alang bisa.
 ```
 
+<!-- cache_translation_check_pam_1ceda774b1fcb11502b2c97752facb10ef7023b370c5b6d6b46e5c6a75c82fa6 -->
 ```
         <source>Clear All</source>
         <translation>I-Clear Eganagana</translation>
     
-YES
+ERR
 The translation "I-Clear Eganagana" is problematic. "Eganagana" does not appear to be a word in Kapampangan (pam), and "I-Clear" is an English borrowing with an unnecessary "I-". A better Kapampangan translation would use native or more commonly understood terms. "Clear" in this context likely means "limpia" (clean) or "alisan" (remove).
 
 Correct translation:
@@ -141,11 +151,12 @@ I-limpia ngan
 (Note: Kapampangan often borrows from Tagalog or Spanish, but "I-Clear Eganagana" is not natural or accurate. "Damu" means "all" in Kapampangan.)
 ```
 
+<!-- cache_translation_check_pam_1ceda774b1fcb11502b2c97752facb10ef7023b370c5b6d6b46e5c6a75c82fa6 -->
 ```
         <source>Clear All</source>
         <translation>I-Clear Eganagana</translation>
     
-YES
+ERR
 The translation "I-Clear Eganagana" is problematic. "Eganagana" does not appear to be a word in Kapampangan (pam), and "I-Clear" is an English borrowing with an unnecessary "I-". A better Kapampangan translation would use native or more commonly understood terms. "Clear" in this context likely means "limpia" (clean) or "alisan" (remove).
 
 Correct translation:
@@ -156,33 +167,36 @@ I-limpia ngan
 (Note: Kapampangan often borrows from Tagalog or Spanish, but "I-Clear Eganagana" is not natural or accurate. "Damu" means "all" in Kapampangan.)
 ```
 
+<!-- cache_translation_check_pam_b4e316528b799a0a6d8938d9779925723bc1489bfd8251ef080898e0f7daa48f -->
 ```
         <source>not accepted</source>
         <translation>ali metanggap</translation>
     
-YES
+ERR
 The translation "ali metanggap" is problematic and incorrect. In Kapampangan (pam), "not accepted" should be "e tanggap" or "ali tanggap". The use of "metanggap" is conjugated incorrectly.
 
 Correct translation:
 e tanggap
 ```
 
+<!-- cache_translation_check_pam_6736ed11c8e393e1f0d67e5b0ca2360504ffc7ee46276255c5f3faf47810655e -->
 ```
         <source>Transaction ID</source>
         <translation>ID</translation>
     
-YES
+ERR
 The translation is incomplete. "ID" only reflects the "ID" part but omits "Transaction". It should provide the full phrase in 'pam' (Pampangan/Kapampangan).
 
 Correct translation:
 Transaction ID
 ```
 
+<!-- cache_translation_check_pam_8f0ff13ae1689bd4021c02e9247975840f23d7514f27580ff5cbca0dbd4e851c -->
 ```
         <source>false</source>
         <translation>e tutu</translation>
     
-YES
+ERR
 The translation of "false" as "e tutu" is incorrect. "False" in Pampangan can be translated as "alilan" or "e totoo" (lit. "not true"), but "e tutu" is closer to "not true" in colloquial speech. While it is technically a possible rendering, for an interface context like a Bitcoin application, "alilan" or "e totoo" would be more appropriate to avoid ambiguity.
 
 Correct translation:
@@ -191,11 +205,12 @@ or
 e totoo
 ```
 
+<!-- cache_translation_check_pam_6981c1b5a021e132b156421002b1a13bc384f4241656893fa1019907f70668e8 -->
 ```
         <source>Export</source>
         <translation>IExport</translation>
     
-YES
+ERR
 The translation incorrectly includes an extra "I" at the beginning ("IExport"), which is not correct in Kapampangan ('pam'). The word "Export" is commonly borrowed as-is or can be rendered as "Iluwal" (to bring out/export).
 
 Correct translation:

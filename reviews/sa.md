@@ -9,11 +9,12 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 [If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bsa%5D%20low%20quality)
 
 
+<!-- cache_translation_check_sa_2ccb0b42551ff8640e7af59e26f16a6982cec85f699bc165b52a44926268dd92 -->
 ```
         <source>Copy Address</source>
         <translation>पताक्षेत्रं प्रतिलिप्य</translation>
     
-YES
+ERR
 The translation is problematic. The word "पताक्षेत्रं" (patākṣetraṃ) does not represent "address" in Sanskrit, and may be an erroneous or invented term. Also, "प्रतिलिप्य" is a present participle ("having copied") rather than an imperative or appropriate verb form.
 
 Correct translation:
@@ -26,11 +27,12 @@ So, a better translation is:
 (Here, "संकेतं" = address, "प्रतिलिपय" = Copy! [Imperative])
 ```
 
+<!-- cache_translation_check_sa_2289274c0eadb348ff27eb135f440f80635a110a5d18d4ff9131c9ae80297829 -->
 ```
         <source>Sending addresses - %1</source>
         <translation>पताक्षेत्राणि प्रेषणं कुर्वन्ति - %1</translation>
     
-YES
+ERR
 The translation is inaccurate. The English "Sending addresses" refers to the list of Bitcoin wallet addresses from which transactions are sent. The Sanskrit translation "पताक्षेत्राणि प्रेषणं कुर्वन्ति" is awkward and unidiomatic—it literally means "addresses do the sending", which is not a natural way to express a list or category title in Sanskrit. It also misuses verb forms and pluralization.
 
 Correct translation:

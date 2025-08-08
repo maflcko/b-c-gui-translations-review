@@ -9,12 +9,13 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 [If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bam%5D%20low%20quality)
 
 
+<!-- cache_translation_check_am_caedc154897b9403e735ab7f661103b703ac79f18cc6eda4d6db945ed4aebfbc -->
 ```
         <source>Comma separated file</source>
         <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
         <translation>በንዑስ ሰረዝ የተለዩ ፋይሎች</translation>
     
-YES
+ERR
 The translation "በንዑስ ሰረዝ የተለዩ ፋይሎች" translates to "files separated by comma", but in a plural and generic sense ("files" rather than "file"), and does not capture the intended format specification as precisely as possible.
 
 A more accurate translation for "Comma separated file" in Amharic would be:
@@ -27,33 +28,36 @@ But for literal translation:
 በንዑስ ሰረዝ የተለየ ፋይል
 ```
 
+<!-- cache_translation_check_am_3c1afb7232845823832e16000be1c1dadff6b6bf0c9abefe89f999681f9e87eb -->
 ```
         <source>IP/Netmask</source>
         <translation>አይፒ/ኔትማስክ  IP/Netmask</translation>
     
-YES
+ERR
 The translation unnecessarily duplicates the source English text after the Amharic translation, which is redundant and may confuse users. The correct translation should only be in Amharic, unless some technical terms are commonly left in English, but duplication is not standard practice.
 
 Correct translation:
 አይፒ/ኔትማስክ
 ```
 
+<!-- cache_translation_check_am_205f44415cf01308343a7d450b5bfe154da532c9f723acd9696a0c554bbfb7fe -->
 ```
         <source>Default system font "%1"</source>
         <translation>ነባሪ የስርዓት ቅርጸ-ቁምፊ "%1</translation>
     
-YES
+ERR
 The Amharic translation is missing the closing quotation mark after %1, which is present in the source. This creates a formatting inconsistency.
 
 Correct translation:
 ነባሪ የስርዓት ቅርጸ-ቁምፊ "%1"
 ```
 
+<!-- cache_translation_check_am_7ab3ba0f761255d248624e8cfeba7ec3cf23dcbfb58b9d0cced908b563730d19 -->
 ```
         <source>Error creating wallet</source>
         <translation>ዋሌትዎን ለፍጠር ተሳስተዋል </translation>
     
-YES
+ERR
 The translation has an error in the verb tense and format. The original English says "Error creating wallet," which is a short error message, essentially "Failed to create wallet." The Amharic translation says "ዋሌትዎን ለፍጠር ተሳስተዋል", which awkwardly translates as "There was a mistake to create your wallet." Also, there is an unnecessary space at the end.
 
 A better, concise translation would be:
@@ -68,11 +72,12 @@ Correct translation:
 ዋሌት ማፍጠር ስህተት ተከስቷል
 ```
 
+<!-- cache_translation_check_am_73f29ac14b2ecfc00a028468830e415834d867ebfc7be77a9872442d56001b1d -->
 ```
         <source>Copy fee</source>
         <translation>ክፍያው ቅዳ</translation>
     
-YES
+ERR
 The translation "ክፍያው ቅዳ" literally means "cut the fee" instead of "copy fee". The verb "ቅዳ" means "cut", not "copy". The correct translation should use the verb for "copy", which is "ቅዳተ" or "ግልባጭ አድርግ".
 
 Correct translation:
@@ -81,6 +86,7 @@ or
 ክፍያውን ግልባጭ አድርግ
 ```
 
+<!-- cache_translation_check_am_4a365989cb386e891a0e4999b5e1f71742cbd6edab7defa39de7b841a6f60a84 -->
 ```
         <source>Migrating the wallet will convert this wallet to one or more descriptor wallets. A new wallet backup will need to be made.
 If this wallet contains any watchonly scripts, a new wallet will be created which contains those watchonly scripts.
@@ -89,7 +95,7 @@ If this wallet contains any solvable but not watched scripts, a different and ne
 The migration process will create a backup of the wallet before migrating. This backup file will be named &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak and can be found in the directory for this wallet. In the event of an incorrect migration, the backup can be restored with the "Restore Wallet" functionality.</source>
         <translation>ዋሌትን ማዛወር ይህንን ዋሌት አንድ ወይም ከዚያ በላይ ወደሆነ ገላጭ ዋሌቶች ይቀይረዋል።አዲስ ዋሌት ማዘጋጀት ያስፈልጋል ።ይህ ዋሌት ምንም ዓይነት የመመልከት ብቻ ስክሪፕቶችን የያዘ ከሆነ፣እነዚያን የመመልከት ብቻ ስክሪፕቶችን የያዘ አዲስ ዋሌት ይፈጠራል።ይህ ዋሌት ሊፈቱ የሚችሉ ነገር ግን የመመልከት ብቻ ያልሆኑ ስክሪፕቶችን የያዘ ከሆነ ፣ እነዚህን የያዘ አዲስ እና ልዩ የሆነ ዋሌት ይፈጠራል ።የማዛወር ሂደቱ ማዘዋወር ከመፈጸሙ በፊት የነዚህን ዋሌቶች መጠባበቂያ ቅጂ ይይዛል።ይህ መጠባበቂያ ቅጂ 1-2 legacy.bak ተብሎ ተሰይሞ በዋሌቱ ማውጫ ውስጥ ይገኛል።የተሳሳተ ዝውውር በሚከሰትበት ጊዜየመጠባበቂያ ቅጂው በ ዋሌት መመለሻ መተግበሪያ ውስጥ ይከማቻል።</translation>
     
-YES
+ERR
 The translation is generally understandable, but it has several issues:
 
 1. Punctuation issues: Missing spaces after sentence-ending punctuation (።), creating run-on sentences.
@@ -104,55 +110,60 @@ Corrected translation:
 የማዛወር ሂደቱ ከመጀመሩ በፊት የዋሌት ቅጂ ይመስራል። ይህ የቅጂ ፋይል &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak ተብሎ በዋሌቱ ማውጫ ውስጥ ይገኛል። በስህተት ዝውውር ቢፈጠር፣ የቅጂው ፋይል በ “ዋሌት መመለሻ” ተግባር መድረሻ ሊመለስ ይችላል።
 ```
 
+<!-- cache_translation_check_am_dd3f0f309e40dd2a1d0760550209afad48aeda21ac0ab04cb02a695f7199fdf8 -->
 ```
         <source>Watchonly scripts have been migrated to a new wallet named '%1'.</source>
         <translation>የመመልከት ብቻ ስክሪፕቶች'%1'.ወደ ተሰኘው ዋሌት ተዛውረዋል </translation>
     
-YES
+ERR
 There are whitespace and punctuation format issues in the translation. The apostrophe in '%1' should be followed by a space before "ወደ", and there should be a space after "ስክሪፕቶች". Also, the Amharic translation could be made smoother. Additionally, there shouldn't be a period after '%1'.
 
 Correct translation:
 የመመልከት ብቻ ስክሪፕቶች ወደ '%1' ተብሎ የተሰኘው አዲስ ዋሌት ተዛውረዋል
 ```
 
+<!-- cache_translation_check_am_afc9427c96c5ec48fb724f4ea9c6ce53b48450ac083ad52a769f029e764635e1 -->
 ```
         <source>About %1</source>
         <translation>ስለ እኛ %1</translation>
     
-YES
+ERR
 The translation "ስለ እኛ %1" is problematic. "ስለ እኛ" means "about us" rather than "about %1", where %1 is a variable (e.g., "About Bitcoin Core"). The correct translation should be "ስለ %1".
 
 Correct translation:
 ስለ %1
 ```
 
+<!-- cache_translation_check_am_bacc9d36e4077e25ae02a8fa5744824a4d987b0e2e57550c8eaf70f898bd1cb0 -->
 ```
         <source>Form</source>
         <translation>ከ</translation>
     
-YES
+ERR
 The translation "ከ" means "from" or "of" in Amharic, which is not equivalent to "Form." This is an erroneous translation.
 
 Correct translation:
 ቅጽ
 ```
 
+<!-- cache_translation_check_am_bacc9d36e4077e25ae02a8fa5744824a4d987b0e2e57550c8eaf70f898bd1cb0 -->
 ```
         <source>Form</source>
         <translation>ከ</translation>
     
-YES
+ERR
 The translation "ከ" means "from" or "of" in Amharic, which is not equivalent to "Form." This is an erroneous translation.
 
 Correct translation:
 ቅጽ
 ```
 
+<!-- cache_translation_check_am_73f29ac14b2ecfc00a028468830e415834d867ebfc7be77a9872442d56001b1d -->
 ```
         <source>Copy fee</source>
         <translation>ክፍያው ቅዳ</translation>
     
-YES
+ERR
 The translation "ክፍያው ቅዳ" literally means "cut the fee" instead of "copy fee". The verb "ቅዳ" means "cut", not "copy". The correct translation should use the verb for "copy", which is "ቅዳተ" or "ግልባጭ አድርግ".
 
 Correct translation:
@@ -161,23 +172,25 @@ or
 ክፍያውን ግልባጭ አድርግ
 ```
 
+<!-- cache_translation_check_am_a95a4d302afe2713fc09de2d182cc042f1605af9d32cde28940aa35aa20eb4c7 -->
 ```
         <source>%1 from wallet '%2'</source>
         <translation>%1 ከዋሌት %2'</translation>
     
-YES
+ERR
 The translation is missing the opening single quote before %2 and has an extra or misplaced single quote after %2. It also lacks the word "from" ("ከ") formatted properly with both parameters and doesn't encapsulate the wallet name in single quotes as in the source.
 
 Correct translation:
 %1 ከ'ዋሌት '%2'
 ```
 
+<!-- cache_translation_check_am_caedc154897b9403e735ab7f661103b703ac79f18cc6eda4d6db945ed4aebfbc -->
 ```
         <source>Comma separated file</source>
         <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
         <translation>በንዑስ ሰረዝ የተለዩ ፋይሎች</translation>
     
-YES
+ERR
 The translation "በንዑስ ሰረዝ የተለዩ ፋይሎች" translates to "files separated by comma", but in a plural and generic sense ("files" rather than "file"), and does not capture the intended format specification as precisely as possible.
 
 A more accurate translation for "Comma separated file" in Amharic would be:
@@ -190,11 +203,12 @@ But for literal translation:
 በንዑስ ሰረዝ የተለየ ፋይል
 ```
 
+<!-- cache_translation_check_am_57f4ebc82b1ff90822dcd7093d5fe6127c8cc0bfc1906fcdadf72b6e01976ffb -->
 ```
         <source>Fee-bump PSBT copied to clipboard</source>
         <translation>ከክፍያ-ነፃ PSBT ወደ ቅንጥብ ሰሌዳ ተቀድቷል።</translation>
     
-YES
+ERR
 The translation incorrectly renders "Fee-bump" as "ክፍያ-ነፃ", which means "free of charge" or "payment-free" in Amharic. However, "Fee-bump" in the context of Bitcoin refers to an increase in the transaction fee (e.g., to speed up confirmation). The translation should reflect the correct technical meaning.
 
 Correct translation:

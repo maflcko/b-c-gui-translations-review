@@ -9,6 +9,7 @@ The review quality depends on the LLM and the language. Currently, a fast LLM wi
 [If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bszl%5D%20low%20quality)
 
 
+<!-- cache_translation_check_szl_02505f9b8370b9cafc021353fa341a0f256926d1db7b4248fdd55b0f6e806d84 -->
 ```
         <source>Right-click to edit address or label</source>
         <translation>use reqwest::Client;
@@ -68,44 +69,48 @@ Correct translation:
 Prawy klik, coby edytować adres albo etyketa
 ```
 
+<!-- cache_translation_check_szl_a618aeb4881408ea1448952be7f40b9ed12ab593b54b4f7e074dbfe7e74ff703 -->
 ```
         <source>Banned Until</source>
         <translation>Szpera do</translation>
     
-YES
+ERR
 The translation is problematic. "Szpera do" does not accurately reflect the meaning of "Banned Until" in Silesian ('szl'). "Szpera" likely comes from Polish "szperać" (to rummage), which is incorrect in this context. The correct Silesian translation should be closer to "Zablokowany do" or "Zabanowany do" (following Polish/Silesian conventions).
 
 Correct translation:
 Zabanowany do
 ```
 
+<!-- cache_translation_check_szl_5aeb7c840df4435298ac817672ca1617bebda6e6508a684889964bfea177983f -->
 ```
         <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
         <translation>Skupluj sie z necym Bitcoin bez SOCKS5 proxy.</translation>
     
-YES
+ERR
 The translation has an error. "Skupluj sie z necym Bitcoin bez SOCKS5 proxy." translates to "Connect to the Bitcoin network without SOCKS5 proxy." The word "bez" means "without" in Silesian (szl) and Polish, which is the opposite of the source.
 
 Correct translation:
 Połącz się z necym Bitcoin przez SOCKS5 proxy.
 ```
 
+<!-- cache_translation_check_szl_2c14460f2c2dc5eb444afc37922d4701b0343ab06dc81162cdab33772b2e76d1 -->
 ```
         <source>Connect through SOCKS5 proxy (default proxy):</source>
         <translation>Skupluj bez proxy SOCKS5 (wychodne proxy):</translation>
     
-YES
+ERR
 The translation is incorrect. The English text says "Connect through SOCKS5 proxy (default proxy):", but the 'szl' translation means "Connect without SOCKS5 proxy (outgoing proxy):", which is the opposite of the intended meaning.
 
 Correct translation:
 Połącz sie przepos proxy SOCKS5 (domyślne proxy):
 ```
 
+<!-- cache_translation_check_szl_8302d6a4bd387ec1fe35019fd385f04c4b8e0a6f597fdcccc73bb113c6780609 -->
 ```
         <source>The Bitcoin address to send the payment to</source>
         <translation>Adresa Bitcoin, na kerõ chcesz posłać płat</translation>
     
-YES
+ERR
 There are a few issues:
 1. The word "adresa" should be "adres" in Silesian.
 2. "kerõ" is not standard Silesian; it seems to be a misspelling or dialectal, and its placement is awkward.
