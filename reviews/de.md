@@ -9,17 +9,6 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 [If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bde%5D%20request)
 
 
-<!-- cache_translation_check_de_e3c92398da0384a2df7d073b74ab27a95fa1e29352e64d1d9bfd2f0a5ee13131 -->
-```
-        <source>Copy the currently selected address to the clipboard</source>
-        <translation>Kopieren der aktuell ausgewählte Adresse in die Zwischenablage</translation>
-    
-ERR
-The German grammar is incorrect (“ausgewählte” should be “ausgewählten” in the genitive), and the style is awkward. A clear UI-style translation is:
-
-Aktuell ausgewählte Adresse in die Zwischenablage kopieren
-```
-
 <!-- cache_translation_check_de_4a4b331d125decb9c7e827826934faf0860de67f89e0d175ab6cd52552da87f9 -->
 ```
         <source>%1 h</source>
@@ -69,32 +58,6 @@ Correct translation:
 &Unbestätigtes Wechselgeld ausgeben
 ```
 
-<!-- cache_translation_check_de_8b2eb07d76db68a79b60cc017e57ab0e9e56315867f3ab8749d51138852766e6 -->
-```
-        <source>Enable &amp;PSBT controls</source>
-        <extracomment>An options window setting to enable PSBT controls.</extracomment>
-        <translation>&amp;PBST-Kontrollen aktivieren</translation>
-    
-ERR
-"Acronym typo: 'PBST' should be 'PSBT'. Also, 'Kontrollen' is not the usual UI term; 'Steuerelemente' or 'Bedienelemente' is more appropriate. The shortcut ampersand is present exactly once, which is correct.
-
-Correct translation:
-&PSBT-Steuerelemente aktivieren
-```
-
-<!-- cache_translation_check_de_7ee3ac25088b3ff208013c5095387d053cbc2c0d19cb60299115ea5b8feb8625 -->
-```
-        <source>Whether to show PSBT controls.</source>
-        <extracomment>Tooltip text for options window setting that enables PSBT controls.</extracomment>
-        <translation>Ob PSBT-Kontrollen angezeigt werden sollen. </translation>
-    
-ERR
-Trailing whitespace at the end of the translation. Also, "Kontrollen" is uncommon in German UI; "Bedienelemente" is more appropriate.
-
-Correct translation:
-Ob PSBT-Bedienelemente angezeigt werden sollen.
-```
-
 <!-- cache_translation_check_de_7f16d7c974a18118959dea2c14d2be7b801ba8c842760c52722b75a9e55bb3c6 -->
 ```
         <source>&amp;Window</source>
@@ -107,16 +70,16 @@ Correct translation:
 &Fenster
 ```
 
-<!-- cache_translation_check_de_208f7861e4803e6564b11a406baad9388ff4141e2137e08c57b58b13c4242be4 -->
+<!-- cache_translation_check_de_f8d162e45c992b6ba44daa5ce72ac7982408021b6e180a3aa733d7957503c2c4 -->
 ```
         <source>Cannot sign inputs while wallet is locked.</source>
-        <translation>Eingaben können nicht unterzeichnet werden, wenn die Brieftasche gesperrt ist.</translation>
+        <translation>Eingänge können nicht unterzeichnet werden, wenn die Brieftasche gesperrt ist.</translation>
     
 ERR
-"Unterzeichnet" is uncommon in this technical context; "signiert" is standard. "Eingaben" is ambiguous and should be "Transaktionseingaben" to match Bitcoin terminology. "Wallet" is also more common than "Brieftasche".
+Wording is understandable but not idiomatisch für technische Bitcoin‑Kontexte. „Eingänge“ und „unterzeichnet“ sind unpräzise; üblicher ist „Eingaben/Inputs“ und „signiert“. Außerdem liest sich „solange“ natürlicher als „wenn“ in diesem Zusammenhang.
 
-Correct translation:
-Transaktionseingaben können nicht signiert werden, während die Wallet gesperrt ist.
+Korrekte Übersetzung:
+Eingaben können nicht signiert werden, solange die Brieftasche gesperrt ist.
 ```
 
 <!-- cache_translation_check_de_3b136319368213551fd549917be3f17e29cbcafba6cd806a4f504693ef3b20d8 -->
@@ -250,28 +213,19 @@ Correct translation:
 Prune: Die letzte Wallet-Synchronisierung geht über die beschnittenen Daten hinaus. Sie müssen -reindex ausführen (bei einem beschnittenen Knoten wird dabei die gesamte Blockchain erneut heruntergeladen)
 ```
 
-<!-- cache_translation_check_de_6005003fc2f130110c65aef05cbf0acba00ab071edfa8cb7d74f6858dc229945 -->
+<!-- cache_translation_check_de_4433c7e1e1c84fe6ea661065b102908ab8a16386d8a6b9709a5509179c9164de -->
 ```
         <source>Config setting for %s only applied on %s network when in [%s] section.</source>
-        <translation>Konfigurationseinstellungen für %s sind nur auf %s network gültig, wenn in Sektion [%s]</translation>
+        <translation>Konfigurationseinstellungen für %s sind nur im %s-Netzwerk gültig, wenn in Sektion [%s].</translation>
     
 ERR
-Multiple issues: singular/plural mismatch ("Config setting" is singular), "network" left in English, awkward phrasing, missing article, and missing final period.
+The German is awkward and slightly ungrammatical: the English uses singular "Config setting" but the translation uses the plural "Konfigurationseinstellungen", and the clause "wenn in Sektion [%s]" is incomplete/unnatural.
 
-Correct translation:
-Die Konfigurationseinstellung für %s wird nur im %s‑Netzwerk angewendet, wenn sie im Abschnitt [%s] steht.
-```
+Correct translation (singular, natural German):
+Konfigurationseinstellung für %s gilt nur im %s-Netzwerk, wenn sie im Abschnitt [%s] steht.
 
-<!-- cache_translation_check_de_b4046fa3c88c3bad5ab24697f7e12008e5cacd1de9b240cc1196e24f19739c8d -->
-```
-        <source>Could not top up scriptPubKeys</source>
-        <translation>scriptPubKeys konnten nicht aufgeladen werden</translation>
-    
-ERR
-The verb choice is incorrect. "Aufladen" means "to recharge" (e.g., phone credit), while "top up" here means "to replenish/fill up" (e.g., a pool). Use "auffüllen".
-
-Correct translation:
-scriptPubKeys konnten nicht aufgefüllt werden
+Alternative phrasing:
+Die Konfigurationseinstellung für %s wird nur im %s-Netzwerk angewendet, wenn sie im Abschnitt [%s] steht.
 ```
 
 <!-- cache_translation_check_de_30cd8c6940936d245663dad4b7e855a03b9182045ac0bd6920f4ef11cd245b27 -->
@@ -299,41 +253,6 @@ Correct translation:
 Die Transaktion erfordert ein Ziel mit einem Wert ungleich Null, einen Gebührensatz ungleich Null oder eine vorausgewählte Eingabe.
 ```
 
-<!-- cache_translation_check_de_db909a547c2a4d3332f504080e817eafc2a9ce33f654288e6d9268fa95000470 -->
-```
-        <source>Unrecognized descriptor found. Loading wallet %s
-
-The wallet might have been created on a newer version.
-Please try running the latest software version.
-</source>
-        <translation>Nicht erkannter Deskriptor gefunden. Wallet %s wird geladen.
-
-Die Wallet wurde möglicherweise in einer neueren Version erstellt.
-Bitte versuchen die neueste Softwareversion auszuführen.
-</translation>
-    
-ERR
-The imperative sentence is missing the polite form "Sie" and a comma. Also, "in einer neueren Version" is better rendered as "mit einer neueren Version" in this context.
-
-Correct translation:
-Nicht erkannter Deskriptor gefunden. Wallet %s wird geladen.
-
-Die Wallet wurde möglicherweise mit einer neueren Version erstellt.
-Bitte versuchen Sie, die neueste Softwareversion auszuführen.
-```
-
-<!-- cache_translation_check_de_aadb1fe7079854e6d79b4f30bee191b11ec9f182b9851e7487eea9c45ffde974 -->
-```
-        <source>Failed to start indexes, shutting down…</source>
-        <translation>Fehler beim Starten von Indizes, es wird Heruntergefahren...</translation>
-    
-ERR
-Capitalization error: "Heruntergefahren" should be lowercase after a comma. Also match the ellipsis character.
-
-Correct translation:
-Fehler beim Starten der Indizes, es wird heruntergefahren…
-```
-
 <!-- cache_translation_check_de_d97f463a4f28d187960e6d383c3b73b494d7093037bdf343bd0b749e69dcedb0 -->
 ```
         <source>Invalid -proxy address or hostname, ends with '=': '%s'</source>
@@ -347,4 +266,4 @@ Ungültige -proxy-Adresse oder ungültiger Hostname, endet mit '=': '%s'
 ```
 </details>
 
-Number of issues: 27.
+Number of issues: 21.
