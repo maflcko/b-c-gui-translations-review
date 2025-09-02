@@ -1,36 +1,24 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>tk</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Btk%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Btk%5D%20request)
 
 
-<!-- cache_translation_check_tk_1af566c116cf2eca5ed4161478a57d20ae3475faf3c2c73cdad680f421e0bf42 -->
+<!-- cache_translation_check_tk_01c84469dbfc4692cf3ca3d959eb2ed8dab665a94726d244cde7266ca440c8b9 -->
 ```
-        <source>Delete</source>
-        <translation>Poz</translation>
+        <source>&amp;Export</source>
+        <translation>&amp;Geçir</translation>
     
-ERR
-The translation "Poz" is actually Russian for "Delete" and not Turkmen ('tk'). In Turkmen, "Poz" can also mean "Delete", but the capitalization is inconsistent: it should be "Poz" only as a sentence start or button text. Additionally, Turkmen language UI sometimes uses "Pozmak" or "Öçür" (from "öçürmek") as well.
-
-However, given that "Poz" is commonly used for "Delete" as a button label in Turkmen, the translation is acceptable, but please ensure it is Turkmen in context and not Russian. If a more formal Turkmen is required, "Öçür" is preferable.
+SPAM
+The translation "&amp;Geçir" is in Turkish, not in 'tk' (Turkmen). The 'tk' language is Turkmen.
 
 Correct translation:
-Öçür
-
-Alternative (also correct):
-Poz
-
-Explanation: The translation "Poz" is correct but should be verified as Turkmen in the context. "Öçür" is more uniquely Turkmen and preferred in many UI situations.
-
-So, minimal, but technically not wrong. If the style guide allows "Poz", it is fine.
-
-Final output:  
-NO
+&Çykarmak
 ```
 
 <!-- cache_translation_check_tk_636d84adb14b81e4a74af892a74b5f2ebf1497217329fb9b7f5eef7a5fc0e972 -->
@@ -89,27 +77,6 @@ But simply:
 Ulgam işjeňligi ýapyk.
 ```
 
-<!-- cache_translation_check_tk_cb3601e3b2023ef1b9a76cf3222166f5ec266d353468b277492be2319384e0cd -->
-```
-        <source>Sign message…</source>
-        <translation>Habara gol çek…</translation>
-    
-ERR
-The translation "Habara gol çek…" is problematic. "Gol çek" is not an appropriate Turkmen translation for "Sign" in this context; it appears to be an erroneous literal or slang translation ("to shoot a goal" in football, not to cryptographically sign).
-
-Correct translation:
-Habara gol çek… → Habara gol goý… or Habara gol çekmek…
-
-But more appropriately, "Sign message" in Turkmen would be:
-
-Habara gol goý…
-
-If a more technical term is used: "Habara gol goýuň…"
-
-So, correct translation:
-Habara gol goý…
-```
-
 <!-- cache_translation_check_tk_c6cd2e7e4ab956480a0f88fbe9c940a52d44c1ccdba9063c918b9d7a7c49816f -->
 ```
         <source>Synchronizing with network…</source>
@@ -134,27 +101,6 @@ Correct translation:
 %1 yza galdy
 ```
 
-<!-- cache_translation_check_tk_ca9bd05f99bae0509a9cdc57388a96ce9181fc9b7f47e505ecc55c3e2801d754 -->
-```
-        <source>Load PSBT from clipboard…</source>
-        <translation>alyş-çalyş panelinden BGÇBA ýükle…</translation>
-    
-ERR
-The translation is mostly accurate in meaning, but there are issues:
-- "alyş-çalyş panelinden" means "from the clipboard", which is correct.
-- "BGÇBA" appears to be an initialism for "PSBT" (Partially Signed Bitcoin Transaction), but this is not a standard or recognized Turkmen abbreviation. It is preferable to retain "PSBT" or use the original term as it is commonly used in Bitcoin contexts.
-- "ýükle" should be "ýükle", which is correct ("load").
-- The translation is missing the initial uppercase letter, which may not be critical, but consistency with UI texts is preferred.
-- No format specifiers to check in this case.
-- No stray whitespace.
-
-Correct translation:
-Alyş-çalyş panelinden PSBT ýükle…
-
-Explanation:
- "PSBT" should be left as-is rather than creating a regional abbreviation. This keeps it standard and recognizable to users.
-```
-
 <!-- cache_translation_check_tk_7d3e9fe91b329a352f0dd12f6efc046e0dc190fffea56f700c28f725e6ce9ace -->
 ```
         <source>Restore Wallet…</source>
@@ -166,6 +112,18 @@ The translation "Gapjygy dikelt…" is inaccurate. "Gapjygy" means "conversation
 
 Correct translation:
 Gapjyny dikelt…
+```
+
+<!-- cache_translation_check_tk_a61657b25619d964eff01521ec60e082aa2b08a324e0c5e3a9d0014f46586b9d -->
+```
+        <source>&amp;Hide</source>
+        <translation>&amp;Gizle</translation>
+    
+SPAM
+The translation is in Turkish ("Gizle") rather than in Turkmen ('tk'). 
+
+Correct translation:
+&Yşirmek
 ```
 
 <!-- cache_translation_check_tk_fb53a1990a82577559ed553e22e45043bdac251aa0aa37d76c20eea42f925442 -->
@@ -346,6 +304,34 @@ Correct translation:
 Ulgama hasaba girilenden soň %1 awtomatiki usulda başlat.
 ```
 
+<!-- cache_translation_check_tk_fe33d954da4ae7d7c98121038ea34ec07237456ac44a61f42353c9c9a77f8e04 -->
+```
+        <source>&amp;Reset Options</source>
+        <translation>&amp;Opsiýalary başdaka belle</translation>
+    
+ERR
+The phrase "başdaka belle" is not accurate or idiomatic in Turkmen. "Belle" means "memorize," and "başdaka" is not correct for "reset." The correct wording for "reset" is "gaýtadan dikeltmek" or "täzeden ýola goýmak". Also, "Opsiýalary" for "Options" is an acceptable borrowing, but "Saýlamalary" (Selections) is also used.
+
+Correct translation:
+&Optsiýalary täzeden ýola goýmak
+```
+
+<!-- cache_translation_check_tk_8d37795694f9d7fa690bad1dc62dd2ba83affda706d370571ec690f83fc8d3e6 -->
+```
+        <source>&amp;Network</source>
+        <translation>&amp;Tor</translation>
+    
+ERR
+The translation is incorrect. The English word "Network" is translated as "Tor", which is not accurate. "Tor" refers to a specific anonymity network, not the general term "Network".
+
+Correct translation:
+&Network → &Ulgam
+
+So:
+
+&amp;Network → &amp;Ulgam
+```
+
 <!-- cache_translation_check_tk_0c978a292f961fb1d7a7905090da210416cdc035fda533a65053d2ac6717ff75 -->
 ```
         <source>GB</source>
@@ -358,33 +344,29 @@ Correct translation:
 GB
 ```
 
-<!-- cache_translation_check_tk_e94a616eca7e84435922e98ebc14c6013e4297fd1ed9c7dff83d79e4ed269267 -->
+<!-- cache_translation_check_tk_3585992a0dc2d4572047193f16a69202f0e5d1d11136c6945142f9da0c2afd81 -->
 ```
-        <source>Enable RPC server</source>
+        <source>Enable R&amp;PC server</source>
         <extracomment>An Options window setting to enable the RPC server.</extracomment>
-        <translation>RPC serwerini işlet</translation>
+        <translation>R&amp;PC serwerini işlet</translation>
     
 ERR
-The translation "RPC serwerini işlet" uses the Turkish verb "işlet," which is not correct for Turkmen ('tk'). The correct Turkmen translation should use "işjeňleşdir" for "enable".
+The translation uses the Turkish word "işlet" instead of a Turkmen equivalent ("işlet" is Turkish for "run/operate"). The proper Turkmen term would be "işletmek" or "göçürmek", depending on context. Furthermore, "serwer" is the Turkmen form, not "serweri". Also, the format specifier "&" is present once, as required.
 
 Correct translation:
-RPC serwerini işjeňleşdir
+R&amp;PC serwerni işjeňleşdir
 ```
 
-<!-- cache_translation_check_tk_4b7b0c2aa2e204f69d3bed756bf86f1322e74237a0a41b9c1f71234d41f3ed4e -->
+<!-- cache_translation_check_tk_883485257561412d2a7b9f28f57d516cd66d4c611c177edeecbee15c9ddb9346 -->
 ```
-        <source>Wallet</source>
-        <translation>Gapjyk</translation>
+        <source>W&amp;allet</source>
+        <translation>G&amp;apjyk</translation>
     
 ERR
-The translation is incorrect. The English term "Wallet" should be translated as "Gapjyk" only if "Gapjyk" means "wallet" in Turkmen. However, "gapjyk" means "purse" or "pocket," which is generally acceptable in this technical context for "wallet." However, the capitalization is incorrect; Turkmen language capitalization for nouns follows the same conventions as English, so a capital letter is used at the start when it appears as a menu item or standalone label.
+The translation of "Wallet" as "Gapjyk" is incorrect in Turkmen. The correct translation should be "Gapjyk" with the ampersand properly incorporated for the shortcut key. The placement of "&" before "a" in "Gapjyk" is also appropriate if that's the intended shortcut key.
 
 Correct translation:
-Gapjyk
-
-No change is actually needed except to confirm that "Gapjyk" is an accepted translation for "Wallet" in a software/Bitcoin context, which it is. However, since the prompt requests to only respond "NO" if it's completely unproblematic, and to mention even small issues, I'll say:
-
-NO
+G&aapjyk
 ```
 
 <!-- cache_translation_check_tk_4142d4cb8fb6db02bf55396c648271cc2b4715c0d5f4f6e95eb10760269ab824 -->
@@ -562,6 +544,18 @@ The translation of "Comma separated file" as "Otur bilen aýrylan faýl" is inco
 Correct translation:
 Wergül bilen bölünen faýl
 ```
+
+<!-- cache_translation_check_tk_01c84469dbfc4692cf3ca3d959eb2ed8dab665a94726d244cde7266ca440c8b9 -->
+```
+        <source>&amp;Export</source>
+        <translation>&amp;Geçir</translation>
+    
+SPAM
+The translation "&amp;Geçir" is in Turkish, not in 'tk' (Turkmen). The 'tk' language is Turkmen.
+
+Correct translation:
+&Çykarmak
+```
 </details>
 
-Number of issues: 39.
+Number of issues: 41.

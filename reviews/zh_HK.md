@@ -1,120 +1,79 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>zh_HK</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bzh_HK%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bzh_HK%5D%20request)
 
 
-<!-- cache_translation_check_zh_HK_383cffd148b6e52ee130d83329c82fe037270a00dafda9cd88e7850e01bdbdba -->
+<!-- cache_translation_check_zh_HK_15aa3d118f404841d7ed6fa65e53862bd6fbcbf4a9b5edba73af5477c5091f74 -->
 ```
-        <source>New</source>
-        <translation>新增 N</translation>
+        <source>&amp;Copy</source>
+        <translation>複製 &amp;C</translation>
     
 ERR
-The translation includes the character "N", which is likely unintended and not part of the correct translation for "New". "新增" alone means "Add" or "New" in Hong Kong Chinese and suffices for UI purposes. There are no format specifiers in the source, so none are required in the translation.
+The placement of the ampersand (&amp;) is incorrect for zh_HK. In Hong Kong Cantonese localization, accelerators are usually retained just in front of (or after) the relevant character or letter used for shortcuts, not appended with the English shortcut key. The translation "複製 &amp;C" mixes Chinese characters with an English shortcut in a nonstandard way.
 
 Correct translation:
-新增
+&amp;複製
+
+Or, if you wish to keep the English shortcut (which is less common in zh_HK unless needed for English UI consistency):
+複製(&amp;C)
 ```
 
-<!-- cache_translation_check_zh_HK_1d1f848bb7cce1c353f0232eb69f189bc7081616b3e2fe77310c8164bf5c3057 -->
+<!-- cache_translation_check_zh_HK_5c65c9fa7533424fd3fdbb09ce8ec92f7d139e353d5cff18caf306985536dd2f -->
 ```
-        <source>Copy</source>
-        <translation>複製 C</translation>
+        <source>C&amp;lose</source>
+        <translation>關閉 &amp;l</translation>
     
 ERR
-The translation "複製 C" is incorrect. The "C" is unnecessary and likely a typo. The correct translation is simply "複製".
+The translation places the shortcut key (&amp;l) incorrectly after the word, which is non-standard for Chinese (Hong Kong) translations, and the ampersand should precede the letter used as the shortcut (in this case, "l", but Chinese UIs typically use a Chinese character). The original English shortcut is "C", so the Chinese translation should use a relevant character, commonly "關(&C)閉" or just "關閉(&C)", preserving the shortcut.
 
 Correct translation:
-複製
+關閉(&C)
 ```
 
-<!-- cache_translation_check_zh_HK_732bf43d4a511b0394437368a633068b922ed422f18d0da6c21284374115a079 -->
+<!-- cache_translation_check_zh_HK_0612e8aef0b85cca15b3d2220e063d00d5e249fa27727fd2ab0830cdcc07978c -->
 ```
-        <source>Close</source>
-        <translation>關閉 l</translation>
+        <source>Copy the currently selected address to the clipboard</source>
+        <translation>复制当前选中的地址到剪贴板。</translation>
     
 ERR
-The translation contains an extraneous "l" at the end, which is erroneous and could confuse users.
+The translation is in Simplified Chinese ( Mainland style ) rather than Traditional Chinese as expected for zh_HK. No format specifiers are present, and there are no spacing issues, but the characters should be converted to Traditional Chinese and phrasing adjusted for Hong Kong usage.
 
 Correct translation:
-關閉
+將目前所選的地址複製到剪貼簿。
 ```
 
-<!-- cache_translation_check_zh_HK_fb81c58d9d4a974c580aa3b3644dc3c2a8fc8a6b348a143a42d1f536eedd6b31 -->
+<!-- cache_translation_check_zh_HK_2121ef868142997a35319d5921dc03e4c8045f37da8a2f5b0a73dc71658a9a44 -->
 ```
-        <source>Export</source>
-        <translation>匯出 E</translation>
+        <source>&amp;Export</source>
+        <translation>匯出 &amp;E</translation>
     
 ERR
-The translation "匯出 E" is problematic. The English source is simply "Export". "匯出 E" includes an unnecessary "E" at the end, which could confuse users.
+The ampersand (&) is intended to mark the shortcut key and should appear exactly once, but in the Hong Kong Chinese ('zh_HK') translation, it appears after the word instead of before the shortcut letter. In Cantonese/Hong Kong style, the English shortcut letter is usually retained in parentheses, or at the end with the ampersand correctly placed.
 
 Correct translation:
-匯出
+匯出(&E)
+or
+&匯出
+
+The placement of "&" before "E" in "匯出 &amp;E" is non-standard and may not correctly display the shortcut key in the UI.
 ```
 
-<!-- cache_translation_check_zh_HK_d6c422d768d037002bb0562d332c5c2ec98da1c1e74683a99e050b6d59428f55 -->
+<!-- cache_translation_check_zh_HK_7232d230c6dd41a6b9360b9d7485c0714d79bf70de0f7de1808049653af874d6 -->
 ```
-        <source>Delete</source>
-        <translation>刪除 D</translation>
+        <source>C&amp;hoose</source>
+        <translation>選擇 &amp;h</translation>
     
 ERR
-The translation "刪除 D" contains an erroneous extra "D" at the end, which is not present in the English source and is not appropriate in Cantonese (zh_HK). 
+The translation places the '&' incorrectly and creates a meaningless shortcut key ("h") that is not intuitive in the Cantonese/Traditional Chinese context for "選擇". The '&' should be placed before the character intended as the shortcut, preferably a character that maps to the English letter used in the original ("C" for "Choose") if possible, but in Traditional Chinese, the shortcut is often placed at the start or left off if not feasible.
 
 Correct translation:
-刪除
-```
-
-<!-- cache_translation_check_zh_HK_4be25229305b0695b460c6283a2c048bf18866e78b32726288053729925bbeb9 -->
-```
-        <source>Choose</source>
-        <translation>選擇 h</translation>
-    
-ERR  
-The translation contains an unwanted extraneous "h" character, which is not correct in the context and not present in the source text.
-
-Correct translation:
-選擇
-```
-
-<!-- cache_translation_check_zh_HK_4eff2a73456ece9b3df90e3db1e5ac2dd3111e39086e934f415686c32bc25d68 -->
-```
-        <source>Copy Address</source>
-        <translation>複製地址 C</translation>
-    
-ERR
-The translation adds an unnecessary "C" at the end, which is not present in the source and is incorrect. It may cause confusion.
-
-Correct translation:
-複製地址
-```
-
-<!-- cache_translation_check_zh_HK_049c10619c36a0c2243815dcff80d5778d1744f15984f9e196c115cb903c2381 -->
-```
-        <source>Copy Label</source>
-        <translation>複製標記 L</translation>
-    
-ERR
-The translation includes an erroneous "L" at the end, which does not exist in the source text. "標記" is an appropriate translation for "Label". No extra whitespace issue is present.
-
-Correct translation:
-複製標記
-```
-
-<!-- cache_translation_check_zh_HK_d8c34fd0b82f96d6df08a80c01394f7b440253c467f3e6a67017d7fd3f385361 -->
-```
-        <source>Edit</source>
-        <translation>編輯 E</translation>
-    
-ERR
-The translation includes an unnecessary "E" at the end, which is not required in Cantonese ('zh_HK'). The correct translation should simply be:
-
-Correct translation:
-編輯
+選擇(&amp;C)
 ```
 
 <!-- cache_translation_check_zh_HK_7b125159c3d54bbd2ce22d7605a81fe39999b13f86a7598cd32b4ff8c895eb2c -->
@@ -165,161 +124,91 @@ Correct translation:
 手動
 ```
 
-<!-- cache_translation_check_zh_HK_d2cf2d9bca1241bf5206001a5592594151e99cc89df7aa0410d98324aa896d56 -->
+<!-- cache_translation_check_zh_HK_fb4012e596b77acb3cd9b0902b4c9f59d43e5e5d3263ebee53d27b50ff27a866 -->
 ```
-        <source>Feeler</source>
-        <extracomment>Short-lived peer connection type that tests the aliveness of known addresses.</extracomment>
-        <translation>触须</translation>
+        <source>&amp;Overview</source>
+        <translation>總覽 &amp;O</translation>
     
 ERR
-The translation "触须" literally means "tentacle" or "antenna", which is not commonly used in Hong Kong Chinese for this network context. The correct translation in the context of Bitcoin (a connection that "feels/test probes" an address) should be more descriptive and locally accurate. In zh_HK, it would be clearer to use "探测连接" or "测试连接".
+The position of the shortcut key (&) should ideally match its purpose from the source to ensure accessibility/usability consistency. In this translation, "&" is not placed before the shortcut letter (O), so the shortcut key may not function as intended.
 
 Correct translation:
-探测连接
+&amp;總覽
+
+Or, if choosing a letter for the shortcut due to interface conventions:
+總覽(&amp;O)
+
+But best is:
+&amp;總覽
+</reply>
 ```
 
-<!-- cache_translation_check_zh_HK_ed8472a7f78bd01c9f20dee5cb0b0c37159106f9607f9eb732a8bd065b93afed -->
+<!-- cache_translation_check_zh_HK_b3d45990bdaed0c9a29aeab33a9c9d8c0e554cdf31168f43b76cde1271b394f5 -->
 ```
-        <source>Overview</source>
-        <translation>總覽 O</translation>
+        <source>&amp;Transactions</source>
+        <translation>交易 &amp;T</translation>
     
 ERR
-The translation includes an extraneous "O" at the end that is not present in the source text, which is an error. The correct translation is:
+The Hong Kong Chinese ('zh_HK') translation "交易 &T" places the ampersand and shortcut key as if it is an English interface, but in Chinese UIs, the ampersand should immediately precede the shortcut character in the Chinese text. Additionally, the shortcut key should correspond to a Chinese character, or match the layout convention of the application. The base translation is accurate, but the shortcut placement is non-standard for zh_HK.
 
 Correct translation:
-總覽
+&交易
+Or, if a shortcut letter must be specified after the label (rare and non-standard in zh_HK, but sometimes used):
+交易(&T)
 ```
 
-<!-- cache_translation_check_zh_HK_b1505c4e97702066657d71985f423054e4ed40fc2f0ae8c2b7798d2a186e8dfa -->
+<!-- cache_translation_check_zh_HK_eea4397bd824529d3ffa6a4353109c5ce81e0da64a6cb71eca9f382ff99fd195 -->
 ```
-        <source>Transactions</source>
-        <translation>交易 T</translation>
+        <source>&amp;About %1</source>
+        <translation>關於 %1 &amp;A</translation>
     
 ERR
-The translation includes an unnecessary "T" character at the end, which is not present in the original source and may confuse users.
+The position of the shortcut (&amp;) is incorrect. In zh_HK, the shortcut key should correspond in placement to the English version where possible. The &amp; should be placed once, ideally before the character that will be used as the shortcut. Also, adding an extra 'A' is not standard in Hong Kong Chinese UI. The translation should be:
 
 Correct translation:
-交易
-```
-
-<!-- cache_translation_check_zh_HK_6986c6528f306a553d95480b54c8441d0842af6971ee8e591ea865ef22e80b50 -->
-```
-        <source>Exit</source>
-        <translation>結束 x</translation>
-    
-ERR
-The translation contains an unnecessary "x" character, which is not present in the source and could confuse users. The word "結束" alone is accurate for "Exit" in zh_HK.
-
-Correct translation:
-結束
-```
-
-<!-- cache_translation_check_zh_HK_4dfa24a6468ecfbb87d27db2440857edba5b1c764c2f23f08e8458ea7d40fa53 -->
-```
-        <source>About %1</source>
-        <translation>關於 %1 A</translation>
-    
-ERR
-The translation includes an unwanted stray "A" at the end, which is not present in the original English source. This is an error.
-
-Correct translation:
-關於 %1
-```
-
-<!-- cache_translation_check_zh_HK_fa0cf4597e9fcb5451e679ddf57d46adf2f0c8c1010cd50d4a2ba2b0c3524c91 -->
-```
-        <source>About Qt</source>
-        <translation>關於 Qt Q</translation>
-    
-ERR
-The translation incorrectly includes "Q" at the end, which does not belong. The correct translation should be:
-
-關於 Qt
-```
-
-<!-- cache_translation_check_zh_HK_e188b40340a472e1f7a1f6657aef1b25c1f9005b1a77fb059d165689205c7a3b -->
-```
-        <source>Send</source>
-        <translation>付款 S</translation>
-    
-ERR
-The translation is problematic. "付款" means "payment" or "to pay", which is acceptable, but the appended " S" at the end is unnecessary and incorrect. It may have been an accidental leftover.
-
-Correct translation:
-付款
-```
-
-<!-- cache_translation_check_zh_HK_426174cac576776adf0bdcd6e0e1ccfd7e51c5789220bff04681f44ffc29002b -->
-```
-        <source>Receive</source>
-        <translation>收款 R</translation>
-    
-ERR
-The translation "收款 R" contains an unnecessary "R" at the end, which does not belong in the user-facing translation and is not present in the source text. 
-
-Correct translation:
-收款
-```
-
-<!-- cache_translation_check_zh_HK_5dfeace73d6455defedc7f78d4e4aa4ef80f3ee4c6679149d90b6d031da6c43b -->
-```
-        <source>Backup Wallet…</source>
-        <translation>备份钱包(B)</translation>
-    
-ERR  
-The translation is in Simplified Chinese ("备份钱包"), not Traditional Chinese as used in Hong Kong ('zh_HK'). Furthermore, the "…", which is the ellipsis character, is omitted; and the accelerator key "(B)" is added, which is not present in the source.
-
-Correct translation:  
-備份錢包…
-```
-
-<!-- cache_translation_check_zh_HK_ff4e805450a8331fbe1d5ef7631ff1a1bafaf28757a37ec70272d71b7d87b3f7 -->
-```
-        <source>Change Passphrase…</source>
-        <translation>修改密码(C)</translation>
-    
-ERR
-The translation "修改密码(C)" is problematic for 'zh_HK' (Hong Kong Chinese). 
-
-1. 'Passphrase' should be rendered as「密碼短語」or「密碼片語」in the context of Bitcoin and crypto applications, as it is distinct from a simple 'password'（密碼）. Translating it as '密码' could mislead users.
-2. The '(C)' shortcut marking does not fit the native zh_HK Windows/Mac style—it is neither needed nor local.
-3. The ellipsis ("…") is missing in the translation.
-4. '修改' is accurate for "change", but see above about "Passphrase".
-
-Correct translation:
-更改密碼短語…
-
+關於 %1(&amp;A)
 or
+(&amp;A)關於 %1
 
-更改密碼片語…
-
-Either can be accepted as the standard for zh_HK, but 密碼短語 is more widely used.
+The most common style is: 關於 %1(&amp;A)
 ```
 
-<!-- cache_translation_check_zh_HK_5c7840abeba6556e11fcdde91d6a364012ddf607e15a9ec0a789da607f0bd3a2 -->
+<!-- cache_translation_check_zh_HK_95a2ed4f156d7842752f11b779d83569ea2a6738da10e89ec4cfdd9042ed1138 -->
 ```
-        <source>Load PSBT from file…</source>
-        <translation>从文件加载PSBT(L)...</translation>
+        <source>About &amp;Qt</source>
+        <translation>關於 Qt &amp;Q</translation>
     
 ERR
-There are two issues: 
-1. The translation uses Simplified Chinese character "从" instead of the customary Traditional Chinese used in Hong Kong, which should be "從". 
-2. The extra "(L)..." in the translation does not reflect the source and is unnecessary/unexplained.
+The ampersand (&amp;) is used to indicate a shortcut key. In the source, "&amp;Qt" means the shortcut is "Q" in "Qt". In the translation, "Qt &amp;Q" does not correspond to "Qt" or create a logical shortcut. The correct translation would be to keep the shortcut on the same character in the translation, or as close as possible.
 
 Correct translation:
-從檔案載入PSBT…
+關於 &amp;Qt
 ```
 
-<!-- cache_translation_check_zh_HK_7e9db195bd85e5e302626d7ff9594743fe7e942078d1b24b4fb82985751577eb -->
+<!-- cache_translation_check_zh_HK_a7c351c427df6d7b486104f1939aef897d1cfa92e831eea41d659421963ae8ce -->
 ```
-        <source>Open URI…</source>
-        <translation>打开URI...</translation>
+        <source>&amp;Minimize</source>
+        <translation>最小化</translation>
     
 ERR
-The translation uses simplified Chinese ('打开'), which is 'zh_CN', not traditional Chinese as used in Hong Kong ('zh_HK'). Also, the ellipsis should match the source (which uses the Unicode ellipsis ‘…’ rather than three dots).
+The '&' symbol indicating the shortcut key is missing in the translation. It must appear exactly once.
 
 Correct translation:
-開啟 URI…
+&最小化
+or
+最小化(&M)
+```
+
+<!-- cache_translation_check_zh_HK_a8b8d99935bbe4df08129bdc7a29584ff13940d930cd94a6acdf940789757e9a -->
+```
+        <source>&amp;Send</source>
+        <translation>付款 &amp;S</translation>
+    
+ERR
+The translation "付款 &S" is problematic. In Hong Kong Cantonese ('zh_HK'), "&Send" should be translated as "發送(&S)" or "發送 &S" to accurately represent "Send" and maintain the shortcut key. The word "付款" means "Pay", which is not the same as "Send". Also, the placement of "&" is usually within the parentheses after the Chinese text.
+
+Correct translation:
+發送(&S)
 ```
 
 <!-- cache_translation_check_zh_HK_959c16ffaca69fc3d6fbf70a5b759e74557ee0b24442f52a5d2b5845646674c7 -->
@@ -346,40 +235,16 @@ Correct translation:
 建立錢包…
 ```
 
-<!-- cache_translation_check_zh_HK_2f300fe8e5910e3a68eb2541c3ff26090fc1c62ffd2abde2ec0952437f0c4eea -->
+<!-- cache_translation_check_zh_HK_17234ce504d56ba92b66f67f13b6813b8b2b8225a87b89603f66537e25681b57 -->
 ```
-        <source>File</source>
-        <translation>檔案 F</translation>
+        <source>&amp;Settings</source>
+        <translation>設定 &amp;S</translation>
     
 ERR
-The translation "檔案 F" incorrectly includes an extra "F", which is not present in the source and is not standard in Hong Kong Cantonese UI texts. It may have been an attempt to indicate a keyboard shortcut, but it is not correct in this context.
+The position of the ampersand (&amp;) should match the shortcut key in the translation. In this case, "&amp;" is in front of "S" in the translation, while in the source it is in front of "Settings". In Chinese (Hong Kong), there is no "S" in "設定", so the shortcut key placement is not meaningful and could confuse users. The ampersand should precede the character intended as the shortcut key in the translation, or if no meaningful mapping exists, it should be "&amp;設定".
 
 Correct translation:
-檔案
-```
-
-<!-- cache_translation_check_zh_HK_159c153002da52f56b375a6a4d5b7ad7ae38d22ad7dacf4638cd3b2fb0ac36c5 -->
-```
-        <source>Settings</source>
-        <translation>設定 S</translation>
-    
-ERR
-The translation "設定 S" contains an unnecessary "S" at the end, which is not appropriate in Cantonese or traditional Chinese as used in Hong Kong. It should simply be "設定".
-
-Correct translation:
-設定
-```
-
-<!-- cache_translation_check_zh_HK_9474f45064541bb4924c45f91ff8c13f891d2f515d29ef7dcf42037116879a3f -->
-```
-        <source>Help</source>
-        <translation>說明 H</translation>
-    
-ERR
-The translation adds an inappropriate "H" character after the Chinese term for "Help" (說明). The "H" is not present in the source, could confuse users, and constitutes a format issue.
-
-Correct translation:
-說明
+&設定
 ```
 
 <!-- cache_translation_check_zh_HK_9b597fdeceb734048b54fca888e785be4c6a3b290c047827f79b9f1d0cc02a38 -->
@@ -396,16 +261,16 @@ or
 正在連接到節點…
 ```
 
-<!-- cache_translation_check_zh_HK_2883e00d0d8a42685d37e2a343e075eb9ff8db424f4ef6119b847c9edd193c89 -->
+<!-- cache_translation_check_zh_HK_42a695c10a15cebe8935b1a9013c83e954e990e2627b810a54a4e13beb932376 -->
 ```
-        <source>Sending addresses</source>
-        <translation>付款地址(S)</translation>
+        <source>Load PSBT from &amp;clipboard…</source>
+        <translation>從剪貼簿載入PSBT</translation>
     
 ERR
-The translation "付款地址(S)" contains an incorrect format specifier rendering; the "(S)" is unnecessary and misleading. Also, in Cantonese/Hong Kong context, "付款地址" is fine but more natural phrasing would be "付款地址" or "發送地址". No spam or unwanted content.
+The translation omits the shortcut key indicator (&amp;), which should appear exactly once somewhere in the translation. Also, the ellipsis ("…") at the end of the source is missing in the translation.
 
 Correct translation:
-付款地址
+從剪貼簿載入&amp;PSBT…
 ```
 
 <!-- cache_translation_check_zh_HK_09d84e2349f8aba8c0d374bcaf3622737197481133c56cc9e0777ddcb4825595 -->
@@ -444,16 +309,16 @@ Correct translation:
 遷移錢包
 ```
 
-<!-- cache_translation_check_zh_HK_05d277eecc64fb269e173be1d6818a6df68b8933aa0c02d9d12812631ca8f1c9 -->
+<!-- cache_translation_check_zh_HK_288aac83bf952b4faa778bc98603999a0a404648c87babfb9f60f83f1c86ac95 -->
 ```
-        <source>Hide</source>
-        <translation>躲</translation>
+        <source>&amp;Hide</source>
+        <translation>&amp;躲</translation>
     
 ERR
-The translation "躲" means "to dodge" or "to hide (oneself physically)," which is not commonly used in user interfaces in Hong Kong Chinese. The term should be contextually appropriate for UI/UX, and the standard translation is "隱藏" for "Hide" in software menus or buttons.
+The translation uses "躲" which typically means "to dodge" or "to hide (physically, e.g., oneself)," and is not idiomatic in this context for UI elements in Cantonese (Hong Kong). The more appropriate term is "隱藏", which is conventionally used for the "Hide" function in software. The shortcut key indicator "&" is preserved correctly.
 
 Correct translation:
-隱藏
+&隱藏
 ```
 
 <!-- cache_translation_check_zh_HK_950cb28cc0f57eebf6fb6e99e761a355724df12da7463d87aeda770e4eaacc26 -->
@@ -469,28 +334,28 @@ Correct translation:
 啟用網絡活動
 ```
 
-<!-- cache_translation_check_zh_HK_708501aa83c3ed6c47c422f83102d8e9be25b9847079d344191965e14b243720 -->
+<!-- cache_translation_check_zh_HK_a6e9d6abcc4431799e73f806331c34124d5e3cf2ac80d23af4c298249010502b -->
 ```
-        <source>Copy amount</source>
+        <source>Copy &amp;amount</source>
         <translation>复制和数量</translation>
     
-ERR  
-The translation is inaccurate. "复制和数量" means "Copy and amount," which changes the meaning and adds an unwarranted conjunction. The correct translation should simply mean "Copy amount," that is, copying the numerical value.
+ERR
+The translation does not preserve the shortcut key (&) from the source, and the phrase "复制和数量" is an incorrect translation for "Copy &amount". The correct translation should be:
 
-Correct translation:  
-複製金額
+正确翻译：
+複製金額(&A)
 ```
 
-<!-- cache_translation_check_zh_HK_a335a35c7dde13c47a3bbc12f962abc878d77465b0042e71506c9b8865ff1664 -->
+<!-- cache_translation_check_zh_HK_90b92531e1ef339bbba4c9ef552afff81ce69fd057cdd1320fd552110d86e714 -->
 ```
-        <source>Lock unspent</source>
-        <translation>锁定未花费(O)</translation>
+        <source>Copy change</source>
+        <translation>复制找零金额</translation>
     
 ERR
-The translation adds an "(O)" at the end, which is not present in the source text, and is not standard for zh_HK locale translations or English UI context (may be mistaken as a shortcut key indicator, which is not implied in the source). The rest of the translation is accurate.
+The translation uses Simplified Chinese characters ("复制找零金额") while zh_HK should use Traditional Chinese. Also prefer the common phrasing for "copy" in Traditional Chinese.
 
 Correct translation:
-鎖定未花費
+複製找零金額
 ```
 
 <!-- cache_translation_check_zh_HK_4ff501518568c9b4d0e0e7618f065a35c12e0101b7e1edcaea00eefb03947c0e -->
@@ -541,6 +406,30 @@ Correct translation:
 啟用修剪功能時，如果錢包長時間關閉，可能需要重新同步整條區塊鏈。
 ```
 
+<!-- cache_translation_check_zh_HK_e08e0c77aaa94b78b6eff83364bf8779ce9fb559ea6c1d9acae7d0b021cf678e -->
+```
+        <source>&amp;Label</source>
+        <translation>标签(&amp;L)</translation>
+    
+ERR
+The translation uses simplified Chinese "标签" instead of the traditional Chinese used in Hong Kong, which should be "標籤". The shortcut key (&amp;L) is correctly placed.
+
+Correct translation:
+標籤(&amp;L)
+```
+
+<!-- cache_translation_check_zh_HK_1876c8079f3c75fc90065cff075001f397d4157aaa859561c7d900ceabf127af -->
+```
+        <source>About %1</source>
+        <translation>关于 %1</translation>
+    
+ERR
+The translation uses Simplified Chinese ("关于") rather than Traditional Chinese as used in Hong Kong ('zh_HK'). In Hong Kong, "關於" is standard.
+
+Correct translation:
+關於 %1
+```
+
 <!-- cache_translation_check_zh_HK_ede40189b4cca918ec555b08ca9cb5a3d9f8b3ed3852ea2add55e099292651bd -->
 ```
         <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2 GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
@@ -563,28 +452,43 @@ Explanation:
 - Full-width brackets are used as per HK style, and space issues are fixed.
 ```
 
-<!-- cache_translation_check_zh_HK_1876c8079f3c75fc90065cff075001f397d4157aaa859561c7d900ceabf127af -->
+<!-- cache_translation_check_zh_HK_5ce60f1169385d2d3210dc1d475c5b695a1b7c16537f480bdcad64d137f55af0 -->
 ```
-        <source>About %1</source>
-        <translation>关于 %1</translation>
+        <source>Size of &amp;database cache</source>
+        <translation>資料庫快取的大小 </translation>
     
 ERR
-The translation uses Simplified Chinese ("关于") rather than Traditional Chinese as used in Hong Kong ('zh_HK'). In Hong Kong, "關於" is standard.
+The translation is missing the &amp; used for the shortcut key. It should be present exactly once, as in the source. There is also an unnecessary space at the end.
 
 Correct translation:
-關於 %1
+資料庫快取(&amp;)的大小
 ```
 
-<!-- cache_translation_check_zh_HK_f57896f409fedd623e1277966301de2033d8837fcd6ade5d0b832e55b14d7175 -->
+<!-- cache_translation_check_zh_HK_58b8380db05ec043399ce0849178cf3df715df3eeda4d6c607b8354a3f16b13a -->
 ```
-        <source>Network</source>
-        <translation>网络(N)</translation>
+        <source>Number of script &amp;verification threads</source>
+        <translation>腳本和驗證線程數</translation>
     
 ERR
-The translation uses "网络", which is simplified Chinese. For 'zh_HK' (Hong Kong Chinese), the traditional form "網絡" should be used.
+The translation omitted the shortcut key indicator (&amp;). The "&amp;" should appear exactly once, as it does in the source, to maintain shortcut key consistency.
 
 Correct translation:
-網絡(N)
+腳本及驗證線程(&amp;)數
+
+Alternatively, depending on UI practice, commonly:
+腳本驗證(&amp;)線程數
+```
+
+<!-- cache_translation_check_zh_HK_8370181d29a40be415ae5a5ca698caaa09b34b012c97a937b607bd8ca507a60a -->
+```
+        <source>Prune &amp;block storage to</source>
+        <translation>将区块存储修剪至(&amp;B)</translation>
+    
+ERR
+The translation uses simplified Chinese ('将区块存储修剪至') instead of traditional Chinese, which is standard for 'zh_HK'. In Hong Kong, "将" should be "將", and the rest should be in traditional characters. Also, "修剪" is not the most common expression in Hong Kong software context—"修剪" is understandable but "修整" or "裁剪" may also be used.
+
+Correct translation:
+將區塊存儲修剪至(&amp;B)
 ```
 
 <!-- cache_translation_check_zh_HK_d70baaefced8a672bdbcfc5e4f8b68c9837cba6b7c0175944c2d24390c6c41c7 -->
@@ -600,40 +504,56 @@ Correct translation:
 這允許你或第三方工具通過命令列和 JSON-RPC 命令與節點通訊。
 ```
 
-<!-- cache_translation_check_zh_HK_8ca2c5c5280ccd00ec868d7c5834225d981c6f3bc977176f259c4edaba78590c -->
+<!-- cache_translation_check_zh_HK_f04e0c5cf66fbf1a3c3fe9d7c5e7244bb855d9a1775ccd407ba284c1d99322d8 -->
 ```
-        <source>Spend unconfirmed change</source>
-        <translation>动用尚未确认的找零资金(S)</translation>
+        <source>Enable R&amp;PC server</source>
+        <extracomment>An Options window setting to enable the RPC server.</extracomment>
+        <translation>启用R&amp;PC服务器</translation>
     
 ERR
-The translation is understandable but not accurate to Hong Kong Chinese (zh_HK) conventions. The use of “资金(S)” is not typical in Hong Kong, and the addition of “(S)” is unexplained and unnecessary. Also, "找零" is commonly used in Mainland Chinese, while Hong Kong Cantonese would prefer “找續”. 
+The translation uses Simplified Chinese ("启用"), but 'zh_HK' requires Traditional Chinese. Additionally, "R&PC" should be "R&PC" and is preserved. For 'zh_HK', use Traditional Chinese characters.
 
 Correct translation:
-動用未確認的找續
+啟用R&amp;PC伺服器
 ```
 
-<!-- cache_translation_check_zh_HK_8e32509db538df9e6647063a475a9c41daf5be5d166b8ec4c5acd91c8a69fb43 -->
+<!-- cache_translation_check_zh_HK_90cb3df5f02c5e05050d32a54e6f07e05f34c59b13ff7f17b2a1c66a8798c940 -->
 ```
-        <source>Allow incoming connections</source>
-        <translation>允许传入连接(G)</translation>
+        <source>W&amp;allet</source>
+        <translation>钱包(&amp;A)</translation>
     
 ERR
-The translation uses simplified Chinese characters ("允许") rather than traditional characters appropriate for 'zh_HK', and it also unnecessarily includes "(G)", which is not present in the source and could be confusing.
+The translation uses Simplified Chinese ("钱包") instead of Traditional Chinese used in zh_HK ("錢包"). The shortcut marker (&) is present once which is fine, but the localized text should be Traditional.
 
 Correct translation:
-允許傳入連線
+錢包(&amp;A)
 ```
 
-<!-- cache_translation_check_zh_HK_717ae6ec6c5f6cf8173406d256dd1d88192b9b3ee74cf10488399404913cd041 -->
+<!-- cache_translation_check_zh_HK_0ee180c40a35caecb75afcca2e9c2409aecb76a748673a1d9f07f4bcd6649167 -->
 ```
-        <source>Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>通过 SOCKS5 代理连接(默认代理):</translation>
+        <source>Enable &amp;PSBT controls</source>
+        <extracomment>An options window setting to enable PSBT controls.</extracomment>
+        <translation>启用&amp;PSBT控件</translation>
     
 ERR
-The translation is in Simplified Chinese ("通过 SOCKS5 代理连接(默认代理):") instead of Hong Kong Cantonese written in Traditional Chinese, which is the standard for 'zh_HK'. The parentheses used are also Western instead of the full-width punctuation typically used in Traditional Chinese texts.
+The translation uses Simplified Chinese ("启用") instead of Traditional Chinese, which is standard for 'zh_HK'. '控件' is also a Mainland China term; in Hong Kong, "控制項" is more appropriate. The '&' for the shortcut key is in place.
 
 Correct translation:
-透過 SOCKS5 代理連線（預設代理）:
+啟用&amp;PSBT控制項
+</reply>
+```
+
+<!-- cache_translation_check_zh_HK_722ebb7c4c0dd489ffdda2da43e0ca4cbfaa2f989881657c00dac582cfd523de -->
+```
+        <source>&amp;Show tray icon</source>
+        <translation>显示通知区域图标(&amp;S)</translation>
+    
+ERR
+The translation uses Simplified Chinese ("显示通知区域图标") rather than Traditional Chinese, which is standard for 'zh_HK'. It should be in Traditional Chinese script. The translation is otherwise accurate, and it correctly places the (&amp;S) accelerator.
+
+Correct translation:
+顯示通知區圖示(&amp;S)
+</assistant
 ```
 
 <!-- cache_translation_check_zh_HK_7b125159c3d54bbd2ce22d7605a81fe39999b13f86a7598cd32b4ff8c895eb2c -->
@@ -647,79 +567,108 @@ The translation "继续" is in Simplified Chinese (zh_CN), not Traditional Chine
 繼續
 ```
 
-<!-- cache_translation_check_zh_HK_56b8225dec67e3fc39f92c0309eebb7e8c80b10b7e006ad5546daaaf877a2190 -->
+<!-- cache_translation_check_zh_HK_9162393ae596c5e9b46211bd834e8405fe5f5d02f74458808ba7f7d99e0ba735 -->
 ```
-        <source>Your current balance in watch-only addresses</source>
-        <translation>您当前在仅观察观察地址中的余额</translation>
+        <source>Sign Tx</source>
+        <translation>签名交易</translation>
     
 ERR
-The translation contains a redundancy ("仅观察观察地址" — "watch-only watch addresses") and uses "当前" (Mainland Chinese) instead of the more Hong Kong-appropriate "現時". The translation is also awkward and not fully localized.
+The translation uses Simplified Chinese character "签" (签名交易) but 'zh_HK' should use Traditional Chinese. Also "Sign Tx" in this Bitcoin context is better rendered as "簽署交易" (or "簽名交易" in Traditional characters).
 
-Correct translation:
-您現時在僅供觀察地址中的結餘
+Correct translation (Traditional, Hong Kong):
+簽署交易
 ```
 
-<!-- cache_translation_check_zh_HK_bc37bb5a7beac88522513932635266d54f1e4e9702233bdfe63f36f2210df048 -->
+<!-- cache_translation_check_zh_HK_f105467780ed86558ce8e3654e103ed2c8c0b3ed24d6913c770044a37e0f9c87 -->
 ```
-        <source>Mined balance in watch-only addresses that has not yet matured</source>
-        <translation>仅观察地址中尚未成熟的挖矿收入余额:</translation>
+        <source>Copy to Clipboard</source>
+        <translation>复制到剪贴板</translation>
     
 ERR
-The translation uses Simplified Chinese ("仅观察地址中尚未成熟的挖矿收入余额:") instead of using the expected Hong Kong Traditional Chinese. Also, stylistically, the colon at the end is not present in the source.
+The translation uses Simplified Chinese ("复制到剪贴板") rather than Traditional Chinese typically used for zh_HK. No format specifiers are involved and spacing is fine.
 
-Correct translation:
-僅供觀察地址中尚未成熟的挖礦收入餘額
+Correct translation (Traditional Chinese, Hong Kong):
+複製到剪貼簿
+
+(Alternative also acceptable: 複製到剪貼板)
 ```
 
-<!-- cache_translation_check_zh_HK_9e84c5e1cbd1f3f18933b3156e5e101369c92ab21d72c958f9991274e031b62a -->
-```
-        <source>Current total balance in watch-only addresses</source>
-        <translation>仅观察地址中的当前总余额</translation>
-    
-ERR
-The translation uses Simplified Chinese and a Mainland phrasing ("仅观察地址中的当前总余额") instead of Hong Kong Traditional style ('zh_HK'). It lacks proper localization and does not use traditional characters.
-
-Correct translation:
-僅供觀察地址中的當前總餘額
-```
-
-<!-- cache_translation_check_zh_HK_62164728b6a7c177c1d04a3a116d70629560c46f15c563b6acbb30bb130c7c74 -->
+<!-- cache_translation_check_zh_HK_51edd678fb1b28ef4e527ffcec2694e07d840d24ec22fcc06e2267b6fa704485 -->
 ```
         <source>Save…</source>
-        <translation>拯救...</translation>
+        <translation>保存...</translation>
     
 ERR
-The translation is incorrect and problematic. "拯救" means "to rescue" or "to save (a life)" in Chinese, which is not appropriate for the context of a software menu "Save…" action. The correct term should be "儲存…", which is commonly used in Hong Kong Cantonese software for "Save…".
+Issues:
+- Language/wording: In zh_HK (Traditional Chinese used in Hong Kong), "保存" is acceptable but "儲存" is more commonly used for UI labels like "Save".
+- Ellipsis character: The source uses a single Unicode ellipsis (…) but the translation uses three ASCII dots (...). Keep the same ellipsis character.
 
 Correct translation:
 儲存…
 ```
 
-<!-- cache_translation_check_zh_HK_2ae2ca067f4e2aee1f1809e77e22aee05375969c7446b037cec2da43fa62c259 -->
+<!-- cache_translation_check_zh_HK_4b980a8e124467dd4f3ab37eff60332cb353274bf73d42481c964a8ce4ab3f49 -->
 ```
-        <source>Copy Image</source>
-        <translation>复制图像(C)</translation>
+        <source>Close</source>
+        <translation>关闭</translation>
     
 ERR
-The translation uses Simplified Chinese characters ("复制图像") instead of Traditional Chinese, which is standard in 'zh_HK' (Hong Kong). Also, '复制' is not commonly used in Hong Kong; '複製' (Traditional) is preferred. The shortcut key "(C)" is often omitted in Cantonese UI, but if included, it should correspond to the local language.
+The translation uses Simplified Chinese ("关闭"), but zh_HK should use Traditional Chinese characters. No format specifiers or spacing issues present.
 
 Correct translation:
-複製圖片
-
-or, if keeping the shortcut key:
-複製圖片(C)
+關閉
 ```
 
-<!-- cache_translation_check_zh_HK_47bb74edc3420e89f5eb0897468e81c9d853fb14a67c04783ec982d5d2e03c4c -->
+<!-- cache_translation_check_zh_HK_d8e7e6fc6146a3982356a59e9a60d016fdc2003537ad22c23793179be9469f54 -->
 ```
-        <source>Information</source>
-        <translation>資訊 I</translation>
+        <source>Transaction broadcast successfully! Transaction ID: %1</source>
+        <translation>已成功广播交易！交易ID: %1</translation>
     
 ERR
-The translation is incorrect. The addition of " I" after "資訊" is erroneous and does not belong in the translation.
+The translation uses the simplified character "广播" instead of the Traditional Chinese used in zh_HK ("廣播"). Also punctuation for the colon should be the full-width one used in Chinese UI. %1 is preserved correctly.
 
 Correct translation:
-資訊
+已成功廣播交易！交易 ID：%1
+```
+
+<!-- cache_translation_check_zh_HK_76733b01d0f71313804c54209973bdcddaa8ba61adad933c2f4c57d186e6e92a -->
+```
+        <source>Transaction broadcast failed: %1</source>
+        <translation>交易广播失败: %1</translation>
+    
+ERR
+The translation uses Simplified characters ("广播", "失败") and ASCII punctuation. For zh_HK (Traditional Chinese), use Traditional characters and proper full-width punctuation. The %1 specifier is preserved correctly.
+
+Correct translation:
+交易廣播失敗：%1
+```
+
+<!-- cache_translation_check_zh_HK_d5b7f50fbccf0a2d8611f9433bfc9db677127483cccdfd4cf1ff4b35c96a762c -->
+```
+        <source>&amp;Save Image…</source>
+        <translation>保存图像(&amp;S)...</translation>
+    
+ERR
+The translation uses Simplified Chinese "图像" instead of Hong Kong Traditional Chinese "圖像". Also, the ellipsis should be the full-width "…" to match the source, not three dots "...". 
+
+Correct translation:
+保存圖像(&amp;S)…
+```
+
+<!-- cache_translation_check_zh_HK_9bac5018e15289c39c7a610763092af5ed7a36914cbe467c93c2be6ee318afde -->
+```
+        <source>&amp;Information</source>
+        <translation>資訊 &amp;I</translation>
+    
+ERR
+The placement of the shortcut key (&) is incorrect in zh_HK. In Chinese, the & should directly precede the letter it refers to in the English original, but in zh_HK localization, it's customary to keep the & before the Chinese text or at the end for mnemonic alignment. Placing "&I" at the end does not correspond to any mnemonic in the Chinese text and is confusing to users.
+
+Correct translation:
+&資訊
+
+Or, if a shortcut key must be preserved, but since there is no Latin letter in the Chinese text, the & is typically just placed at the start:
+
+&資訊
 ```
 
 <!-- cache_translation_check_zh_HK_98e5bb91bca6cf87bd593d7e3da0db4e68c3fbc892151fc80f7b67f7985fe4d2 -->
@@ -770,16 +719,16 @@ Correct translation:
 縮小字體大小
 ```
 
-<!-- cache_translation_check_zh_HK_53ea674d8438ccbec6202b01aaab4eeba5ab07cb22278a235d85b4b03a257156 -->
+<!-- cache_translation_check_zh_HK_6558c9782f226d33010d56f97a7bf13c5151f12add65365f0abf81b8ae9554d1 -->
 ```
-        <source>Open</source>
-        <translation>打开(O)</translation>
+        <source>&amp;Open</source>
+        <translation>打开(&amp;O)</translation>
     
 ERR
-The translation uses Simplified Chinese ('打开') and the Mainland China style for shortcuts ('(O)'), which is not appropriate for 'zh_HK' (Hong Kong Cantonese/Traditional Chinese). It should be in Traditional Chinese and, if a shortcut is included, follow Hong Kong conventions.
+The translation is in Simplified Chinese format ('打开(&amp;O)'), but for 'zh_HK' (Hong Kong Cantonese), the traditional character '開啟' is typically preferred, and the shortcut key position should follow Hong Kong localization standards. Also, in zh_HK, the shortcut letter is usually placed before the parentheses, e.g., '開啟(&amp;O)'.
 
 Correct translation:
-開啟
+開啟(&amp;O)
 ```
 
 <!-- cache_translation_check_zh_HK_294a6b69c8397bcbe46ef5b4e5f1d3feee9e2d9c3a4b4f1ce25d159ee9c964cc -->
@@ -795,29 +744,30 @@ Correct translation:
 Outbound 地址擷取：短暫使用，用於向對方請求地址
 ```
 
-<!-- cache_translation_check_zh_HK_86748f766f623aaae744ee804522237238191acd48ba73585b33aacee77fa443 -->
+<!-- cache_translation_check_zh_HK_3b922fbc637e1d9d4fd21b3656a168f67a4ad2c125c758255ea2914b3e9f2c0b -->
 ```
-        <source>Copy address</source>
-        <extracomment>Context menu action to copy the address of a peer.</extracomment>
-        <translation>复制地址(C)</translation>
+        <source>1 &amp;hour</source>
+        <translation>1 小时(&amp;H)</translation>
     
 ERR
-The translation "复制地址(C)" uses Simplified Chinese ("复制") instead of the Traditional Chinese character preferred in Hong Kong ("複製"). Also, for Hong Kong standards and convention, the shortcut "(C)" is generally not used unless it matches the actual interface.
+The translation uses Simplified Chinese "小时" and the shortcut key (&H) is based on the English word "hour". For 'zh_HK' (Traditional Chinese for Hong Kong), "小時" should be used, and the shortcut key should preferably match a character in the translation (e.g., "小" or "時"), unless product guidelines require English shortcuts.
 
 Correct translation:
-複製地址
+1 小時(&amp;H)
+or, better fit for 'zh_HK' locale:
+1 小時(&amp;小)
 ```
 
-<!-- cache_translation_check_zh_HK_9a4c8dafd958c88129fd1d3d8be4c60c05611a92fbb7c7c5b5e576942beb73c0 -->
+<!-- cache_translation_check_zh_HK_8b5955a6a1e135aae44745f02687277c90bd3df0dd2fd8b7f3f4e99139bb5b6a -->
 ```
-        <source>1 hour</source>
-        <translation>1 小时(H)</translation>
+        <source>1 d&amp;ay</source>
+        <translation>一天</translation>
     
 ERR
-The translation uses Simplified Chinese "小时" instead of Traditional Chinese "小時" which is standard for 'zh_HK'. Also, "(H)" is unnecessary or confusing in the context, unless the English source includes it.
+The translation omits the '&' which is used for indicating a shortcut key and could be important in the UI. Additionally, the translation does not retain the '1' and may confuse users if there are other durations (e.g., 2 days). A more accurate translation would be:
 
 Correct translation:
-1 小時
+1 天(&A)
 ```
 
 <!-- cache_translation_check_zh_HK_951f8deb31a00eafd4104d5e9d37118f531185afb8c75df695e469770db517a2 -->
@@ -858,34 +808,28 @@ Correct translation:
 如果需要繁體中文香港用語風格，可以根據具體情境微調詞彙。
 ```
 
-<!-- cache_translation_check_zh_HK_ce6da4fe1ab566e8aa06b1f63ba81229a5bcaa34a77b27772eeb89a577e33cdc -->
+<!-- cache_translation_check_zh_HK_a6e9d6abcc4431799e73f806331c34124d5e3cf2ac80d23af4c298249010502b -->
 ```
-        <source>Copy message</source>
-        <translation>复制消息(M)</translation>
-    
-ERR
-The translation uses Mainland Chinese "复制消息(M)" instead of the appropriate Hong Kong Cantonese form and uses "消息" for "message", which is less natural in the context of software/UI translation in Hong Kong. Also, the hotkey "(M)" may not match the correct Chinese character.
-
-A more suitable 'zh_HK' translation would be:
-複製訊息
-
-If a keyboard shortcut is needed, it should be presented as:
-複製訊息(&M)
- 
-So, the correct translation is:
-複製訊息(&M)
-```
-
-<!-- cache_translation_check_zh_HK_708501aa83c3ed6c47c422f83102d8e9be25b9847079d344191965e14b243720 -->
-```
-        <source>Copy amount</source>
+        <source>Copy &amp;amount</source>
         <translation>复制和数量</translation>
     
-ERR  
-The translation is inaccurate. "复制和数量" means "Copy and amount," which changes the meaning and adds an unwarranted conjunction. The correct translation should simply mean "Copy amount," that is, copying the numerical value.
+ERR
+The translation does not preserve the shortcut key (&) from the source, and the phrase "复制和数量" is an incorrect translation for "Copy &amount". The correct translation should be:
 
-Correct translation:  
-複製金額
+正确翻译：
+複製金額(&A)
+```
+
+<!-- cache_translation_check_zh_HK_d5b7f50fbccf0a2d8611f9433bfc9db677127483cccdfd4cf1ff4b35c96a762c -->
+```
+        <source>&amp;Save Image…</source>
+        <translation>保存图像(&amp;S)...</translation>
+    
+ERR
+The translation uses Simplified Chinese "图像" instead of Hong Kong Traditional Chinese "圖像". Also, the ellipsis should be the full-width "…" to match the source, not three dots "...". 
+
+Correct translation:
+保存圖像(&amp;S)…
 ```
 
 <!-- cache_translation_check_zh_HK_f670d3a58052289b036cc94a1bb6c9c5a9b7fa220a78c7aa163c8c969b4eb7ff -->
@@ -923,16 +867,16 @@ The provided translation uses simplified Chinese ("启用") rather than traditio
 啟用可替代手續費 (RBF)
 ```
 
-<!-- cache_translation_check_zh_HK_f7d5f89103f19a7f6f2f618ab0c72ac018e6ea29493c99e3272f6040d18b64d8 -->
+<!-- cache_translation_check_zh_HK_90b92531e1ef339bbba4c9ef552afff81ce69fd057cdd1320fd552110d86e714 -->
 ```
-        <source>Send</source>
-        <translation>发送(E)</translation>
+        <source>Copy change</source>
+        <translation>复制找零金额</translation>
     
 ERR
-The translation "发送(E)" is not localized for 'zh_HK' (Hong Kong Chinese). In Hong Kong, the term "發送" is traditionally used instead of the simplified "发送" (which is mainland usage). Additionally, the "(E)" is problematic—in Hong Kong software, accelerator keys are rarely denoted this way, and if present, they should correspond to the menu shortcut key, but "E" does not match "Send" in this context.
+The translation uses Simplified Chinese characters ("复制找零金额") while zh_HK should use Traditional Chinese. Also prefer the common phrasing for "copy" in Traditional Chinese.
 
 Correct translation:
-發送
+複製找零金額
 ```
 
 <!-- cache_translation_check_zh_HK_e4079e28ced2a31c5cd45858ad968288f613986dd93679a9d3f83cef844e9a62 -->
@@ -946,18 +890,6 @@ The word "簽證" in Chinese means "visa," which is not appropriate in this cont
 
 Correct translation:
 在設備上簽名
-```
-
-<!-- cache_translation_check_zh_HK_65dde073457e3659e4358d03651fbea351f8be26ebfa2eb34b395b0fd4b153dd -->
-```
-        <source>Create Unsigned</source>
-        <translation>创建未签名交易(E)</translation>
-    
-ERR
-The translation is mostly accurate but includes "(E)" at the end, which is not present in the original source text. "(E)" typically denotes a keyboard shortcut in some UI contexts, but since it's not in the source, it should not be present in the translation unless the UI requires it for localization consistency.
-
-Correct translation:
-創建未簽名交易
 ```
 
 <!-- cache_translation_check_zh_HK_070c587fbb4ed6d06fe006cbce66dae59f8480ae60cbd56f50e09c90fb4e8ad5 -->
@@ -1000,18 +932,6 @@ or more literally:
 接收付款的比特幣地址
 ```
 
-<!-- cache_translation_check_zh_HK_30835fcd43486dde2dd57db66037597443c69b9e040d973d764a9b2571d64111 -->
-```
-        <source>Subtract fee from amount</source>
-        <translation>從付款金額減去手續費(U)</translation>
-    
-ERR  
-The translation adds "(U)" at the end, which is not present in the source and could be confusing or regarded as unwanted content. Additionally, the translation could be more concise and faithful to the original.
-
-Correct translation:  
-從金額中扣除手續費
-```
-
 <!-- cache_translation_check_zh_HK_ca3390ffc9863c0f4e806158faae1a615527f0e15092c5510c372d12ae31e99b -->
 ```
         <source>Send</source>
@@ -1024,19 +944,28 @@ Correct translation:
 發送
 ```
 
-<!-- cache_translation_check_zh_HK_2ea05109177ce8020f20f6b98269d46d59db377354fe582cfb486ece3aaf5567 -->
+<!-- cache_translation_check_zh_HK_7122d22b42a374647712e18883ce57d0104df59b111d6a92097fde2a0828eaba -->
 ```
-        <source>Verify Message</source>
-        <translation>验证消息签名(M)</translation>
+        <source>Copy the current signature to the clipboard</source>
+        <translation>复制当前签名至剪贴板</translation>
     
 ERR
-The translation is in Simplified Chinese (zh_CN) wording and style, not in Traditional Chinese as used in 'zh_HK'. Also, the term "消息签名" means "message signature" rather than just "message". Additionally, the original text does not have the accelerator "(M)".
+The translation uses Simplified Chinese characters (e.g. "复制", "当前", "剪贴板") but the target locale zh_HK should use Traditional Chinese. No format specifiers are involved and spacing is fine.
+
+Correct translation (Traditional Chinese, Hong Kong style):
+複製當前簽名到剪貼簿
+```
+
+<!-- cache_translation_check_zh_HK_d7752991ac6a274d159926c5a02c869616ac4deb4e7a549decf62a5341beb1f4 -->
+```
+        <source>Verify &amp;Message</source>
+        <translation>验证消息签名(&amp;M)</translation>
+    
+ERR
+The translation uses Simplified Chinese terminology ("验证消息签名") instead of Hong Kong Traditional Chinese. Also, the translation deviates from the original meaning. The source refers to verifying a "message," not specifically a "message signature." The ampersand shortcut (&) has been moved but exists only once, which is correct.
 
 Correct translation:
-驗證訊息
-
-If indicating the hotkey (M) is required based on context/UI guideline, it should be:
-驗證訊息(M)
+驗證訊息(&amp;M)
 ```
 
 <!-- cache_translation_check_zh_HK_b30b02c9c230b27e6acd4bf63a996edfee94681a53420ab2ebadabc12d8f5f4e -->
@@ -1075,42 +1004,62 @@ Correct translation:
 範圍…
 ```
 
-<!-- cache_translation_check_zh_HK_708501aa83c3ed6c47c422f83102d8e9be25b9847079d344191965e14b243720 -->
+<!-- cache_translation_check_zh_HK_a6e9d6abcc4431799e73f806331c34124d5e3cf2ac80d23af4c298249010502b -->
 ```
-        <source>Copy amount</source>
+        <source>Copy &amp;amount</source>
         <translation>复制和数量</translation>
     
-ERR  
-The translation is inaccurate. "复制和数量" means "Copy and amount," which changes the meaning and adds an unwarranted conjunction. The correct translation should simply mean "Copy amount," that is, copying the numerical value.
+ERR
+The translation does not preserve the shortcut key (&) from the source, and the phrase "复制和数量" is an incorrect translation for "Copy &amount". The correct translation should be:
 
-Correct translation:  
-複製金額
+正确翻译：
+複製金額(&A)
 ```
 
-<!-- cache_translation_check_zh_HK_955fd7a15375cc6c8411ffedd6d43fb1b505224a67077ed1aa3bbbdd36d2cefb -->
+<!-- cache_translation_check_zh_HK_ad178d236f7dfa4296cb4b108c9b445b440409cbd25c6a94f7a622b8b998490f -->
 ```
-        <source>Increase transaction fee</source>
-        <translation>增加矿工费(F)</translation>
+        <source>Copy full transaction &amp;details</source>
+        <translation>複製完整交易明細</translation>
     
 ERR
-The translation of "Increase transaction fee" as "增加矿工费(F)" is problematic for two reasons:
-1. "矿工费" is more commonly used in Mainland China. In Hong Kong Cantonese ('zh_HK'), "手續費" (handling fee/transaction fee) is the standard expression.
-2. The addition of "(F)" is unexplained and not present in the source; it introduces a stray format problem unless it has contextual meaning (like a shortcut indicator), which isn't specified here.
+The shortcut key indicator (&) from the source is missing in the translation. In zh_HK translations, the & can be added anywhere, but it must appear exactly once to match the source, often in front of a character in the menu label.
 
 Correct translation:
-增加交易手續費
+複製完整交易&amp;明細
 ```
 
-<!-- cache_translation_check_zh_HK_fb81c58d9d4a974c580aa3b3644dc3c2a8fc8a6b348a143a42d1f536eedd6b31 -->
+<!-- cache_translation_check_zh_HK_ad835176286ec5001b2d46ca1cecbac97741bc5c25c342e04972405d7b6424e8 -->
 ```
-        <source>Export</source>
-        <translation>匯出 E</translation>
+        <source>&amp;Show transaction details</source>
+        <translation>顯示交易明細</translation>
     
 ERR
-The translation "匯出 E" is problematic. The English source is simply "Export". "匯出 E" includes an unnecessary "E" at the end, which could confuse users.
+The translation is missing the '&' used for the shortcut key, which should appear exactly once. 
 
 Correct translation:
-匯出
+&顯示交易明細
+
+or 
+
+顯示交易明細(&S) 
+
+Either method is acceptable for shortcut keys in 'zh_HK' Windows software localization.
+```
+
+<!-- cache_translation_check_zh_HK_2121ef868142997a35319d5921dc03e4c8045f37da8a2f5b0a73dc71658a9a44 -->
+```
+        <source>&amp;Export</source>
+        <translation>匯出 &amp;E</translation>
+    
+ERR
+The ampersand (&) is intended to mark the shortcut key and should appear exactly once, but in the Hong Kong Chinese ('zh_HK') translation, it appears after the word instead of before the shortcut letter. In Cantonese/Hong Kong style, the English shortcut letter is usually retained in parentheses, or at the end with the ampersand correctly placed.
+
+Correct translation:
+匯出(&E)
+or
+&匯出
+
+The placement of "&" before "E" in "匯出 &amp;E" is non-standard and may not correctly display the shortcut key in the UI.
 ```
 
 <!-- cache_translation_check_zh_HK_c7322b733fb6e07eeb0c5a4f89faf9d956509351ec4b36c6ad2b25b6f1a6acf6 -->
@@ -1166,6 +1115,105 @@ Correct translation:
 錯誤：在遷移過程中建立了重複的描述符。你的錢包可能已損壞。
 ```
 
+<!-- cache_translation_check_zh_HK_90fda8f6932228d174e380ed1c7df7be7ae98d00ff1e42c56766226c0f6bb80a -->
+```
+        <source>Option '-checkpoints' is set but checkpoints were removed. This option has no effect.</source>
+        <translation>选项“-checkpoints”已设置，但检查点已被移除。该选项不再生效。 </translation>
+    
+ERR
+The translation is in Simplified Chinese and contains a trailing space before the end tag. For zh_HK (Traditional Chinese) it should use Traditional characters and no extra whitespace.
+
+Correct translation:
+選項「-checkpoints」已設定，但檢查點已被移除。此選項無效。
+```
+
+<!-- cache_translation_check_zh_HK_d98c1c5ff4f9281f53e84a4630bcb6846485c6649d59a458ddb76aab8f1f87d3 -->
+```
+        <source>Option '-maxorphantx' is set but no longer has any effect (see release notes). Please remove it from your configuration.</source>
+        <translation>选项“-maxorphantx”已设置，但已不再生效（参见发行说明）。请从您的配置中移除该选项。 </translation>
+    
+ERR
+The translation is in Simplified Chinese (e.g., "选项", "发行说明") but for zh_HK it should use Traditional Chinese characters. There's also an extra trailing space before the closing tag.
+
+Correct translation (Traditional Chinese for Hong Kong):
+選項「-maxorphantx」已設定，但已不再生效（請參閱發行說明）。請從您的設定檔中移除該選項。
+```
+
+<!-- cache_translation_check_zh_HK_bf17affb0acd6713b9f6b2167f99961dbd921c30426c9f4b5f40c6272c0fa297 -->
+```
+        <source>Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.</source>
+        <translation>选项“-datacarrier”或“-datacarriersize”已设置，但已标记为弃用。它们将在未来版本中移除。 </translation>
+    
+ERR
+The translation is in Simplified Chinese ( mainland ) rather than Traditional Chinese used for zh_HK, and there's an extra trailing space before the closing tag. No format specifiers issue.
+
+Correct translation (Traditional Chinese for Hong Kong):
+選項「-datacarrier」或「-datacarriersize」已設定，但已被標記為棄用。它們將在未來版本中移除。
+```
+
+<!-- cache_translation_check_zh_HK_fc44b6029c7dbac45686cc79b705b8c897f4c829f9f3f5057b0a8d2f641e4b4e -->
+```
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of a pruned node)</source>
+        <translation>修剪：上次钱包同步超出了已修剪的数据范围。您需要执行“-reindex”（对于已修剪节点，需要重新下载整个区块链）。 </translation>
+    
+ERR
+The translation is in Simplified Chinese (e.g., "钱包", "您") and contains a trailing space. For zh_HK (Traditional Chinese for Hong Kong) use Traditional characters and Hong Kong phrasing.
+
+Correct translation:
+修剪：上次錢包同步已超出已修剪的資料。您需要執行「-reindex」（對於已修剪的節點，需重新下載整個區塊鏈）。
+```
+
+<!-- cache_translation_check_zh_HK_eb968025b9240f22a7d27bd23c989a8fc00fef0ee8185f551adcffb7a2452904 -->
+```
+        <source>-paytxfee is deprecated and will be fully removed in v31.0.</source>
+        <translation>“-paytxfee”已弃用，并将在 v31.0 中完全移除。 </translation>
+    
+ERR
+The translation uses Simplified Chinese characters ("弃用", "移除") instead of Traditional Chinese used in zh_HK, and there is an extra trailing space before the closing tag. No format specifiers present.
+
+Correct translation (Traditional Chinese for zh_HK), without trailing space:
+“‑paytxfee” 已棄用，並會在 v31.0 完全移除。
+```
+
+<!-- cache_translation_check_zh_HK_a83d5bb13328c9c6bb05b9d617458f5b2f83d05560a3710195dfb9a046cf5907 -->
+```
+        <source>Cannot add WalletDescriptor to a non-descriptor wallet</source>
+        <translation>无法将钱包描述符添加到非描述符钱包。</translation>
+    
+ERR
+The translation is in Simplified Chinese ("无法...添加..."), but zh_HK should use Traditional Chinese. No format specifiers present.
+
+Correct translation (Traditional Chinese for zh_HK):
+無法將錢包描述符添加到非描述符錢包。
+```
+
+<!-- cache_translation_check_zh_HK_7fabb939c240330d61596107c938b130818e021e55701b8aa2132a1ecc76b3c8 -->
+```
+        <source>Could not generate scriptPubKeys (cache is empty)</source>
+        <translation>无法生成脚本公钥（缓存为空）</translation>
+    
+ERR
+The translation is in Simplified Chinese ("无法生成脚本公钥（缓存为空）") but zh_HK should use Traditional Chinese. No format specifiers are involved.
+
+Correct translation (Traditional Chinese for zh_HK):
+無法生成 scriptPubKeys（快取為空）
+```
+
+<!-- cache_translation_check_zh_HK_1d81021bd0f5e08586ea41fd27117444164eb2a4027d5da2c4780a799bdfbce5 -->
+```
+        <source>Could not top up scriptPubKeys</source>
+        <translation>无法补充脚本公钥</translation>
+    
+ERR
+The provided translation uses Simplified Chinese ("无法补充脚本公钥") but zh_HK should use Traditional Chinese characters. Also consider whether to keep the technical identifier "scriptPubKeys" untranslated — either is acceptable, but use Traditional characters for surrounding words.
+
+Correct translation (Traditional Chinese):
+無法補充腳本公鑰
+
+Alternatively, keeping the technical term:
+無法補充 scriptPubKeys
+```
+
 <!-- cache_translation_check_zh_HK_910e8e45f2245edb0e9a34b0a4cc0b2c7735f3aa67ec70cac9a632712ef55043 -->
 ```
         <source>Disk space is too low!</source>
@@ -1204,6 +1252,30 @@ Correct translation:
 錯誤：轉存檔案的校驗和不匹配。計算得 %s，應為 %s
 ```
 
+<!-- cache_translation_check_zh_HK_8ee0dfeba4ed3cda8cac10a98de3f474eb3de760eb406eae940799fc9fe863d3 -->
+```
+        <source>Error: Not all address book records were migrated</source>
+        <translation>错误：并非所有地址簿记录都已迁移</translation>
+    
+ERR
+The translation is in Simplified Chinese ( mainland 用字 ) rather than Traditional Chinese typically used for zh_HK. No format specifiers or spacing issues, but characters should be converted to Traditional Chinese.
+
+Correct translation (Traditional Chinese for zh_HK):
+錯誤：並非所有地址簿記錄已遷移
+```
+
+<!-- cache_translation_check_zh_HK_dcfdd6315d1b3193dbb4dc6ce9abd68a96a5907b5b641337cb01c5fe62fb1489 -->
+```
+        <source>Error: Not all transaction records were migrated</source>
+        <translation>错误：并非所有交易记录都已迁移</translation>
+    
+ERR
+The translation is accurate in meaning but uses Simplified Chinese characters, not the Traditional Chinese typically used for zh_HK. No format specifiers or whitespace issues.
+
+Correct translation (Traditional Chinese for Hong Kong):
+錯誤：並非所有交易記錄都已遷移
+```
+
 <!-- cache_translation_check_zh_HK_e99dedaf3bcb0124644a867cc5bf8c595facdc7958e168c4eb407adc3aacf17b -->
 ```
         <source>Error: Unable to parse version %u as a uint32_t</source>
@@ -1226,6 +1298,42 @@ The translation is understandable but the word order is unnatural in Chinese (Ho
 
 Correct translation:
 錯誤：無法將資料寫入錢包 %s 的磁碟。
+```
+
+<!-- cache_translation_check_zh_HK_48efbd247f46f842be8b3a32001673fdef3721daddd55e336de8f3c35111412b -->
+```
+        <source>Failed to acquire rescan reserver during wallet initialization</source>
+        <translation>在钱包初始化期间未能获取重扫预留器</translation>
+    
+ERR
+Uses Simplified Chinese vocabulary/characters ("钱包", "期间", "获取") and the term "重扫预留器" is a bit unnatural for zh_HK. No format specifiers issues.
+
+Suggested zh_HK (Traditional) translation:
+在錢包初始化期間未能取得重掃預留鎖
+```
+
+<!-- cache_translation_check_zh_HK_e4666fa4991fa511c3e025c7f0fca4b1e5628abb54946150622583f10c2a5101 -->
+```
+        <source>Failed to close block undo file.</source>
+        <translation>关闭区块撤销文件失败。</translation>
+    
+ERR
+The translation uses Simplified Chinese characters ("关闭", "文件") but zh_HK should use Traditional Chinese. No format specifiers or spacing issues, but the script is wrong.
+
+Correct translation (Traditional Chinese, Hong Kong):
+關閉區塊撤銷檔案失敗。
+```
+
+<!-- cache_translation_check_zh_HK_961038e6cbaa1ae82ba5e46b0198703ac89711bf28a9d48eccde01cc70f549ac -->
+```
+        <source>Failed to close file when writing block.</source>
+        <translation>写入区块时关闭文件失败。</translation>
+    
+ERR
+The translation uses Simplified Chinese characters ("写入区块时关闭文件失败。") but 'zh_HK' should use Traditional Chinese and Hong Kong terminology. Also prefer "檔案" over "文件" in Hong Kong usage.
+
+Correct translation:
+寫入區塊時無法關閉檔案。
 ```
 
 <!-- cache_translation_check_zh_HK_bfba5479a7879ceb3a8fe1594b0469d71773b62d6ea3df387a6f180158c2e8e0 -->
@@ -1313,6 +1421,101 @@ The translation has an error: "1%s" is incorrect and introduces an unwanted '1' 
 Correct translation:
 錢包文件建立失敗：%s
 ```
+
+<!-- cache_translation_check_zh_HK_e3222f6658880630ea81b0a0cd483e7c2b2346ce99656d5b087dfe9f4559eb98 -->
+```
+        <source>Error loading %s: Wallet is a legacy wallet. Please migrate to a descriptor wallet using the migration tool (migratewallet RPC).</source>
+        <translation>加载 %s时出错：钱包为传统钱包。请使用迁移工具（migratewallet RPC）迁移到描述符钱包。</translation>
+    
+ERR
+The provided translation uses Simplified Chinese characters and wording rather than Traditional Chinese for zh_HK.
+
+Correct translation (Traditional Chinese, Hong Kong style):
+載入 %s 時出錯：錢包為舊式錢包。請使用遷移工具（migratewallet RPC）遷移至描述符錢包。
+```
+
+<!-- cache_translation_check_zh_HK_fb9c57de56fb521dfdc9b8cd4124ea9b1e9e4d83d4064c6624a1a81414b0eed7 -->
+```
+        <source>Error: Dumpfile specifies an unsupported database format (%s). Only sqlite database dumps are supported</source>
+        <translation>错误：转储文件指定了不受支持的数据库格式 %s。仅支持 sqlite 数据库转储。</translation>
+    
+ERR
+The translation uses Simplified Chinese characters (错误，转储，支持) but 'zh_HK' should use Traditional Chinese. It also removed the parentheses around (%s) from the source and added an extra space before %s. Preserve the parentheses and use Traditional characters.
+
+Correct translation (Traditional Chinese for zh_HK):
+錯誤：轉存檔指定了不支援的資料庫格式（%s）。僅支援 sqlite 資料庫的轉存。
+```
+
+<!-- cache_translation_check_zh_HK_8b55b394728eedb61271a1a6a5e595bcdfd17b62667645e79819597cc138275c -->
+```
+        <source>Transaction requires one destination of non-zero value, a non-zero feerate, or a pre-selected input</source>
+        <translation>交易需要至少满足以下之一：一个非零金额的收款地址、非零费率，或预先选择的输入。</translation>
+    
+ERR
+The translation uses Simplified Chinese wording/characters but the target 'zh_HK' should use Traditional Chinese. Also slightly adjust phrasing to sound natural in Hong Kong usage.
+
+Correct translation (Traditional Chinese for zh_HK):
+交易需要符合以下其中一項：一個非零金額的收款地址、非零手續費率，或預先選定的輸入。
+```
+
+<!-- cache_translation_check_zh_HK_7ac1efa37e812c3d7101f033238c56c685efb44247b49ad8368f92f5497fdb8a -->
+```
+        <source>Unrecognized descriptor found. Loading wallet %s
+
+The wallet might have been created on a newer version.
+Please try running the latest software version.
+</source>
+        <translation>发现无法识别的描述符。正在加载钱包 %s 
+
+该钱包可能是在较新版本中创建的。 
+请尝试运行最新的软件版本。
+</translation>
+    
+SPAM
+The translation is in Simplified Chinese (zh_CN), not Hong Kong Traditional Chinese (zh_HK).
+
+Correct zh_HK (Traditional) translation, keeping %s and line breaks:
+發現無法識別的描述符。正在載入錢包 %s
+
+該錢包可能是在較新版本中建立的。
+請嘗試執行最新的軟件版本。
+```
+
+<!-- cache_translation_check_zh_HK_5ba898a8fa4f257290a83a80d886d905097a84541cf1159ac1fa2c13a3e5a715 -->
+```
+        <source>Failed to start indexes, shutting down…</source>
+        <translation>索引启动失败，正在关闭……</translation>
+    
+ERR
+The translation uses Mainland/Simplified Chinese wording ("启动", "关闭") rather than Traditional characters expected for zh_HK. Also prefer Traditional phrasing for Hong Kong.
+
+Correct translation:
+索引啟動失敗，正在關閉…
+```
+
+<!-- cache_translation_check_zh_HK_3893aa5cc96d3a3e6fda580d5592a8e0694e08745e5bb4cb9823521e2db3de13 -->
+```
+        <source>Invalid -proxy address or hostname, ends with '=': '%s'</source>
+        <translation>无效的 -proxy 地址或主机名，以“=”结尾：“%s”。</translation>
+    
+ERR
+The translation uses Simplified Chinese ("无效的", "主机名") but zh_HK should use Traditional Chinese and Hong Kong terminology. The format specifier %s is kept correctly, but punctuation/spacing can be normalized.
+
+Correct translation (Traditional zh_HK):
+無效的 -proxy 位址或主機名稱，結尾為 '='：'%s'
+```
+
+<!-- cache_translation_check_zh_HK_8a65190ca204502b79b6c300f73c685661424c04e29136c9be3e8dc44a9de4b3 -->
+```
+        <source>Unrecognized network in -proxy='%s': '%s'</source>
+        <translation>无法识别 -proxy=“%s” 中的网络：“%s”。</translation>
+    
+ERR
+The translation uses Simplified Chinese ("无法识别", "网络") but 'zh_HK' should use Traditional Chinese. Also prefer to keep the format specifiers and quoting consistent with the source.
+
+Correct translation (Traditional Chinese for Hong Kong):
+無法識別 -proxy='%s' 中的網絡：'%s'
+```
 </details>
 
-Number of issues: 102.
+Number of issues: 116.

@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>tl</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Btl%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Btl%5D%20request)
 
 
 <!-- cache_translation_check_tl_a517053c17cd28bc770f39bfa765fcb2d2dc840f12afbf1a49b527198ed638b9 -->
@@ -33,28 +33,44 @@ Correct translation:
 Lumikha ng bagong address
 ```
 
-<!-- cache_translation_check_tl_98aa54cb462863c7ceff2cac18a4c7e3a45b8d47766d3bb733131e7245d403e9 -->
+<!-- cache_translation_check_tl_48c43368a7d09bd263e0efba37cd27a3b23ced2ef2105dce526ab96c7c3d1098 -->
 ```
-        <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Gayahin ang pinipiling ♦address♦ sa kasalakuyan sa ♦clipboard♦ ng sistem</translation>
+        <source>&amp;New</source>
+        <translation>Panibago</translation>
     
 ERR
-The translation is inaccurate. The word "address" is unnecessarily enclosed in symbols (♦address♦) instead of being properly translated. "Kasalakuyan" is a misspelling of "kasalukuyan", and "clipboard" is also unnecessarily enclosed in symbols. The sentence contains awkward phrasing and direct transliterations instead of natural Filipino.
+"Panibago" is not the appropriate Tagalog translation for the UI label "New" and the accelerator (&) is missing. Use a concise adjective and include exactly one & for the shortcut.
 
 Correct translation:
-Kopyahin ang kasalukuyang napiling address sa clipboard ng sistema
+&amp;Bago
 ```
 
-<!-- cache_translation_check_tl_a4eb143cfa96614545e82b4685293de0addccc043fbc69a1f468bf4b2f7add1d -->
+<!-- cache_translation_check_tl_34be998d86c43f30b121a252a50b2946e26a00341ed522faf8140a0126074ef2 -->
 ```
-        <source>Close</source>
+        <source>&amp;Copy</source>
+        <translation>Gayahin</translation>
+    
+ERR
+Problems:
+- The translation is in Tagalog but misses the accelerator marker '&' that exists in the source (there must be exactly one).
+- "Gayahin" is a verb meaning "imitate" and is less natural for the UI command "Copy". A more natural imperative for a button/menu is "Kopyahin" or the short label "Kopya".
+
+Correct translations (include exactly one '&'):
+- &Kopyahin
+or shorter:
+- &Kopya
+```
+
+<!-- cache_translation_check_tl_095009d9e2a6e196a80b005b7aabe6a229e97b8522ee267263893659184fe198 -->
+```
+        <source>C&amp;lose</source>
         <translation>(Do you mean: Close?) :isara, sarado </translation>
     
 ERR
-The translation includes unnecessary English text ("(Do you mean: Close?)") and two synonyms ("isara, sarado"), which is awkward and unprofessional. The translation should simply be the Filipino word for "Close".
+The translation contains extraneous English text and punctuation ("(Do you mean: Close?) :") and gives two comma-separated words. It must be a short UI label matching the source, keep the ampersand mnemonic exactly once, and remove stray spaces.
 
 Correct translation:
-Isara
+&Isara
 ```
 
 <!-- cache_translation_check_tl_45d8b4a185cb8bbafab2277701ac00895b1f1eeba1f6d8c646e17500ec9bfdb7 -->
@@ -69,34 +85,30 @@ Correct translation:
 Piliin ang address kung saan ipapadala ang mga coin
 ```
 
-<!-- cache_translation_check_tl_f7f61c5a66f4a917e0277d2ce55104c191540f27277345457f8aede5adaab460 -->
+<!-- cache_translation_check_tl_aaacb1418985bd4b4f232c2c4593bdd39cc4c94f96f074c8f6c844dc0fc6228f -->
 ```
-        <source>Choose</source>
+        <source>C&amp;hoose</source>
         <translation>(do you mean: CHOOSE?) ;Pumili,Piliin.</translation>
     
 ERR
-The translation is problematic for several reasons:
-- It contains English meta-commentary ("(do you mean: CHOOSE?) ;") which is not appropriate in production software.
-- Multiple translations are listed without context ("Pumili,Piliin."). Only the correct one should be used based on the context.
-- There is an unnecessary semicolon and stray punctuation.
+The translation is problematic: it includes an English comment "(do you mean: CHOOSE?)", an emoticon/semicolon, extra punctuation, and two comma-separated synonyms. It also omits the required shortcut ampersand (&). Menu translations should be concise and include exactly one & to mark the shortcut key.
 
-Correct translation:
-Pumili
+Correct translation (with shortcut):
+&Pumili
+
+(Alternative: &Piliin)
 ```
 
-<!-- cache_translation_check_tl_2fa3e31f76eb75253bbaddda418d469686ad6fe7a1a82dcffa03d472fc924760 -->
+<!-- cache_translation_check_tl_25f494d248b437b515e04cbbb444d55b2dfbc6aa44fb075b16b575476ccd894a -->
 ```
-        <source>Copy Address</source>
-        <translation>Kopyahin ang ♦Address♦</translation>
+        <source>&amp;Copy Address</source>
+        <translation>&amp;Kopyahin ang ♦Address♦</translation>
     
 ERR
-The translation incorrectly includes the special characters "♦" around the word "Address", which are not present in the source and may confuse users. Also, "Address" should be translated to Filipino as "address" or "adres", unless referring to a specifically untranslated technical term—but in UI translations, "address" is often rendered as "address" for clarity in the Bitcoin context. There is no whitespace or format specifier issue.
+The translation contains stray decorative characters "♦" around "Address" which are incorrect. Also prefer lowercase "address" for consistency. The ampersand for the shortcut key is present exactly once (good) but ensure there is a single space after the verb.
 
 Correct translation:
-Kopyahin ang Address
-
-Alternatively, if "address" is to be localized:
-Kopyahin ang Adres
+&Kopyahin ang address
 ```
 
 <!-- cache_translation_check_tl_92ee6a77281da23df6c9704d3b53f54937123a9033392941def5cf299e4d2f78 -->
@@ -301,6 +313,33 @@ default na pitaka
 (Note: In Filipino UI, "default na pitaka" is standard, but sometimes "nakatalagang pitaka" or "pangunahing pitaka" can be used for "default wallet".)
 ```
 
+<!-- cache_translation_check_tl_d37a682b9e04ae5cedda823142dd5eef9186d028cc9bcabefcf0fcb4ee7daa86 -->
+```
+        <source>E&amp;xit</source>
+        <translation>♦E&amp;xit</translation>
+    
+ERR
+The translation contains an extraneous diamond character and leaves the menu label in English rather than Tagalog. The ampersand (&) shortcut exists exactly once (good), but the label should be properly translated.
+
+Suggested correct translation (Tagalog), preserving a single & for the shortcut:
+Lum&amp;abas
+```
+
+<!-- cache_translation_check_tl_896f284773c9266b766fea3364344015b126bc6ba6c8fb27477eb6ab11b15125 -->
+```
+        <source>About &amp;Qt</source>
+        <translation>Patungkol sa &amp;♦Qt♦</translation>
+    
+ERR
+The translation contains extraneous diamond characters (♦) around "Qt", which is incorrect. The ampersand (&) for the mnemonic should appear exactly once and there should be no extra punctuation or symbols.
+
+Correct translation (Tagalog):
+Patungkol sa &Qt
+
+(Alternative natural phrasing:
+Tungkol sa &Qt )
+```
+
 <!-- cache_translation_check_tl_998b9a966b99ba2693535dca1022d691895eeb6ead5cbed369688c9d9688a8ec -->
 ```
         <source>Modify configuration options for %1</source>
@@ -311,6 +350,21 @@ The word "configuration" should be translated to Filipino as "konpigurasyon" or 
 
 Correct translation:  
 Baguhin ang mga pagpipilian sa konpigurasyon para sa %1
+```
+
+<!-- cache_translation_check_tl_dd8bc376d861e9de3e87d460e7088d41d784507fb9c496755f89de2fff403c8a -->
+```
+        <source>&amp;Minimize</source>
+        <translation>Bawasan</translation>
+    
+ERR
+The translation misses the shortcut marker (&) and may not convey the GUI action clearly. It also lacks the required single "&" from the source.
+
+Suggested correction (include the ampersand exactly once):
+&Bawasan
+
+Alternatively, a clearer loanword form:
+&I-minimize
 ```
 
 <!-- cache_translation_check_tl_04b1c3ddd0aa0cac8552cfd3a9a8ef39150ff416d895b6e9c19231c1a8907cba -->
@@ -357,16 +411,43 @@ Correct translation:
 Palitan ang passphrase na ginamit para sa pag-encrypt ng pitaka
 ```
 
-<!-- cache_translation_check_tl_f724766031a37fd0c5f12604abcc675d6770bd1ce471165cb605333836de6b23 -->
+<!-- cache_translation_check_tl_972cfb7eeddd2b2b70756fdd9f652658d7cd25ee6b61286e5da445bd819f6bc0 -->
 ```
-        <source>Change Passphrase…</source>
-        <translation>Palitan ang ♦Passphrase♦...</translation>
+        <source>&amp;Encrypt Wallet…</source>
+        <translation>&amp;I-encrypt ang Pitaka</translation>
     
 ERR
-The translation introduces unnecessary symbols ("♦") around "Passphrase" and translates "…" (ellipsis) as "..." (three dots), which may not match interface conventions. Furthermore, "Passphrase" does not need to be surrounded by symbols. The word "Passphrase" is commonly left untranslated, but the translation should be clear and natural.
+Issues:
+- Missing ellipsis (…) at the end; the source includes an ellipsis.
+- Capitalization: "Pitaka" should be lowercase in typical UI text ("pitaka").
+- Hyphenation "I-encrypt" is acceptable in Tagalog but more consistent is "I-encrypt" kept; ensure spacing is correct.
+
+Correct translation suggestion:
+&I-encrypt ang pitaka…
+```
+
+<!-- cache_translation_check_tl_d740783b333e7d03cf8447a2b79ffcbb535068a930f6466286df9e2899ead06c -->
+```
+        <source>&amp;Change Passphrase…</source>
+        <translation>&amp;Palitan ang ♦Passphrase♦...</translation>
+    
+ERR
+The translation includes extraneous diamond characters (♦) around "Passphrase" which are not present in the source and are inappropriate. Also use the same ellipsis character as the source (…); the ampersand shortcut appears once which is correct.
 
 Correct translation:
-Palitan ang Passphrase…
+&Palitan ang passphrase…
+```
+
+<!-- cache_translation_check_tl_529baf17b38907284a6664e3602f24d5cb018ef8a65b955c77c3ee55f44ee08c -->
+```
+        <source>Sign &amp;message…</source>
+        <translation>Pirmahan &amp;magmensahe...</translation>
+    
+ERR
+The Tagalog is awkward/grammatically incorrect: "magmensahe" is not the correct noun form and there's no particle "ang" between verb and object. Also keep the ampersand present exactly once.
+
+Correct translation:
+Pirmahan ang &mensahe…
 ```
 
 <!-- cache_translation_check_tl_099f7bf1dace526e67f1335cf75d1b56631b17735c43ffa958a3e840dd718735 -->
@@ -381,52 +462,64 @@ Correct translation:
 Lagdaan ang mga mensahe gamit ang iyong mga Bitcoin address upang patunayan na ikaw ang may-ari ng mga ito
 ```
 
-<!-- cache_translation_check_tl_4eefc2850b888a06d5266c014d05e397778970f5a300787261ca9d7d5c1ab7e1 -->
+<!-- cache_translation_check_tl_2c1b4f6a274c0574e34c7cc836f23b0383c89d488ac6aa503f3e860a8d0f40d3 -->
 ```
-        <source>Load PSBT from file…</source>
-        <translation>I-load ang PSBT mula sa ♦file♦...</translation>
+        <source>&amp;Load PSBT from file…</source>
+        <translation>&amp;I-load ang PSBT mula sa ♦file♦...</translation>
     
 ERR
-The translation introduces '♦file♦', which is not present in the source. The ellipsis uses three dots '...' instead of the ellipsis character '…' from the source, and the format specifier should be preserved literally as in the source.
+The translation uses extraneous diamond characters (♦) around "file" which are inappropriate and introduce stray symbols. Also the source uses a single Unicode ellipsis (…), while the translation uses three ASCII dots; it's better to mirror the source punctuation. The ampersand exists exactly once and is fine, and there are no format specifiers.
 
 Correct translation:
-I-load ang PSBT mula sa file…
+&I-load ang PSBT mula sa file…
 ```
 
-<!-- cache_translation_check_tl_6c9a25fae523c92179cb4acb16ebd69290e8e7a9faa71013e7486aef5437d1a7 -->
+<!-- cache_translation_check_tl_7555326e0253e48d68abc8b2b9b82255a2cb03b593016960d10839fcfaf65e68 -->
 ```
-        <source>Open URI…</source>
-        <translation>Buksan ang ♦URL♦...</translation>
+        <source>Open &amp;URI…</source>
+        <translation>Buksan ang &amp;♦URL♦...</translation>
     
 ERR
-The translation introduces the symbols "♦" around "URL" which do not appear in the source and is non-standard. Also, the ellipsis should be the single Unicode character "…" not three dots ("..."). Furthermore, consistency with standard Filipino UI translations should use "Open" as "Buksan" but "URI" is often not localized. If translated, it would be "Buksan ang URI…"
+The translation uses extraneous diamond characters (♦) around "URL" and changes the shortcut/key marker position in a nonstandard way. The & shortcut should appear exactly once and the URI token should be preserved (or translated consistently). Also prefer the same ellipsis character.
 
 Correct translation:
-Buksan ang URI…
+Buksan ang &URI…
 ```
 
-<!-- cache_translation_check_tl_0fb081f3120c8c8f8abe5d285c583ba2f3d67bbd4d5bc62264c2a809397c4ffc -->
+<!-- cache_translation_check_tl_04056f8f31e0f5c165373a26ed1926b204a2bbd6fcb60d733ee423244b98f019 -->
 ```
-        <source>File</source>
-        <translation>♦File♦</translation>
+        <source>&amp;File</source>
+        <translation>&amp;♦File♦</translation>
     
 ERR
-The translation is problematic because it simply copies the English word "File" and adds unwanted characters (♦) around it, which is inappropriate and not a valid Filipino (tl) translation. Also, "File" as a menu item would typically be translated to "File" (retained in many UI contexts), or, if localization is needed, "File" in Filipino is "Talaksan".
+The translation contains extraneous decorative characters (♦) and keeps the English word without need; it must contain a single '&' for the shortcut and no stray characters or extra spacing.
 
-Correct translation:
-Talaksan
+Correct translation (remove the diamonds):
+&amp;File
 ```
 
-<!-- cache_translation_check_tl_77615ade3f200548bbe9ca0f802a2459b907c9c987c1ebceadee06d5a4122d08 -->
+<!-- cache_translation_check_tl_f1772ea88f5eb0c5b07a2d8a4a86b1ab60b02369199e880d68ec4899a1d80476 -->
 ```
-        <source>Settings</source>
-        <translation>Mga ♦Setting♦</translation>
+        <source>&amp;Settings</source>
+        <translation>Mga &amp;♦Setting♦</translation>
     
 ERR
-The translation includes non-standard characters "♦", which are not appropriate and may be considered spammy or erroneous in a UI context. Also, while "Setting" is sometimes left as-is in Filipino, the plural form "Mga Setting" is more appropriate, and the decorative symbols should be removed.
+The translation contains stray decorative characters (♦) around "Setting" which are inappropriate, and the translation mixes English without need. Also ensure there's exactly one ampersand (&) for the shortcut.
 
 Correct translation:
-Mga Setting
+&Mga Setting
+```
+
+<!-- cache_translation_check_tl_d997c81b7f6ebc33f6aaaf4ea029b0a6b8afe59efa128a603658980561ab2ef5 -->
+```
+        <source>&amp;Help</source>
+        <translation>&amp;Tulungan</translation>
+    
+ERR
+The Tagalog word "Tulungan" is a verb form ("to help" / "help each other") and is not the usual noun used for a Help menu. Use the noun "Tulong".
+
+Correct translation:
+&amp;Tulong
 ```
 
 <!-- cache_translation_check_tl_71bd7dc66fb75ad1409a38fe1ed156d497ea2389afd2b604947ba61b3426eb30 -->
@@ -497,16 +590,16 @@ Correct translation:
 Kumokonekta sa mga peer…
 ```
 
-<!-- cache_translation_check_tl_1dc35ed17492f4a6d33d881624e5db18facdc562877947f06aa01a7dd1ca2ef6 -->
+<!-- cache_translation_check_tl_946f3064fdcf47ed965c26af56d9d3ac99cacd23e7b7193047bc77b5dbaf8ed3 -->
 ```
-        <source>Command-line options</source>
-        <translation>♦Command-line♦ na mga pagpipilian</translation>
+        <source>&amp;Command-line options</source>
+        <translation>&amp;♦Command-line♦ na mga pagpipilian</translation>
     
-ERR  
-The translation includes extraneous characters ("♦") at the start and around "Command-line", which are not present in the source and are unwanted. The phrase "Command-line" should be translated appropriately to Filipino/Tagalog if possible.
+ERR
+The translation contains extraneous ♦ characters around "Command-line", leaves the English term untranslated, and uses incorrect word order ("na mga pagpipilian" is wrong here). The ampersand (&) exists once (good) but should remain with a proper Tagalog phrasing. No format specifiers to check.
 
-Correct translation:  
-Mga pagpipilian sa command-line
+Correct translation (preserving a single & for the shortcut):
+&Mga pagpipilian sa command-line
 ```
 
 <!-- cache_translation_check_tl_83998df7dc9623c396fb00945729e528a386fd8b1f548b352d7d3e4705da69ae -->
@@ -537,28 +630,18 @@ Correct translation:
 I-load ang Bahagyang Napirmahang Transaksyong Bitcoin mula sa clipboard
 ```
 
-<!-- cache_translation_check_tl_98e05599392772861ff5e902b2f73d10d9152621323bf6a86dd262d9866f9840 -->
+<!-- cache_translation_check_tl_431641aaed55df0e75db64cbacd8a91ba7e9fb1004ae631332fba63e27be77f8 -->
 ```
-        <source>Sending addresses</source>
-        <translation>Pagpapadalhan na mga ♦address♦</translation>
+        <source>&amp;Sending addresses</source>
+        <translation>&amp;Pagpapadalhan na mga ♦address♦</translation>
     
 ERR
-The translation is problematic due to the unnecessary addition of "na" and the use of special symbols ♦ which are not present in the source. The translation should be simple, straightforward, and free of extraneous formatting or words. Also, "address" should usually just be "address," as it is commonly used untranslated in Filipino IT/crypto contexts, or "mga address" if pluralization is preferred.
+The translation contains extraneous diamond characters (♦) around "address" and the Tagalog phrasing is awkward. The ampersand is present once (OK) but the marker characters must be removed and the phrase should read naturally in Tagalog.
 
-Correct translation:
-Mga address na padadalhan
-```
-
-<!-- cache_translation_check_tl_9124a7b647cc646a0d84a0b5820c1df5eb248ead5a5d7c75919894d892e21987 -->
-```
-        <source>Receiving addresses</source>
-        <translation>Pagtatanggapan na mga ♦address♦</translation>
-    
-ERR
-The translation uses "Pagtatanggapan na mga ♦address♦", which is awkward and includes untranslated English word "address" with special characters. The proper Filipino word for "addresses" should be used, and "receiving addresses" can be translated more naturally.
-
-Correct translation:
-Mga address ng pagtanggap
+Correct translation (suggestions):
+&Mga address ng pagpapadala
+or
+&Mga address para sa pagpapadala
 ```
 
 <!-- cache_translation_check_tl_ad4ee142c4a1c914a8341da8fbd15416768d0fd9b629cbfc0dcdcbbe81a9c8b8 -->
@@ -583,6 +666,32 @@ The translation mixes English and Filipino unnecessarily ("tumulong sa mensahe",
 
 Correct translation:
 Ipakita ang mensahe ng tulong ng %1 upang makakuha ng listahan ng mga posibleng pagpipilian sa command-line ng Bitcoin
+```
+
+<!-- cache_translation_check_tl_c8d35d42de50ca488ec20e6d95c916640ac8619c409b7ae1789cdfd53612c0f0 -->
+```
+        <source>&amp;Mask values</source>
+        <translation>&amp;♦Mask♦ na mga halaga</translation>
+    
+ERR
+The translation contains extra decorative characters (♦) and leaves the English word "Mask" untranslated. Also the ampersand is present but should be the only special marker; keep only one & and no stray symbols.
+
+Correct translation (Tagalog), keeping a single & for the shortcut:
+&Itago ang mga halaga
+
+(Alternative phrasing: &Takpan ang mga halaga)
+```
+
+<!-- cache_translation_check_tl_ffda83d8eff69f93d0c67ec73239ed96eeb7e84cefb272ae525ab4c66b633772 -->
+```
+        <source>&amp;Window</source>
+        <translation>&amp;♦Window♦</translation>
+    
+ERR
+The translation includes extraneous diamond characters ("♦") and leaves the word untranslated. The ampersand shortcut exists but should be used with a proper Tagalog word and no extraneous characters.
+
+Correct translation:
+&amp;Bintana
 ```
 
 <!-- cache_translation_check_tl_32fb836ae44b9007189be9a6af331fad3208eed45ebbf099c106a551de9e805a -->
@@ -693,24 +802,54 @@ Correct translation:
 Natanggap sa address
 ```
 
-<!-- cache_translation_check_tl_8b998371fdb18b91ab7231c559531349ce14e29252288935b88597596296ec4b -->
+<!-- cache_translation_check_tl_35a68a61f3473d0800c667220e4d538ec6130efd6fed892cf04f0fc0ba130644 -->
 ```
-        <source>Copy address</source>
-        <translation>Kopyahin ang ♦address♦</translation>
+        <source>&amp;Copy address</source>
+        <translation>&amp;Kopyahin ang ♦address♦</translation>
     
-ERR The translation "Kopyahin ang ♦address♦" is problematic. The word "address" is untranslated, and the use of "♦" is unnecessary and incorrect in this context. 
+ERR
+The translation includes extraneous decorative characters (♦) around "address" and keeps the English word without need; remove the diamonds. Also ensure the single '&' is present (it is) and placed where desired for the shortcut.
 
 Correct translation:
-Kopyahin ang address
+&amp;Kopyahin ang address
+```
 
-If you want a more natural translation, you can use:
-Kopyahin ang address
+<!-- cache_translation_check_tl_3fe5aed3d9bd026124dddb3e8a7c7e0ed9875416255bea843fa05c3dd7c7a1ab -->
+```
+        <source>Copy &amp;label</source>
+        <translation>&amp;Kopyahin ang &amp;tatak</translation>
+    
+ERR
+The translation contains two '&' shortcut markers ("&Kopyahin ang &tatak"). There should be exactly one '&' in the string. Also the Tagalog word "tatak" is acceptable but "label" could be used as well.
 
-Or, if you want to translate "address" as "address ng pitaka" ("wallet address"):
-Kopyahin ang address
+Corrected translation examples (choose one shortcut placement):
+Kopyahin ang &tatak
+or
+&Kopyahin ang tatak
+```
 
-But strictly for "Copy address", the accurate "tl" is:
-Kopyahin ang address
+<!-- cache_translation_check_tl_732abd53498f202a2ba8e4635948e8a607459520765da2a08e79365be0c43be6 -->
+```
+        <source>L&amp;ock unspent</source>
+        <translation>&amp;I-lock ang hindi nagastos</translation>
+    
+ERR
+The translation mixes English and Tagalog awkwardly, uses an unnecessary hyphen after "I", and has inconsistent capitalization. The ampersand exists but should be placed once before the shortcut letter in the translated word; also the noun should be pluralized to match "unspent" outputs.
+
+Suggested correction:
+&I-lock ang mga hindi nagastos
+```
+
+<!-- cache_translation_check_tl_041b29f1331a389c8dbb29d7a154ee1e08ae14741f6261f786d4f9589181a341 -->
+```
+        <source>&amp;Unlock unspent</source>
+        <translation>&amp;I-unlock ang hindi nagastos</translation>
+    
+ERR
+The translation is understandable but slightly unnatural: it mixes English/Tagalog morphology and misses the plural marker. Also using "nagastos" is okay but "nagamit" (not used) is more common for unspent outputs. Maintain the single &.
+
+Suggested correction:
+&amp;I-unlock ang mga hindi nagamit
 ```
 
 <!-- cache_translation_check_tl_673cc0fb2a849c6945dad72ba1089f4f4c15b03f8d6643f7c88f86b9abed0552 -->
@@ -864,19 +1003,16 @@ Correct translation:
 Ang address na kaugnay ng entry na ito sa listahan ng address. Maaari lamang itong baguhin para sa mga address na gagamitin sa pagpapadala.
 ```
 
-<!-- cache_translation_check_tl_92ee6a77281da23df6c9704d3b53f54937123a9033392941def5cf299e4d2f78 -->
+<!-- cache_translation_check_tl_28bc8356e451990ccc504aab3bb0e3f969d12657470ca7d411f9b70c66b6d69b -->
 ```
-        <source>Address</source>
-        <translation>♦Address♦</translation>
+        <source>&amp;Address</source>
+        <translation>&amp;♦Address♦</translation>
     
 ERR
-The translation is problematic: the inclusion of "♦" symbols is unnecessary and was not present in the original source. The word "Address" should be translated into Filipino (Tagalog) if an appropriate term exists, or left as is if it's commonly used untranslated in the technical context, but without extraneous symbols.
+The translation contains extraneous decorative characters ("♦") and leaves the word in English. The ampersand (shortcut marker) is present but should be kept exactly once without additional symbols.
 
-Correct translation:
-Address
-
-Or, if a Filipino translation is appropriate:
-Adres
+Correct translation (Tagalog):
+&amp;Alamat
 ```
 
 <!-- cache_translation_check_tl_1af09f24e32f9e00da1ee44ee8dd74aeb613e190d1e7b08c21fe638a9b1fa5dd -->
@@ -993,78 +1129,153 @@ Correct translation:
 Hindi bababa sa %1 GB ng data ang itatago sa direktoryong ito, at madaragdagan pa ito habang tumatagal.
 ```
 
-<!-- cache_translation_check_tl_24ae433f5d824b80229dca9a349a4b99545dc87d8d2f52d955faf2550e9d7866 -->
+<!-- cache_translation_check_tl_2efc80aec9c1c88c1c7e0b77fcff50b6a5c2b8f5d3ca7c5040f54c04a93b794d -->
 ```
-        <source>Size of database cache</source>
-        <translation>Laki ng ♦database cache♦</translation>
+        <source>&amp;Main</source>
+        <translation>&amp;♦Main♦</translation>
     
 ERR
-The translation "Laki ng ♦database cache♦" is problematic because it inappropriately uses the English phrase "database cache" without translation or explanation. Additionally, the diamond symbols (♦) are not present in the source and are unnecessary.
+The translation includes extraneous decorative characters ("♦") and leaves the label in English. For Tagalog (tl) it should be a plain translated label with a single ampersand for the shortcut.
 
 Correct translation:
-Laki ng cache ng database
+&amp;Pangunahing
 ```
 
-<!-- cache_translation_check_tl_d411348dec9fb4d8c16806a016aec296efa39acd8dcdd5f0841694af2fb48a10 -->
+<!-- cache_translation_check_tl_33be41216d236d42d02d80133b287b6ab76ea80d7f311616838b09cc302a784e -->
 ```
-        <source>Number of script verification threads</source>
-        <translation>Bilang ng ♦script♦ pagpapatunay na mga ♦threads♦</translation>
+        <source>&amp;Start %1 on system login</source>
+        <translation>&amp;Simulan %1 sa pag-login sa sistema</translation>
     
 ERR
-The translation improperly uses English words "script" and "threads" enclosed in symbols (♦), which is not standard and may confuse users. In Filipino ("tl"), technical terms like "script" and "threads" are sometimes borrowed, but not marked with special symbols, and the word order could be improved.
+The Tagalog is understandable but slightly ungrammatical/missing the article. Also a more natural phrasing is preferred.
 
 Correct translation:
-Bilang ng mga thread para sa pagpapatunay ng script
+&Simulan ang %1 sa pag-login ng sistema
 ```
 
-<!-- cache_translation_check_tl_94212e31e34a6ba6c5d1902ec5e27d710e00822f10c6dfbdb806fed78af49797 -->
+<!-- cache_translation_check_tl_6c9839a7d881adf9995933376753cdb5d2e657b615b96eae528f157862c4b438 -->
 ```
-        <source>Network</source>
-        <translation>♦Network♦</translation>
+        <source>Size of &amp;database cache</source>
+        <translation>Laki ng &amp;♦database cache♦</translation>
     
 ERR
-The translation is problematic. The Tagalog ('tl') translation is simply the English word "Network" with decorative characters (♦) added, which are not present in the original source. This addition is unwarranted and constitutes a format issue.
+The translation includes stray ♦ characters and leaves the English phrase "database cache" awkwardly formatted. The ampersand shortcut should appear exactly once and not be HTML-escaped; the diamonds must be removed. A natural Tagalog rendering:
 
 Correct translation:
-Network
-
-Alternatively, if you prefer a direct Tagalog translation (though English terms are often used in computing contexts in the Philippines):
-
-Correct translation:
-Ugnayan (but "Network" is commonly retained)
-
-So the best choice for software UI is just:
-Network
+Laki ng cache ng &database
 ```
 
-<!-- cache_translation_check_tl_e99df2a14b804dc61030a0a291e1f3b0c30b444cfa77b5e863b8447288132009 -->
+<!-- cache_translation_check_tl_6254c2caa88053974101ecacba88e3717359354b87e1659584d1b43e7b9b0b35 -->
 ```
-        <source>Prune block storage to</source>
-        <translation>Putulan i-block ang imbakan sa</translation>
+        <source>Number of script &amp;verification threads</source>
+        <translation>Bilang ng ♦script♦ &amp;pagpapatunay na mga ♦threads♦</translation>
     
 ERR
-The translation "Putulan i-block ang imbakan sa" is awkward and not entirely accurate. The verb "putulan" is not the commonly used term for "prune" in this technical context, and the structure is unnatural in Filipino. 
-
-A better, more natural and clear translation would be:
-"Putulin ang storage ng block sa"
+The translation contains extraneous ♦ characters and uses the HTML entity "&amp;" instead of a single '&' for the shortcut. Word order / pluralization is awkward. There are no format specifiers to preserve.
 
 Correct translation:
-Putulin ang storage ng block sa
+Bilang ng mga thread para sa &pagpapatunay ng script
 ```
 
-<!-- cache_translation_check_tl_0ad745d1f84d94299c76ffc18d37ddca32f812f84aff50a6cd3f15fc6ad93afc -->
+<!-- cache_translation_check_tl_7e8f49def51dd97387212d8d7ba84e108285bb0ec07b5d836e4bc2fbd70fcfc3 -->
 ```
-        <source>External signer script path</source>
-        <translation>Panlabas na ♦signer script♦ na daanan</translation>
+        <source>&amp;Reset Options</source>
+        <translation>Mga pagpipilian sa &amp;Pag-reset</translation>
     
 ERR
-The translation is somewhat awkward and contains the phrase "♦signer script♦" which appears to be a placeholder or markup rather than a translation. The use of "daanan" for "path" is acceptable but could be improved for clarity.
+The Tagalog is awkward and literal ("Mga pagpipilian sa Pag-reset" = "Options of Reset") rather than a natural UI phrase. Also word order should be imperative like the English menu item. Keep exactly one & for the shortcut.
+
+Correct translations (choose one):
+&I-reset ang mga pagpipilian
+&I-reset ang mga setting
+```
+
+<!-- cache_translation_check_tl_f2ff690274a8da46342d765b10c8c77d559cfd37bf1559c73d90210f79320bb6 -->
+```
+        <source>&amp;Network</source>
+        <translation>&amp;♦Network♦</translation>
+    
+ERR
+The translation includes extraneous diamond characters (♦) and leaves the English word "Network" unchanged; the diamonds are inappropriate. The ampersand should appear exactly once to mark the shortcut key and no stray characters or extra whitespace should be present.
+
+Correct translation examples (choose one appropriate for the UI):
+- Keep English label: &Network
+- Tagalog translation: &Ugnayan
+```
+
+<!-- cache_translation_check_tl_5e1df30b9271279f04244a4c003a04ebf606616be1018ba5255fa7263ed11a4f -->
+```
+        <source>Prune &amp;block storage to</source>
+        <translation>Putulan &amp;i-block ang imbakan sa</translation>
+    
+ERR
+The Tagalog is awkward and contains "i-block" (nonsensical) and incorrect word order. The accelerator (&) should appear exactly once and can be placed before "block" but the phrase should read naturally.
 
 Correct translation:
-Panlabas na landas ng signer script
+Putulin ang imbakan ng &block sa
+```
 
-Or, more fluently:
-Landas ng panlabas na signer script
+<!-- cache_translation_check_tl_81bb2f53678f149d7baaf5e86f50ec3db912a9db832106efff7dec54fa0bf8ed -->
+```
+        <source>Enable coin &amp;control features</source>
+        <translation>I-enable ang pag-control na mga tampok ng ♦coin♦ </translation>
+    
+ERR
+The translation is problematic: it mixes English and Filipino awkwardly ("I-enable ang pag-control"), uses decorative ♦ characters around "coin", omits the required '&' shortcut indicator, and has trailing whitespace. 
+
+Correct translation:
+Paganahin ang mga tampok ng coin &kontrol
+```
+
+<!-- cache_translation_check_tl_32f43ba4ce964995e2e368d3cf61b7d39c91e233d78c0ff9fa1cc34a8bbb33c5 -->
+```
+        <source>&amp;Spend unconfirmed change</source>
+        <translation>&amp;Gumastos ng hindi nakumpirmang pagbabago</translation>
+    
+ERR
+The translation uses "pagbabago" (which means "change" as in "modification") instead of "sukli" (change/coin return) and is slightly unnatural. Also better to include "pa" for "unconfirmed" (literally "not yet confirmed"): "hindi pa nakumpirma" or "hindi pa nakumpirmang". Keep the & once.
+
+Correct translation:
+&Gumastos ng hindi pa nakumpirmang sukli
+```
+
+<!-- cache_translation_check_tl_49be57f6859d5653a527c42af2ca8bdb842d1aab0232c70ab4019ea4b2625131 -->
+```
+        <source>&amp;External signer script path</source>
+        <translation>&amp;Panlabas na ♦signer script♦ na daanan</translation>
+    
+ERR
+The translation contains extraneous ♦ characters and awkward wording. The ampersand is present once (OK), but the phrase should not include decorative symbols and the noun order can be improved for natural Tagalog.
+
+Correct translation:
+&Panlabas na landas ng script ng tagapirma
+```
+
+<!-- cache_translation_check_tl_64b680a45bf49c25d0b69de8371d1ee73d4dc24f103bc421add18ff8e174463e -->
+```
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>&amp;Kumonketa sa pamamagitan ng ♦SOCKS5 proxy (default proxy)♦:</translation>
+    
+ERR
+Problems:
+- The Tagalog word "Kumonketa" is misspelled; correct is "Kumonekta".
+- The translation includes stray ♦ characters around "SOCKS5 proxy" which are incorrect.
+- "default proxy" is left in English; better to translate as "default na proxy" (or keep as-is if desired), but it must be clean.
+
+Correct translation:
+&Kumonekta sa pamamagitan ng SOCKS5 proxy (default na proxy):
+```
+
+<!-- cache_translation_check_tl_ffda83d8eff69f93d0c67ec73239ed96eeb7e84cefb272ae525ab4c66b633772 -->
+```
+        <source>&amp;Window</source>
+        <translation>&amp;♦Window♦</translation>
+    
+ERR
+The translation includes extraneous diamond characters ("♦") and leaves the word untranslated. The ampersand shortcut exists but should be used with a proper Tagalog word and no extraneous characters.
+
+Correct translation:
+&amp;Bintana
 ```
 
 <!-- cache_translation_check_tl_3a9506a5a2a00325c007490fcf76a36f2bd3ada4df864a940ece4283ac64885c -->
@@ -1083,42 +1294,43 @@ Correct translation:
 Na-compile nang walang suporta para sa panlabas na pagpirma (kinakailangan para sa panlabas na pagpirma)
 ```
 
-<!-- cache_translation_check_tl_09251f95f3c3a8e78ac73fe9f7b4e8193df10e409fed3254c270988f08ccfc15 -->
+<!-- cache_translation_check_tl_ed22f36927aad358fa094cb9d5cb00b062e3485a502ac0f00508b0b07c698c05 -->
 ```
-        <source>Copy address</source>
+        <source>&amp;Copy address</source>
         <extracomment>Context menu action to copy the address of a peer.</extracomment>
-        <translation>Kopyahin ang ♦address♦</translation>
+        <translation>&amp;Kopyahin ang ♦address♦</translation>
     
 ERR
-The translation "Kopyahin ang ♦address♦" is problematic. The placeholder "♦address♦" is not a proper translation; it should translate "address" as "address" or "adres" in Filipino/Tagalog, but without the special characters. The correct translation is:
+The translation contains extraneous diamond characters (♦) around "address", which are incorrect. The ampersand for the shortcut is present once (good). Also consider using the common Tagalog/Filipino word for address if desired.
 
 Correct translation:
-Kopyahin ang address
-
-Alternatively, if "address" should be perfectly localized:  
-Kopyahin ang adres
-
-However, "address" is often left untranslated in Filipino tech contexts. The use of special characters is unnecessary and incorrect.
+&amp;Kopyahin ang address
 ```
 
-<!-- cache_translation_check_tl_8b998371fdb18b91ab7231c559531349ce14e29252288935b88597596296ec4b -->
+<!-- cache_translation_check_tl_35a68a61f3473d0800c667220e4d538ec6130efd6fed892cf04f0fc0ba130644 -->
 ```
-        <source>Copy address</source>
-        <translation>Kopyahin ang ♦address♦</translation>
+        <source>&amp;Copy address</source>
+        <translation>&amp;Kopyahin ang ♦address♦</translation>
     
-ERR The translation "Kopyahin ang ♦address♦" is problematic. The word "address" is untranslated, and the use of "♦" is unnecessary and incorrect in this context. 
+ERR
+The translation includes extraneous decorative characters (♦) around "address" and keeps the English word without need; remove the diamonds. Also ensure the single '&' is present (it is) and placed where desired for the shortcut.
 
 Correct translation:
-Kopyahin ang address
+&amp;Kopyahin ang address
+```
 
-If you want a more natural translation, you can use:
-Kopyahin ang address
+<!-- cache_translation_check_tl_3fe5aed3d9bd026124dddb3e8a7c7e0ed9875416255bea843fa05c3dd7c7a1ab -->
+```
+        <source>Copy &amp;label</source>
+        <translation>&amp;Kopyahin ang &amp;tatak</translation>
+    
+ERR
+The translation contains two '&' shortcut markers ("&Kopyahin ang &tatak"). There should be exactly one '&' in the string. Also the Tagalog word "tatak" is acceptable but "label" could be used as well.
 
-Or, if you want to translate "address" as "address ng pitaka" ("wallet address"):
-Kopyahin ang address
-
-But strictly for "Copy address", the accurate "tl" is:
-Kopyahin ang address
+Corrected translation examples (choose one shortcut placement):
+Kopyahin ang &tatak
+or
+&Kopyahin ang tatak
 ```
 
 <!-- cache_translation_check_tl_673cc0fb2a849c6945dad72ba1089f4f4c15b03f8d6643f7c88f86b9abed0552 -->
@@ -1133,39 +1345,42 @@ Correct translation:
 Kopyahin ang bytes
 ```
 
-<!-- cache_translation_check_tl_8b998371fdb18b91ab7231c559531349ce14e29252288935b88597596296ec4b -->
+<!-- cache_translation_check_tl_35a68a61f3473d0800c667220e4d538ec6130efd6fed892cf04f0fc0ba130644 -->
 ```
-        <source>Copy address</source>
-        <translation>Kopyahin ang ♦address♦</translation>
-    
-ERR The translation "Kopyahin ang ♦address♦" is problematic. The word "address" is untranslated, and the use of "♦" is unnecessary and incorrect in this context. 
-
-Correct translation:
-Kopyahin ang address
-
-If you want a more natural translation, you can use:
-Kopyahin ang address
-
-Or, if you want to translate "address" as "address ng pitaka" ("wallet address"):
-Kopyahin ang address
-
-But strictly for "Copy address", the accurate "tl" is:
-Kopyahin ang address
-```
-
-<!-- cache_translation_check_tl_e59785ae44d2b039c9835eed9786b0d5ed31a447d8572c58a0585e2902aee269 -->
-```
-        <source>Copy transaction ID</source>
-        <translation>Kopyahin ang transaksyon  ng ♦ID♦</translation>
+        <source>&amp;Copy address</source>
+        <translation>&amp;Kopyahin ang ♦address♦</translation>
     
 ERR
-The translation is problematic because:
-1. The original "transaction ID" should be "ID ng transaksyon" or "transaksyon ID" in Filipino. 
-2. There is an unnecessary space before "ng".
-3. The use of "♦ID♦" is odd and could be confusing or introduce unwanted content.
+The translation includes extraneous decorative characters (♦) around "address" and keeps the English word without need; remove the diamonds. Also ensure the single '&' is present (it is) and placed where desired for the shortcut.
 
 Correct translation:
-Kopyahin ang ID ng transaksyon
+&amp;Kopyahin ang address
+```
+
+<!-- cache_translation_check_tl_3fe5aed3d9bd026124dddb3e8a7c7e0ed9875416255bea843fa05c3dd7c7a1ab -->
+```
+        <source>Copy &amp;label</source>
+        <translation>&amp;Kopyahin ang &amp;tatak</translation>
+    
+ERR
+The translation contains two '&' shortcut markers ("&Kopyahin ang &tatak"). There should be exactly one '&' in the string. Also the Tagalog word "tatak" is acceptable but "label" could be used as well.
+
+Corrected translation examples (choose one shortcut placement):
+Kopyahin ang &tatak
+or
+&Kopyahin ang tatak
+```
+
+<!-- cache_translation_check_tl_939fd7accf0647a1f0d70c6de38d968449199c390fbb98066ec2dce5033f31e3 -->
+```
+        <source>Copy transaction &amp;ID</source>
+        <translation>Kopyahin ang transaksyon  ng &amp;♦ID♦</translation>
+    
+ERR
+The translation contains extraneous ♦ characters around "ID" and has a double space before "ng". The & (shortcut marker) should appear exactly once and there should be no stray symbols.
+
+Correct translation:
+Kopyahin ang &ID ng transaksyon
 ```
 
 <!-- cache_translation_check_tl_92ee6a77281da23df6c9704d3b53f54937123a9033392941def5cf299e4d2f78 -->
@@ -1182,6 +1397,20 @@ Address
 Or, if a Filipino translation is appropriate:
 Adres
 ```
+
+<!-- cache_translation_check_tl_5ccf4ffb280b241960dcfab468483390cea44bf82a0c124f21d2d5c58504b4e7 -->
+```
+        <source>default wallet</source>
+        <translation>pitaka na ♦default♦</translation>
+    
+ERR  
+The translation is problematic. "pitaka na ♦default♦" uses mixed language ("pitaka" is Tagalog for "wallet", but "default" is just kept in English, surrounded by decorative symbols "♦"). This is neither standard nor idiomatic in Filipino. Also, the "na" particle is unnecessary. The correct translation should be:
+
+Correct translation:  
+default na pitaka
+
+(Note: In Filipino UI, "default na pitaka" is standard, but sometimes "nakatalagang pitaka" or "pangunahing pitaka" can be used for "default wallet".)
+```
 </details>
 
-Number of issues: 85.
+Number of issues: 106.

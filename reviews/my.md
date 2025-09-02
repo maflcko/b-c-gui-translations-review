@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>my</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bmy%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bmy%5D%20request)
 
 
 <!-- cache_translation_check_my_3ba9a7a2d1908ebca0904c46cf7232b18b052f48758494e45036cd1d06360e09 -->

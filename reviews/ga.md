@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>ga</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bga%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bga%5D%20request)
 
 
 <!-- cache_translation_check_ga_a76f02c2625faa3c26bf62a305ec068da9a05b182f189ebbf2a0015e2c7e887e -->
@@ -20,6 +20,46 @@ The translation is inaccurate. "Comhad athróige camógdheighilte" means "variab
 
 Correct translation:
 Comhad camógscartha
+```
+
+<!-- cache_translation_check_ga_2070d76dae35fbcddd0c442798ac9506e86e9b8a34c623ff5bec7102f214bc0e -->
+```
+        <source>There was an error trying to save the address list to %1. Please try again.</source>
+        <extracomment>An error message. %1 is a stand-in argument for the name of the file we attempted to save to.</extracomment>
+        <translation>Tharla earráid ag iarraidh an liosta seoltaí a shábháil go %1. Bain triail eile, le d'thoil.</translation>
+    
+ERR
+The Irish has small grammatical and style issues and a punctuation error. "ag iarraidh" is awkward for "trying" (use "iarracht á déanamh" or "nuair a rinneadh iarracht"), and "le d'thoil" is incorrect—should be "le do thoil" (no apostrophe). %1 is used correctly.
+
+Corrected translation:
+Tharla earráid agus iarracht á déanamh an liosta seoltaí a shábháil go %1. Déan iarracht arís, le do thoil.
+```
+
+<!-- cache_translation_check_ga_e055956e0669a30c9024f71ac27ca71e2a608f0ad4298a803f9ba5f82ec873db -->
+```
+        <source>Sending addresses - %1</source>
+        <translation>Seoltaí á seoladh - %1</translation>
+    
+ERR
+The Irish translation "Seoltaí á seoladh - %1" is awkward/unnatural Irish. A more natural rendering of "Sending addresses - %1" would be:
+
+Seoltaí ag seoladh - %1
+
+(Alternatively, if the meaning is "addresses to send to" you could use "Seoltaí le seoladh - %1".)
+```
+
+<!-- cache_translation_check_ga_fbbd49736bb3a0aadcc535930d40b12e1e7c96df21eb7e79e034197e16d65fa9 -->
+```
+        <source>Receiving addresses - %1</source>
+        <translation>Seoltaí á bhfáil - %1</translation>
+    
+ERR
+The phrase "Seoltaí á bhfáil - %1" is unidiomatic in Irish. The format specifier "%1" is preserved correctly, and there are no whitespace issues, but "á bhfáil" is not the natural way to render "Receiving" here.
+
+Suggested correction:
+Seoltaí a fhaightear - %1
+
+(Alternatively: "Seoltaí ag fáil - %1" could be used, but "Seoltaí a fhaightear - %1" is more natural.)
 ```
 
 <!-- cache_translation_check_ga_3fbf62e4aafbf3e42b3d85ba07d24d2252389dd42aaed59d53e6f25908378c1b -->
@@ -48,6 +88,33 @@ ERR
 
 Correct translation:
 IP/masc líonra
+```
+
+<!-- cache_translation_check_ga_04538a2aab8ad386e78491dedb230668129647f9e8b47f48c3231b94e8494b49 -->
+```
+        <source>Settings file %1 might be corrupt or invalid.</source>
+        <translation>Seans go bhfuil comhad socruithe %1 truaillithe nó neamhbhailí.</translation>
+    
+ERR
+The translation is understandable but slightly awkward/colloquial in Irish. A more natural phrasing uses "B'fhéidir" or "D'fhéadfadh ... a bheith". The format specifier %1 is preserved correctly.
+
+Suggested correction:
+B'fhéidir go bhfuil comhad socruithe %1 truaillithe nó neamhbhailí.
+
+Or:
+D'fhéadfadh comhad socruithe %1 a bheith truaillithe nó neamhbhailí.
+```
+
+<!-- cache_translation_check_ga_5709d6f7b45f429e07f32fffd3b9a3726400768b630b8b7598b995a9e3a62a6b -->
+```
+        <source>An internal error occurred. %1 will attempt to continue safely. This is an unexpected bug which can be reported as described below.</source>
+        <translation>Tharla earráid inmheánach. Déanfaidh %1 iarracht leanúint ar aghaidh go sábháilte. Is fabht gan choinne é seo ar féidir a thuairisciú mar a thuairiscítear thíos.</translation>
+    
+ERR
+The Irish sentence "Is fabht gan choinne é seo ar féidir a thuairisciú mar a thuairiscítear thíos." is slightly ungrammatical: the verb construction "ar féidir a thuairisciú" is missing the object pronoun and the phrase is awkward. %1 is preserved correctly.
+
+Corrected translation:
+Tharla earráid inmheánach. Déanfaidh %1 iarracht leanúint ar aghaidh go sábháilte. Is fabht gan choinne é seo agus is féidir é a thuairisciú mar a mhínítear thíos.
 ```
 
 <!-- cache_translation_check_ga_35ce3e95966fdd3e569b5f5ec2779e077dfd87065cf721a3fc05fc214bef7235 -->
@@ -128,22 +195,16 @@ Correct translation:
 Taispeáin an liosta de na seoltaí glacadh a úsáideadh agus lipéid
 ```
 
-<!-- cache_translation_check_ga_dde248ac6ef0c8631ece76c08a962da5af981093ee819c9aeebbb18bda2a8fe5 -->
+<!-- cache_translation_check_ga_04e25357b9ac5d8ea3b71e252ab44f23bfe1ecb661ddebb328d2250184589aa3 -->
 ```
-        <source>Sending addresses</source>
-        <translation>Seoltaí seoladh</translation>
+        <source>&amp;Sending addresses</source>
+        <translation>&amp;Seoltaí seoladh</translation>
     
 ERR
-The translation is erroneous. "Seoltaí seoladh" is incorrect and redundant ("seoltaí" is plural of "seoladh", and "seoladh" means "address"). The correct translation for "Sending addresses" (i.e., addresses from which coins are sent) is:
-
-Seoltaí seolta (or) Seoltaí seolta amach
-
-However, a more idiomatic and widely accepted translation would be:
-
-Seoltaí seolta
+The translation is problematic: "Seoltaí seoladh" is redundant and incorrect. "Seoltaí" means "addresses" and "seoladh" means "address," but the combination is inaccurate for "Sending addresses." The correct translation in Irish would be "&Seoltaí seolta" or "&Seoltaí Seolta". 
 
 Correct translation:
-Seoltaí seolta
+&Seoltaí seolta
 ```
 
 <!-- cache_translation_check_ga_c404e8d632f955f20538c55725a2cb700f45401c9b277a0cb8ce5b188e534a08 -->
@@ -158,16 +219,16 @@ Correct translation:
 %1 cliant
 ```
 
-<!-- cache_translation_check_ga_a1b107b1ba2b95857e97ec56fcce447d8fac6daa36c6f4d42f41551c3d49ea06 -->
+<!-- cache_translation_check_ga_b3a4d3e16cfb22170ee3731d15a295985c684c00f55bfd488ec3fcc35d7ed427 -->
 ```
-        <source>Show</source>
-        <translation>Sconas</translation>
+        <source>S&amp;how</source>
+        <translation>S&amp;conas</translation>
     
 ERR
-The translation "Sconas" is incorrect for "Show" in Irish ('ga'). "Sconas" is not the correct Irish term for "show".
+The translation "Sconas" does not accurately represent the English "Show." The correct Irish (ga) translation for "Show" is "Taispeáin." The "&" for the shortcut key is used correctly.
 
 Correct translation:
-Taispeáin
+Taispeá&in
 ```
 
 <!-- cache_translation_check_ga_dd1e7dfd96cdcd3d16e2fd27f51da47248d6e6db97ee9537d326ff4820328d01 -->
@@ -194,18 +255,6 @@ Correct translation:
 Faighte le seoladh
 
 This places "Faighte" ("Received") at the front, mirroring the English structure and typical Irish phrasing.
-```
-
-<!-- cache_translation_check_ga_2991e6a538c99d30a25eed0362f86c488380d59df3bbc4695bda8d3f8a6892e8 -->
-```
-        <source>Copy transaction ID and output index</source>
-        <translation>Cóipeáil idirbheart  ID agus innéacs aschuir</translation>
-    
-ERR
-There is a spacing error in the translation: "idirbheart  ID" has a double space between "idirbheart" and "ID". Also, in Irish, "ID" can often remain untranslated as an acronym, but it is clearer to format as "ID idirbhirt" (transaction ID). The translation could be more idiomatic and clearer.
-
-Correct translation:
-Cóipeáil ID idirbhirt agus innéacs aschuir
 ```
 
 <!-- cache_translation_check_ga_f76515df9b1327b7dff3c27143b961a7b5039149a0885aa08c6c3154559e7da7 -->
@@ -305,6 +354,18 @@ Correct translation:
 Cuir eagar ar sheoladh seolta
 ```
 
+<!-- cache_translation_check_ga_7097bf34f143965b7e00e1a416a5e1ff225bbf509662891ebffc847cf96af30a -->
+```
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <translation>Níl seoladh bailí Bitcoin í an seoladh iontráilte "%1".</translation>
+    
+ERR
+The Irish translation is grammatically incorrect (incorrect word order and use of the pronoun "í"). The format specifier %1 is present and quoted correctly.
+
+Correct translation:
+Níl an seoladh iontráilte "%1" ina sheoladh Bitcoin bailí.
+```
+
 <!-- cache_translation_check_ga_3889859f5376cadf343ffd28833f0421ffd372555c1e9e015831b5abd2f2d06a -->
 ```
         <source>Approximately %1 GB of data will be stored in this directory.</source>
@@ -334,16 +395,40 @@ Correct translation:
 Am an bhloic dheireanaigh
 ```
 
-<!-- cache_translation_check_ga_dbc6b8a5a75395ee9894e7ebf727f035d71c8d632077b3918795633bdd3f07cb -->
+<!-- cache_translation_check_ga_a5b40bd1d47bbab099ea2933c0bd02e063ca289fa7a1ab965d8c3e64efc6c6f0 -->
 ```
-        <source>OK</source>
-        <translation>Togha</translation>
+        <source>&amp;Third-party transaction URLs</source>
+        <translation>URLanna idirbheart tríú páirtí</translation>
     
 ERR
-The translation of "OK" as "Togha" is problematic. "Togha" means "choice" or "selection" in Irish, not the interjection "OK". The more standard translation for "OK" in Irish is "Ceart go leor".
+The translation is missing the '&' character, which is used for shortcut keys and should appear exactly once in the translation.
 
 Correct translation:
-Ceart go leor
+&URLanna idirbheart tríú páirtí
+```
+
+<!-- cache_translation_check_ga_b65fb896e1dd0cb6ad835358483797b07689ba832fa94ca3945e48d4e730dd06 -->
+```
+        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
+        <translation>Úsáid seachfhreastalaí SOCKS5 ar leith chun sroicheadh piaraí trí sheirbhísí Tor oinniún:</translation>
+    
+ERR
+The ampersand (&) indicating the shortcut key is missing from the translation, but appears in the source as "&amp;". This should appear exactly once in the translation (anywhere is allowed).
+
+Correct translation:
+Úsáid seachfhreastalaí SOCKS&5 ar leith chun piaraí a shroicheadh trí sheirbhísí oinniún Tor:
+```
+
+<!-- cache_translation_check_ga_86afc8f988d0ad22d9fcd706474dee9cca6337d282f1d67165c226edbd086e0e -->
+```
+        <source>&amp;OK</source>
+        <translation>&amp;Togha</translation>
+    
+ERR
+The translation '&Togha' is not an accurate translation for 'OK' in the context of a confirmation dialog. In Irish ('ga'), the commonly used translation for 'OK' is 'OK' itself or 'Ceart go leor'. If a single word is needed for a button label, 'OK' is best, as it's widely recognized.
+
+Correct translation:
+&amp;OK
 ```
 
 <!-- cache_translation_check_ga_651f56239b4d952cd82352f53ce66b9ff56d4f9578a3c16e955f69b67d546e42 -->
@@ -431,18 +516,6 @@ Chun tuilleadh eolais a fháil faoin gconsól seo, clóscríobh %6.
 %7RABHADH: Tá scamadóirí gníomhach ag insint d’úsáideoirí orduithe a chlóscríobh anseo agus ag goid airgid óna sparán. Ná húsáid an consól seo gan na hiarmhairtí a d’fhéadfadh a bheith le hordú a thuiscint go hiomlán.%8
 ```
 
-<!-- cache_translation_check_ga_3e4c988794fb24f8434c677a150cd8acea1d294e72925bd94071068659e4369f -->
-```
-        <source>Copy message</source>
-        <translation>Cóipeáil  teachtaireacht</translation>
-    
-ERR
-There is an extra space before "teachtaireacht" in the translation, which creates a whitespace formatting issue.
-
-Correct translation:
-Cóipeáil teachtaireacht
-```
-
 <!-- cache_translation_check_ga_9765dc041f34a3683c1de71a6e54bc7d34bcdf3c57f41c48a953877b24e7eeee -->
 ```
         <source>Base58 (P2SH-SegWit)</source>
@@ -481,6 +554,18 @@ Correct translation:
 Cóipeáil an t-aisiú
 ```
 
+<!-- cache_translation_check_ga_98a292a82ce7aede798e69a79a6fc7f3ce40b84320c0eb86323694aeb611cf87 -->
+```
+        <source>Cr&amp;eate Unsigned</source>
+        <translation>Cruthaigh Gan Sín</translation>
+    
+ERR
+The translation omits the ampersand (&) used for the shortcut key, which should appear exactly once as in the source ("Cr&eate Unsigned"). Also, the translation is accurate ("Cruthaigh Gan Sín" = "Create Unsigned"), but to preserve the shortcut key functionality, one letter of the translated phrase should be prefixed with & (e.g., Cr&uthaigh Gan Sín or Cruthaigh Gan &Sín) - usually on the first unique letter, aligning as closely as possible to the English shortcut.
+
+Correct translation:
+Cr&uthaigh Gan Sín
+```
+
 <!-- cache_translation_check_ga_9ff585780fbad9a032a41d648778cf6646d00936e407101d590cfdfb76d7dfe2 -->
 ```
         <source>PSBT saved</source>
@@ -492,6 +577,25 @@ The translation is problematic because "IBSP" is an incorrect transliteration of
 
 Correct translation:
 PSBT sábhálta
+```
+
+<!-- cache_translation_check_ga_9e98c07b1f399955512a267159f56f4aa96fa88c9db82ae9bb1a3d2091fc37bc -->
+```
+        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Bitcoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can send their transaction or create a PSBT. This string is displayed when both private keys and PSBT controls are enabled.</extracomment>
+        <translation>Le do thoil, athbhreithnigh d'idirbheart. Is féidir leat an t-idirbheart seo a chruthú agus a sheoladh nó Idirbheart Bitcoin Páirt-Sínithe (PSBT) a chruthú, ar féidir leat a shábháil nó a chóipeáil agus a shíniú ansin le, m.sh., sparán %1 as líne, nó sparán crua-earraí PSBT-comhoiriúnach.</translation>
+    
+ERR
+The translation is mostly understandable but has minor grammatical and punctuation issues, and could be clearer/more natural in Irish. Problems:
+- "d'idirbheart" is okay but "do idirbheart" is more standard here.
+- The phrasing "Idirbhheart Bitcoin Páirt-Sínithe" is better as "idirbheart Bitcoin páirteach-sínithe".
+- Missing pronoun before verbs: better to include "é" (“ar féidir leat é a shábháil...”) to refer to the PSBT.
+- Unnecessary commas around "m.sh." and awkward placement of "le, m.sh., sparán %1 as líne".
+
+Suggested correct translation:
+Le do thoil, athbhreithnigh do idirbheart. Is féidir leat an t-idirbheart seo a chruthú agus a sheoladh, nó idirbheart Bitcoin páirteach-sínithe (PSBT) a chruthú, ar féidir leat é a shábháil nó a chóipeáil agus ansin a shíniú le sparán %1 as líne, mar shampla, nó le sparán crua-earraí comhoiriúnach le PSBT.
+
+(The format specifier %1 is preserved.)
 ```
 
 <!-- cache_translation_check_ga_c47725dfbf4dbb2b4fd6b4b2c8edcc2a25d6ed32bfaac8e9c005cf46eca7095f -->
@@ -518,43 +622,16 @@ Correct translation:
 Ginte
 ```
 
-<!-- cache_translation_check_ga_297c479cfdef568465f7956edda60e8a65207b9199bdc07ee8e755372bfeb0a1 -->
+<!-- cache_translation_check_ga_84cfc3dd0aaeb04dd0fb349af875e4aee635a49dce518961d9d13195f109b713 -->
 ```
-        <source>Copy transaction ID</source>
-        <translation>Cóipeáil idirbheart ID</translation>
-    
-ERR
-The translation is problematic because the word order is incorrect, and 'ID' should be qualified as 'aitheantas' or 'ID'. The correct translation should be:
-
-Cóipeáil aitheantas an idirbhirt
-
-or
-
-Cóipeáil ID an idirbhirt
-```
-
-<!-- cache_translation_check_ga_25a6dcf3bd8b34af382759b764dd358977f9b94640b6f08c3969ddc62567d1d0 -->
-```
-        <source>Copy full transaction details</source>
+        <source>Copy full transaction &amp;details</source>
         <translation>Cóipeáil idirbheart agus sonraí iomlána</translation>
     
 ERR
-The translation is understandable but not fully accurate. The phrase "Cóipeáil idirbheart agus sonraí iomlána" translates as "Copy transaction and full details," which parses the phrase incorrectly. The correct translation should keep "transaction details" together, referring to the "full transaction details" as a unit.
+The ampersand (&) used for the shortcut key is not present in the Irish translation, but it is required to appear exactly once somewhere in the translation.
 
 Correct translation:
-Cóipeáil sonraí iomlána na hidirbhearta
-```
-
-<!-- cache_translation_check_ga_5bf127badf502b0f8081903a509d7800d7e99eab060f29b5069c2961d8d13422 -->
-```
-        <source>Increase transaction fee</source>
-        <translation>Méadaigh idirbheart  táille</translation>
-    
-ERR
-There is an erroneous whitespace in the translation between "idirbheart" and "táille". It should read "idirbheart táille" as one phrase ("transaction fee increase"), but the phrase order is awkward for Irish. A better translation would use "Méadaigh an táille idirbhirt" ("Increase the transaction fee").
-
-Correct translation:
-Méadaigh an táille idirbhirt
+Cóipeáil &sonraí iomlána an idirbhirt
 ```
 
 <!-- cache_translation_check_ga_a76f02c2625faa3c26bf62a305ec068da9a05b182f189ebbf2a0015e2c7e887e -->
@@ -568,18 +645,6 @@ The translation is inaccurate. "Comhad athróige camógdheighilte" means "variab
 
 Correct translation:
 Comhad camógscartha
-```
-
-<!-- cache_translation_check_ga_c0c03732067f428fdf7e15e267cd9a9032ed2dee743d26b61f495e9612acaefa -->
-```
-        <source>Watch-only</source>
-        <translation>Faire-amháin</translation>
-    
-ERR
-The translation "Faire-amháin" is incorrect; it is a calque from English. In Irish, "faire" is not used for "watch" in this context. The established term in the Irish Bitcoin community is "Amharc amháin".
-
-Correct translation:
-Amharc amháin
 ```
 
 <!-- cache_translation_check_ga_3be7182e3268aae212ce152f9791da5f1e49fffdac1936b1e4b57b05ba9d5f07 -->
@@ -611,30 +676,6 @@ There are several issues:
 
 Correct translation:
 Theip ar %s bailíochtú a dhéanamh ar staid seatamh -assumeutxo. Léiríonn sé seo fadhb crua-earraí, nó fabht sa bhogearra, nó droch-mhodhnú bogearraí a cheadaigh seatamh neamhbhailí a luchtú. Mar thoradh air seo, múchfar an nód agus stopfaidh sé de bheith ag úsáid aon staid a tógadh ar an seatamh, agus athshocrófar airde an tslabhra ó %d go %d. Ar an gcéad atosú eile, leanfaidh an nód ag sioncronú ó %d gan sonraí seatamh a úsáid. Tuairiscigh an teagmhas seo do %s agus mínigh conas a fuair tú an seatamh. Fágfar an seatamh neamhbhailí ar an diosca ar eagla go gcabhródh sé le fadhb an earráide a aimsiú.
-```
-
-<!-- cache_translation_check_ga_85cc96759b6ba5f76f567c6ce64b61824546dc28916a080e7b1f49e0bdf62936 -->
-```
-        <source>Cannot downgrade wallet from version %i to version %i. Wallet version unchanged.</source>
-        <translation>Ní féidir an sparán a íosghrádú ó leagan %igo leagan%i. Leagan sparán gan athrú.</translation>
-    
-ERR
-There is a formatting error with the placement of the format specifiers: there should be spaces between '%i' and the succeeding text ("leagan %i go leagan %i"). Also, "gan athrú" fits, but "Leagan an sparán gan athrú" is more idiomatic for "Wallet version unchanged." "íosghrádú" is the correct word for "downgrade." No unwanted or spam content.
-
-Correct translation:
-Ní féidir an sparán a íosghrádú ó leagan %i go leagan %i. Leagan an sparán gan athrú.
-```
-
-<!-- cache_translation_check_ga_2a78f903ac23bb4da7bc3f9d593a4ed6e8f4023e9a9ea60a5cea643be8b2177d -->
-```
-        <source>Cannot upgrade a non HD split wallet from version %i to version %i without upgrading to support pre-split keypool. Please use version %i or no version specified.</source>
-        <translation>Ní féidir sparán scoilte neamh-HD a uasghrádú ó leagan%igo leagan%i gan uasghrádú chun tacú le heochrach réamh-scoilte. Úsáid leagan %i nó níl aon leagan sonraithe.</translation>
-    
-ERR
-There are spacing issues with the format specifiers: "leagan%igo leagan%i" should be "leagan %i go leagan %i", maintaining a space before and after the format specifiers as in the source. Additionally, "heochrach réamh-scoilte" should read "réamh-eochairphóill" to match the technical term "pre-split keypool". The rest of the translation is understandable, though the last sentence could be slightly more natural.
-
-Correct translation:
-Ní féidir sparán scoilte neamh-HD a uasghrádú ó leagan %i go leagan %i gan uasghrádú chun tacú le réamh-eochairphóill. Úsáid leagan %i nó mura bhfuil leagan ar bith sonraithe.
 ```
 
 <!-- cache_translation_check_ga_947364c9282f5a2577c87bdaf9f80759633b54d25263b010f3c7ac7f5fcc5dfe -->
@@ -734,6 +775,54 @@ Correct translation:
 Theip ar bhailíochtú a dhéanamh ar achomair UTXO. Atosaigh chun gnáth-íoslódáil na mbloc tosaigh a atosú, nó bain triail as achomair eile a lódáil.
 ```
 
+<!-- cache_translation_check_ga_af91fc5f0317a803b6a5f12ff70178d78beebd11e30e412afb1e4b01383cbeff -->
+```
+        <source>Cannot add WalletDescriptor to a non-descriptor wallet</source>
+        <translation>Ní féidir WalletDescriptor a chur le sparán neamh-thuairisciúil</translation>
+    
+ERR
+The phrase "neamh-thuairisciúil" translates more like "non-reporting" or "not descriptive" and does not accurately convey the technical meaning "non-descriptor" in this Bitcoin context. It's better to keep the technical term "descriptor" (or "WalletDescriptor") explicit.
+
+Suggested correction:
+Ní féidir WalletDescriptor a chur le sparán nach bhfuil descriptor aige.
+```
+
+<!-- cache_translation_check_ga_cd1dd3527f0e92514235321e9324aa0d4fd7756d14f33841bf85ee04a3bbb82c -->
+```
+        <source>Failed to acquire rescan reserver during wallet initialization</source>
+        <translation>Theip ar an gcuntar athscanála a fháil le linn thúsú an sparáin.</translation>
+    
+ERR
+The Irish translation is awkward and uses the wrong word "cuntar" (counter) for "reserver". The phrasing and mutations are also unnatural.
+
+Suggested correction:
+Theip ar an gcúntóir athscanála a fháil le linn tosaithe an sparáin.
+```
+
+<!-- cache_translation_check_ga_8cb67c974c57c1e4bedbcb4ce22e5d049a8dfac2d2510af05ca75f3d1c673e22 -->
+```
+        <source>Failed to close block undo file.</source>
+        <translation>Theip ar chomhad cealaithe bloc a dhúnadh.</translation>
+    
+ERR
+The Irish is understandable but the word order and article/lenition are slightly off for natural phrasing. Also prefer explicitly marking the file with the definite article.
+
+Suggested correction:
+Theip ar dhúnadh an chomhaid cealaithe bloc.
+```
+
+<!-- cache_translation_check_ga_fd9edc9afd9f95ec746f7391ba163c7f5c53660e4dc4e35aa9bcae1286e8c4b8 -->
+```
+        <source>Failed to close file when writing block.</source>
+        <translation>Theip ar an gcomhad a dhúnadh agus bloc á scríobh.</translation>
+    
+ERR
+The Irish is understandable but slightly awkward/unnatural for the intended meaning ("failed to close file when writing block"). Better to include the temporal clause "when" (nuair) or use a clearer construction.
+
+Suggested correction:
+Theip ar an gcomhad a dhúnadh nuair a bhí bloc á scríobh.
+```
+
 <!-- cache_translation_check_ga_c3a386be63db3545343062348302b0ef103636d3880715ea6821b097382ad48a -->
 ```
         <source>Invalid amount for %s=&lt;amount&gt;: '%s' (must be at least %s)</source>
@@ -802,6 +891,54 @@ Or, even more clearly in natural Irish:
 Rogha neamhaitheanta "%s" curtha ar fáil i -test=&lt;rogha&gt;.
 ```
 
+<!-- cache_translation_check_ga_a3d80d61d7b43c1c348a1de043312ee4273cdb98580c6b6fd5995db39e9101c6 -->
+```
+        <source>Error loading %s: Wallet is a legacy wallet. Please migrate to a descriptor wallet using the migration tool (migratewallet RPC).</source>
+        <translation>Earráid ag luchtú %s: Is sparán oidhreachta é an sparán. Déan aistriú chuig sparán tuairisciúil ag baint úsáide as an uirlis imirce (migratewallet RPC).</translation>
+    
+ERR
+The Irish is understandable but slightly awkward/redundant and "descriptor wallet" is better rendered more naturally. Also recommend keeping the RPC name order consistent.
+
+Suggested correction:
+Earráid ag luchtú %s: Is sparán oidhreachta é an sparán. Déan é a aistriú go sparán tuairiscíoch ag baint úsáide as an uirlis imirce (migratewallet RPC).
+```
+
+<!-- cache_translation_check_ga_5d2b7935d5451f9a6412078f081e09f25412f501a703d1b54cdce5f73f1f93c2 -->
+```
+        <source>Error: Dumpfile specifies an unsupported database format (%s). Only sqlite database dumps are supported</source>
+        <translation>Earráid: Sonraíonn an comhad dumpála formáid bunachar sonraí nach dtacaítear leis (%s). Ní thacaítear ach le dumpaí bunachar sonraí sqlite.</translation>
+    
+ERR
+The Irish uses the wrong pronoun after "formáid" (feminine). It uses "leis" (masculine) but should be "léi".
+
+Correct translation:
+Earráid: Sonraíonn an comhad dumpála formáid bunachar sonraí nach dtacaítear léi (%s). Ní thacaítear ach le dumpaí bunachar sonraí sqlite.
+```
+
+<!-- cache_translation_check_ga_8e6f2dd563dc0aa04b6b801b184375d7459a7e43528be2dfd328d33b7f8da2e8 -->
+```
+        <source>Failed to calculate bump fees, because unconfirmed UTXOs depend on an enormous cluster of unconfirmed transactions.</source>
+        <translation>Theip ar tháillí bumpála a ríomh, mar go mbraitheann UTXOanna neamhdheimhnithe ar chnuasach ollmhór idirbheart neamhdheimhnithe.</translation>
+    
+ERR
+The Irish is understandable but the word order in the first clause is awkward/incorrect ("Theip ar tháillí bumpála a ríomh"). It should place the verb then the object (or use the definite article) for a natural passive/impersonal phrasing.
+
+Corrected translation:
+Theip ar ríomh na táillí bumpála, mar go mbraitheann UTXOanna neamhdheimhnithe ar chnuasach ollmhór idirbheart neamhdheimhnithe.
+```
+
+<!-- cache_translation_check_ga_df4c6195232e85a952814c6bc3ed73835a2d24ea754dd9967f025eac15d60328 -->
+```
+        <source>Transaction requires one destination of non-zero value, a non-zero feerate, or a pre-selected input</source>
+        <translation>Éilíonn an t-idirbheart ceann scríbe amháin de luach neamh-nialas, ráta táille neamh-nialas, nó ionchur réamhroghnaithe.</translation>
+    
+ERR
+The Irish translation is understandable but uses awkward/unnatural phrasing for "non-zero" (e.g. "luach neamh-nialas", "ráta táille neamh-nialas") which is not idiomatic. No format specifiers or whitespace issues.
+
+Suggested natural translation:
+Éilíonn an t-idirbheart ceann scríbe amháin le luach nach bhfuil nialasach, ráta táille nach bhfuil nialasach, nó ionchur réamhroghnaithe.
+```
+
 <!-- cache_translation_check_ga_afcb7dfe4ed7569b2d949652843094743dba5cd903f974894dcc322fac91002b -->
 ```
         <source>Error: Could not add watchonly tx %s to watchonly wallet</source>
@@ -813,6 +950,18 @@ The translation is mostly correct, but the term "watchonly" is inconsistently re
 Correct translation:
 Earráid: Níorbh fhéidir idirbheart faire amháin %s a chur le sparán faire amháin
 ```
+
+<!-- cache_translation_check_ga_24b6754689011842413d0f255bd5803beb2efaa3f543d42cbb82728b22089950 -->
+```
+        <source>Invalid -proxy address or hostname, ends with '=': '%s'</source>
+        <translation>Seoladh nó ainm óstach neamhbhailí -proxy, críochnaíonn le '=': '%s'</translation>
+    
+ERR
+Minor grammatical/word-order issue in Irish. The parameter %s is kept correctly, but "-proxy address or hostname" should keep the -proxy attached to "seoladh" (or be placed before "seoladh") and use a relative particle.
+
+Suggested correction:
+Seoladh -proxy nó ainm óstach neamhbhailí, a chríochnaíonn le '=': '%s'
+```
 </details>
 
-Number of issues: 59.
+Number of issues: 71.

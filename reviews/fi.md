@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>fi</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bfi%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bfi%5D%20request)
 
 
 <!-- cache_translation_check_fi_849826846a4e498b80089947afb083769ea98ba81d38ab65a280feed1b4e27b9 -->
@@ -114,28 +114,31 @@ Correct translation:
 Viimeisin vastaanotettu lohko luotiin %1 sitten.
 ```
 
-<!-- cache_translation_check_fi_00e17c16f484be620544253d1cd66b05bba892f0f720950227ff94530831adfd -->
+<!-- cache_translation_check_fi_5d9e28424cb67661beb351200f9a32008ccfece6b569c066e2aa4735dd1af3c6 -->
 ```
-        <source>Lock unspent</source>
-        <translation>Lkitse käyttämättömät</translation>
+        <source>Copy transaction &amp;ID and output index</source>
+        <translation>Kopioi tapahtumatunnus &amp;ID ja tulosindeksi</translation>
     
 ERR
-There is a typographical error in the Finnish translation: "Lkitse" should be "Lukitse".
+The translation includes both the term "tapahtumatunnus" and the untranslated "ID" from the source, which is redundant. The English uses "&amp;ID" to set a shortcut on "ID," where "ID" acts as a label for the transaction identifier. In Finnish, "tapahtumatunnus" is the proper translation for "transaction ID".
 
 Correct translation:
-Lukitse käyttämättömät
+Kopioi tapahtumatunnus ja tulosindeksi
+
+If a shortcut key is desired, it can be placed in either word, but "&amp;" should only be present once, e.g.:
+Kopioi &tapahtumatunnus ja tulosindeksi
 ```
 
-<!-- cache_translation_check_fi_aa238153c1353ed74fcbd3dfba3ec60800913898bcd09b081d2055a79ae2481a -->
+<!-- cache_translation_check_fi_930772c54cc8ad14d6ae5c253ecc35d44f1171ac7d69c4cbc5a1ac7f1f85d3fb -->
 ```
-        <source>Unlock unspent</source>
-        <translation>Avaa käyttämättömien lukitus</translation>
+        <source>&amp;Unlock unspent</source>
+        <translation>&amp;Avaa käyttämättömien lukitus</translation>
     
 ERR
-The translation "Avaa käyttämättömien lukitus" is not fully accurate. The phrase "Unlock unspent" refers to unlocking unspent transaction outputs (UTXOs), and the correct Finnish translation should more directly match the English imperative and subject.
+The Finnish translation is grammatically incorrect and awkward. "Avaa käyttämättömien lukitus" translates roughly to "Open the lock of unused ones", but the more natural translation for "Unlock unspent" (as in "Unlock unspent outputs", commonly used in Bitcoin) would be "Avaa käyttämätön" or "Avaa käyttämättömät" (plural), depending on the intended amount. If the UI unlocks several unspent outputs, use the plural.
 
 Correct translation:
-Avaa käyttämättömät
+&Avaa käyttämättömät
 ```
 
 <!-- cache_translation_check_fi_67f02a4a393dfba3c40d4f2fa458317eb12aafc51187907081eb85695db16864 -->
@@ -174,6 +177,18 @@ Correct translation:
 Tuntematon. Synkronoidaan lohkojen otsikoita (%1, %2%)...
 ```
 
+<!-- cache_translation_check_fi_952afe26169b7cbcc407ee5574a662f4b3c4ad764eb27132480de49d3b486f7f -->
+```
+        <source>&amp;Main</source>
+        <translation>&amp;Yleiset</translation>
+    
+ERR
+The translation for "&amp;Main" as "&amp;Yleiset" is incorrect. "Yleiset" means "General," not "Main." The correct Finnish word for "Main" is "Pää" or "Päävalikko" in some contexts, but typically in Bitcoin applications, "Pää" would suffice.
+
+Correct translation:
+&amp;Pää
+```
+
 <!-- cache_translation_check_fi_c2fa13570715ae441b9192455a8677941fe8a40d7778a97766178449577e4df2 -->
 ```
         <source>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</source>
@@ -184,6 +199,42 @@ The translation has multiple grammar issues and awkward phrasing in Finnish. "T�
 
 Correct translation:
 Jos poistat käytöstä vahvistamattoman vaihtorahan käyttämisen, ei siirrosta saatua vaihtorahaa voi käyttää ennen kuin siirrolla on vähintään yksi vahvistus. Tämä vaikuttaa myös siihen, miten saldosi lasketaan.
+```
+
+<!-- cache_translation_check_fi_a678f48113e2e42a33a3c4b4e075069361fb8b72aad9d1cbe74cbd84d17a18e9 -->
+```
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Hyväksy sisääntulevia yhteyksiä</translation>
+    
+ERR
+The ampersand (&) indicating the shortcut key is missing from the Finnish translation. It must appear exactly once in the translation.
+
+Correct translation:
+Hyväksy sisääntulevia &yhteyksiä
+```
+
+<!-- cache_translation_check_fi_cf4a1b507349084eccbe60cba2818d36fb76de06db478b0057a631c279301627 -->
+```
+        <source>&amp;Display</source>
+        <translation>&amp;Käyttöliittymä</translation>
+    
+ERR
+The translation of "&Display" as "&Käyttöliittymä" is inaccurate. "Käyttöliittymä" means "user interface," not "display." The correct translation would be "&Näyttö" or "&Näytä" depending on the context (most likely "&Näyttö" meaning "Display").
+
+Correct translation:
+&Näyttö
+```
+
+<!-- cache_translation_check_fi_75c7fd8a82613e0f598a56402aca9958f66017b90ec3512f048afa15e4e074e8 -->
+```
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>Yksikkö jona bitcoin-määrät näytetään</translation>
+    
+ERR
+The translation omits the ampersand (&), which is required to indicate the shortcut key. Additionally, "bitcoin-määrät" is acceptable if the UI context is clear, but to be accurate and mirror the English structure, the translation should explicitly mention the '&' exactly once.
+
+Correct translation:
+&Yksikkö, jossa määrät näytetään:
 ```
 
 <!-- cache_translation_check_fi_619eb6a9cfdeb5c1677fc0734218defb8fef76b488dc4728b270b8a8231c23c4 -->
@@ -251,6 +302,18 @@ Alternatively:
 Siirron välitys
 ```
 
+<!-- cache_translation_check_fi_8c5867e9570ade4aadbf80bfc0322d0c91df7db3060ca6fc6aab6629b8152a82 -->
+```
+        <source>&amp;Console</source>
+        <translation>&amp;Konsoli</translation>
+    
+ERR
+The Finnish translation uses "Konsoli" in the partitive case, while the menu item should use the nominative form. The correct translation is "&amp;Konsoli".
+
+Correct translation:
+&Konsoli
+```
+
 <!-- cache_translation_check_fi_3379eb872174264ff5f19ebe1c8ba8da1fe5be38cb25d4820a054391fb7a1c28 -->
 ```
         <source>Ctrl+=</source>
@@ -264,16 +327,29 @@ Correct translation:
 Ctrl+=
 ```
 
-<!-- cache_translation_check_fi_34bb955939f8354b7a96d5efeba1314a258dfeda7cd30d84605ed2d2f4cf0c91 -->
+<!-- cache_translation_check_fi_f5f19a915c900f36c9b60132db4f6cf891688cc8ed1eef8cc46ccbc35e9064e7 -->
 ```
-        <source>1 day</source>
-        <translation>1 pivä</translation>
+        <source>&amp;Copy IP/Netmask</source>
+        <extracomment>Context menu action to copy the IP/Netmask of a banned peer. IP/Netmask is the combination of a peer's IP address and its Netmask. For IP address, see: https://en.wikipedia.org/wiki/IP_address.</extracomment>
+        <translation>&amp;Kopioi IP/verkkopeite</translation>
     
 ERR
-There is a typographical error in the Finnish word: "pivä" should be "päivä".
+The term "verkkopeite" is incorrect in Finnish; the correct term for "Netmask" is "verkkopeite" or more commonly "verkon peite" or "verkon peiteosoite". However, "IP/Netmask" is commonly used as is, or translated as "IP-osoite/verkkopeite".
 
 Correct translation:
-1 päivä
+&Kopioi IP/verkkopeite
+```
+
+<!-- cache_translation_check_fi_663f9c78b792650529feb9c52cbd8cd6c262c173ff0900636838afdd0a3e66c0 -->
+```
+        <source>&amp;Create new receiving address</source>
+        <translation> &amp;Luo uusi vastaanotto-osoite</translation>
+    
+ERR
+There is an unwanted leading space at the start of the Finnish translation, which is a whitespace format issue.
+
+Correct translation:
+&amp;Luo uusi vastaanotto-osoite
 ```
 
 <!-- cache_translation_check_fi_7526e3e732d6e69a433ef99889ff1227f942964397cabafdcf6e805f3df0900d -->
@@ -313,6 +389,18 @@ Correct translation:
 Piilota siirtomaksuasetukset
 ```
 
+<!-- cache_translation_check_fi_9b9171b6aa11e350fc2e814c776ee210c20a6f17581a1a12c083c3d25665118f -->
+```
+        <source>Clear &amp;All</source>
+        <translation>&amp;Tyhjennnä Kaikki</translation>
+    
+ERR
+There is a typo in the Finnish word "Tyhjennnä" – it should be "Tyhjennä" (without the double "n"). Also, in Finnish UI convention, only the first word is usually capitalized unless both are part of a button name, but the main issue is the typo.
+
+Correct translation:
+&Tyhjennä kaikki
+```
+
 <!-- cache_translation_check_fi_671bd61f48b53aca31b2689725d0b603b1965e0b13ab6caa315fcccb29b487b8 -->
 ```
         <source>Creates a Partially Signed Bitcoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
@@ -337,28 +425,86 @@ Correct translation:
 Suurempaa kuin %1 maksua pidetään mielettömän korkeana.
 ```
 
-<!-- cache_translation_check_fi_57e6a5030ea50bb0b6d3d423910a435b9c8462a203a5398dbda9e4de483623ec -->
+<!-- cache_translation_check_fi_6cced5e823921b45f4d133c37e633d84b511c690234da5800768161c4628a8a0 -->
 ```
-        <source>Copy full transaction details</source>
-        <translation>Kopioi koko tapahtuma  tiedot</translation>
+        <source>Pay &amp;To:</source>
+        <translation>Maksun saaja:</translation>
     
 ERR
-There is an extra space between "tapahtuma" and "tiedot" that should not be there.
+The translation omits the ampersand (&) that indicates the shortcut key, which should appear exactly once in the translation as per the instructions.
 
 Correct translation:
-Kopioi koko tapahtumatiedot
+& Maksan saaja:
+or
+Maksun &saaja:
+or
+&Maksa saajalle:
+(The ampersand must appear exactly once, and its position can be adjusted as appropriate for Finnish UI conventions.)
 ```
 
-<!-- cache_translation_check_fi_a9f0db7d75dad85061afc88d0fe313a47e3f756cf80d57288e3b5138cfb49f3d -->
+<!-- cache_translation_check_fi_9b9171b6aa11e350fc2e814c776ee210c20a6f17581a1a12c083c3d25665118f -->
 ```
-        <source>Edit address label</source>
-        <translation>Muokkaa osoitekenttää</translation>
+        <source>Clear &amp;All</source>
+        <translation>&amp;Tyhjennnä Kaikki</translation>
     
 ERR
-The translation "Muokkaa osoitekenttää" means "Edit the address field", which does not accurately reflect "Edit address label". It should refer to editing the label associated with the address, not the address field itself.
+There is a typo in the Finnish word "Tyhjennnä" – it should be "Tyhjennä" (without the double "n"). Also, in Finnish UI convention, only the first word is usually capitalized unless both are part of a button name, but the main issue is the typo.
 
 Correct translation:
-Muokkaa osoitteen nimeä
+&Tyhjennä kaikki
+```
+
+<!-- cache_translation_check_fi_2be05a2d264bdad6575ffaa04feff789f4d5ed338b6e78ba1613fb1379fe4d64 -->
+```
+        <source>Verify &amp;Message</source>
+        <translation>Varmista &amp;viesti...</translation>
+    
+ERR
+The translation adds "..." at the end, which is not present in the original English text. The ellipsis is unnecessary unless the original includes it.
+
+Correct translation:
+Varmista &amp;viesti
+```
+
+<!-- cache_translation_check_fi_8a8c16ba3284a30d6c8db05f6cdd9a29fb860570f49329916de3597004f480d7 -->
+```
+        <source>Copy full transaction &amp;details</source>
+        <translation>Kopioi koko tapahtuma  &amp;tiedot</translation>
+    
+ERR
+There are two spaces between "tapahtuma" and "&tiedot". There should only be a single space.
+
+Correct translation:
+Kopioi koko tapahtuma &tiedot
+```
+
+<!-- cache_translation_check_fi_ca67cb274fb40a2b3d54d7478c75bd4cbdca9c6659f8692beaa099fe040463ef -->
+```
+        <source>Increase transaction &amp;fee</source>
+        <translation>Lisää tapahtuman &amp;kuluja</translation>
+    
+ERR
+The translation is incorrect. The English source uses "fee" in singular ("Increase transaction &fee"), but the Finnish translation uses the plural form "kuluja", which means "expenses" or "costs" in plural. The correct singular term for "fee" in this context is "kulu" or even more precisely, "maksu" or "siirtomaksu" for transaction ("tapahtuma") fee. Also, the shortcut (&amp;) is preserved, but should still be used only once.
+
+Correct translation:
+Lisää tapahtuman &kulu
+```
+
+<!-- cache_translation_check_fi_b9f81cf00a85d114d4faec0c7c62de8e23e885c51e30232f5c96bcfd5d748d5a -->
+```
+        <source>&amp;Edit address label</source>
+        <translation>&amp;Muokkaa osoitekenttää</translation>
+    
+ERR
+The translation "&Muokkaa osoitekenttää" is incorrect. "Osoitekenttä" means "address field", not "address label". The correct translation for "address label" is "osoitteen nimeä" or just "osoitteen nimi".
+A more accurate translation would be:
+
+&Muokkaa osoitteen nimeä
+
+Also, the ampersand is preserved correctly; no issue there.
+
+Correct translation:
+&Muokkaa osoitteen nimeä
 ```
 
 <!-- cache_translation_check_fi_89317c19cf8fcb19599cd5dba1fbab17ef3d59080e8e9d01682d8496dd3a2941 -->
@@ -404,18 +550,6 @@ Correct translation:
 Varoitus: Tämä voi maksaa ylimääräisen maksun vähentämällä vaihtotuloja tai lisäämällä syötteitä tarvittaessa. Se voi lisätä uuden vaihtotulon, jos sellaista ei jo ole. Nämä muutokset voivat mahdollisesti vaarantaa yksityisyytesi.
 
 Note: Fixed whitespace and grammar, improved term choices and sentence flow.
-```
-
-<!-- cache_translation_check_fi_b86fd0fb4d3a284ba472f840d39a32be2d75d69c21f2a61b88731db734310f51 -->
-```
-        <source>Signer error</source>
-        <translation>Signaalivirhe</translation>
-    
-ERR
-The translation "Signaalivirhe" is incorrect in this context. "Signaali" means "signal" in Finnish, but "Signer" here refers to a person or entity that signs (a message, transaction, etc.).
-
-Correct translation:
-Allekirjoittajan virhe
 ```
 
 <!-- cache_translation_check_fi_cfe3ef9935bc9e81b8c025d2d2bd01ce7ba945dd0cc0a6418dd38a0703640010 -->
@@ -554,4 +688,4 @@ acceptstalefeeestimates-toimintoa ei tueta %s-ketjussa.
 ```
 </details>
 
-Number of issues: 42.
+Number of issues: 52.

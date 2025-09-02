@@ -1,21 +1,21 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>mr_IN</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bmr_IN%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bmr_IN%5D%20request)
 
 
-<!-- cache_translation_check_mr_IN_06c495cd4ae7ad5be930bfda87de46df77d4b35eb224777d8c10f1c2edf89d6a -->
+<!-- cache_translation_check_mr_IN_d4f78308575cdfb2151862909aa837bbe454b451f14aa23caa15ba81a0e381e9 -->
 ```
-        <source>Copy Label</source>
+        <source>Copy &amp;Label</source>
         <translation>शिक्का कॉपी करा</translation>
     
 ERR
-The translation is incorrect. "शिक्का" means "coin", which is not the correct translation for "Label". The correct translation for "Label" is "लेबल" in Marathi.
+The translation "शिक्का कॉपी करा" means "Copy coin", which is incorrect for "Copy &Label". "Label" here refers to a textual identifier, not a coin.
 
 Correct translation:
 लेबल कॉपी करा
@@ -47,16 +47,18 @@ Correct translation:
 वॉलेट एन्क्रिप्शनची पुष्टी करा
 ```
 
-<!-- cache_translation_check_mr_IN_5d726a4cfa28f949acd6840089aa350a6d22509c2460e0c39b555fe334c3e673 -->
+<!-- cache_translation_check_mr_IN_5007fcdc68fd58d18999b03fc4818239cfc25414f8771cea30efe36d282374bd -->
 ```
-        <source>Sign message…</source>
+        <source>Sign &amp;message…</source>
         <translation>स्वाक्षरी आणि संदेश...</translation>
     
 ERR
-The translation is inaccurate. The English phrase "Sign message…" means "to digitally sign a message", not "Signature and message...". The correct Marathi ('mr_IN') translation should convey the action to sign a message.
+The translation "स्वाक्षरी आणि संदेश..." is not accurate and misleading. "Sign & message" in this context refers to "Sign Message", where "Sign" is a verb meaning to digitally sign a message, not a noun.
 
 Correct translation:
-संदेशावर स्वाक्षरी करा…
+संदेशावर स्वाक्षरी करा (&amp;M)...
+Or, if a shortcut is not to be set explicitly:
+संदेश स्वाक्षरी करा...
 ```
 </details>
 

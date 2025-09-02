@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>he</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bhe%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bhe%5D%20request)
 
 
 <!-- cache_translation_check_he_b195f838c9ea5808ff03cec6edf0a93fcd15f982252a73633446b6a43efe8a28 -->
@@ -22,16 +22,64 @@ Correct translation:
 אירעה שגיאת מערכת חמורה. בדוק האם ניתן לכתוב לקובץ ההגדרות, או נסה להריץ עם ‎-nosettings (ללא הגדרות).
 ```
 
-<!-- cache_translation_check_he_6d4f7486a021c9dd71b1b19317324dff99266f5a64e5114b67e7214e1632f9d9 -->
+<!-- cache_translation_check_he_bb6bca6b71329ada82211be94dc6d9bce5a63e8e4ae1bc6ce9bb47909b2435be -->
 ```
-        <source>Load PSBT from file…</source>
-        <translation>טעינת PBST מקובץ…</translation>
+        <source>&amp;Backup Wallet…</source>
+        <translation>גיבוי הארנק</translation>
     
 ERR
-The abbreviation "PSBT" stands for "Partially Signed Bitcoin Transaction" and should not be transliterated as "PBST". Additionally, the correct translation should start with a verb infinitive to match interface conventions.
+The translation omits the ampersand (&), which is used for the shortcut key and should appear exactly once, typically before the first letter of the word to indicate the mnemonic. Also, the ellipsis (…) at the end of the source should be preserved in Hebrew as well.
 
 Correct translation:
-טעינת PSBT מקובץ…
+‏&גיבוי הארנק…
+```
+
+<!-- cache_translation_check_he_cc35446c3e8a39c20b508c6120a0981fa046705b4242bcfb563f44088da817e9 -->
+```
+        <source>&amp;Verify message…</source>
+        <translation>&amp;אשר הודעה</translation>
+    
+ERR
+The source "&amp;Verify message…" includes an ellipsis (…). The translation "&amp;אשר הודעה" omits the ellipsis, which is expected in the context to indicate further action. The translation would be improved by including the ellipsis at the end.
+
+Correct translation:
+&אשר הודעה…
+```
+
+<!-- cache_translation_check_he_db3add57a91bd69b06b7b94545f89567e3b0fd440208b9f1ea804244cd03991a -->
+```
+        <source>&amp;Load PSBT from file…</source>
+        <translation>&amp;טעינת PBST מקובץ…</translation>
+    
+ERR
+There is a typo in the translation: "PBST" should be "PSBT" to match the English source and the established term (Partially Signed Bitcoin Transaction). Also, the ellipsis character (…) is correctly maintained, and the ampersand is present.
+
+Correct translation:
+&טעינת PSBT מקובץ…
+```
+
+<!-- cache_translation_check_he_93f0c583596a27dcbac719c0dd94420f2a5e224b8979fa061efbe887d87a8ea9 -->
+```
+        <source>Open &amp;URI…</source>
+        <translation>פתיחת הקישור</translation>
+    
+ERR
+The translation omits the ampersand (&), which is used for shortcut keys, and the ellipsis (…). The source's meaning is "Open &URI…", but the translation just says "Open the link", which is not a close translation and loses the intent (specifically the term "URI" as a technical term).
+
+Correct translation:
+פתח &URI…
+```
+
+<!-- cache_translation_check_he_3bec04c3efa2a1a189c9c8539c11dcc33159c06dd707e2d07cc172cf6fbe07e1 -->
+```
+        <source>Load PSBT from &amp;clipboard…</source>
+        <translation>העלאת PSBT מהקליפבורד...</translation>
+    
+ERR
+The shortcut indicator '&' from the English source (&clipboard) is missing in the Hebrew translation. It must appear exactly once to indicate the access key.
+
+Correct translation:
+העלאת PSBT מה&amp;קליפבורד...
 ```
 
 <!-- cache_translation_check_he_1500dd3492ed1321f70e6c1392a222b0f5a01e65cfa19ed78cfefc1670251ad8 -->
@@ -72,30 +120,16 @@ Correct translation:
 עסקה נכנסת
 ```
 
-<!-- cache_translation_check_he_602c1f14b712030bf201a0337eeb5c7e772fbdaf5481e0e856700c2afcf7b480 -->
+<!-- cache_translation_check_he_12963b7b34bc3b21f27a8b38db4645bf15eb474150f594ee1e674d0e91e8757d -->
 ```
-        <source>Spend unconfirmed change</source>
-        <translation>עודף בלתי מאושר מההשקעה</translation>
-    
-ERR  
-The translation is inaccurate. The English phrase "Spend unconfirmed change" refers specifically to being allowed to spend the unconfirmed "change" (the remainder returned to the sender) from a Bitcoin transaction. The Hebrew translation provided, "עודף בלתי מאושר מההשקעה", means "unconfirmed change from the investment", which is not accurate—"מההשקעה" (from the investment) is incorrect context and was likely mistranslated from "change".  
-
-Correct translation:  
-להוציא עודף בלתי מאושר  
-or  
-להשתמש בעודף בלתי מאושר
-```
-
-<!-- cache_translation_check_he_a40ee4682da507e04462f70b0feedece1d41ee6c3b59e3a7134b59b3e2296630 -->
-```
-        <source>Port:</source>
-        <translation>פתחה:</translation>
+        <source>&amp;Spend unconfirmed change</source>
+        <translation>עודף &amp;בלתי מאושר מההשקעה</translation>
     
 ERR
-The Hebrew translation uses "פתחה", which is not the standard or correct term for "Port" in technical or network contexts. The correct term is "פורט", which is widely used in Israeli IT and networking.
+The translation misrepresents the original meaning. The source means "Spend unconfirmed change," referring to spending the 'change' from Bitcoin transactions that hasn't yet been confirmed. The translation implies "Unconfirmed change from the investment," which isn't accurate, and the placement of the ampersand is acceptable but the structure is misleading. Additionally, "מההשקעה" ("from the investment") should not appear here.
 
 Correct translation:
-פורט:
+להוציא עודף &amp;בלתי מאושר
 ```
 
 <!-- cache_translation_check_he_efaae479017e87b40b82238ceeb2f742fdf6de66d11e435c5ea8a9d283654c24 -->
@@ -183,21 +217,16 @@ There is a spelling mistake in the Hebrew word "קטמן", which should be "קט
 קובץ PSBT צריך להיות קטן מ-100 MiB
 ```
 
-<!-- cache_translation_check_he_9678943707cce39eadfeba65f2bfa99eb4c1775a068d8d5791c009b8cc2840f7 -->
+<!-- cache_translation_check_he_aafdf2dacb75b821ab644b6c48e20358e1adbc16789f2112d07290776734a98e -->
 ```
-        <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
-        <translation>%s משובש. נסו להשתמש בכלי הארנק bitcoin-wallet כדי להציל או לשחזר מגיבוי..</translation>
+        <source>Please contribute if you find %s useful. Visit %s for further information about the software.</source>
+        <translation>נא לשקול לתרום אם %s שימושי בשבילך. יש לבקר ב־ %s למידע נוסף על התוכנה.</translation>
     
-ERR  
-There are a couple of issues in the Hebrew translation:
-- There are two periods at the end ("..").
-- The phrase "to salvage or restoring a backup" should be "כדי להציל או לשחזר מגיבוי", but "להציל" is not commonly used in the context of data recovery in Hebrew; "לשקם" or "לתקן" is better.  
-- The sentence is a bit awkward. A more accurate translation would be:
+ERR
+The Hebrew is generally correct but has a spacing issue: the prefixed Hebrew hyphen (־) should not be followed by a space. Also the first sentence word order can be made more natural.
 
-%s משובש. נסו להשתמש בכלי הארנק bitcoin-wallet לשחזור או תיקון, או לשחזר מגיבוי.
-
-Correct translation:
-%s משובש. נסו להשתמש בכלי הארנק bitcoin-wallet לתקן או לשחזר, או לשחזר מגיבוי.
+Corrected translation:
+אם %s מועיל עבורך, נא לשקול לתרום. בקר ב-%s למידע נוסף על התוכנה.
 ```
 
 <!-- cache_translation_check_he_0fb62d8115519697a3b469116d07e9663da9747516425d9b796e90c4f863e5a7 -->
@@ -291,4 +320,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 22.
+Number of issues: 25.

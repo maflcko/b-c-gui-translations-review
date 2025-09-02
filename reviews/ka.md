@@ -1,13 +1,27 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>ka</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bka%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bka%5D%20request)
 
+
+<!-- cache_translation_check_ka_913b7bb920a42590b4200ad478f923b35b02a2883d100ae4fd71c7332a5b0ede -->
+```
+        <source>Copy &amp;Label</source>
+        <translation>ნიშნულის კოპირება</translation>
+    
+ERR
+The English source includes a single '&' used for the shortcut key ("&Label"). The translation into Georgian ('ka') omits the shortcut indicator. The '&' should be included somewhere in the translation, ideally in front of the shortcut letter in the Georgian word, and should appear exactly once.
+
+Correct translation:
+&amp;ნიშნულის კოპირება
+
+Alternatively, if another letter in the Georgian word is more appropriate for a shortcut, place '&' before that letter.
+```
 
 <!-- cache_translation_check_ka_9344a5fac65a05dd007fadc17a3c79754b1b20a0a91d93d7af10179e0ee6f513 -->
 ```
@@ -82,28 +96,64 @@ Correct translation:
 აკრძალულია დღემდე
 ```
 
-<!-- cache_translation_check_ka_ce9b259cb37e3f7c3a1e90867200b28aa791c5ea59eb8ddd3ec604d052160425 -->
+<!-- cache_translation_check_ka_cbae9403fe2b3bc4f75c653e3030afdc835e2f71a085893196f6569b345745c6 -->
 ```
-        <source>Minimize</source>
-        <translation>ჩახურვა</translation>
+        <source>&amp;Minimize</source>
+        <translation>&amp;ჩახურვა</translation>
     
 ERR
-The translation "ჩახურვა" actually means "Close" in Georgian, not "Minimize." The correct translation for "Minimize" is "მინიმალიზაცია" or more commonly "ჩაკეცვა".
+The translation of '&Minimize' as '&ჩახურვა' is inaccurate. 'ჩახურვა' means 'Close' in Georgian, not 'Minimize'. The correct translation for 'Minimize' is 'მინიიმიზაცია' or 'ჩამინიმიზება', though commonly 'მინიმიზაცია' is used.
 
 Correct translation:
-ჩაკეცვა
+&მინიმიზაცია
 ```
 
-<!-- cache_translation_check_ka_a6c52a2a0a2741d2be5524c156965d6b29352fbedc2a6b3c30958a2a2baac937 -->
+<!-- cache_translation_check_ka_26b89d48015a00e112d400e5bcbe64f9bcaf23d76ed66d3882cf78adeabf913d -->
 ```
-        <source>Sign message…</source>
-        <translation>ხელმოწერა შეტყობინება…</translation>
+        <source>&amp;Change Passphrase…</source>
+        <translation> &amp;შეცვალეთ პაროლის ფრაზა…</translation>
     
 ERR
-The Georgian translation has incorrect word order and case. The verb "ხელმოწერა" ("signature" or "to sign") should come after the object with the appropriate postposition. The more natural translation would be:
+There is a whitespace formatting issue: an unnecessary leading space before the translation. Additionally, "პაროლის ფრაზა" can be more naturally rendered as "პაროლის ფრაზა" or "პაროლის შემოთავაზება" depending on the context, but "შეცვალეთ პაროლის ფრაზა" is understandable.
 
 Correct translation:
-შეტყობინებაზე ხელმოწერა…
+&amp;პაროლის ფრაზის შეცვლა…
+```
+
+<!-- cache_translation_check_ka_64a0985b871f02068314699ecc031ebb8acb27d1be0c1a9f4356714ce188f6e9 -->
+```
+        <source>&amp;Sending addresses</source>
+        <translation>მისამართების გაგზავნა</translation>
+    
+ERR
+The translation omits the ampersand (&), which is used for the shortcut key and must exist exactly once. Also, the phrase could be better translated as "გაგზავნის მისამართები" (i.e., "sending addresses" as a noun, not about sending addresses as a verb).
+
+Correct translation:
+&გაგზავნის მისამართები
+```
+
+<!-- cache_translation_check_ka_af8f7a317f87dcabf677d36802c0d68682ee6139863bb13ebb13eadd4a58392f -->
+```
+        <source>&amp;Receiving addresses</source>
+        <translation>მისამართების მიღება</translation>
+    
+ERR
+The translation omits the ampersand (&), which is typically used for keyboard shortcut assignment. It should appear exactly once in the translation. Also, the word order should better convey the concept of "Receiving addresses," which in Georgian is commonly "მოღების მისამართები".
+
+Correct translation:
+მოღების მისამართები(&)
+```
+
+<!-- cache_translation_check_ka_397cb78b6f1de676e2363bdeebeb92ec757b295d30e3ea275aa9db476966f513 -->
+```
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <translation>აჩვენეთ %1 დახმარების წერილი, რომ მიიღოთ სია Bitcoin– ის ბრძანების შესაძლო ვარიანტებთან ერთად</translation>
+    
+ERR
+The Georgian has minor style/word-choice issues and an incorrect space around the genitive marker for "Bitcoin". Also "დახმარების წერილი" ("help letter") is awkward; "დახმარების შეტყობინება" or simply "დახმარების ტექსტი" is better, and "command-line options" should be "ბრძანების ხაზის ვარიანტები".
+
+Correct translation:
+აჩვენეთ %1 დახმარების შეტყობინება, რათა მიიღოთ შესაძლო Bitcoin-ის ბრძანების ხაზის ვარიანტების სია
 ```
 
 <!-- cache_translation_check_ka_3468f4c082b577b4834d212e1732114a566f7513a08613be4cc1b392ddeaca93 -->
@@ -155,16 +205,16 @@ Correct translation:
 საკომისიოს შემდეგ:
 ```
 
-<!-- cache_translation_check_ka_d30095ad76c2c60c0002fd6743142221060d816157785a9d16b57cae93724b47 -->
+<!-- cache_translation_check_ka_25043d14bb38fb2bf78a5d53fa239715f4e12d59d1a0a1b3aa8bf7ed2180deee -->
 ```
-        <source>Copy transaction ID and output index</source>
-        <translation>ტრანზაქციის კოპირება ID და ინდექსის გამოტანა</translation>
+        <source>Copy transaction &amp;ID and output index</source>
+        <translation>ტრანზაქციის კოპირება &amp;ID და ინდექსის გამოტანა</translation>
     
 ERR
-The translation is inaccurate and awkward in Georgian. It says "კოპირება" (copying) of the transaction, then "ID and index output", which is not natural or correct. Also, the structure does not match the source.
+The translation is inaccurate. The source text means "Copy transaction ID and output index", but the Georgian translation says "Copy transaction & ID and output index", which is awkward and loses the meaning of "output index" as a technical term in Bitcoin. Additionally, the order is somewhat changed, and "&ID" should be correctly represented as "ტრანზაქციის ID-ის და გამოყვანის ინდექსის კოპირება" or similar, ensuring the '&' for a shortcut key appears exactly once.
 
 Correct translation:
-ტრანზაქციის ID-ისა და გამოშვების ინდექსის კოპირება
+ტრანზაქციის ID-ისა და გამომავალი ინდექსის &კოპირება
 ```
 
 <!-- cache_translation_check_ka_e8f4844e06dc5802bb006131fbd3637acd9b968fbe4c032c2a1d0b83becc6582 -->
@@ -215,18 +265,6 @@ Correct translation:
 შექმნა (or შექმენით, depending on context)
 ```
 
-<!-- cache_translation_check_ka_007f1a0f04901f63c671d5d2c01a069de78490bd3f3f9948ecc2cebf0657cd3b -->
-```
-        <source>Error: Specified data directory "%1" cannot be created.</source>
-        <translation>შეცდომა: მითითებულ მონაცემთა დირექტორია „%1“ არ არის შექმნილი.</translation>
-    
-ERR
-The translation has an inaccuracy. The English source says "cannot be created," which means the directory could not be created (an attempt failed), but the Georgian translation says "არ არის შექმნილი" which means "is not created" (describing its state, not the failed action). The error message should instead indicate the failure to create.
-
-Correct translation:
-შეცდომა: მითითებული მონაცემთა დირექტორიის „%1“ შექმნა შეუძლებელია.
-```
-
 <!-- cache_translation_check_ka_146837f93e81fd391432f69d1724a9658bdc1b083350143663b800089c78b329 -->
 ```
         <source>%1 is shutting down…</source>
@@ -241,6 +279,18 @@ Correct translation:
 %1 ითიშება…
 ```
 
+<!-- cache_translation_check_ka_007f1a0f04901f63c671d5d2c01a069de78490bd3f3f9948ecc2cebf0657cd3b -->
+```
+        <source>Error: Specified data directory "%1" cannot be created.</source>
+        <translation>შეცდომა: მითითებულ მონაცემთა დირექტორია „%1“ არ არის შექმნილი.</translation>
+    
+ERR
+The translation has an inaccuracy. The English source says "cannot be created," which means the directory could not be created (an attempt failed), but the Georgian translation says "არ არის შექმნილი" which means "is not created" (describing its state, not the failed action). The error message should instead indicate the failure to create.
+
+Correct translation:
+შეცდომა: მითითებული მონაცემთა დირექტორიის „%1“ შექმნა შეუძლებელია.
+```
+
 <!-- cache_translation_check_ka_ed129451e6443c184bb68df2d537e038ee94d13aa2cb35be06b3792f2fef238f -->
 ```
         <source>Progress increase per hour</source>
@@ -253,21 +303,32 @@ Correct translation:
 საათში პროგრესის ზრდა
 ```
 
-<!-- cache_translation_check_ka_5a3c56cac115ca51e1ecfc66b65524d4656f9873374ee24e544127100a281ba9 -->
+<!-- cache_translation_check_ka_71bc79ab573f4710ffa67fc41501f42d45409cf66a741f231bf7a7c51bf8890f -->
 ```
-        <source>Reset Options</source>
-        <translation>დაბრუნების ოპციები</translation>
+        <source>&amp;Reset Options</source>
+        <translation>დაბ&amp;რუნების ოპციები</translation>
     
 ERR
-The translation "დაბრუნების ოპციები" means "return options" or "options of returning" in Georgian, which does not accurately convey the intent of "Reset Options". The concept of 'reset' in software (to restore defaults or original state) is generally rendered as "გადატვირთვა" (reset/restart) or "საწყისი პარამეტრების დაბრუნება" (restore default options/settings). 
+The translation is incorrect. The English source is "&amp;Reset Options", which should be translated as "ოპციების &amp;დაბრუნება" or "ოპციების &amp;რესეტი" depending on Georgian conventions. The provided translation "დაბ&amp;რუნების ოპციები" literally means "of return options" and uses the genitive case, which is ungrammatical here. Also, the ampersand (&amp;) should be placed before the shortcut key letter in the appropriate Georgian word.
 
 Correct translation:
-პარამეტრების განულება
+&დაბრუნების ოპციები
 
-Or a more expanded version that matches UI conventions:
-პარამეტრების ყურადღით დაბრუნება Defaults-თან
+or better,
 
-But typically, "პარამეტრების განულება" is used.
+ოპციების &დაბრუნება
+```
+
+<!-- cache_translation_check_ka_cce48a26358b7a2760102bfe23be89ec464d3a243c78043ba2300bfb95667858 -->
+```
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>ერთეუ&amp;ლი:</translation>
+    
+ERR
+The translation "ერთეუ&amp;ლი:" does not accurately convey the English meaning of "&amp;Unit to show amounts in:". It also introduces a typo (correct: "ერთეული"), and omits the explanatory context ("to show amounts in").
+
+Correct translation:
+ერთეული, რომელშიც თანხები გამოჩნდება(&amp;U):
 ```
 
 <!-- cache_translation_check_ka_261d0e445ab892de3340c228663eb3302e9eaedecfb367a4dabe2445ca9cfaf0 -->
@@ -295,16 +356,30 @@ Correct translation:
 თანამონაწილე
 ```
 
-<!-- cache_translation_check_ka_75c9bdea027447ec2d66e41b1032ae9594ef3b60bc21870616edc2c88c58f1c2 -->
+<!-- cache_translation_check_ka_9d9e75c27b53b15cee455eaf4f6597e3e620048b18fc56f3f7248c01d715d276 -->
 ```
-        <source>Open</source>
-        <translation>შექმნა</translation>
+        <source>&amp;Open</source>
+        <translation>&amp;შექმნა</translation>
     
 ERR
-The translation is incorrect. The English word "Open" was translated as "შექმნა", which means "Create" in Georgian.
+The translation is incorrect. The English word "&Open" should be translated as "&გახსენით" in Georgian, but the provided translation "&შექმნა" means "&Create", which is not accurate.
 
 Correct translation:
-გახსნა
+&გახსენით
+```
+
+<!-- cache_translation_check_ka_a126cc3283717c2690a7090bd85a9ca85522a86717b73213f2078e320ebe02da -->
+```
+        <source>&amp;Create new receiving address</source>
+        <translation>შექმენით ახალი მიმღები მისამართი</translation>
+    
+ERR
+The '&' indicating the shortcut key from the source is missing in the Georgian translation. It must be present exactly once, anywhere in the translation.
+
+Correct translation:
+&შექმენით ახალი მიმღები მისამართი
+or
+შექმენით &ახალი მიმღები მისამართი
 ```
 
 <!-- cache_translation_check_ka_deeaa35fcf96340da123d3244daf13a344d081a909575812a41dc92438c18f97 -->
@@ -458,43 +533,58 @@ But most commonly:
 დადასტურებულია (%1 დადასტურება)
 ```
 
-<!-- cache_translation_check_ka_f9065ef0bff47e33d19e3259fc4f11dcb399e32ee04bcb3d274eea65d5e04378 -->
+<!-- cache_translation_check_ka_8d5e7cfa6a8d7c98fb0877c8e856f0f74a4b73dbbfacce08bdbdd7a9875988e7 -->
 ```
-        <source>Copy transaction ID</source>
-        <translation>ტრანზაქციის დაკოპირება ID</translation>
+        <source>Copy transaction &amp;ID</source>
+        <translation>ტრანზაქციის დაკოპირება &amp;ID</translation>
     
 ERR
-The translation is not idiomatic. The phrase "ტრანზაქციის დაკოპირება ID" is awkward and incorrect in word order; a proper translation would place "ID" before "დაკოპირება". A better, idiomatic translation is:
+The placement of "&" is incorrect. In the source, "&" appears before "ID" to indicate a shortcut key. In the translation, "&" is attached directly to "ID", which may not provide a proper shortcut in Georgian. The correct approach is to ensure "&" is placed in front of a Georgian letter in the translated string that makes logical sense for a shortcut. Additionally, "ტრანზაქციის დაკოპირება &ID" translates as "Copy of transaction &ID" rather than "Copy transaction &ID", which can also be improved for clarity.
 
 Correct translation:
-ტრანზაქციის ID-ის დაკოპირება
+ტრანზაქციის &ID-ის დაკოპირება
+
+Alternatively, if you want the shortcut on the first word:
+&ტრანზაქციის ID-ის დაკოპირება
 ```
 
-<!-- cache_translation_check_ka_bbe9a159b2547de048ca3af9127d5a5b19eabdf7558ee27e7167fb2510cf287d -->
+<!-- cache_translation_check_ka_3c3af4a064712ce53919d19a7f16e84fa630e2a082df4079c33bff2efd9eac79 -->
 ```
-        <source>Copy full transaction details</source>
-        <translation>სრული ტრანზაქციის კოპირება დეტალები</translation>
+        <source>Copy full transaction &amp;details</source>
+        <translation>სრული ტრანზაქციის კოპირება &amp;დეტალები</translation>
     
 ERR
-The translation is grammatically incorrect. It translates to "Copy transaction details full" or "Full transaction's copying details", which is not natural in Georgian. The correct Georgian translation should have the structure: "დაკოპირება სრული ტრანზაქციის დეტალების" or "დაკოპირეთ სრული ტრანზაქციის დეტალები".
+The translation is not accurate: "სრული ტრანზაქციის კოპირება &amp;დეტალები" literally means "Copy of full transaction &amp; details" and is not grammatically correct in Georgian. Also, the position of the shortcut '&' specifier does not match well.
 
 Correct translation:
-სრული ტრანზაქციის დეტალების დაკოპირება
-or
-დააკოპირეთ სრული ტრანზაქციის დეტალები
+&amp;სრული ტრანზაქციის დეტალების კოპირება
 ```
 
-<!-- cache_translation_check_ka_111b8d82f95bf9b527e438d33770bb9feaaace0d3be880811286fdb3faffa8e9 -->
+<!-- cache_translation_check_ka_d739a52fbc6716eeb1f54f00ce1e07e2bd7fe32665b42da90d2188079dafcb51 -->
 ```
-        <source>Increase transaction fee</source>
-        <translation>ტრანზაქციის გაზრდა საფასური</translation>
+        <source>Increase transaction &amp;fee</source>
+        <translation>ტრანზაქციის გაზრდა &amp;საფასური</translation>
     
 ERR
-The word order in the Georgian translation is incorrect—the phrase "ტრანზაქციის გაზრდა საფასური" literally reads as "transaction's increase fee," which is not proper Georgian syntax. The correct translation should be: 
+The placement of the shortcut key (&) is problematic, and the structure does not accurately translate the English phrase "Increase transaction fee." The correct translation should clearly render "Increase transaction fee," making "fee" the object of "increase," and place the & once for a shortcut key. The current translation ("ტრანზაქციის გაზრდა &საფასური") literally means "Increase of the transaction &fee," which is not natural or clear in Georgian.
 
-ტრანზაქციის საფასურის გაზრდა
+Correct translation:
+ტრანზაქციის &საფასურის გაზრდა
 
-This directly translates back as "increase of transaction fee," matching the source meaning and proper Georgian grammar.
+This places the & before "საფასურის" (fee), giving a logical shortcut, and keeps the structure correct (Increase transaction fee).
+</reply>
+```
+
+<!-- cache_translation_check_ka_a4721bf4d8f05a0d0da628bb39ae7ec395d74b6cfcfb4e7b257eb416fdb8000a -->
+```
+        <source>A&amp;bandon transaction</source>
+        <translation>ტრანზაქციაზე უარის თქმა</translation>
+    
+ERR
+The ampersand (&) indicating the shortcut key in the source ("A&amp;bandon transaction") is missing from the translation. It should appear exactly once somewhere in the translated string.
+
+Correct translation:
+ტრანზაქციაზე &უარის თქმა
 ```
 
 <!-- cache_translation_check_ka_de7e6c120dfc36f4f0e397dc2ef61b13ab9a8c098622ced8bcba39b1fed9eefd -->
@@ -534,4 +624,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 41.
+Number of issues: 48.

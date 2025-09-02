@@ -1,13 +1,61 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>sr@latin</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bsr@latin%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bsr@latin%5D%20request)
 
+
+<!-- cache_translation_check_sr@latin_208cbebd67e1f4bd409d1575968bff23ee206b62b439c361d251353f6c2650ad -->
+```
+        <source>C&amp;lose</source>
+        <translation>Zatvori</translation>
+    
+ERR
+The translation is missing the accelerator ampersand (&) present in the source. The source contains "C&amp;lose" (one & for the shortcut), but the translation "Zatvori" has no &. Ensure exactly one & appears in the translation (it can be placed before any letter appropriate for the shortcut).
+
+Correct translation (example):
+&Zatvori
+```
+
+<!-- cache_translation_check_sr@latin_f7c84bbd029a2714114bbe580cf41019a9a3f087bd3590969395f70966248d22 -->
+```
+        <source>&amp;Delete</source>
+        <translation>&amp;Izbrisati</translation>
+    
+ERR
+The translation uses the infinitive "Izbrisati" which is unnatural for a UI button/shortcut label in Serbian (Latin). A concise imperative is preferred (e.g. "Izbriši" or "Obriši"). The ampersand is present exactly once, which is fine.
+
+Correct translation:
+&amp;Izbriši
+```
+
+<!-- cache_translation_check_sr@latin_d6333b9640a27d33cbd86aeff7bfe7e2ab35fedaae8550dd352508c087fc69d7 -->
+```
+        <source>Copy &amp;Label</source>
+        <translation>Kopiranje &amp;Oznaka</translation>
+    
+ERR
+The translation uses the noun "Kopiranje" (copying) which is unnatural for a UI command. It should be the imperative "Kopiraj" (Copy). The ampersand appears once (good) but should be placed before the shortcut letter in the translated word; avoid extra spaces around it.
+
+Correct translation:
+Kopiraj &Oznaku
+```
+
+<!-- cache_translation_check_sr@latin_2b38c407b3261b7e48d81fdbab8ad2e4906a46e32260554c5b40d8f6a6f50e28 -->
+```
+        <source>&amp;Edit</source>
+        <translation>&amp;Izmena</translation>
+    
+ERR
+"Izmena" is a noun meaning "change/modification". For the UI label "Edit" a verb or standard menu label is preferred. Also ensure the & shortcut remains.
+
+Correct translation:
+&amp;Izmeni
+```
 
 <!-- cache_translation_check_sr@latin_7e4ca0d56f0a6fbe30f10c3c0a1703fcdbaf44134850b2a458c05a0816c34d95 -->
 ```
@@ -19,6 +67,18 @@ The translation uses Serbian Cyrillic script instead of the required Latin scrip
 
 Correct translation:
 Adrese za slanje - %1
+```
+
+<!-- cache_translation_check_sr@latin_0e9dc4f3c014fc32c0f9e1df24c77c80952026632e24c9e281ed86c4ff667f6e -->
+```
+        <source>Back</source>
+        <translation>Назад</translation>
+    
+ERR
+The translation uses Serbian Cyrillic ("Назад") but the locale requested is Serbian Latin (sr@latin). No format specifiers are involved.
+
+Correct translation (Latin script):
+Nazad
 ```
 
 <!-- cache_translation_check_sr@latin_47dff3504bc1da23c387354bedb207492f159e9004c6e6c4dcd3a9083ce9483a -->
@@ -134,6 +194,20 @@ Correct translation:
 podrazumevani novčanik
 ```
 
+<!-- cache_translation_check_sr@latin_702d596f699b021411b5d00885d047af2dbcac00d53711ed6c7606b683605ab5 -->
+```
+        <source>&amp;About %1</source>
+        <translation>&amp;Otprilike %1</translation>
+    
+ERR
+"Otprilike" means "approximately" in Serbian Latin — that's incorrect for an "About" menu entry. The format specifier %1 and the ampersand are preserved correctly, but the word choice is wrong.
+
+Correct translations (choose one appropriate for the UI):
+&O %1
+or
+&O programu %1
+```
+
 <!-- cache_translation_check_sr@latin_727f66a948f1a66d5d6c88df79baff84746ca65f43cc774fce69f4208cea541b -->
 ```
         <source>Show information about %1</source>
@@ -157,52 +231,88 @@ Correct translation:
 Napravi novi novčanik
 ```
 
-<!-- cache_translation_check_sr@latin_2cc072055bc8c0f85b20bd67bec73e4c959bf65cfd43fa00c4d49379b4ace80e -->
+<!-- cache_translation_check_sr@latin_fff5273037a07b7da18ea71a61376e65170d4c4776d8d2610f8acfd3999f0d4c -->
 ```
-        <source>Change Passphrase…</source>
-        <translation>Измени приступну фразу</translation>
+        <source>&amp;Encrypt Wallet…</source>
+        <translation>&amp;Енкриптуј новчаник</translation>
     
 ERR
-The translation uses Cyrillic script ("Измени приступну фразу") instead of the required Latin script for 'sr@latin'.
+The translation is in Cyrillic (Енкриптуј новчаник) but the requested locale is 'sr@latin' (Serbian in Latin script). It also omits the ellipsis (…) present in the source.
 
-Correct translation:
-Promeni pristupnu frazu
+Correct translation in sr@latin (Latin script), preserving the & and ellipsis:
+&Enkriptuj novčanik…
 ```
 
-<!-- cache_translation_check_sr@latin_31bde7331bfd7237ca5b4e38189f0c4c52a4519fe76336cdc1b233642bcce1ca -->
+<!-- cache_translation_check_sr@latin_f11237f7fa112919b8fb5c26758d3d2f3eebab0d7eab6db03f0a9bd51b053129 -->
 ```
-        <source>Sign message…</source>
-        <translation>Потпиши поруку</translation>
+        <source>&amp;Backup Wallet…</source>
+        <translation>&amp;Резервна копија новчаника</translation>
     
 ERR
-The translation uses Cyrillic script ("Потпиши поруку"), but 'sr@latin' requires Latin script.
+The translation is in Serbian Cyrillic (Резервна копија новчаника) but the requested locale 'sr@latin' requires Latin script. Also the source includes a trailing ellipsis (…) which is missing in the translation. The ampersand exists exactly once, which is fine.
 
-Correct translation:
-Potpiši poruku
+Correct translation (Latin script, with ellipsis and single &):
+&Rezervna kopija novčanika…
 ```
 
-<!-- cache_translation_check_sr@latin_b0179a66e2e6427f09761df2c8cc9c89b5f1591a573c539cde6b48860328a548 -->
+<!-- cache_translation_check_sr@latin_db0498fd505b7b99d8f5435bf20656e0d2423847202599f303cdcb18e620b8c8 -->
 ```
-        <source>Load PSBT from file…</source>
-        <translation>Учитава ”PSBT” из датотеке…</translation>
+        <source>&amp;Change Passphrase…</source>
+        <translation>&amp;Измени приступну фразу</translation>
     
 ERR
-The translation is in Cyrillic script, while 'sr@latin' requires Latin script.
+The translation is in Serbian Cyrillic rather than the requested Serbian Latin (sr@latin), and it omits the trailing ellipsis character (…) present in the source.
 
-Correct translation:
-Učitava “PSBT” iz datoteke…
+Correct translation (Serbian Latin, with ampersand and ellipsis preserved):
+&amp;Izmeni pristupnu frazu…
 ```
 
-<!-- cache_translation_check_sr@latin_a363cdce7fe843c5f2af33ba4d45a42db242f10d67e3b48288a067a119961afc -->
+<!-- cache_translation_check_sr@latin_4b72daf23e278c306a08d5af3792168541fbb18e6efa5b2d53bd2fa477d44c46 -->
 ```
-        <source>Open URI…</source>
-        <translation>Отвори URI</translation>
+        <source>Sign &amp;message…</source>
+        <translation>Потпиши &amp;поруку</translation>
     
 ERR
-The translation is not in 'sr@latin' (Serbian Latin script), but in Cyrillic script ('Отвори URI'). It should be in Latin letters.
+The translation uses Cyrillic script ("Потпиши &amp;поруку") but the target locale 'sr@latin' requires Serbian in Latin script. It also omits the ellipsis character (…) present in the source. The ampersand is fine (present exactly once).
 
 Correct translation:
-Otvori URI…
+Potpiši &poruku…
+```
+
+<!-- cache_translation_check_sr@latin_689f9902aaf291b9c3c0d1c5168b7a037fb0168e036a7873aec3145d84f8eb2a -->
+```
+        <source>&amp;Verify message…</source>
+        <translation>&amp;Верификуј поруку</translation>
+    
+ERR
+The translation is in Serbian Cyrillic (Верификуј поруку) but the requested locale is 'sr@latin' (Serbian in Latin script). It also omits the ellipsis (…) present in the source.
+
+Correct translation (Latin script, with ampersand and ellipsis preserved):
+&Verifikuj poruku…
+```
+
+<!-- cache_translation_check_sr@latin_f7ce4465cb80021c706e81004941157e761bb5daf415dc76d95ade967bc048fe -->
+```
+        <source>&amp;Load PSBT from file…</source>
+        <translation>&amp;Учитава ”PSBT” из датотеке…</translation>
+    
+ERR
+The translation is in Serbian Cyrillic and includes unnecessary quotation marks around PSBT. The requested locale is 'sr@latin' (Serbian in Latin script), so the text must be in Latin characters and should match the source punctuation. Also ensure the ampersand (&) exists exactly once.
+
+Correct translation:
+&Učitaj PSBT iz datoteke…
+```
+
+<!-- cache_translation_check_sr@latin_f5c174e0275310d002193f453e96288c449bf659654de2dc7cc0292fd16c5347 -->
+```
+        <source>Open &amp;URI…</source>
+        <translation>Отвори &amp;URI</translation>
+    
+ERR
+The translation is in Cyrillic script ("Отвори") but the target language tag 'sr@latin' requires Serbian in Latin script. Also the source uses an ellipsis (…) which is missing in the translation.
+
+Correct translation (Serbian Latin):
+Otvori &amp;URI…
 ```
 
 <!-- cache_translation_check_sr@latin_61d116299b64b2221e21a616452a575791eb263151a913baad2c8cda806d4bea -->
@@ -241,16 +351,28 @@ Correct translation:
 Pregledajte listu korišćenih adresa i oznaka za slanje uplata
 ```
 
-<!-- cache_translation_check_sr@latin_a416968fa0733193f3a53549641c22adba8b4c692b207e22ea5883ca8cc8d88c -->
+<!-- cache_translation_check_sr@latin_986c1bb9e9f803edbe176beff96d002d37299fdb4b4c4febb5404a18a8cb4bc8 -->
 ```
-        <source>Load PSBT from clipboard…</source>
+        <source>&amp;Command-line options</source>
+        <translation>&amp;Опције командне линије</translation>
+    
+ERR
+The translation is in Serbian Cyrillic ("Опције командне линије") but the locale 'sr@latin' requires Latin script.
+
+Correct translation (Latin script):
+&Opcije komandne linije
+```
+
+<!-- cache_translation_check_sr@latin_d8fcd325544250661ba66f9dcff88d01533d58e3bbff8e4e6b9e68d16c72d496 -->
+```
+        <source>Load PSBT from &amp;clipboard…</source>
         <translation>Учитај ”PSBT” из привремене меморије</translation>
     
 ERR
-The translation is using Cyrillic script ("Учитај ”PSBT” из привремене меморије") instead of Latin script as required by 'sr@latin'. Additionally, typographical quotation marks are used instead of plain ones, and "clipboard" is commonly translated as "clipboard" or "privremena memorija", but both scripts must be observed.
+The translation is in Serbian Cyrillic (Учитај ”PSBT” из привремене меморије) but the requested locale is sr@latin (Serbian in Latin script). It also omits the shortcut marker (&) and the trailing ellipsis present in the source. Quotation marks are different and unnecessary around PSBT.
 
-Correct translation:
-Ucitaj "PSBT" iz privremene memorije
+Correct translation (Serbian Latin), keeping a single & for the shortcut and the ellipsis:
+Učitaj PSBT iz &međuspremnika…
 ```
 
 <!-- cache_translation_check_sr@latin_da5c4a18c59abed2e6e1fa142f08d92822dadeca6d1af2d75937f2dd8b9cbd00 -->
@@ -263,6 +385,30 @@ The translation uses Cyrillic script instead of Latin script, which is incorrect
 
 Correct translation:
 Učitaj delimično potpisanu Bitcoin transakciju iz clipboard-a
+```
+
+<!-- cache_translation_check_sr@latin_3905110758e709940c6bf294d8b0adf75bd39b2557abcacd7751f2bfdff8b150 -->
+```
+        <source>&amp;Sending addresses</source>
+        <translation>&amp;Адресе за слање</translation>
+    
+ERR
+The translation uses Serbian Cyrillic script ("Адресе за слање") while the requested locale is sr@latin (Serbian in Latin script). Also keep the ampersand exactly once — it's present, but the script must be Latin.
+
+Correct translation:
+&amp;Adrese za slanje
+```
+
+<!-- cache_translation_check_sr@latin_2358560d71e79cd9c9d3c9cccccefd3086af8c200b55d7d59c55ec33dd320118 -->
+```
+        <source>&amp;Receiving addresses</source>
+        <translation>&amp;Адресе за примање</translation>
+    
+ERR
+The translation is in Serbian Cyrillic ("Адресе за примање") but the target locale 'sr@latin' requires Serbian in Latin script. Also ensure the single '&' shortcut marker is preserved.
+
+Correct translation (Serbian Latin):
+&Adrese za primanje
 ```
 
 <!-- cache_translation_check_sr@latin_c67bf84687657800de4d524aeae5824485e6547ac73232330c0f201980fdd07b -->
@@ -338,6 +484,18 @@ Correct translation:
 Prikaži poruku pomoći %1 za listu sa mogućim opcijama Bitcoin komandne linije
 ```
 
+<!-- cache_translation_check_sr@latin_d9586b7cde22f3976d48a8a3bd8c0eb837ef3bade1bcbf28c8f1be1711db360a -->
+```
+        <source>&amp;Mask values</source>
+        <translation>&amp;Маскирај вредности</translation>
+    
+ERR
+The translation is in Serbian Cyrillic script, but the requested locale is 'sr@latin' (Serbian in Latin script). The ampersand is correctly present once.
+
+Correct translation (Latin script):
+&amp;Maskiraj vrednosti
+```
+
 <!-- cache_translation_check_sr@latin_df62365ad4ac671da0c1a61a2ed295efe643ffddc0f52d245094285c6fa233d8 -->
 ```
         <source>Mask the values in the Overview tab</source>
@@ -375,16 +533,28 @@ Correct translation:
 Učitaj rezervnu kopiju novčanika
 ```
 
-<!-- cache_translation_check_sr@latin_098207afb09459e6ba56b98840ef0c55039f6cfa43e74e0b950ef0f8bc490647 -->
+<!-- cache_translation_check_sr@latin_a3dba58f5094f427ac2079a40552e322da8888a4a696a21d03601386ba277c9b -->
 ```
-        <source>Show</source>
-        <translation>Прикажи</translation>
+        <source>&amp;Window</source>
+        <translation>&amp;Прозор</translation>
     
 ERR
-The translation is in Cyrillic script ("Прикажи"), but 'sr@latin' requires the Latin script.
+The translation uses Cyrillic script ("Прозор") but the locale 'sr@latin' requires Serbian in Latin script. The ampersand (shortcut) is present exactly once, which is correct.
 
-Correct translation:
-Prikaži
+Correct translation (Latin script), preserving the shortcut:
+&amp;Prozor
+```
+
+<!-- cache_translation_check_sr@latin_e325bae3e6fa76ee26217d109c2191d6a348d9aee95535abe58e8680bbbf849a -->
+```
+        <source>S&amp;how</source>
+        <translation>&amp;Прикажи</translation>
+    
+ERR
+The translation is in Serbian Cyrillic ("Прикажи") but the requested language variant is sr@latin (Serbian in Latin script). Also ensure the XML-escaped ampersand is preserved.
+
+Correct translation (Latin script, with the shortcut ampersand escaped):
+&amp;Prikaži
 ```
 
 <!-- cache_translation_check_sr@latin_9e55b85bae0f586fe8146321e402a1acf5162e201db71a24861f31ef924a373e -->
@@ -560,33 +730,76 @@ Correct translation:
 Potvrđeno
 ```
 
-<!-- cache_translation_check_sr@latin_6a4128fc34e28ed07a295d8bc4c7b6765e1a429f7f8aa834d6f5151f4e25466c -->
+<!-- cache_translation_check_sr@latin_8222a858873ec13c5df7e9a946592a36bf3eb8671dad9a25599b24410f0c2ebb -->
 ```
-        <source>Lock unspent</source>
+        <source>&amp;Copy address</source>
+        <translation>&amp;Копирај адресу</translation>
+    
+ERR
+The translation is in Serbian Cyrillic (Копирај адресу) but the locale 'sr@latin' requires Serbian in Latin script. The ampersand (&) is present exactly once, which is correct.
+
+Correct translation in Serbian (Latin script):
+&amp;Kopiraj adresu
+```
+
+<!-- cache_translation_check_sr@latin_d3c67ee6f7daa4d5ec3f613ccf586301db99122f3390c8488657d75dbb5c4432 -->
+```
+        <source>Copy &amp;label</source>
+        <translation>Копирај &amp;означи</translation>
+    
+ERR
+The translation is in Serbian Cyrillic (Копирај &amp;означи) but the locale requested is 'sr@latin' (Serbian in Latin script). Also the wording is slightly off: "label" as a noun should be translated as "oznaka" in accusative case here ("oznaku").
+
+Correct translation (Serbian Latin), keeping the shortcut ampersand exactly once:
+Kopiraj &oznaku
+```
+
+<!-- cache_translation_check_sr@latin_638ac814c9d49f25c1043de13c925c3b5f2c583035e53e743a5bbbdb53b0f1bf -->
+```
+        <source>Copy &amp;amount</source>
+        <translation>Копирај &amp;износ</translation>
+    
+ERR
+The translation is in Serbian Cyrillic script ("Копирај &amp;износ") but the requested locale is 'sr@latin' (Serbian in Latin script). Also ensure the ampersand remains exactly once (it is present correctly).
+
+Correct translation in Serbian (Latin script):
+Kopiraj &amp;iznos
+```
+
+<!-- cache_translation_check_sr@latin_4976c57c852456d2428e3c8dd6019732c4fa415d80d052627d4b252a3adb4504 -->
+```
+        <source>Copy transaction &amp;ID and output index</source>
+        <translation>Kopiraj transakciju &amp;ID i izlazni index</translation>
+    
+ERR
+Translation has minor grammatical and lexical issues. "transakciju &ID" is awkward — Serbian prefers "ID transakcije" (genitive), and "index" should be spelled "indeks". The ampersand should appear exactly once (for the shortcut); keep it before "ID" as in the source.
+
+Correct translation:
+Kopiraj &ID transakcije i izlazni indeks
+```
+
+<!-- cache_translation_check_sr@latin_0e3a2093f7a81f0eb8be8107ee3cd0e220d482f571a1f346de0aab09f9507d17 -->
+```
+        <source>L&amp;ock unspent</source>
         <translation>Закључај непотрошено</translation>
     
 ERR
-The translation uses Cyrillic script (Закључај непотрошено), but 'sr@latin' requires Latin script for Serbian. Also, "unspent" should be translated as "nepotrošeno" or the appropriate noun form based on UI context.
+The translation is in Cyrillic script ("Закључај непотрошено") but the target locale is sr@latin (Serbian in Latin script). Also the source contains a single '&' for the shortcut (L&amp;ock) but the translation has no '&'. 
 
-Correct translation:
-Zaključaj nepotrošeno
+Correct translation in Serbian (Latin) with a single shortcut indicator:
+&Zaključaj nepotrošeno
 ```
 
-<!-- cache_translation_check_sr@latin_bbea2bdf1a8b89c8711da5b3d604b11f82f3faca210b650379f5904d0c4ce91a -->
+<!-- cache_translation_check_sr@latin_f28249d0c3e5b5f1afdeb988a8cca49aa674f8948e82f1a3507e5b067cb3a74a -->
 ```
-        <source>Unlock unspent</source>
+        <source>&amp;Unlock unspent</source>
         <translation>Откључај непотрошено</translation>
     
 ERR
-The translation uses Cyrillic script ("Откључај непотрошено") instead of Latin script, which is required for 'sr@latin'. Additionally, "nepotrošeno" should preferably be clarified as "nepotrošene" (assuming "unspent outputs" in plural, as is usual in Bitcoin context) or "nepotrošeni" ("unspent" as a noun). The most direct translation would be:
+The translation is in Cyrillic (Откључај непотрошено) but the language tag requests Serbian in Latin script (sr@latin). Also the source contains a single '&' (for mnemonic/shortcut) which must appear exactly once in the translation; the translation is missing it.
 
-Correct translation:
-Otključaj nepotrošeno
-
-Or if intended as plural:
-Otključaj nepotrošene
-
-But most important, the output must be in Latin script, not Cyrillic.
+Correct translation (Serbian, Latin script) example:
+&Otključaj nepotrošeno
 ```
 
 <!-- cache_translation_check_sr@latin_075517df320f439ee4802c948a5ef3734765b40f11b91ee61f12bc43d6a7237c -->
@@ -636,6 +849,19 @@ The translation uses Cyrillic script ("Направи новчаник"), while 
 
 Correct translation:
 Napravi novčanik
+```
+
+<!-- cache_translation_check_sr@latin_1a8401c404fa25fde86f25f360bc7ac471ac4dbb8a2fd57bd5ea5ff6fb9cbab1 -->
+```
+        <source>Creating Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the create wallet progress window which indicates to the user which wallet is currently being created.</extracomment>
+        <translation>Креирање новчаника &lt;b&gt;%1&lt;/b&gt;…</translation>
+    
+ERR
+The translation is in Serbian Cyrillic, but the requested locale is 'sr@latin' (Serbian in Latin script). The content is otherwise accurate and %1 is preserved.
+
+Correct translation (Latin script):
+Kreiranje novčanika &lt;b&gt;%1&lt;/b&gt;…
 ```
 
 <!-- cache_translation_check_sr@latin_99505440570a1684db35109575c7f69460952f2c22e032d1c62b881db24be233 -->
@@ -866,6 +1092,66 @@ Correct translation:
 Putanja već postoji i nije direktorijum.
 ```
 
+<!-- cache_translation_check_sr@latin_3c9a98f8bd6ec57ef6783666f609cb1edc9b11294f333d81f889fb8d2147b773 -->
+```
+        <source>Do not shut down the computer until this window disappears.</source>
+        <translation>Немојте искључити рачунар док овај прозор не нестане.</translation>
+    
+ERR
+The translation is in Serbian Cyrillic script, but the target is 'sr@latin' (Serbian Latin script). It does not match the required script.
+
+Correct translation:
+Nemojte isključiti računar dok ovaj prozor ne nestane.
+```
+
+<!-- cache_translation_check_sr@latin_d403cba9ffb0ec8d8fe74cd851de9b06ff23f1d7f087394c61a37652decabebd -->
+```
+        <source>Welcome</source>
+        <translation>Добродошли</translation>
+    
+ERR
+The translation is in Cyrillic script ("Добродошли") instead of Latin script, as required for 'sr@latin'. The content is otherwise accurate.
+
+Correct translation:
+Dobrodošli
+```
+
+<!-- cache_translation_check_sr@latin_1c596cdcf4564f838620806b5fca3d0b4bfbe220fbe9888aff51c3cc8e71bf97 -->
+```
+        <source>Welcome to %1.</source>
+        <translation>Добродошли на  %1.</translation>
+    
+ERR
+The translation uses Cyrillic letters, but 'sr@latin' specifies Serbian in the Latin script. It also contains a double space before "%1".
+
+Correct translation:
+Dobrodošli u %1.
+```
+
+<!-- cache_translation_check_sr@latin_323efa2061f0ced599293d07ad46ba27961e5c6c4f8e3f658c71b81bcb433743 -->
+```
+        <source>Limit block chain storage to</source>
+        <translation>Ограничите складиштење блок ланца на</translation>
+    
+ERR
+The translation is in Cyrillic script ("Ограничите складиштење блок ланца на"), but 'sr@latin' requires Serbian in Latin script.
+
+Correct translation:
+Ograničite skladištenje blok lanca na
+```
+
+<!-- cache_translation_check_sr@latin_ed0cc4eea881c9b24bc1011ee9067997c2721a6841102eb25d58df48526fc5db -->
+```
+        <source>Use the default data directory</source>
+        <translation>Користите подразумевани директоријум података</translation>
+    
+ERR
+The translation uses Cyrillic script, but 'sr@latin' requires Serbian in Latin script.
+
+Correct translation:
+Koristite podrazumevani direktorijum podataka
+```
+
 <!-- cache_translation_check_sr@latin_e0d3b5109cb2d7193590368f17f07152dded2395f9b686fff60399a9c5a0d3a7 -->
 ```
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -918,66 +1204,6 @@ The translation is problematic for the following reasons:
 
 Correct translation:
 Greška: Navedeni direktorijum sa podacima "%1" ne može biti kreiran.
-```
-
-<!-- cache_translation_check_sr@latin_d403cba9ffb0ec8d8fe74cd851de9b06ff23f1d7f087394c61a37652decabebd -->
-```
-        <source>Welcome</source>
-        <translation>Добродошли</translation>
-    
-ERR
-The translation is in Cyrillic script ("Добродошли") instead of Latin script, as required for 'sr@latin'. The content is otherwise accurate.
-
-Correct translation:
-Dobrodošli
-```
-
-<!-- cache_translation_check_sr@latin_1c596cdcf4564f838620806b5fca3d0b4bfbe220fbe9888aff51c3cc8e71bf97 -->
-```
-        <source>Welcome to %1.</source>
-        <translation>Добродошли на  %1.</translation>
-    
-ERR
-The translation uses Cyrillic letters, but 'sr@latin' specifies Serbian in the Latin script. It also contains a double space before "%1".
-
-Correct translation:
-Dobrodošli u %1.
-```
-
-<!-- cache_translation_check_sr@latin_323efa2061f0ced599293d07ad46ba27961e5c6c4f8e3f658c71b81bcb433743 -->
-```
-        <source>Limit block chain storage to</source>
-        <translation>Ограничите складиштење блок ланца на</translation>
-    
-ERR
-The translation is in Cyrillic script ("Ограничите складиштење блок ланца на"), but 'sr@latin' requires Serbian in Latin script.
-
-Correct translation:
-Ograničite skladištenje blok lanca na
-```
-
-<!-- cache_translation_check_sr@latin_ed0cc4eea881c9b24bc1011ee9067997c2721a6841102eb25d58df48526fc5db -->
-```
-        <source>Use the default data directory</source>
-        <translation>Користите подразумевани директоријум података</translation>
-    
-ERR
-The translation uses Cyrillic script, but 'sr@latin' requires Serbian in Latin script.
-
-Correct translation:
-Koristite podrazumevani direktorijum podataka
-```
-
-<!-- cache_translation_check_sr@latin_3c9a98f8bd6ec57ef6783666f609cb1edc9b11294f333d81f889fb8d2147b773 -->
-```
-        <source>Do not shut down the computer until this window disappears.</source>
-        <translation>Немојте искључити рачунар док овај прозор не нестане.</translation>
-    
-ERR
-The translation is in Serbian Cyrillic script, but the target is 'sr@latin' (Serbian Latin script). It does not match the required script.
-
-Correct translation:
-Nemojte isključiti računar dok ovaj prozor ne nestane.
 ```
 
 <!-- cache_translation_check_sr@latin_e7e51108739259f607536c5948e992bddffb9c0daffcd0212dd411a2ab5dbae2 -->
@@ -1052,16 +1278,16 @@ The correct translation in Latin script is:
 Opcije
 ```
 
-<!-- cache_translation_check_sr@latin_528a087869f6bdef54cca1642d49e992661142eab7e4b43585be134bae828d76 -->
+<!-- cache_translation_check_sr@latin_2e5552db7c9227a626eed1a9be537345e49294d1a0aa129317b27378a6284845 -->
 ```
-        <source>Main</source>
-        <translation>Главни</translation>
+        <source>&amp;Main</source>
+        <translation>&amp;Главни</translation>
     
 ERR
-The translation uses Cyrillic letters ("Главни") instead of Latin script as required by 'sr@latin'. It should be in Latin script.
+The translation uses Cyrillic script ("Главни") but the requested locale 'sr@latin' requires Serbian in Latin script. The ampersand is present once, which is correct.
 
-Correct translation:
-Glavni
+Correct translation (Latin script):
+&Glavni
 ```
 
 <!-- cache_translation_check_sr@latin_f6e624df16dcbd583e2a5cbbd638a8d58c12502f214525e8de5b2ed07e846457 -->
@@ -1076,6 +1302,18 @@ Correct translation:
 Automatski pokreni %1 nakon prijavljivanja na sistem.
 ```
 
+<!-- cache_translation_check_sr@latin_8a1c014ffbd9439216859338e77205dd1231c418d1ebeae73ad2fcb70710d6ae -->
+```
+        <source>&amp;Start %1 on system login</source>
+        <translation>&amp;Покрени %1 приликом пријаве на систем</translation>
+    
+ERR
+The translation is in Cyrillic script, but the target locale 'sr@latin' requires Serbian in Latin script. The ampersand and %1 are correct, but script must be converted.
+
+Correct translation:
+&amp;Pokreni %1 prilikom prijave na sistem
+```
+
 <!-- cache_translation_check_sr@latin_191b9c35e2d822e544ab68959ea241f94b6bc63c0324f1c565fa466769c3cf89 -->
 ```
         <source>Enabling pruning significantly reduces the disk space required to store transactions. All blocks are still fully validated. Reverting this setting requires re-downloading the entire blockchain.</source>
@@ -1088,18 +1326,28 @@ Correct translation:
 Omogućavanje smanjenja značajno smanjuje prostor na disku potreban za skladištenje transakcija. Svi blokovi su još uvek u potpunosti validirani. Vraćanje ove postavke zahteva ponovno preuzimanje celog blockchaina.
 ```
 
-<!-- cache_translation_check_sr@latin_efc9094a83a62dfceb458d9102660c382b4b4d6e390718b46f626e44c43f1e67 -->
+<!-- cache_translation_check_sr@latin_6c2e6271f15953db62c464454a57235efecc5c15f1f70df0f453cae06add0d8b -->
 ```
-        <source>Number of script verification threads</source>
+        <source>Size of &amp;database cache</source>
+        <translation>Величина кеша базе података</translation>
+    
+ERR
+The translation is in Cyrillic ("Величина кеша базе података") but the target tag 'sr@latin' requires Latin script. Also the source includes an ampersand for the shortcut ("&database") which is missing in the translation — the translation must include exactly one '&'.
+
+Correct translation in Serbian (Latin script) with the shortcut preserved (example placement of &):
+Veličina &keša baze podataka
+```
+
+<!-- cache_translation_check_sr@latin_4a607db8c92fdfba8d7090eca4db9848cd71ec535445ae2f8ddad7a83c07c5ad -->
+```
+        <source>Number of script &amp;verification threads</source>
         <translation>Број скрипти и CPU за верификацију</translation>
     
 ERR
-The translation is inaccurate. The source refers specifically to the "number of script verification threads" (i.e., how many CPU threads/cores are used to verify scripts), but the translation renders this as "Број скрипти и CPU за верификацију" which means "Number of scripts and CPU for verification". This is both inaccurate and misleading.
+The translation is problematic: it's written in Cyrillic (Број скрипти и CPU за верификацију) whereas the locale requests Serbian in Latin script (sr@latin). It also adds "CPU" which is not in the source, replaces the & shortcut with the word "и" (and), and slightly alters the meaning/word order.
 
-Correct translation:
-Broj niti za verifikaciju skripti
-
-(Note: Use 'niti' for 'threads', and 'skripti' for 'scripts'. Make sure to keep the entire translation in Latin script for 'sr@latin'—the provided translation is in Cyrillic.)
+Correct translation in Serbian (Latin script), preserving the & shortcut once:
+Broj niti za &verifikaciju skripti
 ```
 
 <!-- cache_translation_check_sr@latin_a0234be980252e845b6a97a1d7fe6c79b037f24c98e2018b1242e19d986d61a0 -->
@@ -1157,28 +1405,55 @@ Correct translation:
 Otvori konfiguracionu datoteku
 ```
 
-<!-- cache_translation_check_sr@latin_d25854d56a12dd9a5a4ddca677826def48d1646b97e8f11b3992f574d8e63911 -->
+<!-- cache_translation_check_sr@latin_d693e0ad3eaa0c151f558614340d015b1c6c481884988075b09e66fc886a489d -->
 ```
-        <source>Reset Options</source>
-        <translation>Ресет Опције</translation>
+        <source>&amp;Reset Options</source>
+        <translation>&amp;Ресет Опције</translation>
     
 ERR
-The translation uses Cyrillic script ("Ресет Опције") instead of the required Latin script for 'sr@latin'. Additionally, "Resettuj opcije" or "Resetuj opcije" would be more idiomatic.
+The translation uses Cyrillic script (Ресет Опције) but the language tag is 'sr@latin' which requires Latin script. Also consider more natural Serbian phrasing.
 
-Correct translation:
-Resetuj opcije
+Correct translation (Latin script), keeping the shortcut ampersand exactly once:
+&Reset opcije
+
+Alternative more natural option:
+&Poništi opcije
 ```
 
-<!-- cache_translation_check_sr@latin_039eeee3a4042e52a70d988657fd5fb9e800f56eea9705640ae0b2ac6bb6f549 -->
+<!-- cache_translation_check_sr@latin_8989ea55ca4dff4a10b0f3383fb02ce15697ab38d2a94f7c6ff58e6a51fc4fa2 -->
 ```
-        <source>Prune block storage to</source>
-        <translation>Сакрати block складиштење на</translation>
+        <source>&amp;Network</source>
+        <translation>&amp;Мрежа</translation>
     
 ERR
-The translation mixes Cyrillic and Latin scripts, which is not correct for 'sr@latin'. The correct translation should be fully in Latin script. Also, "block" and "skladištenje" should both be in Latin alphabet.
+The translation uses Cyrillic script ("Мрежа") instead of Serbian Latin script required by 'sr@latin'. The ampersand is present and spacing is fine, but script is wrong.
 
-Correct translation:
-Skrati skladištenje blokova na
+Correct translation (Serbian Latin):
+&amp;Mreža
+```
+
+<!-- cache_translation_check_sr@latin_7f41849d827d608340c098c4f9b8a465587eee6dac06996db83d4fddcdc5a8a4 -->
+```
+        <source>Prune &amp;block storage to</source>
+        <translation>Сакрати &amp;block складиштење на</translation>
+    
+ERR
+The translation is in Cyrillic and leaves the English word "block" untranslated. The language tag 'sr@latin' requires Serbian in Latin script. Also ensure the ampersand shortcut appears exactly once (the XML entity &amp; corresponds to &).
+
+Correct translation (Latin script), preserving a single shortcut ampersand:
+Smanji skladištenje &blokova na
+```
+
+<!-- cache_translation_check_sr@latin_28e8a887e7f6397591b7528074c24c70edaad3858c4106b797e70b581323c5ef -->
+```
+        <source>W&amp;allet</source>
+        <translation>Н&amp;овчаник</translation>
+    
+ERR
+The translation uses Serbian Cyrillic ("Новчаник") but the requested locale is Serbian in Latin script (sr@latin). The ampersand (&) is present exactly once which is fine, but the script must be Latin.
+
+Correct translation (Latin script), preserving a single ampersand:
+N&amp;ovčanik
 ```
 
 <!-- cache_translation_check_sr@latin_d60be04c5dcfac51407d8f5b836433142d76c9b5f0034fb9ba8f537c5a3476ed -->
@@ -1193,16 +1468,40 @@ Correct translation:
 Ekspert
 ```
 
-<!-- cache_translation_check_sr@latin_3637e7e702908237124163bf86018e8c29ac89819395432e855073f8990b1bf1 -->
+<!-- cache_translation_check_sr@latin_1ab27e36c8536348eb7c3420a8479d51fc27cce7f84584967da69cb1aaa6008f -->
 ```
-        <source>Spend unconfirmed change</source>
-        <translation>Троши непотврђени кусур</translation>
+        <source>Enable coin &amp;control features</source>
+        <translation>Омогући опцију контроле новчића</translation>
     
 ERR
-The provided translation is in Serbian Cyrillic script, but 'sr@latin' specifies the Latin script for Serbian. The content itself is otherwise accurate.
+The translation is in Serbian Cyrillic rather than Serbian Latin, and it is missing the required shortcut marker (&). Also the phrasing can be improved to reflect "features" (plural).
 
-Correct translation:
-Troši nepotvrđeni kusur
+Correct translation (sr@latin):
+Omogući &kontrolne opcije za novčiće
+```
+
+<!-- cache_translation_check_sr@latin_bf34ccfc39bd144359a77cfe12e64a886fbe72dd7ab4003c76462a81e4285492 -->
+```
+        <source>&amp;Spend unconfirmed change</source>
+        <translation>&amp;Троши непотврђени кусур</translation>
+    
+ERR
+The translation is in Serbian Cyrillic, but the requested locale is 'sr@latin' (Serbian in Latin script). Also ensure the ampersand for the shortcut appears exactly once.
+
+Correct translation (Serbian, Latin script):
+&amp;Troši nepotvrđeni kusur
+```
+
+<!-- cache_translation_check_sr@latin_196c911250d4690910aff542514bded95b961fb11f31b283845d8afbf7152a3a -->
+```
+        <source>&amp;External signer script path</source>
+        <translation>&amp;Путања скрипте спољног потписника</translation>
+    
+ERR
+The translation is in Serbian Cyrillic, but the requested locale is 'sr@latin' (Serbian in Latin script). Also otherwise the wording is fine and the ampersand is present once.
+
+Correct translation (Latin script):
+&amp;Putanja skripte spoljnog potpisnika
 ```
 
 <!-- cache_translation_check_sr@latin_f60a6cc5b5c8fe1bba4f2c7326150dc00eccb36d5e973e954f285f10771932b1 -->
@@ -1215,6 +1514,18 @@ The translation is in Serbian Cyrillic, but the requested language is 'sr@latin'
 
 Correct translation:
 Prihvati spoljašnje konekcije.
+```
+
+<!-- cache_translation_check_sr@latin_6ef8e317e053328bbe6291c14c4e93aef0637ae91b01c35fe835884d7ab0ddb8 -->
+```
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Дозволи долазеће конекције.</translation>
+    
+ERR
+The translation is in Cyrillic (Serbian Cyrillic) and includes a trailing period; the requested locale is 'sr@latin' (Serbian in Latin script). Also the source contains a single & (shortcut) and the translation must include exactly one &; the provided translation has none.
+
+Correct translation (sr@latin), keeping a single & for the shortcut and no extra punctuation or whitespace:
+Dozvoli dolazeće &konekcije
 ```
 
 <!-- cache_translation_check_sr@latin_3e1c31380edd8079c4b6f046c1f44bfe3cb4013aa454c18cdbbba954e75326af -->
@@ -1231,28 +1542,114 @@ Correct translation:
 Poveži se na Bitcoin mrežu preko SOCKS5 proksija.
 ```
 
-<!-- cache_translation_check_sr@latin_3828aadd057ba7a30a5677e1f9799311f632247d80b965d4e0ab351ef04b7fae -->
+<!-- cache_translation_check_sr@latin_9b7e5978450412193556bc34436fe8a0eed34d388df75bd97caba09b39c01fa7 -->
 ```
-        <source>Show tray icon</source>
-        <translation>Прикажи икону у траци</translation>
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>&amp;Конектуј се кроз SOCKS5 прокси (уобичајени прокси):</translation>
     
 ERR
-The translation is in Cyrillic ("Прикажи икону у траци") instead of Latin script as required by 'sr@latin'. The content is otherwise correct, but the script must be Latin.
+The translation is in Serbian Cyrillic script, but the requested locale is 'sr@latin' (Latin script). Otherwise the meaning is correct and the ampersand is present once.
+
+Correct translation (Latin script):
+&Poveži se kroz SOCKS5 proxy (podrazumevani proxy):
+```
+
+<!-- cache_translation_check_sr@latin_d53c2ee93761fe6e40503cfc663855de4b05a29f59773ba38b65acbe6084a214 -->
+```
+        <source>Proxy &amp;IP:</source>
+        <translation>Прокси &amp;IP:</translation>
+    
+ERR
+The translation is in Cyrillic ("Прокси") but the requested locale 'sr@latin' requires Serbian in Latin script. The ampersand shortcut is preserved correctly, and there are no extra spaces, but the script is wrong.
+
+Correct translation (Latin script):
+Proksi &IP:
+```
+
+<!-- cache_translation_check_sr@latin_42c29c9d25e766b1f2f83649bbd1c55870893df8d6f66506b5e7fb354a146a2f -->
+```
+        <source>&amp;Port:</source>
+        <translation>&amp;Порт:</translation>
+    
+ERR
+The translation uses Cyrillic script ("Порт") while the target locale 'sr@latin' requires Serbian in Latin script. The ampersand is present and spacing is fine, but the script is incorrect.
 
 Correct translation:
-Prikaži ikonu u traci
+&amp;Port:
 ```
 
-<!-- cache_translation_check_sr@latin_78709beffda96d776b54e421fb0d448394cb232b268f76fcdb11bde2ac4e4bd9 -->
+<!-- cache_translation_check_sr@latin_a3dba58f5094f427ac2079a40552e322da8888a4a696a21d03601386ba277c9b -->
 ```
-        <source>Minimize on close</source>
+        <source>&amp;Window</source>
+        <translation>&amp;Прозор</translation>
+    
+ERR
+The translation uses Cyrillic script ("Прозор") but the locale 'sr@latin' requires Serbian in Latin script. The ampersand (shortcut) is present exactly once, which is correct.
+
+Correct translation (Latin script), preserving the shortcut:
+&amp;Prozor
+```
+
+<!-- cache_translation_check_sr@latin_5d4e98bed523794526aeb80e812728b98ef6162ec2742137832b0c66d55ea751 -->
+```
+        <source>&amp;Show tray icon</source>
+        <translation>&amp;Прикажи икону у траци</translation>
+    
+ERR
+The translation is in Cyrillic script (Прикажi икону у траци) but the target locale 'sr@latin' requires Serbian in Latin script. The ampersand is present once, which is okay.
+
+Correct translation (Serbian Latin):
+&Prikaži ikonu u traci
+```
+
+<!-- cache_translation_check_sr@latin_b748b2b1a00e41e8836275f6b45880a1c456e64c02adbb59dedd7b230c7fbb0e -->
+```
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp;минимизирај у доњу линију, уместо у програмску траку</translation>
+    
+ERR
+The translation is in Cyrillic script, but the requested locale is 'sr@latin' (Serbian in Latin script). Also the phrasing can be improved for natural Serbian.
+
+Correct translation (Serbian Latin), preserving a single '&' for the shortcut:
+&Minimiziraj u sistemsku paletu umesto u programsku traku
+```
+
+<!-- cache_translation_check_sr@latin_71f2b0363d4d3ec75f8848720b5326054f7c475404f87da0f73693af7e67b949 -->
+```
+        <source>M&amp;inimize on close</source>
         <translation>Минимизирај при затварању</translation>
     
 ERR
-The translation is in Cyrillic, but 'sr@latin' denotes Serbian in Latin script. The translation should be in Latin script, not Cyrillic.
+Problems:
+- The translation is in Cyrillic script ("Минимизирај при затварању") but the target locale is sr@latin (Serbian in Latin script).
+- The source contains a single & (M&amp;inimize...) indicating a keyboard shortcut; the translation omits the &. The translation must include exactly one &.
+
+Correct translation (Serbian Latin, with one & for the shortcut):
+&Minimiziraj pri zatvaranju
+```
+
+<!-- cache_translation_check_sr@latin_11ddd93ea01269724a5c5cdf5e1cf181698ea34c5128c5d5dc696baeadc1a141 -->
+```
+        <source>&amp;Display</source>
+        <translation>&amp;Прикажи</translation>
+    
+ERR
+The translation is in Cyrillic script ("Прикажи") but the language tag 'sr@latin' requires Serbian in Latin script. The ampersand is fine.
 
 Correct translation:
-Minimiziraj pri zatvaranju
+&amp;Prikaži
+```
+
+<!-- cache_translation_check_sr@latin_104f40c6ab5d55c7767c19c21b3ebb50071984cb4cb5a931f596eea2165097bd -->
+```
+        <source>User Interface &amp;language:</source>
+        <translation>&amp;Језик корисничког интерфејса:</translation>
+    
+ERR
+The translation is in Cyrillic script (Језик корисничког интерфејса) but the requested locale is 'sr@latin' (Serbian in Latin script). Also ensure the ampersand (&) marking the shortcut remains exactly once.
+
+Correct translation (Latin script):
+&amp;Jezik korisničkog interfejsa:
 ```
 
 <!-- cache_translation_check_sr@latin_4dee95b71f2d3775223a42434e91f3f57b7cd5a64e13bfc0678f0c4bf3fa5813 -->
@@ -1267,18 +1664,52 @@ Correct translation:
 Jezik korisničkog interfejsa može se ovde postaviti. Ovo svojstvo biće na snazi nakon ponovnog pokretanja %1.
 ```
 
-<!-- cache_translation_check_sr@latin_5eebaa4595b229891c0fba6e768a15ecb373cb1b5057af244f7691120eaa661c -->
+<!-- cache_translation_check_sr@latin_a14a87c1f402e572b8bbdb509713a00e4a40d278b796f65ad9b74d2ff40ba38d -->
 ```
-        <source>OK</source>
-        <translation>Уреду</translation>
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>&amp;Јединица за приказивање износа:</translation>
     
 ERR
-The translation uses Cyrillic letters ("Уреду") instead of Latin script, which is required for 'sr@latin'. The correct translation would be:
+The translation is in Serbian Cyrillic (Јединица...), but the requested language variant is 'sr@latin' (Serbian in Latin script). No other issues (ampersand present once, no format specifiers or spacing errors).
 
-OK
+Correct translation (Latin script):
+&amp;Jedinica za prikazivanje iznosa:
+```
+
+<!-- cache_translation_check_sr@latin_54d86df503dd736bd5cda8ec5c6cd93126f1bddd3395cfcfce32c9c6c7a0520b -->
+```
+        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
+        <translation>Користите посебан СОЦКС&amp;5 прокси да бисте дошли до вршњака преко услуга Тор онион:</translation>
+    
+ERR
+The translation is in Cyrillic (should be Serbian Latin script) and uses "вршњака" which means "age-mates" (incorrect for network peers). Also "СОЦКС" is a Cyrillic transliteration rather than keeping "SOCKS". The ampersand must appear exactly once as in source.
+
+Correct translation (sr@latin):
+Koristite poseban SOCKS&amp;5 proxy da biste dosegli peer-ove putem Tor onion usluga:
+```
+
+<!-- cache_translation_check_sr@latin_c110505a3dc04284a04a851dcf6ad6f36ed44404a36cde8cbd2154b5c3165818 -->
+```
+        <source>&amp;OK</source>
+        <translation>&amp;Уреду</translation>
+    
+ERR
+The translation is in Cyrillic ("&Уреду") but the target locale is 'sr@latin' (Serbian in Latin script). Also the usual Serbian Latin rendering should be "U redu" (with a space). Keep a single ampersand indicating the shortcut.
 
 Correct translation:
-U redu
+&U redu
+```
+
+<!-- cache_translation_check_sr@latin_9728df50da22722036667bb442427fdd519fdddb3f6384cf0d1180a6a1ded65d -->
+```
+        <source>&amp;Cancel</source>
+        <translation>&amp;Откажи</translation>
+    
+ERR
+The translation uses Cyrillic script ("Откажи") but the locale 'sr@latin' requires Serbian in Latin script. The ampersand is present exactly once, which is correct.
+
+Correct translation in Serbian (Latin):
+&Otkaži
 ```
 
 <!-- cache_translation_check_sr@latin_621a30dbe44befda38bc48a1c349ced6695e708aff2f41d4eeba7ec98fd3bb57 -->
@@ -1389,30 +1820,6 @@ The translation "Салдо" is written in Cyrillic script, while 'sr@latin' req
 
 Correct translation:
 Salda
-```
-
-<!-- cache_translation_check_sr@latin_a63ca5b6ce96bf0003e272e3b474bdd4d4ce456bef406e2f23c08da5450dbd15 -->
-```
-        <source>Unconfirmed transactions to watch-only addresses</source>
-        <translation>Трансакције за гледај-само адресе које нису потврђене</translation>
-    
-ERR
-The translation uses Cyrillic script, but 'sr@latin' expects Serbian in Latin script. Additionally, the phrase order could be more natural.
-
-Correct translation:
-Transakcije na adrese samo za gledanje koje nisu potvrđene
-```
-
-<!-- cache_translation_check_sr@latin_65b07b7af96b1d4fd009b562c6fd331cb6c923f20debb37ada8e62b19510ce23 -->
-```
-        <source>Mined balance in watch-only addresses that has not yet matured</source>
-        <translation>Салдорударења у адресама које су у моду само гледање, који још увек није доспео</translation>
-    
-ERR
-The translation uses Cyrillic script, but 'sr@latin' should be in Latin script. Also, the word "Салдорударења" seems to be a script concatenation or typo.
-
-Correct translation:
-Rudarski saldo na adresama samo za gledanje koji još uvek nije dospeo
 ```
 
 <!-- cache_translation_check_sr@latin_15225b0b0a9aae5313adb712e0f896050e94183f8b0a9282f16b1a1697c9a5f8 -->
@@ -1645,6 +2052,32 @@ Correct translation:
 Dolazeće
 ```
 
+<!-- cache_translation_check_sr@latin_cdbd97358498204e8761f36e069511667c12b9bd067eaafb6451298892c98218 -->
+```
+        <source>&amp;Save Image…</source>
+        <translation>&amp;Сачували слику…</translation>
+    
+ERR
+The translation is in Serbian Cyrillic script, but the requested locale is 'sr@latin' (Serbian in Latin script). Also the verb form should be the imperative "Save" (sačuvaj/sačuvajte) rather than "Сачували" (which is plural past participle / incorrect here).
+
+Correct translation (Latin script), choose one based on tone:
+&Sačuvaj sliku…
+or (more formal/polite)
+&Sačuvajte sliku…
+```
+
+<!-- cache_translation_check_sr@latin_3323b4fc8cd752c9bb256a8cfacadd70aa7d93f9f1fc254bbc7ec556a6df13e5 -->
+```
+        <source>&amp;Copy Image</source>
+        <translation>&amp;Копирај Слику</translation>
+    
+ERR
+The translation is in Serbian Cyrillic, but the requested locale is 'sr@latin' (Latin script). Also standard Serbian capitalization uses lowercase for the second word here.
+
+Correct translation:
+&Kopiraj sliku
+```
+
 <!-- cache_translation_check_sr@latin_ff78b1c332c5faf478cba98f8897e7083824d4b6e7e8609c45dfdaa09132069a -->
 ```
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
@@ -1698,6 +2131,17 @@ Correct translation:
 Sačuvaj QR kod
 ```
 
+<!-- cache_translation_check_sr@latin_0710e5469d32ad341aff427c5331444b9ce354fba4454df4c22a1f3905fbf3d6 -->
+```
+        <source>&amp;Information</source>
+        <translation>&amp;Информације</translation>
+    
+ERR
+The translation uses Serbian Cyrillic ("Информације") but the requested locale is 'sr@latin' (Serbian in Latin script). Correct translation in Latin script:
+
+&Informacije
+```
+
 <!-- cache_translation_check_sr@latin_81aaaa167e2de921d46eaace73d169da74a0fc2faf558e7232c4812ef64c3377 -->
 ```
         <source>Startup time</source>
@@ -1720,6 +2164,18 @@ The translation is incorrect. "Удружена меморија" is not written
 
 Correct translation:
 Mempool
+```
+
+<!-- cache_translation_check_sr@latin_5ce1842706da70fc55ac8c9f424eec8c9eb25f91b178a898c2342a4158a44bc3 -->
+```
+        <source>&amp;Reset</source>
+        <translation>&amp;Ресетуј</translation>
+    
+ERR
+The translation uses Cyrillic script ("Ресетуј") while the requested locale is 'sr@latin' (Serbian in Latin script). The ampersand is present exactly once, which is fine.
+
+Correct translation:
+&amp;Resetuj
 ```
 
 <!-- cache_translation_check_sr@latin_afcd86929d3ab2f2bd877d30e1ab51439602b1b9456f374c7adec2075a4bffcb -->
@@ -1746,16 +2202,16 @@ Correct translation:
 Poslato
 ```
 
-<!-- cache_translation_check_sr@latin_3087ce5933b93c9b4278177701d30ddf2e7914ac8e2135e5d881a8f6962a0237 -->
+<!-- cache_translation_check_sr@latin_7bbfd2562b6bd639530b3f7dce2567cac7cc451c97bec736cd31fa3d08e3a286 -->
 ```
-        <source>Peers</source>
-        <translation>Колеге</translation>
+        <source>&amp;Peers</source>
+        <translation>&amp;Колеге</translation>
     
 ERR
-The translation is incorrect because it uses Cyrillic script ("Колеге") instead of the required Latin script for 'sr@latin'. Additionally, "Peers" in the context of Bitcoin should be translated as "čvorovi" (nodes) or "peerovi" (peers), but "kolege" (meaning "colleagues") is inappropriate.
+The translation is in Cyrillic ("Колеге") but the target locale 'sr@latin' requires Latin script. Also "Колеге" ("Kolege") means "colleagues" — a better term for network peers in a Bitcoin UI is "čvorovi" (nodes/peers).
 
-Correct translation:
-Peerovi
+Correct translation (Latin script), preserving the '&' shortcut:
+&Čvorovi
 ```
 
 <!-- cache_translation_check_sr@latin_624083f4d4779b2becb73785e098bd18c1a861d4126e34c009d37687e254befb -->
@@ -1926,16 +2382,40 @@ Correct translation:
 Vreme poslednjeg bloka
 ```
 
-<!-- cache_translation_check_sr@latin_bdcada9a30e2491b1912b1007c6e280eb12fc2ef2eceef85726a5e28b899322c -->
+<!-- cache_translation_check_sr@latin_82c0fa75206606348425bdc6be85a253be4763424067f43faf71f846587d9d79 -->
 ```
-        <source>Network Traffic</source>
-        <translation>Мрежни саобраћај</translation>
+        <source>&amp;Open</source>
+        <translation>&amp;Отвори</translation>
     
 ERR
-The translation uses Cyrillic script ("Мрежни саобраћај") instead of the Latin script required for 'sr@latin'. 
+The translation uses Cyrillic script ("Отвори") but the requested locale is 'sr@latin' (Serbian in Latin script). The ampersand is present and placed correctly, but the script is wrong.
+
+Correct translation in Serbian Latin:
+&amp;Otvori
+```
+
+<!-- cache_translation_check_sr@latin_ebe2056075a1059d1abd75a455b49857cc87dca67bf0b572ba85c9c098d9eef1 -->
+```
+        <source>&amp;Console</source>
+        <translation>&amp;Конзола</translation>
+    
+ERR
+The translation uses Cyrillic script ("&Конзола") but the target language tag 'sr@latin' expects Serbian in Latin script. Also ensure the ampersand shortcut remains exactly once (it does). 
 
 Correct translation:
-Mrežni saobraćaj
+&Konzola
+```
+
+<!-- cache_translation_check_sr@latin_8ebaa9f01c86b7af944c95253bb172225e2895aff7b3a0b9be823ebd39d95bba -->
+```
+        <source>&amp;Network Traffic</source>
+        <translation>&amp;Мрежни саобраћај</translation>
+    
+ERR
+The translation uses Cyrillic script ("Мрежни саобраћај") but the requested locale is 'sr@latin' (Serbian in Latin script). Otherwise the content is correct and the & is present exactly once.
+
+Correct translation (Latin script):
+&amp;Mrežni saobraćaj
 ```
 
 <!-- cache_translation_check_sr@latin_c1c0fbabd5c5a431fdd8a6ba26c6354e7f7959070ad927b3391d19fd10b80e6b -->
@@ -2044,52 +2524,90 @@ Correct translation:
 peer nas je odabrao za relay sa visokim protokom
 ```
 
-<!-- cache_translation_check_sr@latin_ed2c8202f31c771eb4fcfc26396f1ac9bf0fc8a7bd080e5ff2fdbccecc2a225c -->
+<!-- cache_translation_check_sr@latin_62832f4f72903ef0726ec73ae387367386c1c56f38d3e86ac3bb5154b9a376b3 -->
 ```
-        <source>Disconnect</source>
-        <translation>Прекини везу</translation>
+        <source>&amp;Copy address</source>
+        <extracomment>Context menu action to copy the address of a peer.</extracomment>
+        <translation>&amp;Копирај адресу</translation>
     
 ERR
-The translation uses Cyrillic script ("Прекини везу") instead of the Latin script required for 'sr@latin'. It should be in Serbian Latin.
+The translation is in Cyrillic script (Serbian Cyrillic) but the language tag requests 'sr@latin' (Serbian in Latin script). Also ensure the ampersand shortcut is preserved (it is present). Correct translation in Serbian Latin:
 
-Correct translation:
-Prekini vezu
+&Kopiraj adresu
 ```
 
-<!-- cache_translation_check_sr@latin_a4d51f2a2dbe1ea6620d18ef5788f5b17eb70a77d68218c3b574717ff1ed6979 -->
+<!-- cache_translation_check_sr@latin_f2803cc99125bba960a70c1861e60f45dd2cad7b595fc36da6ad11e1849c48a2 -->
 ```
-        <source>1 hour</source>
-        <translation>1 Сат</translation>
+        <source>&amp;Disconnect</source>
+        <translation>&amp;Прекини везу</translation>
     
 ERR
-The translation uses a Cyrillic 'С' instead of the correct Latin 'S', and the word 'Sat' should be capitalized only if the original is. In 'sr@latin', only Latin script should be used.
+The translation is in Cyrillic script (Прекини везu) but the locale 'sr@latin' requires Serbian in Latin script. The ampersand shortcut is present and spacing is fine otherwise.
 
-Correct translation:
-1 sat
+Correct translation (Serbian Latin):
+&amp;Prekini vezu
 ```
 
-<!-- cache_translation_check_sr@latin_950bf2dda112574e4c093ef59f20aa21c6f29d04ca41dfcb8fcf6afb5852629b -->
+<!-- cache_translation_check_sr@latin_033a0cf19bf591b7a3dc0d74afd684e9399172917e8bd8913075d9edc7e02e06 -->
 ```
-        <source>1 week</source>
-        <translation>1 недеља</translation>
+        <source>1 &amp;hour</source>
+        <translation>1 &amp;Сат</translation>
     
 ERR
-The translation uses Cyrillic script "недеља" instead of the Latin "nedelja", which is required for 'sr@latin'.
+Issues:
+- The translation uses Cyrillic letters ("Сат") while the locale is 'sr@latin' which requires the Latin script.
+- Capitalization differs from the source ("hour" lowercase vs "Сат" capitalized).
 
 Correct translation:
-1 nedelja
+1 &sat
 ```
 
-<!-- cache_translation_check_sr@latin_fc61e36a5ffb999afb3aa26bca92457c5b6cb0af20874ebcbf40f844bd2d3f5c -->
+<!-- cache_translation_check_sr@latin_397cc41211cda1a731126fd6876da2d54237e6e032f541fba76dea87b2826662 -->
 ```
-        <source>Unban</source>
-        <translation>Уклони забрану</translation>
+        <source>1 d&amp;ay</source>
+        <translation>1 дан</translation>
     
 ERR
-The translation is written in Cyrillic script ("Уклони забрану"), but 'sr@latin' requires the Latin alphabet.
+The translation is in Cyrillic ("дан") but the requested locale is Serbian Latin (sr@latin). It also removed the shortcut marker (&) from the source. The shortcut ampersand must appear exactly once.
+
+Correct translation (Serbian Latin) with shortcut marker:
+1 d&amp;an
+```
+
+<!-- cache_translation_check_sr@latin_330213f330eeb273685dcb0b2bcc5f593dd26e15f83c38478926ba795f3429a5 -->
+```
+        <source>1 &amp;week</source>
+        <translation>1 &amp;недеља</translation>
+    
+ERR
+The translation uses Cyrillic ("недеља") but the language tag is sr@latin (Serbian in Latin script). Also ensure the & shortcut is preserved in XML form (&amp;) and there's no extra whitespace.
 
 Correct translation:
-Ukloni zabranu
+1 &amp;nedelja
+```
+
+<!-- cache_translation_check_sr@latin_27d7f57e8e893d02768d95402c5987e5bd9d9fbbba52a71ebff80bd026b19a4e -->
+```
+        <source>1 &amp;year</source>
+        <translation>1 &amp;година</translation>
+    
+ERR
+The translation uses Cyrillic script ("година") but the target language tag 'sr@latin' requires Serbian in Latin script. Otherwise the ampersand is present exactly once and spacing is fine.
+
+Correct translation:
+1 &godina
+```
+
+<!-- cache_translation_check_sr@latin_7c3afd815b63c1b151e1c01e9f2e9e2341e5231bd4052f732de1f5819f1e9f96 -->
+```
+        <source>&amp;Unban</source>
+        <translation>&amp;Уклони забрану</translation>
+    
+ERR
+The translation is in Serbian Cyrillic (Уклони забрану) but the target locale 'sr@latin' requires the Latin script. The ampersand is present exactly once, which is fine.
+
+Correct translation (Serbian Latin):
+&amp;Ukloni zabranu
 ```
 
 <!-- cache_translation_check_sr@latin_499409ec5c14407805f38a98fc32e76651007d3d2370441d6915cd718a278344 -->
@@ -2196,16 +2714,43 @@ Correct translation:
 Zabrani za
 ```
 
-<!-- cache_translation_check_sr@latin_28632609cfd855dc247863d2dcf5a39222996beaaebeed773ba6b88f490497e0 -->
+<!-- cache_translation_check_sr@latin_84cc7cf180a943021652b511ad74df1bea1c3988fe954f1d0b34a7270e14354b -->
 ```
-        <source>Amount:</source>
-        <translation>Износ:</translation>
+        <source>&amp;Amount:</source>
+        <translation>&amp;Износ:</translation>
     
 ERR
-The translation uses Cyrillic script ("Износ:") instead of the Latin script required by 'sr@latin'. The correct translation uses Latin characters.
+The translation uses Cyrillic script ("Износ") but the requested locale 'sr@latin' requires Serbian in Latin script. The ampersand is present correctly. No format specifiers involved.
 
 Correct translation:
-Iznos:
+&amp;Iznos:
+```
+
+<!-- cache_translation_check_sr@latin_4420bd642e223e7058851279ba44a863faca7b787d6e7957edf9362ce6214c23 -->
+```
+        <source>&amp;Label:</source>
+        <translation>&amp;Ознака</translation>
+    
+ERR
+Problems:
+- The translation is in Cyrillic script (Ознака) but the requested locale is Serbian Latin (sr@latin). It should use Latin characters.
+- The colon ":" from the source is missing in the translation.
+- The ampersand (&) is present, which is fine, but ensure it appears exactly once (it does) and is preserved in the corrected translation.
+
+Correct translation:
+&amp;Oznaka:
+```
+
+<!-- cache_translation_check_sr@latin_2bfbe2f2c6bd82789295232b724563092ed0660eebf8428c9b76d99d1f18f639 -->
+```
+        <source>&amp;Message:</source>
+        <translation>Poruka:</translation>
+    
+ERR
+The ampersand (&) shortcut marker from the source is missing in the translation. Also no other format issues.
+
+Correct translation:
+&Poruka:
 ```
 
 <!-- cache_translation_check_sr@latin_bd07fc8906c5eeccb72011382a932e299cd2d749a8f40d3188686e90721ec3cf -->
@@ -2243,16 +2788,16 @@ Correct translation:
 Opcioni iznos za zahtev. Ostavi prazno ili nula ukoliko ne želiš precizirati iznos.
 ```
 
-<!-- cache_translation_check_sr@latin_b89beaf864b5eafe86040d3db06738980c3ce518e7fc70f1b86c54a9b8073aff -->
+<!-- cache_translation_check_sr@latin_81dc66f08796c020e4534ac3084fed50de5c56da4c36c1cf0dbb1e9e635fb931 -->
 ```
-        <source>Create new receiving address</source>
-        <translation>Направи нову адресу за примање</translation>
+        <source>&amp;Create new receiving address</source>
+        <translation>&amp;Направи нову адресу за примање</translation>
     
 ERR
-The translation uses Cyrillic script ("Направи нову адресу за примање") instead of the required 'sr@latin' (Serbian in Latin script). The content otherwise is accurate and unproblematic, but the script is incorrect.
+The translation is in Serbian Cyrillic script ("Направи нову адресу за примање") but the target locale is 'sr@latin' which requires Serbian in Latin script. Also consider a more natural UI wording.
 
-Correct translation:
-Napravi novu adresu za primanje
+Correct translation (Latin script), keeping a single '&':
+&Kreiraj novu adresu za primanje
 ```
 
 <!-- cache_translation_check_sr@latin_b7f48abef28b6db1357738b08c34344860f3c1818f31ebfd1b9ce14f1ff201f5 -->
@@ -2315,6 +2860,66 @@ Correct translation:
 Ukloni
 ```
 
+<!-- cache_translation_check_sr@latin_fef56942fa30ebe6bc1d459cdbb44419f0979c26ebe017220765bbe6ee394ecf -->
+```
+        <source>Copy &amp;URI</source>
+        <translation>Копирај &amp;URI</translation>
+    
+ERR
+The translation is in Cyrillic script ("Копирај &amp;URI") but the requested locale is 'sr@latin' (Serbian in Latin script). The ampersand shortcut is present once which is correct, and there are no format specifiers or whitespace issues.
+
+Correct translation (Serbian Latin):
+Kopiraj &URI
+```
+
+<!-- cache_translation_check_sr@latin_8222a858873ec13c5df7e9a946592a36bf3eb8671dad9a25599b24410f0c2ebb -->
+```
+        <source>&amp;Copy address</source>
+        <translation>&amp;Копирај адресу</translation>
+    
+ERR
+The translation is in Serbian Cyrillic (Копирај адресу) but the locale 'sr@latin' requires Serbian in Latin script. The ampersand (&) is present exactly once, which is correct.
+
+Correct translation in Serbian (Latin script):
+&amp;Kopiraj adresu
+```
+
+<!-- cache_translation_check_sr@latin_d3c67ee6f7daa4d5ec3f613ccf586301db99122f3390c8488657d75dbb5c4432 -->
+```
+        <source>Copy &amp;label</source>
+        <translation>Копирај &amp;означи</translation>
+    
+ERR
+The translation is in Serbian Cyrillic (Копирај &amp;означи) but the locale requested is 'sr@latin' (Serbian in Latin script). Also the wording is slightly off: "label" as a noun should be translated as "oznaka" in accusative case here ("oznaku").
+
+Correct translation (Serbian Latin), keeping the shortcut ampersand exactly once:
+Kopiraj &oznaku
+```
+
+<!-- cache_translation_check_sr@latin_9b0ff01c16ff1b3c79ee14d594a01b3ca5e47d180cac422c08943a60ec8ba767 -->
+```
+        <source>Copy &amp;message</source>
+        <translation>Копирај &amp;поруку</translation>
+    
+ERR
+The translation is in Serbian Cyrillic script, but the target locale is 'sr@latin' (Serbian in Latin script). Also ensure the ampersand is present exactly once. 
+
+Correct translation (Latin script):
+Kopiraj &poruku
+```
+
+<!-- cache_translation_check_sr@latin_638ac814c9d49f25c1043de13c925c3b5f2c583035e53e743a5bbbdb53b0f1bf -->
+```
+        <source>Copy &amp;amount</source>
+        <translation>Копирај &amp;износ</translation>
+    
+ERR
+The translation is in Serbian Cyrillic script ("Копирај &amp;износ") but the requested locale is 'sr@latin' (Serbian in Latin script). Also ensure the ampersand remains exactly once (it is present correctly).
+
+Correct translation in Serbian (Latin script):
+Kopiraj &amp;iznos
+```
+
 <!-- cache_translation_check_sr@latin_43017df0bf084248155cee825197b1b6961884cbe3967d391ddf1aa3adcfd63e -->
 ```
         <source>Request payment to …</source>
@@ -2327,16 +2932,54 @@ Correct translation:
 Zahtevaj uplatu ka ...
 ```
 
-<!-- cache_translation_check_sr@latin_c1435eb4ff902e118d0fdbb03b22183c332e469c4e31ed48bc7ce66affb44517 -->
+<!-- cache_translation_check_sr@latin_fef56942fa30ebe6bc1d459cdbb44419f0979c26ebe017220765bbe6ee394ecf -->
 ```
-        <source>Verify</source>
-        <translation>Верификуј</translation>
+        <source>Copy &amp;URI</source>
+        <translation>Копирај &amp;URI</translation>
     
 ERR
-The translation uses Cyrillic script ("Верификуј"), but the target language is 'sr@latin', which requires the Latin script.
+The translation is in Cyrillic script ("Копирај &amp;URI") but the requested locale is 'sr@latin' (Serbian in Latin script). The ampersand shortcut is present once which is correct, and there are no format specifiers or whitespace issues.
+
+Correct translation (Serbian Latin):
+Kopiraj &URI
+```
+
+<!-- cache_translation_check_sr@latin_8e2cde33a460a8fd2b593bf3a944337e78b8459b3ebbd54145e29ae4e5aa3411 -->
+```
+        <source>Copy &amp;Address</source>
+        <translation>Копирај &amp;Адресу</translation>
+    
+ERR
+The translation is in Serbian Cyrillic ("Копирај &Адресу") but the requested locale 'sr@latin' requires Serbian in Latin script. The ampersand is present and placed correctly, and there are no extra spaces.
+
+Correct translation (Latin script):
+Kopiraj &Adresu
+```
+
+<!-- cache_translation_check_sr@latin_e5dc85af7f6693aaba378d079ea22945a55e228e7def3eac253538e6e7785af7 -->
+```
+        <source>&amp;Verify</source>
+        <translation>&amp;Верификуј</translation>
+    
+ERR
+The translation uses Serbian Cyrillic ("Верификуј") but the locale 'sr@latin' requires Latin script. No other issues (ampersand present once, no format specifiers), but the script is wrong.
 
 Correct translation:
-Verifikuj
+&amp;Verifikuj
+```
+
+<!-- cache_translation_check_sr@latin_cdbd97358498204e8761f36e069511667c12b9bd067eaafb6451298892c98218 -->
+```
+        <source>&amp;Save Image…</source>
+        <translation>&amp;Сачували слику…</translation>
+    
+ERR
+The translation is in Serbian Cyrillic script, but the requested locale is 'sr@latin' (Serbian in Latin script). Also the verb form should be the imperative "Save" (sačuvaj/sačuvajte) rather than "Сачували" (which is plural past participle / incorrect here).
+
+Correct translation (Latin script), choose one based on tone:
+&Sačuvaj sliku…
+or (more formal/polite)
+&Sačuvajte sliku…
 ```
 
 <!-- cache_translation_check_sr@latin_3c9bda2982167e0102bce254100b148d84f29865d06888683b890c601827fe05 -->
@@ -2385,6 +3028,18 @@ The translation uses Cyrillic script ("Сакриј") instead of the mandated La
 
 Correct translation:
 Sakrij
+```
+
+<!-- cache_translation_check_sr@latin_fffb11a5e0c5e1074857cca7ce0d8a4b17210a05d38ff67892f82c8e71b8516f -->
+```
+        <source>Add &amp;Recipient</source>
+        <translation>Додај &amp;Примаоца</translation>
+    
+ERR
+The translation is in Serbian Cyrillic (Додај &amp;Примаоца) but the requested language variant is Serbian in Latin script (sr@latin). Also the casing can be simplified to typical UI sentence case.
+
+Correct translation (Latin script):
+Dodaj &amp;primaoca
 ```
 
 <!-- cache_translation_check_sr@latin_c013accef2bcbab965dade1eb0ea779729747ec3baa378f6711e82c41de615d0 -->
@@ -2470,16 +3125,16 @@ Correct translation:
 Omogući Replace-By-Fee
 ```
 
-<!-- cache_translation_check_sr@latin_9525eba255156d158e4122a5da4764b65b57dfafab6d7c4f036cd4ba9fe69b89 -->
+<!-- cache_translation_check_sr@latin_621cca7efcb42f2c87d5571b7e71e2941585ee7856312bccfc559e8507e44a81 -->
 ```
-        <source>Clear All</source>
-        <translation>Очисти Све</translation>
+        <source>Clear &amp;All</source>
+        <translation>Очисти &amp;Све</translation>
     
 ERR
-The translation is in Serbian Cyrillic script ("Очисти Све"), but 'sr@latin' requires Serbian Latin script.
+The translation is in Serbian Cyrillic ("Очисти &amp;Све") but the language tag requests Serbian in Latin script (sr@latin). The ampersand shortcut is present exactly once, but the script is incorrect.
 
-Correct translation:
-Očisti sve
+Correct translation (Serbian Latin), keeping the shortcut:
+Očisti &amp;Sve
 ```
 
 <!-- cache_translation_check_sr@latin_2e32923d275862fbc108789f1f60597689e62ed2e2bc409a65a5331808fbf8d3 -->
@@ -2494,16 +3149,16 @@ Correct translation:
 Saldo:
 ```
 
-<!-- cache_translation_check_sr@latin_9e9a41c9f0adea10ccc1dd991c1ecf7dc4c4dc037dcf76d763b606f0673f3302 -->
+<!-- cache_translation_check_sr@latin_ca905e9126c9bf2f3ee8987aa4e3e1737a6059d30900084d263e18078fdac874 -->
 ```
-        <source>Send</source>
-        <translation>Пошаљи</translation>
+        <source>S&amp;end</source>
+        <translation>&amp;Пошаљи</translation>
     
 ERR
-The translation is provided in Cyrillic script ("Пошаљи"), but 'sr@latin' specifies Serbian in the Latin alphabet. The translation should use the Latin script.
+The translation uses Cyrillic script ("Пошаљи") while the requested locale is Serbian in Latin script (sr@latin). Also ensure the ampersand shortcut appears exactly once — that's fine in the provided translation but the script must be Latin.
 
-Correct translation:
-Pošalji
+Correct translation (sr@latin), with a single & for the accelerator:
+&Pošalji
 ```
 
 <!-- cache_translation_check_sr@latin_075517df320f439ee4802c948a5ef3734765b40f11b91ee61f12bc43d6a7237c -->
@@ -2532,6 +3187,18 @@ The translation is problematic in several ways:
 
 Correct translation:
 Postavite putanju eksternog potpisivača skripte u Opcije -&gt; Novčanik
+```
+
+<!-- cache_translation_check_sr@latin_566f4091d922028011e4cfd151eb5d9e7f69a40c358641d54655bc256330ba59 -->
+```
+        <source>Cr&amp;eate Unsigned</source>
+        <translation>Креирај непотписано</translation>
+    
+ERR
+The translation is in Cyrillic (Креирај непотписано) but the language tag 'sr@latin' requires Latin script. It also omits the shortcut marker '&' that exists in the source (exactly one '&' must be present).
+
+Correct translation (Latin script, with single & for shortcut):
+Kreiraj &nepotpisano
 ```
 
 <!-- cache_translation_check_sr@latin_a261be21bdd91413c5beff9bb6f0fa0e073fa77cfa38ab2a4e5b7d721f1c8520 -->
@@ -2717,28 +3384,43 @@ Correct translation:
 Upozorenje: Nepoznata adresa za kusur
 ```
 
-<!-- cache_translation_check_sr@latin_28632609cfd855dc247863d2dcf5a39222996beaaebeed773ba6b88f490497e0 -->
+<!-- cache_translation_check_sr@latin_563a4b7989532aef51f7f16f15b169b55069603055da2e532a54487a52568ac6 -->
 ```
-        <source>Amount:</source>
-        <translation>Износ:</translation>
+        <source>A&amp;mount:</source>
+        <translation>&amp;Износ:</translation>
     
 ERR
-The translation uses Cyrillic script ("Износ:") instead of the Latin script required by 'sr@latin'. The correct translation uses Latin characters.
+The translation is in Cyrillic script ("Износ") but the requested locale 'sr@latin' requires Latin script. The ampersand shortcut exists exactly once, which is fine, but the script is wrong.
 
-Correct translation:
-Iznos:
+Correct translation (Latin script):
+&amp;Iznos:
 ```
 
-<!-- cache_translation_check_sr@latin_bde99690a0272f16070feb757b55d47589496bc77c9edd75f412c95286fb3955 -->
+<!-- cache_translation_check_sr@latin_b8c6c5da9849bdb49ee565a14846c9b24c49a703f73e32abbdf9ae63c58d1f71 -->
 ```
-        <source>Pay To:</source>
-        <translation>Плати За:</translation>
+        <source>Pay &amp;To:</source>
+        <translation>Плати &amp;За:</translation>
     
 ERR
-The translation is in Cyrillic script, not in 'sr@latin' (Serbian in Latin script). For 'sr@latin', the text must not use Cyrillic letters.
+The translation is in Cyrillic script ("Плати &amp;За:") but the target locale 'sr@latin' requires Serbian in Latin script. The ampersand is present exactly once (good), but the script is wrong.
+
+Correct translation (Serbian Latin), preserving the ampersand:
+Plati &amp;za:
+```
+
+<!-- cache_translation_check_sr@latin_4420bd642e223e7058851279ba44a863faca7b787d6e7957edf9362ce6214c23 -->
+```
+        <source>&amp;Label:</source>
+        <translation>&amp;Ознака</translation>
+    
+ERR
+Problems:
+- The translation is in Cyrillic script (Ознака) but the requested locale is Serbian Latin (sr@latin). It should use Latin characters.
+- The colon ":" from the source is missing in the translation.
+- The ampersand (&) is present, which is fine, but ensure it appears exactly once (it does) and is preserved in the corrected translation.
 
 Correct translation:
-Plati za:
+&amp;Oznaka:
 ```
 
 <!-- cache_translation_check_sr@latin_93218909f9e013f0ae1d5f96b66f2e518d6ff2d57c7777d68a06abd36d744bcc -->
@@ -2816,16 +3498,16 @@ Correct translation:
 Provizija će biti oduzeta od iznosa koji se šalje. Primalac će dobiti manje bitkoina nego što unesete u polje za iznos. Ukoliko je odabrano više primalaca, provizija se deli ravnomerno.
 ```
 
-<!-- cache_translation_check_sr@latin_b26f82104b95fb6c3f958f6c7b5929427ba3608d3f066689226c67ea14b4f39b -->
+<!-- cache_translation_check_sr@latin_19b0523245d83951697c4f4a6de4fe558f3a084b55eba17da77da5162d42ca6f -->
 ```
-        <source>Subtract fee from amount</source>
-        <translation>Одузми провизију од износа</translation>
+        <source>S&amp;ubtract fee from amount</source>
+        <translation>&amp;Одузми провизију од износа</translation>
     
 ERR
-The translation is in Serbian Cyrillic, not in 'sr@latin' (Serbian Latin). The text should use the Latin script, as required by 'sr@latin'.
+The translation is in Cyrillic script ("Одузми провизију од износа") but the requested locale is 'sr@latin' (Serbian in Latin script). Also the ampersand is encoded as "&amp;" — the translation should contain a single '&' character for the shortcut.
 
-Correct translation:
-Oduzmi proviziju od iznosa
+Correct translation (Latin script) with one ampersand:
+&Oduzmi proviziju od iznosa
 ```
 
 <!-- cache_translation_check_sr@latin_6f8140282cc6d60ca80d7d6152977712452059b2b4745f21ccf42aa464a658e8 -->
@@ -2854,16 +3536,16 @@ Correct translation:
 Pošalji
 ```
 
-<!-- cache_translation_check_sr@latin_bd7d419ec4d08fa628b8d0fd5762af644a1e60ce246183bff28ea7991a1f9a57 -->
+<!-- cache_translation_check_sr@latin_49d991140f4342194447e388e10e48b7c49b0a53be1803c4434e73b58f0c5ead -->
 ```
-        <source>Sign Message</source>
-        <translation>Потпиши поруку</translation>
+        <source>&amp;Sign Message</source>
+        <translation>&amp;Потпиши поруку</translation>
     
 ERR
-The translation is in Cyrillic script, but 'sr@latin' specifies the Latin script for Serbian. The translation should use the Latin alphabet.
+The translation is in Cyrillic (Потпиши поруку) but the requested locale is 'sr@latin' (Serbian in Latin script). The ampersand is present exactly once which is correct, but the script is wrong.
 
-Correct translation:
-Potpiši poruku
+Correct translation in Serbian (Latin script):
+&amp;Potpiši poruku
 ```
 
 <!-- cache_translation_check_sr@latin_2d5d223a3a090b71c9868d916e65d8325b4b416c737abf0c09fda8642692d13b -->
@@ -2917,28 +3599,40 @@ Correct translation:
 Potpišite poruku da dokažete da ste vlasnik ove Bitcoin adrese
 ```
 
-<!-- cache_translation_check_sr@latin_b00e10453b9e4ad2cc64e0c15a5c939c2f8b74772f7e091cb7f653acba0c860d -->
+<!-- cache_translation_check_sr@latin_216b367c36f2e08b4c4ba928978a18dae8e6f91f56ea21cc168d01e65a517dc1 -->
 ```
-        <source>Sign Message</source>
-        <translation>Потпис Порука</translation>
+        <source>Sign &amp;Message</source>
+        <translation>Потпис &amp;Порука</translation>
     
 ERR
-The translation uses Cyrillic script ("Потпис Порука") instead of Latin script, while 'sr@latin' requires the Serbian Latin alphabet. Additionally, "Потпис Порука" is not idiomatic; a better translation would be "Potpiši poruku".
+The translation is in Cyrillic script (Потпис &amp;Порука) but the locale 'sr@latin' requires Latin script. The ampersand is present exactly once, which is fine, but the words must be in Latin letters.
 
 Correct translation:
-Potpiši poruku
+Potpis &amp;Poruka
 ```
 
-<!-- cache_translation_check_sr@latin_9525eba255156d158e4122a5da4764b65b57dfafab6d7c4f036cd4ba9fe69b89 -->
+<!-- cache_translation_check_sr@latin_621cca7efcb42f2c87d5571b7e71e2941585ee7856312bccfc559e8507e44a81 -->
 ```
-        <source>Clear All</source>
-        <translation>Очисти Све</translation>
+        <source>Clear &amp;All</source>
+        <translation>Очисти &amp;Све</translation>
     
 ERR
-The translation is in Serbian Cyrillic script ("Очисти Све"), but 'sr@latin' requires Serbian Latin script.
+The translation is in Serbian Cyrillic ("Очисти &amp;Све") but the language tag requests Serbian in Latin script (sr@latin). The ampersand shortcut is present exactly once, but the script is incorrect.
 
-Correct translation:
-Očisti sve
+Correct translation (Serbian Latin), keeping the shortcut:
+Očisti &amp;Sve
+```
+
+<!-- cache_translation_check_sr@latin_afd5091261b92d9ed17ccdd937f602a56d1e30057021153c3cd0ea0e01066dcc -->
+```
+        <source>&amp;Verify Message</source>
+        <translation>&amp;Потврди поруку</translation>
+    
+ERR
+The translation is in Serbian Cyrillic ("Потврди поруку") but the requested locale 'sr@latin' requires Serbian in Latin script. The ampersand is present once (OK) and there are no format specifiers or whitespace issues.
+
+Correct translation (Serbian Latin):
+&Potvrdi poruku
 ```
 
 <!-- cache_translation_check_sr@latin_8322e6a34c1e4162db9c4633673ab98145fb38274266e126dc85db104a64ff3e -->
@@ -2953,16 +3647,16 @@ Correct translation:
 Bitcoin adresa kojom je potpisana poruka
 ```
 
-<!-- cache_translation_check_sr@latin_99e108a8217e7182244a80e4ff75ca1c29ba3a7b094f3aacc82cb0d721acb549 -->
+<!-- cache_translation_check_sr@latin_43fff02640f8de981bf3758f39d77ea6e20df327c204c9edff9bf84eeee5eaad -->
 ```
-        <source>Verify Message</source>
-        <translation>Потврди Поруку</translation>
+        <source>Verify &amp;Message</source>
+        <translation>Потврди &amp;Поруку</translation>
     
 ERR
-The translation uses Cyrillic script ('Потврди Поруку') instead of the requested 'sr@latin' (Serbian in Latin script). The translation should be in Latin script.
+The translation is in Cyrillic (Потврди &amp;Поруку) but the locale 'sr@latin' requires Latin script. The ampersand for the shortcut is present exactly once, which is fine.
 
-Correct translation:
-Potvrdi poruku
+Correct translation (Latin script), preserving the shortcut:
+Potvrdi &amp;Poruku
 ```
 
 <!-- cache_translation_check_sr@latin_a8468754a3bee7e992dfc29e9cbc26fa64901eb23f7a9b1da64db4ef6309feb6 -->
@@ -3134,22 +3828,6 @@ Correct translation:
 Tip transakcije.
 ```
 
-<!-- cache_translation_check_sr@latin_cba81f8591f01d9be5584c1b898a09145c23c6bbdd8f12e6393a4fc1b621656b -->
-```
-        <source>Whether or not a watch-only address is involved in this transaction.</source>
-        <translation>Без обзира да ли је у ову трансакције укључена или није - адреса само за гледање.</translation>
-    
-ERR
-There are issues with the translation:
-- The Serbian text is in Cyrillic, not Latin script as required by 'sr@latin'.
-- The structure is unnatural; "у ову трансакције" is grammatically wrong ("трансакције" should be "трансакцију" in accusative singular).
-- The syntax does not match the clarity of the English original.
-- The dash before "адреса само за гледање" is unnecessary.
-
-Correct translation:
-Da li je adresa samo za gledanje uključena u ovu transakciju ili ne.
-```
-
 <!-- cache_translation_check_sr@latin_ed89ae247a56115b483a2c1956e4b988a4547afaaa7d1b32cfaea99cc1704937 -->
 ```
         <source>Amount removed from or added to balance.</source>
@@ -3198,46 +3876,115 @@ Correct translation:
 Unesite adresu, ID transakcije ili oznaku za pretragu
 ```
 
-<!-- cache_translation_check_sr@latin_f35d3271a27b6c3d0ce5daabb8e8207a9c6d382f94bcaee5d4ba85dd3046288c -->
+<!-- cache_translation_check_sr@latin_8222a858873ec13c5df7e9a946592a36bf3eb8671dad9a25599b24410f0c2ebb -->
 ```
-        <source>Copy transaction ID</source>
-        <translation>Копирај трансакцију ID</translation>
+        <source>&amp;Copy address</source>
+        <translation>&amp;Копирај адресу</translation>
     
 ERR
-The translation incorrectly uses Cyrillic script ("Копирај"), whereas 'sr@latin' should be in Latin script. Also, "ID" should likely precede or follow the noun using the local genitive construction or be kept as is if standard practice. A more idiomatic translation would be:
+The translation is in Serbian Cyrillic (Копирај адресу) but the locale 'sr@latin' requires Serbian in Latin script. The ampersand (&) is present exactly once, which is correct.
 
-Correct translation:
-Kopiraj ID transakcije
+Correct translation in Serbian (Latin script):
+&amp;Kopiraj adresu
 ```
 
-<!-- cache_translation_check_sr@latin_a4c4e4d74c3185b4fa37cc22b4d8b25d3ad195bb7667886efe2b987c8cbb2063 -->
+<!-- cache_translation_check_sr@latin_d3c67ee6f7daa4d5ec3f613ccf586301db99122f3390c8488657d75dbb5c4432 -->
 ```
-        <source>Show transaction details</source>
-        <translation>Прикажи детаље транакције</translation>
+        <source>Copy &amp;label</source>
+        <translation>Копирај &amp;означи</translation>
     
 ERR
-The translation uses Serbian Cyrillic script, but 'sr@latin' requires Latin script. Additionally, there is a typo in "транакције" which should be "transakcije".
+The translation is in Serbian Cyrillic (Копирај &amp;означи) but the locale requested is 'sr@latin' (Serbian in Latin script). Also the wording is slightly off: "label" as a noun should be translated as "oznaka" in accusative case here ("oznaku").
 
-Correct translation:
-Prikaži detalje transakcije
+Correct translation (Serbian Latin), keeping the shortcut ampersand exactly once:
+Kopiraj &oznaku
 ```
 
-<!-- cache_translation_check_sr@latin_979313ead12f58021712ec7029fa9fbb79aded9c9d3edcf80e39dd4d90c7ddef -->
+<!-- cache_translation_check_sr@latin_638ac814c9d49f25c1043de13c925c3b5f2c583035e53e743a5bbbdb53b0f1bf -->
 ```
-        <source>Edit address label</source>
-        <translation>Promeni adresu etikete</translation>
+        <source>Copy &amp;amount</source>
+        <translation>Копирај &amp;износ</translation>
     
 ERR
-The translation is inaccurate. The English phrase "Edit address label" refers to editing the label (name/description) of an address, not editing the address of a label. The correct translation in 'sr@latin' would be:
+The translation is in Serbian Cyrillic script ("Копирај &amp;износ") but the requested locale is 'sr@latin' (Serbian in Latin script). Also ensure the ampersand remains exactly once (it is present correctly).
 
-Ispravi oznaku adrese
+Correct translation in Serbian (Latin script):
+Kopiraj &amp;iznos
+```
 
-or
+<!-- cache_translation_check_sr@latin_e84fb6cd88755bb3b2df9aee78add1c43e86c882481bb46969d0f435bc4299f0 -->
+```
+        <source>Copy transaction &amp;ID</source>
+        <translation>Копирај трансакцију &amp;ID</translation>
+    
+ERR
+The translation is in Cyrillic script (Копирај трансакцију &amp;ID) but the requested locale 'sr@latin' requires Latin script. The ampersand is preserved correctly, and there are no format specifiers or spacing issues.
 
-Izmeni oznaku adrese
+Correct translation (Latin script):
+Kopiraj transakciju &amp;ID
+```
+
+<!-- cache_translation_check_sr@latin_deff63cc76c7800910ee2ef9573abe1189bc1da7d772fddfcad8d9502e5134cb -->
+```
+        <source>Copy &amp;raw transaction</source>
+        <translation>Копирајте &amp;необрађену трансакцију</translation>
+    
+ERR
+The translation is in Cyrillic script (Српска ћирилица), but the target locale 'sr@latin' requires Serbian in Latin script. Also ensure the & (shortcut marker) is preserved exactly once.
+
+Correct translation (Serbian Latin):
+Kopirajte &amp;neobrađenu transakciju
+```
+
+<!-- cache_translation_check_sr@latin_144f5bd13d12f080bb3ae7661504ebf46f09b7b6ed2dd5885e2ce867a5c2c4e0 -->
+```
+        <source>Copy full transaction &amp;details</source>
+        <translation>Копирајте све детаље трансакције</translation>
+    
+ERR
+The translation is in Serbian Cyrillic, but the requested locale is 'sr@latin' (Serbian in Latin script). Also the source contains a single shortcut marker (&) before "details" which is missing in the translation. No format specifiers to check.
+
+Correct translation (Serbian Latin, with one & for the shortcut):
+Kopirajte sve &detalje transakcije
+```
+
+<!-- cache_translation_check_sr@latin_b97560d26fa0c22a215895b3014c68515fa9c737089e8a58eff3a87f6a9168c4 -->
+```
+        <source>&amp;Show transaction details</source>
+        <translation>&amp;Прикажи детаље транакције</translation>
+    
+ERR
+The translation is in Cyrillic script and contains a spelling error ("транакције" should be "трансакције"); the requested locale 'sr@latin' requires Latin script.
+
+Correct translation (Latin script):
+&Prikaži detalje transakcije
+```
+
+<!-- cache_translation_check_sr@latin_909a6b3f2ed6a28e2298ca06b26ea9008e87e356d23bf01a6311319d0fc40c47 -->
+```
+        <source>Increase transaction &amp;fee</source>
+        <translation>Повећај провизију трансакције</translation>
+    
+ERR
+The translation is in Serbian Cyrillic ("Повећај провизију трансакције") but the requested locale is 'sr@latin' (Latin script). Also the source contains a single shortcut ampersand for "&fee" which must be preserved exactly once in the translation; the translation omits it.
+
+Correct translation (Latin script) with the ampersand preserved:
+Povećaj &proviziju transakcije
+```
+
+<!-- cache_translation_check_sr@latin_94468c526042009052f40f5c425f6a92b5a0dc8b08f57f436152dbfea6158e54 -->
+```
+        <source>&amp;Edit address label</source>
+        <translation>&amp;Promeni adresu etikete</translation>
+    
+ERR
+The Serbian (Latin) translation is grammatically incorrect/wrong word order. "Promeni adresu etikete" reads as "change the address of the label" (or otherwise nonsensical). The source means "Edit (change) the address label" — i.e., change the label of an address.
 
 Correct translation:
-Izmeni oznaku adrese
+&Izmeni etiketu adrese
+
+Alternative valid phrasing:
+&Promeni etiketu adrese
 ```
 
 <!-- cache_translation_check_sr@latin_52769f3b2ece84e5a4e065e2a500d3207020708ac9d17b62b85b96dc49b2852c -->
@@ -3411,18 +4158,6 @@ Correct translation:
 Skraćivanje je konfigurisano ispod minimuma od %d MiB. Molimo koristite veći broj.
 ```
 
-<!-- cache_translation_check_sr@latin_5d373f16fdb7ebcf26cf16d42e88c61964168b47098fdce2334b1284dbc317d3 -->
-```
-        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of pruned node)</source>
-        <translation>Скраћивање: последња синхронизација иде преко одрезаних података. Потребно је урадити ре-индексирање (преузети комплетан ланац блокова поново у случају одсеченог чвора)</translation>
-    
-ERR
-The translation is in Serbian Cyrillic script, not in 'sr@latin' (Serbian Latin script) as requested by the language code 'sr@latin'. The content, while mostly accurate, should be fully in Latin script.
-
-Correct translation:
-Prune: poslednja sinhronizacija novčanika prevazilazi odrezane podatke. Potrebno je da pokrenete -reindex (ponovo preuzmite čitav blokčejn u slučaju odrezanog čvora)
-```
-
 <!-- cache_translation_check_sr@latin_2c6a2b2013e81cde8f5eb72fe6d6a7121926054d53445568d6a69a530e147f52 -->
 ```
         <source>The transaction amount is too small to send after the fee has been deducted</source>
@@ -3505,6 +4240,18 @@ The translation uses Cyrillic script ("Не могу решити -%s адрес
 
 Correct translation:
 Ne mogu rešiti -%s adresu: '%s'
+```
+
+<!-- cache_translation_check_sr@latin_45c66ab7fe753355878f50e515a5dcc3214e11a7d4812e5c38c99616eb77d2a1 -->
+```
+        <source>default wallet</source>
+        <translation>подразумевани новчаник</translation>
+    
+SPAM
+The translation is in Serbian Cyrillic script, but 'sr@latin' requires Latin script.
+
+Correct translation:
+podrazumevani novčanik
 ```
 
 <!-- cache_translation_check_sr@latin_97f02c31c7c1367b676a85b6a3c0fe5c2ae7dce83a8fe2ea39a23bd8bd74ce9f -->
@@ -3807,4 +4554,4 @@ Novčanik treba da bude prepisan: ponovo pokrenite %s da završite
 ```
 </details>
 
-Number of issues: 306.
+Number of issues: 368.

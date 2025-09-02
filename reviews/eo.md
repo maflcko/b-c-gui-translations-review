@@ -1,25 +1,13 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>eo</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Beo%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Beo%5D%20request)
 
-
-<!-- cache_translation_check_eo_413c2ac5fb727f6bb806ebe242c962322bf5a32d2d9129e97665d7457b35fa2e -->
-```
-        <source>Close</source>
-        <translation>Caleb Payne Phd</translation>
-    
-SPAM
-The provided translation is not in Esperanto ('eo'). It is an unrelated personal name, which constitutes spam.
-
-Correct translation:
-Fermi
-```
 
 <!-- cache_translation_check_eo_a2394e87a60199f40ce6b47ba8d8d46bbbcb0ef249de26f17e7ab6fdcf49937f -->
 ```
@@ -139,6 +127,18 @@ Correct translation:
 Kontrolu mesaĝojn por certigi, ke ili estis subskribitaj per specifaj Bitkoin-adresoj
 ```
 
+<!-- cache_translation_check_eo_7a8fa91da7d2d885aadbf0ec064675e47ef31c583a76154c7a0c4eabe9e7beb9 -->
+```
+        <source>&amp;Command-line options</source>
+        <translation>&amp;Komandliniaj agordaĵoj</translation>
+    
+ERR
+The translation contains a typo in the word "agordaĵoj". The correct word is "agordaĵoj" (settings/options). The circumflex in "agordaĵoj" is misplaced (should be on the 'j', not the 'a'), and "komandliniaj" appropriately translates "command-line". 
+
+Correct translation:
+&Komandliniaj agordaĵoj
+```
+
 <!-- cache_translation_check_eo_1f60197baab1dc8c34f54321b3f157ffe5a1c5127adbcf2b4254ef6372c64811 -->
 ```
         <source>%1 behind</source>
@@ -218,6 +218,18 @@ Correct translation:
 Malfermu la Bitcoin-URI-n
 ```
 
+<!-- cache_translation_check_eo_8a33e06d99d233895c36d2d86db702b7f27929c45b7aba510fd2af2a0485ef57 -->
+```
+        <source>&amp;Main</source>
+        <translation>Ĉ&amp;efa</translation>
+    
+ERR
+The Esperanto translation "Ĉefa" is incorrect because it uses the character "Ĉ", which is not standard Esperanto orthography. The correct letter is "Ĉ" (U+0108), not "Ĉ" (Latin C + combining circumflex). Also, the shortcut (&) is present correctly. There are no spacing issues.
+
+Correct translation:
+Ĉ&amp;efa
+```
+
 <!-- cache_translation_check_eo_6e1bd723b4d35d0ba6664b019523f29e044dd3a00e6693952fadc44ff1767f79 -->
 ```
         <source>Automatically start %1 after logging in to the system.</source>
@@ -230,16 +242,46 @@ Correct translation:
 Aŭtomate komenci %1 post ensaluto en la sistemon.
 ```
 
-<!-- cache_translation_check_eo_8314ceef4f5673a995d2c736298375a7e30052c8e1fc69d6b1b1845ee87d24e7 -->
+<!-- cache_translation_check_eo_abcdaf7ecbda8c1143645f6f8691c8f297023e110da10fe9512a24a8a125c6b9 -->
 ```
-        <source>Number of script verification threads</source>
+        <source>&amp;Start %1 on system login</source>
+        <translation>&amp;Komenci na %1 kiam ensaluti en la sistemon</translation>
+    
+ERR
+The translation is mostly correct, but the use of "na" before "%1" is unnecessary and nonstandard in Esperanto. The recommended structure is "&amp;Komenci %1 ĉe ensaluto al la sistemo" or "&amp;Komenci %1 ĉe sistemensaluto." The format specifier and ampersand usage are correct.
+
+Correct translation:
+&amp;Komenci %1 ĉe ensaluto al la sistemo
+```
+
+<!-- cache_translation_check_eo_5afb616f0f34517f88177683c2f162f6ca510fd7112b760febc883e6915678a7 -->
+```
+        <source>Number of script &amp;verification threads</source>
         <translation>Kvanto da skriptaj kaj kontroleraraj fadenoj</translation>
     
 ERR
-The translation adds "kaj kontroleraraj" ("and verification"), but "kontroleraraj" is not a proper Esperanto term and the original English only refers to "script verification" (not "script and verification" or similar). The translation unnecessarily expands the meaning and contains a word ("kontroleraraj") that is not standard Esperanto.
+The translation omits the ampersand (&) character, which is used for marking the keyboard shortcut in menu items. The correct translation should retain a single & somewhere in the phrase, most commonly before the shortcut letter.
 
 Correct translation:
-Kvanto de fadenoj por kontrolado de skriptoj
+Nombro de skriptaj &kontrolaj fadenoj
+```
+
+<!-- cache_translation_check_eo_505019bb35bfd93c2b30eed0566ab0c6da2c1c416e014169c974bdfefaed5cb3 -->
+```
+        <source>W&amp;allet</source>
+        <translation>Monujo</translation>
+    
+ERR
+The translation is missing the '&' character which should be present exactly once to indicate the shortcut key, as in the source. This is necessary for proper keyboard navigation.
+
+Correct translation:
+&Monujo
+
+or
+
+Mon&ujo
+
+(Only one '&' should be present, and its placement determines the shortcut key.)
 ```
 
 <!-- cache_translation_check_eo_28f9b38ece329db43330890e44ef8b0f669e18a900d77b50c8b30916bf115960 -->
@@ -283,6 +325,39 @@ Correct translation:
 defaŭlto
 ```
 
+<!-- cache_translation_check_eo_1d7b979dceebd528668a2aac63df6b2e97e2185a87b5a2ae131e6f2f3c9c5501 -->
+```
+        <source>Clear &amp;All</source>
+        <translation>&amp;Forigi Ĉion</translation>
+    
+ERR
+The translation "&amp;Forigi Ĉion" is problematic because:
+
+1. The proper Esperanto word for "Clear" in the context of clearing a form or list is usually "Forigi" or "Malplenigi". "Forigi" generally means "delete" or "remove," and "Malplenigi" means "to empty" (clear).
+2. "Ĉion" contains a circumflex written as '̂' instead of the correct Esperanto character 'ĉ' as in "Ĉion" (meaning "everything" or "all").
+3. The original phrase "Clear &amp;All" suggests "Clear All" as a single command, not "Delete everything", so "Malplenigi ĉion" or "Forigi ĉion" would be more natural.
+
+Correct translation:
+Malplenigi &amp;ĉion
+
+Alternative:
+Forigi &amp;ĉion
+
+Note: Make sure to use the correct Esperanto character 'ĉ' in "ĉion".
+```
+
+<!-- cache_translation_check_eo_d4450e3ac321ad790f15e038663971c39ef0a45e272759135c6e33c2db46939e -->
+```
+        <source>S&amp;end</source>
+        <translation>Ŝendi</translation>
+    
+ERR
+The ampersand (&) indicating the shortcut key is missing from the translation, but it is present in the source. The translation should include exactly one ampersand anywhere in the word.
+
+Correct translation:
+Ŝ&endi
+```
+
 <!-- cache_translation_check_eo_a67b0617745f1d714833bc0d080d946fc8e644ce01eab2a0cd34c258cab2f7cc -->
 ```
         <source>Enter the message you want to sign here</source>
@@ -293,6 +368,27 @@ The translation is problematic. The English text is "Enter the message you want 
 
 Correct translation:  
 Enigu la mesaĝon, kiun vi volas subskribi, ĉi tie
+```
+
+<!-- cache_translation_check_eo_1d7b979dceebd528668a2aac63df6b2e97e2185a87b5a2ae131e6f2f3c9c5501 -->
+```
+        <source>Clear &amp;All</source>
+        <translation>&amp;Forigi Ĉion</translation>
+    
+ERR
+The translation "&amp;Forigi Ĉion" is problematic because:
+
+1. The proper Esperanto word for "Clear" in the context of clearing a form or list is usually "Forigi" or "Malplenigi". "Forigi" generally means "delete" or "remove," and "Malplenigi" means "to empty" (clear).
+2. "Ĉion" contains a circumflex written as '̂' instead of the correct Esperanto character 'ĉ' as in "Ĉion" (meaning "everything" or "all").
+3. The original phrase "Clear &amp;All" suggests "Clear All" as a single command, not "Delete everything", so "Malplenigi ĉion" or "Forigi ĉion" would be more natural.
+
+Correct translation:
+Malplenigi &amp;ĉion
+
+Alternative:
+Forigi &amp;ĉion
+
+Note: Make sure to use the correct Esperanto character 'ĉ' in "ĉion".
 ```
 
 <!-- cache_translation_check_eo_0369769d090282aa5e54dfe821ef2ba40a31cb6ef38dacd4bcee795ed83ff6d9 -->
@@ -331,21 +427,6 @@ Correct translation:
 Eraro dum inicialigado de blokdatumbazo
 ```
 
-<!-- cache_translation_check_eo_54354420e12ade1bce7b33928e271b0d69db708c11336512ff40954dbc4d1df3 -->
-```
-        <source>Error initializing wallet database environment %s!</source>
-        <translation>Eraro dum pravalorizado de monuj-datumbaza ĉirkaŭaĵo %s!</translation>
-    
-ERR
-There are a few issues:
-1. The translation uses "pravalorizado" which is not a correct or standard word in Esperanto; the standard word for "initializing" is "pravalorizi" or better "pravalorigo" or simply "pravigo" or "ekfunkciigo" depending on context, but "pravalorizi" is rare and nonstandard.
-2. "monuj-datumbaza ĉirkaŭaĵo" has unnecessary hyphenation and uses circumflexes in ASCII form (should be ĉirkaŭaĵo).
-3. The ASCII circumflexes ('^', 'ŭ') are not standard and should be actual Esperanto letters.
-
-Correct translation:
-Eraro dum pravalorigo de monujdatumbaza ĉirkaŭaĵo %s!
-```
-
 <!-- cache_translation_check_eo_7c3900752899595508300bb4e7fc8e16a25d6d20e0a2dfcaef143bfcc96a7747 -->
 ```
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
@@ -359,4 +440,4 @@ Geneza bloko aŭ ne trovita aŭ neĝusta. Ĉu eble la datadir de la reto malĝus
 ```
 </details>
 
-Number of issues: 27.
+Number of issues: 32.

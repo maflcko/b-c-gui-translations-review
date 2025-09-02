@@ -1,13 +1,25 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>tr</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Btr%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Btr%5D%20request)
 
+
+<!-- cache_translation_check_tr_42b12ab4470a52e925fcced76dca24c8640a51c07f1ad19f421bdb56a7d8b91d -->
+```
+        <source>Copy &amp;Label</source>
+        <translation>Etiketi kopyala</translation>
+    
+ERR
+The translation is correct Turkish for "Copy label" but it omits the required shortcut marker (&) from the source. The ampersand must appear exactly once in the translation.
+
+Correct translation (with ampersand):
+Etiketi &kopyala
+```
 
 <!-- cache_translation_check_tr_9b4cf03f8fb6d12adc2e198e1346649693846e8454a7c143143339ba61d223e1 -->
 ```
@@ -111,6 +123,21 @@ Correct translation:
 %1 dk
 ```
 
+<!-- cache_translation_check_tr_7a8299027bcc1a438707b486125ca2f72ffc665743b15fdcc0b14f68937fea94 -->
+```
+        <source>&amp;Overview</source>
+        <translation>Genel durum</translation>
+    
+ERR
+The translation is missing the shortcut marker (&) present in the source. Also UI wording/casing can be improved.
+
+Correct translation (with shortcut):
+&Genel Durum
+
+Alternative more common UI wording:
+&Genel Bakış
+```
+
 <!-- cache_translation_check_tr_7263bd8a54179d54b6d7ffeee9fd503527e386a731442e6080f151f33bf18b4b -->
 ```
         <source>Browse transaction history</source>
@@ -135,28 +162,60 @@ Correct translation:
 Proxy &lt;b&gt;etkinleştirildi&lt;/b&gt;: %1
 ```
 
-<!-- cache_translation_check_tr_6307d2e3a0f26e546d365df9850304bdbe15a24a42fd18e9daed6472b0279f7c -->
+<!-- cache_translation_check_tr_88c8c4aa73535844a5edc3f7bb1d86597cb56382f1b485024b0e1fab555775a2 -->
 ```
-        <source>Open URI…</source>
-        <translation>URI 'ı Aç...</translation>
+        <source>Sign &amp;message…</source>
+        <translation>&amp;Mesajı imzala...</translation>
     
 ERR
-There is a whitespace format issue. In Turkish, the correct formatting would be "URI'yi Aç..." without the extra space between "URI" and the apostrophe, and using the correct accusative suffix.
+Translation is correct in meaning and the ampersand shortcut is present exactly once, but the ellipsis character differs (source uses single Unicode ellipsis … whereas translation uses three dots ...). For consistency use the same ellipsis character and no extra spaces.
 
 Correct translation:
-URI'yi Aç...
+&Mesajı imzala…
 ```
 
-<!-- cache_translation_check_tr_be7a36a50ab1837406e875d010040e66c7c723742441c999c10d646d73cc62e2 -->
+<!-- cache_translation_check_tr_b548db3ffa68fbb15d8dc4ea86d8277285a8778a518b7df785b4fb593ba7fe16 -->
 ```
-        <source>Sending addresses</source>
-        <translation> Adresleri gönderme</translation>
+        <source>Open &amp;URI…</source>
+        <translation>&amp;URI 'ı Aç...</translation>
     
 ERR
-There is a whitespace issue (leading space) and the translation reverses the order of words, making it sound like "sending the addresses" rather than "addresses for sending." The correct translation should use the noun form to match the menu context (as in "Gönderim adresleri").
+Issues:
+- There is an incorrect space between "URI" and the apostrophe + suffix ("URI 'ı"), it should be attached: "URI'yi".
+- The accusative suffix is wrong: use "'yi" (not "'ı") for "URI" -> "URI'yi".
+- The ellipsis should be the single character … (or at least no extra space), and avoid three separate dots if source uses single ellipsis.
+- Ensure the ampersand shortcut appears exactly once (kept before U).
 
 Correct translation:
-Gönderim adresleri
+&URI'yi Aç…
+```
+
+<!-- cache_translation_check_tr_f5e0528619ddd1120287ccf5d52b1f4daca7bcdd91a307701dde1d5c0fb1b43b -->
+```
+        <source>&amp;Sending addresses</source>
+        <translation>&amp; Adresleri gönderme</translation>
+    
+ERR
+Problems:
+- The ampersand is written as "&amp;" (XML-escaped) but there's an extra space after it. The shortcut marker (&) must appear exactly once and should be placed immediately before the shortcut letter, not before a space.
+- Word order is awkward in Turkish. Better is "&Gönderme adresleri" or "&Gönderilen adresler" depending on intended meaning.
+
+Correct translation (recommended):
+&Gönderme adresleri
+```
+
+<!-- cache_translation_check_tr_14fa8b443442975a2a314159359867a21c1892811564085cf7a62c21f521a039 -->
+```
+        <source>&amp;Receiving addresses</source>
+        <translation>&amp; Adresler alınıyor</translation>
+    
+ERR
+Problems:
+- There's an extra space after the ampersand ("& Adresler..."); the & should be adjacent to the character it marks.
+- The Turkish phrase "Adresler alınıyor" literally means "addresses are being received" (progressive), which is unnatural for the UI label meaning "Receiving addresses" (addresses for receiving funds).
+
+Correct translation:
+&Alıcı adresler
 ```
 
 <!-- cache_translation_check_tr_669f58009789627b370a7ae2d8b5276a9e69b06b48dc14ff7e342ff7fa6a9e1c -->
@@ -169,6 +228,18 @@ The translation "Bitcoin’i aç." is inaccurate. The phrase "Open a bitcoin: UR
 
 Correct translation:
 Bir bitcoin: URI’si aç
+```
+
+<!-- cache_translation_check_tr_df6d4b68215dfb1c0803c726c433fceb8cc8710f6c9529a6ca63a513b75d7ab7 -->
+```
+        <source>&amp;Mask values</source>
+        <translation>&amp; Değerleri maskele</translation>
+    
+ERR
+There is an extra space after the ampersand (&) which breaks the shortcut marker. Also the ampersand should appear immediately before the shortcut letter. 
+
+Correct translation:
+&Değerleri maskele
 ```
 
 <!-- cache_translation_check_tr_16eed746fa720c3cd6eadbd65169b6e558bcc627c2e770d399eff5dbfb255317 -->
@@ -245,16 +316,16 @@ Correct translation:
 Tutar
 ```
 
-<!-- cache_translation_check_tr_fc1cca30cd7bcf524bde397a014e5b82df53aa2ad0e8f2f1a45d89c4a68ee4f8 -->
+<!-- cache_translation_check_tr_7d4ff5c2e390f8e53e4ff5fac8d552fb7ba3d46ec5f44dae4ce5b8ced0c0a86e -->
 ```
-        <source>Copy transaction ID and output index</source>
-        <translation>İşlem ID ve çıktı içeriğini kopyala</translation>
+        <source>Copy transaction &amp;ID and output index</source>
+        <translation>İşlem &amp;ID ve çıktı içeriğini kopyala</translation>
     
 ERR
-The translation is inaccurate. "output index" is translated incorrectly as "çıktı içeriği" which means "output content". The correct translation for "output index" in the Bitcoin context is "çıktı indeksi".
+The Turkish is understandable but awkward/incorrect: "çıktı içeriğini" means "output content" instead of "output index", and the phrase lacks proper possessive/accusative forms for "ID". The ampersand (&) is present exactly once (good).
 
 Correct translation:
-İşlem kimliğini ve çıktı indeksini kopyala
+İşlem &ID'sini ve çıktı indeksini kopyala
 ```
 
 <!-- cache_translation_check_tr_9f5b13b25fee711cf155c2696130a18e798bfd1de08e73008a773e9e6ce52edc -->
@@ -293,31 +364,156 @@ Correct translation:
 Hoş geldiniz
 ```
 
-<!-- cache_translation_check_tr_71f6885203d2296913ea876e3cf840759905daab22307ddd400d93ec6c0b3484 -->
+<!-- cache_translation_check_tr_6eb92534572060165ed8216267d561c147f10fbd8bc1120765b771ab1aecca6a -->
 ```
-        <source>Prune block storage to</source>
-        <translation>Depolamayı küçültmek engellemek için </translation>
+        <source>%1 is currently syncing.  It will download headers and blocks from peers and validate them until reaching the tip of the block chain.</source>
+        <translation>%1 şu anda senkronize ediliyor. Eşlerden başlıkları ve blokları indirecek ve blok zincirinin ucuna ulaşıncaya kadar bunları doğrulayacaktır.</translation>
     
 ERR
-The translation is inaccurate and introduces an incorrect meaning. The English source means "reduce/prune the block storage to [a certain size]," and the Turkish translation suggests both "shrinking" and "blocking" in a nonsensical way. Additionally, the translation omits to translate "block" as in "blockchain block". 
+The Turkish is understandable but slightly awkward/unnatural (passive phrasing and word order). Also "tip of the block chain" is better rendered as "blok zincirinin sonu". The format specifier %1 is preserved correctly.
 
-Correct translation:
-Blok depolamasını şuna küçült:
+Suggested corrected translation:
+%1 şu anda senkronize oluyor. Eşlerden blok başlıklarını ve blokları indirip blok zincirinin sonuna ulaşana kadar bunları doğrulayacak.
+```
+
+<!-- cache_translation_check_tr_f65def0273a3066a6ab70bc077913d002a31c0181b68d53333e8836dce4b1cac -->
+```
+        <source>&amp;Start %1 on system login</source>
+        <translation>&amp;Açılışta %1 açılsın</translation>
+    
+ERR
+The Turkish is understandable but awkward and not the most natural phrasing. The source means "Start %1 on system login" (i.e. start the application %1 when the user logs into the system). The translation "Açılışta %1 açılsın" is clumsy (repeats the root "aç" and is not typical Turkish UI phrasing).
+
+Keep the %1 and the single & for the accelerator. Better translations:
+- "&Sisteme girişte %1'i başlat"
 or
-Blok depolamasını şu boyuta küçült:
-(if followed by a size indication)
+- "&Oturum açıldığında %1'i başlat"
+
+Either preserves %1, uses natural Turkish, and includes a single '&'.
 ```
 
-<!-- cache_translation_check_tr_217efc225dcd89261022130ef5b8c39d81bbfec238c361e31d7996aa2e8c6f6c -->
+<!-- cache_translation_check_tr_8cbeea2ded7c78180537de09fd03c82aac9fe63cc9262bd2a097640bd121f639 -->
 ```
-        <source>Spend unconfirmed change</source>
-        <translation> Onaylanmamış bozuk parayı harcayın</translation>
+        <source>Prune &amp;block storage to</source>
+        <translation>Depolamayı küçültmek &amp;engellemek için </translation>
     
 ERR
-There is a formatting issue: there is an unnecessary leading space before the translation, and "bozuk para" is not the most appropriate term for "change" in a Bitcoin context. "Change" refers to the leftover amount from a transaction, not "coins" or "small change." A better translation would be "onaylanmamış bakiyeyi" or "onaylanmamış para üstünü".
+The Turkish translation is incorrect and slightly malformed. "Depolamayı küçültmek &engellemek için " changes the meaning (it reads like "to reduce storage to prevent/block"), uses the wrong verb "engellemek" (to prevent/block), and leaves a trailing space. The ampersand exists once (OK) but the translation itself is wrong.
+
+Correct translation (preserving a single &):
+Blok depolamayı &şu kadar kırp
+
+(or more explicit:)
+Blok depolamayı &şu boyuta kadar kırp
+
+Both use the ampersand exactly once and convey the intended meaning "Prune block storage to".
+```
+
+<!-- cache_translation_check_tr_cb9e8143d79d50b28037bab3740460b37a5fc81860c422a4b11301c9efcb0aad -->
+```
+        <source>Subtract &amp;fee from amount by default</source>
+        <extracomment>An Options window setting to set subtracting the fee from a sending amount as default.</extracomment>
+        <translation>Varsayılan olarak ücreti tutardan düş</translation>
+    
+ERR
+The translation is missing the shortcut ampersand (&) present in the source and the verb form is awkward ("düş" is incomplete). Also ensure the ampersand appears exactly once.
+
+Suggested correction (with & placed before "ücreti"):
+Varsayılan olarak tutardan &ücreti düşür
+```
+
+<!-- cache_translation_check_tr_736a3c948c45771ee155a0adeb9ff33a08644be4dabb8025435da5341ebef239 -->
+```
+        <source>&amp;Spend unconfirmed change</source>
+        <translation>&amp; Onaylanmamış bozuk parayı harcayın</translation>
+    
+ERR
+Issues:
+- There's an extra space after the ampersand ("& Onay..."), which breaks the shortcut key (the & must appear exactly once and directly before the shortcut letter).
+- The wording "bozuk para" is literal ("coins/change") and sounds awkward in this Bitcoin UI context. "Değişiklik" or "bakiye/para üstü" is better; common UI wording is "onaylanmamış değişikliği" or "onaylanmamış bakiyeyi".
+
+Suggested corrections (choose one appropriate to your UI style):
+&Onaylanmamış değişikliği harcayın
+or
+&Onaylanmamış bakiyeyi harcayın
+```
+
+<!-- cache_translation_check_tr_8f5b7fa7c94b799c8fb9f9914d2363b425ccfa2811c77df623934a0707217f74 -->
+```
+        <source>Enable &amp;PSBT controls</source>
+        <extracomment>An options window setting to enable PSBT controls.</extracomment>
+        <translation>PSBT kontrollerini etkinleştir</translation>
+    
+ERR
+The translation is missing the shortcut ampersand (&) from the source. No format specifiers present; otherwise Turkish phrasing is acceptable.
+
+Correct translation (include & exactly once, mirroring source):
+&PSBT kontrollerini etkinleştir
+```
+
+<!-- cache_translation_check_tr_50cdd93c731a58fa97a3e81d2a80d3a24bb53373519d18688f8fffe7342827a0 -->
+```
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Gelen bağlantılara izin ver</translation>
+    
+ERR
+The translation is missing the shortcut ampersand (&) present in the source (it must appear exactly once in the translation). Also ensure the ampersand is placed immediately before the chosen shortcut letter with no extra spaces.
+
+Correct translation (with ampersand added), for example:
+Gelen bağlantılara &izin ver
+```
+
+<!-- cache_translation_check_tr_39f1e1599a188a0c8a7ecc7f14048e38bb3ef822e6ef862161c098efe76871ea -->
+```
+        <source>&amp;Show tray icon</source>
+        <translation>Simgeyi &amp;Göster </translation>
+    
+ERR
+Problems:
+- Trailing space after the translation ("Simgeyi &Göster ").
+- Word order/casing is a bit odd for Turkish UI conventions. Typically the shortcut ampersand is placed before the word to be used as shortcut and the verb is lowercase.
+
+Suggested correct translations (choose one):
+- "&Simgeyi göster"
+- "&Tepsi simgesini göster"
+
+Both contain the ampersand exactly once, have no extra whitespace, and are natural Turkish UI strings.
+```
+
+<!-- cache_translation_check_tr_69f1e1c35cfc87a2806370dcaf37a58260a693637ec7243f772bcca0bd267efd -->
+```
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>Tutarı göstermek için &amp;birim:</translation>
+    
+ERR
+"tutarı" is singular; source uses plural "amounts". More natural Turkish is plural "Tutarları göstermek için &birim:".
 
 Correct translation:
-Onaylanmamış para üstünü harcayın
+Tutarları göstermek için &birim:
+```
+
+<!-- cache_translation_check_tr_0a10534a4380cf38db314b0d3c275044ca883183d736f7bd3ed64db8029b1367 -->
+```
+        <source>&amp;Third-party transaction URLs</source>
+        <translation>&amp;Üçüncü parti işlem URL'leri</translation>
+    
+ERR
+"Üçüncü parti" is understandable but not the most natural Turkish; "üçüncü taraf" is the preferred term. The ampersand is present exactly once (good) and the apostrophe in "URL'leri" is fine.
+
+Correct translation:
+&Üçüncü taraf işlem URL'leri
+```
+
+<!-- cache_translation_check_tr_efda40867b61d8d88cb941cdbd114bd66ad0994a6cebceb70155b20575502203 -->
+```
+        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
+        <translation>Tor onion hizmetleri aracılığıyla eşlere ulaşmak için ayrı SOCKS&amp;5 proxy kullanın: </translation>
+    
+ERR
+Translation is accurate and natural, and the &amp; accelerator is preserved exactly once. However, there is an extra trailing space before the closing punctuation.
+
+Correct translation without the trailing space:
+Tor onion hizmetleri aracılığıyla eşlere ulaşmak için ayrı SOCKS&amp;5 proxy kullanın:
 ```
 
 <!-- cache_translation_check_tr_87b24410a89751da24eca78a69d0bcfaa6312af9bb8e3281a6bcaac2f2abbacf -->
@@ -359,6 +555,43 @@ Correct translation:
 Giden
 ```
 
+<!-- cache_translation_check_tr_d992f8f2a404263f4580453e4808b07173e4b6baf8b66cbd035f31e6ae43ec7b -->
+```
+        <source>&amp;Copy IP/Netmask</source>
+        <extracomment>Context menu action to copy the IP/Netmask of a banned peer. IP/Netmask is the combination of a peer's IP address and its Netmask. For IP address, see: https://en.wikipedia.org/wiki/IP_address.</extracomment>
+        <translation>IP/Ağ Maskesini Kopyala</translation>
+    
+ERR
+The translation is missing the shortcut ampersand (&) that appears in the source. The source has a single & indicating the mnemonic; the translation must include exactly one &. 
+
+Correct translation (with a single &):
+&IP/Ağ Maskesini Kopyala
+```
+
+<!-- cache_translation_check_tr_b689f131f694f90e3b76af3f36119c8be1f58e2adb5aea17809588cd3552f374 -->
+```
+        <source>&amp;Amount:</source>
+        <translation>miktar</translation>
+    
+ERR
+The translation is missing the shortcut ampersand and the trailing colon from the source, and it doesn't match the source punctuation/case. It should include exactly one '&' and the colon.
+
+Correct translation:
+&amp;Miktar:
+```
+
+<!-- cache_translation_check_tr_01a2eca24c46f6dc6a77ed4ae634ab79d3321d96427eddea4f23a697f2789980 -->
+```
+        <source>&amp;Create new receiving address</source>
+        <translation>Yeni alıcı adresi oluştur</translation>
+    
+ERR
+The translation is accurate Turkish but it omits the shortcut marker (&) from the source. The source contains one '&' which should appear exactly once in the translation.
+
+Correct translation:
+&amp;Yeni alıcı adresi oluştur
+```
+
 <!-- cache_translation_check_tr_e02d583d703d5a069a3ab66fc19bed2cfc897efd1ba41cd39810d692af24e01f -->
 ```
         <source>Change:</source>
@@ -369,6 +602,23 @@ The translation is inaccurate. In the context of Bitcoin, "Change:" refers to th
 
 Correct translation:
 Para Üstü:
+```
+
+<!-- cache_translation_check_tr_df1127dd54d7d2cd58802345e6fbe1d381a60d304b43239750f9fe9956d8f921 -->
+```
+        <source>S&amp;ubtract fee from amount</source>
+        <translation>Ücreti tutardan düş</translation>
+    
+ERR
+Problems:
+- The translation is missing the accelerator marker (&). The source contains a single & and the translation must also include exactly one.
+- Minor grammatical issue: "from amount" is better rendered as "tutarından" in Turkish.
+
+Correct translation:
+<&>Ücreti tutarından düş
+
+(Place the & exactly once; for example:
+&Ücreti tutarından düş )
 ```
 
 <!-- cache_translation_check_tr_759cc0d68105973c830b0e81dde4bdc3e1bc179b5bd21f332b9ceffaeac52c9a -->
@@ -555,4 +805,4 @@ Hata: Sadece izlenen tx %s, sadece izlenen cüzdana eklenemedi
 ```
 </details>
 
-Number of issues: 43.
+Number of issues: 61.

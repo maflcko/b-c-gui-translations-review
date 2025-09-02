@@ -1,13 +1,88 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>uz</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Buz%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Buz%5D%20request)
 
+
+<!-- cache_translation_check_uz_d4b49b220f1f388b03d449a60b03a715301c61719864932de15bb489ddb0509c -->
+```
+        <source>&amp;Delete</source>
+        <translation>o'chirish</translation>
+    
+ERR
+The translation is missing the required shortcut ampersand (&) and should include it exactly once. Also UI labels are typically capitalized.
+
+Correct translation:
+<translation>&O'chirish</translation>
+```
+
+<!-- cache_translation_check_uz_f815a9e95209023dd70d851d95a253979c87f2a3f609920f3807ab3f7dcbe2d3 -->
+```
+        <source>C&amp;hoose</source>
+        <translation>tanlamoq</translation>
+    
+ERR
+Problems:
+- The translation "tanlamoq" is the infinitive verb (to choose) and not an appropriate concise UI label. It should be a short imperative/command like "Tanla".
+- The source contains a single ampersand (&) indicating a keyboard shortcut; the translation must include exactly one &. The provided translation has none.
+
+Suggested correct translation (includes one & and a suitable label):
+T&anla
+```
+
+<!-- cache_translation_check_uz_e62cbc55bdef0a7c569fec5a182fcb42dcc92f4cc83818761190dfa43b407589 -->
+```
+        <source>Copy &amp;Label</source>
+        <translation>Nusxalash &amp;Yorliq</translation>
+    
+ERR
+The translation "Nusxalash &Yorliq" is understandable but has awkward word order for Uzbek UI text. The original is "Copy &Label" (verb+object); a more natural Uzbek phrasing is "Yorliqni nusxalash" with the shortcut marker placed once. Correct translation (with shortcut on "Yorliq"):
+
+&Yorliqni nusxalash
+```
+
+<!-- cache_translation_check_uz_4f0bf1845ad95484d25c82d6b8f7c1d7746143e21bfc5d6f900f96a7855446e6 -->
+```
+        <source>&amp;Edit</source>
+        <translation>O'zgartirmoq</translation>
+    
+ERR
+Problems:
+- The translation "O'zgartirmoq" is the infinitive verb "to edit" and is not the usual UI label for "Edit".
+- The source contains a single '&' indicating a keyboard shortcut; the translation is missing the '&' and must include it exactly once.
+
+Suggested correction (include & for the shortcut):
+&amp;O'zgartirish
+```
+
+<!-- cache_translation_check_uz_c28ef394ad6044621a41c9b41fbe2ba981368c89c0b4a61ee1d9d5e52d6a1c76 -->
+```
+        <source>Sending addresses - %1</source>
+        <translation>Manzillarni yuborish%1</translation>
+    
+ERR
+The translation removes the separator and the required space before %1 ("Manzillarni yuborish%1") and the phrasing is slightly unnatural. The format specifier %1 must be kept with proper spacing/punctuation.
+
+Suggested correction:
+Yuborish manzillari - %1
+```
+
+<!-- cache_translation_check_uz_88f1e80173e21e83830081e31c5e0c2b9fd28ef191582b67fa793832204ba7e4 -->
+```
+        <source>Receiving addresses - %1</source>
+        <translation>Qabul qilish manzillari-%1</translation>
+    
+ERR
+The translation incorrectly omits spaces around the dash and the phrasing can be made more natural in Uzbek. Also ensure the %1 specifier is preserved with proper spacing.
+
+Suggested correction:
+Qabul qiluvchi manzillar - %1
+```
 
 <!-- cache_translation_check_uz_73062f30966c6156c0858b5b56081c4c11a42eb4e97e4268b5f169f6a61786be -->
 ```
@@ -94,6 +169,84 @@ Correct translation:
 Ҳамённи шифрлаш учун фойдаланиладиган паролни ўзгартириш
 ```
 
+<!-- cache_translation_check_uz_089ddbd9180f7f228b2267c44e0c5eb58a08453e6252a1f83d67b18c444e9025 -->
+```
+        <source>&amp;Backup Wallet…</source>
+        <translation>&amp;Hamyon nusxasi...</translation>
+    
+ERR
+The translation "&Hamyon nusxasi..." literally reads "wallet copy..." and is not a proper imperative/label for the action "Backup Wallet…". Also the source uses a single-character ellipsis (…), while the translation uses three dots; not critical but better to match style.
+
+Correct translations (keep the & for the shortcut exactly once):
+&Hamyonni zaxiralash…
+or
+&Hamyonni zaxira qilish…
+```
+
+<!-- cache_translation_check_uz_dbdc3990c2b1b8fa8dde4337dea36a096b374374a8d34f7ceb7b9a0616c2f53a -->
+```
+        <source>Sign &amp;message…</source>
+        <translation>Xabarni &amp;signlash...</translation>
+    
+ERR
+The translation mixes English ("signlash") with Uzbek and uses three ASCII dots instead of an ellipsis character. Use the Uzbek verb "imzolash" for "sign" and keep the & shortcut exactly once. Correct translation:
+
+<translation>Xabarni &imzolash…</translation>
+```
+
+<!-- cache_translation_check_uz_d01bffcf29fdf70c77c2e73c5905f697296116ab8eb11d0255e392208374e5b5 -->
+```
+        <source>&amp;Load PSBT from file…</source>
+        <translation>&amp;PSBT ni fayldan yuklash...</translation>
+    
+ERR
+The Uzbek suffix "-ni" is incorrectly separated by a space ("PSBT ni"); in Uzbek it should attach directly ("PSBTni"). Also prefer using the same ellipsis character. Correct translation:
+
+&PSBTni fayldan yuklash…
+```
+
+<!-- cache_translation_check_uz_eea3ab9fd2ad9e14d92bd212c29b0e879403a0b4ae9ebfb04152e8787f3fef09 -->
+```
+        <source>Open &amp;URI…</source>
+        <translation>&amp;URL manzilni ochish</translation>
+    
+ERR
+Problems:
+- The source uses "URI" but the translation changed it to "URL" — should keep the same term "URI".
+- The source includes an ellipsis (…) which is missing in the translation.
+- Minor Uzbek phrasing: use "manzilni" as the accusative of "manzil".
+
+Correct translation:
+&URI manzilni ochish…
+```
+
+<!-- cache_translation_check_uz_13ad48aca877381998ab5a421b6e9f1b91ce91eb035e7e54d744123a188aa791 -->
+```
+        <source>&amp;File</source>
+        <translation>&amp;Файл</translation>
+    
+ERR
+The translation uses the Cyrillic Russian word "Файл" rather than Uzbek. Uzbek (uz) should use the Uzbek word in Latin script (official) — "Fayl". The ampersand (&) is present and placed correctly.
+
+Correct translation:
+&amp;Fayl
+```
+
+<!-- cache_translation_check_uz_ea7ee41489272cd603ea929b3b857c5998073c18ca99fc68b21a93da0a7dce18 -->
+```
+        <source>&amp;Settings</source>
+        <translation>&amp; Созламалар</translation>
+    
+ERR
+Problems:
+- There's an extra space after the ampersand entity ("&amp; Созламалар"). The accelerator marker should be adjacent to the label (no stray leading space).
+- Additionally, Uzbek typically uses the Latin script; using Cyrillic ("Созламалар") may be unexpected for 'uz' locale. Prefer the Latin form.
+
+Correct translations (choose one depending on script preference):
+- Latin script: &amp;Sozlamalar
+- Cyrillic script (if deliberately using Cyrillic): &amp;Созламалар
+```
+
 <!-- cache_translation_check_uz_7c293b039b3b3e7b0789ae952347b995b48c8ae2f311630ec31b6d11ce3e50db -->
 ```
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
@@ -110,6 +263,18 @@ Correct translation:
 To'lovlarni so'rash (QR kodlar va bitcoin: URI larini yaratadi)
 ```
 
+<!-- cache_translation_check_uz_1991927842119249addbe4ffb62b8fd709004e24adb55bc96ff72d514a22c28c -->
+```
+        <source>&amp;Command-line options</source>
+        <translation>&amp;Command-line sozlamalari</translation>
+    
+ERR
+The translation mixes English and Uzbek ("Command-line" left in English). The ampersand is used correctly and there are no format specifiers or whitespace issues, but the phrase should be fully in Uzbek.
+
+Suggested correction:
+&Buyruq satri sozlamalari
+```
+
 <!-- cache_translation_check_uz_ae0b96cf49348fdc55f9a198a3ff27e4c811f3ff042a7e5043772cd909d0711f -->
 ```
         <source>Ctrl+Q</source>
@@ -120,6 +285,22 @@ The translation is inaccurate. "Ctrl+Q" is a keyboard shortcut and should be lef
 
 Correct translation:
 Ctrl+Q
+```
+
+<!-- cache_translation_check_uz_034a3b663750f19d590686c6a884c3c69eae99168fa588dd85945f57fb09a532 -->
+```
+        <source>Load PSBT from &amp;clipboard…</source>
+        <translation>&amp;Nusxalanganlar dan PSBT ni yuklash</translation>
+    
+ERR
+Issues:
+- Word choice/grammar: "Nusxalanganlar dan" is incorrect Uzbek. It should be "nusxadan" (from clipboard) rather than the plural "nusxalanganlar dan".
+- Spacing: there should not be a space between the stem and the postposition in "nusxadan" (no separate "dan").
+- Ellipsis: the source ends with an ellipsis (…) which is missing in the translation.
+- Shortcut ampersand: the & exists once in the translation (good), but it should be placed before the correct word.
+
+Correct translation suggestion:
+<translation>PSBT ni &nusxadan yuklash…</translation>
 ```
 
 <!-- cache_translation_check_uz_297cc566c94a50d56fa5ef52884509c7ed463e913844f62c5f2c49269e2d1ff3 -->
@@ -185,7 +366,57 @@ Correct translation:
 Tarmoq faoliyatini yoqish
 ```
 
-<!-- cache_translation_check_uz_37182631947619c7631bf26ff2e81dd44a04537083ce502d7869d0486527640e -->
+<!-- cache_translation_check_uz_0b2c6f1d6655f19c9050749b99ad56bcf72d66a0b07574eecae1257320be6c85 -->
+```
+        <source>Copy transaction &amp;ID and output index</source>
+        <translation>Tranzaksiya &amp;IDsi ni va chiquvchi indeksni nusxalash</translation>
+    
+ERR
+The translation has incorrect spacing and a small grammatical issue: the possessive + accusative suffix for "ID" should be attached without a space ("IDsini" not "IDsi ni"). Also "chiquvchi indeksni" is acceptable but "chiqish indeksini" reads more naturally.
+
+Correct translation:
+Tranzaksiya &IDsini va chiqish indeksini nusxalash
+```
+
+<!-- cache_translation_check_uz_b091013308c7c571bca7fb23b1c008bf87eae9c6f0dc0d2fd62fc8cf2c650b42 -->
+```
+        <source>&amp;Unlock unspent</source>
+        <translation>Sarflanmaqan tranzaksiyalarni &amp;qulfdan chiqarish</translation>
+    
+ERR
+Uzbek has a small spelling error: "Sarflanmaqan" should be "Sarflanmagan". The ampersand (&) is present exactly once (good). No format specifiers or whitespace issues.
+
+Correct translation:
+Sarflanmagan tranzaksiyalarni &qulfdan chiqarish
+```
+
+<!-- cache_translation_check_uz_5ecb47d9f9e90bed2dcafc92afe94bc082df53f30b0a74c6c36f9c0e22a8c497 -->
+```
+        <source>Copy after fee</source>
+        <translation>'To'lovdan keyin' ni nusxalash</translation>
+    
+ERR
+The translation has incorrect punctuation and spacing (unnecessary single quotes and a space before the postposition "ni"), and the phrasing is awkward. There are no format specifiers to preserve.
+
+Correct translation:
+To'lovdan keyingisini nusxalash
+
+(Alternative more explicit: "To'lovdan keyingi qiymatni nusxalash")
+```
+
+<!-- cache_translation_check_uz_b79753252a76edb9988270135bb0acf0077e8cfaabf0665750d5f6631eddd0ca -->
+```
+        <source>Are you sure you wish to migrate the wallet &lt;i&gt;%1&lt;/i&gt;?</source>
+        <translation>Hamyonni ko'chirmoqchi ekanligingizga ishonchingiz komilmi?&lt;i&gt;%1&lt;/i&gt;</translation>
+    
+ERR
+The wallet name placeholder %1 and the italic tags were moved out of the phrase and placed after the question mark; they must remain where the wallet is referenced. Also ensure spacing around the tag is correct.
+
+Correct translation:
+Hamyon &lt;i&gt;%1&lt;/i&gt;ni ko'chirmoqchi ekanligingizga ishonchingiz komilmi?
+```
+
+<!-- cache_translation_check_uz_429a3b3af4edad58132fca4b091e3d82f803e64f7380316e19343291b73c79c6 -->
 ```
         <source>Migrating the wallet will convert this wallet to one or more descriptor wallets. A new wallet backup will need to be made.
 If this wallet contains any watchonly scripts, a new wallet will be created which contains those watchonly scripts.
@@ -196,22 +427,19 @@ The migration process will create a backup of the wallet before migrating. This 
 Agar bu hamyonda faqat tomosha skriptlari mavjud bo'lsa, yangi hamyon yaratiladi, unda faqat tomosha qilish uchun skriptlar mavjud.
 Agar bu hamyonda echilishi mumkin bo'lgan, lekin tomosha qilinmagan skriptlar bo'lsa, ushbu skriptlarni o'z ichiga olgan boshqa va yangi hamyon yaratiladi.
 
-Migratsiya jarayoni ko'chirishdan oldin hamyonning zaxira nusxasini yaratadi. Ushbu zaxira fayli 1-2.legacy.bak deb nomlanadi va uni ushbu hamyon katalogida topish mumkin. Noto'g'ri migratsiya bo'lsa, zaxira nusxasini "Hamyonni tiklash" funksiyasi bilan tiklash mumkin.</translation>
+Migratsiya jarayoni ko'chirishdan oldin hamyonning zaxira nusxasini yaratadi. Ushbu zaxira fayli &lt;wallet name&gt;- &lt;timestamp&gt; deb nomlanadi va uni ushbu hamyon katalogida topish mumkin. Noto'g'ri migratsiya bo'lsa, zaxira nusxasini "Hamyonni tiklash" funksiyasi bilan tiklash mumkin.</translation>
     
 ERR
-The translation has several issues:
-1. "watchonly scripts" is translated as "faqat tomosha skriptlari", which should be "faqat kuzatuv (watchonly) skriptlari" or "kuzatuv skriptlari".
-2. The phrase “Agar bu hamyonda faqat tomosha skriptlari mavjud bo'lsa…” is mistranslated. The source means "If this wallet contains any watchonly scripts", not "only watchonly scripts".
-3. The use of "1-2.legacy.bak" as a backup filename is incorrect. The source specifies "&lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak", which should be rendered in Uzbek without hardcoding a filename.
-4. The translation omits clarity and changes meaning in places, such as “solvable but not watched scripts” which is rendered inaccurately.
-5. The translation of "Restore Wallet" should be in quotes as in the original.
+Problems:
+- The backup filename in the source (&lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak) was mangled: the translation omitted ".legacy.bak" and added spaces around the hyphen (&lt;wallet name&gt;- &lt;timestamp&gt;). The exact filename must be preserved without extra spaces.
+- Minor stylistic clarity: "watchonly scripts" and "solvable but not watched scripts" are better rendered as "watchonly (faqat kuzatuv uchun) skriptlari" and "echilishi mumkin, lekin kuzatilmaydigan skriptlar" to match the source meaning.
 
-Correct translation:
-Hamyonni ko‘chirish natijasida u bir yoki bir nechta deskriptorli hamyonga aylantiriladi. Yangi hamyon zaxira nusxasini yaratish kerak bo‘ladi.
-Agar ushbu hamyonda kuzatuv (watchonly) skriptlari mavjud bo‘lsa, ushbu kuzatuv skriptlarini o‘z ichiga olgan yangi hamyon yaratiladi.
-Agar hamyonda echilishi mumkin bo‘lgan, lekin kuzatuv qilinmaydigan (watchonly bo‘lmagan) skriptlar mavjud bo‘lsa, ularni o‘z ichiga olgan boshqa yangi hamyon yaratiladi.
+Suggested correct translation:
+Hamyonni ko'chirish ushbu hamyonni bir yoki bir nechta deskriptor hamyonga aylantiradi. Hamyonning yangi zaxira nusxasini yaratish kerak bo'ladi.
+Agar bu hamyonda watchonly (faqat kuzatuv uchun) skriptlar mavjud bo'lsa, ularni o'z ichiga olgan yangi hamyon yaratiladi.
+Agar bu hamyonda echilishi mumkin, lekin kuzatilmaydigan skriptlar mavjud bo'lsa, ushbu skriptlarni o'z ichiga olgan boshqa va yangi hamyon yaratiladi.
 
-Migratsiya jarayonidan avval hamyonning zaxira nusxasi yaratiladi. Ushbu zaxira fayli &lt;hamyon nomi&gt;-&lt;vaqt tamg‘asi&gt;.legacy.bak deb nomlanadi va ushbu hamyon katalogida bo‘ladi. Notog‘ri migratsiya yuz bergan taqdirda, zaxira nusxasini “Hamyonni tiklash” funksiyasi yordamida tiklash mumkin.
+Migratsiya jarayoni ko'chirishdan oldin hamyonning zaxira nusxasini yaratadi. Ushbu zaxira fayli &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak deb nomlanadi va uni ushbu hamyon katalogida topish mumkin. Noto'g'ri migratsiya yuz berganda, zaxira nusxasini "Hamyonni tiklash" funksiyasi yordamida tiklash mumkin.
 ```
 
 <!-- cache_translation_check_uz_297cc566c94a50d56fa5ef52884509c7ed463e913844f62c5f2c49269e2d1ff3 -->
@@ -255,17 +483,20 @@ Correct translation:
 "Yechish mumkin bo‘lgan, biroq kuzatilmayotgan skriptlar '%1' nomli yangi hamyonga ko‘chirildi."
 ```
 
-<!-- cache_translation_check_uz_f6880955ec667ea50cb4e4bfef71c9453a6bb921663e3e0e0b7739eadefd382a -->
+<!-- cache_translation_check_uz_c47c8c35977570e2680c36440f4758ee90c26d0a11c9d59e42725011ba520828 -->
 ```
         <source>Restoring Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
         <extracomment>Descriptive text of the restore wallets progress window which indicates to the user that wallets are currently being restored.</extracomment>
-        <translation>Wallet tiklanmoqda&lt;b&gt;%1&lt;/b&gt;</translation>
+        <translation>Hamyon tiklanmoqda&lt;b&gt;%1&lt;/b&gt;</translation>
     
 ERR
-The translation omits the ellipsis (…) at the end, which is present in the source. Also, the word order could be improved for clarity in Uzbek.
+Issues:
+- Missing the trailing ellipsis (…) from the source.
+- No space before the <b> tag; the source has a space before &lt;b&gt;.
+- Word order in Uzbek is more natural as "Hamyon <b>%1</b> tiklanmoqda…" (emphasised wallet name between).
 
 Correct translation:
-Hamyon tiklanmoqda &lt;b&gt;%1&lt;/b&gt;…
+Hamyon <b>%1</b> tiklanmoqda…
 ```
 
 <!-- cache_translation_check_uz_0a5b602624e9e468f3d5fde7996d52803be53fdfd2c21e9ae095e98a7e744b0d -->
@@ -301,6 +532,21 @@ The translation omits important details from the source. The original specifies 
 
 Correct translation:
 Bo'sh hamyon yarating. Bo'sh hamyonlar dastlab maxfiy kalitlarga yoki skriptlarga ega bo‘lmaydi. Keyinchalik maxfiy kalitlar va manzillar import qilinishi yoki HD urug‘i o‘rnatilishi mumkin.
+```
+
+<!-- cache_translation_check_uz_3b87db80994dc838fb12b6f3b2ff58a3f70ccc7d1881af14ccc499ca63f84775 -->
+```
+        <source>&amp;Label</source>
+        <translation>&amp;Ёрлик</translation>
+    
+ERR
+The translation uses Cyrillic "Ёрлик", which is either misspelled for Uzbek (uses "қ" not "к") and Uzbek locale normally uses the Latin script. Also ensure the ampersand is present exactly once (it is).
+
+Correct translation (Latin script, preferred for 'uz'):
+&amp;Yorliq
+
+Alternatively, in Uzbek Cyrillic (if Cyrillic is required):
+&amp;Ёрлиқ
 ```
 
 <!-- cache_translation_check_uz_a773a2fb9c1c29d18c7e480879c8f2269ebb18a6ac024266c97e7f2ec888f640 -->
@@ -373,6 +619,20 @@ Correct translation:
 Manzilni buferdan qo'yish
 ```
 
+<!-- cache_translation_check_uz_582ea3461ff481264a1373b04cdce959bb530158cabe386c309d54e9210ecbe1 -->
+```
+        <source>&amp;Start %1 on system login</source>
+        <translation>%1 ni sistemaga kirish paytida &amp;ishga tushirish</translation>
+    
+ERR
+Problems:
+- In Uzbek the accusative suffix "-ni" should be attached to the preceding token (no space) as "%1-ni", not "%1 ni".
+- The ampersand appears once (good) but ensure it is placed before the shortcut word; kept as &ishga is acceptable.
+
+Correct translation:
+%1-ni sistemaga kirish paytida &ishga tushirish
+```
+
 <!-- cache_translation_check_uz_e264875aa2d0181d8435998524cf18031b88fdaa0b06cae8efcf9381e1e30baf -->
 ```
         <source>Enabling pruning significantly reduces the disk space required to store transactions. All blocks are still fully validated. Reverting this setting requires re-downloading the entire blockchain.</source>
@@ -385,17 +645,126 @@ Correct translation:
 Tranzaksiyalarni saqlash uchun zarur bo‘lgan disk xotirasi hajmini sezilarli darajada kamaytirish uchun pruning funksiyasini yoqish mumkin. Barcha bloklar hanuz to‘liq tekshiriladi. Ushbu sozlamani qayta o‘zgartirish blokcheynni butunlay qayta yuklab olishni talab qiladi.
 ```
 
-<!-- cache_translation_check_uz_d85c024a002eb435ff08a1d8f0b08a11f3e6dbc43bb0a8c8429472d83c0cfb6f -->
+<!-- cache_translation_check_uz_3deb161f2d4a1731b172cc3e0a1696bfca101ce25f291841c72284224197c8f1 -->
 ```
-        <source>Subtract fee from amount by default</source>
+        <source>Size of &amp;database cache</source>
+        <translation>&amp;Ma'lumotlar bazasi hajmi</translation>
+    
+ERR
+Translation omits "cache" — it currently reads "Size of database" instead of "Size of database cache". Also keep the & exactly once (it's present). 
+
+Suggested correct translation:
+&Ma'lumotlar bazasi keshining hajmi
+```
+
+<!-- cache_translation_check_uz_bccdd656ff63aeb54d6ec0e8bc33f9b397ceed04bf188f720e33d34bbedfe0f2 -->
+```
+        <source>Number of script &amp;verification threads</source>
+        <translation>Skriptni &amp;tekshirish thread lari soni</translation>
+    
+ERR
+Issues:
+- Mixes English and Uzbek ("thread lari") and has a spacing error ("thread lari" should not be separated).
+- Grammar is awkward in Uzbek.
+
+Corrected translation (keeps single & before the word corresponding to "verification"):
+Skriptni &tekshirish iplarining soni
+```
+
+<!-- cache_translation_check_uz_dff130823229f5844efc5539a4f524656cf366d555f0d934697c2d55a730caff -->
+```
+        <source>&amp;Network</source>
+        <translation>&amp;Internet tarmog'i</translation>
+    
+ERR
+The translation is understandable but slightly off: "Network" in this UI/menu context is better rendered as "Tarmoq" rather than "Internet tarmog'i" (which explicitly says "Internet network"). Keep the ampersand exactly once and no extra spaces.
+
+Suggested corrections:
+&Tarmoq
+
+Or if you want to keep the Internet qualifier:
+&Internet tarmog‘i
+
+(Ensure the apostrophe character is consistent: use the Uzbek right single quote ’ or ASCII "'" as used elsewhere.)
+```
+
+<!-- cache_translation_check_uz_acc770a04a274fddb912f9a3aff63a29e610d5e7c3f76f217cc445b99f968a27 -->
+```
+        <source>Prune &amp;block storage to</source>
+        <translation>&amp;Blok xotirasini bunga kesish:</translation>
+    
+ERR
+Problems:
+- Unnecessary colon at end (source has no colon).
+- Uzbek phrasing "bunga kesish" is awkward; a more natural phrasing uses "gacha qisqartirish" or "gacha siqish" for "prune ... to".
+- Ensure the shortcut ampersand appears exactly once (keep as & or &amp; in XML).
+
+Suggested correct translation:
+&amp;Blok xotirasini gacha qisqartirish
+```
+
+<!-- cache_translation_check_uz_0101022453d88b3baa7d30d27580774b9f7897570038d7697bc0a120a624f6b9 -->
+```
+        <source>Subtract &amp;fee from amount by default</source>
         <extracomment>An Options window setting to set subtracting the fee from a sending amount as default.</extracomment>
         <translation>Standart bo'yicha chegirma belgilash</translation>
     
-ERR  
-The current translation "Standart bo'yicha chegirma belgilash" is inaccurate and does not convey the meaning of "Subtract fee from amount by default" in the Bitcoin context. It does not mention "fee" (commission) or "amount", and "chegirma" is typically "discount," which is not the correct financial term here.
+ERR
+Problems:
+- The translation changes meaning: "chegirma" means "discount", not "fee"; the source refers to subtracting the fee (to'lov/komissiya) from the amount.
+- The translation omits the shortcut ampersand (&) which must appear exactly once.
+- The wording is not a natural UX label for this option.
 
-Correct translation:  
-"Toʻlovni miqdordan avtomatik tarzda ayirish"
+Suggested correct translation (with single & for shortcut):
+Standart bo'yicha miqdordan &to'lovni ayirish
+```
+
+<!-- cache_translation_check_uz_449ddecc2e34f530426e7800cc8ea912099c2f092c6ca77e38ec8231c02e0e11 -->
+```
+        <source>&amp;Spend unconfirmed change</source>
+        <translation>Tasdiqlanmagan oʻzgarishlarni &amp;sarflash</translation>
+    
+ERR
+The Uzbek term "oʻzgarishlarni" ("changes") is not the correct technical term for Bitcoin "change" (the leftover amount). Use "qoldiq" or "qaytim" for "change". Also adjust number/case to match the verb.
+
+Correct translation:
+Tasdiqlanmagan qoldiqni &sarflash
+```
+
+<!-- cache_translation_check_uz_241540e72bcb494d2c8851b95c5ad2ea06d96538c2bf102d6c8d761242432aec -->
+```
+        <source>&amp;External signer script path</source>
+        <translation>&amp;Tashqi signer skripti yo'li</translation>
+    
+ERR
+The translation is understandable but mixes English and Uzbek ("signer" left in English). Prefer fully Uzbek technical wording.
+
+Correct translation:
+&amp;Tashqi imzolovchi skripti yo'li
+```
+
+<!-- cache_translation_check_uz_51dae1c4c9d5307ed7b84ce5bc2a33dbcbf2d99118d963b06520eac20425248b -->
+```
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Kiruvchi va kirish ulanishlariga ruxsat bering</translation>
+    
+ERR
+The translation adds an extra word ("va kirish" = "and entry") that is not in the source and changes meaning, and it omits the single & shortcut marker from the source. Also the source intended "incoming connections" (one item), not two items joined by "va".
+
+Correct translation:
+&Kiruvchi ulanishlarga ruxsat bering
+```
+
+<!-- cache_translation_check_uz_0fb48d2f7cf1429e96ef0d02b5a165bbb186e0b3fda91bee264ef425cc3876bf -->
+```
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>SOCKS5 proksi-server orqali ulaning (standart proksi-server):</translation>
+    
+ERR
+The translation is mostly correct Uzbek but it omits the required shortcut ampersand (&). Also wording can be slightly improved and avoid repeating "proksi-server". 
+
+Correct translation (with a single &):
+&SOCKS5 orqali proksiga ulaning (standart proksi):
 ```
 
 <!-- cache_translation_check_uz_9a8118ab8740931db10ca061033c731b58c5ac146f9a34ecd2011d695d080da0 -->
@@ -412,28 +781,55 @@ Correct translation:
 Прокси порти (масалан, 9050)
 ```
 
-<!-- cache_translation_check_uz_36b1d0dcce200b2c5680f98033f8db5ce69517b039f790be59de1bbb9edd4c1f -->
+<!-- cache_translation_check_uz_7ebfc5a3196cf1ee1f347a3ab5b5d56ed5e0ea7f00dc37f8f034fbee070c1565 -->
 ```
-        <source>Show tray icon</source>
+        <source>&amp;Show tray icon</source>
         <translation> belgisini ko'rsatish</translation>
     
-ERR  
-There is a leading whitespace in the translation, and the translation is incomplete as it does not specify "Tray" or its equivalent in Uzbek. "Tray icon" should be translated more clearly; e.g., "Tray belgisi" or "Trey belgisi".
+ERR
+The translation has problems: it has a leading space, it's missing the required single '&' shortcut marker, and the phrase is incomplete/unclear ("belgisini ko'rsatish" alone means "show the icon" but doesn't specify "tray"). 
+
+Correct translation (no leading space, includes one '&', clearer meaning):
+& Tizim paneli belgisini ko'rsatish
+
+Better without space after ampersand (common form):
+&Tizim paneli belgisini ko'rsatish
+```
+
+<!-- cache_translation_check_uz_81976e189b79778b052c13f35c3d762daa60a1279e08258b289bba46ad15a7b5 -->
+```
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>Манзиллар панели ўрнига трэйни &amp;йиғиш</translation>
+    
+ERR
+The translation is incorrect. "Манзиллар панели" means "addresses panel" (manzillar = addresses), which does not match "taskbar". The rest is understandable but uses the wrong word for taskbar.
+
+Suggested correct translation (Cyrillic Uzbek):
+Таскбар ўрнига трейга &минималлаштириш
+```
+
+<!-- cache_translation_check_uz_65d7dd83131b153850001f2356a993d4290b9022a62b034c27c93adaa8871bf4 -->
+```
+        <source>M&amp;inimize on close</source>
+        <translation>Ёпишда й&amp;иғиш</translation>
+    
+ERR
+The Uzbek phrasing is awkward and uses an incorrect verb ("йиғиш" isn't a natural translation for "minimize") and the grammatical form "Ёпишда" is less natural than "Ёпилганда" for "on close". Also ensure the & accelerator appears exactly once.
 
 Correct translation:
-Tray belgisini ko'rsatish
+Ёпилганда &кичрайтириш
 ```
 
-<!-- cache_translation_check_uz_16103a0d9552f757d16dafd70f1d65457d880fa4d135d2c2f6d95ed23ba86c1b -->
+<!-- cache_translation_check_uz_0e3ca61ef9b4b3d222e835e420dadd119cd2a055958ea7dcce6cad35adaf389e -->
 ```
-        <source>Minimize to the tray instead of the taskbar</source>
-        <translation>Манзиллар панели ўрнига трэйни йиғиш</translation>
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>Миқдорларни кўрсатиш учун &amp;қисм:</translation>
     
-ERR  
-The translation is problematic. The source says, "Minimize to the tray instead of the taskbar." The translation says, "Манзиллар панели ўрнига трэйни йиғиш," which literally translates as "Collect the tray instead of the address panel." This is incorrect: "taskbar" is not "манзиллар панели" (address panel).
+ERR
+The Uzbek word "қисм" means "part" and is not the right choice for "Unit". Also the phrasing is awkward. The ampersand (&) is present exactly once, which is fine.
 
-Correct translation:  
-Топшириқлар панели ўрнига трейга қисқартириш
+Better translation:
+<translation>&Қайси бирликда миқдорларни кўрсатиш:</translation>
 ```
 
 <!-- cache_translation_check_uz_c32cd0ba982faa29ddde042e81219974897f9e371d8c7da996e751c22464e60b -->
@@ -496,6 +892,30 @@ Correct translation:
 Мижоз версияси
 ```
 
+<!-- cache_translation_check_uz_803398c68a3af7e959ef140dd81d6b165b6f273578b6cb107c9eb20e62a14ea4 -->
+```
+        <source>&amp;Peers</source>
+        <translation>&amp;Уламлар</translation>
+    
+ERR
+The translation uses the word "Уламлар" which is incorrect for "Peers" in Uzbek. The ampersand is preserved correctly, but the term should be "Tengdoshlar" (Latin script) or "Тенгдошлар" (Cyrillic) depending on script convention.
+
+Correct translation:
+&Tengdoshlar
+```
+
+<!-- cache_translation_check_uz_19b3ca6911125e93c8b0f704d508cba2bf2734b74b7ac4e2c1dcf74a3ff1c145 -->
+```
+        <source>&amp;Console</source>
+        <translation>&amp;Терминал</translation>
+    
+ERR
+The translation uses Cyrillic "Терминал", which is Russian-style and not the preferred Uzbek (uz) form. Also "Терминал" is less common than the Uzbek loanword for "Console". Keep the & shortcut exactly once.
+
+Suggested correct translation (Uzbek, Latin script):
+&amp;Konsol
+```
+
 <!-- cache_translation_check_uz_e311c9f62880c155218af6be6a14f82d7f0a663490913d46b53dd2e0a3aeb857 -->
 ```
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
@@ -508,19 +928,21 @@ Correct translation:
 Ихтиёрий сўраладиган миқдор. Аниқ миқдор талаб қилинмаслиги учун буни бўш ёки ноль ҳолатда қолдиринг.
 ```
 
-<!-- cache_translation_check_uz_ac380b3eb983dca817b1b0df634691123748e7d2555a5dd064830e9bf6b80ec7 -->
+<!-- cache_translation_check_uz_fa8dcf46e73efd34860d56026abcbad60c4fb6e08301cfbe63fae53676b7b0b2 -->
 ```
-        <source>Copy Address</source>
-        <translation>Нусҳалаш  Манзил</translation>
+        <source>Copy &amp;Address</source>
+        <translation>Нусҳалаш &amp; Манзил</translation>
     
 ERR
-There is an unnecessary extra space between "Нусҳалаш" and "Манзил". Also, "Нусҳалаш" is in Cyrillic script; both words should be consistently in the same script, and the standard Uzbek translation is more commonly written as "Manzilni nusxalash" (in Latin script) or "Манзилни нусҳалаш" (in Cyrillic).
+Problems:
+- The Uzbek word uses the wrong Cyrillic letter: "Нусҳалаш" should be "Нусхалаш".
+- Word order/grammar is awkward; a more natural rendering is "Манзилни нусхалаш" (copy the address).
+- The & (accelerator) is separated by spaces (" &amp; Манзил"), which would place the accelerator on a space — the & should be immediately before the letter it marks and appear exactly once.
 
-Correct translation:
-Manzilni nusxalash
-
-or, if using Cyrillic:
-Манзилни нусҳалаш
+Correct translation examples (with a single &):
+- Манзилни &нусхалаш
+or, if you prefer the ampersand before the first word:
+- &Манзилни нусхалаш
 ```
 
 <!-- cache_translation_check_uz_4d438591a26c7b83ac63cb4bb1032c7fceb3a75e9bab0879e7eece58ad0a426f -->
@@ -561,6 +983,18 @@ Correct translation:
 Explanation: "Махсус" means "custom," "қайтарим" refers to "change (returned amount)," and "манзили" is "address." This translation accurately reflects the term in the context of Bitcoin.
 ```
 
+<!-- cache_translation_check_uz_ea13dc9434a8577a7d395c09faf8822edacc4e9b73818e40bed115b23c233d20 -->
+```
+        <source>Clear &amp;All</source>
+        <translation>Барчасини &amp; Тозалаш</translation>
+    
+ERR
+The translation has formatting issues: the ampersand is separated from the word by a space ("& Тозалаш") and the word order/capitalization is inconsistent. The ampersand should appear exactly once and be attached to the letter that marks the shortcut. Also remove the extra space.
+
+Correct translation:
+Барчасини &тозалаш
+```
+
 <!-- cache_translation_check_uz_2fd748ca8d39279c301e627721bdd8fdfecefdc8445502ec3e144320869a8d98 -->
 ```
         <source>Paste address from clipboard</source>
@@ -587,6 +1021,18 @@ The translation is not accurate. The English phrase "Paste address from clipboar
 
 Most standard is:
 "Manzilni buferdan joylashtirish"
+```
+
+<!-- cache_translation_check_uz_ea13dc9434a8577a7d395c09faf8822edacc4e9b73818e40bed115b23c233d20 -->
+```
+        <source>Clear &amp;All</source>
+        <translation>Барчасини &amp; Тозалаш</translation>
+    
+ERR
+The translation has formatting issues: the ampersand is separated from the word by a space ("& Тозалаш") and the word order/capitalization is inconsistent. The ampersand should appear exactly once and be attached to the letter that marks the shortcut. Also remove the extra space.
+
+Correct translation:
+Барчасини &тозалаш
 ```
 
 <!-- cache_translation_check_uz_6cdc4967baaf4f2ceb59370bf2a92f7f257bf568c9e105d320fc624789d13a62 -->
@@ -708,4 +1154,4 @@ Hamyonni qayta yozish kerak: bajarishni yakunlash uchun %s ni qayta ishga tushir
 ```
 </details>
 
-Number of issues: 52.
+Number of issues: 86.

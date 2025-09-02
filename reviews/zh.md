@@ -1,25 +1,13 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>zh</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bzh%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bzh%5D%20request)
 
-
-<!-- cache_translation_check_zh_128a0eb8353ea0b427c1f7fe543990e202b1544ea7a5ae22206b7f512fa24959 -->
-```
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
-        <translation>注意: 如果你忘记了你的钱包，你将会丢失你的&lt;b&gt;密码，并且会丢失你的&lt;/b&gt;比特币。</translation>
-    
-ERR
-The translation is inaccurate and distorts the original meaning. The message should warn that if you lose your passphrase after encrypting your wallet, you will lose all your bitcoins. The current translation mistakenly says "if you forget your wallet" and reverses the emphasis within the <b> tags.
-
-Correct translation:
-注意：如果你加密了你的钱包并且忘记了密码，你将&lt;b&gt;丢失所有比特币&lt;/b&gt;！
-```
 
 <!-- cache_translation_check_zh_18cb2eafe9476d601cad613709995b7bd26eaa6f870c23a048355f97ee533bd6 -->
 ```
@@ -33,200 +21,64 @@ Correct translation:
 %1 GB
 ```
 
-<!-- cache_translation_check_zh_05d277eecc64fb269e173be1d6818a6df68b8933aa0c02d9d12812631ca8f1c9 -->
+<!-- cache_translation_check_zh_90fda8f6932228d174e380ed1c7df7be7ae98d00ff1e42c56766226c0f6bb80a -->
 ```
-        <source>Hide</source>
-        <translation>躲</translation>
+        <source>Option '-checkpoints' is set but checkpoints were removed. This option has no effect.</source>
+        <translation>选项“-checkpoints”已设置，但检查点已被移除。该选项不再生效。 </translation>
     
 ERR
-The translation "躲" means "to hide (oneself)" or "to dodge/evade," which is not the correct meaning in this UI context. The correct term for a UI control to "Hide" something is "隐藏".
+The translation is accurate, but there is an extra trailing space at the end. Also keep punctuation as-is. 
+
+Corrected translation (remove trailing space):
+选项“-checkpoints”已设置，但检查点已被移除。该选项不再生效。
+```
+
+<!-- cache_translation_check_zh_d98c1c5ff4f9281f53e84a4630bcb6846485c6649d59a458ddb76aab8f1f87d3 -->
+```
+        <source>Option '-maxorphantx' is set but no longer has any effect (see release notes). Please remove it from your configuration.</source>
+        <translation>选项“-maxorphantx”已设置，但已不再生效（参见发行说明）。请从您的配置中移除该选项。 </translation>
+    
+ERR
+Translation is accurate in meaning, but there is a trailing space before the closing tag (stray whitespace). Remove the extra space.
 
 Correct translation:
-隐藏
+选项“-maxorphantx”已设置，但已不再生效（参见发行说明）。请从您的配置中移除该选项。
 ```
 
-<!-- cache_translation_check_zh_950cb28cc0f57eebf6fb6e99e761a355724df12da7463d87aeda770e4eaacc26 -->
+<!-- cache_translation_check_zh_bf17affb0acd6713b9f6b2167f99961dbd921c30426c9f4b5f40c6272c0fa297 -->
 ```
-        <source>Enable network activity</source>
-        <extracomment>A context menu item. The network activity was disabled previously.</extracomment>
-        <translation>關閉網路紀錄</translation>
+        <source>Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.</source>
+        <translation>选项“-datacarrier”或“-datacarriersize”已设置，但已标记为弃用。它们将在未来版本中移除。 </translation>
     
 ERR
-The translation is incorrect. The source says "Enable network activity," but the translation means "Disable network logging." It should instead indicate enabling, not disabling, network activity.
+Translation is accurate in meaning, but there is an extra trailing space before the end. Provide corrected translation without the stray whitespace.
 
 Correct translation:
-啟用網絡活動
+选项“-datacarrier”或“-datacarriersize”已设置，但已标记为弃用。它们将在未来版本中移除。
 ```
 
-<!-- cache_translation_check_zh_708501aa83c3ed6c47c422f83102d8e9be25b9847079d344191965e14b243720 -->
+<!-- cache_translation_check_zh_fc44b6029c7dbac45686cc79b705b8c897f4c829f9f3f5057b0a8d2f641e4b4e -->
 ```
-        <source>Copy amount</source>
-        <translation>复制和数量</translation>
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of a pruned node)</source>
+        <translation>修剪：上次钱包同步超出了已修剪的数据范围。您需要执行“-reindex”（对于已修剪节点，需要重新下载整个区块链）。 </translation>
     
 ERR
-The translation "复制和数量" means "Copy and amount", which is incorrect. The word "和" ("and") is not present in the source and should not be in the translation. The format specifier is correctly omitted since there is none.
+The translation is accurate and appropriate, but there is a minor formatting issue: an extra space before the closing tag (trailing whitespace). Remove the trailing space.
 
-Correct translation:
-复制金额
+Corrected translation:
+修剪：上次钱包同步超出了已修剪的数据范围。您需要执行“-reindex”（对于已修剪节点，需要重新下载整个区块链）。
 ```
 
-<!-- cache_translation_check_zh_1c4c30ec9f3a26f8d29357f182c97fe1209f83f2be6aaaebc67e5cd2859a0ede -->
+<!-- cache_translation_check_zh_eb968025b9240f22a7d27bd23c989a8fc00fef0ee8185f551adcffb7a2452904 -->
 ```
-        <source>External signer script path</source>
-        <translation>外接簽證設備執行檔路徑(E)</translation>
+        <source>-paytxfee is deprecated and will be fully removed in v31.0.</source>
+        <translation>“-paytxfee”已弃用，并将在 v31.0 中完全移除。 </translation>
     
 ERR
-The translation is problematic. The source text "External signer script path" refers to the path of a "script" used by an external signer (device or application), not an "executable file" nor specifically a "hardware signer" as implied. Also, the use of "簽證" (generally "visa") is incorrect, and there is an unnecessary "(E)" which isn't in the original.
+The translation is accurate in meaning, but contains an extra trailing space before the closing tag. Also the source did not include quotes; using Chinese quotes is acceptable but optional.
 
-Correct translation:
-外部签名器脚本路径
-```
-
-<!-- cache_translation_check_zh_a07c6118a8d1e499f76e7c6670dd539d040212da28ec25d3a813231e56e9b6cf -->
-```
-        <source>Compiled without external signing support (required for external signing)</source>
-        <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
-        <translation>軟體未編譯外接簽證功能所需的軟體庫(外接簽證必須有此功能)</translation>
-    
-ERR
-The translation is inaccurate and awkward. The term "外接簽證" is not standard for "external signing" in this context—it may cause confusion. Also, the structure does not convey that the program was compiled without external signing support, and the parenthetical clarification is not natural.
-
-Correct translation:
-未编译外部签名支持（进行外部签名需要此支持）
-
-Or, if using traditional Chinese:
-未編譯外部簽名支援（需要此支援才能進行外部簽名）
-```
-
-<!-- cache_translation_check_zh_56b8225dec67e3fc39f92c0309eebb7e8c80b10b7e006ad5546daaaf877a2190 -->
-```
-        <source>Your current balance in watch-only addresses</source>
-        <translation>您当前在仅观察观察地址中的余额</translation>
-    
-ERR
-The translation is awkward and contains a duplicated word "观察" ("watch"). The phrase "仅观察地址" can be better rendered as "仅观察地址" or "仅用于观察的地址". Also, the word order could be improved for fluency.
-
-Correct translation:
-您在仅观察地址中的当前余额
-```
-
-<!-- cache_translation_check_zh_1ca8ed8a2e47dc5a6d18b065ef33944f8035f511e427fcc7b734bb5d9951176a -->
-```
-        <source>Outbound Feeler: short-lived, for testing addresses</source>
-        <extracomment>Explanatory text for a short-lived outbound peer connection that is used to test the aliveness of known addresses.</extracomment>
-        <translation>Outbound Feeler: 用於短暫，暫時 測試地址</translation>
-    
-ERR
-The translation is unnatural, has spacing issues, and mixes English with Chinese unnecessarily. The phrase "暫時 測試地址" has incorrect spacing, and "用於短暫，暫時" is redundant and unclear. Also, "Outbound Feeler" should be translated or at least explained rather than left in English.
-
-Correct translation:
-短暂连接探测：用于测试已知地址是否可用
-```
-
-<!-- cache_translation_check_zh_294a6b69c8397bcbe46ef5b4e5f1d3feee9e2d9c3a4b4f1ce25d159ee9c964cc -->
-```
-        <source>Outbound Address Fetch: short-lived, for soliciting addresses</source>
-        <extracomment>Explanatory text for a short-lived outbound peer connection that is used to request addresses from a peer.</extracomment>
-        <translation>Outbound 地址取得: 用於短暫，暫時 測試地址</translation>
-    
-ERR
-The translation is inaccurate and unclear. The English means a temporary outbound connection used to request addresses from a peer, but the translation mentions "temporarily testing addresses" which is not the same.
-
-Correct translation:
-外部地址获取：短时建立，用于请求地址
-```
-
-<!-- cache_translation_check_zh_708501aa83c3ed6c47c422f83102d8e9be25b9847079d344191965e14b243720 -->
-```
-        <source>Copy amount</source>
-        <translation>复制和数量</translation>
-    
-ERR
-The translation "复制和数量" means "Copy and amount", which is incorrect. The word "和" ("and") is not present in the source and should not be in the translation. The format specifier is correctly omitted since there is none.
-
-Correct translation:
-复制金额
-```
-
-<!-- cache_translation_check_zh_070c587fbb4ed6d06fe006cbce66dae59f8480ae60cbd56f50e09c90fb4e8ad5 -->
-```
-        <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can only create a PSBT. This string is displayed when private keys are disabled and an external signer is not available.</extracomment>
-        <translation>請檢查您的交易提案。這將產生部分簽名的比特幣交易（PSBT），您可以儲存或複製該交易，然後使用簽名。離線%1錢包或與PSBT相容的硬體錢包。</translation>
-    
-ERR  
-The translation is understandable but the sentence structure is awkward, and "使用簽名。" is not correct; it looks like a translation error due to a misplaced period creating a fragment. The phrase "sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet" wasn't smoothly rendered. For clarity and fluency, "與PSBT相容的硬體錢包" is fine, but the connection and the action of "signing" is lost due to sentence break. Also, there should not be a period after "複製該交易".
-
-Correct translation:  
-請檢查您的交易提案。這將產生部分簽名的比特幣交易（PSBT），您可以儲存或複製該交易，然後用例如離線的 %1 錢包或與 PSBT 相容的硬體錢包進行簽名。
-```
-
-<!-- cache_translation_check_zh_5682213c7071df73f2e9fc213f559a81292b1a0a139c5d644681abb371ee0353 -->
-```
-        <source>Subtract fee from amount</source>
-        <translation>从金额中减去交易费(U)</translation>
-    
-ERR
-The translation adds "(U)" at the end, which is not present in the original English source and could confuse users. Everything else is correct, but the extra "(U)" is unnecessary and potentially problematic.
-
-Correct translation:
-从金额中减去交易费
-```
-
-<!-- cache_translation_check_zh_708501aa83c3ed6c47c422f83102d8e9be25b9847079d344191965e14b243720 -->
-```
-        <source>Copy amount</source>
-        <translation>复制和数量</translation>
-    
-ERR
-The translation "复制和数量" means "Copy and amount", which is incorrect. The word "和" ("and") is not present in the source and should not be in the translation. The format specifier is correctly omitted since there is none.
-
-Correct translation:
-复制金额
-```
-
-<!-- cache_translation_check_zh_c7322b733fb6e07eeb0c5a4f89faf9d956509351ec4b36c6ad2b25b6f1a6acf6 -->
-```
-        <source>Error: Dumpfile identifier record is incorrect. Got "%s", expected "%s".</source>
-        <translation>
-錯誤：轉存檔案識別記錄不正確。獲得%s，預期
-%s。</translation>
-    
-ERR
-There are minor issues:
-1. Inconsistent handling of the format specifiers "%s": in Chinese, there should be no space or line break before them, and the phrasing isn't very natural.
-2. Unnecessary line break and whitespace in the translation.
-3. "獲得" is less common for 'got' in this context; "实际为" is more idiomatic.
-
-Correct translation:
-錯誤：轉存檔案識別記錄不正確。實際為「%s」，預期為「%s」。
-```
-
-<!-- cache_translation_check_zh_78a3727db7b2c58049bfbe79faf011a77473fd002f75700a072bffc43d41b2bc -->
-```
-        <source>More than one onion bind address is provided. Using %s for the automatically created Tor onion service.</source>
-        <translation>提供多數TOR路由綁定位址。 對自動建立的Tor服務用%s</translation>
-    
-ERR
-There are several issues: 
-1. The translation does not accurately reflect the original meaning; "多數" is awkward, and "路由綁定" is a literal translation not commonly used in this context.
-2. The flow and specificity (e.g., "onion service") are lost.
-3. There is inconsistent spacing (a space after the period).
-4. "TOR" should be "Tor" for consistency.
-
-Correct translation:
-提供了多个Onion绑定地址。将使用%s作为自动创建的Tor onion服务。
-```
-
-<!-- cache_translation_check_zh_ba4b31fafa76b68ee6fefc8e8b4a7ed3d6fda25fd4bbf4dacf08fa9950112849 -->
-```
-        <source>Error: Dumpfile checksum does not match. Computed %s, expected %s</source>
-        <translation>錯誤：轉存檔案的校驗和不匹配。%s計算得%s</translation>
-    
-ERR
-The translation omits part of the original meaning—specifically, it does not clearly translate "expected %s". Also, it lacks spacing for the format specifiers, which may make it less readable. The correct translation should be:
-
-錯誤：轉存檔案的校驗和不匹配。計算得 %s，預期為 %s
+Correct translation (no trailing space):
+“-paytxfee”已弃用，并将在 v31.0 中完全移除。
 ```
 
 <!-- cache_translation_check_zh_8b1135fb065982e6c8ee05d3643b9ebb06cd5f98d94108205cfa2556397adb94 -->
@@ -243,44 +95,67 @@ or even more naturally,
 错误：无法将数据写入钱包 %s 的磁盘中。
 ```
 
-<!-- cache_translation_check_zh_bfba5479a7879ceb3a8fe1594b0469d71773b62d6ea3df387a6f180158c2e8e0 -->
+<!-- cache_translation_check_zh_48efbd247f46f842be8b3a32001673fdef3721daddd55e336de8f3c35111412b -->
 ```
-        <source>Failure removing transaction: %s</source>
-        <translation>%s删除交易时失败: </translation>
+        <source>Failed to acquire rescan reserver during wallet initialization</source>
+        <translation>在钱包初始化期间未能获取重扫预留器</translation>
     
 ERR
-The translation has two issues: 1) The format specifier %s is incorrectly placed at the beginning, which does not reflect the meaning of the English source. 2) There is a misplaced colon at the end, which does not exist in the source, and may be considered a formatting issue.
+The Chinese is understandable but uses an awkward/unnatural term "重扫预留器". Also missing a comma improves readability.
 
-Correct translation:
-移除交易失败: %s
+Suggested correction:
+在钱包初始化期间，无法获取重扫保留锁
 
-Or, to match the English order literally:
-移除交易时失败：%s
+Alternative if you prefer "reserver" as an agent:
+在钱包初始化期间，无法获取重扫保留者
 ```
 
-<!-- cache_translation_check_zh_3d9320bea10d5e3e022a19cfd842e427af4d3ea041c7f0b8f6e7b309e8193b04 -->
+<!-- cache_translation_check_zh_e3222f6658880630ea81b0a0cd483e7c2b2346ce99656d5b087dfe9f4559eb98 -->
 ```
-        <source>Transaction change output index out of range</source>
-        <translation>交易尋找零輸出項超出範圍</translation>
+        <source>Error loading %s: Wallet is a legacy wallet. Please migrate to a descriptor wallet using the migration tool (migratewallet RPC).</source>
+        <translation>加载 %s时出错：钱包为传统钱包。请使用迁移工具（migratewallet RPC）迁移到描述符钱包。</translation>
     
 ERR
-The translation is inaccurate. The English phrase "change output" specifically refers to the "找零输出" (the output that returns change) in a Bitcoin transaction. The current translation incorrectly uses "尋找零輸出項" (which reads as "search for zero output item"), which distorts the meaning.
+Minor formatting issue: there is no space between the %s placeholder and the following Chinese character "时". Also wording is acceptable but I recommend adding the space for readability.
 
 Correct translation:
-交易找零输出索引超出范围
+加载 %s 时出错：钱包为传统钱包。请使用迁移工具（migratewallet RPC）迁移到描述符钱包。
 ```
 
-<!-- cache_translation_check_zh_76b1bd6861e77279c4c3f4a191a4d295d0696f1f0ea13e7ad0a7140d44da079c -->
+<!-- cache_translation_check_zh_fb9c57de56fb521dfdc9b8cd4124ea9b1e9e4d83d4064c6624a1a81414b0eed7 -->
 ```
-        <source>Wallet file creation failed: %s</source>
-        <translation>钱包文件创建失败：1%s</translation>
+        <source>Error: Dumpfile specifies an unsupported database format (%s). Only sqlite database dumps are supported</source>
+        <translation>错误：转储文件指定了不受支持的数据库格式 %s。仅支持 sqlite 数据库转储。</translation>
     
 ERR
-The translation introduces an erroneous "1" before "%s", which is not present in the original English source. This is likely a typo and could cause format specifier errors.
+The translation is mostly correct in meaning, but it mishandles the original parentheses around the format specifier and introduces an extra space before %s (Chinese text should not have that space). Also use of Chinese punctuation is preferable.
 
 Correct translation:
-钱包文件创建失败：%s
+错误：转储文件指定了不受支持的数据库格式（%s）。仅支持 sqlite 数据库转储。
+```
+
+<!-- cache_translation_check_zh_7ac1efa37e812c3d7101f033238c56c685efb44247b49ad8368f92f5497fdb8a -->
+```
+        <source>Unrecognized descriptor found. Loading wallet %s
+
+The wallet might have been created on a newer version.
+Please try running the latest software version.
+</source>
+        <translation>发现无法识别的描述符。正在加载钱包 %s 
+
+该钱包可能是在较新版本中创建的。 
+请尝试运行最新的软件版本。
+</translation>
+    
+ERR
+Translation is accurate, and the format specifier %s is preserved, but there are stray trailing spaces at line ends (extra spaces after "%s" and at ends of lines). Remove those to avoid whitespace issues.
+
+Correct translation:
+发现无法识别的描述符。正在加载钱包 %s
+
+该钱包可能是在较新版本中创建的。
+请尝试运行最新的软件版本。
 ```
 </details>
 
-Number of issues: 21.
+Number of issues: 11.

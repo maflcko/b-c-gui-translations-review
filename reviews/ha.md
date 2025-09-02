@@ -1,37 +1,13 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>ha</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bha%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bha%5D%20request)
 
-
-<!-- cache_translation_check_ha_7bd95088ac7282c42929c25ed13622de6ce7c5573fb809c9f9eb5dd6565d4486 -->
-```
-        <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Kwafi adireshin da aka zaɓa a halin yanzu domin yin amfani dashi</translation>
-    
-ERR
-The translation omits the explicit mention of "system clipboard" and instead says "for use" (domin yin amfani dashi), which does not convey copying to the clipboard. It is not accurate in a technical context.
-
-Correct translation:
-Kwafi adireshin da aka zaɓa a halin yanzu zuwa allo na kwamfuta (clipboard)
-```
-
-<!-- cache_translation_check_ha_5f08564d3ce2d55b6aa04c3703cfc1715ef33f618f4f42c9216781de1ab4bcb3 -->
-```
-        <source>Close</source>
-        <translation>Cɓatar</translation>
-    
-ERR
-The translation "Cɓatar" is problematic because the correct Hausa word for "Close" in the context of closing a window, dialog, or application is "Rufe". "Cɓatar" is not a standard or recognized word in Hausa and appears to be erroneous.
-
-Correct translation:
-Rufe
-```
 
 <!-- cache_translation_check_ha_5965cdafc4f31fca281d6d4f84bb70f7fafa86c1a1314de739902f73a3ea3fd3 -->
 ```
@@ -46,30 +22,6 @@ Goge adireshin da aka zaɓa a halin yanzu daga jerin
 Additionally, there is a stray space at the end of the translation.
 ```
 
-<!-- cache_translation_check_ha_858e7b2455dc4f1e4651ec758b148f2d0c8ec657a538265475f46d3f79639448 -->
-```
-        <source>Export</source>
-        <translation> Fitarwa</translation>
-    
-ERR
-There is an unwanted leading space in the translation, which introduces a formatting issue.
-
-Correct translation:
-Fitarwa
-```
-
-<!-- cache_translation_check_ha_27ea1cbcdfe2618ccf174c09eb7ad3e3e3e49f4782ea9c55f23d0de223b4d79a -->
-```
-        <source>Delete</source>
-        <translation>Sharewa</translation>
-    
-ERR
-The translation of "Delete" as "Sharewa" in Hausa is incorrect. "Sharewa" means "to sweep" or "to clean", and is not the standard term used for "Delete" in software or computer contexts. The standard Hausa word for "Delete" in a computer context is "Goge".
-
-Correct translation:
-Goge
-```
-
 <!-- cache_translation_check_ha_3843d1767944f100a7f98e4f1397dc98430b00e4069ba7f0cc4e6771ca713a68 -->
 ```
         <source>Choose the address to receive coins with</source>
@@ -80,18 +32,6 @@ The translation is mostly accurate but problematic due to the addition of "inter
 
 Correct translation:
 Zaɓi adireshin da za a karɓi kuɗi da shi
-```
-
-<!-- cache_translation_check_ha_cf5029ed01c99217f683d263738442a7aec99193ec8cf481c84e6bb80406dc1c -->
-```
-        <source>Choose</source>
-        <translation>czaɓi</translation>
-    
-ERR
-The translation "czaɓi" is incorrect and appears to use non-standard or erroneous transliteration. The correct translation for "Choose" in Hausa is "Zaɓi".
-
-Correct translation:
-Zaɓi
 ```
 
 <!-- cache_translation_check_ha_72a6a49235dfb16f2aa4b84cce8abedf991674daa3aea249a30b56d4b36586d3 -->
@@ -127,18 +67,6 @@ The translation has several issues:
 Correct translation:
 Waɗannan su ne adiresoshin Bitcoin ɗinka na karɓar kuɗi. Yi amfani da maɓallin 'Ƙirƙiri sabon adireshin karɓa' a shafin karɓa don ƙirƙirar sababbin adiresoshi.  
 Ana iya yin sa hannu kawai da adiresoshin nau'in 'legacy' kawai.
-```
-
-<!-- cache_translation_check_ha_27c8d933424705a00165f66f16138da553d5322237e368cfc4b6413e9c90709a -->
-```
-        <source>Copy Label</source>
-        <translation>Kwafi  Lakabi</translation>
-    
-ERR
-There is an extra space between "Kwafi" and "Lakabi", resulting in "Kwafi  Lakabi" instead of "Kwafi Lakabi". This is a whitespace formatting issue.
-
-Correct translation:
-Kwafi Lakabi
 ```
 
 <!-- cache_translation_check_ha_a10e1123c73eb7899c5894d6f07b4f7ffd2ff9333c54d138ef7dff582fa36831 -->
@@ -284,18 +212,6 @@ The translation is understandable but contains grammatical errors and unnecessar
 Correct translation:
 Sakawa walet lamba ya kasa
 ```
-
-<!-- cache_translation_check_ha_858e7b2455dc4f1e4651ec758b148f2d0c8ec657a538265475f46d3f79639448 -->
-```
-        <source>Export</source>
-        <translation> Fitarwa</translation>
-    
-ERR
-There is an unwanted leading space in the translation, which introduces a formatting issue.
-
-Correct translation:
-Fitarwa
-```
 </details>
 
-Number of issues: 22.
+Number of issues: 15.

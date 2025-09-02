@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>eu</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Beu%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Beu%5D%20request)
 
 
 <!-- cache_translation_check_eu_b830c3d99b7d1b0fa4e4cca27c2549079f30093701e592b4a394ce515efb97dd -->
@@ -120,18 +120,40 @@ Correct translation:
 %1 eg
 ```
 
-<!-- cache_translation_check_eu_c2701d8db2dd6997783cfafb138a1b9dfc033fbb649617915a888269b9698609 -->
+<!-- cache_translation_check_eu_0f5be8484c0350dba7e01bdd64d1145e6fee13960d06b27b8dd122c6066b8c2a -->
 ```
-        <source>Change Passphrase…</source>
-        <translation>aldatu pasahitza</translation>
+        <source>E&amp;xit</source>
+        <translation>Irten</translation>
     
 ERR
-The translation "aldatu pasahitza" means "change the password" but does not include the ellipsis and lacks capitalization. Also, "Passphrase" is better translated as "sarrerako esapidea" or "pasahitz esapide". The correct translation with ellipsis and proper capitalization would be:
+The ampersand (&) indicating the shortcut key in the source text is missing in the translation. The translation should include it, in any position, but exactly once.
 
 Correct translation:
-Pasahesa aldatu…
-or
-Pasahitz esapidea aldatu…
+&Irteten or Irte&n
+```
+
+<!-- cache_translation_check_eu_75eb7d7f8963f88ee97a607336afad5b4e0b7da88a7b16e7770c4b9811c8d08e -->
+```
+        <source>&amp;About %1</source>
+        <translation>%1-ri buruz</translation>
+    
+ERR
+The translation omits the & shortcut key indicator, which should appear exactly once in the translation (anywhere). Also, the translation would be improved for clarity by making it: "&%1-ri buruz".
+
+Correct translation:
+&%1-ri buruz
+```
+
+<!-- cache_translation_check_eu_9cc32eb64f6a698b8c8c8f79a644b1b6ed74c215f71940ee7ff9a8b49313f3b3 -->
+```
+        <source>&amp;Change Passphrase…</source>
+        <translation>&amp;aldatu pasahitza</translation>
+    
+ERR
+The translation is mostly correct, but the ellipsis ("…") at the end of the source text is missing in the Basque translation. The format specifier &amp; is present exactly once, which is correct.
+
+Correct translation:
+&Aldatu pasahitza…
 ```
 
 <!-- cache_translation_check_eu_73bcabd5375e6a19b7b1bf1a356ed6af7666f22e410780d5d6bc5438afa5f9bb -->
@@ -144,6 +166,42 @@ The translation is not accurate. The English source says "Verify messages to ens
 
 Correct translation:
 Mezuak egiaztatu, zehaztutako Bitcoin helbideekin sinatu direla ziurtatzeko
+```
+
+<!-- cache_translation_check_eu_9e59e66b3dfaf304a9fbeb82624f46650e9f0204e4dc781f74dbafa3a81c592b -->
+```
+        <source>Load PSBT from &amp;clipboard…</source>
+        <translation>kargatu PSBT arbeletik...</translation>
+    
+ERR
+The translation does not maintain the shortcut key indicator (&), which should appear exactly once, and "kargatu" should be capitalized as it starts the sentence. The ellipsis character should match the source (the translation uses three dots instead of a single unicode ellipsis).
+
+Correct translation:
+&Kargatu PSBT arbeletik…
+```
+
+<!-- cache_translation_check_eu_e688664f45cfb130fab871ad521cf3c29704e4f8e25562b67cb1adfb212866da -->
+```
+        <source>&amp;Sending addresses</source>
+        <translation>&amp;Helbideak bidaltzen</translation>
+    
+ERR
+The translation "Helbideak bidaltzen" literally means "sending addresses" as a verb phrase ("addresses sending"), not as a noun phrase ("addresses to send to" or "sending addresses"). In Basque, the correct phrasing for "Sending addresses" (as in a list of addresses used for sending) is "Bidaltzeko helbideak".
+
+Correct translation:
+&amp;Bidaltzeko helbideak
+```
+
+<!-- cache_translation_check_eu_95902831e0aa11f0ccf37bed611e7bbb00cbde0cd20069298eda72edf2ef561a -->
+```
+        <source>&amp;Receiving addresses</source>
+        <translation>&amp;Helbideak jasotzen</translation>
+    
+ERR
+The translation is grammatically incorrect; "Helbideak jasotzen" literally means "receiving addresses" in a non-standard way ("helbideak" = "addresses", "jasotzen" = "receiving (in the process)"), which does not properly correspond to the noun phrase "Receiving addresses". A correct translation would be "Helbide hartzaileak" or "Jasotzeko helbideak".
+
+Correct translation:
+&Jasotzeko helbideak
 ```
 
 <!-- cache_translation_check_eu_7e40afc1f9a7635b1b0cda646bfa9081f67ae12b5443f8a8c94540fdbd2dc003 -->
@@ -182,6 +240,18 @@ Correct translation:
 %1 itzaltzen ari da…
 ```
 
+<!-- cache_translation_check_eu_62125b9ef1846f0039ea8e24c7a84c9b9d9c42597a4611ae2ebbf0272dc83289 -->
+```
+        <source>Size of &amp;database cache</source>
+        <translation>Databasearen cache tamaina</translation>
+    
+ERR
+The translation omits the ampersand (&) used for the shortcut key, which is present in the source and must exist exactly once in the translation. Additionally, "Databasearen" should be "Datbasearen" or preferably localized to "datubasearen" as "database" can be translated into Basque.
+
+Correct translation:
+&Datubasearen cache-tamaina
+```
+
 <!-- cache_translation_check_eu_c2049d9f5e126800a680ed733254c646a0aefd39fd02b47d7d46d84d4eba14ed -->
 ```
         <source>IP address of the proxy (e.g. IPv4: 127.0.0.1 / IPv6: ::1)</source>
@@ -192,6 +262,22 @@ There are minor whitespace issues and the position of "adibidez" (e.g.) is incon
 
 Correct translation:
 Proxyaren IP helbidea (adibidez, IPv4: 127.0.0.1 / IPv6: ::1)
+```
+
+<!-- cache_translation_check_eu_2e1855c5842ad0f4dcff050e39a8dd2710173a6eb8014e13366753b9af4126fd -->
+```
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Sarbide konexioak baimendu</translation>
+    
+ERR
+The ampersand (&) indicating the shortcut key in the source text ("Allow incomin&g connections") is missing in the translation. There should be exactly one & in the translation at some location.
+
+Correct translation:
+Sar&bide konexioak baimendu
+or
+Sarbide kone&xioak baimendu
+
+Either placement of the & is valid as long as it appears exactly once.
 ```
 
 <!-- cache_translation_check_eu_753305df1d9115bdf9502131a21ca477ced0837151d9dc31a0a05d598eed8a03 -->
@@ -216,6 +302,22 @@ The translation is inaccurate. 'Ordainketa' means 'payment', not 'fee' (which wo
 
 Correct translation:
 Komisioa:
+```
+
+<!-- cache_translation_check_eu_e5eb3542c0d6d48151116dc5ebfbb19867b24325360769a6da06d72b16017303 -->
+```
+        <source>S&amp;end</source>
+        <translation>Bidali</translation>
+    
+ERR
+The translation omits the '&' character, which is used to indicate the shortcut key in the UI. The translation should include the '&' exactly once, placed appropriately for a shortcut in Basque.
+
+Correct translation:
+&Bidali
+or
+Bi&dali
+
+(Usual Basque practice is to put the ampersand before the B or D, but either is acceptable as long as there is exactly one '&'.)
 ```
 
 <!-- cache_translation_check_eu_c847bd33bbf4fc55136eff3344d13ea104104ad12d95b0414cc75480b0e4e1dd -->
@@ -280,4 +382,4 @@ Meatutako
 ```
 </details>
 
-Number of issues: 21.
+Number of issues: 29.

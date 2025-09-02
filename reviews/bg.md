@@ -1,13 +1,119 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>bg</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bbg%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bbg%5D%20request)
 
+
+<!-- cache_translation_check_bg_006e299b98520c76b375449d26356acaa9e5260344f935d2417d6a96e3d29d4c -->
+```
+        <source>&amp;New</source>
+        <translation>Нов</translation>
+    
+ERR
+The translation omits the ampersand (&) which indicates the shortcut key and should appear exactly once in both the source and translation.
+
+Correct translation:
+&Нов
+```
+
+<!-- cache_translation_check_bg_8e0eafe66cd7ba9d6be708998b81364167b60aee56785115f5d556443e391c9a -->
+```
+        <source>C&amp;lose</source>
+        <translation>Затвори</translation>
+    
+ERR
+The ampersand (&) in the English source indicates a keyboard shortcut and should be preserved exactly once in the Bulgarian translation. The translation "Затвори" does not include an ampersand.
+
+Correct translation:
+&Затвори
+```
+
+<!-- cache_translation_check_bg_8592c26b4b4a2d9a583a80c42a6d211d938eafb31ffc9b25834eb8b3025ec517 -->
+```
+        <source>&amp;Export</source>
+        <translation>Изнеси</translation>
+    
+ERR
+The shortcut key indicator '&' from the source is missing in the Bulgarian translation. It should be present exactly once.
+
+Correct translation:
+&Изнеси
+```
+
+<!-- cache_translation_check_bg_b8808f26af8e7bb8719565d16500b6c783c11dd44311ae36139553d980199e50 -->
+```
+        <source>&amp;Delete</source>
+        <translation>Изтрий</translation>
+    
+ERR
+The translation omits the "&" shortcut key indicator, which should appear exactly once in the translation, as in the source.
+
+Correct translation:
+&Изтрий
+```
+
+<!-- cache_translation_check_bg_2bc77e0a53c1422639fca6cf542f035394bef3d39b362d7bbe817805907e9c64 -->
+```
+        <source>C&amp;hoose</source>
+        <translation>Избери</translation>
+    
+ERR
+The original English text includes an ampersand (&) indicating a shortcut key ("C&hoose"), but the Bulgarian translation "Избери" does not include an ampersand. The ampersand should be placed before a letter in the Bulgarian translation to indicate the shortcut key.
+
+Correct translation:
+Из&бери
+or
+&Избери
+
+(Depending on UI convention, but the ampersand must appear exactly once.)
+```
+
+<!-- cache_translation_check_bg_07b986b0d45006e74cd909293ca0f9225ef43c5a749853da48ba675e60c1cb5b -->
+```
+        <source>&amp;Copy Address</source>
+        <translation>Копирай адрес</translation>
+    
+ERR
+The translation omits the shortcut key indicator '&', which must appear exactly once (anywhere) in the translation.
+
+Correct translation:
+&Копирай адрес
+```
+
+<!-- cache_translation_check_bg_6ef4550cd4b503bf8b8dbf019266ee0fec4ebc0c62250a814486b4220ad101ef -->
+```
+        <source>Copy &amp;Label</source>
+        <translation>Копирай етикет</translation>
+    
+ERR
+The translation omits the shortcut key indicator "&" present in the source text. In Bulgarian UI, the ampersand should be included to indicate the shortcut (e.g., "&" before a letter).
+
+Correct translation:
+Копирай &етикет
+
+Alternatively, if the shortcut is associated with another letter for mnemonic reasons:
+Копирай е&тикет
+
+But most importantly, the translation must have exactly one "&".
+```
+
+<!-- cache_translation_check_bg_9cf794bd5b8d31391932fb43a1ca87f3bfff6003a0c54d35473f4eb8a3e22b32 -->
+```
+        <source>&amp;Edit</source>
+        <translation>Редактирай</translation>
+    
+ERR
+The translation omits the '&' which indicates the shortcut key. It must be present exactly once in the translation.
+
+Correct translation:
+&Редактирай
+</reply>
+```
 
 <!-- cache_translation_check_bg_9878565c8cdb7792d5071d45fcf2e06005cec1001d16366c0a55f2756b6fb298 -->
 ```
@@ -46,20 +152,129 @@ Correct translation:
 Възникна фатална грешка. Проверете дали файлът с настройки е достъпен за запис, или опитайте да стартирате с -nosettings.
 ```
 
-<!-- cache_translation_check_bg_8f21514d119e547034a5b62f18481144b822fa1c31b74e9804daaf6330b60d6e -->
+<!-- cache_translation_check_bg_59e16d775c67d0254fd7696debdd1b22dd85e095ccb875811c335fbea6c753af -->
 ```
-        <source>Encrypt Wallet…</source>
-        <translation>Крипритай уолет..</translation>
+        <source>&amp;Overview</source>
+        <translation>Преглед</translation>
     
 ERR
-The translation contains several errors:
-- "Крипритай уолет" is a transliteration, not a proper Bulgarian translation.
-- There is a typo: "Крипритай" instead of possibly "Криптирай".
-- "уолет" is simply a transliteration of "wallet" instead of using the Bulgarian equivalent.
-- The ellipsis is rendered with two dots ("..") instead of the appropriate single ellipsis character or three dots.
+The translation omits the '&' which is used as a shortcut key indicator and should appear exactly once in the translation.
 
 Correct translation:
-Криптиране на портфейла…
+&Преглед
+</reply>
+```
+
+<!-- cache_translation_check_bg_a656e465604f0ba2b770b0911be5f5901ad91def55a59eca1ba258ed25b90d80 -->
+```
+        <source>&amp;Transactions</source>
+        <translation>Транзакции</translation>
+    
+ERR
+The translation omits the ampersand (&) which is used for shortcut key designation and should appear exactly once, as in the source.
+
+Correct translation:
+&Транзакции
+```
+
+<!-- cache_translation_check_bg_6e1e644ed5c68ea193c6ba7f51365443000ec219e854078b808ab76bf7424afb -->
+```
+        <source>E&amp;xit</source>
+        <translation>Изход</translation>
+    
+ERR
+The translation omits the ampersand (&), which is used to designate a shortcut key in menus. It should appear exactly once in the translation.
+
+Correct translation:
+&Изход
+```
+
+<!-- cache_translation_check_bg_6a051422e1044a8a5bac1ebc4b34825e73944967879e3b32d0cba4f5c35a18e2 -->
+```
+        <source>&amp;About %1</source>
+        <translation>За %1</translation>
+    
+ERR
+The translation is missing the ampersand (&), which indicates the shortcut key. The ampersand should exist exactly once in the translation.
+
+Correct translation:
+&За %1
+```
+
+<!-- cache_translation_check_bg_deae0b6021d3590400226f320f7dd6ce1fa5d9c3da93afd5ce90a9f641d9ea68 -->
+```
+        <source>About &amp;Qt</source>
+        <translation>Относно Qt</translation>
+    
+ERR
+The '&' denotes a shortcut key in the original text and should appear exactly once in the translation. The translation omits it.
+
+Correct translation:
+Относно &Qt
+```
+
+<!-- cache_translation_check_bg_a34ea32defbd1c8ca25634879ff16d84d06616cea29ee71e4e16dd85e4ce8476 -->
+```
+        <source>&amp;Minimize</source>
+        <translation>Минимизирай</translation>
+    
+ERR
+The translation omits the shortcut key indicator (&). The Bulgarian translation should include exactly one & to indicate the shortcut, e.g. "&Минимизирай" or "Мини&amp;мизирай".
+
+Correct translation:
+&Минимизирай
+```
+
+<!-- cache_translation_check_bg_0515028f644ca205990bf163c13b72962c80f43208bab98d7a205d239e49ddb0 -->
+```
+        <source>&amp;Send</source>
+        <translation>Изпрати</translation>
+    
+ERR
+The translation is missing the ampersand (&), which is used for the shortcut key in menus. It must exist exactly once in the translation.
+
+Correct translation:
+&Изпрати
+```
+
+<!-- cache_translation_check_bg_da6ba4995f069db7f48aa8c66e9a5ff468dcce503254cefa5ea3bcc084971241 -->
+```
+        <source>&amp;Receive</source>
+        <translation>Получи</translation>
+    
+ERR
+The translation is missing the ampersand (&), which is used to indicate the shortcut key and must appear exactly once.
+
+Correct translation:
+&Получи
+```
+
+<!-- cache_translation_check_bg_8279caba672c699381913e54fa7baad20a2d71b223d60311874a39cc91b028fb -->
+```
+        <source>&amp;Options…</source>
+        <translation>Опций</translation>
+    
+ERR
+The translation omits the ampersand (&) for the shortcut key, the ellipsis (…) at the end, and uses the wrong grammatical case (should be singular and definite).
+
+Correct translation:
+&Опции…
+```
+
+<!-- cache_translation_check_bg_6907262ef74f208db5ebae5d3e9d118a01ec570fe57941304999560bdab30828 -->
+```
+        <source>&amp;Encrypt Wallet…</source>
+        <translation>&amp;Крипритай уолет..</translation>
+    
+ERR
+The Bulgarian translation "&amp;Крипритай уолет.." is problematic for several reasons:
+- "Крипритай" is a misspelling; the correct word is "Криптиране" or "Криптирайте" (depending on context: noun or imperative).
+- "уолет" is a transliteration of "wallet", which should be translated as "портфейл".
+- The ellipsis is two periods ".." instead of the standard three "…".
+- The shortcut key '&' is present exactly once, which is good.
+
+Correct translation:
+&Криптиране на портфейла…
 ```
 
 <!-- cache_translation_check_bg_98c12d9c717d0d9cb9fb7dd41b5af1a9e761abd550c1bed2a2d2e18086254273 -->
@@ -74,6 +289,20 @@ Correct translation:
 Шифровайте личните ключове, които принадлежат на вашия портфейл.
 ```
 
+<!-- cache_translation_check_bg_2c855f04332cea681e98f7c71bec8b92fa8496fe8d3e9d4e56e6faaa849e4b74 -->
+```
+        <source>&amp;Backup Wallet…</source>
+        <translation>&amp;Бекъп уолет.</translation>
+    
+ERR
+The translation uses "Бекъп уолет", which is an incorrect transliteration and is not standard in Bulgarian. The correct translation is "Резервно копие на портфейла". Additionally, the ellipsis (…) is missing (should be '…' not '.').
+
+Correct translation:
+&Бекъп на портфейла…
+or
+&Резервно копие на портфейла…
+```
+
 <!-- cache_translation_check_bg_5c1435a245d3f18292a03bab0ea70d1fc405461c5490f9c624394582203f499f -->
 ```
         <source>Processing blocks on disk…</source>
@@ -86,6 +315,30 @@ Correct translation:
 Обработване на блокове на диска...
 ```
 
+<!-- cache_translation_check_bg_525ce05eb69a7077ae04acae15c96bcb81eb32fbc0de2f65f2f7a1af05aef60f -->
+```
+        <source>&amp;Command-line options</source>
+        <translation>&amp;Налични команди</translation>
+    
+ERR
+The translation for "&amp;Command-line options" as "&amp;Налични команди" is inaccurate. "Налични команди" means "Available commands" rather than "Command-line options". 
+
+Correct translation:
+&amp;Опции на командния ред
+```
+
+<!-- cache_translation_check_bg_fc7f05a0084a471c7aabe83cf8fa147a73fa6f9e70898eba0ec8dc736c71e970 -->
+```
+        <source>&amp;Mask values</source>
+        <translation>§Маскирай стойностите</translation>
+    
+ERR
+The translation uses the symbol '§' instead of the standard '&' for the shortcut key indicator. There should be exactly one '&' in the translation, matching the original's use for a keyboard shortcut.
+
+Correct translation:
+&Маскирай стойностите
+```
+
 <!-- cache_translation_check_bg_82e6370f5deba5145600f0d865eef5c5e5ae53c95f51759cd4b12583d9898b19 -->
 ```
         <source>List mode</source>
@@ -96,6 +349,48 @@ The translation is grammatically incorrect. In Bulgarian, adjectives or nouns us
 
 Correct translation:
 Режим на списък
+```
+
+<!-- cache_translation_check_bg_612c5a812545138d462653d59d3fa130fe049a353f76093186efb85854e67102 -->
+```
+        <source>Copy &amp;label</source>
+        <translation>Копиране на етикет</translation>
+    
+ERR
+The Bulgarian translation omits the ampersand (&), which is used to indicate the shortcut key. It must exist exactly once in both the source and translation.
+
+Correct translation:
+Копиране на &етикет
+```
+
+<!-- cache_translation_check_bg_e05de83454bd77aa036cd32cd2890b6b6a004ae4f39e90d85209e0359b04b8f2 -->
+```
+        <source>Copy &amp;amount</source>
+        <translation>Копирай сума</translation>
+    
+ERR
+The translation omits the shortcut key indicator '&' present in the source, which should appear exactly once. It should be included in the Bulgarian translation as well.
+
+Correct translation:
+Копирай &amp;сума
+</reply>
+```
+
+<!-- cache_translation_check_bg_30df9e5a6afdf541bee671667af6f3e843104a1c215dccdc67c18a12153d2bc5 -->
+```
+        <source>&amp;Unlock unspent</source>
+        <translation>Отключи неизхарчено</translation>
+    
+ERR
+The Bulgarian translation "Отключи неизхарчено" is understandable but not fully accurate. The correct term for "Unlock" in this context is "Отключи", which is correct, but "неизхарчено" should have an article as it refers to "the unspent (output)", i.e. "неизхарчени" (for the plural, "unspent (outputs)"). However, in the UI context, it usually addresses unspent outputs in general or the currently selected ones.
+
+A more accurate translation would be:
+Отключи неизхарчените
+
+Also, the ampersand (&) is missing in the translation, which is necessary for shortcut key consistency.
+
+Correct translation:
+&Отключи неизхарчените
 ```
 
 <!-- cache_translation_check_bg_a83b1aa7cb2d9c96e45223e15669472e87fa46113ebf777f52378ce8477f314a -->
@@ -200,16 +495,16 @@ Correct translation:
 %1 в момента се синхронизира. Ще изтегля хедъри и блокове от връстници и ще ги валидира, докато достигне върха на блокчейна.
 ```
 
-<!-- cache_translation_check_bg_1aed6b61187b51c2cf163acebb4bc0ca6640602a8cc4c0cfdaa7bf718b53198d -->
+<!-- cache_translation_check_bg_e821e89493c6c5154a7f64419aaac6cb444dac1a488d658cec7655c07facc9c5 -->
 ```
-        <source>Number of script verification threads</source>
-        <translation>Брой на скриптове и нишки за потвърждение</translation>
+        <source>Number of script &amp;verification threads</source>
+        <translation>Брой на скриптове и &amp;нишки за потвърждение</translation>
     
 ERR
-The translation is inaccurate. The source refers to the "Number of script verification threads" (i.e., the number of threads dedicated to script verification), but the translation splits this into "number of scripts and threads for confirmation," which is not faithful to the original meaning.
+The translation misplaces the ampersand shortcut (&) and merges "script" and "verification" threads incorrectly. The source means "Number of script verification threads" (i.e. threads dedicated to script verification), not "number of scripts and threads".
 
 Correct translation:
-Брой нишки за проверка на скриптове
+Брой нишки за &amp;потвърждение на скриптовете
 ```
 
 <!-- cache_translation_check_bg_bf2cb71a23038fe1f3855ae67ffeb1e819da8f7fa80f5aa88ef956d014723646 -->
@@ -224,16 +519,78 @@ Correct translation:
 Показва дали предоставеният по подразбиране SOCKS5 прокси се използва за достигане до участници в мрежата чрез този тип мрежа.
 ```
 
-<!-- cache_translation_check_bg_073a37392fbb40f7b13a3a6ad51f25114ce2f2e17364ada4cfc3604044a9d0db -->
+<!-- cache_translation_check_bg_38886450259bd6b30c6924dc8c8b6320a71557c732b0d152ebf82cd683a9dd38 -->
 ```
-        <source>Enable coin control features</source>
-        <translation>Позволяване на монетите и техните възможности</translation>
+        <source>Enable coin &amp;control features</source>
+        <translation>Позволяване на монетите и &amp;техните възможности</translation>
     
-ERR  
-The translation is inaccurate. The English phrase "Enable coin control features" refers specifically to activating (enabling) the features for controlling ("coin control") which coins/UTXOs are chosen in transactions, not just generally "allowing coins and their possibilities."
+ERR
+The translation is inaccurate. "Enable coin &control features" refers to enabling the "coin control" features, a specific term in Bitcoin applications referring to advanced control over specific coins/UTXOs. The translation renders "coin control" literally as "монетите и техните възможности" ("the coins and their features"), which is misleading.
 
 Correct translation:
-Активиране на функциите за контрол на монетите
+Активиране на функциите за &amp;контрол на монетите
+```
+
+<!-- cache_translation_check_bg_1842e9a4bad1b2698c33d5e5df540ba10b7c3a25f95cfc8d58be31071bc4d283 -->
+```
+        <source>&amp;Display</source>
+        <translation>&amp;Интерфейс</translation>
+    
+ERR
+The translation of "&amp;Display" as "&amp;Интерфейс" is inaccurate. "Интерфейс" means "Interface," while "Display" should be translated as "Показване" or "Дисплей." The shortcut key (&amp;) is present exactly once, which is correct.
+
+Correct translation:
+&Показване
+```
+
+<!-- cache_translation_check_bg_f7e88a4a5c58838dba1e5db1373d1a4a0c77371f718464b820045fd7759f8ef0 -->
+```
+        <source>User Interface &amp;language:</source>
+        <translation>Език:</translation>
+    
+ERR
+The '&' shortcut key indicator is missing from the Bulgarian translation. It should be present exactly once for consistency with the English source.
+
+Correct translation:
+Потребителски &език:
+or
+&Език:
+```
+
+<!-- cache_translation_check_bg_b7241812abd9486dd1ddf1468598553a331a54101708b237dd83cb3d1e5aa274 -->
+```
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>Мерна единица за показваните суми:</translation>
+    
+ERR
+The translation omits the ampersand (&) which is used to indicate the shortcut key in the original. It must appear exactly once in the translation, anywhere in the string.
+
+Correct translation:
+&Мерна единица за показваните суми:
+```
+
+<!-- cache_translation_check_bg_3ec4dbd4ddbcf6288fabe0876c187be34575e541bb4e18650e2acf36845254ea -->
+```
+        <source>&amp;OK</source>
+        <translation>ОК</translation>
+    
+ERR
+The '&' symbol indicating the shortcut key is missing in the Bulgarian translation. It should appear exactly once in the translation.
+
+Correct translation:
+&ОК
+```
+
+<!-- cache_translation_check_bg_91ce5eaa3457c9d580669b355c49feb5f24d614cc6777a04aa2aaaa93592418e -->
+```
+        <source>&amp;Cancel</source>
+        <translation>Отказ</translation>
+    
+ERR
+The ampersand (&) indicating the shortcut key is missing in the Bulgarian translation, so the keyboard shortcut will not function as intended.
+
+Correct translation:
+&Отказ
 ```
 
 <!-- cache_translation_check_bg_af8d268b1083102adc333c4c1aa6436778b220f61161adeae1c702d15bb9a9b1 -->
@@ -246,6 +603,43 @@ The Bulgarian translation contains an error. The phrase "не се е разви
 
 Correct translation:
 Миниран баланс, който все още не е узрял
+```
+
+<!-- cache_translation_check_bg_6a144d1aa748d255285c88fabebc37011045350c0d103ee85c64812a17a6f475 -->
+```
+        <source>&amp;Information</source>
+        <translation>Данни</translation>
+    
+ERR
+The translation omits the ampersand (&), which is used to indicate a shortcut key and must exist exactly once in both the source and translation.
+
+Correct translation:
+&Информация
+```
+
+<!-- cache_translation_check_bg_612c5a812545138d462653d59d3fa130fe049a353f76093186efb85854e67102 -->
+```
+        <source>Copy &amp;label</source>
+        <translation>Копиране на етикет</translation>
+    
+ERR
+The Bulgarian translation omits the ampersand (&), which is used to indicate the shortcut key. It must exist exactly once in both the source and translation.
+
+Correct translation:
+Копиране на &етикет
+```
+
+<!-- cache_translation_check_bg_e05de83454bd77aa036cd32cd2890b6b6a004ae4f39e90d85209e0359b04b8f2 -->
+```
+        <source>Copy &amp;amount</source>
+        <translation>Копирай сума</translation>
+    
+ERR
+The translation omits the shortcut key indicator '&' present in the source, which should appear exactly once. It should be included in the Bulgarian translation as well.
+
+Correct translation:
+Копирай &amp;сума
+</reply>
 ```
 
 <!-- cache_translation_check_bg_c3c98e52785f3a9b74a1cd7d3f75f8e7390676f2b907b8505bd1973ace50fe61 -->
@@ -270,6 +664,18 @@ There is a typo in the Bulgarian word "астоматично" — it should be 
 
 Correct translation:
 автоматично избран
+```
+
+<!-- cache_translation_check_bg_bd89622189e6541ac3c51c560635893bf3418afcd6c05cef52d3db19ec4468ae -->
+```
+        <source>Clear &amp;All</source>
+        <translation>&amp;Изчисти</translation>
+    
+ERR
+The translation omits the word "All" from the original, which means "Изчисти всичко" or "Изчисти &amp;всичко". The translation "&amp;Изчисти" only means "Clear".
+
+Correct translation:
+Изчисти &amp;всичко
 ```
 
 <!-- cache_translation_check_bg_a83b1aa7cb2d9c96e45223e15669472e87fa46113ebf777f52378ce8477f314a -->
@@ -322,6 +728,18 @@ Correct translation:
 Постави адрес от клипборда
 ```
 
+<!-- cache_translation_check_bg_fe40acd434c016c0e431ef61abd91d150d46dbbea9f70671468b27e0a660173f -->
+```
+        <source>&amp;Sign Message</source>
+        <translation>&amp;Подпиши</translation>
+    
+ERR
+The translation omits the word "Message" from "Sign Message". The correct translation should include both "Sign" and "Message".
+
+Correct translation:
+&Подпиши съобщение
+```
+
 <!-- cache_translation_check_bg_abe88dacbaaa0e2546cf9e7e459e4d027795533b3844909f59577430d5f22067 -->
 ```
         <source>Paste address from clipboard</source>
@@ -344,6 +762,31 @@ The translation omits that this is a Bitcoin address and changes "the message" t
 
 Correct translation:
 Подпишете съобщението, за да докажете, че притежавате този Bitcoin адрес
+```
+
+<!-- cache_translation_check_bg_bd89622189e6541ac3c51c560635893bf3418afcd6c05cef52d3db19ec4468ae -->
+```
+        <source>Clear &amp;All</source>
+        <translation>&amp;Изчисти</translation>
+    
+ERR
+The translation omits the word "All" from the original, which means "Изчисти всичко" or "Изчисти &amp;всичко". The translation "&amp;Изчисти" only means "Clear".
+
+Correct translation:
+Изчисти &amp;всичко
+```
+
+<!-- cache_translation_check_bg_25b8326c013a5fb9353008248e1d1eea8249abaecb57119fff3801caa49d7941 -->
+```
+        <source>&amp;Verify Message</source>
+        <translation>&amp;Провери</translation>
+    
+ERR
+The translation omits the word "Message" ("Съобщение" in Bulgarian). It translates only as "Verify".
+
+Correct translation:
+&Провери съобщение
+</reply>
 ```
 
 <!-- cache_translation_check_bg_45667c8ecf2ee1fb429c5dfe140cd5e9c1474e67696e56178b981ad390ee29f3 -->
@@ -393,6 +836,31 @@ The translation is incomplete. "ID" alone omits the meaning of "Transaction". Th
 Идентификатор на транзакцията
 ```
 
+<!-- cache_translation_check_bg_612c5a812545138d462653d59d3fa130fe049a353f76093186efb85854e67102 -->
+```
+        <source>Copy &amp;label</source>
+        <translation>Копиране на етикет</translation>
+    
+ERR
+The Bulgarian translation omits the ampersand (&), which is used to indicate the shortcut key. It must exist exactly once in both the source and translation.
+
+Correct translation:
+Копиране на &етикет
+```
+
+<!-- cache_translation_check_bg_e05de83454bd77aa036cd32cd2890b6b6a004ae4f39e90d85209e0359b04b8f2 -->
+```
+        <source>Copy &amp;amount</source>
+        <translation>Копирай сума</translation>
+    
+ERR
+The translation omits the shortcut key indicator '&' present in the source, which should appear exactly once. It should be included in the Bulgarian translation as well.
+
+Correct translation:
+Копирай &amp;сума
+</reply>
+```
+
 <!-- cache_translation_check_bg_2296174707c891a58cca1a2ec1987844ce4d4f45c77af2d27ee08524bb507462 -->
 ```
         <source>Exporting Successful</source>
@@ -403,6 +871,18 @@ There is a grammatical gender mismatch. The noun "изнасяне" (exporting) 
 
 Correct translation:
 Изнасянето е успешно
+```
+
+<!-- cache_translation_check_bg_8592c26b4b4a2d9a583a80c42a6d211d938eafb31ffc9b25834eb8b3025ec517 -->
+```
+        <source>&amp;Export</source>
+        <translation>Изнеси</translation>
+    
+ERR
+The shortcut key indicator '&' from the source is missing in the Bulgarian translation. It should be present exactly once.
+
+Correct translation:
+&Изнеси
 ```
 
 <!-- cache_translation_check_bg_1c3d3569725d54893226ee8948ff99b85e5d373d175bddbe98b67efea2fd81c4 -->
@@ -430,4 +910,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 34.
+Number of issues: 72.

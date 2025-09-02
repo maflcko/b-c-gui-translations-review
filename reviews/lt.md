@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>lt</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Blt%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Blt%5D%20request)
 
 
 <!-- cache_translation_check_lt_f900d8f202b82a411de97e10ae8d3a027030f92db3db7981a798d90f69d825fd -->
@@ -49,6 +49,30 @@ The Lithuanian translation contains several issues:
 
 Correct translation:
 Atminkite, kad piniginės užšifravimas negali visiškai apsaugoti jūsų bitkoinų nuo vagystės, jei jūsų kompiuterį užkrečia kenkėjiška programa.
+```
+
+<!-- cache_translation_check_lt_d2325cb1defa5d2c551229a30b4515999bd49718f4f61bc4fc3829ac8ad3088a -->
+```
+        <source>&amp;Encrypt Wallet…</source>
+        <translation>&amp; Užšifruoti piniginę</translation>
+    
+ERR
+There is an extra space after the '&' in the translation. The shortcut indicator '&' should appear immediately before the letter without a space. Also, the ellipsis '…' from the source is missing and should be preserved.
+
+Correct translation:
+&Užšifruoti piniginę…
+```
+
+<!-- cache_translation_check_lt_d3ed22d71654f5360300ccee9857f5edc8bf98faff568ab6bc2f30bd5eb3e06f -->
+```
+        <source>&amp;Command-line options</source>
+        <translation>Komandinės eilutės parametrai</translation>
+    
+ERR
+The translation omits the ampersand (&), which is used for shortcut keys. It must appear exactly once, anywhere in the translation.
+
+Correct translation:
+&Komandinės eilutės parametrai
 ```
 
 <!-- cache_translation_check_lt_ca810c270ffdc6797cce6ead371730ec6de422970dc8405c58c880c14bff01bc -->
@@ -118,42 +142,77 @@ Correct translation:
 grąža iš %1 (%2)
 ```
 
-<!-- cache_translation_check_lt_2b8ef5326deea5dadbaf6af4e6d4acf216f3d7c5dbad4e4f4528b7ed538b9cb5 -->
+<!-- cache_translation_check_lt_668129a5ce02a3b6ac18e4f389c45da5a4c12678b0694f3aadd779200c66ce30 -->
 ```
-        <source>Number of script verification threads</source>
+        <source>Number of script &amp;verification threads</source>
         <translation>Patvirtinimų skaičius</translation>
     
 ERR
-The translation is inaccurate. "Patvirtinimų skaičius" translates to "Number of confirmations," which is not the same as "Number of script verification threads." The correct Lithuanian translation should reflect the "script verification threads" (i.e., threads/processes used to verify scripts).
+The translation "Patvirtinimų skaičius" means "Number of confirmations" and does not reflect the meaning of "Number of script &verification threads". The translation is also missing the shortcut key (&). 
 
 Correct translation:
-Skriptų tikrinimo gijų skaičius
+Skriptų &patikrinimo gijų skaičius
 ```
 
-<!-- cache_translation_check_lt_08326cfe6f2eb1365ab101ace54868bf23daa45fb97279629cd8649e2d924d2c -->
+<!-- cache_translation_check_lt_3e6716430b71e28e189b7f480536caec39d6c5ed954d08814b3231d0b987f426 -->
 ```
-        <source>Prune block storage to</source>
-        <translation>blokuokite saugyklą į</translation>
+        <source>Prune &amp;block storage to</source>
+        <translation>&amp;blokuokite saugyklą į</translation>
     
 ERR
-The translation is problematic. The English phrase "Prune block storage to" in the context of Bitcoin typically means to reduce the disk usage of block storage to a specified size. The Lithuanian translation "blokuokite saugyklą į" means "block the storage to", which is incorrect and misleading.
+The translation "&amp;blokuokite saugyklą į" is problematic. The command "Prune &amp;block storage to" refers to reducing (pruning) the amount of disk space used for block storage, not "blocking" or "locking" storage. Additionally, "į" at the end is inappropriate here.
 
 Correct translation:
-Apkarpykite blokų saugyklą iki
+Apkarpykite &amp;blokų saugyklą iki
 
-This preserves the technical meaning ("prune" as in "trim" or "reduce", not "block") and matches the intent in the Bitcoin context.
+This clearly communicates the pruning (apkarpykite) of block storage, and "iki" means "to" (a certain size or amount).
 ```
 
-<!-- cache_translation_check_lt_ce6988fe586a46a24e206aecab590bbe4bd46baab13cbce975e869090ea5c2f6 -->
+<!-- cache_translation_check_lt_29abc9e3a391603d2595d27f49a390e4e3101a61ec04ce5d5e5b412bc689389e -->
 ```
-        <source>Minimize to the tray instead of the taskbar</source>
-        <translation>M sumažinti langą bet ne užduočių juostą</translation>
+        <source>W&amp;allet</source>
+        <translation>Piniginė</translation>
     
 ERR
-The translation is incorrect and ungrammatical in Lithuanian. "M sumažinti" is not a meaningful phrase; likely "Minimizuoti į sistemos dėklą, o ne užduočių juostą" is intended. The format specifiers are not an issue here.
+The translation for "W&allet" is missing the '&', which is necessary to indicate the shortcut key. The '&' must appear exactly once in both source and translation.
 
 Correct translation:
-Minimizuoti į sistemos dėklą, o ne į užduočių juostą
+&Pinigine
+```
+
+<!-- cache_translation_check_lt_2037a608404eb21e4dfa26873d21f8c37dbe0366633995f88eaee2612f9bf524 -->
+```
+        <source>&amp;Spend unconfirmed change</source>
+        <translation>&amp;Išleiskite nepatvirtintus pakeitimus</translation>
+    
+ERR
+The Lithuanian translation "Išleiskite nepatvirtintus pakeitimus" is problematic. The word "pakeitimai" generally means "changes" (as in modifications), not "change" in the financial sense. The correct term for "change" (as in transaction change output) in Lithuanian is "grąža". Also, the verb form should match the imperative style used in menu commands; "Išleisti" (infinitive) is more appropriate.
+
+Correct translation:
+&amp;Išleisti nepatvirtintą grąžą
+```
+
+<!-- cache_translation_check_lt_6c0818d210597239fe296b6a40dd67323d466bd5baf70768abfe2db33275972a -->
+```
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>&amp; Prisijunkite per SOCKS5 proxy (numatytasis proxy):</translation>
+    
+ERR
+There is an unnecessary space after '&amp;' at the start of the translation, which would hinder proper shortcut key functionality. The ampersand should be placed immediately before the shortcut letter with no space.
+
+Correct translation:
+&amp;Prisijunkite per SOCKS5 proxy (numatytasis proxy):
+```
+
+<!-- cache_translation_check_lt_ee24370a4253cec5e3727aa89688ef4b91c9847ef4dacc472d1add58cda0b450 -->
+```
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp;M sumažinti langą bet ne užduočių juostą</translation>
+    
+ERR
+The Lithuanian translation is inaccurate. The phrase "M sumažinti langą bet ne užduočių juostą" does not accurately convey minimizing to the tray instead of the taskbar. Also, "&amp;M" is not correctly placed or justified.
+Correct translation:
+&amp;Sumažinti į sisteminę sritį, o ne į užduočių juostą
 ```
 
 <!-- cache_translation_check_lt_292816eb4f84dc65ab1bb1e293388d2e717afdc6ea29cc5b5e20c2f835d71374 -->
@@ -166,18 +225,6 @@ The Lithuanian translation does not accurately capture the meaning of the source
 
 Correct translation:  
 Pasirinkite numatytąjį monetų padalijimo vienetą, kuris bus rodomas sąsajoje ir siunčiant monetas.
-```
-
-<!-- cache_translation_check_lt_9875a638d0fc3dd94cc844bf39863fbf8ccdb3ec88c9ddfebf86279193e11d36 -->
-```
-        <source>Your current balance in watch-only addresses</source>
-        <translation>Jūsų dabartinis balansas tik stebimų adresų</translation>
-    
-ERR
-The Lithuanian translation is ungrammatical. The prepositional phrase "tik stebimų adresų" is awkward and incorrect; it should be in the correct genitive structure and more clearly modified to match "watch-only addresses".
-
-Correct translation:
-Jūsų dabartinis balansas tik stebimuose adresuose
 ```
 
 <!-- cache_translation_check_lt_db5b0c86ebb1da2641a34460cb0a7be8db5617cd1268d3fad31cbf197d00826b -->
@@ -202,6 +249,45 @@ There is an erroneous space in "bitcoin: //" – it should be "bitcoin://", with
 
 Correct translation:
 „bitcoin://“ nėra galiojantis URI. Vietoj to naudokite „bitcoin:“.
+```
+
+<!-- cache_translation_check_lt_5fd62a9a56ae165df8a431aa55e5f81c083487574d07b3880bcf27c941b9f25e -->
+```
+        <source>&amp;Copy Image</source>
+        <translation>Kopijuoti nuotrauką</translation>
+    
+ERR
+The translation does not preserve the shortcut key indicator (&amp;) from the source. It should be present exactly once in the translation.
+
+Correct translation:
+&Kopijuoti nuotrauką
+```
+
+<!-- cache_translation_check_lt_99742bb7e145d0a1c05251e22d9eeb419ded69e012030b62d1b38799de19a441 -->
+```
+        <source>&amp;Amount:</source>
+        <translation>Suma:</translation>
+    
+ERR
+The translation omits the '&' character, which is used for the shortcut key and must appear exactly once (can be placed anywhere in the word).
+
+Correct translation:
+&Suma:
+or
+S&uma:
+```
+
+<!-- cache_translation_check_lt_c3ba5931660aea4df483b1c9c5d150268c4dc81b184cab1f96672f4b7454a871 -->
+```
+        <source>&amp;Message:</source>
+        <translation>Žinutė:</translation>
+    
+ERR
+The shortcut key indicator (&) from the source is missing in the translation. It should appear exactly once in the translation.
+
+Correct translation:
+&Žinutė:
+</reply>
 ```
 
 <!-- cache_translation_check_lt_4e3602eecaf894daa951352f67e4a0f5e7d6575153283d173ee538e1524c42b5 -->
@@ -231,15 +317,16 @@ Correct translation:
 Naudojant fallbackfee gali būti išsiųsta transakcija, kurios patvirtinimas gali užtrukti kelias valandas, dienas ar net niekada neįvykti. Apsvarstykite galimybę pasirinkti mokestį rankiniu būdu arba palaukite, kol patvirtinsite visą blokų grandinę.
 ```
 
-<!-- cache_translation_check_lt_cbef3f4748cec6bfc1bcc1c7b165f5685bf14d553703359759e6311107d299ef -->
+<!-- cache_translation_check_lt_73b5bdd82185727f57b8c3e3ebc542156ba9bdbbc2f60ad9bbf9714370cd4d1e -->
 ```
-        <source>Add Recipient</source>
-        <translation>A Pridėti gavėją</translation>
+        <source>Add &amp;Recipient</source>
+        <translation>&amp;A Pridėti gavėją</translation>
     
 ERR
-There is an erroneous "A" at the beginning of the translation which does not belong there. The correct translation into Lithuanian is:
+There should be only one '&' indicating the shortcut key, but here there are two: one before 'A' and one before 'Pridėti'. Also, the placement is nonstandard and likely to create two shortcut keys. In Lithuanian, the word order should also be consistent with Lithuanian UI terminology.
 
-Pridėti gavėją
+Correct translation:
+Pridėti &gavėją
 ```
 
 <!-- cache_translation_check_lt_f1763d07ff95b30c13653d890a3a3026880dc85fd5d324de1fd4174f534c3b21 -->
@@ -329,6 +416,18 @@ Correct translation:
 Pasirašykite žinutę, kad įrodytumėte, jog valdote šį Bitcoin adresą
 ```
 
+<!-- cache_translation_check_lt_ede15d87202b85a6153a96e6a81349a2f7ed3fb7f3ebf6a8d8702e98b1cf3f2e -->
+```
+        <source>Sign &amp;Message</source>
+        <translation>Registruoti praneši&amp;mą</translation>
+    
+ERR
+The Lithuanian verb "registruoti" means "to register," which is not the correct translation for "Sign" in this Bitcoin context. The correct Lithuanian translation for "Sign &Message" (as in 'digitally sign a message') is "Pasirašyti praneši&amp;mą". The ampersand (&amp;) is placed correctly.
+
+Correct translation:
+Pasirašyti praneši&amp;mą
+```
+
 <!-- cache_translation_check_lt_17bed199aaf715f37a920f547c5620cfa8439c55a647770456a52a8eb968d187 -->
 ```
         <source>The signature did not match the message digest.</source>
@@ -402,4 +501,4 @@ Klaida įkeliant %s: piniginei reikia naujesnės %s versijos
 ```
 </details>
 
-Number of issues: 31.
+Number of issues: 39.

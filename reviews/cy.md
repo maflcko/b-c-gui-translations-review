@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>cy</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bcy%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bcy%5D%20request)
 
 
 <!-- cache_translation_check_cy_e73b235c39ca06478e60e913dcdea36f33470f19a408004272b74b99ae3bd108 -->
@@ -88,28 +88,30 @@ Correct translation:
 Mae'r dirprwy wedi'i alluogi: &lt;b&gt;%1&lt;/b&gt;
 ```
 
-<!-- cache_translation_check_cy_f8cc8b89b06d5c7caddef5882b86d48e38c34388f5b49e037166c91009a279a2 -->
+<!-- cache_translation_check_cy_682f9861b2a0a3cff78a06fc6a339ac4fca1247fd854651b243be94e9fc6e2f1 -->
 ```
-        <source>Encrypt Wallet…</source>
-        <translation>Crypto Waled…</translation>
+        <source>&amp;Encrypt Wallet…</source>
+        <translation>&amp;Crypto Waled…</translation>
     
 ERR
-The Welsh word for "Encrypt" is "Amgryptio," not "Crypto" (which is merely borrowed from English and is not correct in this context). Additionally, "Waled" is a correct translation for "Wallet." The ellipsis is transferred correctly.
+The translation uses "Crypto Waled", which is an incorrect Welsh translation and appears to be a mix of English and pseudo-Welsh. The correct translation for "Encrypt Wallet" in Welsh should be "Amgryptio Waled".
 
 Correct translation:
-Amgryptio'r Waled…
+&Amgryptio Waled…
 ```
 
-<!-- cache_translation_check_cy_14022946740b1a36577171e163edc8fe7836f99842f7724b02e89f2365b0c8c9 -->
+<!-- cache_translation_check_cy_5d749ec304ea810a6a576a6872d15b9fa9e5b96a517bc5265278f5cfded8ea54 -->
 ```
-        <source>Backup Wallet…</source>
-        <translation>Bendith Waled…</translation>
+        <source>&amp;Backup Wallet…</source>
+        <translation>&amp;Bendith Waled…</translation>
     
 ERR
-The translation is erroneous. "Bendith" in Welsh means "blessing", not "backup". The correct term for "Backup" in this context is "Copi wrth gefn". "Wallet" as in a digital/Bitcoin wallet is usually left as "Waled". 
+The Welsh word "Bendith" means "Blessing," which is not correct for the term "Backup" in the context of software or wallets. The correct Welsh term for "Backup Wallet" is "Copia wrth gefn Waled" or simply "Gwneud copi wrth gefn o’r waled".
 
 Correct translation:
-Copi wrth gefn Waled…
+&Gwneud copi wrth gefn o’r waled…
+or
+&Copi wrth gefn Waled…
 ```
 
 <!-- cache_translation_check_cy_19696b827c00482c77bb60bbb1cd62ca09a687296625e514a7ae8c22c426869a -->
@@ -164,30 +166,60 @@ Correct translation:
 %1 cleient
 ```
 
-<!-- cache_translation_check_cy_f2067a9846c87c0c9195a5ee0fc2a06a143cb9c56dda77d03f0248acd9b0baa5 -->
+<!-- cache_translation_check_cy_102990129df590fbc0b572e1ebfc3ccbdf365218a4cadb0465453f87659f3f8a -->
 ```
-        <source>Copy transaction ID and output index</source>
-        <translation>Copïo ID trafodiad a chyfryngau allbwn</translation>
+        <source>S&amp;how</source>
+        <translation>Dangos</translation>
     
 ERR
-The phrase "cyfryngau allbwn" is incorrect. "Cyfryngau" means "media", not "index". The correct term for "output index" in Welsh (especially in technical context) would be "mynegai allbwn". Also, "Copïo" is fine, and "ID trafodiad" is acceptable.
+The shortcut marker '&' is missing in the Welsh translation. There should be exactly one '&' to match the source, which indicates a keyboard shortcut.
 
 Correct translation:
-Copïo ID trafodiad a mynegai allbwn
+&Dangos
+or
+D&angos
+
+(Either placement is acceptable, as long as there is a single '&' marking the shortcut.)
 ```
 
-<!-- cache_translation_check_cy_82e7dfcc8eeccc64239a8f6b4c7591779a844c85e7b2769fdecc77a99f4ccd0c -->
+<!-- cache_translation_check_cy_b1d7e2cbce1dca382ec2a39293329956681176264651bfdd2817d3f31bd69ed3 -->
 ```
-        <source>Lock unspent</source>
-        <translation>Lloi newid nad yw wedi'i wario</translation>
+        <source>Copy transaction &amp;ID and output index</source>
+        <translation>Copïo &amp;ID trafodiad a chyfryngau allbwn</translation>
     
 ERR
-The translation is incorrect. The English "Lock unspent" refers to marking unspent transaction outputs as locked (so they can't be spent). The translation given, "Lloi newid nad yw wedi'i wario", means "Type of change that has not been spent", which is wrong and introduces content not in the original.
+The Welsh translation "Copïo &ID trafodiad a chyfryngau allbwn" is problematic because "chyfryngau allbwn" translates to "output media" instead of "output index". The correct terminology should be "mynegai allbwn" for "output index". Also, the placement of "&ID" is accurate if considering menu shortcuts.
 
 Correct translation:
-Clôddio'r heb ei wario
-or, more accurately for Bitcoin context:
-Cloi'r heb ei wario
+Copïo ID &trafodiad a mynegai allbwn
+```
+
+<!-- cache_translation_check_cy_a61e8567b5f20b28593f4cdb56695a848da599b8dba5609b5144d7c20cec8e9c -->
+```
+        <source>L&amp;ock unspent</source>
+        <translation>L&amp;loi newid nad yw wedi'i wario</translation>
+    
+ERR
+The translation "L&loi newid nad yw wedi'i wario" adds "newid" ("change") which is not in the original English ("Lock unspent"). This could confuse users, as it implies "change" is involved, whereas the English text means to lock unspent (UTXOs—unspent transaction outputs, not specifically change).
+
+Correct translation:
+L&loi heb eu gwario
+
+This directly translates to "Lock unspent". The shortcut key (&) is preserved.
+```
+
+<!-- cache_translation_check_cy_fb764678bfd5950fc4c9444073189a9f8eadab58e836f5abd65f0f1c7eda0e54 -->
+```
+        <source>&amp;Unlock unspent</source>
+        <translation>&amp;Agor newid nad yw wedi'i wario</translation>
+    
+ERR
+The translation "&amp;Agor newid nad yw wedi'i wario" translates back as "&amp;Open change that has not been spent" (or "Unlock change that has not been spent"). The English "unspent" here refers to "unspent outputs" in general, not just "change". The translation narrows the meaning to "change" specifically, which is incorrect.
+
+Correct translation:
+&amp;Datgloi heb eu gwario
+
+Explanation: "Datgloi" means "unlock", "heb eu gwario" means "unspent". This translation retains the broader meaning of "unspent", not just "change".
 ```
 
 <!-- cache_translation_check_cy_1e1ffa1fc2a774d8e1563d8b57187945bb393ae7f67bd1e0ee700782fe6fc732 -->
@@ -303,16 +335,16 @@ Correct translation:
 Cychwyn %1 yn awtomatig ar ôl mewngofnodi i'r system.
 ```
 
-<!-- cache_translation_check_cy_8cde953c3651e2cc0fe1991c757f7f9d92c8e72268da68f8bb2e5c19c7e22f4c -->
+<!-- cache_translation_check_cy_49a50157dea265d4889f66be118cbc99cf683fa69b3078b59d2345efd7306d6d -->
 ```
-        <source>Start %1 on system login</source>
-        <translation>Cychwyn%1ar mewngofnodi i'r system</translation>
+        <source>&amp;Start %1 on system login</source>
+        <translation>&amp;Cychwyn%1ar mewngofnodi i'r system</translation>
     
 ERR
-There are whitespace formatting issues: There should be a space after "Cychwyn" and after "%1" to correctly render "Cychwyn %1 ar mewngofnodi i'r system".
+There are missing spaces in the translation: "Cychwyn%1ar" should be "Cychwyn %1 ar". The spacing between "%1" and "ar" is required for correct formatting and readability.
 
 Correct translation:
-Cychwyn %1 ar mewngofnodi i'r system
+&Cychwyn %1 ar mewngofnodi i'r system
 ```
 
 <!-- cache_translation_check_cy_df69ae428a7c991fab5e42d2554dcbf787af94f559ee47a92a52255a18248f70 -->
@@ -363,6 +395,30 @@ ERR
 The translation is inaccurate. "Ailosod" means "reset," not "revert." Furthermore, "ailosodlawr" seems erroneous; it should be "ail-lawrlwytho" for "re-download." The correct Welsh translation should be:
 
 Bydd newid y gosodiad hwn yn gofyn am ail-lawrlwytho’r gadwyn floc gyfan.
+```
+
+<!-- cache_translation_check_cy_07e67c533e6cdbc21115bff9190b72636b01ed30bd030950b623040332b7169b -->
+```
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Caniatáu cysylltiadau sy'n dod i mewn</translation>
+    
+ERR
+The translation omits the ampersand shortcut marker (&), which should appear somewhere in the Welsh translation as it does in the source. It is necessary for keyboard accessibility.
+
+Correct translation:
+Caniatáu cysylltiadau sy'n dod i mewn (&)
+```
+
+<!-- cache_translation_check_cy_d2d4dc9f6285dec40a2f6cb2c4f9c1c10630cc0dce1430037295522f93f54dcb -->
+```
+        <source>&amp;Information</source>
+        <translation>Gwybodaeth</translation>
+    
+ERR
+The translation omits the ampersand (&), which is used to define a shortcut key in menu labels. The Welsh translation should also have a single ampersand.
+
+Correct translation:
+& Gwybodaeth
 ```
 
 <!-- cache_translation_check_cy_e6a1f495e1fc6dc530ef6e368e42b80907b450baa936a68b9d5d3f38fef83fc7 -->
@@ -515,4 +571,4 @@ Roedd angen ailysgrifennu'r waled: ailgychwynnwch %s i gwblhau
 ```
 </details>
 
-Number of issues: 39.
+Number of issues: 43.

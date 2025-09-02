@@ -1,13 +1,41 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>it</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bit%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bit%5D%20request)
 
+
+<!-- cache_translation_check_it_5d43a64ea3e3e2e5e23b65c179d0d4b35a69527189f532ac9e02b534ecaeab70 -->
+```
+        <source>C&amp;lose</source>
+        <translation>Chiudere</translation>
+    
+ERR
+The Italian translation does not preserve the shortcut key indicator (&) from the source. It should appear exactly once in the translation.
+
+Correct translation:
+&Chiudere
+or
+C&hiudere
+
+(Either placement is acceptable as long as there is exactly one '&' for the shortcut key.)
+```
+
+<!-- cache_translation_check_it_c1511ad78d2827091f7d0cb7b1687862a681c0ba8b748f0280bf4cdf50c24784 -->
+```
+        <source>C&amp;hoose</source>
+        <translation>Scegli</translation>
+    
+ERR
+The translation omits the ampersand (&), which is used for shortcut keys. The '&' should appear exactly once in the translation.
+
+Correct translation:
+&Scegli
+```
 
 <!-- cache_translation_check_it_ca604b1e0da264b211ce54392857780e2b5e2fec842541aa988523656ba0272c -->
 ```
@@ -34,6 +62,18 @@ Correct translation:
 Effettua il backup del portafoglio in un'altra posizione
 ```
 
+<!-- cache_translation_check_it_843f869ea4d8f044a0faaefc6aeb96371441fb77308e3bcadec4329bbc8125ae -->
+```
+        <source>&amp;Options…</source>
+        <translation>Opzioni</translation>
+    
+ERR
+The translation omits the '&' which is used in English and should appear exactly once in the Italian translation as it indicates the shortcut key. The ellipsis ("…") is also missing in the translation.
+
+Correct translation:
+&Opzioni…
+```
+
 <!-- cache_translation_check_it_1a5e4350f0d30cdae0a5fb50e20428afed96535ddf9077694f4923565ce6bc06 -->
 ```
         <source>Show the list of used receiving addresses and labels</source>
@@ -46,16 +86,39 @@ Correct translation:
 Mostra la lista degli indirizzi di ricezione e delle etichette utilizzati
 ```
 
-<!-- cache_translation_check_it_e6cd9faae0293cb209adf4ff694933277b4b5d1a25a226b18170cbe009f7df4c -->
+<!-- cache_translation_check_it_90ffb2944fcbfa596e3bb0b4709e0b239306e275da6c3c66e351ccb45d646f92 -->
 ```
-        <source>Show</source>
-        <translation>Scome</translation>
+        <source>&amp;Sending addresses</source>
+        <translation>Indirizzi &amp;mittenti</translation>
     
 ERR
-The translation is incorrect. "Scome" is not an Italian word, and does not mean "Show". The correct translation is "Mostra".
+The translation reverses the meaning; "&amp;Sending addresses" refers to addresses the user is sending to (i.e., "receiving" addresses from the user's perspective), not addresses that are sending.
 
 Correct translation:
-Mostra
+Indirizzi &amp;di invio
+```
+
+<!-- cache_translation_check_it_0ac1ff1dd68d64106a6f9b8d80de7421e49b2cf3ff80d12e4817b8e6749b8ccf -->
+```
+        <source>&amp;Receiving addresses</source>
+        <translation>Indirizzi di &amp;destinazione</translation>
+    
+ERR
+The translation is inaccurate. In Bitcoin context, "receiving addresses" means wallet addresses where you receive coins. "Indirizzi di destinazione" is ambiguous and more like "destination addresses". The correct translation is:
+
+Indirizzi di &amp;ricezione
+```
+
+<!-- cache_translation_check_it_54e7395343ab757faa2eae676cd7612280051fe24ecf8c7c00bfed572fad004f -->
+```
+        <source>S&amp;how</source>
+        <translation>S&amp;come</translation>
+    
+ERR
+The translation "S&come" is incorrect. "Show" should be translated as "Mostra" in Italian. The ampersand (&) is correctly preserved for the shortcut key.
+
+Correct translation:
+&Mostra
 ```
 
 <!-- cache_translation_check_it_b8f5486c73f6eb53606d37cdc3115b0e5b17589102bb4a3bfab93a2b353957b7 -->
@@ -70,6 +133,18 @@ Correct translation:
 Pre-sincronizzazione intestazioni (%1%)…
 ```
 
+<!-- cache_translation_check_it_44b738f55953720fb1bfb41bd85c7d7495053c04d4f234af2c73d2fafdcef370 -->
+```
+        <source>Copy &amp;amount</source>
+        <translation>Copi&amp;a importo</translation>
+    
+ERR
+In the Italian translation, the ampersand indicating the shortcut key is misplaced inside the word "Copia". It should precede a relevant character, and "importo" should not be separated unnaturally from "Copia". The spacing is also awkward.
+
+Correct translation:
+&Copia importo
+```
+
 <!-- cache_translation_check_it_c13cc791c657d5409830227d5c998ad5a9f1852b479ba710fcc9e236ff557c21 -->
 ```
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -80,6 +155,18 @@ There is a typo in the translation: "setinazione" should be "destinazione". Also
 
 Correct translation:
 L'indirizzo "%1" esiste già come indirizzo di ricezione con l'etichetta "%2" e quindi non può essere aggiunto come indirizzo mittente.
+```
+
+<!-- cache_translation_check_it_88c074635f393ee164518e167602740051a00d1fef1c6d3af2afaee2c305d617 -->
+```
+        <source>&amp;Start %1 on system login</source>
+        <translation>&amp;Start %1 all'accesso al sistema</translation>
+    
+ERR
+The word "Start" is not translated into Italian. It should be "Avvia". The ampersand is present only once, as required.
+
+Correct translation:
+&Avvia %1 all'accesso al sistema
 ```
 
 <!-- cache_translation_check_it_5c8ffda95384b6d6ab51428fb55f8f2e4fce0f7791edd1170131a5f8244f13be -->
@@ -94,18 +181,75 @@ Correct translation:
 Mostra se il proxy SOCKS5 predefinito fornito è utilizzato per raggiungere i peer attraverso questo tipo di rete.
 ```
 
-<!-- cache_translation_check_it_7055069ebd006d7a6b4c9cfb149410d586d140221c09381985c1b722b9af1765 -->
+<!-- cache_translation_check_it_05e3b074672fcc474fb076d0482b98aa418de0c97ef90bba41057c8fcad7774e -->
 ```
-        <source>Prune block storage to</source>
+        <source>&amp;Network</source>
+        <translation>Rete</translation>
+    
+ERR
+The ampersand (&) indicating the shortcut key is missing in the Italian translation. It must appear exactly once.
+
+Correct translation:
+&Network
+
+or, if localizing the shortcut to a relevant Italian letter:
+
+& Rete
+
+(Rete)
+```
+
+<!-- cache_translation_check_it_3a3ad3bc6b16ab8c057b8afe3d1db56e315a2ef1f8819e7d5d851fb41e3ee7c0 -->
+```
+        <source>Prune &amp;block storage to</source>
         <translation>Modalità "prune": elimina i blocchi dal disco dopo</translation>
     
 ERR
-The translation omits the numeric or size-specifying value that should follow "to" in the source. The source refers to reducing block storage to a certain size, whereas the translation explains pruning generally and not the actionable limit.
+The Italian translation does not accurately reflect the English source. The source talks about "Prune &block storage to", i.e., pruning (reducing) the blockchain storage to a certain size, and includes the shortcut key (&). The translation omits both the storage size and the shortcut, and paraphrases imprecisely.
 
 Correct translation:
-Elimina lo storage dei blocchi fino a
-or
-Riduci l'archivio dei blocchi a
+Pruna &archiviazione dei blocchi a
+
+Or, to be more natural:
+Riduci &archiviazione dei blocchi a
+
+(Be sure to retain the & for the shortcut key.)
+```
+
+<!-- cache_translation_check_it_15b7541c81257a1a9462cb536f7c6076b0b3b5aad1f7b8a3649c430c1d9904bc -->
+```
+        <source>Enable coin &amp;control features</source>
+        <translation>Abilita le funzionalità di coin &amp;control</translation>
+    
+ERR
+The shortcut key (&) is not adapted for Italian. In the Italian translation, the shortcut should be positioned on the relevant letter in the corresponding Italian word (usually "controllo" for "control"), and the English word "coin control" is often translated as "controllo delle monete" or "controllo delle coin" depending on the context. Also, a direct Anglicism should be avoided if possible.
+
+Correct translation:
+Abilita le funzionalità di &controllo delle monete
+```
+
+<!-- cache_translation_check_it_d195d27e6eae52256c7cc01d8479e09c0846a4455d29d2eaa9b5e6d197eca0dc -->
+```
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Accetta connessioni in entrata</translation>
+    
+ERR
+The translation omits the shortcut key indicator '&' from the source, which should appear exactly once in the translation. Additionally, "Allow" should be accurately translated as "Consenti" instead of "Accetta".
+
+Correct translation:
+Consenti connes&ssioni in entrata
+```
+
+<!-- cache_translation_check_it_048d946718d10291c256bfd0153ff15a4606e031656c3a3729866620b47c07f1 -->
+```
+        <source>&amp;Show tray icon</source>
+        <translation>&amp;Mostra l'icona</translation>
+    
+ERR
+The Italian translation omits "tray" ("area di notifica" or "barra delle applicazioni"), losing the specific meaning ("tray icon" refers to the system tray or notification area icon). 
+
+Correct translation:
+&Mostra l'icona nell'area di notifica
 ```
 
 <!-- cache_translation_check_it_a2e6cfff61a3c5aa04d6f9804c49ed60f0ff24aa999b7891a6468ab86807d556 -->
@@ -133,18 +277,37 @@ Correct translation:
 Transazione Parzialmente Firmata (Binaria)
 ```
 
-<!-- cache_translation_check_it_dc39ea1fb9a2bf682bbbe2ab8f1d829706ee73fd375b6545d8c7ca582a7692f4 -->
+<!-- cache_translation_check_it_4f2f9b36086e82689100257866b47ba0ffbef5013332621beb25af4024f21182 -->
 ```
-        <source>Unban</source>
-        <translation>Elimina Ban</translation>
+        <source>&amp;Peers</source>
+        <translation>&amp;Peer</translation>
     
 ERR
-The translation "Elimina Ban" is understandable but not the standard or most accurate in Italian for the context of "Unban". A better translation would be simply "Sblocca" or "Rimuovi ban".
+The translation is incorrect: the English plural "&amp;Peers" is rendered as the Italian singular "&amp;Peer". The correct Italian translation should use the plural form.
 
 Correct translation:
-Sblocca
-or
-Rimuovi ban
+&amp;Peer
+OR
+&amp;Peer
+
+However, "Peer" is often left untranslated in Italian technical contexts, and the plural of "peer" in Italian can remain "peer" (indeclinabile) or "peer" can sometimes be "pari". Given the context, if "Peer" is adopted as a loanword, the plural does not change (i.e., "Peer" for both singular and plural), so the translation may be acceptable in context. 
+
+But if we want to be more accurate, and use Italian, the plural for "peer" (in this context) could be "pari".
+
+So, possible better translations:
+&amp;Peer (acceptable in technical contexts)
+OR
+&amp;Pari (if fully Italianized)
+
+Given the ambiguity and accepted use in technical Italian, accepting "&amp;Peer" may not be considered an error. Therefore, the original translation can be accepted as "NO".
+
+But considering the strict prompt on plural, the more explanatory answer is:
+
+ERR
+"Peers" is plural; the translation keeps the singular. Italian technical usage often leaves "peer" unchanged in plural, so "&amp;Peer" may be acceptable, but if pluralization is required, consider "&amp;Peer" or "&amp;Pari".
+
+Correct translation (if pluralization is needed):
+&amp;Peer
 ```
 
 <!-- cache_translation_check_it_72b797f6442b5552e80ee06a73ab17ca613d20e2c6330b9f6ff42a6739f8c240 -->
@@ -159,16 +322,40 @@ Correct translation:
 Ctrl+I
 ```
 
-<!-- cache_translation_check_it_88d1dab40dcd79edd9bfbd7cee82b36d1156330c08854016d3e8d762f66f126f -->
+<!-- cache_translation_check_it_499b9240c8cced95d0a7ed726fe468d761584ca941549ef0c293d60e799582c5 -->
 ```
-        <source>Copy message</source>
-        <translation>Copia message</translation>
+        <source>&amp;Create new receiving address</source>
+        <translation>Crea nuovo indirizzo ricevente.</translation>
     
 ERR
-The word "message" is not translated into Italian; it should be "messaggio".
+The translation omits the ampersand (&) used for the shortcut key. It also adds an unnecessary period at the end and does not preserve the format exactly (the English omits a period). The phrase "indirizzo ricevente" is understandable but "indirizzo di ricezione" or simply "nuovo indirizzo di ricezione" would be more idiomatic in Italian.
 
 Correct translation:
-Copia messaggio
+&Crea nuovo indirizzo di ricezione
+```
+
+<!-- cache_translation_check_it_398cad6677a56d354833f04dce0230e58d477427ded89cb3303b37858e689645 -->
+```
+        <source>Copy &amp;message</source>
+        <translation>Copia &amp;message</translation>
+    
+ERR
+The English 'message' was not translated into Italian; it should be 'messaggio'. Otherwise, the ampersand is correct and preserved once.
+
+Correct translation:
+Copia &amp;messaggio
+```
+
+<!-- cache_translation_check_it_44b738f55953720fb1bfb41bd85c7d7495053c04d4f234af2c73d2fafdcef370 -->
+```
+        <source>Copy &amp;amount</source>
+        <translation>Copi&amp;a importo</translation>
+    
+ERR
+In the Italian translation, the ampersand indicating the shortcut key is misplaced inside the word "Copia". It should precede a relevant character, and "importo" should not be separated unnaturally from "Copia". The spacing is also awkward.
+
+Correct translation:
+&Copia importo
 ```
 
 <!-- cache_translation_check_it_688abbebdcdd0f219f1185363a5d92bda8fccaee7abcd4aa5b0ae10e68be8fc0 -->
@@ -183,6 +370,23 @@ Correct translation:
 Non è stato possibile generare un nuovo indirizzo %1
 ```
 
+<!-- cache_translation_check_it_8421c5a3480d8c50c84dcc758a0ecea111c97a331e8f95346d3111362ec76703 -->
+```
+        <source>Copy &amp;Address</source>
+        <translation>Copi&amp;a Indirizzo</translation>
+    
+ERR
+The ampersand (&) for the shortcut key is attached to the "a" in "Copia", creating "Copi&a", which is incorrect and breaks the intended shortcut. The ampersand should be attached to the "I" in "Indirizzo" or the "C" in "Copia" to create a meaningful shortcut.
+
+Correct translation:
+Copia &Indirizzo
+
+Alternatively, if you want the shortcut on "C":
+&Copia indirizzo
+
+(both are accepted conventions, but never split a word with "&")
+```
+
 <!-- cache_translation_check_it_71ef9ceb75d11b8e6a53f653ea70b74bc44605f44a580334fc55ba16fa506e4e -->
 ```
         <source>Inputs…</source>
@@ -195,6 +399,21 @@ Correct translation:
 Input…
 or
 Ingressi…
+```
+
+<!-- cache_translation_check_it_6573f0732314ff7326ae0677549599051a2e57451623c713334cc6fe5391a425 -->
+```
+        <source>Cr&amp;eate Unsigned</source>
+        <translation>Cr&amp;ea Non Firmata</translation>
+    
+ERR
+The translation is awkward and not fully correct. "Creare" is the correct verb in Italian, and "Non Firmata" (feminine) doesn't agree since "transazione" would need to be present. Also, "Unsigned" is likely referring to "Create Unsigned Transaction", so context should be maintained.
+
+Correct translation:
+Cr&amp;ea non firmata
+
+Alternatively, if the full context is "Create Unsigned Transaction", it should be:
+Cr&amp;ea transazione non firmata
 ```
 
 <!-- cache_translation_check_it_4df2e937e438ce0c145a17b19249eeab2dd6bf712420f9af66196e0ff588d51b -->
@@ -233,30 +452,6 @@ The translation is inaccurate. "change address" in the context of Bitcoin refers
 Conferma l'indirizzo di resto personalizzato
 ```
 
-<!-- cache_translation_check_it_4f82a829dd78045a349f1e211a3f43305d8046090c37822c0df8bf77978fe228 -->
-```
-        <source>Sign Message</source>
-        <translation>Firma Messaggio</translation>
-    
-ERR
-The translation is not entirely accurate. In Italian, "Firma Messaggio" is awkward and literal; it should be "Firma messaggio" (with a lowercase "m"), or more naturally, "Firma il messaggio".
-
-Correct translation:
-Firma il messaggio
-```
-
-<!-- cache_translation_check_it_4f82a829dd78045a349f1e211a3f43305d8046090c37822c0df8bf77978fe228 -->
-```
-        <source>Sign Message</source>
-        <translation>Firma Messaggio</translation>
-    
-ERR
-The translation is not entirely accurate. In Italian, "Firma Messaggio" is awkward and literal; it should be "Firma messaggio" (with a lowercase "m"), or more naturally, "Firma il messaggio".
-
-Correct translation:
-Firma il messaggio
-```
-
 <!-- cache_translation_check_it_4ab31582452ee8e08139b38b207ffafa1af327c30fdf5320a672524bcbd4a3c7 -->
 ```
         <source>Inputs</source>
@@ -272,29 +467,28 @@ Or alternatively, for more clarity:
 Ingressi
 ```
 
-<!-- cache_translation_check_it_d0c96f0084d9414ffe2149ea59b65531c726343f5dbe2d49bc39498f4e01ee2a -->
+<!-- cache_translation_check_it_44b738f55953720fb1bfb41bd85c7d7495053c04d4f234af2c73d2fafdcef370 -->
 ```
-        <source>Copy transaction ID</source>
-        <translation>Copia la transazione ID</translation>
+        <source>Copy &amp;amount</source>
+        <translation>Copi&amp;a importo</translation>
     
 ERR
-The translation is not fully accurate. In Italian, "transaction ID" should be translated as "ID della transazione," and the article "la" is unnecessary. The correct translation should be:
-
-Copia l'ID della transazione
-```
-
-<!-- cache_translation_check_it_57fb9a56381272c1170d60def18bcdbd50af8f539ecb03e996581ebf17615348 -->
-```
-        <source>Cannot upgrade a non HD split wallet from version %i to version %i without upgrading to support pre-split keypool. Please use version %i or no version specified.</source>
-        <translation>impossibile aggiornare un portafoglio non diviso e non HD dalla versione %i alla versione %i senza fare l'aggiornamento per supportare il pre-split keypool. Prego usare la versione %i senza specificare la versione</translation>
-    
-ERR
-There are two issues:
-1. The translation omits "or no version specified" at the end, changing the meaning.
-2. Minor stylistic improvement for clarity and formal register.
+In the Italian translation, the ampersand indicating the shortcut key is misplaced inside the word "Copia". It should precede a relevant character, and "importo" should not be separated unnaturally from "Copia". The spacing is also awkward.
 
 Correct translation:
-Impossibile aggiornare un portafoglio non HD diviso dalla versione %i alla versione %i senza aggiornare per supportare il pre-split keypool. Utilizzare la versione %i oppure nessuna versione specificata.
+&Copia importo
+```
+
+<!-- cache_translation_check_it_7a6d2eeb74459837a3f06f9f15a38ea044c7b684aac745beeadadb29efc90197 -->
+```
+        <source>Copy full transaction &amp;details</source>
+        <translation>Copia tutti i dettagli &amp;della transazione </translation>
+    
+ERR
+There is a whitespace issue: there is an extra space at the end of the Italian translation. Additionally, the position of the '&amp;' may not be optimal for shortcut keys in Italian (it should ideally be placed before the first suitable shortcut letter for accessibility), but since '&amp;' is present exactly once, this is not an error per instruction.
+
+Correct translation:
+Copia tutti i dettagli &amp;della transazione
 ```
 
 <!-- cache_translation_check_it_62926500cb494677748649f119ad63c67bf7f932c1fe1f3db3618770f1950dfc -->
@@ -365,18 +559,6 @@ Correct translation:
 Nessun file di dump fornito. Per usare createfromdump, -dumpfile=&lt;filename&gt; deve essere fornito.
 ```
 
-<!-- cache_translation_check_it_ec7dee2656f816eac2e1d92bcc62dbe995d0dcb9c56eecd83d50f7923c13e70d -->
-```
-        <source>Unknown wallet file format "%s" provided. Please provide one of "bdb" or "sqlite".</source>
-        <translation>Il formato “%s” del file portafoglio fornito non è riconosciuto. si prega di fornire uno che sia “bdb” o “sqlite”. </translation>
-    
-ERR
-The translation is mostly accurate but has minor issues with capitalization and punctuation. "si prega" should be capitalized as it's the start of a new sentence. Also, it's slightly more natural to write: "Si prega di fornire 'bdb' o 'sqlite'." Furthermore, there is a stray space at the end.
-
-Correct translation:
-Il formato "%s" del file portafoglio fornito non è riconosciuto. Si prega di fornire “bdb” o “sqlite”.
-```
-
 <!-- cache_translation_check_it_a84e799399ed3ce3a725076482cc0ae545cda33e013f2f97c0d3cf0628343281 -->
 ```
         <source>Cannot resolve -%s address: '%s'</source>
@@ -405,18 +587,6 @@ There are two issues:
 
 Correct translation:
 Impossibile rimuovere la directory della catena di stato snapshot (%s). Rimuovila manualmente prima di riavviare.
-```
-
-<!-- cache_translation_check_it_4dec90d2142d95a456f29a5bece0ff5b8ca7b3c390a02e594169db484443650c -->
-```
-        <source>Transaction requires one destination of non-0 value, a non-0 feerate, or a pre-selected input</source>
-        <translation>La transazione richiede una destinazione di valore diverso da -0, una tariffa diversa da -0 o un input preselezionato</translation>
-    
-ERR
-The translation incorrectly says "valore diverso da -0" and "tariffa diversa da -0", which means "value different from -0" and "fee different from -0". The source intends "non-0" as "nonzero" (i.e., not zero), not "not negative zero".
-
-Correct translation:
-La transazione richiede una destinazione con valore diverso da zero, una commissione diversa da zero o un input preselezionato.
 ```
 
 <!-- cache_translation_check_it_41858317ed6e2297faebec9e7d2033ef683b33b6ab3e83e03f97db53e6d3509b -->
@@ -518,4 +688,4 @@ Livello di logging globale non supportato %s=%s. Valori validi: %s.
 ```
 </details>
 
-Number of issues: 40.
+Number of issues: 51.

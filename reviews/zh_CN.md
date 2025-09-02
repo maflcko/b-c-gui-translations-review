@@ -1,36 +1,98 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>zh_CN</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bzh_CN%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bzh_CN%5D%20request)
 
 
-<!-- cache_translation_check_zh_CN_9c91a6e0f22c0f66106351529b3184636e78a2ce5111ac0342fa469aae364d01 -->
+<!-- cache_translation_check_zh_CN_8c019d308baf1e9a7a513c7130b64e965bf42ca5f456cad8d84e632fbd324fa2 -->
 ```
-        <source>About %1</source>
-        <translation>关于 %1 (A)</translation>
+        <source>&amp;Options…</source>
+        <translation>选项(&amp;O)</translation>
     
 ERR
-The translation adds "(A)" which is not present in the English source text, making it inaccurate. This is unnecessary and could be confusing.
+The translation is mostly correct, but it omits the ellipsis (…) present in the source. Also ensure the accelerator marker (&) appears exactly once — that's OK here.
 
 Correct translation:
-关于 %1
+选项(&amp;O)…
 ```
 
-<!-- cache_translation_check_zh_CN_2883e00d0d8a42685d37e2a343e075eb9ff8db424f4ef6119b847c9edd193c89 -->
+<!-- cache_translation_check_zh_CN_01e4df2271ad65cb2c9b41ee46ce77f24cb6b15f15b978ac3d5ca51532ebb2c8 -->
 ```
-        <source>Sending addresses</source>
-        <translation>付款地址(S)</translation>
+        <source>&amp;Encrypt Wallet…</source>
+        <translation>加密钱包(&amp;E)</translation>
     
 ERR
-The translation adds "(S)" which is not present in the source, and which could be confusing or nonstandard in Chinese translations. The standard translation should be straightforward and without extra characters.
+The translation is mostly correct but it omits the ellipsis (…) present in the source. The source has a trailing ellipsis indicating a dialog/action, so the translation should include it. Also ensure the & accelerator appears exactly once (it does), and there are no extra spaces.
 
 Correct translation:
-发送地址
+加密钱包(&amp;E)…
+```
+
+<!-- cache_translation_check_zh_CN_6a48bd30fe4e7cd2269014687f421baac1199561d91f0c02a5850a77330d53b2 -->
+```
+        <source>&amp;Backup Wallet…</source>
+        <translation>备份钱包(&amp;B)</translation>
+    
+ERR
+The translation omitted the ellipsis (…) present in the source. Also ensure the accelerator marker exists exactly once (it does here as (&B)), and there are no extra spaces.
+
+Correct translation:
+备份钱包…(&B)
+```
+
+<!-- cache_translation_check_zh_CN_54eba313b1f7705aba04afbe18023343277ec9a90b81ddf9082862e28be58fc8 -->
+```
+        <source>&amp;Change Passphrase…</source>
+        <translation>修改密码(&amp;C)</translation>
+    
+ERR
+The translation is missing the trailing ellipsis (…) from the source. The accelerator (&) appears exactly once which is fine, but the translated label should include the ellipsis to match the source.
+
+Correct translation:
+<translation>修改密码(&amp;C)…</translation>
+```
+
+<!-- cache_translation_check_zh_CN_b9b8898b9bce2996b37b7c697d4d22299a77ad3b4bbd732257950b022f50d3f1 -->
+```
+        <source>Sign &amp;message…</source>
+        <translation>签名消息(&amp;M)</translation>
+    
+ERR
+The translation omits the trailing ellipsis (…) present in the source. The accelerator (&) is fine inside the parentheses. 
+
+Correct translation:
+签名消息(&M)…
+```
+
+<!-- cache_translation_check_zh_CN_dc28192dfd100f9a34d99016904dc9b0ee727b55bb4c562c352952eb737c1948 -->
+```
+        <source>&amp;Verify message…</source>
+        <translation>验证消息(&amp;V)</translation>
+    
+ERR
+The translation is missing the ellipsis (…) that appears in the source. Also the XML & must be escaped as &amp;.
+
+Correct translation:
+<translation>验证消息…(&amp;V)</translation>
+```
+
+<!-- cache_translation_check_zh_CN_4c782e7df9e5c8cf4f5e4722e25ef1e9559efc2b4ab702bc93f6c38d4e31cb58 -->
+```
+        <source>&amp;Sending addresses</source>
+        <translation>付款地址(&amp;S)</translation>
+    
+ERR
+Issues:
+- The Chinese wording "付款地址" is ambiguous here; the UI context "Sending addresses" (address book tab for addresses you send to) is better translated as "发送地址".
+- Shortcut format is acceptable but it's more natural in Chinese UIs to put the shortcut in parentheses after the label: use "发送地址(&S)". Ensure there is exactly one '&'.
+
+Correct translation:
+发送地址(&S)
 ```
 
 <!-- cache_translation_check_zh_CN_07b24e731acfde530620e37ba80e4dd4623efd6c803f490116295af92f3094db -->
@@ -65,18 +127,6 @@ Correct translation:
 显示“节点”标签页
 ```
 
-<!-- cache_translation_check_zh_CN_a335a35c7dde13c47a3bbc12f962abc878d77465b0042e71506c9b8865ff1664 -->
-```
-        <source>Lock unspent</source>
-        <translation>锁定未花费(O)</translation>
-    
-ERR
-The translation adds "(O)" at the end, which is not present in the source. This "(O)" is likely a mistaken mnemonic/shortcut key, not indicated in the English source. Otherwise, the translation "锁定未花费" is accurate.
-
-Correct translation:
-锁定未花费
-```
-
 <!-- cache_translation_check_zh_CN_07b24e731acfde530620e37ba80e4dd4623efd6c803f490116295af92f3094db -->
 ```
         <source>Close wallet</source>
@@ -88,16 +138,92 @@ The translation of "Close wallet" as "卸载钱包" is incorrect. "卸载钱包"
 关闭钱包
 ```
 
-<!-- cache_translation_check_zh_CN_56b8225dec67e3fc39f92c0309eebb7e8c80b10b7e006ad5546daaaf877a2190 -->
+<!-- cache_translation_check_zh_CN_0be61d8326fcbba3a30366fc7835bd71f9690c1871fb05a7fe537359726db58d -->
 ```
-        <source>Your current balance in watch-only addresses</source>
-        <translation>您当前在仅观察观察地址中的余额</translation>
+        <source>&amp;Start %1 on system login</source>
+        <translation>系统登入时启动 %1 (&amp;S)</translation>
     
 ERR
-There is a redundancy in the phrase "仅观察观察地址" ("watch-only watch address") and awkward wording. The correct and natural translation should be:
+Problems:
+- Uses "登入" (more common in Traditional Chinese); Mainland Chinese should use "登录".
+- Unnecessary space before the accelerator label; Chinese text normally does not have a space before parentheses.
+- Accelerator placement is unconventional (showing "(&S)"); it's acceptable but better to keep formatting consistent.
+
+Corrected translation suggestions:
+系统登录时启动 %1(&amp;S)
+or
+在系统登录时启动 %1(&amp;S)
+```
+
+<!-- cache_translation_check_zh_CN_8370181d29a40be415ae5a5ca698caaa09b34b012c97a937b607bd8ca507a60a -->
+```
+        <source>Prune &amp;block storage to</source>
+        <translation>将区块存储修剪至(&amp;B)</translation>
+    
+ERR
+Issues:
+- The shortcut marker is placed as "(&B)" which is acceptable but inconsistent with typical placement; it's better to integrate the shortcut naturally in the string. 
+- Wording order is slightly unnatural in Chinese — "将区块存储修剪至" is understandable but a more fluent phrasing is "修剪区块存储至".
+- Ensure exactly one & exists (it does) and no extra spaces (none present).
+
+Suggested correction:
+修剪区块存储至(&B)
+```
+
+<!-- cache_translation_check_zh_CN_27b85d8376af07e1605c63f231aa4e3e85709c6523af0f7bb5c4f42047f84dbb -->
+```
+        <source>Subtract &amp;fee from amount by default</source>
+        <extracomment>An Options window setting to set subtracting the fee from a sending amount as default.</extracomment>
+        <translation>默认从金额中减去交易手续费(&amp;F)</translation>
+    
+ERR
+Problems:
+- The translation is understandable but a bit wordy and uses "交易手续费", which is ok but slightly long. More importantly, the typical Chinese UI phrasing is shorter (e.g. 扣除/减去 手续费) and the shortcut marker is usually shown as (&F) — that's acceptable, but keep the ampersand exactly once.  
+- Recommend a more natural, concise phrasing.
 
 Correct translation:
-您当前在仅观察地址中的余额
+默认从金额中减去手续费(&F)
+```
+
+<!-- cache_translation_check_zh_CN_1f11081981527618f6101a454a730d8840b7d7e8c390e3b90b558361e8362627 -->
+```
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>通过 SO&amp;CKS5 代理连接(默认代理):</translation>
+    
+ERR
+Problems:
+- The ampersand exists once (good) but it splits the ASCII token "SOCKS5" in the provided translation (SO&amp;CKS5), which is awkward. It's better to place the & before a Chinese word/character or before the ASCII token as a whole.
+- Punctuation and spacing: Chinese text should use fullwidth punctuation (Chinese parentheses and colon) and avoid awkward spaces. The translation uses ASCII parentheses and colon and has unnecessary spaces.
+
+Suggested correct translation (ampersand placed before the first Chinese word; keeps SOCKS5 intact and uses Chinese punctuation):
+
+&通过 SOCKS5 代理连接（默认代理）：
+```
+
+<!-- cache_translation_check_zh_CN_d28571e64d8eb9358bd0eeb06b3a55fcd385ec2b29f0c7a2faacb27a2a65c592 -->
+```
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>最小化到托盘(&amp;M)</translation>
+    
+ERR
+The translation omits the "instead of the taskbar" part, so it doesn't preserve the full meaning of the source. The accelerator is fine, but the text should explicitly mention the taskbar.
+
+Correct translation:
+最小化到托盘而不是任务栏(&M)
+```
+
+<!-- cache_translation_check_zh_CN_d5b7f50fbccf0a2d8611f9433bfc9db677127483cccdfd4cf1ff4b35c96a762c -->
+```
+        <source>&amp;Save Image…</source>
+        <translation>保存图像(&amp;S)...</translation>
+    
+ERR
+Problems:
+- The source uses a single Unicode ellipsis "…" (U+2026). The translation uses three ASCII dots "..." which is inconsistent.
+- Prefer keeping the escaped ampersand exactly once; currently it's present as (&amp;S) which is acceptable, but keep formatting consistent with the source punctuation.
+
+Correct translation:
+保存图像(&amp;S)…
 ```
 
 <!-- cache_translation_check_zh_CN_0c2f3b1ca9da511a52168e61c92498723b5b95d121bdf4b2cf14fd3c7c628264 -->
@@ -113,28 +239,90 @@ The Chinese translation "隐藏其他人的详细信息" means "Hide other peopl
 This translates back as "Hide node detail/information," which is in line with the intended meaning regarding network peers.
 ```
 
-<!-- cache_translation_check_zh_CN_a27ba6a54d60583ba93321d63927938724cdf2467e34553427524f9f65250183 -->
+<!-- cache_translation_check_zh_CN_d5b7f50fbccf0a2d8611f9433bfc9db677127483cccdfd4cf1ff4b35c96a762c -->
 ```
-        <source>1 day</source>
-        <translation>1 天(A)</translation>
+        <source>&amp;Save Image…</source>
+        <translation>保存图像(&amp;S)...</translation>
     
 ERR
-The translation "1 天(A)" contains an unnecessary "(A)", which is not present in the original English source and appears to be erroneous. There is also no whitespace format issue.
+Problems:
+- The source uses a single Unicode ellipsis "…" (U+2026). The translation uses three ASCII dots "..." which is inconsistent.
+- Prefer keeping the escaped ampersand exactly once; currently it's present as (&amp;S) which is acceptable, but keep formatting consistent with the source punctuation.
 
 Correct translation:
-1 天
+保存图像(&amp;S)…
 ```
 
-<!-- cache_translation_check_zh_CN_5682213c7071df73f2e9fc213f559a81292b1a0a139c5d644681abb371ee0353 -->
+<!-- cache_translation_check_zh_CN_57b06c321041a6108564eb44adad256c4a9f7406ae0664700e636bccc4c56f28 -->
 ```
-        <source>Subtract fee from amount</source>
-        <translation>从金额中减去交易费(U)</translation>
+        <source>A&amp;mount:</source>
+        <translation>金额(&amp;M)</translation>
     
 ERR
-The translation adds "(U)", which is not present in the original text and could confuse users. The rest of the translation is otherwise accurate.
+The source includes a trailing colon ":" which should be preserved. The translation currently omits the colon. Also ensure the accelerator ampersand appears exactly once (it does), but keep the punctuation consistent.
 
 Correct translation:
-从金额中减去交易费
+金额(&M):
+```
+
+<!-- cache_translation_check_zh_CN_567a23f7b8e16d3a0a0cea0c6ed87c6ae54ddecd7152515566906bf4299da38d -->
+```
+        <source>Copy transaction &amp;ID</source>
+        <translation>复制交易 &amp;ID</translation>
+    
+ERR
+The translation is accurate, and the ampersand is present exactly once, but there is an unnecessary space before the shortcut marker. In Chinese UI text, avoid the stray space before '&'.
+
+Correct translation:
+<translation>复制交易&amp;ID</translation>
+```
+
+<!-- cache_translation_check_zh_CN_90fda8f6932228d174e380ed1c7df7be7ae98d00ff1e42c56766226c0f6bb80a -->
+```
+        <source>Option '-checkpoints' is set but checkpoints were removed. This option has no effect.</source>
+        <translation>选项“-checkpoints”已设置，但检查点已被移除。该选项不再生效。 </translation>
+    
+ERR
+Translation is accurate in meaning, but contains a trailing space at the end and uses Chinese punctuation correctly. Remove the extra whitespace.
+
+Correct translation:
+选项“-checkpoints”已设置，但检查点已被移除。该选项不再生效。
+```
+
+<!-- cache_translation_check_zh_CN_d98c1c5ff4f9281f53e84a4630bcb6846485c6649d59a458ddb76aab8f1f87d3 -->
+```
+        <source>Option '-maxorphantx' is set but no longer has any effect (see release notes). Please remove it from your configuration.</source>
+        <translation>选项“-maxorphantx”已设置，但已不再生效（参见发行说明）。请从您的配置中移除该选项。 </translation>
+    
+ERR
+Translation is accurate in meaning, but there is a trailing space before the closing tag which is a whitespace issue.
+
+Correct translation (remove trailing space):
+选项“-maxorphantx”已设置，但已不再生效（参见发行说明）。请从您的配置中移除该选项。
+```
+
+<!-- cache_translation_check_zh_CN_bf17affb0acd6713b9f6b2167f99961dbd921c30426c9f4b5f40c6272c0fa297 -->
+```
+        <source>Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.</source>
+        <translation>选项“-datacarrier”或“-datacarriersize”已设置，但已标记为弃用。它们将在未来版本中移除。 </translation>
+    
+ERR
+The translation is accurate in meaning, and there are no format specifiers to check. However there is an extra trailing space before the closing tag. Provide the corrected translation without the stray space:
+
+Correct translation:
+选项“-datacarrier”或“-datacarriersize”已设置，但已标记为弃用。它们将在未来版本中移除。
+```
+
+<!-- cache_translation_check_zh_CN_eb968025b9240f22a7d27bd23c989a8fc00fef0ee8185f551adcffb7a2452904 -->
+```
+        <source>-paytxfee is deprecated and will be fully removed in v31.0.</source>
+        <translation>“-paytxfee”已弃用，并将在 v31.0 中完全移除。 </translation>
+    
+ERR
+Translation is accurate in meaning, but has minor formatting issues: unwanted spaces (a trailing space at the end, and an extra space between "v31.0" and "中"). Also Chinese punctuation/spacing conventions prefer no space between "v31.0" and following Chinese characters.
+
+Correct translation:
+“-paytxfee”已弃用，并将在v31.0中完全移除。
 ```
 
 <!-- cache_translation_check_zh_CN_fb0823c1e335cab3c139e0073166fec5250bf5eb78a2f8b358bf651517b0544c -->
@@ -220,6 +408,30 @@ The translation incorrectly includes "1" before %s in "钱包文件创建失败�
 Correct translation:
 钱包文件创建失败：%s
 ```
+
+<!-- cache_translation_check_zh_CN_fb9c57de56fb521dfdc9b8cd4124ea9b1e9e4d83d4064c6624a1a81414b0eed7 -->
+```
+        <source>Error: Dumpfile specifies an unsupported database format (%s). Only sqlite database dumps are supported</source>
+        <translation>错误：转储文件指定了不受支持的数据库格式 %s。仅支持 sqlite 数据库转储。</translation>
+    
+ERR
+The format specifier (%s) in the source is inside parentheses, but the translation removed the parentheses and added a space before %s. Keep the specifier and surrounding punctuation as in the source.
+
+Correct translation:
+错误：转储文件指定了不受支持的数据库格式（%s）。仅支持 sqlite 数据库转储。
+```
+
+<!-- cache_translation_check_zh_CN_8a65190ca204502b79b6c300f73c685661424c04e29136c9be3e8dc44a9de4b3 -->
+```
+        <source>Unrecognized network in -proxy='%s': '%s'</source>
+        <translation>无法识别 -proxy=“%s” 中的网络：“%s”。</translation>
+    
+ERR
+The translation is mostly correct but has formatting issues: it uses different quotation marks and includes an extra space before "中的网络", which is nonstandard in Chinese. The original has two '%s' specifiers and they must be preserved exactly.
+
+Correct translation:
+无法识别 -proxy='%s'中的网络：'%s'。
+```
 </details>
 
-Number of issues: 17.
+Number of issues: 33.

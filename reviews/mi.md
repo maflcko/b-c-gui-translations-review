@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>mi</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bmi%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bmi%5D%20request)
 
 
 <!-- cache_translation_check_mi_0f41696faf22947e86a90ad9f7429b0bb2c3e91f6929a65795151536ccc8a71c -->
@@ -72,16 +72,16 @@ Explanation:
 - No significant whitespace issues exist in the corrected translation.
 ```
 
-<!-- cache_translation_check_mi_faf8974cb65cb571f76b90a12f00e45ee90f527777558df1ebc36fb39a5fdeca -->
+<!-- cache_translation_check_mi_d8669c71ee46aacf1c41f5888a247a3a0a17ec59976498ad758e506642dd9674 -->
 ```
-        <source>Copy Label</source>
-        <translation>Tātari  Tapanga </translation>
+        <source>Copy &amp;Label</source>
+        <translation>Tātari &amp; Tapanga </translation>
     
 ERR
-The translation is problematic. "Tātari Tapanga" means "Filter Label" in Māori, not "Copy Label". Additionally, there is extra whitespace between the words.
+The Māori word "Tātari" means "filter" or "sort," not "copy." The correct translation for "Copy &Label" should use the Māori word for "copy," which is "Tārua." The ampersand is present once, which is correct, but there is a stray space at the end of the translation that should be removed.
 
 Correct translation:
-Tārua Tapanga
+Tārua &Tapanga
 ```
 
 <!-- cache_translation_check_mi_ebec991af135e213f1abac1c69cf34d26aeebb862d263e4ee0463a7b5ac5b0e3 -->

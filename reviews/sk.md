@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>sk</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bsk%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bsk%5D%20request)
 
 
 <!-- cache_translation_check_sk_cb41c8aa9a33587fc1af83cdd888b8a780b9bfa3f9eb758c2b0474e587fedf63 -->
@@ -108,6 +108,18 @@ Correct translation:
 Adresa "%1" už existuje ako prijímacia adresa s označením "%2", a preto nemôže byť pridaná ako odosielacia adresa.
 ```
 
+<!-- cache_translation_check_sk_ab7c46e25d383166fb044076206a302ac1602a40a4c882c270cddd298a7c6961 -->
+```
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp;Zobraziť len ikonu na lište po minimalizovaní okna.</translation>
+    
+ERR
+The translation meaning diverges from the English original. The English text states "Minimize to the tray instead of the taskbar," while the Slovak translation suggests "Show only the icon on the bar after minimizing the window," which does not accurately reflect the original meaning about minimizing to the system tray rather than the taskbar.
+
+Correct translation:
+&Minimalizovať do systémovej lišty namiesto panela úloh
+```
+
 <!-- cache_translation_check_sk_4017ae783435cf710ff709b5c7b65b1e3e4fe8f96f7ea9bb77064bcbb36dd089 -->
 ```
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -200,28 +212,16 @@ Correct translation:
 Súkromný kľúč pre zadanú adresu nie je k dispozícii.
 ```
 
-<!-- cache_translation_check_sk_d35302f2de11e9b92c2ff564f74ffb3c621812c02720b3b8a6ab23384c095a35 -->
+<!-- cache_translation_check_sk_4690bb78960bd4c90c1c00ffd3751027dd955b4a34eca1f58e23dd7b37b3135f -->
 ```
-        <source>Whether or not a watch-only address is involved in this transaction.</source>
-        <translation>Či je v tejto transakcii adresy iba na sledovanie.</translation>
+        <source>&amp;Edit address label</source>
+        <translation>&amp;Upraviť popis transakcie</translation>
     
 ERR
-The translation is grammatically incorrect and somewhat unclear. "Adresy iba na sledovanie" is plural ("addresses"), and it omits the verb that would clarify the meaning. The proper translation should retain the singular "address" and the conditional form.
+The translation is incorrect. "address label" should be translated as "označenie adresy" or "popis adresy", not "popis transakcie" ("transaction label/description").
 
 Correct translation:
-Či sa tejto transakcie zúčastňuje adresa iba na sledovanie.
-```
-
-<!-- cache_translation_check_sk_4103e3ad4990342d7b82ae33b763194ea27ec0d3e5a963993fd6ca2ac8b55937 -->
-```
-        <source>Edit address label</source>
-        <translation>Upraviť popis transakcie</translation>
-    
-ERR  
-The translation is inaccurate. "Edit address label" should be referring to editing the label (name or description) of an address, not a transaction description.  
-
-Correct translation:  
-Upraviť popis adresy
+&Upraviť označenie adresy
 ```
 
 <!-- cache_translation_check_sk_68ac3aa1c3ac91072142d38d20bd4e7b96b4c139f81553e8b7a6563df71dd756 -->
@@ -260,6 +260,30 @@ Correct translation:
 Maximálna hmotnosť transakcie je príliš nízka, nie je možné zahrnúť výstup na vydanie
 ```
 
+<!-- cache_translation_check_sk_d113eacef622799c6f25276d91f851a447196f908f4bd4118767af2ea2afc36a -->
+```
+        <source>Can't spend unconfirmed version %d pre-selected input with a version 3 tx</source>
+        <translation>Nemožno minúť nepotvrdený vstup verzie %d vopred vybraný s verziou 3 tx</translation>
+    
+ERR
+Slovak translation is grammatically awkward and word order is unclear; "tx" shouldn't be left as "tx" and the modifiers should be ordered/commas fixed. The %d specifier is preserved correctly.
+
+Correct translation:
+Nemožno minúť nepotvrdený, vopred vybraný vstup verzie %d v transakcii verzie 3.
+```
+
+<!-- cache_translation_check_sk_4149497949ffd4c8b484441576e3a89c5e38adea199cb1339a6d75251786263a -->
+```
+        <source>Can't spend unconfirmed version 3 pre-selected input with a version %d tx</source>
+        <translation>Nemožno minúť nepotvrdený predvolený vstup verzie 3 s verziou %d tx</translation>
+    
+ERR
+The Slovak translation is understandable but slightly off: "predvolený" suggests "default" rather than "pre-selected", and "tx" should be localized to "transakcii" (or "transakcia") for clarity. Grammar/word order can be improved.
+
+Correct translation:
+Nemožno minúť nepotvrdený predvybraný vstup verzie 3 v transakcii s verziou %d
+```
+
 <!-- cache_translation_check_sk_ff3b95484f636b80b3d326c8f5c911c4fde1c9c6718a4d21b8e7970b12b7d3bd -->
 ```
         <source>Error: Got value that was not hex: %s</source>
@@ -282,6 +306,35 @@ The translation introduces a quotation mark around "solvable" and modifies the s
 
 Correct translation:
 Chyba: Nepodarilo sa zapísať záznam o ukazovateli najlepšieho bloku pre riešiteľnú peňaženku
+```
+
+<!-- cache_translation_check_sk_859ffaf7e7054dd4db70b67ed70b1b7b0c4c7bf4a9343576245a08de74129365 -->
+```
+        <source>Failed to acquire rescan reserver during wallet initialization</source>
+        <translation>Počas inicializácie peňaženky sa nepodarilo získať rezervátor pre opätovné skenovanie.</translation>
+    
+ERR
+The Slovak phrasing is understandable but uses an unnatural/incorrect term "rezervátor" and slightly awkward word order. Better to use "rezerva" or "zámok" depending on intended meaning.
+
+Suggested correction:
+Počas inicializácie peňaženky sa nepodarilo získať rezervu pre opätovné skenovanie.
+
+Or, if the meaning is a lock/reservation object:
+Počas inicializácie peňaženky sa nepodarilo získať zámok pre opätovné skenovanie.
+```
+
+<!-- cache_translation_check_sk_9658d7ad8aebbab64afdc55e7c092d560fbe5a845b8104a9ff3d7b0cb2e204a7 -->
+```
+        <source>Failed to close block undo file.</source>
+        <translation>Nepodarilo sa zatvoriť súbor s vrátením bloku späť.</translation>
+    
+ERR
+The Slovak translation is awkward/redundant and not idiomatic. "súbor s vrátením bloku späť" literally says "file with returning the block back" (double "back") and is unclear.
+
+Correct translation (idiomatic, concise):
+Nepodarilo sa zatvoriť undo súbor bloku.
+Alternate, more descriptive:
+Nepodarilo sa zatvoriť súbor undo pre blok.
 ```
 
 <!-- cache_translation_check_sk_34a9c7593596c254fc6a4ac418f5b8a1f9e5fb33a0ba9aeb27329d6af3f79577 -->
@@ -319,6 +372,55 @@ There is a typo/mistake in the translation: "Systémov chyba" should be "Systém
 Correct translation:
 Systémová chyba pri čítaní externého blokového súboru: %s
 ```
+
+<!-- cache_translation_check_sk_74694da9120db92b63981d7918dd277bee61187a24a9cedbafec81c655b900b7 -->
+```
+        <source>Error loading %s: Wallet is a legacy wallet. Please migrate to a descriptor wallet using the migration tool (migratewallet RPC).</source>
+        <translation>Chyba pri načítavaní %s: Peňaženka je staršia peňaženka. Prejdite na deskriptorovú peňaženku pomocou migračného nástroja (migratewallet RPC).</translation>
+    
+ERR
+The Slovak translation is understandable and preserves the format specifier, but it's slightly awkward/redundant: "Peňaženka je staršia peňaženka" repeats "peňaženka". 
+
+Corrected translation:
+Chyba pri načítavaní %s: Ide o starú peňaženku. Prejdite na deskriptorovú peňaženku pomocou migračného nástroja (migratewallet RPC).
+```
+
+<!-- cache_translation_check_sk_51a9e35006b171be35c5a54ff116eec854b07d8a7227ceebca2d5f829546b7c5 -->
+```
+        <source>Transaction requires one destination of non-zero value, a non-zero feerate, or a pre-selected input</source>
+        <translation>Transakcia vyžaduje jeden cieľ s nenulovou hodnotou, nenulový poplatok alebo vopred vybraný vstup.</translation>
+    
+ERR
+The Slovak is mostly understandable, but "feerate" was translated as "poplatok" (fee), which is different from "fee rate". Also a more natural phrasing is to use the feminine form for "sadzba" to match "feerate".
+
+Correct translation:
+Transakcia vyžaduje jeden cieľ s nenulovou hodnotou, nenulovú sadzbu poplatku alebo vopred vybraný vstup.
+```
+
+<!-- cache_translation_check_sk_e94f60c68c097fd2d6612911f0cd6ddf0fd42c570c25e44b839337aa7b93fb90 -->
+```
+        <source>Unrecognized descriptor found. Loading wallet %s
+
+The wallet might have been created on a newer version.
+Please try running the latest software version.
+</source>
+        <translation>Našiel sa nerozpoznaný deskriptor. Načítava sa peňaženka%s. 
+
+Peňaženka mohla byť vytvorená v novej verzii. 
+
+Spustite najnovšiu verziu softvéru.
+</translation>
+    
+ERR
+The translation has a missing space before the "%s" placeholder ("peňaženka%s"), and there are extra spaces/newlines. Slight stylistic improvement for the last sentence is suggested to match "Please try running the latest software version."
+
+Correct translation:
+Našiel sa nerozpoznaný deskriptor. Načítava sa peňaženka %s
+
+Peňaženka mohla byť vytvorená v novej verzii.
+
+Skúste spustiť najnovšiu verziu softvéru.
+```
 </details>
 
-Number of issues: 25.
+Number of issues: 32.

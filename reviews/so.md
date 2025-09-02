@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>so</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bso%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bso%5D%20request)
 
 
 <!-- cache_translation_check_so_ed54f0c944ff8c66f05daab3166e998e54b383da9cb80b6db9c7c18cc2805948 -->
@@ -26,27 +26,23 @@ Correct translation:
 Midig-guji si aad u tafatirto cinwaanka ama sumadda
 ```
 
-<!-- cache_translation_check_so_8794462ea542c595f3dfe7181db73ded0980a5c1a968eb4912b91a2d6abf054c -->
+<!-- cache_translation_check_so_9fc4685e01bcd83e61d33486080ec495917bfdd5956dd54d1a3d506805a63f11 -->
 ```
-        <source>New</source>
-        <translation>Hormarin</translation>
+        <source>C&amp;lose</source>
+        <translation>C&amp;Lose</translation>
     
 ERR
-The translation "Hormarin" is incorrect for "New." The correct translation for "New" in Somali is "Cusub."
+The translation simply copies the English word "Close" instead of translating it into Somali. Additionally, Somali does not use capital "L" in the middle of words. The ampersand is correctly preserved, but the word itself is not translated.
 
 Correct translation:
-Cusub
-```
+&Xidh
 
-<!-- cache_translation_check_so_2466dd9b8c1c371014aebd8e00ec31b58e5a553d2fb44c1a246014580e9a7109 -->
-```
-        <source>Close</source>
-        <translation>CLose</translation>
-    
-ERR
-The translation is incorrect—the word "CLose" is simply a misspelled/transliterated English word and is not Somali. Also, it uses a capital "L" unnecessarily. The correct Somali translation would be:
+Or, if using a more common Somali translation for "Close" (referring to closing a window or dialog):
 
-Xir
+&Xidh
+
+So the corrected version is:
+<translation>&amp;Xidh</translation>
 ```
 
 <!-- cache_translation_check_so_1c5eb298c6ed224284c1aba9e1cba0ce5fd1b3c89319ab2cdef6d1f9d0dff682 -->
@@ -61,22 +57,16 @@ Correct translation:
 Dhoofinta xogta ku jirta tabka hadda furan ee fayl.
 ```
 
-<!-- cache_translation_check_so_63c7f59030c745ffbbd25ac97b4d15239ff4477a873386b8ab4dc10d9d8396d9 -->
+<!-- cache_translation_check_so_ee79fe1337d2528393702c9b6e9f81cfe8166c68cc9c3a86474eb22f004814fd -->
 ```
-        <source>Export</source>
-        <translation> Dhoofinta</translation>
+        <source>&amp;Export</source>
+        <translation>&amp; Dhoofinta</translation>
     
 ERR
-There is an extra leading whitespace in the translation, which is a formatting issue. Also, while "Dhoofinta" means "The export" (noun), in software context "Export" as an action/button is better rendered as "Dhoof", which is the imperative/verb form.
+There is an errant space after the ampersand in the translation ("&amp; Dhoofinta"). The ampersand should be placed directly before the shortcut letter, with no intervening space.
 
 Correct translation:
-Dhoof
-
-Or, if noun is intended (less common for UI buttons):
-Dhoofin
-
-So the best translation here is:
-Dhoof
+& Dhoofinta
 ```
 
 <!-- cache_translation_check_so_642b09e0c1eadc1f910b4bf5dc3deb90bd9a3e6050d6ab6339ea139d34fd7c11 -->
@@ -89,18 +79,6 @@ The translation is incomplete and ungrammatical. The Somali translation cuts off
 
 Correct translation:
 Dooro cinwaanka aad dooneyso inaad u dirto qadaadiicda
-```
-
-<!-- cache_translation_check_so_33419517e087d01c0729b63874fb6bb4a4c462da6ca9617e6f6682be9d17ba31 -->
-```
-        <source>Choose</source>
-        <translation>CAagga</translation>
-    
-ERR
-There is a typographical error in the translation: "CAagga" is not correct in Somali, and the capitalization is inconsistent. The correct Somali translation for "Choose" is "Dooro".
-
-Correct translation:
-Dooro
 ```
 
 <!-- cache_translation_check_so_841934312a8345e56f967a10d531840f17786ba648ec90e0577113551a864e15 -->
@@ -117,35 +95,16 @@ Kuwani waa cinwaannadaaga Bitcoin ee lagu helo lacagaha. Isticmaal badhanka 'Abu
 Saxeexidda waxay suurtagal u tahay keliya cinwaanada nooca 'legacy'.
 ```
 
-<!-- cache_translation_check_so_6ef56bfe3564695bf23d86691ef1b13561a346bd26df7d864c865eabf27e4650 -->
+<!-- cache_translation_check_so_337efddd1d23e0c7ec24b00713522d47f9a55d47394a52815b9c048081542aa8 -->
 ```
-        <source>Copy Address</source>
-        <translation> Nuqul Kabaha Cinwaanka</translation>
+        <source>&amp;Copy Address</source>
+        <translation>&amp; Nuqul Kabaha Cinwaanka</translation>
     
 ERR
-There is an erroneous word in the translation. "Kabaha" means "shoes" in Somali, which is not correct here. Also, there is an extra space at the beginning of the translation.
+There is an error in the translation: "Nuqul Kabaha Cinwaanka" is not idiomatic Somali and appears to be mistranslated ("Kabaha" means "shoes"). The correct translation should be concise and context-appropriate.
 
 Correct translation:
-Nuqul cinwaanka
-
-Explanation:
-- "Nuqul" = "Copy"
-- "cinwaanka" = "the address"
-- Removed erroneous "Kabaha" and the stray leading space.
-```
-
-<!-- cache_translation_check_so_913119ce31f513d1ba8b3e3256a818d232f6f4c33a48404791e924c1c9886218 -->
-```
-        <source>Copy Label</source>
-        <translation>Nuqul  Label</translation>
-    
-ERR
-There is an unnecessary space between "Nuqul" and "Label". Somali ("so") language does not require this spacing, and keeping it introduces a formatting error. Furthermore, "Nuqul" is the correct term for "Copy", and "Label" can be left as is if there is no established Somali term; however, to avoid code mixing, "Label" could optionally be translated as "Sumad" (meaning "label" or "mark").
-
-Correct translation:
-Nuqul Label
-or, for a more Somali wording:
-Nuqul Sumad
+&Nuqul Cinwaanka
 ```
 
 <!-- cache_translation_check_so_d0df218a63a33a2bb068fb19d0a7e5204f49fa296322bc1fc40d393d016e6dfc -->
@@ -394,30 +353,32 @@ Correct translation:
 Waxaa dhacay qalad halis ah. Hubi in faylka dejinta la qori karo, ama isku day inaad ku socoto adigoo isticmaalaya -nosettings.
 ```
 
-<!-- cache_translation_check_so_b72e8c3e41d54bdb36882961cd5e1c3641cc2f41717d7a38f68099735e88698d -->
+<!-- cache_translation_check_so_4ae71ee31f60be049ffb459b807e761fdf2dc5d1bdb1ad5e6825ad576aaa3291 -->
 ```
-        <source>Transactions</source>
-        <translation>Transaction-yada</translation>
+        <source>&amp;Transactions</source>
+        <translation>&amp;Transaction-yada</translation>
     
 ERR
-The translation "Transaction-yada" is incorrect for Somali ('so'). It inappropriately blends English ("Transaction") with a Somali plural suffix ("-yada"). The correct Somali word for "Transactions" is "Xawaaladaha" or "Macamilada" depending on the context, but "Xawaaladaha" is commonly used for financial transactions.
+The translation mixes English ("Transaction") with a Somali suffix ("-yada" for plural), which is not standard or natural Somali. The translation should be fully in Somali.
 
 Correct translation:
-Xawaaladaha
+&Macamil
+or
+&Xawaalad
+
+(Depending on specific context, "Macamil" or "Xawaalad" are common Somali terms for "Transaction".)
 ```
 
-<!-- cache_translation_check_so_bbf621a44a201334dda273ff11c45f3c7eb2b08a2ac55efa95ad33a71e7fa556 -->
+<!-- cache_translation_check_so_b7cd0508d944ade9f8afcd650ed3264fc79d04398e6d36b046a21fdc3cf5d099 -->
 ```
-        <source>Exit</source>
+        <source>E&amp;xit</source>
         <translation>ka bax</translation>
     
 ERR
-The translation "ka bax" is understandable in Somali and means "get out" or "leave," but it is more colloquial and less formal than the appropriate imperative or menu context use for "Exit" in software.
+The translation "ka bax" (meaning "exit/get out" in Somali) misses the required shortcut key indication (&), which should appear exactly once, as in the source. Also, "ka bax" is informal for an application menu; the more standard Somali interface term would be "Ba&x".
 
 Correct translation:
-Bax
-
-This is more standard for application menus.
+Ba&x
 ```
 
 <!-- cache_translation_check_so_d0df218a63a33a2bb068fb19d0a7e5204f49fa296322bc1fc40d393d016e6dfc -->
@@ -433,22 +394,16 @@ Correct translation:
 Faylka kooxo lagu kala saaray faasiil (,)
 ```
 
-<!-- cache_translation_check_so_63c7f59030c745ffbbd25ac97b4d15239ff4477a873386b8ab4dc10d9d8396d9 -->
+<!-- cache_translation_check_so_ee79fe1337d2528393702c9b6e9f81cfe8166c68cc9c3a86474eb22f004814fd -->
 ```
-        <source>Export</source>
-        <translation> Dhoofinta</translation>
+        <source>&amp;Export</source>
+        <translation>&amp; Dhoofinta</translation>
     
 ERR
-There is an extra leading whitespace in the translation, which is a formatting issue. Also, while "Dhoofinta" means "The export" (noun), in software context "Export" as an action/button is better rendered as "Dhoof", which is the imperative/verb form.
+There is an errant space after the ampersand in the translation ("&amp; Dhoofinta"). The ampersand should be placed directly before the shortcut letter, with no intervening space.
 
 Correct translation:
-Dhoof
-
-Or, if noun is intended (less common for UI buttons):
-Dhoofin
-
-So the best translation here is:
-Dhoof
+& Dhoofinta
 ```
 
 <!-- cache_translation_check_so_1c5eb298c6ed224284c1aba9e1cba0ce5fd1b3c89319ab2cdef6d1f9d0dff682 -->
@@ -464,4 +419,4 @@ Dhoofinta xogta ku jirta tabka hadda furan ee fayl.
 ```
 </details>
 
-Number of issues: 33.
+Number of issues: 30.

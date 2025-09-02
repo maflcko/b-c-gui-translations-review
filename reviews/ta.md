@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>ta</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bta%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bta%5D%20request)
 
 
 <!-- cache_translation_check_ta_3cfb0a703f52bc4919671e95ef89c3ea43c709752c774a35c8be7bde6ff9cdae -->
@@ -19,6 +19,46 @@ The translation inaccurately renders "edit" as "மாற்ற" (change), which
 
 Correct translation:
 முகவரி அல்லது பெயர்ச்சீட்டில் திருத்த ரைட்-கிளிக் செய்யவும்
+```
+
+<!-- cache_translation_check_ta_809a5dc4897a03b5714ca9bdaa17bbb83c6426694b2a00a5990781c820353fb0 -->
+```
+        <source>&amp;Copy</source>
+        <translation>&amp;காபி</translation>
+    
+ERR
+The Tamil translation "&காபி" is problematic: "காபி" reads like "kaapi" (coffee) and is not the correct Tamil term for the UI action "Copy". Also the common Tamil UI translations use "நகல்" or "நகல் எடு" for "Copy".
+
+Correct translation examples (keep the single & for the shortcut):
+- &நகல்
+or
+- &நகல் எடு
+```
+
+<!-- cache_translation_check_ta_a5616347b8a4c087ff2be596da3293754b993ee6789e1eb53507177657da6c81 -->
+```
+        <source>C&amp;hoose</source>
+        <translation>தே&amp;ர்வுசெய் </translation>
+    
+ERR
+Issues:
+- There's an extra trailing space after the translation text.
+- In XML the ampersand is escaped as &amp; which is fine, but ensure exactly one shortcut marker exists (it does). The Tamil wording is acceptable.
+
+Correct translation (no trailing space):
+<translation>தே&amp;ர்வுசெய்</translation>
+```
+
+<!-- cache_translation_check_ta_9f19535b6f933ece432f9056849bf444de3e56c877ba6a9946418c66e0062d66 -->
+```
+        <source>Sending addresses - %1</source>
+        <translation>முகவரிகள் அனுப்பப்படுகின்றன - %1</translation>
+    
+ERR
+The Tamil translation reads more like "addresses are being sent - %1" (passive/progressive) rather than the intended label "Sending addresses - %1" (i.e. "addresses used for sending" or "sending addresses"). The format specifier %1 is preserved correctly.
+
+Suggested correction:
+அனுப்பும் முகவரிகள் - %1
 ```
 
 <!-- cache_translation_check_ta_369157b9992e375c4e78e2b2ec32a1431ef8c7bdb4ac86a200e964ff457072ab -->
@@ -204,6 +244,18 @@ or
 இல்லை
 ```
 
+<!-- cache_translation_check_ta_98599e39a1a86699614da4e8b3a2de1d62aa322905a9e00a742368a6a0ee1d15 -->
+```
+        <source>&amp;Overview</source>
+        <translation>&amp;கண்ணோட்டம்</translation>
+    
+ERR
+The Tamil word is misspelled. It should be "கண்ணோட்டம்" (overview). Keep the ampersand exactly once.
+
+Correct translation:
+&கண்ணோட்டம்
+```
+
 <!-- cache_translation_check_ta_ded693f1d3de039cc6ba3a018070fef05cc50fa39683ed2a4306d051e3198c22 -->
 ```
         <source>Browse transaction history</source>
@@ -214,6 +266,18 @@ The translation is inaccurate. The source says "Browse transaction history," but
 
 Correct translation:
 பரிவர்த்தனை வரலாற்றை ஆராய்க
+```
+
+<!-- cache_translation_check_ta_2cda72d36385dddfec0170ac1e01bb249b4ea0a6dca1ccaab9420cd24267568f -->
+```
+        <source>&amp;About %1</source>
+        <translation>&amp; %1 பற்றி</translation>
+    
+ERR
+The translation has the ampersand followed by a space ("& %1 பற்றி"). The ampersand marks the shortcut key and must not be separated by a space (placing it before a space could make the shortcut target the space character). The %1 placeholder is preserved, but the spacing is incorrect.
+
+Correct translation:
+&%1 பற்றி
 ```
 
 <!-- cache_translation_check_ta_39bfd6e6e98f8143026d18edcc152cb9afd3e9e91960ed134cc53c712f71d65e -->
@@ -245,6 +309,18 @@ Alternatively, for more clarity:
 Either would be contextually correct.
 ```
 
+<!-- cache_translation_check_ta_28500237da88289bb94dba596ed510a33548e1d30e5d2388f091111284b33cc3 -->
+```
+        <source>&amp;Options…</source>
+        <translation>&amp;விருப்பங்கள்</translation>
+    
+ERR
+The translation correctly uses Tamil for "Options" and includes a single & accelerator, but it omits the trailing ellipsis (…) present in the source.
+
+Correct translation:
+&amp;விருப்பங்கள்…
+```
+
 <!-- cache_translation_check_ta_097227917ff562191645a0ab538563a7eff9cd30d7c98b439cf9af8d08b42db7 -->
 ```
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
@@ -271,6 +347,33 @@ Correct translation:
 குறிப்பிடப்பட்ட பிட்காயின் முகவர்களுடன் கையொப்பமிடப்பட்டுள்ளதை உறுதிப்படுத்த, செய்திகளை சரிபார்க்கவும்
 ```
 
+<!-- cache_translation_check_ta_e538ec831137d0a739eebe4eda2ee0569bbe05438a6c863e31897d73fc93bed8 -->
+```
+        <source>Open &amp;URI…</source>
+        <translation>திறந்த &amp;URI...</translation>
+    
+ERR
+The Tamil translation uses "திறந்த" (opened/past tense) which is incorrect for a menu command that should be an instruction ("Open…"). Also the source uses a single ellipsis character (…) while the translation uses three dots; better to match the original. The ampersand & (shortcut marker) is present but should appear exactly once and placed appropriately.
+
+Suggested correction (keeping a single & and an ellipsis):
+URI-ஐ &திற…
+
+Or as a slightly more formal option:
+&URI-ஐ திற…
+```
+
+<!-- cache_translation_check_ta_05a90bb7bdd0ff4ce144f672200c7614c0303761e81fe42a2dd495b24f252ca2 -->
+```
+        <source>&amp;File</source>
+        <translation>&amp;கோப்புறை</translation>
+    
+ERR
+The Tamil word "கோப்புறை" is uncommon for the standard "File" menu label — the usual UI translation is "கோப்பு" (or "கோப்புகள்" for plural). The ampersand is used correctly.
+
+Correct translation:
+&amp;கோப்பு
+```
+
 <!-- cache_translation_check_ta_b776094b8cc53b7e47a6a191b2c1fa175be957ed0611e33151c102ec79305a5e -->
 ```
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
@@ -286,6 +389,18 @@ Correct translation:
 பணம் கோருதல் (QR குறியீடுகள் மற்றும் bitcoin: URIகளை உருவாக்குகிறது)
 ```
 
+<!-- cache_translation_check_ta_3d3bd82a627cf82eea2f52f8a94f81c3795878cfc8e745b5b1793178f785a1d2 -->
+```
+        <source>&amp;Command-line options</source>
+        <translation>&amp; கட்டளை வரி விருப்பங்கள்</translation>
+    
+ERR
+The translation is correct in meaning ("command-line options") but has a formatting issue: the ampersand (&) used for the shortcut marker is followed by a space. The & should be directly before the character it marks (no space).
+
+Correct translation:
+&கட்டளை வரி விருப்பங்கள்
+```
+
 <!-- cache_translation_check_ta_3d30e9f9d5c66656ed442e37fbfda502186c9791caa9a5aec04a5e0bb680efdd -->
 ```
         <source>Up to date</source>
@@ -298,16 +413,28 @@ Correct translation:
 நவீனமடைந்தது
 ```
 
-<!-- cache_translation_check_ta_b21b7b77371d8767c9cd43ebebc7a1133f2dabd5ce2c56b018dc3f0d5f3ed96d -->
+<!-- cache_translation_check_ta_b0561675f450e52069abd51ce4b2ac1ab1edeb3ed41701bc8ee6e2c18ac549cd -->
 ```
-        <source>Sending addresses</source>
+        <source>&amp;Sending addresses</source>
         <translation>முகவரிகள் அனுப்புகிறது</translation>
     
 ERR
-The translation is incorrect. The given translation "முகவரிகள் அனுப்புகிறது" translates back as "addresses is sending", which is grammatically wrong and unclear in Tamil. It should refer to "addresses used for sending" (i.e., "sending addresses").
+The Tamil translation is grammatically incorrect and does not include the required shortcut ampersand (&). "முகவரிகள் அனுப்புகிறது" reads as "addresses sends" (wrong word order/verb form). A correct noun phrase for "Sending addresses" is "அனுப்பும் முகவரிகள்". Include the ampersand exactly once for the shortcut, e.g.:
 
 Correct translation:
-அனுப்பும் முகவரிகள்
+&அனுப்பும் முகவரிகள்
+```
+
+<!-- cache_translation_check_ta_23fff333a39b5f2061f380a0ab479854efc12e541c6cc9e13208d3b8f2d687d3 -->
+```
+        <source>&amp;Receiving addresses</source>
+        <translation>முகவரிகள் பெறுதல்</translation>
+    
+ERR
+The translation is missing the required shortcut ampersand (&) from the source. Also the Tamil phrase can be improved for clarity.
+
+Suggested correction (with single & preserved):
+&பெறுநர் முகவரிகள்
 ```
 
 <!-- cache_translation_check_ta_722a9dca5c24c229102cdd6bde3316046f4a56b68e60dae1097c8b7d707361c7 -->
@@ -326,6 +453,18 @@ Explanation:
 - The URI is left as-is, which is acceptable in technical contexts.
 - The verb is more naturally placed last, as is common in Tamil sentence structure.
 - Added "-ஐ" to mark the accusative case (object marker), making the sentence grammatically correct.
+```
+
+<!-- cache_translation_check_ta_9dedbdea6938d478142681113b22bc941deac50f035ea9af6a2a800b0ae9603c -->
+```
+        <source>S&amp;how</source>
+        <translation>காண்பி</translation>
+    
+ERR
+The translation is missing the required shortcut ampersand (&). The source contains "S&amp;how" (one & indicating a shortcut); the Tamil translation must include exactly one & as well.
+
+Suggested correction:
+&காண்பி
 ```
 
 <!-- cache_translation_check_ta_cb63f4c90b06299f488814207058923706ec530d59b190c7693d059c4b956b5b -->
@@ -433,6 +572,18 @@ Correct translation:
 பைட்டுகளை நகலெடு
 ```
 
+<!-- cache_translation_check_ta_41cf25bfa97209725f5e5910eb1511bec53f99b1d69ce0b25b0d363253ce29e1 -->
+```
+        <source>&amp;Label</source>
+        <translation>&amp; சிட்டை</translation>
+    
+ERR
+The Tamil translation is incorrect and has an extra space after the ampersand. "சிட்டை" is not the proper word for "Label" in this UI context, and the & should be attached to the label text (no stray space) to mark the shortcut. 
+
+Correct translation:
+&லேபிள்
+```
+
 <!-- cache_translation_check_ta_a2e003157af5674de748085daf217f76bfe5d77db0e1eac26fa01933c71dfc33 -->
 ```
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
@@ -493,76 +644,167 @@ Correct translation:
 ஒத்திசைக்கப்படும் வரை மதிப்பிடப்பட்ட நேரம்
 ```
 
-<!-- cache_translation_check_ta_38b198351faf01a0fb2c8d4aeb037b10c64aab1e3f1b5fef62b0cc53f9a7cf77 -->
+<!-- cache_translation_check_ta_fb44959f9201ac88a31596a8b34e6651b9d41d8539d461c4ff1a7ea7a9e4a547 -->
 ```
-        <source>Prune block storage to</source>
-        <translation>பிரவுன்  தடுப்பு சேமிப்பு</translation>
+        <source>&amp;Start %1 on system login</source>
+        <translation>கணினி உள்நுழைவில் %1 ஐத் தொடங்குங்கள்</translation>
     
 ERR
-The translation is incomplete and does not convey the meaning of "to" (which indicates a size or limit). "Prune" is also transliterated instead of translated. 
+The translation is correct Tamil and preserves %1, but it is missing the single '&' mnemonic from the source. Add the '&' exactly once (placed before a letter in the translation).
 
 Correct translation:
-தடுப்பு சேமிப்பை குறைத்து கொண்டிருக்க (to a size)
+கணினி உள்நுழைவில் %1 ஐத் &தொடங்குங்கள்
 ```
 
-<!-- cache_translation_check_ta_8d2aff5c9eeff3680c72098efcb76778d0c63373a9bbd3c498f264739ea39770 -->
+<!-- cache_translation_check_ta_a24599415c2d1365599d7979986fe63fb2772ab074cd72261f9613a7759a546e -->
 ```
-        <source>Allow incoming connections</source>
-        <translation>Incomin  g இணைப்புகளை அனுமதிக்கவும்</translation>
+        <source>Size of &amp;database cache</source>
+        <translation>&amp; தரவுத்தள தேக்ககத்தின் அளவு</translation>
     
 ERR
-There is a typographical error: "Incomin  g" has an unnecessary space and is in English instead of Tamil. The translation should be entirely in Tamil.
+The Tamil contains a misspelling/incorrect rendering for "cache" ("தேக்ககத்தின்" is wrong). Also there's an extra space after the ampersand. The shortcut marker (&) should appear exactly once and directly precede the word (no stray space is preferred).
 
 Correct translation:
-செயல்படுத்தும் இணைப்புகளை அனுமதிக்கவும்
+&தரவுத்தள கேஷ் அளவு
 ```
 
-<!-- cache_translation_check_ta_f5dabdd56231da5f963a99356a25869a45da43e6fa201e6ed7fdde7747627414 -->
+<!-- cache_translation_check_ta_9903751df448c8ba65f165d8b8ee21ff80a715e9d978857082de7972bc555381 -->
 ```
-        <source>Port:</source>
-        <translation> போர்ட்:</translation>
+        <source>Number of script &amp;verification threads</source>
+        <translation>ஸ்கிரிப்ட் &amp; சரிபார்ப்பு நூல்கள் எண்ணிக்கை</translation>
     
 ERR
-There is an unnecessary leading space before "போார்ட்:". There should be no space at the start of the translation.
+"நூல்கள்" is incorrect for "threads" (நூல்கள் means "books"). Use a Tamil term for computing threads such as "தொடர்கள்". The ampersand (shortcut) is present once, which is fine.
 
 Correct translation:
-போர்்ட்:
+ஸ்கிரிப்ட் &சரிபார்ப்பு தொடர்கள் எண்ணிக்கை
 ```
 
-<!-- cache_translation_check_ta_630331d6160b3458de51463a6b9813e227dc68e04dc3b8c859ccca0f7fc2a74b -->
+<!-- cache_translation_check_ta_1f5d54524aa17366eb82a613770f664f0772c8d934c7d85bbf2945d4331e2ef4 -->
 ```
-        <source>Minimize to the tray instead of the taskbar</source>
-        <translation> Taskbar க்கு பதிலாக தட்டில் குறைக்கவும்</translation>
+        <source>Prune &amp;block storage to</source>
+        <translation>பிரவுன் &amp; தடுப்பு சேமிப்பு</translation>
     
 ERR
-There is an unnecessary space at the beginning of the translation. Also, "tray" can be better translated as "System Tray" for clarity, "தட்டி" (thatti) is not a commonly used term for 'system tray' in Tamil; "சிஸ்டம் டிரே" is preferred. 
+The translation is inaccurate and incomplete. It transliterates "Prune" as "பிரவுன்", omits the trailing "to" (வரை) from the source, and is unnatural Tamil.
 
-Correct translation:
-பணிப் பட்டிக்குப் பதிலாக சிஸ்டம் டிரேவில் குறைக்கவும்
+Correct translation (preserving a single & for the shortcut):
+&பிளாக் சேமிப்பை குறைக்க வரை
 ```
 
-<!-- cache_translation_check_ta_742957145aab7576453e95209178fe0b64f8850c15c0223ec8db0d4a9d67c849 -->
+<!-- cache_translation_check_ta_ed6aa2e09751cdff60b25994756df1439d605cdea5cbf16aa7a4064a96cb11ab -->
 ```
-        <source>Minimize on close</source>
-        <translation>எம்  நெருக்கமாக உள்ளமை</translation>
+        <source>Enable coin &amp;control features</source>
+        <translation>நாணயம் மற்றும் கட்டுப்பாட்டு அம்சங்களை இயக்கவும்</translation>
     
 ERR
-The translation is incorrect. The provided Tamil translation ("எம்  நெருக்கமாக உள்ளமை") does not convey the meaning of "Minimize on close". There is also an unnecessary extra space after "எம்".
+The translation is understandable Tamil ("Enable coin and control features") but it omits the required single '&' shortcut marker present in the source. Also consider using the more natural spacing/wording with the ampersand placed before the "control" word.
 
 Correct translation:
-மூடும்போது குறைத்து வைக்கவும்
+நாணய &கட்டுப்பாட்டு அம்சங்களை இயக்கவும்
 ```
 
-<!-- cache_translation_check_ta_880d561918519d232c51b93d9d7640aaccd451ccfc7fe94262ff1efb58893883 -->
+<!-- cache_translation_check_ta_7e0d60f9f4263c59b3eb3fab7ab797587e2dbf6598a2aafc495d1f4b2fd78001 -->
 ```
-        <source>Unit to show amounts in:</source>
-        <translation> அளவு:</translation>
+        <source>&amp;Spend unconfirmed change</source>
+        <translation>&amp; உறுதிப்படுத்தப்படாத மாற்றத்தை செலவழிக்கவும்</translation>
     
 ERR
-The translation is incomplete and does not convey the full meaning of the source text. The phrase "Unit to show amounts in:" provides context that is missing in the translation, which only says "amount:".
+The translation is correct in meaning but has a formatting issue: there's an extra space between the '&' and the Tamil text. The ampersand (shortcut marker) should appear exactly once and directly adjacent to the labeled character (no stray space).
+
+Corrected translation:
+&உறுதிப்படுத்தப்படாத மாற்றத்தை செலவழிக்கவும்
+```
+
+<!-- cache_translation_check_ta_514c93efb212b533ccce29315ff3def9906af1f7ab9747dfef8a36fcb237ca40 -->
+```
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Incomin &amp; g இணைப்புகளை அனுமதிக்கவும்</translation>
+    
+ERR
+The translation mixes English and Tamil ("Incomin & g இணைப்புகளை அனுமதிக்கவும்"), leaves the source word untranslated, has an extra space around the ampersand, and doesn't place the shortcut (&) correctly. The ampersand must appear exactly once and there should be no stray spaces.
+
+Correct translation (with a single & for the accelerator):
+வரும் &இணைப்புகளை அனுமதிக்கவும்
+```
+
+<!-- cache_translation_check_ta_bdeb58a66ce7e4a5b79c42b80a0564c0920c0ed3070b39eb67b8a19928e6c190 -->
+```
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>&amp; SOCKS5 ப்ராக்ஸி மூலம் இணைக்கவும் (இயல்புநிலை ப்ராக்ஸி):</translation>
+    
+ERR
+The translation is correct in meaning, but there's an extra space after the ampersand. The & should appear exactly once and typically directly adjacent to the label (no stray space).
+
+Corrected translation:
+&amp;SOCKS5 ப்ராக்ஸி மூலம்இணைக்கவும் (இயல்புநிலை ப்ராக்ஸி):
+```
+
+<!-- cache_translation_check_ta_4444cf9feaeb25d76b996b8b20e122e463fef72e8acf20af872cca7131ee7f4e -->
+```
+        <source>Proxy &amp;IP:</source>
+        <translation>ப்ராக்சி ஐ பி:</translation>
+    
+ERR
+The translation is missing the shortcut marker (&) and introduces an unintended space between the letters for "IP" (ஐ பி). The source contains "&" (used for shortcut) and it must appear exactly once in the translation. 
+
+Correct translation (keep ampersand and no extra spaces):
+ப்ராக்சி &IP:
+```
+
+<!-- cache_translation_check_ta_c882435e19aa0c3dc1d7f82f189ffc2691324018425cf57a55982d059096e257 -->
+```
+        <source>&amp;Port:</source>
+        <translation>&amp; போர்ட்:</translation>
+    
+ERR
+Issues:
+- There's an extra space between '&' and the word. The '&' (shortcut marker) should appear exactly once and can be adjacent to the following character (commonly placed directly before the letter used as the shortcut).
+- Minor orthography: the Tamil word is better written as "போர்ட்" rather than "போர்ட்".
 
 Correct translation:
-அளவை காண்பிக்க வேண்டிய அலகு:
+&amp;போர்ட்:
+```
+
+<!-- cache_translation_check_ta_afa8c0eda1e91de040c562f52b3ff317d2d056d5820fcbfbcb07686ebc2b5d60 -->
+```
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp; Taskbar க்கு பதிலாக தட்டில் குறைக்கவும்</translation>
+    
+ERR
+Problems:
+- The Tamil word "தட்டில்" literally means "on a plate" and is not an appropriate translation for "tray" in the UI sense (system tray). 
+- There's an extra space after the ampersand ("& Taskbar..."); the & should be present exactly once but should not have stray spacing immediately after it.
+- Prefer more natural Tamil word order/phrasing for "minimize to the tray instead of the taskbar".
+
+Suggested correct translation (keeps single & and uses appropriate wording):
+&Taskbar-ஐ விட சிஸ்டம் ட்ரேவில் குறைக்கவும்
+```
+
+<!-- cache_translation_check_ta_fc431a8ea4977f0c6f447af60676ba7109ba56e1f514f744ccb216df4cf2d0e2 -->
+```
+        <source>M&amp;inimize on close</source>
+        <translation>எம் &amp; நெருக்கமாக உள்ளமை</translation>
+    
+ERR
+The Tamil translation is incorrect/unnatural. "எம் &amp; நெருக்கமாக உள்ளமை" is not a correct rendering of "Minimize on close" and the wording is odd.
+
+Keep exactly one & for the shortcut. A natural Tamil UI translation would be:
+
+Correct translation:
+&amp;மூடும்போது சுருக்கவும்
+```
+
+<!-- cache_translation_check_ta_a0996c464c3e85582ea0eac41499f959cdd304136c3a23fc2ff1cbf1365e93c9 -->
+```
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>&amp; அளவு:</translation>
+    
+ERR
+The translation "& அளவு:" is too short and loses the meaning "Unit to show amounts in:" (it also has an extra space after '&'). Keep the '&' present exactly once and convey that this is the unit used to display amounts.
+
+Correct translation:
+&அளவுகளை காண்பிக்க அலகு:
 ```
 
 <!-- cache_translation_check_ta_fb7f5204c6172a430795adb6a0d3f8d7ac7db45b18122de07728688ff22e4645 -->
@@ -641,6 +883,30 @@ Correct translation:
 URI மிக நீளமாக உள்ளது, லேபிள் அல்லது செய்திக்கான உரையை குறைக்கும் முயற்சி செய்யவும்.
 ```
 
+<!-- cache_translation_check_ta_01bafc05495a211d32cb8bbecfe4c7a6468c72f51c4d2eaf9f5230d01650e1cd -->
+```
+        <source>&amp;Reset</source>
+        <translation>&amp; மீட்டமை</translation>
+    
+ERR
+The Tamil translation is correct in meaning ("மீட்டமை" = "Reset"), but there is an extra space after the ampersand. The & should appear exactly once and not be separated by a space from the text.
+
+Correct translation:
+&amp;மீட்டமை
+```
+
+<!-- cache_translation_check_ta_a056115fe3f01e6946ff21526399d3c76e74cd3852fe977274ff35e7eb9ee6ad -->
+```
+        <source>&amp;Peers</source>
+        <translation>&amp;சக</translation>
+    
+ERR
+The translation "&சக" is not a natural Tamil rendering of "Peers" (it may be unclear or incorrect). The ampersand is used correctly, but the word choice is problematic.
+
+Suggested correct translation:
+&பியர்கள்
+```
+
 <!-- cache_translation_check_ta_cd7746e837b41453f32b6896c7ac09d1ae373256303e865655b7dc19d7598949 -->
 ```
         <source>Last Receive</source>
@@ -651,6 +917,60 @@ The translation "கடைசியாக பெறவும்" literally means
 
 Correct translation:
 கடைசியாக பெற்றது
+```
+
+<!-- cache_translation_check_ta_de18ac6a8f97d496d88fbec4a8a40009c151ebd59958e943d0867a152d3887f2 -->
+```
+        <source>&amp;Console</source>
+        <translation>&amp;பணியகம்</translation>
+    
+ERR
+The Tamil translation "&பணியகம்" means "office" (or workplace), which is not an appropriate rendering of the UI term "Console". The ampersand is present correctly, but the semantic translation is incorrect.
+
+Suggested correction:
+&கான்சோல்
+```
+
+<!-- cache_translation_check_ta_75328b8620451f267185888d337bb24c6e538ba57d4958030ea20cee0e94a94c -->
+```
+        <source>&amp;Network Traffic</source>
+        <translation>&amp; நெட்வொர்க் ட்ராஃபிக்</translation>
+    
+ERR
+There is an extra space between the ampersand (&) and the Tamil text. The source has the ampersand directly before the word; keep the accelerator marker exactly once and avoid the stray space.
+
+Correct translation:
+&amp;நெட்வொர்க் ட்ராஃபிக்
+```
+
+<!-- cache_translation_check_ta_c82d5e9a501f90ad6dc06194ab462dd8e462b00ab66e9422fba9a416e15ee84a -->
+```
+        <source>&amp;Disconnect</source>
+        <translation>&amp; துண்டி</translation>
+    
+ERR
+Problems:
+- The translation uses a space after the ampersand ("& துண்டி"). The ampersand should appear exactly once and normally directly precede the shortcut character without an extra space (e.g. "&த...").
+- The Tamil word "துண்டி" is not an appropriate UI label for "Disconnect" by itself; it reads like "fragment/cut" and is not a natural command. A clearer UI wording is "தொடர்பை துண்டிக்க" (disconnect the connection) or "இணைப்பை துண்டிக்க".
+
+Corrected suggestions (place ampersand before the desired shortcut key character; no extra space):
+- &தொடர்பை துண்டிக்க
+or shorter:
+- &இணைப்பை துண்டிக்க
+```
+
+<!-- cache_translation_check_ta_4a8789f9e4cec6b41be4d375a69ddba5121fffdf1a57e9efe83b85d26d1ace30 -->
+```
+        <source>&amp;Unban</source>
+        <translation>&amp; நீக்கு</translation>
+    
+ERR
+Problems:
+- The Tamil word "நீக்கு" alone is ambiguous; a clearer translation for "Unban" is "தடை நீக்கு" or "தடை அகற்று" (meaning "remove ban").
+- The ampersand is separated from the text by a space ("& நீக்கு"); the ampersand should be adjacent to the label character (no stray space).
+
+Correct translation suggestion (ampersand placed before first letter, no extra space):
+<translation>&தடை நீக்கு</translation>
 ```
 
 <!-- cache_translation_check_ta_bcbe1595fe717493d923d117bfd5f7d6ccb84b54f4bbc853c56afbfbb173ee84 -->
@@ -682,6 +1002,30 @@ Or a more accurate passive construction:
 "%1" பணியகத்தை பயன்படுத்தி கட்டளை இயக்கப்படுகிறது
 ```
 
+<!-- cache_translation_check_ta_a1b800e11f9d4d0c7a6d587d6ff2b63543d9d64ea2d155a2c8f2f65599530405 -->
+```
+        <source>Never</source>
+        <translation>ஒருகாலம் இல்லை</translation>
+    
+ERR
+The Tamil translation "ஒருகாலம் இல்லை" is unnatural/incorrect for the single-word English "Never". No format specifiers are involved and spacing is fine, but the phrasing should be changed.
+
+Correct translation:
+ஒருபோதும்
+```
+
+<!-- cache_translation_check_ta_bece5d5a1233db5b5b21c3a426955b13cfe65e250577fd14a5b8d100b4e7e822 -->
+```
+        <source>&amp;Label:</source>
+        <translation>&amp;சிட்டை:</translation>
+    
+ERR
+The Tamil word "சிட்டை" is not a correct or natural rendering of "Label" in this UI context. The ampersand is fine, but the label text should be a commonly used term such as "லேபல்" or "குறிச்சொல்".
+
+Suggested correction:
+&லேபல்:
+```
+
 <!-- cache_translation_check_ta_61c4fd9e3b81d5a7ee0e8e6b760b9149058814500630f104d0ad2fd8ef71f837 -->
 ```
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
@@ -706,16 +1050,18 @@ Correct translation:
 தேர்ந்தெடுக்கப்பட்ட கோரிக்கையை காட்டு (ஒரு பதிவை இரட்டை கிளிக் செய்வதற்கு சமமானது)
 ```
 
-<!-- cache_translation_check_ta_82ea210d0ee563fc3aff70d52628b197569341ac23116c1441c210a2e4a14adf -->
+<!-- cache_translation_check_ta_bf186af7ac52bf35b335a4cf40f00cd9e22f1ae6037765b2c53a083116ba503d -->
 ```
-        <source>Copy URI</source>
-        <translation>நகலை URI</translation>
+        <source>Copy &amp;URI</source>
+        <translation>நகலை &amp;URI</translation>
     
 ERR
-The translation "நகலை URI" is incorrect. "நகலை" means "copy" as a noun, not as a verb, and the phrasing is unnatural. The correct translation should use the verb form, and ideally translate "URI" as is (since it's a technical term).
+The Tamil wording "நகலை &amp;URI" is awkward/unnatural: word order and form are not idiomatic Tamil for the UI action "Copy URI". Also the ampersand is present once (good) but should be placed in a more natural location.
 
-Correct translation:
-URI ஐ நகலெடு
+Suggested correction (keep a single & as XML entity &amp;):
+URI ஐ &amp;நகல்
+
+This reads as "Copy URI" in Tamil (more natural word order and verb form) while preserving a single shortcut marker.
 ```
 
 <!-- cache_translation_check_ta_cb63f4c90b06299f488814207058923706ec530d59b190c7693d059c4b956b5b -->
@@ -730,30 +1076,30 @@ Correct translation:
 தொகை
 ```
 
-<!-- cache_translation_check_ta_82ea210d0ee563fc3aff70d52628b197569341ac23116c1441c210a2e4a14adf -->
+<!-- cache_translation_check_ta_bf186af7ac52bf35b335a4cf40f00cd9e22f1ae6037765b2c53a083116ba503d -->
 ```
-        <source>Copy URI</source>
-        <translation>நகலை URI</translation>
+        <source>Copy &amp;URI</source>
+        <translation>நகலை &amp;URI</translation>
     
 ERR
-The translation "நகலை URI" is incorrect. "நகலை" means "copy" as a noun, not as a verb, and the phrasing is unnatural. The correct translation should use the verb form, and ideally translate "URI" as is (since it's a technical term).
+The Tamil wording "நகலை &amp;URI" is awkward/unnatural: word order and form are not idiomatic Tamil for the UI action "Copy URI". Also the ampersand is present once (good) but should be placed in a more natural location.
 
-Correct translation:
-URI ஐ நகலெடு
+Suggested correction (keep a single & as XML entity &amp;):
+URI ஐ &amp;நகல்
+
+This reads as "Copy URI" in Tamil (more natural word order and verb form) while preserving a single shortcut marker.
 ```
 
-<!-- cache_translation_check_ta_244c19c84e3f46ade26458cde2ee1c48457d73f1bbd719455dfffd1c22312ec9 -->
+<!-- cache_translation_check_ta_76cbd363bd494fbc0289179aa789f0bd3c49764490048652be30a1a8aa25cba9 -->
 ```
-        <source>Copy Address</source>
+        <source>Copy &amp;Address</source>
         <translation>நகலை விலாசம்</translation>
     
 ERR
-The Tamil translation "நகலை விலாசம்" is incorrect. It means "copy replica/address" or "duplicate address," which does not convey the imperative "Copy Address" as a button label or command.
+The Tamil translation is missing the shortcut ampersand (&) and the wording is unnatural. "நகலை விலாசம்" is awkward (literal word order reversed) and does not include the required single &.
 
-Correct translation:
-முகவரியை நகலெடுக்க
-
-This precisely means "Copy the address."
+Suggested correct translation (with one & for the shortcut):
+விலாசத்தை &நகலெடு
 ```
 
 <!-- cache_translation_check_ta_cb63f4c90b06299f488814207058923706ec530d59b190c7693d059c4b956b5b -->
@@ -768,18 +1114,20 @@ Correct translation:
 தொகை
 ```
 
-<!-- cache_translation_check_ta_dee8ca3ed8be7d49d6f4fc3701cfe0e764192252f8aaa082eb474ba2c718519a -->
+<!-- cache_translation_check_ta_7a711487341a6bdeb663a43e34e40d5e7841303bb8c0008b9c30dd77713b72bb -->
 ```
-        <source>Add Recipient</source>
-        <translation>சேர்  பெறுக</translation>
+        <source>Add &amp;Recipient</source>
+        <translation>சேர் &amp; பெறுக</translation>
     
 ERR
-There is an unnecessary space between "சேர்" and "பெறுக". Also, "பெறுக" means "receive", which isn't correct in this context; "Add Recipient" should be translated as "பெறுநரை சேர்க்கவும்" or "பெறுநர் சேர்".
+The Tamil translation is awkward/incorrect. "சேர் &amp; பெறுக" mixes words and uses the verb "பெறுக" (receive) incorrectly; word order and wording don't convey "Add Recipient". Also the accelerator (&) is placed between words with a space, which is unusual (it should be adjacent to the character it marks).
 
-Correct translation:
-பெறுநர் சேர்க்கவும்
-or 
-பெறுநர் சேர்
+Correct translations (with a single &):
+- &amp;பெறுநர் சேர்க்க
+or
+- பெறுநரை &amp;சேர்க்க
+
+Either is acceptable; both mean "Add recipient" in Tamil and include exactly one &.
 ```
 
 <!-- cache_translation_check_ta_34e19dc6a24ef9dedd22aadff005cc21e48813c2916d077f37113abf9612fc39 -->
@@ -793,16 +1141,16 @@ The translation has grammar and meaning issues. The Tamil text doesn't accuratel
 மிக குறைந்த கட்டணம் செலுத்துவது, பரிவர்த்தனை உறுதிப்படுத்தப்படாமல் இருக்க வழிவகுப்பதாக இருக்கலாம் (உதவிக்குறிப்பைப் படிக்கவும்)
 ```
 
-<!-- cache_translation_check_ta_4b5c543d823336b1049b1f81033b0fc9e9f78079b6b3a61f8791a3dcfc2e3583 -->
+<!-- cache_translation_check_ta_1e4c4a7b6dfdc2ce9f26b0bcfcfc1d5bc609cff50bfe48fc4de233d7aa857399 -->
 ```
-        <source>Clear All</source>
-        <translation>அழி அனைத்து</translation>
+        <source>Clear &amp;All</source>
+        <translation>அழி &amp;அனைத்து</translation>
     
 ERR
-The translation is understandable but not natural in Tamil. The phrase "அழி அனைத்து" is a literal word-for-word translation ("Delete all") instead of the more idiomatic or commonly used phrase for "Clear All". Also, the word order is unnatural in Tamil.
+The Tamil is awkward and misses the object marker. Natural imperative order is "அனைத்தையும் அழி" (erase/clear all). Also ensure the & shortcut appears exactly once.
 
-Correct translation:
-அனைத்தையும் நீக்கு
+Suggested correction:
+&அனைத்தையும் அழி
 ```
 
 <!-- cache_translation_check_ta_1eee82f8173c320b9db4aac507fc402844d73172ca0485797f2b57f5b2b41ac9 -->
@@ -867,6 +1215,44 @@ Correct translation:
 நீங்கள் கட்டணத்தை பின்னர் உயர்த்த முடியும் (Replace-By-Fee, BIP-125-ஐச் சுட்டுகிறது).
 ```
 
+<!-- cache_translation_check_ta_f6e2615620b55bfdb84a666ea92cd6755abbf515acb310ca8f22649288aa28e0 -->
+```
+        <source>Pay &amp;To:</source>
+        <translation>செலுத்து &amp;கொடு:</translation>
+    
+ERR
+Problems:
+- The phrase "செலுத்து கொடு:" is awkward/unidiomatic Tamil for the UI label "Pay To:"; it reads like two verbs.
+- The ampersand is encoded as "&amp;" in the translation; the UI expects a single '&' used once to mark the shortcut key.
+
+Suggested correct translation (with a single & for the shortcut):
+&பெறுநர்:
+```
+
+<!-- cache_translation_check_ta_bece5d5a1233db5b5b21c3a426955b13cfe65e250577fd14a5b8d100b4e7e822 -->
+```
+        <source>&amp;Label:</source>
+        <translation>&amp;சிட்டை:</translation>
+    
+ERR
+The Tamil word "சிட்டை" is not a correct or natural rendering of "Label" in this UI context. The ampersand is fine, but the label text should be a commonly used term such as "லேபல்" or "குறிச்சொல்".
+
+Suggested correction:
+&லேபல்:
+```
+
+<!-- cache_translation_check_ta_7794d893072ee0f677a39c39690abb7ef1c6f344378c28fc437157b183ded2da -->
+```
+        <source>S&amp;ubtract fee from amount</source>
+        <translation>கட்டணத்தை தொகையிலிருந்து வி&amp;லக்கு</translation>
+    
+ERR
+The Tamil wording uses "விலக்கு" (exemption), which doesn't mean "subtract" here. Also word order is awkward. The & shortcut exists exactly once (good), but it should be placed in a natural position.
+
+Correct translation (with single & for a shortcut):
+தொகையிலிருந்து கட்டணத்தை &கழி
+```
+
 <!-- cache_translation_check_ta_60de70954063bcef36a0fb40735691d44e523957db66a2e93dc9458a0161d024 -->
 ```
         <source>Send</source>
@@ -883,16 +1269,40 @@ Correct translation:
 அனுப்பு
 ```
 
-<!-- cache_translation_check_ta_4b5c543d823336b1049b1f81033b0fc9e9f78079b6b3a61f8791a3dcfc2e3583 -->
+<!-- cache_translation_check_ta_4d8db992019d8bd2c9211181a730ee2d550937c626fbd315d2a790fc2d86f6f7 -->
 ```
-        <source>Clear All</source>
-        <translation>அழி அனைத்து</translation>
+        <source>Sign &amp;Message</source>
+        <translation>கையொப்பம் &amp;செய்தி</translation>
     
 ERR
-The translation is understandable but not natural in Tamil. The phrase "அழி அனைத்து" is a literal word-for-word translation ("Delete all") instead of the more idiomatic or commonly used phrase for "Clear All". Also, the word order is unnatural in Tamil.
+Word order is awkward in Tamil. "கையொப்பம் &செய்தி" reads as "signature message" rather than the action "Sign Message". Also ensure the ampersand appears once (it does), but it's better placed before the noun that corresponds to "Message".
+
+Suggested correction:
+செய்தி &கையொப்பம்
+```
+
+<!-- cache_translation_check_ta_1e4c4a7b6dfdc2ce9f26b0bcfcfc1d5bc609cff50bfe48fc4de233d7aa857399 -->
+```
+        <source>Clear &amp;All</source>
+        <translation>அழி &amp;அனைத்து</translation>
+    
+ERR
+The Tamil is awkward and misses the object marker. Natural imperative order is "அனைத்தையும் அழி" (erase/clear all). Also ensure the & shortcut appears exactly once.
+
+Suggested correction:
+&அனைத்தையும் அழி
+```
+
+<!-- cache_translation_check_ta_af31f86d0f81f11c529fe89203ad8e0de4dc7658f92d43f0da21ec0833ac7a2a -->
+```
+        <source>Verify &amp;Message</source>
+        <translation>சரிபார்க்கவும் &amp;செய்தி</translation>
+    
+ERR
+The Tamil word order is unnatural (verb before noun) and the ampersand is HTML-escaped as "&amp;" instead of a single '&'. Also the mnemonic ampersand should appear exactly once. A better translation:
 
 Correct translation:
-அனைத்தையும் நீக்கு
+&செய்தியை சரிபார்க்கவும்
 ```
 
 <!-- cache_translation_check_ta_ef95ad511dc5bd38bc0110191de6d9a263cfa1c797f98464f6c00e3ccd52ccc2 -->
@@ -946,4 +1356,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 73.
+Number of issues: 105.

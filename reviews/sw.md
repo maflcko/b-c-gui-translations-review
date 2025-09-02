@@ -1,36 +1,63 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>sw</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bsw%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bsw%5D%20request)
 
 
-<!-- cache_translation_check_sw_a835c94fa3070202412b9ae4b11f7fb63030b31942e4f165b4402d2cff8dd00f -->
+<!-- cache_translation_check_sw_62419019a8d232cfdaa9851e736d8d5ee418f6fd4cf3098317a3d4351891673e -->
 ```
-        <source>Copy Label</source>
-        <translation>Nakili  Chapa</translation>
+        <source>C&amp;lose</source>
+        <translation>C&amp;Funga</translation>
     
 ERR
-There is an extra space between "Nakili" and "Chapa" that should not exist. The correct translation should not have double spacing.
+The translation includes an extra leading "C" that should not be present. The original uses a single '&' to mark the shortcut; the translation also has one '&' but has an incorrect extra character. No format specifiers or spacing issues otherwise.
 
 Correct translation:
-Nakili Chapa
+&Funga
 ```
 
-<!-- cache_translation_check_sw_3a4541a778f58b2d6c14142d6b66d07460cc51de10722b2e858e619bf35a31f3 -->
+<!-- cache_translation_check_sw_4f7bcd49ac64b9b550985cad69452acdc3b09edb653c3220282e1ec962cd8760 -->
 ```
-        <source>Edit</source>
-        <translation> hariri</translation>
+        <source>C&amp;hoose</source>
+        <translation>Chagua</translation>
     
 ERR
-There is a leading space before "hariri", which is unnecessary and causes a whitespace formatting issue. The correct translation should not have the leading space.
+The translation is missing the shortcut marker '&' from the source. The source contains a single '&' to mark the accelerator key and the translation must include exactly one '&' as well.
 
 Correct translation:
-<translation>Hariri</translation>
+<translation>&amp;Chagua</translation>
+```
+
+<!-- cache_translation_check_sw_dcbeb84ed4be3ca4d0cc577593ce8248d65d53d9c6d5913158a714fc1d549e1e -->
+```
+        <source>Copy &amp;Label</source>
+        <translation>Nakili &amp; Chapa</translation>
+    
+ERR
+Problems:
+- The Swahili word "Chapa" means "stamp/print", not "label". A better word for "label" is "lebo" or "lebuli".
+- There's an extra space between the ampersand and the following word ("& Chapa"); the ampersand should be immediately adjacent to the shortcut character (no stray space).
+- Ensure exactly one & appears.
+
+Correct translation suggestion:
+<translation>Nakili &amp;Lebo</translation>
+```
+
+<!-- cache_translation_check_sw_cc79a547cf94b7b5ec534f7ab556e70f03b6fff1ac4775d2757a5119e2505399 -->
+```
+        <source>&amp;Edit</source>
+        <translation>&amp; hariri</translation>
+    
+ERR
+The translation is correct lexically ("hariri" = "Edit"), but there is an extra space between the ampersand and the word ("&amp; hariri"). The ampersand indicating the shortcut should be immediately before the character and appear exactly once.
+
+Correct translation:
+&amp;Hariri
 ```
 
 <!-- cache_translation_check_sw_83a7147b69aed134ae02d3beda544071575bbd044601084dcea259aca4da05b2 -->
@@ -72,41 +99,189 @@ Alternative acceptable translation:
 Hitilafu isiyodhibitiwa
 ```
 
-<!-- cache_translation_check_sw_31f5be6c657334c0bd008ca689a6e06ad167a8103c39fbee0d8bb5141be00ea2 -->
+<!-- cache_translation_check_sw_dcffebfb11913ccc55b7f772ae6693a0799424522bcec0e1fdd6363831554271 -->
 ```
-        <source>Command-line options</source>
-        <translation>Chaguo za amri ya amri</translation>
+        <source>&amp;Transactions</source>
+        <translation>&amp;Shughuli za malipo</translation>
     
 ERR
-The translation is partially repetitive and a bit awkward. "Chaguo za amri ya amri" translates to "Options of command of command", which is redundant. The correct translation should be:
-
-Chaguo za mstari wa amri
-
-So the correct translation is:
-Chaguo za mstari wa amri
-```
-
-<!-- cache_translation_check_sw_55f12a01ed2169da4e0832a973807ad121574d25bcab2bb76e005862d0d64272 -->
-```
-        <source>Hide</source>
-        <translation>Ficha</translation>
-    
-ERR
-The translation "Ficha" in Swahili is incorrect for "Hide". The correct Swahili translation is "Ficha" for the verb "to hide", so contextually it could be correct, but "Hide" as a command (like a button) would better be translated as "Ficha" as well. However, since "Ficha" is already correct for Swahili "Hide", there is no problem.
-
-NO
-```
-
-<!-- cache_translation_check_sw_9f21b9fd7423b03bf48a947b4e5ebcf6089d4b9176ff14296a2b858d2cf321e4 -->
-```
-        <source>Show</source>
-        <translation>Jinsi  jinsi</translation>
-    
-ERR
-The translation is incorrect. "Jinsi jinsi" does not correspond to "Show" in Swahili. The correct translation should be "Onyesha".
+Translation is understandable but not the most natural for Bitcoin UI. "Shughuli za malipo" means "payment activities" and is somewhat specific; the common, concise UI term for "Transactions" in Swahili is "Miamala" (or "Muamala" depending on dialect).
 
 Correct translation:
-Onyesha
+&amp;Miamala
+```
+
+<!-- cache_translation_check_sw_7027bcbb1b251488c6eac59b8355160e5e7cd3fd3920648bb283bd1d6a8702a5 -->
+```
+        <source>&amp;About %1</source>
+        <translation>Kuhusu %1</translation>
+    
+ERR
+The translation is missing the shortcut ampersand (&) that appears in the source. It should include exactly one &. 
+
+Correct translation:
+&Kuhusu %1
+```
+
+<!-- cache_translation_check_sw_1c1dd507bdd8f13f02354655ebac24fb5420cd342c5475c95086a1b47a0eed83 -->
+```
+        <source>&amp;Minimize</source>
+        <translation>Kupunguza</translation>
+    
+ERR
+The translation is missing the shortcut indicator "&" from the source. No other issues.
+
+Correct translation:
+&amp;Kupunguza
+```
+
+<!-- cache_translation_check_sw_6246fd5ba0725f39fbe05dff9f700cb7be5282eeff45399594c0f7a32e427d75 -->
+```
+        <source>&amp;Encrypt Wallet…</source>
+        <translation>&amp;Simba Mkoba...</translation>
+    
+ERR
+"Simba" in Swahili means "lion", so the translation is incorrect. Also use the same ellipsis character as in the source.
+
+Correct translation (suggestions):
+&Fichamisha Mkoba…
+or
+&Enkripti Mkoba…
+```
+
+<!-- cache_translation_check_sw_dc82d49db11bb67491e11bad51058722586e6c9a8cb4363a20ae5a54db6b831c -->
+```
+        <source>Open &amp;URI…</source>
+        <translation>Fungua &amp;URI ...</translation>
+    
+ERR
+The Swahili translation is correct in meaning and preserves the shortcut (&) exactly once, but it has a spacing/punctuation issue: there's an extra space before the ellipsis and it uses three dots with a preceding space instead of the source's ellipsis character.
+
+Correct translation (no space before ellipsis, using the single ellipsis char):
+Fungua &URI…
+```
+
+<!-- cache_translation_check_sw_4c1ac8a54ee646332bd8e45ad129edc2698971aabb04bb6add548f749e7bc383 -->
+```
+        <source>&amp;Settings</source>
+        <translation>&amp;Vipimo</translation>
+    
+ERR
+"Vipimo" usually means "measurements" or "parameters" in Swahili; the more appropriate translation for "Settings" (as an application/menu label) is "Mipangilio".
+
+Correct translation:
+&Mipangilio
+```
+
+<!-- cache_translation_check_sw_aba9be6c2dc99d54508ad20ca219e6572fa46e701d8f197645de3712b49b9019 -->
+```
+        <source>&amp;Help</source>
+        <translation>&amp;Msaidie</translation>
+    
+ERR
+The Swahili translation uses "Msaidie" (imperative/verb) which is not the usual noun for a Help menu. The ampersand is preserved correctly, but the correct noun is "Msaada" (or "Saidia" in some contexts). 
+
+Correct translation:
+&amp;Msaada
+```
+
+<!-- cache_translation_check_sw_5531ac067eb35611e4def151e43f2435d7fe951dfd873745b5752eb076f0a24e -->
+```
+        <source>&amp;Command-line options</source>
+        <translation>&amp;Chaguo za amri ya amri</translation>
+    
+ERR
+The Swahili translation incorrectly repeats "amri" ("amri ya amri") and is therefore incorrect. Also a more natural rendering is needed.
+
+Correct translation:
+&Chaguo za mstari wa amri
+```
+
+<!-- cache_translation_check_sw_255c7be7921031a3f1a701c09a1af76ab32dffb1ad983525ca5c08ff302e3ffd -->
+```
+        <source>&amp;Receiving addresses</source>
+        <translation>&amp;Inapokea anwani</translation>
+    
+ERR
+The Swahili uses a verb form "Inapokea" ("receives") instead of a noun phrase for "Receiving addresses". Also the ampersand is present correctly but the grammar is wrong.
+
+Correct translation:
+&Anwani za kupokea
+```
+
+<!-- cache_translation_check_sw_0a01c22920741a4dcf59b4839e4787db931f1aa42b09f5cceb71830cfa77891e -->
+```
+        <source>&amp;Mask values</source>
+        <translation>&amp;Funga maadili</translation>
+    
+ERR
+The Swahili translation is inaccurate. "Funga maadili" means "close/lock morals/values" and uses "maadili" (morals/ethics) instead of numeric/field "values". The ampersand is present exactly once (OK).
+
+Correct translation:
+&Ficha thamani
+```
+
+<!-- cache_translation_check_sw_bc2f66b0a6f5bf9c266740d62b5ae332023170816e7e88b777a3ea4155f14c50 -->
+```
+        <source>S&amp;how</source>
+        <translation>Jinsi &amp; jinsi</translation>
+    
+ERR
+The Swahili translation is incorrect and awkward. "Jinsi jinsi" means "how how" (not "show"), and spacing around the ampersand is inconsistent with the source. The shortcut ampersand should appear exactly once and the correct Swahili verb for "Show" is "Onyesha".
+
+Correct translation:
+O&amp;nyesha
+```
+
+<!-- cache_translation_check_sw_7804636bff742301db50520a8bfb3cc3921c92fef132d47b11a78deec950665c -->
+```
+        <source>Copy &amp;label</source>
+        <translation>Nakili &amp;chapa</translation>
+    
+ERR
+"&chapa" is understandable but not the best Swahili choice for the UI term "label". A more common translation for a UI "label" is "lebo" (or "alama"). The ampersand is present exactly once, which is correct.
+
+Correct translation suggestion:
+Nakili &lebo
+```
+
+<!-- cache_translation_check_sw_48f5427ebbe2e910c6966fa8d58049900cc094367cb815c32b14e069512d3f41 -->
+```
+        <source>Copy transaction &amp;ID and output index</source>
+        <translation>Nakili &amp;Kitambulisho cha muamala na faharasa ya matokeo</translation>
+    
+ERR
+"faharasa ya matokeo" is unnatural/incorrect Swahili: "faharis(a)" is misspelled and "matokeo" means "results" (not the transaction output). Use "pato" for output or the borrowed "indeksi" for index. The ampersand is present exactly once (OK).
+
+Suggested correction:
+Nakili &kitambulisho cha muamala na nambari ya pato
+
+(Alternative using "index" loanword:
+Nakili &kitambulisho cha muamala na indeksi ya pato)
+```
+
+<!-- cache_translation_check_sw_f8a3d5d903ecffcebf0a0b97b95532dc96c075b65d31d34c2880d08b30d92bc0 -->
+```
+        <source>L&amp;ock unspent</source>
+        <translation>&amp;Funga ambayo haijatumika</translation>
+    
+ERR
+The Swahili is understandable but slightly awkward/incorrect: "ambayo haijatumika" is a singular relative clause and omits the noun; for UTXOs (plural) a plural form is better.
+
+Correct translation:
+&Funga zisizotumika
+```
+
+<!-- cache_translation_check_sw_1f516eea8faa90f303f929cfa11ba30e3afb948fa5f18ac6b918f588768b8b6a -->
+```
+        <source>&amp;Unlock unspent</source>
+        <translation>&amp;Fungua ambayo haijatumika</translation>
+    
+ERR
+The Swahili translation is understandable but slightly ungrammatical/awkward. "Fungua ambayo haijatumika" literally reads "Open which has not been used" and lacks proper agreement and natural phrasing.
+
+Corrected translation:
+&amp;Fungua zisizotumika
 ```
 
 <!-- cache_translation_check_sw_4cb3be6ad7bbd405628a73996cd65c2d24eed2b2dfbab4b4e32cf785fb4fa798 -->
@@ -131,6 +306,79 @@ The translation of "Error" as "Onyo" is incorrect. "Onyo" means "Warning" in Swa
 
 Correct translation:
 Hitilafu
+```
+
+<!-- cache_translation_check_sw_529ce375d4a989a1d749fa7d58c6e28cb377fa4d45f38a0f39064f20e1a94111 -->
+```
+        <source>Address</source>
+        <extracomment>Title of Peers Table column which contains the IP/Onion/I2P address of the connected peer.</extracomment>
+        <translation>Anuani</translation>
+    
+ERR
+The Swahili word is misspelled. "Anuani" should be "Anwani". No format specifiers or spacing issues.
+
+Correct translation:
+Anwani
+```
+
+<!-- cache_translation_check_sw_465130f02afc9db960995eafb87468479bd6186cb45afe540f955263806d5302 -->
+```
+        <source>&amp;Label:</source>
+        <translation>&amp;Chapa:</translation>
+    
+ERR
+"Chapa" in Swahili more directly means "print" or "stamp" and is not the most appropriate UI translation for "Label" in this context. The ampersand is used correctly and spacing is fine.
+
+Suggested translation:
+&Lebeli:
+```
+
+<!-- cache_translation_check_sw_7804636bff742301db50520a8bfb3cc3921c92fef132d47b11a78deec950665c -->
+```
+        <source>Copy &amp;label</source>
+        <translation>Nakili &amp;chapa</translation>
+    
+ERR
+"&chapa" is understandable but not the best Swahili choice for the UI term "label". A more common translation for a UI "label" is "lebo" (or "alama"). The ampersand is present exactly once, which is correct.
+
+Correct translation suggestion:
+Nakili &lebo
+```
+
+<!-- cache_translation_check_sw_465130f02afc9db960995eafb87468479bd6186cb45afe540f955263806d5302 -->
+```
+        <source>&amp;Label:</source>
+        <translation>&amp;Chapa:</translation>
+    
+ERR
+"Chapa" in Swahili more directly means "print" or "stamp" and is not the most appropriate UI translation for "Label" in this context. The ampersand is used correctly and spacing is fine.
+
+Suggested translation:
+&Lebeli:
+```
+
+<!-- cache_translation_check_sw_7804636bff742301db50520a8bfb3cc3921c92fef132d47b11a78deec950665c -->
+```
+        <source>Copy &amp;label</source>
+        <translation>Nakili &amp;chapa</translation>
+    
+ERR
+"&chapa" is understandable but not the best Swahili choice for the UI term "label". A more common translation for a UI "label" is "lebo" (or "alama"). The ampersand is present exactly once, which is correct.
+
+Correct translation suggestion:
+Nakili &lebo
+```
+
+<!-- cache_translation_check_sw_bd3851e85fb4f82ac393697e2ee9fdc15d7c0833e4d045264dc5f2061cbc51c9 -->
+```
+        <source>&amp;Edit address label</source>
+        <translation>&amp;Hariri chapa ya anuani</translation>
+    
+ERR
+Word choice and spelling are off. "chapa ya anuani" is unnatural (and "anuani" is a misspelling of "anwani"); "label" is better translated as "lebo".
+
+Correct translation:
+&amp;Hariri lebo ya anwani
 ```
 
 <!-- cache_translation_check_sw_4cb3be6ad7bbd405628a73996cd65c2d24eed2b2dfbab4b4e32cf785fb4fa798 -->
@@ -158,4 +406,4 @@ Zaidi ya anuani moja ya onion bind imetolewa. %s inatumiwa kwa ajili ya huduma y
 ```
 </details>
 
-Number of issues: 12.
+Number of issues: 32.

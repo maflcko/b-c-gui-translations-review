@@ -1,13 +1,25 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>ca</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bca%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bca%5D%20request)
 
+
+<!-- cache_translation_check_ca_6e7e27a0c71fa0d7a505aa9f7741b5b3076adce9ff70d7a7c6106050ec6ed8c0 -->
+```
+        <source>Copy the currently selected address to the clipboard</source>
+        <translation>Copia les adreçes seleccionades al porta-retalls</translation>
+    
+ERR
+Pluralization and spelling are incorrect. It should be singular and "adreces" is misspelled.
+
+Correct translation:
+Copia l'adreça seleccionada al porta-retalls
+```
 
 <!-- cache_translation_check_ca_1ef7dd59fbcc90e12fc6ab0aef28b3294f9490ce19799998803852e2537db485 -->
 ```
@@ -36,6 +48,18 @@ Correct translation:
 Error: %1
 ```
 
+<!-- cache_translation_check_ca_ceea8edca337277da702f6a3afdfa81fbaa9d7b836e0ef13d1f40fdf93aed2ee -->
+```
+        <source>Default system font "%1"</source>
+        <translation>%1Sistema de tipus de lletra per defecte "% 1"</translation>
+    
+ERR
+The placeholder is duplicated and incorrectly spaced ("% 1"). There is also stray text ("%1" at the start) and awkward word order.
+
+Correct translation:
+Tipus de lletra del sistema per defecte "%1"
+```
+
 <!-- cache_translation_check_ca_7f6a9af3c8931728b5d386e09e1b3db476be95069e4ee87478cd7b913731015f -->
 ```
         <source>Full Relay</source>
@@ -47,6 +71,19 @@ The translation "Trànsit completat" does not accurately convey the meaning of "
 
 Correct translation:
 Relé complet
+```
+
+<!-- cache_translation_check_ca_01bcdbb4c2507786e5f8f91a1edf787b6465f9add08ae841ffb818be6b1a5f67 -->
+```
+        <source>&amp;Receive</source>
+        <translation>&amp;Rep</translation>
+    
+ERR
+The translation of "&amp;Receive" as "&amp;Rep" is incorrect. "Rep" is not the proper Catalan word for "Receive". The correct translation should be "&amp;Rebre".
+
+Correct translation:
+&amp;Rebre
+</reply>
 ```
 
 <!-- cache_translation_check_ca_ca626bf9b2d0ce74d2e623f27deb30547b710f0d66268167e907a8c111a56c32 -->
@@ -71,6 +108,30 @@ The translation contains an inconsistency in the use of formal and informal addr
 
 Correct translation:
 Signa els missatges amb les teves adreces de Bitcoin per provar que en són teves
+```
+
+<!-- cache_translation_check_ca_7315aa6db96914c150e1ba81d2d911968a9fc5dcdaf4b9dd4e884f79b5724b1b -->
+```
+        <source>&amp;Load PSBT from file…</source>
+        <translation>&amp;Carrega el PSBT des del fitxer ...</translation>
+    
+ERR
+There is an unnecessary space before the ellipsis and an incorrect ellipsis character (three periods instead of a single Unicode ellipsis). Also, "des del fitxer" is acceptable, but a more standard translation would omit "el" before "PSBT". The ampersand is used correctly.
+
+Correct translation:
+&Carrega PSBT des del fitxer…
+```
+
+<!-- cache_translation_check_ca_b5f01fb3ee4b74c0a6d055c16cb33faea84eaa6b7dd22462459893965fc962fc -->
+```
+        <source>Load PSBT from &amp;clipboard…</source>
+        <translation>Carrega la PSBT des del porta-retalls.</translation>
+    
+ERR
+The Catalan translation omits the '&' shortcut key present in the source and replaces the ellipsis (…) with a period. The shortcut should be preserved, and the ending punctuation should match.
+
+Correct translation:
+Carrega la PSBT des del &porta-retalls…
 ```
 
 <!-- cache_translation_check_ca_2a03b9585912c1550989c8e9fb9fe8944a0e4753da5e94d4cc0f44e4f9daabac -->
@@ -124,6 +185,64 @@ Correct translation:
 Restaurant cartera &lt;b&gt;%1&lt;/b&gt;…
 ```
 
+<!-- cache_translation_check_ca_cf4a29d519ab43a038c1e7aea542f60015d34ecf72034b773b46fd2ceb0984bf -->
+```
+        <source>Number of script &amp;verification threads</source>
+        <translation>Nombre de fils de &amp;verificació d'scripts</translation>
+    
+ERR
+The translation "d'scripts" is incorrect; in Catalan, it should be "de scripts". Also, proper placement of the ampersand for the shortcut is needed. Otherwise, the translation is accurate.
+
+Correct translation:
+Nombre de fils de verificació de &amp;scripts
+```
+
+<!-- cache_translation_check_ca_d22b35eb5713286d40e7fa46d0a88d7f725b0338351b1f12170eb0156fc2731c -->
+```
+        <source>Prune &amp;block storage to</source>
+        <translation>Prunar emmagatzemament de &amp;block a</translation>
+    
+ERR
+The use of "Prunar" is incorrect; the correct verb form in Catalan is "Podar" or "Reduir" in this context. Also, "emmagatzemament de &amp;block" does not translate "&amp;block" properly; "block" should be translated as "bloques" or "blocs" in Catalan. The shortcut (&amp;) is preserved, which is correct.
+
+Correct translation:
+Reduir l'emmagatzematge de &amp;blocs a
+```
+
+<!-- cache_translation_check_ca_dc7bb563aa1e7981ff1fce3591a64bff3c5fbd3979fc9cf4a2e30ab8fb5c9cf0 -->
+```
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Permet connexions entrants</translation>
+    
+ERR
+The translation is grammatically incorrect: it should be "Permet connexions entrants" → "Permet les connexions entrants" or more naturally "Permet connexions entrants" → "Permet connexions entrants". Also, the ampersand (&amp;) that marks the shortcut key is missing in the translation and must appear exactly once. Additionally, "entrants" should be "entrants" (masculine plural), but in Catalan the adjective should agree with "connexions", which is feminine plural, so it should be "entrants" → "entrants" is correct, but even better would be "entrants" → "entrants" or "entrants" → "entrants". More idiomatic would be "Permet les connexions entrants".
+
+Correct translation:
+Permet les connexions entrants
+```
+
+<!-- cache_translation_check_ca_4254e3a8de95f75e47090999c7b25c878423c6ee26bd935b3aef4805f7af34a4 -->
+```
+        <source>&amp;Third-party transaction URLs</source>
+        <translation>URL de transaccions de tercers</translation>
+    
+ERR
+The translation is missing the ampersand (&), which indicates a shortcut key in the UI. It must appear exactly once, anywhere in the translation.
+
+Correct translation:
+&URL de transaccions de tercers
+
+or
+
+URL de transaccions de tercers &
+
+or
+
+URL de transaccions de &tercers
+
+(Anywhere, but exactly once.)
+```
+
 <!-- cache_translation_check_ca_045d8394e2db3c3ebc8634c9cc3e253ea9f5b4bc204cafba69a9dc247de446cf -->
 ```
         <source>Copy to Clipboard</source>
@@ -174,6 +293,19 @@ Correct translation:
 no s'ha seleccionat cap relé d'alta amplada de banda
 ```
 
+<!-- cache_translation_check_ca_41c5ea3288ad4942c84832891070a1ea9c124db08d279f16e73bfa05e746916c -->
+```
+        <source>&amp;Unban</source>
+        <translation>&amp;Desbandeja</translation>
+    
+ERR
+The translation "&Desbandeja" is incorrect. "Desbandeja" does not mean "Unban" in Catalan; it is not a Catalan word and appears to be an erroneous construction. The correct Catalan for "Unban" (to remove a ban) is "Desbanea" or "Desvetlla" depending on context, but the most appropriate term in this context is "Desbanea".
+
+Correct translation:
+&Desbanea
+</reply>
+```
+
 <!-- cache_translation_check_ca_a457f84febae2f7b054719132dea3d37f1c87fbb4bd562abd349f3d8f5f6b32c -->
 ```
         <source>Welcome to the %1 RPC console.
@@ -221,6 +353,18 @@ Correct translation:
 Prohibició durant
 ```
 
+<!-- cache_translation_check_ca_9b16371f5f9a819a6fc5df0b3157efceee46739c8a31eaca0a877ecb5650b65c -->
+```
+        <source>&amp;Amount:</source>
+        <translation>Im&amp;port:</translation>
+    
+ERR
+The translation uses "Import" which means "Import" in Catalan, not "Amount" (which is "Import" in Catalan, but without the ampersand after "Im"). The position of the ampersand is also incorrectly moved. The shortcut key placement should preferably map the English as closely as possible.
+
+Correct translation:
+&Import:
+```
+
 <!-- cache_translation_check_ca_207e1f3689e0ef4a4b3dcf6961c243ba70c7d8d97edd10209191736c72a0ec70 -->
 ```
         <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until you have validated the complete chain.</source>
@@ -237,6 +381,18 @@ Correct translation:
 L'ús de la tarifa de reserva pot provocar que envieu una transacció que trigui diverses hores o dies (o mai) a confirmar-se. Considereu triar la tarifa manualment o espereu fins que hàgiu validat la cadena completa.
 ```
 
+<!-- cache_translation_check_ca_b8179f7749439963416e6aab328f548e3a721df4653c4a7ce0b18a1ee97a066c -->
+```
+        <source>Clear &amp;All</source>
+        <translation>Neteja-ho &amp;tot</translation>
+    
+ERR
+The translation "Neteja-ho &amp;tot" is not idiomatic Catalan and the word order is unnatural. "Neteja-ho tot" would translate as "Clear it all", but in the context of a button or command (especially for Bitcoin wallets), the standard and concise form should be "Neteja-ho tot" or "Neteja &amp;tot". Also, the placement of the shortcut key (&amp;) is customarily at the start of the word which will have the shortcut, so "Neteja &amp;tot" is preferable.
+
+Correct translation:
+Neteja &amp;tot
+```
+
 <!-- cache_translation_check_ca_162418b37ca08aed77d02e0af774e3ebfb30f5c2f6929263be73d3a6f8197e3f -->
 ```
         <source>Copy after fee</source>
@@ -247,6 +403,18 @@ The translation is incorrect. "Copia la tarifa posterior" does not convey the in
 
 Correct translation:
 Copia l'import després de la comissió
+```
+
+<!-- cache_translation_check_ca_4f04fa75288f7ce8ac8902ceed1954d53a14327e8d28deed0a69ea5c1d9529fd -->
+```
+        <source>Cr&amp;eate Unsigned</source>
+        <translation>Creació sense firmar</translation>
+    
+ERR
+The translation omits the shortcut key indicator (&) from the source ("Cr&eate Unsigned"), and "Creació sense firmar" does not reflect the imperative/action form "Create" but rather the noun "Creation".
+
+Correct translation:
+Crea s&ense signar
 ```
 
 <!-- cache_translation_check_ca_3dd971aa8a67336336bee816a1992d588398fa0d5336b417a3beb2074142c6e3 -->
@@ -261,6 +429,18 @@ Correct translation:
 No s'està senyalitzant Replace-By-Fee, BIP-125.
 ```
 
+<!-- cache_translation_check_ca_c3ea4bfef119ca4e14057a92f742886fa07c5b581c126129f360d6e43fd95275 -->
+```
+        <source>S&amp;ubtract fee from amount</source>
+        <translation>S&amp;ubstreu la tarifa de l'import</translation>
+    
+ERR
+The Catalan translation uses "S&ubstreu," which is not a correct conjugation—should be "S&ubstreu" or "S&ubstrieu" depending on formality/plurality, but this still sounds odd. Also, "de l'import" could be clearer as "de l'import enviat" or more simply "de l'import". The usual Catalan translation is "D&edueix la comissió de l'import".
+
+Correct translation:
+D&edueix la comissió de l'import
+```
+
 <!-- cache_translation_check_ca_66824e60fbba81658981816825e5c71ea5607ad3e093ee964bfefb75e958da5a -->
 ```
         <source>Reset all sign message fields</source>
@@ -273,16 +453,28 @@ Correct translation:
 Restableix tots els camps de signatura de missatges
 ```
 
-<!-- cache_translation_check_ca_dad0bcddc4d5e333304105e3d88ecf3e729bff74a0704e4ec5b38d2385a7bfb2 -->
+<!-- cache_translation_check_ca_b8179f7749439963416e6aab328f548e3a721df4653c4a7ce0b18a1ee97a066c -->
 ```
-        <source>Abandon transaction</source>
-        <translation>Transacció d'abandonar</translation>
+        <source>Clear &amp;All</source>
+        <translation>Neteja-ho &amp;tot</translation>
     
 ERR
-The translation is incorrect. The English phrase "Abandon transaction" should be translated as an imperative ("Abandona la transacció") rather than as a noun phrase ("Transacció d'abandonar"), which sounds awkward and unnatural in Catalan.
+The translation "Neteja-ho &amp;tot" is not idiomatic Catalan and the word order is unnatural. "Neteja-ho tot" would translate as "Clear it all", but in the context of a button or command (especially for Bitcoin wallets), the standard and concise form should be "Neteja-ho tot" or "Neteja &amp;tot". Also, the placement of the shortcut key (&amp;) is customarily at the start of the word which will have the shortcut, so "Neteja &amp;tot" is preferable.
 
 Correct translation:
-Abandona la transacció
+Neteja &amp;tot
+```
+
+<!-- cache_translation_check_ca_565ecc6998e06a725fbfbc24d77131e09f3461a43fb6e61cf9ee76b25167efe2 -->
+```
+        <source>A&amp;bandon transaction</source>
+        <translation>Transacció d'a&amp;bandonar</translation>
+    
+ERR
+The translation incorrectly translates "Abandon transaction" as "Transacció d'abandonar", which is not idiomatic in Catalan and makes the menu action unclear. The correct translation should use the imperative form, as it is a command.
+
+Correct translation:
+A&amp;bandona la transacció
 ```
 
 <!-- cache_translation_check_ca_aa0b82fb430f16f526748043b19e67cff78f710bc9d7746f0843a8c4ad7a9f44 -->
@@ -333,18 +525,6 @@ Correct translation:
 No s'ha proporcionat cap fitxer de bolcat. Per utilitzar la funció de bolcat, s'ha de proporcionar -dumpfile=&lt;filename&gt;.
 ```
 
-<!-- cache_translation_check_ca_b4a4ebf656684e16369f07cd6b9dfb77ad89655f1b25ebfd634f72dec43046bc -->
-```
-        <source>No wallet file format provided. To use createfromdump, -format=&lt;format&gt; must be provided.</source>
-        <translation>No s'ha proporcionat cap format de fitxer de cartera. Per a utilitzar createfromdump, s'ha de proporcionar&lt;format&gt;.</translation>
-    
-ERR
-The translation omits the "-format=" prefix before "&lt;format&gt;" in the last part, which is needed for accurate instructions. There is also missing spacing ("proporcionar&lt;format&gt;." should be "proporcionar -format=&lt;format&gt;.").
-
-Correct translation:
-No s'ha proporcionat cap format de fitxer de cartera. Per utilitzar createfromdump, s'ha de proporcionar -format=&lt;format&gt;.
-```
-
 <!-- cache_translation_check_ca_a5f722b03b51d42bcf52954df5b92b0b6a6b58f1d32fccee6b096ea7d7a635c3 -->
 ```
         <source>Error reading %s! All keys read correctly, but transaction data or address metadata may be missing or incorrect.</source>
@@ -357,6 +537,18 @@ Correct translation:
 S'ha produït un error en llegir %s! Totes les claus s'han llegit correctament, però les dades de la transacció o les metadades de l'adreça podrien faltar o ser incorrectes.
 ```
 
+<!-- cache_translation_check_ca_b5b6b61b8323207521c42af7e9c245c6a99b2842ef381b912f37db025f94a203 -->
+```
+        <source>A fatal internal error occurred, see debug.log for details: </source>
+        <translation>Error fatal intern, detalls a debug.log:</translation>
+    
+ERR
+The translation is missing a verb and sounds unnatural. It also omits the trailing space after the colon, which appears in the source and may be required for formatting.
+
+Correct translation:
+S'ha produït un error intern fatal, consulteu debug.log per a més detalls:
+```
+
 <!-- cache_translation_check_ca_291f09a6c9804dd9140b9d2e408492d8ef452a56d5f44634fab8f3e9873e4d33 -->
 ```
         <source>Config setting for %s only applied on %s network when in [%s] section.</source>
@@ -367,6 +559,18 @@ There is excess spacing between "a" and "%s" ("a  %s de la xarxa") and the phras
 
 Correct translation:
 La configuració de %s només s'aplica a la xarxa %s quan és a la secció [%s].
+```
+
+<!-- cache_translation_check_ca_79319ca07c17fbd6d4bc4c486562531d4e066626015e2dfe261c6993099b7d1e -->
+```
+        <source>Error loading databases</source>
+        <translation>Error llegint les bases de dades</translation>
+    
+ERR
+The verb "llegint" means "reading," not "loading." A more accurate translation for "loading" is "carregant."
+
+Correct translation:
+Error carregant les bases de dades
 ```
 
 <!-- cache_translation_check_ca_29b51966c7f3a6e683c70b73ac813f98c856129295a5924555a675ae79ba1581 -->
@@ -406,6 +610,18 @@ Correct translation:
 S'ignora -wallet duplicat %s.
 ```
 
+<!-- cache_translation_check_ca_443c43755c6a5bbede5d864d225e18208f41a4c5e9649ff107f1895ca6d5a326 -->
+```
+        <source>No addresses available</source>
+        <translation>No hi ha adreçes disponibles</translation>
+    
+ERR
+Spelling error: "adreçes" should be "adreces".
+
+Correct translation:
+No hi ha adreces disponibles
+```
+
 <!-- cache_translation_check_ca_d3b576c178cad3f527c4117aa62fb5eebd381401ad0dcee9f1cd125c2e25ecd0 -->
 ```
         <source>Pruning blockstore…</source>
@@ -419,6 +635,18 @@ S'està podant l'emmagatzematge de blocs...
 or
 S'està podant el bloc d'emmagatzematge...
 ```
+
+<!-- cache_translation_check_ca_202d6d7e3b070ea8cdf6dad30f2c8cffc8b34ec275c2e5fa0fdb24fae40253d9 -->
+```
+        <source>Error: Wallet does not exist</source>
+        <translation>Error: la cartera no existeix</translation>
+    
+ERR
+In Catalan, "cartera" typically refers to a briefcase/portfolio. For a cryptocurrency wallet, "moneder" is the standard term.
+
+Correct translation:
+Error: el moneder no existeix
+```
 </details>
 
-Number of issues: 31.
+Number of issues: 49.

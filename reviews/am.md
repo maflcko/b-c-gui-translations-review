@@ -1,13 +1,25 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>am</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bam%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bam%5D%20request)
 
+
+<!-- cache_translation_check_am_daef632cd58a6585925e9c0ec563d1d787d3bc5b0d8db9513c054d76e7ff3aff -->
+```
+        <source>&amp;Edit</source>
+        <translation> &amp;አርም</translation>
+    
+ERR
+There is a leading space before the ampersand (" &amp;አርም"), which is a whitespace formatting issue. Also, "አርም" does not accurately translate "Edit" to Amharic; the appropriate translation for "Edit" is "አርትዕ". The ampersand should directly precede the translated word.
+
+Correct translation:
+&amp;አርትዕ
+```
 
 <!-- cache_translation_check_am_caedc154897b9403e735ab7f661103b703ac79f18cc6eda4d6db945ed4aebfbc -->
 ```
@@ -50,26 +62,6 @@ The Amharic translation is missing the closing quotation mark after %1, which is
 
 Correct translation:
 ነባሪ የስርዓት ቅርጸ-ቁምፊ "%1"
-```
-
-<!-- cache_translation_check_am_7ab3ba0f761255d248624e8cfeba7ec3cf23dcbfb58b9d0cced908b563730d19 -->
-```
-        <source>Error creating wallet</source>
-        <translation>ዋሌትዎን ለፍጠር ተሳስተዋል </translation>
-    
-ERR
-The translation has an error in the verb tense and format. The original English says "Error creating wallet," which is a short error message, essentially "Failed to create wallet." The Amharic translation says "ዋሌትዎን ለፍጠር ተሳስተዋል", which awkwardly translates as "There was a mistake to create your wallet." Also, there is an unnecessary space at the end.
-
-A better, concise translation would be:
-ዋሌት ማፍረር ተሳናቸው
-
-Or, more directly:
-ዋሌት ማፍጠር ስህተት ተከስቷል
-
-So:
-
-Correct translation:
-ዋሌት ማፍጠር ስህተት ተከስቷል
 ```
 
 <!-- cache_translation_check_am_73f29ac14b2ecfc00a028468830e415834d867ebfc7be77a9872442d56001b1d -->

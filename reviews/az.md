@@ -1,13 +1,55 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>az</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Baz%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Baz%5D%20request)
 
+
+<!-- cache_translation_check_az_c713146aaa10d6b6cff8ca2611acc059e9017d626ab316f35d4323644c849bb1 -->
+```
+        <source>C&amp;lose</source>
+        <translation>Bağla</translation>
+    
+ERR
+The translation omits the ampersand (&) used for indicating the keyboard shortcut. In Qt translations, the ampersand should be preserved in the translation, typically placed before a shortcut letter.
+
+Correct translation:
+&Bağla
+```
+
+<!-- cache_translation_check_az_9da4515776127b2096fb029b7dd6be025053a20b1a94ba3e3061a83cfa859971 -->
+```
+        <source>C&amp;hoose</source>
+        <translation>Seç</translation>
+    
+ERR
+The translation omits the '&' character, which is used to indicate a keyboard shortcut in the UI. This makes the translation inconsistent in functionality with the source.
+
+Correct translation:
+&Seç
+
+Or alternatively:
+S&eç
+
+(As long as the '&' occurs exactly once and does not introduce formatting issues.)
+```
+
+<!-- cache_translation_check_az_42b12ab4470a52e925fcced76dca24c8640a51c07f1ad19f421bdb56a7d8b91d -->
+```
+        <source>Copy &amp;Label</source>
+        <translation>Etiketi kopyala</translation>
+    
+ERR
+The shortcut marker (&) is missing in the Azerbaijani translation. Shortcut keys should be preserved, typically as: "&Etiketi kopyala" or "Etiketi &kopyala" depending on desired keyboard shortcut placement.
+
+Correct translation:
+&Etiketi kopyala
+</reply>
+```
 
 <!-- cache_translation_check_az_d872a157aba55ac38944dbf269b4cb332e81d4151e75158110e734f8cda6704f -->
 ```
@@ -37,16 +79,16 @@ Correct translation:
 Ciddi xəta baş verdi. Ayarlar faylının yazıla bilən olduğunu yoxlayın və ya -nosettings parametri ilə işə salın.
 ```
 
-<!-- cache_translation_check_az_604578cb203997b618813e4050cc922588e1f5e25a9d4b0c0774c40bf4575037 -->
+<!-- cache_translation_check_az_d97ea162fb8a2d41ee0a3a43fa0bf26b06e0e64c7961a1305fa8a5db34d7bed1 -->
 ```
-        <source>Minimize</source>
-        <translation>Yığın</translation>
+        <source>&amp;Minimize</source>
+        <translation>&amp;Yığın</translation>
     
 ERR
-The translation is incorrect. "Yığın" means "Stack" or "Heap" in Azerbaijani, not "Minimize". The correct translation for "Minimize" is "Minimallaşdır".
+The word "Yığın" translates to "stack" or "heap" and does not convey the meaning of "Minimize" in the context of minimizing a window. The correct translation for "Minimize" in Azerbaijani is "Minimizə et" or simply "Kiçilt".
 
 Correct translation:
-Minimallaşdır
+&Kiçilt
 ```
 
 <!-- cache_translation_check_az_6ee17510e6a9605f1964f905f7feeea872b7354e361e63f089ea34fa653c8915 -->
@@ -60,6 +102,30 @@ The translation "İnternet bağlantısı söndürülüb." means "Internet connec
 
 Correct translation:
 Şəbəkə fəaliyyəti deaktiv edilib.
+```
+
+<!-- cache_translation_check_az_2b4e3d99852f3a1e0ac8ec9a8e17ef930a5723eeb428eff0548a498deb35c496 -->
+```
+        <source>&amp;Change Passphrase…</source>
+        <translation>&amp;Şifrəli sözü dəyişin...</translation>
+    
+ERR
+The translation "Şifrəli sözü dəyişin..." is incorrect. The phrase "passphrase" is typically translated as "parol" or "şifrə" in Azerbaijani, not "şifrəli söz" (which literally means "encrypted word" and is uncommon). Also, it's better to keep elliptical dots consistent with the source: use the ellipsis character (…).
+
+Correct translation:
+&Parolu dəyiş…
+```
+
+<!-- cache_translation_check_az_6a176c6d92d38c09a45bb842bf814564c10c1682e506665af52ed41a539335b1 -->
+```
+        <source>&amp;Verify message…</source>
+        <translation>&amp;İsmarıcı doğrulayın...</translation>
+    
+ERR
+The word "ismarıcı" is incorrect in Azerbaijani in this context; it does not mean "message". The correct translation for "message" is "isra" or "mesaj". The rest of the translation is appropriate, and the shortcut is preserved.
+
+Correct translation:
+&amp;Mesajı doğrulayın...
 ```
 
 <!-- cache_translation_check_az_45b61952c7d282f3ea58a80edf6ea474e4ab07b7f9784147bf6c0191a0f86c78 -->
@@ -98,6 +164,24 @@ The translation "seçim" means "selection" and does not convey the meaning of "(
 
 Correct translation:
 Hamısını seç / seçimdən çıxar
+```
+
+<!-- cache_translation_check_az_3881e3f0dbf22ca2e4f25f37060d5ef56011df2a5b5ffee1ac15a5faf6c814b4 -->
+```
+        <source>&amp;Unlock unspent</source>
+        <translation>Xərclənməmiş qalığı kilidd'n &amp;çıxarın</translation>
+    
+ERR
+There is a typo and unnatural phrasing in the translation. "kilidd'n" is incorrect; it should be "kiliddən". Also, "Xərclənməmiş qalığı" refers to "unspent balance," but in this context, "unspent" more likely refers to an "unspent output" or "unspent transaction". A more natural and accurate translation is:
+
+Correct translation:
+Xərclənməmiş kilidi &açı
+
+or
+
+Xərclənməmişi &kiliddən çıxarın
+
+Both preserve the meaning and shortcut key. The ampersand placement can change, but should not be omitted or duplicated.
 ```
 
 <!-- cache_translation_check_az_e3a98560448ec119856e3f3a85e417fa3e52162eb1cb4e123bbcf65e3899735b -->
@@ -161,4 +245,4 @@ Xəbərdarlıq: Gizli açarlar gizli açarlar deaktiv edilmiş {%s} pulqabısın
 ```
 </details>
 
-Number of issues: 12.
+Number of issues: 18.

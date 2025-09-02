@@ -1,24 +1,28 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>mn</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bmn%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bmn%5D%20request)
 
 
-<!-- cache_translation_check_mn_bbe28da9688cfa5d92b112955c0c428c7ac44b5b13c27d0ecef1163c74cd562a -->
+<!-- cache_translation_check_mn_ebab824879244ab8bef84ccb09ac840073e61ca3d81013bc34f1b1f7306bbdcc -->
 ```
-        <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Одоогоор сонгогдсон байгаа хаягуудыг сануулах</translation>
+        <source>&amp;Export</source>
+        <translation>&amp;Экспорт</translation>
     
-ERR
-The translation is inaccurate. The Mongolian translation means "Remind the currently selected addresses," which does not convey the intended action of copying an address to the clipboard.
+SPAM
+The translation is in Russian, not Mongolian ('mn').
 
 Correct translation:
-Одоогоор сонгосон хаягийг системийн санах ойд хуулна.
+&Экспорт should be &Экспортлох (assuming Mongolian context, the usual term for "Export" is "Экспортлох" in Mongolian Cyrillic; or "Экспорт" is sometimes used colloquially, but the proper suffix "-лох" turns the noun into a verb which is more natural for a button/action in UI Mongolia).
+
+Correct translation:
+&Экспортлох
+</reply>
 ```
 
 <!-- cache_translation_check_mn_8b6f1d94653dbd55ca716b020b61ce18018258bc8ab3ac434e78e5def7c80c9f -->
@@ -44,17 +48,59 @@ The translation is incomplete; the word 'ѳѳр' (meaning 'other' or 'different'
 Түрийвчийн нууц үг амжилттай өөрчлөгдлөө.
 ```
 
-<!-- cache_translation_check_mn_c0f596881e78ee17b4766ccab706d8a6c0ce84d84523809a224a166d2217358e -->
+<!-- cache_translation_check_mn_75e7bddfa0a6c009577eb9c73650300ee2d9d424e85af866832b6450b227919b -->
 ```
-        <source>Send</source>
-        <translation>Илгээх
+        <source>&amp;Transactions</source>
+        <translation>Гүйлгээнүүд</translation>
+    
+ERR
+The '&' character, which serves as a shortcut key indicator in GUI text, is missing in the Mongolian translation. It should appear exactly once, ideally at the same or a logical position in the target language.
+
+Correct translation:
+&Гүйлгээнүүд
+```
+
+<!-- cache_translation_check_mn_d11265506dbf27e9bc9a1d0e6f936c9bd930e26bc4b6a338739c722b52e53b2d -->
+```
+        <source>E&amp;xit</source>
+        <translation>Гарах</translation>
+    
+ERR
+The translation omits the shortcut key indicator "&", which should appear exactly once somewhere in the translation.
+
+Correct translation:
+&Гарах
+```
+
+<!-- cache_translation_check_mn_3b614119df3bcd1e435394f76ba0e6ae1a1a84cfc9e153fafed2635137fe9320 -->
+```
+        <source>About &amp;Qt</source>
+        <translation>&amp;Клиентийн тухай</translation>
+    
+ERR
+The translation uses "Клиентийн тухай" which means "About the client," not "About Qt." The correct translation should refer to "Qt," since "&Qt" is the subject.
+
+Correct translation:
+Qt-ийн тухай &amp;
+
+or
+
+&amp;Qt-ийн тухай
+
+Either form places the shortcut key (&) and maintains the meaning, but must not replace "Qt" with "Клиент".
+```
+
+<!-- cache_translation_check_mn_c8e259d3339002c9143423b7baea87fb5b33bea9ad65c5b59a297a05ff48725f -->
+```
+        <source>&amp;Send</source>
+        <translation>&amp;Илгээх
  </translation>
     
 ERR
-There is an unwanted line break or extra whitespace after "Илгээх". The translation should not have a newline or extra space at the end.
+There is a problematic whitespace at the end of the translation line (an extra space or possibly a non-breaking space after 'Илгээх'). This should be removed to prevent formatting issues.
 
 Correct translation:
-Илгээх
+&Илгээх
 ```
 
 <!-- cache_translation_check_mn_cb778ab913bf148c69d54aa67f5a8281c20292a3f645eb3e28abffbc751ba36a -->
@@ -82,6 +128,34 @@ The Mongolian translation is incorrect. "Ѳѳрчлѳлтийг санах" mean
 This uses "хариулт" for 'change' in the context of returning money (as in 'change' from a transaction), which is the term used in Mongolian for Bitcoin 'change'.
 ```
 
+<!-- cache_translation_check_mn_4fe7ce44973c58c3ec4738fa5c0ccdff082d56e5b95b497e7e5e303d965402c3 -->
+```
+        <source>&amp;Network</source>
+        <translation>Сүлжээ</translation>
+    
+ERR
+The translation is missing the '&' shortcut key indicator, which should exist exactly once as in the source.
+
+Correct translation:
+&Сүлжээ
+```
+
+<!-- cache_translation_check_mn_af62c41ee998d49651acfb573a8dfcf82c2cd19e39f4b0bd714662445ed269f6 -->
+```
+        <source>W&amp;allet</source>
+        <translation>Түрүйвч</translation>
+    
+ERR
+The translation omits the '&' shortcut marker from the source. It should exist exactly once in the translation as in the original.
+
+Correct translation:
+&Түрүйвч
+or
+Түрүйвч&
+
+(The placement may vary, but '&' must be present exactly once.)
+```
+
 <!-- cache_translation_check_mn_3f2758c27fcd9bb3d935a49b5be26d6c4270afe5044fc75576c36e5c933a55d1 -->
 ```
         <source>Client restart required to activate changes.</source>
@@ -107,6 +181,32 @@ Correct translation:
 Энэ өөрчлөлтийг оруулахын тулд клиент програмыг ахин эхлүүлэх шаардлагатай.
 ```
 
+<!-- cache_translation_check_mn_ec834932d0f918f1c1ecd06911d60d5aad3c65cd84fad7a2506553fbede90009 -->
+```
+        <source>&amp;Amount:</source>
+        <translation>Хэмжээ:</translation>
+    
+ERR
+The '&' in the source indicates a shortcut key and should be preserved exactly once in the translation. It is missing in the translation.
+
+Correct translation:
+&Хэмжээ:
+```
+
+<!-- cache_translation_check_mn_cd73b7c41e342a057593cf2e9a74e351584aad5689bc65ad0ca8fcd9f437bed7 -->
+```
+        <source>&amp;Message:</source>
+        <translation>Зурвас:</translation>
+    
+ERR
+The ampersand (&) indicating the shortcut key is missing in the Mongolian translation. The translation should preserve it, placing it anywhere in the translated phrase, but exactly once.
+
+Correct translation:
+&Зурвас:
+or
+Зурвас(&):
+```
+
 <!-- cache_translation_check_mn_41e7a172a6f2cd47bee9502754ea0fe567483368a75e176ed5aeacc15b3a8ee9 -->
 ```
         <source>Copy change</source>
@@ -120,6 +220,18 @@ The Mongolian translation is incorrect. "Ѳѳрчлѳлтийг санах" mean
 This uses "хариулт" for 'change' in the context of returning money (as in 'change' from a transaction), which is the term used in Mongolian for Bitcoin 'change'.
 ```
 
+<!-- cache_translation_check_mn_7b247de2b20cac08d804878efc51c39516e2874905934f5d20d8f63ce7591068 -->
+```
+        <source>A&amp;mount:</source>
+        <translation>Дүн:</translation>
+    
+ERR
+The translation did not preserve the ampersand (&) which indicates the keyboard shortcut in the source (“A&amp;mount:”). The ampersand (&) should be present exactly once somewhere in the translation to allow for a shortcut key, as in the source.
+
+Correct translation:
+&Дүн:
+```
+
 <!-- cache_translation_check_mn_c4f2403fbe8a48d15283267fc5fcef0827d1c8a72337b93a57043af9a4f2c8b4 -->
 ```
         <source>Transaction ID</source>
@@ -130,6 +242,22 @@ The translation is incorrect. "Тодорхойлолт" means "Description," no
 
 Гүйлгээний дугаар
 ```
+
+<!-- cache_translation_check_mn_ebab824879244ab8bef84ccb09ac840073e61ca3d81013bc34f1b1f7306bbdcc -->
+```
+        <source>&amp;Export</source>
+        <translation>&amp;Экспорт</translation>
+    
+SPAM
+The translation is in Russian, not Mongolian ('mn').
+
+Correct translation:
+&Экспорт should be &Экспортлох (assuming Mongolian context, the usual term for "Export" is "Экспортлох" in Mongolian Cyrillic; or "Экспорт" is sometimes used colloquially, but the proper suffix "-лох" turns the noun into a verb which is more natural for a button/action in UI Mongolia).
+
+Correct translation:
+&Экспортлох
+</reply>
+```
 </details>
 
-Number of issues: 10.
+Number of issues: 19.

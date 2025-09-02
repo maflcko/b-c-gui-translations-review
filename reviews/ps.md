@@ -1,13 +1,107 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>ps</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bps%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bps%5D%20request)
 
+
+<!-- cache_translation_check_ps_f4a08aba9d9bf13bf246c926f1801119f6bddea292606d46d01b6421be245e8b -->
+```
+        <source>&amp;New</source>
+        <translation>او نوی</translation>
+    
+ERR
+The translation does not include the ampersand (&) which is used to denote a shortcut key in the original source text. It should be present exactly once in the translation.
+
+Correct translation:
+&amp;نوې
+```
+
+<!-- cache_translation_check_ps_2d5f66b18edb61f96c579b41ac578f8d9b5c92d3178838db5acefe1985dce3d7 -->
+```
+        <source>&amp;Copy</source>
+        <translation>او کاپي</translation>
+    
+ERR
+The Pashto translation is missing the ampersand (&) which is used to indicate the shortcut key in the original text. It should appear exactly once in the translation as well.
+
+Correct translation:
+&او کاپي
+```
+
+<!-- cache_translation_check_ps_f14df870eabedf967bf9c0700cae59bc0be8338868b0cfa9c1e08ece5f076395 -->
+```
+        <source>&amp;Export</source>
+        <translation>او صادرات</translation>
+    
+ERR
+The translation does not include the "&" character, which is required exactly once to indicate the shortcut key. The correct translation should also use a more appropriate word for "Export" in Pashto, such as "صادروه" or similar.
+
+Correct translation:
+&صادرات
+```
+
+<!-- cache_translation_check_ps_35cbb815a060f270f591559d298918e85ed9b99b9075dca75dac36025f090168 -->
+```
+        <source>&amp;Delete</source>
+        <translation>او پاک کړئ</translation>
+    
+ERR
+The translation omits the ampersand (&) used to indicate a shortcut key in the original text. The ampersand must be included exactly once in the translation.
+
+Correct translation:
+&amp;پاک کړئ
+```
+
+<!-- cache_translation_check_ps_09c5f1e82f21a09c8194cf53c7f0fffc7ab6f7c3628d32674339c89d5cb175b4 -->
+```
+        <source>C&amp;hoose</source>
+        <translation>خوښول</translation>
+    
+ERR
+The translation does not include the ampersand (&) which is used to indicate the shortcut key in the source ("C&hoose"). The ampersand must also appear exactly once in the translation, placed next to the corresponding shortcut character in the Pashto word.
+
+Correct translation:
+&خوښول
+
+Or, if Pashto menus commonly use the & at the beginning:
+خوښ&ول
+
+But the ampersand (&) must be included exactly once, as in the source.
+```
+
+<!-- cache_translation_check_ps_87b1f0e0f46507b40283b7dd93b7516d5bd9e8bea29f5552597d43adccaaddfb -->
+```
+        <source>Copy &amp;Label</source>
+        <translation>کاپي&amp; او لیبل</translation>
+    
+ERR
+The translation incorrectly translates "Copy &Label" as "کاپي&amp; او لیبل", which literally means "Copy & and label". The "&" should be attached to the word that indicates the shortcut key, not left as "&amp; او".
+
+Correct translation:
+لیبل &کاپي
+
+or, a more natural choice in Pashto might be:
+&لیبل کاپي
+
+Either is acceptable if consistent with application usage, but the current translation is incorrect.
+```
+
+<!-- cache_translation_check_ps_804cd165243747356c154b69e5709092e16bf68768227deec001cb334b39287e -->
+```
+        <source>&amp;Edit</source>
+        <translation>&amp;سمول</translation>
+    
+ERR
+The translation of "&Edit" into Pashto is incorrect. "سمول" means "to correct" or "to fix", which may be contextually close, but the standard translation for "Edit" in Pashto interfaces is "سمونه". Additionally, "&" should remain exactly once for the shortcut, which is present.
+
+Correct translation:
+&سمونه
+```
 
 <!-- cache_translation_check_ps_de69a0b5b29c696a691c2ff209e766d0f0a4850f86a10df90593dccdf62953c7 -->
 ```
@@ -131,6 +225,25 @@ Correct translation:
 یو وژونکی تېروتنه رامنځته شوه. %1 نور په خوندي ډول دوام نه شي کولی او به وتړي.
 ```
 
+<!-- cache_translation_check_ps_4923e11caee85ad3ea5e7ad5925066be748667648bf2251f82d04acbd631d514 -->
+```
+        <source>An internal error occurred. %1 will attempt to continue safely. This is an unexpected bug which can be reported as described below.</source>
+        <translation>یو داخلي تېروتنه رامنځته شوه %1به هڅه وکړي چې په خوندي توګه دوام وکړي. دا یوه ناپېژندل شوې تېروتنه ده چې کولای شي د لاندې په توګه راپور شي."
+
+
+
+
+
+
+.</translation>
+    
+ERR
+The Pashto translation has several issues: a missing period after the first sentence, no space around the %1 specifier ("شو %1به" should be "شو. %1 به" or have a space after %1), an awkward phrasing for reporting, and stray quotation marks/newlines/dots at the end. The %1 specifier is present but spacing is wrong. Also "ناپېژندل شوې تېروتنه" is understandable but "ناڅاپي تېروتنه" or "غیر متوقع تېروتنه" may be clearer.
+
+Correct translation (fixed punctuation, spacing, and wording):
+یو داخلي تېروتنه رامنځته شوه. %1 به هڅه وکړي چې په خوندي ډول دوام وکړي. دا یوه غیر متوقع تېروتنه ده چې د لاندې تشریح شوي لارو له مخې راپور ورکړل شي.
+```
+
 <!-- cache_translation_check_ps_2e37a88ed191fa495fa936b1bd20bfb535ce0718f67020406c525543f62a2760 -->
 ```
         <source>A fatal error occurred. Check that settings file is writable, or try running with -nosettings.</source>
@@ -142,6 +255,34 @@ The translation is incomplete; it does not translate the full source sentence. S
 
 Correct translation:
 یو مرګونی تېروتنه رامنځته شوې ده. ډاډ ترلاسه کړئ چې د تنظیماتو فایل لیکل کېدلی شي، یا هڅه وکړئ چې له -nosettings سره یې پرمخ یوسئ.
+```
+
+<!-- cache_translation_check_ps_6611234169aa204031b425dce163e1e35260e73e5668bb9d5c7483a0dfa495eb -->
+```
+        <source>E&amp;xit</source>
+        <translation>وتل</translation>
+    
+ERR
+The translation omits the & which is used for shortcut keys in the UI. The translation should include a single & symbol to match the source's shortcut.
+
+Correct translation:
+و&تل
+```
+
+<!-- cache_translation_check_ps_2de29b18886e3853d0d54da1345701cb6374df4a6eeb55ba1e75fd93e12c078a -->
+```
+        <source>&amp;About %1</source>
+        <translation>&amp;په اړه%1</translation>
+    
+ERR
+There is a missing space between "په اړه" and "%1" in the translation, which creates a formatting issue. The shortcut key (&) is correctly preserved.
+
+Correct translation:
+&amp;د %1 په اړه
+or
+&amp;په اړه %1
+
+Either of the above would be correct as long as spacing is proper.
 ```
 
 <!-- cache_translation_check_ps_1adcd11666b7a654028216c2950fe4365a483c1c2f4c0c2ef5eb489be5978598 -->
@@ -156,33 +297,113 @@ Correct translation:
 د والټ د کوډ کولو لپاره کارېدونکې پټ ټکی بدل کړئ
 ```
 
-<!-- cache_translation_check_ps_b115cd643b0ed8dbded44ed562a4c782d48dcae3519a66c9cf74ec5d95f0b0b2 -->
+<!-- cache_translation_check_ps_63811380befd3722c8c2a6897fa53c3d9dacdddc96f9c26f2cd23945c121251a -->
 ```
-        <source>Receive</source>
-        <translation> ترلاسه کول</translation>
+        <source>&amp;Options…</source>
+        <translation>اوختيارات…</translation>
     
 ERR
-There is an extra space at the beginning of the translation (" ترلاسه کول"), which is a whitespace format issue.
+The translation omits the '&' which is meant to indicate the shortcut key. '&' should appear exactly once in the translation, at a suitable place. The rest of the translation appears correct.
 
 Correct translation:
-ترلاسه کول
+&اختيارات…
 ```
 
-<!-- cache_translation_check_ps_62fbbfc235e3bf33188ea2c3a8281d5998eeddca5c5fbe059880119f6ae5f58f -->
+<!-- cache_translation_check_ps_3671ecd1d0db9ae1d8113ad3d7823e6386fdb43516df63d88008025f6cd60271 -->
 ```
-        <source>Receiving addresses</source>
+        <source>Sign &amp;message…</source>
+        <translation>لاسلیک او پیغام…</translation>
+    
+ERR
+The translation misses the shortcut key indicator (&) from the source. The '&' should appear exactly once in the translation, at any logical position.
+
+Correct translation:
+&لاسلیک او پیغام…
+or
+لاسلیک او &پیغام…
+```
+
+<!-- cache_translation_check_ps_1c8bab3261ece99585b95d45eda4b73fcc0f7c28701938b167d50dda2b070647 -->
+```
+        <source>Open &amp;URI…</source>
+        <translation>پرانیستل او URI…</translation>
+    
+ERR
+The translation omits the '&' shortcut key marker, which is present in the source as "&URI". The '&' should be included exactly once in the translation, ideally placed before the relevant shortcut letter.
+
+Correct translation:
+&amp;URI پرانیستل…
+or
+پرانیستل &amp;URI…
+```
+
+<!-- cache_translation_check_ps_cf3e9134f29bb2029191fcf54ad15b0f9dd40a14193c6cf232517d1f897d99ab -->
+```
+        <source>&amp;Settings</source>
+        <translation>او ترتیبونه</translation>
+    
+ERR
+The translation does not include the '&' character, which indicates a shortcut key in the UI and should appear exactly once in the translation. Additionally, the translation does not include the word "Settings" but only "ترتیبونه" ("Settings") with a prefix "او" ("and"), which is not necessary.
+
+Correct translation:
+&amp;ترتیبونه
+```
+
+<!-- cache_translation_check_ps_723bdbb638492dd65796ac35c5a3293af27c9b3478d1f303eadec9bd1ee8bc68 -->
+```
+        <source>&amp;Help</source>
+        <translation>او مرسته</translation>
+    
+ERR
+The translation is missing the ampersand (&) which indicates the shortcut key. It must appear exactly once, as in the source.
+
+Correct translation:
+&مرسته
+```
+
+<!-- cache_translation_check_ps_3728c318c1243d0993b62ea3cd6d27a4d8dfb2740ecd6a88eca89c318a78824b -->
+```
+        <source>Load PSBT from &amp;clipboard…</source>
+        <translation>PSBT له &amp; څخه بار کړئ</translation>
+    
+ERR
+The translation "PSBT له &amp; څخه بار کړئ" is incomplete and unclear. The English "from &amp;clipboard…" should refer to "clipboard", but the translation does not mention the concept of "clipboard" ("کلپبورد" or similar in Pashto). The "&amp;" shortcut key is preserved, but its placement is ambiguous as "clipboard" is missing.
+
+Correct translation:
+له &amp;کلپبورد څخه PSBT بار کړئ
+```
+
+<!-- cache_translation_check_ps_a3d4fbedb6b20ab75dcf3f7de7799b40a3d3844cd630147118feadeb43934ff7 -->
+```
+        <source>&amp;Sending addresses</source>
+        <translation>&amp; د پته لېږل</translation>
+    
+ERR
+The Pashto translation incorrectly reverses the word order and meaning. "&Sending addresses" should be translated as a noun phrase, meaning "addresses used for sending (Bitcoin)". The given translation "& د پته لېږل" means something like "& send the address", which is wrong.
+
+Correct translation:
+لېږدونکې پتې &
+
+Or, preserving the '&' for the hotkey as in the original:
+&لېږدونکې پتې
+```
+
+<!-- cache_translation_check_ps_31af4a1fa12615f20525eea57b9c9e42c57fcac5f50dd7188b970391798c23b8 -->
+```
+        <source>&amp;Receiving addresses</source>
         <translation>او د ترلاسه کولو پته</translation>
     
 ERR
-The translation is not accurate. The phrase "Receiving addresses" is plural, but the translation "او د ترلاسه کولو پته" ("or da talafah koloo patah") translates to "and the receiving address," which is singular and incorrectly includes "او" meaning "and".
+The translation misses the '&' character, which should indicate the shortcut key, and the translation omits the plural "addresses" (should be plural). The Pashto translation reads as "or the receiving address", which is incorrect. Correct translation should be:
 
-Correct translation:
-د ترلاسه کولو پته‌گانې
+سمه ژباړه:
+د ترلاسه کولو پتې &
 
-Alternatively:
-د ترلاسه کولو پتې
+or
 
-Either form is accurate for the plural "Receiving addresses".
+&د ترلاسه کولو پتې
+
+(Ensure the '&' is present exactly once and plural is reflected. Position of '&' may vary as per convention.)
 ```
 
 <!-- cache_translation_check_ps_1a9f1cd04a8b6a19b03a5cfce03ffa7ec442ed6f43c45c95257418efb2ad31a2 -->
@@ -214,6 +435,30 @@ Correct translation:
 Note: Removed unnecessary quotation mark and slightly adjusted the wording for fluency.
 ```
 
+<!-- cache_translation_check_ps_44adad100f7fec24161ad69cfe09f90d5e5ccb682c0d2bfa6a67aedf619ea209 -->
+```
+        <source>&amp;Hide</source>
+        <translation>او پټ کړئ</translation>
+    
+ERR
+The translation omits the '&' character, which is used for keyboard shortcuts and must appear exactly once in the translation. Also, to match the original phrasing, it should simply translate as "پټ کړئ", but must incorporate '&' for keyboard navigation.
+
+Correct translation:
+&amp;پټ کړئ
+```
+
+<!-- cache_translation_check_ps_f997e9fcd25161b677c095ea5ef9ebe918b3f8d6a0514d92f86e69805869b65c -->
+```
+        <source>S&amp;how</source>
+        <translation>"ښودل</translation>
+    
+ERR
+The translation is missing the '&' to indicate the shortcut key, and there are unnecessary quotation marks. The correct 'ps' translation should include a single '&' to preserve shortcut functionality, and should not have extra punctuation.
+
+Correct translation:
+ښ&ودل
+```
+
 <!-- cache_translation_check_ps_755f5486450271d6ebd7c0d6b76554f0a552606fb321b84099dc0cf3ce3aeb7b -->
 ```
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
@@ -241,19 +486,52 @@ Correct translation:
 تصدیق شوی
 ```
 
-<!-- cache_translation_check_ps_f77b15f5597dc028793367597a5a1c8efc919293927e32b438aa2aae7cca625c -->
+<!-- cache_translation_check_ps_4e9038771cb4649a68ed4f481ae8ecebbf77a828a38447bd09fbedbb015f9546 -->
 ```
-        <source>Copy transaction ID and output index</source>
+        <source>Copy &amp;label</source>
+        <translation>کاپي او ليبل</translation>
+    
+ERR
+The translation does not carry over the '&' shortcut indicator from the source. The '&' should appear exactly once in the translation, as per instructions. Additionally, "کاپي او ليبل" means "Copy and label" but in UI context, the '&' should be attached to the shortcut letter.
+
+Correct translation:
+کاپي او &ليبل
+```
+
+<!-- cache_translation_check_ps_da87da68f9770c32a0ec2c0e4db10e225ec93c9a2222fe23ce76c0622e569d1d -->
+```
+        <source>Copy &amp;amount</source>
+        <translation>کاپي او مقدار</translation>
+    
+ERR
+The ampersand (&) which indicates the shortcut key is missing in the translation. It should appear exactly once, as in the source. Also, "کاپي او مقدار" literally translates to "Copy and amount" without indicating a shortcut.
+
+Correct translation:
+کاپي &amp;مقدار
+```
+
+<!-- cache_translation_check_ps_ae56bcf080153d56f1f32bb44367b8ec7e668ad2880677c9f1f7f703c5478b09 -->
+```
+        <source>Copy transaction &amp;ID and output index</source>
         <translation>د معامله او ID کاپي کړئ او د آؤټ پټ انډیکس</translation>
     
 ERR
-The translation is awkward and grammatically incorrect in Pashto. "معامله" means "transaction", and "ID" is used as in English. But the sentence splits "ID" from "معامله", which is unnatural. "د معامله او ID کاپي کړئ او د آؤټ پټ انډیکس" literally says "Copy the transaction and ID and output index", which is confusing.
+The translation does not accurately convey the meaning and order of "transaction &ID and output index". The "&" for the shortcut is present, but the phrase "د معامله او ID کاپي کړئ او د آؤټ پټ انډیکس" translates to "and transaction and ID copy and output index", which is muddled and grammatically incorrect in Pashto. There is also redundancy and ambiguity regarding what is being copied.
 
 Correct translation:
-د راکړې ورکړې ID او د وتنې شاخص کاپي کړئ
+د معاملې &ID او آوټپټ اندېکس کاپي کړئ
+```
 
-Or more literally:
-د راکړې ورکړې پيژند (ID) او د آوټ پټ انډیکس کاپي کړئ
+<!-- cache_translation_check_ps_b2bd68052b64c1239bd645a3cf4fe96c3e6e461fa52910ecc05eb91bd3c44e7a -->
+```
+        <source>L&amp;ock unspent</source>
+        <translation>غیر مصرف شوي قفل کړئ</translation>
+    
+ERR
+The translation is missing the '&' which is required exactly once to indicate the shortcut key. Additionally, the phrase "غیر مصرف شوي قفل کړئ" does not map the shortcut key. It should include the '&' somewhere in the translation.
+
+Correct translation:
+غیر مصرف شوي &قفل کړئ
 ```
 
 <!-- cache_translation_check_ps_6175d5bcd69ff2a9152cb476550ec9cd56cfad99e4514223b5e027e884573ed2 -->
@@ -400,16 +678,20 @@ Correct translation:
 د دې والټ لپاره شخصي کیلي غیر فعال کړئ. هغه والټونه چې شخصي کیلي غیر فعال شوي وي، هیڅ شخصي کیلي نه لري او نه کولی شي HD سیډ یا وارد شوي شخصي کیلي ولري. دا یوازې د کتو لپاره والټونو لپاره مناسب دی.
 ```
 
-<!-- cache_translation_check_ps_5f9ebfa25571e02f2ebffe8eded46effb4486931548065df69826c74fc6cd516 -->
+<!-- cache_translation_check_ps_5fe349ca14de6871a8d01f019f271b61ffb6e8dd32375f660dd99bac54ead443 -->
 ```
-        <source>Address</source>
+        <source>&amp;Address</source>
         <translation>او پته</translation>
     
 ERR
-The Pashto translation "او پته" translates to "and address," where "او" means "and". The correct translation for "Address" alone is "پته" without the conjunction "او".
+The translation "او پته" means "and address" in Pashto, but it omits the ampersand (&) used to indicate the shortcut key. The & character should be present exactly once in the translation (typically as "&پته", or "پته&", or within the phrase—its position can vary).
 
 Correct translation:
-پته
+&پته
+or
+پته&
+
+Either is acceptable as long as there is exactly one &.
 ```
 
 <!-- cache_translation_check_ps_bcb31bfc60e4b4585f0f14dc29db054c837ca62e33e885d206362fa9018da75d -->
@@ -434,6 +716,35 @@ The Pashto translation is awkward, slightly ungrammatical, and the placement of 
 
 Correct translation:
 دا داخله شوې پته "%1" لا له وړاندې د "%2" لیبل سره په د پتو کتاب کې موجوده ده.
+```
+
+<!-- cache_translation_check_ps_3a94fb35f6d6dabc2b48d16cbd96a53735ddc63b076db038b5b953b00f7b4411 -->
+```
+        <source>Welcome to %1.</source>
+        <translation>%1ښه راغلاست</translation>
+    
+ERR
+There is a missing space between the placeholder %1 and the Pashto phrase "ښه راغلاست", causing an unnatural joining of the app name/variable and the greeting. The correct translation should have a space after %1.
+
+Correct translation:
+%1 ته ښه راغلاست
+```
+
+<!-- cache_translation_check_ps_76fbbecbf07df7b5927f44f12d63b9e30a1769d0e6e3230f0739e980e239e19d -->
+```
+        <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2 GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
+        <translation>کله چې تاسو OK کلیک کړئ, %1 
+"به د بشپړ ډاونلوډ او پروسس پیل کړي.%4بلاک چین%2 GB) د لومړیو معاملو سره پیل کول %3 کله %4 په لومړي سر کې پیل شو</translation>
+    
+ERR
+There are several problems:
+- The translation contains broken sentences and incorrect placement of format specifiers.
+- Some format specifiers (%4, %2, etc.) are concatenated incorrectly.
+- There is an erroneous line break after '%1', and the wording is awkward.
+- Some punctuation and word order do not make sense.
+
+Correct translation:
+کله چې تاسو OK کلیک کړئ، %1 به د بشپړې %4 بلاک زنځیر (%2 GB) راښکته او پروسس کول پیل کړي، چې د %3 د لومړیو معاملو څخه به پیل شي کله چې %4 په لومړي ځل پیل شو.
 ```
 
 <!-- cache_translation_check_ps_68df27521b117acca8c0a2f9a348f70faa618eeaba23aa24a62ec9ea188268d6 -->
@@ -478,60 +789,105 @@ Correct translation:
 %1 به د بیتکوین بلاک چین یوه کاپي ډاونلوډ او ذخیره کړي.
 ```
 
-<!-- cache_translation_check_ps_3a94fb35f6d6dabc2b48d16cbd96a53735ddc63b076db038b5b953b00f7b4411 -->
+<!-- cache_translation_check_ps_41d78d6f08b7f3689fe5a91d90fa94382e5e824a6abd871df1cf42177ba8c017 -->
 ```
-        <source>Welcome to %1.</source>
-        <translation>%1ښه راغلاست</translation>
+        <source>&amp;Main</source>
+        <translation>"&amp;اصلي</translation>
     
 ERR
-There is a missing space between the placeholder %1 and the Pashto phrase "ښه راغلاست", causing an unnatural joining of the app name/variable and the greeting. The correct translation should have a space after %1.
+The Pashto translation "&amp;اصلي" unnecessarily includes an opening quotation mark ("). Also, in Pashto, strings should generally not be enclosed in English quotes unless used in the source. The ampersand (&amp;) is present correctly, though. 
 
 Correct translation:
-%1 ته ښه راغلاست
+&amp;اصلي
 ```
 
-<!-- cache_translation_check_ps_76fbbecbf07df7b5927f44f12d63b9e30a1769d0e6e3230f0739e980e239e19d -->
+<!-- cache_translation_check_ps_3ccec79073503b9070dcef9575fc71b84377a013e11511be8ab7e8cf214c8cc3 -->
 ```
-        <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2 GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
-        <translation>کله چې تاسو OK کلیک کړئ, %1 
-"به د بشپړ ډاونلوډ او پروسس پیل کړي.%4بلاک چین%2 GB) د لومړیو معاملو سره پیل کول %3 کله %4 په لومړي سر کې پیل شو</translation>
+        <source>Size of &amp;database cache</source>
+        <translation>د ډیټابیس کیش اندازه</translation>
     
 ERR
-There are several problems:
-- The translation contains broken sentences and incorrect placement of format specifiers.
-- Some format specifiers (%4, %2, etc.) are concatenated incorrectly.
-- There is an erroneous line break after '%1', and the wording is awkward.
-- Some punctuation and word order do not make sense.
+The '&' shortcut key indicator from the source is missing in the translation. It should exist exactly once in the translation as well.
 
 Correct translation:
-کله چې تاسو OK کلیک کړئ، %1 به د بشپړې %4 بلاک زنځیر (%2 GB) راښکته او پروسس کول پیل کړي، چې د %3 د لومړیو معاملو څخه به پیل شي کله چې %4 په لومړي ځل پیل شو.
+د &database کیش اندازه
 ```
 
-<!-- cache_translation_check_ps_caff1c34b4b73d882b2cbeabf02d66db31ee8a88c6b06be02c438eb25441bccf -->
+<!-- cache_translation_check_ps_afaba4ec11accc82c5febe9fff2b8d730550c34519aeaacd2fbeec51e73500bd -->
 ```
-        <source>Main</source>
-        <translation>"اصلي</translation>
-    
-ERR
-The translation has unnecessary quotation marks at the start and is missing the closing quotation mark. Also, the correct word for "Main" in Pashto (ps) is "اصلي" without quotes.
-
-Correct translation:
-اصلي
-```
-
-<!-- cache_translation_check_ps_cd038c99eb9043b6355f4af59aef7885aed83b61d932114de92ae3c625e03cd3 -->
-```
-        <source>Prune block storage to</source>
+        <source>Prune &amp;block storage to</source>
         <translation>پرون او د ذخیره بلاک کول تر</translation>
     
 ERR
-The translation is awkward and does not accurately convey the English source. "پرون او د ذخیره بلاک کول تر" is a direct word-for-word translation and does not make semantic sense in Pashto. The word "Prune" in the context of Bitcoin means to limit or reduce storage usage by deleting old blocks, not just "پرون" which is the past tense of "do/prune".
+The Pashto translation is inaccurate, syntactically awkward, and omits the necessary ampersand character (&) for the shortcut key. The English phrase is "Prune &block storage to"—"prune" here means to reduce or limit storage. The Pashto translation reads awkwardly ("پرون او د ذخیره بلاک کول تر") and does not clearly convey the meaning.
 
 Correct translation:
-د بلاک ذخیره محدود کړئ تر
+د &بلاک ذخیره محدودول تر
 
-Or, more clearly:
-د بلاک ذخیره تر دې اندازې راکم کړئ
+This maintains the shortcut key (&) before "بلاک" and clearly expresses the limiting of block storage.
+```
+
+<!-- cache_translation_check_ps_2820a3e089d2b183f4cdde5395cb90a6611e1efe22dd7c3536a3cb161506a9b0 -->
+```
+        <source>W&amp;allet</source>
+        <translation>والټ</translation>
+    
+ERR
+The translation omits the & shortcut key indicator, which should be included exactly once. The correct translation should place & before the shortcut character in the Pashto word. However, if no standard shortcut assignment exists in Pashto, it is common practice to keep the & at the beginning or before the first suitable character.
+
+Correct translation:
+&والټ
+
+Or, if Pashto UIs commonly use the first letter as the shortcut:
+و&الټ
+```
+
+<!-- cache_translation_check_ps_4e9038771cb4649a68ed4f481ae8ecebbf77a828a38447bd09fbedbb015f9546 -->
+```
+        <source>Copy &amp;label</source>
+        <translation>کاپي او ليبل</translation>
+    
+ERR
+The translation does not carry over the '&' shortcut indicator from the source. The '&' should appear exactly once in the translation, as per instructions. Additionally, "کاپي او ليبل" means "Copy and label" but in UI context, the '&' should be attached to the shortcut letter.
+
+Correct translation:
+کاپي او &ليبل
+```
+
+<!-- cache_translation_check_ps_da87da68f9770c32a0ec2c0e4db10e225ec93c9a2222fe23ce76c0622e569d1d -->
+```
+        <source>Copy &amp;amount</source>
+        <translation>کاپي او مقدار</translation>
+    
+ERR
+The ampersand (&) which indicates the shortcut key is missing in the translation. It should appear exactly once, as in the source. Also, "کاپي او مقدار" literally translates to "Copy and amount" without indicating a shortcut.
+
+Correct translation:
+کاپي &amp;مقدار
+```
+
+<!-- cache_translation_check_ps_4e9038771cb4649a68ed4f481ae8ecebbf77a828a38447bd09fbedbb015f9546 -->
+```
+        <source>Copy &amp;label</source>
+        <translation>کاپي او ليبل</translation>
+    
+ERR
+The translation does not carry over the '&' shortcut indicator from the source. The '&' should appear exactly once in the translation, as per instructions. Additionally, "کاپي او ليبل" means "Copy and label" but in UI context, the '&' should be attached to the shortcut letter.
+
+Correct translation:
+کاپي او &ليبل
+```
+
+<!-- cache_translation_check_ps_da87da68f9770c32a0ec2c0e4db10e225ec93c9a2222fe23ce76c0622e569d1d -->
+```
+        <source>Copy &amp;amount</source>
+        <translation>کاپي او مقدار</translation>
+    
+ERR
+The ampersand (&) which indicates the shortcut key is missing in the translation. It should appear exactly once, as in the source. Also, "کاپي او مقدار" literally translates to "Copy and amount" without indicating a shortcut.
+
+Correct translation:
+کاپي &amp;مقدار
 ```
 
 <!-- cache_translation_check_ps_479804d41214dc299a9754f89f46b7d26b8b14a08225f3a4df4ba93ec8b5531f -->
@@ -548,6 +904,18 @@ The translation "تایید شو"" is problematic for several reasons:
 Correct translation:
 تصدیق شوی
 ```
+
+<!-- cache_translation_check_ps_f14df870eabedf967bf9c0700cae59bc0be8338868b0cfa9c1e08ece5f076395 -->
+```
+        <source>&amp;Export</source>
+        <translation>او صادرات</translation>
+    
+ERR
+The translation does not include the "&" character, which is required exactly once to indicate the shortcut key. The correct translation should also use a more appropriate word for "Export" in Pashto, such as "صادروه" or similar.
+
+Correct translation:
+&صادرات
+```
 </details>
 
-Number of issues: 38.
+Number of issues: 66.

@@ -1,29 +1,44 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>bn</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bbn%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bbn%5D%20request)
 
 
-<!-- cache_translation_check_bn_17a24105787b7cffe02cf5d0aee83ba0ce71f92c8bb85c8bec01aad1c1ce324b -->
+<!-- cache_translation_check_bn_0dd82b171679d261cb464b6a935f14d900c9065f1dfc2706afe5ab578758da26 -->
+```
+        <source>C&amp;lose</source>
+        <translation>বন্ধ করুন</translation>
+    
+ERR
+The shortcut marker '&' from the source is missing. It must appear exactly once in the translation.
+
+Correct translation:
+&বন্ধ করুন
+```
+
+<!-- cache_translation_check_bn_77770e62eb5f1b815419031896d5e01dea25fd56395139f250b13e9a88c99550 -->
 ```
         <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>পেমেন্ট পাওয়ার জন্য এটি আপনার বিটকয়েন ঠিকানা। নতুন ঠিকানা তৈরী করতে "নতুন গ্রহণের ঠিকানা তৈরী করুন" বোতাম ব্যবহার করুন। সাইন ইন করা শুধুমাত্র "উত্তরাধিকার" ঠিকানার মাধ্যমেই সম্ভব।</translation>
+        <translation>পেমেন্ট পাওয়ার জন্য এটি আপনার বিটকয়েন ঠিকানা। নতুন ঠিকানা তৈরী করতে "নতুন গ্রহণের ঠিকানা তৈরী করুন" বোতাম ব্যবহার করুন।
+সাইন ইন করা শুধুমাত্র "উত্তরাধিকার" ঠিকানার মাধ্যমেই সম্ভব।</translation>
     
 ERR
-There are several issues:
-1. The English source refers to "addresses" (plural), but the translation uses the singular ("ঠিকানা").
-2. The instruction to use the button is not fully accurate: "গ্রহণের" is not the best translation for "receiving" tab, and the string “নতুন গ্রহণের ঠিকানা তৈরী করুন” directly translates the button label, but there is slight ambiguity.
-3. "Signing" is translated as "সাইন ইন করা", which means "signing in" (like logging in), not "cryptographic signing". The correct Bengali term here would be "স্বাক্ষর" or "স্বাক্ষর করা".
+Issues:
+- Plural lost: “These are … addresses” translated as singular.
+- “receive tab” omitted.
+- “Signing” mistranslated as “সাইন ইন” (login). Should be “স্বাক্ষর/সাইন”.
+- “legacy” should not be translated as “উত্তরাধিকার”; keep “legacy”.
+- Spelling: “তৈরী” should be “তৈরি”.
 
 Correct translation:
-এগুলো আপনার পেমেন্ট গ্রহণের জন্য বিটকয়েন ঠিকানাগুলি। নতুন ঠিকানা তৈরি করতে রিসিভ ট্যাবে 'নতুন গ্রহণের ঠিকানা তৈরি করুন' বোতামটি ব্যবহার করুন।
-স্বাক্ষর কেবলমাত্র 'লেগেসি' ধরনের ঠিকানার সাথে সম্ভব।
+এগুলো আপনার পেমেন্ট গ্রহণের জন্য বিটকয়েন ঠিকানাগুলি। নতুন ঠিকানা তৈরি করতে রিসিভ ট্যাবে থাকা ‘নতুন গ্রহণের ঠিকানা তৈরি করুন’ বোতামটি ব্যবহার করুন।
+স্বাক্ষর করা কেবল ‘legacy’ ধরনের ঠিকানার সঙ্গে সম্ভব।
 ```
 
 <!-- cache_translation_check_bn_0cc03b6d71bac850e47b7edeae399d30310ef85ac569447bfac182e55acebcc1 -->
@@ -38,18 +53,83 @@ Correct translation:
 %1 সেটিংস ফাইলটি সম্ভবত নষ্ট বা অবৈধ।
 ```
 
-<!-- cache_translation_check_bn_aedd7c18ec8342feef14c341b4356e2031b61d1f27545b874667e95b2906e11a -->
+<!-- cache_translation_check_bn_b1a23a108db505191a1d1ff206c8652c828728832741a410cbad4d5fddd29811 -->
 ```
-        <source>Sign message…</source>
+        <source>&amp;Minimize</source>
+        <translation>ছোট করুন</translation>
+    
+ERR
+The '&' symbol indicating a shortcut key is missing in the Bengali translation. It should appear exactly once, but does not appear at all.
+
+Correct translation:
+&ছোট করুন
+</reply>
+```
+
+<!-- cache_translation_check_bn_e83ea5916082f22e1e9998127e468dcf9750a82daa4607e8abd276cd6a869fe4 -->
+```
+        <source>&amp;Backup Wallet…</source>
+        <translation>ব্যাকআপ ওয়ালেট…</translation>
+    
+ERR
+The ampersand (&) indicating the shortcut key is missing from the Bengali translation. It must appear exactly once, anywhere in the translation.
+
+Correct translation:
+&ব্যাকআপ ওয়ালেট…
+```
+
+<!-- cache_translation_check_bn_6cc3cca3821175afb76ac8bfd63d7ec8020f1c9d4afd661697ce926545a6334b -->
+```
+        <source>Sign &amp;message…</source>
         <translation>সাইন এবং বার্তা...</translation>
     
 ERR
-The translation is inaccurate. "সাইন এবং বার্তা..." means "Sign and message...", but the English is "Sign message…" (i.e., "sign a message" or "message signing"). The translation should convey the action of signing a message, not "sign and message".
+The English text uses "&amp;message" to indicate a shortcut key (the ampersand), but in the Bengali translation "সাইন এবং বার্তা...", there is no ampersand (or its equivalent, which is uncommon in Bengali UI but still should be preserved for shortcut purposes). Additionally, the literal translation of "Sign &amp;message" into "সাইন এবং বার্তা..." is misleading: "Sign message" actually refers to digitally signing a message in the context of Bitcoin, not to a conjunction. The ellipsis (...) is also present, as in the source, which is correct.
 
 Correct translation:
-বার্তায় স্বাক্ষর করুন…
+বার্তায় & সাইন করুন ...
 or
-বার্তা স্বাক্ষর করুন…
+বার্তা &amp; সাইন করুন...
+or (in more natural Bengali UI, keeping the ampersand for the shortcut)
+বার্তা (&M) স্বাক্ষর করুন...
+
+Depending on the context specifics for menu/key shortcuts in Bengali UIs, but the literal "এবং" ("and") is not correct in technical/software context. The ampersand (&) is required somewhere as a shortcut indicator.
+```
+
+<!-- cache_translation_check_bn_c14c42bf3d25699e4b35817c29013f2990d6169dde5560735cfc4e13454c8fd0 -->
+```
+        <source>&amp;Verify message…</source>
+        <translation>বার্তা যাচাই করুন...</translation>
+    
+ERR
+The ampersand (&) indicating the shortcut key from the source text (&Verify message…) is missing in the translation. According to the rule, there should be exactly one ampersand in the translation.
+
+Correct translation:
+&বার্তা যাচাই করুন...
+```
+
+<!-- cache_translation_check_bn_89fab0ea7623a650fb33e9a713e2b2697445d5dfcafb2b8891b446e3d60f8b21 -->
+```
+        <source>&amp;Load PSBT from file…</source>
+        <translation>ফাইল থেকে PSBT লোড করুন...</translation>
+    
+ERR
+The ampersand (&) indicating the shortcut key in the source (&Load PSBT from file…) is missing in the translation. It should appear exactly once in the translation as well.
+
+Correct translation:
+&amp;ফাইল থেকে PSBT লোড করুন...
+```
+
+<!-- cache_translation_check_bn_84b93addd89263bceaeb2d6ad1c56922e968756bd6112f0558edf48a763d1ce3 -->
+```
+        <source>Open &amp;URI…</source>
+        <translation>URI খুলুন...</translation>
+    
+ERR
+The translation is missing the shortcut indicator '&' which must appear exactly once to correspond with the English text.
+
+Correct translation:
+&URI খুলুন…
 ```
 
 <!-- cache_translation_check_bn_04e9ffe85031983b86a63b52fa2347290443c0aaf5445158f06be9e81d1a8426 -->
@@ -64,48 +144,102 @@ Correct translation:
 আপডেট হচ্ছে…
 ```
 
-<!-- cache_translation_check_bn_0ab7c1a42a97b484d928e9fa822a9c9a098d5f89239bd0d4cfb033f9f8a5bdde -->
+<!-- cache_translation_check_bn_d58e149b6318d857257760ee78d077ec1732ba7fd1854c0fdd57a8d224b0ae3f -->
 ```
-        <source>Mask values</source>
+        <source>Open Wallet</source>
+        <translation>ওয়ালেট খুলুন </translation>
+    
+ERR
+Trailing whitespace detected in the translation.
+
+Correct translation:
+ওয়ালেট খুলুন
+```
+
+<!-- cache_translation_check_bn_842ec5854d16e8ea783bccade7282f79c38513e89e15de2133f7555b71425169 -->
+```
+        <source>&amp;Mask values</source>
         <translation>অক্ষরগুলি আড়াল করুন </translation>
     
 ERR
-The translation "অক্ষরগুলি আড়াল করুন" means "Hide the characters," which is not a correct translation of "Mask values." "Values" should be translated as "মান" rather than "অক্ষরগুলি" ("characters"). Also, there is a stray space at the end.
+The translation does not include the '&' character, which is used as a shortcut key indicator and must appear exactly once in both the source and translation. Additionally, the translation for "values" is missing. The translation should also not have trailing whitespace.
 
 Correct translation:
-মানগুলো গোপন করুন
+&মান আড়াল করুন
+</reply>
 ```
 
-<!-- cache_translation_check_bn_729de33ad460320f57c03756d8a451bb24628a060629d139043203f5c7bc50b8 -->
+<!-- cache_translation_check_bn_9e9b70d3e5da6e55713cb53165cfa9f6c2976f6db9e52fd047e6160eaacb408a -->
 ```
-        <source>Show</source>
-        <translation>Sকিভাবে</translation>
+        <source>Zoom</source>
+        <translation>zoom</translation>
     
 ERR
-The translation "Sকিভাবে" is incorrect for "Show". It appears to be a combination of an English letter "S" and the Bengali "কিভাবে" (which means "how"), which is erroneous and nonsensical in this context.
+The translation is not in Bengali; it simply repeats the English word in lowercase. It should be translated/transliterated into Bengali.
 
 Correct translation:
-দেখান
+জুম
 ```
 
-<!-- cache_translation_check_bn_afa35f5cb24b4837bacb1eb0b11d62c2253f5c108f1babce51ba9d53cce004df -->
+<!-- cache_translation_check_bn_18847446785423eabc6b3f628fb8cc6c99d260eda1d0465cd8c4682dbf38f6b5 -->
 ```
-        <source>Lock unspent</source>
-        <translation>Lock অব্যয়</translation>
+        <source>S&amp;how</source>
+        <translation>S&amp;কিভাবে</translation>
     
 ERR
-The translation is problematic. "Lock অব্যয়" is a partial translation where "Lock" is untranslated, and "অব্যয়" is an uncommon or unclear term in this context. The usual translation for "unspent" in the context of Bitcoin is "অব্যবহৃত". "Lock" should be translated as "লক" or "আটকান", depending on preferred terminology in technical Bengali localization.
+The translation "S&কিভাবে" is incorrect because "কিভাবে" means "how" in Bengali, which does not convey the meaning of "Show". Also, the ampersand (&) is present, but it should be attached to the correctly translated word.
 
 Correct translation:
-অব্যবহৃত লক করুন
+&দেখান
+</reply>
+```
 
-If you want the term order to match English (i.e., for user interfaces), it could be:
-লক অব্যবহৃত
+<!-- cache_translation_check_bn_55cbc127801296bd8c63495880093469b0a6f13e01a00e4c9b42df754e511bc9 -->
+```
+        <source>&amp;Copy address</source>
+        <translation>ঠিকানা কপি করুন</translation>
+    
+ERR
+The '&' indicating the shortcut key from the source text is missing in the Bengali translation. It should appear exactly once in the translation.
 
-But the more explanatory/localized version would be:
-অব্যবহৃত অর্থ লক করুন or অব্যবহৃত টোকেন লক করুন
+Correct translation:
+&ঠিকানা কপি করুন
+```
 
-For simply mirroring the English (as in menu items), the first suggestion suffices.
+<!-- cache_translation_check_bn_6285b845fcc2bc8d8455413f9e44dc9ce825833e0ba97df87f048941c57d55de -->
+```
+        <source>Copy &amp;amount</source>
+        <translation>কপি পরিমাণ</translation>
+    
+ERR
+The ampersand (&) indicating the shortcut key from the source ("Copy &amp;amount") is missing in the translation. The correct translation should include it exactly once, consistent with shortcut conventions. 
+
+Correct translation:
+&amp;পরিমাণ কপি করুন
+```
+
+<!-- cache_translation_check_bn_b36c6509f19a0b1d2095c2e4c2ed15d71dfff8ffc84f91cd34d862d912cc3479 -->
+```
+        <source>L&amp;ock unspent</source>
+        <translation>L&amp;ock অব্যয়</translation>
+    
+ERR
+The translation is incorrect because it retains the English word "Lock" instead of translating it to Bengali, and "অব্যয়" alone is not a commonly used term for "unspent" in the context of Bitcoin. The correct Bengali for "Lock unspent" (meaning "Lock an unspent output") should be:
+
+Correct translation:
+অব্যবহৃত লক করুন (&amp;L)
+```
+
+<!-- cache_translation_check_bn_9fe0b462d1fc7206942d8864bb374e6314e859c3c6e7bbde52a056b3dc1338fe -->
+```
+        <source>&amp;Unlock unspent</source>
+        <translation>&amp;অব্যয়িত খোলা</translation>
+    
+ERR
+The translation of "&amp;Unlock unspent" as "&amp;অব্যয়িত খোলা" is incorrect. "অব্যয়িত" means "unspent", and "খোলা" means "open", not "unlock". The correct translation for "Unlock" is "আনলক" or "লক খুলুন", so the phrase should be more accurately rendered as "অব্যয়িত আনলক করুন" or "&amp;অব্যয়িত আনলক করুন".
+
+Correct translation:
+&amp;অব্যয়িত আনলক করুন
 ```
 
 <!-- cache_translation_check_bn_a3525f0a9e5e5b15e9da8b7cd057efe9af462eb528910f30dedef4c13f499380 -->
@@ -160,6 +294,19 @@ Correct translation:
 স্থানান্তর প্রক্রিয়া শুরু করার আগে ওয়ালেটের একটি ব্যাকআপ তৈরি করা হবে। এই ব্যাকআপ ফাইলটির নাম হবে &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak এবং এটি এই ওয়ালেটের ডিরেক্টরিতে পাওয়া যাবে। যদি মাইগ্রেশনে কোনো ভুল হয়, তাহলে "ওয়ালেট পুনরুদ্ধার করুন" অপশন ব্যবহার করে ওই ব্যাকআপ থেকে পুনরুদ্ধার করা যাবে।
 ```
 
+<!-- cache_translation_check_bn_5cc75ffec232b6320dbf3c12f2b13f8911cd3ac273d0f92bb2ff0d4ac4a5ed28 -->
+```
+        <source>Open Wallet</source>
+        <extracomment>Title of window indicating the progress of opening of a wallet.</extracomment>
+        <translation>ওয়ালেট খুলুন </translation>
+    
+ERR
+The translation uses the imperative ("ওয়ালেট খুলুন") rather than indicating progress, and it contains a trailing space.
+
+Correct translation:
+ওয়ালেট খোলা হচ্ছে
+```
+
 <!-- cache_translation_check_bn_1c218480bf9da859abb8acd05db94633fb5871582e57a6e348bad4368bbba32c -->
 ```
         <source>Whether to show PSBT controls.</source>
@@ -171,6 +318,37 @@ The translation is not fully accurate and omits the end punctuation present in t
 
 Correct translation:
 PSBT কন্ট্রোল দেখানো হবে কিনা।
+```
+
+<!-- cache_translation_check_bn_255012906758618ddc10c169df2538b1a9b3f02c8f68e2874ce530cb536e161c -->
+```
+        <source>&amp;Copy address</source>
+        <extracomment>Context menu action to copy the address of a peer.</extracomment>
+        <translation>ঠিকানা কপি করুন</translation>
+    
+ERR
+The translation is missing the '&' character, which is used to indicate the shortcut key in the menu. It should appear exactly once somewhere in the translation.
+
+Correct translation:
+&ঠিকানা কপি করুন
+or
+ঠিকানা &কপি করুন
+```
+
+<!-- cache_translation_check_bn_087c788748bb88c6e86967f73d9234b423f3dfebf6eb28af87760a2e2be0de3b -->
+```
+        <source>&amp;Copy IP/Netmask</source>
+        <extracomment>Context menu action to copy the IP/Netmask of a banned peer. IP/Netmask is the combination of a peer's IP address and its Netmask. For IP address, see: https://en.wikipedia.org/wiki/IP_address.</extracomment>
+        <translation>&amp;copy আইপি/নেটমাস্ক
+(IP/Netmask)</translation>
+    
+ERR
+The translation unnecessarily includes both an inconsistent case for "copy" (should be in Bengali script and capitalisation is not as in English shortcut conventions), and adds a redundant parenthetical "(IP/Netmask)" which is not in the source. The & shortcut is also not properly integrated into the translation.
+
+Correct translation:
+&কপি আইপি/নেটমাস্ক
+
+Explanation: "কপি" is the standard Bengali transliteration for "copy", and the shortcut ampersand is kept before it, maintaining consistency with the original. No extra parentheses or English text is needed.
 ```
 
 <!-- cache_translation_check_bn_96a37554d20e206b5c4be6e25a908bbeb71d1268c3909de47e81faabcaa70d4d -->
@@ -199,40 +377,52 @@ Correct translation:
 না
 ```
 
-<!-- cache_translation_check_bn_cbeafd180baa2c6221dff3a7952e17bc2dff88f198ef17222d658e664dc9916e -->
+<!-- cache_translation_check_bn_55cbc127801296bd8c63495880093469b0a6f13e01a00e4c9b42df754e511bc9 -->
 ```
-        <source>Label</source>
-        <translation>টিকেট</translation>
+        <source>&amp;Copy address</source>
+        <translation>ঠিকানা কপি করুন</translation>
     
 ERR
-The translation is incorrect. "Label" should be translated as "লেবেল" or "চিহ্ন", not "টিকেট" (which means "ticket" in Bengali).
+The '&' indicating the shortcut key from the source text is missing in the Bengali translation. It should appear exactly once in the translation.
 
 Correct translation:
-লেবেল
+&ঠিকানা কপি করুন
 ```
 
-<!-- cache_translation_check_bn_cbeafd180baa2c6221dff3a7952e17bc2dff88f198ef17222d658e664dc9916e -->
+<!-- cache_translation_check_bn_6285b845fcc2bc8d8455413f9e44dc9ce825833e0ba97df87f048941c57d55de -->
 ```
-        <source>Label</source>
-        <translation>টিকেট</translation>
+        <source>Copy &amp;amount</source>
+        <translation>কপি পরিমাণ</translation>
     
 ERR
-The translation is incorrect. "Label" should be translated as "লেবেল" or "চিহ্ন", not "টিকেট" (which means "ticket" in Bengali).
+The ampersand (&) indicating the shortcut key from the source ("Copy &amp;amount") is missing in the translation. The correct translation should include it exactly once, consistent with shortcut conventions. 
 
 Correct translation:
-লেবেল
+&amp;পরিমাণ কপি করুন
 ```
 
-<!-- cache_translation_check_bn_cbeafd180baa2c6221dff3a7952e17bc2dff88f198ef17222d658e664dc9916e -->
+<!-- cache_translation_check_bn_55cbc127801296bd8c63495880093469b0a6f13e01a00e4c9b42df754e511bc9 -->
 ```
-        <source>Label</source>
-        <translation>টিকেট</translation>
+        <source>&amp;Copy address</source>
+        <translation>ঠিকানা কপি করুন</translation>
     
 ERR
-The translation is incorrect. "Label" should be translated as "লেবেল" or "চিহ্ন", not "টিকেট" (which means "ticket" in Bengali).
+The '&' indicating the shortcut key from the source text is missing in the Bengali translation. It should appear exactly once in the translation.
 
 Correct translation:
-লেবেল
+&ঠিকানা কপি করুন
+```
+
+<!-- cache_translation_check_bn_6285b845fcc2bc8d8455413f9e44dc9ce825833e0ba97df87f048941c57d55de -->
+```
+        <source>Copy &amp;amount</source>
+        <translation>কপি পরিমাণ</translation>
+    
+ERR
+The ampersand (&) indicating the shortcut key from the source ("Copy &amp;amount") is missing in the translation. The correct translation should include it exactly once, consistent with shortcut conventions. 
+
+Correct translation:
+&amp;পরিমাণ কপি করুন
 ```
 
 <!-- cache_translation_check_bn_32290be196f3d5c6942b0ba5047a253a85f6f37b647a110e67453eec56cd20fa -->
@@ -248,4 +438,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 17.
+Number of issues: 32.

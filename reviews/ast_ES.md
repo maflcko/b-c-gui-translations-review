@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>ast_ES</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bast_ES%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bast_ES%5D%20request)
 
 
 <!-- cache_translation_check_ast_ES_fa9e3c5a00a37feaa01da36d9f405953ec5ff02ac6c2252770003daf08521b0b -->
@@ -37,6 +37,18 @@ Correct translation:
 Escueye la direición pa recibir les monedes
 ```
 
+<!-- cache_translation_check_ast_ES_0ba5acaf09e45b339bbf0c3d0624ac160088261553a5b69da8456d2adf431fb5 -->
+```
+        <source>Exporting Failed</source>
+        <translation>Recibiendo direcciones</translation>
+    
+ERR
+The translation is unrelated to the source text. "Recibiendo direcciones" means "Receiving addresses," not "Exporting Failed."
+
+Correct translation:
+Fallu al esportar
+```
+
 <!-- cache_translation_check_ast_ES_03f490e5c4d0bf758a38310def058f1ba2e4ddc32820f6aecbba66f1feaf0205 -->
 ```
         <source>Your wallet is about to be encrypted. </source>
@@ -64,28 +76,17 @@ Correct translation:
 La to cartera ta cifrada agora.
 ```
 
-<!-- cache_translation_check_ast_ES_8fcbd71c696d8abfac1907723ffc3e1696b08f673099d8a7316e3221c234df5d -->
+<!-- cache_translation_check_ast_ES_74c918b442e332368c495d4067bb2026e4cd8e42060fcec6e7f7ff27d2640ecd -->
 ```
-        <source>Transactions</source>
-        <translation>Tratos</translation>
+        <source>&amp;Receive</source>
+        <translation>&amp;Enviar</translation>
     
 ERR
-While "Tratos" is a word in Asturian, it more commonly means "deals" or "agreements", and is not the appropriate translation for financial "transactions" in the context of Bitcoin. The correct Asturian translation of "Transactions" in this financial context is "Transacciones".
+The translation is incorrect. "&amp;Receive" should be translated as "Recibir" in Asturian, but the translation provided means "Send" ("Enviar"). The shortcut key indicator (&) is present, but on the wrong word.
 
 Correct translation:
-Transacciones
-```
-
-<!-- cache_translation_check_ast_ES_fb49e0291edb466c29cb717d7e704e27a43e1167dc50243a1412db7a7843b7a1 -->
-```
-        <source>Receive</source>
-        <translation>Enviar</translation>
-    
-ERR
-The translation is incorrect. "Receive" means to accept or get something, while "Enviar" means "Send" in Asturian (and Spanish). The correct Asturian translation should be "Recibir".
-
-Correct translation:
-Recibir
+&amp;Recibir
+</reply>
 ```
 
 <!-- cache_translation_check_ast_ES_9e64509d99c53a68f622f6a82682d8ba7f31f0aba4ef9c6569ddf15b825c3685 -->
@@ -100,6 +101,18 @@ Correct translation:
 Zarrar toles carteres…
 ```
 
+<!-- cache_translation_check_ast_ES_de38cc92f6398da3397182193f7c08ca8775c10cac3d1b76b3badc85b731b10c -->
+```
+        <source>&amp;Settings</source>
+        <translation>&amp;Configuraciones</translation>
+    
+ERR
+The translation "Configuraciones" is not the most natural or standard way to translate "Settings" into Asturian. The correct translation is "Axustes". Also, the ampersand (&) is present exactly once, which is correct.
+
+Correct translation:
+&amp;Axustes
+```
+
 <!-- cache_translation_check_ast_ES_2dca3fe58696c0fcb37ad2db2d08e1e47e34c6a9d8c82436836ad32d726a8b93 -->
 ```
         <source>Close wallet</source>
@@ -146,7 +159,19 @@ There is a typo in the translation: "Cerrrar" has an extra 'r', it should be "Ce
 
 Correct translation:
 Cerrar toles carteres
+```
+
+<!-- cache_translation_check_ast_ES_0ba5acaf09e45b339bbf0c3d0624ac160088261553a5b69da8456d2adf431fb5 -->
+```
+        <source>Exporting Failed</source>
+        <translation>Recibiendo direcciones</translation>
+    
+ERR
+The translation is unrelated to the source text. "Recibiendo direcciones" means "Receiving addresses," not "Exporting Failed."
+
+Correct translation:
+Fallu al esportar
 ```
 </details>
 
-Number of issues: 11.
+Number of issues: 13.

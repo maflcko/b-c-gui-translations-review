@@ -1,13 +1,100 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>ar</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bar%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bar%5D%20request)
 
+
+<!-- cache_translation_check_ar_67bdc5a8fe1eef04e8cc8d63a86dc316d5415dae6e11bf54cfcc8532e83961ac -->
+```
+        <source>Right-click to edit address or label</source>
+        <translation> انقر زر الماوس الأيمن لتعديل العنوان أو المسمي</translation>
+    
+ERR
+- Leading whitespace before the translation.
+- Prepositional error: should be "انقر بزر" not "انقر زر".
+- "المسمي" is a misspelling; better term for "label" is "التسمية" in this context.
+
+Correct translation:
+انقر بزر الماوس الأيمن لتعديل العنوان أو التسمية
+```
+
+<!-- cache_translation_check_ar_acd2d60576ab14a19d03963efa11e1988ce22fa2fbf42f485fe63877de4de84e -->
+```
+        <source>&amp;New</source>
+        <translation> &amp;جديد</translation>
+    
+ERR
+There is an extra space at the beginning of the translation string before "&amp;جديد", which introduces a formatting issue. The translation itself is accurate, and the shortcut marker is present, but remove the stray leading space.
+
+Correct translation:
+&amp;جديد
+```
+
+<!-- cache_translation_check_ar_4e503aeb3045014e622f5924857f9ac96da283690b2bd93e0f66fffe19311a60 -->
+```
+        <source>Enter address or label to search</source>
+        <translation>أدخل عنوانا أو مذكرة للبحث</translation>
+    
+ERR
+"مذكرة" تعني "ملاحظة" وليست "label". الأنسب استخدام "تسمية" أو "تصنيف".
+
+Correct translation:
+أدخل عنوانًا أو تسمية للبحث
+```
+
+<!-- cache_translation_check_ar_2e87ff2c1744878ce1997efa95bb3131051535165cf434d02b1ed6ba16f061c9 -->
+```
+        <source>Copy the currently selected address to the clipboard</source>
+        <translation>آدرس انتخاب شده فعلی را در کلیپ بورد کپی کنید</translation>
+    
+SPAM
+The provided text is in Persian (Farsi), not Arabic.
+
+Correct translation:
+انسخ العنوان المحدد حاليًا إلى الحافظة
+```
+
+<!-- cache_translation_check_ar_7c97b2a962531ef2d373b1d7043759b1329b4dbb33442b831cf28ec7e7513192 -->
+```
+        <source>&amp;Delete</source>
+        <translation>حذف</translation>
+    
+ERR
+The translation is missing the shortcut marker '&' that exists in the source and should appear exactly once in the translation.
+
+Correct translation:
+&حذف
+```
+
+<!-- cache_translation_check_ar_77225fd64429b52d34d2c650057ee52b59e6605ac6d1ab98a247dd2cc3fe91b0 -->
+```
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation>هذه هي العناوين الخاصة بها بك. استخدم زر "إنشاء عنوان استقبال جديد" في علامة استلام البريد الإلكتروني عناوين جديدة.التوقيع ممكن فقط مع عناوين نوع "إرث" .</translation>
+    
+ERR
+The Arabic text contains multiple issues: incorrect pronouns ("بها بك"), missing mention of Bitcoin and receiving payments, incorrect reference to "email," missing verb ("لإنشاء"), spacing errors, and an unsuitable translation of "legacy." 
+
+Correct translation:
+هذه هي عناوين البيتكوين الخاصة بك لتلقي المدفوعات. استخدم زر «إنشاء عنوان استلام جديد» في تبويب الاستلام لإنشاء عناوين جديدة.
+لا يمكن التوقيع إلا باستخدام العناوين من النوع «Legacy».
+```
+
+<!-- cache_translation_check_ar_4fa3b370d87f6fd1099a8705e6eebfad895ff775e85af3296c34f579c2c1822a -->
+```
+        <source>Unlock wallet</source>
+        <translation>Active </translation>
+    
+SPAM
+The translation is in English ("Active") instead of Arabic, has the wrong meaning, and includes a trailing space.
+Correct translation:
+إلغاء قفل المحفظة
+```
 
 <!-- cache_translation_check_ar_da342c09df94d95a3eadf3dcdf8687ebf5e6ba8d5fc07b564eabd7ea71756f79 -->
 ```
@@ -20,6 +107,33 @@ The translation "موصل طابق" is incorrect and does not convey the meaning
 
 Correct translation:
 ترحيل الكتل
+```
+
+<!-- cache_translation_check_ar_d5a73cca1b4510941a75890091f651bccb8d99399d501ab9ccddfc567449264b -->
+```
+        <source>E&amp;xit</source>
+        <translation>خروج</translation>
+    
+ERR
+The translation omits the '&' shortcut indicator present in the source. For Arabic, a common way to represent a menu shortcut is to add '&' before the relevant letter, e.g., '&خروج' or 'خ&روج', where the position determines the access key.
+
+Correct translation:
+&خروج
+
+Alternatively (if the shortcut should be on the second letter, which is less common in Arabic, but possible):
+خ&روج
+```
+
+<!-- cache_translation_check_ar_67ca78ddd25c4e2c3e22b4e52c3493dc49f9e731fc0bca0c4a49595127863185 -->
+```
+        <source>&amp;About %1</source>
+        <translation>حوالي %1</translation>
+    
+ERR
+The shortcut key indicator '&' is missing in the Arabic translation. It must appear exactly once, as in the source.
+
+Correct translation:
+&حول %1
 ```
 
 <!-- cache_translation_check_ar_f33b545d1cfc67d573995e25a93dc6fdf24582d625b5cc76e1c1c9b689a7dddb -->
@@ -58,27 +172,57 @@ Correct translation:
 الوكيل <b>مفعل</b>: ‏%1
 ```
 
-<!-- cache_translation_check_ar_fb65635746fb297ce68f889032b49bd06dc4cad5204c492f64cd4eaf107484a8 -->
+<!-- cache_translation_check_ar_99f59890f9f3bfaad974ed0fb1e7a7530d9eb69618f271d178ac1bbc5bec61f8 -->
 ```
-        <source>Change Passphrase…</source>
+        <source>&amp;Encrypt Wallet…</source>
+        <translation>&amp; تشفير المحفظة</translation>
+    
+ERR
+There is an unnecessary space after the ampersand (&) in the Arabic translation, and the ellipsis (…) is missing. The ampersand (&) should directly precede the letter designating the shortcut, with no extra space, and the ellipsis should be included.
+
+Correct translation:
+&تشفير المحفظة…
+```
+
+<!-- cache_translation_check_ar_1403b25869cc651ec4588bf2e79be6e9f896e71853a3c802a2b3cb146a692337 -->
+```
+        <source>&amp;Backup Wallet…</source>
+        <translation>&amp; محفظة احتياطية</translation>
+    
+ERR
+There is an extra space after the ampersand in the Arabic translation ("& محفظة احتياطية"). The ampersand should directly precede the shortcut key (which should be an Arabic letter corresponding to the shortcut). Also, "محفظة احتياطية" translates to "Backup Wallet" as a noun ("a backup wallet"), rather than the imperative "Backup Wallet..." (the action to back up the wallet). A better translation for the menu action would be "نسخ احتياطي للمحفظة..." or "النسخ الاحتياطي للمحفظة...". The ellipsis (…) is also missing in the translation.
+
+Correct translation:
+&نسخ احتياطي للمحفظة…
+```
+
+<!-- cache_translation_check_ar_983e61f8022d364bd354d11ad77cd54147a1cf4ed16e754e62f97570793a47de -->
+```
+        <source>&amp;Change Passphrase…</source>
         <translation>وتغيير العبارات...</translation>
     
 ERR
-The translation is inaccurate. "وتغيير العبارات..." means "and changing the phrases...", which is not correct. The correct translation for "Change Passphrase…" is:
+The translation is incorrect for several reasons:
+- The ampersand (&) indicating the shortcut key is missing.
+- The wording does not correctly reflect "Change Passphrase"; it says "and change the phrases..." instead of "Change passphrase".
+- No need to add "وتغيير"; it should start directly.
+- The correct translation for "Change Passphrase…" is: "تغيير كلمة المرور..." or "تغيير عبارة المرور...". 
+- The shortcut key "&" must also appear, for example: "&تغيير عبارة المرور..."
 
-تغيير العبارة السرية…
+Correct translation:
+&تغيير عبارة المرور...
 ```
 
-<!-- cache_translation_check_ar_1d07894069cf3b00a8f83c56a875a6cc187814f1af38a6106c3cfdbd30608825 -->
+<!-- cache_translation_check_ar_cfd9cab9b35e705ef8a0966ac5772c977513bdf998d403d984aa94eec3c79a43 -->
 ```
-        <source>Sign message…</source>
+        <source>Sign &amp;message…</source>
         <translation>علامة ورسالة...</translation>
     
 ERR
-The translation is incorrect. "علامة ورسالة..." means "a sign and a message...", which does not match the source meaning ("Sign message…" as in "Sign a message" cryptographically). The correct translation should convey the action of signing a message.
+The Arabic translation is inaccurate. "علامة" means "sign" as in a physical sign or symbol, not "to sign (digitally)". Additionally, the ampersand (&) indicating a shortcut is missing from the Arabic translation. An accurate translation for "Sign &message…" in the context of Bitcoin should be "وقّع &الرسالة...".
 
 Correct translation:
-وقّع الرسالة…
+وقّع &الرسالة...
 ```
 
 <!-- cache_translation_check_ar_562228a9ccfcbcc228c898e9fe0ad3f9fdc5374213d59600c00b222816dacff3 -->
@@ -110,16 +254,28 @@ Correct translation:
 تحقق من الرسائل للتأكد من أنها وُقعت باستخدام عناوين بيتكوين محددة
 ```
 
-<!-- cache_translation_check_ar_47e8cb8d3535a0e737acf095c4c5a6b4f9a24507d5b8b5002c56e386d90be9e6 -->
+<!-- cache_translation_check_ar_73df0568a679a4c34f4cb2c9741f5ce1c7480556db6638ab08f23f5b9529e9e8 -->
 ```
-        <source>Open URI…</source>
+        <source>&amp;Load PSBT from file…</source>
+        <translation>وتحميل PSBT من ملف...</translation>
+    
+ERR
+The ampersand (&) indicating the shortcut key is missing in the Arabic translation, and the ellipsis should use Arabic-friendly formatting (… instead of ...).
+
+Correct translation:
+&amp;تحميل PSBT من ملف…
+```
+
+<!-- cache_translation_check_ar_1a2b6dfaadd85ade8ba2828e7e79b6f1cef9fab753440c19f51062bdc8649148 -->
+```
+        <source>Open &amp;URI…</source>
         <translation>فتح ورابط...</translation>
     
 ERR
-The translation is inaccurate. "ورابط" translates to "and link", which is incorrect. The proper translation for "URI" should be "معرّف الموارد الموحد" or "رابط". The ellipsis should use the Arabic ellipsis "…" if possible.
+The translation omits the "&" keyboard shortcut marker, so the shortcut functionality is lost. Also, "ورابط" should be "رابط" (removing the "و" for "and"), as the original English does not use "and". The ellipsis "…" is also replaced by three periods "...", which is less correct.
 
 Correct translation:
-فتح رابط…
+افتح &رابط…
 ```
 
 <!-- cache_translation_check_ar_15aff1a2eac2b1978f51a042352d320f4949824e7e4f3611a06af7fe614d2e3d -->
@@ -187,6 +343,57 @@ Correct translation:
 استلم مع تسمية
 ```
 
+<!-- cache_translation_check_ar_a6dca1005a4fa9c4178cdfbaab9b59e910c033044f2f38de32d88a535d9985be -->
+```
+        <source>Copy &amp;label</source>
+        <translation>‫نسخ &amp;اضافة مذكرة‬</translation>
+    
+ERR
+The Arabic translation changes the meaning: "إضافة مذكرة" means "add note," not "label." It also contains bidi control characters. The shortcut ampersand is fine but should be kept with the correct term.
+
+Correct translation:
+نسخ &التسمية
+```
+
+<!-- cache_translation_check_ar_7d9877f1fe48898281786c2f68cafdb14d061cddf3fd1fda9076d86ea5855693 -->
+```
+        <source>L&amp;ock unspent</source>
+        <translation>قفل غير منفق</translation>
+    
+ERR
+The ampersand (&) is used in the source to indicate a shortcut key. It is missing in the Arabic translation. The ampersand (&) should appear exactly once in the translation, at an appropriate character for a shortcut.
+
+Correct translation:
+&قفل غير منفق
+
+Or, if a different character is chosen for the shortcut:
+قفل &غير منفق
+```
+
+<!-- cache_translation_check_ar_d48b0a5e8dff9531b0135327efc1f5a6ae7866ba35a1a82964c8935dacc701da -->
+```
+        <source>&amp;Unlock unspent</source>
+        <translation>&amp; إفتح غير المنفق</translation>
+    
+ERR
+There is an unnecessary space after the ampersand (&amp;), resulting in a formatting issue. In Arabic UI, there should be no space between "&amp;" and the beginning of the translation, to ensure the shortcut key works correctly.
+
+Correct translation:
+&إفتح غير المنفق
+```
+
+<!-- cache_translation_check_ar_9628dcface294799c793232dcf1b3a8a88d12d2f00fde25a11b91114f75a048d -->
+```
+        <source>Copy change</source>
+        <translation>نسخ التعديل</translation>
+    
+ERR
+"التعديل" means "modification," not "change" in the Bitcoin sense (returned remainder of a transaction). The correct term is "الباقي".
+
+Correct translation:
+نسخ الباقي
+```
+
 <!-- cache_translation_check_ar_260c1ea6e09e3f82d2be31fbc5ce411226cf8cca85a5d27f594b11f1f1982763 -->
 ```
         <source>(change)</source>
@@ -201,16 +408,41 @@ or
 (الفكة)
 ```
 
-<!-- cache_translation_check_ar_53225661491aa39c59843640d72edd1807de5f2f00634423fd5c91df96ad2fec -->
+<!-- cache_translation_check_ar_a4d7ae7b92cdd368a527ad08ca0ee0b9dcdb859e9e61c993adf012435dca79a4 -->
 ```
-        <source>Prune block storage to</source>
-        <translation>‫اختصار تخزين الطابق</translation>
+        <source>Open Wallet</source>
+        <extracomment>Title of window indicating the progress of opening of a wallet.</extracomment>
+        <translation>افتح المحفظة</translation>
     
 ERR
-The Arabic translation is inaccurate and contains a significant error. "الطابق" means "floor" (like a building floor), which is incorrect here. The term "block storage" in Bitcoin refers to where blockchain blocks are stored. Also, the word "Prune" (اختصار) could be better translated as "تقليص" or "تقليم". The translation misses "block" altogether.
+The translation uses the imperative form "افتح المحفظة" ("Open the wallet"), which is inappropriate for a progress window title. It should be a verbal noun indicating an ongoing action.
 
 Correct translation:
-تقليص تخزين الكتل إلى
+فتح المحفظة
+```
+
+<!-- cache_translation_check_ar_4e9274d0557972702526e7c1756247833ce9b05fef37bb5ea0cfb34c5ead1063 -->
+```
+        <source>Wallet Name</source>
+        <translation>إسم المحفظة</translation>
+    
+ERR
+The Arabic word for "name" should be written without hamza: "اسم", not "إسم".
+
+Correct translation:
+اسم المحفظة
+```
+
+<!-- cache_translation_check_ar_5250b2819c7542e4cdb2a0a4a938db4b528ba7531cd1b8134eac196aa06ca893 -->
+```
+        <source>Prune &amp;block storage to</source>
+        <translation>‫اختصار &amp;تخزين الطابق</translation>
+    
+ERR
+The translation of "block" as "الطابق" is incorrect; "الطابق" means "floor" in Arabic, not "block". In the context of Bitcoin, "block" is best translated as "كتلة". Also, the phrase structure is awkward.
+
+Correct translation:
+‫اختصار &amp;تخزين الكتلة إلى‬
 ```
 
 <!-- cache_translation_check_ar_495319ba1a424742a2bbae2b412fb71aa4c99abc713209d973a05446bcdd4dec -->
@@ -223,6 +455,144 @@ The translation is problematic. The phrase "الطوابق المتتالية" t
 
 Correct translation:
 تتطلب إعادة هذا الإعداد إعادة تحميل سلسلة الكتل بالكامل.
+```
+
+<!-- cache_translation_check_ar_f6b8646fb7da1d160423aa3720a0fabe945baefe747826ad57728752e85c3b3e -->
+```
+        <source>MiB</source>
+        <translation>‫ميجابايت‬</translation>
+    
+ERR
+"MiB" stands for mebibyte (2^20 bytes), but the translation says "ميجابايت" (megabyte, MB). This is inaccurate.
+
+Correct translation:
+ميبيبايت
+```
+
+<!-- cache_translation_check_ar_b151013fd091e3bc3b1ecb9dd2c976cc61861d3fc7af287e9825f76f650ae963 -->
+```
+        <source>(0 = auto, &lt;0 = leave that many cores free)</source>
+        <translation>‫(0 = تلقائي, &lt;0 = لترك أنوية حرة بقدر الرقم السالب)‬</translation>
+    
+ERR
+The translation includes extraneous directional control characters and the phrasing is slightly awkward. Also, using the Arabic comma improves readability.
+
+Correct translation:
+(0 = تلقائي، <0 = ترك هذا العدد من الأنوية حرة)
+```
+
+<!-- cache_translation_check_ar_0b3c44a6dbb86df3b677e6e68026dfcd5a368b5cf7d802d69e770a8220121418 -->
+```
+        <source>Subtract &amp;fee from amount by default</source>
+        <extracomment>An Options window setting to set subtracting the fee from a sending amount as default.</extracomment>
+        <translation>‫اخصم &amp;الرسوم من القيمة بشكل افتراضي‬</translation>
+    
+ERR
+The translation includes hidden directional marks and uses "القيمة" instead of the more accurate "المبلغ" for "amount." Also, a neutral label (not imperative) fits checkbox text better.
+
+Correct translation:
+خصم &الرسوم من المبلغ افتراضيًا
+```
+
+<!-- cache_translation_check_ar_57e07e1469d82dde40bdadf9e3dace9ba916731d2f1025157c2fb1df81ed74bd -->
+```
+        <source>Expert</source>
+        <translation>‫خبير‬</translation>
+    
+ERR
+The Arabic translation contains invisible bidirectional formatting marks (e.g., RLE/PDF), which can cause rendering or layout issues. The correct, clean translation is:
+خبير
+```
+
+<!-- cache_translation_check_ar_47659c42c0a1c976686e6ad93c4f2804260dacaf3eb0f5061b82021e7ce9f5ca -->
+```
+        <source>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</source>
+        <translation>‫اذا قمت بتعطيل خيار الانفاق من الفكة الغير مؤكدة، لن يكون بمقدورك التحكم بتلك الفكة حتى تنْفُذ العملية وتحصل على تأكيد واحد على الأقل. هذا أيضا يؤثر على كيفية حساب رصيدك.‬</translation>
+    
+ERR
+- Uses colloquial "الفكة" and ungrammatical "الغير مؤكدة" (should be "غير المؤكدة").
+- Adds inaccurate condition "حتى تنفذ العملية" not present in the source.
+- Contains stray RTL embedding marks.
+
+Correct translation:
+إذا عطّلت إنفاق التغيير غير المؤكَّد، فلن يمكن استخدام مبلغ التغيير من معاملة ما حتى تحصل تلك المعاملة على تأكيد واحد على الأقل. يؤثر هذا أيضًا في كيفية احتساب رصيدك.
+```
+
+<!-- cache_translation_check_ar_f74729c9b24affb2a3aba73b5e92739027ef3e6314469856d6a34a1ee0155468 -->
+```
+        <source>&amp;Spend unconfirmed change</source>
+        <translation>‫&amp;دفع الفكة غير المؤكدة‬</translation>
+    
+ERR
+The translation is too colloquial ("الفكة") and uses "دفع" (pay) instead of the more accurate "إنفاق" (spend). It also includes directional control characters that are unnecessary and may cause formatting issues.
+
+Correct translation:
+&إنفاق الباقي غير المؤكد
+```
+
+<!-- cache_translation_check_ar_3efb5e03c5f32c26869f908c7a6aac60e33fce2ab77c6adc1c3b4c711f08bdfb -->
+```
+        <source>Enable &amp;PSBT controls</source>
+        <extracomment>An options window setting to enable PSBT controls.</extracomment>
+        <translation>‫تفعيل التحكم ب &amp;المعاملات الموقعة جزئيا‬</translation>
+    
+ERR
+Issues:
+- Replaced the PSBT acronym with a descriptive phrase; better to keep the standard term "PSBT".
+- Incorrect spacing: "ب &المعاملات" separates the preposition from the word.
+- Singular "التحكم" used instead of the common UI term "عناصر تحكم" for "controls".
+- Contains an unnecessary directional mark at the start.
+
+Correct translation:
+تفعيل عناصر تحكم &PSBT
+```
+
+<!-- cache_translation_check_ar_6d461f26c543594a04a26631f34282e608fa3e07041a1fdcc629ba1bed078c5f -->
+```
+        <source>External Signer (e.g. hardware wallet)</source>
+        <translation>‫جهاز التوقيع الخارجي (مثل المحفظة الخارجية)‬</translation>
+    
+ERR
+"hardware wallet" was mistranslated as "المحفظة الخارجية" (external wallet), which changes the meaning. Also, unnecessary bidi/formatting marks appear. 
+
+Correct translation:
+موقّع خارجي (مثل محفظة أجهزة)
+```
+
+<!-- cache_translation_check_ar_c47cc1da315134a13bdef1730bf4676053ebcf75e7014f7313c6bfe5fbc184de -->
+```
+        <source>&amp;External signer script path</source>
+        <translation>&amp; مسار البرنامج النصي للموقّع الخارجي</translation>
+    
+ERR
+The accelerator marker '&' is followed by a space, which breaks the shortcut and constitutes a whitespace issue. It should directly precede a character.
+
+Correct translation:
+&مسار البرنامج النصي للموقّع الخارجي
+```
+
+<!-- cache_translation_check_ar_efab53f2de1b63321fec53d3f8c82b03764a012a2c32cb187b81987cb7a8a459 -->
+```
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>الاتصال من خلال وكيل SOCKS5 (الوكيل الافتراضي):</translation>
+    
+ERR
+The translation is missing the shortcut marker (&) that exists exactly once in the source. This is required for UI consistency and accessibility.
+
+Correct translation:
+&amp;الاتصال من خلال وكيل SOCKS5 (الوكيل الافتراضي):
+```
+
+<!-- cache_translation_check_ar_738f48c716933bcb53cc846e4d5f0304645eb4130edb07ff7eefd1df60847f15 -->
+```
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>‫وحدة لعرض القيم:‬</translation>
+    
+ERR
+The ampersand (&), which indicates a shortcut key, is missing in the Arabic translation. It must appear exactly once. Also, the literal translation for "Unit to show amounts in:" is correct, but keeping the ampersand is necessary for UI consistency.
+
+Correct translation:
+‫وحدة لعرض القيم (&):‬
 ```
 
 <!-- cache_translation_check_ar_7e071688e9eece38a3076d6a6f6da1d3530587de61c588e0b85b5bc40de0c4ec -->
@@ -243,6 +613,18 @@ Correct translation:
 عناوين الأطراف الثالثة (مثل: مستكشف الكتل) التي تظهر في علامة تبويب المعاملات كعناصر في قائمة السياق. يُستبدل %s في الرابط بمعرّف تجزئة المعاملة. تُفصل العناوين المتعددة بالرمز العمودي |.
 ```
 
+<!-- cache_translation_check_ar_330d65cddc3559ca2f0d629224b2278c407c801864933e6c29011136463e657d -->
+```
+        <source>&amp;Cancel</source>
+        <translation>الغاء</translation>
+    
+ERR
+The translation omits the '&' character, which is used for the shortcut key and must appear exactly once in both source and translation.
+
+Correct translation:
+&إلغاء
+```
+
 <!-- cache_translation_check_ar_cd24994f23395b088e44741784ca73fc97cb348ec00dcf7fad444d36980d1095 -->
 ```
         <source>Current settings will be backed up at "%1".</source>
@@ -254,6 +636,42 @@ The translation has an extra stray double quote at the end, and there is a prefe
 
 Correct translation:
 سيتم نسخ الإعدادات الحالية احتياطيًا في "%1".
+```
+
+<!-- cache_translation_check_ar_3cd929acea2fcdd41e086483eec4c8e28ef1e3ccdbfb41b951d989bb12ed8794 -->
+```
+        <source>Sign Tx</source>
+        <translation>تسجيل Tx</translation>
+    
+ERR
+"تسجيل" means "registration/recording," not "sign" in the cryptographic sense. The correct term is "توقيع". Also, "Tx" should be translated as "المعاملة" in this context.
+
+Correct translation:
+توقيع المعاملة
+```
+
+<!-- cache_translation_check_ar_61fdc664b74133188223f2bde89ecf069fdda8099cf64ce2746000c197c4c70f -->
+```
+        <source>Save…</source>
+        <translation>حفظ ...</translation>
+    
+ERR
+The translation uses three ASCII dots with a preceding space instead of the ellipsis character and introduces unnecessary whitespace. It should mirror the source’s ellipsis.
+
+Correct translation:
+حفظ…
+```
+
+<!-- cache_translation_check_ar_4d9ba40c4e6a1120fdfa59a7d5f994408396de3e4b8f5f9fe3417f8dfb37300c -->
+```
+        <source>PSBT copied to clipboard.</source>
+        <translation>نسخ PSBT إلى الحافظة.</translation>
+    
+ERR
+The Arabic phrasing is unnatural and sounds like an imperative/noun phrase. A proper status notification should use the passive perfect.
+
+Correct translation:
+تم نسخ PSBT إلى الحافظة.
 ```
 
 <!-- cache_translation_check_ar_cd5ebd9c12ed9ff66e2a0f11e9b876ccaec141ebd7261cfb6ab2bf601e091400 -->
@@ -282,6 +700,30 @@ Correct translation:
 الباقي:
 ```
 
+<!-- cache_translation_check_ar_9628dcface294799c793232dcf1b3a8a88d12d2f00fde25a11b91114f75a048d -->
+```
+        <source>Copy change</source>
+        <translation>نسخ التعديل</translation>
+    
+ERR
+"التعديل" means "modification," not "change" in the Bitcoin sense (returned remainder of a transaction). The correct term is "الباقي".
+
+Correct translation:
+نسخ الباقي
+```
+
+<!-- cache_translation_check_ar_fe281b0e70f54b478dbc517d374ee0d761f4f320a18ae76938470a80eb0bd229 -->
+```
+        <source>Copy the current signature to the clipboard</source>
+        <translation>امضای فعلی را در کلیپ بورد کپی کنید</translation>
+    
+SPAM
+The translation is in Persian (Farsi), not Arabic.
+
+Correct translation:
+انسخ التوقيع الحالي إلى الحافظة
+```
+
 <!-- cache_translation_check_ar_cd5ebd9c12ed9ff66e2a0f11e9b876ccaec141ebd7261cfb6ab2bf601e091400 -->
 ```
         <source>own address</source>
@@ -294,18 +736,6 @@ Correct translation:
 عنوانك
 or
 عنوانك الخاص
-```
-
-<!-- cache_translation_check_ar_9242aa610d0df90a055b12b7cac317572ff285818eb6c4448a534961ad213041 -->
-```
-        <source>Export</source>
-        <translation>و إستخرج</translation>
-    
-ERR
-There is an unnecessary space before the word "إستخرج" and the conjunction "و" ("and") is not present in the source. The translation should be a single-word imperative matching the English "Export".
-
-Correct translation:
-تصدير
 ```
 
 <!-- cache_translation_check_ar_459dfaa8aeddf4f6c7aedb4b5823f19a9beaa2586821423f96d790b199c451d1 -->
@@ -323,6 +753,114 @@ There are a few issues:
 Correct translation:
 قيمة غير صالحة تم اكتشافها للخياريْن "-wallet" أو "-nowallet". يتطلب "-wallet" قيمة نصية، بينما يقبل "-nowallet" فقط "1" لتعطيل جميع المحافظ
 ```
+
+<!-- cache_translation_check_ar_981f3d80238e760c5ec450df2b10712551a68e61c842edd7498587135ab4e9e7 -->
+```
+        <source>Cannot obtain a lock on directory %s. %s is probably already running.</source>
+        <translation>نمی‌توان قفلی روی دایرکتوری %s ایجاد کرد. احتمالاً %s از قبل در حال اجرا است</translation>
+    
+SPAM
+The translation is in Persian (Farsi), not Arabic as requested.
+
+Correct translation:
+لا يمكن الحصول على قفل على الدليل %s. من المحتمل أن %s يعمل بالفعل.
+```
+
+<!-- cache_translation_check_ar_f8e7b6cfa5e7e8c34169e6d35a73bd2516529d2718a441498d4157852d82679d -->
+```
+        <source>Option '-checkpoints' is set but checkpoints were removed. This option has no effect.</source>
+        <translation>گزینه «-checkpoints» تنظیم شده است اما Checkpointها حذف شده‌اند. این گزینه هیچ تاثیری ندارد.</translation>
+    
+SPAM
+The provided text is in Persian (Farsi), not Arabic.
+
+Correct translation:
+تم تعيين الخيار '-checkpoints' ولكن تم إزالة نقاط التحقق. هذا الخيار ليس له أي تأثير.
+```
+
+<!-- cache_translation_check_ar_2e53508f0b4023f316525f26c294fc62bc8579f6f75c19bd3325aa366ee1508d -->
+```
+        <source>Option '-maxorphantx' is set but no longer has any effect (see release notes). Please remove it from your configuration.</source>
+        <translation>maxorphantx' گزینه تنظیم شده است اما دیگر هیچ تاثیری ندارد (به یادداشت‌های انتشار مراجعه کنید). لطفاً آن را از پیکربندی خود حذف کنید.</translation>
+    
+SPAM
+The translation is in Persian (Farsi), not Arabic, and it misplaces the quotation mark and omits the leading hyphen.
+
+Correct translation:
+تم تعيين الخيار '-maxorphantx' لكنه لم يعد ذا أي تأثير (راجع ملاحظات الإصدار). يرجى إزالته من إعداداتك.
+```
+
+<!-- cache_translation_check_ar_6f0c083127c623c98489b4edea92900060eabd8d83b2e8e84ef9ca10dd329440 -->
+```
+        <source>Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.</source>
+        <translation>گزینه‌های '-datacarrier' یا '-datacarriersize' تنظیم شده‌اند اما به عنوان منسوخ علامت‌گذاری شده‌اند. آن‌ها در نسخه‌های آینده حذف خواهند شد.</translation>
+    
+SPAM
+The provided text is in Persian (Farsi), not Arabic.
+
+Correct translation:
+تم تعيين الخيارين '-datacarrier' أو '-datacarriersize' ولكنهما معلّمان كمُهملين. سيتم إزالتهما في إصدار مستقبلي.
+```
+
+<!-- cache_translation_check_ar_6f0a3cdde1884b0b257ee7a178a9cf4753ea16843a7cae381c4d4c8cadecd63f -->
+```
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of a pruned node)</source>
+        <translation>الو: آخرینکیف پولهمگام‌سازی فراتر از هر استداده‌هاتو باید -فهرست‌بندی مجدد(دانلودکلبلاکچیندوباره در هرس شدن)</translation>
+    
+SPAM
+The provided text is mostly in Persian with garbled words, not Arabic, and is unreadable.
+
+Correct translation:
+التقليم: آخر مزامنة للمحفظة تتجاوز البيانات المُقلَّمة. تحتاج إلى تنفيذ -reindex (إعادة تنزيل سلسلة الكتل كاملةً في حالة العقدة المُقلَّمة)
+```
+
+<!-- cache_translation_check_ar_f7079146d3266ef38061ed4d5dd866c98ce3f68810198bbe6f7a698128e34dcf -->
+```
+        <source>-paytxfee is deprecated and will be fully removed in v31.0.</source>
+        <translation>-paytxfee منسوخ شده و در نسخه 31.0 به طور کامل حذف خواهد شد.</translation>
+    
+SPAM
+The translation is in Persian (Farsi), not Arabic.
+
+Correct translation:
+-paytxfee مهمل وسيُزال بالكامل في v31.0.
+```
+
+<!-- cache_translation_check_ar_daac836af7ca2ef2148a1c6997acfcc4583e169fc6b133a0b31675e92ca670fb -->
+```
+        <source>Disk space is too low!</source>
+        <translation>‫تحذير: مساحة التخزين منخفضة!‬</translation>
+    
+ERR
+The translation adds "تحذير:" which is not in the source, uses "مساحة التخزين" instead of "مساحة القرص", and includes extraneous directional marks. 
+
+Correct translation:
+مساحة القرص منخفضة للغاية!
+```
+
+<!-- cache_translation_check_ar_bd3e3e25dd9d168e42193139c244e1c01559781e2adf604c2d81219107471cf0 -->
+```
+        <source>Error reading from database, shutting down.</source>
+        <translation>‫خطأ في القراءة من قاعدة البيانات ، يجري التوقف.‬</translation>
+    
+ERR
+The translation contains formatting issues: an unnecessary RTL control mark and an extra space before the Arabic comma. The phrasing "يجري التوقف" is also awkward.
+
+Correct translation:
+خطأ في القراءة من قاعدة البيانات، جارٍ إيقاف التشغيل.
+```
+
+<!-- cache_translation_check_ar_9b3be64ef25a45b160a4db1f4eb6d38f436c4169331a8249a9dba9269d53dd04 -->
+```
+        <source>Error reading next record from wallet database</source>
+        <translation>خطأ قراءة السجل التالي من قاعدة بيانات المحفظة</translation>
+    
+ERR
+The Arabic phrasing is slightly ungrammatical; it should include a preposition. 
+
+Correct translation:
+حدث خطأ أثناء قراءة السجل التالي من قاعدة بيانات المحفظة
+```
 </details>
 
-Number of issues: 24.
+Number of issues: 67.

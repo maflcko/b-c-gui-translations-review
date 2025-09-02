@@ -1,26 +1,64 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>ur</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bur%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bur%5D%20request)
 
 
-<!-- cache_translation_check_ur_f0aec486266ebd0add0f01b09f0cbf09c559ca902065ce914dde47d0770e2f88 -->
+<!-- cache_translation_check_ur_69c3948dbabd12a0d6958b99ff97483048e7bffbb1f5e6881c94ab3a8104c48f -->
 ```
-        <source>Delete</source>
+        <source>&amp;Copy</source>
+        <translation>نقل</translation>
+    
+ERR
+The Urdu word "نقل" correctly means "Copy", but the source contains a single shortcut marker "&" which must be preserved in the translation. The translation is missing the "&".
+
+Correct translation (include the ampersand exactly once), for example:
+&نقل
+```
+
+<!-- cache_translation_check_ur_d08e72d2ca811e3007c1d2013927e9644cb1c4ddc0a492f4da283de26a59fec4 -->
+```
+        <source>C&amp;lose</source>
+        <translation>بند</translation>
+    
+ERR
+The Urdu translation is correct semantically ("بند" = "Close") but it's missing the required shortcut ampersand. The source contains a single & (C&amp;lose) to mark the accelerator key; the translation must also include exactly one &.
+
+Correct translation:
+&بند
+```
+
+<!-- cache_translation_check_ur_f125f1aa972cab44ac49995ab859c666d786dad9cb27ceb90164afab72b84cf9 -->
+```
+        <source>&amp;Export</source>
+        <translation>برآمد</translation>
+    
+ERR
+The translation is missing the mnemonic ampersand (&) present in the source. The ampersand should appear exactly once in the translation to indicate the shortcut key.
+
+Correct translation:
+&amp;برآمد
+```
+
+<!-- cache_translation_check_ur_a9ee13129da56840646dc393c327e52f5bcc75667d861aeb07987ae25bfc0496 -->
+```
+        <source>&amp;Delete</source>
         <translation>ڈیلیٹ
 
  </translation>
     
 ERR
-The translation uses an Urdu transliteration of "Delete" (ڈیلیٹ), which is commonly used in informal contexts. However, there is an extra newline and a stray non-breaking space character after the translation, resulting in whitespace formatting issues. Also, a more accurate Urdu translation would be "حذف کریں".
+The translation is missing the required shortcut marker (&) and contains extra newline/whitespace characters. The source has a single '&' which must appear exactly once in the translation. Also keep the translation on one line without stray spaces.
 
-Correct translation:
-حذف کریں
+Correct translation (one-line, with shortcut marker):
+&حذف
+
+(Alternatively you can use "&ڈیلیٹ" if you prefer the loanword "ڈیلیٹ".)
 ```
 
 <!-- cache_translation_check_ur_db64a726a05c702ea8468126c217ac96d374ce39f8a46715ddb41dadd5999bdf -->
@@ -47,18 +85,21 @@ Correct translation:
 سکے وصول کرنے کے لیے پتہ منتخب کریں
 ```
 
-<!-- cache_translation_check_ur_7bdc2af2f6bb8ab329bcb8d4641e3b6ff14ea5877f8e0fb171f84fa43307575b -->
+<!-- cache_translation_check_ur_65fa5059596cbcbb12b7b80b8dcee1d500fdbff3c821153965f1bfbb6f8b145b -->
 ```
-        <source>Choose</source>
+        <source>C&amp;hoose</source>
         <translation>چوز کریں
 
  </translation>
     
 ERR
-The translation "چوز کریں" is incorrect. "چوز" is just a transliteration of the English word "choose," which is not natural Urdu. Also, there is an unnecessary newline and whitespace at the end, which is a format issue.
+Problems:
+- The translation is missing the required single '&' shortcut marker from the source.
+- It contains extra whitespace/newline at the end.
+- It uses an English loanword "چوز کریں" rather than a more natural Urdu phrase.
 
-Correct translation:
-منتخب کریں
+Corrected translation (include exactly one & and no extra spaces/newlines):
+&منتخب کریں
 ```
 
 <!-- cache_translation_check_ur_f77d856ae69ce505e0a318782737ad70e7a18f007aa541931b9f6911e42da4b8 -->
@@ -166,6 +207,18 @@ or more descriptively:
 غیر قابو شدہ استثنا
 ```
 
+<!-- cache_translation_check_ur_d6ff4ed9e6bf8cb6a34c689b23ef3984d21ed1060391fb8ea1f6b279406454b5 -->
+```
+        <source>&amp;Overview</source>
+        <translation>اور جائزہ</translation>
+    
+ERR
+The translation is incorrect. The source "&Overview" uses "&" to mark a shortcut key; the Urdu translation has no "&" and also incorrectly translates "&" as the word "اور" ("and"), resulting in "اور جائزہ" ("and overview"), which is wrong.
+
+Correct translation (include the shortcut marker exactly once), for example:
+&جائزہ
+```
+
 <!-- cache_translation_check_ur_3731353e7a76ce85cafb535807727ffc055f1591a9385b28945ce38b5ed2dc10 -->
 ```
         <source>Show general overview of wallet</source>
@@ -178,24 +231,44 @@ Correct translation:
 والیٹ کا عمومی جائزہ دکھائیں
 ```
 
-<!-- cache_translation_check_ur_74b0fd4fc696983f3c8ba30c56d1c14e6e16611e769d36f5f05f5f51396fac47 -->
+<!-- cache_translation_check_ur_4d836b66dd503771094a5d68c0457770544cab1e97a82a5bbd3af0dea1a2bdc2 -->
 ```
-        <source>About %1</source>
-        <translation>معلومات%1</translation>
+        <source>&amp;Transactions</source>
+        <translation>اور لین دین</translation>
     
 ERR
-There is a whitespace formatting issue: there should be a space between "معلومات" and "%1".
+The translation incorrectly adds the word "اور" ("and") and does not include the shortcut ampersand. The source "&" is a shortcut marker and should be preserved exactly once in the translation. Also remove the stray word "اور".
 
 Correct translation:
-%1 کے بارے میں
-or, if sticking closer to the original structure:
-‏%1 کے بارے میں
+&amp;لین دین
+```
 
-Alternatively, if you want to use "معلومات", it should be:
-‏%1 کے بارے میں معلومات
+<!-- cache_translation_check_ur_fa0ac7d43a191e8b130cbd939580870a6169037b0dd0f07174dd891ed5f04601 -->
+```
+        <source>E&amp;xit</source>
+        <translation>باہر نکلیں</translation>
+    
+ERR
+The translation is missing the ampersand (&) used to mark the shortcut key. The source has "E&amp;xit" (one &), so the translation must include exactly one & as well.
 
-But the direct translation of "About %1" is:
-‏%1 کے بارے میں
+Correct translation example (with & placed before the first letter):
+<translation>&باہر نکلیں</translation>
+```
+
+<!-- cache_translation_check_ur_3764bcc77910ece3d00fe023152cda6dc50f7f1cee29561f19e91fa7129f0495 -->
+```
+        <source>&amp;About %1</source>
+        <translation>&amp;معلومات%1</translation>
+    
+ERR
+The translation is understandable but has formatting and naturalness issues:
+- Missing space before %1 ("&معلومات%1" should have a space: "&معلومات %1").
+- More natural Urdu for "About %1" is "%1 کے بارے میں". Also ensure the single & is present exactly once.
+
+Correct translations (choose one, keeping a single &):
+- &معلومات %1
+or more natural:
+- &%1 کے بارے میں
 ```
 
 <!-- cache_translation_check_ur_c7cfec77910c4771230e7a742eba97e9317e419c34da2403f1c0f1dd88e7c103 -->
@@ -213,41 +286,40 @@ So the corrected translation is:
 %1 کی ترتیب کے اختیارات میں ترمیم کریں
 ```
 
-<!-- cache_translation_check_ur_adc2ee8bf6b47b9d033b8dfab9a3098832a7f83f3952973baebb0e401f015c7e -->
+<!-- cache_translation_check_ur_83f2871d825eeae43c262254ca6cf0fd08e951db6aedbf105d8c4bea7549004e -->
 ```
-        <source>Backup Wallet…</source>
-        <translation> بیک اپ والیٹ…</translation>
+        <source>&amp;Backup Wallet…</source>
+        <translation>&amp; بیک اپ والیٹ…</translation>
     
 ERR
-There is an unnecessary leading space in the translation. The translation should not start with a space.
+The translation is understandable but slightly awkward and has an extra space after the ampersand. A more natural Urdu UI string would put the ampersand directly before the word and use a clearer phrasing.
 
 Correct translation:
-بیک اپ والیٹ…
+&والیٹ کا بیک اپ…
 ```
 
-<!-- cache_translation_check_ur_30d4b50f08a32d787f2e5f65aa46b7ca996332260a4058ce60a5f3994ef05304 -->
+<!-- cache_translation_check_ur_015f74f05a5e5e50a74bf008e88901cabb6d2fc867f9a5b1c8bc27bb78b477d8 -->
 ```
-        <source>Change Passphrase…</source>
-        <translation> بیک اپ والیٹ…</translation>
+        <source>&amp;Change Passphrase…</source>
+        <translation>&amp; بیک اپ والیٹ…</translation>
     
 ERR
-The translation is incorrect. The source text refers to changing the wallet passphrase, but the translation means "Backup Wallet…". Additionally, there is an unnecessary space at the start.
+The translation is incorrect: "بیک اپ والیٹ" means "backup wallet", not "Change Passphrase". The ampersand exists once (good), but the semantic content is wrong.
 
 Correct translation:
-پاس فریز تبدیل کریں…
+<translation>&amp;پاس فریز تبدیل کریں…</translation>
 ```
 
-<!-- cache_translation_check_ur_e18c95991a8a8403bbfdc2c73db2454532b882dbbd77e07916c7c1c2fcf775e4 -->
+<!-- cache_translation_check_ur_710f71d6ef6461015e4833ceb736eef13d582c1764aed1e4b7679b74dc91aea7 -->
 ```
-        <source>Sign message…</source>
+        <source>Sign &amp;message…</source>
         <translation>سائن اور پیغام…</translation>
     
 ERR
-The translation "سائن اور پیغام…" means "sign and message...", which is incorrect. The correct translation for "Sign message…" (which means to sign a message, as in digital signing) should be:
+The translator replaced the shortcut ampersand with the Urdu word "اور" (and) and changed the phrase structure. The ampersand must appear exactly once as the accelerator marker, and the meaning should be "Sign message…".
 
-پیغام پر دستخط کریں…
-
-The word "اور" (which means "and") is not appropriate here.
+Correct translation (with one &):
+پیغام پر &دستخط کریں…
 ```
 
 <!-- cache_translation_check_ur_b30e706feef6cda8c9810b1b4190a3167af57a1a5adb16179ac152757aa1ac11 -->
@@ -262,16 +334,28 @@ Correct translation:
 اپنے بٹ کوائن پتوں کے ساتھ پیغامات پر دستخط کریں تاکہ آپ ثابت کر سکیں کہ آپ ان کے مالک ہیں۔
 ```
 
-<!-- cache_translation_check_ur_e69a2ca88b5b14f5c113cc4939a3e10bf139ff36f42e48ab79ea45b1e6d13c65 -->
+<!-- cache_translation_check_ur_e3b6f250bbff8cb7b87ad1326c6b7677a61d14741003edb3af53f106db020f28 -->
 ```
-        <source>Open URI…</source>
+        <source>&amp;Verify message…</source>
+        <translation>پیغام کی توثیق کریں…</translation>
+    
+ERR
+The translation is correct Urdu but is missing the required shortcut indicator '&' from the source. Also ensure the ellipsis is preserved.
+
+Correct translation:
+&amp;پیغام کی توثیق کریں…
+```
+
+<!-- cache_translation_check_ur_c93679b8a623c0e779d27e9c8d69777c9c563ba1129c4688d2782fce0af8524f -->
+```
+        <source>Open &amp;URI…</source>
         <translation>کھولیں اور یو آر آئی…</translation>
     
 ERR
-The translation "کھولیں اور یو آر آئی…" means "Open and URI…", which incorrectly introduces an "اور" ("and") and is not a direct translation of "Open URI…". 
+The translation wrongly uses the Urdu word "اور" (meaning "and") instead of preserving the mnemonic ampersand. The source uses "&URI" to mark a shortcut; the translation must include a single & (not the word "اور"). Also keep the ellipsis.
 
 Correct translation:
-یو آر آئی کھولیں…
+&URI کھولیں…
 ```
 
 <!-- cache_translation_check_ur_70336a7747381c9ded8cf2eddeec749e7d672fb7bb61b41d6df8de15030120eb -->
@@ -286,40 +370,43 @@ Correct translation:
 والیٹ بند کریں…
 ```
 
-<!-- cache_translation_check_ur_1b5b57c9dc4778351f65807c759aa9c3ed76fe17e96d3264bca162e0d0487223 -->
+<!-- cache_translation_check_ur_a8d62c7f57e511a8ed9de9475cff915fd067e8a21923d0a855a5c01a9c6cd91d -->
 ```
-        <source>File</source>
+        <source>&amp;File</source>
         <translation>اور فائل</translation>
     
 ERR
-The translation "اور فائل" means "and file" in Urdu, which is incorrect and adds an extra word not present in the source. The translation should simply be "فائل".
+The translation is incorrect: it reads "اور فائل" ("and file") instead of "File" and it does not include the required shortcut marker (&). Also there is an extra word. 
 
 Correct translation:
-فائل
+&فائل
 ```
 
-<!-- cache_translation_check_ur_b8f30de907ef5ea71d1bfb876c1e6e2a07d19e01b8070d21bdee70bb6c2afbeb -->
+<!-- cache_translation_check_ur_527bdb422c131876144e2ba726aaf586c2f8ebc36d55102063fea1031f2c5f89 -->
 ```
-        <source>Settings</source>
+        <source>&amp;Settings</source>
         <translation>اور ترتیبات</translation>
     
 ERR
-The translation "اور ترتیبات" means "and settings" in Urdu, but the correct translation for "Settings" alone is "ترتیبات". The word "اور" ("and") is extraneous.
+The translation is incorrect. "اور ترتیبات" reads as "and settings" (with an extra "اور" meaning "and") and it does not include the required single '&' shortcut marker from the source.
 
-Correct translation:
-ترتیبات
+Correct translation (with the '&' shortcut included exactly once):
+&ترتیبات
+
+Or, if you prefer the ampersand before the second character to choose a different shortcut:
+ت&رتیبات
 ```
 
-<!-- cache_translation_check_ur_328aa940e6a90aba18a2fc1dc1130d51827279d24b4e2d8ff8c509f686c6140a -->
+<!-- cache_translation_check_ur_164bd6809a0c4e9f93d4df30b51cc42b078af1804605520d2ba48d513c2e165f -->
 ```
-        <source>Help</source>
+        <source>&amp;Help</source>
         <translation>اور مدد</translation>
     
 ERR
-The translation "اور مدد" means "and help", which is incorrect. The correct translation for "Help" is simply "مدد".
+The Urdu translation "اور مدد" means "and help" and adds an extra word "اور" (and). It also omits the required shortcut marker "&". 
 
-Correct translation:
-مدد
+Correct translation (include the & exactly once), for example:
+&مدد
 ```
 
 <!-- cache_translation_check_ur_9b17a8be8dc3b008c2afcfd7cdf0a36b3f217a1a6e53b6c1b58ac92696e0aff2 -->
@@ -374,6 +461,18 @@ Correct translation:
 ادائیگیوں کی درخواست کریں (کیو آر کوڈز اور بٹ کوائن: یو آر آئیز تیار کرتا ہے)
 ```
 
+<!-- cache_translation_check_ur_4dc9b803379fa5e93348fc6f2b5b727f696b30e029d26fdf256b17d02a8d14b1 -->
+```
+        <source>&amp;Command-line options</source>
+        <translation>اور کمانڈ لائن اختیارات</translation>
+    
+ERR
+The translation incorrectly replaces the shortcut marker "&" with the Urdu word "اور" ("and") and thus removes the required single ampersand. Also a more natural Urdu phrasing would include the possessive particle "کے". 
+
+Correct translation (keep one & for the shortcut):
+&کمانڈ لائن کے اختیارات
+```
+
 <!-- cache_translation_check_ur_563eb8cb7c0ec4390192ea47620a786740d6e7e265834f6ba785b9730fd1d06e -->
 ```
         <source>Catching up…</source>
@@ -398,16 +497,69 @@ Correct translation:
 آخری موصول شدہ بلاک %1 پہلے تیار کیا گیا تھا۔
 ```
 
-<!-- cache_translation_check_ur_8f3012ac38b6513f4177000089f43a6e0a47a60a87face39355b72e923f8a73c -->
+<!-- cache_translation_check_ur_8c2a323d024bb39eec6aa05cfa4443c61bfbb8b7a1185f99658c7aaf1e99e993 -->
 ```
-        <source>Receiving addresses</source>
+        <source>Load PSBT from &amp;clipboard…</source>
+        <translation>PSBT کو &amp;clipboard سے لوڈ کریں...</translation>
+    
+ERR
+Problems:
+- Missing space before "سے": the translation has "&clipboardسے" without a space.
+- The source uses a single ellipsis character (…) but the translation uses three dots (...). Use the same ellipsis character.
+- It's better to transliterate "clipboard" into Urdu script (optional).
+
+Corrected translation:
+PSBT کو &کلپ بورڈ سے لوڈ کریں…
+
+(If you prefer to keep "clipboard" in Latin script: "PSBT کو &clipboard سے لوڈ کریں…" with a space and the single ellipsis character.)
+```
+
+<!-- cache_translation_check_ur_7f44de51051a863edebc31475cc73e8d219a556ddb6dd4171ed611b2ba48f502 -->
+```
+        <source>&amp;Sending addresses</source>
+        <translation>اور بھیجنے والے پتے</translation>
+    
+ERR
+The translator rendered the ampersand (&) as the Urdu word "اور" (meaning "and"), which changes the meaning. The ampersand is a GUI mnemonic marker and must be kept exactly once. Also the rest of the phrase is fine.
+
+Correct translation:
+&amp;بھیجنے والے پتے
+```
+
+<!-- cache_translation_check_ur_58121311d14d6eb3430a8c346f878ae6c298e7f77547e591b89a81f58a69c1c2 -->
+```
+        <source>&amp;Receiving addresses</source>
         <translation>اور پتے وصول کرنا</translation>
     
 ERR
-The translation is incorrect. The provided translation "اور پتے وصول کرنا" means "and to receive addresses," which is not a correct translation for "Receiving addresses." The correct translation should reflect the plural noun "Receiving addresses" in the context of Bitcoin wallet addresses meant for receiving funds.
+The Urdu translation is incorrect. It begins with "اور" (meaning "and") and reads awkwardly ("and receive addresses") and it does not include the required single '&' shortcut marker from the source.
+
+Correct translation (with single & for shortcut):
+&amp;وصولی پتے
+```
+
+<!-- cache_translation_check_ur_cf6668e5375d837f930448223d68f402a4439310c4a0fbb58f0d97fd46e1fde7 -->
+```
+        <source>&amp;Mask values</source>
+        <translation>قدروں کو چھپائیں</translation>
+    
+ERR
+The Urdu text correctly conveys "hide values" but is missing the required single ampersand (&) for the shortcut key. No other format specifiers or spacing issues.
+
+Correct translation (with ampersand):
+&amp;قدروں کو چھپائیں
+```
+
+<!-- cache_translation_check_ur_6713eef3b7491f5764d87dc1833865f473b05c468708d35dff18e2edc716799a -->
+```
+        <source>&amp;Window</source>
+        <translation>اور ونڈو</translation>
+    
+ERR
+The translation is incorrect. It adds the Urdu word "اور" (meaning "and") and omits the required shortcut marker '&'. The source is a single menu label "&Window" — the translation should be the Urdu word for "Window" with the '&' included exactly once.
 
 Correct translation:
-وصولی کے پتے
+&amp;ونڈو
 ```
 
 <!-- cache_translation_check_ur_0890fef4fbca0c57cdc0d842d73354aa882bdb7d3c7be3a154c9295e43f8a60c -->
@@ -547,28 +699,71 @@ Correct translation:
 سب کو منتخب یا غیر منتخب کریں
 ```
 
-<!-- cache_translation_check_ur_5a7ae15790962bf20884a51f0c80a5a5ecfc39852bc58700492f89b057cdfe5a -->
+<!-- cache_translation_check_ur_23dc6480cdf08387666510a341a5cab042775344dba86c91513d643de2c33adc -->
 ```
-        <source>Copy label</source>
+        <source>&amp;Copy address</source>
+        <translation>ایڈریس کاپی کریں۔</translation>
+    
+ERR
+The translation is mostly correct wording-wise, but it is missing the required shortcut ampersand (&) and includes an unnecessary terminal Urdu full stop (۔). The source contains a single '&' which must be present exactly once in the translation. Also avoid adding a period.
+
+Correct translation (ampersand added, no period):
+&ایڈریس کاپی کریں
+```
+
+<!-- cache_translation_check_ur_bc11306ec248499f17350da76f827f2b3b9e35088f478dff2283a984a72b5cdb -->
+```
+        <source>Copy &amp;label</source>
         <translation>کاپی اور لیبل</translation>
     
 ERR
-The translation "کاپی اور لیبل" means "Copy and label," which adds the word "and" (اور) not present in the source. The correct translation for "Copy label" should be concise and accurate.
+The translation is incorrect. "کاپی اور لیبل" reads as "copy and label" (using Urdu word "اور" = "and") instead of "Copy label" and it omits the required accelerator ampersand (&). The source uses "&" to mark a shortcut and that must appear exactly once in the translation.
 
-Correct translation:
-لیبل نقل کریں
+Correct suggestions (include a single & for the shortcut):
+- "کاپی &لیبل"
+or more natural:
+- "&لیبل کی کاپی کریں"
 ```
 
-<!-- cache_translation_check_ur_ba310de87870661d3e30434e387b8c0abfef322688fe795237a8a412280e0c7b -->
+<!-- cache_translation_check_ur_19ad5a4ca83c2c2cb0a89b9ea156f41fce43e5822bd7e486012a70ef1bd4ef9f -->
 ```
-        <source>Copy amount</source>
+        <source>Copy &amp;amount</source>
         <translation>کاپی اور رقم</translation>
     
 ERR
-The translation is incorrect. "کاپی اور رقم" translates to "Copy and amount", which is not accurate. The correct translation for "Copy amount" is "رقم نقل کریں".
+The translation "کاپی اور رقم" literally reads "copy and amount" (the word "اور" means "and") which is incorrect. It should mean "Copy amount". Also the source uses a single '&' for the shortcut; the translation must include exactly one '&'.
 
-Correct translation:
-رقم نقل کریں
+Correct translations (with a single shortcut marker) — choose one appropriate for your UI convention:
+- &کاپی رقم
+- &رقم کی کاپی
+
+Both convey "Copy amount" and include exactly one '&'.
+```
+
+<!-- cache_translation_check_ur_ed352ec5ebbebf1cafe9939ef0934fbacc58fd5c24af1444f2d26e887115d30e -->
+```
+        <source>L&amp;ock unspent</source>
+        <translation>غیر خرچ شدہ آؤٹ پٹ بند کریں</translation>
+    
+ERR
+Problems:
+- The translation is missing the single '&' accelerator marker present in the source.
+- Minor grammatical issue: it should include the Urdu object marker "کو" after "آؤٹ پٹ" to be natural.
+
+Suggested correct translation (with one &):
+غیر خرچ شدہ آؤٹ پٹ کو &لاک کریں
+```
+
+<!-- cache_translation_check_ur_0cad0e18e868f9075032361881952422344aa078a1598744d58b121764fe4c75 -->
+```
+        <source>&amp;Unlock unspent</source>
+        <translation>غیر خرچ شدہ کھولیں</translation>
+    
+ERR
+The translation is missing the required shortcut marker "&" and the Urdu phrasing could be more natural. The source has no format specifiers or extra whitespace issues.
+
+Suggested translation (with single &):
+&غیر خرچ شدہ کو انلاک کریں
 ```
 
 <!-- cache_translation_check_ur_b8269bad5cc4add6251c7c49be905dbcfa4f59ddd240098801d2949435f826dd -->
@@ -609,16 +804,30 @@ Correct translation:
 والیٹس لوڈ ہو رہے ہیں…
 ```
 
-<!-- cache_translation_check_ur_9f12bbe80baf92331196eef01e214305f3a92953fabfe4d8fee4641fd9af4a0f -->
+<!-- cache_translation_check_ur_a6fd45dfcc186d66665dd8a67f623e039e7c9ac0e4d3f01ccd8ccbc977008cae -->
 ```
-        <source>Label</source>
+        <source>&amp;Label</source>
         <translation>چٹ</translation>
     
 ERR
-The translation "چٹ" is incorrect. "چٹ" means "note" or "slip" in Urdu, and is not an appropriate translation for "Label" in the context of Bitcoin or general UI terminology.
+Problems:
+- The translation "چٹ" is incorrect/unnatural for "Label" in this context; it means "note" or "scratch" and is not the common term for a UI label.
+- The source contains a single '&' indicating a mnemonic; the translation must include exactly one '&' as well (it's missing).
 
-Correct translation:
-لیبل
+Correct translation suggestion (include mnemonic):
+&لیبل
+```
+
+<!-- cache_translation_check_ur_78bd0e458ed5dd2c4d68a6b134ae7236c7fd0530edd891c2abfda2ec7c959388 -->
+```
+        <source>&amp;Address</source>
+        <translation>پتہ</translation>
+    
+ERR
+The Urdu word "پتہ" correctly translates "Address", but the source contains an ampersand (&) as a shortcut marker which must appear exactly once in the translation. The provided translation is missing it.
+
+Correct translation (include & once):
+&پتہ
 ```
 
 <!-- cache_translation_check_ur_3c142954b5c5ceb61902024c937ae58102d676ec3600729581b7c1cf5966c8a6 -->
@@ -634,131 +843,313 @@ Correct translation:
 حساب کیا جا رہا ہے…
 ```
 
-<!-- cache_translation_check_ur_9c54e360b3151cb5133f08a426b81c133b528f806ccb9c38fb7b6f86b2845150 -->
+<!-- cache_translation_check_ur_2aefabe7e6e1dc0eba2b3cf1f1df2a6ad9da0ed8d39fc6f68e823aaf634bd1fa -->
 ```
-        <source>Main</source>
+        <source>&amp;Main</source>
         <translation>اور مرکزی</translation>
     
 ERR
-The translation "اور مرکزی" means "and central" or "and main", which is not an accurate translation of "Main". The correct Urdu translation for "Main" in this context (as a menu/tab or section title) is "اہم" or "مرکزی" (without the "اور", which means "and"). "اور" is incorrect here.
+The translation is incorrect. It uses the Urdu word "اور" (meaning "and") rather than preserving the ampersand shortcut marker, and the ampersand (&) must appear exactly once to indicate the menu shortcut. Also there is an extra word that shouldn't be there.
 
 Correct translation:
-اہم
-or
-مرکزی
+&amp;مرکزی
 ```
 
-<!-- cache_translation_check_ur_d5b48fe7d2ec830b1b800e5d22f366f1d4ccba3fff985cafaacaa11e6a89f0df -->
+<!-- cache_translation_check_ur_0d4961bc60fee38d1313b43865e782ebb224ba023339dec3efbd5ed5879eef73 -->
 ```
-        <source>Reset Options</source>
+        <source>Size of &amp;database cache</source>
+        <translation>ڈیٹا بیس کیشے کا سائز</translation>
+    
+ERR
+The translation is correct in meaning but it omits the shortcut marker (&) that appears in the source. There are no format specifiers to check. Ensure exactly one & is included in the translation.
+
+Correct translation:
+&ڈیٹا بیس کیشے کا سائز
+```
+
+<!-- cache_translation_check_ur_7d442416104214d9633ffbe2156ad469102943315c77c397c5fda412171ff938 -->
+```
+        <source>Number of script &amp;verification threads</source>
+        <translation>اسکرپٹ اور تصدیقی دھاگوں کی تعداد</translation>
+    
+ERR
+The translation is understandable Urdu but it omits the required shortcut ampersand (&) present in the source. Also the source uses an ampersand to mark the mnemonic before "verification", so the translation must include a single &. 
+
+Correct translation (with ampersand before تصدیقی):
+اسکرپٹ اور &تصدیقی دھاگوں کی تعداد
+```
+
+<!-- cache_translation_check_ur_5b7b95242d4af55521f118d8f64f570430170e409e3779df525dcecd3678b4cf -->
+```
+        <source>&amp;Reset Options</source>
         <translation>اور دوبارہ ترتیب دینے کے اختیارات</translation>
     
 ERR
-The translation is incorrect and ungrammatical. "اور دوبارہ ترتیب دینے کے اختیارات" means "and the options to reset," which doesn't make sense as a translation of "Reset Options." It adds the word "and," which is not present in the source, and is awkwardly phrased.
+Problems:
+- The Urdu text "اور دوبارہ ترتیب دینے کے اختیارات" literally reads "and options to reset" — the leading "اور" ("and") is incorrect and changes meaning.
+- The translation is missing the single '&' used to mark the shortcut key; the source has one '&' and the translation must include exactly one.
+- Wording is awkward; better phrasing is needed.
+
+Correct translation (include single &):
+&اختیارات کو ری سیٹ کریں
+```
+
+<!-- cache_translation_check_ur_84d6949fffd17e4e904038689cde51c6084bd3c0089153a6eea0e8c896160c2a -->
+```
+        <source>&amp;Network</source>
+        <translation>اور نیٹ ورک</translation>
+    
+ERR
+The source "&Network" uses "&" to mark a keyboard shortcut; the translation incorrectly rendered this as the Urdu word "اور" ("and") and omitted the required "&" shortcut marker. Also avoid adding extra spaces.
 
 Correct translation:
-اختیارات کو ری سیٹ کریں
-
-or simply:
-دوبارہ ترتیب دینے کے اختیارات
+&نیٹ ورک
 ```
 
-<!-- cache_translation_check_ur_e81311f746fc79a434ad665bd84c6559638acfaae83cf870ac300deb30679c7d -->
+<!-- cache_translation_check_ur_cbbd258258fd71ccd7ebc10eabbb5b6536405f088ecd7db4f23079b85a33ff6e -->
 ```
-        <source>Enable coin control features</source>
+        <source>Enable coin &amp;control features</source>
         <translation>سکے اور کنٹرول کی خصوصیات کو فعال کریں۔</translation>
     
 ERR
-The translation inaccurately splits "coin control" into "سکے اور کنٹرول" (coins and control), which changes the intended meaning. "Coin control" is a technical term in Bitcoin referring to features for manually selecting transaction inputs. The translation should keep the phrase unified and accurately reflect the technical context.
+Problems:
+- The original uses an accelerator marker '&' (before "control"); the Urdu translation omits the '&'. The translation must include exactly one '&'.
+- The meaning was changed: "coin &control features" is "coin-control features" (a compound), but the Urdu reads as "سکے اور کنٹرول" ("coin and control"), which is incorrect.
+
+Suggested correct translation (with one '&'):
+کوائن &کنٹرول کی خصوصیات کو فعال کریں
+```
+
+<!-- cache_translation_check_ur_afc7dd12fd317e072b5ebea43dc5444ad3a44bf30d5d854cf7ca0f49bfc5fc71 -->
+```
+        <source>&amp;Spend unconfirmed change</source>
+        <translation>اور غیر مصدقہ تبدیلی خرچ کریں۔</translation>
+    
+ERR
+Problems:
+- The translation begins with "اور" ("and"), which incorrectly adds "and" not present in the source.
+- The ampersand (&) used to mark the shortcut key is missing; there should be exactly one &.
+- Unnecessary terminal punctuation "۔" (period) is not needed for menu texts.
+
+Suggested correct translation (with shortcut marker):
+&غیر مصدقہ تبدیلی خرچ کریں
+```
+
+<!-- cache_translation_check_ur_6713eef3b7491f5764d87dc1833865f473b05c468708d35dff18e2edc716799a -->
+```
+        <source>&amp;Window</source>
+        <translation>اور ونڈو</translation>
+    
+ERR
+The translation is incorrect. It adds the Urdu word "اور" (meaning "and") and omits the required shortcut marker '&'. The source is a single menu label "&Window" — the translation should be the Urdu word for "Window" with the '&' included exactly once.
 
 Correct translation:
-کوئن کنٹرول فیچرز کو فعال کریں۔
+&amp;ونڈو
 ```
 
-<!-- cache_translation_check_ur_f8e53be656296c3d42a2cf346411524cbb3a358b83c53abaca8fbbdbea0d72fa -->
+<!-- cache_translation_check_ur_2983781429b28da45bb49315d385077df361cc8dec80d2e061d1be9511d11440 -->
 ```
-        <source>Information</source>
+        <source>&amp;Save Image…</source>
+        <translation>اور تصویر محفوظ کریں…</translation>
+    
+ERR
+The Urdu translation is incorrect: it reads "اور تصویر محفوظ کریں…" ("and save image") and it omits the required shortcut ampersand. The ampersand (&) must appear exactly once in the translation to match the source.
+
+Correct translation:
+&amp;تصویر محفوظ کریں…
+```
+
+<!-- cache_translation_check_ur_690614f6d540c12ce87ca5263ec610f96d3363222fc5bfe1a0b228e23e2b39f1 -->
+```
+        <source>&amp;Copy Image</source>
+        <translation>اور تصویر کاپی کریں۔</translation>
+    
+ERR
+Problems:
+- The ampersand (&) that marks the shortcut key in the source is missing in the translation. There must be exactly one & in the translation.
+- There's an unnecessary terminal full stop "۔" for a menu item.
+
+Suggested correct translation (with & included and no trailing punctuation):
+&تصویر کی کاپی کریں
+```
+
+<!-- cache_translation_check_ur_5af8d7ff184acd5190668bb64aa852a94db49bda96a870b4948026a31dd47982 -->
+```
+        <source>&amp;Information</source>
         <translation>اور معلومات</translation>
     
-ERR  
-The translation "اور معلومات" means "and information" in Urdu, which is incorrect for "Information". The correct translation should be "معلومات".  
+ERR
+Translation is incorrect. "اور معلومات" means "and information" (adds an extra conjunction) and the ampersand (&) shortcut marker from the source is missing. Also there's an extra leading word/space. 
 
-Correct translation:  
-معلومات
+Correct translation (with shortcut marker preserved):
+&amp;معلومات
 ```
 
-<!-- cache_translation_check_ur_e6c278a760cb6219e06aada4b741d91321ab8c70557f00663f7cf60b9ed996a3 -->
+<!-- cache_translation_check_ur_59cfa46227efe26d4fd05a65e3c85776700d0d88c51e9249218790bec0a473a8 -->
 ```
-        <source>Peers</source>
+        <source>&amp;Peers</source>
         <translation>اور فریق</translation>
     
 ERR
-The translation "اور فریق" means "and party/side", which is incorrect for the English term "Peers" in the context of Bitcoin, where "Peers" refers to other nodes or participants on the network.
+Problems:
+- The translation "اور فریق" is incorrect: it literally reads "and party/other party" and does not convey "Peers" (network peers). 
+- It also omits the required shortcut ampersand (&) from the translation.
 
-Correct translation:
-ہم منصب
+Correct translation (keep a single & for the shortcut). Two acceptable options:
+- &ہم منصب
+- &پیئَرز
 ```
 
-<!-- cache_translation_check_ur_0636de8cbc0485782b2189535a700b04dacc52a69b95cb617ef14921878a6f19 -->
+<!-- cache_translation_check_ur_3fad92553efaa18f332645f653e513cbd72df1252fe4a9c8a75df6c6faf59b5e -->
 ```
-        <source>Disconnect</source>
+        <source>&amp;Copy address</source>
+        <extracomment>Context menu action to copy the address of a peer.</extracomment>
+        <translation>ایڈریس کاپی کریں۔</translation>
+    
+ERR
+The translation is missing the shortcut ampersand (&) and has an unnecessary Urdu/full stop. Also the phrasing can be slightly improved.
+
+Suggested correction:
+&ایڈریس کو کاپی کریں
+```
+
+<!-- cache_translation_check_ur_1765aee1e55cb3e803418ae8a7da5ea145fec27dae64f83f1024e0fadabe692a -->
+```
+        <source>&amp;Disconnect</source>
         <translation>اور منقطع کریں۔</translation>
     
 ERR
-The translation "اور منقطع کریں۔" means "And disconnect." The addition of "اور" ("and") is unnecessary and incorrect here. Also, the translation uses a full stop; in software UI context, punctuation is often omitted unless present in the source.
+Problems:
+- The Urdu translation starts with "اور" (which means "and") — this is incorrect for the command "Disconnect".
+- The shortcut marker (&) from the source is missing; the translation must include exactly one &.
+- There's an unnecessary Urdu full stop "۔" at the end; the source has no punctuation.
 
-Correct translation:
-منقطع کریں
+Correct translation suggestion (keep it short, include & once):
+&amp;منقطع کریں
+
+(Alternative more explicit option)
+&amp;کنکشن منقطع کریں
 ```
 
-<!-- cache_translation_check_ur_555cf1d712a5897798bb6562596185d6fc3791ae3ecc0fcdd5793d7b6eb57bfc -->
+<!-- cache_translation_check_ur_6039bff503a8cdef7638b723cab48d34404f4b5a173e55d6c8569d57530c36eb -->
 ```
-        <source>Amount:</source>
+        <source>&amp;Amount:</source>
         <translation>اور رقم</translation>
     
 ERR
-The translation "اور رقم" is incorrect for "Amount:". "اور" means "and", so the translation reads as "and amount", which is not correct. Also, the colon ':' from the source is missing in the translation.
+Issues:
+- The translation "اور رقم" literally means "and amount" and is incorrect.
+- The source contains a shortcut indicator "&" and a trailing colon ":" which must be preserved (exactly one & and the colon).
+- The translation also has no ampersand and is missing the colon.
 
-Correct translation:
-رقم:
+Correct translation suggestion (preserving & and colon):
+&amp;رقم:
 ```
 
-<!-- cache_translation_check_ur_4cc73cda5719ea5a435e7673a82332aa1430c1ef4cda24a5714fc2fdb885911f -->
+<!-- cache_translation_check_ur_757d77c5befc4a6bb41546053981e9687f07cdba1b0909d694ef2436a838bc88 -->
 ```
-        <source>Message:</source>
+        <source>&amp;Label:</source>
+        <translation>اور لیبل</translation>
+    
+ERR
+Problems:
+- The translation "اور لیبل" literally means "and label" (اور = "and"), which changes the meaning and is incorrect.
+- It lacks the colon ":" present in the source.
+- It does not include the single shortcut ampersand (&) from the source.
+
+Corrected translation (keep the ampersand exactly once and include the colon):
+&لیبل:
+```
+
+<!-- cache_translation_check_ur_c0f066cf744848b34196615db5ffb1d7b27801ef49f3e22e46950ceccc6a024d -->
+```
+        <source>&amp;Message:</source>
         <translation>اور پیغام</translation>
     
 ERR
-The translation is incorrect. "اور پیغام" means "and message" or "more messages". The correct translation for "Message:" is:
+The Urdu translation is incorrect: it reads "اور پیغام" ("and message"), lacks the required colon, and does not include the single '&' shortcut marker from the source. Also there's an extra leading word "اور" that shouldn't be there.
 
-پیغام:
-
-Correct translation:
-پیغام:
+Correct translation (include the '&' exactly once and the colon):
+&پیغام:
 ```
 
-<!-- cache_translation_check_ur_5a7ae15790962bf20884a51f0c80a5a5ecfc39852bc58700492f89b057cdfe5a -->
+<!-- cache_translation_check_ur_feef0f922c09217dbbfa4cadd186a03e7d36dbee224a73b59c5ec938305829c6 -->
 ```
-        <source>Copy label</source>
+        <source>&amp;Create new receiving address</source>
+        <translation>اور وصول کرنے کا نیا پتہ بنائیں</translation>
+    
+ERR
+The translator has rendered the ampersand (&) as the Urdu word "اور" ("and"), removing the required shortcut marker. Also the phrasing is slightly off — "اور وصول کرنے کا نیا پتہ بنائیں" reads as "and create a new receiving address". The translation must include exactly one & (not the word "اور") and convey "Create new receiving address".
+
+Correct translation examples (include a single & for the shortcut):
+&نیا وصول کرنے کا پتہ بنائیں
+or
+نیا &وصول کرنے کا پتہ بنائیں
+```
+
+<!-- cache_translation_check_ur_23dc6480cdf08387666510a341a5cab042775344dba86c91513d643de2c33adc -->
+```
+        <source>&amp;Copy address</source>
+        <translation>ایڈریس کاپی کریں۔</translation>
+    
+ERR
+The translation is mostly correct wording-wise, but it is missing the required shortcut ampersand (&) and includes an unnecessary terminal Urdu full stop (۔). The source contains a single '&' which must be present exactly once in the translation. Also avoid adding a period.
+
+Correct translation (ampersand added, no period):
+&ایڈریس کاپی کریں
+```
+
+<!-- cache_translation_check_ur_bc11306ec248499f17350da76f827f2b3b9e35088f478dff2283a984a72b5cdb -->
+```
+        <source>Copy &amp;label</source>
         <translation>کاپی اور لیبل</translation>
     
 ERR
-The translation "کاپی اور لیبل" means "Copy and label," which adds the word "and" (اور) not present in the source. The correct translation for "Copy label" should be concise and accurate.
+The translation is incorrect. "کاپی اور لیبل" reads as "copy and label" (using Urdu word "اور" = "and") instead of "Copy label" and it omits the required accelerator ampersand (&). The source uses "&" to mark a shortcut and that must appear exactly once in the translation.
 
-Correct translation:
-لیبل نقل کریں
+Correct suggestions (include a single & for the shortcut):
+- "کاپی &لیبل"
+or more natural:
+- "&لیبل کی کاپی کریں"
 ```
 
-<!-- cache_translation_check_ur_ba310de87870661d3e30434e387b8c0abfef322688fe795237a8a412280e0c7b -->
+<!-- cache_translation_check_ur_19ad5a4ca83c2c2cb0a89b9ea156f41fce43e5822bd7e486012a70ef1bd4ef9f -->
 ```
-        <source>Copy amount</source>
+        <source>Copy &amp;amount</source>
         <translation>کاپی اور رقم</translation>
     
 ERR
-The translation is incorrect. "کاپی اور رقم" translates to "Copy and amount", which is not accurate. The correct translation for "Copy amount" is "رقم نقل کریں".
+The translation "کاپی اور رقم" literally reads "copy and amount" (the word "اور" means "and") which is incorrect. It should mean "Copy amount". Also the source uses a single '&' for the shortcut; the translation must include exactly one '&'.
+
+Correct translations (with a single shortcut marker) — choose one appropriate for your UI convention:
+- &کاپی رقم
+- &رقم کی کاپی
+
+Both convey "Copy amount" and include exactly one '&'.
+```
+
+<!-- cache_translation_check_ur_96d325ba835476ac827b79ef3de19f0232cf9c74da2c6a09043a08bbd3a383bb -->
+```
+        <source>Copy &amp;Address</source>
+        <translation>کاپی پتہ</translation>
+    
+ERR
+The translation is missing the required shortcut ampersand (&) and so does not preserve the source formatting. Also a slightly more natural Urdu phrasing would be to place the ampersand before "پتہ" to mirror the source's shortcut on "Address".
 
 Correct translation:
-رقم نقل کریں
+کاپی &پتہ
+```
+
+<!-- cache_translation_check_ur_2983781429b28da45bb49315d385077df361cc8dec80d2e061d1be9511d11440 -->
+```
+        <source>&amp;Save Image…</source>
+        <translation>اور تصویر محفوظ کریں…</translation>
+    
+ERR
+The Urdu translation is incorrect: it reads "اور تصویر محفوظ کریں…" ("and save image") and it omits the required shortcut ampersand. The ampersand (&) must appear exactly once in the translation to match the source.
+
+Correct translation:
+&amp;تصویر محفوظ کریں…
 ```
 
 <!-- cache_translation_check_ur_07717f6c8eaf0518e84c25f6c338e063d735bd8b3a53b8c587a65bc4a853cffa -->
@@ -775,41 +1166,85 @@ Correct translation:
 فی کلو بائٹ
 ```
 
-<!-- cache_translation_check_ur_5a7ae15790962bf20884a51f0c80a5a5ecfc39852bc58700492f89b057cdfe5a -->
+<!-- cache_translation_check_ur_757d77c5befc4a6bb41546053981e9687f07cdba1b0909d694ef2436a838bc88 -->
 ```
-        <source>Copy label</source>
+        <source>&amp;Label:</source>
+        <translation>اور لیبل</translation>
+    
+ERR
+Problems:
+- The translation "اور لیبل" literally means "and label" (اور = "and"), which changes the meaning and is incorrect.
+- It lacks the colon ":" present in the source.
+- It does not include the single shortcut ampersand (&) from the source.
+
+Corrected translation (keep the ampersand exactly once and include the colon):
+&لیبل:
+```
+
+<!-- cache_translation_check_ur_23dc6480cdf08387666510a341a5cab042775344dba86c91513d643de2c33adc -->
+```
+        <source>&amp;Copy address</source>
+        <translation>ایڈریس کاپی کریں۔</translation>
+    
+ERR
+The translation is mostly correct wording-wise, but it is missing the required shortcut ampersand (&) and includes an unnecessary terminal Urdu full stop (۔). The source contains a single '&' which must be present exactly once in the translation. Also avoid adding a period.
+
+Correct translation (ampersand added, no period):
+&ایڈریس کاپی کریں
+```
+
+<!-- cache_translation_check_ur_bc11306ec248499f17350da76f827f2b3b9e35088f478dff2283a984a72b5cdb -->
+```
+        <source>Copy &amp;label</source>
         <translation>کاپی اور لیبل</translation>
     
 ERR
-The translation "کاپی اور لیبل" means "Copy and label," which adds the word "and" (اور) not present in the source. The correct translation for "Copy label" should be concise and accurate.
+The translation is incorrect. "کاپی اور لیبل" reads as "copy and label" (using Urdu word "اور" = "and") instead of "Copy label" and it omits the required accelerator ampersand (&). The source uses "&" to mark a shortcut and that must appear exactly once in the translation.
 
-Correct translation:
-لیبل نقل کریں
+Correct suggestions (include a single & for the shortcut):
+- "کاپی &لیبل"
+or more natural:
+- "&لیبل کی کاپی کریں"
 ```
 
-<!-- cache_translation_check_ur_ba310de87870661d3e30434e387b8c0abfef322688fe795237a8a412280e0c7b -->
+<!-- cache_translation_check_ur_19ad5a4ca83c2c2cb0a89b9ea156f41fce43e5822bd7e486012a70ef1bd4ef9f -->
 ```
-        <source>Copy amount</source>
+        <source>Copy &amp;amount</source>
         <translation>کاپی اور رقم</translation>
     
 ERR
-The translation is incorrect. "کاپی اور رقم" translates to "Copy and amount", which is not accurate. The correct translation for "Copy amount" is "رقم نقل کریں".
+The translation "کاپی اور رقم" literally reads "copy and amount" (the word "اور" means "and") which is incorrect. It should mean "Copy amount". Also the source uses a single '&' for the shortcut; the translation must include exactly one '&'.
 
-Correct translation:
-رقم نقل کریں
+Correct translations (with a single shortcut marker) — choose one appropriate for your UI convention:
+- &کاپی رقم
+- &رقم کی کاپی
+
+Both convey "Copy amount" and include exactly one '&'.
 ```
 
-<!-- cache_translation_check_ur_0343994043ef11a20a007aa0dea8c19212b108f4c5ec3fb35b6555ec78c925d0 -->
+<!-- cache_translation_check_ur_b7503b608e4cacb13abf7cd0f38ef33b8c8180c3b37275129f6554803329381c -->
 ```
-        <source>Copy transaction ID</source>
+        <source>Copy transaction &amp;ID</source>
         <translation>لین دین اور شناخت کی تفصیلات(ID) کاپی کریں۔</translation>
     
 ERR
-The translation adds unnecessary detail ("اور شناخت کی تفصیلات" meaning "and identity details") and does not directly correspond to the actual source phrase "Copy transaction ID". Also, the format "(ID)" is awkward.
+The translation is inaccurate and misses the required '&' shortcut marker. The Urdu text "لین دین اور شناخت کی تفصیلات(ID) کاپی کریں۔" wrongly reads like "transaction and identity details" and adds extra words; it does not match "Copy transaction &ID" and omits the '&'.
 
 Correct translation:
-ٹرانزیکشن آئی ڈی کاپی کریں۔
+لین دین کی &ID کو کاپی کریں۔
+```
+
+<!-- cache_translation_check_ur_f125f1aa972cab44ac49995ab859c666d786dad9cb27ceb90164afab72b84cf9 -->
+```
+        <source>&amp;Export</source>
+        <translation>برآمد</translation>
+    
+ERR
+The translation is missing the mnemonic ampersand (&) present in the source. The ampersand should appear exactly once in the translation to indicate the shortcut key.
+
+Correct translation:
+&amp;برآمد
 ```
 </details>
 
-Number of issues: 61.
+Number of issues: 93.

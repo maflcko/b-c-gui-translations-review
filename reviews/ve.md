@@ -1,13 +1,34 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>ve</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bve%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bve%5D%20request)
 
+
+<!-- cache_translation_check_ve_7799ed359cf43dc4d06caa71eee65bb8747851799927cff10aaa9dda686bc65a -->
+```
+        <source>C&amp;lose</source>
+        <translation>Vala</translation>
+    
+ERR
+The translation does not include the '&' shortcut marker from the source, which is important for keyboard shortcuts. It should be preserved somewhere in the translation.
+
+Correct translation:
+&Vala
+```
+
+<!-- cache_translation_check_ve_2da42b414b4648a4d351543410e3cc9fe74d05b96f958ded9de82e1338d83138 -->
+```
+        <source>&amp;Export</source>
+        <translation>&amp;Tshivhambadzwaseli</translation>
+    
+UNK_LANG
+Not familiar with the language 've'.
+```
 
 <!-- cache_translation_check_ve_42018de5ff94636b6894aea2a74c4a0cb1d70577f7332200b5d082d7e6f951e0 -->
 ```
@@ -27,6 +48,18 @@ Khethani ḓiresi ine na ḓo ṱanganedza ngayo zwikoini.
 Explanation:
 - "Zwikoini" is commonly used for "coins" in relation to digital currency in Tshivenda, rather than the literal sense "tshelede ya tsimbi".
 - The sentence is now complete and concise, matching the intent and structure of the source.
+```
+
+<!-- cache_translation_check_ve_e6a2e96fd8cc45833a21487d5187c9801b066c67fa0eb351c20f76f737e1f4d8 -->
+```
+        <source>C&amp;hoose</source>
+        <translation>Nanga</translation>
+    
+ERR
+The translation does not include the ampersand (&) used for the shortcut key. The correct translation should retain a single '&' placed appropriately.
+
+Correct translation:
+Na&nga
 ```
 
 <!-- cache_translation_check_ve_4ddd96e6218c0b30e0bdd32ad5110498ab8f7b4e3eaafc16dafaaaf66020f0fd -->
@@ -57,13 +90,60 @@ UNK_LANG
 Not familiar with the language 've' (Venda), so cannot assess for correctness.
 ```
 
-<!-- cache_translation_check_ve_bfe0a5a6c036e23debafe96764b7c53e936a41cc5cc389a294c09bcb797b8916 -->
+<!-- cache_translation_check_ve_ccc4a5f83d2b4a07ac257865651bd577ebf7051e56da9f122d5694982219c4ef -->
 ```
-        <source>Encrypt Wallet…</source>
-        <translation>Kha vha ṅwale Tshipatshi...</translation>
+        <source>E&amp;xit</source>
+        <translation>U bva</translation>
+    
+UNK_LANG, not familiar with the 've' language.
+```
+
+<!-- cache_translation_check_ve_b534b60aef2559d382b56db736aa3e994a7f5e3904147f4f1ec743b8f3847849 -->
+```
+        <source>&amp;About %1</source>
+        <translation>&amp;Nga ha %1.</translation>
     
 UNK_LANG
-I'm not familiar with the language code 've' (Venda), so I cannot accurately assess the translation.
+```
+
+<!-- cache_translation_check_ve_b7b2b77a6c48075beac3ef15b105f5cf00e0a900787c5feded0301821e3eafef -->
+```
+        <source>&amp;Encrypt Wallet…</source>
+        <translation>&amp;Kha vha ṅwale Tshipatshi...</translation>
+    
+UNK_LANG, not familiar with the language 've'.
+```
+
+<!-- cache_translation_check_ve_d37e8faf292437d07084ea8608eb9d5654b576cfccf892c48215169e6979a0b7 -->
+```
+        <source>&amp;Change Passphrase…</source>
+        <translation>&amp;Shandukisa Mubulo wa Phasi...</translation>
+    
+UNK_LANG
+
+Not familiar with the language code 've' (Venda).
+```
+
+<!-- cache_translation_check_ve_98a36ba4ed119ff70f54b2eed807dc7c94c2897f49eea74ff61f44b1984ef48b -->
+```
+        <source>&amp;Load PSBT from file…</source>
+        <translation>&amp;Load PSBT ubva kha faila...</translation>
+    
+ERR
+Most of the translation is correct, but the English word "Load" is used instead of the Venda equivalent. In Venda, "Load" should be something like "Tungula" or "Tsh loadinga" (depending on common usage, but "Tungula" is more standard for "load" as a verb). Ellipsis character should also match the source ("…" vs "..."). There is no unwanted/spam content, and the ampersand is handled properly.
+
+Correct translation:
+&Tungula PSBT ubva kha faila…
+```
+
+<!-- cache_translation_check_ve_07787b78408a5868384c1ee1c50db0615c066a1e028f3dbc2cfc7baba21c16a9 -->
+```
+        <source>&amp;Settings</source>
+        <translation>&amp;Zwishumiswa</translation>
+    
+UNK_LANG
+
+I am not familiar with the language 've' (presumably Venda), so I cannot accurately assess the translation.
 ```
 
 <!-- cache_translation_check_ve_e984fde790287ca4fccdbf36fd951bc1ba0f793ebf140ecbebf645330720edbe -->
@@ -78,6 +158,29 @@ The translation contains erroneous content ("109") at the beginning which is not
 Correct translation:
 U ṱanganya ṱhoho (%1%)...
 ```
+
+<!-- cache_translation_check_ve_e66cf8f4216c2b8a34a92cdd5101acbda899c52768472ab61a8d2d4468805cf3 -->
+```
+        <source>A&amp;mount:</source>
+        <translation>Tshivhalo:</translation>
+    
+ERR
+The translation omits the ampersand (&) which is used for shortcut key indication in the source text. The '&' should appear exactly once anywhere in the translation to properly reflect the shortcut.
+
+Correct translation:
+Tshi&vhakalo:
+or
+&Tshivhalo:
+```
+
+<!-- cache_translation_check_ve_2da42b414b4648a4d351543410e3cc9fe74d05b96f958ded9de82e1338d83138 -->
+```
+        <source>&amp;Export</source>
+        <translation>&amp;Tshivhambadzwaseli</translation>
+    
+UNK_LANG
+Not familiar with the language 've'.
+```
 </details>
 
-Number of issues: 6.
+Number of issues: 16.

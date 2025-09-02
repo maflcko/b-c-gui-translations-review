@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>sl</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bsl%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bsl%5D%20request)
 
 
 <!-- cache_translation_check_sl_49607f0c441ec21f616c17fc7b5e7cf1e850a02d66d13c76c448425e0c56c1d8 -->
@@ -28,16 +28,35 @@ Explanation:
 - Used "znaki" for "characters" (more idiomatic), and "besedami" for "words".
 ```
 
-<!-- cache_translation_check_sl_cbbefa592d607fcd467fafb420f6018ddbb6ff04aa395ea1e0d65e73f96772b2 -->
+<!-- cache_translation_check_sl_aebed3bd7fbbc309572515ff20bbcc40f9676fe1d0ec12c2a9f5c93839ca8319 -->
 ```
-        <source>Verify message…</source>
-        <translation>Preveri podpis...</translation>
+        <source>&amp;About %1</source>
+        <translation>&amp;O nas%1</translation>
     
 ERR
-The English source "Verify message…" is translated as "Preveri podpis...", which means "Verify signature..." in Slovenian. The translation is inaccurate; "message" (sporočilo) and "signature" (podpis) are not the same.
+Problems:
+- The Slovene text "O nas" means "About us", which changes the meaning of "About %1" (should refer to the program/name in %1).
+- There's no space between "nas" and "%1".
+- Better Slovene phrasing is "O %1" or "O programu %1".
+
+Correct translation (examples):
+& O %1  -> "&O %1"
+& O programu %1  -> "&O programu %1"
+
+Both keep the %1 specifier and a single &. The recommended translation is:
+& O programu %1  -> "&O programu %1"
+```
+
+<!-- cache_translation_check_sl_6f3f35f7aec94c0d51aca0eba05d73b9014e3e8a828dd2ec03f0ac7bfad6f411 -->
+```
+        <source>&amp;Options…</source>
+        <translation>&amp;Možnosti ...</translation>
+    
+ERR
+Whitespace and punctuation mismatch: the translation inserts a space before the ellipsis and uses three ASCII dots instead of the single ellipsis character as in the source. Also ensure the ampersand appears exactly once (it does).
 
 Correct translation:
-Preveri sporočilo…
+&amp;Možnosti…
 ```
 
 <!-- cache_translation_check_sl_e5f88f844634dda35347add44c98a074082d5ffb2faea193894c3e83bf63f269 -->
@@ -52,6 +71,18 @@ Correct translation:
 Preverite sporočila, da se prepričate, ali so bila podpisana z določenimi Bitcoin naslovi.
 ```
 
+<!-- cache_translation_check_sl_801d0046b1eb0926b680204b023ea26087622c6f6e10d81ed3227ecd23f17e18 -->
+```
+        <source>&amp;Load PSBT from file…</source>
+        <translation>&amp;Naloži DPBT iz datoteke...</translation>
+    
+ERR
+The translation changes the acronym PSBT to "DPBT", which is incorrect — the acronym should be preserved as "PSBT". Also the source uses a single-character ellipsis (…) while the translation uses three dots; it's better to match the original ellipsis character. The ampersand is present exactly once, which is fine.
+
+Correct translation:
+&amp;Naloži PSBT iz datoteke…
+```
+
 <!-- cache_translation_check_sl_784c5e1384f7d210dd562b1ed2c95b237f335c7baba5b6aa9e87b935a00942ea -->
 ```
         <source>Synchronizing with network…</source>
@@ -62,6 +93,32 @@ The Slovenian translation uses three dots and a space (" ...") instead of the el
 
 Correct translation:
 Sinhronizacija z omrežjem…
+```
+
+<!-- cache_translation_check_sl_5373ceaca57fe90d4f4ef222e812ebced777eb2fab71d0c447cd6d5db30544e4 -->
+```
+        <source>Load PSBT from &amp;clipboard…</source>
+        <translation>Naloži DPBT z &amp;odložišča...</translation>
+    
+ERR
+The acronym PSBT was incorrectly changed to "DPBT". Also the Slovene preposition should be "iz" before "odložišča" (which starts with a vowel). The ampersand shortcut exists exactly once, which is fine. Use the same ellipsis character as in the source.
+
+Correct translation:
+Naloži PSBT iz &odložišča…
+```
+
+<!-- cache_translation_check_sl_0e880fddb1648bb3ad806eabb8de4b31581d7f2b59c55c66c6743c64813d0d11 -->
+```
+        <source>&amp;Sending addresses</source>
+        <translation>&amp;Naslovi za pošiljanje ...</translation>
+    
+ERR
+Problems:
+- Unnecessary ellipsis " ..." and a stray space before it. UI label shouldn't have ellipsis.
+- The ampersand & is present exactly once (good), but the extra dots/spaces make it inconsistent with source.
+
+Correct translation:
+&amp;Naslovi za pošiljanje
 ```
 
 <!-- cache_translation_check_sl_9b9ef05956d690f33d9b26c221aa16346e2022907b1d05fb6c70890b350b7548 -->
@@ -102,6 +159,29 @@ Correct translation:
 Prejeto na naslov
 ```
 
+<!-- cache_translation_check_sl_81794c5ac1b4db15bc8dd9f7adbe79fbce90525a212865a3d6cd745219a1474a -->
+```
+        <source>L&amp;ock unspent</source>
+        <translation>&amp;Zakleni nepotrošene</translation>
+    
+ERR
+The Slovenian wording "Zakleni nepotrošene" is understandable but slightly non-idiomatic. A more natural translation uses "neporabljene" for "unspent".
+
+Correct translation:
+&Zakleni neporabljene
+
+(ampersand kept once for the shortcut)
+```
+
+<!-- cache_translation_check_sl_39d0e79100eddb31815418577877fb98dbacc61a7645b551c66900867e327475 -->
+```
+        <source>&amp;Unlock unspent</source>
+        <translation>&amp;Odkleni nepotrošene</translation>
+    
+ERR
+The Slovenian translation "&Odkleni nepotrošene" is awkward/incomplete: the adjective "nepotrošene" (unspent) is left without a noun. A more natural and complete translation is "&Odkleni neporabljene izhode" (Unlock unspent outputs). The ampersand is present exactly once — keep it before the first word as shown.
+```
+
 <!-- cache_translation_check_sl_2c777168f7b44f49abe65266e613904093c0031665776a6cfb9688ae37a3c572 -->
 ```
         <source>External signer</source>
@@ -139,17 +219,66 @@ Correct translation:
 %1 se trenutno sinhronizira. Prenesel bo zaglavja in bloke od soležnikov ter jih preveril, dokler ne doseže vrha verige blokov.
 ```
 
-<!-- cache_translation_check_sl_c927e82850ebac26ab993f7088229638567e68b699301429997dd10964a7bebc -->
+<!-- cache_translation_check_sl_58af8611824236834c817703da97c25c0f970ff0f10cef956c25f82e902c8474 -->
 ```
-        <source>Enable PSBT controls</source>
-        <extracomment>An options window setting to enable PSBT controls.</extracomment>
-        <translation>Omogoči nastavitve DPBT</translation>
+        <source>Size of &amp;database cache</source>
+        <translation>Velikost &amp;predpomnilnika podatkovne baze:</translation>
     
 ERR
-The translation is problematic: "DPBT" is not a recognized abbreviation in Slovenian for PSBT (Partially Signed Bitcoin Transaction). The standard use is to keep "PSBT" as is, not to translate or localize the acronym.
+The translation is mostly correct Slovenian, but it adds an extra trailing colon that is not present in the source. Also the ampersand is allowed anywhere but should appear exactly once (it does). Remove the colon to match the source.
 
 Correct translation:
-Omogoči kontrolnike PSBT
+Velikost &predpomnilnika podatkovne baze
+```
+
+<!-- cache_translation_check_sl_3cd769f5ba89a250ee79c8ae034dfa079465b6b18c1c9a992fba9591861b8fd3 -->
+```
+        <source>Number of script &amp;verification threads</source>
+        <translation>Število programskih &amp;niti za preverjanje:</translation>
+    
+ERR
+The translation adds a trailing colon that isn't present in the source, and the colon should be removed. Otherwise the wording is acceptable and the single & is used exactly once.
+
+Correct translation:
+Število programskih &niti za preverjanje
+```
+
+<!-- cache_translation_check_sl_cfb90bec671a6d858fd54e063384f7c1768d4c4a78d308259753642bb22cdfe7 -->
+```
+        <source>Enable R&amp;PC server</source>
+        <extracomment>An Options window setting to enable the RPC server.</extracomment>
+        <translation>Omogoči RPC-strežnik</translation>
+    
+ERR
+The translation is missing the shortcut ampersand found in the source ("R&amp;PC"). The source contains one '&' (escaped as &amp;); the translation must include exactly one ampersand as well. Also keep "RPC" intact; using a hyphen for "RPC-strežnik" is fine.
+
+Correct translation:
+Omogoči R&amp;PC-strežnik
+```
+
+<!-- cache_translation_check_sl_15222e20dcdd8daba64a7e901d261ecf0560ef0f1e069b031d6e00c5a1881856 -->
+```
+        <source>&amp;Spend unconfirmed change</source>
+        <translation>Omogoči &amp;trošenje vračila iz še nepotrjenih plačil</translation>
+    
+ERR
+The translation mixes dialect/word forms and is awkward/unnatural in Slovenian ("trošenje", "vračila" forms) and the phrase structure is not clear. The ampersand is present once (good), but the wording should be natural Slovenian.
+
+Suggested correct translation:
+&amp;Dovoli porabo še nepotrjenega vračila
+```
+
+<!-- cache_translation_check_sl_c596fc7438f2638aac45ef732e1b874f8a91e98320b536fe6b26c141ed698c10 -->
+```
+        <source>Enable &amp;PSBT controls</source>
+        <extracomment>An options window setting to enable PSBT controls.</extracomment>
+        <translation>Omogoči nastavitve &amp;DPBT</translation>
+    
+ERR
+The translation incorrectly changes the acronym "PSBT" to "DPBT" and uses "nastavitve" (settings) instead of a closer rendering of "controls". The acronym should remain "PSBT" as in the source, and the ampersand should appear exactly once.
+
+Correct translation:
+Omogoči &PSBT kontrole
 ```
 
 <!-- cache_translation_check_sl_5c2c8961830eab29bd721e136fb67a92ac10f879eca243781dbd7a6980b36c1f -->
@@ -167,16 +296,72 @@ Ali naj se prikaže upravljanje s PSBT.
 This keeps the term "PSBT" as in the original, which is a specific technical acronym.
 ```
 
-<!-- cache_translation_check_sl_cb58a958aa0167121d7b2e2d1d9cb1b8a08e4d7efdec801486d0d6583ed31d57 -->
+<!-- cache_translation_check_sl_ebd0df2cf707e905bf345af6ef9426234d243db8344ff93a33f34cc4e0fac837 -->
 ```
-        <source>Third-party transaction URLs</source>
-        <translation>Zunanji URL-ji</translation>
+        <source>&amp;External signer script path</source>
+        <translation>&amp;Pot do zunanjega podpisnika</translation>
     
 ERR
-The translation "Zunanji URL-ji" merely means "External URLs" and omits the key concepts of "third-party" and "transaction". It is not an accurate translation.
+The translation is understandable but omits the word "script" — "Pot do zunanjega podpisnika" reads more like "Path to external signer" (signer person/program) rather than specifically "External signer script path". The shortcut marker (&) is present exactly once, which is correct.
 
 Correct translation:
-URL-ji tretjih oseb za transakcije
+&Pot do skripta zunanjega podpisnika
+```
+
+<!-- cache_translation_check_sl_8b724049fd9ef77d753ec592c83f5495037ab891c54bbe61b18b79b338903585 -->
+```
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp;Minimiraj na pladenj namesto na opravilno vrstico</translation>
+    
+ERR
+The translation is understandable but has minor issues with verb form and preposition choice in Slovenian. "Minimiraj" is nonstandard (prefer "Minimiziraj") and "na pladenj" should be "v pladenj" (or better "v sistemski pladenj"). The ampersand is present exactly once, and there are no format-specifier or spacing problems.
+
+Suggested correct translation:
+&Minimiziraj v sistemski pladenj namesto v opravilno vrstico
+```
+
+<!-- cache_translation_check_sl_ca5321bd06d7fe616999d8751c8d63373709843705a6958a60de9b8c72a37e9a -->
+```
+        <source>M&amp;inimize on close</source>
+        <translation>Ob zapiranju okno zgolj m&amp;inimiraj</translation>
+    
+ERR
+The translation is grammatically incorrect and contains a misspelling. Problems:
+- "Ob zapiranju okno zgolj s&inimiraj" uses nominative "okno" where genitive "okna" is required.
+- "zgolj" ("only") is awkwardly placed and unnecessary compared to the source.
+- "s&inimiraj" is misspelled (and the ampersand placement within that misspelling is odd).
+
+Suggested correct translation (with a single & for the shortcut):
+Ob zapiranju okna &minimiziraj
+```
+
+<!-- cache_translation_check_sl_084a054e6c6422cd896b382748e294e5e10a3753f72216ec7d51adb6d939b7ff -->
+```
+        <source>&amp;Third-party transaction URLs</source>
+        <translation>&amp;Zunanji URL-ji</translation>
+    
+ERR
+The translation "&Zunanji URL-ji" reads as "External URLs" and omits the "third-party" and "transaction" meaning from the source. It is therefore not an accurate rendering.
+
+Suggested correct translations:
+- &URL-ji tretjih oseb za transakcije
+or
+- &URL-ji tretjih strani za transakcije
+```
+
+<!-- cache_translation_check_sl_88e98efca4194629381b4950ecdf87b9150574872ad5f56bbb971fe7465f7247 -->
+```
+        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
+        <translation>Uporabi ločen posredniški strežik SOCKS5 za povezavo s soležniki prek storitev onion (Tor):</translation>
+    
+ERR
+The translation contains typographical errors and omits the required shortcut ampersand from "SOCKS&amp;5". Specifically:
+- "strežik" should be "strežnik".
+- "soležniki" is incorrect for "peers" (use "vrstniki").
+- The original contains one ampersand (SOCKS&amp;5) for the accelerator; the translation removed it. The ampersand must appear exactly once.
+
+Corrected translation:
+Uporabi ločen posredniški strežnik SOCKS&5 za doseganje vrstnikov prek Tor onion storitev:
 ```
 
 <!-- cache_translation_check_sl_1df098f7206ca1520398f6105831260f46a9a4e11eeb417682482378f1fbb3cc -->
@@ -245,6 +430,20 @@ Ni mogoče zagnati rokovalca za bitcoin: click-to-pay.
 Either is valid, but the main issue is the unnecessary colon and slightly awkward phrasing.
 ```
 
+<!-- cache_translation_check_sl_596a7aa6a0f6a7ddf3332381fd4fba04ad9d9f166a5b66cef27eb92f3d0e28e1 -->
+```
+        <source>&amp;Save Image…</source>
+        <translation>&amp;Shrani sliko ...</translation>
+    
+ERR
+Issues:
+- Extra space before the ellipsis and using three periods instead of the single Unicode ellipsis character. In Slovenian there should be no space before the ellipsis.
+- Otherwise translation is correct and the & shortcut is present exactly once.
+
+Correct translation:
+&amp;Shrani sliko…
+```
+
 <!-- cache_translation_check_sl_d5b5838739bdd1be6e97f3ec4b6634467d05ef64695f835c825719c7b57b397b -->
 ```
         <source>Outbound Address Fetch: short-lived, for soliciting addresses</source>
@@ -270,6 +469,18 @@ Correct translation:
 ni izbranega releja z visoko pasovno širino
 ```
 
+<!-- cache_translation_check_sl_25dfdaec4aa2d9462cb6440647aacb56e684f83a38b5274ad2da71bcc5b877e5 -->
+```
+        <source>Copy &amp;URI</source>
+        <translation>Kopiraj &amp;URl</translation>
+    
+ERR
+The translation has a capitalization typo: "URl" uses a lowercase L instead of uppercase I. The ampersand shortcut is present exactly once which is correct.
+
+Correct translation:
+Kopiraj &URI
+```
+
 <!-- cache_translation_check_sl_94b38fed999e17718398161168b37a526d73b7a35d2794b04e7d8ee2c75cfca2 -->
 ```
         <source>Request payment to …</source>
@@ -280,6 +491,32 @@ The translation is inaccurate. "Prejmeniku" means "to the recipient," which is n
 
 Correct translation:
 Zahtevaj plačilo …
+```
+
+<!-- cache_translation_check_sl_25dfdaec4aa2d9462cb6440647aacb56e684f83a38b5274ad2da71bcc5b877e5 -->
+```
+        <source>Copy &amp;URI</source>
+        <translation>Kopiraj &amp;URl</translation>
+    
+ERR
+The translation has a capitalization typo: "URl" uses a lowercase L instead of uppercase I. The ampersand shortcut is present exactly once which is correct.
+
+Correct translation:
+Kopiraj &URI
+```
+
+<!-- cache_translation_check_sl_596a7aa6a0f6a7ddf3332381fd4fba04ad9d9f166a5b66cef27eb92f3d0e28e1 -->
+```
+        <source>&amp;Save Image…</source>
+        <translation>&amp;Shrani sliko ...</translation>
+    
+ERR
+Issues:
+- Extra space before the ellipsis and using three periods instead of the single Unicode ellipsis character. In Slovenian there should be no space before the ellipsis.
+- Otherwise translation is correct and the & shortcut is present exactly once.
+
+Correct translation:
+&amp;Shrani sliko…
 ```
 
 <!-- cache_translation_check_sl_9b9ef05956d690f33d9b26c221aa16346e2022907b1d05fb6c70890b350b7548 -->
@@ -345,6 +582,18 @@ Correct translation:
 lastni naslov
 ```
 
+<!-- cache_translation_check_sl_ce8a1b038361f2ffa9f1785994a00c9256d7eb70241528e61356447a5d2950e4 -->
+```
+        <source>Copy &amp;raw transaction</source>
+        <translation>Kopiraj su&amp;rovo transkacijo</translation>
+    
+ERR
+The Slovene word "transkacijo" is misspelled. It should be "transakcijo". The shortcut ampersand is fine (placed once).
+
+Correct translation:
+<translation>Kopiraj su&amp;rovo transakcijo</translation>
+```
+
 <!-- cache_translation_check_sl_86f02a60fb7efc22d811a2a0362540193fe2b60eafafa7c85beaee2a38dc89cf -->
 ```
         <source>PSBT file must be smaller than 100 MiB</source>
@@ -391,6 +640,18 @@ There is a typo in the Slovenian word for "corrupted": "ovkarjena" is incorrect.
 
 Correct translation:
 Napaka pri nalaganju %s: Denarnica poškodovana
+```
+
+<!-- cache_translation_check_sl_aa2a36673734a05de1534f2447e0c953f94c1733391e5e27b239830cbf258ed9 -->
+```
+        <source>Error reading configuration file: %s</source>
+        <translation>Napaka pri branju nastavitvene datoteke: 1%s</translation>
+    
+ERR
+The translation incorrectly inserts "1" before the format specifier ("1%s"). The "%s" placeholder must be preserved exactly and not altered.
+
+Correct translation:
+Napaka pri branju konfiguracijske datoteke: %s
 ```
 
 <!-- cache_translation_check_sl_567d6a54984ca6c8de5e03485f0b1724035a84960599a9bf4009f7c38dae2b94 -->
@@ -442,4 +703,4 @@ Obrezujem shrambi blokov…
 ```
 </details>
 
-Number of issues: 34.
+Number of issues: 54.

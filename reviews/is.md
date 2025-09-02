@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>is</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bis%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bis%5D%20request)
 
 
 <!-- cache_translation_check_is_448c30508376fb8b97ae9671c6bc397757f02abe5027b852f988b521fc8f7c80 -->
@@ -19,18 +19,6 @@ The translation inaccurately translates "address" as "veski" (wallet). The corre
 
 Correct translation:
 Búa til nýtt fang
-```
-
-<!-- cache_translation_check_is_9a1e1647d56b4ac2343ea7f9cb737896410cc095496d321caf7630f76f387e54 -->
-```
-        <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Afrita valið veski í klemmuspjald</translation>
-    
-ERR
-The translation is inaccurate. The English phrase is "Copy the currently selected address to the system clipboard," while the Icelandic translation says "Afrita valið veski í klemmuspjald" which means "Copy the selected wallet to the clipboard." The word "address" is mistranslated as "veski" (wallet) instead of "address" ("fang" or "vistfang").
-
-Correct translation:
-Afrita valið vistfang í klemmuspjald
 ```
 
 <!-- cache_translation_check_is_d08c58e2b154590edb3a26dd32f063af32978eec7fe53a2a4a51d438a4e57d4f -->
@@ -81,16 +69,30 @@ Correct translation:
 Veldu vistfangið til að taka við myntum
 ```
 
-<!-- cache_translation_check_is_3c58faa1ebc5ed906269ed154dd1ba5eb3e2a9e094e09ca0ad380b9844bb7134 -->
+<!-- cache_translation_check_is_9aaf8ebe7733fa281f27190f6eaf34c431acb200e225d91c36e44eb2ac4fa5ad -->
 ```
-        <source>Copy Address</source>
-        <translation>Afrita færslugildi</translation>
+        <source>&amp;Copy Address</source>
+        <translation>&amp;Afrita færslugildi</translation>
     
 ERR
-The translation is inaccurate. "Afrita færslugildi" means "Copy transaction value" or "Copy transaction attribute", which is unrelated to copying an address.
+The translation of "&amp;Copy Address" as "&amp;Afrita færslugildi" is problematic. "Færslugildi" means "transaction value" in Icelandic, which is not equivalent to "address". The correct translation of "address" (in the context of Bitcoin, usually meaning a receiving address or wallet address) is "vistfang" or "heimilisfang" (though "vistfang" is usual in the software sense). The shortcut ampersand is correctly placed.
 
 Correct translation:
-Afrita vistfang
+&Afrita vistfang
+```
+
+<!-- cache_translation_check_is_6204bd04f0786d7d9c1284adbba627e296fe68f294c67d7952851ce71cd5765a -->
+```
+        <source>Copy &amp;Label</source>
+        <translation>Afrita og &amp;Merkja</translation>
+    
+ERR
+The translation rearranges the meaning. "Afrita og &Merkja" means "Copy and label", which is not the same as "Copy Label". The correct Icelandic translation would be "Afrita &Merkimiða" or simply "Afrita &Merk".
+
+Correct translation:
+Afrita &Merkimiða
+or
+Afrita &Merk
 ```
 
 <!-- cache_translation_check_is_e07ce852e6bec92fc7c5248ee9e4fdee872e062c949ab9b883680657b22a8343 -->
@@ -135,6 +137,18 @@ Final correct translation:
 Sendingarheimilisföng - %1
 ```
 
+<!-- cache_translation_check_is_5224b5c20f1956a0eaf89cc802ecf1aa558e9435b56343758da601de80df59a0 -->
+```
+        <source>Receiving addresses - %1</source>
+        <translation>heimilisföng - %1</translation>
+    
+ERR
+The Icelandic translation only says "heimilisföng - %1" ("addresses - %1") and omits the "Receiving" meaning. The format specifier %1 is preserved correctly and there are no whitespace issues, but the translation is incomplete/less specific.
+
+Suggested correct translation:
+Móttökuheimilisföng - %1
+```
+
 <!-- cache_translation_check_is_5b39350b4fc9ab7819b66712032c85c27ebd658998324fbc84377a559c24ea57 -->
 ```
         <source>Address</source>
@@ -171,6 +185,18 @@ Correct translation:
 Veskið þitt er nú dulkóðað.
 ```
 
+<!-- cache_translation_check_is_96e203c27eeb6f51d26e43f2537ea13a068a573a1ad7c24c5e52e42c31c7e8c1 -->
+```
+        <source>%1 didn't yet exit safely…</source>
+        <translation>%1 fór ekki enn á öruggan hátt…</translation>
+    
+ERR
+The Icelandic phrasing is awkward and unidiomatic. "fór ekki enn á öruggan hátt…" literally reads "went not yet in a safe way" and doesn't convey "didn't yet exit safely" for a program/process. The format specifier %1 and the ellipsis are preserved correctly.
+
+Suggested correction:
+%1 hefur ekki ennþá hætt örugglega.
+```
+
 <!-- cache_translation_check_is_580d53aa8862a3a285305009b2842a47f2465b935d6020f352da91d2c41afb53 -->
 ```
         <source>Send coins to a Bitcoin address</source>
@@ -181,6 +207,18 @@ The translation is problematic. The phrase "færslugildi" means "transaction val
 
 Correct translation:
 Senda mynt á Bitcoin vistfang
+```
+
+<!-- cache_translation_check_is_072e720a5d612c8f1b8ba05806d8f6d2b6dbf67cc8cc09fe339440d73b9d066f -->
+```
+        <source>&amp;Backup Wallet…</source>
+        <translation>&amp;Öryggisveski...</translation>
+    
+ERR
+The translation misinterprets "Backup Wallet" as "Öryggisveski", which means "safety wallet" or "secure wallet" in Icelandic, rather than the verb "Back up". The correct translation should communicate the action to back up the wallet.
+
+Correct translation:
+&Afrita veski...
 ```
 
 <!-- cache_translation_check_is_baae1fdb51c905c8d7139162c17fb9d83eb893d6e53381463b9c966a06e7a5c5 -->
@@ -300,18 +338,6 @@ Correct translation:
 Móttekið með vistfangi
 ```
 
-<!-- cache_translation_check_is_322e72e964ac614a89ef943216ae3b2e189fade4f8d9b8e97b9a4d3c7723104f -->
-```
-        <source>Copy transaction ID and output index</source>
-        <translation>Afritaðu færslu  auðkenni og úttaksvísitölu</translation>
-    
-ERR
-There is a formatting error: there is an unnecessary space between "færslu" and "auðkenni". The phrase should be "færsluauðkenni" (transaction ID), not split into two words.
-
-Correct translation:
-Afritaðu færsluauðkenni og úttaksvísitölu
-```
-
 <!-- cache_translation_check_is_f657074daa2f561f4a6864946bf9d4740bf0be166a815ff6ad276b55abf9bfc9 -->
 ```
         <source>Edit Address</source>
@@ -351,16 +377,16 @@ Correct translation:
 Heimilisfangið sem tengist þessari færslu í listanum. Þessu má aðeins breyta fyrir sendiheimilföng.
 ```
 
-<!-- cache_translation_check_is_e922c241f2ccd752134aff78c6b098ff7e22cd1bcc3c333a9403349bda58e598 -->
+<!-- cache_translation_check_is_6f8f32a799f988af66f78d23b7993f723948b2bde404f656e4fed161f8115402 -->
 ```
-        <source>Address</source>
+        <source>&amp;Address</source>
         <translation>Nýtt móttökufærslugildi</translation>
     
 ERR
-The translation "Nýtt móttökufærslugildi" means "New receiving transaction value", which is incorrect for the simple word "Address". The translation should simply be "Heimilisfang" or, in the context of Bitcoin, "Vistfang".
+The translation "Nýtt móttökufærslugildi" does not accurately convey the meaning of "Address". The English "&Address" is meant as a menu or button title with an accelerator key, and should be translated concisely as "Address" into Icelandic. Also, the ampersand (&) for the shortcut key is missing.
 
 Correct translation:
-Vistfang
+&Heimilisfang
 ```
 
 <!-- cache_translation_check_is_906d6220f0cde5c0d48d5cbe59aae055c72298cd0abba6557b16f0edd1957e63 -->
@@ -399,16 +425,28 @@ Correct translation:
 Heimilisfangið "%1" sem þú slóst inn er ekki gilt Bitcoin heimilisfang.
 ```
 
-<!-- cache_translation_check_is_384c8a42df8ed08caa19cbb30125054df7cdb8408adaa4d27254a8d1e638d9c9 -->
+<!-- cache_translation_check_is_43bf74927e5eaca6185126a08bb887d396d7f5fb8f8beb0665cef2d607255de4 -->
 ```
-        <source>Your current balance in watch-only addresses</source>
-        <translation>Innistæða færslugilda sem eru einungis til skoðunar</translation>
+        <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
+        <translation>Skráin er þegar til. Bættu við %1 ef þú ætlar að búa til nýja möppu hér.</translation>
     
 ERR
-The translation is inaccurate. "Innistæða færslugilda sem eru einungis til skoðunar" translates more like "Balance of transaction values that are for viewing only," which is not a direct or clear translation of "Your current balance in watch-only addresses". The possessive ("your") and the reference to "addresses" are missing.
+The Icelandic uses "Skráin" (the file) but the source refers to a directory. Use the Icelandic word for directory ("mappa") or "möppan".
 
 Correct translation:
-Núverandi innistæða þín í aðeins lesanlegum vistföngum
+Möppan er þegar til. Bættu við %1 ef þú ætlar að búa til nýja möppu hér.
+```
+
+<!-- cache_translation_check_is_7c53057216fc5df48e7b76394a2ca67640b20d56930db142be879eeeaa2b2d71 -->
+```
+        <source>This initial synchronisation is very demanding, and may expose hardware problems with your computer that had previously gone unnoticed. Each time you run %1, it will continue downloading where it left off.</source>
+        <translation>Þessi fyrstu samstilling er mjög krefjandi og getur leitt til vélbúnaðarvandamála með tölvunni þinni sem áður hafði farið framhjá. Í hvert skipti sem þú keyrir %1 mun það halda áfram að hlaða niður þar sem frá var horfið.</translation>
+    
+ERR
+The Icelandic is understandable but has awkward phrasing and some grammatical issues (word choice and tense/agreement). Provide a clearer, more natural translation preserving %1:
+
+Correct translation:
+Þessi upphaflega samstilling er mjög krefjandi og gæti afhjúpað vélbúnaðarvandamál í tölvunni þinni sem áður höfðu farið fram hjá þér. Í hvert sinn sem þú keyrir %1 heldur hún áfram að hlaða niður þaðan sem hún hætti.
 ```
 
 <!-- cache_translation_check_is_b13056a58fa13dad215f8125e8610ee86ba86f4e9c2e4af84686205dd6529e9c -->
@@ -434,6 +472,18 @@ The Icelandic translation "Færslugildi" does not correctly translate "Address."
 
 Correct translation:
 Vistfang
+```
+
+<!-- cache_translation_check_is_ab5d211d2a1250e55b94230fd9577240cd41d816125eabde3d4efad7ecebb4bc -->
+```
+        <source>Executing command using "%1" wallet</source>
+        <translation>Framkvæmir skipun með "%1" veski</translation>
+    
+ERR
+The Icelandic is awkward/ungrammatical. "Framkvæmir skipun með "%1" veski" uses the wrong verb form and noun case. Also "veski" should be in the definite/appropriate form ("veskinu") and the phrasing should indicate an ongoing action.
+
+Correct translation:
+Er að framkvæma skipun með veskinu „%1“
 ```
 
 <!-- cache_translation_check_is_a5feb2a4b2c0f04f3bdf7c2e95e45aa0e993f67e603c4f77ffae382d0eb01933 -->
@@ -498,4 +548,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 39.
+Number of issues: 43.

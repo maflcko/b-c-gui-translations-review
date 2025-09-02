@@ -1,24 +1,24 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>fo</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bfo%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bfo%5D%20request)
 
 
-<!-- cache_translation_check_fo_622453d0efa598ed069d45f4aae7dce7f6abfc6c5f06be751018a7d9cdd8beeb -->
+<!-- cache_translation_check_fo_0d6a77330babb4d1fe82b84f3182adfde7706a76d28e9d6661241f507ab30be6 -->
 ```
-        <source>Copy Label</source>
-        <translation>Avrita Spjaldur</translation>
+        <source>Sign &amp;message…</source>
+        <translation>&amp;Undirrita  boð</translation>
     
 ERR
-The translation is problematic. The word "Copy" in Faroese is "Avrita", which is correct, but "Spjaldur" means "card" or "board", not "label". The correct Faroese term for "label" is "merki". 
+There is an extra space between "Undirrita" and "boð", resulting in "Undirrita  boð" instead of "Undirrita boð". There should be only one space.
 
 Correct translation:
-Avrita Merki
+&amp;Undirrita boð
 ```
 
 <!-- cache_translation_check_fo_322ff1ea838de4e97ecb71f658966c0eef55cd0083f44aa9d7a30ca9cc31892f -->
@@ -81,6 +81,18 @@ Correct translation:
 Framgongd
 ```
 
+<!-- cache_translation_check_fo_d120070fa7c9f825ea3e8669e99c44a2f1062b14396e8de1e27dc93ada1c5e2b -->
+```
+        <source>&amp;Reset</source>
+        <translation>Tómstilla</translation>
+    
+ERR
+The ampersand (&) indicating the shortcut key in the source is missing in the translation. It should exist exactly once in both.
+
+Correct translation:
+&Tómstilla
+```
+
 <!-- cache_translation_check_fo_dfa10b1b34bdf1cfbf8726c41e47f9b35efd8aef421d695ffa8e00b4a9d54c3c -->
 ```
         <source>Out:</source>
@@ -93,17 +105,23 @@ Correct translation:
 Út:
 ```
 
-<!-- cache_translation_check_fo_72413511116b5852b0c2faf40af6ddb9f9aba5b9ec40954678c461721ce14601 -->
+<!-- cache_translation_check_fo_9e54bcb5bf4cbd2944c08258aad676dbf21f45723cef866da3cf3e23cea94b8b -->
 ```
-        <source>Copy address</source>
-        <extracomment>Context menu action to copy the address of a peer.</extracomment>
-        <translation>Avrita adressu</translation>
+        <source>Copy &amp;Address</source>
+        <translation>Avrita &amp;adressu</translation>
     
 ERR
-There is a minor problem with the translation: "avrita" is the Faroese word for "copy", but "adressu" is a misspelling. The correct Faroese word is "adressu" or "adressu", but the standard Faroese for "address" is "adressu" as an accusative/dative form, but it is more common to use the form "adressu" for object of a verb (copying).
+The translation uses "adressu," which is not correct in Faroese. The correct Faroese word for address is "adressu" or "adressu," but "avrita" appears correct for "copy." However, "&amp;" should be maintained only once, and the spacing/formatting is correct. The main issue is the word "adressu"; in Faroese, it's usually "adressu" or "adressa," but "adressu" is plausible as a dative. Double-check needed, but in most interfaces, "Kopiera &adressu" or "Avrita &adressu" is used.
 
 Correct translation:
-Avrita adressuna
+Avrita &adressu
+
+If "adressu" as the object is acceptable and standard in FO UI, then the translation may be acceptable, but sometimes "adressa" is preferred. Thus, it's a minor error in formality/case:
+
+Correct translation:
+Avrita &adressa
+
+If "adressu" is actually a valid Faroese object form, then "NO" would be acceptable. But based on most translation info, "adressa" is preferred.
 ```
 
 <!-- cache_translation_check_fo_322ff1ea838de4e97ecb71f658966c0eef55cd0083f44aa9d7a30ca9cc31892f -->
@@ -179,4 +197,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 14.
+Number of issues: 15.

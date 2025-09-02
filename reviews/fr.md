@@ -1,13 +1,39 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>fr</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bfr%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bfr%5D%20request)
 
+
+<!-- cache_translation_check_fr_d169309d7d31bbaed002baa73511e4f2ae0f9258b969d010d26a6e4fbee0b105 -->
+```
+        <source>Delete the currently selected address from the list</source>
+        <translation>Supprimer de la liste l’adresse choisie actuellement</translation>
+    
+ERR
+The French is understandable but awkwardly ordered. No format specifiers are present and there are no whitespace issues.
+
+Better/widely used phrasing:
+Supprimer l'adresse actuellement sélectionnée de la liste
+(or shorter)
+Supprimer l'adresse sélectionnée de la liste
+```
+
+<!-- cache_translation_check_fr_f17dd09c3153279aa0c3683d01b43dc11b98892f4037c3ef000123a5150eb18a -->
+```
+        <source>Copy the currently selected address to the clipboard</source>
+        <translation>Copier dans le presse-papiers l’adresse choisie actuellement</translation>
+    
+ERR
+The French is understandable but slightly awkward in word order. A more natural phrasing places "actuellement" before "sélectionnée" or omits it.
+
+Correct translation:
+Copier l’adresse actuellement sélectionnée dans le presse-papiers.
+```
 
 <!-- cache_translation_check_fr_eafadccade984155c3ab3302171f6f699085577057470b60a4c820f1eb60a909 -->
 ```
@@ -61,22 +87,52 @@ Correct translation:
 %1 B
 ```
 
-<!-- cache_translation_check_fr_12a858477bd71fc6b82ea6da0602eff7ac0eb3a8492fa2c5a6684e6a643af7af -->
+<!-- cache_translation_check_fr_7a130a75f3e4be2f61a2cd7886ae03e67b4bd67dda3ca7835106c0fcd54f773d -->
 ```
-        <source>Cannot create new wallet, the software was compiled without sqlite support (required for descriptor wallets)</source>
-        <translation>Impossible de créer un nouveau portemonnaies. Le logiciel a été compilé sans prise en charge de sqlite (nécessaire pour les portemonnaies de descripteurs) </translation>
+        <source>&amp;Verify message…</source>
+        <translation>&amp;Confirmer un message…</translation>
     
 ERR
-There are some issues with the translation:
-
-1. "portemonnaies" should be "portefeuille" in singular, as "wallet" is singular in the English sentence.
-2. The plural "portemonnaies" is rarely used in French in the Bitcoin context; "portefeuille" is the standard term.
-3. "de descripteurs" is awkward; "à descripteurs" is more natural in this context.
-4. The definite article "Le logiciel" should not be capitalized after a period, as in French, after a period that ends a sentence, you start with a capital. However, if you split the sentence which wasn't done in the original, it's okay. Here, the translation matches the two sentences style, but the English is one long sentence, so the translation should also be one sentence.
-5. Extra whitespace at the end.
+The translation uses "Confirmer un message…" which means "Confirm a message", but the correct translation of "Verify message" in the Bitcoin context is "Vérifier un message…". Additionally, the ampersand (&) is correctly placed for the shortcut key.
 
 Correct translation:
-Impossible de créer un nouveau portefeuille : le logiciel a été compilé sans prise en charge de sqlite (nécessaire pour les portefeuilles à descripteurs)
+&amp;Vérifier un message…
+```
+
+<!-- cache_translation_check_fr_a22572c3c7e30a1b7b879354466eca4d0c153075568fec37a8c6292e3302c9a1 -->
+```
+        <source>&amp;Load PSBT from file…</source>
+        <translation>&amp;Charger la TBSP d’un fichier…</translation>
+    
+ERR
+The acronym 'PSBT' (Partially Signed Bitcoin Transaction) is incorrectly translated as 'TBSP', which appears to be a typographical error or reversal of the letters. In French, the accepted practice is to retain 'PSBT'.
+
+Correct translation:
+&Charger la PSBT d’un fichier…
+```
+
+<!-- cache_translation_check_fr_56175f0101887bffe86dd68244d7cf599ce137d7f3339da93f7598b25f8ae40c -->
+```
+        <source>Open &amp;URI…</source>
+        <translation>Ouvrir une &amp;URI…</translation>
+    
+ERR
+In French, 'URI' is masculine and does not require an article here. The indefinite article "une" before 'URI' is ungrammatical and not natural in UI context. Additionally, "Ouvrir &amp;URI…" should follow the English pattern directly.
+
+Correct translation:
+Ouvrir &amp;URI…
+```
+
+<!-- cache_translation_check_fr_e6a32246e840ddbf9b8228c4366cbea4426666ac78030215335849f18a1882a6 -->
+```
+        <source>Load PSBT from &amp;clipboard…</source>
+        <translation>Charger la TBSP du &amp;presse-papiers…</translation>
+    
+ERR
+The acronym "PSBT" (Partially Signed Bitcoin Transaction) has been incorrectly reversed to "TBSP" in French, which is not standard and could cause confusion. The correct approach is to keep "PSBT" untranslated, as it is a technical term used identically in French Bitcoin contexts.
+
+Correct translation:
+Charger la PSBT depuis le &amp;presse-papiers…
 ```
 
 <!-- cache_translation_check_fr_229b9f3152a201b44944a7f36e15b1af786b6f3b03532fd0915180583b023036 -->
@@ -93,6 +149,44 @@ Correct translation:
 Type : %1
 ```
 
+<!-- cache_translation_check_fr_eb5f959ff0fc7a73580bf0e2aa4da545a5d7ce21b70ebc9621b73ba3a2c95e46 -->
+```
+        <source>(un)select all</source>
+        <translation>Tout (ne rien) choisir</translation>
+    
+ERR
+The French is awkward and not natural. "Tout (ne rien) choisir" is incorrect phrasing.
+
+Correct translations:
+- "(dé)sélectionner tout"
+or
+- "Sélectionner/désélectionner tout"
+```
+
+<!-- cache_translation_check_fr_1f81dd3c16a4ce300e80cab13848b074411cf26efea2cdfe3b8e6a5dc9eb06c6 -->
+```
+        <source>Copy transaction &amp;ID and output index</source>
+        <translation>Copier l’ID de la transaction et l’index des sorties</translation>
+    
+ERR
+The translation omits the ampersand, which indicates the shortcut key. The & must appear exactly once in the translation. Additionally, "output index" should be singular to match the source ("output"), unless multiple outputs are always implied in context. But the main error is the missing shortcut indicator.
+
+Correct translation:
+Copier l’&ID de la transaction et l’index de sortie
+```
+
+<!-- cache_translation_check_fr_641ab2e8ebfa61fbc7a5ec3af00fa518127015a19de1ecacfdae3210a65c5879 -->
+```
+        <source>L&amp;ock unspent</source>
+        <translation>&amp;Verrouillé ce qui n’est pas dépensé</translation>
+    
+ERR
+The translation is not accurate. "Verrouillé ce qui n’est pas dépensé" translates back to "Locked what is not spent," which suggests a past action rather than the command to "Lock unspent." Additionally, "Verrouiller" should be in the infinitive form to match the imperative/context.
+
+Correct translation:
+&Verrouiller les fonds non dépensés
+```
+
 <!-- cache_translation_check_fr_3fe5ef77cb009362912b8af0289d6708366bcbe3e2d250dfcf1346daf5aba60c -->
 ```
         <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2 GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
@@ -103,6 +197,22 @@ There is a grammatical issue in the last part: "lors du lancement de %4 a été 
 
 Correct translation:
 Quand vous cliquerez sur OK, %1 commencera à télécharger et à traiter l’intégralité de la chaîne de blocs %4 (%2 Go), en commençant par les transactions les plus anciennes de %3, lorsque %4 a été lancé initialement.
+```
+
+<!-- cache_translation_check_fr_f1783f4b9489d015dedc0a733d000149ecf63c28fdaae0db4c68395e4e795364 -->
+```
+        <source>&amp;Main</source>
+        <translation>&amp;Principales</translation>
+    
+ERR
+The translation "Principales" is incorrect for "Main" in this context. "Principales" is the plural form of "principal", and it doesn't match the likely intended singular menu/section "Main". The correct translation should be "Principal" or, commonly in Bitcoin wallet UIs, "Accueil" ("Home" or "Main"). 
+
+Also, the ampersand for the shortcut key is preserved, which is correct.
+
+Correct translation:
+&amp;Principal
+or
+&amp;Accueil
 ```
 
 <!-- cache_translation_check_fr_ccdae3ff5c2404764a36cc86c5a9fc76670ed6e580639f0c17021e9c4f585694 -->
@@ -119,17 +229,17 @@ Correct translation:
 Si vous désactivez la dépense de la monnaie non confirmée, la monnaie d’une transaction ne peut pas être utilisée tant que cette transaction n’a pas reçu au moins une confirmation. Cela affecte aussi le calcul de votre solde.
 ```
 
-<!-- cache_translation_check_fr_e0c5e5997126307020b9f18decd3da18cc844207c4516c618f7aed1ba3cd8bde -->
+<!-- cache_translation_check_fr_20efe36b43b7beb78a9a2203de1168fdd15eaaf315a307703773a5e5f3b041b3 -->
 ```
-        <source>Enable PSBT controls</source>
+        <source>Enable &amp;PSBT controls</source>
         <extracomment>An options window setting to enable PSBT controls.</extracomment>
-        <translation>Activer les contrôles TBPS</translation>
+        <translation>Activer les contrôles &amp;TBPS</translation>
     
 ERR
-The abbreviation "TBPS" is incorrect in French; it should remain "PSBT" because "PSBT" (Partially Signed Bitcoin Transaction) is a standard technical term in Bitcoin and is not typically translated or rearranged for French.
+The initialism "PSBT" stands for "Partially Signed Bitcoin Transaction" and must remain untranslated, as it is a technical term used in Bitcoin. In the translation, "TBPS" appears to be a mistaken reordering or an incorrect translation of the acronym.
 
 Correct translation:
-Activer les contrôles PSBT
+Activer les contrôles &amp;PSBT
 ```
 
 <!-- cache_translation_check_fr_ffa3bcece099002a4168e4848493d2dd510d9a10a2ae4323871921a5ae55ac97 -->
@@ -147,72 +257,20 @@ Correct translation:
 Afficher ou non les contrôles PSBT.
 ```
 
-<!-- cache_translation_check_fr_fc7b9eb17463fc9d072a2fe8724d2910df925f24746501950b09486211107c4f -->
+<!-- cache_translation_check_fr_830da6a0c5ce7c7e1f71ff14df1cba9ada0e9aec1dbe98013508690df8a5df81 -->
 ```
-        <source>Third-party transaction URLs</source>
+        <source>&amp;Third-party transaction URLs</source>
         <translation>URL de transaction de $tiers</translation>
     
 ERR
-There are two issues:
-1. The format specifier "$tiers" is incorrect; "%tiers" should not be used unless it's in the source. "Tiers" here should simply be translated as "tiers".
-2. "URL de transaction" should be plural to match "URLs" in the source.
-3. "Tiers" is an adjective here; the correct phrase is "tiers" (third-party), and it should pluralize "URL" appropriately.
+The translation is incorrect for several reasons:
+- "&" (used for keyboard shortcuts) is missing in the French translation; it must appear once.
+- "$tiers" is erroneous; the correct French word is "tiers" without a dollar sign.
+- "URL de transaction" is singular, but the English is plural ("URLs").
+- There is also a stray space at the start due to indentation, but that may not appear in the real string.
 
 Correct translation:
-URLs de transaction de tiers
-```
-
-<!-- cache_translation_check_fr_510f30d5b2f4905ce45bc378f811343af5df944d52defa30bff651e289104959 -->
-```
-        <source>Your current balance in watch-only addresses</source>
-        <translation>Votre balance actuelle en adresses juste-regarder</translation>
-    
-ERR
-The translation is problematic. "juste-regarder" is not a correct or idiomatic translation for "watch-only" in the context of Bitcoin. In French, the term "adresses en lecture seule" or "adresses en mode observation" is standard for "watch-only addresses". Additionally, "balance" should be "solde" in financial context.
-
-Correct translation:
-Votre solde actuel dans les adresses en lecture seule
-```
-
-<!-- cache_translation_check_fr_91d748224fad1ac87818b27b8524dd55c84cff5c45ab1ff5c26e7791e21a0c6d -->
-```
-        <source>Unconfirmed transactions to watch-only addresses</source>
-        <translation>Transactions non confirmées vers des adresses juste-regarder</translation>
-    
-ERR
-The translation "adresses juste-regarder" is incorrect and unnatural in French. The correct term for "watch-only" in the Bitcoin context is "adresses en lecture seule" or "adresses en surveillance" or simply "adresses de surveillance".
-
-Correct translation:
-Transactions non confirmées vers des adresses en lecture seule
-
-Or, alternatively:
-Transactions non confirmées vers des adresses de surveillance
-```
-
-<!-- cache_translation_check_fr_f1cf9da32bbdb3365ef973efdb62456f46eef953c46bafa1194cf62f0fcc4be7 -->
-```
-        <source>Mined balance in watch-only addresses that has not yet matured</source>
-        <translation>Le solde miné dans des adresses juste-regarder, qui n’est pas encore mûr</translation>
-    
-ERR
-The translation has a few issues:
-1. "juste-regarder" is not the standard term for "watch-only" in French; "en lecture seule" or "d’observation" is more appropriate.
-2. "qui n’est pas encore mûr" is awkward; "qui n’a pas encore maturé" or "qui n’est pas encore mature" is better.
-
-Correct translation:
-Le solde miné dans des adresses en lecture seule qui n’a pas encore maturé
-```
-
-<!-- cache_translation_check_fr_ed11f42bc96fc2e8855836976413808732558c30af2b7249dab4648ce5e2cf51 -->
-```
-        <source>Current total balance in watch-only addresses</source>
-        <translation>Solde total actuel dans des adresses juste-regarder</translation>
-    
-ERR
-The translation is understandable but problematic: "juste-regarder" is a literal and awkward translation of "watch-only". The commonly accepted term in French for "watch-only" is "visualisation seule" or "adresses en lecture seule", depending on software context.
-
-Correct translation:
-Solde total actuel dans des adresses en lecture seule
+&amp;URL de transactions de tiers
 ```
 
 <!-- cache_translation_check_fr_e6c68a40f89e9df803f1a9fb999b49275697be9c7775ec7ea92c813e9e6d39e9 -->
@@ -245,6 +303,19 @@ Correct translation:
 Impossible de démarrer le gestionnaire bitcoin « cliquez pour payer »
 ```
 
+<!-- cache_translation_check_fr_e2617c4b36f3e65cf460d630a850c6ffb73ccf1ae8edaac6271c5b8b3a11f0b9 -->
+```
+        <source>&amp;Peers</source>
+        <translation>&amp;Pairs</translation>
+    
+ERR
+The word "Pairs" is a mistranslation; the correct French term for "Peers" (in the context of network peers) is "Pairs" is a false friend, as in English it means pairs/couples, but "Peers" in Bitcoin context should be "Pairs" in French. However, in French "pairs" does also mean "peers" in a technical context, so the translation is correct from that point of view. Additionally, the &amp; is correctly included exactly once. However, to avoid confusion for users, "Pairs" is acceptable in the Bitcoin network context in French.
+
+Upon reflection, the translation is actually acceptable due to the technical context, and "Pairs" is used in French software for "Peers". Thus, the translation is not problematic.
+
+NO
+```
+
 <!-- cache_translation_check_fr_f47a9ab2871af05f079adb64673019ee4f0b6227b394a4423d5125aba2bc1269 -->
 ```
         <source>Whether we relay addresses to this peer.</source>
@@ -258,16 +329,44 @@ Correct translation:
 Indique si nous relayons des adresses à ce pair.
 ```
 
-<!-- cache_translation_check_fr_fc4db70a2ccfc6050293671569b3452a33653e9cb78d3d530eb0a4dd7d93bede -->
+<!-- cache_translation_check_fr_5c7b1397deedfa853652533f63ee611f896f975a09945b6f67d292f63e363a3b -->
 ```
-        <source>the peer selected us for high bandwidth relay</source>
-        <translation>le pair nous avons sélectionné comme relais à large bande passante</translation>
+        <source>we selected the peer for high bandwidth relay</source>
+        <translation>nous avons choisi le pair comme relais à large bande passante</translation>
     
 ERR
-The French translation is not grammatically correct. "Le pair nous avons sélectionné..." is incorrect; it should be "Le pair nous a sélectionnés..." or more contextually: "Le pair nous a sélectionnés pour un relais à haute bande passante".
+The French is understandable but slightly unnatural: "le pair" is okay but the phrase "relais à large bande passante" is awkward. A more natural phrasing is:
 
 Correct translation:
-Le pair nous a sélectionnés pour un relais à large bande passante
+Nous avons sélectionné le pair pour un relais à haute bande passante.
+```
+
+<!-- cache_translation_check_fr_fedf0b3242756124fc6b7eeb6c53809d9b796ebb8fb5943b27ad788269591dfa -->
+```
+        <source>the peer selected us for high bandwidth relay</source>
+        <translation>le pair nous a choisis comme relais à large bande passante</translation>
+    
+ERR
+The French is understandable but slightly awkward: "à large bande passante" is not idiomatic and the adjective should agree with "bande passante" (feminine). A more natural translation in this Bitcoin/network context is:
+
+Correct translation:
+Le pair nous a sélectionnés pour un relais à haut débit
+
+Alternate natural variant:
+Le pair nous a sélectionnés pour un relais à haute bande passante
+```
+
+<!-- cache_translation_check_fr_723e64bc31e6dcf1952218ebdb9cd15ad9b974de4aadbaa0dc6873136bc10edc -->
+```
+        <source>&amp;Copy IP/Netmask</source>
+        <extracomment>Context menu action to copy the IP/Netmask of a banned peer. IP/Netmask is the combination of a peer's IP address and its Netmask. For IP address, see: https://en.wikipedia.org/wiki/IP_address.</extracomment>
+        <translation>&amp;Copier l’IP, le masque réseau</translation>
+    
+ERR
+The translation changes the separator from "/" to "," and does not reflect the original format "IP/Netmask". Additionally, in French UI, "IP" is usually not preceded by an article. The shortcut key (&) is correctly placed.
+
+Correct translation:
+&Copier l’IP/Masque réseau
 ```
 
 <!-- cache_translation_check_fr_f9e1bc7069dcb1f533402edc761d68efc05968cfd30b63e029c67b5f1bfade82 -->
@@ -280,6 +379,18 @@ The French translation is ungrammatical; "de paiement" is incorrect. The correct
 
 Correct translation:
 Demander un paiement à …
+```
+
+<!-- cache_translation_check_fr_c0908ef476add7350e93fd43e1582adb7becd6874d8e79def11fe5eed9755f1e -->
+```
+        <source>&amp;Verify</source>
+        <translation>&amp;Confirmer</translation>
+    
+ERR
+The translation of "&Verify" as "&Confirmer" is incorrect. The English word "Verify" translates to "Vérifier" in French, not "Confirmer" (which means "Confirm"). 
+
+Correct translation:
+&Vérifier
 ```
 
 <!-- cache_translation_check_fr_63d1680c07ae452d4ecb587d5b40550c42640204e551180c8a428c98740c7a2c -->
@@ -303,16 +414,41 @@ Spécifiez des frais personnalisés par kB (1 000 octets) de taille virtuelle de
 Remarque : Étant donné que les frais sont calculés par octet, un taux de frais de « 100 satoshis par kvB » pour une transaction d'une taille de 500 octets virtuels (la moitié de 1 kvB) n'entraînerait finalement que 50 satoshis de frais.
 ```
 
-<!-- cache_translation_check_fr_a8413edcce1008cf6fa49a3c0a2e5c42fc2a5f8df4f14cffdc501fac17217af7 -->
+<!-- cache_translation_check_fr_6bc0dc2393d24268ae7135c9dac7057993287bf5aa2ab9368e534dcf6f36a92c -->
 ```
-        <source>Watch-only balance:</source>
-        <translation>Solde juste-regarder :</translation>
+        <source>The address you selected for change is not part of this wallet. Any or all funds in your wallet may be sent to this address. Are you sure?</source>
+        <translation>L’adresse que vous avez choisie pour la monnaie ne fait pas partie de ce portemonnaie. Les fonds de ce portemonnaie peuvent en partie ou en totalité être envoyés vers cette adresse. Confirmez-vous ?</translation>
     
 ERR
-The translation "juste-regarder" is a literal and incorrect rendering of "watch-only", which in Bitcoin terminology is commonly translated as "solde en lecture seule" or "solde d'observation" in French. "Juste-regarder" is not idiomatic and could confuse users.
+The French uses awkward/incorrect phrasing: "pour la monnaie" is unclear for Bitcoin "change" and "portemonnaie" is less common than "portefeuille". Also style can be improved.
 
 Correct translation:
-Solde en lecture seule :
+L'adresse que vous avez sélectionnée comme adresse de change ne fait pas partie de ce portefeuille. Tout ou partie des fonds de votre portefeuille peuvent être envoyés à cette adresse. Êtes-vous sûr ?
+```
+
+<!-- cache_translation_check_fr_ccb3b3748a300c6f636d21c8ec95104a61b095d79bf768099dc028312bfa3bf9 -->
+```
+        <source>&amp;Verify Message</source>
+        <translation>&amp;Confirmer un message</translation>
+    
+ERR
+The translation is inaccurate: "Verify Message" should be translated as "Vérifier le message" in French. "Confirmer un message" means "Confirm a message," which is not the same meaning.
+
+Correct translation:
+&Vérifier le message
+</reply>
+```
+
+<!-- cache_translation_check_fr_8d4f7d37269dd625d52d79258b88865ceb7d36ad0f93fa08780928937a9616c8 -->
+```
+        <source>Verify &amp;Message</source>
+        <translation>Confirmer le &amp;message</translation>
+    
+ERR
+The English source uses "Verify" which means "Vérifier" in French; "Confirmer" means "Confirm". The translation should accurately reflect the intended Bitcoin context of verifying a message.
+
+Correct translation:
+Vérifier le &amp;message
 ```
 
 <!-- cache_translation_check_fr_da5a9fe127fe54e3e66387d88a6e57fba63f3672367a95fd1977d4b96d6b5c8f -->
@@ -327,18 +463,6 @@ Correct translation:
 La clé privée pour l’adresse saisie n’est pas disponible.
 ```
 
-<!-- cache_translation_check_fr_4f39386c8f05ebe50ffed8a2026a8faba40822561a14240047498bc31fe7ea80 -->
-```
-        <source>watch-only</source>
-        <translation>juste-regarder</translation>
-    
-ERR
-The translation "juste-regarder" is a literal translation and not idiomatic in French. The correct term in French Bitcoin contexts is usually "lecture seule" or "observateur", but "lecture seule" (meaning "read-only") is more commonly used in wallet software.
-
-Correct translation:
-lecture seule
-```
-
 <!-- cache_translation_check_fr_2581a314ac205fbe57138292d7e7f4f213d0e54a7e001041a52513032338ca44 -->
 ```
         <source>Mined</source>
@@ -349,30 +473,6 @@ There is an unwanted trailing space after "Miné" in the translation, which is a
 
 Correct translation:
 Miné
-```
-
-<!-- cache_translation_check_fr_4f39386c8f05ebe50ffed8a2026a8faba40822561a14240047498bc31fe7ea80 -->
-```
-        <source>watch-only</source>
-        <translation>juste-regarder</translation>
-    
-ERR
-The translation "juste-regarder" is a literal translation and not idiomatic in French. The correct term in French Bitcoin contexts is usually "lecture seule" or "observateur", but "lecture seule" (meaning "read-only") is more commonly used in wallet software.
-
-Correct translation:
-lecture seule
-```
-
-<!-- cache_translation_check_fr_469ace3db7a15f47ad67bd0a4733e52d32ef799aa5f50e0763e3fb10778ec4c2 -->
-```
-        <source>Whether or not a watch-only address is involved in this transaction.</source>
-        <translation>Une adresse juste-regarder est-elle ou non impliquée dans cette transaction.</translation>
-    
-ERR
-The translation uses "juste-regarder" as a literal translation of "watch-only," which is not standard in French Bitcoin terminology. The proper term is "en lecture seule" or "de surveillance." Additionally, the sentence structure is slightly awkward.
-
-Correct translation:
-Indique si une adresse en lecture seule est impliquée dans cette transaction ou non.
 ```
 
 <!-- cache_translation_check_fr_a0658ac333d432138e177a7716cbc5b8ae5e2c4c9af31ec657d473a0b116c826 -->
@@ -411,14 +511,16 @@ Correct translation:
 Autres
 ```
 
-<!-- cache_translation_check_fr_55157cc937b1b3e89b93d577638118debd4a37321f48014b01d6188a4b2a72c1 -->
+<!-- cache_translation_check_fr_0a01ad0157ad9eb078be0d8e53af44d1d5c4cb64908b3b436abe161a674dd557 -->
 ```
-        <source>Edit address label</source>
-        <translation>Modifier l’adresse de l’étiquette</translation>
+        <source>&amp;Edit address label</source>
+        <translation>&amp;Modifier l’adresse de l’étiquette</translation>
     
-ERR  
-The French translation is inaccurate. "Modifier l’adresse de l’étiquette" translates to "Edit the address of the label", which is incorrect. The correct translation is:  
-Modifier l’étiquette de l’adresse
+ERR
+The translation misinterprets "Edit address label". The correct translation should mean "Edit the label of the address," not "edit the address of the label". Also, the phrase "étiquette d’adresse" (label of address) or "libellé de l’adresse" is more appropriate.
+
+Correct translation:
+&Modifier le libellé de l’adresse
 ```
 
 <!-- cache_translation_check_fr_1ed765406ea228864967795799abdc3fc65c0421b9bea326ae648a4df13d6d7d -->
@@ -471,28 +573,16 @@ Correct translation:
 %s n’a pas réussi à valider l’état de l’instantané -assumeutxo. Cela indique un problème matériel, un bogue logiciel ou une modification logicielle défectueuse ayant permis le chargement d’un instantané invalide. En conséquence, le nœud va s’arrêter et cesser d’utiliser tout état construit à partir de cet instantané, réinitialisant la hauteur de la chaîne de %d à %d. Au prochain redémarrage, le nœud recommencera la synchronisation à partir de %d sans utiliser de données d’instantané. Veuillez signaler cet incident à %s en indiquant comment vous avez obtenu l’instantané. L’état de la chaîne provenant de l’instantané invalide sera laissé sur le disque au cas où cela pourrait aider à diagnostiquer le problème ayant provoqué cette erreur.
 ```
 
-<!-- cache_translation_check_fr_7dab51e078322a463e9b485bf27b76ddd4a0dcf364606d3fc415747a02d1232e -->
+<!-- cache_translation_check_fr_cadde5690aab51bd291e9d66396fd174c801d0a9aa570d206c61d4385ee4a1aa -->
 ```
         <source>This is the maximum transaction fee you pay (in addition to the normal fee) to prioritize partial spend avoidance over regular coin selection.</source>
-        <translation>Les frais maximaux de transaction que vous payez (en plus des frais habituels) afin de prioriser une dépense non partielle plutôt qu’une sélection normale de pièces.</translation>
+        <translation>Les frais maximaux de transaction que vous payez (en plus des frais habituels) afin de prioriser une dépense non partielle plutôt qu’un choix normale de pièces.</translation>
     
 ERR
-The translation shifts the meaning: "prioritize partial spend avoidance" was translated as "prioriser une dépense non partielle", which means "prioritize a non-partial spend," rather than "prioritize avoidance of partial spending." The negative sense ("avoidance") is missing.
+The French is awkward and contains grammatical errors ("dépense non partielle" is unnatural; "choix normale" should be "choix normal"). Also the phrasing should more clearly render "partial spend avoidance" as "évitement des dépenses partielles".
 
 Correct translation:
-Il s'agit des frais de transaction maximum que vous payez (en plus des frais habituels) pour privilégier l'évitement des dépenses partielles par rapport à la sélection normale des pièces.
-```
-
-<!-- cache_translation_check_fr_c65fc611607f36fca0a5ed04308e6c2f226a49ee2ba3a733a787a304bf0c827d -->
-```
-        <source>Wallet loaded successfully. The legacy wallet type is being deprecated and support for creating and opening legacy wallets will be removed in the future. Legacy wallets can be migrated to a descriptor wallet with migratewallet.</source>
-        <translation>Le portemonnaie a été créé. Le type de portemonnaie ancien devient obsolète et la prise en charge de la création et de l’ouverture des portemonnaie anciens sera supprimée à l’avenir. Les anciens portemonnaies peuvent être migrés vers un portemonnaie de descripteurs avec migratewallet.</translation>
-    
-ERR
-The translation incorrectly translates "loaded successfully" as "a été créé" ("has been created"), which changes the meaning. It also inconsistently uses singular and plural forms for "portemonnaie(s)" ("wallet(s)"). The translation should use the plural form "portefeuilles" (the more common term in French for Bitcoin wallet). Furthermore, "de descripteurs" is awkward; "à descripteurs" is clearer. 
-
-Correct translation:
-Le portefeuille a été chargé avec succès. Le type de portefeuille hérité est en cours de dépréciation et la prise en charge de la création et de l’ouverture des portefeuilles hérités sera supprimée à l’avenir. Les portefeuilles hérités peuvent être migrés vers un portefeuille à descripteurs avec migratewallet.
+Montant maximal des frais de transaction que vous payez (en plus des frais normaux) pour privilégier l'évitement des dépenses partielles plutôt que la sélection normale de pièces.
 ```
 
 <!-- cache_translation_check_fr_d44e291b11ea967678b1275762edb7a80cee0b30f07771e1b68bc50841e8e727 -->
@@ -519,26 +609,133 @@ Correct translation:
 Les connexions sortantes sont limitées à Tor (-onlynet=onion), mais le mandataire pour accéder au réseau Tor n’est pas indiqué : ni -proxy, ni -onion, ni -listenonion n’est indiqué.
 ```
 
-<!-- cache_translation_check_fr_e630182278d3decb58937e9978bf6fb95372572d3afcf462181f120a51951c82 -->
+<!-- cache_translation_check_fr_4c3da931e827bebf817c1820800e8217601e7f03e00249193c6f97e594a62a13 -->
+```
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of a pruned node)</source>
+        <translation>Élagage : la dernière synchronisation de portemonnaie va par-delà les données élaguées. Vous devez « -reindex » (réindexer, retélécharger toute la chaîne de blocs au cas ou un nœud a été élagué)</translation>
+    
+ERR
+Problems:
+- "portemonnaie" is nonstandard in French for wallet; use "portefeuille".
+- Phrase "va par-delà les données élaguées" is awkward; "dépasse" or "outrepasse" is better.
+- Missing accent: "au cas ou" should be "au cas où".
+- Last clause is unidiomatic: "au cas où un nœud a été élagué" → better "si le nœud est élagué" or "dans le cas d'un nœud élagué".
+- Quotation marks around -reindex are unnecessary but acceptable; ensure command appears exactly as in source.
+
+Correct translation:
+Élagage : la dernière synchronisation du portefeuille dépasse les données élaguées. Vous devez utiliser -reindex (retélécharger toute la chaîne de blocs si le nœud est élagué)
+```
+
+<!-- cache_translation_check_fr_93d193774ed96a8b6f1ee31334b7fe8cd7fb35b42822b46d812c8e811e377e42 -->
 ```
         <source>Unexpected legacy entry in descriptor wallet found. Loading wallet %s
 
 The wallet might have been tampered with or created with malicious intent.
 </source>
-        <translation>Une entrée héritée inattendue a été trouvée dans le portemonnaie de descripteurs. Chargement du portemonnaie %s
+        <translation>Une entrée héritée inattendue a été trouvée dans le portemonnaie à descripteurs. Chargement du portemonnaie %s
 
 Le portemonnaie a peut-être avoir été altéré ou créé avec des intentions malveillantes.
 </translation>
     
 ERR
-There is a grammatical issue in the sentence: "Le portemonnaie a peut-être avoir été altéré ou créé avec des intentions malveillantes."  
-It should read "Le portemonnaie a peut-être été altéré ou créé avec des intentions malveillantes."  
-Also, "portemonnaie" is less common than "portefeuille" in the context of Bitcoin wallets in French.
+The French has grammatical errors and awkward phrasing:
+- "portemonnaie" is uncommon; "portefeuille" is standard.
+- "à descripteurs" is awkward; better "de type descriptor" or similar.
+- "a peut-être avoir été altéré" is incorrect grammar — should be "a peut-être été altéré" or "peut avoir été altéré".
+
+Corrected translation:
+Une entrée héritée inattendue a été trouvée dans le portefeuille de type descriptor. Chargement du portefeuille %s
+
+Le portefeuille a peut-être été altéré ou créé dans un but malveillant.
+```
+
+<!-- cache_translation_check_fr_97e25bee54e6f50c059698a0f081ec41224628cf1c8b369e44ea2b217c65e46c -->
+```
+        <source>Can't spend unconfirmed version %d pre-selected input with a version 3 tx</source>
+        <translation>Impossible de dépenser une entrée présélectionnée de version %d avec une transaction de version 3</translation>
+    
+ERR
+The French translation omits "unconfirmed" (non confirmée), which changes the meaning. The format specifier %d is preserved correctly and spacing is fine.
 
 Correct translation:
-Une entrée héritée inattendue a été trouvée dans le portefeuille de descripteurs. Chargement du portefeuille %s
+Impossible de dépenser une entrée présélectionnée non confirmée de version %d avec une transaction de version 3
+```
 
-Le portefeuille a peut-être été altéré ou créé avec des intentions malveillantes.
+<!-- cache_translation_check_fr_13e25be797d9de8195f0d0202e237fa71d182af44745954f47f08e742864ef80 -->
+```
+        <source>Can't spend unconfirmed version 3 pre-selected input with a version %d tx</source>
+        <translation>Impossible de dépenser une entrée présélectionnée de version  avec une transaction de version %d</translation>
+    
+ERR
+The French translation omits "3" and does not render "unconfirmed" ("non confirmée"). Also there's an extra space after "version" where the "3" should be.
+
+Correct translation:
+Impossible de dépenser une entrée présélectionnée non confirmée de version 3 avec une transaction de version %d
+```
+
+<!-- cache_translation_check_fr_46e956d80823a663ae0d8c3ae18e18ea2766002ea1d820f12ac2b44afa6dacc8 -->
+```
+        <source>Cannot add WalletDescriptor to a non-descriptor wallet</source>
+        <translation>Impossible d’ajouter WalletDescriptor à un portemonnaie qui n’est pas un portemonnaie à descripteurs</translation>
+    
+ERR
+The French is awkward and repetitive ("portemonnaie qui n’est pas un portemonnaie à descripteurs") and uses "portemonnaie" (physical wallet) instead of the usual Bitcoin term "portefeuille". Also prefer a clearer phrasing for "non-descriptor wallet".
+
+Correct translation suggestions:
+- Impossible d'ajouter WalletDescriptor à un portefeuille qui n'est pas de type « descripteur ».
+or
+- Impossible d'ajouter WalletDescriptor à un portefeuille non-descripteur.
+```
+
+<!-- cache_translation_check_fr_b8f6da732ad8c514c9bc738a2020f34d2dcd6fb935c25a0cf37dee25e36ee17a -->
+```
+        <source>Could not generate scriptPubKeys (cache is empty)</source>
+        <translation>Impossible de générer scriptPubKeys (le cache est vide)</translation>
+    
+ERR
+The French is understandable but missing the definite article before "scriptPubKeys". Better to include the article for natural French.
+
+Correct translation:
+Impossible de générer les scriptPubKeys (le cache est vide)
+```
+
+<!-- cache_translation_check_fr_ed194820827e8dab706a099514893737dc7ffcf3b7c43d93a184f40f13c1f827 -->
+```
+        <source>Error: This wallet is already a descriptor wallet</source>
+        <translation>Erreur : Ce portemonnaie est déjà un portemonnaie à descripteurs</translation>
+    
+ERR
+The French is understandable but uses awkward wording ("portemonnaie" is less common than "portefeuille" for a crypto wallet, and "portemonnaie à descripteurs" is unnatural). 
+
+Correct translation:
+Erreur : ce portefeuille est déjà un portefeuille de descripteurs
+```
+
+<!-- cache_translation_check_fr_307f3781cbdf6c749bce87720a0a49dcb79b3e092dbe3f3895d7749e40ab3a7e -->
+```
+        <source>Failed to acquire rescan reserver during wallet initialization</source>
+        <translation>Échec de réservation de l’accès à l’opération de réanalyse lors de l’initialisation du porte-monnaie</translation>
+    
+ERR
+The French is awkward and imprecise. "rescan reserver" is mistranslated as "réservation de l’accès à l’opération de réanalyse", which is not natural; also "porte-monnaie" is acceptable but "portefeuille" is more common in Bitcoin context. No format specifiers issues.
+
+Suggested correction:
+Échec de l'acquisition du verrou de réanalyse lors de l'initialisation du portefeuille
+
+(Alternative literal option if you prefer "reserver"):
+Échec de l'acquisition du réservateur de réanalyse lors de l'initialisation du portefeuille
+```
+
+<!-- cache_translation_check_fr_945ff4a892dc14d2858e97104272d71af38dfe06ba63c7b7769e3a532c6b4043 -->
+```
+        <source>Failed to close block undo file.</source>
+        <translation>Échec de fermeture du fichier d’annulation des blocs.</translation>
+    
+ERR
+The French is understandable but missing the definite article and sounds slightly unidiomatic.
+
+Correct translation:
+Échec de la fermeture du fichier d'annulation des blocs.
 ```
 
 <!-- cache_translation_check_fr_102eb036f54106531a9693fbfc2907d16729878b99ce51b16ff988aa60e30629 -->
@@ -604,6 +801,53 @@ Correct translation:
 La transaction est trop volumineuse
 ```
 
+<!-- cache_translation_check_fr_b86606f1c0ec752c2d5238f10228f480208826c686cdae0d6df1b7b02248f4d9 -->
+```
+        <source>Failed to calculate bump fees, because unconfirmed UTXOs depend on an enormous cluster of unconfirmed transactions.</source>
+        <translation>Échec de calcul de la majoration des frais, car les UTXO non confirmés dépendent d’un groupe énorme de transactions non confirmées.</translation>
+    
+ERR
+Minor grammatical and stylistic issues. In French it should be "Échec du calcul…" (not "Échec de calcul") and "majoration des frais" is better phrased as "frais de majoration" or simply "augmentation des frais". Also keep "UTXO" as-is.
+
+Correct translation:
+Échec du calcul des frais de majoration, car les UTXO non confirmés dépendent d’un énorme groupe de transactions non confirmées.
+```
+
+<!-- cache_translation_check_fr_3d32697841c2d9582cec1745f56e69c25b995d812661f1273664545e6aaacfb6 -->
+```
+        <source>Transaction requires one destination of non-zero value, a non-zero feerate, or a pre-selected input</source>
+        <translation>Une destination d’une valeur non nulle, des taux de frais non nuls, ou une entrée présélectionnée sont nécessaires pour cette transaction</translation>
+    
+ERR
+The French is understandable but slightly awkward: it mixes singular and plural subjects then uses the plural verb ("Une destination ..., des taux ..., ou une entrée ... sont nécessaires"), and "taux de frais" is less natural than "taux de frais" in singular here ("un taux de frais non nul"). A clearer, more natural translation keeps the singular verb and consistent nouns.
+
+Correct translation:
+Cette transaction nécessite une destination d'une valeur non nulle, un taux de frais non nul ou une entrée présélectionnée.
+```
+
+<!-- cache_translation_check_fr_bb87f4828ea32beae319360b10e5810f5caeac72b90e68d03a93ed1f02d0684d -->
+```
+        <source>Unrecognized descriptor found. Loading wallet %s
+
+The wallet might have been created on a newer version.
+Please try running the latest software version.
+</source>
+        <translation>Un descripteur non reconnu a été trouvé. Chargement du portemonnaie %s
+
+Le portemonnaie a peut-être été créé avec une version plus récente.
+Essayez d’utiliser la version la plus récente du logiciel.
+</translation>
+    
+ERR
+The translation is understandable and preserves the placeholder and formatting, but uses "portemonnaie" (less common) instead of the more standard French term "portefeuille". Minor style suggestion: use "portefeuille" for consistency with typical Bitcoin/French translations.
+
+Correct translation:
+Un descripteur non reconnu a été trouvé. Chargement du portefeuille %s
+
+Le portefeuille a peut‑être été créé avec une version plus récente.
+Veuillez essayer d’exécuter la version la plus récente du logiciel.
+```
+
 <!-- cache_translation_check_fr_3f1f3033120113d3aa6008488edb7b6cd63b7e460b7e1b33b5a0b786dbbc6e31 -->
 ```
         <source>Not enough file descriptors available. %d available, %d required.</source>
@@ -617,4 +861,4 @@ Pas assez de descripteurs de fichiers disponibles. %d disponibles, %d requis.
 ```
 </details>
 
-Number of issues: 45.
+Number of issues: 63.

@@ -1,119 +1,196 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>ne</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bne%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bne%5D%20request)
 
 
-<!-- cache_translation_check_ne_0b76a590e3f25c828509326c7e9352d9555a278485a6fccb279d2b1af571d3b5 -->
+<!-- cache_translation_check_ne_e9d6d07b2e44a5fc782feff3e643f9d5387e091fa49f62a7cbec725faae2ac5b -->
 ```
-        <source>New</source>
-        <translation>amp;नयाँ</translation>
+        <source>&amp;New</source>
+        <translation>&amp;amp;नयाँ</translation>
     
 ERR
-The translation contains an erroneous character 'amp;' at the beginning, likely due to a copy-paste or HTML encoding mistake. The correct translation for "New" in Nepali ('ne') should simply be:
-
-नयाँ
+The translation introduces an erroneous '&amp;amp;' instead of a single '&amp;'. This is likely a double-escaped ampersand and is not correct as a shortcut key indicator.
 
 Correct translation:
-नयाँ
+&नयाँ
 ```
 
-<!-- cache_translation_check_ne_4c52d228956303dda72d655386be51615aa99a5cef5ce48b249e06507dcedf7d -->
+<!-- cache_translation_check_ne_5a82fee888f5f3ee786ec1e5cfd3e34d786d9a1c6bfc13f92e7183e08396f10a -->
 ```
-        <source>Copy</source>
-        <translation>amp;कपी गर्नुहोस्</translation>
+        <source>&amp;Copy</source>
+        <translation>&amp;amp;कपी गर्नुहोस्</translation>
     
 ERR
-The translation is incorrect and includes an extraneous "amp;" at the beginning, which appears to be an HTML entity error. The correct Nepali translation for "Copy" is:
-कपी गर्नुहोस्
+The translation erroneously includes &amp;amp; instead of a single &. This would render incorrectly in the UI.
+
+Correct translation:
+&कपी गर्नुहोस्
+</reply>
 ```
 
-<!-- cache_translation_check_ne_93feafc4c968c74cb38c53bb38c2c80779d47c19db2de7d35bb9452c0e73807c -->
+<!-- cache_translation_check_ne_f647be73488dc5a7d1f00299f74b71238e1e5111fb00d5548be9b5a9ef485b25 -->
 ```
-        <source>Close</source>
+        <source>C&amp;lose</source>
         <translation>छनौट गर्नुहोस्</translation>
     
 ERR
-The translation is incorrect. "छनौट गर्नुहोस्" means "Select" in Nepali, not "Close". 
+The translation of "C&lose" as "छनौट गर्नुहोस्" is incorrect. "छनौट गर्नुहोस्" means "Select" in Nepali, not "Close." Furthermore, the shortcut ampersand (&) is missing from the Nepali translation.
 
 Correct translation:
-बन्द गर्नुहोस्
+&बन्द गर्नुहोस्
 ```
 
-<!-- cache_translation_check_ne_9eefb014433a06831878c84eff7b70164e00ce773f421d9abf8453e03927e359 -->
+<!-- cache_translation_check_ne_e53d865aa7f8cc4735fdad26fe38c47f84705bf84324d44e651ae75502c16959 -->
 ```
-        <source>Export</source>
-        <translation>amp;निर्यात गर्नुहोस्</translation>
+        <source>&amp;Export</source>
+        <translation>&amp;amp;निर्यात गर्नुहोस्</translation>
     
 ERR
-The translation contains "amp;" at the beginning, which appears to be a stray HTML entity and is incorrect in Nepali. The correct translation should simply be:
-
-निर्यात गर्नुहोस्
-```
-
-<!-- cache_translation_check_ne_fe02e1d174157a093aa25dd5560a6e01c076e6693d3b16bbfe266159b9ef8159 -->
-```
-        <source>Delete</source>
-        <translation>amp;मेटाउनुहोस्</translation>
-    
-ERR  
-There is an erroneous character "amp;" at the beginning of the translation, which appears to be an HTML entity error. The correct Nepali translation for "Delete" is "मेटाउनुहोस्".
+The translation incorrectly encodes the ampersand as '&amp;amp;', which displays as '&amp;निर्यात गर्नुहोस्' instead of the intended shortcut key marker. It should be a single '&' before the shortcut letter.
 
 Correct translation:
-मेटाउनुहोस्
+&निर्यात गर्नुहोस्
 ```
 
-<!-- cache_translation_check_ne_cfd22ffe4e9cab0cd0ea51ff4fd3b0f017d907310969059fa0669ff7f7b3b48d -->
+<!-- cache_translation_check_ne_210a275a02a7eb5b28eb736b425d3529ef8406d0d8e7d2b28a56d277738dc474 -->
 ```
-        <source>Transactions</source>
-        <translation>amp;कारोबार</translation>
+        <source>&amp;Delete</source>
+        <translation>&amp;amp;मेटाउनुहोस्</translation>
     
 ERR
-The translation contains an erroneous character "amp;" before the word. This appears to be an incorrectly encoded ampersand and should not be present. Also, the Nepali translation for "Transactions" should be "कारोबार" or "लेनदेन" (both are correct, but "कारोबार" directly translates to "transactions").
+The translation encodes the ampersand as "&amp;amp;", which is incorrect. There should be a single ampersand (&) for the shortcut key, matching the source. Also, the Nepali translation "मेटाउनुहोस्" is otherwise correct for "Delete". 
 
 Correct translation:
-कारोबार
+&मेटाउनुहोस्
 ```
 
-<!-- cache_translation_check_ne_dd0af7ca41089137e2b0eaa4ba694265c2d8097acd577be54dc313cd89408822 -->
+<!-- cache_translation_check_ne_26d90231a10078f998a7fd506c834ca345ca01a9cf33c883e3246d6c127ed270 -->
 ```
-        <source>About %1</source>
-        <translation>amp;बारेमा %1</translation>
+        <source>C&amp;hoose</source>
+        <translation>छनौट गर्नुहोस्...</translation>
     
 ERR
-The translation introduces an error with 'amp;' and also reverses the order of words in Nepali. In Nepali, "About %1" should be translated as "%1 बारेमा" (with %1 first), without 'amp;'.
+The ampersand (&), which is used to indicate a shortcut key in the source ("C&hoose"), is missing in the translation. The translation "छनौट गर्नुहोस्..." means "Choose..." in Nepali, but does not include the & for the keyboard shortcut.
 
 Correct translation:
-%1 बारेमा
+छ&nbsp;नौट गर्नुहोस्... (with the & included to indicate the shortcut key, usually before the character that should be the shortcut, e.g., "&छनौट गर्नुहोस्..." or "छ&नौट गर्नुहोस्...")
+
+So, one correct way is:
+&छनौट गर्नुहोस्...
 ```
 
-<!-- cache_translation_check_ne_c58ba98f884a86bf9a4cfb873b2c865bc6ab6a4d120eac15b56b1de1144a521e -->
+<!-- cache_translation_check_ne_6ba3b8aa885a82429189f24878968a2170ea9c972a039676ddbc7f87d5e2076b -->
 ```
-        <source>About Qt</source>
-        <translation>amp;Qt</translation>
+        <source>Copy &amp;Label</source>
+        <translation>लेबल कपी गर्नुहोस्</translation>
     
 ERR
-The translation is incorrect. It shows "amp;Qt", which seems to be an erroneous artifact (possibly from an HTML entity like "&amp;Qt"). It should provide a Nepali translation or retain "Qt" if untranslated.
+The translation omits the "&" mnemonic, which should appear exactly once in the translation to denote the shortcut key.
 
 Correct translation:
-Qt को बारेमा
+&लेबल कपी गर्नुहोस्
+or
+लेबल &कपी गर्नुहोस्
+
+Either placement is acceptable as long as there is exactly one "&".
 ```
 
-<!-- cache_translation_check_ne_78985753c1f246377729eb50d295b10e612eb3a96715eb298bcba9e3ccd1f9c0 -->
+<!-- cache_translation_check_ne_611daba09414efaedae66cf7df5b74ebfb6515f309c4504fe7545718147e47d3 -->
 ```
-        <source>Backup Wallet…</source>
+        <source>&amp;Edit</source>
+        <translation>सम्पादन</translation>
+    
+ERR
+The translation is missing the '&' which indicates the shortcut key in the interface. The ampersand must appear exactly once in the translation, as in the source.
+
+Correct translation:
+&सम्पादन
+```
+
+<!-- cache_translation_check_ne_b02c2a28cd4f637968cafae2ff5529ea497d9f06c89859d00bce568dad3c43c8 -->
+```
+        <source>&amp;Overview</source>
+        <translation>शारांश</translation>
+    
+ERR
+The ampersand (&) is missing in the translation, which is used to indicate a shortcut key in menu items.
+
+Correct translation:
+&amp;शारांश
+```
+
+<!-- cache_translation_check_ne_ea69ffc6d0b257a876b530a645fcc1725898b697243ab8f6434709f420ff5090 -->
+```
+        <source>&amp;Transactions</source>
+        <translation>&amp;amp;कारोबार</translation>
+    
+ERR
+The translation has an error: "&amp;" appears as "&amp;amp;" in the translation, which will display incorrectly ("&amp;कारोबार" instead of "&कारोबार"). Only a single "&" should appear for shortcut key usage.
+
+Correct translation:
+&amp;कारोबार
+```
+
+<!-- cache_translation_check_ne_f88a6cac5db4da38065ab85cfba66bd819c7caef4a9fa08f5e0a1dd2546707cd -->
+```
+        <source>E&amp;xit</source>
+        <translation>बाहिर निस्कनुहोस्</translation>
+    
+ERR
+The translation is missing the '&' character, which indicates the shortcut key. It should be included exactly once in the translation.
+
+Correct translation:
+&बाहिर निस्कनुहोस्
+or
+बाहिर &निस्कनुहोस्
+
+Either is acceptable as long as '&' appears once.
+```
+
+<!-- cache_translation_check_ne_5f25f877e410b5819ee5bcd74d20396c14efc8673ca47b819ab086aa1abbd469 -->
+```
+        <source>&amp;About %1</source>
+        <translation>&amp;amp;बारेमा %1</translation>
+    
+ERR
+The translation incorrectly includes "&amp;amp;" instead of a single "&". This is likely an HTML entity encoding error. There should be exactly one "&" to indicate the shortcut key, not the encoded form.
+
+Correct translation:
+&बारेमा %1
+```
+
+<!-- cache_translation_check_ne_3d9fae38b8605d986598b22d476dc3f5cf8159a835e36c79ea2c8abb11ca395f -->
+```
+        <source>About &amp;Qt</source>
+        <translation>&amp;amp;Qt</translation>
+    
+ERR
+The translation incorrectly renders the ampersand ('&') as '&amp;'. In the context of UI translations, '&' denotes a shortcut key and should be represented exactly once as '&', not as the HTML entity '&amp;'. Additionally, the word "About" is missing in the Nepali translation.
+
+Correct translation:
+Qt को बारेमा (&Qt)
+OR
+Qt को बारेमा &Qt
+
+(Depending on acceptable Nepali UI conventions. If the shortcut must appear before a word, adjust placement accordingly, but do not encode as '&amp;'.)
+```
+
+<!-- cache_translation_check_ne_4754aad3b3e3bd89d3a23f9d7b76264462d9a9a406306812ba562d7b1fa6175d -->
+```
+        <source>&amp;Backup Wallet…</source>
         <translation>सहायता वालेट</translation>
     
-ERR  
-The translation is incorrect. The English "Backup Wallet…" means "to create a backup of the wallet" or "save a backup copy of the wallet". The current Nepali translation "सहायता वालेट" means "Help Wallet", which is erroneous.
+ERR
+The translation is incorrect. The English text is "&Backup Wallet…" which should be translated to Nepali as "वालेट ब्याकअप गर्नुहोस्…". The provided translation "सहायता वालेट" means "Help Wallet", which is not accurate. Also, the ampersand (&), which denotes a shortcut, is missing.
 
 Correct translation:
-वालेटको ब्याकअप गर्नुहोस्…
+वालेट &ब्याकअप गर्नुहोस्…
 ```
 
 <!-- cache_translation_check_ne_2b53c06b432f903d0270800ef12b755512786f4a07708a22ac6bc34b46eb3520 -->
@@ -179,28 +256,29 @@ Correct translation:
 प्रकार
 ```
 
-<!-- cache_translation_check_ne_9eefb014433a06831878c84eff7b70164e00ce773f421d9abf8453e03927e359 -->
+<!-- cache_translation_check_ne_e53d865aa7f8cc4735fdad26fe38c47f84705bf84324d44e651ae75502c16959 -->
 ```
-        <source>Export</source>
-        <translation>amp;निर्यात गर्नुहोस्</translation>
+        <source>&amp;Export</source>
+        <translation>&amp;amp;निर्यात गर्नुहोस्</translation>
     
 ERR
-The translation contains "amp;" at the beginning, which appears to be a stray HTML entity and is incorrect in Nepali. The correct translation should simply be:
-
-निर्यात गर्नुहोस्
-```
-
-<!-- cache_translation_check_ne_f7088a4965ada056b32c586e78d0d0fc7954ebaa3a2532953e142d290500fc16 -->
-```
-        <source>Cannot resolve -%s address: '%s'</source>
-        <translation>-%s ठेगाना: apos;%sapos; निश्चय गर्न सकिँदैन</translation>
-    
-ERR
-The translation incorrectly uses "apos;" instead of proper quotation marks for '%s', and does not translate the structure idiomatically. Also, the message should reflect the original punctuation and order.
+The translation incorrectly encodes the ampersand as '&amp;amp;', which displays as '&amp;निर्यात गर्नुहोस्' instead of the intended shortcut key marker. It should be a single '&' before the shortcut letter.
 
 Correct translation:
--%s ठेगाना: '%s' निश्चय गर्न सकिएन
+&निर्यात गर्नुहोस्
+```
+
+<!-- cache_translation_check_ne_88d63d9447462ab1df70e4218deada8aefe342ec70e4ec3e706d8e30948fbcd3 -->
+```
+        <source>Cannot resolve -%s address: '%s'</source>
+        <translation>-%s ठेगाना: &amp;apos;%s&amp;apos; निश्चय गर्न सकिँदैन</translation>
+    
+ERR
+The translation uses HTML entities (&amp;apos;) incorrectly for quotation marks around '%s'. In Nepali, regular single quotes or double quotes should be used instead. There should also not be an extra ampersand. Format specifiers are otherwise retained.
+
+Correct translation:
+-%s ठेगाना: '%s' निश्चय गर्न सकिँदैन
 ```
 </details>
 
-Number of issues: 16.
+Number of issues: 21.

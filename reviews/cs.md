@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>cs</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bcs%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bcs%5D%20request)
 
 
 <!-- cache_translation_check_cs_4cd0f4d5661cb58aaa388d1755639ab300f65c3b07bf87d786de36e8ddb736b6 -->
@@ -33,6 +33,68 @@ Correct translation:
 Zopakujte nové heslo
 ```
 
+<!-- cache_translation_check_cs_c9e4cddca5d3c7a6887785854785a2711fb6a8c3726dbb8298361a46feaaae83 -->
+```
+        <source>&amp;Help</source>
+        <translation>Nápověd&amp;a</translation>
+    
+ERR
+The shortcut key '&' has been incorrectly placed inside the word, resulting in "Nápověd&amp;a", which is not standard and does not properly assign a mnemonic in Czech. Additionally, the correct translation for "&Help" in Czech is "&Nápověda" (shortcut key typically at the beginning).
+
+Correct translation:
+&Nápověda
+</reply>
+```
+
+<!-- cache_translation_check_cs_18a4553c0d0960d9cdad0cad918b88510e307306d09f6c5f78f5bdb7001e41e9 -->
+```
+        <source>&amp;Sending addresses</source>
+        <translation>Odesílací adresy</translation>
+    
+ERR
+The translation omits the '&' character, which is used in the source to indicate the shortcut key. It must appear exactly once in the translation.
+
+Correct translation:
+&Odesílací adresy
+```
+
+<!-- cache_translation_check_cs_f44ee0401769d5729f91b2c701a51ab129d5ffa6256c10e067dc78eecfff5c25 -->
+```
+        <source>&amp;Receiving addresses</source>
+        <translation>Přijímací adresy</translation>
+    
+ERR
+The translation misses the & character which indicates the shortcut key in the original. It must appear exactly once and can be placed anywhere in the translation.
+
+Correct translation:
+&Přijímací adresy
+```
+
+<!-- cache_translation_check_cs_62e79b2b259bb42d3dd25dd40b39894a5eae951b3860f139ccc7c8ad395f1b8c -->
+```
+        <source>&amp;Hide</source>
+        <translation>Skryj</translation>
+    
+ERR
+The ampersand (&) indicating the shortcut key is missing in the Czech translation. It must appear exactly once, as in the source.
+
+Correct translation:
+&Skryj
+</reply>
+```
+
+<!-- cache_translation_check_cs_1faac1c3c63e3f6149842937eb924b4370a7918513965251ff2a911c69d9ab44 -->
+```
+        <source>S&amp;how</source>
+        <translation>Zobraz</translation>
+    
+ERR
+The translation is missing the ampersand (&), which is used to indicate the shortcut key. There should be exactly one '&' in the translation.
+
+Correct translation:
+&Zobraz
+```
+
 <!-- cache_translation_check_cs_a0cc8279c9aafbd920dc8b30d3178a232219e624e432da9211f1423a4a45b872 -->
 ```
         <source>Copy after fee</source>
@@ -43,6 +105,34 @@ The translation is not a literal or accurate rendering of the source. "Copy afte
 
 Correct translation:
 Zkopírovat částku po odečtení poplatku
+```
+
+<!-- cache_translation_check_cs_cba23791ab05ccae924343d36546a00776762e9f7aa319cc729303d15e7f5d6f -->
+```
+        <source>Migrating the wallet will convert this wallet to one or more descriptor wallets. A new wallet backup will need to be made.
+If this wallet contains any watchonly scripts, a new wallet will be created which contains those watchonly scripts.
+If this wallet contains any solvable but not watched scripts, a different and new wallet will be created which contains those scripts.
+
+The migration process will create a backup of the wallet before migrating. This backup file will be named &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak and can be found in the directory for this wallet. In the event of an incorrect migration, the backup can be restored with the "Restore Wallet" functionality.</source>
+        <translation>Migrace peněženky povede k její přeměně na jednu nebo více deskriptorových peněženek. Bude třeba vytvořit novou zálohu peněženky.
+Pokud peněženka obsahuje jakékoliv skripty, které lze pouze sledovat, bude vytvořena nová peněženka pouze pro tyto skripty.
+Pokud tato peněženka obsahuje jakékoliv řešitelné skripty, které nejdou sledovat, bude vytvořena nová jiná peněženka, která bude obsahovat tyto skripty.
+
+Proces migrace vytvoří zálohu peněženky přes samotnou migrací. Soubor se zálohou se bude nazývat &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak a bude umístěn v adresáři s touto peněženkou. V případě nepovedené migrace je možné provést obnovu prostřednitvím funkce "Obnovit peněženku".</translation>
+    
+ERR
+Issues:
+- Typo: "přes samotnou migrací" should be "před samotnou migrací" (before migrating).
+- Typo: "prostřednitvím" should be "prostřednictvím".
+- Awkward phrasing: "bude vytvořena nová jiná peněženka" should be "bude vytvořena další nová peněženka" or similar.
+- Minor consistency: add "tato" in the second sentence for clarity.
+
+Correct translation:
+Migrace peněženky ji převede na jednu nebo více deskriptorových peněženek. Bude třeba vytvořit novou zálohu peněženky.
+Pokud tato peněženka obsahuje jakékoli skripty určené pouze ke sledování, bude vytvořena nová peněženka, která bude tyto skripty obsahovat.
+Pokud tato peněženka obsahuje jakékoli řešitelné, ale nesledované skripty, bude vytvořena další nová peněženka, která bude tyto skripty obsahovat.
+
+Proces migrace vytvoří zálohu peněženky před samotnou migrací. Tento záložní soubor se bude jmenovat <wallet name>-<timestamp>.legacy.bak a bude umístěn v adresáři této peněženky. V případě chybné migrace lze zálohu obnovit pomocí funkce "Obnovit peněženku".
 ```
 
 <!-- cache_translation_check_cs_4e0ad8bb7a809ecf41eeb5636919acf7ebbc5f56c32391c91afd322fad2877e5 -->
@@ -69,44 +159,40 @@ Correct translation:
 Písmo na kartě Přehled:
 ```
 
-<!-- cache_translation_check_cs_27acd8dd0e1d0b0820b82c7a345dc2086963047f64941b60816d5b01ee81afc3 -->
+<!-- cache_translation_check_cs_3d43f37d77c7a54ec32c819f60c30a5e85ea10bee7952a1c156e65d1afe804c4 -->
 ```
-        <source>Expert</source>
-        <translation>Pokročilá nastavení</translation>
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp;Minimalizovávat do ikony v panelu</translation>
     
 ERR
-The translation "Pokročilá nastavení" means "Advanced settings," not "Expert." The translation is incorrect.
+The translation is understandable but not fully accurate and omits details. "Minimalizovávat do ikony v panelu" does not specify "instead of the taskbar" and is not colloquial Czech. The accepted translation should explicitly mention minimizing to the system tray and the difference with the taskbar.
 
 Correct translation:
-Expert
-
-Alternatively, you could use "Odborník" if you want to translate it as a noun, or leave it as "Expert" if it is intended as a label.
+&Minimalizovat do oznamovací oblasti místo na hlavní panel
 ```
 
-<!-- cache_translation_check_cs_b0037c69763560aa9388b9de68041ca347bf1dd3945cebde3adfc343287fc3e6 -->
+<!-- cache_translation_check_cs_121dd3bcd2c1a87a8299233b8870a02b64de0c974b220768763369469c57fe74 -->
 ```
-        <source>Spendable:</source>
-        <translation>Běžné:</translation>
+        <source>&amp;OK</source>
+        <translation>&amp;Budiž</translation>
     
 ERR
-The translation "Běžné:" means "Ordinary:" or "Regular:", which does not accurately reflect "Spendable" in the context of Bitcoin, where it usually refers to the balance that can be spent.
+The translation "&amp;Budiž" is not appropriate for "&amp;OK." "Budiž" is a somewhat archaic or poetic word in Czech, meaning "so be it" or "let it be," and is not commonly used as a button label. The proper translation for the standard OK button is "&amp;OK", which is universally understood in Czech applications.
 
 Correct translation:
-K dispozici:
+&amp;OK
 ```
 
-<!-- cache_translation_check_cs_f5a062154ebe68e07d6877864c43d824a27779809ec9426035ed6f5d756608ca -->
+<!-- cache_translation_check_cs_8e25fbfcfb8d6dc5c9a3af3102fe80e015193058de333f845f2a2224ac858f4b -->
 ```
         <source>Save Transaction Data</source>
-        <translation>Zachovej procesní data</translation>
+        <translation>Zachovaj procesní data</translation>
     
 ERR
-The Czech translation "Zachovej procesní data" is inaccurate. "Procesní data" does not mean "Transaction Data" (it could mislead as "process data"). The correct translation should be:
+"Zachovaj" is Slovak (Czech would be "Zachovej") and "procesní data" means process/procedural data, not transaction data. In this Bitcoin context it should be "Uložit transakční data" or "Uložit data transakce".
 
-Uložit údaje o transakci
-
-So, the correct translation is:  
-Uložit údaje o transakci
+Correct translation:
+Uložit transakční data
 ```
 
 <!-- cache_translation_check_cs_f544c7771e6a2b529a6b4919b0452634638c5fe03a321f8bf342e15091d2f4f7 -->
@@ -271,6 +357,20 @@ Correct translation:
 Když je menší objem transakcí než je místa v blocích, mohou těžaři i uzly, které transakce předávají, vyžadovat minimální poplatek. Zaplatit pouze tento minimální poplatek je v pořádku, ale mějte na paměti, že to může vést k tomu, že vaše transakce nikdy nebude potvrzena, pokud bude větší poptávka po bitcoinových transakcích, než kolik síť zvládne zpracovat.
 ```
 
+<!-- cache_translation_check_cs_e506fab03f87f886d38316e6266f2caa7b289759c6d4e625ec7f50271c8c5229 -->
+```
+        <source>Clear &amp;All</source>
+        <translation>Všechno &amp;smaž</translation>
+    
+ERR
+The translation switches the order of words compared to the English and uses "Všechno smaž", which is awkward; also, the placement of "&amp;" is incorrect. In Czech UI, it is standard to use "Smazat &amp;vše" or "&amp;Smazat vše" for clarity and menu consistency.
+
+Correct translation:
+Smazat &amp;vše
+or
+&amp;Smazat vše
+```
+
 <!-- cache_translation_check_cs_a0cc8279c9aafbd920dc8b30d3178a232219e624e432da9211f1423a4a45b872 -->
 ```
         <source>Copy after fee</source>
@@ -281,6 +381,18 @@ The translation is not a literal or accurate rendering of the source. "Copy afte
 
 Correct translation:
 Zkopírovat částku po odečtení poplatku
+```
+
+<!-- cache_translation_check_cs_66ecdcf785eac60fb29f467cbdf323253c93db8a0185d54af6e807d2a239c352 -->
+```
+        <source>Cr&amp;eate Unsigned</source>
+        <translation>Vytvořit bez podpisu</translation>
+    
+ERR
+The shortcut key indicator (&amp;) is missing in the Czech translation, which could lead to the loss of keyboard shortcut functionality. The translation should include exactly one '&' character as in the source.
+
+Correct translation:
+Vytvořit &bez podpisu
 ```
 
 <!-- cache_translation_check_cs_f5a062154ebe68e07d6877864c43d824a27779809ec9426035ed6f5d756608ca -->
@@ -309,6 +421,18 @@ Correct translation:
 Zadej popisek pro tuto adresu, aby byla přidána do seznamu použitých adres
 ```
 
+<!-- cache_translation_check_cs_02a28bd8f028e7427ba6d916c1c5cefaaf3e50830fee0e6eb60abe3ba5e52ef1 -->
+```
+        <source>Copy the current signature to the clipboard</source>
+        <translation>Zkopírovat právě vybraný podpis do schránky</translation>
+    
+ERR
+"Current" was mistranslated as "právě vybraný" ("selected"). It should be "aktuální".
+
+Correct translation:
+Zkopírovat aktuální podpis do schránky
+```
+
 <!-- cache_translation_check_cs_b9c59a69a4566fe8087b9c6569d7639dfec5c4523360bc958f148353d6614f5d -->
 ```
         <source>Reset all sign message fields</source>
@@ -319,6 +443,20 @@ There is a typographical error in the translation: "zrávy" should be "zprávy" 
 
 Correct translation:
 Resetuj všechna pole formuláře pro podepsání zprávy
+```
+
+<!-- cache_translation_check_cs_e506fab03f87f886d38316e6266f2caa7b289759c6d4e625ec7f50271c8c5229 -->
+```
+        <source>Clear &amp;All</source>
+        <translation>Všechno &amp;smaž</translation>
+    
+ERR
+The translation switches the order of words compared to the English and uses "Všechno smaž", which is awkward; also, the placement of "&amp;" is incorrect. In Czech UI, it is standard to use "Smazat &amp;vše" or "&amp;Smazat vše" for clarity and menu consistency.
+
+Correct translation:
+Smazat &amp;vše
+or
+&amp;Smazat vše
 ```
 
 <!-- cache_translation_check_cs_708369179b35c435b16d7d61f08a9e6f7fe891ed7f9f33c24f73b56f28d79390 -->
@@ -393,6 +531,18 @@ Correct translation:
 Jedná se o maximální poplatek, který zaplatíte (navíc k běžnému poplatku), abyste upřednostnili vyhýbání se částečnému utrácení před běžným výběrem mincí.
 ```
 
+<!-- cache_translation_check_cs_f0bf813d6cc85974dd5ae101fa7c667c68911de86a1f9066911a854415669f6c -->
+```
+        <source>Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.</source>
+        <translation>Možnosti '-datacarrier' a '-datacarriersize' jsou nastaveny, ale jsou označené za zastaralé. V budoucí verzi budou odstraněny.</translation>
+    
+ERR
+The conjunction "a" (and) implies both options are set, whereas the source says "or". Also, "označené za zastaralé" is less idiomatic than "označené/označeny jako zastaralé."
+
+Correct translation:
+Možnosti '-datacarrier' nebo '-datacarriersize' jsou nastaveny, ale jsou označeny jako zastaralé. V některé z budoucích verzí budou odstraněny.
+```
+
 <!-- cache_translation_check_cs_69110ef6a3e1dbe3806c05475b5d246147219d484fd56091e8755fedacf6546e -->
 ```
         <source>Outbound connections restricted to CJDNS (-onlynet=cjdns) but -cjdnsreachable is not provided</source>
@@ -403,6 +553,30 @@ There is a grammatical error and slight inaccuracy in the translation. "-cjdnsre
 
 Correct translation:
 Odchozí připojení jsou omezena na CJDNS (-onlynet=cjdns), ale -cjdnsreachable není zadán
+```
+
+<!-- cache_translation_check_cs_c661067b5c3ebddc81555d4cd87924396a7cf41894ceaf50b90e28d49f130deb -->
+```
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of a pruned node)</source>
+        <translation>Prořezávání: poslední synchronizace peněženky proběhla před už prořezanými daty. Je třeba provést -reindex (tedy v případě režimu prořezávání stáhnout celý blockchain znovu)</translation>
+    
+ERR
+The phrase "proběhla před už prořezanými daty" is misleading; it suggests the sync happened before the pruned data, rather than requiring data that have already been pruned. It should indicate that the last sync falls into/extends into already pruned data.
+
+Correct translation:
+Prořezávání: poslední synchronizace peněženky spadá do již prořezaných dat. Je třeba provést -reindex (v případě prořezávaného uzlu se znovu stáhne celý blockchain).
+```
+
+<!-- cache_translation_check_cs_c48b4230850b83d8bad33d61f189ed6a7f3ac23c932466284c2eddd4357d132a -->
+```
+        <source>-paytxfee is deprecated and will be fully removed in v31.0.</source>
+        <translation>Možnost -paytxfee je zastaralá a bude v příští verzi v31.0 plně odstraněna</translation>
+    
+ERR
+The translation adds "příští" (next), which is not in the source, and "v příští verzi v31.0" is awkward with a double 'v'. It also misses the final period.
+
+Correct translation:
+Volba -paytxfee je zastaralá a bude ve verzi v31.0 plně odstraněna.
 ```
 
 <!-- cache_translation_check_cs_21a62c07301c626678a6cc7b7c2939794b3053480363c30207cf4758e1a042ef -->
@@ -441,6 +615,30 @@ Correct translation:
 Neplatná částka pro %s=&lt;amount&gt;: '%s' (musí být alespoň %s)
 ```
 
+<!-- cache_translation_check_cs_5e7ff3563bdf6c3889fec1c8aca0611fdc64755d7a2f1631e0b209fb51a52923 -->
+```
+        <source>Error loading %s: Wallet is a legacy wallet. Please migrate to a descriptor wallet using the migration tool (migratewallet RPC).</source>
+        <translation>Chyba při načítání %s: Zastaralý typ peněženky. Převeďte ji prosím na deskriptorovou pomocí převodného nástroje (migratewallet RPC)</translation>
+    
+ERR
+Missing noun in "na deskriptorovou" (should be "na deskriptorovou peněženku") and missing final period. "Převodného" is unnatural; "migračního" fits better.
+
+Correct translation:
+Chyba při načítání %s: Peněženka je typu legacy. Převeďte ji prosím na deskriptorovou peněženku pomocí migračního nástroje (migratewallet RPC).
+```
+
+<!-- cache_translation_check_cs_f38ba91afdc56338ce369458efb74cab5b082824796c660518805e8e55cb478f -->
+```
+        <source>Transaction requires one destination of non-zero value, a non-zero feerate, or a pre-selected input</source>
+        <translation>Transakce vyžaduje jeden cíl nenulové hodnoty, nenulový poplatek nebo předvybraný vstup</translation>
+    
+ERR
+"Feerate" was mistranslated as "poplatek" (fee) instead of "sazba poplatku" (fee rate). Also "of non-zero value" is more natural as "s nenulovou hodnotou".
+
+Correct translation:
+Transakce vyžaduje jeden cíl s nenulovou hodnotou, nenulovou sazbu poplatku nebo předem vybraný vstup
+```
+
 <!-- cache_translation_check_cs_7dbe4d3bd8b3611230af4faaa6ce145b6c5a4c819c0e60df70d06beaa18b3371 -->
 ```
         <source>Error: Could not add watchonly tx %s to watchonly wallet</source>
@@ -464,6 +662,18 @@ There are issues with missing spaces before "volných" and "vyžadovaných", and
 Correct translation:
 Nedostatek volných souborových deskriptorů. %d volných, %d vyžadovaných.
 ```
+
+<!-- cache_translation_check_cs_3588514a0ca418b049d0a08b18f086d4cb13e33cf7cde3f3342f949e132f55bf -->
+```
+        <source>Unrecognized network in -proxy='%s': '%s'</source>
+        <translation>Nerozeznaná síť v -proxy='%s': '%s'</translation>
+    
+ERR
+Word choice is unnatural; "Nerozpoznaná síť" is the standard way to say "Unrecognized network" in Czech.
+
+Correct translation:
+Nerozpoznaná síť v -proxy='%s': '%s'
+```
 </details>
 
-Number of issues: 35.
+Number of issues: 51.

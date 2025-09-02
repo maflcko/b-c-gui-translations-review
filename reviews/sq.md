@@ -1,24 +1,24 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>sq</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bsq%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bsq%5D%20request)
 
 
-<!-- cache_translation_check_sq_8f576f64eb6d0f99c0738a554f5f81101619920d0c090c48de9987811142a8bc -->
+<!-- cache_translation_check_sq_6dfda18e74bb22642c82f27fe9287c1569df19c57b4567433a830d88d7af90f5 -->
 ```
-        <source>Close</source>
+        <source>C&amp;lose</source>
         <translation>afër</translation>
     
 ERR
-The translation "afër" means "near" or "close to" in Albanian, not the imperative "Close" (as in "Close the window"). The correct translation should be "Mbyll".
+The translation "afër" means "near" or "close (in proximity)" in Albanian, but the context here is a UI command meaning "Close" (as in "close the window"). Also, the shortcut indicator (&) is missing in the translation.
 
 Correct translation:
-Mbyll
+&Mbyll
 ```
 
 <!-- cache_translation_check_sq_215d8a1c12ff640adfdadb8b2cfdc2f7d5a20aa890db16ad75a5e866358b7e6f -->
@@ -55,6 +55,47 @@ The translation is inaccurate. The English "Wallet is encrypted and currently un
 
 Correct translation:
 Portofoli është &lt;b&gt; i enkriptuar&lt;/b&gt; dhe aktualisht &lt;b&gt; i ç'kyçur&lt;/b&gt;
+```
+
+<!-- cache_translation_check_sq_ee38efdb31a8b759b11eca3d84ecf095a3c0048005377e79736abc993b024534 -->
+```
+        <source>W&amp;allet</source>
+        <translation>Portofol</translation>
+    
+ERR
+The translation omits the '&' (ampersand) that is present in the source string and should be included to indicate the keyboard shortcut. It should appear exactly once in the translation, as in the source.
+
+Correct translation:
+&Portofol
+Alternatively, "Portofol&" is also acceptable if the shortcut is to be on another character, but including '&' somewhere is required.
+```
+
+<!-- cache_translation_check_sq_f640ba1e3b6a1ffd2931b64bde3c37e066c50cdb88ac215a8551284f5813bc12 -->
+```
+        <source>&amp;Information</source>
+        <translation>Informacion</translation>
+    
+ERR
+The translation omits the '&' symbol which is used to denote a keyboard shortcut. It should be preserved in the translation, appearing exactly once.
+
+Correct translation:
+&Informacion
+or
+Informacion&
+
+(both are acceptable as long as the '&' is present exactly once)
+```
+
+<!-- cache_translation_check_sq_37c4dc5635e7db0950a665aeb831b4f2cfc96d0e938e1e7db5bdb4405552949d -->
+```
+        <source>&amp;Amount:</source>
+        <translation>Shuma:</translation>
+    
+ERR
+The ampersand "&" (used for keyboard shortcut hints) is missing in the Albanian translation. It should appear once (usually before the shortcut letter).
+
+Correct translation:
+&Shuma:
 ```
 
 <!-- cache_translation_check_sq_8b9679a919e9f04a3329b69f8eb06f5f46bb76bfe6166584cdee76932d9f132f -->
@@ -94,4 +135,4 @@ I/E konfirmuar (%1 konfirmime)
 ```
 </details>
 
-Number of issues: 7.
+Number of issues: 10.

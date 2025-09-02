@@ -1,26 +1,25 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>pa</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bpa%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bpa%5D%20request)
 
 
-<!-- cache_translation_check_pa_4c7876ffb2dcf9fc308a93ab5609a0bad5cc33034a4fd81fbd4cf46708b25c27 -->
+<!-- cache_translation_check_pa_49e64ba0ce5aab92ce9286f8b8ea4eaca3b856f5c42ea5e8fcc09784c51dd8ce -->
 ```
-        <source>Copy the currently selected address to the system clipboard</source>
-        <translation>ਚੁਣੇ ਪਤੇ ਦੀ ਸਿਸਟਮ ਦੀ ਚੂੰਢੀ-ਤਖਤੀ 'ਤੇ ਨਕਲ ਲਾਹੋ</translation>
+        <source>There was an error trying to save the address list to %1. Please try again.</source>
+        <extracomment>An error message. %1 is a stand-in argument for the name of the file we attempted to save to.</extracomment>
+        <translation> %1 ਤੇ ਪਤੇ ਦੀ ਲਿਸਟ ਸੇਵ ਕਰਨੀ ਨਾਕਾਮ ਰਹੀ। ਫੇਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ। </translation>
     
 ERR
-The translation is inaccurate. "ਚੂੰਢੀ-ਤਖਤੀ" is not the standard term for clipboard in Punjabi, and the sentence construction is awkward. A more accurate and natural translation would be:
+The translation is understandable and %1 is preserved, but there are stray leading and trailing spaces and the phrasing can be slightly improved for naturalness.
 
-ਚੁਣੇ ਗਏ ਪਤੇ ਨੂੰ ਸਿਸਟਮ ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਕਰੋ
-
-Correct translation:
-ਚੁਣੇ ਗਏ ਪਤੇ ਨੂੰ ਸਿਸਟਮ ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਕਰੋ
+Correct translation (no extra spaces, more natural Punjabi):
+%1 'ਤੇ ਪਤੇ ਦੀ ਸੂਚੀ ਸੇਵ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਨਾਕਾਮ ਰਹੀ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।
 ```
 
 <!-- cache_translation_check_pa_74f3cc99704a738488639f9bc135cf90422974ae250e4d75334dc10d2fcd15db -->

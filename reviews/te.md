@@ -1,24 +1,72 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>te</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bte%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bte%5D%20request)
 
 
-<!-- cache_translation_check_te_938f31f7e3d4706ebdd61b2d3233d103d5c5677cdc7c03cc8474ce0e6b5611cc -->
+<!-- cache_translation_check_te_dce776b1905b1b461d1d7d9d1a8e9a1236b08ebe9789613445f7ac4f0736024a -->
 ```
-        <source>Copy Label</source>
-        <translation>కాపీ  ఉల్లాకు</translation>
+        <source>&amp;Export</source>
+        <translation>ఎగుమతి చేయండి</translation>
     
 ERR
-The translation "కాపీ ఉల్లాకు" is problematic. "ఉల్లాకు" is not a correct or common translation for "Label" in this context. The standard term for "Label" in Telugu is "లేబుల్". Also, there is an unnecessary double space between "కాపీ" and "ఉల్లాకు".
+The '&' character, which indicates a keyboard shortcut, is missing in the translation. It should appear exactly once, anywhere in the translated text.
 
 Correct translation:
-కాపీ లేబుల్
+&ఎగుమతి చేయండి
+```
+
+<!-- cache_translation_check_te_55c2a79af57dd6f773bcde521e7653b3cee7356a6fefc658133f5fb82ccaee73 -->
+```
+        <source>&amp;Delete</source>
+        <translation>తొలగించండి</translation>
+    
+ERR
+The ampersand (&) character, which is used for shortcut keys, is missing in the Telugu translation.
+
+Correct translation:
+&amp;తొలగించండి
+```
+
+<!-- cache_translation_check_te_f763ecc2c75d40fafb98badeeeee47fa9260b8a2335083ca9b74f49c9fa1f75b -->
+```
+        <source>&amp;Copy Address</source>
+        <translation>చిరునామాను కాపీ చెయ్యండి</translation>
+    
+ERR
+The translation is missing the '&' character, which is used for the shortcut key. It should appear exactly once, as in the source.
+
+Correct translation:
+&amp;చిరునామాను కాపీ చెయ్యండి
+```
+
+<!-- cache_translation_check_te_e880f4c87540bde8f47b056ba20c9c123ddf7090b7520b8c6299bec637bb01bc -->
+```
+        <source>Copy &amp;Label</source>
+        <translation>కాపీ &amp; ఉల్లాకు</translation>
+    
+ERR
+The Telugu translation uses "ఉల్లాకు," which is incorrect for "Label." The word "లేబుల్" or "లేబు" is the standard transliteration for "Label" in Telugu interfaces. Also, there is an unnecessary space after "&amp;", which should be avoided unless consistent with other buttons.
+
+Correct translation:
+కాపీ &amp;లేబుల్
+```
+
+<!-- cache_translation_check_te_f02a09488d2a89fe2cc0313c5152c7d9f472dec458a88450aab286b11ade7779 -->
+```
+        <source>&amp;Edit</source>
+        <translation>సవరించు</translation>
+    
+ERR
+The translation is missing the '&' character, which is required exactly once to indicate the shortcut key. 
+
+Correct translation:
+&సవరించు
 ```
 
 <!-- cache_translation_check_te_02cb1b1b3f1ea0821317720a5f176bee12e03c766de70af717b14dc49b922da6 -->
@@ -111,6 +159,24 @@ Correct translation:
 బ్లాక్ రిలే
 ```
 
+<!-- cache_translation_check_te_974d097b0539925e4f3fe00c66cf83d9170cd7188e6c7bf682d625fc4a664891 -->
+```
+        <source>E&amp;xit</source>
+        <translation>నిష్క్రమించు</translation>
+    
+ERR
+The '&' in the English source denotes a shortcut key and must appear exactly once in the translation, but it is missing in the Telugu translation.
+
+Correct translation:
+&నిష్క్రమించు
+
+or
+
+నిష్క్రమి&ఁచు
+
+(placement is flexible, as long as there is one '&'.)
+```
+
 <!-- cache_translation_check_te_30712ff49d4e136bdf4d37107408b3ed3a124e12e320873bbd2e47be6cd4ba27 -->
 ```
         <source>Create a new wallet</source>
@@ -121,6 +187,19 @@ The translation contains only HTML div tags ("<div></div>") and does not provide
 
 Correct translation:
 కొత్త వాలెట్‌ని సృష్టించండి
+```
+
+<!-- cache_translation_check_te_78b3758ce4605346346b60373a019cc3bca5d34a8a080248140460bc66beb5e2 -->
+```
+        <source>&amp;Minimize</source>
+        <translation>&amp;తగ్గించడానికి</translation>
+    
+ERR
+The translation "&amp;తగ్గించడానికి" is inaccurate. The word "తగ్గించడానికి" means "to reduce" or "for reducing", which is not suitable for the context of a button or command "Minimize". The correct translation should be the imperative form used in UI, such as "తగ్గించు".
+
+Correct translation:
+&amp;తగ్గించు
+</reply>
 ```
 
 <!-- cache_translation_check_te_115fe1b5196aeb663d049da57d5c0dacdef0e4e0b52ba4bda24935ca3faa1741 -->
@@ -135,6 +214,31 @@ Correct translation:
 వాలెట్:
 ```
 
+<!-- cache_translation_check_te_3a02124f7907a0b821802dd19d43f4d087a113f42d14c90bb58a1c7b9d072989 -->
+```
+        <source>&amp;Send</source>
+        <translation>పంపు</translation>
+    
+ERR
+The translation into Telugu is missing the '&' symbol, which indicates a shortcut key in the source. It should be present exactly once in the translation as well.
+
+Correct translation:
+&పంపు
+```
+
+<!-- cache_translation_check_te_041a0b0ee29cf35b054703827f581108d2cb8b4c9e647ebb47e2670ad8844706 -->
+```
+        <source>&amp;Receive</source>
+        <translation>స్వీకరించండి</translation>
+    
+ERR
+The ampersand '&' indicating the shortcut key is missing in the translation. It should appear exactly once.
+
+Correct translation:
+&స్వీకరించండి
+</reply>
+```
+
 <!-- cache_translation_check_te_233f3d7694b33a556da108321ce0e87e4727cdb91a57015d40f586976e28add8 -->
 ```
         <source>Information</source>
@@ -147,16 +251,30 @@ Correct translation:
 సమాచారం
 ```
 
-<!-- cache_translation_check_te_b84fef7f50a5edb925da38ca5b0213ad49a251d61d24f9eb62ef603ede64cb65 -->
+<!-- cache_translation_check_te_8c505262a21c8f934a4a9898f74923b83828760504aac3911906c8dc4ee3eb0c -->
 ```
-        <source>Sending addresses</source>
-        <translation>చిరునామా పంపుతోంది</translation>
+        <source>&amp;Sending addresses</source>
+        <translation>&amp;చిరునామా పంపుతోంది</translation>
     
 ERR
-The translation "చిరునామా పంపుతోంది" means "address is sending" or "address is being sent", which is incorrect for the plural "Sending addresses". The correct translation should refer to "addresses used for sending" (i.e., sending addresses).
+The translation "&amp;చిరునామా పంపుతోంది" means "address is sending" or "sending address", but in the context of Bitcoin, "&amp;Sending addresses" refers to the plural, i.e., multiple addresses used to send coins. The translation should reflect the plural and be clear in Telugu.
 
 Correct translation:
-పంపించే చిరునామాలు
+&amp;పంపే చిరునామాలు
+```
+
+<!-- cache_translation_check_te_a7d9f598bf80a474215babf473ad63e05e9da8a1986435362f15e97d11420fcc -->
+```
+        <source>&amp;Receiving addresses</source>
+        <translation>&amp;చిరునామాలను స్వీకరిస్తోంది</translation>
+    
+ERR
+The translation is incorrect. The English "&Receiving addresses" (where the '&' indicates a shortcut key) refers to the section or label for "Receiving addresses" (plural), i.e., addresses to which you receive payments. The given Telugu translation, "&చిరునామాలను స్వీకరిస్తోంది", translates to something like "Receiving the addresses" (present continuous tense), which is not appropriate for a label or heading. 
+
+Correct translation:
+&స్వీకరణ చిరునామాలు
+
+This keeps the noun as a heading and preserves the plural. The '&' is present exactly once, as required.
 ```
 
 <!-- cache_translation_check_te_b121d602a848dd58b7b664860ea3a268b2844624f6cfa53417ed9628d84cf53e -->
@@ -200,19 +318,52 @@ Or, more succinctly and natural:
 This preserves both the meaning and the placeholders.
 ```
 
-<!-- cache_translation_check_te_c5dfcce724e68f756b18eaa62863cf59a9bc8a8ec79d44f79b40e2dd246755b1 -->
+<!-- cache_translation_check_te_1cb74bc67286b51e7349ad5c2705630b12a8396f154b8d75312676c5692cb2c5 -->
 ```
-        <source>Prune block storage to</source>
-        <translation>స్టోరేజ్‌ను కత్తిరించు  బ్లాక్ చేయండి</translation>
+        <source>Size of &amp;database cache</source>
+        <translation>డేటాబేస్ కాష్ యొక్క పరిమాణం</translation>
     
 ERR
-The translation is inaccurate and has awkward phrasing. "Prune block storage to" refers to reducing the storage used for blocks, i.e., trimming or limiting the blockchain storage to a certain size.
+The translation omits the ampersand (&), which is needed for the shortcut key. The ampersand must be present exactly once in the translation.
 
 Correct translation:
-బ్లాక్ స్టోరేజ్‌ను కత్తిరించండి
+డేటాబేస్ &కాష్ యొక్క పరిమాణం
+```
 
-Note: If followed by a value or size, e.g., "Prune block storage to 550 MB", it should be:
-బ్లాక్ స్టోరేజ్‌ను 550 MBకి కత్తిరించండి
+<!-- cache_translation_check_te_b26a3366b4eff002205d126fee7a11cc90d1fe5172c1ae9c70e73410ec95868e -->
+```
+        <source>Prune &amp;block storage to</source>
+        <translation>స్టోరేజ్‌ను కత్తిరించు &amp; బ్లాక్ చేయండి</translation>
+    
+ERR
+The translation incorrectly translates "Prune &block storage to" as "స్టోరేజ్‌ను కత్తిరించు & బ్లాక్ చేయండి", which means "Prune storage & block (it)". The action of pruning block storage refers specifically to reducing the blockchain data size, typically by deleting old blocks up to a certain size (to ...). The translation omits the concept of "block storage" as a noun and does not include the "to" (as in "to a certain size"), and mistranslates "&block" as if it's an imperative verb ("block it"). Also, the placement of the & is not ideal but is still present.
+ 
+Correct translation:
+బ్లాక్ స్టోరేజ్‌ను కత్తిరించి & చేరుకోండి
+
+Or, more clearly:
+&బ్లాక్ స్టోరేజ్‌ను కత్తిరించు
+
+If there is an option/field following ("to"), such as a number, the full translation should allow for this, e.g.:
+&బ్లాక్ స్టోరేజ్‌ను కత్తిరించు (to ...: కి)
+
+So, a better contextual translation would be:
+&బ్లాక్ స్టోరేజ్‌ను ఇది వరకు కత్తిరించు
+
+But if only the phrase is requested, then:
+&బ్లాక్ స్టోరేజ్‌ను కత్తిరించు
+```
+
+<!-- cache_translation_check_te_61ba874c398e44509649bbd1c4d03a1adad4f994434d377b37262f6580921511 -->
+```
+        <source>M&amp;inimize on close</source>
+        <translation>ద&amp;గ్గరగా కనిష్టీకరించండి</translation>
+    
+ERR
+The translation uses "దగ్గరగా కనిష్టీకరించండి", which literally means "minimize closely"—this is not idiomatic or accurate for "Minimize on close". The correct Telugu translation should convey that the window will minimize when closed, typically as an option.
+
+Correct translation:
+బంద్ చేసినప్పుడు కనిష్టీకరించండి (&amp;M)
 ```
 
 <!-- cache_translation_check_te_b7545872a142586af163d29d839df0cfe8aa76439400b90d93d96a58cb5f59cd -->
@@ -323,6 +474,18 @@ Correct translation:
 కొత్త వాలెట్‌ని సృష్టించండి
 ```
 
+<!-- cache_translation_check_te_dce776b1905b1b461d1d7d9d1a8e9a1236b08ebe9789613445f7ac4f0736024a -->
+```
+        <source>&amp;Export</source>
+        <translation>ఎగుమతి చేయండి</translation>
+    
+ERR
+The '&' character, which indicates a keyboard shortcut, is missing in the translation. It should appear exactly once, anywhere in the translated text.
+
+Correct translation:
+&ఎగుమతి చేయండి
+```
+
 <!-- cache_translation_check_te_3e8a22726b3cc92a9bc411d43b86a73d776250a2a3cae9d041be30357ff961a1 -->
 ```
         <source>Verifying blocks…</source>
@@ -336,4 +499,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 26.
+Number of issues: 38.

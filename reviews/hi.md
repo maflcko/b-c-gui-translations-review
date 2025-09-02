@@ -1,13 +1,82 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>hi</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bhi%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bhi%5D%20request)
 
+
+<!-- cache_translation_check_hi_de52c986d77bb8e5e465245ef81cc19e38c931d538ba0ece1b78e6e746ea2dcd -->
+```
+        <source>&amp;New</source>
+        <translation>नया </translation>
+    
+ERR
+The '&' indicating the shortcut key from the source is missing in the translation, and an extra space exists after "नया".
+
+Correct translation:
+&नया
+```
+
+<!-- cache_translation_check_hi_e9f7409228e3561fa1746eba8217718aa66ca5afb920f710b32c2793fa78ecd6 -->
+```
+        <source>&amp;Copy</source>
+        <translation>कॉपी</translation>
+    
+ERR
+The shortcut key indicator (&) is missing in the translation. The '&' should appear exactly once to indicate the shortcut key.
+
+Correct translation:
+&कॉपी
+```
+
+<!-- cache_translation_check_hi_f5c73f0d2a35b1a960f88e8e19c24b33e31593158559293ff32405753018f7be -->
+```
+        <source>C&amp;lose</source>
+        <translation>बंद करें</translation>
+    
+ERR
+The translation omits the '&' shortcut key indicator that exists in the source ("C&amp;lose"), which should appear exactly once in the translation as well. 
+
+Correct translation:
+&बंद करें
+
+(Alternatively, it can be placed anywhere in the translated string, e.g., "बं&द करें", as long as it appears once.)
+```
+
+<!-- cache_translation_check_hi_49ad723bbe3b5e9e3b65ceea52ad65d514d9e3df3ce0b50cfac035c1a8d852f8 -->
+```
+        <source>&amp;Export</source>
+        <translation>निर्यात</translation>
+    
+ERR
+The translation for '&Export' misses the '&' character, which is used for shortcut keys. The '&' should be present exactly once in the Hindi translation, at any position.
+
+Correct translation:
+&निर्यात
+or
+निर्यात (&amp;E)
+or
+निर्यात (&amp;N)
+
+However, the most common and direct is:
+&निर्यात
+```
+
+<!-- cache_translation_check_hi_41890e4c9e929f4c49ad85a2f488a7796faa89ab071ff2a27909d9ed4a7cf519 -->
+```
+        <source>&amp;Delete</source>
+        <translation>डिलीट करें</translation>
+    
+ERR
+The translation omits the '&' which is used in the source to indicate the shortcut key. It must appear exactly once in the translation. 
+
+Correct translation:
+&डिलीट करें
+```
 
 <!-- cache_translation_check_hi_3d4152702f01a6fd62f6ce35add806d17a6e5a60726f87e31233e3956af26f81 -->
 ```
@@ -62,6 +131,44 @@ Correct translation:
 एक आंतरिक त्रुटि हुई। %1 सुरक्षित रूप से जारी रखने का प्रयास करेगा। यह एक अप्रत्याशित बग है जिसे नीचे वर्णित के रूप में रिपोर्ट किया जा सकता है।
 ```
 
+<!-- cache_translation_check_hi_c1211d78314b63b9d7fe1e5339fe67ede5772c403aae92bf13f24bef8eef0011 -->
+```
+        <source>I2P</source>
+        <comment>network name</comment>
+        <extracomment>Name of I2P network in peer info</extracomment>
+        <translation>आई 2 पी</translation>
+    
+ERR
+The translation inserts Devanagari letters and extra spaces ("आई 2 पी") for the network name. Network names should be left as-is (or, if transliterated, without added spaces). Also ensure no stray spaces around the "2".
+
+Correct translation:
+I2P
+```
+
+<!-- cache_translation_check_hi_850ee0d0a600ae558885d3fffb0f043db2f914806925319cc89146dd4b1523bc -->
+```
+        <source>&amp;Overview</source>
+        <translation>&amp;ओवरवीउ</translation>
+    
+ERR
+The word "ओवरवीउ" is not a standard Hindi word and is an incorrect transliteration of "Overview." The correct transliteration in Hindi is "ओवरव्यू". Additionally, ensure the ampersand (&) is present exactly once for shortcut functionality, which this translation does.
+
+Correct translation:
+&ओवरव्यू
+```
+
+<!-- cache_translation_check_hi_69df3381aae0eaab237bd2a154649285e9188718ad5d50e042183806df538ae7 -->
+```
+        <source>E&amp;xit</source>
+        <translation>&amp;एक्ज़िट</translation>
+    
+ERR
+The translation "&एक्ज़िट" uses a transliteration of "Exit", which is unnecessary in Hindi. The proper word is "बाहर जाएँ" or "निकास". Also, the ampersand (&) for the shortcut exists, which is correct, but the Hindi translation should use native terms rather than English transliteration, unless commonly used (which is not the case here).
+
+Correct translation:
+&बाहर जाएँ
+```
+
 <!-- cache_translation_check_hi_704e40c758a9a42ba62f7b2d22eb480a1f82a295910154981ab1dadf2ba56c30 -->
 ```
         <source>Quit application</source>
@@ -72,6 +179,30 @@ There is an unnecessary space at the beginning and the pipe symbol ('|') at the 
 
 Correct translation:  
 एप्लिकेशन छोड़ें
+```
+
+<!-- cache_translation_check_hi_422c24a04ed94fed228cb4058d565ca8ea6c402f23ed69af3a444de50b8d84c7 -->
+```
+        <source>&amp;About %1</source>
+        <translation>&amp;अबाउट %1</translation>
+    
+ERR
+The translation incorrectly leaves the English word "About" (अबाउट) in Devanagari script rather than using the proper Hindi equivalent. This is not idiomatic or natural in Hindi.
+
+Correct translation:
+%1 के &amp;बारे में
+```
+
+<!-- cache_translation_check_hi_40f79f813340977d93414bc6197398b43416a5fcd0a2520ee04b75360dede0da -->
+```
+        <source>About &amp;Qt</source>
+        <translation>अबाउट &amp;क्यूटी</translation>
+    
+ERR
+The translation unnecessarily uses the English word "अबाउट" (about) and "क्यूटी" (Qt) in Devanagari script, rather than using the standard localized form. For Hindi, a better translation would provide a natural Hindi equivalent for "About".
+
+Correct translation:
+क्यूटी &amp;के बारे में
 ```
 
 <!-- cache_translation_check_hi_9dc40e5282a6b8556f2357b02cf9a8bba35c247fbe1e925f70d5f8878c74d48e -->
@@ -98,17 +229,17 @@ Correct translation:
 किसी अन्य स्थान पर वॉलेट का बैकअप बनाएं।
 ```
 
-<!-- cache_translation_check_hi_23e048941d540b38587785e10b0d0728f2a38fe45cd3a61726f7705da816482b -->
+<!-- cache_translation_check_hi_53d1da48cb88d93ef92b607aee61a78a65b210268e8d6f026c2d617b2873015a -->
 ```
-        <source>Options…</source>
-        <translation>विकल्प
+        <source>&amp;Options…</source>
+        <translation>&amp;विकल्प
  </translation>
     
 ERR
-The translation is mostly correct in meaning ("विकल्प" means "Options"), but it introduces an unwanted line break and a stray whitespace character after "विकल्प", which is a formatting issue.
+There is an unwanted whitespace or line break at the end of the translation (“\n ”). The translation should be concise with no trailing spaces or line breaks. Also the ellipsis character ("…") is missing in the translation; it should match the source for proper UI consistency.
 
 Correct translation:
-विकल्प…
+&विकल्प…
 ```
 
 <!-- cache_translation_check_hi_44ea80b856552f42a7ab4203160945237be748c762c8803f95d933e7fa1038aa -->
@@ -121,6 +252,63 @@ There is an unwanted extra space at the end of the translation. Also, "के �
 
 Correct translation:
 %1 को %2 को भेजता है
+```
+
+<!-- cache_translation_check_hi_825508be1044f9280bb03f1dcaec658051ea2ac041b8ae0bba30dffeea04df0f -->
+```
+        <source>Type</source>
+        <extracomment>Title of Peers Table column which describes the type of peer connection. The "type" describes why the connection exists.</extracomment>
+        <translation>टाइप</translation>
+    
+ERR
+The translation uses the English loanword "टाइप" (transliteration). A more natural and correct Hindi word for the column header "Type" is "प्रकार".
+
+Correct translation:
+प्रकार
+```
+
+<!-- cache_translation_check_hi_acf73b5c9d35ec56a9b6e529bbc90f466845f9d3a4a7d2e1f16a56b6304a093f -->
+```
+        <source>&amp;Reset</source>
+        <translation>रीसेट</translation>
+    
+ERR
+The translation is missing the '&' which denotes the shortcut key in both source and translation. It should appear exactly once in the translation as well.
+
+Correct translation:
+&रीसेट
+```
+
+<!-- cache_translation_check_hi_a75381cb5bd2897c21ac38ba6fe1ffe590a55e8d46277cbe603c92c258a2d565 -->
+```
+        <source>&amp;Peers</source>
+        <translation>समकक्ष लोग</translation>
+    
+ERR
+The translation "समकक्ष लोग" omits the shortcut key ampersand (&) that must be present exactly once in the translation (anywhere). Additionally, "समकक्ष" is sufficient for "Peers" in the context of Bitcoin; "लोग" (people) is unnecessary and may not be specific. 
+
+Correct translation:
+&समकक्ष
+or
+समकक्ष &
+
+Either placement is acceptable as long as & is present exactly once.
+```
+
+<!-- cache_translation_check_hi_36bd945d7893ecdd7819fd2d44be418e628cf5ce4427bdd9359d592cb8d04ced -->
+```
+        <source>The transport layer version: %1</source>
+        <translation>परिवहन परत संस्करण: %1</translation>
+    
+ERR
+The Hindi is understandable but slightly ungrammatical/awkward: it misses the possessive particle "का" and "परत" is less common than "स्तर" or the English loan "लेयर". The format specifier %1 is correct and spacing is fine.
+
+Correct translations:
+- परिवहन परत का संस्करण: %1
+or
+- परिवहन स्तर का संस्करण: %1
+or (more literal with English term)
+- ट्रांसपोर्ट लेयर का संस्करण: %1
 ```
 
 <!-- cache_translation_check_hi_c5064bd028a5c2fc20819f83583f4f49984d573a698be81bdf6f0320c1bd8d40 -->
@@ -148,16 +336,97 @@ Correct translation:
 हमारे मेमपूल में किसी नए लेनदेन के इस सहकर्मी से प्राप्त होने के बाद से बीता हुआ समय।
 ```
 
-<!-- cache_translation_check_hi_3cc395fc1cb5a7b5016eb7a820044b1dbf7d8e12fe4591fea74fbea51a178d79 -->
+<!-- cache_translation_check_hi_cdcadbba5f7fa4a2b95c1c94dc7dbb5bdd7ec25dbfedea7387fe91f88904885f -->
 ```
-        <source>Open</source>
+        <source>&amp;Open</source>
         <translation>खुला हुआ</translation>
     
 ERR
-The translation "खुला हुआ" means "opened" or "in an open state," which describes something that is already open, not the imperative "Open" (as in a button or command to open something). The correct Hindi translation for the command "Open" is:
+The translation omits the ampersand (&), which is used to indicate a shortcut key in the source. Additionally, "खुला हुआ" means "opened" rather than the imperative "Open", which should be "खोलें" or similar.
 
-संपन्न अनुवाद:
-खोलें
+Correct translation:
+&खोलें
+</reply>
+```
+
+<!-- cache_translation_check_hi_a9b88dac1b2daaffb4afa8d517b6ad4d731471d3c0b76e111df1288dd62d1f65 -->
+```
+        <source>&amp;Console</source>
+        <translation>कंसोल</translation>
+    
+ERR
+The translation is missing the ampersand (&), which usually indicates a shortcut key in menu items. The & should appear exactly once in the translation.
+
+Correct translation:
+&कंसोल
+or
+क&ंसोल
+
+Either placement is acceptable as long as the & appears exactly once.
+```
+
+<!-- cache_translation_check_hi_211735ebfe13ae0ede7ed4421bdb142d3f0e20f3ea4d9cf1e8196ad3c74d35ec -->
+```
+        <source>&amp;Network Traffic</source>
+        <translation>&amp;प्रसार यातायात</translation>
+    
+ERR
+The translation "&amp;प्रसार यातायात" is inaccurate. The English phrase "Network Traffic" in the context of Bitcoin refers to data traffic over a computer network. "प्रसार" is closer to "broadcasting" or "dissemination", which is not the standard term for "network" in technical Hindi. The correct translation should use "नेटवर्क" for "Network" and "ट्रैफिक" or "आवागमन" for "Traffic". 
+
+Correct translation:
+&amp;नेटवर्क ट्रैफिक
+```
+
+<!-- cache_translation_check_hi_87acad392a767ec316e08801bab64ae765817d269a8329daf620a249e0fc1db5 -->
+```
+        <source>1 &amp;hour</source>
+        <translation>1 घंटा</translation>
+    
+ERR
+The ampersand (&) denoting the shortcut key is missing from the Hindi translation. It must appear exactly once.
+
+Correct translation:
+1 &amp;घंटा
+</reply>
+```
+
+<!-- cache_translation_check_hi_8ef1d3eb041bd15bd4e57a5faea9491e233dde48008c1a13e372b78cdd38efa6 -->
+```
+        <source>1 d&amp;ay</source>
+        <translation>1 दिन</translation>
+    
+ERR
+The ampersand (&), which is usually used to indicate a shortcut key, is missing in the Hindi translation. It should appear exactly once, anywhere in the translation.
+
+Correct translation:
+1 &दिन
+or 
+1 द&िन
+(placing & before any letter, as appropriate for intended shortcut key)
+```
+
+<!-- cache_translation_check_hi_5e5ce97ff87816521f2a879c2434d7501428f8d762b0c413e150c8266869e51d -->
+```
+        <source>1 &amp;week</source>
+        <translation>1 सप्ताह</translation>
+    
+ERR
+The translation for "1 &amp;week" is missing the ampersand which is used for shortcut keys. The ampersand must appear exactly once in the translation.
+
+Correct translation:
+1 &amp;सप्ताह
+```
+
+<!-- cache_translation_check_hi_c2183f1175ab425df363c17c60ef2bf7e7ad5ec4f5d6f15cf5b49f9494b65dba -->
+```
+        <source>1 &amp;year</source>
+        <translation>1 साल</translation>
+    
+ERR
+The translation omits the ampersand (&), which is intended to mark the shortcut key. In Hindi, it should also appear exactly once.
+
+Correct translation:
+1 &साल
 ```
 
 <!-- cache_translation_check_hi_8feadeb00b0127d61b94f847022dfd86ac49354fe01ca2dab9631b3d31b8d694 -->
@@ -176,6 +445,30 @@ Correct translation:
 साफ़ करें
 ```
 
+<!-- cache_translation_check_hi_5180f4a954ef278339f73ad8d8bb541239d9bccdffa9f5904d0d25b6bac96444 -->
+```
+        <source>Copy &amp;label</source>
+        <translation>कॉपी  &amp;लेबल</translation>
+    
+ERR
+There is an extra space between "कॉपी" and "&लेबल". The correct translation should not have double spaces.
+
+Correct translation:
+कॉपी &लेबल
+```
+
+<!-- cache_translation_check_hi_190ae0748f9379f324e70eb6fab8b6587f544ca63563f72d82c885f769569720 -->
+```
+        <source>Copy &amp;message</source>
+        <translation>कॉपी  &amp;मेसेज</translation>
+    
+ERR
+There is a double space between "कॉपी" and "&amp;मेसेज". Only a single space should exist.
+
+Correct translation:
+कॉपी &amp;मेसेज
+```
+
 <!-- cache_translation_check_hi_1f67b802483ea03ae818c77f821cd1333006984fa98caca36a1bc64e2c767c15 -->
 ```
         <source>Could not generate new %1 address</source>
@@ -188,19 +481,28 @@ Correct translation:
 नया %1 पता उत्पन्न नहीं कर सका
 ```
 
-<!-- cache_translation_check_hi_8903e7f119f502c1efabd9be63cb6ca8d9e94674f88b0b6940d937b31fe8dbf4 -->
+<!-- cache_translation_check_hi_84420d0910459792b84c76c217d405d23a70be606892294dd39a9d7f000de6a1 -->
 ```
-        <source>Copy Address</source>
-        <translation>कॉपी  अड्रेस</translation>
+        <source>Copy &amp;Address</source>
+        <translation>कॉपी  &amp;अड्रेस</translation>
     
 ERR
-There is an issue with the translation: there is an unnecessary double space between "कॉपी" and "अड्रेस". Also, "अड्रेस" is a transliteration of "address", but the more standard Hindi term is "पता". However, using "अड्रेस" is common in technical contexts. For clarity, the spacing must be fixed.
+There is an unwanted double space between "कॉपी" and "&amp;अड्रेस" in the translation. There should be only a single space.
 
 Correct translation:
-कॉपी अड्रेस
+कॉपी &amp;अड्रेस
+```
 
-Or if you prefer the more natural Hindi:
-पता कॉपी करें
+<!-- cache_translation_check_hi_e5231365c4f9b9039ac0462695ba86ce3b31f5f1eaaf8e05c71b06a14ec9a61b -->
+```
+        <source>&amp;Verify</source>
+        <translation>&amp;वेरीफाय</translation>
+    
+ERR
+The translation uses the transliterated English word "वेरीफाय" instead of the correct Hindi equivalent. This may not be easily understood by native Hindi speakers. The correct Hindi translation for "Verify" would be "सत्यापित करें".
+
+Correct translation:
+&सत्यापित करें
 ```
 
 <!-- cache_translation_check_hi_2c4dfd25dab8a7a3982446b7a72768956a556b7e1fd6f64e62aced089dc85496 -->
@@ -215,18 +517,28 @@ Correct translation:
 इस पते को, जैसे कि एक हार्डवेयर वॉलेट स्क्रीन पर, सत्यापित करें
 ```
 
-<!-- cache_translation_check_hi_6e7d48aff66ab4c2e9f911eded1ec5e85b754ecc2e334e3814446db9530fac99 -->
+<!-- cache_translation_check_hi_28a77482dbacc154c30d471cc592d9eb829e854e0085e317d7d4cb6671980dd9 -->
 ```
-        <source>Add Recipient</source>
-        <translation>अड रिसिपिएंट</translation>
+        <source>Add &amp;Recipient</source>
+        <translation>अड &amp;रिसिपिएंट</translation>
     
 ERR
-The translation is incorrect. "अड रिसिपिएंट" is a transliteration, not an actual Hindi translation, and "अड" is an inaccurate rendering of "Add". The correct Hindi translation should be:
-
-प्राप्तकर्ता जोड़ें
+The translation simply transcribes the English words "Add" and "Recipient" into Devanagari script, which is not proper Hindi. Also, "अड" is not a Hindi word.
 
 Correct translation:
-प्राप्तकर्ता जोड़ें
+प्राप्तकर्ता &amp;जोड़ें
+```
+
+<!-- cache_translation_check_hi_00fb8ea9e47e6f0a853859ed7a2f17251110b352f1a3dfe93a69be3d1c84cb48 -->
+```
+        <source>S&amp;end</source>
+        <translation>सेन्ड&amp;</translation>
+    
+ERR
+The translation is incorrect because "सेन्ड" is a transliteration of "Send" rather than a proper Hindi translation. The correct Hindi translation for "Send" is "भेजें". The ampersand (&) is present exactly once, which is correct.
+
+Correct translation:
+भेजें&amp;
 ```
 
 <!-- cache_translation_check_hi_27dfd905e7f8fbe25731bff03a9d9b6083887f28fd6cf6abc934a589a14265f8 -->
@@ -285,16 +597,40 @@ Correct translation:
 अहस्ताक्षरित लेनदेन
 ```
 
-<!-- cache_translation_check_hi_723883393680388367ff42a3c0d4325cfa9dc1fb41bae2ed6d6ecb3513a500db -->
+<!-- cache_translation_check_hi_9f2459f6c5d1bd8f0db5273fb58cf93b36d5612e012255ef1450cceb20a4c1d9 -->
 ```
-        <source>Verify Message</source>
+        <source>A&amp;mount:</source>
+        <translation>&amp;अमौंट</translation>
+    
+ERR
+The translation "&amp;अमौंट" is problematic because "अमौंट" is an incorrect transliteration of "amount" in Hindi. The proper term in Hindi is "राशि". Also, the ampersand (&amp;) shortcut is present, which is fine, and spacing is correct. The correct translation should use the proper Hindi word.
+
+Correct translation:
+&राशि:
+```
+
+<!-- cache_translation_check_hi_883b540f00142d1c657e1a363c1d1037cbb64bf3d5cd7ac8c8e68624882b312a -->
+```
+        <source>Pay &amp;To:</source>
+        <translation>पें &amp;टु:</translation>
+    
+ERR
+The translation is incorrect. The English phrase "Pay &To:" should be translated into Hindi as "भुगतान &To:". The word 'पें' is not standard Hindi for 'Pay', and '&To:' is not translated. Ideally, 'To' should also be translated to 'को', resulting in "भुगतान &को:" or "&को भुगतान:", ensuring the '&' shortcut key is included once. 
+
+Correct translation:
+भुगतान &को:
+```
+
+<!-- cache_translation_check_hi_519201e0cf5bb78f3337bf4c5c4b90bcc5defde9e7e2b4428e3900a8c06a1465 -->
+```
+        <source>Verify &amp;Message</source>
         <translation>सत्यापित करें और संदेश</translation>
     
 ERR
-The translation "सत्यापित करें और संदेश" is inaccurate. It translates to "Verify and message" instead of "Verify Message". The "और" ("and") is erroneous.
+The Hindi translation is incorrect. The '&' character, which is used to denote a keyboard shortcut in the source ("&Message"), is missing in the translation. Additionally, the translation "सत्यापित करें और संदेश" means "Verify and message," which is not an accurate translation of "Verify &Message." It should read as "संदेश सत्यापित करें" or "संदेश &सत्यापित करें", but the ampersand should precede the shortcut key in the Hindi word, typically the one to which the shortcut will be assigned (here, "संदेश").
 
 Correct translation:
-संदेश सत्यापित करें
+&संदेश सत्यापित करें
 ```
 
 <!-- cache_translation_check_hi_15fcb93e0b7799bb1a4d7b16bbba8012dbb0d57dd8164776f6c09463317a3ab9 -->
@@ -359,6 +695,18 @@ Correct translation:
 विरोधाभासी
 ```
 
+<!-- cache_translation_check_hi_5180f4a954ef278339f73ad8d8bb541239d9bccdffa9f5904d0d25b6bac96444 -->
+```
+        <source>Copy &amp;label</source>
+        <translation>कॉपी  &amp;लेबल</translation>
+    
+ERR
+There is an extra space between "कॉपी" and "&लेबल". The correct translation should not have double spaces.
+
+Correct translation:
+कॉपी &लेबल
+```
+
 <!-- cache_translation_check_hi_d8d5666caad9cb7fab78076343fac8869cfbb56141b580f5dbc3f6544e3a54f7 -->
 ```
         <source>Signer error</source>
@@ -371,16 +719,39 @@ Correct translation:
 हस्ताक्षरकर्ता त्रुटि
 ```
 
-<!-- cache_translation_check_hi_316e9978187c7f44c84e706c3a27a734fa7de630368e5ae6fecba3c85394484f -->
+<!-- cache_translation_check_hi_49ad723bbe3b5e9e3b65ceea52ad65d514d9e3df3ce0b50cfac035c1a8d852f8 -->
 ```
-        <source>%s failed to validate the -assumeutxo snapshot state. This indicates a hardware problem, or a bug in the software, or a bad software modification that allowed an invalid snapshot to be loaded. As a result of this, the node will shut down and stop using any state that was built on the snapshot, resetting the chain height from %d to %d. On the next restart, the node will resume syncing from %d without using any snapshot data. Please report this incident to %s, including how you obtained the snapshot. The invalid snapshot chainstate will be left on disk in case it is helpful in diagnosing the issue that caused this error.</source>
-        <translation>-assumeutxo snapshot state को सत्यापित करने में %sविफल रहा |  यह हार्डवेयर समस्या, या सॉफ्टवेयर में बग, या खराब सॉफ्टवेयर संशोधन को इंगित करता है जिसके कारण अमान्य स्नैपशॉट लोड हो गया। इसके परिणामस्वरूप, नोड बंद हो जाएगा और स्नैपशॉट पर निर्मित किसी भी स्थिति का उपयोग करना बंद कर देगा, जिससे चेन की ऊंचाई %d से %d पर रीसेट हो जाएगी। अगली बार पुनः आरंभ करने पर, नोड किसी भी स्नैपशॉट डेटा का उपयोग किए बिना %d से सिंक करना फिर से शुरू कर देगा। कृपया इस घटना की रिपोर्ट %s को करें, जिसमें यह भी शामिल है कि आपने स्नैपशॉट कैसे प्राप्त किया। अमान्य स्नैपशॉट चेनस्टेट को डिस्क पर छोड़ दिया जाएगा, ताकि यह उस समस्या का निदान करने में सहायक हो, जिसके कारण यह त्रुटि हुई।</translation>
+        <source>&amp;Export</source>
+        <translation>निर्यात</translation>
     
 ERR
-The translation is mostly accurate but has spacing and formatting errors relating to format specifiers. Specifically, there should be a space after "%s" in the first sentence ("%sविफल रहा" should be "%s विफल रहा"), and the format specifiers (%s, %d) should be preserved exactly as in the source text, matching spacing conventions.
+The translation for '&Export' misses the '&' character, which is used for shortcut keys. The '&' should be present exactly once in the Hindi translation, at any position.
 
 Correct translation:
--assumeutxo snapshot state को सत्यापित करने में %s विफल रहा। यह हार्डवेयर समस्या, या सॉफ्टवेयर में बग, या खराब सॉफ्टवेयर संशोधन को इंगित करता है जिसके कारण अमान्य स्नैपशॉट लोड हो गया। इसके परिणामस्वरूप, नोड बंद हो जाएगा और स्नैपशॉट पर निर्मित किसी भी स्थिति का उपयोग करना बंद कर देगा, जिससे चेन की ऊंचाई %d से %d पर रीसेट हो जाएगी। अगली बार पुनः आरंभ करने पर, नोड किसी भी स्नैपशॉट डेटा का उपयोग किए बिना %d से सिंक करना फिर से शुरू कर देगा। कृपया इस घटना की रिपोर्ट %s को करें, जिसमें यह भी शामिल है कि आपने स्नैपशॉट कैसे प्राप्त किया। अमान्य स्नैपशॉट चेनस्टेट को डिस्क पर छोड़ दिया जाएगा, जिससे यह उस समस्या का निदान करने में सहायक हो सकता है, जिसके कारण यह त्रुटि हुई।
+&निर्यात
+or
+निर्यात (&amp;E)
+or
+निर्यात (&amp;N)
+
+However, the most common and direct is:
+&निर्यात
+```
+
+<!-- cache_translation_check_hi_15ca5a08aa63d6c0316738e0f451ce1df952172dc0ac9b4b339df3f7d179eed9 -->
+```
+        <source>%s failed to validate the -assumeutxo snapshot state. This indicates a hardware problem, or a bug in the software, or a bad software modification that allowed an invalid snapshot to be loaded. As a result of this, the node will shut down and stop using any state that was built on the snapshot, resetting the chain height from %d to %d. On the next restart, the node will resume syncing from %d without using any snapshot data. Please report this incident to %s, including how you obtained the snapshot. The invalid snapshot chainstate will be left on disk in case it is helpful in diagnosing the issue that caused this error.</source>
+        <translation>-assumeutxo snapshot state को सत्यापित करने में %sविफल रहा |  यह हार्डवेयर समस्या, या सॉफ्टवेयर में बग, या खराब सॉफ्टवेयर संशोधन को इंगित करता है जिसके कारण अमान्य स्नैपशॉट लोड हो गया। इसके परिणामस्वरूप, नोड बंद हो जाएगा और स्नैपशॉट पर निर्मित किसी भी स्थिति का उपयोग करना बंद कर देगा, जिससे चेन की ऊंचाई %d से %d पर रीसेट हो जाएगी। अगली बार restart करने पर, नोड किसी भी स्नैपशॉट डेटा का उपयोग किए बिना %d से सिंक करना फिर से शुरू कर देगा। कृपया इस घटना की रिपोर्ट %s को करें, जिसमें यह भी शामिल है कि आपने स्नैपशॉट कैसे प्राप्त किया। अमान्य स्नैपशॉट चेनस्टेट को डिस्क पर छोड़ दिया जाएगा, ताकि यह उस समस्या का निदान करने में सहायक हो, जिसके कारण यह त्रुटि हुई।</translation>
+    
+ERR
+Problems:
+- Missing space between "%s" and "विफल" ("%sविफल" → "%s विफल").
+- Uses '|' after first sentence instead of Hindi punctuation "।".
+- English word "restart" left untranslated.
+- Minor wording improvements for natural Hindi.
+
+Correct translation:
+-assumeutxo snapshot state को सत्यापित करने में %s विफल रहा। यह हार्डवेयर समस्या, सॉफ़्टवेयर में बग, या ऐसा खराब सॉफ़्टवेयर संशोधन है जिसने एक अमान्य स्नैपशॉट लोड होने की अनुमति दी। इसके परिणामस्वरूप, नोड बंद हो जाएगा और स्नैपशॉट पर निर्मित किसी भी स्थिति का उपयोग करना बंद कर देगा, जिससे चेन की ऊँचाई %d से %d पर रीसेट हो जाएगी। अगले पुनरारंभ पर, नोड किसी भी स्नैपशॉट डेटा का उपयोग किए बिना %d से सिंक करना फिर से शुरू कर देगा। कृपया यह घटना %s को रिपोर्ट करें, तथा यह भी बताएं कि आपने स्नैपशॉट कैसे प्राप्त किया। अमान्य स्नैपशॉट चेनस्टेट को डिस्क पर छोड़ दिया जाएगा, ताकि यह उस समस्या के निदान में सहायक रहे जिसने यह त्रुटि उत्पन्न की।
 ```
 
 <!-- cache_translation_check_hi_10124f311d84454e939d798c66dba60dea5a9baa74812ff479e0b877667fafa8 -->
@@ -410,6 +781,47 @@ Correct translation:
 %s बहुत अधिक निर्धारित है! इतनी बड़ी फीस एक ही लेनदेन पर चुकाई जा सकती है।
 ```
 
+<!-- cache_translation_check_hi_f65c92a8906ed0ec7a06ee7de59cb0ae24550b0d6dcec5af176c3c087c8d93ff -->
+```
+        <source>Failed to remove snapshot chainstate dir (%s). Manually remove it before restarting.
+</source>
+        <translation>स्नैपशॉट चेनस्टेट डायरेक्टरी (%s) को हटाने में विफल। Restart करने से पहले इसे मैन्युअल रूप से हटाएँ।
+</translation>
+    
+ERR
+The translation mixes Hindi and English ("Restart") and could use a more natural Hindi phrasing. The format specifier (%s) is preserved correctly.
+
+Correct translation:
+स्नैपशॉट चेनस्टेट डायरेक्टरी (%s) को हटाने में विफल रहा। पुनःप्रारंभ करने से पहले इसे मैन्युअल रूप से हटा दें।
+```
+
+<!-- cache_translation_check_hi_6ddc88a32c50249490db19403d09f4f560c70c0a210c52a7166e319f7ab12a70 -->
+```
+        <source>UTXO snapshot failed to validate. Restart to resume normal initial block download, or try loading a different snapshot.</source>
+        <translation>UTXO स्नैपशॉट मान्य करने में विफल रहा। सामान्य आरंभिक ब्लॉक डाउनलोड को फिर से शुरू करने के लिए restart करें, या कोई भिन्न स्नैपशॉट लोड करने का प्रयास करें।</translation>
+    
+ERR
+The translation is mostly understandable but has issues: it mixes English ("restart") instead of a Hindi verb and uses slightly awkward phrasing ("सामान्य आरंभिक ब्लॉक डाउनलोड"). No format specifiers are involved and there are no whitespace problems.
+
+Suggested correct translation:
+UTXO स्नैपशॉट मान्य करने में विफल रहा। सामान्य प्रारंभिक ब्लॉक डाउनलोड को पुनः आरंभ करने के लिए सिस्टम/प्रोग्राम को पुनः चालू करें, या कोई भिन्न स्नैपशॉट लोड करने का प्रयास करें।
+```
+
+<!-- cache_translation_check_hi_0669532d02a7676a09fad3f9e84e6f485129704364ea2201b7937695094ba56a -->
+```
+        <source>Your computer's date and time appear to be more than %d minutes out of sync with the network, this may lead to consensus failure. After you've confirmed your computer's clock, this message should no longer appear when you restart your node. Without a restart, it should stop showing automatically after you've connected to a sufficient number of new outbound peers, which may take some time. You can inspect the `timeoffset` field of the `getpeerinfo` and `getnetworkinfo` RPC methods to get more info.</source>
+        <translation>आपके कंप्यूटर की तिथि और समय नेटवर्क के साथ %d मिनट से अधिक समय तक सिंक से बाहर प्रतीत है, इससे सहमति विफलता हो सकती है। आपके द्वारा अपने कंप्यूटर की घड़ी की पुष्टि करने के बाद, जब आप अपना नोड restart करेंगे तो यह संदेश दिखाई नहीं देना चाहिए। Restart किए बिना, जब आप पर्याप्त संख्या में नए outbound peers से कनेक्ट हो जाते हैं, तो यह स्वचालित रूप से दिखना बंद हो जाना चाहिए, जिसमें कुछ समय लग सकता है। अधिक जानकारी प्राप्त करने के लिए आप `getpeerinfo` और `getnetworkinfo` RPC विधियों के `timeoffset` फ़ील्ड का निरीक्षण कर सकते हैं।</translation>
+    
+ERR
+Issues:
+- Several English words left untranslated or inconsistently used: "restart", "outbound peers" — better to translate these for clarity.
+- Minor stylistic improvements for natural Hindi (e.g., "सिंक से बाहर प्रतीत है" → "सिंक से बाहर दिख रहा/दिखती है", "सहमति विफलता" → "सम्मति विफलता" is fine but "सहमति" less common; use "सम्मति" or "कंसेंसस" consistently).
+- Keep format specifier %d and code-style backticks unchanged (they are correct).
+
+Suggested corrected translation:
+आपके कंप्यूटर की तिथि और समय नेटवर्क के साथ %d मिनट से अधिक सिंक से बाहर दिख रहे हैं, जिससे सम्मति (consensus) विफल हो सकती है। अपने कंप्यूटर की घड़ी की पुष्टि करने के बाद, जब आप अपना नोड पुनःआरंभ (restart) करेंगे तो यह संदेश दिखाई देना बंद हो जाना चाहिए। बिना पुनःआरंभ के, जब आप पर्याप्त संख्या के नए आउटबाउंड पीयर/कनेक्शनों से जुड़ जाते हैं तो यह स्वतः ही बंद हो जाएगा, जिसमें कुछ समय लग सकता है। अधिक जानकारी के लिए आप `getpeerinfo` और `getnetworkinfo` RPC विधियों के `timeoffset` फ़ील्ड का निरीक्षण कर सकते हैं।
+```
+
 <!-- cache_translation_check_hi_338f769ea49416f95a9fc011c95607a790a01bf15402e0b49b5ebe19a01b6ca8 -->
 ```
         <source>Block verification was interrupted</source>
@@ -434,6 +846,45 @@ Correct translation:
 Elliptic curve cryptography सत्यापन जांच विफल हुई है। %s बंद हो रही है।
 ```
 
+<!-- cache_translation_check_hi_2f596529af946a16fa25ad528b619faaeb811d8c618bf4df593d97c2459dfa11 -->
+```
+        <source>Error: Unable to read wallet's best block locator record</source>
+        <translation>Error: वॉलेट का best ब्लॉक लोकेटर रिकॉर्ड पढ़ने में असमर्थ</translation>
+    
+ERR
+The translation mixes English and Hindi inconsistently ("best ब्लॉक लोकेटर रिकॉर्ड") and is slightly awkward ("वॉलेट का ... पढ़ने में असमर्थ" is understandable but not natural). No format specifiers or whitespace issues.
+
+Suggested correction:
+त्रुटि: वॉलेट के बेस्ट ब्लॉक-लोकेटर रिकॉर्ड को पढ़ने में असमर्थ
+```
+
+<!-- cache_translation_check_hi_47d223656fced25979a86d4b23606efef9ba113d1efc35d68fbc0a32f2d8b703 -->
+```
+        <source>Error: Unable to write solvable wallet best block locator record</source>
+        <translation>Error: सॉल्वेबल वॉलेट best ब्लॉक लोकेटर रिकॉर्ड लिखने में असमर्थ</translation>
+    
+ERR
+The translation mixes English and Hindi but is grammatically incorrect — it lacks the possessive marker and uses "best" in English. No format specifiers are involved.
+
+Suggested correct translation:
+त्रुटि: सॉल्वेबल वॉलेट का सर्वोत्तम ब्लॉक लोकेटर रिकॉर्ड लिखने में असमर्थ
+```
+
+<!-- cache_translation_check_hi_4dba9e7aff2a1a0c6716c2168b941274a78e4a082d5013c284e4990770d3a1ee -->
+```
+        <source>Error: Unable to write watchonly wallet best block locator record</source>
+        <translation>Error: watchonly वॉलेट best  ब्लॉक लोकेटर रिकॉर्ड लिखने में असमर्थ</translation>
+    
+ERR
+The translation mixes English and Hindi awkwardly, has a stray double space ("best  ब्लॉक"), and uses "Error:" instead of a Hindi equivalent. Also the genitive relation is unclear. A clearer Hindi translation:
+
+Correct translation:
+त्रुटि: watch-only वॉलेट का best ब्लॉक लोकेटर रिकॉर्ड लिखने में असमर्थ
+
+(Or fully Hindi:
+त्रुटि: वॉचलॉनली वॉलेट का सर्वश्रेष्ठ ब्लॉक लोकेटर रिकॉर्ड लिखने में असमर्थ)
+```
+
 <!-- cache_translation_check_hi_959fe14c89ac9d0526c8b7197964f6f08409817c2ccce1a6b71981e48ee0b7db -->
 ```
         <source>Failed to connect best block (%s).</source>
@@ -444,6 +895,30 @@ The translation unnecessarily uses the English word "best" instead of its Hindi 
 
 Correct translation:  
 %s से सर्वश्रेष्ठ ब्लॉक कनेक्ट करने में विफल रहा।
+```
+
+<!-- cache_translation_check_hi_ba4f53048b06f8ebeeac8f8eb3a4153ade1d31cd971c4a0d342b609b1d5d8512 -->
+```
+        <source>Failed to disconnect block.</source>
+        <translation>ब्लॉक को डिस्कनेक्ट करने में विफल |</translation>
+    
+ERR
+The Hindi text uses an ASCII vertical bar (" |") as sentence terminator and has an extra space before it. Also it's better to use proper Hindi punctuation and/or a more natural phrasing.
+
+Correct translation:
+ब्लॉक को डिसकनेक्ट करने में विफल।
+```
+
+<!-- cache_translation_check_hi_8d2ce1838818f1d2ca87f37cdde86e9890f99d1f6faa12ac4ed825ab5b6d1df1 -->
+```
+        <source>Failed to write block.</source>
+        <translation>ब्लॉक लिखने में विफल |</translation>
+    
+ERR
+Translation is understandable Hindi but uses an incorrect punctuation character (" |") and has an extra space before it. Better to use the Devanagari danda or a period and remove the stray space.
+
+Correct translation:
+ब्लॉक लिखने में विफल।
 ```
 
 <!-- cache_translation_check_hi_fdf15477d9670efe36510e6b0589e2c5074aa10763dbc1d621ea657cd5bdcd7d -->
@@ -482,6 +957,20 @@ Correct translation:
 निर्दिष्ट डेटा निर्देशिका "%s" मौजूद नहीं है।
 ```
 
+<!-- cache_translation_check_hi_3b206675595790c9067bdc0cffcdb3dcebd50ceb404bba00a967782759020eea -->
+```
+        <source>System error while flushing: %s</source>
+        <translation>फ्लशिंग करते समय सिस्टम error: %s</translation>
+    
+ERR
+The translation mixes English and Hindi ("फ्लशिंग" and "सिस्टम error") and uses the English word "error" instead of a Hindi equivalent. The format specifier "%s" is preserved correctly and there are no whitespace issues.
+
+Correct translation suggestions:
+फ्लश करते समय सिस्टम त्रुटि: %s
+or
+फ्लशिंग करते समय सिस्टम त्रुटि: %s
+```
+
 <!-- cache_translation_check_hi_ae903439a742e13979eeef6fef4c5bbff2dc6ada3ae299a84a5008f21702ba9f -->
 ```
         <source>System error while saving block to disk: %s</source>
@@ -510,4 +999,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 39.
+Number of issues: 76.

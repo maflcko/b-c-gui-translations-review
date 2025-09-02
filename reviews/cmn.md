@@ -1,24 +1,36 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>cmn</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bcmn%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bcmn%5D%20request)
 
 
-<!-- cache_translation_check_cmn_d6c422d768d037002bb0562d332c5c2ec98da1c1e74683a99e050b6d59428f55 -->
+<!-- cache_translation_check_cmn_b8e3c443228cffa967a07ac27cf811742669784cf54541470bf150181540b9fb -->
 ```
-        <source>Delete</source>
-        <translation>刪除 D</translation>
+        <source>&amp;Export</source>
+        <translation> 导出(&amp;E)</translation>
     
 ERR
-The translation incorrectly adds "D" after "刪除", which is not appropriate in Mandarin Chinese ('cmn'). There is also an unnecessary space between "刪除" and "D". 
+Leading whitespace before the text. Remove it.
 
 Correct translation:
-刪除
+导出(&amp;E)
+```
+
+<!-- cache_translation_check_cmn_39d1e41b3f145999fc961e8a43f666df401f56223041b177f975aa4b235d0f68 -->
+```
+        <source>&amp;Edit</source>
+        <translation> 编辑(&amp;E)</translation>
+    
+ERR
+Leading whitespace before the translation is unintended formatting. Remove the initial space.
+
+Correct translation:
+编辑(&E)
 ```
 
 <!-- cache_translation_check_cmn_0467b0276d62fd95ce9b8af3bd4c3e87347f98def98ee4a26f32868c51c98725 -->
@@ -33,16 +45,64 @@ Correct translation:
 %1又%2
 ```
 
-<!-- cache_translation_check_cmn_2883e00d0d8a42685d37e2a343e075eb9ff8db424f4ef6119b847c9edd193c89 -->
+<!-- cache_translation_check_cmn_a7c351c427df6d7b486104f1939aef897d1cfa92e831eea41d659421963ae8ce -->
 ```
-        <source>Sending addresses</source>
-        <translation>付款地址(S)</translation>
+        <source>&amp;Minimize</source>
+        <translation>最小化</translation>
     
 ERR
-The translation is mostly correct, but "(S)" is an English suffix and should not be used in a Chinese translation. The plural indication is also unnecessary in Chinese, as plurality is generally inferred from context.
+The translation is missing the '&' which is used for the shortcut key in the interface and should appear exactly once.
 
 Correct translation:
-付款地址
+&最小化
+```
+
+<!-- cache_translation_check_cmn_8805d81be15da11902e68e1a4f034a336df1d660d01d4122ff333a49a3a519f5 -->
+```
+        <source>&amp;Options…</source>
+        <translation>&amp;選項...</translation>
+    
+ERR
+Ellipsis should match the source’s single-character ellipsis (…); the translation used three dots (...).
+
+Correct translation:
+&選項…
+```
+
+<!-- cache_translation_check_cmn_65f1ede3a79d328c9143d790f44f4c9577f4191be8c35c67a613d2142266700b -->
+```
+        <source>&amp;Encrypt Wallet…</source>
+        <translation> 加密钱包(&amp;E)</translation>
+    
+ERR
+Leading stray space and missing ellipsis. The source has an ellipsis (…) that should be preserved, and there should be no leading whitespace.
+
+Correct translation:
+加密钱包(&E)…
+```
+
+<!-- cache_translation_check_cmn_03c5cf45ae9c8378ce91dc74c1eefa379bec8fa054728eebd461f2603e1208a8 -->
+```
+        <source>Close All Wallets…</source>
+        <translation> 关所有钱包...</translation>
+    
+ERR
+The translation is missing the verb “关闭”, contains an unwanted leading space, and uses three dots instead of the ellipsis character.
+
+Correct translation:
+关闭所有钱包…
+```
+
+<!-- cache_translation_check_cmn_42a695c10a15cebe8935b1a9013c83e954e990e2627b810a54a4e13beb932376 -->
+```
+        <source>Load PSBT from &amp;clipboard…</source>
+        <translation>從剪貼簿載入PSBT</translation>
+    
+ERR
+The '&' from the source (used for shortcut key indication) is missing in the translation. It should appear exactly once, in a normal position in Chinese UI convention.
+
+Correct translation:
+從剪貼簿(&amp;)載入PSBT…
 ```
 
 <!-- cache_translation_check_cmn_07b24e731acfde530620e37ba80e4dd4623efd6c803f490116295af92f3094db -->
@@ -70,16 +130,28 @@ Correct translation:
 啟用網路活動
 ```
 
-<!-- cache_translation_check_cmn_708501aa83c3ed6c47c422f83102d8e9be25b9847079d344191965e14b243720 -->
+<!-- cache_translation_check_cmn_a6e9d6abcc4431799e73f806331c34124d5e3cf2ac80d23af4c298249010502b -->
 ```
-        <source>Copy amount</source>
+        <source>Copy &amp;amount</source>
         <translation>复制和数量</translation>
     
 ERR
-The translation is inaccurate. The English phrase "Copy amount" means to copy the numerical value/amount, but the translation "复制和数量" means "copy and amount", which is incorrect. The conjunction "和" ("and") is erroneous here.
+The translation "复制和数量" is inaccurate. The "&amp;" in the source indicates a shortcut key, not the word "and". In 'cmn' (Mandarin Chinese), the correct translation should retain the shortcut function. A common approach is to place the shortcut before the main word using an underlined character, but since "&" can appear anywhere, using it at the start is fine.
 
 Correct translation:
-复制金额
+复制金额(&A)
+```
+
+<!-- cache_translation_check_cmn_5ace09bb0cf15a835e9c7cf2d5e3473d50f6fa76d17319aec8e6fd38b6f1c1dc -->
+```
+        <source>(change)</source>
+        <translation> (零钱)</translation>
+    
+ERR
+The translation includes a stray leading space and uses less accurate terminology for Bitcoin context. "零钱" means small cash, while "找零" is the proper term for transaction change.
+
+Correct translation:
+(找零)
 ```
 
 <!-- cache_translation_check_cmn_39f8fd7fcf43b82d6213e666e6289334dc525e42ff2102d6b2e7aca11cb82165 -->
@@ -92,6 +164,45 @@ There is an erroneous inclusion of "&lt;br&gt;" (HTML line break tag in escaped 
 
 Correct translation:
 創建錢包失敗
+```
+
+<!-- cache_translation_check_cmn_9e2dce0cc7395f2a8bde80a4d48463efe39601d2b3d5a8f7b444b72744f59450 -->
+```
+        <source>Load Wallets</source>
+        <extracomment>Title of progress window which is displayed when wallets are being loaded.</extracomment>
+        <translation> 加载钱包</translation>
+    
+ERR
+The translation contains a stray leading non-breaking space, which is a whitespace formatting issue. The wording itself is fine.
+
+Correct translation:
+加载钱包
+```
+
+<!-- cache_translation_check_cmn_f358e27c2374e039b702204bb417d9ca6c7aec3f3eb46f9b815071a1f568a76a -->
+```
+        <source>Loading wallets…</source>
+        <extracomment>Descriptive text of the load wallets progress window which indicates to the user that wallets are currently being loaded.</extracomment>
+        <translation> 載入錢包中...</translation>
+    
+ERR
+The translation contains an unwanted leading non-breaking space and uses three dots instead of the ellipsis character used in the source.
+
+Correct translation:
+正在載入錢包…
+```
+
+<!-- cache_translation_check_cmn_6ccbcdcc6a5c647e054268560bf2d5033d8c129a0ccc4ae94dffc4deefea4412 -->
+```
+        <source>Opening Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the open wallet progress window which indicates to the user which wallet is currently being opened.</extracomment>
+        <translation>打开钱包&lt;b&gt;%1&lt;/b&gt;...</translation>
+    
+ERR
+The translation is accurate, but it uses three dots "..." instead of the single ellipsis character "…", which is used in the source and preferred for consistency.
+
+Correct translation:
+打开钱包<b>%1</b>…
 ```
 
 <!-- cache_translation_check_cmn_07b24e731acfde530620e37ba80e4dd4623efd6c803f490116295af92f3094db -->
@@ -124,25 +235,25 @@ Correct translation:
 當你點擊確定後，%1 將開始下載並處理完整的 %4 區塊鏈（%2 GB），從 %4 最初於 %3 啟動時的最早交易開始。
 ```
 
-<!-- cache_translation_check_cmn_56b8225dec67e3fc39f92c0309eebb7e8c80b10b7e006ad5546daaaf877a2190 -->
+<!-- cache_translation_check_cmn_5ce60f1169385d2d3210dc1d475c5b695a1b7c16537f480bdcad64d137f55af0 -->
 ```
-        <source>Your current balance in watch-only addresses</source>
-        <translation>您当前在仅观察观察地址中的余额</translation>
+        <source>Size of &amp;database cache</source>
+        <translation>資料庫快取的大小 </translation>
     
 ERR
-The translation is repetitive with "观察观察地址" ("watch watch address"), which is erroneous. It should be "仅观察地址" for "watch-only addresses".
+The translation is missing the '&' character which indicates the shortcut key and should appear exactly once as in the source text.
 
 Correct translation:
-您当前在仅观察地址中的余额
+資料庫快取(&amp;)的大小
 ```
 
-<!-- cache_translation_check_cmn_62164728b6a7c177c1d04a3a116d70629560c46f15c563b6acbb30bb130c7c74 -->
+<!-- cache_translation_check_cmn_51edd678fb1b28ef4e527ffcec2694e07d840d24ec22fcc06e2267b6fa704485 -->
 ```
         <source>Save…</source>
-        <translation>拯救...</translation>
+        <translation>保存...</translation>
     
 ERR
-The translation of "Save…" as "拯救..." is incorrect in Chinese (cmn). "拯救" means "to rescue" rather than "to save" in the sense of saving a file. The correct term is "保存…".
+The source uses the ellipsis character (…) while the translation uses three dots (...). Match the formatting.
 
 Correct translation:
 保存…
@@ -185,6 +296,18 @@ Correct translation:
 Outbound 地址获取：短暂用于请求地址
 ```
 
+<!-- cache_translation_check_cmn_8b5955a6a1e135aae44745f02687277c90bd3df0dd2fd8b7f3f4e99139bb5b6a -->
+```
+        <source>1 d&amp;ay</source>
+        <translation>一天</translation>
+    
+ERR
+The translation is missing the shortcut key indicator '&'. It should appear exactly once, as in the source. Also, while "一天" is semantically correct, it does not represent the ampersand shortcut.
+
+Correct translation:
+1 &天
+```
+
 <!-- cache_translation_check_cmn_0b3b3af4650d33e99b1d342a24ed4dc6f10b1492d6bddc9b83ce8b4485e94a60 -->
 ```
         <source>Ban for</source>
@@ -206,28 +329,28 @@ Choose format according to context: if a duration is appended, e.g., "Ban for %1
 禁止%1
 ```
 
-<!-- cache_translation_check_cmn_708501aa83c3ed6c47c422f83102d8e9be25b9847079d344191965e14b243720 -->
+<!-- cache_translation_check_cmn_a6e9d6abcc4431799e73f806331c34124d5e3cf2ac80d23af4c298249010502b -->
 ```
-        <source>Copy amount</source>
+        <source>Copy &amp;amount</source>
         <translation>复制和数量</translation>
     
 ERR
-The translation is inaccurate. The English phrase "Copy amount" means to copy the numerical value/amount, but the translation "复制和数量" means "copy and amount", which is incorrect. The conjunction "和" ("and") is erroneous here.
+The translation "复制和数量" is inaccurate. The "&amp;" in the source indicates a shortcut key, not the word "and". In 'cmn' (Mandarin Chinese), the correct translation should retain the shortcut function. A common approach is to place the shortcut before the main word using an underlined character, but since "&" can appear anywhere, using it at the start is fine.
 
 Correct translation:
-复制金额
+复制金额(&A)
 ```
 
-<!-- cache_translation_check_cmn_eb4b0575aa4a9311e0c41e787a33ebcbdc9fa7d5537c674d0efab7eb4365a1aa -->
+<!-- cache_translation_check_cmn_67c3f8f6e88135054820493928b07a82f5a74b3e8cd277f50c32446c00b7376c -->
 ```
-        <source>Copy Address</source>
-        <translation>複製 地址</translation>
+        <source>Date</source>
+        <translation> 日期</translation>
     
-ERR  
-There is an unnecessary space between "複製" and "地址". In Chinese, there should not be a space.
+ERR
+The translation contains an unwanted leading space (likely a non-breaking space), which is a whitespace format issue.
 
 Correct translation:
-复制地址
+日期
 ```
 
 <!-- cache_translation_check_cmn_070c587fbb4ed6d06fe006cbce66dae59f8480ae60cbd56f50e09c90fb4e8ad5 -->
@@ -264,16 +387,76 @@ Correct translation:
 要將付款發送到的比特幣地址
 ```
 
-<!-- cache_translation_check_cmn_708501aa83c3ed6c47c422f83102d8e9be25b9847079d344191965e14b243720 -->
+<!-- cache_translation_check_cmn_67c3f8f6e88135054820493928b07a82f5a74b3e8cd277f50c32446c00b7376c -->
 ```
-        <source>Copy amount</source>
+        <source>Date</source>
+        <translation> 日期</translation>
+    
+ERR
+The translation contains an unwanted leading space (likely a non-breaking space), which is a whitespace format issue.
+
+Correct translation:
+日期
+```
+
+<!-- cache_translation_check_cmn_67c3f8f6e88135054820493928b07a82f5a74b3e8cd277f50c32446c00b7376c -->
+```
+        <source>Date</source>
+        <translation> 日期</translation>
+    
+ERR
+The translation contains an unwanted leading space (likely a non-breaking space), which is a whitespace format issue.
+
+Correct translation:
+日期
+```
+
+<!-- cache_translation_check_cmn_a6e9d6abcc4431799e73f806331c34124d5e3cf2ac80d23af4c298249010502b -->
+```
+        <source>Copy &amp;amount</source>
         <translation>复制和数量</translation>
     
 ERR
-The translation is inaccurate. The English phrase "Copy amount" means to copy the numerical value/amount, but the translation "复制和数量" means "copy and amount", which is incorrect. The conjunction "和" ("and") is erroneous here.
+The translation "复制和数量" is inaccurate. The "&amp;" in the source indicates a shortcut key, not the word "and". In 'cmn' (Mandarin Chinese), the correct translation should retain the shortcut function. A common approach is to place the shortcut before the main word using an underlined character, but since "&" can appear anywhere, using it at the start is fine.
 
 Correct translation:
-复制金额
+复制金额(&A)
+```
+
+<!-- cache_translation_check_cmn_ad835176286ec5001b2d46ca1cecbac97741bc5c25c342e04972405d7b6424e8 -->
+```
+        <source>&amp;Show transaction details</source>
+        <translation>顯示交易明細</translation>
+    
+ERR
+The translation is missing the '&' which indicates the shortcut key. It must appear exactly once in the translation, placed appropriately for Chinese users.
+
+Correct translation:
+&顯示交易明細
+```
+
+<!-- cache_translation_check_cmn_67c3f8f6e88135054820493928b07a82f5a74b3e8cd277f50c32446c00b7376c -->
+```
+        <source>Date</source>
+        <translation> 日期</translation>
+    
+ERR
+The translation contains an unwanted leading space (likely a non-breaking space), which is a whitespace format issue.
+
+Correct translation:
+日期
+```
+
+<!-- cache_translation_check_cmn_b8e3c443228cffa967a07ac27cf811742669784cf54541470bf150181540b9fb -->
+```
+        <source>&amp;Export</source>
+        <translation> 导出(&amp;E)</translation>
+    
+ERR
+Leading whitespace before the text. Remove it.
+
+Correct translation:
+导出(&amp;E)
 ```
 
 <!-- cache_translation_check_cmn_c7322b733fb6e07eeb0c5a4f89faf9d956509351ec4b36c6ad2b25b6f1a6acf6 -->
@@ -308,6 +491,78 @@ The translation has issues:
 
 Correct translation:
 提供了多个Onion绑定地址。将为自动创建的Tor onion服务使用%s。
+```
+
+<!-- cache_translation_check_cmn_90fda8f6932228d174e380ed1c7df7be7ae98d00ff1e42c56766226c0f6bb80a -->
+```
+        <source>Option '-checkpoints' is set but checkpoints were removed. This option has no effect.</source>
+        <translation>选项“-checkpoints”已设置，但检查点已被移除。该选项不再生效。 </translation>
+    
+ERR
+Trailing whitespace at the end of the translation.
+
+Correct translation:
+选项“-checkpoints”已设置，但检查点已被移除。该选项不再生效。
+```
+
+<!-- cache_translation_check_cmn_d98c1c5ff4f9281f53e84a4630bcb6846485c6649d59a458ddb76aab8f1f87d3 -->
+```
+        <source>Option '-maxorphantx' is set but no longer has any effect (see release notes). Please remove it from your configuration.</source>
+        <translation>选项“-maxorphantx”已设置，但已不再生效（参见发行说明）。请从您的配置中移除该选项。 </translation>
+    
+ERR
+There is a trailing space at the end of the translation, which is a whitespace formatting issue.
+
+Correct translation:
+选项“-maxorphantx”已设置，但已不再生效（参见发行说明）。请从您的配置中移除该选项。
+```
+
+<!-- cache_translation_check_cmn_bf17affb0acd6713b9f6b2167f99961dbd921c30426c9f4b5f40c6272c0fa297 -->
+```
+        <source>Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.</source>
+        <translation>选项“-datacarrier”或“-datacarriersize”已设置，但已标记为弃用。它们将在未来版本中移除。 </translation>
+    
+ERR
+There is a trailing whitespace at the end of the translation.
+
+Correct translation:
+选项“-datacarrier”或“-datacarriersize”已设置，但已标记为弃用。它们将在未来版本中移除。
+```
+
+<!-- cache_translation_check_cmn_fc44b6029c7dbac45686cc79b705b8c897f4c829f9f3f5057b0a8d2f641e4b4e -->
+```
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of a pruned node)</source>
+        <translation>修剪：上次钱包同步超出了已修剪的数据范围。您需要执行“-reindex”（对于已修剪节点，需要重新下载整个区块链）。 </translation>
+    
+ERR
+The translation contains a trailing space at the end, which is a whitespace formatting issue. Also, quoting -reindex is unnecessary.
+
+Correct translation:
+修剪：上次钱包同步超出了已修剪的数据范围。您需要执行 -reindex（对于已修剪节点，需要重新下载整个区块链）。
+```
+
+<!-- cache_translation_check_cmn_eb968025b9240f22a7d27bd23c989a8fc00fef0ee8185f551adcffb7a2452904 -->
+```
+        <source>-paytxfee is deprecated and will be fully removed in v31.0.</source>
+        <translation>“-paytxfee”已弃用，并将在 v31.0 中完全移除。 </translation>
+    
+ERR
+There is an unnecessary trailing space at the end of the translation.
+
+Correct translation:
+“-paytxfee”已弃用，并将在 v31.0 中完全移除。
+```
+
+<!-- cache_translation_check_cmn_1d81021bd0f5e08586ea41fd27117444164eb2a4027d5da2c4780a799bdfbce5 -->
+```
+        <source>Could not top up scriptPubKeys</source>
+        <translation>无法补充脚本公钥</translation>
+    
+ERR
+The term “脚本公钥” is nonstandard and potentially misleading; the commonly accepted translation for scriptPubKey is “公钥脚本”.
+
+Correct translation:
+无法补充公钥脚本
 ```
 
 <!-- cache_translation_check_cmn_ba4b31fafa76b68ee6fefc8e8b4a7ed3d6fda25fd4bbf4dacf08fa9950112849 -->
@@ -395,6 +650,53 @@ The translation incorrectly introduces an extra '1' before the format specifier 
 Correct translation:
 钱包文件创建失败：%s
 ```
+
+<!-- cache_translation_check_cmn_e3222f6658880630ea81b0a0cd483e7c2b2346ce99656d5b087dfe9f4559eb98 -->
+```
+        <source>Error loading %s: Wallet is a legacy wallet. Please migrate to a descriptor wallet using the migration tool (migratewallet RPC).</source>
+        <translation>加载 %s时出错：钱包为传统钱包。请使用迁移工具（migratewallet RPC）迁移到描述符钱包。</translation>
+    
+ERR
+Missing space around the format specifier causes a minor whitespace issue. It should be "加载 %s 时出错".
+
+Correct translation:
+加载 %s 时出错：钱包为传统钱包。请使用迁移工具（migratewallet RPC）迁移到描述符钱包。
+```
+
+<!-- cache_translation_check_cmn_7ac1efa37e812c3d7101f033238c56c685efb44247b49ad8368f92f5497fdb8a -->
+```
+        <source>Unrecognized descriptor found. Loading wallet %s
+
+The wallet might have been created on a newer version.
+Please try running the latest software version.
+</source>
+        <translation>发现无法识别的描述符。正在加载钱包 %s 
+
+该钱包可能是在较新版本中创建的。 
+请尝试运行最新的软件版本。
+</translation>
+    
+ERR
+There are trailing spaces after "%s" and after "创建的。" which are unnecessary whitespace issues.
+
+Correct translation:
+发现无法识别的描述符。正在加载钱包 %s
+
+该钱包可能是在较新版本中创建的。
+请尝试运行最新的软件版本。
+```
+
+<!-- cache_translation_check_cmn_3893aa5cc96d3a3e6fda580d5592a8e0694e08745e5bb4cb9823521e2db3de13 -->
+```
+        <source>Invalid -proxy address or hostname, ends with '=': '%s'</source>
+        <translation>无效的 -proxy 地址或主机名，以“=”结尾：“%s”。</translation>
+    
+ERR
+The translation adds an extra full stop at the end that is not present in the source, which can cause inconsistencies in UI strings.
+
+Correct translation:
+无效的 -proxy 地址或主机名，以“=”结尾：“%s”
+```
 </details>
 
-Number of issues: 29.
+Number of issues: 53.

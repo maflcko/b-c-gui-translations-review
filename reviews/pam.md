@@ -1,24 +1,31 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>pam</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bpam%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bpam%5D%20request)
 
 
-<!-- cache_translation_check_pam_6981c1b5a021e132b156421002b1a13bc384f4241656893fa1019907f70668e8 -->
+<!-- cache_translation_check_pam_9799f26330f097a59beef6210e832325362bbddd18fa25e15df0fab0c6476f87 -->
 ```
-        <source>Export</source>
-        <translation>IExport</translation>
+        <source>Copy &amp;Label</source>
+        <translation>Kopyan ing &amp;Label</translation>
     
-ERR
-The translation incorrectly includes an extra "I" at the beginning ("IExport"), which is not correct in Kapampangan ('pam'). The word "Export" is commonly borrowed as-is or can be rendered as "Iluwal" (to bring out/export).
+SPAM
+The translation provided is in Kapampangan ('pam' language tag), but "Kopyan ing &Label" actually means "Copy the Label" and uses the particle "ing" which is unique to Kapampangan—so it is likely not spam. However, a deeper check is necessary:
 
-Correct translation:
-Iluwal
+- "Kopyan ing" means "Copy the" in Kapampangan, which seems appropriate.
+- The placement of & is preserved exactly once, which is correct.
+- Whitespace and format seem correct.
+
+Upon closer inspection, the translation is reasonably appropriate and not in an unrelated language.
+
+Therefore:
+
+NO
 ```
 
 <!-- cache_translation_check_pam_9b8fdc24229bb0759ad3f4eda51427028b6c6df448654ffe6c438a872790e876 -->
@@ -120,6 +127,43 @@ Correct translation:
 bersyun
 ```
 
+<!-- cache_translation_check_pam_97b298e9aee4b5548d14bfa8b73172dffee604fd9aae91da921eae90da4f179d -->
+```
+        <source>M&amp;inimize on close</source>
+        <translation>P&amp;alatian istung isara</translation>
+    
+ERR
+The translation "Palatian istung isara" does not correctly convey the meaning of "Minimize on close", which refers to the application minimizing to the tray or background when the close button is pressed. The translation seems to be inaccurate in both lexical choice (palatian = 'Choose', istung = 'session', isara = 'close') and formatting.
+
+Correct translation:
+I-minimize king pamagsara
+```
+
+<!-- cache_translation_check_pam_71d0f116f71724136796c4104d26ea3295bbc73a447512a7ea2d4c80892ba873 -->
+```
+        <source>User Interface &amp;language:</source>
+        <translation>Amanu na ning user interface:</translation>
+    
+ERR
+The translation omits the word "language" and the shortcut key indicator (&). It should refer to the "language" setting for the user interface, and "&" must appear exactly once to indicate the shortcut key.
+
+Correct translation:
+&Language ning User Interface:
+```
+
+<!-- cache_translation_check_pam_f94956b361e96ad1f187e8e977fc672aae4cc2552ab4513263074fa45860de50 -->
+```
+        <source>&amp;Cancel</source>
+        <translation>I-&amp;Cancel</translation>
+    
+ERR
+The translation simply copies the English word "Cancel" and adds an "I-" prefix, which is not a translation into 'pam' (Pampangan/Kapampangan). The translation should use the Kapampangan equivalent.
+
+Correct translation:
+&amp;Ikanxela
+(Note: If the typical Pampangan translation for "Cancel" is not "Ikanxela", adjust as appropriate after consulting native resources. "Ikanxela" is derived by analogy from Tagalog "Kanselahin", as "pam" does not have a standardized technical vocabulary for such interface terms.)
+```
+
 <!-- cache_translation_check_pam_90a2048d782ca2840c6908902d10f437606ddca7f27c35e0380c401f5c6e3d42 -->
 ```
         <source>The supplied proxy address is invalid.</source>
@@ -135,36 +179,46 @@ A better and direct translation would be:
 Ing ibinigay a proxy address alang bisa.
 ```
 
-<!-- cache_translation_check_pam_1ceda774b1fcb11502b2c97752facb10ef7023b370c5b6d6b46e5c6a75c82fa6 -->
+<!-- cache_translation_check_pam_7a9d4696cce1e4559fa35e61aeda6de228671f6fe47d3b03ce00f7640e07e654 -->
 ```
-        <source>Clear All</source>
-        <translation>I-Clear Eganagana</translation>
+        <source>Clear &amp;All</source>
+        <translation>I-Clear &amp;Eganagana</translation>
     
 ERR
-The translation "I-Clear Eganagana" is problematic. "Eganagana" does not appear to be a word in Kapampangan (pam), and "I-Clear" is an English borrowing with an unnecessary "I-". A better Kapampangan translation would use native or more commonly understood terms. "Clear" in this context likely means "limpia" (clean) or "alisan" (remove).
+The translation "I-Clear &amp;Eganagana" is problematic for the following reasons:
+- 'pam' refers to the Kapampangan language. The translation uses a structure ("I-Clear") that is not Kapampangan but influenced by Filipino/Tagalog or English.
+- "Eganagana" phonetically resembles "lahat" (Tagalog for 'all') but is not a Kapampangan word. In Kapampangan, 'all' is usually "eganaganang" or "anggang".
+- "Clear" should be translated or left as is only if it is commonly loaned, but the "I-" prefix is not standard for Kapampangan commands.
+- Also, there is no whitespace issue or spam/unwanted content, but the translation does not sound natural or accurate in Kapampangan.
 
 Correct translation:
-Alisan Damu
-or
-I-limpia ngan
+"I-Clear &Ampong Eganaganang" or, more accurately, "I-Clear &Ampong Eganaganang" (to retain shortcut &). However, the most natural would be: "Limpiu &Ampong Eganaganang" (Limpiu = Clean/Clear, Ampong = and, Eganaganang = All), or simply "Limpiu &Eganaganang".
 
-(Note: Kapampangan often borrows from Tagalog or Spanish, but "I-Clear Eganagana" is not natural or accurate. "Damu" means "all" in Kapampangan.)
+So, "Limpiu &Eganaganang" would be more correct.
+
+Correct translation:
+Limpiu &Eganaganang
 ```
 
-<!-- cache_translation_check_pam_1ceda774b1fcb11502b2c97752facb10ef7023b370c5b6d6b46e5c6a75c82fa6 -->
+<!-- cache_translation_check_pam_7a9d4696cce1e4559fa35e61aeda6de228671f6fe47d3b03ce00f7640e07e654 -->
 ```
-        <source>Clear All</source>
-        <translation>I-Clear Eganagana</translation>
+        <source>Clear &amp;All</source>
+        <translation>I-Clear &amp;Eganagana</translation>
     
 ERR
-The translation "I-Clear Eganagana" is problematic. "Eganagana" does not appear to be a word in Kapampangan (pam), and "I-Clear" is an English borrowing with an unnecessary "I-". A better Kapampangan translation would use native or more commonly understood terms. "Clear" in this context likely means "limpia" (clean) or "alisan" (remove).
+The translation "I-Clear &amp;Eganagana" is problematic for the following reasons:
+- 'pam' refers to the Kapampangan language. The translation uses a structure ("I-Clear") that is not Kapampangan but influenced by Filipino/Tagalog or English.
+- "Eganagana" phonetically resembles "lahat" (Tagalog for 'all') but is not a Kapampangan word. In Kapampangan, 'all' is usually "eganaganang" or "anggang".
+- "Clear" should be translated or left as is only if it is commonly loaned, but the "I-" prefix is not standard for Kapampangan commands.
+- Also, there is no whitespace issue or spam/unwanted content, but the translation does not sound natural or accurate in Kapampangan.
 
 Correct translation:
-Alisan Damu
-or
-I-limpia ngan
+"I-Clear &Ampong Eganaganang" or, more accurately, "I-Clear &Ampong Eganaganang" (to retain shortcut &). However, the most natural would be: "Limpiu &Ampong Eganaganang" (Limpiu = Clean/Clear, Ampong = and, Eganaganang = All), or simply "Limpiu &Eganaganang".
 
-(Note: Kapampangan often borrows from Tagalog or Spanish, but "I-Clear Eganagana" is not natural or accurate. "Damu" means "all" in Kapampangan.)
+So, "Limpiu &Eganaganang" would be more correct.
+
+Correct translation:
+Limpiu &Eganaganang
 ```
 
 <!-- cache_translation_check_pam_b4e316528b799a0a6d8938d9779925723bc1489bfd8251ef080898e0f7daa48f -->
@@ -204,18 +258,6 @@ alilan
 or
 e totoo
 ```
-
-<!-- cache_translation_check_pam_6981c1b5a021e132b156421002b1a13bc384f4241656893fa1019907f70668e8 -->
-```
-        <source>Export</source>
-        <translation>IExport</translation>
-    
-ERR
-The translation incorrectly includes an extra "I" at the beginning ("IExport"), which is not correct in Kapampangan ('pam'). The word "Export" is commonly borrowed as-is or can be rendered as "Iluwal" (to bring out/export).
-
-Correct translation:
-Iluwal
-```
 </details>
 
-Number of issues: 15.
+Number of issues: 17.

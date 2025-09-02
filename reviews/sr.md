@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>sr</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bsr%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bsr%5D%20request)
 
 
 <!-- cache_translation_check_sr_48df7cc335dbe779a8dc38d57a7fef7d3e72fe7bd58d739ee04ec6476a7cbf98 -->
@@ -21,16 +21,31 @@ Correct translation:
 Одаберите адресу на коју ћете примити новчиће
 ```
 
-<!-- cache_translation_check_sr_2628147a4d2c1a795db2bdaaf3f6ac246dd3c86d2848558df0ecf637592e31f7 -->
+<!-- cache_translation_check_sr_fe139c62a0de1618c49d9e08cd49394c7f7148c140e4a7a27b4bf942bc3958d5 -->
 ```
-        <source>Copy Label</source>
-        <translation>Копирај  Обележи</translation>
+        <source>&amp;Copy Address</source>
+        <translation>&amp;Копирај Адресу</translation>
     
 ERR
-There is a double space between "Копирај" and "Обележи". Furthermore, "Copy Label" should be translated as "Копирај ознаку" (where "ознака" is the appropriate translation for "label" in this context), not "Обележи" ("Обележи" means "Mark" or "Highlight").
+Translation is mostly correct but has inconsistent capitalization. In Serbian Cyrillic UI labels the second word should be lowercase ("адресу"). The ampersand is present exactly once, which is correct.
 
 Correct translation:
-Копирај ознаку
+&Копирај адресу
+```
+
+<!-- cache_translation_check_sr_c1a7d5de7df59bc21d3304b8b7bd44ada476251a40c6607a771152bbb30a041f -->
+```
+        <source>Copy &amp;Label</source>
+        <translation>Копирај &amp; Обележи</translation>
+    
+ERR
+The Serbian translation is awkward and has spacing issues. Problems:
+- The wording "Копирај Обележи" is semantically odd (literally "Copy Mark/Label" but phrased unnaturally).
+- The & is written as &amp; (which is correct in XML) but surrounded by spaces ("Копирај &amp; Обележи"), introducing an extra space after the ampersand and before the next word. The original had no space between & and the following word; the shortcut marker should appear immediately before the shortcut letter.
+- Prefer a more natural Serbian phrase for "Copy Label" such as "Копирај ознаку" and place the & directly before the shortcut letter.
+
+Corrected translation (XML-safe):
+<translation>Копирај &amp;Ознаку</translation>
 ```
 
 <!-- cache_translation_check_sr_15ebeb459b08e31b755855b78a04134bb33cd2275e96967ab6d6d8995e81c811 -->
@@ -112,6 +127,54 @@ Correct translation:
 Креирај нови новчаник
 ```
 
+<!-- cache_translation_check_sr_fff5273037a07b7da18ea71a61376e65170d4c4776d8d2610f8acfd3999f0d4c -->
+```
+        <source>&amp;Encrypt Wallet…</source>
+        <translation>&amp;Енкриптуј новчаник</translation>
+    
+ERR
+The translation is correct Serbian (Cyrillic) and the ampersand shortcut is preserved, but it omits the ellipsis (…) present in the source. Add the ellipsis to match the source.
+
+Correct translation:
+&amp;Енкриптуј новчаник…
+```
+
+<!-- cache_translation_check_sr_f11237f7fa112919b8fb5c26758d3d2f3eebab0d7eab6db03f0a9bd51b053129 -->
+```
+        <source>&amp;Backup Wallet…</source>
+        <translation>&amp;Резервна копија новчаника</translation>
+    
+ERR
+The translation is mostly correct Serbian, and the ampersand for the shortcut is present exactly once. However it omits the trailing ellipsis (…) from the source.
+
+Correct translation:
+&amp;Резервна копија новчаника…
+```
+
+<!-- cache_translation_check_sr_db0498fd505b7b99d8f5435bf20656e0d2423847202599f303cdcb18e620b8c8 -->
+```
+        <source>&amp;Change Passphrase…</source>
+        <translation>&amp;Измени приступну фразу</translation>
+    
+ERR
+The translation is missing the trailing ellipsis (…) present in the source. Also stylistically "Измени приступну фразу" is acceptable, but keep the ellipsis for consistency with the source UI.
+
+Correct translation:
+&amp;Измени приступну фразу…
+```
+
+<!-- cache_translation_check_sr_4b72daf23e278c306a08d5af3792168541fbb18e6efa5b2d53bd2fa477d44c46 -->
+```
+        <source>Sign &amp;message…</source>
+        <translation>Потпиши &amp;поруку</translation>
+    
+ERR
+The translation is mostly correct Serbian (Cyrillic) and the ampersand/shortcut is present, but it is missing the ellipsis (…) from the source. The source has an ellipsis after "message" which should be preserved.
+
+Correct translation:
+Потпиши &amp;поруку…
+```
+
 <!-- cache_translation_check_sr_32d62ec62d1a28598065c49b6e80fb56d60282ab997e9dab3b81b1adf929e8c4 -->
 ```
         <source>Sign messages with your Bitcoin addresses to prove you own them</source>
@@ -129,17 +192,57 @@ Correct translation:
 Потпишите поруке својим Биткоин адресама да докажете да сте њихов власник
 ```
 
-<!-- cache_translation_check_sr_a416968fa0733193f3a53549641c22adba8b4c692b207e22ea5883ca8cc8d88c -->
+<!-- cache_translation_check_sr_689f9902aaf291b9c3c0d1c5168b7a037fb0168e036a7873aec3145d84f8eb2a -->
 ```
-        <source>Load PSBT from clipboard…</source>
+        <source>&amp;Verify message…</source>
+        <translation>&amp;Верификуј поруку</translation>
+    
+ERR
+The translation is mostly correct (Serbian Cyrillic, ampersand present), but it is missing the trailing ellipsis (…) present in the source.
+
+Correct translation:
+&amp;Верификуј поруку…
+```
+
+<!-- cache_translation_check_sr_f7ce4465cb80021c706e81004941157e761bb5daf415dc76d95ade967bc048fe -->
+```
+        <source>&amp;Load PSBT from file…</source>
+        <translation>&amp;Учитава ”PSBT” из датотеке…</translation>
+    
+ERR
+The Serbian translation uses the wrong verb form ("Учитава" = "loads" in present tense) and encloses PSBT in nonstandard quotation marks. It should use an imperative/infinitive form suitable for a menu item and not add quotes around PSBT. The ampersand is present once which is correct.
+
+Correct translation:
+&Учитај PSBT из датотеке…
+```
+
+<!-- cache_translation_check_sr_f5c174e0275310d002193f453e96288c449bf659654de2dc7cc0292fd16c5347 -->
+```
+        <source>Open &amp;URI…</source>
+        <translation>Отвори &amp;URI</translation>
+    
+ERR
+The translation is mostly correct (Cyrillic Serbian), but it omits the trailing ellipsis (…) present in the source. Also ensure the ampersand for the shortcut remains exactly once.
+
+Correct translation:
+Отвори &amp;URI…
+```
+
+<!-- cache_translation_check_sr_d8fcd325544250661ba66f9dcff88d01533d58e3bbff8e4e6b9e68d16c72d496 -->
+```
+        <source>Load PSBT from &amp;clipboard…</source>
         <translation>Учитај ”PSBT” из привремене меморије</translation>
     
 ERR
-The translation uses quotation marks around "PSBT" instead of leaving it unquoted, which isn't necessary or idiomatic in Serbian. Also, "привремена меморија" is technically correct for "clipboard", but "клипборд" is more recognizable in the context of software UI, or "међу меморију" is sometimes used.
-The ellipsis in the source is a single Unicode character (…); this is missing in the translation.
+Problems:
+- The translation is missing the required '&' shortcut marker (the source contains "&clipboard" so the translation must include a single '&').
+- The source ends with an ellipsis (…) which is missing in the translation.
+- Unnecessary quotation marks around PSBT; not required.
 
-Correct translation:
-Учитај PSBT из клипборда…
+Suggested correct translation (include one '&' and the ellipsis):
+Учитај PSBT из &привремене меморије…
+
+(You can place the '&' elsewhere if a different shortcut placement is desired, e.g. &Учитај PSBT из привремене меморије…)
 ```
 
 <!-- cache_translation_check_sr_ecf81414049c5ffc6667451457e92e7ce32b74894cdfff7ee7cd45d31230a6ec -->
@@ -201,6 +304,56 @@ There is a typo in the translation: "јс" should be "је".
 
 Correct translation:
 Новчаник је &lt;b&gt;шифрован&lt;/b&gt; и тренутно &lt;b&gt;закључан&lt;/b&gt;
+```
+
+<!-- cache_translation_check_sr_d3c67ee6f7daa4d5ec3f613ccf586301db99122f3390c8488657d75dbb5c4432 -->
+```
+        <source>Copy &amp;label</source>
+        <translation>Копирај &amp;означи</translation>
+    
+ERR
+The translation uses the verb "означи" (imperative "mark!") instead of the noun in accusative required by "Copy label". It is therefore incorrect/odd in Serbian.
+
+Correct translation:
+Копирај &ознаку
+```
+
+<!-- cache_translation_check_sr_4976c57c852456d2428e3c8dd6019732c4fa415d80d052627d4b252a3adb4504 -->
+```
+        <source>Copy transaction &amp;ID and output index</source>
+        <translation>Kopiraj transakciju &amp;ID i izlazni index</translation>
+    
+ERR
+The translation has grammatical/word-choice issues. "transakciju &ID" is awkward — the genitive "ID transakcije" is correct in Serbian, and "index" should be "indeks". The ampersand exists once (good) but should be placed with the corrected wording.
+
+Correct translation:
+Kopiraj &ID transakcije i izlazni indeks
+```
+
+<!-- cache_translation_check_sr_0e3a2093f7a81f0eb8be8107ee3cd0e220d482f571a1f346de0aab09f9507d17 -->
+```
+        <source>L&amp;ock unspent</source>
+        <translation>Закључај непотрошено</translation>
+    
+ERR
+The translation is fine in meaning ("Закључај непотрошено" = "Lock unspent"), but it is missing the required shortcut ampersand (&). The source contains a single & and the translation must also contain exactly one.
+
+Correct translation (with ampersand):
+&Закључај непотрошено
+
+(Alternatively, for slightly more natural wording: "&Закључај непотрошена средства".)
+```
+
+<!-- cache_translation_check_sr_f28249d0c3e5b5f1afdeb988a8cca49aa674f8948e82f1a3507e5b067cb3a74a -->
+```
+        <source>&amp;Unlock unspent</source>
+        <translation>Откључај непотрошено</translation>
+    
+ERR
+The translation is missing the shortcut ampersand (&) and has a grammatical issue: "непотрошено" is awkward/unnatural in Serbian in this context. It should also include the & exactly once.
+
+Corrected translation (with ampersand and more natural phrasing):
+&Откључај непотрошене
 ```
 
 <!-- cache_translation_check_sr_99505440570a1684db35109575c7f69460952f2c22e032d1c62b881db24be233 -->
@@ -334,16 +487,40 @@ Correct translation:
 Налепи адресу из клипборда
 ```
 
-<!-- cache_translation_check_sr_efc9094a83a62dfceb458d9102660c382b4b4d6e390718b46f626e44c43f1e67 -->
+<!-- cache_translation_check_sr_2e5552db7c9227a626eed1a9be537345e49294d1a0aa129317b27378a6284845 -->
 ```
-        <source>Number of script verification threads</source>
+        <source>&amp;Main</source>
+        <translation>&amp;Главни</translation>
+    
+ERR
+"Главни" is not the correct form in Serbian for a standalone label "Main". Use the neuter or feminine form depending on context; a safe UI translation is "&Главно" (or "&Главна" if the target noun is feminine, e.g. "страна/страница").
+
+Correct translation suggestion:
+&Главно
+```
+
+<!-- cache_translation_check_sr_6c2e6271f15953db62c464454a57235efecc5c15f1f70df0f453cae06add0d8b -->
+```
+        <source>Size of &amp;database cache</source>
+        <translation>Величина кеша базе података</translation>
+    
+ERR
+The translation is missing the shortcut ampersand (&) present in the source. Otherwise the Serbian text is acceptable.
+
+Correct translation (with & placed before the word corresponding to "database"):
+Величина кеша &базе података
+```
+
+<!-- cache_translation_check_sr_4a607db8c92fdfba8d7090eca4db9848cd71ec535445ae2f8ddad7a83c07c5ad -->
+```
+        <source>Number of script &amp;verification threads</source>
         <translation>Број скрипти и CPU за верификацију</translation>
     
 ERR
-The translation is inaccurate. The English source says "Number of script verification threads," which refers specifically to the number of processing threads used for script verification. The provided Serbian translation, "Број скрипти и CPU за верификацију," translates back as "Number of scripts and CPU for verification," which introduces erroneous and unnecessary elements ("CPU" and "scripts" instead of "threads").
+The translation changes the meaning (it says "scripts and CPU for verification" instead of "script verification threads") and it does not preserve the shortcut (&). 
 
 Correct translation:
-Број нити за верификацију скрипти
+Број нити за &верификацију скрипти
 ```
 
 <!-- cache_translation_check_sr_bed8f81c88c55e0761966617cba9308895643eeee3ca644a5ddb9d6b4b710345 -->
@@ -362,20 +539,30 @@ Correct translation:
 Показује да ли се испоручени подразумевани SOCKS5 прокси користи за повезивање са чворовима преко ове врсте мреже.
 ```
 
-<!-- cache_translation_check_sr_039eeee3a4042e52a70d988657fd5fb9e800f56eea9705640ae0b2ac6bb6f549 -->
+<!-- cache_translation_check_sr_d693e0ad3eaa0c151f558614340d015b1c6c481884988075b09e66fc886a489d -->
 ```
-        <source>Prune block storage to</source>
-        <translation>Сакрати block складиштење на</translation>
+        <source>&amp;Reset Options</source>
+        <translation>&amp;Ресет Опције</translation>
     
 ERR
-The translation partially translates the text: "block storage" is left in English, while it should be in Serbian. Additionally, the word order is odd, and the infinitive "Prune" is usually rendered as an imperative or descriptive action.
+The translation "&Ресет Опције" is understandable but not natural Serbian. It mixes a transliterated English noun "Ресет" with "Опције" and uses a noun phrase rather than an imperative command as in the source. Also more natural Serbian would use a verb form like "Ресетуј опције" or a native word such as "Поништи опције".
+
+Correct suggestions (keeping the & for the shortcut exactly once):
+- &Ресетуј опције
+- &Поништи опције
+- &Врати подразумеване поставке (if you prefer "Restore defaults" nuance)
+```
+
+<!-- cache_translation_check_sr_7f41849d827d608340c098c4f9b8a465587eee6dac06996db83d4fddcdc5a8a4 -->
+```
+        <source>Prune &amp;block storage to</source>
+        <translation>Сакрати &amp;block складиштење на</translation>
+    
+ERR
+The translation is problematic: it mixes Cyrillic and Latin scripts (keeps "block" in English), and the phrasing is awkward. Also the ampersand is kept as &amp; which is fine in XML, but the translated words should be fully in Serbian and grammatically correct.
 
 Correct translation:
-Скратити складиштење блокова на
-
-Or, to match familiar UI phrasing:
-
-Скратити складиштење блокова на
+<translation>Скрати &amp;складиштење блокова на</translation>
 ```
 
 <!-- cache_translation_check_sr_74677d4ac1ee4dc7fcf0c115c25106213a635c6c27c9bb213bae4cb0082fa90f -->
@@ -390,6 +577,58 @@ Correct translation:
 Враћање ове опције захтева поновно преузимање целокупног блокчејна.
 ```
 
+<!-- cache_translation_check_sr_ac986864f76861a6ef9c01f5d3838dc7fec0d3d479779830b149e23efd8ce7ea -->
+```
+        <source>Enable R&amp;PC server</source>
+        <extracomment>An Options window setting to enable the RPC server.</extracomment>
+        <translation>Omogući R&amp;PC server</translation>
+    
+ERR
+The Serbian verb is misspelled: "Omoguči" uses č instead of the correct ć in "Omogući".
+
+Correct translation:
+Omogući R&amp;PC server
+```
+
+<!-- cache_translation_check_sr_1ab27e36c8536348eb7c3420a8479d51fc27cce7f84584967da69cb1aaa6008f -->
+```
+        <source>Enable coin &amp;control features</source>
+        <translation>Омогући опцију контроле новчића</translation>
+    
+ERR
+The translation is missing the shortcut ampersand (&) and is slightly off in wording ("опцију контроле новчића" = "option of coin control" vs. "coin control features"). Also ensure exactly one & is present.
+
+Correct translation:
+<translation>Омогући функције &контроле новчића</translation>
+```
+
+<!-- cache_translation_check_sr_bf34ccfc39bd144359a77cfe12e64a886fbe72dd7ab4003c76462a81e4285492 -->
+```
+        <source>&amp;Spend unconfirmed change</source>
+        <translation>&amp;Троши непотврђени кусур</translation>
+    
+ERR
+The Serbian translation uses "Троши" (3rd person singular present) which is grammatically incorrect for a UI label. It should be an imperative or infinitive form. Also the ampersand shortcut exists (good).
+
+Correct translation:
+&Трошите непотврђени кусур
+```
+
+<!-- cache_translation_check_sr_6ef8e317e053328bbe6291c14c4e93aef0637ae91b01c35fe835884d7ab0ddb8 -->
+```
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Дозволи долазеће конекције.</translation>
+    
+ERR
+Problems:
+- The translation adds a trailing period (.) while the source has none.
+- The translation is missing the shortcut marker '&' (the source includes a single '&' in "incomin&g"); the translation must include exactly one '&'.
+- Minor style: "конекције" is fine, but ensure no extra punctuation.
+
+Correct translation (with one '&' and no trailing period):
+Дозволи долазеће &конекције
+```
+
 <!-- cache_translation_check_sr_3e1c31380edd8079c4b6f046c1f44bfe3cb4013aa454c18cdbbba954e75326af -->
 ```
         <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
@@ -402,28 +641,69 @@ Correct translation:
 Повежите се на Биткоин мрежу преко SOCKS5 проксија.
 ```
 
-<!-- cache_translation_check_sr_a2574513b092ed2f803aba0277c1dca3c3f1ddd4215430de18e7bd3ec463a878 -->
+<!-- cache_translation_check_sr_9b7e5978450412193556bc34436fe8a0eed34d388df75bd97caba09b39c01fa7 -->
 ```
-        <source>Minimize to the tray instead of the taskbar</source>
-        <translation>минимизирај у доњу линију, уместо у програмску траку</translation>
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>&amp;Конектуј се кроз SOCKS5 прокси (уобичајени прокси):</translation>
     
 ERR
-The translation is inaccurate. In Serbian, "system tray" is commonly referred to as "системску траку" or "област обавештења", while "taskbar" is "програмска трака" or "дно екрана". The phrase "доња линија" is not standard for "tray".
+The translation uses a non-standard anglicized verb "Конектуј се" and awkward noun form "прокси". It should use more natural Serbian phrasing and correct noun case.
 
 Correct translation:
-Минимизуј у системску траку уместо у програмску траку
+&Повежи се преко SOCKS5 проксија (подразумевани прокси):
 ```
 
-<!-- cache_translation_check_sr_65b07b7af96b1d4fd009b562c6fd331cb6c923f20debb37ada8e62b19510ce23 -->
+<!-- cache_translation_check_sr_b748b2b1a00e41e8836275f6b45880a1c456e64c02adbb59dedd7b230c7fbb0e -->
 ```
-        <source>Mined balance in watch-only addresses that has not yet matured</source>
-        <translation>Салдорударења у адресама које су у моду само гледање, који још увек није доспео</translation>
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp;минимизирај у доњу линију, уместо у програмску траку</translation>
     
 ERR
-There is a minor issue with the translation: "Салдорударења" is a concatenation and should be split. The correct term for "mined balance" would be "ископани салдо" or "салдо од рударења". The rest of the translation is generally accurate, but it can be made smoother.
+The Serbian text is understandable but uses an incorrect/awkward phrase "доњу линију" for "tray" and slightly odd word order. Better UI phrasing uses "ладицу" or "sistemska ladica / traka obaveštenja".
+
+Correct translation suggestions:
+&Minimiziraj u ladicu umesto na traku zadataka
+or (Cyrillic):
+&Минимизирај у ладицу уместо на траку задатака
+```
+
+<!-- cache_translation_check_sr_71f2b0363d4d3ec75f8848720b5326054f7c475404f87da0f73693af7e67b949 -->
+```
+        <source>M&amp;inimize on close</source>
+        <translation>Минимизирај при затварању</translation>
+    
+ERR
+The translation is correct in meaning but is missing the shortcut indicator (&). The source contains a single '&' which must be present exactly once in the translation. No other format specifiers or spacing issues.
+
+Correct translation (include one &):
+&Минимизирај при затварању
+```
+
+<!-- cache_translation_check_sr_54d86df503dd736bd5cda8ec5c6cd93126f1bddd3395cfcfce32c9c6c7a0520b -->
+```
+        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
+        <translation>Користите посебан СОЦКС&amp;5 прокси да бисте дошли до вршњака преко услуга Тор онион:</translation>
+    
+ERR
+The translation is understandable but has issues:
+- Uses Cyrillic transliteration "СОЦКС" instead of the common ASCII "SOCKS" (protocol names are usually left in Latin).
+- The phrase "да бисте дошли до вршњака" is awkward in networking context; better phrasing is "за повезивање са вршњацима" or "да бисте се повезали са вршњацима".
+- "Тор онион" is awkward; it's better to use "Tor .onion услуга(ма)" or "Tor .onion услuga" (plural: услуга/услугама).
+
+Corrected translation suggestion:
+Користите посебан SOCKS&amp;5 прокси за повезивање са вршњацима преко Tor .onion услуга:
+```
+
+<!-- cache_translation_check_sr_c110505a3dc04284a04a851dcf6ad6f36ed44404a36cde8cbd2154b5c3165818 -->
+```
+        <source>&amp;OK</source>
+        <translation>&amp;Уреду</translation>
+    
+ERR
+The translation uses the Cyrillic word "Уреду" as one word, but the correct Serbian expression is two words "У реду". Also ensure the ampersand remains exactly once (it is present). 
 
 Correct translation:
-Ископани салдо на адресама у режиму само за гледање који још увек није доспео
+&amp;У реду
 ```
 
 <!-- cache_translation_check_sr_61756bdc9b87e53082f66ff2e5389a58dfa0ed82a343eb456b6534641460d2f1 -->
@@ -450,16 +730,16 @@ Correct translation:
 Трансакција има %1 непотписаних улаза.
 ```
 
-<!-- cache_translation_check_sr_e65b0acef7da49c852a0c76d6617e6d05da55e2c5c1545468a21e89bd8920747 -->
+<!-- cache_translation_check_sr_cdbd97358498204e8761f36e069511667c12b9bd067eaafb6451298892c98218 -->
 ```
-        <source>Save Image…</source>
-        <translation>Сачували слику…</translation>
+        <source>&amp;Save Image…</source>
+        <translation>&amp;Сачували слику…</translation>
     
 ERR
-The translation is inaccurate. "Сачували слику…" means "Saved the image…" (past tense), rather than the imperative form "Save Image…". The correct translation should be in the imperative mood.
+The Serbian translation uses the past participle "Сачували" which is incorrect for a menu command. It should be an imperative ("Save Image") form. The ampersand is present once and there are no whitespace or format-specifier issues.
 
 Correct translation:
-Сачувај слику…
+&amp;Сачувај слику…
 ```
 
 <!-- cache_translation_check_sr_ff78b1c332c5faf478cba98f8897e7083824d4b6e7e8609c45dfdaa09132069a -->
@@ -515,6 +795,18 @@ Correct translation:
 Прозор чвора
 ```
 
+<!-- cache_translation_check_sr_397cc41211cda1a731126fd6876da2d54237e6e032f541fba76dea87b2826662 -->
+```
+        <source>1 d&amp;ay</source>
+        <translation>1 дан</translation>
+    
+ERR
+The translation is missing the shortcut marker (&) present in the source. The source has a single & indicating an accelerator; the translation must include exactly one & placed before the chosen shortcut character. Also, the Serbian word "дан" is correct for "day" but needs the &.
+
+Correct translation:
+1 д&ан
+```
+
 <!-- cache_translation_check_sr_c5422ea6da411cef596981f796e9b2f65f7072a4692f69c21dffb15ba8b4ba41 -->
 ```
         <source>Welcome to the %1 RPC console.
@@ -549,16 +841,52 @@ Correct translation:
 %7УПОЗОРЕЊЕ: Преваранти су били активни, говорећи корисницима да овде унесу команде, чиме краду садржај њихових новчаника. Не користите ову конзолу без потпуног разумевања последица команде.%8
 ```
 
-<!-- cache_translation_check_sr_e65b0acef7da49c852a0c76d6617e6d05da55e2c5c1545468a21e89bd8920747 -->
+<!-- cache_translation_check_sr_4420bd642e223e7058851279ba44a863faca7b787d6e7957edf9362ce6214c23 -->
 ```
-        <source>Save Image…</source>
-        <translation>Сачували слику…</translation>
+        <source>&amp;Label:</source>
+        <translation>&amp;Ознака</translation>
     
 ERR
-The translation is inaccurate. "Сачували слику…" means "Saved the image…" (past tense), rather than the imperative form "Save Image…". The correct translation should be in the imperative mood.
+The translation is missing the trailing colon present in the source. Also ensure the ampersand for the shortcut remains exactly once (it already does).
 
 Correct translation:
-Сачувај слику…
+&amp;Ознака:
+```
+
+<!-- cache_translation_check_sr_2bfbe2f2c6bd82789295232b724563092ed0660eebf8428c9b76d99d1f18f639 -->
+```
+        <source>&amp;Message:</source>
+        <translation>Poruka:</translation>
+    
+ERR
+The translation is missing the shortcut ampersand (&) from the source. The source contains "&Message:" which indicates a single shortcut marker; the translation should include exactly one &.
+
+Correct translation:
+&Poruka:
+```
+
+<!-- cache_translation_check_sr_d3c67ee6f7daa4d5ec3f613ccf586301db99122f3390c8488657d75dbb5c4432 -->
+```
+        <source>Copy &amp;label</source>
+        <translation>Копирај &amp;означи</translation>
+    
+ERR
+The translation uses the verb "означи" (imperative "mark!") instead of the noun in accusative required by "Copy label". It is therefore incorrect/odd in Serbian.
+
+Correct translation:
+Копирај &ознаку
+```
+
+<!-- cache_translation_check_sr_cdbd97358498204e8761f36e069511667c12b9bd067eaafb6451298892c98218 -->
+```
+        <source>&amp;Save Image…</source>
+        <translation>&amp;Сачували слику…</translation>
+    
+ERR
+The Serbian translation uses the past participle "Сачували" which is incorrect for a menu command. It should be an imperative ("Save Image") form. The ampersand is present once and there are no whitespace or format-specifier issues.
+
+Correct translation:
+&amp;Сачувај слику…
 ```
 
 <!-- cache_translation_check_sr_c013accef2bcbab965dade1eb0ea779729747ec3baa378f6711e82c41de615d0 -->
@@ -587,6 +915,42 @@ The Serbian translation is problematic. The phrase "Подси екстерну 
 
 Correct translation:
 Поставите путању до скрипте за екстерно потписивање у Options -> Wallet
+```
+
+<!-- cache_translation_check_sr_566f4091d922028011e4cfd151eb5d9e7f69a40c358641d54655bc256330ba59 -->
+```
+        <source>Cr&amp;eate Unsigned</source>
+        <translation>Креирај непотписано</translation>
+    
+ERR
+The translation is Serbian Cyrillic and mostly correct, but it is missing the shortcut ampersand (&) which must appear exactly once. Also the phrase is a bit terse; include the implied noun for clarity.
+
+Suggested correction (with a single & for the shortcut):
+Креирај &непотписану трансакцију
+```
+
+<!-- cache_translation_check_sr_b8c6c5da9849bdb49ee565a14846c9b24c49a703f73e32abbdf9ae63c58d1f71 -->
+```
+        <source>Pay &amp;To:</source>
+        <translation>Плати &amp;За:</translation>
+    
+ERR
+The translation "Плати &amp;За:" is slightly inaccurate: "Плати за" in Serbian means "pay for" (pay on behalf of), while the source "Pay To:" indicates the recipient (pay to...). Also the ampersand is present (good) but the word choice/case is wrong.
+
+Suggested correct translation:
+<translation>Плати &на:</translation>
+```
+
+<!-- cache_translation_check_sr_4420bd642e223e7058851279ba44a863faca7b787d6e7957edf9362ce6214c23 -->
+```
+        <source>&amp;Label:</source>
+        <translation>&amp;Ознака</translation>
+    
+ERR
+The translation is missing the trailing colon present in the source. Also ensure the ampersand for the shortcut remains exactly once (it already does).
+
+Correct translation:
+&amp;Ознака:
 ```
 
 <!-- cache_translation_check_sr_c8cedd32ca199fd5704e81a8ad8d430232accc79908cdd568bce5436ade7cdcd -->
@@ -623,6 +987,18 @@ The translation of "clipboard" as "база за копирање" is incorrect 
 
 Correct translation:
 Налепи адресу из клипборда
+```
+
+<!-- cache_translation_check_sr_216b367c36f2e08b4c4ba928978a18dae8e6f91f56ea21cc168d01e65a517dc1 -->
+```
+        <source>Sign &amp;Message</source>
+        <translation>Потпис &amp;Порука</translation>
+    
+ERR
+The translation "Потпис &amp;Порука" is not a natural/grammatical Serbian rendering of "Sign &Message". It reads like "Signature &Message" rather than the imperative "Sign message". Use an imperative form or a noun phrase that conveys "Sign Message". Also ensure the accelerator (&) is present exactly once.
+
+Correct translation (Cyrillic, with XML-escaped ampersand):
+Потпиши &amp;поруку
 ```
 
 <!-- cache_translation_check_sr_ba001c9ec59bc7dfe603dddb63bfc2626222765f1e9d19c09e504ec75ca6fb8b -->
@@ -677,43 +1053,78 @@ Correct translation:
 Статус трансакције. Пређите мишем преко овог поља да бисте видели број потврда.
 ```
 
-<!-- cache_translation_check_sr_cba81f8591f01d9be5584c1b898a09145c23c6bbdd8f12e6393a4fc1b621656b -->
+<!-- cache_translation_check_sr_d3c67ee6f7daa4d5ec3f613ccf586301db99122f3390c8488657d75dbb5c4432 -->
 ```
-        <source>Whether or not a watch-only address is involved in this transaction.</source>
-        <translation>Без обзира да ли је у ову трансакције укључена или није - адреса само за гледање.</translation>
+        <source>Copy &amp;label</source>
+        <translation>Копирај &amp;означи</translation>
     
 ERR
-The Serbian translation is not accurate and sounds unnatural. There is also a grammatical error: "трансакције" should be "трансакцију" (accusative case). The construction "или није - адреса само за гледање" is not idiomatic and adds unnecessary complexity.
+The translation uses the verb "означи" (imperative "mark!") instead of the noun in accusative required by "Copy label". It is therefore incorrect/odd in Serbian.
 
 Correct translation:
-Да ли је у ову трансакцију укључена адреса само за посматрање.
-
-Alternative:
-Да ли је у ову трансакцију укључена watch-only адреса.
+Копирај &ознаку
 ```
 
-<!-- cache_translation_check_sr_f35d3271a27b6c3d0ce5daabb8e8207a9c6d382f94bcaee5d4ba85dd3046288c -->
+<!-- cache_translation_check_sr_e84fb6cd88755bb3b2df9aee78add1c43e86c882481bb46969d0f435bc4299f0 -->
 ```
-        <source>Copy transaction ID</source>
-        <translation>Копирај трансакцију ID</translation>
+        <source>Copy transaction &amp;ID</source>
+        <translation>Копирај трансакцију &amp;ID</translation>
     
 ERR
-There is a minor issue in the translation: the word order is incorrect. "ID" in Serbian should usually come before the noun as "ID трансакције" or the phrase should be "Копирај ID трансакције" to accurately mean "Copy transaction ID". Additionally, "ID" can be transliterated or left, but it is usually left as "ID". There is also an unnecessary mixing of Latin and Cyrillic scripts (since "ID" is in Latin, and the rest is in Cyrillic, which is acceptable in Serbian IT context but not ideal stylistically).
+Word order is incorrect in Serbian. "Копирај трансакцију &ID" reads awkwardly / ungrammatically — it should say "transaction ID" as a unit (e.g. "ID трансакције").
 
 Correct translation:
-Копирај ID трансакције
+Копирај &ID трансакције
 ```
 
-<!-- cache_translation_check_sr_979313ead12f58021712ec7029fa9fbb79aded9c9d3edcf80e39dd4d90c7ddef -->
+<!-- cache_translation_check_sr_144f5bd13d12f080bb3ae7661504ebf46f09b7b6ed2dd5885e2ce867a5c2c4e0 -->
 ```
-        <source>Edit address label</source>
-        <translation>Promeni adresu etikete</translation>
+        <source>Copy full transaction &amp;details</source>
+        <translation>Копирајте све детаље трансакције</translation>
     
 ERR
-The translation is incorrect. The phrase "Edit address label" means to edit the label (name or description) assigned to an address, not to change the address of a label. The correct Serbian translation should be "Izmeni oznaku adrese" or "Uredi oznaku adrese".
+The translation is missing the accelerator ampersand (&) present in the source. The source contains a single & (for the shortcut) and the translation must include exactly one & as well. No other problems.
+
+Correct translation (include a single & before the desired shortcut letter):
+Копирајте све &детаље трансакције
+```
+
+<!-- cache_translation_check_sr_b97560d26fa0c22a215895b3014c68515fa9c737089e8a58eff3a87f6a9168c4 -->
+```
+        <source>&amp;Show transaction details</source>
+        <translation>&amp;Прикажи детаље транакције</translation>
+    
+ERR
+The Serbian translation contains a typo: "транакције" is missing the letter "с". Ampersand placement is fine.
 
 Correct translation:
-Izmeni oznaku adrese
+&Прикажи детаље трансакције
+```
+
+<!-- cache_translation_check_sr_909a6b3f2ed6a28e2298ca06b26ea9008e87e356d23bf01a6311319d0fc40c47 -->
+```
+        <source>Increase transaction &amp;fee</source>
+        <translation>Повећај провизију трансакције</translation>
+    
+ERR
+The translation is good Serbian (Cyrillic) and wording is acceptable, but it is missing the shortcut ampersand (&) that appears in the source. The target must contain exactly one & to mark the shortcut key.
+
+Correct translation (with & placed before 'провизију'):
+Повећај &провизију трансакције
+```
+
+<!-- cache_translation_check_sr_94468c526042009052f40f5c425f6a92b5a0dc8b08f57f436152dbfea6158e54 -->
+```
+        <source>&amp;Edit address label</source>
+        <translation>&amp;Promeni adresu etikete</translation>
+    
+ERR
+The Serbian translation is grammatically incorrect and the word order is wrong — "Promeni adresu etikete" reads like "change the address of the label" instead of "edit the address label". The ampersand is present once (OK).
+
+Correct translations (Serbian Latin) could be:
+&Izmeni oznaku adrese
+or
+&Promeni oznaku adrese
 ```
 
 <!-- cache_translation_check_sr_eda46644e93f482f50a2eee4c1c1c351b8c672f379aaaa4704fa66b4df93f27b -->
@@ -765,4 +1176,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 57.
+Number of issues: 90.

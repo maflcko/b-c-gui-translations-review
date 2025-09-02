@@ -1,25 +1,13 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>fa</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bfa%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bfa%5D%20request)
 
-
-<!-- cache_translation_check_fa_977588961b9c19f71ef89e2ce8df52495b5a2b25918ea2bb2ed98bde8fb80cd7 -->
-```
-        <source>Copy</source>
-        <translation>ذخیره</translation>
-    
-ERR
-The translation of "Copy" as "ذخیره" is incorrect. "ذخیره" means "Save" in Persian, not "Copy".
-
-Correct translation:
-کپی
-```
 
 <!-- cache_translation_check_fa_a7bdf359e7b71f51b1f3a92b665e0b3fcf4816feafcc336de4a56fe9c6a98797 -->
 ```
@@ -78,6 +66,18 @@ Correct translation:
 کیف پول پیش‌فرض
 ```
 
+<!-- cache_translation_check_fa_049e4977e0b9c136a446af2935f8a6c267db8c7e5bb8b03a8e1c8ad62d8424c0 -->
+```
+        <source>&amp;Overview</source>
+        <translation>بازبینی</translation>
+    
+ERR
+The translation omits the ampersand (&) which is used for shortcut keys and must appear exactly once, as in the source.
+
+Correct translation:
+&بازبینی
+```
+
 <!-- cache_translation_check_fa_defdf72c739d126115a88d33828162d5a74be1229e7ae2bd5bb70a3e00d066ec -->
 ```
         <source>Show general overview of wallet</source>
@@ -89,6 +89,30 @@ There is an unwanted newline and possibly a non-breaking space at the end of the
 
 Correct translation:
 نمایش کلی کیف پول
+```
+
+<!-- cache_translation_check_fa_e1b968a21fd0c1655aee28d6e77e15b2ecaf77335e11a44c7d8e1517bd0b6aa5 -->
+```
+        <source>&amp;Transactions</source>
+        <translation>تراکنش</translation>
+    
+ERR
+The translation omits the ampersand (&) which denotes a shortcut key, and it should also ideally use the plural form for "Transactions." The correct translation:
+
+Correct translation:
+&تراکنش‌ها
+```
+
+<!-- cache_translation_check_fa_d5a73cca1b4510941a75890091f651bccb8d99399d501ab9ccddfc567449264b -->
+```
+        <source>E&amp;xit</source>
+        <translation>خروج</translation>
+    
+ERR
+The translation omits the '&' which designates the shortcut key in the UI. This should exist exactly once in the translation, wherever most appropriate in the word.
+
+Correct translation:
+خرو&ج
 ```
 
 <!-- cache_translation_check_fa_89bf8bdc428c31c4e92befda1e8a5e029bbd704be17a07c171a4797ff6608fff -->
@@ -105,6 +129,18 @@ The translation "از 'درخواست نامه'/ application خارج شو" is p
 
 Correct translation:
 از برنامه خارج شوید
+```
+
+<!-- cache_translation_check_fa_2be2fb47339483449378e7e843f92cca846f0f9016240873a4634f27bd213904 -->
+```
+        <source>About &amp;Qt</source>
+        <translation>درباره Qt</translation>
+    
+ERR
+The translation omitted the '&' character, which is used for shortcut keys and should appear exactly once in the translation, positioned appropriately.
+
+Correct translation:
+درباره &Qt
 ```
 
 <!-- cache_translation_check_fa_66906f4b9c1777e6f01b75fb1aacc605c368aa5e2f8afb677e2c2009ad27f7c2 -->
@@ -138,6 +174,42 @@ Correct translation:
 پشتیبان‌گیری از کیف پول به مکان دیگر
 ```
 
+<!-- cache_translation_check_fa_04a5e2341951f6604b2a19ade6f0be71ff69021e4eb181fc8debab537db0b9ad -->
+```
+        <source>&amp;Send</source>
+        <translation>ارسال</translation>
+    
+ERR
+The translation is missing the '&' indicating the shortcut key, which should exist exactly once in the translation.
+
+Correct translation:
+&ارسال
+```
+
+<!-- cache_translation_check_fa_7208f78687c70e3b96d66fc266043247ac2af1cd911e9f5b51b4c3801249ef81 -->
+```
+        <source>&amp;Receive</source>
+        <translation>دریافت</translation>
+    
+ERR
+The translation omits the ampersand (&) which is used to indicate a shortcut key in menus. It should appear exactly once, in any position. 
+
+Correct translation:
+&دریافت
+```
+
+<!-- cache_translation_check_fa_0142a4b55a33e18d080b38800330945e7b8308323670c2b3d5b33b7633e02a03 -->
+```
+        <source>&amp;Encrypt Wallet…</source>
+        <translation>رمزنگاری کیف پول</translation>
+    
+ERR
+The translation is missing the ampersand (&) which is used for the shortcut key in the source string. The ampersand must appear exactly once in the translation.
+
+Correct translation:
+&رمزنگاری کیف پول…
+```
+
 <!-- cache_translation_check_fa_a5c3379b2b838238864654e31b1a69a65fc35044d60be9f37393ec6f595c29de -->
 ```
         <source>Encrypt the private keys that belong to your wallet</source>
@@ -151,16 +223,124 @@ Correct translation:
 کلیدهای خصوصی متعلق به کیف پول خود را رمزگذاری کنید
 ```
 
-<!-- cache_translation_check_fa_6b80bdb4af01386e91d7f9721f10988ec24f6294dc2bf6156a01840e3a44cb4f -->
+<!-- cache_translation_check_fa_06668d9dd49edc9f773e37d9a8e41c155f59e8165f3c17a1246ca4392e71b169 -->
 ```
-        <source>Open URI…</source>
+        <source>&amp;Backup Wallet…</source>
+        <translation>نسخه پشتیبان کیف پول</translation>
+    
+ERR
+The translation omits the ampersand (&) which is used to indicate a shortcut key in the UI. It must appear exactly once in the translation. Additionally, the ellipsis (…) at the end of the source text is missing.
+
+Correct translation:
+&amp;نسخه پشتیبان کیف پول…
+```
+
+<!-- cache_translation_check_fa_0d7a280f03fd85475edf6b4a9e76e4ea7f4236a0721654bd42f065517b4932fb -->
+```
+        <source>&amp;Change Passphrase…</source>
+        <translation>تغییر عبارت عبور</translation>
+    
+ERR
+The translation omits the ampersand (&), which is needed exactly once, as in the source, to indicate a shortcut key. Additionally, the Persian ellipsis "…" from the source is missing in the translation.
+
+Correct translation:
+تغییر &عبارت عبور…
+```
+
+<!-- cache_translation_check_fa_749baacd3947af2dce20c2f7fc5631a521d4a62b804840531dd17401ff002229 -->
+```
+        <source>Sign &amp;message…</source>
+        <translation>ثبت &amp;پیام</translation>
+    
+ERR
+The translation for "Sign &message…" as "ثبت &پیام" is inaccurate. "ثبت" means "register" or "record," whereas "Sign" should be translated as "امضا," which means "sign" (as in a digital signature). Additionally, the ellipsis (…) at the end of the English source is missing in the translation.
+
+Correct translation:
+امضای &پیام…
+```
+
+<!-- cache_translation_check_fa_70ed9425ca1abbae795274cbff9217f2320ca016f2680a250c3774dab22703e8 -->
+```
+        <source>&amp;Verify message…</source>
+        <translation>پیام تایید</translation>
+    
+ERR
+The translation does not accurately capture the meaning or the shortcut key (&). "&Verify message…" should be translated as «&تأیید پیام…», preserving the ampersand for the shortcut and the ellipsis.
+
+Correct translation:
+&تأیید پیام…
+```
+
+<!-- cache_translation_check_fa_e1bdb46722b8824c2d1dcf0590a20a1613fafc5d97aebd4b93fdb89a44adc7ec -->
+```
+        <source>&amp;Load PSBT from file…</source>
+        <translation>بارگیری PSBT از پرونده</translation>
+    
+ERR
+The translation omits the ampersand (&) which is used to indicate a shortcut key in the source. The ellipsis (…) is also missing from the translation.
+
+Correct translation:
+&amp;بارگیری PSBT از پرونده…
+```
+
+<!-- cache_translation_check_fa_b548e2a87bec4707788930745a7386cbdf7d1ba783e372f991b025ecf9fd4c45 -->
+```
+        <source>Open &amp;URI…</source>
         <translation>تکثیر نشانی</translation>
     
 ERR
-The translation is inaccurate. "تکثیر نشانی" means "Copy address", not "Open URI…". Additionally, "URI" should be kept transliterated or replaced meaningfully.
+The translation "تکثیر نشانی" means "Copy address", which is incorrect for "Open &URI…". Additionally, the '&' shortcut key is missing, and the translation does not accurately convey the meaning of opening a URI.
 
 Correct translation:
-باز کردن نشانی...
+‏باز کردن &URI…
+```
+
+<!-- cache_translation_check_fa_87a3db81e2c41126bbfa96aa03af24d5e0a89bfe51dd6baf887fac351abdfaed -->
+```
+        <source>&amp;File</source>
+        <translation>فایل</translation>
+    
+ERR
+The shortcut indicator '&' is missing in the translation. It must appear exactly once.
+
+Correct translation:
+&فایل
+```
+
+<!-- cache_translation_check_fa_283812e5028a8d8e92e8254fb6fc8723c41ed54cdac78b4007aaf86aba50e093 -->
+```
+        <source>&amp;Settings</source>
+        <translation>تنظیمات</translation>
+    
+ERR
+The translation omits the '&' which indicates the shortcut key in the source. The ampersand must appear exactly once in the translation, positioned appropriately.
+
+Correct translation:
+&amp;تنظیمات
+```
+
+<!-- cache_translation_check_fa_c336c72d76324529caffc3a094647f26136e227fcba604a43655ca0697ee49b7 -->
+```
+        <source>&amp;Help</source>
+        <translation>راهنما</translation>
+    
+ERR
+The translation omits the ampersand (&), which indicates the shortcut key. It should appear exactly once in the translation, corresponding to its use in the source.
+
+Correct translation:
+&راهنما
+```
+
+<!-- cache_translation_check_fa_08c6fb9301d2cb28dff689bc48125485e722b0d44849647f7842f3b64a612cb1 -->
+```
+        <source>&amp;Command-line options</source>
+        <translation>گزینه های خط فرمان</translation>
+    
+ERR
+The translation omits the '&' symbol, which is used to indicate a shortcut key and should appear exactly once in the translation. Also, there should be no extra spaces.
+
+Correct translation:
+&گزینه‌های خط فرمان
 ```
 
 <!-- cache_translation_check_fa_cf8236144d50646befbf9c7b23b363cccc4d834d2467ffb54ba6f337e4ad5706 -->
@@ -190,18 +370,40 @@ Correct translation:
 در حال همگام‌سازی…
 ```
 
-<!-- cache_translation_check_fa_709efc8c92e0e80f431a2649be96ebfd1406a85420b9b94077c49138a22b6062 -->
+<!-- cache_translation_check_fa_bd53b7c306c63701b103637d515c79057e3b3e3cf0fcc5231378e5bb2ef6da40 -->
 ```
-        <source>Receiving addresses</source>
+        <source>Load PSBT from &amp;clipboard…</source>
+        <translation>بارگیری PSBT از &amp;clipboard…</translation>
+    
+ERR
+The word "clipboard" should be translated into Persian. Additionally, the placement of the &amp; is inconsistent with Persian keyboard shortcuts (if implemented), but the main issue is that "clipboard" is untranslated, which reduces user comprehensibility.
+
+Correct translation:
+بارگیری PSBT از &amp;کلیپ‌بورد…
+```
+
+<!-- cache_translation_check_fa_f3db1a0a815eba511db4dc1530240bba104d9123e88af75d062fe56cf46fdfcc -->
+```
+        <source>&amp;Sending addresses</source>
+        <translation>ادرس ارسال</translation>
+    
+ERR
+The translation omits the ampersand '&' (shortcut key) and does not include the Persian word for "addresses" in the plural form. The correct translation should also preferably localize "addresses" as "آدرس‌ها" or "نشانی‌ها", and include the shortcut '&'.
+
+Correct translation:
+&آدرس‌های ارسال
+```
+
+<!-- cache_translation_check_fa_6d2a7e757a11ef15e1a6795b5e99228ace8ccb3224ec66adbfe39ae042a557e9 -->
+```
+        <source>&amp;Receiving addresses</source>
         <translation>ادرس درسافت</translation>
     
 ERR
-There are spelling mistakes in the Persian translation and the translation is incomplete. The correct translation for "Receiving addresses" in Persian is:
-
-آدرس‌های دریافت
+The translation contains spelling errors ("ادرس" should be "آدرس" and "درسافت" should be "دریافت") and omits the ampersand (&) used for the shortcut key, which should appear exactly once in the translation. The correct translation is:
 
 Correct translation:
-آدرس‌های دریافت
+&آدرس‌های دریافت
 ```
 
 <!-- cache_translation_check_fa_06cdf35986fb400e249d18e416c233edb65506a9e220c04d88b93772ad1558ef -->
@@ -240,6 +442,101 @@ There is an unwanted whitespace/line break at the end of the translation, which 
 
 Correct translation:
 کیف پول را باز کنید
+```
+
+<!-- cache_translation_check_fa_e23c332ec97a73673f7384517030e444401ac089205cde6fdb63c9feb316cca0 -->
+```
+        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
+        <translation>برای دریافت لیستی از گزینه های خط فرمان بیت کوین ، پیام راهنمایی %1 را نشان دهید</translation>
+    
+ERR
+Issues:
+- Minor grammatical/wording problems: "پیام راهنمایی %1" is awkward; "پیام راهنمای %1" is more natural.
+- Punctuation/spacing: there's an extra space before the Persian comma and uses a space before "،". Also use of "نشان دهید" is acceptable but "نمایش دهید" or "نمایش دهید" is more natural.
+- Prefer "گزینه‌های" (with ezafe/possessive) or "گزینه‌های ممکن" for clarity.
+
+Correct translation:
+برای دریافت فهرستی از گزینه‌های خط فرمان بیت‌کوین، پیام راهنمای %1 را نمایش دهید
+```
+
+<!-- cache_translation_check_fa_0d17d8b87c9cf4adef9efc58fc4035e74eb3cd736f7833be6cb83c9440701c9f -->
+```
+        <source>&amp;Window</source>
+        <translation>پنجره</translation>
+    
+ERR
+The translation does not include the '&' shortcut marker, which should appear exactly once in the translation to correspond to the original.
+
+Correct translation:
+&پنجره
+or
+پنجره&
+
+Both are acceptable as long as '&' appears exactly once.
+```
+
+<!-- cache_translation_check_fa_736d1016d58601a0e12775ee688cea62147d82523c07ee290cec3ea25ddb88c5 -->
+```
+        <source>&amp;Hide</source>
+        <translation>مخفی کن</translation>
+    
+ERR
+The translation omits the '&' which indicates the shortcut key in the source. It should appear exactly once in the translation.
+
+Correct translation:
+&مخفی کن
+or
+مخفی &کن
+
+Either placement is acceptable as long as '&' exists exactly once.
+```
+
+<!-- cache_translation_check_fa_32c014b01cfd89415f5a00288074e89150943f194fa357e7ad0122deb2f4ade7 -->
+```
+        <source>&amp;Copy address</source>
+        <translation>تکثیر نشانی</translation>
+    
+ERR
+The translation does not include the '&' shortcut indicator, which should appear exactly once, as in the source. Also, the standard translation for "Copy" in this context is "رونوشت برداشتن" or "کپی". "تکثیر" is less idiomatic.
+
+Correct translation:
+&کپی نشانی
+```
+
+<!-- cache_translation_check_fa_ece9918470acec4dc72c6d7aaa51f72faa62b5dc11271369c167dbd9167e1c47 -->
+```
+        <source>Copy &amp;label</source>
+        <translation>تکثیر برچسب</translation>
+    
+ERR
+The translation omits the '&' which is used for shortcut keys, and uses "تکثیر" which means "reproduction/duplication" rather than the more typical "کپی" ("copy") in software UI. The proper translation for software context should use "کپی" and include the '&'.
+
+Correct translation:
+کپی &برچسب
+```
+
+<!-- cache_translation_check_fa_2d9a461ee679605e8f5999d0230b0293748e8bdb6b7308b632c0f1eace5f1c48 -->
+```
+        <source>Copy transaction &amp;ID and output index</source>
+        <translation>شناسه و تراکنش و نمایه خروجی را کپی کنید</translation>
+    
+ERR
+The translation misplaces the structure and meaning. It says "Copy the ID and transaction and output index," which is incorrect. It also lacks the '&' to indicate the shortcut key.
+
+Correct translation:
+شناسه &amp;تراکنش و شاخص خروجی را کپی کنید
+```
+
+<!-- cache_translation_check_fa_b492c1e74d33f47ee6016a55cd8bb8c41a2dcc034d5c81d483faa7982b87f6b4 -->
+```
+        <source>Can vary +/- %1 satoshi(s) per input.</source>
+        <translation>می توانید + / - %1 (ساتوشی) در هر ورودی متفاوت باشد.</translation>
+    
+ERR
+The Persian translation is grammatically incorrect and awkwardly phrased (verb/subject mismatch and unnecessary spaces/parentheses around +/- and "ساتوشی"). The format specifier %1 is preserved but spacing around "+/-" should be normalized.
+
+Correct translation:
+می‌تواند به ازای هر ورودی تا +/-%1 ساتوشی نوسان داشته باشد.
 ```
 
 <!-- cache_translation_check_fa_2258c3973f215157538e50f878228df38aa9032914217e400df89fc7db7c0bb3 -->
@@ -287,6 +584,34 @@ Correct translation:
 هشدار ایجاد کیف پول
 ```
 
+<!-- cache_translation_check_fa_58d389175ecad158f8714dc85ea0958ce7fa0e09f29c892397c4e3463380c291 -->
+```
+        <source>Open Wallet</source>
+        <extracomment>Title of window indicating the progress of opening of a wallet.</extracomment>
+        <translation>کیف پول را باز کنید
+ </translation>
+    
+ERR
+The Persian translation is correct in meaning but contains stray whitespace/newline (and a trailing NBSP). Also for a window title a shorter noun phrase is more typical.
+
+Correct translations (choose one) without extra whitespace:
+- کیف پول را باز کنید
+- باز کردن کیف پول
+```
+
+<!-- cache_translation_check_fa_97158f4e7f5127d0976ac37d3c803ed9bdbb3581a4710f9c7d389591cfdfc33e -->
+```
+        <source>Create Wallet</source>
+        <translation>ایجاد کیف پول
+ </translation>
+    
+ERR
+The Persian translation is correct in meaning ("Create Wallet" → "ایجاد کیف پول"), but it contains extraneous whitespace/newline after the text (a trailing newline and space). Remove the trailing whitespace.
+
+Correct translation:
+ایجاد کیف پول
+```
+
 <!-- cache_translation_check_fa_58f9c95722e9eda8a2c78c07292f54cc20302615592466c8167820400338b09c -->
 ```
         <source>Reset all client options to default.</source>
@@ -300,16 +625,114 @@ Correct translation:
 تمام گزینه‌های کلاینت را به حالت پیش‌فرض بازنشانی کنید.
 ```
 
-<!-- cache_translation_check_fa_3250467b02d22d9591271db61f2b45b995c37a4d587c499865e4e5fa46dc0f40 -->
+<!-- cache_translation_check_fa_0efcad36eb589738fc073d8e2cacdbf334051d22bab5f02380aef11220d7c544 -->
 ```
-        <source>Allow incoming connections</source>
+        <source>&amp;Reset Options</source>
+        <translation>تنظیم مجدد گزینه ها</translation>
+    
+ERR
+The translation is missing the ampersand '&' which indicates a shortcut key in the source. It should exist exactly once in the translation.
+
+Correct translation:
+‏&تنظیم مجدد گزینه‌ها
+```
+
+<!-- cache_translation_check_fa_0061321cafcbcb309586151928f1df5968d97cdc7433592efb89b9e1e0cdcbae -->
+```
+        <source>&amp;Network</source>
+        <translation>شبکه</translation>
+    
+ERR
+The ampersand (&) denoting the shortcut key is missing in the translation. It should appear exactly once in the translated text.
+
+Correct translation:
+&amp;شبکه
+```
+
+<!-- cache_translation_check_fa_bebfb3e038f4092520b6955f381c59c14a61a15ff006379f91c5c67c3276b564 -->
+```
+        <source>Set the number of script verification threads. Negative values correspond to the number of cores you want to leave free to the system.</source>
+        <extracomment>Tooltip text for Options window setting that sets the number of script verification threads. Explains that negative values mean to leave these many cores free to the system.</extracomment>
+        <translation>تعداد رشته های تأیید اسکریپت را تنظیم کنید.  مقادیر منفی مربوط به تعداد هسته هایی است که می خواهید برای سیستم آزاد بگذارید.</translation>
+    
+ERR
+The Persian (fa) translation is mostly correct in meaning but has minor formatting and stylistic issues: there is an extra space after the period and some improvements to Persian punctuation/word-joining would make it more natural.
+
+Corrected translation:
+تعداد رشته‌های تأیید اسکریپت را تنظیم کنید. مقادیر منفی نشان‌دهندهٔ تعداد هسته‌هایی است که می‌خواهید برای سیستم آزاد بگذارید.
+```
+
+<!-- cache_translation_check_fa_06e7957dcc27f7e1aa633ce414d57691b3fd474bbb2075e8bb6b6105d2810a4f -->
+```
+        <source>W&amp;allet</source>
+        <translation>کیف پول</translation>
+    
+ERR
+The Persian translation is missing the shortcut indicator "&" present in the source. The source has a single "&" (W&amp;allet) and the translation must include exactly one "&" as well.
+
+Correct translation:
+&کیف پول
+```
+
+<!-- cache_translation_check_fa_0cca8d4fa38d291fac6b26254f8ffc1962855e8543f34728192591c09061f5f0 -->
+```
+        <source>Subtract &amp;fee from amount by default</source>
+        <extracomment>An Options window setting to set subtracting the fee from a sending amount as default.</extracomment>
+        <translation>به طور پیش‌فرض از مقدار &amp;کارمزد کم کنید</translation>
+    
+ERR
+Translation is understandable but slightly unnatural in Persian word order and missing the direct object marker "را". Also prefer "مبلغ" over "مقدار" in this Bitcoin context.
+
+Correct translation:
+به‌طور پیش‌فرض، &کارمزد را از مبلغ کم کنید
+```
+
+<!-- cache_translation_check_fa_0ffd3d72949a9afee4816188d2ea852bee61cea734000141e7ba9f05439c1597 -->
+```
+        <source>Enable coin &amp;control features</source>
+        <translation>فعال کردن قابلیت سکه و کنترل</translation>
+    
+ERR
+The Persian translation is grammatically awkward and it omits the single & shortcut marker from the source. The source places & before "control" (i.e. "&control") and the translation should preserve exactly one ampersand. Also "قابلیت سکه و کنترل" reads as "coin and control capability" rather than "coin control features."
+
+Correct translation:
+فعال‌سازی قابلیت‌های &کنترل سکه
+```
+
+<!-- cache_translation_check_fa_63384f24902bc4bc92cfb05e33d242d7042f305052f53125b6ada75bcaf2c676 -->
+```
+        <source>&amp;External signer script path</source>
+        <translation>مسیر اسکریپت امضاکنندهٔ جانبی</translation>
+    
+ERR
+The translation is accurate Persian but it omits the required shortcut ampersand (&) present in the source. The source has a single & (indicating a keyboard shortcut) and the translation must include exactly one & as well.
+
+Correct translation (include & once, no extra spaces):
+&amp;مسیر اسکریپت امضاکنندهٔ جانبی
+```
+
+<!-- cache_translation_check_fa_abe229a8b088530253b5414a2f61b523bdc68433b5ddc291fcee465dd7b512a7 -->
+```
+        <source>Allow incomin&amp;g connections</source>
         <translation>اجازه ورود و اتصالات</translation>
     
 ERR
-The translation is inaccurate and awkward. The Persian phrase "اجازه ورود و اتصالات" literally means "permission of entry and connections" and does not accurately convey "Allow incoming connections." The word "اتصالات" (connections) is correct, but the phrase should translate as "اجازه دادن به اتصالات ورودی" or more naturally, "اجازه به اتصالات ورودی بدهید".
+The translation omits the shortcut key (&amp;) and does not accurately convey the original English phrase "Allow incoming connections." The phrase "اجازه ورود و اتصالات" translates roughly to "Allow entry and connections," which is not precise. Also, there is no indication of the shortcut (&amp;), which should appear exactly once.
 
 Correct translation:
-اجازه به اتصالات ورودی بدهید
+اجازه اتصالات &amp;ورودی را بده
+```
+
+<!-- cache_translation_check_fa_5a5783dadf1501e4e0671c334642500a59583d3f5e6a43fd13d1d5da81f5ef9b -->
+```
+        <source>&amp;Port:</source>
+        <translation>پورت:</translation>
+    
+ERR
+The translation omits the ampersand (&) which is used to mark the keyboard shortcut. It must be present exactly once in the translation.
+
+Correct translation:
+&پورت:
 ```
 
 <!-- cache_translation_check_fa_773ecd204903583c0522aab4a358bdb579bf22660c7bede7f46573b49b1a021a -->
@@ -338,6 +761,88 @@ Correct translation:
 برای دسترسی به همسالان از طریق:
 ```
 
+<!-- cache_translation_check_fa_0d17d8b87c9cf4adef9efc58fc4035e74eb3cd736f7833be6cb83c9440701c9f -->
+```
+        <source>&amp;Window</source>
+        <translation>پنجره</translation>
+    
+ERR
+The translation does not include the '&' shortcut marker, which should appear exactly once in the translation to correspond to the original.
+
+Correct translation:
+&پنجره
+or
+پنجره&
+
+Both are acceptable as long as '&' appears exactly once.
+```
+
+<!-- cache_translation_check_fa_254e5eacf19e1758a6dcc142dab00c2b6084da14101fda001b13775505930340 -->
+```
+        <source>&amp;Show tray icon</source>
+        <translation>نمایش نمادک سینی</translation>
+    
+ERR
+The translation omits the '&' character, which is used to specify a keyboard shortcut in menus. The translation must contain exactly one '&' to match the original's shortcut.
+
+Correct translation:
+&نمایش نمادک سینی
+```
+
+<!-- cache_translation_check_fa_e1083b032e44cc55d640a276aa6645a90d0dc5c5cc439a2387b5210a996df192 -->
+```
+        <source>&amp;Display</source>
+        <translation>نمایش</translation>
+    
+ERR
+The translation omits the '&' which is used for indicating a shortcut key in the English source. It must appear exactly once in the translation as well.
+
+Correct translation:
+&نمایش
+```
+
+<!-- cache_translation_check_fa_5a7ac6904230cff9d8fb051263904645c779903848bdb37f8a6ab353bc5ce720 -->
+```
+        <source>User Interface &amp;language:</source>
+        <translation>زبان واسط کاربری:</translation>
+    
+ERR
+The '&' character, which indicates a shortcut key in the UI, is missing in the Persian translation. It should appear exactly once.
+
+Correct translation:
+زبان &amp;واسط کاربری:
+```
+
+<!-- cache_translation_check_fa_52ac205342774e42f65bafd04986d429618e7997c2fff94ad1a7196934de7092 -->
+```
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>واحد نمایشگر مقادیر:</translation>
+    
+ERR
+The translation does not include the ampersand (&) which is used to denote a shortcut key in the source. It must appear exactly once in the translation.
+
+Correct translation:
+واحد & نمایشگر مقادیر:
+```
+
+<!-- cache_translation_check_fa_e31736148405cd80373d50ee38429250ac8019ff12bdde15c94719d9347d67d8 -->
+```
+        <source>&amp;Third-party transaction URLs</source>
+        <translation>آدرس‌های اینترنتی تراکنش شخص ثالث</translation>
+    
+ERR
+The translation omits the ampersand (&) which is used to indicate the shortcut key in the source string. The ampersand should appear exactly once, in an appropriate position for a Persian interface.
+
+Correct translation:
+&آدرس‌های اینترنتی تراکنش شخص ثالث
+
+or
+
+آدرس‌های اینترنتی &تراکنش شخص ثالث
+
+(The ampersand can be before any suitable word, following local UI conventions, but must be present exactly once.)
+```
+
 <!-- cache_translation_check_fa_cbd631d021d7efaa87ae86c4a7c0c84016d785a04fb1dc8d3cae22133a56c658 -->
 ```
         <source>Whether to show coin control features or not.</source>
@@ -352,6 +857,30 @@ Correct translation:
 
 Or, for a closer rendering:
 اینکه آیا ویژگی‌های کنترل سکه نمایش داده شوند یا خیر.
+```
+
+<!-- cache_translation_check_fa_2f46487948c44bc13f8a37b63924a30fab0e1b51dc45908cc00e5c54abd0e02a -->
+```
+        <source>&amp;OK</source>
+        <translation>تایید</translation>
+    
+ERR
+The translation omits the '&' character, which is used to indicate a keyboard shortcut in the interface. The translation should include it exactly once.
+
+Correct translation:
+&amp;تایید
+```
+
+<!-- cache_translation_check_fa_274ee838ad626a4e0d4b196a3dccc355ecfc83848f4b1a298bee17ac25295d97 -->
+```
+        <source>&amp;Cancel</source>
+        <translation>لغو</translation>
+    
+ERR
+The ampersand (&) indicating a shortcut key is missing in the translation. It must appear exactly once, as in the source.
+
+Correct translation:
+&لغو
 ```
 
 <!-- cache_translation_check_fa_ee11dbf01da2016a8ca37a72786164293c428c5ac4a2341d9d7269522a6cfde9 -->
@@ -425,20 +954,6 @@ Correct translation:
 موجودی فعلی قابل خرج شما
 ```
 
-<!-- cache_translation_check_fa_7ed600cd2d0036ad57fce6a86ed147267c3ab7d940f0fdad2f109fc14a97152c -->
-```
-        <source>Your current balance in watch-only addresses</source>
-        <translation>موجودی شما در همین لحظه در آدرس های Watch only Addresses</translation>
-    
-ERR
-The translation is problematic for two main reasons:
-1. The English phrase "watch-only addresses" is mistranslated by mixing Persian and English. Using "آدرس‌های فقط قابل مشاهده" or "آدرس‌های صرفاً قابل مشاهده" would be clearer.
-2. The phrase "در همین لحظه" ("at this very moment") adds meaning not present in the original.
-
-Correct translation:
-موجودی فعلی شما در آدرس‌های فقط قابل مشاهده
-```
-
 <!-- cache_translation_check_fa_b5c3441b98bbff6658cb7361e2f2bd6a81828879e437aa358dde071199354e8b -->
 ```
         <source>Transaction has %1 unsigned inputs.</source>
@@ -464,6 +979,58 @@ Correct translation:
 نمی‌توان بیت‌کوین را شروع کرد: کنترل‌کننده کلیک برای پرداخت
 ```
 
+<!-- cache_translation_check_fa_56fb697740d5fae59224d34e02ca7a89f17c278f51d2d9d35d9f5c597872800b -->
+```
+        <source>User Agent</source>
+        <extracomment>Title of Peers Table column which contains the peer's User Agent string.</extracomment>
+        <translation>نماینده کاربر</translation>
+    
+ERR
+"نماینده کاربر" literally means "user representative" and is an uncommon/awkward rendering for the technical term "User Agent". No format specifiers or spacing issues.
+
+Suggested correction (more natural for Persian technical context):
+عامل کاربر
+```
+
+<!-- cache_translation_check_fa_82913ccad1c7f3670903a68f62342f0baadc51d526bd292a2b8f7f857c5be36f -->
+```
+        <source>Received</source>
+        <extracomment>Title of Peers Table column which indicates the total amount of network information we have received from the peer.</extracomment>
+        <translation>دریافت شد</translation>
+    
+ERR
+The translation "دریافت شد" is a verbal past tense ("was received") which is awkward for a column header. Use a noun/adjective form suitable for a table column.
+
+Correct translation (suggestions):
+- دریافت‌شده
+or
+- دریافت
+```
+
+<!-- cache_translation_check_fa_500ac6f3e5be541284453a4150bf4bc5a1fcfeb84c460534d6cc8f033e069cb9 -->
+```
+        <source>User Agent</source>
+        <translation>نماینده کاربر</translation>
+    
+ERR
+The Persian translation "نماینده کاربر" literally means "user representative" and is understandable but not the usual term for the technical label "User Agent". A more common and accurate translation in this context is "عامل کاربر".
+
+Correct translation:
+عامل کاربر
+```
+
+<!-- cache_translation_check_fa_07306160f38f85eb810d6fcaf6989cf367bf3c400ee1cdaab2d060689090b4fd -->
+```
+        <source>&amp;Network Traffic</source>
+        <translation>ترافیک شبکه</translation>
+    
+ERR
+The Persian translation omits the '&' which is used to indicate a keyboard shortcut. It must be present exactly once, as in the source.
+
+Correct translation:
+&amp;ترافیک شبکه
+```
+
 <!-- cache_translation_check_fa_66906f4b9c1777e6f01b75fb1aacc605c368aa5e2f8afb677e2c2009ad27f7c2 -->
 ```
         <source>Create a new wallet</source>
@@ -482,6 +1049,59 @@ Or, for a label/button:
 Make sure there is no extra space or newline.
 ```
 
+<!-- cache_translation_check_fa_f6224e493124f5abfc86cf0c520a02f6c24e697c2fa0e274b4026027e8f64b1f -->
+```
+        <source>default wallet</source>
+        <translation>کیف پول پیش فرض
+ </translation>
+    
+ERR
+There is an unwanted trailing whitespace character at the end of the translation. Otherwise, the translation is accurate.
+
+Correct translation:
+کیف پول پیش‌فرض
+```
+
+<!-- cache_translation_check_fa_6b572f6b1964b394878a4717087e9db30eebe0e24c138b93274f2a69ebe23609 -->
+```
+        <source>whitebind may only be used for incoming connections ("out" was passed)</source>
+        <translation>پیوندسفید فقط برای اتصال‌های ورودی قابل استفاده است ("out" برای اتصال خروجی ارسال شده)</translation>
+    
+ERR
+The translation largely conveys the meaning but has a formatting/terminology issue: the compound word "پیوندسفید" is written without a space and looks odd. Also it's clearer to keep the option name in Latin (whitebind) or separate the Persian words. A more natural Persian translation:
+
+Correct translation:
+گزینه whitebind فقط برای اتصالات ورودی قابل استفاده است ("out" ارسال شده)
+```
+
+<!-- cache_translation_check_fa_7a74fc4646ee5df8da34001da7b590b23bcc4daf99f2bba62be69e5db71c45ca -->
+```
+        <source>Assumeutxo data not found for the given blockhash '%s'.</source>
+        <translation>داده‌های فرضی اوت‌کو برای بلاک‌هش ''%s" داده شده یافت نشد.</translation>
+    
+ERR
+The Persian translation has mismatched quotation marks around %s (''%s") and awkward word order ("داده شده" misplaced). Also "Assumeutxo" should be kept as is or consistently transliterated.
+
+Correct translation:
+داده‌های Assumeutxo برای بلاک‌هش '%s' یافت نشد.
+```
+
+<!-- cache_translation_check_fa_310dce85f7e0e931bc268a06b3fd06a186ae09299bf88be6577c2d3921321dd0 -->
+```
+        <source>Error reading from database, shutting down.</source>
+        <translation>خواندن از پایگاه داده با خطا مواجه شد,در حال خاموش شدن.</translation>
+    
+ERR
+The Persian translation is understandable but has punctuation/spacing and style issues. It uses an ASCII comma instead of a Persian comma and lacks a space after it; the sentence is also slightly awkward.
+
+Suggested corrections (both are natural):
+
+1) «خطا هنگام خواندن از پایگاه داده رخ داد. در حال خاموش شدن.»
+2) «در خواندن از پایگاه داده خطا رخ داد، در حال خاموش شدن.»
+
+Either is acceptable; note the Persian comma «،» and proper spacing.
+```
+
 <!-- cache_translation_check_fa_71587e0fa4ee40ec2517ce06fc9adf72fba4c511ab948a16524969116f35125f -->
 ```
         <source>Error: database transaction cannot be executed for wallet %s</source>
@@ -495,4 +1115,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 35.
+Number of issues: 84.

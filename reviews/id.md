@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>id</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bid%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bid%5D%20request)
 
 
 <!-- cache_translation_check_id_898848f84b26f81d903dbfe3315a09f8c42c62e752e45f6c784a4ddddaffcb62 -->
@@ -26,16 +26,40 @@ dompet bawaan
 Either "dompet default" or "dompet bawaan" would be more appropriate than "wallet default".
 ```
 
-<!-- cache_translation_check_id_78b8a5b0ef222fe22bc8a2570da18ccb3883322a02cc9f3677615aea6dcce049 -->
+<!-- cache_translation_check_id_e8881d6dbe59434214ce6ff276cf5bb981e55bd4420f0421904abc9620211e2f -->
 ```
-        <source>Sign message…</source>
+        <source>&amp;About %1</source>
+        <translation>&amp;Tentang%1</translation>
+    
+ERR
+There is a missing space between "Tentang" and "%1" in the translation, leading to a format issue. Additionally, the ampersand (&) to indicate a shortcut key is correctly present once.
+
+Correct translation:
+&Tentang %1
+```
+
+<!-- cache_translation_check_id_faa82317906e351149a64401a0b60dd8f7991c72c55ac911c536d617f3a29a7c -->
+```
+        <source>Sign &amp;message…</source>
         <translation>Tanda tangani dan kirim pessan...</translation>
     
 ERR
-The translation contains an error: "pessan" should be "pesan." Also, "dan kirim" means "and send," but the original only says "Sign message…", not "Sign and send message…". So, the translation is inaccurate.
+The translation contains a typo: "pessan" should be "pesan". Also, the translation "Tanda tangani dan kirim pesan..." adds "dan kirim" ("and send") which is not in the source. Furthermore, the & character for indicating the shortcut key is not present in the translation, violating the rule for shortcut key consistency.
 
 Correct translation:
-Tandatangani pesan...
+Tanda tangani &pesan…
+```
+
+<!-- cache_translation_check_id_cb92414c27396371e4db930407fc70a5d66cd4ed46401e0c8cee92ee35964df1 -->
+```
+        <source>&amp;Command-line options</source>
+        <translation>&amp;pilihan Command-line</translation>
+    
+ERR
+The translation is partially incorrect due to capitalization and order. In Indonesian, "Command-line options" should be translated as "Opsi baris perintah". The current translation uses "pilihan Command-line", which is a mix of Indonesian and English, and "pilihan" should be capitalized to match the menu convention.
+
+Correct translation:
+&Opsi baris perintah
 ```
 
 <!-- cache_translation_check_id_97be9a3ee353c7691a6fa105be002603d8875f9b1ae7ce7251e229435aa37c9e -->
@@ -60,6 +84,67 @@ The translation is inaccurate. "Ditandatangani seperapat" is incorrect; "Partial
 
 Correct translation:
 Muat transaksi Bitcoin yang ditandatangani sebagian dari clipboard
+```
+
+<!-- cache_translation_check_id_5bb9de234275a0bd041e2cb410203d021b5aa8a031c2b8fb3b5400dda38e4e3b -->
+```
+        <source>After Fee:</source>
+        <translation>Dengan Biaya:</translation>
+    
+ERR
+Translation is slightly inaccurate. "Dengan Biaya:" means "With Fee:" rather than "After Fee:". A better translation is:
+
+Correct translation:
+Setelah Biaya:
+```
+
+<!-- cache_translation_check_id_0ff23f32434624832984bc127c9bc28f085277ef58abed034cb0bdb72a9066fc -->
+```
+        <source>(un)select all</source>
+        <translation>(Tidak)memilih semua</translation>
+    
+ERR
+Spacing and phrasing are slightly off. There should be a space after the opening parenthesis, and the parenthetical form is uncommon in Indonesian. Also no format specifiers are involved.
+
+Correct translations (choose one appropriate for the UI):
+- "(Tidak) memilih semua"  (fixed spacing)
+- "Pilih semua / Batalkan pilih semua"  (clearer alternative)
+```
+
+<!-- cache_translation_check_id_4ac8f9ec722bb0a18793a1d6cadb9a1c0517e79dad3c7f698b61bda3c8dd1dc9 -->
+```
+        <source>Copy transaction &amp;ID and output index</source>
+        <translation>Copy &amp;ID transaksi dan index keluaran</translation>
+    
+ERR
+The translation mixes English and Indonesian ("Copy" and "index") and uses the English spelling "index". Also "salin" is the correct Indonesian verb. The ampersand shortcut should appear exactly once and is placed before "ID" as in the source.
+
+Correct translation:
+Salin &ID transaksi dan indeks keluaran
+```
+
+<!-- cache_translation_check_id_9442b076df1934cb0fcdf26e2dda7e201ebe9eac26a7a26b00ba6ebf25c6ea71 -->
+```
+        <source>Copy after fee</source>
+        <translation>Salin Setelah Upah</translation>
+    
+ERR
+"Upah" means "wage" in Indonesian and is not the best word for a transaction fee. Better to use "biaya" (fee/cost). Also Indonesian typically uses sentence case rather than Title Case, but that may depend on UI style.
+
+Correct translation:
+Salin setelah biaya
+```
+
+<!-- cache_translation_check_id_a2ccaf1f4f2751f615ee523670a3599aaa4536ef4193ac8fbce8184854df274e -->
+```
+        <source>Copy bytes</source>
+        <translation>Salin bytes</translation>
+    
+ERR
+The translation mixes Indonesian ("Salin") with the English plural "bytes". While understandable, it's better to use the Indonesian term consistently. No format specifiers or spacing issues present.
+
+Suggested correction:
+Salin byte
 ```
 
 <!-- cache_translation_check_id_8092169ad60f5e782026fa8d43f23ecdd6e52caf987e8d24be956da3d9277345 -->
@@ -154,6 +239,18 @@ Correct translation:
 Opsi yang diatur di dialog ini akan digantikan oleh baris perintah:
 ```
 
+<!-- cache_translation_check_id_efe711ada8e97bac6508c711b8199ab6fffcf62ff451c26f91e148bf44934dee -->
+```
+        <source>Prune &amp;block storage to</source>
+        <translation>Prune &amp;ruang penyimpan block ke</translation>
+    
+ERR
+The translation is not fully accurate. "Prune &block storage to" should be translated as "Pangkas penyimpanan blok ke" or "Pangkas penyimpanan blok hingga". The word "Prune" is not translated, and "ruang penyimpan block" is an unnatural phrase in Indonesian.
+
+Correct translation:
+Pangkas &penyimpanan blok hingga
+```
+
 <!-- cache_translation_check_id_bc92182e08584ca1728efa04e8985e15cfcc13b95735cd00bf52f8707477e8ef -->
 ```
         <source>Set the number of script verification threads. Negative values correspond to the number of cores you want to leave free to the system.</source>
@@ -167,16 +264,135 @@ Correct translation:
 Atur jumlah thread verifikasi skrip. Nilai negatif menunjukkan jumlah inti yang ingin Anda biarkan bebas untuk sistem.
 ```
 
-<!-- cache_translation_check_id_be2787b3ef666fa5db47724c38ad5342deabf10bf61f054bdda19cea0c4f0888 -->
+<!-- cache_translation_check_id_218f0c6ee02e0bca85325b11607e5b81ae1eef26006acd208ef28708243ae924 -->
 ```
-        <source>Spend unconfirmed change</source>
-        <translation>Perubahan saldo untuk transaksi yang belum dikonfirmasi</translation>
+        <source>Subtract &amp;fee from amount by default</source>
+        <extracomment>An Options window setting to set subtracting the fee from a sending amount as default.</extracomment>
+        <translation>Kurangi biaya dari jumlah secara default</translation>
     
 ERR
-The translation is inaccurate and somewhat verbose. The English "Spend unconfirmed change" refers specifically to the option of allowing the use of unconfirmed "change" (the leftover output from previous transactions) as input in a new transaction. The given translation refers to "Perubahan saldo untuk transaksi yang belum dikonfirmasi" which means "Change in balance for transactions that have not been confirmed," which is misleading.
+The translation is missing the required shortcut key (&) that is present in the source text, and the phrase "by default" could be better translated as "secara bawaan" to better reflect default settings.
 
 Correct translation:
-Gunakan kembalian yang belum dikonfirmasi
+Kurangi &biaya dari jumlah secara bawaan
+```
+
+<!-- cache_translation_check_id_7cc61e653c9c6b702e348530b3f4cae8b40f05b6c8eff754c4d85610e3d02429 -->
+```
+        <source>&amp;Spend unconfirmed change</source>
+        <translation>&amp;Perubahan saldo untuk transaksi yang belum dikonfirmasi</translation>
+    
+ERR
+The translation renders "change" as "perubahan saldo", which is inaccurate in the context of Bitcoin, where "change" refers to the "kembalian" from a transaction, not a change in balance. A more accurate translation would be:
+
+Correct translation:
+&Gunakan kembalian yang belum dikonfirmasi
+```
+
+<!-- cache_translation_check_id_14c23d60e8140d4ad02894cebaedce25e1f21ab2deee2c90456dff33a1a56cb1 -->
+```
+        <source>Privacy mode activated for the Overview tab. To unmask the values, uncheck Settings-&gt;Mask values.</source>
+        <translation>Mode privasi diaktivasi untuk tab Overview. Untuk mengunmask nilai-nilai, hapus centang yang ada di Settings&gt;Mask values.</translation>
+    
+ERR
+The Indonesian has some awkward anglicisms and word choices: "diaktivasi" is nonstandard (use "diaktifkan"), "mengunmask" is an English verb (use "menampilkan" or "tampilkan"), and the UI path is left in English. Also it's better to translate "Overview" and "Settings->Mask values" to Indonesian UI terms.
+
+Correct translation:
+Mode privasi diaktifkan untuk tab Ikhtisar. Untuk menampilkan nilai, hapus centang pada Pengaturan->Sembunyikan nilai.
+```
+
+<!-- cache_translation_check_id_6d2817cf131bd05b8b8574117e8d08691206cf3176a58fcb13cbdbe54bac0e9e -->
+```
+        <source>Sign Tx</source>
+        <translation>Tanda tangan Tx</translation>
+    
+ERR
+The Indonesian phrase "Tanda tangan Tx" is awkward: "tanda tangan" is normally a noun ("signature") or written as one word "tandatangan", while the source is an action/command ("Sign Tx"). A clearer translation uses the imperative verb form.
+
+Correct translations:
+- Tandatangani Tx
+or, more explicit:
+- Tandatangani transaksi
+```
+
+<!-- cache_translation_check_id_b9b00e39051b618410d194e2cc6bb27c3b74266a2020bfca27771a34ea5050c2 -->
+```
+        <source>Copy to Clipboard</source>
+        <translation>Copy ke Clipboard</translation>
+    
+ERR
+The translation mixes English and is not idiomatic Indonesian. Prefer using the Indonesian verb "Salin".
+
+Correct translation:
+Salin ke Clipboard
+
+(Alternatively: "Salin ke papan klip" or simply "Salin" depending on UI context.)
+```
+
+<!-- cache_translation_check_id_d1bc4a06c4cd9c3c5ced89bbd681638b62eabec146d0aeeebb0de9df5cbc950e -->
+```
+        <source>Signed %1 inputs, but more signatures are still required.</source>
+        <translation>Menandatangankan %1 input, tetapi tanda tangan lebih banyak masih dibutuhkan.</translation>
+    
+ERR
+The Indonesian contains a misspelling and awkward phrasing. "Menandatangankan" is incorrect. Also the sentence style can be made more natural for Indonesian.
+
+Correct translation suggestions:
+%1 input telah ditandatangani, tetapi masih diperlukan tanda tangan tambahan.
+or
+Telah menandatangani %1 input, tetapi masih diperlukan lebih banyak tanda tangan.
+```
+
+<!-- cache_translation_check_id_c9c2bb9ded783ea73a3b0627ad710d31a786ecea30dcb705c725e0c46ac2ae26 -->
+```
+        <source>Signed transaction successfully. Transaction is ready to broadcast.</source>
+        <translation>Berhasil menandatangani transaksi. Transaksi sudah siap untuk di broadcast</translation>
+    
+ERR
+The Indonesian is understandable but not idiomatic and has minor punctuation/wording issues. Prefer passive phrasing and use a single sentence ending punctuation. Also "di broadcast" should be "disiarkan" or "dipublikasikan".
+
+Correct translation:
+Transaksi berhasil ditandatangani. Transaksi sudah siap untuk disiarkan.
+```
+
+<!-- cache_translation_check_id_79fd52c795cfcaa52456feb7605d197bb464a55506faaf9218d91b2bb1ea7e4a -->
+```
+        <source>Unknown error processing transaction.</source>
+        <translation>Kesalahan yang tidak diketahui ketika memproses transaksi </translation>
+    
+ERR
+Issues:
+- Trailing whitespace at end of the translation.
+- Missing ending period (source ends with a period).
+- Slightly awkward phrasing; more natural Indonesian would omit "yang" or add "Terjadi".
+
+Correct translation suggestions:
+- Kesalahan tidak diketahui saat memproses transaksi.
+- Terjadi kesalahan tidak diketahui saat memproses transaksi.
+```
+
+<!-- cache_translation_check_id_0eada9d7b813aa199ea9a1334735d0392ab35fda415905355b6a9fc2419d9926 -->
+```
+        <source>PSBT copied to clipboard.</source>
+        <translation>PSBT disalin ke clipboard</translation>
+    
+ERR
+Missing sentence-ending punctuation and a more natural Indonesian term could be used.
+
+Suggested corrections:
+PSBT disalin ke clipboard.
+Or more natural:
+PSBT disalin ke papan klip.
+```
+
+<!-- cache_translation_check_id_63b0c8c2dfda60813e4d018017934df56e5268e79638e81dbbd129876aa0a137 -->
+```
+        <source>Save Transaction Data</source>
+        <translation>Simpan data Transaksi</translation>
+    
+ERR
+Capitalization is inconsistent for Indonesian. In Indonesian, common nouns should be lowercase. Correct translation:
+Simpan data transaksi
 ```
 
 <!-- cache_translation_check_id_14bdb92844cc1450a3d4f016993b1becc44784f31fc6a90e44563e2449b81b04 -->
@@ -233,6 +449,23 @@ Correct translation:
 Tidak dapat memulihkan cadangan dompet.
 ```
 
+<!-- cache_translation_check_id_898848f84b26f81d903dbfe3315a09f8c42c62e752e45f6c784a4ddddaffcb62 -->
+```
+        <source>default wallet</source>
+        <translation>wallet default</translation>
+    
+ERR
+The translation does not follow the Indonesian grammatical structure. In Indonesian, the correct word order is "default" (as an adjective or descriptor) should follow the noun if kept in English, but "wallet" itself should ideally be translated. The accepted term for "wallet" in Indonesian is "dompet", and "default" can be left as-is for technical context, or translated to "bawaan" or "standar":
+
+Correct translation:
+dompet default
+
+Alternatively, if full localization is preferred:
+dompet bawaan
+
+Either "dompet default" or "dompet bawaan" would be more appropriate than "wallet default".
+```
+
 <!-- cache_translation_check_id_9b7550fa3a30f9290817f0091038fc5b9eab7626a34370048335990d08c38775 -->
 ```
         <source>Unsupported global logging level %s=%s. Valid values: %s.</source>
@@ -260,4 +493,4 @@ or
 ```
 </details>
 
-Number of issues: 18.
+Number of issues: 36.

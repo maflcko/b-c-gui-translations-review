@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>et</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bet%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bet%5D%20request)
 
 
 <!-- cache_translation_check_et_8717e7a8c54b127d2b5423130e396c377ffebf1190b6caf10d8df53934738c5c -->
@@ -59,18 +59,6 @@ Correct translation:
 Teie rahakott on nüüd krüpteeritud.
 ```
 
-<!-- cache_translation_check_et_0c65ce2494066d930c352dc79f55630f9b700f74aa19a2184ea805112a8b8492 -->
-```
-        <source>Close all wallets</source>
-        <translation>Sulge rkõik rahakotid</translation>
-    
-ERR
-There is a typo in the translation: "Sulge rkõik rahakotid" should be "Sulge kõik rahakotid".
-
-Correct translation:
-Sulge kõik rahakotid
-```
-
 <!-- cache_translation_check_et_5b728c44f9fa26cc69e36c5249cbc2846a09c77634d342b5c7eea80bf1f88779 -->
 ```
         <source>Main Window</source>
@@ -81,18 +69,6 @@ The translation is incorrect. "Pea Aken" is not Estonian; "Pea" is not used in t
 
 Correct translation:
 Peaaken
-```
-
-<!-- cache_translation_check_et_0c65ce2494066d930c352dc79f55630f9b700f74aa19a2184ea805112a8b8492 -->
-```
-        <source>Close all wallets</source>
-        <translation>Sulge rkõik rahakotid</translation>
-    
-ERR
-There is a typo in the translation: "Sulge rkõik rahakotid" should be "Sulge kõik rahakotid".
-
-Correct translation:
-Sulge kõik rahakotid
 ```
 
 <!-- cache_translation_check_et_9b979711f9a3319b2a4f2527f8b3719fce127a9df1442a9e3264a3812331384d -->
@@ -121,18 +97,28 @@ Correct translation:
 Kuva akna minimeerimisel ainult tegumiriba ikoon.
 ```
 
-<!-- cache_translation_check_et_90f921f043beacea95768bde2f3d95da9c6198c2a43c41fef90f193bb9378009 -->
+<!-- cache_translation_check_et_a6ad2f748cd7e14bc1a41609d5305b35e24f4f3d9ba5c6eb1cd5abb25eb941b2 -->
 ```
-        <source>Unit to show amounts in:</source>
-        <translation>Summade kuvamise Unit:</translation>
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp;Minimeeri systray alale</translation>
     
 ERR
-The Estonian translation is incorrect and awkward. "Unit" is left untranslated, and the word order is unnatural for Estonian. The proper translation should be:
-
-Koguste kuvamise ühik:
+The Estonian translation introduces an English loanword "systray" and uses "alale" incorrectly. The standard Estonian terminology would be "süsteemisalv" for "system tray", and the translation should preserve the meaning and shortcut key (&).
 
 Correct translation:
-Kuvamise ühik summadele:
+&Minimeeri tegumiriba asemel süsteemisalve
+```
+
+<!-- cache_translation_check_et_859722661b0cde1188b7d69efc58554b18266cb805a9fb0fd041da56d286ad6c -->
+```
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>Summade kuvamise &amp;Unit:</translation>
+    
+ERR
+The translation incorrectly includes the English word "Unit" instead of translating it. The correct Estonian translation would also rephrase for clarity and maintain the placement of "&" for the shortcut key.
+
+Correct translation:
+&amp;Ühik, milles summasid kuvada:
 ```
 
 <!-- cache_translation_check_et_839ccc46e48fde7cff7d6c50086ff08c1598c8f42cbf322639add39d688c10dd -->
@@ -145,6 +131,48 @@ The translation "Liiga suur summa" means "Amount too large" in Estonian, which d
 
 Correct translation:
 Pole piisavalt vahendeid!
+```
+
+<!-- cache_translation_check_et_fdef3883ccf8dad248dfe38081c8723dfadad073de6f78f09c0d958d9ad33558 -->
+```
+        <source>S&amp;end</source>
+        <translation>S&amp;aada</translation>
+    
+ERR
+The translation "Saada" is correct Estonian for "Send", and the shortcut key (&) is preserved. However, it is placed in the wrong position: it should be "S&aa" to match the shortcut placement in English (on the 'e'). The current translation sets the shortcut on 'a' instead.
+
+Correct translation:
+S&aa
+
+OR
+
+Depending on Estonian conventions, if "Saada" is already well-understood with its shortcut key on 'a', it may be acceptable, but the aim is to align shortcut placement if possible. Thus, prefer:
+
+S&aa
+```
+
+<!-- cache_translation_check_et_095f3708a9b75727ae469164d9f7de797cae5f8272467462b71eca38f944b350 -->
+```
+        <source>Pay &amp;To:</source>
+        <translation>Maksa &amp;:</translation>
+    
+ERR
+The translation omits the word "To" ("Saaja" or "Aadressile" in Estonian), making the meaning incomplete.
+
+Correct translation:
+Maksa &amp;saajale:
+```
+
+<!-- cache_translation_check_et_847573815dfafebe42012cf3042905a4e174c6c55c453d5af605adcb53dccddd -->
+```
+        <source>&amp;Sign Message</source>
+        <translation>&amp;Allkirjastamise teade</translation>
+    
+ERR
+The translation is inaccurate. The English source means "Sign Message" (for example, as a button label to sign a message cryptographically). The Estonian translation given, "&Allkirjastamise teade," translates back as "Message of signing" or "Signing message" (noun phrase) rather than the verb command/invitation.
+
+Correct translation:
+"&Allkirjasta sõnum"
 ```
 
 <!-- cache_translation_check_et_84d39d2108137bc602bc1350074d7c453e697b9030c6ca55aab202a929d62c6e -->
@@ -172,4 +200,4 @@ Ebapiisavad vahendid
 ```
 </details>
 
-Number of issues: 12.
+Number of issues: 14.

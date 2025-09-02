@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>ku_IQ</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bku_IQ%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bku_IQ%5D%20request)
 
 
 <!-- cache_translation_check_ku_IQ_a5d1b5f2fd06ea84754ac1c6ff6097cf9a3316377debcae4c95363a6840a1301 -->
@@ -56,6 +56,18 @@ Correct translation:
 دۆخی نهێنی بۆ تابێ گشتی چالاک کرا. بۆ نمایانکردنی بەهاکان، تیکەڵی ڕێکخستنەکان -> ماسککردنی بەهاکان بسڕەوە.
 ```
 
+<!-- cache_translation_check_ku_IQ_20d312c705e5799af722d13ce2d215e0d844ef2237d5790c0a60a3b07943a20f -->
+```
+        <source>&amp;Amount:</source>
+        <translation>&amp;سەرجەم:</translation>
+    
+ERR
+The translation of "Amount" as "سەرجەم" is incorrect. "سەرجەم" means "all" or "total" in Kurdish, rather than "amount" which should be closer to "بڕ" or "بڕی". Additionally, the ampersand (&) is correctly preserved.
+
+Correct translation:
+&amp;بڕ:
+```
+
 <!-- cache_translation_check_ku_IQ_e6f408fe9cfb49e7a620dc207c044369803bb69a086c86e35e424687a0914e57 -->
 ```
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
@@ -101,4 +113,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 6.
+Number of issues: 7.

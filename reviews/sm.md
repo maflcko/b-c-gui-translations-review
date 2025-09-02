@@ -1,13 +1,37 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>sm</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bsm%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bsm%5D%20request)
 
+
+<!-- cache_translation_check_sm_0e756ad9c83344db37eb90b6865a0a9baf1004a9e3915f511c25b293154719c6 -->
+```
+        <source>&amp;New</source>
+        <translation>&amp;Fou</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_a72fbd78a0e4c505da53ae43d58009fad69ebbfcd6d95c02dce442a9ba11094c -->
+```
+        <source>&amp;Copy</source>
+        <translation>&amp;Kopi</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_4c583081a1c24f867766a215f9a1692bedb678deb6cb75436049503133b46e8b -->
+```
+        <source>C&amp;lose</source>
+        <translation>Ta&amp;puni</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
 
 <!-- cache_translation_check_sm_18db8f9e7b6747881c544022fb341e24ac8837588ffeeca7b13d21105f7fef75 -->
 ```
@@ -21,6 +45,54 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
         <source>Enter address or label to search</source>
         <translation>Tu'uina le atunu'u po'o le ata e su'e ai</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_88788c80671034e0cea89ba4b775af6953cffbe5bff8e6f68258f6dfd40d0b46 -->
+```
+        <source>&amp;Export</source>
+        <translation>&amp;Fa'atau Atu</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_3d89adb6dbf50379a39e1c6cbae2a9999ca5f95fd5875db72a56dc54a00aff0f -->
+```
+        <source>&amp;Delete</source>
+        <translation>&amp;Tape</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_35ca3164650b1f0e62563bb34a68e460b9b63718356a9378e85a7ac60f4ec553 -->
+```
+        <source>C&amp;hoose</source>
+        <translation>fi&amp;lifili</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_e518641eb2bb12840294fbe911bedca532eb47eb42bdb26ca75a74b59d414650 -->
+```
+        <source>&amp;Copy Address</source>
+        <translation>&amp;Kopi le Tuatusi</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_9ac11a4044f8c30733f1bec02de711eb6e585fe54f424073ab928d31a4ff1b8d -->
+```
+        <source>Copy &amp;Label</source>
+        <translation>Kopi &amp;Fa'ailoga</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_f6170d466f822b06fbf9a5e2823270206b9c5fa5a513d356636ff918acacec56 -->
+```
+        <source>&amp;Edit</source>
+        <translation>&amp;Teuteu</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
@@ -203,10 +275,18 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_1912689cda90f5a8f945e9c4d704b7c0a396e33ab86d57e85a3c952076b67503 -->
+<!-- cache_translation_check_sm_f11085ec941788f906540b9af03556d5b9e483b522a2889cc300b3bad0deba88 -->
 ```
-        <source>Transactions</source>
-        <translation>O Galuega Fa'atau</translation>
+        <source>&amp;Overview</source>
+        <translation>&amp;Laupapa o le Fa'amaoniga</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_414e8992a476776d4ca5e4c439963c69c49a474d50888090d188a62fbd9f5631 -->
+```
+        <source>&amp;Transactions</source>
+        <translation>&amp;O Galuega Fa'atau</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
@@ -215,6 +295,38 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
         <source>Browse transaction history</source>
         <translation>Su'esu'e i le tala'aga o fa'amaoniga</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_058b8f23ed352aca95613994764950e9b7834cc39a801a8260b2f92477d43b21 -->
+```
+        <source>E&amp;xit</source>
+        <translation>Al&amp;aga</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_8296e8df0bfaa584411b9e352a22ac8175c28e0249cc8bab94f18fe1cf8d0d79 -->
+```
+        <source>&amp;About %1</source>
+        <translation>Fa'amaoniga i le %1</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_bbdcd667d51e943ec1603cfb6ea6723b5c6d828a8ea1be2d8128095260bc866d -->
+```
+        <source>About &amp;Qt</source>
+        <translation>E uiga i &amp;Qt</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_22ee022b33e6861d062ab438de30b5cd1d49c93ed9e823e696f006743f441f6c -->
+```
+        <source>&amp;Minimize</source>
+        <translation>&amp;Ma'itiiti</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
@@ -244,6 +356,30 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
+<!-- cache_translation_check_sm_49c442f5f5a6568f1483145e29d4ddf67a3bd7f2107040993ba45391984b3132 -->
+```
+        <source>&amp;Send</source>
+        <translation>&amp;Auina atu</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_5970b475cfcd1457c969ff5537b0fe869523b29d4dd053c5e27283b9fe56cf59 -->
+```
+        <source>&amp;Receive</source>
+        <translation>&amp;Talia</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_a5882d98ce7edfc69438c88465bb2eeabd16df5cbc0ee41232d1fd15399cfe72 -->
+```
+        <source>&amp;Encrypt Wallet…</source>
+        <translation>&amp;Fa'amaufa'ailoga o le Teugā Tupe…</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
 <!-- cache_translation_check_sm_350afd3b0db88b0c61e21f40b9f77ded05179a19027c1c5d2610c4d28704ce99 -->
 ```
         <source>Encrypt the private keys that belong to your wallet</source>
@@ -252,10 +388,26 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_868f8587fb491224190785843a33fce820fdee41364f8c3fdc4f345289b39c66 -->
+<!-- cache_translation_check_sm_e29ca8d93fb1bd4ac9c187b5acab6a19017526ea692ce6b2be6456405625f5dd -->
 ```
-        <source>Backup Wallet…</source>
-        <translation>Teu Tupe Faleoloa…</translation>
+        <source>&amp;Backup Wallet…</source>
+        <translation>&amp;Teu Tupe Faleoloa…</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_1e72b984c1eae7672bdfba64b8f7f10dba8df2a3e5219ee027ec4ca3bdfdeade -->
+```
+        <source>&amp;Change Passphrase…</source>
+        <translation>&amp;Suia le Upu Fa‘alilolilo…</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_2289993eed79ab6d43e4172c2404c63ca383da04cbd9362ff9127fe78630e03b -->
+```
+        <source>Sign &amp;message…</source>
+        <translation>Saini &amp; feʻau...</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
@@ -268,6 +420,14 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
+<!-- cache_translation_check_sm_03e1574b3c891bd60714fc11d5b9e303740cdbe6863863d750d68c98a704a3e6 -->
+```
+        <source>&amp;Verify message…</source>
+        <translation>&amp;Fa'amaonia le mesēga…</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
 <!-- cache_translation_check_sm_a919cbc54dbacf82934af2f9347cef0d2a917f621fb1bde22c9709f3046b63df -->
 ```
         <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
@@ -276,10 +436,50 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
+<!-- cache_translation_check_sm_95c4cb5f4582cbaf31c966a8b6c1709cdb5deff35f4cc3c46c1d4a7f0d03c357 -->
+```
+        <source>&amp;Load PSBT from file…</source>
+        <translation>&amp;La'u mai le PSBT mai le faila...</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_bc2058110a13e1a2a1211726ccbbd0fa3e93a001ce854598355bbb1ec51c9d4b -->
+```
+        <source>Open &amp;URI…</source>
+        <translation>&amp;Tālili &amp;URI...</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
 <!-- cache_translation_check_sm_efb9065da8a41d1a28dec65c7d9c4d9a6ac13a8f47aa85a3ca6b6cb5a0cb0339 -->
 ```
         <source>Create Wallet…</source>
         <translation>Faasia le 'Wallet'...</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_70175d0b0398c29f8ba1d88ffc9fc02f3d92866636ef32a38dfdad8a0bb0a22e -->
+```
+        <source>&amp;File</source>
+        <translation>&amp;Faila</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_515f12ecbcd23eb1c8e7e3be03b575e785d31cafa00654c265929718ed01199f -->
+```
+        <source>&amp;Settings</source>
+        <translation>&amp;Fa'atonuga</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_d45754780e60d98f5b178403cebfe475493514ae5464559c6cc0930efbadfa21 -->
+```
+        <source>&amp;Help</source>
+        <translation>&amp;Ma Fesoasoani</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
@@ -300,10 +500,26 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
+<!-- cache_translation_check_sm_0b2451da62fa9f392f45911335dbfed70c4e8ccd678720028d0fd71485ae5e38 -->
+```
+        <source>&amp;Command-line options</source>
+        <translation>&amp;Faʻamatalaga o le laina amata</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
 <!-- cache_translation_check_sm_a55aa98633735ba94c6f2419d83aefc88e1a4e2b1f49b4853fdd056462a20f9a -->
 ```
         <source>Load Partially Signed Bitcoin Transaction</source>
         <translation>Laʻu le Galuega Fa'amaonia Bitcoin i le vaega</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_4f33ee80e104721df056a4b32bed84dd496645e2e40d98d4bc214eb5c2332150 -->
+```
+        <source>Load PSBT from &amp;clipboard…</source>
+        <translation>Loli PSBT mai le &amp;clipboard…</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
@@ -316,10 +532,18 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_9a51cbc3c9e324228303fdd92634c3c80e665e9f4c31c25ec0304d2aa345af74 -->
+<!-- cache_translation_check_sm_f211ea77935e53756c333506146971a40b977437b606c83feee866d802074c65 -->
 ```
-        <source>Receiving addresses</source>
-        <translation>Tuuina atu i le tuatusi</translation>
+        <source>&amp;Sending addresses</source>
+        <translation>&amp; O le lafoina o fa'amaoniga</translation>
+    
+UNK_LANG
+```
+
+<!-- cache_translation_check_sm_ccbe417e15ec02dc400ca7b798459f430de3cce0941aba70d032c5c77125f28f -->
+```
+        <source>&amp;Receiving addresses</source>
+        <translation>&amp;Tuuina atu i le tuatusi</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
@@ -366,6 +590,14 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
+<!-- cache_translation_check_sm_d3950bf02a167d82de3b4a5829d9a04bf39744fd59293f41e086dcbe85fa239f -->
+```
+        <source>&amp;Mask values</source>
+        <translation>&amp;Tau o le Mask</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
 <!-- cache_translation_check_sm_10070d92dbb787ce1550760772a090e8114ec8f20caf2c7a7101482549a4b47f -->
 ```
         <source>Mask the values in the Overview tab</source>
@@ -392,10 +624,26 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_661d66e3f4937e1e4f777fa011ca5cc6dace39adc79c21650a0ba23b3b53fa06 -->
+<!-- cache_translation_check_sm_fd71d7c89ae1a56e4e3a0e535be1d2703b47bb56c6a9bf295fb67547c0790ad2 -->
 ```
-        <source>Window</source>
-        <translation> Fa'afanua</translation>
+        <source>&amp;Window</source>
+        <translation>&amp; Fa'afanua</translation>
+    
+UNK_LANG
+```
+
+<!-- cache_translation_check_sm_b4c42b6d970629e7f5b4b20171b1ee2b338db1b9c0151cda8687c8a181961671 -->
+```
+        <source>&amp;Hide</source>
+        <translation>&amp;Fagafaga</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_f6af1608432011c96261e332217710420f5d1b350299c9fbb5468e74cf7f6622 -->
+```
+        <source>S&amp;how</source>
+        <translation>Fa'&amp;aali</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
@@ -504,38 +752,50 @@ Aofa'i:
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_c1f0c862d95ddc41676697a612d12e154dbbb1bdad4534aa96832ccab38c142e -->
+<!-- cache_translation_check_sm_8c2d1d7e6dab9ff7f14a8d83a7f573bae00c4c85c40aede0fbdc12eaf0a6aab4 -->
 ```
-        <source>Copy label</source>
-        <translation>Kopi fa'amaonia</translation>
+        <source>&amp;Copy address</source>
+        <translation>&amp;Kopi le adiresi</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_af74f5ec8f3397d630af67053d281899fa00d47db53dc5e14d0e03bcd64b3d0b -->
+<!-- cache_translation_check_sm_2589fb78b7000b4361152822331b72e530aec8c74bd8f49cec9307f42c4d62b3 -->
 ```
-        <source>Copy amount</source>
-        <translation>Kopi  amount</translation>
+        <source>Copy &amp;label</source>
+        <translation>Kopi &amp; fa'amaonia</translation>
     
-ERR
-The translation is partially in Samoan ("Kopi" means "copy"), but the word "amount" remains untranslated and the space before "amount" is incorrect.
-
-Correct translation:
-Kopi aofa'i
+UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_ec37f3effce07dfab75054a2fbf0a781ac7df3bbecdf1d492b5245fb967a2a98 -->
+<!-- cache_translation_check_sm_63f04beedc27edaaaf7ab6efb6b7375f064853df4d29e27afa570cea74405eac -->
 ```
-        <source>Copy transaction ID and output index</source>
+        <source>Copy &amp;amount</source>
+        <translation>Kopi &amp; amount</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_2a389f80cc4079228af596ab7915efde7e9dda1cb7efa222d2823174b0f0c8c1 -->
+```
+        <source>Copy transaction &amp;ID and output index</source>
         <translation>Kopi i le fa'amaoniga ma le ID ma le lisi o le fa'amaoniga</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_03c968cb3375d9c9e22e64dc121de4bf6e036acb9c89dbff275bf357d32560a0 -->
+<!-- cache_translation_check_sm_edc3077c50235e1163b0cdf809e2996cf70bfcb00e51ebc6204569debd2657c8 -->
 ```
-        <source>Lock unspent</source>
-        <translation>Kiliki le leai o se fa'aaoga</translation>
+        <source>L&amp;ock unspent</source>
+        <translation>K&amp;iliki le leai o se fa'aaoga</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_003f2d29538d9a1e7f64ff55607e5f6aa0161e446cfd8f870ecf92c6cdd90fc9 -->
+```
+        <source>&amp;Unlock unspent</source>
+        <translation>&amp;Tatala le tupe e le'i fa'aaogaina</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
@@ -726,6 +986,14 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
+<!-- cache_translation_check_sm_354b59f2c800a1a35758b7a3805e0d22294acd70446826a7bb116dfdb806eef8 -->
+```
+        <source>&amp;Label</source>
+        <translation>&amp;Ma le Lisi</translation>
+    
+UNK_LANG
+```
+
 <!-- cache_translation_check_sm_f522dedc9bf45d60faf982f0bfa5d99fe205d8c4381107dcbb9d2dd3cc275cd5 -->
 ```
         <source>The label associated with this address list entry</source>
@@ -738,6 +1006,14 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
         <translation>O le tuatusi o lo'o fa'amaonia ma le fa'amaoniga o le lisi tuatusi. E mafai ona suia lenei mea mo tuatusi fa'amaonia.</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_8d2ed86bbeaa605c492d854a39c740612200f3498b23cd5b2d4f6bf2cbeb4ff7 -->
+```
+        <source>&amp;Address</source>
+        <translation>&amp;Tuatusi</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
@@ -806,30 +1082,6 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_4e0f31aba912ca2582bbb1395fd5f44b5daf3a9cdbf0a16649b3a2fb422894ab -->
-```
-        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>O le %1 o le a tusia ma teuina se kopi o le Bitcoin block chain.</translation>
-    
-UNK_LANG, not familiar with the Samoan language 'sm'.
-```
-
-<!-- cache_translation_check_sm_1073cb806491c8437397f10c07da168ed629d8db799cb94eca974ac989a983d1 -->
-```
-        <source>The wallet will also be stored in this directory.</source>
-        <translation>O le 'oloa o le kata o le a fa'amaimauina fo'i i lenei faila.</translation>
-    
-UNK_LANG, not familiar with the Samoan language 'sm'.
-```
-
-<!-- cache_translation_check_sm_2b927fdfcf6898b9fb840f12f06974a2311867ea3623d0091c0b700fa8dd203b -->
-```
-        <source>Error: Specified data directory "%1" cannot be created.</source>
-        <translation>Sese: E le mafai ona fa'ata'ita'i le katalogi o fa'amaoniga "%1".</translation>
-    
-UNK_LANG, not familiar with the Samoan language 'sm'.
-```
-
 <!-- cache_translation_check_sm_2fdc9a4cb6e82275370e40c54565052ea9b550c981ad26fd3c4fdcee7dae668b -->
 ```
         <source>As this is the first time the program is launched, you can choose where %1 will store its data.</source>
@@ -858,6 +1110,30 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
         <source>Use a custom data directory:</source>
         <translation>Use le fa'amaoniga fa'atekinolosi o fa'amaoniga:</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_4e0f31aba912ca2582bbb1395fd5f44b5daf3a9cdbf0a16649b3a2fb422894ab -->
+```
+        <source>%1 will download and store a copy of the Bitcoin block chain.</source>
+        <translation>O le %1 o le a tusia ma teuina se kopi o le Bitcoin block chain.</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_1073cb806491c8437397f10c07da168ed629d8db799cb94eca974ac989a983d1 -->
+```
+        <source>The wallet will also be stored in this directory.</source>
+        <translation>O le 'oloa o le kata o le a fa'amaimauina fo'i i lenei faila.</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_2b927fdfcf6898b9fb840f12f06974a2311867ea3623d0091c0b700fa8dd203b -->
+```
+        <source>Error: Specified data directory "%1" cannot be created.</source>
+        <translation>Sese: E le mafai ona fa'ata'ita'i le katalogi o fa'amaoniga "%1".</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
@@ -903,6 +1179,14 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
+<!-- cache_translation_check_sm_47916ce0700851a8dfca10e1299c17cd850814941173a15de28a23d9ab5d151a -->
+```
+        <source>&amp;Main</source>
+        <translation>&amp;Sili</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
 <!-- cache_translation_check_sm_9025b2ce7553bb6a46ece89670679fe85582b7c04498a256169c4811c5ccc3e0 -->
 ```
         <source>Automatically start %1 after logging in to the system.</source>
@@ -911,26 +1195,50 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_e377a239aec438ab0089056046a571da9ec556dccea9ef7f0cb4815db05da801 -->
+<!-- cache_translation_check_sm_97f2cac9946931d61f1a3b95f55f4f49eb853b2d13490ae741d4bff484c90eeb -->
 ```
-        <source>Number of script verification threads</source>
-        <translation>Numera o tusitusiga  filo o faʻamaoniga</translation>
+        <source>&amp;Start %1 on system login</source>
+        <translation>&amp;Amata %1 i le ulufale o le faiga</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_e6bc58af05fda8ccc977ae4dadc33176e7ace1f5784ebafcb3e0012af4687836 -->
+<!-- cache_translation_check_sm_d3fc252a865f9c758f3f8970861fcadb46810a372fc0b0f2c89289cf8fc6001b -->
 ```
-        <source>Reset Options</source>
-        <translation>Toe Seti Filifiliga</translation>
+        <source>Size of &amp;database cache</source>
+        <translation>Tele o le &amp;teu oloa fa'amaumauga</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_c7602ac3173e60b6a88611ebd5ada69545cf182e07e733e950e6002b95be3f80 -->
+<!-- cache_translation_check_sm_a312a6b201d07772d50268653bd33d88434fe59ab0c8a576d63f19f76ec3cdf5 -->
 ```
-        <source>Prune block storage to</source>
-        <translation>Fa'ama'a  blokē le teuina i le</translation>
+        <source>Number of script &amp;verification threads</source>
+        <translation>Numera o tusitusiga &amp; filo o faʻamaoniga</translation>
+    
+UNK_LANG
+```
+
+<!-- cache_translation_check_sm_7711ef183606b5b9dc07c4bdb3714ac1f37bf0ee6b2bf0746ca28afce8c83836 -->
+```
+        <source>&amp;Reset Options</source>
+        <translation>&amp;Toe Seti Filifiliga</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_cb31fff181f86f5092dc2ac47a48bf715c2bf0b1ba68c639117634f9b79af981 -->
+```
+        <source>&amp;Network</source>
+        <translation>&amp;Fesootaiga</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_f9b6d8de9ec5ba11783768e908bd8f27350d19741dea80a7db409f2b909ab59b -->
+```
+        <source>Prune &amp;block storage to</source>
+        <translation>Fa'ama'a &amp; blokē le teuina i le</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
@@ -943,9 +1251,35 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_8dd5c16054ddd54039ccb96e02fdfe10fb9e79a65fe93463abcf46d219565dd2 -->
+<!-- cache_translation_check_sm_9f3ca45621b6ab54e6f47728b6a6400120c4956fc78abf2030d5bb4d911e9739 -->
 ```
-        <source>Enable coin control features</source>
+        <source>Enable R&amp;PC server</source>
+        <extracomment>An Options window setting to enable the RPC server.</extracomment>
+        <translation>Fa'ataga le server R&amp;PC</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_09b520c25cc523789de87bd6d29ac12a59b22ae3ef1c8ed767424a8c68ce51f0 -->
+```
+        <source>W&amp;allet</source>
+        <translation>Pu&amp;sa teuga</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_c1ccbacc7105ee356c40d361c4634f574c6f527ec822ea149af6f23a86d2413f -->
+```
+        <source>Subtract &amp;fee from amount by default</source>
+        <extracomment>An Options window setting to set subtracting the fee from a sending amount as default.</extracomment>
+        <translation>Aveese &amp; tau mai le tupe i le tulaga masani</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_88b88ac2392c06f10db145df0cda28dff32153dd53a175fa70ef0fa34edb2224 -->
+```
+        <source>Enable coin &amp;control features</source>
         <translation>Fa'atufaina atu vaega o le tama'ita'i ma le pulea</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
@@ -955,6 +1289,23 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
         <source>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</source>
         <translation>Afai e te fa'amaonia le taofia o le fa'aaogaina o le suiga e le'i fa'amaonia, o le suiga mai se fa'amaoniga o le fefa'asoaa'i e le mafai ona fa'aaogaina se'ia oo i le fa'amaonia o le fa'amaoniga o le fefa'asoaa'i. O le mea lea e fa'aleagaina ai le fa'amaoniga o lau tupe.</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_74fff24573f2b0c2e41abdc6f89efa0e0432b906f9b663f109ed057ed9864a75 -->
+```
+        <source>&amp;Spend unconfirmed change</source>
+        <translation>&amp;Fa'aaoga le suiga e le'o fa'amaonia</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_c0dee3b311964505292c3ee1b2fa5f605b49922f880a051af5dfc7970c5d1747 -->
+```
+        <source>Enable &amp;PSBT controls</source>
+        <extracomment>An options window setting to enable PSBT controls.</extracomment>
+        <translation>Fa'ataga ma le pule o &amp;PSBT</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
@@ -976,48 +1327,106 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_46c23fdd837c4848736b2ccb7cc14ea78d917d21ba49f7f79c0b94635c5f9a87 -->
+<!-- cache_translation_check_sm_2b75ef6f0d498f58f73a376cd092cfb2fb2ef4b580d4d1253a0e088e275bfd1c -->
 ```
-        <source>External signer script path</source>
-        <translation>Le ala o le tetele o le tagata fa'amaonia i fafo</translation>
+        <source>&amp;External signer script path</source>
+        <translation>&amp;Le ala o le tetele o le tagata fa'amaonia i fafo</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_eae364d648ac8bed4dd4acd89b0c25e107e3aa83e388d6eddef866abf6bd4acc -->
+<!-- cache_translation_check_sm_d1ce8a1519d0afc5f062bc3fdb3fab43862fe39079033aa0d29777920dc5426c -->
 ```
-        <source>Port:</source>
-        <translation>Portu:</translation>
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Fa'amaonia feso'ota'i&amp;ga o lo'o sau</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_661d66e3f4937e1e4f777fa011ca5cc6dace39adc79c21650a0ba23b3b53fa06 -->
+<!-- cache_translation_check_sm_ffa1baec0d5e2f6e0f28cba52423b85bc52ba3270e386064c7bb05a8a13dd7b7 -->
 ```
-        <source>Window</source>
-        <translation> Fa'afanua</translation>
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>&amp;Feso'ota'i i le SOCKS5 proxy (proxy masani):</translation>
+    
+UNK_LANG
+```
+
+<!-- cache_translation_check_sm_b940a4dcb09adef1b5a6320205d98165f4c6b43343aac7c8996fa6e4a0365252 -->
+```
+        <source>Proxy &amp;IP:</source>
+        <translation>Fa'ailoga &amp;IP:</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_d5f4426165679994e179f0786e2afa0e8f5839e517ed6d6fe1860ebe4e62d89d -->
+<!-- cache_translation_check_sm_15800a19ae6180b77a5c1aae6470f2789d890c0d01777a5b46a17fe000ec8e16 -->
 ```
-        <source>User Interface language:</source>
-        <translation>Fa'avaa o le P المستخدم  Gagana:</translation>
+        <source>&amp;Port:</source>
+        <translation>&amp;Portu:</translation>
     
-ERR
-The translation is problematic. It contains Arabic script ("المستخدم") which does not belong in Samoan, as well as unexplained elements ("Fa'avaa o le P"). This is not a coherent or accurate translation of the English source.
-
-Correct translation:
-Gagana o le Fa'aoga:
-
-(Note: "User Interface language" can be translated as "Gagana o le Fa'aoga" or "Gagana o le Fa'avaa o le Polokalama", but "Gagana o le Fa'aoga" is concise and clear.)
+UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_4cd6a346129505d2dc64c3806ef1cfb829cb81e20f7faaebfb74f10667cd73ee -->
+<!-- cache_translation_check_sm_fd71d7c89ae1a56e4e3a0e535be1d2703b47bb56c6a9bf295fb67547c0790ad2 -->
 ```
-        <source>Third-party transaction URLs</source>
-        <translation>Lau ulutala o fa'amaoniga fa'ava-o-maua</translation>
+        <source>&amp;Window</source>
+        <translation>&amp; Fa'afanua</translation>
+    
+UNK_LANG
+```
+
+<!-- cache_translation_check_sm_0253ce6e434ea60f964ceef411ac2c4208e42c28ab2bce39c364735e3b334838 -->
+```
+        <source>&amp;Show tray icon</source>
+        <translation>&amp;Faʻʻaalia le ata i le taiga</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_398b73cfbc93487b4ae892d9b3fe45a122f064950515872120333fa918d453b3 -->
+```
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp;Fa'aitiitia i le pa'u nai lo le upega faigaluega</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_e9c4fd3bee0aa01d7baf7254a52a3aeb42950efbd8ac70cac5927ec5ca4c171a -->
+```
+        <source>M&amp;inimize on close</source>
+        <translation>Fa'&amp;aitiitia i le tapuni</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_a27eb22b615cc3896cd7c72874557d4ac72a2aa419855c86dd72ececfbd1a5a4 -->
+```
+        <source>&amp;Display</source>
+        <translation>&amp;Fa'aali</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_c33e9f739281fbbd96aca8312b4f52183b2999a3773c71173959db16f0232c40 -->
+```
+        <source>User Interface &amp;language:</source>
+        <translation>Fa'avaa o le P المستخدم &amp; Gagana:</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_15b5d25d5989cb3818ddbeb092fae1b5952d837f87e0dd257915632af0f2e28e -->
+```
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>&amp;Eunae e fa'aalia ai le tele i le:</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_b4c10e576ddc40959a869abd1249947ed444cb8f09015c41a2d18af0b953a56c -->
+```
+        <source>&amp;Third-party transaction URLs</source>
+        <translation>&amp;Lau ulutala o fa'amaoniga fa'ava-o-maua</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
@@ -1038,10 +1447,18 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_b54c790e71143679fa631d67438be683abed039f62f4a742a465801b0d019181 -->
+<!-- cache_translation_check_sm_54696fc740eb9e04e8a3d8e81e5e812ba5ea53d3a9d402ae9f2978c891780d14 -->
 ```
-        <source>Cancel</source>
-        <translation>Fa'amaoniga</translation>
+        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
+        <translation>Fa'aogaina se proxy SOCKS&amp;5 eseese e ulufale ai i paaga i luga o auaunaga Tor onion:</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
+<!-- cache_translation_check_sm_75abb7d2b8a755a4b0c11a1b4d0699fb18e6fbe5d972b50fa7a34bffc9ad9727 -->
+```
+        <source>&amp;Cancel</source>
+        <translation>&amp;Fa'amaoniga</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
@@ -1079,40 +1496,37 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_2f8c97831d7080abcfc8010a5d7613a209810301e02768900446677810aa89f4 -->
+<!-- cache_translation_check_sm_9eb48dc3c2190730904450e65f8a549f544c7de93b212a4b06fef1197aa66340 -->
 ```
-        <source>Your current balance in watch-only addresses</source>
-        <translation>O lau paleni i le taimi nei i tuatusi na'o le mata'itu</translation>
+        <source>&amp;Copy address</source>
+        <extracomment>Context menu action to copy the address of a peer.</extracomment>
+        <translation>&amp;Kopi le adiresi</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_ead9c7c9bb873fa0c3dd6b89cb661dd1e8ce8134889853df20806e2d77d7c782 -->
+<!-- cache_translation_check_sm_8c2d1d7e6dab9ff7f14a8d83a7f573bae00c4c85c40aede0fbdc12eaf0a6aab4 -->
 ```
-        <source>Spendable:</source>
-        <translation>fa'aaogaina:</translation>
+        <source>&amp;Copy address</source>
+        <translation>&amp;Kopi le adiresi</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_8dd34d74c3116b7d10672ae2f518da8a56feb3f5df7f3366483e4a861bed26b8 -->
+<!-- cache_translation_check_sm_2589fb78b7000b4361152822331b72e530aec8c74bd8f49cec9307f42c4d62b3 -->
 ```
-        <source>Copy label</source>
-        <translation>Kopi  fa'amaonia</translation>
+        <source>Copy &amp;label</source>
+        <translation>Kopi &amp; fa'amaonia</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_af74f5ec8f3397d630af67053d281899fa00d47db53dc5e14d0e03bcd64b3d0b -->
+<!-- cache_translation_check_sm_63f04beedc27edaaaf7ab6efb6b7375f064853df4d29e27afa570cea74405eac -->
 ```
-        <source>Copy amount</source>
-        <translation>Kopi  amount</translation>
+        <source>Copy &amp;amount</source>
+        <translation>Kopi &amp; amount</translation>
     
-ERR
-The translation is partially in Samoan ("Kopi" means "copy"), but the word "amount" remains untranslated and the space before "amount" is incorrect.
-
-Correct translation:
-Kopi aofa'i
+UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
 <!-- cache_translation_check_sm_57a668db6d3a6871c514a1a6b14e6366e01b0c4280fb18ca22069accca187d73 -->
@@ -1207,24 +1621,28 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_8dd34d74c3116b7d10672ae2f518da8a56feb3f5df7f3366483e4a861bed26b8 -->
+<!-- cache_translation_check_sm_8c2d1d7e6dab9ff7f14a8d83a7f573bae00c4c85c40aede0fbdc12eaf0a6aab4 -->
 ```
-        <source>Copy label</source>
-        <translation>Kopi  fa'amaonia</translation>
+        <source>&amp;Copy address</source>
+        <translation>&amp;Kopi le adiresi</translation>
     
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
-<!-- cache_translation_check_sm_af74f5ec8f3397d630af67053d281899fa00d47db53dc5e14d0e03bcd64b3d0b -->
+<!-- cache_translation_check_sm_2589fb78b7000b4361152822331b72e530aec8c74bd8f49cec9307f42c4d62b3 -->
 ```
-        <source>Copy amount</source>
-        <translation>Kopi  amount</translation>
+        <source>Copy &amp;label</source>
+        <translation>Kopi &amp; fa'amaonia</translation>
     
-ERR
-The translation is partially in Samoan ("Kopi" means "copy"), but the word "amount" remains untranslated and the space before "amount" is incorrect.
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
 
-Correct translation:
-Kopi aofa'i
+<!-- cache_translation_check_sm_63f04beedc27edaaaf7ab6efb6b7375f064853df4d29e27afa570cea74405eac -->
+```
+        <source>Copy &amp;amount</source>
+        <translation>Kopi &amp; amount</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
 <!-- cache_translation_check_sm_53aaecd675fe523e3ee08b4cd07f84f8c9b6cb328094386449d1052a5ca37e98 -->
@@ -1240,6 +1658,14 @@ Ua le manuia le fa'aulufale (or Fa'atamala le auina atu, depending on the region
 A simple, context-accurate translation would be: "Le manuia le auina atu" (Exporting Failed)
 ```
 
+<!-- cache_translation_check_sm_88788c80671034e0cea89ba4b775af6953cffbe5bff8e6f68258f6dfd40d0b46 -->
+```
+        <source>&amp;Export</source>
+        <translation>&amp;Fa'atau Atu</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
 <!-- cache_translation_check_sm_26070a8382b88f68ee2ec543ddce9ff7bdc7a0b5571a1a03e063fe61a36f33ef -->
 ```
         <source>Wallet Data</source>
@@ -1250,4 +1676,4 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 </details>
 
-Number of issues: 147.
+Number of issues: 202.

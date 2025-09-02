@@ -1,36 +1,24 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>km</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bkm%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bkm%5D%20request)
 
 
-<!-- cache_translation_check_km_c05d087edc1e4ae3ccec5bad654cec5887c26539396daff8394ea477a00bf4d4 -->
+<!-- cache_translation_check_km_f34171ace5b109783baa88a0c1f9e7c0aec303ee0d93715b71c46fb8b13c4318 -->
 ```
-        <source>Close</source>
-        <translation>បិទ(l)</translation>
+        <source>Copy the currently selected address to the clipboard</source>
+        <translation>ចម្លងអាសយដ្ឋានដែលបានជ្រើសរើសបច្ចុប្បន្នទៅខ្លីពបដ</translation>
     
 ERR
-The inclusion of "(l)" after "បិទ" is incorrect unless it is meant to indicate a keyboard accelerator, which is not clear from the source. The English source does not include any such indication.
+The Khmer translation contains a garbled/incorrect word for "clipboard" ("ខ្លីពបដ"), making the phrase unclear. There are no format specifiers issues or whitespace problems.
 
-Correct translation:
-បិទ
-```
-
-<!-- cache_translation_check_km_fc78e218ea66d95c1af1bbd0e575f640dfc8166a3bef3dc4348824360b447229 -->
-```
-        <source>Choose</source>
-        <translation>ជ្រើសរើស(h)</translation>
-    
-ERR
-The translation "ជ្រើសរើស(h)" incorrectly adds "(h)" at the end, which is not present in the source text and is unwarranted. The correct translation should be:
-
-Correct translation:
-ជ្រើសរើស
+Suggested correct translation:
+ចម្លងអាសយដ្ឋានដែលបានជ្រើសរើសបច្ចុប្បន្នទៅក្តារ​ចម្លង
 ```
 
 <!-- cache_translation_check_km_389819059094200beb19368af0316f1c6e3a2f77ffb187f22cde07ba08cdc59a -->
@@ -68,6 +56,57 @@ The translation is inaccurate and awkward. It combines numbers and words require
 
 Correct translation:
 បញ្ជូលពាក្យសម្ងាត់ថ្មីសម្រាប់កាបូប។ &lt;br/&gt;សូមប្រើពាក្យសម្ងាត់មាន&lt;b&gt;១០ តួអក្សរឬច្រើនជាងនេះដែលចៃដន្យ&lt;/b&gt; ឬ&lt;b&gt;៨ពាក្យឬច្រើនជាងនេះ&lt;/b&gt;។
+```
+
+<!-- cache_translation_check_km_51b60e572b4272aa73aacb7d38acf9fae627c369d95f12ce88bdaa14f3716cac -->
+```
+        <source>Unroutable</source>
+        <translation>មិនអាចបើកច្រក</translation>
+    
+ERR
+The Khmer translation "មិនអាចបើកច្រក" literally says "cannot open port," which does not match the English "Unroutable" (meaning "cannot be routed" / "no route available"). 
+
+Correct translation suggestion:
+មិនអាចផ្ញើតាមផ្លូវបាន (literal: "cannot be sent/routed via a route")
+```
+
+<!-- cache_translation_check_km_1d0f9e6dcc27a78dd3280f651708a0977c876f41463807679fd85193668875a2 -->
+```
+        <source>Onion</source>
+        <comment>network name</comment>
+        <extracomment>Name of Tor network in peer info</extracomment>
+        <translation>ខ្ទឹមបារាំង</translation>
+    
+ERR
+The Khmer translation "ខ្ទឹមបារាំង" means a type of garlic/shallot and is not an appropriate translation for the Tor network name "Onion". No format specifiers are present, and there are no whitespace issues.
+
+Suggested correction (use transliteration to preserve the network name):
+Correct translation:
+អូន្យុង
+```
+
+<!-- cache_translation_check_km_9094c7b6bbc4e8f7cdd6a8bbcb22ae1ed7849e0e66dfa380fe52db34ef56e600 -->
+```
+        <source>%1 ms</source>
+        <translation>%1 នាទី</translation>
+    
+ERR
+The translation is incorrect: "%1 នាទី" means "%1 minutes" (minutes), not milliseconds. The format specifier "%1" is preserved correctly and there are no spacing issues.
+
+Correct translation:
+%1 មីលីវិនាទី
+```
+
+<!-- cache_translation_check_km_8da3275703681be1d35da4341897467af4c2608afe4b79989e12cab3666e2757 -->
+```
+        <source>&amp;About %1</source>
+        <translation>អំពី(&amp;A) %1</translation>
+    
+ERR
+The translation places the ampersand inside parentheses as "អំពី(&amp;A) %1", which is awkward and not a proper mnemonic placement for Khmer. %1 is preserved correctly and there's only one & present, but the & should precede the menu label character (not be shown as "(&A)"). Also using a Latin "A" inside parentheses is inconsistent for Khmer.
+
+Correct translation:
+&amp;អំពី %1
 ```
 
 <!-- cache_translation_check_km_6a9cb952f242659f9ad335e10c7eb0dd631fbb3076f047b4a8cb3d0911a9c8b4 -->
@@ -155,16 +194,16 @@ or
 Either are acceptable for "Migrate Wallet".
 ```
 
-<!-- cache_translation_check_km_df5b3ecc1a20bfc6577ffe5fef79edfe70c033f511376e86764bd849ddff5ed5 -->
+<!-- cache_translation_check_km_0c93c4026bf8a87b05f7c4ebce49428a15539c16837d0038b16526e2025c60b6 -->
 ```
-        <source>Show</source>
-        <translation>របៀប(S)</translation>
+        <source>S&amp;how</source>
+        <translation>របៀប(&amp;S)</translation>
     
 ERR
-The translation "របៀប(S)" is inaccurate. "របៀប" means "method" or "procedure" and does not convey the meaning of "Show". The inclusion of "(S)" is also not standard in Khmer UI translations and appears erroneous.
+The Khmer translation "របៀប(&amp;S)" is incorrect. "របៀប" means "method" or "procedure", which does not convey the meaning of "Show". The mnemonic (&amp;S) is in the correct position, but the main word itself is wrong.
 
 Correct translation:
-បង្ហាញ
+បង្ហាញ(&amp;S)
 ```
 
 <!-- cache_translation_check_km_043311e3856fcd0d3d5e19e878cc2c36ff51fe3454c8b951aaca93b566a52344 -->
@@ -177,6 +216,18 @@ The translation is inaccurate. The English source states that the wallet is "enc
 
 Correct translation:
 កាបូបអេឡិចត្រូនិចនេះបាន&lt;b&gt;បំលែងជាកូដ&lt;/b&gt; និង​បច្ចុប្បន្ន&lt;b&gt;បានបើកសោ&lt;/b&gt;
+```
+
+<!-- cache_translation_check_km_ad6222dd45a8500dade1022c57ae5d7198e78f59a6e1fec3f77d582af1fa6fa3 -->
+```
+        <source>L&amp;ock unspent</source>
+        <translation>L&amp;ock មិនបានចំណាយ</translation>
+    
+ERR
+The translation does not translate the English word "Lock". It only appends the untranslated English "Lock" and then adds the Khmer for "unspent". Moreover, the shortcut key (&amp;) is retained correctly, but the main command word is not translated.
+
+Correct translation:
+ចាក់សោមិនបានចំណាយ (&amp;L)
 ```
 
 <!-- cache_translation_check_km_343fc2657be49ab8ba360bf2940d35153d7957880489943abd150e9cf9a2447e -->
@@ -210,6 +261,48 @@ or
 ផ្លាស់ប្ដូរកាបូប
 
 Either are acceptable for "Migrate Wallet".
+```
+
+<!-- cache_translation_check_km_bc50d5e17f9e04875cb72ca6dce934248924752d91019c6e75d7e9459db0a455 -->
+```
+        <source>Migrating Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <translation>អន្ដោប្រវេសន៍កាបូប&lt;b&gt;%1&lt;/b&gt;…</translation>
+    
+ERR
+The Khmer translation uses "អន្ដោប្រវេសន៍" (immigration) which is not appropriate for "Migrating" in this technical context. The %1 inside <b> tags and the ellipsis are preserved correctly, but the chosen word is misleading.
+
+Correct translation:
+កំពុងផ្ទេរកាបូប &lt;b&gt;%1&lt;/b&gt;…
+```
+
+<!-- cache_translation_check_km_fa1d6305c7b8a8f885b7197330c428cfaf54cd566f646ed7e7797911a4046afa -->
+```
+        <source>Migration failed</source>
+        <translation>អន្ដោប្រវេសន៍បរាជ័យ</translation>
+    
+ERR
+The Khmer translation uses អន្ដោប្រវេសន៍ which means "immigration/entry" (people entering a country) and is inappropriate for a software/data/Bitcoin context. No format specifiers issues.
+
+Suggested correct translation (concise):
+ការផ្ទេរបរាជ័យ
+
+Or more explicit (data migration):
+ការផ្ទេរទិន្នន័យបរាជ័យ
+```
+
+<!-- cache_translation_check_km_f9ae462c458f65c8911e4551246e5f6df86fb6fe466418638d413bce472d9e69 -->
+```
+        <source>Migration Successful</source>
+        <translation>អន្ដោប្រវេសន៍ជោគជ័យ</translation>
+    
+ERR
+The Khmer phrase "អន្ដោប្រវេសន៍ជោគជ័យ" reads more like "immigration successful" and the first word is misspelled/awkward for the intended UI meaning. For a generic software/UI message "Migration Successful" a clearer Khmer translation is:
+
+Correct translation:
+ការផ្លាស់ទីបានជោគជ័យ
+
+If you mean specifically data migration, use:
+ការផ្ទេរទិន្នន័យបានជោគជ័យ
 ```
 
 <!-- cache_translation_check_km_0b3aac5bf51874c91aa3c362c496a63552821f7b3efaf40e120bdf0d6afc28d6 -->
@@ -254,16 +347,17 @@ Alternatively, a more formal translation:
 The term "បំលែង...ទៅជាកូដ" means "convert...into code," which is not accurate for "encrypt."
 ```
 
-<!-- cache_translation_check_km_59db80ad14f51855804a8868e5c504415b4cbf5980f7a6037d759cde0b30a84c -->
+<!-- cache_translation_check_km_0f75f14b7914bc1bf5361d7ec60ef86c45c28b888b4292329d6903956d087fd8 -->
 ```
-        <source>Address</source>
-        <translation>អាសយដ្ឋានបញ្ចូនថ្មី</translation>
+        <source>&amp;Address</source>
+        <translation>&amp;អាសយដ្ឋានបញ្ចូនថ្មី</translation>
     
 ERR
-The translation "អាសយដ្ឋានបញ្ចូនថ្មី" means "new receiving address," which introduces additional meaning ("new receiving") not present in the original single word "Address." This is therefore not an accurate translation and could be misleading in the context.
+The translation adds the word "បញ្ចូនថ្មី" which means "new sending" or "sending new", altering the original meaning. The English source is simply "&Address" and should just be translated as "&អាសយដ្ឋាន".
 
 Correct translation:
-អាសយដ្ឋាន
+&អាសយដ្ឋាន
+</reply>
 ```
 
 <!-- cache_translation_check_km_5e6fe003d12a2c8809e4670ac88c0d8b759ec14cbc5450112f7833aae07c5327 -->
@@ -315,54 +409,44 @@ Correct translation:
 បិទភ្ជាប់អាសយដ្ឋានពីក្ដារតម្រៀប
 ```
 
-<!-- cache_translation_check_km_07abfaaee00e1da4cf22d9a60c17b22d3207a441446bd000faadb0f449ebda51 -->
+<!-- cache_translation_check_km_2d34262acb99da5e850fff4dca36d864924c7cc82cf2bcaa8fe2833a654fdd20 -->
 ```
-        <source>Start %1 on system login</source>
-        <translation>ចាប់ផ្តើម %1 ទៅលើការចូលប្រព័ន្ធ(S)</translation>
+        <source>&amp;External signer script path</source>
+        <translation>(&amp;E)script អ្នកចុះហត្ថលេខាខាងក្រៅ</translation>
     
 ERR
-The translation is understandable but contains issues: 
-- "(S)" is not appropriate or necessary in Khmer; it appears to be a stray character or a mis-translation.
-- The preposition "ទៅលើ" (to/on) is awkward in this context; "នៅពេលចូលប្រព័ន្ធ" (when logging into the system) is clearer.
-- There is an unnecessary space before "(S)".
+The translation introduces an unnecessary set of parentheses ("(&amp;E)") that is not present in the English source, and the placement of the shortcut key (&amp;) does not match the word order in Khmer. Additionally, "script អ្នកចុះហត្ថលេខាខាងក្រៅ" may not convey the intended technical meaning clearly in Khmer.
 
 Correct translation:
-ចាប់ផ្តើម %1 នៅពេលចូលប្រព័ន្ធ
+ផ្លូវទៅកាន់ script អ្នកចុះហត្ថលេខាខាងក្រៅ (&amp;E)
+Or, if following typical Khmer menu conventions:
+ផ្លូវ script អ្នកចុះហត្ថលេខាខាងក្រៅ (&amp;E)
 ```
 
-<!-- cache_translation_check_km_30b7cbb0302cfb87c1db4dfeb98b4411b8d59a9ae9e0049807ad86c451b20eee -->
+<!-- cache_translation_check_km_a946abf9e0975e2db1ddd19aac213e9ac865048c9f8182a2dba2f3e0f9f0fe48 -->
 ```
-        <source>Number of script verification threads</source>
-        <translation>ចំនួនscript  threadsផ្ទៀងផ្ទាត់</translation>
+        <source>Allow incomin&amp;g connections</source>
+        <translation>អនុញ្ញាតឲ្យមានការតភ្ជាប់ដែលចូលមក</translation>
     
 ERR
-The translation is problematic for several reasons:
-1. "script" and "threads" are left untranslated, which may confuse users not familiar with English or technical terms.
-2. The order of words is awkward and not natural in Khmer.
-3. There's no space between "script" and "threads," making it visually confusing.
-4. The translation does not clearly convey the meaning of "Number of script verification threads."
+The translation omits the & character, which is needed to indicate a shortcut key and should appear exactly once, as in the source text. The rest of the translation is accurate and free from spam or unwanted content.
 
 Correct translation:
-ចំនួនខ្សែស្រឡាយ (threads) សម្រាប់ផ្ទៀងផ្ទាត់ស្គ្រីប
-
-This version translates "Number of script verification threads" accurately and in natural Khmer, keeping the technical term "threads" in parentheses for clarity since it's a technical Bitcoin context.
+អនុញ្ញាតឲ្យមានការតភ្ជាប់ដែលចូលមក&amp;
 ```
 
-<!-- cache_translation_check_km_fdb7d2222cf2e0fb3220121b6de0f4f4bef6f961267cfa57b27cc90c3e5f9121 -->
+<!-- cache_translation_check_km_41b5fb579ceda92649eca1e26bedf7000c6bd135d3b04351712478c05d017cc2 -->
 ```
-        <source>Port:</source>
-        <translation>រុនដោត</translation>
+        <source>&amp;Port:</source>
+        <translation>&amp;រុនដោត</translation>
     
 ERR
-The translation "រុនដោត" is incorrect. It is a phonetic misspelling and has no meaning in Khmer, nor does it convey the meaning of "Port" in the context of network or communication ports.
+The translation of "Port" as "រុនដោត" is incorrect. "Port" in computing/networking context should be translated as "ព្រិល", "ច្រក", or left as "Port" in Khmer script if local technical usage prefers it.
 
 Correct translation:
-ផត:
-
-Alternatively, you can use:
-ច្រក:
-
-("ផត" is the Khmer transliteration for the English "Port", commonly used in technical contexts. "ច្រក" means passage or port, and sometimes is used in technical translations as well.)
+&amp;ច្រក:
+Or 
+&amp;Port:
 ```
 
 <!-- cache_translation_check_km_5f43fc07c9239839df39218872d11bb41062aae587fd0970050175f8011c936a -->
@@ -398,6 +482,18 @@ Correct translation:
 ឯកសារកំណត់រចនាសម្ព័ន្ធត្រូវបានប្រើសម្រាប់បញ្ជាក់ជម្រើសដើម្បីជំនួសការកំណត់នៅក្នុងកម្មវិធីផ្ទាល់។ លើសពីនេះទៅទៀត ជម្រើសបញ្ជា command-line មួយណាក៏បាននឹងជំនួសការកំណត់នៅក្នុងឯកសារកំណត់រចនាសម្ព័ន្ធនេះ។
 ```
 
+<!-- cache_translation_check_km_39822ed23b91a4aae63f6840b642acdfe3cf4c771078bcd9b49d636d85adc3cc -->
+```
+        <source>Could not read setting "%1", %2.</source>
+        <translation>មិនអាចអានការកំណត់ "%1",%2។</translation>
+    
+ERR
+The translation is correct in meaning, but it lacks a space after the comma before %2. The source uses "%1", %2 (comma + space), so the translation should preserve that spacing.
+
+Corrected translation:
+មិនអាចអានការកំណត់ "%1", %2។
+```
+
 <!-- cache_translation_check_km_28b646f05a83cc93631a15bb4469b1d0b27ee90cb0f5cac3af6b4952367c6275 -->
 ```
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
@@ -408,6 +504,30 @@ There are spelling errors and inaccuracies in the Khmer translation. For instanc
 
 Correct translation:
 សរុបប្រតិបត្តការដែលមិនទាន់ត្រូវបានបញ្ជាក់ ហើយមិនទាន់រាប់បញ្ចូលក្នុងសមតុល្យដែលអាចចំណាយបានទេ
+```
+
+<!-- cache_translation_check_km_7a030fccba646bb9fd40f7ef409bfb4dc5da8e68352c41a0a6b1e6755429b455 -->
+```
+        <source>Failed to load transaction: %1</source>
+        <translation>មិនជោគជ័យក្នុងការបង្ហាញប្រត្តិបត្តិការៈ %1</translation>
+    
+ERR
+The Khmer translation uses "បង្ហាញ" (show/display) instead of "load" and has a typographical/orthographic issue in the word for "transaction". A more accurate and natural Khmer translation should convey "failed to load" and preserve the %1 specifier.
+
+Correct translation:
+មិនអាចផ្ទុកប្រតិបត្តិការ បាន: %1
+```
+
+<!-- cache_translation_check_km_83d352bdd6045383ee257d1ebadd9cef8f58db9ab899491d684f651fbb909708 -->
+```
+        <source>Failed to sign transaction: %1</source>
+        <translation>មិនជោគជ័យក្នុងការចុះហត្ថលេខាលើប្រត្តិបត្តិការៈ %1</translation>
+    
+ERR
+The Khmer translation has a minor spelling/punctuation issue ("ប្រត្តិបត្តិការៈ" is misspelled) and the phrasing can be slightly improved.
+
+Suggested correct translation:
+ការចុះហត្ថលេខាលើប្រតិបត្តិការ៖ %1
 ```
 
 <!-- cache_translation_check_km_497ffc842e0161d8f99f6e599380b282940209d6a40bb3ae1c9d0398c425ee61 -->
@@ -422,6 +542,36 @@ Correct translation:
 មិនស្គាល់កំហុសក្នុងការដំណើរការប្រាក់ប្រតិបត្តិការ។
 ```
 
+<!-- cache_translation_check_km_43a61d94a1f8a9e7e3cf2c335f56c0e2e5f2fb51da66f300584ea96e7c67f70b -->
+```
+        <source>Transaction broadcast failed: %1</source>
+        <translation>ផ្សព្វផ្សាយប្រត្តិបត្តិការមិនជោគជ័យៈ %1</translation>
+    
+ERR
+There's a minor Khmer spelling/typography error and the punctuation can be improved. The word "ប្រតិបត្តិការ" (transaction) is misspelled in the translation and the Khmer colon "៖" is preferable.
+
+Correct translation:
+ផាសព្វផ្សាយ -> actually better to keep original verb "ផ្សព្វផ្សាយ" but with correct noun:
+
+Correct:
+ផ្សព្វផ្សាយប្រតិបត្តិការមិនជោគជ័យ៖ %1
+
+(Alternatively you can use a slightly more natural phrasing:
+ការផ្សព្វផ្សាយប្រតិបត្តិការមិនជោគជ័យ៖ %1 )
+```
+
+<!-- cache_translation_check_km_7e87b91b0757f74bafe302d6739b9c5f33411806cfbce130dbe658a06f682e97 -->
+```
+        <source>Sends %1 to %2</source>
+        <translation>ផ្ញើ%1ទៅ%2</translation>
+    
+ERR
+The Khmer translation preserves the format specifiers but lacks proper spacing around the placeholders, making it harder to read and possibly causing rendering issues. Also add a space between words and % placeholders.
+
+Correct translation:
+ផ្ញើ %1 ទៅ %2
+```
+
 <!-- cache_translation_check_km_7d379838f9727db2fed4cd3c7c1ccbaff75e8704dc19e0f76f7189ccddaa61a7 -->
 ```
         <source>(But no wallet is loaded.)</source>
@@ -432,6 +582,18 @@ There is an unnecessary space before the closing parenthesis in the translation.
 
 Correct translation:
 (ប៉ុន្តែគ្មានកាបូបត្រូវបានទាញទេ។)
+```
+
+<!-- cache_translation_check_km_d264d04235ead002a25f1b3262fd1c09203ece4b244d99693cf7b0ce1a1ff9fc -->
+```
+        <source>&amp;Information</source>
+        <translation>ព័ត៍មាន</translation>
+    
+ERR
+The '&' in the source marks a shortcut key and must appear exactly once in the translation, but it is missing. Also, there is a double '៍' in "ព័ត៍មាន" which is a typographical error; it should be "ពត៌មាន".
+
+Correct translation:
+&ពត៌មាន
 ```
 
 <!-- cache_translation_check_km_83c9f13865f418671994dc5f9148ba4d66afe0a00da7dcdc2de14b41de7796b9 -->
@@ -448,6 +610,18 @@ Correct translation:
 Explanation: This means "current number of transactions" directly and is clear and concise.
 ```
 
+<!-- cache_translation_check_km_757a80cd4254e0caccdf9e5de67d9369fbdefd42675a304a47c3d6bc940f5b4b -->
+```
+        <source>Hide Peers Detail</source>
+        <translation>បាំងផ្ទាំង Peers</translation>
+    
+ERR
+Translation is slightly inaccurate/unnatural. "បាំងផ្ទាំង Peers" reads like "hide Peers panel" (and mixes English "Peers") rather than "Hide Peers Detail" (hide the details about peers).
+
+Suggested correct translation:
+លាក់ព័ត៌មានលម្អិតអំពី Peers
+```
+
 <!-- cache_translation_check_km_5e6fe003d12a2c8809e4670ac88c0d8b759ec14cbc5450112f7833aae07c5327 -->
 ```
         <source>Last block time</source>
@@ -458,18 +632,6 @@ There is a typo: "ពេវេលា" should be "ពេលវេលា" (correct
 
 Correct translation:
 ពេលវេលាប្លុកចុងក្រោយ
-```
-
-<!-- cache_translation_check_km_35943277cb069448ac3a6f17e78afb4761b3a3ce1fdf0916853198df50527d4a -->
-```
-        <source>1 day</source>
-        <translation>1 ថ្ងៃ(a)</translation>
-    
-ERR
-The translation "1 ថ្ងៃ(a)" erroneously adds "(a)" after the Khmer word for day ("ថ្ងៃ"), making it incorrect and unnatural. The correct translation should be simply: "1 ថ្ងៃ"
-
-Correct translation:
-1 ថ្ងៃ
 ```
 
 <!-- cache_translation_check_km_b92cf2d45ebd685a78284e611bfd0d23a1da70995470739f012304d9399adb86 -->
@@ -499,40 +661,53 @@ Correct translation:
 ប្រតិបត្តិបញ្ជា​ដោយប្រើកាបូបអេឡិចត្រូនិច "%1"
 ```
 
-<!-- cache_translation_check_km_6759d6957a03bbf67dccdf9baeed5927722abfff988d256e236dcbcf4e37d675 -->
+<!-- cache_translation_check_km_6f06cf1d1469d899c9e451af41fc7f1ba00a1644823dc8c530cad2d1635f7db5 -->
 ```
-        <source>Copy URI</source>
-        <translation>ថតចម្លង RUl</translation>
+        <source>Copy &amp;URI</source>
+        <translation>ថតចម្លង &amp;RUl</translation>
     
 ERR
-The translation incorrectly copies "RUl" instead of "URI", and the Khmer phrase for 'Copy' is also awkward. In Khmer, "Copy URI" should be:
+The translation incorrectly spells "URI" as "RUl" (with a lowercase el instead of an uppercase i). This is a typographical error. The rest is acceptable, and the & is present exactly once.
 
 Correct translation:
-ថតចម្លង URI
+ថតចម្លង &amp;URI
 ```
 
-<!-- cache_translation_check_km_6759d6957a03bbf67dccdf9baeed5927722abfff988d256e236dcbcf4e37d675 -->
+<!-- cache_translation_check_km_06e6448e2f86ceda2daf98abe976587dadfd9cae6f0ab53e40dd1d2f82e3c242 -->
 ```
-        <source>Copy URI</source>
-        <translation>ថតចម្លង RUl</translation>
+        <source>Base58 (Legacy)</source>
+        <translation>Base58 (កេរដំណែល)</translation>
+    
+UNK_LANG, not familiar with the Khmer language 'km'.
+```
+
+<!-- cache_translation_check_km_6f06cf1d1469d899c9e451af41fc7f1ba00a1644823dc8c530cad2d1635f7db5 -->
+```
+        <source>Copy &amp;URI</source>
+        <translation>ថតចម្លង &amp;RUl</translation>
     
 ERR
-The translation incorrectly copies "RUl" instead of "URI", and the Khmer phrase for 'Copy' is also awkward. In Khmer, "Copy URI" should be:
+The translation incorrectly spells "URI" as "RUl" (with a lowercase el instead of an uppercase i). This is a typographical error. The rest is acceptable, and the & is present exactly once.
 
 Correct translation:
-ថតចម្លង URI
+ថតចម្លង &amp;URI
 ```
 
-<!-- cache_translation_check_km_c0accbb8ad47809eac354e8e3a0b44cf8efc2bf7d76a885cac2c6731e344fd84 -->
+<!-- cache_translation_check_km_06e3eaaebd8fb35b0f58031c9e617de5f5666d56a654386a2d391661ae719c2c -->
 ```
-        <source>Copy Address</source>
+        <source>Copy &amp;Address</source>
         <translation>ថតចម្លង និង អាសយដ្ឋាន</translation>
     
 ERR
-The translation "ថតចម្លង និង អាសយដ្ឋាន" means "Copy and address," which is incorrect. The original English phrase is "Copy Address" (as in, copy the address), not "Copy and address." The conjunction "និង" ("and") should not be present.
+The translation for '&' as 'និង' ('and') is incorrect in this UI context. The '&' indicates a keyboard shortcut (mnemonic), but in Khmer, a shortcut key should be preserved, usually by keeping the '&' before the relevant word or letter (or at least appearing exactly once in the translation). Additionally, the order should more closely match the English, and there is a spacing issue before 'អាសយដ្ឋាន'. 
 
 Correct translation:
-ថតចម្លងអាសយដ្ឋាន
+ថតចម្លង &អាសយដ្ឋាន
+
+Or, if Khmer software standards suggest the mnemonic elsewhere:
+&ថតចម្លងអាសយដ្ឋាន
+
+But the crucial point is not to translate '&' as 'និង' and ensure only one '&' appears.
 ```
 
 <!-- cache_translation_check_km_a2d0537bd74c5af9b7fd0c4ea12e0c7f36cace7f7c879001d428e9d9e045a78c -->
@@ -557,6 +732,20 @@ There are spacing issues in the translation. There should not be a space before 
 
 Correct translation:
 អ្នកអាចបង្កើនកម្រៃពេលក្រោយ (សញ្ញាជំនួសដោយកម្រៃ BIP-125)។
+```
+
+<!-- cache_translation_check_km_489f35170287ea3144bed833a2b182c9661ec5cb3e50758bfaff952718937134 -->
+```
+        <source>%1 kvB</source>
+        <comment>PSBT transaction creation</comment>
+        <extracomment>When reviewing a newly created PSBT (via Send flow), the transaction fee is shown, with "virtual size" of the transaction displayed for context</extracomment>
+        <translation>%1kvB</translation>
+    
+ERR
+The placeholder %1 is preserved, but the original had a space between the value and unit ("%1 kvB"). The translation removes that space ("%1kvB"), which is a formatting/spacing issue.
+
+Correct translation:
+%1 kvB
 ```
 
 <!-- cache_translation_check_km_50e182496ecf196e818b804cb844d22f3be4321a68ecb033ebe117bcef497cc0 -->
@@ -747,4 +936,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 55.
+Number of issues: 70.

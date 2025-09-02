@@ -1,13 +1,37 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>pt_BR</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bpt_BR%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bpt_BR%5D%20request)
 
+
+<!-- cache_translation_check_pt_BR_39862a3e0db57571e272113d27ca3c80f7d9dd22e8c81bf4ce53aab6620d28b1 -->
+```
+        <source>Delete the currently selected address from the list</source>
+        <translation>Excluir os endereços atualmente selecionados da lista</translation>
+    
+ERR
+The Portuguese translation uses plural ("endereços ... selecionados") while the source is singular ("address" / "currently selected address"). Correct translation (singular):
+
+Excluir o endereço atualmente selecionado da lista
+```
+
+<!-- cache_translation_check_pt_BR_8366a7037b6375f13d3c865c1ac31577999ee5c674f4551b528b75f49196e801 -->
+```
+        <source>There was an error trying to save the address list to %1. Please try again.</source>
+        <extracomment>An error message. %1 is a stand-in argument for the name of the file we attempted to save to.</extracomment>
+        <translation>Erro ao salvar a lista de endereço para %1. Por favor, tente novamente.</translation>
+    
+ERR
+The Portuguese has a grammatical issue: "lista de endereço" should be plural ("lista de endereços") and a more natural phrasing uses "Ocorreu um erro ao salvar..." and "em %1" instead of "para %1".
+
+Correct translation:
+Ocorreu um erro ao salvar a lista de endereços em %1. Por favor, tente novamente.
+```
 
 <!-- cache_translation_check_pt_BR_96ab2f62047a9b2dbccbaf589a52e486a1162c6dd904e96c7058080faa4be5b8 -->
 ```
@@ -57,6 +81,72 @@ Correct translation:
 Carregar Transação Bitcoin Parcialmente Assinada
 ```
 
+<!-- cache_translation_check_pt_BR_5ed5eaf83d237c8048874f7ecbd2f1d164a1c051bce183389b743b03b52f1a97 -->
+```
+        <source>&amp;Receiving addresses</source>
+        <translation>Endereço de &amp;recebimento</translation>
+    
+ERR
+The English plural "addresses" ("&Receiving addresses") should be translated as "Endereços de &recebimento" to correctly reflect the plural form.
+Additionally, the position of the ampersand (&) is slightly different but only needs to appear once: it's acceptable.
+
+Correct translation:
+Endereços de &recebimento
+```
+
+<!-- cache_translation_check_pt_BR_15e5751090df2c391eb9824339b0666a4069c566be0c961763105b9f68fe68d1 -->
+```
+        <source>&amp;Window</source>
+        <translation>&amp;Janelas</translation>
+    
+ERR
+The English source word "Window" is singular but the translation uses the plural "Janelas". The correct translation should keep the singular form to match the original.
+
+Correct translation:
+&Janela
+```
+
+<!-- cache_translation_check_pt_BR_b27ae940c01670d57efc3e203d3318d20dd84a6e4e2a9b8217f724e6f937049e -->
+```
+        <source>Received with label</source>
+        <translation>Rótulo</translation>
+    
+ERR
+The translation is incomplete/incorrect. "Received with label" indicates items/transactions that were received with a specific label; translating it as just "Rótulo" (which means only "Label") loses meaning.
+
+Correct translation options:
+- Recebido com rótulo
+or
+- Recebido com etiqueta
+```
+
+<!-- cache_translation_check_pt_BR_44b20138cca57c02570cd26bfca069b24189546371a3a3223cd096be22e0e160 -->
+```
+        <source>Received with address</source>
+        <translation>Endereço</translation>
+    
+ERR
+The translation "Endereço" is incomplete and loses the original meaning. "Received with address" indicates funds received using a particular address (e.g., a column/label like "Received with address"), not just the word "Address".
+
+Correct translation (Brazilian Portuguese):
+Recebido com o endereço
+
+Alternative natural phrasing:
+Recebido pelo endereço
+```
+
+<!-- cache_translation_check_pt_BR_60826008328d91f430bc35d2bd1584b37c3e349a7ba35febae81ec67a75192c3 -->
+```
+        <source>Watchonly scripts have been migrated to a new wallet named '%1'.</source>
+        <translation>Os scripts watchonly foram migrados para uma nova pasta chamada '%1'.</translation>
+    
+ERR
+"pasta" significa "folder" em português, mas aqui o termo correto é "carteira" (wallet). O especificador '%1' foi preservado corretamente. Sugestão de correção:
+
+Correct translation:
+Os scripts watchonly foram migrados para uma nova carteira chamada '%1'.
+```
+
 <!-- cache_translation_check_pt_BR_ac6e8ea1cc8789ec5dae7b1a5bc255bfa784eceaae9705c2def94a2c77da5d26 -->
 ```
         <source>Open wallet warning</source>
@@ -84,6 +174,30 @@ Correct translation:
 Quando você clicar em OK, %1 começará a baixar e processar a cadeia de blocos completa do %4 (%2 GB), começando com as transações mais antigas em %3, quando o %4 foi lançado inicialmente.
 ```
 
+<!-- cache_translation_check_pt_BR_ff1351ce9daa5ebb74dfafd42e2f13034f5df2d018893984031467cc8aa0e0bd -->
+```
+        <source>&amp;Main</source>
+        <translation>Principal</translation>
+    
+ERR
+The translation does not include the '&' character used for the shortcut key, which should appear exactly once in both the source and translation.
+
+Correct translation:
+&Principal
+```
+
+<!-- cache_translation_check_pt_BR_6de6caab54bddc83f8f9e56c7933ae9dad9baa9968e12db15aad6290d82f02ac -->
+```
+        <source>Size of &amp;database cache</source>
+        <translation>Tamanho do banco de &amp;dados do cache</translation>
+    
+ERR
+The translation inverts the correct word order. In Portuguese, "cache de banco de dados" or "cache do banco de dados" is the natural way to phrase this. "Banco de dados do cache" would mean "the database of the cache", which is not the intent.
+
+Correct translation:
+Tamanho do &amp;cache do banco de dados
+```
+
 <!-- cache_translation_check_pt_BR_1673a1d49d7620cb63f82bbf6a7a0aa91e91244d2cbfc57df770420dd8fe7be4 -->
 ```
         <source>Full path to a %1 compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
@@ -94,6 +208,19 @@ The translation alters the meaning by specifying "um script compatível com Bitc
 
 Correct translation:
 Caminho completo para um script compatível com %1 (exemplo: C:\Downloads\hwi.exe ou /Users/you/Downloads/hwi.py). Cuidado: malware pode roubar suas moedas!
+```
+
+<!-- cache_translation_check_pt_BR_d7e10ca0479d9856579fc9f4a0ec1b7e675067a626e53800687020d91e5ded8a -->
+```
+        <source>Map port using PCP or NA&amp;T-PMP</source>
+        <translation>Configurar a porta através de PCP ou NAT-PMP.
+</translation>
+    
+ERR
+The translation omits the ampersand (&) shortcut key from the source, which should appear exactly once in the translation. Additionally, there is an extraneous newline at the end of the translation. The rest of the translation is acceptable.
+
+Correct translation:
+Configurar &porta através de PCP ou NAT-PMP.
 ```
 
 <!-- cache_translation_check_pt_BR_3f32bb9e03216986bfab8ecbfca0f4d3f6bc3d9e7c9c47d6eb98bf1d84bd3578 -->
@@ -110,16 +237,41 @@ Correct translation:
 Abrir o arquivo de configuração %1 a partir do diretório de trabalho.
 ```
 
-<!-- cache_translation_check_pt_BR_0dfd204ddd3204c9753ef0d3d4556d6ae244a6b1e25d48c01270eaefb58e2299 -->
+<!-- cache_translation_check_pt_BR_67ef41d75f602b1b51c8a60b117b797bd0c04149314dfaa189ef74af97d91d82 -->
 ```
-        <source>Prune block storage to</source>
-        <translation>Fazer Prune da memória de blocos para</translation>
+        <source>&amp;Network</source>
+        <translation>Rede</translation>
     
-ERR  
-The translation is not natural and does not use the proper term in Portuguese. "Prune" is left untranslated, and "memória de blocos" should be "armazenamento de blocos". Also, the phrase in English is incomplete, but the translation unnecessarily capitalizes "Prune" and adds "Fazer".  
+ERR
+The translation is missing the ampersand (&), which is used for the shortcut key in application menus. It must appear exactly once in the translation.
 
-Correct translation:  
-Reduzir o armazenamento de blocos para
+Correct translation:
+&amp;Rede
+```
+
+<!-- cache_translation_check_pt_BR_b23b917723d9aac08b1f0d15854951f35e1e40fb8dfda12a4d069592ef1abd4f -->
+```
+        <source>Prune &amp;block storage to</source>
+        <translation>Fazer Prune &amp;da memória de blocos para</translation>
+    
+ERR
+The translation uses "Fazer Prune", which inappropriately leaves "Prune" untranslated. In Brazilian Portuguese, "prune" in the context of Bitcoin refers to "reduzir" or "eliminar" (referring to pruning/block pruning). Additionally, "memória de blocos" is unusual; "armazenamento de blocos" or "armazenamento dos blocos" is more accurate. The positioning of "&amp;" is also problematic: ideally, it should be attached to the shortcut letter in the correct word.
+
+Correct translation:
+Reduzir o armazenamento de &amp;blocos para
+```
+
+<!-- cache_translation_check_pt_BR_6b5e2d0fe23a0f84649475389741b310647be3fca53dfe3a0e30a5c9c30b8f05 -->
+```
+        <source>Enable R&amp;PC server</source>
+        <extracomment>An Options window setting to enable the RPC server.</extracomment>
+        <translation>Ative servidor R&amp;PC</translation>
+    
+ERR
+The translation "Ative servidor R&PC" uses the imperative form "Ative", which means "Activate", but in this context, the English source ("Enable RPC server") describes a setting/checkbox label, not a command. In Brazilian Portuguese, labels for enabling options usually use the infinitive ("Ativar") or a more neutral phrase.
+
+Correct translation:
+Ativar servidor R&PC
 ```
 
 <!-- cache_translation_check_pt_BR_f991c863c1acfda1eebfa23466e661fd83b45fcb165a56452189cad11012136b -->
@@ -133,6 +285,42 @@ The translation changes the original meaning. The original sentence is about whe
 
 Correct translation:
 Definir ou não “subtrair a taxa do valor” como padrão.
+```
+
+<!-- cache_translation_check_pt_BR_67af84e328a7d8e801e3bc625c393c22910274969c5840db5356afac5ea15965 -->
+```
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Permitir conexões de entrada</translation>
+    
+ERR
+The & character is missing in the translation, which is used to specify a shortcut key. The translation should include & exactly once.
+
+Correct translation:
+Permitir conexões de &entrada
+```
+
+<!-- cache_translation_check_pt_BR_64d8710755d136de08acf551c5d77ffc09ac782bc0c9b543a1307c2cd31bbada -->
+```
+        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
+        <translation>&amp;Conectar usando proxy SOCKS5 (proxy pradrão):</translation>
+    
+ERR
+There is a typo in the translation: "proxy pradrão" should be "proxy padrão".
+
+Correct translation:
+&Conectar usando proxy SOCKS5 (proxy padrão):
+```
+
+<!-- cache_translation_check_pt_BR_15e5751090df2c391eb9824339b0666a4069c566be0c961763105b9f68fe68d1 -->
+```
+        <source>&amp;Window</source>
+        <translation>&amp;Janelas</translation>
+    
+ERR
+The English source word "Window" is singular but the translation uses the plural "Janelas". The correct translation should keep the singular form to match the original.
+
+Correct translation:
+&Janela
 ```
 
 <!-- cache_translation_check_pt_BR_7edb37286165b84c496fff296323fd990b925ec5f22de9dbb1513047b81ce23e -->
@@ -341,6 +529,30 @@ Correct translation:
 Ocorreu um erro interno fatal, consulte o debug.log para obter detalhes:
 ```
 
+<!-- cache_translation_check_pt_BR_2da2f8fac77d0244fe39ecf76a5d817efc6fcc173d05ee707c1b5eb53198b185 -->
+```
+        <source>Can't spend unconfirmed version %d pre-selected input with a version 3 tx</source>
+        <translation>Não é possível gastar a entrada pré-selecionada %d da versão não confirmada com uma versão 3 tx</translation>
+    
+ERR
+The Portuguese is understandable but awkward and mixes word order; "uma versão 3 tx" is unnatural. Preserve %d and clarify that the input is unconfirmed and has version %d.
+
+Correct translation:
+Não é possível gastar a entrada pré-selecionada não confirmada (versão %d) com uma transação de versão 3
+```
+
+<!-- cache_translation_check_pt_BR_4464d7afbaa89f228541fa73d8f87d9c3d69c120cbcb6ad51fc67c8d32655c53 -->
+```
+        <source>Can't spend unconfirmed version 3 pre-selected input with a version %d tx</source>
+        <translation>Não é possível gastar a entrada pré-selecionada da versão 3 não confirmada com uma versão %d tx</translation>
+    
+ERR
+The translation is understandable but slightly awkward in Portuguese and leaves "tx" untranslated. Better to reorder for clarity and translate "tx" to "transação".
+
+Correct translation:
+Não é possível gastar a entrada pré-selecionada de versão 3 não confirmada com uma transação versão %d
+```
+
 <!-- cache_translation_check_pt_BR_d27d9299ae36f50757303fda5e3399f6ba68c9be2f191433d8c66ed32df64054 -->
 ```
         <source>Cannot write to directory '%s'; check permissions.</source>
@@ -351,6 +563,18 @@ There is a typo in the translation: "aspermissões" should be "as permissões" (
 
 Correct translation:
 Não é possível escrever no diretório '%s'; verifique as permissões.
+```
+
+<!-- cache_translation_check_pt_BR_02d76519c9d3cc6e194dd2fd5b858716692c9da658d8528e87cf08932008417d -->
+```
+        <source>The %s path uses exFAT, which is known to have intermittent corruption problems on macOS. Move this directory to a different filesystem to avoid data loss.</source>
+        <translation>O caminho %s utiliza exFAT, que é conhecido por ter problemas intermitentes de corrupção no macOS. Mova esta diretoria para um sistema de ficheiros diferente para evitar a perda de dados.</translation>
+    
+ERR
+The translation is in European Portuguese (pt_PT) — uses words like "directoria" and "ficheiros" — not Brazilian Portuguese (pt_BR). The format specifier %s is preserved correctly.
+
+Correct pt_BR translation:
+O caminho %s usa exFAT, que é conhecido por causar problemas intermitentes de corrupção no macOS. Mova este diretório para um sistema de arquivos diferente para evitar a perda de dados.
 ```
 
 <!-- cache_translation_check_pt_BR_c93f70935e64ce375f4b63043fa0886c53a70f59e906b50d69e32d65a94f5d21 -->
@@ -403,4 +627,4 @@ Erro: Não foi possível adicionar a transação %s somente observação à cart
 ```
 </details>
 
-Number of issues: 28.
+Number of issues: 46.

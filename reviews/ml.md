@@ -1,13 +1,37 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>ml</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bml%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bml%5D%20request)
 
+
+<!-- cache_translation_check_ml_5bd5edd2310f378b826f5d834f6a60821818cf2776f9be2f08b2f872b7b002c4 -->
+```
+        <source>&amp;New</source>
+        <translation>പുതിയത്</translation>
+    
+ERR
+The translation has omitted the '&' used for shortcut key indication, which should appear exactly once in the translation as well.
+
+Correct translation:
+&പുതിയത്
+```
+
+<!-- cache_translation_check_ml_bfe41f52f225631a684e2e00cc6156f44a7a0538a54b1be8c54b495c9ed5467f -->
+```
+        <source>C&amp;lose</source>
+        <translation>അടയ്ക്കുക</translation>
+    
+ERR
+The translation omits the '&' used for the shortcut key in the source. In Malayalam ('ml'), the shortcut key indicator (&) should also be included exactly once, regardless of its position. 
+
+Correct translation:
+&അടയ്ക്കുക or അടയ്ക്കു&ക (but commonly &അടയ്ക്കുക is used)
+```
 
 <!-- cache_translation_check_ml_4fbe8ccf47b53a67e6d8c3eb2f6c7d6bee6096e652ae3c013f4bfedec3165baa -->
 ```
@@ -95,66 +119,150 @@ Correct translation:
 തെറ്റ്: %1
 ```
 
-<!-- cache_translation_check_ml_53ba74de84e1d94546bbaa1937351b3c522c572007805d4fcd25ec6aa62097f7 -->
+<!-- cache_translation_check_ml_345f6572dc29805b49299cfaeba45242e39f0b0c1374beb4dea608a50b6d44f8 -->
 ```
-        <source>Minimize</source>
+        <source>E&amp;xit</source>
+        <translation>പുറത്ത്</translation>
+    
+ERR
+The translation is missing the shortcut key indicator (&). The English source uses '&' to indicate the shortcut. It must be preserved exactly once in the translation. Also, a more conventional translation for "Exit" in menu contexts is "പുറത്തുകടക്ക്" or "പുറത്ത് പോകുക".
+
+Correct translation:
+പുറത്ത് &പോക്കൂ
+```
+
+<!-- cache_translation_check_ml_6a0db1cd49ed775734a58fd0dc97acf156c36ec158a64d8e8918bb38c91e4619 -->
+```
+        <source>&amp;About %1</source>
+        <translation>&amp; ഏകദേശം%1</translation>
+    
+ERR
+There is a minor formatting issue: there should be a space between "ഏകദേശം" and "%1". Also, the translation for "About" as "ഏകദേശം" is not ideal; "ഏകദേശം" means "approximately" in Malayalam, whereas for "About" (in the context of a software "About" dialog), "കുറിച്ച്" is appropriate. The & is preserved correctly.
+
+Correct translation:
+&%1യെക്കുറിച്ച്
+```
+
+<!-- cache_translation_check_ml_0e2644c0fa75345660e2320209f15a2cb4a2d9997dd045387e68a861b88982d3 -->
+```
+        <source>&amp;Minimize</source>
         <translation> ഒപ്പം ചെറുതാക്കുക</translation>
     
 ERR
-The translation "ഒപ്പം ചെറുതാക്കുക" is incorrect. "ഒപ്പം" means "with" or "along with", which is unnecessary in this context and adds unwanted whitespace at the beginning. The correct translation should simply be "ചെറുതാക്കുക".
+The translation is missing the ampersand (&) which is needed to indicate the shortcut key. Also, "ഒപ്പം" means "and/with", which is not suitable for "Minimize". The translation should use the Malayalam equivalent for "Minimize".
 
 Correct translation:
-ചെറുതാക്കുക
+&amp;ചെറുതാക്കുക
 ```
 
-<!-- cache_translation_check_ml_5a1572fbef01982ba44735273a62da51e2741206baaa7f1e6fd2f06fc00b7103 -->
+<!-- cache_translation_check_ml_96911aaeda9d8298a3a4a654cce3a719c5a2ce633535b379e338a8be0877ef58 -->
 ```
-        <source>Backup Wallet…</source>
+        <source>&amp;Options…</source>
+        <translation>ഇഷ്‌ടമുള്ളത്‌ തിരഞ്ഞെടുക്കല്‍</translation>
+    
+ERR
+The translation does not appropriately convey the meaning of "&Options...". The Malayalam translation provided means "preferred selection", which is not the correct translation for "Options". Furthermore, the shortcut key indicator '&' is missing in the translation.
+
+Correct translation:
+&ഓപ്ഷനുകള്‍…
+```
+
+<!-- cache_translation_check_ml_6d85fecc45c3b78f9803cf8e73d113b3415a32b33266cc96b802e084e77c5313 -->
+```
+        <source>&amp;Encrypt Wallet…</source>
+        <translation>വാലറ്റ് എൻക്രിപ്റ്റ് ചെയ്യുക…</translation>
+    
+ERR
+The '&' symbol indicating the shortcut key from the source is missing in the Malayalam translation. It should be present exactly once in the translation, in an appropriate position.
+
+Correct translation:
+&വാലറ്റ് എൻക്രിപ്റ്റ് ചെയ്യുക…
+```
+
+<!-- cache_translation_check_ml_50f6eaf74610657ff6f61250bcc83b67eccc0422f82254af7d988c695e24e67a -->
+```
+        <source>&amp;Backup Wallet…</source>
         <translation> ബാക്കപ്പ് വാലറ്റും…</translation>
     
 ERR
-There is an issue with excess whitespace at the beginning of the translation. It should not have a space before "ബാക്കപ്പ്". Also, the word "വാലറ്റും" translates to "and the wallet" which is not accurate. The correct translation for "Backup Wallet…" would be: "വാലറ്റ് ബാക്കപ്പ്…" 
+There is a leading space in the translation, which is a formatting issue. Additionally, the shortcut key indicator (&) is missing in the translation; it should be present exactly once. The Malayalam word "വാലറ്റും" translates to "and wallet", which is incorrect. The correct translation for "wallet" is "വാലറ്റ്". The translation should be:
 
 Correct translation:
-വാലറ്റ് ബാക്കപ്പ്…
+&ബാക്കപ്പ് വാലറ്റ്…
 ```
 
-<!-- cache_translation_check_ml_aec0e4014b3166669f82c41a270e7281e0d6f2697dd18945eb49eefd69fd5e80 -->
+<!-- cache_translation_check_ml_ef68fe50e61ee92fa9a6865fba7527c300eb35a0d70014145dbbbf222b4ead7c -->
 ```
-        <source>Sign message…</source>
+        <source>&amp;Change Passphrase…</source>
+        <translation>പാസ്ഫ്രെയ്സ് മാറ്റുക</translation>
+    
+ERR
+The translation omits the '&' character, which is important for designating shortcut keys in menu items. It should appear exactly once in the translation.
+
+Correct translation:
+&പാസ്ഫ്രെയ്സ് മാറ്റുക
+```
+
+<!-- cache_translation_check_ml_cde229732fa180728f88bd715833c725faac4291c11c22a7eb633ebd890eb132 -->
+```
+        <source>Sign &amp;message…</source>
         <translation>ഒപ്പിടുക, സന്ദേശം നൽകുക</translation>
     
 ERR
-The translation is inaccurate for the context. The English "Sign message…" refers to cryptographically signing a message, not just sending or providing a message. The given translation "ഒപ്പിടുക, സന്ദേശം നൽകുക" means "Sign, provide the message," which is misleading.
+The translation does not properly convey the meaning of "Sign &message…". The correct Malayalam translation should preserve the shortcut key (&) and match the function, which is to sign a message (for example, digitally with a Bitcoin address), not to "provide a message". Additionally, the shortcut key (&) is missing in the translation.
 
 Correct translation:
-സന്ദേശം ഒപ്പിടുക…
+സന്ദേശം (&) ഒപ്പിടുക…
 ```
 
-<!-- cache_translation_check_ml_a020479fe463d3107aa9ebd145e71dc436c3a155ee5cdf1fd702905b083ac872 -->
+<!-- cache_translation_check_ml_c13f35122dc9d94a8afe3c02eaca3e676b52611f34bc3ccef5d9ebfd46582a43 -->
 ```
-        <source>Load PSBT from file…</source>
+        <source>&amp;Verify message…</source>
+        <translation>സന്ദേശം പരിശോധിക്കുക...</translation>
+    
+ERR
+The translation is missing the '&' that signifies the shortcut key in the menu item. It should be present exactly once.
+
+Correct translation:
+&സന്ദേശം പരിശോധിക്കുക...
+```
+
+<!-- cache_translation_check_ml_aafee2c6dd65976fd17e67ef9b225d8c023eeb268ac9fad4ffab967886528a97 -->
+```
+        <source>&amp;Load PSBT from file…</source>
         <translation> തുറന്ന് URL</translation>
     
 ERR
-The translation is incorrect and unrelated to the source text. The source refers to "Load PSBT from file…", but the translation reads "തുറന്ന് URL", which means "Open URL".
+The translation is incorrect and incomplete. The English text is "&Load PSBT from file…", but the Malayalam translation "തുറന്ന് URL" means "Open URL", which is unrelated and omits the PSBT, file, and the shortcut key (&).
 
 Correct translation:
-ഫയലിൽ നിന്ന് PSBT ലോഡുചെയ്യുക…
+ഫയലിൽ നിന്ന് PSBT &ചുമതലക്കൊള്ളൂ…
 ```
 
-<!-- cache_translation_check_ml_ddbda624931dd456dadeab175ce9734af11472c281489388268bc64ac838d411 -->
+<!-- cache_translation_check_ml_a2438e9b4b7bc51a43189f3b35956be1f9f17451f0c4b9aad01713d451f92653 -->
 ```
-        <source>Receiving addresses</source>
-        <translation>വിലാസങ്ങൾ അയയ്ക്കുന്നു</translation>
+        <source>Connecting to peers…</source>
+        <translation>നിങ്ങളെപ്പോലുള്ള ഉപയോക്താക്കളുമായി കണക്റ്റുചെയ്യുന്നു....</translation>
     
 ERR
-The translation is incorrect. The English "Receiving addresses" refers to addresses where one receives Bitcoin, but the Malayalam translation "വിലാസങ്ങൾ അയയ്ക്കുന്നു" means "Sending addresses" or "Addresses are being sent". The word "Receiving" is mistranslated as "sending".
+The translation changes the meaning: "നിങ്ങളെപ്പോലുള്ള ഉപയോക്താക്കളുമായി കണക്റ്റുചെയ്യുന്നു...." reads as "Connecting to users like you...." which is incorrect for Bitcoin peers (network nodes). It also uses four ASCII dots instead of a single ellipsis character and a colloquial transliteration of "connect".
+
+Suggested correct translation:
+പീർസുമായി ബന്ധം സ്ഥാപിക്കുന്നു…
+
+(Alternatively: "പീയേഴ്സുമായി ബന്ധിപ്പിക്കുന്നു…")
+```
+
+<!-- cache_translation_check_ml_b013b88a2fa08694affbac4d438afa76bc15a9fd17432c5b8cf7091e63192080 -->
+```
+        <source>&amp;Receiving addresses</source>
+        <translation>&amp;വിലാസങ്ങൾ അയയ്ക്കുന്നു</translation>
+    
+ERR
+The translation reverses the meaning. "Receiving addresses" refers to the addresses used to receive funds, but the Malayalam translation "&amp;വിലാസങ്ങൾ അയയ്ക്കുന്നു" means "Sending addresses" (literally "Addresses are sending" or "Sending addresses"). Also, "addresses" should be plural and "receiving" should be reflected.
 
 Correct translation:
-പ്രാപ്തിമാകുന്ന വിലാസങ്ങൾ
-or
-സ്വീകരിക്കൽ വിലാസങ്ങൾ
+&﻿amp;സ്വീകരിക്കുന്ന വിലാസങ്ങൾ
 ```
 
 <!-- cache_translation_check_ml_e0ac0fc0d6c2e0f4fa9b27ad491fc64b68de1a21edb6426fe8e456b293261392 -->
@@ -250,6 +358,63 @@ Correct translation:
 വാലറ്റ് എൻ‌ക്രിപ്റ്റ് ചെയ്യുക. നിങ്ങളുടെ തെരഞ്ഞെടുപ്പായ പാസ്ഫ്രേസുമായി വാലറ്റ് എൻ‌ക്രിപ്റ്റ് ചെയ്യപ്പെടുന്നതായിരിക്കും.
 ```
 
+<!-- cache_translation_check_ml_61d568f5d588432db01e066d7ee646b8bbbce872fa67b6f180f17a11a8d37871 -->
+```
+        <source>W&amp;allet</source>
+        <translation>വാലറ്റ്</translation>
+    
+ERR
+The translation does not include the '&' (shortcut key indicator) anywhere, which must be present exactly once as in the source. 
+
+Correct translation:
+&വാലറ്റ്
+
+or
+
+വാ&ലറ്റ്
+
+(Any position is acceptable, as long as there is exactly one '&'.)
+```
+
+<!-- cache_translation_check_ml_dac6f6e3822d352dd2939b5ca72161106b444d6b5bcd5106525676de1bca4009 -->
+```
+        <source>&amp;Save Image…</source>
+        <translation>ചിത്രം സൂക്ഷിക്കുക</translation>
+    
+ERR
+The translation 'ചിത്രം സൂക്ഷിക്കുക' accurately means 'Save Image', but it is missing the '&' which denotes the shortcut key in the original English source. The '&' should appear exactly once in the translation, at an appropriate location in the Malayalam text.
+
+Correct translation:
+&amp;ചിത്രം സൂക്ഷിക്കുക
+
+Alternatively, you can place the '&' before any letter in the Malayalam translation to indicate the shortcut, for example:
+ചിത്രം &amp;സൂക്ഷിക്കുക
+```
+
+<!-- cache_translation_check_ml_960ad8c17dfbdced2bcf27674e95dcbc2f3f4f4fb9171f94f3eed49153020413 -->
+```
+        <source>&amp;Copy Image</source>
+        <translation>ചിത്രം പകര്‍ത്തുക</translation>
+    
+ERR
+The translation omits the '&' which is used to indicate the shortcut key in the original English. There should be exactly one '&' in the translation.
+
+Correct translation:
+&ചിത്രം പകര്‍ത്തുക
+```
+
+<!-- cache_translation_check_ml_1c04b2e4d1b0c385aeb607ca6e044af92f55558f92b1552a2560946bbf25b4b2 -->
+```
+        <source>&amp;Information</source>
+        <translation>അറിയിപ്പ്</translation>
+    
+ERR
+The translation omits the '&' which is required for the shortcut key and should be present exactly once, as in the source.
+
+Correct translation:
+&അറിയിപ്പ്
+```
+
 <!-- cache_translation_check_ml_952d14881d140589d79212c3db7552a12358cca2d2920656bfc62af3f5837d0c -->
 ```
         <source>Sent</source>
@@ -274,6 +439,21 @@ Correct translation:
 അനുമതികൾ
 ```
 
+<!-- cache_translation_check_ml_dac6f6e3822d352dd2939b5ca72161106b444d6b5bcd5106525676de1bca4009 -->
+```
+        <source>&amp;Save Image…</source>
+        <translation>ചിത്രം സൂക്ഷിക്കുക</translation>
+    
+ERR
+The translation 'ചിത്രം സൂക്ഷിക്കുക' accurately means 'Save Image', but it is missing the '&' which denotes the shortcut key in the original English source. The '&' should appear exactly once in the translation, at an appropriate location in the Malayalam text.
+
+Correct translation:
+&amp;ചിത്രം സൂക്ഷിക്കുക
+
+Alternatively, you can place the '&' before any letter in the Malayalam translation to indicate the shortcut, for example:
+ചിത്രം &amp;സൂക്ഷിക്കുക
+```
+
 <!-- cache_translation_check_ml_4fbe8ccf47b53a67e6d8c3eb2f6c7d6bee6096e652ae3c013f4bfedec3165baa -->
 ```
         <source>Comma separated file</source>
@@ -288,4 +468,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 22.
+Number of issues: 36.

@@ -1,13 +1,25 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>lv</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Blv%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Blv%5D%20request)
 
+
+<!-- cache_translation_check_lv_3f634949154e64ee8def4d7c8016908e3e729391950333f58e52424b58ac7c63 -->
+```
+        <source>C&amp;hoose</source>
+        <translation>Izvēlēties</translation>
+    
+ERR
+The translation omits the '&' accelerator key, which should appear exactly once to reflect the shortcut key, as in the source. In Latvian, it can be placed at a relevant position in the word.
+
+Correct translation:
+Izv&euml;lēties
+```
 
 <!-- cache_translation_check_lv_7a833c311d541cf550b7d8321b3bc3c77b0f929a8e0d7dedb29ef7d3197082c7 -->
 ```
@@ -27,17 +39,53 @@ Correct translation:
 Ievadiet jauno maciņa paroli.&lt;br/&gt;Lūdzu, izmantojiet paroli ar &lt;b&gt;vismaz desmit nejaušiem simboliem&lt;/b&gt; vai &lt;b&gt;vismaz astoņiem vārdiem&lt;/b&gt;.
 ```
 
-<!-- cache_translation_check_lv_1b01834924672c97f0df4fcd0fe12881a562ded96e5ad61aceeb1792102da369 -->
+<!-- cache_translation_check_lv_3136e8b64d390aef2ee79332660eb51e756bff61699bbe6a380c3d6e68c83e4a -->
 ```
-        <source>Port:</source>
-        <translation>Ports:</translation>
+        <source>&amp;Window</source>
+        <translation>&amp;Logs</translation>
     
 ERR
-The translation "Ports:" is incorrect because the English word "Port:" (singular) should be translated to the Latvian singular form "Ports:". However, "ports" in Latvian (meaning a network port) is indeed "ports", but without the plural "s" if it is singular, and Latvian would often keep the word "Ports:" with a capital P to match English layout.
+The translation for '&amp;Window' in Latvian should be '&amp;Logs', which is correct, but the word should be 'Logs' without adding an extra 's' (since 'logs' is singular nominative in Latvian). Also, '&amp;' is present exactly once and properly placed. However, the correct translation should be:
 
 Correct translation:
-Ports:
+&Logs
+```
+
+<!-- cache_translation_check_lv_884f4c5457be85b72895dc35227d98c948096f2ec3b4e87ccc233fa30c95b6c6 -->
+```
+        <source>&amp;Reset Options</source>
+        <translation>&amp;Atiestatīt Iestatījumus.</translation>
+    
+ERR
+There is an unnecessary period at the end of the translation ("Iestatījumus."). In user interface contexts, such buttons should not have a period at the end in Latvian, matching the English source.
+
+Correct translation:
+&Atiestatīt iestatījumus
+```
+
+<!-- cache_translation_check_lv_3136e8b64d390aef2ee79332660eb51e756bff61699bbe6a380c3d6e68c83e4a -->
+```
+        <source>&amp;Window</source>
+        <translation>&amp;Logs</translation>
+    
+ERR
+The translation for '&amp;Window' in Latvian should be '&amp;Logs', which is correct, but the word should be 'Logs' without adding an extra 's' (since 'logs' is singular nominative in Latvian). Also, '&amp;' is present exactly once and properly placed. However, the correct translation should be:
+
+Correct translation:
+&Logs
+```
+
+<!-- cache_translation_check_lv_04638809e4e3e472f920483ef4a98d3a28e4a1da76d33fbf1577e82985614f90 -->
+```
+        <source>User Interface &amp;language:</source>
+        <translation>Lietotāja interfeiss un &amp;valoda:</translation>
+    
+ERR
+The translation misinterprets the '&' in the source. In the English source, "&language" indicates the shortcut key for "language," so the ampersand should be placed before the appropriate letter of the Latvian word for "valoda." Also, "un" ("and") is not present in the English source and should not be added.
+
+Correct translation:
+Lietotāja &amp;valoda:
 ```
 </details>
 
-Number of issues: 2.
+Number of issues: 6.

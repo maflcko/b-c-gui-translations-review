@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>ja</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bja%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bja%5D%20request)
 
 
 <!-- cache_translation_check_ja_7c8d85793e337ba00e1be1697530b28d0f6b6194a3dd5c9bba72347c3ee6cb8e -->
@@ -59,15 +59,52 @@ Correct translation:
 内部エラーが発生しました。%1 は安全に継続を試みます。これは予期しないバグであり、以下の方法で報告できます。
 ```
 
-<!-- cache_translation_check_ja_2a727c7e958eed8bb3d575bd342982ea67c338ea65fde996734a424abc314dd4 -->
+<!-- cache_translation_check_ja_39e85626c534fb5f9a7d9a237c685f42466895cf1e41f87cf3f27a5cbe5af3df -->
 ```
-        <source>Minimize</source>
-        <translation>最小化 M</translation>
+        <source>&amp;Minimize</source>
+        <translation>最小化 &amp;M</translation>
     
 ERR
-The translation includes an unnecessary "M" character at the end, which is not present in the source text and could be confusing. The correct translation is:
+The '&' used for shortcut keys should be placed directly before the corresponding letter in the Japanese translation or on a Latin character, but in Japanese contexts, it is best either appended to the Japanese or the original Latin label, or the letter may be omitted/placed at the beginning. In this translation, "&M" at the end creates confusion, since Japanese UIs often format shortcuts as "(&M)" appended at the end, or insert '&' before a Latin character.
 
-最小化
+Correct translation:
+最小化(&M)
+```
+
+<!-- cache_translation_check_ja_a9394585749c18caa827bd7616b9d132be7d1a12dd74e789c5a8c0f545e9c9f4 -->
+```
+        <source>Load PSBT from &amp;clipboard…</source>
+        <translation>PSBTをクリップボードから読む…</translation>
+    
+ERR
+The translation omits the shortcut key indicator (&). The ellipsis should be the Japanese "…" (used correctly here). The translation is otherwise accurate, but to preserve the shortcut key access, & must appear exactly once.
+
+Correct translation:
+&amp;PSBTをクリップボードから読む…
+```
+
+<!-- cache_translation_check_ja_1f58d3f8a81110c8c089583fdb1bf9d1e43309bf20c1948fbae5c0d9cc60ecfa -->
+```
+        <source>&amp;Hide</source>
+        <translation>隠す</translation>
+    
+ERR
+The ampersand (&) used in the source text to indicate a shortcut key is missing in the Japanese translation. The translation should contain & exactly once.
+
+Correct translation:
+&隠す
+```
+
+<!-- cache_translation_check_ja_c614bfcf045836810ee061c684c9bde88c719c93909c10c86c57897d958b1e3a -->
+```
+        <source>S&amp;how</source>
+        <translation>表示</translation>
+    
+ERR
+The translation omits the '&' character, which is required to indicate a shortcut key in the menu. It should be included exactly once somewhere in the translation.
+
+Correct translation:
+&表示
 ```
 
 <!-- cache_translation_check_ja_389bfda8a07447e47c9275b2aafcc4c75bb0ae6e21702fe08c6ae4ae862770cb -->
@@ -99,120 +136,135 @@ Or, if more context is needed:
 Either of these better fits the original English meaning.
 ```
 
-<!-- cache_translation_check_ja_45dcc69ef9be80b9b8a57af6e5c1dd520d2562f12ad01392aaed0a06df180380 -->
+<!-- cache_translation_check_ja_13ebae0e36f8b8e75aa88b6134d61bfe6f045fb9f1f9a9412d99234b7bdd5131 -->
 ```
-        <source>Lock unspent</source>
-        <translation>コインをロック(o)</translation>
+        <source>Copy transaction &amp;ID and output index</source>
+        <translation>取引IDとアウトプットのインデックスをコピー</translation>
     
 ERR
-The translation "コインをロック(o)" translates to "Lock coin(s) (o)", which adds an "(o)" suffix not present in the source. Furthermore, "Lock unspent" is more accurately and commonly translated in Bitcoin context as "未使用コインをロック" ("Lock unspent coins"), specifically referring to 'unspent' coins (Unspent Transaction Outputs, or UTXO), not just any coins. The source does not mention a shortcut "(o)", and that should not be included.
+The translation omits the '&' which is used to indicate a shortcut key in the UI. The translation should contain a single '&' somewhere, matching the source. Additionally, "アウトプット" could be more naturally "出力", but "アウトプット" is still often used in the Bitcoin context in Japanese.
 
 Correct translation:
-未使用コインをロック
+取引&IDとアウトプットのインデックスをコピー
+
+Or, if more natural Japanese is preferred and still in the Bitcoin context:
+取引IDと出力のインデックスをコピー(&I)
 ```
 
-<!-- cache_translation_check_ja_4892065c1ddced199e29daf48e1bd6ed00a5b06fc8222caf6d5b68b463df5f28 -->
+<!-- cache_translation_check_ja_0914854e51cf3f4915d58aa5ea7d953c57325769a45ab8ceb0af9b0ec57fd3e1 -->
 ```
-        <source>Unlock unspent</source>
-        <translation>コインをアンロック(U)</translation>
+        <source>W&amp;allet</source>
+        <translation>ウォレット(&amp;a)</translation>
     
 ERR
-The translation adds "コイン" (coin) and includes "アンロック(U)" ("Unlock (U)") as a menu item, which is common in Japanese software UIs, but the source "Unlock unspent" is a technical, Bitcoin-specific phrase. The translation should closely reflect "Unspent" as "未使用" or "未使用コイン", not just "コイン". While "アンロック" works as "Unlock", the translation loses the "unspent" nuance as a technical term for unspent outputs, not just generically "coins".
+The ampersand (&) in the original marks the shortcut key, and should precede the shortcut character in the Japanese translation. It appears here as (&amp;a), which means "a" is set as the shortcut key, but there is no "a" in the Japanese word "ウォレット", making the shortcut meaningless in the Japanese context. Furthermore, "ウォレット" is correct for "wallet", but typically in Japanese translations for menus, a single katakana character or a meaningful Roman letter (e.g. ウォレット(&amp;W)) is chosen for the shortcut, matching the English.
 
 Correct translation:
-未使用の出力をアンロック
-
-Or, if brevity as a menu item is important:
-未使用をアンロック
+ウォレット(&amp;W)
 ```
 
-<!-- cache_translation_check_ja_ce1f266d53ccc61874dc095c2b360504fbbcaa8e0122403dee34dcdf25de836d -->
+<!-- cache_translation_check_ja_d2f355c1e5d891d384985a13b4f876f82999e3d849d0327a84dffd96a65dd573 -->
 ```
-        <source>Compiled without external signing support (required for external signing)</source>
-        <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
-        <translation>外部署名のサポート(外部署名に必要)なしでコンパイルされています </translation>
+        <source>Subtract &amp;fee from amount by default</source>
+        <extracomment>An Options window setting to set subtracting the fee from a sending amount as default.</extracomment>
+        <translation>デフォルトで金額からfeeを差し引く(&amp;f)</translation>
     
 ERR
-The translation contains errors in wording and style. "外部署名" is not natural Japanese for "external signing", and "外部" should be used instead. Also, the sentence should be more formal and concise, and there is a stray space at the end.
+The English "&amp;fee" is a label indicating that "fee" is the hotkey (shortcut), not meant to be translated or shown literally as "fee". In Japanese UI, typically the word "手数料" is used for "fee", and the ampersand (&amp;) should be placed before the character corresponding to the keyboard shortcut, often the first letter of the label in katakana or an appropriate Latin character.
 
 Correct translation:
-外部署名のサポートなしでコンパイルされています（外部署名には必要です）
+デフォルトで金額から手数料を差し引く(&amp;F)
+
+This way, "fee" is properly localized as "手数料", and the access key (&amp;F) is preserved.
 ```
 
-<!-- cache_translation_check_ja_a1cc7201ca92d91e90a12dc176f8b4d5f39719ae84fba76781699506c5679408 -->
+<!-- cache_translation_check_ja_9ee687c3476a5308bebc4d9650678053a42cf99917b58f74b0bdd2c0ae668834 -->
 ```
-        <source>Prune block storage to</source>
-        <translation>ブロックの保存容量を次の値までに剪定する(b): </translation>
+        <source>&amp;External signer script path</source>
+        <translation>HWIのパス(&amp;E)</translation>
     
 ERR
-The translation unnecessarily adds "保存容量" (storage capacity) and "(b):", and translates "to" as "までに" (by/within), not indicating the destination/amount clearly. The added "(b):" is also not present in the source.
+The translation is inaccurate. "External signer script path" refers to the file path for the external signer's script, not specifically "HWI" (which is a specific hardware wallet interface, not generic). The translation should be more general and reflect the concept of "external signer script path". The position of &amp; as a shortcut key indicator is acceptable, but it's currently placed at E, which matches "External" in English but doesn't correspond to any Japanese character.
 
 Correct translation:
-ブロックストレージを次の値まで剪定する
-
-Or, if contextually referring to the size:
-ブロックストレージを指定サイズまで剪定する
-
-This translation should avoid adding words not present in the original text and should not include unnecessary formatting.
+外部署名者スクリプトのパス(&amp;E)
 ```
 
-<!-- cache_translation_check_ja_eca207f0a41c26574bf6d52a8c63f5e7f8706b07dc908183e8dfe85dddf4e974 -->
+<!-- cache_translation_check_ja_655d74b7ea475acf43f071f5eea86bf70e010d0f745e424718f97f394bb51e44 -->
 ```
-        <source>External signer script path</source>
-        <translation>HWIのパス(E)</translation>
+        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
+        <translation>Tor onion serviceを介してピアに到達するために別のSOCKS&amp;5プロキシを使用する(&amp;5):</translation>
     
 ERR
-The translation is inaccurate. "External signer script path" refers to the file path of an external script used for signing. "HWIのパス(E)" means "Path of HWI (E)", which is both too specific (only referencing HWI hardware wallet interface) and omits "script," making it misleading. Also, the "(E)" in Japanese UI typically represents an access key, not needed unless consistent within the UI.
+There are two issues:
+1. The English text uses "&" as a shortcut marker before the "5" in "SOCKS&5", but in Japanese the "&5" is preserved at the wrong place and results in displaying as (&5), which is misleading.
+2. The translation is awkward; "を介してピアに到達するために" is a literal translation, but more natural would be "Tor onion service経由でピアに接続するために、別のSOCKS&5プロキシを使用する" and the shortcut key marker (&) should be attached to a suitable character, but Japanese UIs often do not use mnemonic keys in translations. If required, it can be on 'S' or any meaningful word, but duplicating "&" as "&5" is wrong.
 
 Correct translation:
-外部署名スクリプトのパス
+Tor onion service経由でピアに接続するために、別のSOCKS&5プロキシを使用する
+
+If a shortcut/mnemonic is required for localization, it would depend on the application; otherwise, omit explicit placement.
 ```
 
-<!-- cache_translation_check_ja_2ef71c17397795c6186e4157bdb265c5fd5f65698538276c858d8ba39b7667ed -->
+<!-- cache_translation_check_ja_888cf3b6b4e9f398868664a466f5c6b25fe30df4256f07b386aa1764d417810a -->
 ```
-        <source>Use separate SOCKS5 proxy to reach peers via Tor onion services:</source>
-        <translation>Tor onion serviceを介してピアに到達するために別のSOCKS5プロキシを使用する(5):</translation>
+        <source>Sign Tx</source>
+        <translation>署名されたトランザクション</translation>
     
 ERR
-The translation is mostly accurate but has unnecessary "(5)" at the end and could be slightly more natural in Japanese. The "(5)" seems like a stray character, possibly from the word "SOCKS5". Also, the term "onion service" should ideally be rendered as "オンションサービス" or "Onionサービス" in Japanese for clarity. 
+The Japanese translation "署名されたトランザクション" means "signed transaction" (a transaction that has already been signed). The English "Sign Tx" is an action/command (e.g., a button label) meaning "sign the transaction", so the translation is incorrect.
+
+Correct translations (depending on UI style):
+- トランザクションに署名
+- 取引に署名
+
+Shorter alternatives:
+- 署名
+- 署名する
+
+No format specifiers or whitespace issues.
+```
+
+<!-- cache_translation_check_ja_08a67dae4f650bca102838d8dc00ceec413646c2feed287f784c5899d87ea5f5 -->
+```
+        <source>Failed to load transaction: %1</source>
+        <translation>%1 : トランザクションの読込失敗</translation>
+    
+ERR
+Issues:
+- The placeholder %1 is moved to the start; in the source it appears after the colon. Keep order consistent.
+- There's an extra space before the colon and the wording uses the uncommon form "読込" instead of "読み込み".
+- More natural Japanese phrasing uses "読み込みに失敗しました".
 
 Correct translation:
-TorのOnionサービス経由でピアに接続するために、別のSOCKS5プロキシを使用する:
+<translation>トランザクションの読み込みに失敗しました: %1</translation>
 ```
 
-<!-- cache_translation_check_ja_02b7997daa5a32b41ceff53e3a2898cab1ce563a9ff923d6a4fdc633fdbd2b79 -->
+<!-- cache_translation_check_ja_13ca14291f907c3ae3f8841bd395201769305be72aa1b0e9686ee68787710bf2 -->
 ```
-        <source>1 day</source>
-        <translation>1 日(a)</translation>
+        <source>Failed to sign transaction: %1</source>
+        <translation>%1 : トランザクション署名失敗</translation>
     
 ERR
-The translation has an erroneous extra "(a)" after "1 日". The correct translation should just be "1日" (with no space and no "(a)"), which is the standard way of writing "1 day" in Japanese.
+The Japanese is awkward and has spacing issues. It places "%1" at the start with a space before the colon and uses an unnatural noun phrase "トランザクション署名失敗" (missing particle and polite verb form).
+
+Correct translation (keeps the same meaning and %1 specifier):
+トランザクションの署名に失敗しました: %1
+
+(Alternatively, use a fullwidth colon:)
+トランザクションの署名に失敗しました：%1
+```
+
+<!-- cache_translation_check_ja_f780c2f0dd26b87896fd739ffc9a17f05bdb876b3ad2220b680e1caebed73299 -->
+```
+        <source>1 d&amp;ay</source>
+        <translation>1 日(&amp;a)</translation>
+    
+ERR
+The shortcut key (&amp;a) does not match the original English usage, which is &amp;a for 'a' in 'day'. In Japanese, mnemonics are usually matched to the Katakana or Hiragana character that would make sense, but if none fits, it can be omitted or sometimes assigned to a logical character. Here, '日' is read as 'にち' ('nichi'), and typically no English mnemonic is used. If it must exist, &amp;a can be retained but it doesn't match any Japanese character. The rest of the translation is fine.
 
 Correct translation:
-1日
-```
-
-<!-- cache_translation_check_ja_70ef9c93e5f425cd10bc6db9a849d1e2904d733e29b87349ebc8fe1bdb6dd3ff -->
-```
-        <source>1 week</source>
-        <translation>1 週間(w)</translation>
-    
-ERR
-The translation includes unnecessary "(w)", which is not standard in Japanese and may confuse users. Also, there is an extra space between "1" and "週間". The correct translation should be:
-
-1週間
-```
-
-<!-- cache_translation_check_ja_e3e49b17cfc0377773175cc582db6cf8ceeaa332bdd83085576b913d0d55d980 -->
-```
-        <source>1 year</source>
-        <translation>1 年(y)</translation>
-    
-ERR
-The inclusion of "(y)" is unnecessary and does not match standard Japanese usage. "1 年" alone is sufficient and correct.
-
-Correct translation:
-1 年
+1日(&amp;a)
 ```
 
 <!-- cache_translation_check_ja_2a3ea0ae3c3c0b7eb6f9e3875f020f0fb0e55c1d52552fe01760143426537082 -->
@@ -355,32 +407,59 @@ Explanation:
 "受取先" means "recipient" or "received with", which is the common header in Japanese Bitcoin wallets.
 ```
 
-<!-- cache_translation_check_ja_5fdff6d99abee912a9be37e90fdbe0f7331bedf2f9f1b2d2a5e71b1468dfb905 -->
+<!-- cache_translation_check_ja_948e80d930847d17760dd27aa5148bc69391caa2c855d53f637d36b68615b39a -->
 ```
-        <source>Increase transaction fee</source>
-        <translation>取引手数料を追加(f)</translation>
+        <source>Copy &amp;raw transaction</source>
+        <translation>取引のRAWデータをコピー(r)</translation>
     
 ERR
-The translation is not accurate. "取引手数料を追加(f)" means "Add transaction fee (f)" and the "(f)" is unexplained and not present in the source text. The correct translation should be:
+The translation changes the word order and does not keep the ampersand (&) used for the shortcut key as in the original. In Japanese UI, the shortcut key (here indicated as (r)) should match user expectations, but the ampersand (&) should appear exactly once as instructed.
 
 Correct translation:
-取引手数料を増やす
+RAW取引をコピー(&r)
+or
+&RAW取引をコピー
+
+Either form is acceptable in Japanese localization, but the ampersand should precede the shortcut letter, which usually matches the (r) in the English. The provided translation uses (r) in parentheses, which is somewhat common but not as standard or explicit in shortcut use as using &. It is not a serious error, but it does not match the source's use of &; thus, a correction is warranted.
 ```
 
-<!-- cache_translation_check_ja_92427a91cbb93c5e660f2e9054b81fc073e2055b9f8272db81f84aaf1eefe26f -->
+<!-- cache_translation_check_ja_05e2fb65317fd324769ae519f309f00332976592caa6d460828d0656f9660c99 -->
 ```
-        <source>Wallet loaded successfully. The legacy wallet type is being deprecated and support for creating and opening legacy wallets will be removed in the future. Legacy wallets can be migrated to a descriptor wallet with migratewallet.</source>
-        <translation>ウォレットが正常にロードされました。 レガシーウォレットタイプは非推奨となり、レガシーウォレットの作成と使用のサポートは将来削除される予定です。 レガシーウォレットは、「mergewallet」を使用してディスクリプターウォレットに移行できます。</translation>
+        <source>Copy full transaction &amp;details</source>
+        <translation>取引の詳細をコピー(d)</translation>
     
 ERR
-There are several issues with the translation:
-
-1. Incorrect command: The source mentions "migratewallet", but the translation says 「mergewallet」, which is a significant error.
-2. Some slight nuance issues: "作成と使用のサポート" should rather be "作成およびオープンのサポート" or similar, to match "creating and opening".
-3. Unnecessary space after periods: There is a full-width space after "ました。" and "です。", which is not standard in Japanese (should not be there).
+The translation does not account for the shortcut key indicator represented by '&' in the source string. In Japanese UI translations, the shortcut key should typically be indicated by an '&' before the appropriate roman letter (e.g. '&d' or '(D)'), but instead the translation includes "(d)" in parentheses after the translated text, which is not standard and does not match the source usage of '&'. Also, the translation omits "full" (完全な or 全体の), which is present in the source.
 
 Correct translation:
-ウォレットが正常にロードされました。レガシーウォレットタイプは非推奨となっており、今後はレガシーウォレットの作成およびオープンのサポートが削除される予定です。レガシーウォレットは、「migratewallet」を使用してディスクリプターウォレットに移行できます。
+完全な取引の詳細をコピー(&d)
+```
+
+<!-- cache_translation_check_ja_dc36730eb72725f34c42df96ad4402fb46ce43bd2a16e07f526ffbaa950035bc -->
+```
+        <source>A&amp;bandon transaction</source>
+        <translation>取引を取消す(b)</translation>
+    
+ERR
+The shortcut key indicator "&" is missing in the Japanese translation. It should appear exactly once, though its location may differ. Also, the translation "取消す" is colloquial; "中止" or "放棄" may be more accurate for "Abandon".
+
+Correct translation:
+取引を&放棄する or &取引を放棄する (shortcut key on the first character after &)
+
+Or, if the shortcut key is to remain 'b':
+取引を放棄する(&b)
+```
+
+<!-- cache_translation_check_ja_dba2b83506d7d6fbd3d00c9e7c5c4a5bda37f775b1b2ed764104d7920db48c61 -->
+```
+        <source>Invalid amount for %s=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
+        <translation>%s=&lt;amount&gt; オプションに対する不正な設定: '%s' （取引の停滞防止のため、最小中継手数料の %s より大きい必要があります）</translation>
+    
+ERR
+Placeholders (%s and &lt;amount&gt;) are preserved correctly, but the Japanese wording is slightly off: "不正な設定" is awkward for "Invalid amount" and "より大きい必要があります" implies strictly greater than, while the source means "at least" (≥). Also remove the extra space before the parenthesis for natural Japanese.
+
+Correct translation:
+%s=&lt;amount&gt; に指定された金額が無効です: '%s'（取引の停滞を防ぐため、最小中継手数料 %s 以上である必要があります）
 ```
 
 <!-- cache_translation_check_ja_e76bc74181e6867e8a66fd2f6ede48b70e4ed8f61695cd18a37141aac7d79a08 -->
@@ -393,6 +472,30 @@ The translation uses the English word "weight" directly in "トランザクシ�
 
 Correct translation:
 最大トランザクション重量が入力なしのトランザクション重量よりも小さいです
+```
+
+<!-- cache_translation_check_ja_284d8fab6339bdf8ccf724bbd238a59a93cd5a130d80fc6f1796f6f9717da60b -->
+```
+        <source>Specified -blockreservedweight (%d) is lower than minimum safety value of (%d)</source>
+        <translation>指定された -blockreservedweight (%d) は最小安全値 (%d) より低いです</translation>
+    
+ERR
+The translation is understandable and preserves format specifiers, but it has minor spacing issues (unnecessary spaces before the option name and before the particle) and a slightly unnatural phrasing.
+
+Corrected translation:
+指定された-blockreservedweight (%d) は最小安全値 (%d) 未満です
+```
+
+<!-- cache_translation_check_ja_a9579629663a4b6cb2a0394fe2e5e5757db2e7f524f8571eb882df36b237cc85 -->
+```
+        <source>Failed to acquire rescan reserver during wallet initialization</source>
+        <translation>初期化中に再スキャンの予約の入手に失敗しました</translation>
+    
+ERR
+The Japanese is understandable but slightly unnatural. "rescan reserver" in this context is better rendered as "再スキャン用の予約" or "再スキャン用のリザーバ" and include "ウォレット" to mirror "wallet initialization".
+
+Suggested translation:
+ウォレットの初期化中に再スキャン用の予約の取得に失敗しました
 ```
 
 <!-- cache_translation_check_ja_6a7635ee6c8e67659c877d95e37be685b87dd06e157bbd28e5928d1aa6a17a78 -->
@@ -420,6 +523,84 @@ Correct translation:
 or, if specifically referring to Bitcoin change outputs:
 不明なお釣りタイプ '%s'
 ```
+
+<!-- cache_translation_check_ja_c31f12481038bf53e9ea8408ddf324e2779bd966839f59497c56ce9464d97678 -->
+```
+        <source>Failed to calculate bump fees, because unconfirmed UTXOs depend on an enormous cluster of unconfirmed transactions.</source>
+        <translation>未承認 のUTXO は膨大な数の未承認取引に依存しているため、手数料の引き上げの計算に失敗しました。</translation>
+    
+ERR
+The translation has an extra space ("未承認 のUTXO") which is unnatural in Japanese. Also the sentence order is acceptable but can be slightly more natural.
+
+Correct translation:
+未承認のUTXOが膨大な数の未承認トランザクションに依存しているため、手数料の引き上げの計算に失敗しました。
+```
+
+<!-- cache_translation_check_ja_f2be15d8fc51129c7c04c08387c254e46778baed3104c0c30a197269cd5912f7 -->
+```
+        <source>Transaction requires one destination of non-zero value, a non-zero feerate, or a pre-selected input</source>
+        <translation>取引には、0 でない送金額の宛先、0 でない手数料率、あるいは事前に選択された入力が必要です</translation>
+    
+ERR
+Minor issues: spaces appear around the numeral "0" ("0 でない") which is non-idiomatic in Japanese; also the sentence would read more naturally if phrased to indicate "one of the following is required" (いずれかが必要です).
+
+Correct translation:
+取引には、ゼロでない金額の宛先、ゼロでない手数料率、または事前に選択された入力のいずれかが必要です
+
+(Alternatively, using numerals without spaces:
+取引には、0でない金額の宛先、0でない手数料率、または事前に選択された入力のいずれかが必要です)
+```
+
+<!-- cache_translation_check_ja_003389b46ab6138e6f8651dc4231320717da5efdeaad1637ef967c4f867a1fac -->
+```
+        <source>Unrecognized descriptor found. Loading wallet %s
+
+The wallet might have been created on a newer version.
+Please try running the latest software version.
+</source>
+        <translation>認識できないディスクリプターが見つかりました。ウォレット %s を読み込んでいます
+
+ウォレットが新しいバージョンで作成された可能性があります。
+最新のソフトウェア バージョンを実行してみてください。
+</translation>
+    
+ERR
+Overall translation is understandable and preserves %s and line breaks, but has minor issues:
+- Slightly unnatural/varied terminology for "descriptor" (common Japanese Bitcoin translations use ディスクリプタ or 記述子).
+- Extraneous space in "ソフトウェア バージョン" (Japanese normally omits that space).
+- A more natural phrasing for the last sentence would use a direct request rather than "を実行してみてください" (which is polite but less direct).
+
+Suggested correction (keeps %s and blank line formatting):
+
+認識できないディスクリプタが見つかりました。ウォレット %s を読み込んでいます
+
+ウォレットは新しいバージョンで作成された可能性があります。
+最新のソフトウェアバージョンを実行してください。
+```
+
+<!-- cache_translation_check_ja_fde0293c563a7ee4ea89cf35885555ddd6591141963ab1acf5c6c49cb235438e -->
+```
+        <source>Invalid -proxy address or hostname, ends with '=': '%s'</source>
+        <translation>'=': '%s'で終わる無効な -proxy アドレスまたはホスト名</translation>
+    
+ERR
+The translation is understandable but the word order and punctuation are unnatural in Japanese. The format specifier '%s' and the '=' are preserved, which is good, but a more natural rendering would clarify that the given value ends with '='.
+
+Correct translation:
+無効な -proxy アドレスまたはホスト名です。'%s' は '=' で終わっています。
+```
+
+<!-- cache_translation_check_ja_ae07428c60b1ec58061ddc64f080792e8e76a4859bac0d814cb238f111e752d8 -->
+```
+        <source>Unrecognized network in -proxy='%s': '%s'</source>
+        <translation>-proxy='%s': '%s'内に認識されないネットワーク</translation>
+    
+ERR
+The Japanese is awkward/ungrammatical. Word order and particles are incorrect; it reads unnatural as "-proxy='%s': '%s'内に認識されないネットワーク". The % specifiers are preserved, but the phrasing should say the network '%s' in -proxy='%s' is unrecognized.
+
+Suggested correction:
+-proxy='%s': '%s' のネットワークは認識されません。
+```
 </details>
 
-Number of issues: 31.
+Number of issues: 43.

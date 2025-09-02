@@ -1,35 +1,36 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>kn</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bkn%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bkn%5D%20request)
 
 
-<!-- cache_translation_check_kn_3a803b71746fc31380ba44ad99ef82ae6418f88d210dca9dd197889fead6d699 -->
+<!-- cache_translation_check_kn_bad98e3ac33e5c6239c7b14c25c030aaa0402d054fc3f386621f3d89ab4737a4 -->
 ```
-        <source>Close</source>
-        <translation>ನಕಲುಕಳೆದುಕೊಳ್ಳುತ್ತಾರೆ</translation>
-    
-ERR  
-The translation "ನಕಲುಕಳೆದುಕೊಳ್ಳುತ್ತಾರೆ" is incorrect for "Close". The correct Kannada translation should be "ಮುಚ್ಚು" or "ಮುಚ್ಚುಕು".  
-Correct translation:  
-ಮುಚ್ಚು
-```
-
-<!-- cache_translation_check_kn_b0006e1dfd8d5b6d7f97bb52a93e83491e079ec4936b3b94d840b67514e7a453 -->
-```
-        <source>Choose</source>
-        <translation>ಕೆಳಗೆ</translation>
+        <source>C&amp;lose</source>
+        <translation>ಮುಚ್ಚು</translation>
     
 ERR
-The translation is incorrect. "ಕೆಳಗೆ" means "down" or "below" in Kannada, not "Choose". The correct translation for "Choose" in Kannada is "ಆಯ್ಕೆಮಾಡಿ".
+The source contains a single shortcut marker (&) which must be preserved exactly once in the translation. The Kannada translation "ಮುಚ್ಚು" is correct for "Close" semantically, but it omits the & shortcut marker.
+
+Correct translation (with one &):
+&amp;ಮುಚ್ಚು
+```
+
+<!-- cache_translation_check_kn_4076afe6904cc7627651bb177caa242128b98257af2c2f3844eb4ae3a6b49e0d -->
+```
+        <source>C&amp;hoose</source>
+        <translation>&amp;ಕೆಳಗೆ</translation>
+    
+ERR
+The translation is incorrect. The English text "Choose" should be translated as "ಆಯ್ಕೆಮಾಡಿ" in Kannada, and the ampersand should mark the shortcut key correspondingly.
 
 Correct translation:
-ಆಯ್ಕೆಮಾಡಿ
+ಆ&amp;ಯ್ಕೆಮಾಡಿ
 ```
 
 <!-- cache_translation_check_kn_5193d5801bcd38f5a9623bd5d7573a8fe46cfca38a4afe4a6f84e05b6814d769 -->
@@ -71,16 +72,28 @@ Correct translation:
 ಪ್ರಮುಖ: ನೀವು ನಿಮ್ಮ ವಾಲೆಟ್ ಫೈಲ್‌ನ ಹಿಂದಿನ ಯಾವುದೇ ಬ್ಯಾಕಪ್‌ಗಳನ್ನು ಮಾಡಿದಿದ್ದರೆ, ಅವುಗಳನ್ನು ಹೊಸದಾಗಿ ರಚಿಸಲಾದ, ಎನ್ಕ್ರಿಪ್ಟ್ ಮಾಡಲಾದ ವಾಲೆಟ್ ಫೈಲ್‌ನೊಂದಿಗೆ ಬದಲಾಯಿಸಬೇಕು. ಭದ್ರತಾ ಕಾರಣಗಳಿಗೆ, ನೀವು ಹೊಸ ಎನ್ಕ್ರಿಪ್ಟ್ ಮಾಡಲಾದ ವಾಲೆಟ್ ಅನ್ನು ಬಳಸಿ ಪ್ರಾರಂಭಿಸುವ ಸಂದರ್ಭದಲ್ಲಿ ಎನ್ಕ್ರಿಪ್ಟ್ ಮಾಡದ ವಾಲೆಟ್ ಫೈಲ್‌ನ ಹಿಂದಿನ ಬ್ಯಾಕಪ್‌ಗಳು ಅನಾವಶ್ಯಕವಾಗುತ್ತವೆ.
 ```
 
-<!-- cache_translation_check_kn_6a22ced9718a444333aa7c521e232badde06922856d3430b5b3c51613db53c48 -->
+<!-- cache_translation_check_kn_54f0cf1be57332e4dc85471818984b5b7658316aef35eab5011b63bdaedc8ae5 -->
 ```
-        <source>This error could occur if this wallet was not shutdown cleanly and was last loaded using a build with a newer version of Berkeley DB. If so, please use the software that last loaded this wallet</source>
-        <translation>ಈ ದೋಷ ಕ್ರಿಯೆಗೆ ಕೊನೆಯಾಗಿದ್ದ ಬರ್ಕ್ಲಿ ಡಿಬಿಯುಂಟುವಿನ ಹೊಸ ಸಂಸ್ಕರಣವನ್ನು ಬಳಸಿದ್ದ ಬದಲಾವಣೆಯ ಸಂಗಡ ಈ ವಾಲೆಟ್ ಕ್ರಿಯೆಯನ್ನು ಶುಚಿಗೊಳಿಸಲು ಕೊನೆಗೆ ಆಯ್ಕೆಮಾಡಿದೆಯೇ ಎಂದಾದರೆ, ದಯವಿಟ್ಟು ಈ ವಾಲೆಟ್ ಸೋಫ್ಟ್‌ವೇರ್ ಬಳಸಿದ ಅಂತಿಮ ಬರ್ಷನ್ ಅನ್ನು ಬಳಸಿ.</translation>
+        <source>About &amp;Qt</source>
+        <translation> ಕುರಿತು &amp; ಕ್ಯೂಟಿ</translation>
     
 ERR
-The translation is problematic. The Kannada translation is inaccurate, has confusing phrasing, and does not clearly convey the original intent. Additionally, there are minor grammar errors and unnatural sentence structure. For example, the translation confuses "shutdown cleanly" and "build with newer version" concepts.
+There is an unnecessary space at the beginning of the translation (" ಕುರಿತು ..."). The translation should not start with a stray space.
 
 Correct translation:
-ಈ ತಪ್ಪು ಸಂಭವಿಸಬಹುದು, ಈ ವಾಲೆಟ್ ಅನ್ನು ಸರಿಯಾಗಿ ಮುಚ್ಚಲಾಗದಿದ್ದರೆ ಮತ್ತು ಕೊನೆಯ ಬಾರಿ ಇದು ಹೊಸ ಆವೃತ್ತಿಯ Berkeley DB ಬಳಸಿ ಲೋಡ್ ಮಾಡಲಾಗಿದ್ದರೆ. ಅಂಥಹಾಗಿದ್ದರೆ, ದಯವಿಟ್ಟು ಈ ವಾಲೆಟ್ ಅನ್ನು ಕೊನೆಯ ಬಾರಿ ಲೋಡ್ ಮಾಡಿದ ಸಾಫ್ಟ್‌ವೇರ್ ಬಳಸಿ.
+&amp;Qt ಕುರಿತು
+```
+
+<!-- cache_translation_check_kn_8be325fea8c30e94028ef35416d02203876cf5063bc9408b0bb9431cca546cd0 -->
+```
+        <source>&amp;Encrypt Wallet…</source>
+        <translation>ವಾಲೆಟ್ ಎನ್‌ಕ್ರಿಪ್ಟ್ (ಗೂಢಲಿಪೀಕರಣ) ಮಾಡಿ</translation>
+    
+ERR
+The translation is missing the shortcut key indicator (&) present in the source. The ampersand should appear exactly once in the translation to allow menu shortcuts.
+
+Correct translation:
+ವಾಲೆಟ್ ಅನ್ನು &ಎನ್‌ಕ್ರಿಪ್ಟ್ (ಗೂಢಲಿಪೀಕರಣ) ಮಾಡಿ
 ```
 
 <!-- cache_translation_check_kn_668206c32665bdfbaf7a9c49f0846807509dbb855ebf7c109e6559422d7068ee -->
@@ -179,4 +192,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 13.
+Number of issues: 14.

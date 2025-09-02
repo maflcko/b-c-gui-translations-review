@@ -1,36 +1,71 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>tn</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Btn%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Btn%5D%20request)
 
 
-<!-- cache_translation_check_tn_bde873303498ddebbc9b931a1971278a1368627af2a87bf2188e917976a437f0 -->
+<!-- cache_translation_check_tn_a97f03bb439fd2b4d7ce37c884ba1ffb55a997b122f0a9319426795b2a1e9b57 -->
 ```
-        <source>Copy Address</source>
-        <translation>Kopitsa</translation>
+        <source>C&amp;lose</source>
+        <translation>Tswalela</translation>
     
 ERR
-The translation "Kopitsa" means "Copy" in Tswana, but it omits "Address" from the original source. This reduces clarity, especially in a Bitcoin context where address is a key term.
+The translation omits the shortcut key indicator (&). The translated text should also include a single & in a suitable location.
 
 Correct translation:
-Kopitsa aterese
+&Tswalela
 ```
 
-<!-- cache_translation_check_tn_3e8c43760eb76f4cadf3d04a34fc06e7f4f63f40d332749e93c1615299c9609d -->
+<!-- cache_translation_check_tn_85d7adfb0d212be169e924ed67c88a38bbb58185408c3ac7df20546a580a2a29 -->
 ```
-        <source>Copy Label</source>
+        <source>&amp;Export</source>
+        <translation>Tsenya</translation>
+    
+ERR
+The translation omits the meaning of "Export" and does not carry over the '&' shortcut indicator. "Tsenya" means "insert" in Setswana, not "export".
+Correct translation:
+Romela &kantle
+```
+
+<!-- cache_translation_check_tn_534a9f7f9959856333b460b3e8c72c261fdc48f2ab03bc537a6d037e1bfffcaf -->
+```
+        <source>C&amp;hoose</source>
+        <translation>Kgetha</translation>
+    
+ERR
+The ampersand (&) indicating a shortcut key in the source ("C&hoose") is missing from the translation ("Kgetha"). The translation should include the ampersand exactly once, e.g., "K&getha" or "&Kgetha".
+
+Correct translation:
+K&getha
+```
+
+<!-- cache_translation_check_tn_b8ae28eb46294c8b4204c47765f5ae8825cbc202dee5cdf243004def2a913f12 -->
+```
+        <source>&amp;Copy Address</source>
+        <translation>&amp;Kopitsa</translation>
+    
+ERR
+The translation is problematic because "Kopitsa" translates to "copy" in Setswana ('tn'), but the word "Address" is missing. The translation should accurately reflect the whole phrase "&Copy Address", including "Address".
+
+Correct translation:
+&Kopitsa Aterese
+```
+
+<!-- cache_translation_check_tn_23a34d96e0834e65fe29576a8b4d2d9e4709b97ad915317e487d4b2b886527bc -->
+```
+        <source>Copy &amp;Label</source>
         <translation>Kopiya le Mefuta</translation>
     
 ERR
-The translation is incorrect. "Kopiya le Mefuta" literally means "Copy and Types" or "Copy with Types" in Setswana, and "Mefuta" means "types" or "kinds", not "label". The correct word for "label" in Setswana is usually "lebole" or "setshwantsho".
+The translation "Kopiya le Mefuta" is problematic. "Mefuta" means "types" or "kinds" in Setswana (tn), not "Label". The word "Label" in Setswana is best rendered as "Letshwao" or "Lebitso" (name/label). Also, the single ampersand (&) indicating the shortcut key is missing in the translation.
 
 Correct translation:
-Kopisa Lebole
+Kopiya &Letshwao
 ```
 
 <!-- cache_translation_check_tn_46e109b2ad472626293c4eb665c390422f59677bc30aeaefcb4c63df83a866d0 -->
@@ -194,6 +229,17 @@ The translation "Phetolelo E Thutile" means "Translation Failed" in Setswana, no
 Correct translation:
 Go Romela Gonne Go Itse Go Paletswe
 ```
+
+<!-- cache_translation_check_tn_85d7adfb0d212be169e924ed67c88a38bbb58185408c3ac7df20546a580a2a29 -->
+```
+        <source>&amp;Export</source>
+        <translation>Tsenya</translation>
+    
+ERR
+The translation omits the meaning of "Export" and does not carry over the '&' shortcut indicator. "Tsenya" means "insert" in Setswana, not "export".
+Correct translation:
+Romela &kantle
+```
 </details>
 
-Number of issues: 14.
+Number of issues: 18.

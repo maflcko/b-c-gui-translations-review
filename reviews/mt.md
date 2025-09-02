@@ -1,24 +1,24 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>mt</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bmt%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bmt%5D%20request)
 
 
-<!-- cache_translation_check_mt_192d7b4c1cf622412cd015ea17fdadcbfef07aa77299a9650afb388cb4907853 -->
+<!-- cache_translation_check_mt_33f6710616358fe679b389726c2cb144b73e7e88f57f4f1b69eac060b4821678 -->
 ```
-        <source>Copy Label</source>
-        <translation>Kopja  Tikketta</translation>
+        <source>C&amp;lose</source>
+        <translation>Qrib</translation>
     
 ERR
-There is a whitespace formatting issue: there is an unnecessary double space between "Kopja" and "Tikketta".
+The translation "Qrib" for "C&amp;lose" is inaccurate. The correct Maltese translation for "Close" is "Agħlaq". Also, the ampersand (&) for a keyboard shortcut is missing in the translation.
 
 Correct translation:
-Kopja Tikketta
+&Agħlaq
 ```
 
 <!-- cache_translation_check_mt_74df9f2270f81e618b1cc1039585da1adcda78b0c6a7a88f1cfb0a89be6a2cd6 -->
@@ -92,18 +92,6 @@ The translation repeats the word "ġenerali" unnecessarily, resulting in "ħarsa
 Uri ħarsa ġenerali tal-kartiera
 ```
 
-<!-- cache_translation_check_mt_013c825e5ef71539c81985d02373deda6c3c30e550c769d2eb6742bd9d7e1576 -->
-```
-        <source>About %1</source>
-        <translation>Dwar%1</translation>
-    
-ERR
-There is a whitespace formatting issue: there should be a space after "Dwar" before "%1".
-
-Correct translation:
-Dwar %1
-```
-
 <!-- cache_translation_check_mt_cccfac4c5733d343fb3bfe2ed756962ad8bf8a965783f79eef2f8cc7425158a7 -->
 ```
         <source>Show information about %1</source>
@@ -126,6 +114,18 @@ There is a whitespace format issue: there should be a space between "għal" and 
 
 Correct translation:
 Immodifika l-għażliet tal-konfigurazzjoni għal %1
+```
+
+<!-- cache_translation_check_mt_d7b20c9f2a0786a2a441125918e5924e8b52968145c32ae891db21f6d4da88cf -->
+```
+        <source>&amp;Encrypt Wallet…</source>
+        <translation>&amp;Encrypt Wallet...</translation>
+    
+ERR
+The translation leaves the English untranslated, which is incorrect for Maltese. Furthermore, the original uses an ellipsis (…), while the translation uses three dots (...).
+
+Correct translation:
+&amp;Ikkripta l-Kartiera…
 ```
 
 <!-- cache_translation_check_mt_4d16647223b6f986787a239451a7398a794f64527e8893f1159f6054526abf89 -->
@@ -152,6 +152,30 @@ Correct translation:
 %1 wara
 ```
 
+<!-- cache_translation_check_mt_3c80cd759f6c2cef8036da10e6ff35e0c965251a2e6ea28971f002fbf40a0617 -->
+```
+        <source>&amp;Sending addresses</source>
+        <translation>&amp; Tibgħat indirizzi</translation>
+    
+ERR
+The translation reverses the word order and adds an unnecessary space after '&'. Also, "Tibgħat indirizzi" means "You send addresses" (verb form), instead of "Sending addresses" (noun phrase). The correct translation in Maltese would be "&Indirizzi għall-Ibgħat" or "&Indirizzi għat-Tibgħat", with no extra space after '&', and using the noun form.
+
+Correct translation:
+&Indirizzi tat-Tibgħat
+```
+
+<!-- cache_translation_check_mt_ef54b789adede549ec3dc09079995d19e8538fb9be176cb60158521b03530574 -->
+```
+        <source>&amp;Receiving addresses</source>
+        <translation>&amp;Riċeviment indirizzi</translation>
+    
+ERR
+The translation "Riċeviment indirizzi" is grammatically incorrect in Maltese. The word order should be reversed to make it proper Maltese, and the shortcut marker (&) should be included once (which is fine here).
+
+Correct translation:
+&Indirizzi ta' riċeviment
+```
+
 <!-- cache_translation_check_mt_db38b428c638728edd976094e613d922169ab3daa5e93f05454594e780db0356 -->
 ```
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
@@ -162,6 +186,18 @@ The translation is problematic. The placement of "%1" is not correct, and there 
 
 Correct translation:
 Uri l-messaġġ ta’ għajnuna %1 biex tikseb lista b’għażliet possibbli tal-linja tal-kmand Bitcoin
+```
+
+<!-- cache_translation_check_mt_18927528a687bee8cd04f36d8f5cee2385c75933b1f8a3a057af803e25f07ad2 -->
+```
+        <source>S&amp;how</source>
+        <translation>Uri</translation>
+    
+ERR
+The translation omits the shortcut indicator (&) present in the source. In Maltese, "Show" translates to "Uri", but to correctly preserve the shortcut, it should be "&Uri" or "U&amp;ri" (depending on the desired shortcut letter placement).
+
+Correct translation:
+&Uri
 ```
 
 <!-- cache_translation_check_mt_c1c1ab5645ece8734ebbe2ca55c5909abe2bf698738baf1ea1a8c4ada3b65469 -->
@@ -298,4 +334,4 @@ Unità biex turi l-ammonti. Ikklikkja biex tagħżel unità oħra.
 ```
 </details>
 
-Number of issues: 23.
+Number of issues: 26.

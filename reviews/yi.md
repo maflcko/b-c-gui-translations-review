@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>yi</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Byi%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Byi%5D%20request)
 
 
 <!-- cache_translation_check_yi_eb4660d219040fb5960add668cea0ccdffa51f2c5aca2b3556bd6dfd57557f2e -->
@@ -19,6 +19,18 @@ The translation is incorrect. The given 'yi' translation means "Right-click to e
 
 Correct translation:
 שאַפֿן אַ נייַע אַדרעס
+```
+
+<!-- cache_translation_check_yi_5f3834c8781cc7bac8ead2664a20bad94c381dddec53ce5ddac9c91a49f0fec7 -->
+```
+        <source>&amp;Export</source>
+        <translation>אויספירן</translation>
+    
+ERR
+The translation for '&Export' is missing the '&' which indicates the shortcut key. The '&' should be included exactly once in the translation, typically placed in front of the appropriate letter for access key functionality.
+
+Correct translation:
+&אויספירן
 ```
 
 <!-- cache_translation_check_yi_7777767a05a8b39ef83d7240803d073450075f9b8c1e2af2debcf4e9a7dbd478 -->
@@ -172,18 +184,16 @@ Correct translation:
 צי וויל איר צוריקזעצן די אַפּ-סעטטינגס צו די פעליקטע ווערט, אָדער אפשטעלן אָן קיין ענדערונגען?
 ```
 
-<!-- cache_translation_check_yi_210a3423435fdaf109170333176586be32f5c03f956a4618916f3327bf3e63df -->
+<!-- cache_translation_check_yi_3e4da2728a50b659115aba36eaf7572583559d7b6f17a223188c93f11fa9cf7a -->
 ```
-        <source>Exit</source>
-        <translation>עxit</translation>
+        <source>E&amp;xit</source>
+        <translation>ע&amp;xit</translation>
     
-ERR  
-The translation "עxit" is problematic because it mixes Hebrew script with the Latin "x", which is incorrect for Yiddish. The correct Yiddish translation should be entirely in Hebrew script, using the proper Yiddish term for "Exit".
+ERR
+The translation is problematic: 'ע&amp;xit' is a transliteration of the English 'Exit' with a Hebrew letter 'ע' prefixed, which is incorrect for Yiddish. The correct Yiddish translation for 'Exit' is 'אַרויסגיין' and should include the '&' for the shortcut.
 
 Correct translation:
-אַרויס  
-or  
-פֿאַרלאָזן (depending on context; "אַרויס" is most common for UI "Exit" buttons)
+אַר&ויסגיין
 ```
 
 <!-- cache_translation_check_yi_c1d89eccd2834fbe160445d400b5c58d665e946c02d08e8cc4e0f8cfdbfcd997 -->
@@ -200,29 +210,16 @@ Correct translation:
 Explanation: "אויספיר" (export) and "איז ניט געלונגען" (failed/not successful) together accurately convey "Exporting Failed" in Yiddish.
 ```
 
-<!-- cache_translation_check_yi_6fa7c087b898dce35db1a6c52111649090754562926a2289f3a04f6391aeb4fd -->
+<!-- cache_translation_check_yi_5f3834c8781cc7bac8ead2664a20bad94c381dddec53ce5ddac9c91a49f0fec7 -->
 ```
-        <source>Unrecognized descriptor found. Loading wallet %s
-
-The wallet might had been created on a newer version.
-Please try running the latest software version.
-</source>
-        <translation>אונטערגעריפענע דעזקריפּטאָר געפונען. לאודינג וואָלעט 1%s דער וואָלעט קען געווען געמאכט אויף אַן נײַער ווערסיע. ביטע פּרוּוון אראפקומען דעם לעצטן סאָפטווער ווערסיע.</translation>
+        <source>&amp;Export</source>
+        <translation>אויספירן</translation>
     
-ERR  
-There are several issues with this translation:
-
-1. "לאודינג וואָלעט 1%s" should be "לאד איבער די בייַטל %s" or similar, and '%s' should not have '1' before it.  
-2. The translation for "Unrecognized descriptor found." ("אונטערגעריפענע דעזקריפּטאָר געפונען") uses a German/Yiddish hybrid; "אונטערגעריפענע" is clumsy and not idiomatic.  
-3. "The wallet might had been created on a newer version." is missing in translated content, and the existing translation doesn't convey the same conditional meaning.
-4. "Please try running the latest software version." is mistranslated; "אראפקומען" is incorrect for "run," it means "download."  
-5. English words like "loading wallet" are used as transliterated words ("לאודינג"), which is not standard or idiomatic for Yiddish UI translations.
+ERR
+The translation for '&Export' is missing the '&' which indicates the shortcut key. The '&' should be included exactly once in the translation, typically placed in front of the appropriate letter for access key functionality.
 
 Correct translation:
-געפֿונען אַ נישט ערקענטער דיסקריפּטאָר. לאָדן בייַטל %s.
-
-דער בייַטל איז מסתּמא באַשאַפן געוואָרן אויף אַ נײַער ווערסיע.
-ביטע פּרוּווט אויסצופירן די לעצטע ווייכווארג-ווערסיע.
+&אויספירן
 ```
 
 <!-- cache_translation_check_yi_cbb2bc54595750993e0b500a5c5f2b36114da36072d8013d4149519e6494c632 -->
@@ -456,21 +453,6 @@ The translation is incorrect. The Yiddish translation "אור מיט שאפן 1%
 
 Correct translation:
 טעות בײַם שאפן %s
-```
-
-<!-- cache_translation_check_yi_3686c5875e1e06de5d0e52ecb9a3ec66da2d45005b9d829d1edc5dc71c969fbb -->
-```
-        <source>Error initializing wallet database environment %s!</source>
-        <translation>עראר בײַ איניציאליזירן דעם וואַלט דאַטאַבאַסע אויסשטעלונג 1%s!</translation>
-    
-ERR
-The translation is mostly accurate but has an error:
-- The format specifier '%s' from the source was changed to '1%s', which is incorrect.
-- 'אויסשטעלונג' is not a standard translation for 'environment'; a better term is 'סביבה' or 'אַרומע' (context-dependent).
-- The rest of the sentence is understandable Yiddish, though 'דעם וואַלט דאַטאַבאַסע סביבה' is more accurate.
-
-Correct translation:
-עראַר בײַ איניציאַליזירן דעם וואַלט דאַטאַבאַסע סביבה %s!
 ```
 
 <!-- cache_translation_check_yi_fd9d9c5a72b6a929757c732f503eecf4c525759a37c2cedacc3ee0b2ae29ca4e -->
@@ -897,21 +879,6 @@ The translation is problematic for several reasons:
 
 Correct translation:
 אונבילדיקע פּאָרט אנגעגעבן אין %s: '%s'
-```
-
-<!-- cache_translation_check_yi_2938ebb904f00d3a926441c001174ce23fc10b55b0fb31931ed5f387754f2819 -->
-```
-        <source>Invalid pre-selected input %s</source>
-        <translation>ניט געלטיק פּרע-געקליבן אַרײַן 1%s</translation>
-    
-ERR  
-There is an error in the translation:  
-- "אַרײַן 1%s" mistakenly inserts a "1" before the "%s" placeholder, which is not present in the source and thus erroneous.
-- The English term "input" should be better rendered as "איינצוג" (or occasionally other yiddishizations for the technical term).
-- The rest of the text is otherwise mostly correct.
-
-Correct translation:  
-ניט געלטיק פּרע-געקליבן איינצוג %s
 ```
 
 <!-- cache_translation_check_yi_d6332169c910eddff3883673b2d014eac436b0d0882eff9af7a9e0687dac8448 -->
@@ -1342,21 +1309,6 @@ Correct translation:
 קענען נישט מאַכן די PID טעקע '%s': %s
 ```
 
-<!-- cache_translation_check_yi_7e3535e50f8b1d3c463a3101850ab5ea5a005db5f7d8f07985537c029a19cf83 -->
-```
-        <source>Unable to generate initial keys</source>
-        <translation>ניט אפשריק צו générירן אָרײַנקע לאַרגעלע</translation>
-    
-ERR
-The translation is problematic for several reasons:
-1. The word "גערןירן" (génériren) is a Yiddish transliteration of the French/English "generate," but it is not standard usage in Yiddish. The standard Yiddish term for "to generate" or "to create" would be "שאַפֿן" (shafn) or "הערויסברענגען" (heroysbrengen).
-2. "אָרײַנקע לאַרגעלע" does not convey the meaning of "initial keys". "אָנהייביקע שליסלען" would be appropriate for "initial keys".
-3. The sentence structure does not accurately translate the source meaning.
-
-Correct translation:
-ניט מעגליך צו שאַפֿן אָנהייביקע שליסלען
-```
-
 <!-- cache_translation_check_yi_f314e74a140854758e8e083573446dee4231ebdf6ddd34a0af7ad6f6b68ffa54 -->
 ```
         <source>Unable to open %s for writing</source>
@@ -1381,22 +1333,6 @@ There is a problem with the format specifier. The source text uses '%s', but the
 
 Correct translation:
 קענט נישט פּאַרסירן -maxuploadtarget: '%s'
-```
-
-<!-- cache_translation_check_yi_61979c01bf1938daf3752a858f2b5d8b747184a035861bfff32506290104fdd1 -->
-```
-        <source>Unable to unload the wallet before migrating</source>
-        <translation>נישט אפשר צו אויסלאָדן דעם וואַלעט ווען קודם פּונקטירן</translation>
-    
-ERR
-There is a problematic translation: The Yiddish "נישט אפשר צו אויסלאָדן דעם וואַלעט ווען קודם פּונקטירן" is not accurate. "פונקטירן" usually means "to punctuate" or "to mark," and does not accurately convey "migrating." The translation should reflect "before migrating" more accurately. Also, the sentence structure could be improved.
-
-Correct translation:
-ניט מעגליך ארויסצולאָדן דעם וועלעט איבערצופירן
-Or, more literally:
-ניט מעגליך אויסלאָדן דעם וועלעט איידער איבערפירן
-
-Either is much clearer.
 ```
 
 <!-- cache_translation_check_yi_03338b834f1d302c0047d5ae5e1f14901666a541d096d5abf83df9586a911572 -->
@@ -1586,4 +1522,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 106.
+Number of issues: 103.

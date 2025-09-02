@@ -1,25 +1,13 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>da</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bda%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bda%5D%20request)
 
-
-<!-- cache_translation_check_da_37020dbd0addffe76d9bcc883f9dd9f8a461db42356ba94fff303d0003a9d559 -->
-```
-        <source>Copy the currently selected address to the system clipboard</source>
-        <translation>Kopier den valgte adressen til systemets utklippstavle</translation>
-    
-ERR
-The translation uses Norwegian ("adressen", "utklippstavle") instead of correct Danish terms. In Danish, "address" is "adresse" (not "adressen"), and "clipboard" is usually "udklipsholder".
-
-Correct translation:
-Kopier den valgte adresse til systemets udklipsholder
-```
 
 <!-- cache_translation_check_da_2218dd66486dc430cfaeb60111fb3d740d26cfdcd4e615cf1bd029344778a985 -->
 ```
@@ -116,6 +104,18 @@ Correct translation:
 Adressen, der er associeret med denne post i adresselisten. Denne kan kun ændres for afsendelsesadresser.
 ```
 
+<!-- cache_translation_check_da_4c2be052ff0012655726808b2ac20b2552e48b960514702335f6a951815d0881 -->
+```
+        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
+        <translation>Brug separate SOCKS&amp;5 proxy, for at nå fælle via Tor-onion-tjenester:</translation>
+    
+ERR
+There is a typo in the Danish translation: "fælle" should be "fæller" (the plural for "peers"). Furthermore, in Danish, the comma after "proxy" is unnecessary, and "SOCKS5-proxy" should be hyphenated. Hyphenation for "Tor-onion-tjenester" is acceptable, though "Tor onion-tjenester" is also common.
+
+Correct translation:
+Brug separat SOCKS5-proxy for at nå fæller via Tor-onion-tjenester:
+```
+
 <!-- cache_translation_check_da_a1f932e2f3b1700c0c92e296e93b31701656710b0f3190cb64238712e481c107 -->
 ```
         <source>Compiled without external signing support (required for external signing)</source>
@@ -141,6 +141,26 @@ Correct translation:
 Det kortlagte autonome system, der bruges til at diversificere peer-udvælgelse.
 ```
 
+<!-- cache_translation_check_da_4ea0948feaae9aa73ba8472611841885b4ea2250eca3fc791aab017080cff557 -->
+```
+        <source>1 &amp;hour</source>
+        <translation>1 &amp;time</translation>
+    
+ERR
+The translation "1 &amp;time" is not correct Danish; "time" is Danish for "hour," but the ampersand should correctly mark the shortcut in the translated word. However, placing & before "t" makes "&time," which corresponds to the shortcut "t" (matching the original shortcut key for "h"). If the shortcut key is to remain on the first letter in the translation (which is the first letter of the word), then the translation is technically correct. However, it defeats the intent of matching the shortcut key to the corresponding letter as in the English source ("h" in "hour").
+
+The main issue is that "time" is correct Danish for "hour," but it is not capitalized. Also, the ampersand should be placed as required by the UI.
+
+Correct translation:
+1 &amp;time
+
+If the shortcut key must correspond to "h" (even in Danish, though uncommon), it should be 1 t&ime, but this would be awkward for Danish users since "time" starts with "t."
+
+Therefore, since "1 &amp;time" is actually the expected translation for Danish (with the ampersand marking the shortcut key "t"), the translation is acceptable.
+
+NO
+```
+
 <!-- cache_translation_check_da_30ce934f109661aaba340757793c2b82907b3b4fe055e92d079d432e7a0e14d3 -->
 ```
         <source>Ban for</source>
@@ -153,28 +173,28 @@ Correct translation:
 Bloker i
 ```
 
-<!-- cache_translation_check_da_9933c332eb3fcbf0c6f6fc177017f59ea24b8c5475b1087b496152cd7d844f39 -->
+<!-- cache_translation_check_da_e86573af9456c66bfd9ad709023124b5a35d04e8862df9da61650f05adf8ce61 -->
 ```
-        <source>Sign Message</source>
-        <translation>Singér besked</translation>
+        <source>&amp;Create new receiving address</source>
+        <translation>&amp;Opret ny modtager adresse</translation>
     
 ERR
-The Danish word "Singér" is incorrect; the verb "to sign" in this context should be "Underskriv." "Singér" does not exist in Danish and resembles the English word "sign" with a French diacritic.
+In Danish, "modtager adresse" should be written as a single compound word: "modtageradresse". There should not be a space between "modtager" and "adresse". Otherwise, the translation is correct and the '&' shortcut is preserved.
 
 Correct translation:
-Underskriv besked
+&Opret ny modtageradresse
 ```
 
-<!-- cache_translation_check_da_c1a398062eb8aa10a62bb89a94eaded024856d94471c9584d227289199eb0b51 -->
+<!-- cache_translation_check_da_5a0e8a1939c952fa324f0aafffeb54abbbccde75bd53272ff7fe054d35aad666 -->
 ```
-        <source>watch-only</source>
-        <translation>kigge</translation>
+        <source>&amp;Sign Message</source>
+        <translation>&amp;Singér besked</translation>
     
-ERR  
-The translation "kigge" is inaccurate. "Watch-only" in Bitcoin wallet contexts refers specifically to addresses or wallets that can only be monitored (watched), not spent from. The Danish term "kigge" just means "look" or "watch" in an informal sense and does not capture the wallet context.
+ERR
+The translation is incorrect. "Singér besked" is not correct Danish—there is an unnecessary accent over the 'e', and "singér" is not the verb "sign" in Danish. The correct term for "Sign Message" in Danish is "Underskriv besked".
 
 Correct translation:
-kun-visning
+&amp;Underskriv besked
 ```
 
 <!-- cache_translation_check_da_4ab31582452ee8e08139b38b207ffafa1af327c30fdf5320a672524bcbd4a3c7 -->
@@ -204,40 +224,28 @@ Therefore, the translation can be considered unproblematic.
 NO
 ```
 
-<!-- cache_translation_check_da_c1a398062eb8aa10a62bb89a94eaded024856d94471c9584d227289199eb0b51 -->
+<!-- cache_translation_check_da_7f919572b1efba10617b4271ce3bc4b61c244d2616355f3e7ae923be1eabf68b -->
 ```
-        <source>watch-only</source>
-        <translation>kigge</translation>
-    
-ERR  
-The translation "kigge" is inaccurate. "Watch-only" in Bitcoin wallet contexts refers specifically to addresses or wallets that can only be monitored (watched), not spent from. The Danish term "kigge" just means "look" or "watch" in an informal sense and does not capture the wallet context.
-
-Correct translation:
-kun-visning
-```
-
-<!-- cache_translation_check_da_fb866dd10f33e7b6e96d62e62f5266147ac65ed025efe68d94b8a9d8c2bdd1fb -->
-```
-        <source>Copy full transaction details</source>
-        <translation>Kopiér alle transaktion oplysninger </translation>
+        <source>Copy full transaction &amp;details</source>
+        <translation>Kopiér alle transaktion &amp;oplysninger </translation>
     
 ERR
-There is a whitespace formatting issue: there is an unnecessary space at the end of the translation. Also, a better translation for "full transaction details" would be "fulde transaktionsdetaljer". The current translation ("alle transaktion oplysninger") is understandable but less precise.
+There is a formatting issue: there is an unnecessary space at the end of the Danish translation. The shortcut key (&amp;) has been placed, which is acceptable, but "alle transaktion" is not as idiomatic as "fulde transaktionsoplysninger" for "full transaction details." A better translation would be:
 
 Correct translation:
-Kopiér fulde transaktionsdetaljer
+Kopiér fulde transaktions&amp;oplysninger
 ```
 
-<!-- cache_translation_check_da_0241dbf055b5c56acd8c481786af680d5448295b9c56d5343a8105ddb0786db8 -->
+<!-- cache_translation_check_da_c9509191bf0e63df1f16320af6e0d2de7a11a6dfd41a3af627e09fcd6115f66f -->
 ```
-        <source>Watch-only</source>
-        <translation>Kigge</translation>
+        <source>A&amp;bandon transaction</source>
+        <translation>&amp;Opgiv transaction</translation>
     
 ERR
-The translation "Kigge" is inaccurate. "Watch-only" in the context of Bitcoin wallets refers to addresses or wallets that can be watched but not spent from. The correct Danish translation should be "Kun visning" or "Kun se".
+The translation is understandable but not fully accurate. "Abandon" should be translated as "Opgiv", but "transaction" should be translated as "transaktion" (the Danish word). Additionally, the shortcut (&) is preserved.
 
 Correct translation:
-Kun visning
+&Opgiv transaktion
 ```
 
 <!-- cache_translation_check_da_d8f83f0163c3e29efa20ade8d65d8c679cdf64e87ce45f5c4d9f7719fa07b499 -->
@@ -301,18 +309,6 @@ The translation omits the subject 'du' (you) before 'betaler'. It should explici
 Correct translation:
 Dette er transaktionsgebyret, som du betaler, når du sender en transaktion.
 ```
-
-<!-- cache_translation_check_da_ce35a4de2c1d2f7ae9cb01193b3a679facab00276261f4215038b69b878149af -->
-```
-        <source>Unable to generate keys</source>
-        <translation>U-istand til at generere nøgler</translation>
-    
-ERR
-The translation contains an error. "U-istand" is not correct Danish. The correct phrase in Danish for "Unable to" is "Kan ikke".
-
-Correct translation:
-Kan ikke generere nøgler
-```
 </details>
 
-Number of issues: 24.
+Number of issues: 23.

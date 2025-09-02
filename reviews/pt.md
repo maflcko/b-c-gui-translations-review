@@ -1,24 +1,122 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>pt</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bpt%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bpt%5D%20request)
 
 
-<!-- cache_translation_check_pt_834327e41641a4a1a078516919153ca637da84d0237fcf925bd89661206d3f88 -->
+<!-- cache_translation_check_pt_d49da9fabba493bdadbf873436655b6fea6997e5d8d6659fa7b263f6f8ab9156 -->
 ```
-        <source>Sending addresses</source>
-        <translation>Endereço de envio</translation>
+        <source>Feeler</source>
+        <extracomment>Short-lived peer connection type that tests the aliveness of known addresses.</extracomment>
+        <translation>Antena</translation>
     
 ERR
-The translation is inaccurate. The English phrase "Sending addresses" is plural, referring to multiple addresses, while the Portuguese translation "Endereço de envio" is singular.
+"Antena" is incorrect: it means "antenna" in Portuguese and doesn't convey the technical meaning. The source refers to a short-lived peer connection used to test whether known addresses are alive.
+
+Suggested translation:
+Feeler — Conexão de teste curta (tipo de ligação temporária para verificar se endereços conhecidos estão ativos)
+
+Or shorter:
+Conexão de verificação curta
+```
+
+<!-- cache_translation_check_pt_43a52571e52e121012eecb59cdc15efc7b4ba9bb3329387206a50f2bcc80d3f7 -->
+```
+        <source>Address Fetch</source>
+        <extracomment>Short-lived peer connection type that solicits known addresses from a peer.</extracomment>
+        <translation>Procura de endreços</translation>
+    
+ERR
+The Portuguese translation contains a spelling error: "endreços" should be "endereços". Also consider a more natural phrasing for this context (short-lived peer connection): "Busca de endereços" or "Recuperação de endereços".
+
+Correct translation (fixed spelling, literal match):
+Procura de endereços
+
+Alternative, more natural translations:
+Busca de endereços
+Recuperação de endereços
+```
+
+<!-- cache_translation_check_pt_3349460b4377e2d127961979ce13dbc2e36c3accceaf189826513ce4385afe8c -->
+```
+        <source>&amp;Encrypt Wallet…</source>
+        <translation>Carteira &amp;encriptada…</translation>
+    
+ERR
+The translation changes the meaning. The source is a command (“&Encrypt Wallet…”), but the translation is a description (“Wallet encrypted…”). The correct translation should maintain the imperative.
 
 Correct translation:
-Endereços de envio
+&amp;Encriptar carteira…
+```
+
+<!-- cache_translation_check_pt_5a8d11ad380f34acfa6f69b9007f8cf0ed086b3c073ae506fdc3af10668ef199 -->
+```
+        <source>&amp;Command-line options</source>
+        <translation>&amp;Opções da linha de &amp;comando</translation>
+    
+ERR
+The translation contains the shortcut key indicator (&) twice: once before "Opções" and once before "comando". There should be exactly one shortcut key indicator in the translation, as in the source text.
+
+Correct translation:
+&Opções da linha de comando
+or
+Opções da linha de &comando
+
+Either is acceptable, but only one & should appear.
+```
+
+<!-- cache_translation_check_pt_f647d5310008bb25f9520386ba81d3628d16e2af3e2452d5038a9742f70f43f4 -->
+```
+        <source>Load PSBT from &amp;clipboard…</source>
+        <translation>Carregar PSBT da área de transferência...</translation>
+    
+ERR
+The translation is missing the shortcut key indicator (&) from the source, which is important for UI consistency. The ellipsis character (…) is also replaced with three dots (...), which is acceptable but less ideal. Correct translation:
+
+Carregar PSBT da &área de transferência…
+</reply>
+```
+
+<!-- cache_translation_check_pt_b1b4889ae5722e85a424ed07885094b1426c5a82805daa67badd18113e37750f -->
+```
+        <source>&amp;Sending addresses</source>
+        <translation>&amp;Endereço de envio</translation>
+    
+ERR
+The translation uses the singular "Endereço de envio" instead of the correct plural form, which should match the source "Sending addresses". Additionally, the ampersand is present only once, as required.
+
+Correct translation:
+&amp;Endereços de envio
+</reply>
+```
+
+<!-- cache_translation_check_pt_84a4736c2a3d7d41e855a29f46740fac50d60c9b5a892c752b71d1dc269cdf44 -->
+```
+        <source>&amp;Mask values</source>
+        <translation>&amp;Valores de Máscara</translation>
+    
+ERR
+The translation "Valores de Máscara" does not accurately convey the meaning of "Mask values" in the Bitcoin context. The correct translation should be "Mascarar valores", which matches the verb form, rather than the noun phrase "Valores de Máscara".
+
+Correct translation:
+&amp;Mascarar valores
+```
+
+<!-- cache_translation_check_pt_c38a528109aac10ea0f408800d1dad451f018c4a68b2d0012aba913d849f07a6 -->
+```
+        <source>&amp;Hide</source>
+        <translation>Ocultar</translation>
+    
+ERR
+The translation omits the '&' which indicates the shortcut key. It must appear exactly once in the translation.
+
+Correct translation:
+&Ocutlar
 ```
 
 <!-- cache_translation_check_pt_411049a1fe4d879633292087b59997b239bd6e1bccc5054788b33c47cec24acb -->
@@ -31,6 +129,18 @@ The translation is inaccurate. The source says "Unit to show amounts in," which 
 
 Correct translation:  
 Unidade para exibir valores. Clique para selecionar outra unidade.
+```
+
+<!-- cache_translation_check_pt_93dc03eaf7c4953bb66fff7604f71021ea60a5a7ecba7edcbda2084528f34611 -->
+```
+        <source>External Signer (e.g. hardware wallet)</source>
+        <translation>Assinante externo (por exemplo, carteira de hardware)</translation>
+    
+ERR
+The Portuguese word "assinante" usually means "subscriber" and can be ambiguous. In this Bitcoin context "signer" (device that signs transactions) is better translated as "assinador".
+
+Correct translation:
+Assinador externo (por exemplo, carteira de hardware)
 ```
 
 <!-- cache_translation_check_pt_72fee4ce3bb5a418b9bddd9b7f5206e9401ef4873ec03648095069b6b3ce68d7 -->
@@ -59,20 +169,153 @@ or
 Mostrar o ícone na bandeja do sistema.
 ```
 
-<!-- cache_translation_check_pt_3066ae43fd36a7facff35d1ddb7dc9331e88078a53b07e42c60b8dced3cf657c -->
+<!-- cache_translation_check_pt_0f924c73e066a64247e6a037251164efb7be0b32fe71d34754c7cf1037b0abf1 -->
 ```
-        <source>Privacy mode activated for the Overview tab. To unmask the values, uncheck Settings-&gt;Mask values.</source>
-        <translation>Modo de privacidade ativado para a aba Resumo. para desmascarar os valores, desmarque nas Configurações -&gt; Valores de máscara</translation>
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp;Minimizar para a bandeja de sistema e não para a barra de ferramentas</translation>
     
-ERR  
-There are minor issues with the translation:
-
-1. The first letter after the period should be uppercase ("para" → "Para").
-2. The phrase "Valores de máscara" does not accurately reflect the original "Mask values" setting; "Mascarar valores" or "Ocultar valores" would be clearer and more idiomatic.
-3. The hyphen should have spacing consistent with UI references ("Configurações -> Mascarar valores").
+ERR
+The translation inaccurately translates "taskbar" as "barra de ferramentas" (toolbar) instead of "barra de tarefas" (taskbar). Also, "bandeja de sistema" can be shortened to simply "bandeja" or "bandeja do sistema" for clarity.
 
 Correct translation:
-Modo de privacidade ativado para a aba Resumo. Para desmascarar os valores, desmarque em Configurações -> Mascarar valores.
+&amp;Minimizar para a bandeja em vez da barra de tarefas
+```
+
+<!-- cache_translation_check_pt_7ce81eb92c5edb4eaae36e9caf8af0563b93766498af85360bef1a19106248fb -->
+```
+        <source>Privacy mode activated for the Overview tab. To unmask the values, uncheck Settings-&gt;Mask values.</source>
+        <translation>Modo de privacidade ativado para a aba de visão geral. para desmascarar os valores, desmarque nas Configurações -&gt; Valores de máscara</translation>
+    
+ERR
+Issues:
+- Sentence after the period should start with a capital letter ("para" → "Para").
+- The phrasing "para a aba de visão geral" is awkward; prefer "na aba Visão Geral".
+- The menu item translation is incorrect/awkward: "Valores de máscara" reads like a noun phrase. The source is a menu action "Mask values" (verb), so it should be translated as "Mascarar valores" and presented as a menu path.
+- Minor punctuation: keep the arrow spacing consistent.
+
+Correct translation:
+Modo de privacidade ativado na aba Visão Geral. Para desmascarar os valores, desmarque Configurações -> Mascarar valores.
+```
+
+<!-- cache_translation_check_pt_5b78996bfd056288f155ee580ec07b87cdcc95a563195947ef185daf5812d8cc -->
+```
+        <source>Failed to load transaction: %1</source>
+        <translation>Falha ao carregar transação: %1</translation>
+    
+ERR
+The translation is understandable but missing the definite article that is more natural in Portuguese. Keep the format specifier as-is.
+
+Correct translation:
+Falha ao carregar a transação: %1
+```
+
+<!-- cache_translation_check_pt_777867c9bd1107745ab6bd281635e3ab95849852603be0cf38c33f7de2ac49b7 -->
+```
+        <source>Signed %1 inputs, but more signatures are still required.</source>
+        <translation>Assinadas entradas %1, mas mais assinaturas ainda são necessárias.</translation>
+    
+ERR
+Word order in Portuguese is incorrect. "Assinadas entradas %1" is unnatural; the number should precede the noun or the adjective should follow. The format specifier %1 is preserved, but the phrase should be reworded.
+
+Correct translation:
+%1 entradas assinadas, mas ainda são necessárias mais assinaturas.
+```
+
+<!-- cache_translation_check_pt_bfe93608a06cf5d1892c3004bc20a2b727c60b31a6f65a7036516a3bbb06a0b6 -->
+```
+        <source>Save Transaction Data</source>
+        <translation>Salvar informação de transação</translation>
+    
+ERR
+The translation is understandable but slightly unnatural in Portuguese. Use the plural and a more natural preposition/article.
+
+Better translations:
+- Salvar dados da transação
+or
+- Salvar informações da transação
+```
+
+<!-- cache_translation_check_pt_b4866c000111a57c85bd09f9598472bd73ec1a8dca1a426e6ca122e0949501a4 -->
+```
+        <source>Transaction is missing some information about inputs.</source>
+        <translation>Transação está com alguma informação faltando sobre as entradas.</translation>
+    
+ERR
+The Portuguese is understandable but slightly ungrammatical/awkward: it lacks the definite article before "Transação" and uses singular "alguma informação" while "entradas" is plural. A more natural translation:
+
+Correct translation:
+A transação está com algumas informações faltando sobre as entradas.
+```
+
+<!-- cache_translation_check_pt_5f030f239e8afab223435ad0f0177c8c4c8c11b96e1073262779c4bb24fafba1 -->
+```
+        <source>Transaction status is unknown.</source>
+        <translation>Status da transação é desconhecido.</translation>
+    
+ERR
+The Portuguese translation is understandable but stylistically incomplete: it omits the definite article. More natural translations are:
+
+Correct translation:
+O status da transação é desconhecido.
+
+Or alternatively:
+O estado da transação é desconhecido.
+```
+
+<!-- cache_translation_check_pt_be3761d45355d173ff541fe845649a17affba2e7febf41f797482e05fd12809a -->
+```
+        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <translation>Impossível iniciar o controlador de bitcoin: click-to-pay</translation>
+    
+ERR
+The translation is understandable but slightly unnatural: "controlador" is not the best choice for a software "handler", and the phrase order could be clearer in Portuguese. Also consider quoting or hyphenating the feature name.
+
+Suggested translation:
+Impossível iniciar o manipulador "click-to-pay" do Bitcoin
+```
+
+<!-- cache_translation_check_pt_4b8f8256f4ab8699cd3dd3a1a381f5aef46bb412914d39c90652cc0dfb0f78b9 -->
+```
+        <source>Cannot process payment request because BIP70 is not supported.
+Due to widespread security flaws in BIP70 it's strongly recommended that any merchant instructions to switch wallets be ignored.
+If you are receiving this error you should request the merchant provide a BIP21 compatible URI.</source>
+        <translation>Não é possível processar o pagamento pedido porque o BIP70 não é suportado.
+Devido a falhas de segurança no BIP70, é recomendado que todas as instruçōes ao comerciante para mudar de carteiras sejam ignorada.
+Se está a receber este erro, deverá pedir ao comerciante para fornecer um URI compatível com BIP21.</translation>
+    
+ERR
+The Portuguese has several issues: awkward phrasing ("pagamento pedido" should be "pedido de pagamento"), a mis-typed accent ("instruçōes" wrong), grammatical agreement ("sejam ignorada" should be "sejam ignoradas"), and unnatural wording ("mudar de carteiras").
+
+Correct translation:
+Não é possível processar o pedido de pagamento porque o BIP70 não é suportado.
+Devido às falhas de segurança generalizadas no BIP70, recomenda-se fortemente que quaisquer instruções do comerciante para mudar de carteira sejam ignoradas.
+Se estiver a receber este erro, deve pedir ao comerciante que forneça um URI compatível com BIP21.
+```
+
+<!-- cache_translation_check_pt_d95e9111e71a2147f9c9c1cdef74d5d8fb0396f66937d0626d58a8b0a1970556 -->
+```
+        <source>Payment request file handling</source>
+        <translation>Controlo de pedidos de pagamento.</translation>
+    
+ERR
+The translation "Controlo de pedidos de pagamento." reads as "Control of payment requests" and doesn't convey "file handling" (i.e., handling/manipulation of payment request files). Also it adds a terminal period not present in the source.
+
+Suggested corrections (no trailing period):
+- European Portuguese: Manipulação de ficheiros de pedido de pagamento
+- Brazilian Portuguese: Manipulação de arquivos de solicitação de pagamento
+```
+
+<!-- cache_translation_check_pt_8a1d391706529dda0419dd477fcfabd684f11b849f33af1a0ad2b7de38cc7587 -->
+```
+        <source>Age</source>
+        <extracomment>Title of Peers Table column which indicates the duration (length of time) since the peer connection started.</extracomment>
+        <translation>idade</translation>
+    
+ERR
+The translation is correct in meaning ("idade") but should follow title capitalization. Also maintain same casing as other UI labels — capitalize the first letter.
+
+Correct translation:
+Idade
 ```
 
 <!-- cache_translation_check_pt_c6b92bf0d1619af628215c9ebd569b8fa0f24d903fa1c5f08bfaca45103f49d4 -->
@@ -87,6 +330,31 @@ Correct translation:
 Banir por
 ```
 
+<!-- cache_translation_check_pt_c216f87aaeae13d8d78249aae320ce96b8bb34fe6ca7c2bb5ec90558c5abe982 -->
+```
+        <source>&amp;Label:</source>
+        <translation>&amp;Etiqueta</translation>
+    
+ERR
+The translation is missing the colon at the end, which should be kept for consistency with the source.
+
+Correct translation:
+&amp;Etiqueta:
+</reply>
+```
+
+<!-- cache_translation_check_pt_892249fbf760b35d4f0581de94344670c6178adefc12adceba9cd638e3780e61 -->
+```
+        <source>Cr&amp;eate Unsigned</source>
+        <translation>Criar &amp;não assinado</translation>
+    
+ERR
+The translation is literally correct but unnatural in Portuguese. "Criar &não assinado" is awkward and typical translations for "Unsigned" in the context of Bitcoin are "transação não assinada" (unsigned transaction). Also, ideally, the shortcut key (&) should be applied to an appropriate letter in the Portuguese translation. It would be better as "Criar &Não Assinada".
+
+Correct translation:
+Criar &Não Assinada
+```
+
 <!-- cache_translation_check_pt_e3e733cfd468f5995177ae0cd1cefdb1d18c3e973820e54506b3e8d40f51e00c -->
 ```
         <source>The amount to pay must be larger than 0.</source>
@@ -97,6 +365,19 @@ The translation has a grammatical error: "dever" should be "deve ser" to correct
 
 Correct translation:
 A quantia a pagar deve ser maior que 0.
+```
+
+<!-- cache_translation_check_pt_c216f87aaeae13d8d78249aae320ce96b8bb34fe6ca7c2bb5ec90558c5abe982 -->
+```
+        <source>&amp;Label:</source>
+        <translation>&amp;Etiqueta</translation>
+    
+ERR
+The translation is missing the colon at the end, which should be kept for consistency with the source.
+
+Correct translation:
+&amp;Etiqueta:
+</reply>
 ```
 
 <!-- cache_translation_check_pt_91d6dda1861d5595a187a070bc13de6b919cb3589820758b179312acf23911ab -->
@@ -123,6 +404,19 @@ The translation has two issues:
 
 Correct translation:
 Gerado mas não aceito
+```
+
+<!-- cache_translation_check_pt_fd65566c9df3f9c7f931ea36980037ae9c1fb171d68fe97847311cd2ce1341b0 -->
+```
+        <source>Copy transaction &amp;ID</source>
+        <translation>Copiar ID da transação</translation>
+    
+ERR
+The translation omits the '&' which is important for indicating the keyboard shortcut. There should be exactly one '&' in the translation.
+
+Correct translation:
+Copiar &ID da transação
+</reply>
 ```
 
 <!-- cache_translation_check_pt_6b7f7b94be926c7c2ceaf70b8bc20efb4053ac55e246549aedeb422223f48906 -->
@@ -165,18 +459,6 @@ Correct translation:
 Erro: A versão do ficheiro dump não é suportada. Esta versão do bitcoin-wallet apenas suporta ficheiros dump na versão 1. Foi encontrado um ficheiro dump com a versão %s.
 ```
 
-<!-- cache_translation_check_pt_2a38d3c4a7fbcfd6042deee3037e17b0e3523b2d637edd00195517cd1216e087 -->
-```
-        <source>Error: Legacy wallets only support the "legacy", "p2sh-segwit", and "bech32" address types</source>
-        <translation>Erro: as carteiras legadas apenas suportam os tipos de endereço "legado", "p2sh-segwit" e "bech32</translation>
-    
-ERR
-There is a missing closing quotation mark after "bech32" in the translation. Otherwise, the translation is accurate and unproblematic.
-
-Correct translation:
-Erro: as carteiras legadas apenas suportam os tipos de endereço "legado", "p2sh-segwit" e "bech32"
-```
-
 <!-- cache_translation_check_pt_4eba6ea0f2ba21c5fda3f70f668f3a01cba4b8d1803b92a15da07f3a0664b046 -->
 ```
         <source>File %s already exists. If you are sure this is what you want, move it out of the way first.</source>
@@ -205,16 +487,52 @@ Correct translation:
 O ficheiro peers.dat (%s) está corrompido ou é inválido. Se acredita que se trata de um bug, por favor reporte para %s. Como solução, pode mover o ficheiro (%s), alterar o nome ou eliminar para que um novo seja criado na próxima inicialização.
 ```
 
-<!-- cache_translation_check_pt_2bfe177e4280359fe16d315632962366f235dac588b5c3fea5064e986af8b8f8 -->
+<!-- cache_translation_check_pt_30cde3871fe5c22ffeaa630a7b2e23ce636071794a1d1d7b6e2863a1a3e3b878 -->
 ```
-        <source>Failed to calculate bump fees, because unconfirmed UTXOs depend on enormous cluster of unconfirmed transactions.</source>
-        <translation>Não foi possível calcular as taxas de compensação, porque os UTXOs não confirmados dependem de um enorme conjunto de transações não confirmadas..</translation>
+        <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
+        <translation>Poda configurada abaixo do mínimo de %d MiB.  Por favor, utilize um valor mais elevado.</translation>
     
 ERR
-There are two issues: 1) There is a double period at the end of the sentence ("não confirmadas.."). 2) "bump fees" is not properly translated; "taxas de compensação" is not the standard term in Bitcoin context. The correct expression would be "taxas de aumento" or "taxas para incrementar".
+The Portuguese translation is understandable but slightly awkward and has double spacing after the period. "Poda configurada abaixo do mínimo..." is not idiomatic; also prefer a single space after the period.
+
+Correct translation (keeps %d MiB and fixes phrasing and spacing):
+A poda está configurada abaixo do mínimo de %d MiB. Por favor, use um número maior.
+```
+
+<!-- cache_translation_check_pt_3afd6c183cae30e45b28ff1f9a2babffef3730d6e323c38d6216747fb4a6d79b -->
+```
+        <source>Prune mode is incompatible with -reindex-chainstate. Use full -reindex instead.</source>
+        <translation>O modo Prune é incompatível com a opção "-reindex-chainstate". Ao invés disso utilize "-reindex".</translation>
+    
+ERR
+Minor style/grammar issue and casing: "Prune" should be lowercase (mode name) and add a comma/flow improvement. No format specifiers are involved and the options are preserved correctly.
 
 Correct translation:
-Não foi possível calcular as taxas de aumento, porque os UTXOs não confirmados dependem de um enorme conjunto de transações não confirmadas.
+O modo prune é incompatível com a opção "-reindex-chainstate". Utilize o "-reindex" completo em vez disso.
+```
+
+<!-- cache_translation_check_pt_db75cea49f5e3c14d1a32f9a9fefb0a4560cd43caa54921c62365a5f67c9570b -->
+```
+        <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
+        <translation>A base de dados de blocos contém um bloco que aparenta ser do futuro. Isto pode ser causado por uma data incorreta definida no seu computador. Reconstrua apenas a base de dados de blocos caso tenha a certeza de que a data e hora do seu computador estão corretos.</translation>
+    
+ERR
+The translation mostly reads naturally, but it omits "time" in the middle sentence ("uma data incorreta" only mentions date). The source says "date and time being set incorrectly", so both date and time should appear there for accuracy.
+
+Correct translation:
+A base de dados de blocos contém um bloco que aparenta ser do futuro. Isto pode dever‑se à data e hora do seu computador estarem definidas incorretamente. Reconstrua apenas a base de dados de blocos caso tenha a certeza de que a data e a hora do seu computador estão corretas.
+```
+
+<!-- cache_translation_check_pt_68c5e98d9f4a0247bd0a2efe24e7fd9993a0ba806ca0587323318d68be5e160f -->
+```
+        <source>Incompatible options: -dnsseed=1 was explicitly specified, but -onlynet forbids connections to IPv4/IPv6</source>
+        <translation>Opções incompatíveis: "-dnsseed=1" foi explicitamente específicada, mas "-onlynet" proíbe conexões para IPv4/IPv6</translation>
+    
+ERR
+There's a typo in "específicada" (should be "especificada") and the preposition is better as "com" or "a" rather than "para".
+
+Correct translation:
+Opções incompatíveis: "-dnsseed=1" foi explicitamente especificada, mas "-onlynet" proíbe conexões com IPv4/IPv6
 ```
 
 <!-- cache_translation_check_pt_1f02c0dba2663f6297306617169259f44c21625c667974c76a2ada3dec5e9b2f -->
@@ -239,6 +557,30 @@ The translation incorrectly leaves "fatal internal error" untranslated. It shoul
 
 Correct translation:
 Ocorreu um erro interno fatal, consulte o debug.log para obter detalhes:
+```
+
+<!-- cache_translation_check_pt_0a6fe395f694569a245449e0ee0e3e7c4f10e065cf67b588bddfaae966e28300 -->
+```
+        <source>Can't spend unconfirmed version %d pre-selected input with a version 3 tx</source>
+        <translation>Não é possível gastar a entrada pré-selecionada da versão %d não confirmada com uma versão 3 tx</translation>
+    
+ERR
+The Portuguese is understandable but has awkward word order and a gender/position issue with "versão %d não confirmada" placed after "entrada", making it unclear. Also "tx" is left in English; better to use "transação" or place "tx" after "versão 3" properly.
+
+Correct translation:
+Não é possível gastar a entrada pré-selecionada não confirmada de versão %d com uma transação de versão 3
+```
+
+<!-- cache_translation_check_pt_4464d7afbaa89f228541fa73d8f87d9c3d69c120cbcb6ad51fc67c8d32655c53 -->
+```
+        <source>Can't spend unconfirmed version 3 pre-selected input with a version %d tx</source>
+        <translation>Não é possível gastar a entrada pré-selecionada da versão 3 não confirmada com uma versão %d tx</translation>
+    
+ERR
+The Portuguese is understandable but awkwardly ordered and mixes English abbreviation "tx" with "versão %d". Better to place "não confirmada" next to "entrada" and use "transação" for clarity while keeping the %d specifier.
+
+Correct translation:
+Não é possível gastar a entrada pré-selecionada não confirmada da versão 3 com uma transação de versão %d
 ```
 
 <!-- cache_translation_check_pt_16ec4266e1e696ba6f3209ee8b9668bf49741cbdaf7c098641bc6fdeb1b8c52c -->
@@ -278,6 +620,18 @@ or
 Reescaneando…
 ```
 
+<!-- cache_translation_check_pt_02d76519c9d3cc6e194dd2fd5b858716692c9da658d8528e87cf08932008417d -->
+```
+        <source>The %s path uses exFAT, which is known to have intermittent corruption problems on macOS. Move this directory to a different filesystem to avoid data loss.</source>
+        <translation>O caminho %s utiliza exFAT, que é conhecido por ter problemas intermitentes de corrupção no macOS. Mova esta diretoria para um sistema de ficheiros diferente para evitar a perda de dados.</translation>
+    
+ERR
+The word "diretoria" is incorrect in this context (it means "board/management" in Portuguese). Also there's a mix of variants ("ficheiros" with "diretoria"). Use "diretório" (or "directório") for a filesystem directory.
+
+Correct translation:
+O caminho %s utiliza exFAT, que é conhecido por ter problemas intermitentes de corrupção no macOS. Mova este diretório para um sistema de ficheiros diferente para evitar a perda de dados.
+```
+
 <!-- cache_translation_check_pt_3d343833a6ab34506a762b0216d36de51e8e82bf5c1340217917f56a20f6a8f3 -->
 ```
         <source>Transaction must have at least one recipient</source>
@@ -291,4 +645,4 @@ A transação deve ter pelo menos um destinatário
 ```
 </details>
 
-Number of issues: 21.
+Number of issues: 48.

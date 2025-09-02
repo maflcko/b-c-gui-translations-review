@@ -1,13 +1,25 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>ku</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bku%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bku%5D%20request)
 
+
+<!-- cache_translation_check_ku_0fd8a98879683df051123260d6d91acf7fc818ffcf280cf509f6fd3ea8b956dd -->
+```
+        <source>C&amp;lose</source>
+        <translation>Bigire</translation>
+    
+ERR
+The translation "Bigire" does not contain an "&" to indicate the shortcut, which is present in the source as "&lose". Additionally, the Kurdish translation for "Close" is usually "Bigire" or "Daxwazî", but the shortcut marker must be preserved.
+
+Correct translation:
+&Bigere
+```
 
 <!-- cache_translation_check_ku_f65441808f2cbe7fe59d4b257fba3678aa56d4cadb070d9a269e9e841207af6d -->
 ```
@@ -130,6 +142,18 @@ Correct translation:
 Tîp
 ```
 
+<!-- cache_translation_check_ku_20d312c705e5799af722d13ce2d215e0d844ef2237d5790c0a60a3b07943a20f -->
+```
+        <source>&amp;Amount:</source>
+        <translation>&amp;سەرجەم:</translation>
+    
+ERR
+The translation "&amp;سەرجەم:" means "&amp;Total:" in Kurdish (most likely the Sorani script), not "&amp;Amount:". "Amount" should be translated as "بڕ" or "ڕێژە" (commonly used words for "amount" in Kurdish).
+
+Correct translation:
+&بڕ:
+```
+
 <!-- cache_translation_check_ku_f2f43bf167c70aeced66240e49d4bedb96bbbcefd0a6394d77a0703fc40425b6 -->
 ```
         <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
@@ -203,4 +227,4 @@ Either will be clearer and correct in Kurdish.
 ```
 </details>
 
-Number of issues: 12.
+Number of issues: 14.

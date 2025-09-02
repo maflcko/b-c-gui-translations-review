@@ -1,13 +1,63 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>nl</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bnl%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bnl%5D%20request)
 
+
+<!-- cache_translation_check_nl_13117fa3236539da3becc8bd6cfad278b705499855fc0537d48eb43d7ab3c163 -->
+```
+        <source>Load PSBT from &amp;clipboard…</source>
+        <translation>Laad PSBT vanaf klembord...</translation>
+    
+ERR
+The ampersand (&) indicating the shortcut key is missing from the Dutch translation. It should be present exactly once in the translation, as in the source.
+
+Correct translation:
+Laad PSBT van &klembord…
+```
+
+<!-- cache_translation_check_nl_82dd84a9cdf6394fd003031f3d65a8db9c0350393c44b06e7136336271c4d0a3 -->
+```
+        <source>&amp;Sending addresses</source>
+        <translation>Verzendadressen</translation>
+    
+ERR
+The translation omits the '&' which is used for keyboard shortcuts. The English source includes '&' indicating an access key. It should be present exactly once in the translation, placed appropriately.
+
+Correct translation:
+&Verzendadressen
+or
+Verzend&adressen
+```
+
+<!-- cache_translation_check_nl_75db58706b729502b5f861dced598f4793f1247549efb8b3d201580221ca2595 -->
+```
+        <source>&amp;Receiving addresses</source>
+        <translation>Ontvangstadressen</translation>
+    
+ERR
+The translation omits the ampersand (&) used for the shortcut key in the English source. The ampersand should be present exactly once.
+
+Correct translation:
+&Ontvangstadressen
+```
+
+<!-- cache_translation_check_nl_3abf29fa1c69c8582c4c7d68292ee911dc49218e9f9a0fcb4325a38b6000c379 -->
+```
+        <source>&amp;Window</source>
+        <translation>&amp;Scherm</translation>
+    
+ERR
+The word "Window" should be translated as "Venster" in Dutch, not "Scherm". "Scherm" means "screen", which is a different concept in a software context.
+
+Correct translation:
+&Venster
+```
 
 <!-- cache_translation_check_nl_20df24e309e758cf01e12e938217da8366bce22f134e1caec1fd5eed84a61066 -->
 ```
@@ -51,16 +101,73 @@ or, alternatively:
 Bezig met herstellen van portemonnee &lt;b&gt;%1&lt;/b&gt;…
 ```
 
-<!-- cache_translation_check_nl_20b6940e5af7d0f027f0e4e657f0df375644a8bed1ec30967edfd05e9b0814bd -->
+<!-- cache_translation_check_nl_79997e1eaa72a7fd1b7ddb3d19266c73b9092535f50f28fa77176540e3b784d7 -->
 ```
-        <source>Prune block storage to</source>
-        <translation>Prune  block opslag op</translation>
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Sta inkomende verbindingen toe</translation>
     
 ERR
-There is an issue with spacing; there is an unnecessary double space between "Prune" and "block". Also, "Prune" is untranslated and should be "Verklein" or "Snoei" in Dutch. The phrase "op" is not the best preposition here; "tot" would be more accurate for "to". 
+The ampersand (&) is present in the source to indicate a keyboard shortcut (for the letter 'g' in "incoming"), but it is missing from the Dutch translation. It should appear exactly once in the translation.
 
 Correct translation:
-Blokopslag verkleinen tot
+Sta inkomende &verbindingen toe
+```
+
+<!-- cache_translation_check_nl_3abf29fa1c69c8582c4c7d68292ee911dc49218e9f9a0fcb4325a38b6000c379 -->
+```
+        <source>&amp;Window</source>
+        <translation>&amp;Scherm</translation>
+    
+ERR
+The word "Window" should be translated as "Venster" in Dutch, not "Scherm". "Scherm" means "screen", which is a different concept in a software context.
+
+Correct translation:
+&Venster
+```
+
+<!-- cache_translation_check_nl_70ee6b0ea83520da03de2ee4282a949fcd72ec2bf8448c3dfc784b5018bb726b -->
+```
+        <source>&amp;Display</source>
+        <translation>&amp;Interface</translation>
+    
+ERR
+The translation is inaccurate. The English word "Display" should be translated as "Weergave" in Dutch, not "Interface". Additionally, the ampersand is used correctly as a shortcut key indicator.
+
+Correct translation:
+&amp;Weergave
+```
+
+<!-- cache_translation_check_nl_fb007f4d4008068a4ba94d3ffedfa6baf82c51252cef236558a31fa2812dfd60 -->
+```
+        <source>User Interface &amp;language:</source>
+        <translation>Taal &amp;gebruikersinterface:</translation>
+    
+ERR
+The Dutch translation changes the word order in a confusing way; it should match the original's intent that "language" is the user interface language. The ampersand is correctly present exactly once.
+
+Correct translation:
+Gebruikersinterface&amp;taal:
+or
+&amp;Taal gebruikersinterface: (if UI guidelines prefer & at the start)
+
+But most commonly:
+&amp;Taal van de gebruikersinterface:
+```
+
+<!-- cache_translation_check_nl_51c8af39d7d32e1ccb354a0221f2dfd1baae62aec124a518e241253ce2787bc4 -->
+```
+        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
+        <translation>Gebruik afzonderlijke SOCKS &amp; 5-proxy om peers te bereiken via Tor Onion-services:</translation>
+    
+ERR
+There is an incorrect space in the translation between "SOCKS" and "5". In Dutch, as in English, "SOCKS5" should not include a space. Additionally, the ampersand (&amp;) must occur exactly once in the translation as in the source. In the translation, it is placed incorrectly (as "SOCKS &amp; 5-proxy") splitting "SOCKS5", and should be placed in a similar logical position as the English original (likely before the '5').
+
+Correct translation:
+Gebruik afzonderlijke SOCKS5-&amp;proxy om peers te bereiken via Tor Onion-services:
+
+Note: If the ampersand is meant as a shortcut key (as usual in Qt translations), it should precede a character that is appropriate as a shortcut in context, likely at the same place as the source. A close match is "SOCKS&5-proxy", unless a different shortcut makes more sense for Dutch UI conventions. Thus, a safe and literal translation following the English is:
+
+Gebruik afzonderlijke SOCKS&5-proxy om peers te bereiken via Tor Onion-services:
 ```
 
 <!-- cache_translation_check_nl_715723d70a05aff43d30bcf55458e5f4f7375df9201e745b80730096c8f5789a -->
@@ -88,6 +195,31 @@ The Dutch translation has a couple of issues:
 
 Correct translation:
 Het is niet mogelijk om de transactiekosten of het totale bedrag te berekenen.
+```
+
+<!-- cache_translation_check_nl_1182dbe649fa19b14a5d868e09291fd93a519e10645027dddc2b523ed6fa1468 -->
+```
+        <source>&amp;Unban</source>
+        <translation>&amp;Maak ban voor node ongedaan</translation>
+    
+ERR
+The translation is mostly correct, but may be too specific. "&Unban" is a menu option and usually should be translated succinctly as “&Deblokkeren” or “&Ban opheffen”, as in user interfaces brevity is preferred.
+
+Correct translation:
+&Ban opheffen
+```
+
+<!-- cache_translation_check_nl_ea2b5b1fff9d8f90f320a7732fa7138372d52207cdce1df16c9e43e99ed625d4 -->
+```
+        <source>&amp;Amount:</source>
+        <translation>&amp;Bedrag</translation>
+    
+ERR
+The translation omits the colon at the end, which should be preserved for consistency and formatting.
+
+Correct translation:
+&Amount: 
+&Bedrag:
 ```
 
 <!-- cache_translation_check_nl_20df24e309e758cf01e12e938217da8366bce22f134e1caec1fd5eed84a61066 -->
@@ -172,6 +304,30 @@ Correct translation:
 Onvolwassen (%1 bevestigingen, wordt beschikbaar na %2)
 ```
 
+<!-- cache_translation_check_nl_6ad57e28fff7c65389a771957dfe6e1162c003c6c8a7ef3e2059000d4566c07d -->
+```
+        <source>Copy full transaction &amp;details</source>
+        <translation>Kopieer volledige transactie&amp;details</translation>
+    
+ERR
+The translation is missing a space before the ampersand (it has "transactie&amp;details" instead of "transactie &amp;details"). Also the Dutch phrasing is slightly awkward; better to keep spacing consistent with the source.
+
+Correct translation:
+Kopieer volledige transactie &amp;details
+```
+
+<!-- cache_translation_check_nl_d703082867288a63338556056158c72efd7b4ef49f66edb7619713e25b4857a3 -->
+```
+        <source>Increase transaction &amp;fee</source>
+        <translation>Verhoog transactiekosten</translation>
+    
+ERR
+The translation is missing the keyboard shortcut ampersand (&) that appears once in the source ("Increase transaction &fee"). Also ensure the ampersand appears exactly once.
+
+Correct translation:
+Verhoog &transactiekosten
+```
+
 <!-- cache_translation_check_nl_511ea328fec278cef8c3e5c24c64307a3ed154d09896fc344cba54e804146e51 -->
 ```
         <source>PSBT file must be smaller than 100 MiB</source>
@@ -196,21 +352,6 @@ Correct translation:
 Fout bij starten/committen van db-tx voor het verwijderproces van wallettransacties
 ```
 
-<!-- cache_translation_check_nl_ac84011d1958d4a47aec791110922699632b059d550c576732f692190a5eeeab -->
-```
-        <source>Wallet loaded successfully. The legacy wallet type is being deprecated and support for creating and opening legacy wallets will be removed in the future. Legacy wallets can be migrated to a descriptor wallet with migratewallet.</source>
-        <translation>Wallet succesvol aangemaakt. Het oude wallettype wordt uitgefaseerd en ondersteuning voor het maken en openen van verouderde wallets zal in de toekomst komen te vervallen. Oude wallettypes kan gemigreerd worden naar een descriptor wallet met migratewallet.</translation>
-    
-ERR  
-The translation has several issues:
-1. "Wallet succesvol aangemaakt" means "Wallet successfully created," which does not match the source "Wallet loaded successfully."
-2. The plural use "oude wallettypes kan" is grammatically incorrect; it should either be singular or properly conjugated for plural.
-3. "aangemaakt" (created) does not fit as well in this context as "geladen" (loaded).
-
-Correct translation:  
-Wallet succesvol geladen. Het verouderde wallettype wordt uitgefaseerd en ondersteuning voor het aanmaken en openen van verouderde wallets zal in de toekomst worden verwijderd. Legacy wallets kunnen worden gemigreerd naar een descriptor-wallet met migratewallet.
-```
-
 <!-- cache_translation_check_nl_d6e6035d12e71eda46b41d4b059428fd8dc209e3d15a879d20bad4cd5eb02517 -->
 ```
         <source>Specified -blockmaxweight (%d) exceeds consensus maximum block weight (%d)</source>
@@ -223,30 +364,16 @@ Correct translation:
 Opgegeven -blockmaxweight (%d) overschrijdt het consensus maximum voor blokgewicht (%d)
 ```
 
-<!-- cache_translation_check_nl_137d65b52b3b4c9337ee509647295c0bcaf7df14dd7918d4d9e3f9e6b9abb427 -->
+<!-- cache_translation_check_nl_d927ed55de9c3f400854f211aea3750782212b58d5428e7a1eff891619c74e75 -->
 ```
-        <source>Unrecognized descriptor found. Loading wallet %s
-
-The wallet might had been created on a newer version.
-Please try running the latest software version.
-</source>
-        <translation>Onbekende descriptor gevonden. Portemonnee%sladen
-
-De portemonnee is mogelijk gemaakt op een nieuwere versie.
-Probeer de nieuwste softwareversie te starten.
-</translation>
+        <source>Failed to close file when writing block.</source>
+        <translation>Kon bestand niet sluiten tijdens het schrijven van een blok.</translation>
     
 ERR
-There are several issues in the Dutch translation:
-- Missing space: "Portemonnee%sladen" should be "Portemonnee %s laden".
-- "De portemonnee is mogelijk gemaakt op een nieuwere versie" is unnatural; a better translation would be "De portemonnee is mogelijk aangemaakt met een nieuwere versie."
-- "Probeer de nieuwste softwareversie te starten" is understandable but a more natural translation is "Probeer de nieuwste softwareversie uit te voeren."
+The Dutch translation is grammatically incorrect / missing an article. Also "tijdens het schrijven van een blok" is understandable but "bij het schrijven van een blok" or "terwijl er een blok werd geschreven" sounds more natural.
 
 Correct translation:
-Onbekende descriptor gevonden. Portemonnee %s laden
-
-De portemonnee is mogelijk aangemaakt met een nieuwere versie.
-Probeer de nieuwste softwareversie uit te voeren.
+Kon het bestand niet sluiten tijdens het schrijven van een blok.
 ```
 
 <!-- cache_translation_check_nl_3bda24822b73f248b10785a9938aa42b8f7e628fa5b8232a42d73e2861bd33d7 -->
@@ -310,4 +437,4 @@ Niet mogelijk om HTTP-server te starten. Zie debuglog voor details.
 ```
 </details>
 
-Number of issues: 22.
+Number of issues: 33.

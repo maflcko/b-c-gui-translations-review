@@ -1,13 +1,25 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>or</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bor%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bor%5D%20request)
 
+
+<!-- cache_translation_check_or_dda0144708313e49e70d35082931b60494fecf5087ed9565dd8ec4e7c5e953ff -->
+```
+        <source>C&amp;lose</source>
+        <translation>ବନ୍ଦ କରନ୍ତୁ</translation>
+    
+ERR
+The translation "ବନ୍ଦ କରନ୍ତୁ" ("Close" in Odia) is accurate, but it omits the ampersand (&) used in the source to indicate a shortcut key. The ampersand should appear exactly once somewhere in the translation.
+
+Correct translation:
+&ବନ୍ଦ କରନ୍ତୁ
+```
 
 <!-- cache_translation_check_or_18284d9c76c3d150c511e8c33bae5ce909b9c179e1cfdd51dd2e80a6e7faf420 -->
 ```
@@ -35,4 +47,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 2.
+Number of issues: 3.

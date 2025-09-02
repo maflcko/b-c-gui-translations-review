@@ -1,13 +1,37 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>sn</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bsn%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bsn%5D%20request)
 
+
+<!-- cache_translation_check_sn_85113183d5e8704e74e2592d68943d9786be48be8c166d27005f19d78730f838 -->
+```
+        <source>&amp;New</source>
+        <translation>Itsva</translation>
+    
+ERR
+The translation omits the '&' which is used for the keyboard shortcut. It should be present exactly once in the translation.
+
+Correct translation:
+&Itsva
+```
+
+<!-- cache_translation_check_sn_2295b0e05c6f6b6f55dbcea59f778615f84a5035d54a952cfd34da1eb5950ec0 -->
+```
+        <source>&amp;Delete</source>
+        <translation>Dzima</translation>
+    
+ERR
+The translation is missing the '&' that indicates the shortcut key in the original. It should appear in the translation as well, for consistency with menu shortcuts.
+
+Correct translation:
+&Dzima
+```
 
 <!-- cache_translation_check_sn_c1a64aa6c605cc333138fa1f3bb03d96218b5ea6a39c8b9ff1490897d8ebbf36 -->
 ```
@@ -29,16 +53,16 @@ If strict, output is: NO
 (But if your policy is to indicate preference for transliteration for technical terms, you can say "YES", but standard Shona dictionaries list "Kero" for "address", so "NO" is acceptable.)
 ```
 
-<!-- cache_translation_check_sn_9e0bb12b5fee253bcd7fd2b85ab3e3baa2ebec6add3cc32c9cea2f4cce512371 -->
+<!-- cache_translation_check_sn_3559bbb89e5bb622a17847d28f901b5f6e2c27ee6469d301869eaa11efe7b1d6 -->
 ```
-        <source>Exit</source>
+        <source>E&amp;xit</source>
         <translation>Buda</translation>
     
 ERR
-The translation is problematic. "Buda" does not mean "Exit" in Shona ('sn'). The correct term in Shona for "Exit" should be "Buda panze", "Buda", or, more contextually, "Kubuda". However, "Buda" alone might be insufficient or ambiguous.
+The translation "Buda" does not include the "&" symbol, which is used for keyboard shortcuts in menu items. Additionally, "Buda" does not mean "Exit" in Shona; the correct term would be "Buda" (to go out/exit), but the shortcut (&) must be preserved.
 
 Correct translation:
-Kubuda
+&Buda
 ```
 
 <!-- cache_translation_check_sn_0eced5447e964bdbdc2189da7f3a711260e889ca69783660531c2f4e35006a22 -->
@@ -87,4 +111,4 @@ If strict, output is: NO
 ```
 </details>
 
-Number of issues: 4.
+Number of issues: 6.

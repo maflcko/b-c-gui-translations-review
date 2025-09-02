@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>hr</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bhr%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bhr%5D%20request)
 
 
 <!-- cache_translation_check_hr_26012c814f0c86a6c2b1e17dbc4f2719566da9997c6a8e400ea122e28a39d1e1 -->
@@ -19,6 +19,18 @@ There is an unnecessary space between "Stvoriti" and "novu", and the verb form s
 
 Correct translation:
 Stvori novu adresu
+```
+
+<!-- cache_translation_check_hr_b4b35589f1e76b9476d517c46d6e46d7ae61f1154c319f9cf29dc7f19ed753a7 -->
+```
+        <source>&amp;Edit</source>
+        <translation>&amp;Uredite</translation>
+    
+ERR
+The translation "&amp;Uredite" uses the imperative form ("Uredite"), which means "Edit (you all)" or "Please edit". The correct translation for menu items like "&amp;Edit" is simply the noun "Uredi".
+
+Correct translation:
+&amp;Uredi
 ```
 
 <!-- cache_translation_check_hr_03f7c961f8ac151838d9dbd2507a38d10910bf629575b8891159f6bf10b344b3 -->
@@ -95,6 +107,20 @@ Correct translation:
 %1 se gasi…
 ```
 
+<!-- cache_translation_check_hr_0cdd94c24a5ea3e86496fbef3dd3894326f67dab955918afe9cec6eadcbfbedb -->
+```
+        <source>Number of script &amp;verification threads</source>
+        <translation>Broj CPU niti za verifikaciju transakcija</translation>
+    
+ERR
+The translation does not accurately capture the source text:
+- The phrase "script verification" is not translated ("verifikacija skripte" or "verifikacija skripata" should be used depending on plurality), and instead it refers to "verification of transactions", which is incorrect.
+- The translation omits the ampersand ("&") intended for a shortcut key.
+
+Correct translation:
+Broj niti za &verifikaciju skripte
+```
+
 <!-- cache_translation_check_hr_66598c584210e780dcff2f8726c8c1c80dac2a7f5cdb9c0480db1d71f866b6f5 -->
 ```
         <source>Expert</source>
@@ -109,29 +135,43 @@ Ekspert
 (or if used as a label for a mode: "Napredno" or "Ekspertni način" depending on context)
 ```
 
-<!-- cache_translation_check_hr_a5b842c7dc0180dbdd8cacd8aafbb1bae50a670aaca60fa161f143b223ee9d69 -->
+<!-- cache_translation_check_hr_5f9219de0e1c1c1e03f8d857c1fb0d77aaac2961f74be47181b34f1cf816e061 -->
 ```
-        <source>Enable coin control features</source>
+        <source>Enable coin &amp;control features</source>
         <translation>Uključite postavke kontroliranja inputa</translation>
     
 ERR
-The translation is understandable but not entirely accurate and can be improved. "Coin control" in Bitcoin context refers specifically to selecting which "coins" (unspent outputs, ili UTXOs) to spend in a transaction, not just "input control." The term "kontrola novčića" or "upravljanje novčićima" is more idiomatic in Bitcoin communities. Also, "postavke" means "settings", but the source refers to enabling features, not settings.
+The translation is not fully accurate. "Enable coin &control features" should refer to enabling coin control functionalities in the Bitcoin context, not just "control of inputs". Also, the "&" for the accelerator key is missing from the translation.
 
 Correct translation:
-Omogući mogućnosti kontrole novčića
+Omogući značajke &kontrole kovanica
 ```
 
-<!-- cache_translation_check_hr_e84de843b48a6bcb280e95c3f19def0c8f2d28109812f9e6fb1fdd10cc7b193b -->
+<!-- cache_translation_check_hr_1dedc051c5488e060f7ee40f141d6daee908f77b152b2759aec96f30f98e8950 -->
 ```
-        <source>Enable PSBT controls</source>
-        <extracomment>An options window setting to enable PSBT controls.</extracomment>
-        <translation>Uključi  PBST opcije za upravljanje</translation>
+        <source>&amp;Spend unconfirmed change</source>
+        <translation>&amp;Trošenje nepotvrđenih vraćenih iznosa</translation>
     
 ERR
-There is a typographical error in the translation: "PBST" should be "PSBT" to accurately reflect the original term. Additionally, there is an unnecessary extra space between "Uključi" and "PBST".
+The translation "Trošenje nepotvrđenih vraćenih iznosa" is understandable but is not the most accurate or idiomatic for the context. "Change" in Bitcoin refers to the "ostatak" (change amount) from a transaction, not "vraćeni iznos" (returned amount). Also, "Trošenje" is a noun, making the menu option sound odd; the English uses the imperative verb "Spend".
 
 Correct translation:
-Uključi PSBT opcije za upravljanje
+&amp;Potroši nepotvrđeni ostatak
+```
+
+<!-- cache_translation_check_hr_b288a44058e70f9db1fd99e134ac7e4d110a15e8e714aeedb07800dc819f0a07 -->
+```
+        <source>Enable &amp;PSBT controls</source>
+        <extracomment>An options window setting to enable PSBT controls.</extracomment>
+        <translation>Uključi  &amp;PBST opcije za upravljanje</translation>
+    
+ERR
+There are a couple of issues:
+- The acronym PSBT was incorrectly transcribed as PBST in the translation.
+- There is an extra space between "Uključi" and "&amp;PBST".
+
+Correct translation:
+Uključi &amp;PSBT opcije za upravljanje
 ```
 
 <!-- cache_translation_check_hr_89d048f40d2a21beb3379f7d55309274cc6a0d56741f0db63886106c6de76ee3 -->
@@ -147,6 +187,18 @@ Correct translation:
 Za prikazivanje PSBT kontrola.
 ```
 
+<!-- cache_translation_check_hr_dced7ef91db0abe507eca26f3cc1e53df656cd8d610972a6ba5b5ac2daafae67 -->
+```
+        <source>Allow incomin&amp;g connections</source>
+        <translation>Dozvolite dolazeće veze</translation>
+    
+ERR
+The translation omits the shortcut indicator '&' from the original. It should appear exactly once in the translation to match the functionality.
+
+Correct translation:
+Dozvolite dolazeće v&eze
+```
+
 <!-- cache_translation_check_hr_66f918b464dd117ad0e13fa6ec3908aca0b288b65f91512c086e87096c6c277f -->
 ```
         <source>Used for reaching peers via:</source>
@@ -157,6 +209,18 @@ The word "peers" in the Bitcoin context means "čvorovi" or "peerovi" (nodes/pee
 
 Correct translation:
 Korišten za dohvaćanje čvorova preko:
+```
+
+<!-- cache_translation_check_hr_4430e8dcc4ab45d681eed8f02cff741c7f88f3ccb65e691a96eb0ac6b2440300 -->
+```
+        <source>&amp;Show tray icon</source>
+        <translation>&amp;Pokaži ikonu</translation>
+    
+ERR
+The translation omits "tray" from "tray icon", making it less specific and potentially confusing.
+
+Correct translation:
+&amp;Pokaži ikonu u traci sustava
 ```
 
 <!-- cache_translation_check_hr_e75597fcea6b271ac140ffa5ce32f3843331e19aba186f64de02ef64d27c1fb9 -->
@@ -170,6 +234,18 @@ There is a grammatical error: "vanjskog potpisivanje" should be "vanjskog potpis
 
 Correct translation:
 Kompajlirano bez podrške za vanjsko potpisivanje (potrebno za vanjsko potpisivanje)
+```
+
+<!-- cache_translation_check_hr_597a95f393d920d628aac154e0e5ae93f06283bc64d9b9e98fce30fb0bc47e63 -->
+```
+        <source>&amp;Peers</source>
+        <translation>&amp;Klijenti</translation>
+    
+ERR
+The English term "Peers" in the context of Bitcoin refers to network participants or nodes, not clients. The correct Croatian translation in this context is "Čvorovi" or "Poveznici", but the most direct equivalent is "Čvorovi".
+
+Correct translation:
+&Čvorovi
 ```
 
 <!-- cache_translation_check_hr_1de257d25b7e98a5189288a21acca868f60b267a7a650aec79fde3bb819fc8e9 -->
@@ -259,21 +335,17 @@ Correct translation:
 Kopiraj bajtove
 ```
 
-<!-- cache_translation_check_hr_6e12c89948237d795261324df09285129886331c3d2a6e33d60fa9320090ae52 -->
+<!-- cache_translation_check_hr_ae1ecd8c9051cf1e0be209f680ac7f987a5f068b498e75d6854ae9c5fba0b8fa -->
 ```
-        <source>Create Unsigned</source>
-        <translation>Create nije potpisan</translation>
+        <source>Cr&amp;eate Unsigned</source>
+        <translation>Cr&amp;eate nije potpisan</translation>
     
 ERR
-The translation is incorrect. "Create nije potpisan" is a literal mix of English and Croatian and does not make sense in Croatian. The correct translation should be: 
+The translation is incorrect. It retains the English word "Create" rather than translating it into Croatian, and the structure is wrong. The correct translation should read:
 
-Kreiraj nepotpisano
+Stvori &amp;nepotpisano
 
-Or if a noun is expected (e.g., "Unsigned"), it could be:
-
-Kreiraj nepotpisani
-
-But "Kreiraj nepotpisano" is usually the most appropriate for this context.
+This preserves the shortcut key (&amp;), which can appear anywhere but must exist once, and provides an accurate and idiomatic Croatian translation.
 ```
 
 <!-- cache_translation_check_hr_20177be8f12e1ae042f752f302911e11e46b9fd8fb211c318fbda427b4f310fb -->
@@ -322,6 +394,18 @@ Correct translation:
 Stvaranje transakcije nije uspjelo!
 ```
 
+<!-- cache_translation_check_hr_c46c067f11580c3fdd90aec51338054081135be5baf77f879e3898bc009d5bfa -->
+```
+        <source>S&amp;ubtract fee from amount</source>
+        <translation>Oduzmite naknadu od iznosa</translation>
+    
+ERR
+The translation does not preserve the '&' shortcut key indicator from the source. The target text should include exactly one '&' to specify the shortcut key.
+
+Correct translation:
+&Oduzmite naknadu od iznosa
+```
+
 <!-- cache_translation_check_hr_d353131ca8a8369e03786f8e948691e7c7bed8b5ce0c3dc188bc2aff148e0214 -->
 ```
         <source>conflicted with a transaction with %1 confirmations</source>
@@ -365,21 +449,6 @@ Idi na Datoteka &gt; Otvori novčanik kako biste učitali novčanik.
 - ILI -
 ```
 
-<!-- cache_translation_check_hr_7427dba614f9041474d0f72282ed9e1d99d8cf2f5adebc489e98c256eae33661 -->
-```
-        <source>%s corrupt. Try using the wallet tool bitcoin-wallet to salvage or restoring a backup.</source>
-        <translation>%s korumpirano. Pokušajte koristiti bitcoin-wallet alat za novčanike kako biste ga spasili ili pokrenuti sigurnosnu kopiju.</translation>
-    
-ERR  
-The translation has some issues:
-1. The phrase "spasili ili pokrenuti sigurnosnu kopiju" is incorrect. "Pokrenuti sigurnosnu kopiju" doesn't make sense in Croatian; the intended meaning is to restore from a backup, not to start a backup.
-2. "bitcoin-wallet alat za novčanike" is a confusing expression. It would be clearer as simply "alat bitcoin-wallet" or "alat bitcoin-wallet za oporavak novčanika".
-3. The format specifier "%s" is carried over correctly.
-
-Correct translation:  
-%s je oštećen. Pokušajte koristiti alat bitcoin-wallet za spašavanje ili vratite iz sigurnosne kopije.
-```
-
 <!-- cache_translation_check_hr_5f0328459a63610a43605f04a05389f4b0d2caa8bb70d4b516dd435dee79a8d6 -->
 ```
         <source>File %s already exists. If you are sure this is what you want, move it out of the way first.</source>
@@ -405,20 +474,6 @@ The translation is understandable but has issues:
 
 Correct translation:
 Nije navedena dump datoteka. Da biste koristili createfromdump, morate navesti -dumpfile=&lt;filename&gt;.
-```
-
-<!-- cache_translation_check_hr_2fea4deb7cfdff7efdee818cb793f1f285020f9b9526c96b120d2fb5037be1ec -->
-```
-        <source>No wallet file format provided. To use createfromdump, -format=&lt;format&gt; must be provided.</source>
-        <translation>Format datoteke novčanika nije dostupan. Kako biste koristili reatefromdump, -format=&lt;format&gt; mora biti osiguran.</translation>
-    
-ERR
-There are two issues:
-1. There is a typo: "reatefromdump" should be "createfromdump".
-2. The word "osiguran" is not the best choice; "naveden" (provided/specified) would be more appropriate.
-
-Correct translation:
-Format datoteke novčanika nije naveden. Da biste koristili createfromdump, morate navesti -format=&lt;format&gt;.
 ```
 
 <!-- cache_translation_check_hr_541da5a38662f5ae4e48ac2b0de8280e93c88fead4a57dac806a808ac3d11eb7 -->
@@ -512,4 +567,4 @@ Datoteku s postavkama nije moguće zapisati
 ```
 </details>
 
-Number of issues: 38.
+Number of issues: 43.

@@ -1,13 +1,52 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>nb</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bnb%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bnb%5D%20request)
 
+
+<!-- cache_translation_check_nb_1d2a0b38d7b65acbb03e53ee4fb53dd7dd387c69dd40c0b0c7b4bdb77e0111e1 -->
+```
+        <source>Copy &amp;Label</source>
+        <translation>Kopier &amp;beskrivelse</translation>
+    
+ERR
+The English "Label" is translated as "beskrivelse," which means "description" in Norwegian. The correct term for "Label" in this context is "etikett".
+
+Correct translation:
+Kopier &amp;etikett
+</reply>
+```
+
+<!-- cache_translation_check_nb_4cd14a0f5eaa9f5b4485368dd50b905aa67de643c03bbcb8d1dbea024d728e17 -->
+```
+        <source>Sending addresses - %1</source>
+        <translation>sende adresser - %1</translation>
+    
+ERR
+The Norwegian translation "sende adresser - %1" is grammatically incorrect: it reads like an infinitive verb phrase ("to send addresses") rather than a noun label. The format specifier %1 is preserved correctly.
+
+Suggested correct translation:
+Avsenderadresser - %1
+```
+
+<!-- cache_translation_check_nb_584ebd6bfabdd01583cc991dd69e2030e936960cbce1669a09dbc2685ada6a1d -->
+```
+        <source>Receiving addresses - %1</source>
+        <translation>motta adresser - %1</translation>
+    
+ERR
+The translation uses the verb infinitive "motta" and lacks proper noun/adjective form and capitalization for Bokmål. Keep the %1 specifier as in source.
+
+Correct translation suggestions:
+- Mottakende adresser - %1
+or
+- Mottaksadresser - %1
+```
 
 <!-- cache_translation_check_nb_e78f3de983078ba41ccabcec197d66cc7b7c9081274b9dcf7fa03a4652ad4d97 -->
 ```
@@ -26,6 +65,31 @@ Correct translation:
 Signer meldinger med dine Bitcoin-adresser for å bevise at du eier dem
 ```
 
+<!-- cache_translation_check_nb_748498f729d1ccee1f3eb31a92bcb443f80110252f93b404fb709a268faa5362 -->
+```
+        <source>&amp;Sending addresses</source>
+        <translation>&amp;Avsender adresser</translation>
+    
+ERR
+There is a spacing issue in the Norwegian translation. "Avsender adresser" should be written as one word: "Avsenderadresser".
+
+Correct translation:
+&Avsenderadresser
+```
+
+<!-- cache_translation_check_nb_14329e99a141fb8336c5bd2ca21da3aaf3b026657a6fb4861de204726e4ca20a -->
+```
+        <source>&amp;Receiving addresses</source>
+        <translation>&amp;Mottaker adresser</translation>
+    
+ERR
+There is a spacing error in the translation: "Mottaker adresser" should be a compound word "Mottakeradresser" in Norwegian Bokmål. There should not be a space.
+
+Correct translation:
+&amp;Mottakeradresser
+</reply>
+```
+
 <!-- cache_translation_check_nb_90e2053fef93dd407ff7485799ce5af0d7b62dd4a95a7d26e6609b7e4dba8a12 -->
 ```
         <source>Disable network activity</source>
@@ -37,6 +101,31 @@ The translation adds "Klikk for å" ("Click to") which is not present in the sou
 
 Correct translation:
 Deaktiver nettverksaktivitet
+```
+
+<!-- cache_translation_check_nb_a71843f672666f43c0b8e9770170b079f9657bcc53fdd74254c7607c3ced5878 -->
+```
+        <source>Copy &amp;label</source>
+        <translation>Kopier &amp;beskrivelse</translation>
+    
+ERR
+The English "label" was translated as "beskrivelse", which means "description" in Norwegian Bokmål. The accurate translation for "label" in this context is "etikett".
+
+Correct translation:
+Kopier &amp;etikett
+</reply>
+```
+
+<!-- cache_translation_check_nb_026f9938d0a436a667dc6740d0f3e4a30e3818e77dad2db495aa958567eaee4a -->
+```
+        <source>L&amp;ock unspent</source>
+        <translation>Lås ubrukte</translation>
+    
+ERR
+The translation omits the ampersand (&) which designates the shortcut key. The ampersand must appear exactly once in the translation.
+
+Correct translation:
+L&ås ubrukte
 ```
 
 <!-- cache_translation_check_nb_b6e23f6fba625a7bd483a2d3229d8eb5467f3ed19fad0d62752b8c2239a6c555 -->
@@ -97,16 +186,53 @@ Correct translation:
 Ukjent. Forhåndssynkroniserer blokkhoder (%1, %2%)...
 ```
 
-<!-- cache_translation_check_nb_7bc9253ec9b59e81d7975f0395d4a5e0fd25344e972cfee4896b685dab03e86b -->
+<!-- cache_translation_check_nb_3001efa97c590d1d9b6301c3289f573549dd97015b85c51083eeb60ee5f81bce -->
 ```
-        <source>Prune block storage to</source>
+        <source>Prune &amp;block storage to</source>
         <translation>Beskjær og blokker lagring til</translation>
     
 ERR
-The translation "Beskjær og blokker lagring til" is incorrect. The English "Prune block storage to" refers to limiting the size of the block storage (pruning means removing old data), not "pruning and blocking storage to".
+The translation of "&amp;block" as "og blokker" is incorrect. The English "&amp;" indicates a shortcut key and should correspond to a shortcut in the Norwegian translation (typically by placing "&" before the relevant letter). "block storage" should be translated as "blokk-lagring" or "blokkoppbevaring". "Beskjær" is good for "prune".
 
 Correct translation:
-Beskjær blokk-lagring til
+Beskjær &blokk-lagring til
+```
+
+<!-- cache_translation_check_nb_b28111c4e31c5e1ec7a5e3a95aad09badcea45ac0c4b1f17e8d8c26f25a84ae1 -->
+```
+        <source>Enable coin &amp;control features</source>
+        <translation>Aktiver &amp;myntkontroll funksjoner</translation>
+    
+ERR
+There is a spacing issue in the translation: "myntkontroll funksjoner" should be "myntkontrollfunksjoner" (without the space). Alternatively, "Aktiver funksjoner for &myntkontroll" could also be used. The ampersand is present and correct.
+
+Correct translation:
+Aktiver &myntkontrollfunksjoner
+```
+
+<!-- cache_translation_check_nb_434d7500ae015698ae52915f5c12908de081f2afa8017ea80006b75395b985ab -->
+```
+        <source>&amp;Show tray icon</source>
+        <translation>Vis systemkurvsikon</translation>
+    
+ERR
+The '&' shortcut indicator from the source is missing in the Norwegian translation. It should appear exactly once.
+
+Correct translation:
+&Vis systemkurvsikon
+</reply>
+```
+
+<!-- cache_translation_check_nb_31f2bc179dc6af40184895b81fc1231f1eea0d30a0728958980e2be6350d03d5 -->
+```
+        <source>To specify a non-default location of the blocks directory use the '%1' option.</source>
+        <translation>For å spesifisere en ikke-standardplassering for blokkeringsmappen bruker du alternativet '%1'.</translation>
+    
+ERR
+The Norwegian translation uses "blokkeringsmappen", which reads as "the blocking folder" (from "blokkerings-") and is incorrect. The rest is fine and the format specifier '%1' is preserved.
+
+Correct translation:
+For å angi en ikke-standard plassering for blokkmappen, bruk alternativet '%1'.
 ```
 
 <!-- cache_translation_check_nb_32c84f09c2dcda470bada10e32897ea1586c79c8f8d20a7eb6a1455f43860138 -->
@@ -122,18 +248,41 @@ Correct translation:
 Ctrl+=
 ```
 
-<!-- cache_translation_check_nb_b58928d1afab77ea89376deb5f67d53ca13badd8694ae586b4c1eb41bad749cf -->
+<!-- cache_translation_check_nb_4ea0948feaae9aa73ba8472611841885b4ea2250eca3fc791aab017080cff557 -->
 ```
-        <source>Create Unsigned</source>
-        <translation>Cr  eate Usignert</translation>
+        <source>1 &amp;hour</source>
+        <translation>1 &amp;time</translation>
     
 ERR
-There are several issues:
-1. The translation is not in Norwegian Bokmål ('nb'), but rather an erroneous version of the English phrase with typos and a stray space ("Cr  eate Usignert").
-2. The correct translation in Norwegian Bokmål should be "Opprett usignert".
+The word "hour" should be translated to Norwegian Bokmål as "time". However, the ampersand (shortcut key) should be retained, and only placed once, as is in the translation. The error here is that the word is not translated; "1 &amp;time" is just an English-Norwegian mixture, while the correct translation should be fully in Norwegian.
 
 Correct translation:
-Opprett usignert
+1 &amp;time
+```
+
+<!-- cache_translation_check_nb_a71843f672666f43c0b8e9770170b079f9657bcc53fdd74254c7607c3ced5878 -->
+```
+        <source>Copy &amp;label</source>
+        <translation>Kopier &amp;beskrivelse</translation>
+    
+ERR
+The English "label" was translated as "beskrivelse", which means "description" in Norwegian Bokmål. The accurate translation for "label" in this context is "etikett".
+
+Correct translation:
+Kopier &amp;etikett
+</reply>
+```
+
+<!-- cache_translation_check_nb_4a91d2bdc5a02f5a8bb84d893879217c563d33a0f77f2493044c1c4abee5dab5 -->
+```
+        <source>Cr&amp;eate Unsigned</source>
+        <translation>Cr &amp; eate Usignert</translation>
+    
+ERR
+The translation is partially in English ("Cr & eate") and only partly translated ("Usignert" instead of "Unsigned"). There is also a spacing issue with "Cr & eate".
+
+Correct translation:
+Opprett &usignert
 ```
 
 <!-- cache_translation_check_nb_21846f9b0e7b4ee7e9cdad08e748ead01245d9da754394dbe3bf24c9aac98226 -->
@@ -173,6 +322,19 @@ or
 Signaturen samsvarte ikke med meldingssamendraget.
 ```
 
+<!-- cache_translation_check_nb_a71843f672666f43c0b8e9770170b079f9657bcc53fdd74254c7607c3ced5878 -->
+```
+        <source>Copy &amp;label</source>
+        <translation>Kopier &amp;beskrivelse</translation>
+    
+ERR
+The English "label" was translated as "beskrivelse", which means "description" in Norwegian Bokmål. The accurate translation for "label" in this context is "etikett".
+
+Correct translation:
+Kopier &amp;etikett
+</reply>
+```
+
 <!-- cache_translation_check_nb_b13c1a3aa86f25be9678068d5254036450b33d13ad196e81196f0473c98b760e -->
 ```
         <source>Fee rate (%s) is lower than the minimum fee rate setting (%s)</source>
@@ -198,4 +360,4 @@ Ukjent -blockfilterindex-verdi %s.
 ```
 </details>
 
-Number of issues: 14.
+Number of issues: 27.

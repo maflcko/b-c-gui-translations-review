@@ -1,13 +1,37 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>gu</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bgu%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bgu%5D%20request)
 
+
+<!-- cache_translation_check_gu_7840da84a7324c7e466d85a536083f275f26195d20b5961a5f557283a4b08d01 -->
+```
+        <source>&amp;Copy</source>
+        <translation>&amp; નકલ કરો</translation>
+    
+ERR
+There is a spacing issue: there should not be a space between '&amp;' and 'નકલ કરો'. The shortcut marker '&amp;' should be adjacent to a letter.
+
+Correct translation:
+&નકલ કરો
+```
+
+<!-- cache_translation_check_gu_5ba36395d1be6360e7b62945e80caca7a4dbdc76a78708fd20e0364870d377ca -->
+```
+        <source>&amp;Export</source>
+        <translation>&amp; નિકાસ કરો</translation>
+    
+ERR
+There is an unnecessary space after the ampersand (&) in the translation, creating a stray whitespace issue. The ampersand should be followed immediately by the letter: "&નિકાસ કરો".
+
+Correct translation:
+&નિકાસ કરો
+```
 
 <!-- cache_translation_check_gu_70a828d1aafa99538233a0cb96b952cddc94bfb545a695e07100991ee3dea758 -->
 ```
@@ -98,6 +122,36 @@ or
 ટેસ્ટ સંપર્ક
 ```
 
+<!-- cache_translation_check_gu_62c7ad306f47e2ad50801e7ff859bd9bb2b68677370c654bdf5afbfbddadf719 -->
+```
+        <source>E&amp;xit</source>
+        <translation>બહાર નીકળો</translation>
+    
+ERR
+The translation does not preserve the "&" character, which is used to indicate a shortcut key. It should appear exactly once in the translation.
+
+Correct translation:
+બહાર નીકળો (&E)
+or
+&બહાર નીકળો
+
+Depending on Gujarati UI conventions, both are acceptable as long as the & is included exactly once.
+```
+
+<!-- cache_translation_check_gu_108a5b7adaabbf46bbc3ffeef1fb992b032e360a3b86efbdc17e5c7d049085b2 -->
+```
+        <source>&amp;Change Passphrase…</source>
+        <translation>&amp;પાસફ્રેઝ &amp;બદલો...</translation>
+    
+ERR
+The translation has two issues:
+1. The shortcut key marker (&) appears twice, which is incorrect as it should only appear once in the translation.
+2. The ellipsis character ("...") in Gujarati should ideally be the single-character ellipsis "…" to match the source, unless Gujarati commonly uses three periods (which it generally doesn't in UI).
+
+Correct translation:
+&amp;પાસફ્રેઝ બદલો…
+```
+
 <!-- cache_translation_check_gu_4d1b11f2ab63e76049fcedcaeb9659c913a2f5f6ea42473fc7acb061bbee14a6 -->
 ```
         <source>Connecting to peers…</source>
@@ -109,18 +163,20 @@ The translation is inaccurate. The Gujarati translation "સાથીદાર�
 સાથીઓ સાથે જોડાઈ રહ્યું છે…
 ```
 
-<!-- cache_translation_check_gu_860bdbc91566217ab1f3c5c6e222ac50b85233d2f33cb1729b7d30c3d94bf719 -->
+<!-- cache_translation_check_gu_c73cc187c82ebb7bcc87ab5ac7e34521720374e069d1b24c2eb33b0b7f6c016f -->
 ```
-        <source>Show</source>
-        <translation> કેવી રીતે</translation>
+        <source>S&amp;how</source>
+        <translation>&amp; કેવી રીતે</translation>
     
 ERR
-The translation "કેવી રીતે" means "how" in Gujarati, which is incorrect for the English word "Show". 
+The translation "&amp; કેવી રીતે" means "&amp; How" in Gujarati, which is not a correct translation for "Show". It is also missing the meaning and there is an incorrect contextual choice. The &amp; is preserved, but its placement is unusual in Gujarati.
 
 Correct translation:
-દર્શન કરો
-or
-બતાવો
+&શો
+or, using a fuller word:
+&દર્શાવો
+
+Either keeps the shortcut key and correctly translates "Show" as per context.
 ```
 
 <!-- cache_translation_check_gu_333218213c0133208666ddbb06cb801a66a2b78dc7fe08bcb72ec02333b1a181 -->
@@ -182,45 +238,86 @@ Correct translation:
 અજ્ઞાત. પૂર્વ-સિંન્ક હેડર્સ (%1, %2%)…
 ```
 
-<!-- cache_translation_check_gu_7dab8fdb528c3eb44bd19bf24b0899a3179a7dcccd7bded27be11025923723f4 -->
+<!-- cache_translation_check_gu_ffe4ba991883b4e040d9f6ed0c181cf73b529e41e10d6dcd1a3cb9b22f452ff0 -->
 ```
-        <source>Number of script verification threads</source>
-        <translation>સ્ક્રિપ્ટ અને ચકાસણી દોરિયોની સંખ્યા</translation>
-    
-ERR
-The translation inaccurately adds "અને" (and) which is not in the source, and "દોરિયોની" is a misspelling of "થ્રેડ્સ" (threads). The translation also does not properly reflect "script verification threads".
-
-Correct translation:
-સ્ક્રિપ્ટ ચકાસણી થ્રેડ્સની સંખ્યા
-```
-
-<!-- cache_translation_check_gu_f2b29affc6a717dedfd68360109a14c1e3655d76b6a438b73cabd028df67ac66 -->
-```
-        <source>Prune block storage to</source>
+        <source>Prune &amp;block storage to</source>
         <translation>સ્ટોરેજને કાપો અને અવરોધિત કરો</translation>
     
 ERR
-The translation "સ્ટોરેજને કાપો અને અવરોધિત કરો" is inaccurate. The word "Prune" in this Bitcoin context refers specifically to reducing the size of stored blockchain data—i.e., deleting old block data to save space. The Gujarati translation introduces the idea of "blocking" (અવરોધિત કરો), which is not present in the source.
+The translation is inaccurate. The English source "Prune &block storage to" refers to reducing/pruning block storage to a certain size, not "cutting and blocking storage". "અবরોધિત કરો" means "block", which is incorrect here. Also, the format specifier '&' is used for a shortcut key and is not retained in the translated string.
 
 Correct translation:
-બ્લોક સ્ટોરેજને કાપો
+બ્લોક સ્ટોરેજને &કાપી દો
 
-Or more fully:
-બ્લોક સ્ટોરેજને કાપી નાખો
+OR in full context:
+&બ્લોક સ્ટોરેજને કાપો
 
-Either version would be more accurate.
+(Ensure the '&' is attached to the word where the shortcut is desired.)
 ```
 
-<!-- cache_translation_check_gu_e38909a34e1f20ba80d57e811cbd31194bd1f850470c4ce351a123d0a0648ac5 -->
+<!-- cache_translation_check_gu_154c79085c796a07bfe33c61abd40f46b63229a639650c0b1d89b7991603516d -->
 ```
-        <source>User Interface language:</source>
+        <source>W&amp;allet</source>
+        <translation>વૉલેટ</translation>
+    
+ERR
+The translation is missing the ampersand '&' which is used to indicate the shortcut key in the UI. It must be present exactly once in the translation.
+
+Correct translation:
+વૉ&amp;લેટ
+```
+
+<!-- cache_translation_check_gu_40fd6baede8d08d020f03224a6009b37f932b96ad5ebd810e16c4ddfc9295068 -->
+```
+        <source>Allow incomin&amp;g connections</source>
+        <translation>ઇનકમિંગ કનેક્શન્સને મંજૂરી આપો</translation>
+    
+ERR
+The translation omits the '&' used for the shortcut key in the source. The Gujarati translation must include exactly one '&' for accessibility/shortcut functionality.
+
+Correct translation:
+ઇનકમિંગ કનેક્શન્સને મંજૂરી આપો (&g)
+(or place '&' appropriately within the Gujarati translation, as per application conventions.)
+```
+
+<!-- cache_translation_check_gu_9ce7f8aa3bcd999c2bba1810b9b09c62a93be16a4112a16a665427549aa19712 -->
+```
+        <source>Proxy &amp;IP:</source>
+        <translation>પ્રોક્સી IP:</translation>
+    
+ERR
+The '&' character, used to indicate the shortcut key, is missing in the Gujarati translation. It should appear exactly once in the translation.
+
+Correct translation:
+પ્રૉક્સી &IP:
+```
+
+<!-- cache_translation_check_gu_1bd956d7eb722c583c985e0f5265e514f9c152e00a3fb25d7b7635f8d5301683 -->
+```
+        <source>M&amp;inimize on close</source>
+        <translation>બંધ થવા પર નાનું કરો</translation>
+    
+ERR
+The translation is missing the '&' shortcut indicator, which should appear exactly once, and does not preserve the shortcut key placement from the source.
+
+Correct translation:
+બંધ થવા પર નાનું (&M) કરો
+or
+બંધ થવાથી નાનું (&M) કરો
+
+(Placement of '&' can vary, but it must exist exactly once.)
+```
+
+<!-- cache_translation_check_gu_05e4c561513f10a3cac8d3fe0a2e4a9761e7767a4b4fe78ee3d77b810b076355 -->
+```
+        <source>User Interface &amp;language:</source>
         <translation>વપરાશકર્તા ઈન્ટરફેસ અને ભાષા:</translation>
     
 ERR
-The translation is not accurate. The English phrase is "User Interface language:" which refers specifically to the language used for the user interface, not "User Interface and language:" as in the Gujarati translation.
+The translation for '&amp;language' renders as 'અને ભાષા', which means 'and language' in Gujarati. The English text is meant to show 'User Interface language', with the '&' indicating a shortcut key. The translation should include the Gujarati word for 'ભાષા', and represent the shortcut key with a single '&' somewhere (often just before the shortcut letter in Windows UIs). Also, the word 'language' alone should be translated, not as 'and language'.
 
 Correct translation:
-વપરાશકર્તા ઈન્ટરફેસ ભાષા:
+વપરાશકર્તા ઈન્ટરફેસ &ભાષા:
 ```
 
 <!-- cache_translation_check_gu_8aa629761253645269d36e5b73689675bb72dcc27feff463be293899f0330b7b -->
@@ -273,6 +370,18 @@ The translation is problematic. The English source states "unencrypted," but the
 Correct translation:
 v1: અનએનક્રિપ્ટેડ, પ્લેનટેક્સ્ટ ટ્રાન્સપોર્ટ પ્રોટોકોલ
 ```
+
+<!-- cache_translation_check_gu_5ba36395d1be6360e7b62945e80caca7a4dbdc76a78708fd20e0364870d377ca -->
+```
+        <source>&amp;Export</source>
+        <translation>&amp; નિકાસ કરો</translation>
+    
+ERR
+There is an unnecessary space after the ampersand (&) in the translation, creating a stray whitespace issue. The ampersand should be followed immediately by the letter: "&નિકાસ કરો".
+
+Correct translation:
+&નિકાસ કરો
+```
 </details>
 
-Number of issues: 19.
+Number of issues: 27.

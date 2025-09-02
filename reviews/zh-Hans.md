@@ -1,37 +1,13 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>zh-Hans</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bzh-Hans%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bzh-Hans%5D%20request)
 
-
-<!-- cache_translation_check_zh-Hans_ecfdcee8f26fba226de388e636d63fbc273ac52f229613766e3b986270c44492 -->
-```
-        <source>Close</source>
-        <translation>关闭(L)</translation>
-    
-ERR
-The translation "关闭(L)" includes the letter "(L)", which suggests a keyboard shortcut, but the original source "Close" does not indicate any shortcut. Normally, translations should not add or assume shortcuts unless specified in the source.
-
-Correct translation:
-关闭
-```
-
-<!-- cache_translation_check_zh-Hans_f708450832f61a3d57848e7c02f081974c57bb8f890231c278cbd91d8b43da2c -->
-```
-        <source>Export</source>
-        <translation>导出(E)</translation>
-    
-ERR
-The translation adds "(E)" which is not present in the original source. Unless part of a UI convention to show keyboard shortcuts (which should match the source), this is inaccurate.
-
-Correct translation:
-导出
-```
 
 <!-- cache_translation_check_zh-Hans_521b000b1c65ac70f7da315a0414f9daaace273dc244a28b594051447f2b7749 -->
 ```
@@ -45,64 +21,28 @@ Correct translation:
 封禁到
 ```
 
-<!-- cache_translation_check_zh-Hans_9c91a6e0f22c0f66106351529b3184636e78a2ce5111ac0342fa469aae364d01 -->
+<!-- cache_translation_check_zh-Hans_5d1f1416329bd7257272f49edea178ec1f3d1c2384599bbd436a79dabfd91a17 -->
 ```
-        <source>About %1</source>
-        <translation>关于 %1 (A)</translation>
+        <source>&amp;Settings</source>
+        <translation>&amp;設定</translation>
     
 ERR
-The translation adds "(A)" at the end, which is not present in the source and is unnecessary. This alters the intended meaning.
+The translation uses the traditional Chinese character "設定" instead of the simplified Chinese standard expected for 'zh-Hans'. The correct simplified form should be "设置".
 
 Correct translation:
-关于 %1
+&amp;设置
 ```
 
-<!-- cache_translation_check_zh-Hans_5c7840abeba6556e11fcdde91d6a364012ddf607e15a9ec0a789da607f0bd3a2 -->
+<!-- cache_translation_check_zh-Hans_f686ae19a57c18e1e0f1fc1a61cc110f05c356bd73c31f5c3208befcbbc1db58 -->
 ```
-        <source>Load PSBT from file…</source>
-        <translation>从文件加载PSBT(L)...</translation>
+        <source>&amp;Help</source>
+        <translation>&amp;說明</translation>
     
 ERR
-The translation is mostly accurate but has a minor issue. The source uses an ellipsis ("…"), whereas the translation adds "(L)" which may be intended as a shortcut/hotkey indicator but isn't present in the source, and can cause user interface inconsistency if the original software does not assign "L" as a shortcut. Additionally, the order is better as "加载PSBT文件…" for naturalness.
+The translation uses traditional Chinese characters ("說明") instead of simplified Chinese, as required by 'zh-Hans'. Also, the ampersand is preserved correctly.
 
 Correct translation:
-从文件加载PSBT…
-```
-
-<!-- cache_translation_check_zh-Hans_7745057d32350475f1ec694cf69e195ddf6cfb84bb04f51218c9d13dc9d572ab -->
-```
-        <source>Command-line options</source>
-        <translation>命令行选项(C)</translation>
-    
-ERR
-The translation adds an unnecessary "(C)" at the end, which is not present in the source and could confuse users. In Chinese UI translation, such letter-in-parentheses are only used for access keys (快捷键) and should match the source. Here, there is no reason for "(C)".
-
-Correct translation:
-命令行选项
-```
-
-<!-- cache_translation_check_zh-Hans_d284805f67cfb74ef268f8a0424b8ea6a8bdf48a2564319293c8acd3126c5ced -->
-```
-        <source>Load PSBT from clipboard…</source>
-        <translation>从剪贴板加载PSBT(C)...</translation>
-    
-ERR
-The translation adds "(C)" which is not present in the original source and changes the ellipsis from "…" (Unicode ellipsis) to "...". This introduces unnecessary content and alters the intended format.
-
-Correct translation:
-从剪贴板加载PSBT…
-```
-
-<!-- cache_translation_check_zh-Hans_2883e00d0d8a42685d37e2a343e075eb9ff8db424f4ef6119b847c9edd193c89 -->
-```
-        <source>Sending addresses</source>
-        <translation>付款地址(S)</translation>
-    
-ERR
-The translation "付款地址(S)" is problematic. The addition of "(S)" is unnecessary and incorrect in Chinese; plurals are generally not represented this way in Chinese. The correct translation should be:
-
-Correct translation:
-发送地址
+&帮助
 ```
 
 <!-- cache_translation_check_zh-Hans_07b24e731acfde530620e37ba80e4dd4623efd6c803f490116295af92f3094db -->
@@ -127,54 +67,6 @@ The translation "卸载钱包" means "uninstall wallet", which is incorrect for 
 
 Correct translation:
 关闭钱包
-```
-
-<!-- cache_translation_check_zh-Hans_ebf157016d03f8cbc797681d1a7de19ebe3e16b021718e7691622dff5d7bc280 -->
-```
-        <source>Address</source>
-        <translation>地址(A)</translation>
-    
-ERR
-The translation includes an extra "(A)" that is not in the original English text and is not standard for 'zh-Hans' translations of "Address." "(A)" might be used as an access key label in some UI systems, but unless clearly specified for this context, it should not be added.
-
-Correct translation:
-地址
-```
-
-<!-- cache_translation_check_zh-Hans_118374777043bdfbf2292ba4dd536c2371a7c61bbb44d64088d487d5948685d5 -->
-```
-        <source>Wallet</source>
-        <translation>钱包(A)</translation>
-    
-ERR
-The translation adds "(A)" after 钱包, which is not present in the source and could cause confusion unless "A" is justified by a context (such as a shortcut key in menus, but this is not clear from the source). This addition is unnecessary and erroneous if not required.
-
-Correct translation:
-钱包
-```
-
-<!-- cache_translation_check_zh-Hans_9b65abaf920620fc868a778cd7be0087871830690dcf29132076e2e0e8ca49ff -->
-```
-        <source>Third-party transaction URLs</source>
-        <translation>第三方交易网址(T)</translation>
-    
-ERR
-The translation adds an extra "(T)" at the end, which is not present in the source and may confuse users. Also, "网址" (website URL) may be less appropriate than "链接" (link) or keeping it literal with "URL", depending on the technical context, but "网址" is generally acceptable.
-
-Correct translation:
-第三方交易网址
-```
-
-<!-- cache_translation_check_zh-Hans_56b8225dec67e3fc39f92c0309eebb7e8c80b10b7e006ad5546daaaf877a2190 -->
-```
-        <source>Your current balance in watch-only addresses</source>
-        <translation>您当前在仅观察观察地址中的余额</translation>
-    
-ERR
-There is a redundancy in the translation: "仅观察观察地址" repeats the word "观察" (watch). The correct phrase should be "仅观察地址" for "watch-only addresses."
-
-Correct translation:
-您当前在仅观察地址中的余额
 ```
 
 <!-- cache_translation_check_zh-Hans_9aaea724e35cabcbf2ac07c832c25a252ef22ee5c468bb68b8255db455a0cef6 -->
@@ -187,18 +79,6 @@ The translation is inaccurate in the second sentence. The phrase "不明文显�
 
 Correct translation:
 “概况”标签页已启用隐私模式。要显示被隐藏的数值，请取消勾选“设置”->“隐藏数值”。
-```
-
-<!-- cache_translation_check_zh-Hans_82c88a5991bcbe0a2d98ada356aaaf1a9a158d43b1c0c7fa13c2a9fc8985d70d -->
-```
-        <source>Peers</source>
-        <translation>节点(P)</translation>
-    
-ERR
-The translation "节点(P)" is problematic. "Peers" in the context of Bitcoin should be translated as "节点" or "对等节点". The addition of "(P)" is unnecessary and could be confusing as it does not convey any meaning in the context of Chinese or Bitcoin.
-
-Correct translation:
-节点
 ```
 
 <!-- cache_translation_check_zh-Hans_0c2f3b1ca9da511a52168e61c92498723b5b95d121bdf4b2cf14fd3c7c628264 -->
@@ -215,52 +95,16 @@ or
 隐藏对等节点的详细信息
 ```
 
-<!-- cache_translation_check_zh-Hans_a5a2d08ba1b59e25757d4bd8798a6efa1b0236c2331ae5048aae04c30fd89c29 -->
+<!-- cache_translation_check_zh-Hans_5f767aa5ecc8d06d3d1029e0b043914e58154260693cf127c5e14ace8c18e270 -->
 ```
-        <source>Network Traffic</source>
-        <translation>网络流量(N)</translation>
+        <source>1 d&amp;ay</source>
+        <translation>1 天(&amp;A)</translation>
     
 ERR
-Including "(N)" in the translation is unnecessary and does not exist in the source text. It may confuse users or suggest the presence of a keyboard shortcut that does not exist in the original source.
+The shortcut key ampersand (&) in the translation is incorrectly placed. In Chinese UI translation conventions, the shortcut letter should match the original if possible and appear after a Chinese character, typically not as '(&amp;A)' since there is no 'A' in '天'. Furthermore, the shortcut should correspond to the English shortcut: 'd' for 'day'.
 
 Correct translation:
-网络流量
-```
-
-<!-- cache_translation_check_zh-Hans_9a4c8dafd958c88129fd1d3d8be4c60c05611a92fbb7c7c5b5e576942beb73c0 -->
-```
-        <source>1 hour</source>
-        <translation>1 小时(H)</translation>
-    
-ERR
-The translation "1 小时(H)" unnecessarily adds "(H)" after "1 小时", which is not standard or needed in Chinese. The original simply says "1 hour", so the translation should match without the extra notation.
-
-Correct translation:
-1 小时
-```
-
-<!-- cache_translation_check_zh-Hans_a27ba6a54d60583ba93321d63927938724cdf2467e34553427524f9f65250183 -->
-```
-        <source>1 day</source>
-        <translation>1 天(A)</translation>
-    
-ERR
-The translation includes an erroneous "(A)" after "1 天", which is not present in the original English source. This is an unnecessary addition and may confuse users.
-
-Correct translation:
-1 天
-```
-
-<!-- cache_translation_check_zh-Hans_5db66af152c1f6604a3f430fe028602fdfceee2647ad884898000f324368cefa -->
-```
-        <source>1 year</source>
-        <translation>1 年(Y)</translation>
-    
-ERR
-The translation adds "(Y)" which is unnecessary and not present in the original English source. This could confuse users, as "年" already means "year" in Chinese.
-
-Correct translation:
-1 年
+1 天(&amp;d)
 ```
 
 <!-- cache_translation_check_zh-Hans_4fff14ad015f82e56d3436fdd0ab906136cd6758220165307813e8f36af882e4 -->
@@ -275,28 +119,16 @@ Correct translation:
 比特币付款接收地址
 ```
 
-<!-- cache_translation_check_zh-Hans_5682213c7071df73f2e9fc213f559a81292b1a0a139c5d644681abb371ee0353 -->
+<!-- cache_translation_check_zh-Hans_d7752991ac6a274d159926c5a02c869616ac4deb4e7a549decf62a5341beb1f4 -->
 ```
-        <source>Subtract fee from amount</source>
-        <translation>从金额中减去交易费(U)</translation>
+        <source>Verify &amp;Message</source>
+        <translation>验证消息签名(&amp;M)</translation>
     
 ERR
-The translation adds the "(U)" at the end, which is not present in the source and could be erroneous, as it may confuse users. Everything else is accurate.
+The translation adds "签名" ("signature"), which is not present in the original string "Verify &Message". The correct translation should just be "验证消息(&M)", matching the source meaning and shortcut.
 
 Correct translation:
-从金额中减去交易费
-```
-
-<!-- cache_translation_check_zh-Hans_2ea05109177ce8020f20f6b98269d46d59db377354fe582cfb486ece3aaf5567 -->
-```
-        <source>Verify Message</source>
-        <translation>验证消息签名(M)</translation>
-    
-ERR
-The translation adds "签名" (signature) and "(M)" (possibly a shortcut), which are not present in the original English text "Verify Message". This introduces erroneous content.
-
-Correct translation:
-验证消息
+验证消息(&M)
 ```
 
 <!-- cache_translation_check_zh-Hans_41d8960375f641d7d2c1a3aac4479960b60310418eda9a625db7ee33754c0baa -->
@@ -309,30 +141,6 @@ The translation "挖矿生成" (mined/generated from mining) is too specific and
 
 Correct translation:
 已生成
-```
-
-<!-- cache_translation_check_zh-Hans_955fd7a15375cc6c8411ffedd6d43fb1b505224a67077ed1aa3bbbdd36d2cefb -->
-```
-        <source>Increase transaction fee</source>
-        <translation>增加矿工费(F)</translation>
-    
-ERR
-The translation "增加矿工费(F)" is problematic. The term "矿工费" is a colloquial Chinese term for "miner's fee," which is understandable but not technically accurate for "transaction fee," which should be "交易手续费" or simply "手续费". The addition of "(F)" is unexplained and not present in the source, which introduces unnecessary content.
-
-Correct translation:
-增加交易手续费
-```
-
-<!-- cache_translation_check_zh-Hans_f708450832f61a3d57848e7c02f081974c57bb8f890231c278cbd91d8b43da2c -->
-```
-        <source>Export</source>
-        <translation>导出(E)</translation>
-    
-ERR
-The translation adds "(E)" which is not present in the original source. Unless part of a UI convention to show keyboard shortcuts (which should match the source), this is inaccurate.
-
-Correct translation:
-导出
 ```
 
 <!-- cache_translation_check_zh-Hans_fce52dee3da05626ba2ebf9fd77975cdb4fa8987c3cbcee2d3d0115e38d5c878 -->
@@ -351,16 +159,76 @@ Correct translation:
 提供了多个洋葱路由绑定地址。将使用 %s 作为自动创建的 Tor 洋葱服务的绑定地址。
 ```
 
-<!-- cache_translation_check_zh-Hans_1c749520d427b91fe4d334af919bbbbd32ac6b6e105007f840d1c61c7ee7105d -->
+<!-- cache_translation_check_zh-Hans_6737e4da6fcaa73239178ed98297e864e9b613a9631e2b9489a1ca77c797a955 -->
 ```
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
-        <translation>区块数据库包含未来的交易，这可能是由本机的日期时间错误引起。若确认本机日期时间正确，请重新建立区块数据库。</translation>
+        <translation>区块数据库包含未来的交易，这可能是由本机错误的日期时间引起。若确认本机日期时间正确，请重新建立区块数据库。</translation>
     
 ERR
-The translation is problematic. The source says "contains a block which appears to be from the future", but the translation says "包含未来的交易" ("contains a transaction from the future"), which changes "block" to "transaction", which is inaccurate. Also, the translation misses the nuance about rebuilding only if you're sure the date/time is correct; the condition is reversed and less clear.
+错误：将 "block" 错译为 "交易"，并且中文表述有些不自然或不准确。原文是指“包含一个看起来来自未来的区块”，但译文写成“包含未来的交易”，改变了语义。建议更自然准确的翻译如下：
+
+正确翻译：
+区块数据库包含一个看起来来自未来的区块。这可能是由于您计算机的日期和时间设置不正确造成的。仅当您确定计算机的日期和时间正确时，才重建区块数据库。
+```
+
+<!-- cache_translation_check_zh-Hans_90fda8f6932228d174e380ed1c7df7be7ae98d00ff1e42c56766226c0f6bb80a -->
+```
+        <source>Option '-checkpoints' is set but checkpoints were removed. This option has no effect.</source>
+        <translation>选项“-checkpoints”已设置，但检查点已被移除。该选项不再生效。 </translation>
+    
+ERR
+The translation is accurate in meaning, but there is an extra trailing space at the end. Also consider using straight quotes consistently (current ASCII quotes are fine). 
+
+Correct translation (no trailing space):
+选项“-checkpoints”已设置，但检查点已被移除。该选项不再生效。
+```
+
+<!-- cache_translation_check_zh-Hans_d98c1c5ff4f9281f53e84a4630bcb6846485c6649d59a458ddb76aab8f1f87d3 -->
+```
+        <source>Option '-maxorphantx' is set but no longer has any effect (see release notes). Please remove it from your configuration.</source>
+        <translation>选项“-maxorphantx”已设置，但已不再生效（参见发行说明）。请从您的配置中移除该选项。 </translation>
+    
+ERR
+Translation is accurate, but there is a trailing whitespace before the closing tag. Remove the extra space.
 
 Correct translation:
-区块数据库包含一个看似来自未来的区块，这可能是由于您的计算机日期和时间设置不正确所致。只有在确信您的计算机日期和时间正确时，才应重建区块数据库。
+选项“-maxorphantx”已设置，但已不再生效（参见发行说明）。请从您的配置中移除该选项。
+```
+
+<!-- cache_translation_check_zh-Hans_bf17affb0acd6713b9f6b2167f99961dbd921c30426c9f4b5f40c6272c0fa297 -->
+```
+        <source>Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.</source>
+        <translation>选项“-datacarrier”或“-datacarriersize”已设置，但已标记为弃用。它们将在未来版本中移除。 </translation>
+    
+ERR
+The translation is accurate and natural, but there is an extra trailing space before the closing tag. Also Chinese punctuation could use a comma instead of a full stop after "已设置，但已标记为弃用" — current punctuation is acceptable though. Remove the stray space.
+
+Correct translation:
+选项“-datacarrier”或“-datacarriersize”已设置，但已标记为弃用。它们将在未来版本中移除。
+```
+
+<!-- cache_translation_check_zh-Hans_fc44b6029c7dbac45686cc79b705b8c897f4c829f9f3f5057b0a8d2f641e4b4e -->
+```
+        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of a pruned node)</source>
+        <translation>修剪：上次钱包同步超出了已修剪的数据范围。您需要执行“-reindex”（对于已修剪节点，需要重新下载整个区块链）。 </translation>
+    
+ERR
+The translation is accurate in meaning, but there is an extraneous trailing space before the closing tag. Also use of Chinese quotation marks is fine but keep punctuation consistent. 
+
+Correct translation (remove trailing space):
+修剪：上次钱包同步超出了已修剪的数据范围。您需要执行“-reindex”（对于已修剪节点，需要重新下载整个区块链）。
+```
+
+<!-- cache_translation_check_zh-Hans_eb968025b9240f22a7d27bd23c989a8fc00fef0ee8185f551adcffb7a2452904 -->
+```
+        <source>-paytxfee is deprecated and will be fully removed in v31.0.</source>
+        <translation>“-paytxfee”已弃用，并将在 v31.0 中完全移除。 </translation>
+    
+ERR
+The Chinese translation is accurate in meaning but has minor formatting issues: an extra space before the closing tag and unnecessary spaces around "v31.0" and punctuation. Also prefer no space between the option and the following text.
+
+Correct translation:
+“-paytxfee”已弃用，并将在v31.0中完全移除。
 ```
 
 <!-- cache_translation_check_zh-Hans_fb0823c1e335cab3c139e0073166fec5250bf5eb78a2f8b358bf651517b0544c -->
@@ -410,6 +278,53 @@ The translation contains a redundancy: "不不可为负数" means "must not not 
 Correct translation:
 交易金额不可为负数
 ```
+
+<!-- cache_translation_check_zh-Hans_e3222f6658880630ea81b0a0cd483e7c2b2346ce99656d5b087dfe9f4559eb98 -->
+```
+        <source>Error loading %s: Wallet is a legacy wallet. Please migrate to a descriptor wallet using the migration tool (migratewallet RPC).</source>
+        <translation>加载 %s时出错：钱包为传统钱包。请使用迁移工具（migratewallet RPC）迁移到描述符钱包。</translation>
+    
+ERR
+The translation is mostly accurate and preserves %s, but it has a spacing issue around the format specifier ("%s时" lacks a space). Also "传统钱包" is acceptable but "旧式钱包" or "遗留钱包" could be clearer; not required though.
+
+Corrected translation:
+加载 %s 时出错：钱包为传统钱包。请使用迁移工具（migratewallet RPC）迁移到描述符钱包。
+```
+
+<!-- cache_translation_check_zh-Hans_fb9c57de56fb521dfdc9b8cd4124ea9b1e9e4d83d4064c6624a1a81414b0eed7 -->
+```
+        <source>Error: Dumpfile specifies an unsupported database format (%s). Only sqlite database dumps are supported</source>
+        <translation>错误：转储文件指定了不受支持的数据库格式 %s。仅支持 sqlite 数据库转储。</translation>
+    
+ERR
+The translation dropped the parentheses around the %s and added an extra space before %s. Also use of "sqlite" capitalization is minor but "SQLite" is preferable. The format specifier must match the source including surrounding punctuation.
+
+Correct translation:
+错误：转储文件指定了不受支持的数据库格式（%s）。仅支持 SQLite 数据库转储。
+```
+
+<!-- cache_translation_check_zh-Hans_7ac1efa37e812c3d7101f033238c56c685efb44247b49ad8368f92f5497fdb8a -->
+```
+        <source>Unrecognized descriptor found. Loading wallet %s
+
+The wallet might have been created on a newer version.
+Please try running the latest software version.
+</source>
+        <translation>发现无法识别的描述符。正在加载钱包 %s 
+
+该钱包可能是在较新版本中创建的。 
+请尝试运行最新的软件版本。
+</translation>
+    
+ERR
+Translation is accurate, and %s is preserved, but there are stray trailing spaces and an extra space after %s before the line break. Remove those whitespace issues.
+
+Correct translation (without extra trailing spaces):
+发现无法识别的描述符。正在加载钱包 %s
+
+该钱包可能是在较新版本中创建的。
+请尝试运行最新的软件版本。
+```
 </details>
 
-Number of issues: 33.
+Number of issues: 25.

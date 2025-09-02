@@ -1,12 +1,12 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. Currently, a fast LLM without rate limits is used. If you are interested in better quality for a specific language, please file an issue to ask for it to be re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
 
 
 
 <details><summary>hu</summary>
 
-[If the result is of low quality, please file an issue to find a better LLM for this language.](../../issues/new?title=%5Bhu%5D%20low%20quality)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bhu%5D%20request)
 
 
 <!-- cache_translation_check_hu_4fd1d9792ceabd089e82786ece5febd3c0e5e26a856f823fda68545908667371 -->
@@ -50,6 +50,72 @@ If not, prefer full word:
 %1 nap
 ```
 
+<!-- cache_translation_check_hu_f3e9c44100cf103bf4a4fa8865004a66dd0224536d399dd2c38f7f237145b7e3 -->
+```
+        <source>&amp;Command-line options</source>
+        <translation>Paran&amp;cssor kapcsolók</translation>
+    
+ERR
+The Hungarian word "Parancssor" (command line) is misspelled as "Parancssor" (should be one "s"), and the ampersand (&) indicating shortcut key is moved but correctly present. Whitespace is fine. The correct translation is:
+
+Correct translation:
+&Parancssori kapcsolók
+```
+
+<!-- cache_translation_check_hu_4ce2ef43f977d3691b1d19c8c7eac8369a324e708c5a1c59baa9204d1a49ecb5 -->
+```
+        <source>Enable coin &amp;control features</source>
+        <translation>Pénzküldés b&amp;eállításainak engedélyezése</translation>
+    
+ERR
+The translation is inaccurate. "Pénzküldés beállításainak engedélyezése" translates to "Enable sending settings", which does not correctly render "Enable coin control features". Additionally, the & indicating the shortcut is incorrectly placed at "beállításainak" instead of "control" (or a reasonable equivalent).
+
+Correct translation:
+Érme&amp;kezelési funkciók engedélyezése
+```
+
+<!-- cache_translation_check_hu_875fed03d82dc158a6f37f5c9f4d24dc9997b5db61373573a6b0c9d5dc70638e -->
+```
+        <source>&amp;Show tray icon</source>
+        <translation>&amp;Tálca icon megjelenítése</translation>
+    
+ERR
+There is a minor issue: "icon" is not properly translated into Hungarian. The correct word is "ikon". 
+
+Correct translation:
+&Tálcaikon megjelenítése
+```
+
+<!-- cache_translation_check_hu_cab78c7bbf6f2deac39832c2ad800584a2977c5ccdb56117ee0d0baf7132d225 -->
+```
+        <source>&amp;Minimize to the tray instead of the taskbar</source>
+        <translation>&amp;Kicsinyítés a tálcára az eszköztár helyett</translation>
+    
+ERR
+The Hungarian translation incorrectly uses "tálcára" ("to the taskbar") instead of "rendszertálcára" ("to the system tray"). In Hungarian IT terminology, "tálca" means the Windows taskbar, and "rendszertálca" is the system tray. The English source says "Minimize to the tray instead of the taskbar", so this is reversed in the translation.
+
+Correct translation:
+&Kicsinyítés a rendszertálcára az eszköztár helyett
+
+However, "eszköztár" means "toolbar" and not "taskbar". The correct term for "taskbar" is "tálca". Thus, the phrase should be:
+
+&Kicsinyítés a rendszertálcára a tálca helyett
+```
+
+<!-- cache_translation_check_hu_679fc2835539951916833532444ac5e0ae5fc4027facf6207a925efcadc81ff4 -->
+```
+        <source>&amp;Unit to show amounts in:</source>
+        <translation>&amp;Mértékegység:</translation>
+    
+ERR
+The translation omits "to show amounts in", which may reduce clarity. The Hungarian translation should more closely match the meaning of the original, indicating that this is the unit in which amounts are displayed.
+
+Correct translation:
+& Mértékegység a mennyiségek megjelenítéséhez:
+or
+&A megjelenített összegek mértékegysége:
+```
+
 <!-- cache_translation_check_hu_728a480a4dace81b24bc6a06159f9e0fb451b209f88560c1dda855b6e85b0835 -->
 ```
         <source>Whether to show coin control features or not.</source>
@@ -60,6 +126,57 @@ The translation does not accurately reflect the source text. "Coin control" refe
 
 Correct translation:
 Megjelenítse-e az érmevezérlési funkciókat vagy sem.
+```
+
+<!-- cache_translation_check_hu_779d73f1566bb226201157e4b872cd7b2e4383d7721ae8047a3adcd9e0ac7353 -->
+```
+        <source>Cannot sign inputs while wallet is locked.</source>
+        <translation>Nem írhatók alá a bejövők míg a tárca zárolva van.</translation>
+    
+ERR
+The Hungarian is understandable but unnatural and uses the wrong word for "inputs" ("bejövők" = "incoming" rather than the technical "inputs" or "bemenetek"). Also the passive phrasing is awkward.
+
+Suggested correct translations:
+- Nem lehet aláírni a bemeneteket, amíg a tárca zárolva van.
+or more explicit:
+- Nem lehet aláírni a tranzakció bemeneteit, amíg a tárca zárolva van.
+```
+
+<!-- cache_translation_check_hu_9cdb6b278248e1169fabc15e06b1c4f56a2723979f3dc556deb478b5c822d62e -->
+```
+        <source>Could not sign any more inputs.</source>
+        <translation>Több bejövőt nem lehet aláírni.</translation>
+    
+ERR
+The Hungarian uses "bejövőt" (incoming), which is not the correct technical term for transaction "inputs" and sounds unnatural. Also the word order is awkward.
+
+Correct translation:
+Nem lehet több bemenetet aláírni.
+```
+
+<!-- cache_translation_check_hu_b2eacc246c2b3517c2255e1cfb6a5fc744d9187909216b441b9e7f50a8a17aa5 -->
+```
+        <source>Signed %1 inputs, but more signatures are still required.</source>
+        <translation>%1 bejövő aláírva, de több aláírásra van szükség.</translation>
+    
+ERR
+The translation is Hungarian but slightly incorrect/unnatural: "bejövő" ("incoming") is not the right term for transaction inputs and the grammar is awkward.
+
+Correct translation:
+%1 bemenet aláírva, de további aláírásokra van szükség.
+```
+
+<!-- cache_translation_check_hu_fb62f0b1b1e346e26a6f361130c5ac2f56ce8a69d0bbe9e6bc712c9fe17a52b2 -->
+```
+        <source>Partially Signed Transaction (Binary)</source>
+        <extracomment>Expanded name of the binary PSBT file format. See: BIP 174.</extracomment>
+        <translation>Részlegesen Aláírt Tranzakció (PSBT bináris)</translation>
+    
+ERR
+The translation is understandable but uses non-idiomatic capitalization for Hungarian (only proper nouns and sentence starts should be capitalized). Also it's clearer to include "PSBT" and "bináris" in lowercase or separated by a comma.
+
+Correct translation:
+Részlegesen aláírt tranzakció (PSBT, bináris)
 ```
 
 <!-- cache_translation_check_hu_19ff7b81fd5f492ffa6e94599fd82026e10dd351ec68a52556da26f7732ab0bd -->
@@ -111,6 +228,21 @@ Correct translation:
 Nem sikerült új %1 címet létrehozni
 ```
 
+<!-- cache_translation_check_hu_a39033abbfe6f2f9403c354d0af3f3686676e607426ebd02960454daafa8abd0 -->
+```
+        <source>S&amp;ubtract fee from amount</source>
+        <translation>&amp;Vonja le a díjat az összegből</translation>
+    
+ERR
+The translation is largely correct but problematic regarding shortcut key placement and style. In Hungarian, "&amp;" should be placed before the shortcut character in the Hungarian word, and the selection of "V" (for "Vonja") may not be ideal, as in the English original, it's "S" for "Subtract." Hungarian interfaces often use "L" for "Levásás" (subtract) or similar.
+
+A more common translation in Hungarian Bitcoin interfaces:
+A díj levonása az összegből (&amp;L)
+
+Correct translation:
+A díj levonása az összegből (&amp;L)
+```
+
 <!-- cache_translation_check_hu_1a1762edd7f9e1a0c928f5134bca0b872727506559d3f277d2c77f2f60f15798 -->
 ```
         <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
@@ -126,6 +258,30 @@ There are minor grammatical errors and inaccuracies:
 
 Correct translation:
 Üzeneteket vagy megállapodásokat aláírhat régi típusú (P2PKH) címeivel, hogy bizonyítsa: tud bitcoint fogadni az ezekre a címekre érkező utalásokkal. Legyen óvatos, és ne írjon alá semmilyen homályos vagy véletlenszerű üzenetet, mivel adathalász támadók megpróbálhatják rávenni, hogy ezzel átruházza személyazonosságát. Csak olyan teljesen részletes nyilatkozatokat írjon alá, amellyel valóban egyetért.
+```
+
+<!-- cache_translation_check_hu_e87ddb653e67c33e6d00c18fe11ff79ba3e128f0e6b96d26f99d028bf05850a6 -->
+```
+        <source>Copy the current signature to the clipboard</source>
+        <translation>A kiválasztott cím másolása a vágólapra</translation>
+    
+ERR
+The Hungarian translation means "Copy the selected address to the clipboard", which does not match the source "Copy the current signature to the clipboard".
+
+Correct translation:
+A jelenlegi aláírás másolása a vágólapra
+```
+
+<!-- cache_translation_check_hu_b0953bbbeee0c6b1ae4d7d577d991d2c29dd52024ff312b4450cb5228fff5375 -->
+```
+        <source>Copy &amp;raw transaction</source>
+        <translation>Nye&amp;rs tranzakció másolása</translation>
+    
+ERR
+There is a typo in the translation: "Nye&amp;rs" should be "Nye&amp;rs" (which is still incorrect Hungarian). The correct translation of "raw transaction" is "nyers tranzakció", and the shortcut indicator (&) must be used exactly once.
+
+Correct translation:
+Nyers tranzakció másolása(&amp;)
 ```
 
 <!-- cache_translation_check_hu_04eded0095b5ffe17b33a13c8bc7bec99edd4e62a7b52c435e052ea07f42a2ee -->
@@ -145,6 +301,20 @@ Explanation:
 - Word order and specifier mapping is corrected.
 ```
 
+<!-- cache_translation_check_hu_a8ad998dcb21d61143934a99a368859d0143e7da43c25aa40479b5e4ac7f0fa7 -->
+```
+        <source>Failed to close block undo file.</source>
+        <translation>Visszavonási adatok bezárása nem sikerült.</translation>
+    
+ERR
+The translation omits "fájl" (file) and doesn't clearly reference "block". Also Hungarian word order is awkward. No format specifiers or whitespace issues, but the meaning should explicitly mention the block undo file.
+
+Correct translation:
+A blokkvisszavonási fájl bezárása nem sikerült.
+(or)
+Nem sikerült bezárni a blokkvisszavonási fájlt.
+```
+
 <!-- cache_translation_check_hu_29312b5be5cc3031227410c0e403600e30415ae9f19eb8f5185af5ae17730cb8 -->
 ```
         <source>Transaction needs a change address, but we can't generate it.</source>
@@ -158,4 +328,4 @@ A tranzakcióhoz szükség van egy visszajáró címre, de azt nem tudjuk előá
 ```
 </details>
 
-Number of issues: 11.
+Number of issues: 24.
