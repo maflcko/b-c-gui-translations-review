@@ -9,18 +9,6 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 [If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bpl%5D%20request)
 
 
-<!-- cache_translation_check_pl_d3639efde246a57548bc63f0bdd3945990f6815603292f51f7e5dcb98d83f73b -->
-```
-        <source>Right-click to edit address or label</source>
-        <translation>Kliknij prawy przycisk myszy, aby edytować adres lub etykietę</translation>
-    
-ERR
-The Polish phrasing is understandable but slightly ungrammatical. Use the instrumental case for the mouse button.
-
-Correct translation:
-Kliknij prawym przyciskiem myszy, aby edytować adres lub etykietę
-```
-
 <!-- cache_translation_check_pl_9a7b6b6510aeff2bfaa110854cdfeb85ba8f9befc0425afb6842a873786c7738 -->
 ```
         <source>Feeler</source>
@@ -28,12 +16,9 @@ Kliknij prawym przyciskiem myszy, aby edytować adres lub etykietę
         <translation>Wychodzące połączenie testowe: krótkotrwałe, do testowania adresów</translation>
     
 ERR
-The source is a short label ("Feeler"). The Polish translation is a long descriptive phrase with a colon ("Wychodzące połączenie testowe: krótkotrwałe, do testowania adresów"), which is inconsistent with the brevity of the source and may not fit UI label contexts.
-
-Suggested concise translations:
-- Połączenie testowe
-or, if keeping the original term:
-- Połączenie typu „feeler”
+The translation is overly verbose and introduces "wychodzące" (outbound), which is not stated in the source. This label should be concise.
+Correct translation:
+Sonda
 ```
 
 <!-- cache_translation_check_pl_d2b7642de902be63ffe1c85cba4f3abb86e526cbb9fcef0b95a90b35c8e03320 -->
@@ -42,15 +27,10 @@ or, if keeping the original term:
         <translation>Utwórz kopię zapasową portfela…</translation>
     
 ERR
-The translation is correct Polish but it is missing the keyboard shortcut marker (&) that exists in the source. There are no format specifiers to check and no whitespace issues.
+Missing accelerator marker '&' from the translation. It should appear exactly once.
 
-Correct translation (with & included). You can place & before an appropriate letter (commonly the first word) — for example:
-
+Correct translation:
 &Utwórz kopię zapasową portfela…
-
-Or an alternative shorter label:
-
-&Kopia zapasowa portfela…
 ```
 
 <!-- cache_translation_check_pl_d2ed0b5228ae324983b3c8633de6663a18f60b18e5ce32915565c1fc3e5a0829 -->
@@ -59,7 +39,7 @@ Or an alternative shorter label:
         <translation>Wczytaj PSBT ze schowka…</translation>
     
 ERR
-The translation is missing the shortcut marker "&" (it must appear exactly once like in the source). Also ensure the ellipsis character is preserved.
+Missing accelerator ampersand. The source has one '&' and the translation must also contain exactly one.
 
 Correct translation:
 Wczytaj PSBT ze &schowka…
@@ -71,7 +51,7 @@ Wczytaj PSBT ze &schowka…
         <translation>zaznacz/odznacz wszytsko</translation>
     
 ERR
-The Polish translation has a typo: "wszytsko" should be "wszystko".
+Typo in the Polish word "wszytsko"; should be "wszystko".
 
 Correct translation:
 zaznacz/odznacz wszystko
@@ -83,7 +63,7 @@ zaznacz/odznacz wszystko
         <translation>Potwerdzone</translation>
     
 ERR
-The Polish word is misspelled. "Potwerdzone" is incorrect.
+The Polish word is misspelled. It should be "Potwierdzone".
 
 Correct translation:
 Potwierdzone
@@ -95,7 +75,9 @@ Potwierdzone
         <translation>Kopiuj kwote</translation>
     
 ERR
-Polish spelling error: "kwote" is missing the diacritic. Correct translation:
+Missing Polish diacritic: "kwote" should be "kwotę".
+
+Correct translation:
 Kopiuj kwotę
 ```
 
@@ -105,7 +87,7 @@ Kopiuj kwotę
         <translation>Kopiuj adres</translation>
     
 ERR
-The translation is missing the shortcut marker (&) present in the source. The source has a single '&' indicating a keyboard mnemonic and the translation must include exactly one '&'.
+Missing shortcut marker '&' in the translation.
 
 Correct translation:
 &Kopiuj adres
@@ -117,7 +99,7 @@ Correct translation:
         <translation>Kopiuj etykietę</translation>
     
 ERR
-The translation is missing the shortcut marker (&) that appears in the source ("Copy &label"). The ampersand must appear exactly once in the translation to indicate the mnemonic.
+Missing ampersand for the shortcut key. There must be exactly one '&' in the translation.
 
 Correct translation:
 Kopiuj &etykietę
@@ -129,7 +111,7 @@ Kopiuj &etykietę
         <translation>Kopiuj kwotę</translation>
     
 ERR
-The translation omits the shortcut marker '&' present in the source. The source uses "Copy &amp;amount" (one '&' before "amount"); the translation should include a single '&' to mark the mnemonic.
+The accelerator indicator '&' from the source is missing. It must appear exactly once in the translation.
 
 Correct translation:
 Kopiuj &kwotę
@@ -141,10 +123,10 @@ Kopiuj &kwotę
         <translation>Skopiuj ilość bajtów</translation>
     
 ERR
-The Polish translation "Skopiuj ilość bajtów" reads as "Copy the number/amount of bytes", which changes the meaning (it implies copying the count rather than the bytes themselves). No format specifiers or spacing issues.
+"Ilość" changes the meaning to "number of bytes." The action should be to copy the bytes themselves.
 
 Correct translation:
-Skopiuj bajty
+Kopiuj bajty
 ```
 
 <!-- cache_translation_check_pl_3c1b7477465e517aa29b8945d31a10706d4adaaaaf0f96028e2e318eadefdbd9 -->
@@ -153,7 +135,7 @@ Skopiuj bajty
         <translation>Na pewno zamknąć wszystkie portfele?</translation>
     
 ERR
-The translation is understandable but lacks the proper Polish structure and politeness marker often expected in confirmations. The direct translation "Na pewno zamknąć wszystkie portfele?" sounds clipped; it is better to use a more formal and natural structure.
+The Polish translation is incomplete and sounds unnatural. It should include the verb "chcesz" for a proper question.
 
 Correct translation:
 Czy na pewno chcesz zamknąć wszystkie portfele?
@@ -165,10 +147,10 @@ Czy na pewno chcesz zamknąć wszystkie portfele?
         <translation>transakcja</translation>
     
 ERR
-The Polish translation is incorrect and incomplete ("transakcja" = "transaction" only). It does not convey the source meaning.
+The translation is incomplete and does not convey the original meaning.
 
 Correct translation:
-Transakcja została pomyślnie podpisana. Jest gotowa do wysłania.
+Pomyślnie podpisano transakcję. Transakcja jest gotowa do rozgłoszenia.
 ```
 
 <!-- cache_translation_check_pl_ef515d4ebaafcb94544472786cf6bcef772c952f88a4f382d485067eefaccf72 -->
@@ -177,7 +159,7 @@ Transakcja została pomyślnie podpisana. Jest gotowa do wysłania.
         <translation>Odejmij opłatę od kwoty</translation>
     
 ERR
-Missing shortcut marker '&' in the translation. The source has "S&amp;ubtract..." indicating a single '&' must appear in the translation as well.
+Missing accelerator ampersand. The source has a single '&' to mark a shortcut key, which must be preserved exactly once in the translation.
 
 Correct translation:
 &Odejmij opłatę od kwoty
@@ -190,10 +172,13 @@ Correct translation:
 Zwróć uwagę, że poprawnie zweryfikowana wiadomość potwierdza to, że nadawca posiada klucz do adresu, natomiast nie potwierdza to, że poprawne wysłanie jakiejkolwiek transakcji!</translation>
     
 ERR
-The translation is mostly understandable but has stylistic and clarity issues, an unnecessary line break, and slightly awkward phrasing that could change nuance (e.g., "nie dodać więcej do podpisu" and "poprawne wysłanie jakiejkolwiek transakcji"). Also remove the stray newline so it stays one paragraph.
+- The parenthetical about copying whitespace is attached to "signature" and "odbiorcy", making it ambiguous; it should modify "message" only.
+- The phrase "Uważaj by nie dodać więcej do podpisu..." misrenders the meaning; it should be about not inferring more from the signature than the signed message states.
+- Grammar/punctuation issues: missing commas after "Uważaj", awkward "by", and "natomiast nie potwierdza to, że poprawne wysłanie..." is ungrammatical.
+- The translation introduces a line break not present in the source.
 
-Suggested correct translation:
-Wpisz poniżej adres odbiorcy, wiadomość (upewnij się, że dokładnie skopiujesz wszystkie znaki końca linii, spacje, tabulatory itp.) oraz sygnaturę, aby zweryfikować wiadomość. Uważaj, aby nie przypisywać podpisowi więcej niż zawiera podpisana wiadomość, aby nie paść ofiarą ataku typu man-in-the-middle. Zauważ, że to jedynie potwierdza, iż strona podpisująca kontroluje dany adres; nie dowodzi, że wysłała jakąkolwiek transakcję!
+Correct translation:
+Wpisz poniżej adres odbiorcy, wiadomość (upewnij się, że dokładnie skopiujesz podziały wierszy, spacje, tabulatory itp.) oraz podpis, aby zweryfikować wiadomość. Uważaj, aby nie doszukiwać się w podpisie więcej, niż wynika z samej podpisanej wiadomości, aby nie dać się oszukać atakiem typu man-in-the-middle. Zwróć uwagę, że dowodzi to jedynie, iż podpisujący kontroluje ten adres; nie dowodzi wysłania żadnej transakcji!
 ```
 
 <!-- cache_translation_check_pl_a302e810cf03a27895ee29f99ca40c1426af5f5012630d36712c27c08d3d2f16 -->
@@ -202,25 +187,10 @@ Wpisz poniżej adres odbiorcy, wiadomość (upewnij się, że dokładnie skopiuj
         <translation>Kopiuj &amp;raw transakcję</translation>
     
 ERR
-The translation mixes English and Polish ("raw transakcję") and uses incorrect word order/inflection. In Polish it should use "surową transakcję" (or keep "raw" fully in English consistently). The ampersand (&) is present exactly once — that's fine — but it should be placed in the translated label.
+The Polish text mixes English ("raw") and is ungrammatical. It should be translated. The accelerator (&) should appear exactly once.
 
 Correct translation:
 Kopiuj &surową transakcję
-
-(Or, if you prefer to keep "raw" in English:
-Kopiuj &raw transakcję — though this is less natural in Polish.)
-```
-
-<!-- cache_translation_check_pl_aa42a489fc30774dea27a1d4cb729d80fe2fd4ee4c7a480bf96bf0c3486f8534 -->
-```
-        <source>&amp;Edit address label</source>
-        <translation>Wy&amp;edytuj etykietę adresu</translation>
-    
-ERR
-"Wyedytuj" is uncommon/unnatural in Polish here; the usual imperative is "Edytuj etykietę adresu". Also ensure the shortcut marker (&) is present once. 
-
-Correct translation:
-&Edytuj etykietę adresu
 ```
 
 <!-- cache_translation_check_pl_c266b7c48273891d7b82c3bdbae92f8e028c7e47984c26241e0f4ecafdc1f1c9 -->
@@ -229,7 +199,7 @@ Correct translation:
         <translation>Potwerdzone</translation>
     
 ERR
-The Polish word is misspelled. "Potwerdzone" is incorrect.
+The Polish word is misspelled. It should be "Potwierdzone".
 
 Correct translation:
 Potwierdzone
@@ -241,10 +211,10 @@ Potwierdzone
         <translation>Błąd: Nie można wygenerować deskryptorów dla tego starego portfela. Upewnij się najpierw, że portfel jest zaszyfrowany.</translation>
     
 ERR
-The translation is problematic. It mistranslates the instruction: in the source, the user is told to "make sure to provide the wallet's passphrase if it is encrypted," but in the translation, it says "Upewnij się najpierw, że portfel jest zaszyfrowany," which means "Make sure first that the wallet is encrypted," which is not the same.
+The second sentence changes the meaning: it tells the user to ensure the wallet is encrypted, instead of to provide the wallet's passphrase if it is encrypted.
 
 Correct translation:
-Błąd: Nie można wygenerować deskryptorów dla tego starego portfela. Jeśli portfel jest zaszyfrowany, upewnij się, że podano hasło do portfela.
+Błąd: Nie można wygenerować deskryptorów dla tego portfela typu legacy. Jeśli portfel jest zaszyfrowany, upewnij się, że podasz hasło do portfela.
 ```
 
 <!-- cache_translation_check_pl_49af3b53b5603f8086dfa87cbe689124ecdf8fba6da77ca453d683a4232c971c -->
@@ -253,9 +223,9 @@ Błąd: Nie można wygenerować deskryptorów dla tego starego portfela. Jeśli 
         <translation>Opcja "-maxorphantx" jest zaznaczona, ale nie ma już żadnych efektów (zobacz informacje o wydaniu). Prosimy o usunięcie jej z twojej konfiguracji.</translation>
     
 ERR
-The Polish is understandable but has minor stylistic/grammatical issues: "jest zaznaczona" is better as "jest ustawiona", "nie ma już żadnych efektów" should be singular ("żadnego efektu") or better "nie ma już żadnego wpływu/znaczenia", and "informacje o wydaniu" is less natural than "uwagi do wydania" or "notatki do wydania". Also the final sentence can be phrased more naturally.
+"jest zaznaczona" should be "jest ustawiona", and "nie ma już żadnych efektów" should be singular. The phrasing can be made more natural and consistent.
 
-Suggested correction:
+Correct translation:
 Opcja "-maxorphantx" jest ustawiona, ale nie ma już żadnego efektu (zobacz uwagi do wydania). Usuń ją ze swojej konfiguracji.
 ```
 
@@ -265,7 +235,7 @@ Opcja "-maxorphantx" jest ustawiona, ale nie ma już żadnego efektu (zobacz uwa
         <translation>Błąd: Otrzymano klucz, który nie jest szestnastkowy %s</translation>
     
 ERR
-There is a typographical error in the Polish word for "hexadecimal". It should be "szesnastkowy", not "szestnastkowy". Additionally, a colon or separator before the format specifier %s would improve clarity.
+Misspelling: "szestnastkowy" → "szesnastkowy". Missing colon before %s to match source formatting.
 
 Correct translation:
 Błąd: Otrzymano klucz, który nie jest szesnastkowy: %s
@@ -277,10 +247,11 @@ Błąd: Otrzymano klucz, który nie jest szesnastkowy: %s
         <translation>Błąd: Otrzymano wartość, która nie jest szestnastkowa %s</translation>
     
 ERR
-There is a typographical error in the translation: "szestnastkowa" should be "szesnastkowa". Also, there should be a comma before the "%s" to better match the structure of the original sentence. A corrected translation is:
+The Polish translation contains a typo ("szestnastkowa" should be "szesnastkowa") and is missing the colon before %s present in the source.
 
-Błąd: Otrzymano wartość, która nie jest szesnastkowa: %s
+Correct translation:
+Błąd: Otrzymano wartość, która nie jest w formacie szesnastkowym: %s
 ```
 </details>
 
-Number of issues: 22.
+Number of issues: 20.

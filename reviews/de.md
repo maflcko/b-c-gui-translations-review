@@ -15,10 +15,9 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
         <translation>Kopieren der aktuell ausgewählte Adresse in die Zwischenablage</translation>
     
 ERR
-German grammar is incorrect. Either use the infinitive construction or the imperative. Also ensure adjective agreement if using a genitive construction.
+The German grammar is incorrect (“ausgewählte” should be “ausgewählten” in the genitive), and the style is awkward. A clear UI-style translation is:
 
-Correct translation:
-Die aktuell ausgewählte Adresse in die Zwischenablage kopieren
+Aktuell ausgewählte Adresse in die Zwischenablage kopieren
 ```
 
 <!-- cache_translation_check_de_4a4b331d125decb9c7e827826934faf0860de67f89e0d175ab6cd52552da87f9 -->
@@ -27,7 +26,7 @@ Die aktuell ausgewählte Adresse in die Zwischenablage kopieren
         <translation>%1 S</translation>
     
 ERR
-The unit was incorrectly changed from "h" (hours) to "S". In German, "h" is also used for hours and should be preserved to match the source.
+The unit for hours should be "h" (or "Std."), not "S" (which suggests seconds and is incorrect/capitalized). Keep the same unit as source.
 
 Correct translation:
 %1 h
@@ -39,7 +38,7 @@ Correct translation:
         <translation>&amp;Programmfenster</translation>
     
 ERR
-The translation is semantically different. "Window" should be translated as "Fenster" in UI contexts, not "Programmfenster".
+The translation adds unnecessary specificity. The standard menu label should be "Fenster".
 
 Correct translation:
 &Fenster
@@ -52,7 +51,7 @@ Correct translation:
         <translation>Standardmäßig die Gebühr vom Betrag abziehen</translation>
     
 ERR
-The German translation omits the ampersand (&) that marks the keyboard shortcut, which should appear exactly once in the translation. The meaning is accurately conveyed, but for correct UI behavior, the ampersand is required.
+Missing ampersand for the shortcut key; the English string has exactly one '&' which must be preserved in the translation.
 
 Correct translation:
 Standardmäßig &Gebühr vom Betrag abziehen
@@ -64,10 +63,10 @@ Standardmäßig &Gebühr vom Betrag abziehen
         <translation>&amp;Unbestätigtes Wechselgeld darf ausgegeben werden</translation>
     
 ERR
-The German translation is not faithful to the English. It renders the sentence as a statement ("Unbestätigtes Wechselgeld darf ausgegeben werden") rather than as a menu item or command, and uses "Wechselgeld", which is ambiguous in this context. "Wechselgeld" usually means cash change in German, while "change" in Bitcoin terminology is typically translated as "Wechselbetrag" or simply "Change". The format specifier (&) is preserved correctly.
+The translation changes the concise label into a permissive sentence ("darf ausgegeben werden") and is stylistically inappropriate for a checkbox/option label. A more accurate and standard GUI phrasing is imperative.
 
 Correct translation:
-&Unbestätigten Wechselbetrag ausgeben
+&Unbestätigtes Wechselgeld ausgeben
 ```
 
 <!-- cache_translation_check_de_8b2eb07d76db68a79b60cc017e57ab0e9e56315867f3ab8749d51138852766e6 -->
@@ -77,7 +76,8 @@ Correct translation:
         <translation>&amp;PBST-Kontrollen aktivieren</translation>
     
 ERR
-The acronym PSBT is misspelled as PBST, and "Kontrollen" is not ideal UI wording in German. Use "Steuerelemente".
+"Acronym typo: 'PBST' should be 'PSBT'. Also, 'Kontrollen' is not the usual UI term; 'Steuerelemente' or 'Bedienelemente' is more appropriate. The shortcut ampersand is present exactly once, which is correct.
+
 Correct translation:
 &PSBT-Steuerelemente aktivieren
 ```
@@ -89,10 +89,10 @@ Correct translation:
         <translation>Ob PSBT-Kontrollen angezeigt werden sollen. </translation>
     
 ERR
-Trailing whitespace at the end of the translation. Also, "Kontrollen" is uncommon in this context; "Steuerelemente" or "Bedienelemente" is more appropriate.
+Trailing whitespace at the end of the translation. Also, "Kontrollen" is uncommon in German UI; "Bedienelemente" is more appropriate.
 
 Correct translation:
-Ob PSBT-Steuerelemente angezeigt werden sollen.
+Ob PSBT-Bedienelemente angezeigt werden sollen.
 ```
 
 <!-- cache_translation_check_de_7f16d7c974a18118959dea2c14d2be7b801ba8c842760c52722b75a9e55bb3c6 -->
@@ -101,22 +101,10 @@ Ob PSBT-Steuerelemente angezeigt werden sollen.
         <translation>&amp;Programmfenster</translation>
     
 ERR
-The translation is semantically different. "Window" should be translated as "Fenster" in UI contexts, not "Programmfenster".
+The translation adds unnecessary specificity. The standard menu label should be "Fenster".
 
 Correct translation:
 &Fenster
-```
-
-<!-- cache_translation_check_de_b178f65e8227b2569c0f1ad7fef7e5daedbd51ac7b465366828545ebdee7425f -->
-```
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Einheit der Beträge:</translation>
-    
-ERR
-The translation omits the part "to show amounts in" which specifies the purpose ("to show amounts in" a particular unit). The translation "Einheit der Beträge" is too general and doesn't reflect the functional intent.
-
-Correct translation:
-&amp;Einheit, in der Beträge angezeigt werden:
 ```
 
 <!-- cache_translation_check_de_208f7861e4803e6564b11a406baad9388ff4141e2137e08c57b58b13c4242be4 -->
@@ -125,10 +113,10 @@ Correct translation:
         <translation>Eingaben können nicht unterzeichnet werden, wenn die Brieftasche gesperrt ist.</translation>
     
 ERR
-"Inputs" in the Bitcoin context are "Eingänge", not "Eingaben" (user inputs). In cryptographic context, "signieren" is preferred over "unterzeichnen", and "Wallet" is the standard term in German UI text.
+"Unterzeichnet" is uncommon in this technical context; "signiert" is standard. "Eingaben" is ambiguous and should be "Transaktionseingaben" to match Bitcoin terminology. "Wallet" is also more common than "Brieftasche".
 
 Correct translation:
-Eingänge können nicht signiert werden, solange die Wallet gesperrt ist.
+Transaktionseingaben können nicht signiert werden, während die Wallet gesperrt ist.
 ```
 
 <!-- cache_translation_check_de_3b136319368213551fd549917be3f17e29cbcafba6cd806a4f504693ef3b20d8 -->
@@ -138,22 +126,10 @@ Eingänge können nicht signiert werden, solange die Wallet gesperrt ist.
         <translation>Übertragen</translation>
     
 ERR
-"Übertragen" is less precise here; the column refers to data we have sent. "Gesendet" is the standard German term for this context.
+"Übertragen" is less precise for a column meaning data we have sent; the standard and clearer term is "Gesendet", which pairs with "Empfangen" for Received.
 
 Correct translation:
 Gesendet
-```
-
-<!-- cache_translation_check_de_1a64fac9465a853789e5e6889a1e40426da0781c3996b8d7f3b2f88cd70a66fa -->
-```
-        <source>&amp;Information</source>
-        <translation>&amp;Informationen</translation>
-    
-ERR
-The translation changes the singular "Information" to the plural "Informationen". In this GUI context, the singular noun is usually correct and matches the original English intent. Also, the single '&' is correctly preserved.
-
-Correct translation:
-&Information
 ```
 
 <!-- cache_translation_check_de_78ab6a62e57e938e5986a6dab2dcc66a6f4ef12732387a3637d0e7e772ea1b49 -->
@@ -162,7 +138,7 @@ Correct translation:
         <translation>Übertragen</translation>
     
 ERR
-"Übertragen" is uncommon/misleading in this context. The standard UI label for outgoing transactions is "Gesendet".
+"Übertragen" is not the usual or most accurate translation for "Sent" in the Bitcoin wallet context. The standard German term is "Gesendet".
 
 Correct translation:
 Gesendet
@@ -174,10 +150,9 @@ Gesendet
         <translation>&amp;Zurücksetzen</translation>
     
 ERR
-The translation "&amp;Zurücksetzen" means "Reset" in German, which does not fully convey the meaning of "Clear All". The English implies that all fields/entries will be cleared, not just a 'reset' operation. Also, "Alle löschen" or "Alles löschen" would be more accurate.
-
+The translation changes the meaning: "Zurücksetzen" means "reset," not "Clear All."
 Correct translation:
-&amp;Alles löschen
+&Alles löschen
 ```
 
 <!-- cache_translation_check_de_e01cdbfc95d76b3f72518333b65a179d238a2467ecc7d7eb125baf2d406baea6 -->
@@ -186,7 +161,7 @@ Correct translation:
         <translation>Die Zahlungsadresse der Überweisung</translation>
     
 ERR
-The German translation does not accurately reflect the source. "Die Zahlungsadresse der Überweisung" is ambiguous and does not specify that it pertains to a Bitcoin address, nor does it clarify that it is the address to which payment is to be sent.
+The translation omits "Bitcoin" and is semantically awkward. It should clearly indicate the destination address for the payment.
 
 Correct translation:
 Die Bitcoin-Adresse, an die die Zahlung gesendet werden soll
@@ -198,10 +173,10 @@ Die Bitcoin-Adresse, an die die Zahlung gesendet werden soll
         <translation>Kopieren der aktuelle Signatur in die Zwischenablage</translation>
     
 ERR
-German grammar is incorrect ("der aktuelle" should be "der aktuellen"), and the phrasing is awkward. Use the imperative form for UI text.
+German grammar and style are incorrect for a UI command. Use the infinitive menu style and correct article/adjective agreement.
 
 Correct translation:
-Aktuelle Signatur in die Zwischenablage kopieren
+Die aktuelle Signatur in die Zwischenablage kopieren
 ```
 
 <!-- cache_translation_check_de_4b8ddaac0a6208e49422b93ca403d62813b033230c6d5d51af527a09f6c8481f -->
@@ -210,10 +185,9 @@ Aktuelle Signatur in die Zwischenablage kopieren
         <translation>&amp;Zurücksetzen</translation>
     
 ERR
-The translation "&amp;Zurücksetzen" means "Reset" in German, which does not fully convey the meaning of "Clear All". The English implies that all fields/entries will be cleared, not just a 'reset' operation. Also, "Alle löschen" or "Alles löschen" would be more accurate.
-
+The translation changes the meaning: "Zurücksetzen" means "reset," not "Clear All."
 Correct translation:
-&amp;Alles löschen
+&Alles löschen
 ```
 
 <!-- cache_translation_check_de_a801f268ad792da99e857270fad1a69facb0c03230e8bb644fc759bff1dcf823 -->
@@ -222,14 +196,10 @@ Correct translation:
         <translation>Erzeugte Bitcoins müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockchain hinzuzufügen. Falls dies fehlschlägt, wird der Status in "nicht angenommen" geändert und Sie werden keine Bitcoins gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
     
 ERR
-The translation mostly conveys the correct meaning but introduces two inaccuracies:
-
-1. The phrase "und Sie werden keine Bitcoins gutgeschrieben bekommen" ("and you will not have Bitcoins credited to you") deviates from the source, which says "and it won't be spendable." This is not a direct equivalent; the translation should indicate the coins are not available for spending, not about being credited.
-
-2. The rest of the translation is good but could match the phrasing more closely, especially for technical accuracy (e.g., "block chain" vs. "Blockchain", though "Blockchain" is acceptable in German).
+The sentence "und Sie werden keine Bitcoins gutgeschrieben bekommen" changes the meaning. The source says the block/coins won't be spendable, not that you won't be credited. Also, “not accepted” is better rendered as “nicht akzeptiert”.
 
 Correct translation:
-Erzeugte Coins müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um zur Blockchain hinzugefügt zu werden. Falls dies fehlschlägt, wird sein Status auf „nicht angenommen“ gesetzt und er kann nicht ausgegeben werden. Dies kann gelegentlich vorkommen, wenn ein anderer Knoten innerhalb weniger Sekunden nach Ihnen einen Block erzeugt.
+Erzeugte Bitcoins müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um zur Blockchain hinzugefügt zu werden. Falls er es nicht in die Kette schafft, ändert sich sein Status in "nicht akzeptiert" und er kann nicht ausgegeben werden. Dies kann gelegentlich passieren, wenn ein anderer Knoten innerhalb weniger Sekunden nach Ihrem einen Block erzeugt.
 ```
 
 <!-- cache_translation_check_de_efa52dd85b7239631fca72daef91d35d41e0b79baa5e9c09a3c4d86cec8e80cc -->
@@ -238,14 +208,10 @@ Erzeugte Coins müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden könn
         <translation>Transaktionskennung kopieren</translation>
     
 ERR
-The translation omits the ampersand (&amp;) which is intended to mark the shortcut key. It must be present exactly once in the translation.
+The German translation is missing the required single ampersand for the shortcut key.
 
 Correct translation:
-Transaktions&kennung kopieren
-
-or
-
-&Transaktionskennung kopieren
+&Transaktions-ID kopieren
 ```
 
 <!-- cache_translation_check_de_4612457685f6d8b9d7284297275358be675b0dc410fd10c8cd723c1b57c77046 -->
@@ -254,22 +220,10 @@ or
         <translation>Fehler: Dumpdatei Format Eintrag ist ungültig. "%s" erhalten, "format" erwartet.</translation>
     
 ERR
-The translation is understandable, but "Dumpdatei Format Eintrag" is not idiomatic German and lacks correct hyphenation. "Dumpdatei-Format-Eintrag" or "Format-Eintrag in der Dumpdatei" would be more appropriate. There are also minor stylistic issues.
+German compound nouns should not be split into separate words. "Dumpdatei Format Eintrag" is unidiomatic; use a compound or hyphenation. Also adding an article improves readability.
 
 Correct translation:
-Fehler: Format-Eintrag in der Dumpdatei ist ungültig. "%s" erhalten, "format" erwartet.
-```
-
-<!-- cache_translation_check_de_7f9d8b72e7576aeda46917153887e328fba6f2941820cb152be26873a89c7498 -->
-```
-        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation>Fehler: Die Version %s der Dumpdatei wird nicht unterstützt. Diese Version von bitcoin-wallet unterstützt nur Dumpdateien der Version 1.</translation>
-    
-ERR
-The translation omits the second sentence "Got dumpfile with version %s" and instead merges the version specifier %s into the first sentence. Also, the error about the received version is not explicitly stated.
-
-Correct translation:
-Fehler: Die Version der Dumpdatei wird nicht unterstützt. Diese Version von bitcoin-wallet unterstützt nur Dumpdateien der Version 1. Gefundene Dumpdatei mit Version %s.
+Fehler: Der Formateintrag der Dumpdatei ist ungültig. "%s" erhalten, "format" erwartet.
 ```
 
 <!-- cache_translation_check_de_c2a6d6f620ef1583c161314bdabc0d5eb064654abada07c0562a03c85b4fbf2c -->
@@ -278,7 +232,7 @@ Fehler: Die Version der Dumpdatei wird nicht unterstützt. Diese Version von bit
         <translation>Die Option '-maxorphantx' ist gesetzt, hat aber keine Wirkung mehr (siehe Release Notes). Bitte von der Konfiguration entfernen.</translation>
     
 ERR
-The second sentence is an incomplete phrase and uses the less appropriate preposition "von". Also, "Release Notes" should be "Versionshinweise" in German.
+The second sentence is grammatically incomplete; it lacks a pronoun and polite form. Also, "Release Notes" can be localized.
 
 Correct translation:
 Die Option '-maxorphantx' ist gesetzt, hat aber keine Wirkung mehr (siehe Versionshinweise). Bitte entfernen Sie sie aus Ihrer Konfiguration.
@@ -290,10 +244,10 @@ Die Option '-maxorphantx' ist gesetzt, hat aber keine Wirkung mehr (siehe Versio
         <translation>Prune: Die Synchronisierung der letzten Wallet geht über beschnittene Daten (pruned) hinaus. Sie müssen -reindex laufen lassen (Es wird die gesamte Blockchain erneut heruntergeladen, falls es ein beschnittener Node (pruned) ist)</translation>
     
 ERR
-The phrasing “Synchronisierung der letzten Wallet” implies “synchronization of the last wallet” instead of “the last synchronization of the wallet.” Also, “Node” should be “Knoten” in German, and the parenthetical English “(pruned)” is unnecessary.
+"Synchronisierung der letzten Wallet" implies the synchronization of the last wallet rather than the last wallet synchronization. Also, "Node" should be "Knoten", and wording can be more idiomatic.
 
 Correct translation:
-Prune: Die letzte Wallet-Synchronisierung geht über die beschnittenen Daten hinaus. Sie müssen -reindex ausführen (bei einem beschnittenen Knoten wird die gesamte Blockchain erneut heruntergeladen)
+Prune: Die letzte Wallet-Synchronisierung geht über die beschnittenen Daten hinaus. Sie müssen -reindex ausführen (bei einem beschnittenen Knoten wird dabei die gesamte Blockchain erneut heruntergeladen)
 ```
 
 <!-- cache_translation_check_de_6005003fc2f130110c65aef05cbf0acba00ab071edfa8cb7d74f6858dc229945 -->
@@ -302,13 +256,10 @@ Prune: Die letzte Wallet-Synchronisierung geht über die beschnittenen Daten hin
         <translation>Konfigurationseinstellungen für %s sind nur auf %s network gültig, wenn in Sektion [%s]</translation>
     
 ERR
-- "Konfigurationseinstellungen" is plural; source is singular.
-- "network" remains in English; should be "Netzwerk".
-- "in Sektion" is awkward; "im Abschnitt" is more idiomatic.
-- Missing period at the end.
+Multiple issues: singular/plural mismatch ("Config setting" is singular), "network" left in English, awkward phrasing, missing article, and missing final period.
 
 Correct translation:
-Die Konfigurationseinstellung für %s gilt nur im %s-Netzwerk, wenn sie im Abschnitt [%s] steht.
+Die Konfigurationseinstellung für %s wird nur im %s‑Netzwerk angewendet, wenn sie im Abschnitt [%s] steht.
 ```
 
 <!-- cache_translation_check_de_b4046fa3c88c3bad5ab24697f7e12008e5cacd1de9b240cc1196e24f19739c8d -->
@@ -317,10 +268,10 @@ Die Konfigurationseinstellung für %s gilt nur im %s-Netzwerk, wenn sie im Absch
         <translation>scriptPubKeys konnten nicht aufgeladen werden</translation>
     
 ERR
-"Aufgeladen" implies charging (e.g., a battery) and is incorrect here. "Top up" in this context means "auffüllen/nachfüllen".
+The verb choice is incorrect. "Aufladen" means "to recharge" (e.g., phone credit), while "top up" here means "to replenish/fill up" (e.g., a pool). Use "auffüllen".
 
 Correct translation:
-ScriptPubKeys konnten nicht aufgefüllt werden
+scriptPubKeys konnten nicht aufgefüllt werden
 ```
 
 <!-- cache_translation_check_de_30cd8c6940936d245663dad4b7e855a03b9182045ac0bd6920f4ef11cd245b27 -->
@@ -329,26 +280,11 @@ ScriptPubKeys konnten nicht aufgefüllt werden
         <translation>Fehler beim Laden %s: Wallet ist eine Legacy-Wallet. Bitte mit dem Migrationstool (migratewallet RPC) migrieren zu einer Deskriptor-Wallet.</translation>
     
 ERR
-German grammar and style issues:
-- Missing "von" after "Laden": should be "beim Laden von %s".
-- Missing article: "Die Wallet ist eine Legacy-Wallet."
-- Awkward phrasing for migration instruction; use "mithilfe des".
-- Term is commonly "Descriptor-Wallet" in this context.
+- Missing preposition: "Fehler beim Laden %s" should be "Fehler beim Laden von %s".
+- Missing article and awkward phrasing: Improve sentence flow and politeness.
 
 Correct translation:
-Fehler beim Laden von %s: Die Wallet ist eine Legacy-Wallet. Bitte migrieren Sie mithilfe des Migrationstools (migratewallet RPC) zu einer Descriptor-Wallet.
-```
-
-<!-- cache_translation_check_de_ace0c4b67f0bc1c008438c3e7e1eb2350c8d8f0961b653aa87303b8ab6ba2e80 -->
-```
-        <source>Failed to calculate bump fees, because unconfirmed UTXOs depend on an enormous cluster of unconfirmed transactions.</source>
-        <translation>Fehler bei der Berechnung von Bump-Gebühren, da unbestätigte UTXOs von einer enormen Ansammlung unbestätigter Transaktionen abhängen.</translation>
-    
-ERR
-"Bump-Gebühren" is an anglicism and unclear in German UI. Use "Gebührenanhebung" (or "Gebührenerhöhung") to reflect fee bump. The rest is fine.
-
-Correct translation:
-Berechnung der Gebührenanhebung fehlgeschlagen, da unbestätigte UTXOs von einem enormen Cluster unbestätigter Transaktionen abhängen.
+Fehler beim Laden von %s: Die Wallet ist eine Legacy-Wallet. Bitte migrieren Sie mithilfe des Migrationstools (migratewallet RPC) zu einer Deskriptor-Wallet.
 ```
 
 <!-- cache_translation_check_de_9a0a19ab7f27845d9cb3dc862682c892093c5cfa24b2acdb33fb21d296033317 -->
@@ -357,10 +293,10 @@ Berechnung der Gebührenanhebung fehlgeschlagen, da unbestätigte UTXOs von eine
         <translation>Die Transaktion erfordert ein Ziel mit einem Wert ungleich Null, einen Gebührensatz ungleich Null oder eine vorausgewähltes Input.</translation>
     
 ERR
-Grammar error: mismatched article/adjective with "Input". It should be accusative masculine (or use "Eingabe" fem.).
+Grammatical error: "eine vorausgewähltes Input" has mismatched gender and uses an Anglicism. Use the feminine noun "Eingabe" or correct the article/adjective if keeping "Input".
 
 Correct translation:
-Die Transaktion erfordert ein Ziel mit einem Wert ungleich Null, einen Gebührensatz ungleich Null oder einen vorausgewählten Input.
+Die Transaktion erfordert ein Ziel mit einem Wert ungleich Null, einen Gebührensatz ungleich Null oder eine vorausgewählte Eingabe.
 ```
 
 <!-- cache_translation_check_de_db909a547c2a4d3332f504080e817eafc2a9ce33f654288e6d9268fa95000470 -->
@@ -377,7 +313,7 @@ Bitte versuchen die neueste Softwareversion auszuführen.
 </translation>
     
 ERR
-The last sentence is ungrammatical (missing "Sie" and comma). Also "in einer neueren Version" is better as "mit einer neueren Version."
+The imperative sentence is missing the polite form "Sie" and a comma. Also, "in einer neueren Version" is better rendered as "mit einer neueren Version" in this context.
 
 Correct translation:
 Nicht erkannter Deskriptor gefunden. Wallet %s wird geladen.
@@ -392,10 +328,10 @@ Bitte versuchen Sie, die neueste Softwareversion auszuführen.
         <translation>Fehler beim Starten von Indizes, es wird Heruntergefahren...</translation>
     
 ERR
-"Heruntergefahren" is incorrectly capitalized; it should be lowercase as a verb in this context. Also, the source uses a single ellipsis character (…), while the translation uses three dots (...).
+Capitalization error: "Heruntergefahren" should be lowercase after a comma. Also match the ellipsis character.
 
 Correct translation:
-Fehler beim Starten von Indizes, es wird heruntergefahren…
+Fehler beim Starten der Indizes, es wird heruntergefahren…
 ```
 
 <!-- cache_translation_check_de_d97f463a4f28d187960e6d383c3b73b494d7093037bdf343bd0b749e69dcedb0 -->
@@ -404,11 +340,11 @@ Fehler beim Starten von Indizes, es wird heruntergefahren…
         <translation>Ungültige -proxy Adresse oder Hostname, endet mit '=': '%s'</translation>
     
 ERR
-German grammar and compounding are off. The adjective only agrees with "Adresse" and not with "Hostname", and "proxy Adresse" should be compounded as "proxy-Adresse".
+Agreement and hyphenation issues in German. It should be the compound “-proxy-Adresse,” and the adjective must agree with both options.
 
 Correct translation:
 Ungültige -proxy-Adresse oder ungültiger Hostname, endet mit '=': '%s'
 ```
 </details>
 
-Number of issues: 31.
+Number of issues: 27.

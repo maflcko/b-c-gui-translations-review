@@ -15,10 +15,10 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
         <translation>Laad PSBT vanaf klembord...</translation>
     
 ERR
-The ampersand (&) indicating the shortcut key is missing from the Dutch translation. It should be present exactly once in the translation, as in the source.
+Missing the required '&' for the shortcut key and uses three dots instead of an ellipsis. Also more natural Dutch includes "het".
 
 Correct translation:
-Laad PSBT van &klembord…
+Laad PSBT van het &klembord…
 ```
 
 <!-- cache_translation_check_nl_82dd84a9cdf6394fd003031f3d65a8db9c0350393c44b06e7136336271c4d0a3 -->
@@ -27,12 +27,10 @@ Laad PSBT van &klembord…
         <translation>Verzendadressen</translation>
     
 ERR
-The translation omits the '&' which is used for keyboard shortcuts. The English source includes '&' indicating an access key. It should be present exactly once in the translation, placed appropriately.
+Missing ampersand for shortcut key; it must appear exactly once.
 
 Correct translation:
 &Verzendadressen
-or
-Verzend&adressen
 ```
 
 <!-- cache_translation_check_nl_75db58706b729502b5f861dced598f4793f1247549efb8b3d201580221ca2595 -->
@@ -41,7 +39,7 @@ Verzend&adressen
         <translation>Ontvangstadressen</translation>
     
 ERR
-The translation omits the ampersand (&) used for the shortcut key in the English source. The ampersand should be present exactly once.
+The translation is missing the single '&' accelerator required to indicate the shortcut key.
 
 Correct translation:
 &Ontvangstadressen
@@ -53,7 +51,7 @@ Correct translation:
         <translation>&amp;Scherm</translation>
     
 ERR
-The word "Window" should be translated as "Venster" in Dutch, not "Scherm". "Scherm" means "screen", which is a different concept in a software context.
+"Window" in a UI context should be translated as "Venster", not "Scherm". The ampersand is correctly present once.
 
 Correct translation:
 &Venster
@@ -65,7 +63,7 @@ Correct translation:
         <translation>Naheffing:</translation>
     
 ERR
-The translation "Naheffing" means "additional assessment" or "supplementary tax assessment," which is not an accurate translation of "After Fee:" in the context of Bitcoin transactions. "After Fee:" indicates the amount remaining after subtracting the transaction fee.
+"Naheffing" refers to an additional tax assessment and is incorrect in this context. The label means the amount after subtracting the fee.
 
 Correct translation:
 Na aftrek van kosten:
@@ -77,7 +75,7 @@ Na aftrek van kosten:
         <translation>(wijzig)</translation>
     
 ERR
-The term "change" in the Bitcoin context refers to the change output in a transaction (geld terug van een transactie), not "wijzig" (which means "modify" or "edit"). The translation is contextually incorrect.
+The Dutch translation uses the verb "wijzig" (to modify), which is incorrect in the Bitcoin context where "change" refers to the change output of a transaction. The correct term is "wisselgeld".
 
 Correct translation:
 (wisselgeld)
@@ -93,12 +91,10 @@ Correct translation:
 </translation>
     
 ERR
-The translation is problematic: it incorrectly uses "Herstellen wallet" instead of correct Dutch ("Bezig met herstellen van portemonnee" or "Portemonnee wordt hersteld"), and it has an erroneous fragment "…HerstellenL" at the end. Also, "wallet" should be translated as "portemonnee" or "wallet" (if kept untranslated), but not as a direct English word. The extra characters and lack of proper sentence structure make it problematic.
+The translation contains stray text ("HerstellenL") and ungrammatical phrasing ("Herstellen wallet"). It should use proper Dutch word order and remove the extra characters.
 
 Correct translation:
-Portemonnee &lt;b&gt;%1&lt;/b&gt; wordt hersteld…
-or, alternatively:
-Bezig met herstellen van portemonnee &lt;b&gt;%1&lt;/b&gt;…
+Wallet &lt;b&gt;%1&lt;/b&gt; wordt hersteld…
 ```
 
 <!-- cache_translation_check_nl_79997e1eaa72a7fd1b7ddb3d19266c73b9092535f50f28fa77176540e3b784d7 -->
@@ -107,10 +103,10 @@ Bezig met herstellen van portemonnee &lt;b&gt;%1&lt;/b&gt;…
         <translation>Sta inkomende verbindingen toe</translation>
     
 ERR
-The ampersand (&) is present in the source to indicate a keyboard shortcut (for the letter 'g' in "incoming"), but it is missing from the Dutch translation. It should appear exactly once in the translation.
+The translation is missing the required single '&' shortcut marker.
 
 Correct translation:
-Sta inkomende &verbindingen toe
+Inkomende &verbindingen toestaan
 ```
 
 <!-- cache_translation_check_nl_3abf29fa1c69c8582c4c7d68292ee911dc49218e9f9a0fcb4325a38b6000c379 -->
@@ -119,7 +115,7 @@ Sta inkomende &verbindingen toe
         <translation>&amp;Scherm</translation>
     
 ERR
-The word "Window" should be translated as "Venster" in Dutch, not "Scherm". "Scherm" means "screen", which is a different concept in a software context.
+"Window" in a UI context should be translated as "Venster", not "Scherm". The ampersand is correctly present once.
 
 Correct translation:
 &Venster
@@ -131,10 +127,10 @@ Correct translation:
         <translation>&amp;Interface</translation>
     
 ERR
-The translation is inaccurate. The English word "Display" should be translated as "Weergave" in Dutch, not "Interface". Additionally, the ampersand is used correctly as a shortcut key indicator.
+The Dutch translation is inaccurate. "Display" in this context should be translated as "Weergave" (or "Beeld"), not "Interface". The shortcut ampersand is correctly used once.
 
 Correct translation:
-&amp;Weergave
+&Weergave
 ```
 
 <!-- cache_translation_check_nl_fb007f4d4008068a4ba94d3ffedfa6baf82c51252cef236558a31fa2812dfd60 -->
@@ -143,15 +139,10 @@ Correct translation:
         <translation>Taal &amp;gebruikersinterface:</translation>
     
 ERR
-The Dutch translation changes the word order in a confusing way; it should match the original's intent that "language" is the user interface language. The ampersand is correctly present exactly once.
+The Dutch translation changes the meaning to "Language & user interface" instead of "User interface language." It should indicate the language of the UI. Keep exactly one ampersand for the shortcut.
 
 Correct translation:
-Gebruikersinterface&amp;taal:
-or
-&amp;Taal gebruikersinterface: (if UI guidelines prefer & at the start)
-
-But most commonly:
-&amp;Taal van de gebruikersinterface:
+&Taal van de gebruikersinterface:
 ```
 
 <!-- cache_translation_check_nl_51c8af39d7d32e1ccb354a0221f2dfd1baae62aec124a518e241253ce2787bc4 -->
@@ -160,14 +151,10 @@ But most commonly:
         <translation>Gebruik afzonderlijke SOCKS &amp; 5-proxy om peers te bereiken via Tor Onion-services:</translation>
     
 ERR
-There is an incorrect space in the translation between "SOCKS" and "5". In Dutch, as in English, "SOCKS5" should not include a space. Additionally, the ampersand (&amp;) must occur exactly once in the translation as in the source. In the translation, it is placed incorrectly (as "SOCKS &amp; 5-proxy") splitting "SOCKS5", and should be placed in a similar logical position as the English original (likely before the '5').
+The accelerator ampersand is misplaced with a space before the 5 ("SOCKS & 5"), which can break the shortcut key. Also, "Onion-services" capitalization and hyphenation are awkward in Dutch.
 
 Correct translation:
-Gebruik afzonderlijke SOCKS5-&amp;proxy om peers te bereiken via Tor Onion-services:
-
-Note: If the ampersand is meant as a shortcut key (as usual in Qt translations), it should precede a character that is appropriate as a shortcut in context, likely at the same place as the source. A close match is "SOCKS&5-proxy", unless a different shortcut makes more sense for Dutch UI conventions. Thus, a safe and literal translation following the English is:
-
-Gebruik afzonderlijke SOCKS&5-proxy om peers te bereiken via Tor Onion-services:
+Gebruik een afzonderlijke SOCKS&5-proxy om peers te bereiken via Tor-onionservices:
 ```
 
 <!-- cache_translation_check_nl_715723d70a05aff43d30bcf55458e5f4f7375df9201e745b80730096c8f5789a -->
@@ -176,10 +163,10 @@ Gebruik afzonderlijke SOCKS&5-proxy om peers te bereiken via Tor Onion-services:
         <translation>Verzenden %1 van %2</translation>
     
 ERR
-The translation is incorrect. The English text means "Sends %1 to %2", implying that %1 is being sent to %2. However, the Dutch translation "Verzenden %1 van %2" means "Send %1 from %2", which reverses the direction of the transaction and changes the meaning. Additionally, "Verzenden" is an infinitive and should be conjugated.
+The Dutch translation is incorrect: it uses the wrong verb form and preposition (“Verzenden … van …” means “Sending … from …”). It should be “Stuurt … naar …” or “Verstuurt … naar …”.
 
 Correct translation:
-Verstuurt %1 naar %2
+Stuurt %1 naar %2
 ```
 
 <!-- cache_translation_check_nl_870c6c0a1188d977ca63260110f5f09353262d4fc45616e577a8dd46d8c47ad6 -->
@@ -188,13 +175,10 @@ Verstuurt %1 naar %2
         <translation>Onmogelijk om de transactie kost of totale bedrag te berekenen.</translation>
     
 ERR
-The Dutch translation has a couple of issues:
-- "transactie kost" should be "transactiekost" (one word), or preferably "transactiekosten" (plural, as is common in Dutch).
-- "totale bedrag" is incorrect; it should be "het totale bedrag".
-- "Onmogelijk om ... te berekenen." is an awkward structure. A more natural rendering is "Het is niet mogelijk om ... te berekenen."
+Dutch grammar and compounding are incorrect: "transactie kost" should be "transactiekosten"; missing article "het" before "totale bedrag"; overall phrasing is unnatural.
 
 Correct translation:
-Het is niet mogelijk om de transactiekosten of het totale bedrag te berekenen.
+Kan de transactiekosten of het totale transactiebedrag niet berekenen.
 ```
 
 <!-- cache_translation_check_nl_1182dbe649fa19b14a5d868e09291fd93a519e10645027dddc2b523ed6fa1468 -->
@@ -203,7 +187,7 @@ Het is niet mogelijk om de transactiekosten of het totale bedrag te berekenen.
         <translation>&amp;Maak ban voor node ongedaan</translation>
     
 ERR
-The translation is mostly correct, but may be too specific. "&Unban" is a menu option and usually should be translated succinctly as “&Deblokkeren” or “&Ban opheffen”, as in user interfaces brevity is preferred.
+The translation adds extra content ("voor node") not present in the source and is awkward in Dutch. A concise and accurate UI label is preferable.
 
 Correct translation:
 &Ban opheffen
@@ -215,10 +199,9 @@ Correct translation:
         <translation>&amp;Bedrag</translation>
     
 ERR
-The translation omits the colon at the end, which should be preserved for consistency and formatting.
+The colon from the source is missing in the translation.
 
 Correct translation:
-&Amount: 
 &Bedrag:
 ```
 
@@ -228,7 +211,7 @@ Correct translation:
         <translation>Naheffing:</translation>
     
 ERR
-The translation "Naheffing" means "additional assessment" or "supplementary tax assessment," which is not an accurate translation of "After Fee:" in the context of Bitcoin transactions. "After Fee:" indicates the amount remaining after subtracting the transaction fee.
+"Naheffing" refers to an additional tax assessment and is incorrect in this context. The label means the amount after subtracting the fee.
 
 Correct translation:
 Na aftrek van kosten:
@@ -240,10 +223,10 @@ Na aftrek van kosten:
         <translation>De minimale toeslag betalen is prima mits het transactievolume kleiner is dan de ruimte in de blokken. Let wel op dat dit tot gevolg kan hebben dat een transactie nooit wordt bevestigd als er meer vraag is naar bitcointransacties dan het netwerk kan verwerken.</translation>
     
 ERR
-The translation deviates from the structure and content of the source and omits important details, such as the role of both miners and relaying nodes in enforcing a minimum fee. It also does not mention that paying only the minimum fee is fine but can result in a transaction never confirming "once there is more demand than the network can process." The causal relationship is not fully captured and the part about both miners and relaying nodes is missing.
+The translation changes the meaning and omits key details. It fails to mention that miners and relaying nodes may enforce a minimum fee, and "toeslag" is not the correct term for "fee" in this context (use "vergoeding" or "transactiekosten").
 
 Correct translation:
-Wanneer er minder transactievolume is dan ruimte in de blokken, kunnen zowel miners als relayende knooppunten een minimumbedrag aan transactiekosten afdwingen. Alleen deze minimale vergoeding betalen is prima, maar wees ervan bewust dat dit kan resulteren in een transactie die nooit wordt bevestigd zodra er meer vraag is naar bitcointransacties dan het netwerk aankan.
+Als er minder transactievolume is dan er ruimte in de blokken is, kunnen zowel miners als doorsturende knooppunten een minimumvergoeding afdwingen. Alleen deze minimumvergoeding betalen is prima, maar wees je ervan bewust dat dit kan resulteren in een transactie die nooit wordt bevestigd zodra er meer vraag is naar bitcointransacties dan het netwerk kan verwerken.
 ```
 
 <!-- cache_translation_check_nl_a3bd727c544eafffc23f90ac35115101d446b125720d11a0ea38bc88f92bfd2a -->
@@ -253,13 +236,10 @@ Wanneer er minder transactievolume is dan ruimte in de blokken, kunnen zowel min
         <translation>Externe ondertekenaars fout</translation>
     
 ERR
-The translation "Externe ondertekenaars fout" is incorrect as "ondertekenaars" is plural, whereas "signer" is singular, and the word order is awkward. The correct translation should be:
+The translation uses the plural "ondertekenaars" and has incorrect phrasing. It should be singular and more natural as an error title.
 
 Correct translation:
-Externe ondertekenaar fout
-
-Alternatively, to make it even more natural in Dutch:
-Fout met externe ondertekenaar
+Fout bij externe ondertekenaar
 ```
 
 <!-- cache_translation_check_nl_fd6e13019e50803c2a7fd6befa69823efbbd5526175b53f04a3985bf7d16fea5 -->
@@ -268,7 +248,7 @@ Fout met externe ondertekenaar
         <translation>Dubbel adres gevonden: adressen mogen maar één keer worden gebruikt worden.</translation>
     
 ERR
-The Dutch translation contains a redundancy: "worden gebruikt worden" repeats the verb "worden". The correct translation should use "worden gebruikt" only once.
+The translation contains a grammatical error: "worden gebruikt worden" repeats "worden". 
 
 Correct translation:
 Dubbel adres gevonden: adressen mogen maar één keer worden gebruikt.
@@ -279,17 +259,15 @@ Dubbel adres gevonden: adressen mogen maar één keer worden gebruikt.
         <source>Enter the receiver's address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
         <translation>Voer het adres van de ontvanger in, bericht (zorg ervoor dat de regeleinden, spaties, tabs etc. precies kloppen) en onderteken onderaan om het bericht te verifiëren. Wees voorzicht om niet meer in de ondertekening te lezen dan in het getekende bericht zelf, om te voorkomen dat je wordt aangevallen met een man-in-the-middle attack. Houd er mee rekening dat dit alleen de ondertekende partij bewijst met het ontvangen adres, er kan niet bewezen worden dat er een transactie heeft plaatsgevonden!</translation>
     
-ERR  
-There are several issues:  
-- "onderteken onderaan" is a mistranslation of "signature below". It should be "handtekening hieronder".  
-- "Wees voorzicht" should be "Wees voorzichtig".  
-- The sentence structure "om te voorkomen dat je wordt aangevallen met een man-in-the-middle attack" is awkward and unnecessarily literal; "door een man-in-the-middle aanval" is better.  
-- "Houd er mee rekening" should be "Houd er rekening mee".  
-- "de ondertekende partij bewijst met het ontvangen adres" is unclear. A closer rendering would be: "alleen bewijst dat de ondertekenende partij over het adres beschikt".  
-- The translation omits "it cannot prove sendership of any transaction", which is closer to "het kan niet bewijzen dat er transacties mee zijn verzonden".  
+ERR
+The translation contains multiple issues:
+- Misinterprets "and signature below" as an instruction to sign, instead of to enter the signature.
+- Typo: "Wees voorzicht" should be "Wees voorzichtig".
+- Unnatural/incorrect phrasing: "Houd er mee rekening" should be "Houd er rekening mee".
+- Awkward and unclear rendering of the note about what is proven; should clarify that only control over the address is proven, not sendership of any transaction.
 
-Correct translation:  
-Voer hieronder het adres van de ontvanger, het bericht (zorg ervoor dat u regeleinden, spaties, tabs, enzovoort exact overneemt) en de handtekening in om het bericht te verifiëren. Wees voorzichtig om niet meer betekenis aan de handtekening toe te kennen dan aan het ondertekende bericht zelf, om te voorkomen dat je slachtoffer wordt van een man-in-the-middle-aanval. Let op: dit bewijst alleen dat de ondertekenende partij het adres bezit; het kan het verzenden van transacties niet bewijzen!
+Correct translation:
+Voer hieronder het adres van de ontvanger, het bericht (let erop dat je regeleinden, spaties, tabs, enz. exact overneemt) en de handtekening in om het bericht te verifiëren. Wees voorzichtig om niet meer in de handtekening te lezen dan in het ondertekende bericht zelf, om te voorkomen dat je wordt misleid door een man-in-the-middle-aanval. Let op: hiermee wordt alleen aangetoond dat de ondertekenende partij het adres beheert of ermee kan ontvangen; het kan niet aantonen wie de afzender van een transactie is of dat er een transactie is verzonden.
 ```
 
 <!-- cache_translation_check_nl_e88ec3876fb13073170e938a0a163444dbd8919bc2fa5940d1d264e1f162fbbe -->
@@ -298,22 +276,10 @@ Voer hieronder het adres van de ontvanger, het bericht (zorg ervoor dat u regele
         <translation>Niet beschikbaar (%1 bevestigingen, zal beschikbaar zijn na %2)</translation>
     
 ERR
-The translation is not entirely accurate. "Immature" in the context of Bitcoin refers to coins that are not yet spendable, not necessarily "not available". The term "Onvolwassen" is conventionally used for "immature" in Dutch Bitcoin contexts.
+"Immature" was translated as "Niet beschikbaar" ("Not available"), which changes the meaning. It should reflect the specific status "Immature".
 
 Correct translation:
-Onvolwassen (%1 bevestigingen, wordt beschikbaar na %2)
-```
-
-<!-- cache_translation_check_nl_6ad57e28fff7c65389a771957dfe6e1162c003c6c8a7ef3e2059000d4566c07d -->
-```
-        <source>Copy full transaction &amp;details</source>
-        <translation>Kopieer volledige transactie&amp;details</translation>
-    
-ERR
-The translation is missing a space before the ampersand (it has "transactie&amp;details" instead of "transactie &amp;details"). Also the Dutch phrasing is slightly awkward; better to keep spacing consistent with the source.
-
-Correct translation:
-Kopieer volledige transactie &amp;details
+Onvolwassen (%1 bevestigingen, zal beschikbaar zijn na %2)
 ```
 
 <!-- cache_translation_check_nl_d703082867288a63338556056158c72efd7b4ef49f66edb7619713e25b4857a3 -->
@@ -322,10 +288,10 @@ Kopieer volledige transactie &amp;details
         <translation>Verhoog transactiekosten</translation>
     
 ERR
-The translation is missing the keyboard shortcut ampersand (&) that appears once in the source ("Increase transaction &fee"). Also ensure the ampersand appears exactly once.
+The Dutch translation omits the ampersand, which marks the keyboard shortcut and must appear exactly once.
 
 Correct translation:
-Verhoog &transactiekosten
+&Transactiekosten verhogen
 ```
 
 <!-- cache_translation_check_nl_511ea328fec278cef8c3e5c24c64307a3ed154d09896fc344cba54e804146e51 -->
@@ -334,7 +300,7 @@ Verhoog &transactiekosten
         <translation>Het PSBT bestand moet kleiner dan 100 MiB te zijn.</translation>
     
 ERR
-The Dutch translation is grammatically incorrect. The phrase "moet kleiner dan ... te zijn" is not proper Dutch. It should be "moet kleiner zijn dan 100 MiB."
+The Dutch grammar is incorrect and missing the hyphen in “PSBT-bestand.” Correct word order is “moet kleiner zijn dan”.
 
 Correct translation:
 Het PSBT-bestand moet kleiner zijn dan 100 MiB.
@@ -346,10 +312,10 @@ Het PSBT-bestand moet kleiner zijn dan 100 MiB.
         <translation>Fout bij starten/toekennen db txn voor verwijderproces wallettransacties</translation>
     
 ERR
-The translation uses "toekennen" for "committing," which is incorrect. "Toekennen" means "to assign" rather than "to commit" in the transaction context. A more accurate translation would use "committen" or "voltooien". Also, "verwijderproces wallettransacties" omits a preposition. A more natural phrasing is "verwijderproces van wallettransacties".
+"toekennen" is incorrect for "committing", and the phrasing is awkward. Use "vastleggen" for "commit" and a proper compound/genitive for the process.
 
 Correct translation:
-Fout bij starten/committen van db-tx voor het verwijderproces van wallettransacties
+Fout bij het starten/vastleggen van db txn voor het verwijderingsproces van wallettransacties
 ```
 
 <!-- cache_translation_check_nl_d6e6035d12e71eda46b41d4b059428fd8dc209e3d15a879d20bad4cd5eb02517 -->
@@ -358,10 +324,10 @@ Fout bij starten/committen van db-tx voor het verwijderproces van wallettransact
         <translation>Opgegeven -blockmaxweight (%d) oveschrijdt consensus maximum block weight (%d)</translation>
     
 ERR
-There is a typo in the Dutch translation: "oveschrijdt" should be "overschrijdt". Additionally, "block weight" should be translated into Dutch ("blokgewicht") for consistency and clarity. Also, an extra space may be preferred ("consensusmaximum" as one word, or "consensus maximum" as two, but "block weight" should match source formatting).
+Typo and unnatural phrasing; "oveschrijdt" should be "overschrijdt", and "block weight" should be translated. Also, compound noun "consensusmaximum" and article improve clarity.
 
 Correct translation:
-Opgegeven -blockmaxweight (%d) overschrijdt het consensus maximum voor blokgewicht (%d)
+Opgegeven -blockmaxweight (%d) overschrijdt het consensusmaximum voor blokgewicht (%d)
 ```
 
 <!-- cache_translation_check_nl_d927ed55de9c3f400854f211aea3750782212b58d5428e7a1eff891619c74e75 -->
@@ -370,7 +336,7 @@ Opgegeven -blockmaxweight (%d) overschrijdt het consensus maximum voor blokgewic
         <translation>Kon bestand niet sluiten tijdens het schrijven van een blok.</translation>
     
 ERR
-The Dutch translation is grammatically incorrect / missing an article. Also "tijdens het schrijven van een blok" is understandable but "bij het schrijven van een blok" or "terwijl er een blok werd geschreven" sounds more natural.
+Dutch grammar requires the definite article. It should be "het bestand".
 
 Correct translation:
 Kon het bestand niet sluiten tijdens het schrijven van een blok.
@@ -382,10 +348,10 @@ Kon het bestand niet sluiten tijdens het schrijven van een blok.
         <translation>Mislukt om op welke poort dan ook te luisteren. Gebruik -listen=0 as u dit wilt.</translation>
     
 ERR
-The translation uses "as u dit wilt" which is incorrect. It should be "als u dit wilt". Also, "Mislukt om op welke poort dan ook te luisteren" is awkward; a better translation would be "Het is niet gelukt om op een poort te luisteren".
+The Dutch sentence is unidiomatic and contains a typo: "as" should be "als". A more natural phrasing is needed.
 
 Correct translation:
-Het is niet gelukt om op een poort te luisteren. Gebruik -listen=0 als u dit wilt.
+Kon op geen enkele poort luisteren. Gebruik -listen=0 als u dit wilt.
 ```
 
 <!-- cache_translation_check_nl_e8d631fd7d147043a881f995c127036ebfdb1a0b2967e04026e622c03920a199 -->
@@ -394,7 +360,7 @@ Het is niet gelukt om op een poort te luisteren. Gebruik -listen=0 als u dit wil
         <translation>Ongeldig -onion adress of hostnaam: '%s'</translation>
     
 ERR
-The Dutch word for "address" is "adres," not "adress." There's a spelling mistake.
+Spelling error: "adress" should be "adres".
 
 Correct translation:
 Ongeldig -onion adres of hostnaam: '%s'
@@ -406,8 +372,7 @@ Ongeldig -onion adres of hostnaam: '%s'
         <translation>Transactiebedragen moeten positief zijn</translation>
     
 ERR
-The translation changes the meaning of the source sentence. The English source states that amounts "must not be negative" (they can be zero or positive), but the Dutch translation says amounts "must be positive" (implying greater than zero).
-
+The translation changes the meaning. "Must not be negative" allows zero, but "moeten positief zijn" excludes zero.
 Correct translation:
 Transactiebedragen mogen niet negatief zijn
 ```
@@ -418,10 +383,10 @@ Transactiebedragen mogen niet negatief zijn
         <translation>Transactie change output is buiten bereik</translation>
     
 ERR
-The translation is somewhat problematic. The English phrase "Transaction change output index out of range" specifically refers to the "index" of the change output in a transaction. The Dutch translation omits "index" making the message less precise.
+The Dutch translation omits "index" and leaves "change output" untranslated, reducing clarity.
 
 Correct translation:
-Transactie change output-index buiten bereik
+Index van de wisselgeld-uitvoer van de transactie buiten bereik
 ```
 
 <!-- cache_translation_check_nl_552155f08b60a09a522b4bb2d140ad80b6a4b850cc90774f6ee2760edd1e928b -->
@@ -430,11 +395,11 @@ Transactie change output-index buiten bereik
         <translation>Niet mogelijk ok HTTP-server te starten. Zie debuglogboek voor details.</translation>
     
 ERR
-The translation contains a minor grammatical error and a typo: "ok" should be "om" ("om HTTP-server te starten"), and "debuglogboek" is an awkward rendering for "debug log" in Dutch; "debuglog" is more standard.
+There is a typo and grammatical issues: "ok" should be "om", and the article is missing. A more natural Dutch phrasing is preferred.
 
 Correct translation:
-Niet mogelijk om HTTP-server te starten. Zie debuglog voor details.
+Kan de HTTP-server niet starten. Zie het debuglogboek voor details.
 ```
 </details>
 
-Number of issues: 33.
+Number of issues: 32.

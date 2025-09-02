@@ -15,10 +15,9 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
         <translation>Změna hesla</translation>
     
 ERR
-The translation is inaccurate. "Passphrase Dialog" means the dialog window related to the passphrase, not necessarily "Change Password". The translation "Změna hesla" specifically means "Change Password".
-
+The translation changes the meaning from "Passphrase Dialog" to "Change password".
 Correct translation:
-Dialog pro zadání hesla
+Dialog heslové fráze
 ```
 
 <!-- cache_translation_check_cs_6575de34fb127eca9a13bb7a4cbee73a1ac6873cf238e4a438515550ff89858e -->
@@ -27,23 +26,10 @@ Dialog pro zadání hesla
         <translation>Totéž heslo ještě jednou</translation>
     
 ERR
-The translation is understandable but not entirely accurate or direct. "Totéž heslo ještě jednou" translates more like "The same password once again," which is less precise than the more standard "Zopakujte nové heslo" or "Opakujte nové heslo," meaning "Repeat new passphrase."
+The translation omits "new" and uses "heslo" instead of the more accurate "přístupová fráze" for "passphrase."
 
 Correct translation:
-Zopakujte nové heslo
-```
-
-<!-- cache_translation_check_cs_c9e4cddca5d3c7a6887785854785a2711fb6a8c3726dbb8298361a46feaaae83 -->
-```
-        <source>&amp;Help</source>
-        <translation>Nápověd&amp;a</translation>
-    
-ERR
-The shortcut key '&' has been incorrectly placed inside the word, resulting in "Nápověd&amp;a", which is not standard and does not properly assign a mnemonic in Czech. Additionally, the correct translation for "&Help" in Czech is "&Nápověda" (shortcut key typically at the beginning).
-
-Correct translation:
-&Nápověda
-</reply>
+Zopakujte novou přístupovou frázi
 ```
 
 <!-- cache_translation_check_cs_18a4553c0d0960d9cdad0cad918b88510e307306d09f6c5f78f5bdb7001e41e9 -->
@@ -52,7 +38,7 @@ Correct translation:
         <translation>Odesílací adresy</translation>
     
 ERR
-The translation omits the '&' character, which is used in the source to indicate the shortcut key. It must appear exactly once in the translation.
+The shortcut marker '&' is missing in the translation; it should appear exactly once.
 
 Correct translation:
 &Odesílací adresy
@@ -64,7 +50,7 @@ Correct translation:
         <translation>Přijímací adresy</translation>
     
 ERR
-The translation misses the & character which indicates the shortcut key in the original. It must appear exactly once and can be placed anywhere in the translation.
+The accelerator ampersand is missing in the translation; it must appear exactly once.
 
 Correct translation:
 &Přijímací adresy
@@ -76,11 +62,10 @@ Correct translation:
         <translation>Skryj</translation>
     
 ERR
-The ampersand (&) indicating the shortcut key is missing in the Czech translation. It must appear exactly once, as in the source.
+The mnemonic ampersand is missing and the verb form is nonstandard for a menu item. Use the infinitive form with a single ampersand.
 
 Correct translation:
-&Skryj
-</reply>
+&Skrýt
 ```
 
 <!-- cache_translation_check_cs_1faac1c3c63e3f6149842937eb924b4370a7918513965251ff2a911c69d9ab44 -->
@@ -89,22 +74,10 @@ Correct translation:
         <translation>Zobraz</translation>
     
 ERR
-The translation is missing the ampersand (&), which is used to indicate the shortcut key. There should be exactly one '&' in the translation.
+Missing accelerator marker '&' in the translation. It must appear exactly once.
 
 Correct translation:
 &Zobraz
-```
-
-<!-- cache_translation_check_cs_a0cc8279c9aafbd920dc8b30d3178a232219e624e432da9211f1423a4a45b872 -->
-```
-        <source>Copy after fee</source>
-        <translation>Kopíruj čistou částku</translation>
-    
-ERR
-The translation is not a literal or accurate rendering of the source. "Copy after fee" refers to copying the amount remaining after the fee is deducted, not just "Copy net amount" (which may be implied but not stated).
-
-Correct translation:
-Zkopírovat částku po odečtení poplatku
 ```
 
 <!-- cache_translation_check_cs_cba23791ab05ccae924343d36546a00776762e9f7aa319cc729303d15e7f5d6f -->
@@ -121,30 +94,16 @@ Pokud tato peněženka obsahuje jakékoliv řešitelné skripty, které nejdou s
 Proces migrace vytvoří zálohu peněženky přes samotnou migrací. Soubor se zálohou se bude nazývat &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak a bude umístěn v adresáři s touto peněženkou. V případě nepovedené migrace je možné provést obnovu prostřednitvím funkce "Obnovit peněženku".</translation>
     
 ERR
-Issues:
-- Typo: "přes samotnou migrací" should be "před samotnou migrací" (before migrating).
-- Typo: "prostřednitvím" should be "prostřednictvím".
-- Awkward phrasing: "bude vytvořena nová jiná peněženka" should be "bude vytvořena další nová peněženka" or similar.
-- Minor consistency: add "tato" in the second sentence for clarity.
+- The phrase "nová peněženka pouze pro tyto skripty" implies exclusivity not present in the source; it should state the new wallet will contain those scripts.
+- "které nejdou sledovat" means "cannot be watched," but the source says "not watched" (i.e., not being watched), not "impossible to watch."
+- Typos: "přes samotnou migrací" should be "před samotnou migrací"; "prostřednitvím" should be "prostřednictvím."
 
 Correct translation:
-Migrace peněženky ji převede na jednu nebo více deskriptorových peněženek. Bude třeba vytvořit novou zálohu peněženky.
-Pokud tato peněženka obsahuje jakékoli skripty určené pouze ke sledování, bude vytvořena nová peněženka, která bude tyto skripty obsahovat.
-Pokud tato peněženka obsahuje jakékoli řešitelné, ale nesledované skripty, bude vytvořena další nová peněženka, která bude tyto skripty obsahovat.
+Migrace peněženky povede k její přeměně na jednu nebo více deskriptorových peněženek. Bude třeba vytvořit novou zálohu peněženky.
+Pokud tato peněženka obsahuje jakékoli skripty typu watch-only, bude vytvořena nová peněženka, která bude tyto watch-only skripty obsahovat.
+Pokud tato peněženka obsahuje jakékoli řešitelné skripty, které však nejsou sledované, bude vytvořena jiná nová peněženka, která bude tyto skripty obsahovat.
 
-Proces migrace vytvoří zálohu peněženky před samotnou migrací. Tento záložní soubor se bude jmenovat <wallet name>-<timestamp>.legacy.bak a bude umístěn v adresáři této peněženky. V případě chybné migrace lze zálohu obnovit pomocí funkce "Obnovit peněženku".
-```
-
-<!-- cache_translation_check_cs_4e0ad8bb7a809ecf41eeb5636919acf7ebbc5f56c32391c91afd322fad2877e5 -->
-```
-        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Utrácení bitcoinů, které už utratily zatím nezobrazené transakce, nebude bitcoinovou sítí umožněno.</translation>
-    
-ERR
-The translation alters the meaning of the original sentence. The source states that bitcoins affected by not-yet-displayed transactions will not be accepted for spending. The Czech translation implies that bitcoins "which have already been spent by not-yet-displayed transactions" are being spent, which doesn't exactly match the original and may be confusing.
-
-Correct translation:
-Pokus o utracení bitcoinů, které jsou ovlivněny dosud nezobrazenými transakcemi, nebude sítí akceptován.
+Proces migrace vytvoří zálohu peněženky před samotnou migrací. Tento záložní soubor ponese název &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak a bude umístěn v adresáři této peněženky. V případě nesprávně provedené migrace lze zálohu obnovit pomocí funkce "Obnovit peněženku".
 ```
 
 <!-- cache_translation_check_cs_6aa4a5720f0176e17f52eab9e1f66e059dada8b326f00679a1a47cce4e310941 -->
@@ -153,7 +112,7 @@ Pokus o utracení bitcoinů, které jsou ovlivněny dosud nezobrazenými transak
         <translation>Písmo s pevnou šířkou v panelu Přehled:</translation>
     
 ERR
-The translation incorrectly adds "s pevnou šířkou" (monospace/fixed-width) which is not implied by the source. The source simply refers to a "font" in general, not specifically a fixed-width one.
+The translation adds "s pevnou šířkou" (monospaced), which is not present in the source, and "tab" should be "kartě" or "záložce" rather than "panelu".
 
 Correct translation:
 Písmo na kartě Přehled:
@@ -165,7 +124,7 @@ Písmo na kartě Přehled:
         <translation>&amp;Minimalizovávat do ikony v panelu</translation>
     
 ERR
-The translation is understandable but not fully accurate and omits details. "Minimalizovávat do ikony v panelu" does not specify "instead of the taskbar" and is not colloquial Czech. The accepted translation should explicitly mention minimizing to the system tray and the difference with the taskbar.
+The translation omits "instead of the taskbar" and uses an awkward form ("Minimalizovávat"). It should clearly mention the taskbar and use the standard term for system tray.
 
 Correct translation:
 &Minimalizovat do oznamovací oblasti místo na hlavní panel
@@ -177,10 +136,10 @@ Correct translation:
         <translation>&amp;Budiž</translation>
     
 ERR
-The translation "&amp;Budiž" is not appropriate for "&amp;OK." "Budiž" is a somewhat archaic or poetic word in Czech, meaning "so be it" or "let it be," and is not commonly used as a button label. The proper translation for the standard OK button is "&amp;OK", which is universally understood in Czech applications.
+"Budiž" is archaic and not standard for UI buttons. The conventional Czech UI keeps "OK" as-is.
 
 Correct translation:
-&amp;OK
+&OK
 ```
 
 <!-- cache_translation_check_cs_8e25fbfcfb8d6dc5c9a3af3102fe80e015193058de333f845f2a2224ac858f4b -->
@@ -189,10 +148,10 @@ Correct translation:
         <translation>Zachovaj procesní data</translation>
     
 ERR
-"Zachovaj" is Slovak (Czech would be "Zachovej") and "procesní data" means process/procedural data, not transaction data. In this Bitcoin context it should be "Uložit transakční data" or "Uložit data transakce".
+"Zachovaj" is Slovak (Czech would be "Zachovej"/"Uložit") and "procesní data" misrenders "Transaction Data". 
 
 Correct translation:
-Uložit transakční data
+Uložit data transakce
 ```
 
 <!-- cache_translation_check_cs_f544c7771e6a2b529a6b4919b0452634638c5fe03a321f8bf342e15091d2f4f7 -->
@@ -201,7 +160,7 @@ Uložit transakční data
         <translation>Ale tenhle vstup nemá správné klíče</translation>
     
 ERR
-The translation is inaccurate; it translates "this input" instead of "this wallet." Also, the parentheses are missing, and it lacks the period at the end.
+The translation misinterprets "wallet" as "vstup" (input), uses colloquial phrasing, and omits the parentheses and final period present in the source.
 
 Correct translation:
 (Ale tato peněženka nemá správné klíče.)
@@ -214,8 +173,7 @@ Correct translation:
         <translation>Sem</translation>
     
 ERR
-The translation "Sem" is incorrect and unrelated to the meaning of "Inbound" as described ("An Inbound Connection from a Peer"). "Sem" means "here" in Czech, which does not fit the context.
-
+"Sem" means "here" and is incorrect in this context. Use the standard networking term.
 Correct translation:
 Příchozí
 ```
@@ -226,10 +184,10 @@ Příchozí
         <translation>Pro specifikaci neklasické lokace pro data použij možnost '%1'</translation>
     
 ERR
-The translation is inaccurate: "neklasické lokace pro data" does not convey "non-default location of the blocks directory" correctly. "neklasické" is not idiomatic, and "pro data" is too vague. Also, the sentence is missing the full stop at the end, differing from the source, and the formulation is not ideal in Czech.
+The Czech phrasing is awkward and inaccurate: "neklasické lokace pro data" is incorrect for "non-default location of the blocks directory", and "použij" is informal. Also missing the final period.
 
 Correct translation:
-Pro zadání jiného umístění adresáře s bloky použijte volbu '%1'.
+Chcete-li zadat nevýchozí umístění adresáře bloků, použijte volbu '%1'.
 ```
 
 <!-- cache_translation_check_cs_6546cee50c003944c22f807b84cba749e4a7c8020f440c25e83b3fe9e29f0d31 -->
@@ -238,15 +196,10 @@ Pro zadání jiného umístění adresáře s bloky použijte volbu '%1'.
         <translation>Mapovaný nezávislý - Autonomní Systém používaný pro rozšírení vzájemného výběru protějsků.</translation>
     
 ERR
-There are inaccuracies and awkward phrasing in the Czech translation:
-
-- "nezávislý" is not needed here, and the dash between "nezávislý - Autonomní Systém" is incorrect.
-- "rozšírení vzájemného výběru protějsků" translates more as "expansion of mutual selection of counterparts" and does not accurately reflect "diversifying peer selection."
-- "protějsků" is unusual; "uzlů" or "peerů" is more standard in technical/Bitcoin context.
-- "Autonomní Systém" should not be capitalized except for the first word ("autonomní systém").
+The translation contains unnecessary words ("nezávislý"), incorrect capitalization, a spelling error ("rozšírení"), and an awkward phrasing of "peer selection." 
 
 Correct translation:
-Mapovaný autonomní systém používaný ke zpestření výběru peerů.
+Mapovaný autonomní systém používaný k diverzifikaci výběru protějšků.
 ```
 
 <!-- cache_translation_check_cs_0419c0d4361a7b46aa3ed887bf32a7f2582e5d8d74684d240b951ed9501ea049 -->
@@ -256,17 +209,9 @@ Mapovaný autonomní systém používaný ke zpestření výběru peerů.
         <translation>Adresy s omezením počtu přijatých adres</translation>
     
 ERR
-The translation is problematic because it changes the meaning of the original. "Addresses Rate-Limited" means that the addresses have been subject to rate limiting (their rate is limited), not that it is an "address with a limit on the number of received addresses". The current translation also introduces ambiguity and awkwardness.
+The Czech translation is awkward and redundant; it reads "Addresses with limitation of number of received addresses," which misrepresents "rate-limited." It should convey that addresses were limited by rate limiting.
 
 Correct translation:
-Adresy omezené rychlostí
-or
-Adresy omezené kvůli omezení rychlosti
-
-A more context-accurate option:
-Adresy omezené rate-limitem
-
-Choose the most context-appropriate, with the first one generally preferred in technical UI:
 Adresy omezené rychlostí
 ```
 
@@ -276,7 +221,7 @@ Adresy omezené rychlostí
         <translation>Velikost aktuálního bloku</translation>
     
 ERR
-The translation is inaccurate. "Current block height" should be translated as "Aktuální výška bloku" in Czech. The provided translation "Velikost aktuálního bloku" means "Current block size," which is incorrect.
+"Velikost aktuálního bloku" means "size of the current block," not "block height." The correct term in Czech for "block height" is "výška bloku."
 
 Correct translation:
 Aktuální výška bloku
@@ -288,10 +233,10 @@ Aktuální výška bloku
         <translation>Uval klatbu na</translation>
     
 ERR
-The translation "Uval klatbu na" is incorrect and unnatural in Czech. "Ban for" here refers to a period or duration (e.g., "Ban for 1 hour"), not an action. The correct translation for the duration context would be "Zákaz na" or "Ban na", for example, "Zákaz na 1 hodinu" ("Ban for 1 hour").
+The translation "Uval klatbu na" means "cast a curse on" and is incorrect in this context. It should refer to banning/blocking for a duration.
 
 Correct translation:
-Zákaz na
+Zablokovat na
 ```
 
 <!-- cache_translation_check_cs_20fbaab2f44d517f3202034a9cd21e9d3b2fc9f47f26bfe2e75436a3389f98b7 -->
@@ -300,16 +245,10 @@ Zákaz na
         <translation>Volitelný popis který sa přidá k téjo nové přijímací adrese (pro jednoduchší identifikaci). Tenhle popis bude také přidán do výzvy k platbě.</translation>
     
 ERR
-There are several issues:
-1. The word "sa" is incorrect in Czech; it should be "se".
-2. "téjo" is a misspelling; the correct form is "této".
-3. "jednoduchší" is not standard; "snadnější" or a more precise wording should be used.
-4. "Tenhle" is informal and should be replaced with "Tento".
-5. "popis" ("description/label") could be improved as "štítek" ("label") for accuracy.
-6. The translation is less formal than the source and deviates in details.
+The Czech translation contains grammatical and stylistic issues (“sa”, “téjo”, colloquial “Tenhle”), mistranslates/omits “label” and “invoice”, and uses a less standard term for “payment request”.
 
 Correct translation:
-Volitelný štítek k přiřazení nové přijímací adrese (použijete jej k identifikaci faktury). Je také připojen k platební žádosti.
+Volitelný štítek, který se přiřadí k nové adrese pro příjem (slouží vám k identifikaci faktury). Je také přiložen k žádosti o platbu.
 ```
 
 <!-- cache_translation_check_cs_772af33f87523f54cba0e1aa4cf0cb02a101c8357b7fccacbd61469960cca4b1 -->
@@ -318,10 +257,10 @@ Volitelný štítek k přiřazení nové přijímací adrese (použijete jej k i
         <translation>Smaž zvolené požadavky ze seznamu</translation>
     
 ERR
-The translation uses "požadavky" (which means "requests") instead of a more neutral "položky" (which means "entries" or "items"). Also, "odstranit" is a better verb for "remove" in UI contexts than "smazat" (which is "delete"). "Zvolené" is acceptable for "selected", but "vybrané" is also commonly used.
+"entries" was mistranslated as "požadavky" (requests), and the tone "Smaž" is an informal singular imperative. Standard UI wording uses "Odstranit/Smazat" and "položky".
 
 Correct translation:
-Odstraňte vybrané položky ze seznamu
+Odstranit vybrané položky ze seznamu
 ```
 
 <!-- cache_translation_check_cs_576620dcbfacf296932119fb8f32bb5831bb93a433c947767f043f2de83d0543 -->
@@ -330,13 +269,10 @@ Odstraňte vybrané položky ze seznamu
         <translation>Schovat nastavení poplatků transakce - transaction fee</translation>
     
 ERR
-The translation is problematic. It includes an unnecessary English phrase ("- transaction fee"), which is redundant since "poplatků transakce" already means "transaction fee". The correct translation is:
+The translation contains unnecessary English text ("- transaction fee") and uses an awkward phrasing. A clearer and standard UI phrasing in Czech is:
 
-Schovat nastavení poplatků transakce
-
-Alternatively, a more natural Czech phrasing would be:
-
-Skrýt nastavení poplatků za transakci
+Correct translation:
+Skrýt nastavení transakčního poplatku
 ```
 
 <!-- cache_translation_check_cs_2c3e356353ddad5cb6d70e108348024b2d3dc5691a5502423f1eaf0d6764e947 -->
@@ -345,16 +281,10 @@ Skrýt nastavení poplatků za transakci
         <translation>Když je zde měně transakcí než místa na bloky, mineři stejně tak relay-e mohou nasadit minimální poplatky. Zaplacením pouze minimálního poplatku je v pohodě, ale mějte na paměti že toto může mít za následek nikdy neověřenou transakci pokud zde bude více bitcoinových transakcí než může síť zvládnout.</translation>
     
 ERR
-There are several linguistic issues in the Czech translation:
-- "měně transakcí" should be "méně transakcí" (typo).
-- "místa na bloky" is inaccurate; the correct phrase is "místa v blocích".
-- "mineři stejně tak relay-e" is awkward and mixes English/Czech (should be "těžaři stejně jako uzly předávající transakce" or similar).
-- "nasadit minimální poplatky" is not fully appropriate; better is "mohou vyžadovat minimální poplatek".
-- "je v pohodě" is too colloquial; "je v pořádku" is better.
-- Several awkward or ungrammatical phrases ("nikdy neověřenou transakci" vs "transakci, která nikdy nebude potvrzena").
+The Czech translation contains typos (“měně”), awkward/colloquial terms (“mineři”, “relay-e”), a plurality mismatch (“minimální poplatky” vs singular), and stylistic/punctuation issues. It also uses less accurate phrasing for blockchain terms.
 
 Correct translation:
-Když je menší objem transakcí než je místa v blocích, mohou těžaři i uzly, které transakce předávají, vyžadovat minimální poplatek. Zaplatit pouze tento minimální poplatek je v pořádku, ale mějte na paměti, že to může vést k tomu, že vaše transakce nikdy nebude potvrzena, pokud bude větší poptávka po bitcoinových transakcích, než kolik síť zvládne zpracovat.
+Když je objem transakcí menší než kapacita bloků, mohou těžaři i přeposílající uzly vyžadovat minimální poplatek. Zaplatit pouze tento minimální poplatek je v pořádku, ale mějte na paměti, že to může vést k tomu, že se transakce nikdy nepotvrdí, jakmile bude poptávka po bitcoinových transakcích vyšší, než kolik síť dokáže zpracovat.
 ```
 
 <!-- cache_translation_check_cs_e506fab03f87f886d38316e6266f2caa7b289759c6d4e625ec7f50271c8c5229 -->
@@ -363,24 +293,10 @@ Když je menší objem transakcí než je místa v blocích, mohou těžaři i u
         <translation>Všechno &amp;smaž</translation>
     
 ERR
-The translation switches the order of words compared to the English and uses "Všechno smaž", which is awkward; also, the placement of "&amp;" is incorrect. In Czech UI, it is standard to use "Smazat &amp;vše" or "&amp;Smazat vše" for clarity and menu consistency.
+The Czech phrasing "Všechno smaž" is colloquial and not a standard UI label. A more appropriate translation is "Smazat vše" (or "Vymazat vše"). Also, placing the accelerator on the first word is more typical.
 
 Correct translation:
-Smazat &amp;vše
-or
-&amp;Smazat vše
-```
-
-<!-- cache_translation_check_cs_a0cc8279c9aafbd920dc8b30d3178a232219e624e432da9211f1423a4a45b872 -->
-```
-        <source>Copy after fee</source>
-        <translation>Kopíruj čistou částku</translation>
-    
-ERR
-The translation is not a literal or accurate rendering of the source. "Copy after fee" refers to copying the amount remaining after the fee is deducted, not just "Copy net amount" (which may be implied but not stated).
-
-Correct translation:
-Zkopírovat částku po odečtení poplatku
+&Smazat vše
 ```
 
 <!-- cache_translation_check_cs_66ecdcf785eac60fb29f467cbdf323253c93db8a0185d54af6e807d2a239c352 -->
@@ -389,10 +305,10 @@ Zkopírovat částku po odečtení poplatku
         <translation>Vytvořit bez podpisu</translation>
     
 ERR
-The shortcut key indicator (&amp;) is missing in the Czech translation, which could lead to the loss of keyboard shortcut functionality. The translation should include exactly one '&' character as in the source.
+The accelerator ampersand from the source is missing; there must be exactly one '&' in the translation.
 
 Correct translation:
-Vytvořit &bez podpisu
+&Vytvořit bez podpisu
 ```
 
 <!-- cache_translation_check_cs_f5a062154ebe68e07d6877864c43d824a27779809ec9426035ed6f5d756608ca -->
@@ -401,12 +317,10 @@ Vytvořit &bez podpisu
         <translation>Zachovej procesní data</translation>
     
 ERR
-The Czech translation "Zachovej procesní data" is inaccurate. "Procesní data" does not mean "Transaction Data" (it could mislead as "process data"). The correct translation should be:
+"Zachovej procesní data" is inaccurate and stylistically inappropriate. "Zachovej" (preserve) is wrong for UI save action, and "procesní data" means process/procedural data, not transaction data.
 
-Uložit údaje o transakci
-
-So, the correct translation is:  
-Uložit údaje o transakci
+Correct translation:
+Uložit data transakce
 ```
 
 <!-- cache_translation_check_cs_a014cc9be6200a8e8275ec6b5a64869d2f475638ea9beaeeb90414d7caf74579 -->
@@ -415,10 +329,10 @@ Uložit údaje o transakci
         <translation>Zadej označení této adresy; obojí se ti pak uloží do adresáře</translation>
     
 ERR
-The translation does not accurately reflect the English source. The original says to "Enter a label for this address to add it to the list of used addresses"—it does not mention "oboji" ("both") nor does it mention an "adresář" ("directory"), which is misleading. The English intent is to assign a label to an address to be able to add it to the list of used addresses.
+The translation is inaccurate and informal. It mentions saving both items to an address book ("adresář"), which is not in the source, and uses informal tone. The source means adding the address (with its label) to the list of used addresses.
 
 Correct translation:
-Zadej popisek pro tuto adresu, aby byla přidána do seznamu použitých adres
+Zadejte štítek pro tuto adresu, aby byla přidána do seznamu použitých adres.
 ```
 
 <!-- cache_translation_check_cs_02a28bd8f028e7427ba6d916c1c5cefaaf3e50830fee0e6eb60abe3ba5e52ef1 -->
@@ -427,7 +341,7 @@ Zadej popisek pro tuto adresu, aby byla přidána do seznamu použitých adres
         <translation>Zkopírovat právě vybraný podpis do schránky</translation>
     
 ERR
-"Current" was mistranslated as "právě vybraný" ("selected"). It should be "aktuální".
+"právě vybraný" means "currently selected," which differs from "current." A closer translation is "aktuální podpis."
 
 Correct translation:
 Zkopírovat aktuální podpis do schránky
@@ -439,10 +353,10 @@ Zkopírovat aktuální podpis do schránky
         <translation>Vymaž všechna pole formuláře pro podepsání zrávy</translation>
     
 ERR
-There is a typographical error in the translation: "zrávy" should be "zprávy" ("message"). The rest of the translation is correct. Also, "Vymaž" (Erase) can be replaced with "Obnovit" (Reset) for accuracy, but "Vymaž" might still be acceptable depending on the UI context.
+Contains a typo ("zrávy" → "zprávy") and adds "formuláře" unnecessarily.
 
 Correct translation:
-Resetuj všechna pole formuláře pro podepsání zprávy
+Resetovat všechna pole pro podepsání zprávy
 ```
 
 <!-- cache_translation_check_cs_e506fab03f87f886d38316e6266f2caa7b289759c6d4e625ec7f50271c8c5229 -->
@@ -451,12 +365,10 @@ Resetuj všechna pole formuláře pro podepsání zprávy
         <translation>Všechno &amp;smaž</translation>
     
 ERR
-The translation switches the order of words compared to the English and uses "Všechno smaž", which is awkward; also, the placement of "&amp;" is incorrect. In Czech UI, it is standard to use "Smazat &amp;vše" or "&amp;Smazat vše" for clarity and menu consistency.
+The Czech phrasing "Všechno smaž" is colloquial and not a standard UI label. A more appropriate translation is "Smazat vše" (or "Vymazat vše"). Also, placing the accelerator on the first word is more typical.
 
 Correct translation:
-Smazat &amp;vše
-or
-&amp;Smazat vše
+&Smazat vše
 ```
 
 <!-- cache_translation_check_cs_708369179b35c435b16d7d61f08a9e6f7fe891ed7f9f33c24f73b56f28d79390 -->
@@ -465,10 +377,9 @@ or
         <translation>Vymaž všechna pole formuláře pro ověření zrávy</translation>
     
 ERR
-There is a typographical error in the Czech word "zrávy"; it should be "zprávy" (message). Also, "vymaž" is more informal/direct, while "obnovit" or "resetovat" is closer to "reset". The rest of the translation is otherwise acceptable, but correcting the typo is essential.
-
+Typo: "zrávy" should be "zprávy". Also "Reset" here is better rendered as clearing fields.
 Correct translation:
-Resetovat všechna pole formuláře pro ověření zprávy
+Vymazat všechna pole pro ověření zprávy
 ```
 
 <!-- cache_translation_check_cs_62d99320592ec813bced04974851598343791c94f5f6307dbf6f44250257a51d -->
@@ -477,10 +388,10 @@ Resetovat všechna pole formuláře pro ověření zprávy
         <translation>Zkontroluj ji prosím a zkus to pak znovu.</translation>
     
 ERR
-The translation omits the direct translation of "address" ("adresa" in Czech), making the sentence less clear in context. The source says "Please check the address and try again," but the translation simply says "Check it please and try again," without specifying what to check.
+The translation is too informal for UI text and omits “adresu,” relying on a pronoun. A clearer, formal translation is preferred.
 
 Correct translation:
-Zkontrolujte prosím adresu a zkuste to znovu.
+Zkontrolujte adresu a zkuste to znovu.
 ```
 
 <!-- cache_translation_check_cs_5972f9af235394f8c8f213554dea0733f551037b958c6a9ec2568517d4f7d1c6 -->
@@ -489,10 +400,10 @@ Zkontrolujte prosím adresu a zkuste to znovu.
         <translation>Nepodařilo se navýšeit poplatek</translation>
     
 ERR
-There is a typographical error in the Czech translation: "navýšeit" should be "navýšit".
+The Czech word "navýšeit" is a typo; it should be "navýšit". It’s also clearer to specify "transakční poplatek".
 
 Correct translation:
-Nepodařilo se navýšit poplatek
+Nepodařilo se navýšit transakční poplatek
 ```
 
 <!-- cache_translation_check_cs_001b7e363c98f66d33c0dd956aa5b9e4315796f44a48099976c9c410d6beddbc -->
@@ -501,10 +412,10 @@ Nepodařilo se navýšit poplatek
         <translation>Nemohl jsem uložit transakci do peněženky</translation>
     
 ERR
-The translation "Nemohl jsem uložit transakci do peněženky" literally means "I could not save the transaction into the wallet," which is more specific and differs from the source "Could not commit transaction". The translation also uses the first person "jsem", which is not used in typical UI/system messages (should be impersonal or passive).
+The translation adds content not in the source (“do peněženky”) and uses first person (“Nemohl jsem”), which is inappropriate for UI strings. It also misrenders “commit,” which is better as “zapsat” here.
 
 Correct translation:
-Nelze potvrdit transakci
+Nepodařilo se zapsat transakci
 ```
 
 <!-- cache_translation_check_cs_990b34d53f2ae8233b59d9868a4f04efb9324dd3b69cf16a0cf62d0806398490 -->
@@ -513,10 +424,10 @@ Nelze potvrdit transakci
         <translation> %s Žádost o poslech na portu 2 %u . Tento port je považován za "špatný", a proto je nepravděpodobné, že by se k němu připojil nějaký peer. Viz doc/p2p-bad-ports.md pro podrobnosti a úplný seznam.</translation>
     
 ERR
-There is an erroneous "2" inserted before "%u" in the translation ("na portu 2 %u"). Also, there are unnecessary spaces at the start of the translation and around the format specifiers. Otherwise, the translation is mostly accurate.
+The translation contains errors: an extra "2" inserted before %u, leading/trailing stray spaces, an extra space before the period, and awkward phrasing. It also must preserve the %s and %u format specifiers exactly.
 
 Correct translation:
-%s žádost o poslech na portu %u. Tento port je považován za "špatný", a proto je nepravděpodobné, že by se k němu připojil nějaký peer. Viz doc/p2p-bad-ports.md pro podrobnosti a úplný seznam.
+%s požaduje naslouchání na portu %u. Tento port je považován za „špatný“, a proto je nepravděpodobné, že se k němu připojí nějaký peer. Viz doc/p2p-bad-ports.md pro podrobnosti a úplný seznam.
 ```
 
 <!-- cache_translation_check_cs_e61df5912efea44304ab9a408c64128d9127ff6f426b178a693ea9c0713b6587 -->
@@ -525,10 +436,10 @@ Correct translation:
         <translation>Jedná se o maximální poplatek, který zaplatíte (navíc k běžnému poplatku), aby se upřednostnila útrata z dosud nepoužitých adres oproti těm už jednou použitých.</translation>
     
 ERR
-The translation introduces an unintended meaning. The English source says "to prioritize partial spend avoidance over regular coin selection", which refers to techniques to avoid making partial spends (to avoid creating small leftover coins, UTXOs). The translation refers to "útrata z dosud nepoužitých adres oproti těm už jednou použitých" (spending from never-before-used addresses rather than those already used), which is inaccurate.
+The translation changes the meaning: it talks about preferring spending from unused addresses, which is unrelated. It should refer to avoiding partial spends versus regular coin selection.
 
 Correct translation:
-Jedná se o maximální poplatek, který zaplatíte (navíc k běžnému poplatku), abyste upřednostnili vyhýbání se částečnému utrácení před běžným výběrem mincí.
+Toto je maximální transakční poplatek, který zaplatíte (navíc k běžnému poplatku), abyste upřednostnili vyhýbání se částečným útratám před běžným výběrem mincí.
 ```
 
 <!-- cache_translation_check_cs_f0bf813d6cc85974dd5ae101fa7c667c68911de86a1f9066911a854415669f6c -->
@@ -537,10 +448,10 @@ Jedná se o maximální poplatek, který zaplatíte (navíc k běžnému poplatk
         <translation>Možnosti '-datacarrier' a '-datacarriersize' jsou nastaveny, ale jsou označené za zastaralé. V budoucí verzi budou odstraněny.</translation>
     
 ERR
-The conjunction "a" (and) implies both options are set, whereas the source says "or". Also, "označené za zastaralé" is less idiomatic than "označené/označeny jako zastaralé."
+The translation changes "or" to "and", implying both options are set, which is inaccurate. Also, "označené za" is less idiomatic than "označena jako" here.
 
 Correct translation:
-Možnosti '-datacarrier' nebo '-datacarriersize' jsou nastaveny, ale jsou označeny jako zastaralé. V některé z budoucích verzí budou odstraněny.
+Jedna z možností '-datacarrier' nebo '-datacarriersize' je nastavena, ale je označena jako zastaralá. V některé budoucí verzi budou odstraněny.
 ```
 
 <!-- cache_translation_check_cs_69110ef6a3e1dbe3806c05475b5d246147219d484fd56091e8755fedacf6546e -->
@@ -549,22 +460,10 @@ Možnosti '-datacarrier' nebo '-datacarriersize' jsou nastaveny, ale jsou označ
         <translation>Odchozí připojení omezená na CJDNS (-onlynet=cjdns), ale -cjdnsreachable nejsou k dispozici</translation>
     
 ERR
-There is a grammatical error and slight inaccuracy in the translation. "-cjdnsreachable" is singular in the source, but in the translation it's treated as plural ("nejsou k dispozici"). Also, the phrase "nejsou k dispozici" translates as "are not available", which does not fully capture "is not provided".
+The clause about -cjdnsreachable uses an incorrect plural and phrasing; it should be singular and indicate the option wasn't provided.
 
 Correct translation:
-Odchozí připojení jsou omezena na CJDNS (-onlynet=cjdns), ale -cjdnsreachable není zadán
-```
-
-<!-- cache_translation_check_cs_c661067b5c3ebddc81555d4cd87924396a7cf41894ceaf50b90e28d49f130deb -->
-```
-        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of a pruned node)</source>
-        <translation>Prořezávání: poslední synchronizace peněženky proběhla před už prořezanými daty. Je třeba provést -reindex (tedy v případě režimu prořezávání stáhnout celý blockchain znovu)</translation>
-    
-ERR
-The phrase "proběhla před už prořezanými daty" is misleading; it suggests the sync happened before the pruned data, rather than requiring data that have already been pruned. It should indicate that the last sync falls into/extends into already pruned data.
-
-Correct translation:
-Prořezávání: poslední synchronizace peněženky spadá do již prořezaných dat. Je třeba provést -reindex (v případě prořezávaného uzlu se znovu stáhne celý blockchain).
+Odchozí připojení jsou omezena na CJDNS (-onlynet=cjdns), ale -cjdnsreachable není zadán.
 ```
 
 <!-- cache_translation_check_cs_c48b4230850b83d8bad33d61f189ed6a7f3ac23c932466284c2eddd4357d132a -->
@@ -573,10 +472,10 @@ Prořezávání: poslední synchronizace peněženky spadá do již prořezanýc
         <translation>Možnost -paytxfee je zastaralá a bude v příští verzi v31.0 plně odstraněna</translation>
     
 ERR
-The translation adds "příští" (next), which is not in the source, and "v příští verzi v31.0" is awkward with a double 'v'. It also misses the final period.
+The translation adds "příští" (next), which changes the meaning, and it is missing the final period. Also, "ve verzi" is preferable before the version tag.
 
 Correct translation:
-Volba -paytxfee je zastaralá a bude ve verzi v31.0 plně odstraněna.
+Možnost -paytxfee je zastaralá a bude ve verzi v31.0 plně odstraněna.
 ```
 
 <!-- cache_translation_check_cs_21a62c07301c626678a6cc7b7c2939794b3053480363c30207cf4758e1a042ef -->
@@ -585,7 +484,7 @@ Volba -paytxfee je zastaralá a bude ve verzi v31.0 plně odstraněna.
         <translation>Chyba: Nepodařilo se zapsat data peněženky %sna disk</translation>
     
 ERR
-There is a minor formatting error in the translation: there should be a space between '%s' and 'na disk'. Also, the word order more naturally reflects the original meaning if we keep "pro peněženku %s".
+Chybí mezera mezi %s a „na“ a slovosled je neobratný.
 
 Correct translation:
 Chyba: Nepodařilo se zapsat data na disk pro peněženku %s
@@ -597,7 +496,7 @@ Chyba: Nepodařilo se zapsat data na disk pro peněženku %s
         <translation>Neplatné oprávnenie P2P: '%s'</translation>
     
 ERR
-The translation uses the Slovak word "oprávnenie" instead of the Czech equivalent "oprávnění". "oprávnenie" is not correct in Czech.
+The word "opr\u00e1vnenie" is Slovak; in Czech it should be "oprávnění". The format specifier and quotes are correct.
 
 Correct translation:
 Neplatné oprávnění P2P: '%s'
@@ -609,7 +508,7 @@ Neplatné oprávnění P2P: '%s'
         <translation>Neplatná částka %s=&lt;amount&gt;:'%s' (musí být alespoň%s)</translation>
     
 ERR
-There is a missing space before the last %s in the translation ("alespoň%s" should be "alespoň %s").
+Missing preposition "pro" for "for", missing spaces around colon and before the last %s.
 
 Correct translation:
 Neplatná částka pro %s=&lt;amount&gt;: '%s' (musí být alespoň %s)
@@ -621,10 +520,10 @@ Neplatná částka pro %s=&lt;amount&gt;: '%s' (musí být alespoň %s)
         <translation>Chyba při načítání %s: Zastaralý typ peněženky. Převeďte ji prosím na deskriptorovou pomocí převodného nástroje (migratewallet RPC)</translation>
     
 ERR
-Missing noun in "na deskriptorovou" (should be "na deskriptorovou peněženku") and missing final period. "Převodného" is unnatural; "migračního" fits better.
+The sentence is incomplete ("na deskriptorovou" lacks the noun), stylistically awkward ("převodného nástroje"), and missing the final period. Also better to make the second sentence a full clause.
 
 Correct translation:
-Chyba při načítání %s: Peněženka je typu legacy. Převeďte ji prosím na deskriptorovou peněženku pomocí migračního nástroje (migratewallet RPC).
+Chyba při načítání %s: Peněženka je zastaralého typu. Převeďte ji prosím na deskriptorovou peněženku pomocí migračního nástroje (migratewallet RPC).
 ```
 
 <!-- cache_translation_check_cs_f38ba91afdc56338ce369458efb74cab5b082824796c660518805e8e55cb478f -->
@@ -633,7 +532,7 @@ Chyba při načítání %s: Peněženka je typu legacy. Převeďte ji prosím na
         <translation>Transakce vyžaduje jeden cíl nenulové hodnoty, nenulový poplatek nebo předvybraný vstup</translation>
     
 ERR
-"Feerate" was mistranslated as "poplatek" (fee) instead of "sazba poplatku" (fee rate). Also "of non-zero value" is more natural as "s nenulovou hodnotou".
+"Feerate" was mistranslated as "poplatek" (fee) instead of "sazba poplatku" (fee rate). Also, "jeden cíl s nenulovou hodnotou" reads more naturally.
 
 Correct translation:
 Transakce vyžaduje jeden cíl s nenulovou hodnotou, nenulovou sazbu poplatku nebo předem vybraný vstup
@@ -645,10 +544,10 @@ Transakce vyžaduje jeden cíl s nenulovou hodnotou, nenulovou sazbu poplatku ne
         <translation>Chyba: Nelze přidat pouze-sledovací tx %s do peněženky pro čtení</translation>
     
 ERR
-The translation "pouze-sledovací tx" is understandable, but "peněženka pro čtení" is incorrect. The term "watchonly wallet" should be translated as "peněženka pouze pro sledování" or "sledovací peněženka". Additionally, it is better to translate "watchonly tx" as "transakci pouze pro sledování".
+The translation uses "peněženky pro čtení" (read-only) instead of the standard "jen ke sledování" (watch-only) and the phrase "pouze-sledovací tx" is unnatural. It should use "transakci" for "tx" and consistently render "watch-only" as "jen ke sledování".
 
 Correct translation:
-Chyba: Nelze přidat transakci pouze pro sledování %s do peněženky pouze pro sledování
+Chyba: Nelze přidat transakci %s jen ke sledování do peněženky jen ke sledování
 ```
 
 <!-- cache_translation_check_cs_2a3b61b390d83a02f36b1ec46adfd835fa6d4b83d49e92c70f23b7ff71b0e760 -->
@@ -657,10 +556,10 @@ Chyba: Nelze přidat transakci pouze pro sledování %s do peněženky pouze pro
         <translation>Nedostatek volných file deskriptorů. %dvolných, %dvyžadovaných</translation>
     
 ERR
-There are issues with missing spaces before "volných" and "vyžadovaných", and "file deskriptorů" should be localized as "souborových deskriptorů".
+Missing spaces around format specifiers, missing comma and final period, and awkward mix of English/Czech terminology ("file deskriptorů"). Also "vyžadovaných" is inflected as an adjective without a noun.
 
 Correct translation:
-Nedostatek volných souborových deskriptorů. %d volných, %d vyžadovaných.
+Nedostatek souborových deskriptorů. %d k dispozici, %d požadováno.
 ```
 
 <!-- cache_translation_check_cs_3588514a0ca418b049d0a08b18f086d4cb13e33cf7cde3f3342f949e132f55bf -->
@@ -669,11 +568,11 @@ Nedostatek volných souborových deskriptorů. %d volných, %d vyžadovaných.
         <translation>Nerozeznaná síť v -proxy='%s': '%s'</translation>
     
 ERR
-Word choice is unnatural; "Nerozpoznaná síť" is the standard way to say "Unrecognized network" in Czech.
+The adjective choice is nonstandard; "Nerozpoznaná" is the correct and common form in Czech.
 
 Correct translation:
 Nerozpoznaná síť v -proxy='%s': '%s'
 ```
 </details>
 
-Number of issues: 51.
+Number of issues: 46.
