@@ -21,64 +21,27 @@ Correct translation:
 &Νέο
 ```
 
-<!-- cache_translation_check_el_a03e95f77b3b1d2ce847c6a2f120e4d2fab0bfc3fa127cf8429275cb91401243 -->
+<!-- cache_translation_check_el_25c307114635df9aa2d36b899808c2bb75cb7af0340341a8bc7f297ca1d21d5f -->
 ```
         <source>Choose the address to send coins to</source>
-        <translation>Επιλέξτε διεύθυνση αποστολής των bitcoin σας</translation>
+        <translation>Επιλέξτε τη διεύθυνση στην οποία θα στείλετε bitcoin</translation>
     
 ERR
-The translation adds "σας" ("your"), which is not present in the source, and uses "bitcoin" instead of the generic "coins". It also reads as "sending address" rather than "address to send to."
+The translation replaces "coins" with "bitcoin," which is inaccurate. It should use the generic "νομίσματα" to match the source.
 
 Correct translation:
-Επιλέξτε τη διεύθυνση στην οποία θα σταλούν τα νομίσματα
+Επιλέξτε τη διεύθυνση στην οποία θα στείλετε νομίσματα
 ```
 
-<!-- cache_translation_check_el_3e0d93ac3f3d596ea4e68e1ec0098e1c65950ee30c136203776494624b920d14 -->
+<!-- cache_translation_check_el_d3e843eeeeaae7096a5f7f0870f1880d63676aaf3c94a20ffb26c3e126eb0791 -->
 ```
         <source>Choose the address to receive coins with</source>
-        <translation>Επιλέξτε διεύθυνση παραλαβής bitcoin</translation>
+        <translation>Επιλέξτε τη διεύθυνση παραλαβής bitcoin</translation>
     
 ERR
-The Greek phrasing is somewhat unnatural and uses lowercase "bitcoin". A clearer and more idiomatic translation is:
-
+"coins" was mistranslated as "bitcoin". It should remain generic.
 Correct translation:
-Επιλέξτε τη διεύθυνση για την παραλαβή Bitcoin
-```
-
-<!-- cache_translation_check_el_b65e9a4acd8740d177db8d08888425976c7f98a10cb525529426ed0fdc3f0c0b -->
-```
-        <source>Enter the old passphrase and new passphrase for the wallet.</source>
-        <translation>Εισαγάγετε την παλιά και νέα φράση πρόσβασης για το πορτοφόλι.</translation>
-    
-ERR
-Greek article usage is slightly off; the article should be repeated before both adjectives for correctness and clarity.
-
-Correct translation:
-Εισαγάγετε την παλιά και τη νέα φράση πρόσβασης για το πορτοφόλι.
-```
-
-<!-- cache_translation_check_el_e8ea5fd9dc8b4a1d0d859b12f88d501d0afde2297016d55a428080626876e199 -->
-```
-        <source>Wallet to be encrypted</source>
-        <translation>To πορτοφόλι που θα κρυπτογραφηθεί</translation>
-    
-ERR
-The first word uses Latin characters "To" instead of the Greek article "Το". It should be fully in Greek.
-
-Correct translation:
-Το πορτοφόλι που θα κρυπτογραφηθεί
-```
-
-<!-- cache_translation_check_el_cf2c192e2ccab908bb160eacf6afb6d8a8fb40cbcbabbeb505a96cc9680109ff -->
-```
-        <source>The old passphrase entered for the wallet decryption is incorrect. It contains a null character (ie - a zero byte). If the passphrase was set with a version of this software prior to 25.0, please try again with only the characters up to — but not including — the first null character.</source>
-        <translation>Η παλιά φράση πρόσβασης που εισήχθη για την αποκρυπτογράφηση του πορτοφολιού είναι εσφαλμένη. Περιέχει έναν χαρακτήρα null (δηλαδή, ένα μηδενικό byte). Εάν ο κωδικός ορίστηκε πριν από την έκδοση 25.0 του λογισμικού, δοκιμάστε ξανά εισάγοντας μόνο τους χαρακτήρες έως τον πρώτο χαρακτήρα null — αλλά όχι αυτόν.</translation>
-    
-ERR
-Inconsistent terminology: "passphrase" is translated as "φράση πρόσβασης" first, but later as "κωδικός". Use "φράση πρόσβασης" consistently.
-
-Correct translation:
-Η παλιά φράση πρόσβασης που εισήχθη για την αποκρυπτογράφηση του πορτοφολιού είναι εσφαλμένη. Περιέχει έναν χαρακτήρα null (δηλαδή, ένα μηδενικό byte). Εάν η φράση πρόσβασης ορίστηκε πριν από την έκδοση 25.0 του λογισμικού, δοκιμάστε ξανά εισάγοντας μόνο τους χαρακτήρες έως τον πρώτο χαρακτήρα null — αλλά όχι αυτόν.
+Επιλέξτε τη διεύθυνση για λήψη νομισμάτων
 ```
 
 <!-- cache_translation_check_el_810427651c3b8d137c7e673b47220fd25fa7dee0d9defb9a2ab5fd4122f5262b -->
@@ -92,52 +55,17 @@ Correct translation:
 Ανεξέλεγκτη εξαίρεση
 ```
 
-<!-- cache_translation_check_el_d54cb082dae52c71cbba7f9e2de4456dabf1d3b13b6879441b6cee6242255a99 -->
-```
-        <source>A fatal error occurred. %1 can no longer continue safely and will quit.</source>
-        <translation>Συνέβη ένα μοιραίο σφάλμα. %1 δε μπορεί να συνεχιστεί με ασφάλεια και θα σταματήσει.</translation>
-    
-ERR
-The translation uses the passive voice ("να συνεχιστεί") which changes the meaning; the source is active ("can no longer continue"). Also, "δε" should be "δεν" and "θα σταματήσει" is less idiomatic for an application than "θα τερματιστεί/θα κλείσει."
-
-Correct translation:
-Συνέβη ένα μοιραίο σφάλμα. %1 δεν μπορεί πλέον να συνεχίσει με ασφάλεια και θα τερματιστεί.
-```
-
-<!-- cache_translation_check_el_13a87ba212ea43270c30c3abf3ee76a984873ac438fd37798ddd63c273b11f9f -->
-```
-        <source>An internal error occurred. %1 will attempt to continue safely. This is an unexpected bug which can be reported as described below.</source>
-        <translation>Προέκυψε ένα εσωτερικό σφάλμα. Το %1 θα επιχειρήσει να συνεχίσει με ασφάλεια. Αυτό είναι ένα απροσδόκητο σφάλμα μπορείτε να το αναφέρετε όπως περιγράφεται παρακάτω.</translation>
-    
-ERR
-The second sentence is a run-on in Greek; it needs a comma or a relative clause for correct grammar.
-
-Correct translation:
-Προέκυψε ένα εσωτερικό σφάλμα. Το %1 θα επιχειρήσει να συνεχίσει με ασφάλεια. Πρόκειται για ένα απροσδόκητο σφάλμα, το οποίο μπορείτε να αναφέρετε όπως περιγράφεται παρακάτω.
-```
-
-<!-- cache_translation_check_el_1c58a60249e1fa2c1ca3e0123833d2b5ab49d7e63e0378955ccdf998da14b950 -->
-```
-        <source>Custom…</source>
-        <translation>Προσαρμογή...</translation>
-    
-ERR
-The ellipsis should use the single-character ellipsis (…) to match the source, not three periods.
-
-Correct translation:
-Προσαρμογή…
-```
-
-<!-- cache_translation_check_el_d63d008eebee1c0a3cb1dcc6a04436de315fef4093b36cb1de5923b364d84763 -->
+<!-- cache_translation_check_el_efe1aab1ed7d9d4c6890476028a9d2446ab2cfd83034d55041e3857fa7ba0e3c -->
 ```
         <source>Block Relay</source>
         <extracomment>Peer connection type that relays network information about blocks and not transactions or addresses.</extracomment>
-        <translation>Αναμεταδότης block</translation>
+        <translation>Αναμεταδότης Block</translation>
     
 ERR
-The translation mixes Greek with the English word "block". Use the Greek transliteration for consistency.
+The translation mixes Greek with the English word "Block". Use the Greek term for "block" to ensure consistency.
+
 Correct translation:
-Αναμεταδότης μπλοκ
+Αναμετάδοση μπλοκ
 ```
 
 <!-- cache_translation_check_el_802fcbc5bc7b727c6bc38dbfe5ac0e4629bad3fa1fd1cd2989d4649510127ffc -->
@@ -152,79 +80,28 @@ Correct translation:
 %1 s
 ```
 
-<!-- cache_translation_check_el_97d73903b3ab76d799a3d69cbc69e1cc229f1d7dca172ec51b2cc0b9c0360d3e -->
+<!-- cache_translation_check_el_1c45652b86518732709e3855c80e1337ac45ab01fd652398e0b8a929a0962f1d -->
 ```
         <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
-        <translation>Ο Proxy είναι&lt;b&gt;ενεργοποιημένος&lt;/b&gt;:%1</translation>
+        <translation>Ο Proxy είναι &lt;b&gt;ενεργοποιημένος&lt;/b&gt;: %1</translation>
     
 ERR
-Missing spaces around the bold tags and before the placeholder, causing formatting issues. Also, using the English "Proxy" with a capital letter is suboptimal in Greek.
+In Greek UI, "proxy" is typically neuter; using the masculine article is awkward. Use neuter agreement.
 
 Correct translation:
-Ο διακομιστής μεσολάβησης είναι <b>ενεργοποιημένος</b>: %1
+Το proxy είναι &lt;b&gt;ενεργοποιημένο&lt;/b&gt;: %1
 ```
 
-<!-- cache_translation_check_el_51609041495f9dcdf93fb63effe328380391f523213886af89317ce208fcbd04 -->
-```
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Στείλτε κερμάτων σε μια διεύθυνση bitcoin</translation>
-    
-ERR
-The Greek uses the wrong case ("κερμάτων" genitive) instead of accusative and does not capitalize "Bitcoin" as in the source.
-
-Correct translation:
-Στείλτε νομίσματα σε μια διεύθυνση Bitcoin
-```
-
-<!-- cache_translation_check_el_95a56512dc2773cbe82264c7488c22dba7d880b66c646d3bb03a43afe57c0cf8 -->
-```
-        <source>&amp;Change Passphrase…</source>
-        <translation>Αλλαγή φράσης &amp;πρόσβασης...</translation>
-    
-ERR
-The translation uses three dots "..." instead of the single ellipsis character "…", which should match the source.
-
-Correct translation:
-Αλλαγή φράσης &πρόσβασης…
-```
-
-<!-- cache_translation_check_el_e4f08886ff27eccf3fb19212dc48e11f7434edaddedb6b4dc22b12a186cf5d8b -->
-```
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Υπογράψτε μηνύματα με τις Bitcoin διευθύνσεις σας για απόδειξη κατοχής</translation>
-    
-ERR
-The translation is understandable but omits the explicit reference to "them" (the addresses) and is slightly unnatural in word order. It should explicitly state proving that the addresses belong to you.
-
-Correct translation:
-Υπογράψτε μηνύματα με τις διευθύνσεις Bitcoin σας για να αποδείξετε ότι σας ανήκουν.
-```
-
-<!-- cache_translation_check_el_35ce73707da9c44503421694cb7f7440f4643d68e62f3996b5d95046230c9402 -->
-```
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Επαλήθευση αν τα μηνύματα υπογράφηκαν από τις ορισμένες διευθύνσεις Bitcoin</translation>
-    
-ERR
-The Greek phrasing is awkward and slightly inaccurate: "Επαλήθευση αν" is unnatural, "από τις" should be "με τις", and "ορισμένες" is ambiguous; "καθορισμένες" better matches "specified". Also, the imperative form fits the context.
-
-Correct translation:
-Επαληθεύστε μηνύματα για να διασφαλίσετε ότι υπογράφηκαν με τις καθορισμένες διευθύνσεις Bitcoin
-```
-
-<!-- cache_translation_check_el_c52819b30eca44807625b375e4eec2924f816c083ca7f182e5fd3d237239416c -->
+<!-- cache_translation_check_el_9527764aa2302e7670d720e66e61ff6f1fce927ee1b1fd15a5f4c632804e3320 -->
 ```
         <source>Indexing blocks on disk…</source>
-        <translation>Καταλογισμός block στον δίσκο...</translation>
+        <translation>Δημιουργία ευρετηρίου block στον δίσκο…</translation>
     
 ERR
-Issues:
-- "Καταλογισμός" is not the usual term for "indexing"; "Ευρετηριοποίηση" is more accurate.
-- "blocks" is plural; the translation uses singular "block" in English. In Greek Bitcoin context, "μπλοκ" is used and is indeclinable.
-- The source uses a single ellipsis character (…) while the translation uses three dots (...).
+The translation uses the singular "block" in English, while the source has the plural "blocks". Use the correct plural in Greek.
 
 Correct translation:
-Ευρετηριοποίηση μπλοκ στον δίσκο…
+Δημιουργία ευρετηρίου μπλοκ στον δίσκο…
 ```
 
 <!-- cache_translation_check_el_4338626575a14276d5fbc99b1b2b356fc851f55e3fce7be324e141d8e789ceb3 -->
@@ -251,40 +128,14 @@ Correct translation:
 Αίτηση πληρωμών (δημιουργεί κωδικούς QR και διευθύνσεις bitcoin: URI)
 ```
 
-<!-- cache_translation_check_el_45b1d8bdf00c1e1cc2ec53b538f4c7e377f9d96fa211b7c02c0a8cbe748bd45a -->
-```
-        <source>Show the list of used receiving addresses and labels</source>
-        <translation>Προβολή της λίστας των χρησιμοποιημένων διευθύνσεων και ετικετών λήψης</translation>
-    
-ERR
-In Greek, "ετικετών λήψης" makes "receiving" modify "labels" instead of "addresses". The source means "receiving addresses" (and labels) that have been used.
-
-Correct translation:
-Προβολή της λίστας των χρησιμοποιημένων διευθύνσεων λήψης και ετικετών
-```
-
-<!-- cache_translation_check_el_ee4f0830cb4eddbf7c4c5b79b911272103e5e1fa55e06cce5330eddebaa7e801 -->
+<!-- cache_translation_check_el_4f7e1d9a4525bcf6c36547e1295359fff529154e6cd355f3502155bcd58290bb -->
 ```
         <source>Open node debugging and diagnostic console</source>
-        <translation>Ανοίξτε τον εντοπισμού σφαλμάτων κόμβου και τη διαγνωστική κονσόλα</translation>
+        <translation>Ανοίξτε την κονσόλα αποσφαλμάτωσης και διαγνωστικών του κόμβου</translation>
     
 ERR
-The Greek grammar is incorrect and the phrase structure is awkward; it also separates "console" incorrectly. It should refer to a single console for debugging and diagnostics of the node.
-
-Correct translation:
-Ανοίξτε την κονσόλα αποσφαλμάτωσης και διαγνωστικών του κόμβου
-```
-
-<!-- cache_translation_check_el_27e7bac06cb54d4306aa0182f8e6f4077628de4799ae837a974635f992a96d72 -->
-```
-        <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Εμφάνισε το %1 βοηθητικό μήνυμα για να λάβετε λίστα με τις διαθέσιμες επιλογές γραμμής εντολών Bitcoin</translation>
-    
-ERR
-Inconsistent person ("Εμφάνισε" singular vs "λάβετε" plural), missing genitive "του" before Bitcoin, "διαθέσιμες" translates as "available" rather than "possible," and a missing article before "λίστα".
-
-Correct translation:
-Εμφανίστε το μήνυμα βοήθειας %1 για να λάβετε μια λίστα με τις δυνατές επιλογές της γραμμής εντολών του Bitcoin
+Grammatical issue: "διαγνωστικών" does not agree well with "κονσόλα" and sounds awkward. A more natural and correct phrasing is:
+Ανοίξτε την κονσόλα αποσφαλμάτωσης και διάγνωσης του κόμβου
 ```
 
 <!-- cache_translation_check_el_6a3f65bf1e4bf9076c252b1487b654e42941e4f6ad3b1796dfe0bba49f14cc3c -->
@@ -309,45 +160,6 @@ The translation adds the extra English word "outputs," which is not present in t
 
 Correct translation:
 &Κλείδωσε μη ξοδευμένα
-```
-
-<!-- cache_translation_check_el_071e27f0d66c9a098f83626dc47dba7b65083184e106e4cc398080f8f39d6b9f -->
-```
-        <source>&amp;Unlock unspent</source>
-        <translation>&amp;Ξεκλείδωσε μη ξοδευμένα outputs</translation>
-    
-ERR
-The translation mixes Greek with the English word "outputs" and has agreement issues. Use a proper Greek term for outputs and correct the gender/number.
-
-Correct translation:
-&Ξεκλείδωσε μη δαπανημένες εξόδους
-```
-
-<!-- cache_translation_check_el_b80c6f4f2289959cbc32197bb88421e6029b629ed3317e5499f0f08af2c77d10 -->
-```
-        <source>Can vary +/- %1 satoshi(s) per input.</source>
-        <translation>Μπορεί να ποικίλει +/-%1 satoshi(s) ανά input.</translation>
-    
-ERR
-- Missing space between +/- and %1.
-- Grammatical error: "ποικίλει" should be "ποικίλλει".
-- Untranslated term "input"; use "είσοδο".
-- Remove "(s)".
-
-Correct translation:
-Μπορεί να ποικίλλει κατά +/- %1 σατόσι ανά είσοδο.
-```
-
-<!-- cache_translation_check_el_a409a67a5f3703284a28eb5b6c407df306a40dcf057d33e3f1240e01cd7b128e -->
-```
-        <source>Are you sure you wish to migrate the wallet &lt;i&gt;%1&lt;/i&gt;?</source>
-        <translation>Είστε σίγουροι ότι θέλετε να μετεγκαταστήσετε το πορτοφόλι; &lt;i&gt;%1&lt;/i&gt;;</translation>
-    
-ERR
-The placeholder %1 is separated from the noun phrase by punctuation and placed outside the sentence, and there is an extra question mark. It should remain within the sentence and italicized, with a single Greek question mark at the end.
-
-Correct translation:
-Είστε σίγουροι ότι θέλετε να μετεγκαταστήσετε το πορτοφόλι <i>%1</i>;
 ```
 
 <!-- cache_translation_check_el_dfd16efc719618dabad541777c74dbe436956c052e5a922119d825a9b601800e -->
@@ -411,28 +223,6 @@ Correct translation:
 Μεταγλωττίστηκε χωρίς υποστήριξη εξωτερικής υπογραφής (απαιτείται για εξωτερική υπογραφή)
 ```
 
-<!-- cache_translation_check_el_5cfc8cbcd4285be56c602878d68f19b325d9b14aaa5f1cc5d69548899ef78545 -->
-```
-        <source>Edit receiving address</source>
-        <translation>Διόρθωση διεύθυνσης λήψης</translation>
-    
-ERR
-"Διόρθωση" means "correction" rather than "edit" in a UI context. A more accurate translation is:
-Επεξεργασία διεύθυνσης λήψης
-```
-
-<!-- cache_translation_check_el_dd6115665b2513c003bc6b432627fe69b68f1d55f70972931994ae409f6c7b82 -->
-```
-        <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
-        <translation>Η διεύθυνση "%1"  υπάρχει ήδη ως διεύθυνσης λήψης με ετικέτα "%2" και επομένως δεν μπορεί να προστεθεί ως διεύθυνση αποστολής.</translation>
-    
-ERR
-Minor grammar and whitespace issues: extra space after "%1" and incorrect case "ως διεύθυνσης λήψης" should be "ως διεύθυνση λήψης".
-
-Correct translation:
-Η διεύθυνση "%1" υπάρχει ήδη ως διεύθυνση λήψης με ετικέτα "%2" και επομένως δεν μπορεί να προστεθεί ως διεύθυνση αποστολής.
-```
-
 <!-- cache_translation_check_el_8cc923a41c51b2719e5723c926e53f9572f9da8a96908a9d669766c396a9d925 -->
 ```
         <source>Reverting this setting requires re-downloading the entire blockchain. It is faster to download the full chain first and prune it later. Disables some advanced features.</source>
@@ -469,13 +259,13 @@ Correct translation:
 Τουλάχιστον %1 GB δεδομένων θα αποθηκευτούν σε αυτόν τον κατάλογο και το μέγεθός του θα αυξάνεται με την πάροδο του χρόνου.
 ```
 
-<!-- cache_translation_check_el_10a892fcebeac04d68d25b7b08d03bd005f39111e8f25aed1df6b6604630df31 -->
+<!-- cache_translation_check_el_d4946b0b01d186dfe2c24498ca025679c68782df88fc4167a860582c764243a4 -->
 ```
         <source>%1 will download and store a copy of the Bitcoin block chain.</source>
-        <translation>Το %1 θα κατεβάσει και θα αποθηκεύσει ένα αντίγραφο της αλυσίδας block Bitcoin.</translation>
+        <translation>Το %1 θα κατεβάσει και θα αποθηκεύσει ένα αντίγραφο της αλυσίδας block του Bitcoin.</translation>
     
 ERR
-The phrase mixes English ("block") and misses the genitive article, making it unnatural in Greek.
+The Greek translation mixes English ("block") instead of using the Greek term, leading to stylistic inconsistency. The format specifier %1 is correctly preserved.
 
 Correct translation:
 Το %1 θα κατεβάσει και θα αποθηκεύσει ένα αντίγραφο της αλυσίδας μπλοκ του Bitcoin.
@@ -557,35 +347,28 @@ Correct translation:
 Άγνωστο. Προ-συγχρονισμός κεφαλίδων (%1, %2%)…
 ```
 
-<!-- cache_translation_check_el_6505940742ea9aff4e36084bfe244bd28fa69539a43dc92e05ec35cf1bc18983 -->
+<!-- cache_translation_check_el_f09b01f65a09e05a044f83e977d4e055e7b96f18e0116b9672060cbcaaf2ae00 -->
 ```
         <source>Enabling pruning significantly reduces the disk space required to store transactions. All blocks are still fully validated. Reverting this setting requires re-downloading the entire blockchain.</source>
-        <translation>Η ενεργοποίηση της περικοπής μειώνει τον απαιτούμενο χώρο για την αποθήκευση συναλλαγών. Όλα τα block είναι πλήρως επαληθευμένα. Η αλλαγή αυτής της ρύθμισης απαιτεί εκ νέου λήψη ολόκληρου του blockchain.</translation>
+        <translation>Η ενεργοποίηση της περικοπής μειώνει σημαντικά τον απαιτούμενο χώρο στον δίσκο για την αποθήκευση συναλλαγών. Όλα τα block εξακολουθούν να είναι πλήρως επαληθευμένα. Η επαναφορά αυτής της ρύθμισης απαιτεί την εκ νέου λήψη ολόκληρου του blockchain.</translation>
     
 ERR
-Issues:
-- Missing "significantly" nuance.
-- Missing "disk" in "disk space".
-- "Reverting" mistranslated as generic "change"; should be "επαναφορά".
-- "still" omitted.
-- Prefer Greek plural for "blocks" (μπλοκ).
+Uses the English word "block" instead of the established Greek "μπλοκ". Prefer consistent Greek terminology.
 
 Correct translation:
-Η ενεργοποίηση της περικοπής μειώνει σημαντικά τον απαιτούμενο χώρο στον δίσκο για την αποθήκευση συναλλαγών. Όλα τα μπλοκ εξακολουθούν να επαληθεύονται πλήρως. Η επαναφορά αυτής της ρύθμισης απαιτεί την εκ νέου λήψη ολόκληρης της αλυσίδας μπλοκ.
+Η ενεργοποίηση της περικοπής μειώνει σημαντικά τον απαιτούμενο χώρο στον δίσκο για την αποθήκευση συναλλαγών. Όλα τα μπλοκ εξακολουθούν να επαληθεύονται πλήρως. Η επαναφορά αυτής της ρύθμισης απαιτεί την εκ νέου λήψη ολόκληρου του blockchain.
 ```
 
-<!-- cache_translation_check_el_1fef76456a5f2d1aeb15badd7b8716cf65838eb14d23d27c6339c6977e295a2f -->
+<!-- cache_translation_check_el_38a2a517cc16a544bea04e244364be4631075b64f9220f08469d6503e9004f6d -->
 ```
         <source>Number of script &amp;verification threads</source>
-        <translation>Αριθμός thread επαλήθευσης scripts</translation>
+        <translation>Αριθμός thread επαλή&amp;θευσης script</translation>
     
 ERR
-- Missing accelerator ampersand (&) from the translation.
-- Untranslated English words ("thread", "scripts").
-- Improve Greek phrasing.
+The translation mixes English terms ("thread", "script") with Greek, resulting in an awkward phrase. It should use proper Greek terminology and grammar.
 
 Correct translation:
-Αριθμός νημάτων &επαλήθευσης σεναρίων
+Αριθμός νημάτων επαλή&θευσης σεναρίων
 ```
 
 <!-- cache_translation_check_el_7863540e66ead174a57fbe416a6a2d8e1db4801051643c1b9e06c25c2dde3932 -->
@@ -676,13 +459,13 @@ Correct translation:
 Εξωτερικός υπογράφων (π.χ. πορτοφόλι υλικού)
 ```
 
-<!-- cache_translation_check_el_d58a1b93c3f15128c8499e5a1efcbba87e3f2d1917af0893bd99eb49c03857c9 -->
+<!-- cache_translation_check_el_4b50a3e9aff77f91b37264dd86460c9b14669e8dec8a85683ec2703f32fdc8bc -->
 ```
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>&amp;Σύνδεση μέσω SOCKS5 proxy (προεπιλεγμένος)</translation>
+        <translation>&amp;Σύνδεση μέσω SOCKS5 proxy (προεπιλεγμένος):</translation>
     
 ERR
-Missing colon at the end and incomplete parenthetical ("προεπιλεγμένος" lacks the noun). 
+The parenthetical "(προεπιλεγμένος)" omits the noun "proxy," making it incomplete. It should specify "proxy/μεσολαβητής."
 
 Correct translation:
 &Σύνδεση μέσω διαμεσολαβητή SOCKS5 (προεπιλεγμένος διαμεσολαβητής):
@@ -772,16 +555,16 @@ Correct translation:
 Λείπουν ορισμένες πληροφορίες σχετικά με τις εισόδους της συναλλαγής.
 ```
 
-<!-- cache_translation_check_el_3256537ba1b9882a09fcf00d0367422235d8f2d89209c882715205b02830ef6e -->
+<!-- cache_translation_check_el_2703c1664c995f5cbb35b8d5bc5030649914334eae81d5f4decd1f12caed495b -->
 ```
         <source>Transaction still needs signature(s).</source>
-        <translation>Η συναλλαγή απαιτεί ακόμα υπογραφή/ές</translation>
+        <translation>Η συναλλαγή απαιτεί ακόμα υπογραφή(ες).</translation>
     
 ERR
-The translation uses an unnatural form "υπογραφή/ές" and is missing the final period. A clearer rendering of "signature(s)" in Greek is "υπογραφή(ες)".
+The pluralization "(ες)" is incorrect in Greek because the plural of "υπογραφή" changes form to "υπογραφές" and cannot be formed with parentheses. Also, "still needs" is better rendered as "εξακολουθεί να χρειάζεται" or "χρειάζεται ακόμη".
 
 Correct translation:
-Η συναλλαγή απαιτεί ακόμη υπογραφή(ες).
+Η συναλλαγή εξακολουθεί να χρειάζεται μία ή περισσότερες υπογραφές.
 ```
 
 <!-- cache_translation_check_el_6584c40ec417490fce32248bde5bdb6362e9519f822aee9e417ad0ab44091179 -->
@@ -793,19 +576,6 @@ ERR
 The translation omits "But" and the ending period. A more accurate and natural Greek rendering is:
 
 (Αλλά δεν έχει φορτωθεί κανένα πορτοφόλι.)
-```
-
-<!-- cache_translation_check_el_bdb6ab2351758a738e6a2e32aff595f8693e2af9630dccb3db041bbb11aafe72 -->
-```
-        <source>Peer</source>
-        <extracomment>Title of Peers Table column which contains a unique number used to identify a connection.</extracomment>
-        <translation>Κόμβος / Peer</translation>
-    
-ERR
-The translation mixes Greek and English ("Κόμβος / Peer"), which is inconsistent and unnecessary for a UI label.
-
-Correct translation:
-Κόμβος
 ```
 
 <!-- cache_translation_check_el_4ea46b3037b77db969846ba600bc9db2db78ec4fe01f18dd58c5d0ed2aa312f8 -->
@@ -891,18 +661,6 @@ The translation leaves "Blocks" in English, which is unnatural in Greek. The com
 
 Correct translation:
 Συγχρονισμένα μπλοκ
-```
-
-<!-- cache_translation_check_el_8d4a1006919061ebef765279479d8447a4d36fc1c6d3ba5c0d39ed9363b3e499 -->
-```
-        <source>Mapped AS</source>
-        <translation>Aντιστοιχισμένο AS</translation>
-    
-ERR
-The first character is a Latin 'A' instead of the Greek capital alpha 'Α', causing a script mix-up.
-
-Correct translation:
-Αντιστοιχισμένο AS
 ```
 
 <!-- cache_translation_check_el_bb77d9d3b8ebec9fcc8afaf0ebc2aa288bb6d2790ff3f161cf8818651c5c9b4f -->
@@ -1170,18 +928,6 @@ Correct translation:
 Για να αναθεωρήσετε τη λίστα παραληπτών, κάντε κλικ στην επιλογή "Εμφάνιση Λεπτομερειών…"
 ```
 
-<!-- cache_translation_check_el_1577c5f2c195939b68c34032107798f138d6693fc3e9d15379f11d52195505d1 -->
-```
-        <source>Sign failed</source>
-        <translation>H υπογραφή απέτυχε</translation>
-    
-ERR
-The first character is the Latin 'H' instead of the Greek capital Eta 'Η'. It should be "Η υπογραφή απέτυχε".
-
-Correct translation:
-Η υπογραφή απέτυχε
-```
-
 <!-- cache_translation_check_el_3abc5ee2ac62d1cbea6967ef70341b8f499e75f0942707fa8b9c92d67d9ba0fa -->
 ```
         <source>External signer not found</source>
@@ -1231,18 +977,6 @@ Correct translation:
 Το ποσό που θα αποσταλεί στην επιλεγμένη μονάδα
 ```
 
-<!-- cache_translation_check_el_5f6b166fcae51ed3cca3b509bde611f7be284956b1494eb94f18eaff885c1079 -->
-```
-        <source>Signatures - Sign / Verify a Message</source>
-        <translation>Υπογραφές - Υπογράψτε / Επαληθεύστε ένα Mήνυμα</translation>
-    
-ERR
-The word "Mήνυμα" uses a Latin 'M' instead of the Greek capital Mu 'Μ'. It should be "Μήνυμα".
-
-Correct translation:
-Υπογραφές - Υπογράψτε / Επαληθεύστε ένα Μήνυμα
-```
-
 <!-- cache_translation_check_el_5b2eccd08a9f94cbf254408dd7fb81fb6b6cd60f87f292df18cd4c42c7c21184 -->
 ```
         <source>The Bitcoin address to sign the message with</source>
@@ -1278,18 +1012,6 @@ ERR
 
 Correct translation:
 Εισαγάγετε τη διεύθυνση του παραλήπτη, το μήνυμα (βεβαιωθείτε ότι αντιγράφετε ακριβώς τις αλλαγές γραμμής, τα κενά, τους στηλοθέτες κ.λπ.) και την υπογραφή παρακάτω για να επαληθεύσετε το μήνυμα. Προσέξτε να μην αποδώσετε στην υπογραφή περισσότερα απ’ ό,τι περιέχει το ίδιο το υπογεγραμμένο μήνυμα, ώστε να αποφύγετε να εξαπατηθείτε από επίθεση τύπου man-in-the-middle. Σημειώστε ότι αυτό αποδεικνύει μόνο ότι το υπογράφον μέρος μπορεί να λαμβάνει στη διεύθυνση, δεν μπορεί να αποδείξει ότι ήταν αποστολέας οποιασδήποτε συναλλαγής!
-```
-
-<!-- cache_translation_check_el_f9024218c079a893708843af16229c5c146fe81e8b136387915fcc25e9396b06 -->
-```
-        <source>Verify &amp;Message</source>
-        <translation>Επιβεβαίωση &amp;Mηνύματος</translation>
-    
-ERR
-The shortcut marker is applied to a Latin "M" instead of the Greek "Μ", which can break the accelerator key. Also, the casing should be consistent in Greek.
-
-Correct translation:
-Επιβεβαίωση &Μηνύματος
 ```
 
 <!-- cache_translation_check_el_9a35fe910306b6cf6787c3575ba6593b4d88f8a2197e09cbd356b37be6cc869c -->
@@ -1575,4 +1297,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 125.
+Number of issues: 103.

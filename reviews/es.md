@@ -9,78 +9,6 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 [If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bes%5D%20request)
 
 
-<!-- cache_translation_check_es_64ff3a0da05f73093699038b8b5a5b80a4a2fa0ebf5c7aaebb28d2f5dd9d05b8 -->
-```
-        <source>Full Relay</source>
-        <extracomment>Peer connection type that relays all network information.</extracomment>
-        <translation>Transmisión completa</translation>
-    
-ERR
-"Transmisión completa" is misleading; "relay" implies forwarding/retransmission. Correct translation:
-Retransmisión completa
-```
-
-<!-- cache_translation_check_es_57f354034cf4969b75bd003cf0a88a42d1efac07406d58f43e6fe4c7832c6c12 -->
-```
-        <source>Address Fetch</source>
-        <extracomment>Short-lived peer connection type that solicits known addresses from a peer.</extracomment>
-        <translation>Búsqueda de dirección</translation>
-    
-ERR
-"Fetch" se traduce mejor como "obtención" o "recuperación", no "búsqueda" (search). Además, debería ser plural para ajustarse al contexto de múltiples direcciones.
-
-Correct translation:
-Obtención de direcciones
-```
-
-<!-- cache_translation_check_es_8cf49beec188e30c4374a5941e5160afa4872226daf5f9870b380d5c48521ad3 -->
-```
-        <source>&amp;Hide</source>
-        <translation>&amp;Ocultar </translation>
-    
-ERR
-The translation has a trailing space, which is a whitespace formatting issue.
-
-Correct translation:
-&Ocultar
-```
-
-<!-- cache_translation_check_es_f1cfa244210da6deff9fb1ec85f708b11e67abda6ed2e39002662ed752a53e0b -->
-```
-        <source>(un)select all</source>
-        <translation>(des)selecionar todo</translation>
-    
-ERR
-Hay un error ortográfico: "selecionar" debe ser "seleccionar".
-
-Correct translation:
-(dés)seleccionar todo
-```
-
-<!-- cache_translation_check_es_88fffc940b0c0f7157365b0ed9c7b087e84758cd38b8a526518641c325fc116b -->
-```
-        <source>Received with label</source>
-        <translation>Recibido con dirección</translation>
-    
-ERR
-The translation incorrectly uses "dirección" (address) instead of "etiqueta" (label).
-
-Correct translation:
-Recibido con etiqueta
-```
-
-<!-- cache_translation_check_es_7c1ff35a25773b5ed18926af41af668176a06cf4c47f8fe970fb0f5b4fbf9981 -->
-```
-        <source>Received with address</source>
-        <translation>Recibido con etiqueta</translation>
-    
-ERR
-The translation incorrectly uses "etiqueta" (label) instead of "dirección" (address).
-
-Correct translation:
-Recibido con dirección
-```
-
 <!-- cache_translation_check_es_ddbe5c772d9d256205e96515a5ff2874a950599631c28d99e3325b6744e0bafa -->
 ```
         <source>Copy transaction &amp;ID and output index</source>
@@ -93,114 +21,42 @@ Correct translation:
 Copiar &ID de transacción e índice de salida
 ```
 
-<!-- cache_translation_check_es_ea082291d36bbc76e7ad26daec9af96516739f34f9c2f01a131e08e91f8a880f -->
+<!-- cache_translation_check_es_711dac816a8dfedb897a39c27e0e3cc202b44813835f90b95325d153509c6f8f -->
 ```
-        <source>L&amp;ock unspent</source>
-        <translation>B&amp;loquear no gastado</translation>
+        <source>(0 = auto, &lt;0 = leave that many cores free)</source>
+        <translation>(0 = auto, &lt;0 = dejar esta cantidad de núcleos libres)</translation>
     
 ERR
-Number agreement issue: "no gastado" is singular and mismatches the implied plural UTXOs. Use plural feminine to match "salidas" (UTXOs).
+"esta cantidad" is awkward; it should refer to the user-specified negative number. Use "ese número" or "esa cantidad" for clarity.
 
 Correct translation:
-B&loquear no gastadas
+(0 = auto, <0 = dejar ese número de núcleos libres)
 ```
 
-<!-- cache_translation_check_es_8fa790086b6f8516a240f7b886fb5b22ba97b8c5f1583aeca1280567ebbf101c -->
-```
-        <source>Enable &amp;PSBT controls</source>
-        <extracomment>An options window setting to enable PSBT controls.</extracomment>
-        <translation>Activar controles de &amp;PSBT </translation>
-    
-ERR
-There is an unwanted trailing space at the end of the translation.
-
-Correct translation:
-Activar controles de &PSBT
-```
-
-<!-- cache_translation_check_es_db6f1904a3025b65e3412569b63bebe156b0636a27c99130d917395409977a76 -->
-```
-        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
-        <translation>Usar proxy SOCKS&amp;5 para conectar a pares a través de los servicios anónimos de Tor:</translation>
-    
-ERR
-Missing the notion of "separate" and slightly awkward preposition ("a pares"). Also better to reflect "onion services" as "servicios onion".
-
-Correct translation:
-Usar un proxy SOCKS&5 independiente para conectar con pares a través de los servicios onion de Tor:
-```
-
-<!-- cache_translation_check_es_a6e7cf9e9ad40319d32ef46133bca630e794c92fc146d5638095b1f84bdd2aab -->
+<!-- cache_translation_check_es_3309c9af03f58c8ac46a926970f22dfaeab51f58a1342f6d306ccdc7b42c20d9 -->
 ```
         <source>Privacy mode activated for the Overview tab. To unmask the values, uncheck Settings-&gt;Mask values.</source>
-        <translation>Modo de privacidad activado para la pestaña de visión general. Para desenmascarar los valores, desmarcar los valores de Configuración-&gt;Enmascarar valores.</translation>
+        <translation>Modo de privacidad activado en la pestaña de vista general. Para mostrar los valores, desmarca "Configuración -&gt; Ocultar valores".</translation>
     
 ERR
-La frase en español es redundante y poco natural: “desmarcar los valores de Configuración->Enmascarar valores” es incorrecto. Debe referirse a desmarcar la opción del menú, no “los valores”.
+- "Overview" in Bitcoin Core is typically translated as "Resumen", not "vista general".
+- Extra quotation marks and spaces around "->" are unnecessary.
+- Prefer formal imperative for consistency.
 
 Correct translation:
-Modo de privacidad activado para la pestaña Resumen. Para desenmascarar los valores, desmarque Configuración->Enmascarar valores.
+Modo de privacidad activado en la pestaña Resumen. Para mostrar los valores, desmarque Configuración-&gt;Ocultar valores.
 ```
 
-<!-- cache_translation_check_es_310a5e0c2c0d69a9f4a34a689de7286e1863ebfcf9c367de1c385382d6e25ef8 -->
-```
-        <source>Transaction broadcast successfully! Transaction ID: %1</source>
-        <translation>¡La transacción se ha difundido correctamente! Código ID de la transacción: %1</translation>
-    
-ERR
-"​​​​Código ID de la transacción" is redundant/unnatural in Spanish. Use "ID de la transacción" or "Identificador de la transacción". The placeholder %1 is correctly preserved.
-
-Correct translation:
-¡La transacción se ha difundido correctamente! ID de la transacción: %1
-```
-
-<!-- cache_translation_check_es_99548199606555f1cd47756387413f1f35354270e5d4c6a047414ab6a1611e7c -->
-```
-        <source>Partially Signed Transaction (Binary)</source>
-        <extracomment>Expanded name of the binary PSBT file format. See: BIP 174.</extracomment>
-        <translation>Transacción parcialmente firmada (binario) </translation>
-    
-ERR
-Trailing whitespace after the closing parenthesis. Also, agreement should be feminine to match "transacción".
-
-Correct translation:
-Transacción parcialmente firmada (binaria)
-```
-
-<!-- cache_translation_check_es_a3e6b2ba4d665e42b16768a3e1e2e1a521bfe16cd09391153d5a4d93fef6c8bd -->
+<!-- cache_translation_check_es_49c0db7e6155afafb53450080480d0620a4cd16317aeb01d61e6cbea8c9f840c -->
 ```
         <source>Pays transaction fee: </source>
-        <translation>Pagar comisión por transacción:</translation>
+        <translation>Paga la comisión de transacción:</translation>
     
 ERR
-The verb form should be conjugated ("Paga") rather than infinitive ("Pagar"), and the trailing space after the colon is missing compared to the source.
+Missing trailing space after the colon; the source ends with a space.
 
 Correct translation:
-Paga la comisión de la transacción:
-```
-
-<!-- cache_translation_check_es_5db0de04de0381922b65c188b8bcf71452e69bc18124581684d602d6b793bcf4 -->
-```
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>No se puede iniciar bitcoin: controlador pulsar-para-pagar</translation>
-    
-ERR
-Falta la preposición "de" y "pulsar-para-pagar" suena antinatural. "clic para pagar" es más natural en español.
-
-Correct translation:
-No se puede iniciar bitcoin: controlador de clic para pagar
-```
-
-<!-- cache_translation_check_es_1de2c3ffc36919967dacc16e221885d94940c5ddcb22f989d5a6216e6adab131 -->
-```
-        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
-        <translation>«bitcoin: //» no es un URI válido. Use «bitcoin:» en su lugar.</translation>
-    
-ERR
-The scheme text has an incorrect space: «bitcoin: //» should be «bitcoin://». Quotation style should preserve the exact literal string.
-
-Correct translation:
-'bitcoin://' no es un URI válido. Use 'bitcoin:' en su lugar.
+Paga la comisión de transacción:
 ```
 
 <!-- cache_translation_check_es_410f347fb8eabaf93ec0f6d2971cdba5a6fee7c366a45eeb6169a9a53a8ee035 -->
@@ -658,4 +514,4 @@ Red no reconocida en -proxy='%s': '%s'
 ```
 </details>
 
-Number of issues: 53.
+Number of issues: 41.

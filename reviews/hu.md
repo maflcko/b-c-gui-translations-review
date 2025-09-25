@@ -128,44 +128,6 @@ Correct translation:
 Megjelenítse-e az érmevezérlési funkciókat vagy sem.
 ```
 
-<!-- cache_translation_check_hu_779d73f1566bb226201157e4b872cd7b2e4383d7721ae8047a3adcd9e0ac7353 -->
-```
-        <source>Cannot sign inputs while wallet is locked.</source>
-        <translation>Nem írhatók alá a bejövők míg a tárca zárolva van.</translation>
-    
-ERR
-The Hungarian is understandable but unnatural and uses the wrong word for "inputs" ("bejövők" = "incoming" rather than the technical "inputs" or "bemenetek"). Also the passive phrasing is awkward.
-
-Suggested correct translations:
-- Nem lehet aláírni a bemeneteket, amíg a tárca zárolva van.
-or more explicit:
-- Nem lehet aláírni a tranzakció bemeneteit, amíg a tárca zárolva van.
-```
-
-<!-- cache_translation_check_hu_9cdb6b278248e1169fabc15e06b1c4f56a2723979f3dc556deb478b5c822d62e -->
-```
-        <source>Could not sign any more inputs.</source>
-        <translation>Több bejövőt nem lehet aláírni.</translation>
-    
-ERR
-The Hungarian uses "bejövőt" (incoming), which is not the correct technical term for transaction "inputs" and sounds unnatural. Also the word order is awkward.
-
-Correct translation:
-Nem lehet több bemenetet aláírni.
-```
-
-<!-- cache_translation_check_hu_b2eacc246c2b3517c2255e1cfb6a5fc744d9187909216b441b9e7f50a8a17aa5 -->
-```
-        <source>Signed %1 inputs, but more signatures are still required.</source>
-        <translation>%1 bejövő aláírva, de több aláírásra van szükség.</translation>
-    
-ERR
-The translation is Hungarian but slightly incorrect/unnatural: "bejövő" ("incoming") is not the right term for transaction inputs and the grammar is awkward.
-
-Correct translation:
-%1 bemenet aláírva, de további aláírásokra van szükség.
-```
-
 <!-- cache_translation_check_hu_fb62f0b1b1e346e26a6f361130c5ac2f56ce8a69d0bbe9e6bc712c9fe17a52b2 -->
 ```
         <source>Partially Signed Transaction (Binary)</source>
@@ -260,16 +222,16 @@ Correct translation:
 Üzeneteket vagy megállapodásokat aláírhat régi típusú (P2PKH) címeivel, hogy bizonyítsa: tud bitcoint fogadni az ezekre a címekre érkező utalásokkal. Legyen óvatos, és ne írjon alá semmilyen homályos vagy véletlenszerű üzenetet, mivel adathalász támadók megpróbálhatják rávenni, hogy ezzel átruházza személyazonosságát. Csak olyan teljesen részletes nyilatkozatokat írjon alá, amellyel valóban egyetért.
 ```
 
-<!-- cache_translation_check_hu_e87ddb653e67c33e6d00c18fe11ff79ba3e128f0e6b96d26f99d028bf05850a6 -->
+<!-- cache_translation_check_hu_2b394076e2e74f9fbf2bf75a2a52f9c54308df6deff28b206fd686ef269dd363 -->
 ```
         <source>Copy the current signature to the clipboard</source>
-        <translation>A kiválasztott cím másolása a vágólapra</translation>
+        <translation>A kiválasztott aláírás másolása a vágólapra</translation>
     
 ERR
-The Hungarian translation means "Copy the selected address to the clipboard", which does not match the source "Copy the current signature to the clipboard".
+"current" was translated as "kiválasztott" (selected), which changes the meaning. It should be "aktuális".
 
 Correct translation:
-A jelenlegi aláírás másolása a vágólapra
+Az aktuális aláírás másolása a vágólapra
 ```
 
 <!-- cache_translation_check_hu_b0953bbbeee0c6b1ae4d7d577d991d2c29dd52024ff312b4450cb5228fff5375 -->
@@ -282,6 +244,17 @@ There is a typo in the translation: "Nye&amp;rs" should be "Nye&amp;rs" (which i
 
 Correct translation:
 Nyers tranzakció másolása(&amp;)
+```
+
+<!-- cache_translation_check_hu_fb3df14788f453368c7124673ecf196f32a130d34b1fb64427d4a7e9f4122f66 -->
+```
+        <source>Error starting/committing db txn for wallet transactions removal process</source>
+        <translation>Hiba a tárca tranzakciókat eltávolító adatbázis tranzakció létrehozása közben</translation>
+    
+ERR
+The translation omits the “committing” part (only says “creation”) and misattributes the modifier, missing the “process” aspect.
+Correct translation:
+Hiba a tárcatranzakciók eltávolítási folyamatához tartozó adatbázis-tranzakció indítása vagy véglegesítése közben
 ```
 
 <!-- cache_translation_check_hu_04eded0095b5ffe17b33a13c8bc7bec99edd4e62a7b52c435e052ea07f42a2ee -->
@@ -301,6 +274,42 @@ Explanation:
 - Word order and specifier mapping is corrected.
 ```
 
+<!-- cache_translation_check_hu_ac37436a8854698826501d8d525480f9fe861b822ba46597ec44f0a6ed38856c -->
+```
+        <source>Specified -blockreservedweight (%d) exceeds consensus maximum block weight (%d)</source>
+        <translation>A megadott -blockreservedweight (%d) meghaladja a konszenzus maximum blokk súlyt (%d)</translation>
+    
+ERR
+The Hungarian phrasing is awkward and uses incorrect compounding. "maximum blokk súly" should be "maximális blokksúly", and "konszenzus szerinti" clarifies the relation.
+
+Correct translation:
+A megadott -blockreservedweight (%d) meghaladja a konszenzus szerinti maximális blokksúlyt (%d)
+```
+
+<!-- cache_translation_check_hu_bb0166355183a1a87c9ccb65c51971cac2cc6b8964481d266d243848d97fa3d7 -->
+```
+        <source>Cannot write to directory '%s'; check permissions.</source>
+        <translation>Nem tudok írni a '%s' könyvtárba, ellenőrizd a jogosultságokat.</translation>
+    
+ERR
+The translation uses first person and informal imperative, which is inappropriate for standard UI strings. It also replaces the semicolon with a comma. 
+
+Correct translation:
+Nem lehet írni a(z) '%s' könyvtárba; ellenőrizze a jogosultságokat.
+```
+
+<!-- cache_translation_check_hu_37eea520921e6a17a9f0ce06461e382550aae618a784e4c3b833b711221e024d -->
+```
+        <source>Error loading databases</source>
+        <translation>Hiba az adatbázis betöltése közben</translation>
+    
+ERR
+The translation uses the singular "adatbázis" while the source is plural "databases".
+
+Correct translation:
+Hiba az adatbázisok betöltése közben
+```
+
 <!-- cache_translation_check_hu_a8ad998dcb21d61143934a99a368859d0143e7da43c25aa40479b5e4ac7f0fa7 -->
 ```
         <source>Failed to close block undo file.</source>
@@ -315,6 +324,18 @@ A blokkvisszavonási fájl bezárása nem sikerült.
 Nem sikerült bezárni a blokkvisszavonási fájlt.
 ```
 
+<!-- cache_translation_check_hu_85cb9ae474e22d8a7e348c21fa00ebed6f5595b97c060f201bee2e06c5bdb44f -->
+```
+        <source>Failed to close file when writing block.</source>
+        <translation>Blokk írása közben nem sikerült bezárni a fájlt</translation>
+    
+ERR
+Missing terminal period compared to source sentence.
+
+Correct translation:
+Blokk írása közben nem sikerült bezárni a fájlt.
+```
+
 <!-- cache_translation_check_hu_29312b5be5cc3031227410c0e403600e30415ae9f19eb8f5185af5ae17730cb8 -->
 ```
         <source>Transaction needs a change address, but we can't generate it.</source>
@@ -326,6 +347,42 @@ There is an inaccuracy and a plural/singular mismatch. The source says "a change
 Correct translation:
 A tranzakcióhoz szükség van egy visszajáró címre, de azt nem tudjuk előállítani.
 ```
+
+<!-- cache_translation_check_hu_58c8fa4621acac880849f507a76995a756d53838f2335388843d553c97c97838 -->
+```
+        <source>Failed to calculate bump fees, because unconfirmed UTXOs depend on an enormous cluster of unconfirmed transactions.</source>
+        <translation>Sikertelen az emelt díjak becslése, mert a megerősítetlen UTXO-k hatalmas mennyiségű megerősítetlen tranzakcióktól függnek.</translation>
+    
+ERR
+The translation uses "becslése" (estimation) instead of "kiszámítása" (calculation), has an awkward/incorrect construction with "hatalmas mennyiségű ... tranzakcióktól", and "emelt díjak" can mislead (already increased fees) rather than "fees for the bump".
+
+Correct translation:
+Nem sikerült kiszámítani a díjemeléshez szükséges díjakat, mert a megerősítetlen UTXO-k egy óriási, megerősítetlen tranzakciókból álló klasztertől függenek.
+```
+
+<!-- cache_translation_check_hu_cf4b7f25c0317f2f2993d7e58dab2856e6eab964f9c97647a667e634808c6ce8 -->
+```
+        <source>Transaction requires one destination of non-zero value, a non-zero feerate, or a pre-selected input</source>
+        <translation>A tranzakcióhoz szükséges egy nem nulla értékű utalás, egy nem-nulla tranzakciós díj vagy egy előre kiválaszott bemenet</translation>
+    
+ERR
+Multiple issues: unnatural phrasing ("szükséges egy"), incorrect term for "destination" ("utalás" instead of "célcím"), "feerate" mistranslated as fee amount, a typo ("kiválaszott"), and inconsistent hyphenation.
+
+Correct translation:
+A tranzakcióhoz szükség van egy nem nulla értékű célcímre, egy nem nulla díjrátára vagy egy előre kiválasztott bemenetre.
+```
+
+<!-- cache_translation_check_hu_39277b58c6ea5e6d986705a8b1be5022fa10d4848cdd61f6c03d0ed63a98a016 -->
+```
+        <source>Failed to start indexes, shutting down…</source>
+        <translation>Indexek indítása sikertelen, a program leáll...</translation>
+    
+ERR
+Ellipsis character mismatch: source uses the single-character ellipsis (…), while the translation uses three periods (...). Use the same ellipsis character for consistency.
+
+Correct translation:
+Indexek indítása sikertelen, a program leáll…
+```
 </details>
 
-Number of issues: 24.
+Number of issues: 29.

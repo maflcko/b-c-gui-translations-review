@@ -9,16 +9,39 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 [If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bpl%5D%20request)
 
 
-<!-- cache_translation_check_pl_9a7b6b6510aeff2bfaa110854cdfeb85ba8f9befc0425afb6842a873786c7738 -->
+<!-- cache_translation_check_pl_29b03623142848c923661922512c0a9951a6b36064fe984ab27794a04f47b05c -->
 ```
-        <source>Feeler</source>
-        <extracomment>Short-lived peer connection type that tests the aliveness of known addresses.</extracomment>
-        <translation>Wychodzące połączenie testowe: krótkotrwałe, do testowania adresów</translation>
+        <source>C&amp;hoose</source>
+        <translation>Wybierz</translation>
     
 ERR
-The translation is overly verbose and introduces "wychodzące" (outbound), which is not stated in the source. This label should be concise.
+Missing ampersand shortcut key indicator. It must appear exactly once in the translation.
+
 Correct translation:
-Sonda
+&Wybierz
+```
+
+<!-- cache_translation_check_pl_dd961a9dba0a83a1a527dae54e86035ed4d0261e55dc5ed0e8cf8bba0c6fda91 -->
+```
+        <source>&amp;Overview</source>
+        <translation>P&amp;odsumowanie</translation>
+    
+ERR
+The Polish translation uses "Podsumowanie" (Summary), which is semantically different from "Overview". A more accurate UI term is "Przegląd". The accelerator is present exactly once as required.
+
+Correct translation:
+&Przegląd
+```
+
+<!-- cache_translation_check_pl_43713ac8c820db84136c974d6356385ebb037c758f3fbd691ef220ffb4389a72 -->
+```
+        <source>&amp;Send</source>
+        <translation>Wyślij</translation>
+    
+ERR
+Missing ampersand for the shortcut key. It must appear exactly once.
+Correct translation:
+&Wyślij
 ```
 
 <!-- cache_translation_check_pl_d2b7642de902be63ffe1c85cba4f3abb86e526cbb9fcef0b95a90b35c8e03320 -->
@@ -33,6 +56,18 @@ Correct translation:
 &Utwórz kopię zapasową portfela…
 ```
 
+<!-- cache_translation_check_pl_e40a4ecd5574d95be093e3dfd7a31a12621d04593bbb62fda51a0c07f93d866f -->
+```
+        <source>&amp;Settings</source>
+        <translation>P&amp;referencje</translation>
+    
+ERR
+The translation is inaccurate. “Settings” should be translated as “Ustawienia” in Polish; “Preferencje” corresponds to “Preferences”.
+
+Correct translation:
+&Ustawienia
+```
+
 <!-- cache_translation_check_pl_d2ed0b5228ae324983b3c8633de6663a18f60b18e5ce32915565c1fc3e5a0829 -->
 ```
         <source>Load PSBT from &amp;clipboard…</source>
@@ -45,88 +80,14 @@ Correct translation:
 Wczytaj PSBT ze &schowka…
 ```
 
-<!-- cache_translation_check_pl_c83e151e8a2dc3a758f85728275dce53b5c87c363813e58d2b06f7e18fa14023 -->
+<!-- cache_translation_check_pl_10490f21f6fafb984aa852f7c1c92f3d91f2fafc1b2a1305cdf04799f3275569 -->
 ```
-        <source>(un)select all</source>
-        <translation>zaznacz/odznacz wszytsko</translation>
+        <source>&amp;Mask values</source>
+        <translation>&amp;Schowaj wartości</translation>
     
 ERR
-Typo in the Polish word "wszytsko"; should be "wszystko".
-
-Correct translation:
-zaznacz/odznacz wszystko
-```
-
-<!-- cache_translation_check_pl_c266b7c48273891d7b82c3bdbae92f8e028c7e47984c26241e0f4ecafdc1f1c9 -->
-```
-        <source>Confirmed</source>
-        <translation>Potwerdzone</translation>
-    
-ERR
-The Polish word is misspelled. It should be "Potwierdzone".
-
-Correct translation:
-Potwierdzone
-```
-
-<!-- cache_translation_check_pl_757afc81564ce8db7f7c5b0a81278ddab66a74958e0f9b0af4d96fbd310e5d05 -->
-```
-        <source>Copy amount</source>
-        <translation>Kopiuj kwote</translation>
-    
-ERR
-Missing Polish diacritic: "kwote" should be "kwotę".
-
-Correct translation:
-Kopiuj kwotę
-```
-
-<!-- cache_translation_check_pl_c9b0d7be83a1973305a1a0a8301d39b7d169fa439c4df5c2acee90e78a568cbf -->
-```
-        <source>&amp;Copy address</source>
-        <translation>Kopiuj adres</translation>
-    
-ERR
-Missing shortcut marker '&' in the translation.
-
-Correct translation:
-&Kopiuj adres
-```
-
-<!-- cache_translation_check_pl_5d465186f4c1b9416f4809df08adbbed22e5bfe18d24720fddbe4cad4b1c2f14 -->
-```
-        <source>Copy &amp;label</source>
-        <translation>Kopiuj etykietę</translation>
-    
-ERR
-Missing ampersand for the shortcut key. There must be exactly one '&' in the translation.
-
-Correct translation:
-Kopiuj &etykietę
-```
-
-<!-- cache_translation_check_pl_2aab17c96a5a3f1e2898aee8ff5002a1e01db1b07aa09c61a24933b72c149d4a -->
-```
-        <source>Copy &amp;amount</source>
-        <translation>Kopiuj kwotę</translation>
-    
-ERR
-The accelerator indicator '&' from the source is missing. It must appear exactly once in the translation.
-
-Correct translation:
-Kopiuj &kwotę
-```
-
-<!-- cache_translation_check_pl_92fd13b1ebf240dad7cf13642f985b03145e67053c4fa157a236416688afc458 -->
-```
-        <source>Copy bytes</source>
-        <translation>Skopiuj ilość bajtów</translation>
-    
-ERR
-"Ilość" changes the meaning to "number of bytes." The action should be to copy the bytes themselves.
-
-Correct translation:
-Kopiuj bajty
+"Schowaj wartości" means "Hide values" and differs from "Mask values" (obscure/mask rather than hide). A closer translation is:
+&Maskuj wartości
 ```
 
 <!-- cache_translation_check_pl_3c1b7477465e517aa29b8945d31a10706d4adaaaaf0f96028e2e318eadefdbd9 -->
@@ -141,16 +102,136 @@ Correct translation:
 Czy na pewno chcesz zamknąć wszystkie portfele?
 ```
 
-<!-- cache_translation_check_pl_b454ed03f79eb3c9200a984e656fa5f93280391a850d17739b165f19cb2026a8 -->
+<!-- cache_translation_check_pl_1ad7d809125abd46a0e86e536089e64d5db1b77b949253a9262f08fdf87e13dc -->
 ```
-        <source>Signed transaction successfully. Transaction is ready to broadcast.</source>
-        <translation>transakcja</translation>
+        <source>&amp;Main</source>
+        <translation>Główne</translation>
     
 ERR
-The translation is incomplete and does not convey the original meaning.
+Missing mnemonic ampersand '&' in the translation.
 
 Correct translation:
-Pomyślnie podpisano transakcję. Transakcja jest gotowa do rozgłoszenia.
+&Główne
+```
+
+<!-- cache_translation_check_pl_97d82cb92e094bed1ed4e46847a8ae894310a1f351c26b8f9e531b298dc01e31 -->
+```
+        <source>&amp;Reset Options</source>
+        <translation>Z&amp;resetuj ustawienia</translation>
+    
+ERR
+"Options" should be translated as "opcje" rather than "ustawienia" to maintain consistency. Also, placing the accelerator at the start is clearer.
+
+Correct translation:
+&Resetuj opcje
+```
+
+<!-- cache_translation_check_pl_6348f98c488c087138e82137d2d481bba4051a5f91d3eba070db810d77d6ff44 -->
+```
+        <source>W&amp;allet</source>
+        <translation>Portfel</translation>
+    
+ERR
+The translation omits the shortcut indicator '&'. It must appear exactly once.
+
+Correct translation:
+&Portfel
+```
+
+<!-- cache_translation_check_pl_733d4fcb4c57001c146f455c54b34638278ec9e2f0e30c3e59a7a78f3577aff0 -->
+```
+        <source>Enable &amp;PSBT controls</source>
+        <extracomment>An options window setting to enable PSBT controls.</extracomment>
+        <translation>Włącz ustawienia &amp;PSBT</translation>
+    
+ERR
+"controls" was mistranslated as "ustawienia" (settings). A more accurate UI term is "kontrolki" or "elementy sterujące". Also keep exactly one ampersand for the shortcut.
+
+Correct translation:
+Włącz kontrolki &PSBT
+```
+
+<!-- cache_translation_check_pl_da57b633b7b7166174ba941fbaf3757ed55182ff111ae303ee7e3e60b02f34bd -->
+```
+        <source>User Interface &amp;language:</source>
+        <translation>Język &amp;użytkownika:</translation>
+    
+ERR
+The translation is inaccurate: it omits "interfejsu" and changes the meaning to "user's language" instead of "User Interface language." The ampersand is present exactly once, which is fine.
+
+Correct translation:
+&Język interfejsu użytkownika:
+```
+
+<!-- cache_translation_check_pl_cbd68e94c390819e6422a5eeed61a1214170969e52bcf683402349ec28644ccf -->
+```
+        <source>Use separate SOCKS&amp;5 proxy to reach peers via Tor onion services:</source>
+        <translation>Użyj oddzielnego proxy SOCKS&amp;5 aby osiągnąć węzły w ukrytych usługach Tor:</translation>
+    
+ERR
+The verb choice "osiągnąć węzły" is unnatural; "połączyć się z węzłami" is correct. Also, "ukryte usługi" should reflect "onion services" explicitly. Missing comma before "aby" in Polish style.
+
+Correct translation:
+Użyj oddzielnego proxy SOCKS&5, aby połączyć się z węzłami poprzez usługi onion w sieci Tor:
+```
+
+<!-- cache_translation_check_pl_14bf4067631e1a21b49028516621e0148dac83d9cfb551b0d6ffdcdc8eb443e7 -->
+```
+        <source>&amp;Network Traffic</source>
+        <translation>&amp;Ruch sieci</translation>
+    
+ERR
+The Polish phrasing is unnatural; the standard term is "Ruch sieciowy".
+
+Correct translation:
+&Ruch sieciowy
+```
+
+<!-- cache_translation_check_pl_fc98907270ff58d1d94624dbeb858fd03e3f0c5a3303a22e69dbc76d8bc7800f -->
+```
+        <source>1 d&amp;ay</source>
+        <translation>1 dzień</translation>
+    
+ERR
+Missing accelerator ampersand (&). The source has one '&' and the translation must also include exactly one.
+
+Correct translation:
+1 &dzień
+```
+
+<!-- cache_translation_check_pl_1ea5f5c488380942bf5e399ba6f5e76808b433814a4f9dba332e0ff5986e4513 -->
+```
+        <source>&amp;Amount:</source>
+        <translation>&amp;Ilość:</translation>
+    
+ERR
+In financial/Bitcoin context, "Amount" should be translated as "Kwota", not "Ilość".
+
+Correct translation:
+&Kwota:
+```
+
+<!-- cache_translation_check_pl_8cb211989c2193616b758a095be14dd30229d2e5f4982d41ba8f1824809710da -->
+```
+        <source>&amp;Verify</source>
+        <translation>Zweryfikuj</translation>
+    
+ERR
+The shortcut indicator '&' from the source is missing in the translation. It must appear exactly once.
+
+Correct translation:
+&Zweryfikuj
+```
+
+<!-- cache_translation_check_pl_c262f14104c68dcc0674cfbff14f9f146236c60b96b96171618c93282bdd2e6b -->
+```
+        <source>S&amp;end</source>
+        <translation>Wy&amp;syłka</translation>
+    
+ERR
+"Wysyłka" is a noun and sounds unnatural for a button/menu command; the imperative "Wyślij" is preferred. Keep exactly one accelerator.
+Correct translation:
+&Wyślij
 ```
 
 <!-- cache_translation_check_pl_ef515d4ebaafcb94544472786cf6bcef772c952f88a4f382d485067eefaccf72 -->
@@ -165,22 +246,6 @@ Correct translation:
 &Odejmij opłatę od kwoty
 ```
 
-<!-- cache_translation_check_pl_f431407ec4e4cd6eb0e90547b4936b462f80c82023fc95829dd3a1812278ef84 -->
-```
-        <source>Enter the receiver's address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
-        <translation>Wpisz adres, wiadomość oraz sygnaturę (podpis) odbiorcy (upewnij się, że dokładnie skopiujesz wszystkie zakończenia linii, spacje, tabulacje itp.). Uważaj by nie dodać więcej do podpisu niż do samej podpisywanej wiadomości by uniknąć ataku man-in-the-middle. 
-Zwróć uwagę, że poprawnie zweryfikowana wiadomość potwierdza to, że nadawca posiada klucz do adresu, natomiast nie potwierdza to, że poprawne wysłanie jakiejkolwiek transakcji!</translation>
-    
-ERR
-- The parenthetical about copying whitespace is attached to "signature" and "odbiorcy", making it ambiguous; it should modify "message" only.
-- The phrase "Uważaj by nie dodać więcej do podpisu..." misrenders the meaning; it should be about not inferring more from the signature than the signed message states.
-- Grammar/punctuation issues: missing commas after "Uważaj", awkward "by", and "natomiast nie potwierdza to, że poprawne wysłanie..." is ungrammatical.
-- The translation introduces a line break not present in the source.
-
-Correct translation:
-Wpisz poniżej adres odbiorcy, wiadomość (upewnij się, że dokładnie skopiujesz podziały wierszy, spacje, tabulatory itp.) oraz podpis, aby zweryfikować wiadomość. Uważaj, aby nie doszukiwać się w podpisie więcej, niż wynika z samej podpisanej wiadomości, aby nie dać się oszukać atakiem typu man-in-the-middle. Zwróć uwagę, że dowodzi to jedynie, iż podpisujący kontroluje ten adres; nie dowodzi wysłania żadnej transakcji!
-```
-
 <!-- cache_translation_check_pl_a302e810cf03a27895ee29f99ca40c1426af5f5012630d36712c27c08d3d2f16 -->
 ```
         <source>Copy &amp;raw transaction</source>
@@ -193,16 +258,28 @@ Correct translation:
 Kopiuj &surową transakcję
 ```
 
-<!-- cache_translation_check_pl_c266b7c48273891d7b82c3bdbae92f8e028c7e47984c26241e0f4ecafdc1f1c9 -->
+<!-- cache_translation_check_pl_548c189961f358da26b026d09873cf6f232a768e59133f7de47c538e165ca5a4 -->
 ```
-        <source>Confirmed</source>
-        <translation>Potwerdzone</translation>
+        <source>Increase transaction &amp;fee</source>
+        <translation>Zwiększ opłatę transakcji</translation>
     
 ERR
-The Polish word is misspelled. It should be "Potwierdzone".
+Missing accelerator '&' in the Polish translation. It must appear exactly once.
 
 Correct translation:
-Potwierdzone
+Zwiększ &opłatę transakcji
+```
+
+<!-- cache_translation_check_pl_9de7308b0048e0ec6268cce16032c1f333ee804452ff4a100c890fa6b6f765e5 -->
+```
+        <source>A&amp;bandon transaction</source>
+        <translation>Porzuć transakcję</translation>
+    
+ERR
+Missing ampersand for the shortcut key; it must appear exactly once in the translation.
+
+Correct translation:
+&Porzuć transakcję
 ```
 
 <!-- cache_translation_check_pl_472eea97cf769785e7ff71e8f95562fd75cb42ac8cea3eacfa8d74ea16aeb80a -->
@@ -215,18 +292,6 @@ The second sentence changes the meaning: it tells the user to ensure the wallet 
 
 Correct translation:
 Błąd: Nie można wygenerować deskryptorów dla tego portfela typu legacy. Jeśli portfel jest zaszyfrowany, upewnij się, że podasz hasło do portfela.
-```
-
-<!-- cache_translation_check_pl_49af3b53b5603f8086dfa87cbe689124ecdf8fba6da77ca453d683a4232c971c -->
-```
-        <source>Option '-maxorphantx' is set but no longer has any effect (see release notes). Please remove it from your configuration.</source>
-        <translation>Opcja "-maxorphantx" jest zaznaczona, ale nie ma już żadnych efektów (zobacz informacje o wydaniu). Prosimy o usunięcie jej z twojej konfiguracji.</translation>
-    
-ERR
-"jest zaznaczona" should be "jest ustawiona", and "nie ma już żadnych efektów" should be singular. The phrasing can be made more natural and consistent.
-
-Correct translation:
-Opcja "-maxorphantx" jest ustawiona, ale nie ma już żadnego efektu (zobacz uwagi do wydania). Usuń ją ze swojej konfiguracji.
 ```
 
 <!-- cache_translation_check_pl_4ed0dbfb6d8c520d4cc9a1ae40117489eff79ad2071a2fa5f898b85b30e094c1 -->
@@ -254,4 +319,4 @@ Błąd: Otrzymano wartość, która nie jest w formacie szesnastkowym: %s
 ```
 </details>
 
-Number of issues: 20.
+Number of issues: 26.

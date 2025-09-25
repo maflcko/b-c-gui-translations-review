@@ -213,6 +213,30 @@ Correct translation:
 Prune: Die letzte Wallet-Synchronisierung geht über die beschnittenen Daten hinaus. Sie müssen -reindex ausführen (bei einem beschnittenen Knoten wird dabei die gesamte Blockchain erneut heruntergeladen)
 ```
 
+<!-- cache_translation_check_de_addaaed698fa985db2ae9fb99612ec3035ea3da62566419ca84cd7a15658cbce -->
+```
+        <source>Can't spend unconfirmed version %d pre-selected input with a version 3 tx</source>
+        <translation>Unbestätigte, vorab ausgewählte Inputs der Version %d können nicht mit einer Version 3-Tx ausgegeben werden</translation>
+    
+ERR
+The translation uses the plural “Inputs” even though the source is singular (“input”), leading to agreement errors. It also uses the abbreviation “Tx” awkwardly; “Transaktion” is clearer in German.
+
+Correct translation:
+Unbestätigter, vorab ausgewählter Input der Version %d kann nicht mit einer Version-3-Transaktion ausgegeben werden
+```
+
+<!-- cache_translation_check_de_664919e15c904d39a79c6e71858b42cdc4120a7f78c479c5c3ae814b10c1ae8a -->
+```
+        <source>Can't spend unconfirmed version 3 pre-selected input with a version %d tx</source>
+        <translation>Unbestätigte, vorab ausgewählte Inputs der Version 3 können nicht mit einer Version %d Tx ausgegeben werden</translation>
+    
+ERR
+The source uses singular "input", but the translation uses the plural "Inputs". Also, "tx" should be rendered as "Transaktion" in German, and capitalization of "Tx" is inconsistent with the source.
+
+Correct translation:
+Unbestätigter, vorab ausgewählter Input der Version 3 kann nicht mit einer Transaktion der Version %d ausgegeben werden
+```
+
 <!-- cache_translation_check_de_4433c7e1e1c84fe6ea661065b102908ab8a16386d8a6b9709a5509179c9164de -->
 ```
         <source>Config setting for %s only applied on %s network when in [%s] section.</source>
@@ -226,6 +250,20 @@ Konfigurationseinstellung für %s gilt nur im %s-Netzwerk, wenn sie im Abschnitt
 
 Alternative phrasing:
 Die Konfigurationseinstellung für %s wird nur im %s-Netzwerk angewendet, wenn sie im Abschnitt [%s] steht.
+```
+
+<!-- cache_translation_check_de_dba144209bf2d3425da312c35cbebcd53c52026f6f00ffe30da06a77c720346a -->
+```
+        <source>The %s path uses exFAT, which is known to have intermittent corruption problems on macOS. Move this directory to a different filesystem to avoid data loss.</source>
+        <translation>Der %s Pfad verwendet exFAT, das unter macOS bekanntermaßen zeitweise beschädigt wird. Verschiebe dieses Verzeichnis in ein anderes Dateisystem, um Datenverlust zu vermeiden.</translation>
+    
+ERR
+- Style: Informal imperative ("Verschiebe") should be formal ("Verschieben Sie") in typical UI text.
+- Grammar/wording: "Der %s Pfad" should be hyphenated as "Der %s-Pfad". "zeitweise beschädigt wird" is unnatural and misleading; the issue is corruption problems with exFAT on macOS.
+- Clarity: Better to state exFAT has sporadic corruption issues rather than that it "gets damaged."
+
+Correct translation:
+Der %s-Pfad verwendet exFAT, das unter macOS bekanntermaßen sporadische Korruptionsprobleme aufweist. Verschieben Sie dieses Verzeichnis auf ein anderes Dateisystem, um Datenverlust zu vermeiden.
 ```
 
 <!-- cache_translation_check_de_30cd8c6940936d245663dad4b7e855a03b9182045ac0bd6920f4ef11cd245b27 -->
@@ -253,6 +291,29 @@ Correct translation:
 Die Transaktion erfordert ein Ziel mit einem Wert ungleich Null, einen Gebührensatz ungleich Null oder eine vorausgewählte Eingabe.
 ```
 
+<!-- cache_translation_check_de_451f85975dce6b6feaed893d6bc8b1a4fa374e3d4f174fdfc0613eb4506add26 -->
+```
+        <source>Unrecognized descriptor found. Loading wallet %s
+
+The wallet might have been created on a newer version.
+Please try running the latest software version.
+</source>
+        <translation>Nicht erkannter Deskriptor gefunden. Wallet %s wird geladen.
+
+Die Wallet wurde möglicherweise in einer neueren Version erstellt.
+Bitte mit der neueste Softwareversion auszuführen.
+</translation>
+    
+ERR
+The last sentence is ungrammatical, and "in einer neueren Version" should be "mit einer neueren Version" in this context.
+
+Correct translation:
+Nicht erkannter Deskriptor gefunden. Wallet %s wird geladen.
+
+Die Wallet wurde möglicherweise mit einer neueren Version erstellt.
+Bitte versuchen Sie, die neueste Softwareversion zu verwenden.
+```
+
 <!-- cache_translation_check_de_d97f463a4f28d187960e6d383c3b73b494d7093037bdf343bd0b749e69dcedb0 -->
 ```
         <source>Invalid -proxy address or hostname, ends with '=': '%s'</source>
@@ -266,4 +327,4 @@ Ungültige -proxy-Adresse oder ungültiger Hostname, endet mit '=': '%s'
 ```
 </details>
 
-Number of issues: 21.
+Number of issues: 25.

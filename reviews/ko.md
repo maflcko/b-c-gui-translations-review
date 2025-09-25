@@ -917,6 +917,18 @@ Correct translation:
 -dnsseed를 false로 설정할 때 -forcednsseed를 true로 설정할 수 없습니다.
 ```
 
+<!-- cache_translation_check_ko_db5200be07836586c378301f525e5f68dc12e7459026918a214906a6cd8de22a -->
+```
+        <source>The inputs size exceeds the maximum weight. Please try sending a smaller amount or manually consolidating your wallet's UTXOs</source>
+        <translation>입력 크기가 최대 웨이트(weight) 를 초과했습니다. 더 작은 금액을 보내거나 지갑의 UTXO들을 수동으로 정리한 뒤 다시 시도해 주세요.</translation>
+    
+ERR
+There is an incorrect space before the particle after the closing parenthesis ("weight) 를"), and "정리" is a less accurate term than "통합" for UTXO consolidation. Also, "가중치" is a more natural rendering of "weight" in this context.
+
+Correct translation:
+입력 크기가 최대 가중치를 초과했습니다. 더 작은 금액을 보내거나 지갑의 UTXO들을 수동으로 통합한 뒤 다시 시도해 주세요.
+```
+
 <!-- cache_translation_check_ko_3be6f3fbb026285eb89ed70715d8baa12cfa3d198679f2a871a8ab935a59c5fc -->
 ```
         <source>Dump file %s does not exist.</source>
@@ -1043,4 +1055,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 73.
+Number of issues: 74.
