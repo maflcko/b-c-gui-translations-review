@@ -27,7 +27,7 @@ Correct translation:
         <translation>&amp;Programmfenster</translation>
     
 ERR
-The translation adds unnecessary specificity. The standard menu label should be "Fenster".
+The standard German UI label for the "Window" menu is "Fenster". "Programmfenster" is unnatural and too specific.
 
 Correct translation:
 &Fenster
@@ -64,7 +64,7 @@ Correct translation:
         <translation>&amp;Programmfenster</translation>
     
 ERR
-The translation adds unnecessary specificity. The standard menu label should be "Fenster".
+The standard German UI label for the "Window" menu is "Fenster". "Programmfenster" is unnatural and too specific.
 
 Correct translation:
 &Fenster
@@ -101,7 +101,7 @@ Gesendet
         <translation>Übertragen</translation>
     
 ERR
-"Übertragen" is not the usual or most accurate translation for "Sent" in the Bitcoin wallet context. The standard German term is "Gesendet".
+"Übertragen" is uncommon/awkward in this Bitcoin transaction context. The typical and accurate UI label for "Sent" is "Gesendet".
 
 Correct translation:
 Gesendet
