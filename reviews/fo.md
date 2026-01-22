@@ -15,7 +15,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
         <translation>Innlegg nýggja útgjaldsadressu</translation>
     
 ERR
-The translation "Innlegg" is a noun meaning "input", "contribution", or "post" (like on a forum). It is not the verb "Create". Also, "útgjaldsadressu" specifically means "payout address" or "spending address", which is more specific than the source text "address". A more natural translation for "Create a new address" would use a verb like "Stovna".
+The translation uses "Innlegg" (which is typically a noun meaning 'contribution' or 'post', or 'hospital admission') instead of the verb for 'create' (stovna). Additionally, "útgjaldsadressu" translates to 'payout address', which is more specific than the source text and potentially incorrect depending on the context (receiving vs sending).
 
 Correct translation:
 Stovna nýggja adressu
@@ -27,12 +27,10 @@ Stovna nýggja adressu
         <translation>Váttað mappu bronglan</translation>
     
 ERR
-The translation contains grammatical errors. "Váttað" is the past participle (confirmed), but here the imperative or infinitive "Vátta" (Confirm) is needed. Also, "mappu bronglan" (wallet encryption) is translated as two separate nouns without proper connection or compound structure. In Faroese, compound nouns are written together, or a genitive structure is used. "Mappa" often means folder, but is used for wallet in some contexts (though "lumma" is pocket/wallet, "mappa" is commonly used in software contexts for wallet/portfolio). "Bronglan" is a somewhat obscure word for encryption (often "kryptering" is used, or "dulnevning"). However, assuming "mappa" and "bronglan" are the chosen terminology, they should be combined or grammatically linked.
-
-A better, more standard translation would be "Vátta bronglan av lumma" or "Vátta mappukryptering". Given the existing words:
+The translation contains grammatical and terminology errors. "Váttað" is the past participle (Confirmed), whereas the source requires the imperative "Vátta" (Confirm). Additionally, "mappu" translates to "folder", while "wallet" is correctly translated as "seðlabók" in this context.
 
 Correct translation:
-Vátta mappubronglan
+Vátta bronglan av seðlabók
 ```
 
 <!-- cache_translation_check_fo_ce8d9c572849fa271822ea7a0c30eee94659f3e74f77bbfaddca5e290a84265a -->
@@ -41,7 +39,7 @@ Vátta mappubronglan
         <translation>Ógilda</translation>
     
 ERR
-The translation "Ógilda" means "Invalidate" or "Cancel" (similar to 'Cancel' or 'Void'). While it might be used for an "Undo" or "Cancel" button, "Back" (navigation) is usually translated as "Aftur" or "Tilbake" (though Faroese uses *Aftur*). If the context is navigation (going back to the previous screen), "Ógilda" is incorrect. If the context were a browser history or wizard steps, "Aftur" is the standard term. Given the ambiguity but high likelihood of navigation in UI contexts, "Aftur" is safer and more accurate for "Back". "Ógilda" is definitely wrong for "Back"; it corresponds to "Cancel".
+"Ógilda" means "invalidate" or "cancel". "Back" in a software context usually refers to navigation (going back to the previous screen), for which the correct Faroese translation is "Aftur".
 
 Correct translation:
 Aftur
@@ -53,10 +51,10 @@ Aftur
         <translation>Mappa ið verður brongla</translation>
     
 ERR
-The translation uses "Mappa" (Folder) for "Wallet", which might be acceptable in some contexts but usually "Pungur" is preferred for a Bitcoin wallet. More importantly, the grammar is incorrect. "Brongla" is a verb (to scramble/encrypt), but here it should be a past participle used as an adjective ("bronglað" or "bronglaður"). Also, the phrasing "Mappa ið verður brongla" translates literally to "Folder which becomes scramble". A better translation for "Wallet to be encrypted" would be "Pungur at brongla" or "Pungur sum skal bronglast".
+"Mappa" translates to "Folder", whereas "Wallet" should be translated as "Pungur". Additionally, "brongla" is an infinitive verb meaning "to scramble/confuse"; the correct term for "encrypt" is "kryptera", and the grammar requires a participle structure.
 
 Correct translation:
-Pungur at brongla
+Pungur, ið skal krypterast
 ```
 
 <!-- cache_translation_check_fo_d1b0669a460533a748f2cfd94ac5ea6b5062758d0ed63b77e0447966c8bae7f6 -->
@@ -65,13 +63,13 @@ Pungur at brongla
         <translation>Tín mappa verður brongla.</translation>
     
 ERR
-The translation is grammatically incorrect and uses a slightly odd word for "encrypted". "Brongla" is a verb meaning "to confuse" or "to tangle". The participle "bronglað" (confused/tangled/scrambled) is sometimes used for encryption, but "krypterað" is standard in technical contexts. Crucially, the sentence ends abruptly. The source says "is about to be encrypted". The translation "verður brongla" is ungrammatical (missing the past participle ending 'ð' and possibly a future marker like "farið at verða").
-
-A better translation would be:
-Tín lumma-mappa fer at verða krypterað.
+The translation contains grammatical errors, terminology issues, and is missing a trailing space.
+1. "Mappa" usually means "folder"; "seðlabók" is the standard term for "wallet".
+2. "Brongla" (to confuse/scramble) is in the infinitive form, but the passive voice requires a past participle (e.g., "bronglað" or preferably the technical term "krypterað").
+3. The source text ends with a space, which is missing in the translation.
 
 Correct translation:
-Tín lumma-mappa fer at verða krypterað.
+Tín seðlabók fer at verða krypterað.
 ```
 
 <!-- cache_translation_check_fo_7024581e3221473d89bd75ac77039b7da259e2267108ce10401cba4c32155126 -->
@@ -80,10 +78,10 @@ Tín lumma-mappa fer at verða krypterað.
         <translation>Vís flytingaryvirlit, tilhoyrandi mappuna</translation>
     
 ERR
-The translation includes extra information not present in the source text. "Vís flytingaryvirlit" means "Show transaction history", which is close enough to "Browse...", but ", tilhoyrandi mappuna" means ", belonging to the folder" or ", the associated folder". This extra phrase changes the meaning and seems to have been copied from a different context or is a hallucination.
+The translation includes extraneous text ", tilhoyrandi mappuna" (meaning ", the associated folder"), which is not present in the source text and is contextually incorrect for this specific UI element.
 
 Correct translation:
-Kaga ígjøgnum flytingarsøgu
+Vís flytingaryvirlit
 ```
 
 <!-- cache_translation_check_fo_906ac37103d5b761ab3e492f8b300e161beeb13f6b7c92b69f788bbad6c6b64b -->
@@ -92,10 +90,10 @@ Kaga ígjøgnum flytingarsøgu
         <translation>Ger nýggja mappu</translation>
     
 ERR
-In the context of Bitcoin software, "wallet" should typically be translated to a term referring to a digital wallet (like 'lummapungur' or 'seðlahefti'), not "mappu". "Mappu" means "folder" or "directory" in Faroese, which is confusing in this context.
+The translation "mappu" means "folder" or "briefcase". The correct term for "wallet" in Faroese is "pungur".
 
 Correct translation:
-Stovna nýggjan lummapung
+Ger nýggjan pung
 ```
 
 <!-- cache_translation_check_fo_0fe93e14ddceb8b0f0a351d223da51f57c3fc96a9ee4f940cff335869c18e24a -->
@@ -104,10 +102,10 @@ Stovna nýggjan lummapung
         <translation>Mappa:</translation>
     
 ERR
-In the context of Bitcoin software, "Wallet" is almost universally translated as "Lummapungur" (literally "pocket purse") or sometimes just "Pungur" in Faroese to refer to the digital wallet holding funds. "Mappa" means "folder" or "portfolio" (in the sense of a briefcase), which is not the standard terminology for a crypto wallet.
+The translation "Mappa" means "Folder" in Faroese. The correct term for "Wallet" (where money is kept) is "Pungur".
 
 Correct translation:
-Lummapungur:
+Pungur:
 ```
 
 <!-- cache_translation_check_fo_9216749058908e9a28ee28458812bad6912cdcaad1c5b79c07d06877aecb0a9b -->
@@ -116,10 +114,10 @@ Lummapungur:
         <translation>Innles eina mappu</translation>
     
 ERR
-The translation "Innles eina mappu" more accurately translates to "Import a folder" or "Import a wallet" rather than "Open a wallet". In Faroese, "wallet" in the context of Bitcoin is often translated as "lummapungur" (pocket purse) or "pungur" (purse), but "mappa" (folder/file) is sometimes used in software contexts for "wallet" (as in a wallet file). However, "innles" (import/read in) is not the best verb for "Open". A better verb for "Open" is "Lat upp".
+The translation means "Load a folder" (Innles eina mappu). "Wallet" should be translated as "lummapungur" (or "pungur"), and "Open" is typically "Lat upp" in a UI context.
 
 Correct translation:
-Lat ein pung upp
+Lat upp ein lummapung
 ```
 
 <!-- cache_translation_check_fo_56897f47deca2157d03db69c9fd9f86759b51c170af09867f551f8947d50d542 -->
@@ -128,7 +126,7 @@ Lat ein pung upp
         <translation>Óbólkaðar myntir</translation>
     
 ERR
-The translation provided ("Óbólkaðar myntir") actually means "Unconfirmed coins" or "Ungrouped coins" (specifically referencing coins/currency), which is completely different from the source text "List mode" (a UI view setting). It seems the translator might have pasted a translation for a different string (perhaps related to "unconfirmed" or "unspent" outputs) or misunderstood the context entirely.
+The translation "Óbólkaðar myntir" means "Ungrouped coins". While this describes the content displayed in list mode within the Coin Control context (as opposed to grouped inputs in tree mode), it is not a correct translation of the UI term "List mode". It unnecessarily restricts the meaning to coins and changes the part of speech.
 
 Correct translation:
 Listaháttur
@@ -140,7 +138,7 @@ Listaháttur
         <translation>(%1 løst)</translation>
     
 ERR
-The translation means "loose" or "solved" (as in a problem), which is the opposite of "locked". The correct Faroese word for "locked" is "læst".
+The translation means "solved" or "loosened/unlocked" (similar to the Danish 'løst' or Faroese 'loyst'), which is the opposite or unrelated to the source "locked". The correct Faroese word for "locked" is "læst".
 
 Correct translation:
 (%1 læst)
@@ -152,22 +150,10 @@ Correct translation:
         <translation>Miseydnaðist at gera mappu</translation>
     
 ERR
-The translation uses the word "mappu" which means "folder" in Faroese. In the context of Bitcoin, "wallet" should be translated as "seðlahefti" (or sometimes "pungur", though seðlahefti is often used in software). "Mappa" refers to a file directory.
+The word "mappu" means "folder" (as in a file directory or a physical binder) in Faroese. In the context of Bitcoin, "wallet" should be translated as "lumma".
 
 Correct translation:
-Miseydnaðist at gera seðlahefti
-```
-
-<!-- cache_translation_check_fo_d6e876b33fae7c21989ae54e9cb1ba77bd59d3608f53bf6edb3bf446cb470f22 -->
-```
-        <source>Migrate wallet</source>
-        <translation>Uppstiga mappusnið</translation>
-    
-ERR
-The Faroese translation "Uppstiga mappusnið" (Upgrade folder/wallet format) captures the general idea of an upgrade, but "mappusnið" usually refers to a file format or layout, while "wallet" in the context of Bitcoin is typically translated as "lumma" (pocket/wallet) in Faroese software contexts. "Uppstiga" is also a bit unusual; "Flyt" (move/migrate) or "Dagfør" (update/upgrade) might be better depending on the exact technical process, but "Uppstiga" is acceptable for "upgrade". However, equating "wallet" to "mappusnið" (folder format) is technically imprecise and slightly confusing. A more direct translation of "Migrate wallet" would be better.
-
-Correct translation:
-Flyt lumma
+Miseydnaðist at stovna lumma
 ```
 
 <!-- cache_translation_check_fo_b9510fefa0983063057ec19c7bf29c9ee83f3344b0010894ddfe996a1bb12062 -->
@@ -177,12 +163,10 @@ Flyt lumma
         <translation>Uppstigan av mappusniði væleydnað</translation>
     
 ERR
-The translation provided seems to mean "Upgrade of folder format successful" or "Upgrade of wallet format successful" (specifically using 'mappusniði' which relates to folder/wallet format, and 'uppstigan' which relates to upgrading/rising). This deviates significantly from the source text "Restore wallet message" which is a title for a message box about restoration, not an upgrade confirmation itself. The source is a title/header string.
-
-The term "mappa" often means "folder" or "wallet" in computer contexts in Faroese/Icelandic (though "fíggjarmappa" or just "mappa" is used). However, "Uppstigan" (Upgrade) is definitely wrong for "Restore". "Endurstovna" is usually used for "Restore".
+The translation appears to be completely unrelated to the source text in meaning. "Uppstigan av mappusniði væleydnað" translates roughly to "Ascension of folder format successful", whereas the source text is "Restore wallet message". "Wallet" is usually translated as "lumma" in Faroese.
 
 Correct translation:
-Boð um endurstovnan av lumma
+Boð um endurskapan av lumma
 ```
 
 <!-- cache_translation_check_fo_de25c2c7d81e32ee82115d0bb73be924224ce521a382073ce8188e311e4667a5 -->
@@ -191,15 +175,10 @@ Boð um endurstovnan av lumma
         <translation>Mappan verður eisini løgd í hesa skjáttuna.</translation>
     
 ERR
-The translation swaps the meaning of "wallet" and "directory/folder".
-
-*   Source: "The **wallet** will also be stored in this **directory**."
-*   Translation provided: "**Mappan** (The folder) verður eisini løgd í hesa **skjáttuna** (the wallet)."
-
-It says "The folder will also be placed into this wallet," which is the reverse of the original meaning. In Bitcoin contexts, "wallet" is usually translated as "lumma" or "skjátta", and "directory" is "mappa" or "skrá".
+The translation swaps the meanings of "wallet" and "directory". "Mappan" means "the folder" (directory), while "skjáttuna" means "the wallet" (or pouch). Consequently, the translation reads "The folder will also be put into this wallet," which reverses the meaning of the source text.
 
 Correct translation:
-Lummin verður eisini goymdur í hesi mappuni.
+Pengapungurin verður eisini goymdur í hesi mappuni.
 ```
 
 <!-- cache_translation_check_fo_afc457a9861e6e314541de1c97b75f50c9bfc8f4443a7ca2539965090b713a24 -->
@@ -207,7 +186,11 @@ Lummin verður eisini goymdur í hesi mappuni.
         <source>Form</source>
         <translation>Formil</translation>
     
-UNK_LANG, not familiar with the Faroese language 'fo'.
+ERR
+In Faroese, 'Formil' means 'formula' (e.g., in mathematics or chemistry). The English source 'Form' refers to a user interface form or window, for which the correct translation is 'Formularur' (or potentially 'Formur' depending on specific context, but 'Formil' is incorrect).
+
+Correct translation:
+Formularur
 ```
 
 <!-- cache_translation_check_fo_afc457a9861e6e314541de1c97b75f50c9bfc8f4443a7ca2539965090b713a24 -->
@@ -215,7 +198,11 @@ UNK_LANG, not familiar with the Faroese language 'fo'.
         <source>Form</source>
         <translation>Formil</translation>
     
-UNK_LANG, not familiar with the Faroese language 'fo'.
+ERR
+In Faroese, 'Formil' means 'formula' (e.g., in mathematics or chemistry). The English source 'Form' refers to a user interface form or window, for which the correct translation is 'Formularur' (or potentially 'Formur' depending on specific context, but 'Formil' is incorrect).
+
+Correct translation:
+Formularur
 ```
 
 <!-- cache_translation_check_fo_9fa34eecaac09b85734d6a145bee0c5b3bf5e8d7844df089b110cfa31b688ff3 -->
@@ -224,10 +211,10 @@ UNK_LANG, not familiar with the Faroese language 'fo'.
         <translation>Fær ikki undirrita inntøk tá mappan er løst.</translation>
     
 ERR
-The translation uses "inntøk" which generally means "income" or "revenue". In the context of Bitcoin transactions, "inputs" should be translated as "innsetingar" (deposits/inputs) or possibly just kept as the technical term if appropriate, but "inntøk" is misleading here. Additionally, "mappan" usually refers to a folder, whereas "wallet" in a crypto context is typically translated as "fíggjarmappa" or "pungur" (though "mappa" might be understood in a very casual sense, it's imprecise). Finally, "løst" usually means "loose" or "solved/resolved", not "locked". "Locked" is "læst".
+The translation contains a critical semantic error and grammatical issues. 'Løst' means 'loose', 'unlocked', or 'solved', whereas 'locked' translates to 'læst'. Additionally, 'mappan' means 'the folder', while 'wallet' is typically translated as 'lummapungur' in this context. 'Fær ikki undirrita' is also grammatically awkward (should be 'Fær ikki undirritað' or 'Kann ikki undirrita').
 
 Correct translation:
-Kann ikki undirrita innsetingar meðan fíggjarmappan er læst.
+Kann ikki undirrita input, meðan lummapungurin er læstur.
 ```
 
 <!-- cache_translation_check_fo_3e7f9346cf5b4ae5595987dad3fdd836cf47e3a933df6efebe82a4936d202c72 -->
@@ -236,7 +223,7 @@ Kann ikki undirrita innsetingar meðan fíggjarmappan er læst.
         <translation>Mappa:</translation>
     
 ERR
-"Mappa" translates to "Folder" in Faroese, not "Wallet". The correct term for a wallet (especially in a financial/Bitcoin context) is usually "Pungur" or "Money-pocket".
+"Mappa" means "folder" in Faroese. The correct translation for "wallet" is "pungur". Additionally, the translation is missing the trailing space present in the source text.
 
 Correct translation:
 Pungur:
@@ -248,10 +235,10 @@ Pungur:
         <translation>Mappa:</translation>
     
 ERR
-In the context of Bitcoin software, "Wallet" is almost universally translated as "Lummapungur" (literally "pocket purse") or sometimes just "Pungur" in Faroese to refer to the digital wallet holding funds. "Mappa" means "folder" or "portfolio" (in the sense of a briefcase), which is not the standard terminology for a crypto wallet.
+The translation "Mappa" means "Folder" in Faroese. The correct term for "Wallet" (where money is kept) is "Pungur".
 
 Correct translation:
-Lummapungur:
+Pungur:
 ```
 
 <!-- cache_translation_check_fo_a1923d6ea5dbaecb696e55977aa6e5d65f1161f3301ff61b387170ad749ffc6c -->
@@ -260,10 +247,10 @@ Lummapungur:
         <translation>Um eingi inntøk (myntir) verða vald, so vera tey vald sjálvvirkandi</translation>
     
 ERR
-The translation provided is much longer and more explanatory than the source text. It translates to something like "If no inputs (coins) are selected, then they will be selected automatically". While this explains the *logic* behind the automatic selection mode, it is not a direct translation of the phrase "automatically selected", which is likely a label or a state indicator. A concise translation is better suited for UI elements.
+The translation is a long explanatory sentence ("If no inputs (coins) are selected, then they are selected automatically") rather than a direct translation of the short source phrase.
 
 Correct translation:
-sjálvvirkandi valt
+sjálvvalt
 ```
 
 <!-- cache_translation_check_fo_a8304a5d9b50fb7c2416b4b8a4c4de9429fcf4d76be51e499c616e73ab19b41a -->
@@ -272,7 +259,7 @@ sjálvvirkandi valt
         <translation>%1/ktB</translation>
     
 ERR
-The translation changes the unit from `kvB` (kilo-virtual-Bytes) to `ktB` (kilo-thousand-Bytes?), which is incorrect. In technical contexts like Bitcoin, specific units like 'kvB' should generally be preserved or translated accurately to the target language's equivalent abbreviation if it exists, but 'ktB' is not a standard Faroese abbreviation for virtual bytes. 'vB' stands for 'virtual bytes'. In Faroese, 'byte' is often just 'být' or kept as 'byte'. 'Virtual' is 'virtual' or similar.
+The unit symbol "kvB" (kilo virtual Bytes) should typically be preserved to ensure technical accuracy and consistency. "ktB" is not a recognized standard unit symbol in this context and may confuse the user.
 
 Correct translation:
 %1/kvB
@@ -284,10 +271,10 @@ Correct translation:
         <translation>Draga avgjald frá upphædd</translation>
     
 ERR
-The translation is missing the ampersand (`&`) for the keyboard shortcut, which is present in the source text (`S&amp;ubtract`).
+The translation is missing the shortcut key indicator ('&') which is present in the source text.
 
 Correct translation:
-D&amp;raga avgjald frá upphædd
+&Draga avgjald frá upphædd
 ```
 
 <!-- cache_translation_check_fo_4d33c62ec5f5dc5d470724a3aeae4d7e8059923e3df8025f34d30e2dcc5d1d61 -->
@@ -296,9 +283,7 @@ D&amp;raga avgjald frá upphædd
         <translation>Boð undirritaði</translation>
     
 ERR
-The translation "Boð undirritaði" means "Message signed" in the sense that the message *performed* the action of signing (past tense verb), or it is grammatically incomplete. "Message signed" in English is a passive construction meaning "The message *has been* signed".
-
-In Faroese, "Boð" is plural (neuter noun), so the past participle should likely be "undirritað".
+The translation uses the active past tense verb form 'undirritaði' (meaning "signed" as in "he signed") instead of the past participle 'undirritað' (meaning "signed" as in "has been signed"). Since 'boð' (message) is a neuter noun, the participle must agree with it.
 
 Correct translation:
 Boð undirritað
@@ -310,7 +295,7 @@ Boð undirritað
         <translation>Inngjald</translation>
     
 ERR
-"Inngjald" translates more closely to "Payment" or "Deposit" (noun). While related, "Received from" is a prepositional phrase indicating the source. A more accurate translation for "Received from" in a transaction list context would be "Frá" (From) or "Móttikið frá" (Received from).
+The translation "Inngjald" means "deposit", "payment", or "contribution" (noun). The source text "Received from" indicates the source or sender of the transaction.
 
 Correct translation:
 Móttikið frá
@@ -322,7 +307,7 @@ Móttikið frá
         <translation>Útgjald</translation>
     
 ERR
-The translation "Útgjald" means "payment" or "expense" in Faroese. While related, "Sent to" specifically indicates the recipient or the action of sending to a destination. A more accurate translation for "Sent to" in this context (likely transaction history) would be "Sent til" or simply "Til". "Útgjald" is a noun describing the transaction type, whereas "Sent to" is a label for the destination field.
+The translation "Útgjald" means "payout" or "expenditure" (noun), which changes the meaning of the source text. "Sent to" indicates the destination or the action of sending, and is best translated with the corresponding verb phrase.
 
 Correct translation:
 Sent til
@@ -334,7 +319,7 @@ Sent til
         <translation>Útgjøld</translation>
     
 ERR
-"Útgjøld" translates to "Expenses" or "Payments out" (plural noun) in Faroese. "Sent to" acts more like a prepositional phrase indicating the recipient or destination. A more accurate translation in the context of a transaction history label would be "Sent til" (Sent to) or perhaps "Móttakari" (Recipient), but strictly translating the action, "Sent til" is better. If the context is a filter or category header, "Útgjøld" *might* work as "Outgoing payments", but "Sent to" specifically asks "To whom?".
+The translation "Útgjøld" corresponds to "expenses" or "payouts" (noun), whereas "Sent to" indicates the destination or recipient of the transaction.
 
 Correct translation:
 Sent til
@@ -346,10 +331,10 @@ Sent til
         <translation>Ger nýggja mappu</translation>
     
 ERR
-In the context of Bitcoin software, "wallet" should typically be translated to a term referring to a digital wallet (like 'lummapungur' or 'seðlahefti'), not "mappu". "Mappu" means "folder" or "directory" in Faroese, which is confusing in this context.
+The translation "mappu" means "folder" or "briefcase". The correct term for "wallet" in Faroese is "pungur".
 
 Correct translation:
-Stovna nýggjan lummapung
+Ger nýggjan pung
 ```
 
 <!-- cache_translation_check_fo_9500cc1f755400abc4eb48e5ad97609b6c9f37b6a5416448af9d4bd51ebee031 -->
@@ -357,7 +342,15 @@ Stovna nýggjan lummapung
         <source>Error loading wallet. Wallet requires blocks to be downloaded, and software does not currently support loading wallets while blocks are being downloaded out of order when using assumeutxo snapshots. Wallet should be able to load successfully after node sync reaches height %s</source>
         <translation>Villa undir innlesing av mappu. Mappur tørva at blokkar eru tiknir niður. Og ritbúnaðurin kann ikki, sum er, innlesa mappur undir niðurtøku av blokkum, í ósamanhangandi raðfylgju, tá assumeutxo løtumynd verur brúkt. Eftir at knúturin hevur samstilla til hædd %s skuldi eydnast at innlisið mappuna.</translation>
     
-UNK_LANG
+ERR
+The translation contains incorrect terminology and grammatical errors.
+1. "Wallet" is translated as "mappa" (folder), but the standard Faroese term for a Bitcoin wallet is "lumma".
+2. "verur" is a misspelling of "verður".
+3. "hevur samstilla" is grammatically incorrect; it requires the supine form "samstillað".
+4. "at innlisið" is incorrect; the infinitive "at innlesa" is required here.
+
+Correct translation:
+Villa við innlesing av lumma. Lumman krevur, at blokkar verða tiknir niður, og ritbúnaðurin stuðlar í løtuni ikki innlesing av lummum, meðan blokkar verða tiknir niður í ósamanhangandi raðfylgju, tá assumeutxo-løtumyndir verða brúktar. Lumman átti at kunna innlesast, tá knúturin hevur samstillað til hædd %s
 ```
 
 <!-- cache_translation_check_fo_00258c2a38755692de21f5a83af6a90db1813af7427b572a75cb4fde880e85a9 -->
@@ -366,20 +359,14 @@ UNK_LANG
         <translation>Villa: Hendan útgávan av bitcoin-mappuni kann bert innlessa útgávu 1 dumsufílur. Læs útgávu %s dumsufílu</translation>
     
 ERR
-The translation misinterprets the second part of the message. The English source says "Got dumpfile with version %s" (indicating what was found). The Faroese translation says "Læs útgávu %s dumsufílu" which translates to something like "Read version %s dumpfile" (imperative or past tense "read", but the context suggests it thinks it successfully read it, whereas the English implies a mismatch error: "I received version %s"). "Læs" looks like a typo for "Las" (read, past tense) or a misunderstanding. A better phrasing would reflect that the system received or found an unsupported version.
+The translation is incomplete and contains significant errors.
+1. The first sentence ("Dumpfile version is not supported.") is missing.
+2. "bitcoin-wallet" is translated as "bitcoin-mappuni" (bitcoin folder), but "wallet" should be translated as "pungur".
+3. "Læs" implies the imperative "Lock!" in Faroese. The intended meaning "Got" should be translated as "Fekk" or "Las" (read).
+4. "dumsufílur" appears to be a typo for "dumpfílur".
 
 Correct translation:
-Villa: Dumpfílu-útgávan er ikki stuðlað. Hendan útgávan av bitcoin-mappuni stuðlar bert útgávu 1 dumpfílum. Fekk dumpfílu við útgávu %s
-```
-
-<!-- cache_translation_check_fo_24a3ead1fb25d206eef76c45995680cc190ac188159976da2c088723460cc657 -->
-```
-        <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
-        <translation>Vekslipeningur, ið er lægri enn støv (upphædd ið ikki loysir seg at hava og brúka), kann verða strikaður og goldin sum avgjald ístaðin</translation>
-    
-UNK_LANG
-
-I am not familiar enough with the Faroese language ('fo') to fully evaluate the accuracy and grammar of this translation.
+Villa: Útgávan av dumpfíluni er ikki stuðlað. Hendan útgávan av bitcoin-punginum stuðlar bert dumpfílur av útgávu 1. Fekk dumpfílu við útgávu %s
 ```
 
 <!-- cache_translation_check_fo_578543f6f5b9238a414a81055b74697f680731d043c191607c4dcc944ad4f8fb -->
@@ -388,9 +375,7 @@ I am not familiar enough with the Faroese language ('fo') to fully evaluate the 
         <translation>Kundi ikki váttað UTXO løtumynd. Endurbyrja fyri at halda fram við vannligu blokk-niðurtøkuni, ella royn at innlesa eina aðra løtumynd.</translation>
     
 ERR
-The translation contains grammatical and spelling errors.
-1. The modal verb 'kundi' (could) should be followed by the infinitive 'vátta', not the supine/participle 'váttað'.
-2. The word 'vannligu' (normal) is misspelled; the correct spelling is 'vanligu'.
+Grammar error: The modal verb 'kundi' requires the infinitive 'vátta', not the supine/participle 'váttað'. Additionally, 'vannligu' is a misspelling of 'vanligu'.
 
 Correct translation:
 Kundi ikki vátta UTXO-løtumynd. Endurbyrja fyri at halda fram við vanligu blokk-niðurtøkuni, ella royn at innlesa eina aðra løtumynd.
@@ -402,7 +387,7 @@ Kundi ikki vátta UTXO-løtumynd. Endurbyrja fyri at halda fram við vanligu blo
         <translation>whitebind kann bert brúkast til inngangandi sambon ("out" var ásett)</translation>
     
 ERR
-The translation contains a typo/misspelling. "sambon" is likely intended to be "sambond" (connections).
+The word "sambon" is a misspelling. The correct plural form of "samband" (connection) in Faroese is "sambond".
 
 Correct translation:
 whitebind kann bert brúkast til inngangandi sambond ("out" var ásett)
@@ -414,10 +399,10 @@ whitebind kann bert brúkast til inngangandi sambond ("out" var ásett)
         <translation>Villa undir innlesing av %s</translation>
     
 ERR
-The translation means "Error during reading/loading of %s", which is different from "Error creating %s". "Creating" implies making something new, while "innlesing" implies reading existing data.
+The translation changes the meaning of the action. "Innlesing" means reading, loading, or importing, whereas the source text refers to "creating".
 
 Correct translation:
-Villa tá %s varð stovnað
+Villa við at stovna %s
 ```
 
 <!-- cache_translation_check_fo_5199692813c5d67a1bd18f0cd81bcefd5190186f64cecc1a9221b445c6b9cb57 -->
@@ -426,11 +411,11 @@ Villa tá %s varð stovnað
         <translation>Miseydnaðist at strikað flyting: %s</translation>
     
 ERR
-The grammar in the Faroese translation is slightly incorrect. "at strikað" combines the infinitive marker "at" with a past participle "strikað". It should be the infinitive form "strika". Also, "flyting" (transaction) needs to be in the accusative case or determined by the context, but the main issue is the verb conjugation. A more natural phrasing would be "Miseydnaðist at strika flyting" or "Feilur við at strika flyting".
+The translation contains a grammatical error. After the infinitive marker 'at', the verb should be in the infinitive form 'strika', not the supine/past participle form 'strikað'.
 
 Correct translation:
 Miseydnaðist at strika flyting: %s
 ```
 </details>
 
-Number of issues: 35.
+Number of issues: 33.
