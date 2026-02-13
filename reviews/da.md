@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -8,6 +8,82 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 [If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bda%5D%20request)
 
+
+<!-- cache_translation_check_da_32eb9b258c630ba8d494a74f468dc15f49621e7e4166c96c05ad1c0dcae789dc -->
+```
+        <source>Right-click to edit address or label</source>
+        <translation>￼  Về     Tải về     blog     phát hành     Phát triển     Liên hệ                                Tiếng Anh                                                                                                    Tiếng Tây Ban Nha                                                  Nhật Bản                                                  Tiếng Trung giản thể                                                  繁體中文                                                                            Phát hành  Bitcoin Core 28.0  Bitcoin Core 27.1  Bitcoin Core 27.0  Bitcoin Core 26.2  Bitcoin Core 26.1  Bitcoin Core 26.0  Bitcoin Core 25.2  Bitcoin Core 25.1  Bitcoin Core 25.0  Bitcoin Core 24.2  Bitcoin Core 24.1  Lõi Bitcoin 24.0.1  Bitcoin Core 23.2  Bitcoin Core 23.1  Bitcoin Core 23.0  Bitcoin Core 22.1  Bitcoin Core 22.0  Bitcoin Core 0.21.2  Bitcoin Core 0.21.1  Bitcoin Core 0.21.0  Bitcoin Core 0.20.2  Bitcoin Core 0.20.1  Bitcoin Core 0.20.0  Bitcoin Core 0.19.1  Lõi Bitcoin 0.19.0.1  Bitcoin Core 0.18.1  Bitcoin Core 0.18.0  Lõi Bitcoin 0.17.1  Lõi Bitcoin 0.17.0.1  Bitcoin Core 0.17.0  Lõi Bitcoin 0.16.3  Lõi Bitcoin 0.16.2  Lõi Bitcoin 0.16.1  Bitcoin Core 0.16.0  Bitcoin Core 0.15.2  Lõi Bitcoin 0.15.1  Lõi Bitcoin 0.15.0.1  Bitcoin Core 0.15.0  Lõi Bitcoin 0.14.3  Bitcoin Core 0.14.2  Bitcoin Core 0.14.1  Bitcoin Core 0.14.0  Bitcoin Core 0.13.2  Lõi Bitcoin 10.11.12.8333  Bitcoin Core 0.13.0  Bitcoin Core 0.12.1  Bitcoin Core 0.12.0  Bitcoin Core 0.11.2  Bitcoin Core 1010568.11.1  Bitcoin Core 10.11.0..  Twitter Pháp lý | Chính sách bảo mật | RSS￼  ￼ © 2024 Lõi Bitcoin</translation>
+    
+SPAM
+The translation is not in Danish ('da'). Instead, it contains a large block of text in Vietnamese that appears to be scraped from a website header/footer related to Bitcoin Core releases, containing navigation links and version numbers.
+
+Correct translation:
+Højreklik for at redigere adresse eller mærkat
+```
+
+<!-- cache_translation_check_da_8149d08081b194022e936e45978c872e67ea104f2a9ef01418344084be27504f -->
+```
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>bc1qum5qxl55fvdy3muaka457ge06qdq678h7ugjv9</translation>
+    
+SPAM
+The provided translation is a specific Bitcoin address instead of a Danish translation of the source text.
+
+Correct translation:
+Dette er dine Bitcoin-adresser til at sende betalinger. Tjek altid beløbet og den modtagende adresse, før du sender coins.
+```
+
+<!-- cache_translation_check_da_1801bfcf21d5af4c00550ec37211640285523a511c5a99430e34204084d5924f -->
+```
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation>Dette er Bitcoin-adressene dine for å motta betalinger. Bruk «Opprett ny mottakeradresse»-knappen i mottaksfanen for å opprette nye adresser. bc1qum5qxl55fvdy3muaka457ge06qdq678h7ugjv9
+Signering er kun mulig med adresser av typen 'legacy'.</translation>
+    
+SPAM
+The translation is in Norwegian instead of Danish and includes a Bitcoin address (`bc1qum5qxl55fvdy3muaka457ge06qdq678h7ugjv9`) that is not present in the source text.
+
+Correct translation:
+Dette er dine Bitcoin-adresser til modtagelse af betalinger. Brug knappen 'Opret ny modtagelsesadresse' i fanen modtag for at oprette nye adresser.
+Signering er kun muligt med adresser af typen 'legacy'.
+```
+
+<!-- cache_translation_check_da_5fc6494e91d36bd317b51db9dd2e82895c814c2eb2b6cd815bd7b17b68646574 -->
+```
+        <source>&amp;Copy Address</source>
+        <translation>BC1QUM5QXl55Fvdy3muaka457GE06QDQ678H7Ugjv9</translation>
+    
+SPAM
+Rather than providing a Danish translation for the command "&Copy Address", the translation contains a specific Bitcoin address.
+
+Correct translation:
+&Kopiér adresse
+```
+
+<!-- cache_translation_check_da_3d442b315648b4603421a9d0b51e527de8ba761ccfa0dadb117756945113dabf -->
+```
+        <source>Copy &amp;Label</source>
+        <translation>BC1QUM5QXl55Fvdy3muaka457GE06QDQ678H7Ugjv9</translation>
+    
+SPAM
+The translation is a Bitcoin address instead of a Danish translation of the source text.
+
+Correct translation:
+Kopiér &amp;mærkat
+```
+
+<!-- cache_translation_check_da_c8832a24e0879f925e1153d1a1cef60628946aa8060ab4882aba7bce34104a9a -->
+```
+        <source>There was an error trying to save the address list to %1. Please try again.</source>
+        <extracomment>An error message. %1 is a stand-in argument for the name of the file we attempted to save to.</extracomment>
+        <translation>BC1QUM5QXl55Fvdy3muaka457GE06QDQ678H7Ugjv9</translation>
+    
+SPAM
+The translation provided is a Bitcoin address, which is unrelated to the source text and constitutes spam or malicious input.
+
+Correct translation:
+Der opstod en fejl under forsøget på at gemme adresselisten til %1. Prøv venligst igen.
+```
 
 <!-- cache_translation_check_da_2218dd66486dc430cfaeb60111fb3d740d26cfdcd4e615cf1bd029344778a985 -->
 ```
@@ -131,18 +207,6 @@ Correct translation:
 Kompileret uden understøttelse af ekstern signering (kræves til ekstern signering)
 ```
 
-<!-- cache_translation_check_da_aaa38a4b65c22a752136e49fcedd3b4cec91fa96095c17d7958ea59f977b07c9 -->
-```
-        <source>The mapped Autonomous System used for diversifying peer selection.</source>
-        <translation>Afbildning fra Autonome Systemer (et Internet-Protocol-rutefindingsprefiks) til IP-adresser som bruges til at diversificere knudeforbindelser. Den engelske betegnelse er "asmap".</translation>
-    
-ERR
-The translation adds unsolicited explanations, contains inaccuracies (it describes a mapping from AS to IPs, which is the wrong direction), and diverges from the concise source.
-
-Correct translation:
-Det kortlagte autonome system, der bruges til at diversificere peer-udvælgelsen.
-```
-
 <!-- cache_translation_check_da_e86573af9456c66bfd9ad709023124b5a35d04e8862df9da61650f05adf8ce61 -->
 ```
         <source>&amp;Create new receiving address</source>
@@ -153,17 +217,6 @@ In Danish, "modtageradresse" should be a single compound word. The current trans
 
 Correct translation:
 &Opret ny modtageradresse
-```
-
-<!-- cache_translation_check_da_5a0e8a1939c952fa324f0aafffeb54abbbccde75bd53272ff7fe054d35aad666 -->
-```
-        <source>&amp;Sign Message</source>
-        <translation>&amp;Singér besked</translation>
-    
-ERR
-Misspelling in Danish: "Singér" should be "Signér".
-Correct translation:
-&Signér besked
 ```
 
 <!-- cache_translation_check_da_4ab31582452ee8e08139b38b207ffafa1af327c30fdf5320a672524bcbd4a3c7 -->
@@ -249,18 +302,6 @@ The option name '-whitebind' was incorrectly altered to '-whitebinde'. It should
 Correct translation:
 Der skal angives en port med -whitebind: '%s'
 ```
-
-<!-- cache_translation_check_da_f0eff68be21147d8c7d91f14268ea1b5d3c05f556bd7b97567fb196a29a5298f -->
-```
-        <source>This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Dette er transaktionsgebyret, som betaler, når du sender en transaktion.</translation>
-    
-ERR
-The Danish sentence is missing the subject "du" after "som", making it ungrammatical.
-
-Correct translation:
-Dette er det transaktionsgebyr, du vil betale, hvis du sender en transaktion.
-```
 </details>
 
-Number of issues: 20.
+Number of issues: 23.

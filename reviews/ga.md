@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -207,6 +207,47 @@ Correct translation:
 &Seoltaí seolta
 ```
 
+<!-- cache_translation_check_ga_005d23e54ec64c88aac901446bae5d38d9db37f7bf001e45e58c0d064b3cb8b8 -->
+```
+        <source>Restore and Migrate Wallet File...</source>
+        <translation>Athchóirigh agus Imircigh Comhad Sparán...</translation>
+    
+ERR
+The translation contains grammatical errors. 
+1. "Imircigh" is a noun meaning "migrants". The correct imperative verb for "Migrate" is "Imirc".
+2. "Comhad Sparán" should use the genitive case for the second noun, making it "Comhad Sparáin" (File of Wallet).
+
+Correct translation:
+Athchóirigh agus Imirc Comhad Sparáin...
+```
+
+<!-- cache_translation_check_ga_3f39686b57742bc697792de8feeb01fee0d369a455df236054401d2835074a0f -->
+```
+        <source>Restore and Migrate Wallet Backup</source>
+        <translation>Athchóirigh agus Imircigh Cúltaca Sparán</translation>
+    
+ERR
+The translation contains grammatical errors and a mistranslation of the word "Migrate".
+1. "Imircigh" is the plural form of the noun "imircí" (meaning "migrants"). The verb for "to migrate" is "imirigh" (or "aistrigh" in a technical context), and the imperative command should be used here.
+2. "Cúltaca Sparán" should use the genitive case for the word "sparán" (wallet), resulting in "Cúltaca Sparáin".
+
+Correct translation:
+Athchóirigh agus Aistrigh Cúltaca Sparáin
+```
+
+<!-- cache_translation_check_ga_03cbb155ca83e1456ca979df7bbe8c9d47a30c516b5f4fe215156601b12d3f04 -->
+```
+        <source>Restore and Migrate Wallet</source>
+        <extracomment>Title of pop-up window shown when the user is attempting to restore a wallet.</extracomment>
+        <translation>Athchóirigh agus Imirce Sparán</translation>
+    
+ERR
+The translation uses a mix of a verb ('Athchóirigh' - Restore) and a noun ('Imirce' - Migration). To match the English "Restore and Migrate" (both verbs), the Irish translation should use the imperative form for both or the verbal noun form for both. Additionally, if using verbal nouns, the word "Sparán" should be in the genitive case ("Sparáin").
+
+Correct translation (using imperative verbs):
+Athchóirigh agus Imirigh Sparán
+```
+
 <!-- cache_translation_check_ga_c404e8d632f955f20538c55725a2cb700f45401c9b277a0cb8ce5b188e534a08 -->
 ```
         <source>%1 client</source>
@@ -285,6 +326,18 @@ An bhfuil tú cinnte gur mian leat an sparán &lt;i&gt;%1&lt;/i&gt; a aistriú?
 
 Final correct translation:
 An bhfuil tú cinnte gur mian leat an sparán &lt;i&gt;%1&lt;/i&gt; a aistriú?
+```
+
+<!-- cache_translation_check_ga_0cb5517d064789eeba522b0c267cf8ebe08a8ed90ef66eecfe69d47f50b5867e -->
+```
+        <source>Restore and Migrate wallet</source>
+        <translation>Athchóirigh agus Imirce an sparán</translation>
+    
+ERR
+The translation uses a mix of a verb ('Athchóirigh' - Restore) and a noun ('Imirce' - Migration). To match the imperative "Restore and Migrate", the second word should also be a verb.
+
+Correct translation:
+Athchóirigh agus imiric an sparán
 ```
 
 <!-- cache_translation_check_ga_f68e95f5d08b1ceccbb0c523c9e4b55b5fc511a0456e3b41be3420fd8942ef6d -->
@@ -467,6 +520,19 @@ Correct translation:
 Am an bhloic dheireanaigh
 ```
 
+<!-- cache_translation_check_ga_c415e2cb733e1ede59bb4ccc424131f45e2edf38260bbaa0389da80316ec13e5 -->
+```
+        <source>Outbound Manual: added using RPC %1 or %2/%3 configuration options</source>
+        <extracomment>Explanatory text for an outbound peer connection that was established manually through one of several methods. The numbered arguments are stand-ins for the methods available to establish manual connections.</extracomment>
+        <translation>Lámhleabhar Amach: curtha leis ag úsáid roghanna cumraíochta RPC %1 nó % 2/ %3</translation>
+    
+ERR
+There are incorrect spaces added between the format specifiers. "% 2/ %3" should be "%2/%3" to match the source formatting and ensure the variables are processed correctly.
+
+Correct translation:
+Lámhleabhar Amach: curtha leis ag úsáid roghanna cumraíochta RPC %1 nó %2/%3
+```
+
 <!-- cache_translation_check_ga_8e3580f9b44f60cd0a35aa583559d173f4d399321201a1e5e6eafe3ad17eb574 -->
 ```
         <source>detecting: peer could be v1 or v2</source>
@@ -608,6 +674,18 @@ The translation is understandable but not entirely correct or idiomatic in Irish
 
 Correct translation:
 Níl Replace-By-Fee, BIP-125, á chomharthaíocht.
+```
+
+<!-- cache_translation_check_ga_e849874bea537a9d7982bb34631e4ebde87f58814995366ed873aaa966b89aaf -->
+```
+        <source>The entered address does not refer to a legacy (P2PKH) key. Message signing for SegWit and other non-P2PKH address types is not supported in this version of %1. Please check the address and try again.</source>
+        <translation>Ní thagraíonn an seoladh isteach d'eochair leagáide (P2PKH). Ní thacaítear le síniú teachtaireachta do SegWit agus cineálacha seoltaí eile nach P2PKH iad sa leagan seo de % 1. Seiceáil an seoladh agus bain triail eile as.</translation>
+    
+ERR
+There is a stray space in the format specifier "% 1". It should be "%1" to match the source text and function correctly as a placeholder.
+
+Correct translation:
+Ní thagraíonn an seoladh isteach d'eochair leagáide (P2PKH). Ní thacaítear le síniú teachtaireachta do SegWit agus cineálacha seoltaí eile nach P2PKH iad sa leagan seo de %1. Seiceáil an seoladh agus bain triail eile as.
 ```
 
 <!-- cache_translation_check_ga_ef7e6af5c62970b5fe0e53653efe71cadf5a5edd2e0b616d73d414c9e1cb9686 -->
@@ -773,18 +851,6 @@ The translation is mostly accurate, but the phrase "bain triail as pictiúr eile
 
 Correct translation:
 Theip ar bhailíochtú a dhéanamh ar achomair UTXO. Atosaigh chun gnáth-íoslódáil na mbloc tosaigh a atosú, nó bain triail as achomair eile a lódáil.
-```
-
-<!-- cache_translation_check_ga_af91fc5f0317a803b6a5f12ff70178d78beebd11e30e412afb1e4b01383cbeff -->
-```
-        <source>Cannot add WalletDescriptor to a non-descriptor wallet</source>
-        <translation>Ní féidir WalletDescriptor a chur le sparán neamh-thuairisciúil</translation>
-    
-ERR
-The phrase "neamh-thuairisciúil" translates more like "non-reporting" or "not descriptive" and does not accurately convey the technical meaning "non-descriptor" in this Bitcoin context. It's better to keep the technical term "descriptor" (or "WalletDescriptor") explicit.
-
-Suggested correction:
-Ní féidir WalletDescriptor a chur le sparán nach bhfuil descriptor aige.
 ```
 
 <!-- cache_translation_check_ga_cd1dd3527f0e92514235321e9324aa0d4fd7756d14f33841bf85ee04a3bbb82c -->
@@ -964,4 +1030,4 @@ Seoladh -proxy nó ainm óstach neamhbhailí, a chríochnaíonn le '=': '%s'
 ```
 </details>
 
-Number of issues: 71.
+Number of issues: 76.

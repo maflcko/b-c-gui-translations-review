@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -190,6 +190,18 @@ Correct translation:
 &URI'yi Aç…
 ```
 
+<!-- cache_translation_check_tr_97ae355cbf4e3ea580ce5ccaa249948835bcddfcdb2b1a968ab8ee884c1a5651 -->
+```
+        <source>%1 behind</source>
+        <translation>arkasında</translation>
+    
+ERR
+The translation is missing the format specifier '%1' which is required to show the time or number of blocks behind.
+
+Correct translation:
+%1 geride
+```
+
 <!-- cache_translation_check_tr_f5e0528619ddd1120287ccf5d52b1f4daca7bcdd91a307701dde1d5c0fb1b43b -->
 ```
         <source>&amp;Sending addresses</source>
@@ -350,6 +362,18 @@ The translation is inaccurate. "Disable Private Keys" should be translated as "�
 
 Correct translation:
 Özel Anahtarları Devre Dışı Bırak
+```
+
+<!-- cache_translation_check_tr_68e1053005c534198e8635f9040750affea0afb91f16b468faa5b5235753f507 -->
+```
+        <source>The entered address "%1" is already in the address book with label "%2".</source>
+        <translation>Girilen "%1" adresi zaten adres defterinde ''%2" etiketli olarak bulunuyor.</translation>
+    
+ERR
+The translation contains a typographical error in the punctuation surrounding the second format specifier. It uses two single quotes (''%2") instead of one double quote ("%2") or a consistent set of quotation marks.
+
+Correct translation:
+Girilen "%1" adresi zaten adres defterinde "%2" etiketiyle bulunuyor.
 ```
 
 <!-- cache_translation_check_tr_9620dae1f1d39b706ac1d51a676bbc379648fdd39ca7ae3f06ab679bd3ee2416 -->
@@ -542,6 +566,18 @@ or
 %1, %2 adresine gönderiliyor
 ```
 
+<!-- cache_translation_check_tr_20edda8e4e478dc6fa0f8373f3e2b23508501557b3a75e2ec4642fdfb8c4ed86 -->
+```
+        <source>Total Amount</source>
+        <translation>Toplam Tutar %1</translation>
+    
+ERR
+The translation includes a format specifier (%1) that is not present in the source text. Adding format specifiers where they don't exist in the source can cause errors in the software.
+
+Correct translation:
+Toplam Tutar
+```
+
 <!-- cache_translation_check_tr_0316934ac8aee6398276bddb648ad84224d90d5f4f6cdfece04255dc19feea07 -->
 ```
         <source>Outbound</source>
@@ -672,6 +708,18 @@ Correct translation:
 İşlem tutarı, ücret düşüldükten sonra göndermek için çok küçük.
 ```
 
+<!-- cache_translation_check_tr_dd1513dfa30f7b4e4a46268e013988dbb9e8f2c75f42340fd69113055d64649e -->
+```
+        <source>Cannot obtain a lock on directory %s. %s is probably already running.</source>
+        <translation>%sDizin kilitlenemiyor. %s muhtemelen halihazırda çalışıyor.</translation>
+    
+ERR
+The translation contains a spacing issue. There should be a space after the first format specifier '%s' to separate it from the following word 'Dizin'.
+
+Correct translation:
+%s dizini kilitlenemiyor. %s muhtemelen halihazırda çalışıyor.
+```
+
 <!-- cache_translation_check_tr_b7ae4ff63df6ce7949259989bf87a72b5de77c8462ed66ad53b81690804d7daa -->
 ```
         <source>Maximum transaction weight is less than transaction weight without inputs</source>
@@ -682,6 +730,18 @@ The translation does not accurately reflect the original English meaning. The En
 
 Correct translation:
 Maksimum işlem ağırlığı, girdiler hariç işlem ağırlığından daha küçük.
+```
+
+<!-- cache_translation_check_tr_6e321ebe4b4c10dc37754657101876bb82e2700638b3afd11059ced9c1803828 -->
+```
+        <source>Specified -blockreservedweight (%d) is lower than minimum safety value of (%d)</source>
+        <translation>Belirtilen -blockreservedweight (%d), minimum güvenlik değeri olan (%d)' dan daha düşük.</translation>
+    
+ERR
+The translation contains an unnecessary space before the apostrophe for the suffix attached to the format specifier. In Turkish, when appending suffixes to numbers or variables represented by format specifiers, there should not be a space before the apostrophe.
+
+Correct translation:
+Belirtilen -blockreservedweight (%d), minimum güvenlik değeri olan (%d)'dan daha düşük.
 ```
 
 <!-- cache_translation_check_tr_cbe0b9498d606899d6c7149057c5e7be1efd9a1274b7a4220f0e0178006fcd8d -->
@@ -805,4 +865,4 @@ Hata: Sadece izlenen tx %s, sadece izlenen cüzdana eklenemedi
 ```
 </details>
 
-Number of issues: 61.
+Number of issues: 66.

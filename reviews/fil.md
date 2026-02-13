@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -385,6 +385,22 @@ Correct translation:
 Ang pitaka ay &lt;b&gt;na-enkriptuhan&lt;/b&gt; at kasalukuyang &lt;b&gt;naka-unlock&lt;/b&gt;
 ```
 
+<!-- cache_translation_check_fil_8fa60765cb010f11c0572c61b585398518bf21f396998ae652f704fadb309acf -->
+```
+        <source>After Fee:</source>
+        <translation>Bayad sa pagtapusan:</translation>
+    
+ERR
+The translation "Bayad sa pagtapusan:" is not a correct or idiomatic translation for "After Fee:" in the context of Bitcoin. "Pagtapusan" is not a standard Tagalog word for "after" in this context; it is more likely a regional or misspelled term, and its usage is ungrammatical in formal Filipino. The phrasing is awkward, and the translation might confuse native speakers.
+
+Correct translation:
+"Pagkatapos ng Bayad:" or "Pagkatapos ng Fee:" (if retaining the English term "fee" as is sometimes common in Filipino financial contexts).
+
+So:
+
+Pagkatapos ng Bayad:
+```
+
 <!-- cache_translation_check_fil_94f7ffa9eeaeae1c674c0620bd7a76a27df25b0366f38df347b8c0d854725bea -->
 ```
         <source>(un)select all</source>
@@ -395,6 +411,18 @@ The translation "(huwag)piliin lahat" is understandable but unnatural for a UI t
 
 Suggested correction:
 (piliin/alisin ang pagpili sa lahat)
+```
+
+<!-- cache_translation_check_fil_1737e7719b029f027a8bee991d879ed0aa546fa21fae490aa3d4654b3551c0f2 -->
+```
+        <source>Date</source>
+        <translation>Datiles</translation>
+    
+ERR
+The translation is erroneous. "Datiles" in Filipino means "dates" as in the fruit, not the calendar date. The correct Filipino translation for "Date" (as in calendar date) is "Petsa".
+
+Correct translation:
+Petsa
 ```
 
 <!-- cache_translation_check_fil_c747dd926d5309dd9d3481c197c7d44e7bf2510815f11271085358bec1a2eccd -->
@@ -1050,18 +1078,6 @@ Correct translation:
 Kopyahin ang &Address
 ```
 
-<!-- cache_translation_check_fil_1737e7719b029f027a8bee991d879ed0aa546fa21fae490aa3d4654b3551c0f2 -->
-```
-        <source>Date</source>
-        <translation>Datiles</translation>
-    
-ERR
-The translation is erroneous. "Datiles" in Filipino means "dates" as in the fruit, not the calendar date. The correct Filipino translation for "Date" (as in calendar date) is "Petsa".
-
-Correct translation:
-Petsa
-```
-
 <!-- cache_translation_check_fil_8fa60765cb010f11c0572c61b585398518bf21f396998ae652f704fadb309acf -->
 ```
         <source>After Fee:</source>
@@ -1402,4 +1418,4 @@ default na pitaka
 ```
 </details>
 
-Number of issues: 109.
+Number of issues: 110.

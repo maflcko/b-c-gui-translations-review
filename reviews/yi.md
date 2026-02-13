@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -443,18 +443,6 @@ Or, using fully loaned terms if no better Yiddish equivalent exists:
 Either is more natural Yiddish, rectifies the format specifier, and avoids unnecessary transliteration.
 ```
 
-<!-- cache_translation_check_yi_ad3f3957ac8a6ee33a37a5d0f583121ec93e389a9fa55dd5fb6c56e751d9b88d -->
-```
-        <source>Error creating %s</source>
-        <translation>אור מיט שאפן 1%s</translation>
-    
-ERR
-The translation is incorrect. The Yiddish translation "אור מיט שאפן 1%s" is not accurate, and "1%s" is a mistake (the format specifier is "%s" in the source, but it appears as "1%s" in the translation, which is erroneous). The correct Yiddish word for "Error" is "טעות" or "גרײַבן" (mistake/error), and the phrase should read along the lines of "טעות בײַם שאפן %s".
-
-Correct translation:
-טעות בײַם שאפן %s
-```
-
 <!-- cache_translation_check_yi_fd9d9c5a72b6a929757c732f503eecf4c525759a37c2cedacc3ee0b2ae29ca4e -->
 ```
         <source>Error loading %s</source>
@@ -465,21 +453,6 @@ The translation contains a typo and an erroneous prefix ("1%s" instead of "%s").
 
 Correct translation:
 פֿעלער בײַם לאָדענען %s
-```
-
-<!-- cache_translation_check_yi_2a93e3183b8bbd5418a8434aaa9a56610d7d618db028e869bdcacea38270066d -->
-```
-        <source>Error loading %s: Private keys can only be disabled during creation</source>
-        <translation>גרייַזונג לאָדן 1%s: פּריוואַטע שליסלען קענען נאָר ווערן דיסאַבלירט בזמן שלאַפֿן</translation>
-    
-ERR
-There are multiple issues in this Yiddish translation:
-1. "גרייַזונג" is not a correct or common word for "Error"; the standard is "טעות" or "פעלער".
-2. "1%s" is a format specifier mistake; the English uses "%s", not "1%s".
-3. "בזמן שלאַפֿן" ("during sleep") is erroneous and nonsensical here. The correct phrase should be "נאָר בזמן שאַפֿן" ("only during creation").
-
-Correct translation:
-פֿעלער בעת לאָדן %s: פּריוואַטע שליסלען קענען נאָר ווערן אויסגעשאַלט בעת שאַפֿן
 ```
 
 <!-- cache_translation_check_yi_ce5762eeaffde193412de7e187ba8613a0d642fb61b15a0fc2a6d9a56b107203 -->
@@ -644,18 +617,6 @@ The translation contains an error: there is an unnecessary "1" before the %s for
 
 Correct translation:
 טעות: די דאטאבאזע טראַנזאַקשאַן קען נישט דורכגעפֿירט ווערן פֿאַר וואַלעט %s
-```
-
-<!-- cache_translation_check_yi_084b915064af60d0f4ccd855998acfb9385d626caef134450327f1c2366299d2 -->
-```
-        <source>Failed to connect best block (%s).</source>
-        <translation>ניט הצלחה צו פאַרבינדן דעם בעסטן בלאָק (1%s).</translation>
-    
-ERR
-The translation incorrectly includes "1" before %s in the parentheses, which is not present in the original. Also, "ניט הצלחה צו פאַרבינדן" is a literal and somewhat awkward way to say "Failed to connect". A more natural Yiddish translation would be "מע האָט זיך נישט געקאָנט פֿאַרבינדן מיטן בעסטן בלאָק (%s)."
-
-Correct translation:
-מע האָט זיך נישט געקאָנט פֿאַרבינדן מיטן בעסטן בלאָק (%s).
 ```
 
 <!-- cache_translation_check_yi_1a6ee50346c777b20f889a712f344868d5d690c93c12e8d05844d43dd56dafd6 -->
@@ -1522,4 +1483,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 103.
+Number of issues: 100.

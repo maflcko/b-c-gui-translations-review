@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -930,6 +930,15 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 
+<!-- cache_translation_check_sm_5d74c23a79282ed0c0adad58b24c134a29d50d5ac5cb3a4db7770118b7289f8d -->
+```
+        <source>Restore Wallet</source>
+        <extracomment>Title of progress window which is displayed when wallets are being restored.</extracomment>
+        <translation>Toe fa'aleleia le Pusa O le 'Aumauga</translation>
+    
+UNK_LANG, not familiar with the Samoan language 'sm'.
+```
+
 <!-- cache_translation_check_sm_ae7a8f9ebd35223301dda4ca16adec9ef88787338b0d02559583cfc8b287343d -->
 ```
         <source>Close wallet</source>
@@ -1676,4 +1685,4 @@ UNK_LANG, not familiar with the Samoan language 'sm'.
 ```
 </details>
 
-Number of issues: 202.
+Number of issues: 203.

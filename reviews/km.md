@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -46,6 +46,18 @@ Correct translation:
 កំពុងផ្ញើអាសយដ្ឋាន %1
 ```
 
+<!-- cache_translation_check_km_ebd60fce4e7032047aca424534e80241966a5263513ccbf7781517e7545b5321 -->
+```
+        <source>Unlock wallet</source>
+        <translation>ដោះសោកាបូបចល័ត</translation>
+    
+ERR
+The translation adds the word "ចល័ត" which means "mobile" or "portable," but the source text is simply "Unlock wallet". Adding "mobile" makes the translation overly specific and potentially incorrect in a desktop software context.
+
+Correct translation:
+ដោះសោកាបូបលុយ
+```
+
 <!-- cache_translation_check_km_981f593ff170e17328e84a1dc9a681131b922c8bae9a2780757fe91b79bc3fa0 -->
 ```
         <source>Enter the new passphrase for the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
@@ -56,6 +68,18 @@ The translation is inaccurate and awkward. It combines numbers and words require
 
 Correct translation:
 បញ្ជូលពាក្យសម្ងាត់ថ្មីសម្រាប់កាបូប។ &lt;br/&gt;សូមប្រើពាក្យសម្ងាត់មាន&lt;b&gt;១០ តួអក្សរឬច្រើនជាងនេះដែលចៃដន្យ&lt;/b&gt; ឬ&lt;b&gt;៨ពាក្យឬច្រើនជាងនេះ&lt;/b&gt;។
+```
+
+<!-- cache_translation_check_km_7d39af172897f32918e70d1771ddf548cce1437b5b16cf906a01d8eb6cf9c771 -->
+```
+        <source>Wallet unlock failed</source>
+        <translation>បានបរាជ័យដោះសោកាបូបចល័ត</translation>
+    
+ERR
+The translation includes the word "ចល័ត" (mobile), which is not present in the source text ("Wallet unlock failed"). Additionally, the word order is a bit literal and unnatural for a software interface.
+
+Correct translation:
+ការដោះសោកាបូបបានបរាជ័យ
 ```
 
 <!-- cache_translation_check_km_51b60e572b4272aa73aacb7d38acf9fae627c369d95f12ce88bdaa14f3716cac -->
@@ -97,16 +121,124 @@ Correct translation:
 %1 មីលីវិនាទី
 ```
 
-<!-- cache_translation_check_km_8da3275703681be1d35da4341897467af4c2608afe4b79989e12cab3666e2757 -->
+<!-- cache_translation_check_km_8b1d32dcde84235586e5e132b4d59b7a5a760f6e3d5710ff24c3574471530058 -->
 ```
-        <source>&amp;About %1</source>
-        <translation>អំពី(&amp;A) %1</translation>
+        <source>%1 and %2</source>
+        <translation>%១​ នឹង %២</translation>
     
 ERR
-The translation places the ampersand inside parentheses as "អំពី(&amp;A) %1", which is awkward and not a proper mnemonic placement for Khmer. %1 is preserved correctly and there's only one & present, but the & should precede the menu label character (not be shown as "(&A)"). Also using a Latin "A" inside parentheses is inconsistent for Khmer.
+The format specifiers '%1' and '%2' must be kept exactly as they are in the source text. Converting the digits to Khmer script (%១ and %២) will prevent the software from correctly identifying and replacing the placeholders with the intended data.
 
 Correct translation:
-&amp;អំពី %1
+%1 នឹង %2
+```
+
+<!-- cache_translation_check_km_753bf201153c649d86af84a3de7cbb26439bc26bcee596cb841e5d7f3c17beec -->
+```
+        <source>%1 B</source>
+        <translation>%១​ ប៊ៃ</translation>
+    
+ERR
+The format specifier '%1' has been incorrectly converted to Khmer numerals '%១'. Format specifiers must be preserved exactly as they appear in the source text for the software to correctly substitute the values.
+
+Correct translation:
+%1 ប៊ៃ
+```
+
+<!-- cache_translation_check_km_56dbaf4b5ef59424bd7c8f3d18fbac78116c9606f7b5f2297eccb6d48365329b -->
+```
+        <source>%1 MB</source>
+        <translation>%១​ មេហ្គាប៊ៃ</translation>
+    
+ERR
+The format specifier %1 was incorrectly modified. In software localization, format specifiers like %1, %2, etc., must be preserved exactly as they appear in the source text so that the application can correctly replace them with numerical values. The Khmer numeral "១" was used instead of the Arabic numeral "1".
+
+Correct translation:
+%1 មេហ្គាប៊ៃ
+```
+
+<!-- cache_translation_check_km_b6959d24d6407ab87e9d03986c3aa0833dcd1a30dcb8799b8271e4531c9f638b -->
+```
+        <source>%1 GB</source>
+        <translation>%១ ជីហ្គាប៊ៃ</translation>
+    
+ERR
+The format specifier '%1' was changed to use the Khmer digit '%១'. In software localization, format specifiers must remain in their original Latin/Arabic numeral format (e.g., %1, %2, %s) so the application can correctly identify and replace them with the intended variables.
+
+Correct translation:
+%1 ជីហ្គាប៊ៃ
+```
+
+<!-- cache_translation_check_km_6641b0dc49824dcc07ad72aa1737d4bfc84cbee2f9a8a3553f400e104950f2d0 -->
+```
+        <source>&amp;About %1</source>
+        <translation>អំពី %1</translation>
+    
+ERR
+The translation is missing the ampersand (`&`) used for the shortcut key, which is required by the instructions.
+
+Correct translation:
+&អំពី %1
+```
+
+<!-- cache_translation_check_km_b41382b3c85650af81cae1eca9ae830696faed51689ff4924730ec24a437ac98 -->
+```
+        <source>&amp;Minimize</source>
+        <translation>បង្រួមអប្បបរមា</translation>
+    
+ERR
+The translation is missing the accelerator key symbol '&'. According to the instructions, the '&' symbol must exist exactly once in the translation if it is present in the source text.
+
+Correct translation:
+&បង្រួមអប្បបរមា
+```
+
+<!-- cache_translation_check_km_ba8d2c870bc176113c447c01873bd7993915009d6ac05957941a49816bf84b7c -->
+```
+        <source>&amp;Send</source>
+        <translation>ផ្ងើ</translation>
+    
+ERR
+The translation is missing the '&' character, which is required as a shortcut key indicator according to the instructions. Additionally, there is a spelling error in the Khmer word for "Send".
+
+Correct translation:
+&ផ្ញើ
+```
+
+<!-- cache_translation_check_km_3ddd67b39840e6ce1e46e1d3afbf6d044e77935dc4ec69d525682528bc106c1b -->
+```
+        <source>&amp;Receive</source>
+        <translation>ទទួល</translation>
+    
+ERR
+The translation is missing the shortcut key indicator '&', which must appear exactly once as per the instructions.
+
+Correct translation:
+&ទទួល
+```
+
+<!-- cache_translation_check_km_5a297f581031d79df27c4f67ebfcbf14de2e5fc7683280980d7abaabc46c77ea -->
+```
+        <source>&amp;Options…</source>
+        <translation>ជម្រើស…</translation>
+    
+ERR
+The translation is missing the shortcut key indicator (&amp;). According to the instructions, the indicator must exist exactly once in the translation if it is present in the source.
+
+Correct translation:
+&amp;ជម្រើស…
+```
+
+<!-- cache_translation_check_km_611230a060f901aacc41e3622ae8a3febe1e4e3120dd627661e9a8403ed501ff -->
+```
+        <source>&amp;Encrypt Wallet…</source>
+        <translation>អ៊ិនគ្រីបកាបូបចល័ត…</translation>
+    
+ERR
+The translation is missing the shortcut key marker '&' which is required to exist exactly once. Additionally, it translates "Wallet" as "កាបូបចល័ត" (mobile wallet) instead of just "កាបូប" (wallet).
+
+Correct translation:
+&អ៊ិនគ្រីបកាបូប…
 ```
 
 <!-- cache_translation_check_km_6a9cb952f242659f9ad335e10c7eb0dd631fbb3076f047b4a8cb3d0911a9c8b4 -->
@@ -119,6 +251,54 @@ The translation is inaccurate. The English source means "Encrypt the private key
 
 Correct translation:
 អ៊ិនគ្រិបកូនសោឯកជនដែលជាផ្នែកមួយនៃកាបូបរបស់អ្នក
+```
+
+<!-- cache_translation_check_km_4d5098cf03ff470985e5635c44d9cddd6b265a6fa0d7546845092108d76f7718 -->
+```
+        <source>&amp;Backup Wallet…</source>
+        <translation>ការបម្រុងទុកកាបូប...</translation>
+    
+ERR
+The translation is missing the shortcut key indicator (&) and uses three dots instead of the ellipsis character (…) used in the source.
+
+Correct translation:
+&បម្រុងទុកកាបូប…
+```
+
+<!-- cache_translation_check_km_f29832ea3d27cee2530c6351e7e7135d08a73667a3593542e2dbc26fc11f966e -->
+```
+        <source>&amp;Change Passphrase…</source>
+        <translation>ការផ្លាស់ប្តូរឃ្លាសម្ងាត់</translation>
+    
+ERR
+The translation is missing the shortcut key indicator (`&amp;`) and the ellipsis (`…`) present in the source text. According to the instructions, the `&amp;` must exist exactly once in the translation.
+
+Correct translation:
+&amp;ផ្លាស់ប្តូរឃ្លាសម្ងាត់…
+```
+
+<!-- cache_translation_check_km_bf87ccbe51a0ff05d1c5a91f9526ed5a623aa15c3dca8159762f415c3821db13 -->
+```
+        <source>Sign &amp;message…</source>
+        <translation>ចុះហត្ថលេខាសារ…</translation>
+    
+ERR
+The shortcut key indicator (&amp;) is missing from the translation. The instructions require it to be present exactly once.
+
+Correct translation:
+ចុះហត្ថលេខា&amp;សារ…
+```
+
+<!-- cache_translation_check_km_8ca84cffc38f83c5885e9600d5741c2439076824515b947efc5041630430862d -->
+```
+        <source>&amp;Verify message…</source>
+        <translation>ផ្ទៀងផ្ទាត់សារ…</translation>
+    
+ERR
+The shortcut key indicator '&amp;' is missing from the translation. According to the instructions, it must exist exactly once.
+
+Correct translation:
+&amp;ផ្ទៀងផ្ទាត់សារ…
 ```
 
 <!-- cache_translation_check_km_dd4e9ac90dce92a807126842808d5872d369603de96305a4fe44deef7ba8ea35 -->
@@ -135,6 +315,54 @@ There are some issues:
 
 Correct translation:
 ធ្វើការបញ្ជាក់សារ ដើម្បីធានាថាសារទាំងនោះបានចុះហត្ថលេខាជាមួយអាសយដ្ឋាន Bitcoin ដែលបានបញ្ជាក់
+```
+
+<!-- cache_translation_check_km_aa0f0149149a608f0e49099b0228cf1da207a378baa6ad20090ce80ac9f7ac2f -->
+```
+        <source>&amp;Load PSBT from file…</source>
+        <translation>ផ្ទុក PSBT ពីឯកសារ…</translation>
+    
+ERR
+The translation is missing the shortcut key indicator (&amp;) which is present in the source text.
+
+Correct translation:
+&amp;ផ្ទុក PSBT ពីឯកសារ…
+```
+
+<!-- cache_translation_check_km_9991d4c9414ef8a76601e022615171d327c0b600c3b5ea1d67aaf9c7dd7ea66f -->
+```
+        <source>Close Wallet…</source>
+        <translation>បិទកាបូបចល័ត…</translation>
+    
+ERR
+The word "ចល័ត" (meaning "mobile") has been added to the translation, which is not present in the source text. In the context of the software, "Wallet" should be translated simply as "កាបូប".
+
+Correct translation:
+បិទកាបូប…
+```
+
+<!-- cache_translation_check_km_bc6c0f51693db5cb5f7616428b7110135e6581c43d46900bc8bf75e0fca0c115 -->
+```
+        <source>&amp;Help</source>
+        <translation>ជំនួយ</translation>
+    
+ERR
+The shortcut key indicator (&amp;) is missing in the translation. According to the instructions, it must exist exactly once.
+
+Correct translation:
+&amp;ជំនួយ
+```
+
+<!-- cache_translation_check_km_b2cde9458e2e948f148d01b1ec8e869f0c24501c145289d2118d90b36572b57e -->
+```
+        <source>Last received block was generated %1 ago.</source>
+        <translation>ប៊ុកដែលបានទទួលចុងក្រោយត្រូវបានបង្កើត %១កន្លងរួចមកហើយ។</translation>
+    
+ERR
+The format specifier was changed from '%1' to '%១' (Khmer numeral). Technical format specifiers must be kept exactly as they appear in the source to ensure the software can correctly replace them with data. Additionally, the word for "Block" is misspelled as "ប៊ុក" (which sounds like 'book'); "ប្លុក" is the standard term.
+
+Correct translation:
+ប្លុកដែលបានទទួលចុងក្រោយត្រូវបានបង្កើត %1 កន្លងរួចមកហើយ។
 ```
 
 <!-- cache_translation_check_km_a2de638f38a8638f3da4dc86b004e42f3ce79465d68a6fbafca65bf005eac7a2 -->
@@ -161,6 +389,18 @@ Correct translation:
 ផ្ទុកប្រតិបត្តិការ Bitcoin ដែលបានចុះហត្ថលេខាដោយផ្នែកពីកន្លែងចម្លង (clipboard)
 ```
 
+<!-- cache_translation_check_km_9e0d9aaf6fe67d9259044acc919eb8a67481bdfaabfa1fec2134b792348bd2e0 -->
+```
+        <source>&amp;Receiving addresses</source>
+        <translation>អាសយដ្ឋានទទួល</translation>
+    
+ERR
+The translation is missing the shortcut key indicator '&', which is required to appear exactly once as per the instructions.
+
+Correct translation:
+&អាសយដ្ឋានទទួល
+```
+
 <!-- cache_translation_check_km_5e0dff79c5e6790284799aafd437a1cddc78ec8fc0300935dfad5f4a0e8a31f4 -->
 ```
         <source>Open a bitcoin: URI</source>
@@ -176,6 +416,31 @@ or, if rendering in Khmer:
 
 Alternatively, maintaining the original order:
 បើក bitcoin: URI
+```
+
+<!-- cache_translation_check_km_6a7868f8a0ba87967ad49b033c0e11b67ae2b55cada77819c458782a6d8c18d9 -->
+```
+        <source>Open Wallet</source>
+        <translation>បើកកាបូបចល័ត</translation>
+    
+ERR
+The translation adds the word "mobile" (ចល័ត) to the translation, which is not present in the English source text. "Open Wallet" should be translated more generally unless the context is specifically for a mobile-only application.
+
+Correct translation:
+បើកកាបូប
+```
+
+<!-- cache_translation_check_km_6d0c1c7d3b9306c9f6f7146e5087898c3c9f6a67b305f430422c93d730139948 -->
+```
+        <source>Restore Wallet…</source>
+        <extracomment>Name of the menu item that restores wallet from a backup file.</extracomment>
+        <translation>ស្តារកាបូបចល័តឡើងវិញ…</translation>
+    
+ERR
+The translation includes the word "ចល័ត" (cholat), which means "mobile" or "portable." The source text "Restore Wallet…" does not specify that it is a mobile wallet. Including this word makes the translation more specific than the original English text.
+
+Correct translation:
+ស្តារកាបូបឡើងវិញ…
 ```
 
 <!-- cache_translation_check_km_6000bbf8b2aedea55e261968d9024811343b99c655acb4262dc0d4cd3523e1bb -->
@@ -194,16 +459,16 @@ or
 Either are acceptable for "Migrate Wallet".
 ```
 
-<!-- cache_translation_check_km_0c93c4026bf8a87b05f7c4ebce49428a15539c16837d0038b16526e2025c60b6 -->
+<!-- cache_translation_check_km_d2d04d19b575ba773c34c623c0629c8155718ffc686f95a2e48f6eb3450e0da1 -->
 ```
         <source>S&amp;how</source>
-        <translation>របៀប(&amp;S)</translation>
+        <translation>បង្ហាញ</translation>
     
 ERR
-The Khmer translation "របៀប(&amp;S)" is incorrect. "របៀប" means "method" or "procedure", which does not convey the meaning of "Show". The mnemonic (&amp;S) is in the correct position, but the main word itself is wrong.
+The translation is missing the shortcut key indicator (&amp;). According to the instructions, the indicator must appear exactly once in the translation if it appears in the source. In Khmer software localization, it is common to place the mnemonic at the end in parentheses.
 
 Correct translation:
-បង្ហាញ(&amp;S)
+បង្ហាញ (&amp;S)
 ```
 
 <!-- cache_translation_check_km_043311e3856fcd0d3d5e19e878cc2c36ff51fe3454c8b951aaca93b566a52344 -->
@@ -360,6 +625,93 @@ Correct translation:
 </reply>
 ```
 
+<!-- cache_translation_check_km_27e83e80f6242d3ff9f726fecb6a96673d2333cf49bf54ab1a80e3284502862e -->
+```
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <translation>អាសយដ្ឋានដែលបានបញ្ចូល  ៉​%1 ៉​គឺមិនមែនជាអាសយដ្ឋានត្រឹមត្រូវរបស់ប៊ីតខញ។</translation>
+    
+ERR
+The translation uses the wrong characters for quotation marks; it uses the Khmer diacritic 'Muusikatoan' (៉) instead of actual quotation marks. It also contains unnecessary double spaces.
+
+Correct translation:
+អាសយដ្ឋានដែលបានបញ្ចូល "%1" គឺមិនមែនជាអាសយដ្ឋានប៊ីតខុញត្រឹមត្រូវទេ។
+```
+
+<!-- cache_translation_check_km_5a69e65dac665eeb985f571d44cd85a976c3a4e374afc998a8abf396298bbb93 -->
+```
+        <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
+        <translation>អាសយដ្ឋាន  ៉​%1​ ៉​ មាននៅក្នុងអាសយដ្ឋានសម្រាប់ទទួលដែលមានស្លាកសញ្ញា  ៉​%2​​  ៉ ដូច្នេះមិនអាចបញ្ចូលជាអាសយដ្ឋាសម្រាប់បញ្ចូន។</translation>
+    
+ERR
+The translation contains a spelling error and formatting issues. The word for "address" is misspelled as "អាសយដ្ឋា" (missing the final "ន") and "sending" is misspelled as "បញ្ចូន" (should be "បញ្ជូន"). There are also unnecessary double spaces around the placeholders.
+
+Correct translation:
+អាសយដ្ឋាន "%1" មានរួចហើយជាអាសយដ្ឋានសម្រាប់ទទួលដែលមានស្លាក "%2" ដូច្នេះមិនអាចបន្ថែមជាអាសយដ្ឋានសម្រាប់ផ្ញើបានទេ។
+```
+
+<!-- cache_translation_check_km_96f7c16c75c9f92283f0146dc4a8e193821a4fa3459f1893c27f8c5d2fb52839 -->
+```
+        <source>The entered address "%1" is already in the address book with label "%2".</source>
+        <translation>អាសយដ្ឋានបានបញ្ចូល ​ ៉​%1  ៉ គឺមាននៅក្នុងសៀវភៅអាសយដ្ឋានដែលមានស្លាកសញ្ញា  ៉​​​%2  ៉​។</translation>
+    
+ERR
+The translation uses the Khmer diacritic character '៉' (Muusikatoan) as a substitute for quotation marks, which is orthographically incorrect. It also contains unnecessary spaces and zero-width spaces around the format specifiers.
+
+Correct translation:
+អាសយដ្ឋានដែលបានបញ្ចូល "%1" គឺមានរួចហើយនៅក្នុងសៀវភៅអាសយដ្ឋានដែលមានស្លាក "%2"។
+```
+
+<!-- cache_translation_check_km_8722f92a0246f269e39faf348d8a18ff2e1b84c128ffb49f1e5230c6c32460ce -->
+```
+        <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
+        <translation>ទីតាំងផ្ទុកទិន្នន័យមានរួចរាល់។ បន្ថែម %១ ប្រសិនបើអ្នកចង់បង្កើតទីតាំងផ្ទុកទិន្នន័យថ្មីនៅទីនេះ។</translation>
+    
+ERR
+The translation uses the Khmer numeral '១' (U+17E1) instead of the western digit '1'. In software localization, format specifiers like '%1' must remain identical to the source to be correctly parsed by the application.
+
+Correct translation:
+ទីតាំងផ្ទុកទិន្នន័យមានរួចរាល់។ បន្ថែម %1 ប្រសិនបើអ្នកចង់បង្កើតទីតាំងផ្ទុកទិន្នន័យថ្មីនៅទីនេះ។
+```
+
+<!-- cache_translation_check_km_de410696744e226bbb943bd19d35c52b9c12b942f930171bbb0ff5aebddc1aa4 -->
+```
+        <source>About %1</source>
+        <translation>ប្រហែល %១</translation>
+    
+ERR
+The translation uses the wrong word for "About" in a software context and incorrectly modifies the format specifier. 
+
+1. In software menus, "About" (referring to information about the program) should be translated as "អំពី", whereas "ប្រហែល" means "approximately" or "maybe".
+2. The format specifier "%1" must remain in ASCII characters for the software to recognize it. Changing the digit "1" to the Khmer digit "១" will break the placeholder substitution.
+
+Correct translation:
+អំពី %1
+```
+
+<!-- cache_translation_check_km_c6ec966ff64c62a7452497d4fd5617b6748b46b631bddfb30f8f5e276855aa65 -->
+```
+        <source>Welcome to %1.</source>
+        <translation>សូមស្វាគមន៏ទៅកាន់ %១។</translation>
+    
+ERR
+The format specifier `%1` has been incorrectly changed to the Khmer digit `%១`. Format specifiers must be preserved exactly as they appear in the source text for the software to correctly substitute the variable. Additionally, the spelling of "Welcome" is slightly incorrect.
+
+Correct translation:
+សូមស្វាគមន៍មកកាន់ %1។
+```
+
+<!-- cache_translation_check_km_eaac2a8326ecc9ec52e6a20b3053b293b453a4a31565d46fbfd987347cbdfbfd -->
+```
+        <source>As this is the first time the program is launched, you can choose where %1 will store its data.</source>
+        <translation>កម្មវិធីនេះត្រូវបានដាក់ឲ្យដំណើរការជាលើកដំបូង ដូច្នេះអ្នកអាចជ្រើសរើស%១ នឹងរក្សាផ្ទុកទិន្នន័យ។</translation>
+    
+ERR
+The format specifier '%1' was changed to '%១' (using the Khmer numeral). In software localization, these placeholders must remain exactly as they appear in the source (ASCII) to be correctly identified and replaced by the program. Additionally, the word "where" was not clearly translated.
+
+Correct translation:
+កម្មវិធីនេះត្រូវបានដាក់ឲ្យដំណើរការជាលើកដំបូង ដូច្នេះអ្នកអាចជ្រើសរើសកន្លែងដែល %1 នឹងរក្សាទុកទិន្នន័យរបស់វា។
+```
+
 <!-- cache_translation_check_km_5e6fe003d12a2c8809e4670ac88c0d8b759ec14cbc5450112f7833aae07c5327 -->
 ```
         <source>Last block time</source>
@@ -506,28 +858,31 @@ Correct translation:
 សរុបប្រតិបត្តការដែលមិនទាន់ត្រូវបានបញ្ជាក់ ហើយមិនទាន់រាប់បញ្ចូលក្នុងសមតុល្យដែលអាចចំណាយបានទេ
 ```
 
-<!-- cache_translation_check_km_7a030fccba646bb9fd40f7ef409bfb4dc5da8e68352c41a0a6b1e6755429b455 -->
+<!-- cache_translation_check_km_85007705d494ed1578495138ffebef909c599f9caa991cde0864e10e8597c757 -->
 ```
         <source>Failed to load transaction: %1</source>
-        <translation>មិនជោគជ័យក្នុងការបង្ហាញប្រត្តិបត្តិការៈ %1</translation>
+        <translation>មិនជោគជ័យក្នុងការបង្ហាញប្រត្តិបត្តិការៈ​ %១</translation>
     
 ERR
-The Khmer translation uses "បង្ហាញ" (show/display) instead of "load" and has a typographical/orthographic issue in the word for "transaction". A more accurate and natural Khmer translation should convey "failed to load" and preserve the %1 specifier.
+The translation has several issues:
+1. The format specifier `%1` was changed to `%១` (using the Khmer numeral 1). Format specifiers must remain exactly as they are in the source code (ASCII) to function correctly in the software.
+2. The word for "transaction" is misspelled as "ប្រត្តិបត្តិការ"; the correct spelling is "ប្រតិបត្តិការ".
+3. "បង្ហាញ" means "to show/display", whereas "load" is more accurately translated as "ផ្ទុក".
 
 Correct translation:
-មិនអាចផ្ទុកប្រតិបត្តិការ បាន: %1
+បរាជ័យក្នុងការផ្ទុកប្រតិបត្តិការ៖ %1
 ```
 
-<!-- cache_translation_check_km_83d352bdd6045383ee257d1ebadd9cef8f58db9ab899491d684f651fbb909708 -->
+<!-- cache_translation_check_km_582ecf53260c645e46f66af7aa62d72956fd43fc3bdf3e0687ae832193b42367 -->
 ```
         <source>Failed to sign transaction: %1</source>
-        <translation>មិនជោគជ័យក្នុងការចុះហត្ថលេខាលើប្រត្តិបត្តិការៈ %1</translation>
+        <translation>មិនជោគជ័យក្នុងការចុះហត្ថលេខាលើប្រត្តិបត្តិការៈ %១</translation>
     
 ERR
-The Khmer translation has a minor spelling/punctuation issue ("ប្រត្តិបត្តិការៈ" is misspelled) and the phrasing can be slightly improved.
+The format specifier '%1' has been converted to the Khmer digit '%១'. In software localization, format specifiers must remain in their original ASCII format (e.g., %1, %2, %s) so the software can correctly identify and replace them with the intended variables. Additionally, there is a minor spelling error in the Khmer word for transaction (ប្រត្តិបត្តិការ should be ប្រតិបត្តិការ).
 
-Suggested correct translation:
-ការចុះហត្ថលេខាលើប្រតិបត្តិការ៖ %1
+Correct translation:
+មិនជោគជ័យក្នុងការចុះហត្ថលេខាលើប្រតិបត្តិការ៖ %1
 ```
 
 <!-- cache_translation_check_km_497ffc842e0161d8f99f6e599380b282940209d6a40bb3ae1c9d0398c425ee61 -->
@@ -542,22 +897,28 @@ Correct translation:
 មិនស្គាល់កំហុសក្នុងការដំណើរការប្រាក់ប្រតិបត្តិការ។
 ```
 
-<!-- cache_translation_check_km_43a61d94a1f8a9e7e3cf2c335f56c0e2e5f2fb51da66f300584ea96e7c67f70b -->
+<!-- cache_translation_check_km_87c30c6db2d1163b91183850ba5a88d506a39bac057e3abe7509dc6f306f70a2 -->
 ```
-        <source>Transaction broadcast failed: %1</source>
-        <translation>ផ្សព្វផ្សាយប្រត្តិបត្តិការមិនជោគជ័យៈ %1</translation>
+        <source>Transaction broadcast successfully! Transaction ID: %1</source>
+        <translation>ផ្សព្វផ្សាយប្រត្តិបត្តិការជោគជ័យ! ​​​​​​​​                ​​​ ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​                                                                                            អត្តសញ្ញាណប្រត្តិបត្តិការៈ %១</translation>
     
 ERR
-There's a minor Khmer spelling/typography error and the punctuation can be improved. The word "ប្រតិបត្តិការ" (transaction) is misspelled in the translation and the Khmer colon "៖" is preferable.
+The translation contains an excessive amount of unnecessary whitespace between the two sentences. Additionally, it uses the Khmer numeral "%១" instead of the standard format specifier "%1", which may prevent the software from correctly injecting the transaction ID.
 
 Correct translation:
-ផាសព្វផ្សាយ -> actually better to keep original verb "ផ្សព្វផ្សាយ" but with correct noun:
+ផ្សព្វផ្សាយប្រតិបត្តិការដោយជោគជ័យ! អត្តសញ្ញាណប្រតិបត្តិការ៖ %1
+```
 
-Correct:
+<!-- cache_translation_check_km_e0c29cc3b5aa604e309e69b434dd04f763e950316119857b217fd205f13b49bb -->
+```
+        <source>Transaction broadcast failed: %1</source>
+        <translation>ផ្សព្វផ្សាយប្រត្តិបត្តិការមិនជោគជ័យៈ​%១</translation>
+    
+ERR
+The format specifier "%1" was incorrectly changed to "%១" (Khmer digit 1), which will prevent the software from correctly injecting the variable. Additionally, there is a spelling error in the word for "transaction".
+
+Correct translation:
 ផ្សព្វផ្សាយប្រតិបត្តិការមិនជោគជ័យ៖ %1
-
-(Alternatively you can use a slightly more natural phrasing:
-ការផ្សព្វផ្សាយប្រតិបត្តិការមិនជោគជ័យ៖ %1 )
 ```
 
 <!-- cache_translation_check_km_7e87b91b0757f74bafe302d6739b9c5f33411806cfbce130dbe658a06f682e97 -->
@@ -936,4 +1297,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 70.
+Number of issues: 100.

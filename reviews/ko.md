@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -8,18 +8,6 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 [If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bko%5D%20request)
 
-
-<!-- cache_translation_check_ko_0dbcd54a09f4610a9e1587214c50edd10fe31b05d4084e8abcc04eacb9d0306b -->
-```
-        <source>C&amp;lose</source>
-        <translation>C&amp;닫기</translation>
-    
-ERR
-The translation incorrectly includes an extra Latin "C" before the ampersand ("C&닫기"). The source's ampersand should appear exactly once as the mnemonic marker, and the translated label should not contain the extraneous "C".
-
-Correct translation:
-&닫기
-```
 
 <!-- cache_translation_check_ko_743dc2ba81b3c015a9b142097624bfe2847180f2917ac7d28cab788ac3f6687c -->
 ```
@@ -55,6 +43,18 @@ The translation incorrectly interprets "null character (ie - a zero byte)" as "�
 
 Correct translation:
 지갑 암호 해제를 위해 입력한 비밀번호가 올바르지 않습니다. 비밀번호에 널 문자(즉, 0 바이트)가 포함되어 있습니다. 만약 이 비밀번호가 25.0 이전 버전의 비트코인 코어 소프트웨어에서 설정된 것이라면, 첫 번째 널 문자까지만(첫 번째 널 문자를 포함하지 않고) 입력해 보세요. 이렇게 해서 성공했다면, 이러한 문제가 다시 발생하지 않도록 새 비밀번호를 설정해 주세요.
+```
+
+<!-- cache_translation_check_ko_d46190147383a8d0d9d82ba4f77832fd564074fcddc4fa8eee93fc752c9bd34d -->
+```
+        <source>Embedded "%1"</source>
+        <translation>%1 포함됨</translation>
+    
+ERR
+The translation omits the double quotes surrounding the format specifier %1 which are present in the source text.
+
+Correct translation:
+"%1" 포함됨
 ```
 
 <!-- cache_translation_check_ko_5160cfb5fc4e2897cfb4de6ceabd301a4a04cb65c29bc6e9358ad17efee0f634 -->
@@ -213,6 +213,30 @@ Correct translation:
 마이그레이션이 잘못된 경우 "Restore Wallet" 기능을 사용하여 백업을 복원할 수 있습니다.
 ```
 
+<!-- cache_translation_check_ko_e962ff8b3385c8d988a54d2a80398930e4a1d76446cf408cfe9e3b32862cbab7 -->
+```
+        <source>Watchonly scripts have been migrated to a new wallet named '%1'.</source>
+        <translation>Watch-only 스크립트가 새 지갑 '%1'으로 마이그레이션 되었습니다:</translation>
+    
+ERR
+The translation ends with an unnecessary colon (:) that is not present in the source text. Additionally, the spacing before the particle '으로' is usually omitted in this context, and "Watch-only" is more commonly translated without the hyphen or as '조회 전용' in Korean Bitcoin contexts, though 'Watch-only' is acceptable.
+
+Correct translation:
+Watch-only 스크립트가 '%1'이라는 이름의 새 지갑으로 마이그레이션되었습니다.
+```
+
+<!-- cache_translation_check_ko_06e5a751de64ba0fea688e6c8c37a8fda6dae939b7004a8abb440713844a84b5 -->
+```
+        <source>Solvable but not watched scripts have been migrated to a new wallet named '%1'.</source>
+        <translation>해결 가능 상태(Solvable )이긴 하지만 ‘watch-only’로 표시되지 않은 스크립트들은 새로운 지갑 ‘%1’로 마이그레이션되었습니다.</translation>
+    
+ERR
+The translation contains unnecessary whitespace inside the parentheses: "(Solvable )" instead of "(Solvable)". Additionally, the translation introduces the term "watch-only" which is not explicitly in the source, and the phrasing for "not watched" could be more natural in the context of Bitcoin Core.
+
+Correct translation:
+해결 가능하지만(Solvable) 관찰되지 않는(not watched) 스크립트들이 '%1'라는 이름의 새 지갑으로 마이그레이션되었습니다.
+```
+
 <!-- cache_translation_check_ko_29d217922568a7fe2d7c1db68b5542a8193cfb9fc21b36ad8185c5db3fb7800e -->
 ```
         <source>Compiled without external signing support (required for external signing)</source>
@@ -254,6 +278,44 @@ There are several issues:
 
 Correct translation:
 이 주소록 항목에 연결된 주소입니다. 이 주소는 보내는 주소에 대해서만 수정할 수 있습니다.
+```
+
+<!-- cache_translation_check_ko_401134fd075a02f1f1ab183c7191dc66f0805d11d1c0dfe2c97a1f7f79334a88 -->
+```
+        <source>Maximum database cache size. Make sure you have enough RAM. A larger cache can contribute to faster sync, after which the benefit is less pronounced for most use cases. Lowering the cache size will reduce memory usage. Unused mempool memory is shared for this cache.</source>
+        <extracomment>Tooltip text for Options window setting that sets the size of the database cache. Explains the corresponding effects of increasing/decreasing this value.</extracomment>
+        <translation> 
+최대 데이터베이스 캐시 크기. 충분한 RAM이 있는지 확인하세요. 캐시 크기를 크게 설정하면 초기 동기화 속도가 빨라질 수 있지만 대부분의 사용 사례에서는 동기화가 끝난 뒤에는 효과가 크지 않습니다. 캐시 크기를 줄이면 메모리 사용량이 감소합니다. 사용되지 않은 멤풀 메모리는 이 캐시와 공유됩니다.</translation>
+    
+ERR
+The translation includes a stray non-breaking space and a newline character at the beginning, which are not present in the source text.
+
+Correct translation:
+최대 데이터베이스 캐시 크기. 충분한 RAM이 있는지 확인하세요. 캐시 크기를 크게 설정하면 초기 동기화 속도가 빨라질 수 있지만 대부분의 사용 사례에서는 동기화가 끝난 뒤에는 효과가 크지 않습니다. 캐시 크기를 줄이면 메모리 사용량이 감소합니다. 사용되지 않은 멤풀 메모리는 이 캐시와 공유됩니다.
+```
+
+<!-- cache_translation_check_ko_4f531149e90218c94f8b68bd79b74f80c0d4683fe445b092e9353f1f47edbee2 -->
+```
+        <source>Map port using PCP or NA&amp;T-PMP</source>
+        <translation>PCP 또는 NAT-PMP를 사용해서 포트를 매핑</translation>
+    
+ERR
+The English text contains a shortcut key indicator '&' (NA&amp;T-PMP), but it is missing from the Korean translation. According to the instructions, the '&' symbol should exist exactly once in the translation to indicate the shortcut key.
+
+Correct translation:
+PCP 또는 NA&amp;T-PMP를 사용해서 포트 매핑
+```
+
+<!-- cache_translation_check_ko_63aa81503423909b19ae2bce7847da94930ea0dcb82c288354e1894fc8ea5f4d -->
+```
+        <source>Font in the Overview tab: </source>
+        <translation>개요탭에 표시된 글꼴</translation>
+    
+ERR
+The translation is missing the colon and the trailing space at the end of the string, which are present in the source text. Additionally, a space is typically used between "개요" (Overview) and "탭" (tab) in Korean UI strings.
+
+Correct translation:
+개요 탭의 글꼴:
 ```
 
 <!-- cache_translation_check_ko_a8f383b1ca921e76eab449e8022820ec1c3747d6211d3b201edcc036e7ecd38d -->
@@ -474,6 +536,18 @@ If needed, you can also say:
 외부 서명 지원 없이 컴파일됨(외부 서명에 필요함)
 ```
 
+<!-- cache_translation_check_ko_9fb025bf74842581f142e8b051fc77422af14cc80a1e30dc616919539cd6a3d6 -->
+```
+        <source>Signed %1 inputs, but more signatures are still required.</source>
+        <translation>% 1 입력에 서명했지만 더 많은 서명이 필요합니다.</translation>
+    
+ERR
+There is an erroneous space inserted within the format specifier. "% 1" should be "%1" to correctly function as a placeholder.
+
+Correct translation:
+%1 입력에 서명했지만 더 많은 서명이 필요합니다.
+```
+
 <!-- cache_translation_check_ko_82bb15665c7799a85efadbd4efdf602020b687e2bbf8170dc556fb133cfec00a -->
 ```
         <source>Age</source>
@@ -490,6 +564,18 @@ Suggested translations (more appropriate for connection duration):
 - "접속 시간(경과)"
 
 Pick one based on UI tone; e.g. "연결 시간" is concise and commonly used.
+```
+
+<!-- cache_translation_check_ko_532f50704bafe063d96ab42067f5ce94b7602ec1d980dae6d077a59ee4f82bb1 -->
+```
+        <source>The transport layer version: %1</source>
+        <translation>전송 계층 버전 : %1</translation>
+    
+ERR
+The translation contains an unnecessary space before the colon. In Korean typography, a colon typically follows the preceding word without a space.
+
+Correct translation:
+전송 계층 버전: %1
 ```
 
 <!-- cache_translation_check_ko_c1ea82977e90ea4020d9d9e7a3fc2a2401a05ff8b5377cd0b9beeea255ac1404 -->
@@ -544,17 +630,17 @@ Correct translation:
 수신: 피어에 의해 시작됨
 ```
 
-<!-- cache_translation_check_ko_4789040303c7928d2fc8941a376b6155250adee48a6205f177e0f9d2cbf9e131 -->
+<!-- cache_translation_check_ko_093d6e3d9e004fa754f416ef23e13180bc3f27a071529888bbd3af19c4c44ebe -->
 ```
         <source>Outbound Manual: added using RPC %1 or %2/%3 configuration options</source>
         <extracomment>Explanatory text for an outbound peer connection that was established manually through one of several methods. The numbered arguments are stand-ins for the methods available to establish manual connections.</extracomment>
-        <translation>아웃바운드 매뉴얼 : RPC %1 이나 %2/%3 을 사용해서 환경설정 옵션을 추가</translation>
+        <translation>아웃바운드 매뉴얼 : RPC 1%1 이나 2%2/3%3 을 사용해서 환경설정 옵션을 추가</translation>
     
 ERR
-The translation contains spacing issues (there is a space before the colon, which is not standard Korean punctuation usage), and the end of the sentence is unnatural. The part "환경설정 옵션을 추가" is an incomplete expression; it should be "환경설정 옵션을 사용하여 추가됨" or similar to match the passive nuance ("added using... options").
+The translation incorrectly modifies the format specifiers by adding numbers before them (e.g., "1%1", "2%2", "3%3" instead of "%1", "%2", "%3"). Additionally, the phrasing "환경설정 옵션을 추가" (added configuration options) misinterprets the source; the source means the connection was added *using* those options.
 
 Correct translation:
-아웃바운드 수동 연결: RPC %1 또는 %2/%3 설정 옵션을 사용하여 추가됨
+아웃바운드 수동: RPC %1 또는 %2/%3 설정 옵션을 사용하여 추가됨
 ```
 
 <!-- cache_translation_check_ko_b03ab3f8108d0e60bbee904c1660729defcc0066afb66198bbd7a3954b14086b -->
@@ -705,6 +791,19 @@ Correct translation:
 Replace-By-Fee, BIP-125를 신호하지 않습니다.
 Or (more naturally):
 Replace-By-Fee(수수료로-대체), BIP-125를 신호하지 않습니다.
+```
+
+<!-- cache_translation_check_ko_7e2aba17fe8f1640d7ce0f803a801b615f1ebcfb94974b75a57321f3ff0e664b -->
+```
+        <source>PSBT saved to disk</source>
+        <translation>부분 서명된 비트코인 트랜잭션(PSBT)이 디스크에 저장되었습니다.
+ </translation>
+    
+ERR
+The translation includes an unnecessary newline and a trailing whitespace character at the end which are not present in the source text.
+
+Correct translation:
+부분 서명된 비트코인 트랜잭션(PSBT)이 디스크에 저장되었습니다.
 ```
 
 <!-- cache_translation_check_ko_d07b5c101eb15757763e2c277765b6c96a77b6c28054e4803610cf0571fd010e -->
@@ -888,6 +987,18 @@ Correct translation:
 트랜잭션 폐&기하기
 ```
 
+<!-- cache_translation_check_ko_f882e980df27fdbf13ffbb1a97968fbcd54d2d0311759a812680c2f33be1db87 -->
+```
+        <source>%s failed to validate the -assumeutxo snapshot state. This indicates a hardware problem, or a bug in the software, or a bad software modification that allowed an invalid snapshot to be loaded. As a result of this, the node will shut down and stop using any state that was built on the snapshot, resetting the chain height from %d to %d. On the next restart, the node will resume syncing from %d without using any snapshot data. Please report this incident to %s, including how you obtained the snapshot. The invalid snapshot chainstate will be left on disk in case it is helpful in diagnosing the issue that caused this error.</source>
+        <translation>-assumeutxo 스냅샷 상태 검증하는것에 %s가 실패했습니다. 이것은 하드웨어 문제, 소프트웨어 버그, 잘못된 소프트웨어 수정으로 인해 유효하지 않은 스냅샷이 로드가 되었음을 의미합니다. 그 결과로 인해 노드는 종료되며, 해당 스냅샷을 기반으로 생성된 모든 상태의 사용을 중단하고 체인 높이를 %d에서 %d로 초기화 합니다. 다음 재시작 시, 노드는 스냅샷 데이터를 사용하지 않고 %d높이부터 동기화를 다시 시작합니다. 이 문제를 보고할 때에는 %s 스냅샷을 어떻게 획득했는지도 함께 포함하여 보고해 주십시요. 오류 원인 분석에 도움이 될 수 있도록 유효하지 않은 스냅샷의 체인 상태(chainstate)는 디스크에 그대로 남겨집니다. </translation>
+    
+ERR
+The translation contains several spacing errors and a minor spelling mistake in the honorific ending. In Korean, "것" (a dependent noun) should be preceded by a space, and the imperative suffix "-십시오" is the standard form rather than "-십시요". Additionally, there are minor spacing inconsistencies around verbs.
+
+Correct translation:
+-assumeutxo 스냅샷 상태를 검증하는 것에 %s 실패했습니다. 이것은 하드웨어 문제, 소프트웨어 버그, 또는 잘못된 소프트웨어 수정으로 인해 유효하지 않은 스냅샷이 로드되었음을 의미합니다. 그 결과로 노드는 종료되며, 해당 스냅샷을 기반으로 생성된 모든 상태의 사용을 중단하고 체인 높이를 %d에서 %d로 초기화합니다. 다음 재시작 시, 노드는 스냅샷 데이터를 사용하지 않고 %d 높이부터 동기화를 다시 시작합니다. 이 문제를 %s에 보고해 주십시오. 이때 스냅샷을 어떻게 획득했는지도 함께 포함해 주십시오. 오류 원인 분석에 도움이 될 수 있도록 유효하지 않은 스냅샷의 체인 상태(chainstate)는 디스크에 그대로 남겨집니다.
+```
+
 <!-- cache_translation_check_ko_1e0ad7e7393ababbf21dbe2ef92d9cebd95df7db9cfbb043a1f616e9c02d1f65 -->
 ```
         <source>Invalid or corrupt peers.dat (%s). If you believe this is a bug, please report it to %s. As a workaround, you can move the file (%s) out of the way (rename, move, or delete) to have a new one created on the next start.</source>
@@ -917,16 +1028,67 @@ Correct translation:
 -dnsseed를 false로 설정할 때 -forcednsseed를 true로 설정할 수 없습니다.
 ```
 
-<!-- cache_translation_check_ko_db5200be07836586c378301f525e5f68dc12e7459026918a214906a6cd8de22a -->
+<!-- cache_translation_check_ko_6c9507ee78ebac9705be0fd6d6ae0389407cf8316df05f699392cfc26c18a038 -->
 ```
-        <source>The inputs size exceeds the maximum weight. Please try sending a smaller amount or manually consolidating your wallet's UTXOs</source>
-        <translation>입력 크기가 최대 웨이트(weight) 를 초과했습니다. 더 작은 금액을 보내거나 지갑의 UTXO들을 수동으로 정리한 뒤 다시 시도해 주세요.</translation>
+        <source>Error reading %s! All keys read correctly, but transaction data or address metadata may be missing or incorrect.</source>
+        <translation>%s오류를 읽고있습니다! 모든 키는 올바르게 읽혔지만, 트랜잭션 데이터나 주소 메타데이터가 누락되었거나 잘못되었을 수 있습니다.</translation>
     
 ERR
-There is an incorrect space before the particle after the closing parenthesis ("weight) 를"), and "정리" is a less accurate term than "통합" for UTXO consolidation. Also, "가중치" is a more natural rendering of "weight" in this context.
+The Korean translation incorrectly translates "Error reading %s!" as "%s오류를 읽고있습니다!", which means "Reading %s error!" or "I am reading %s error!". The spacing is also missing after the format specifier.
 
 Correct translation:
-입력 크기가 최대 가중치를 초과했습니다. 더 작은 금액을 보내거나 지갑의 UTXO들을 수동으로 통합한 뒤 다시 시도해 주세요.
+%s을(를) 읽는 중 오류가 발생했습니다! 모든 키는 올바르게 읽혔지만, 트랜잭션 데이터나 주소 메타데이터가 누락되었거나 잘못되었을 수 있습니다.
+```
+
+<!-- cache_translation_check_ko_e1ef55608d57422f80aed8415fd994990bd42c31651b25fea3c40e2dceeaaf49 -->
+```
+        <source>Outbound connections restricted to Tor (-onlynet=onion) but the proxy for reaching the Tor network is not provided: none of -proxy, -onion or -listenonion is given</source>
+        <translation> Tor 전용(-onlynet=onion) 네트워크 모드로 아웃바운드 연결이 제한되어 있지만,
+Tor 네트워크에 연결하기 위한 프록시 설정이 제공되지 않았습니다. -proxy, -onion, 또는 -listenonion 중 어느 옵션도 지정되지 않았습니다.</translation>
+    
+ERR
+The translation contains unnecessary leading whitespace (a stray space and a newline character) at the beginning and middle of the text, which may cause formatting issues in the user interface.
+
+Correct translation:
+Tor 전용(-onlynet=onion) 네트워크 모드로 아웃바운드 연결이 제한되어 있지만, Tor 네트워크에 연결하기 위한 프록시 설정이 제공되지 않았습니다. -proxy, -onion, 또는 -listenonion 중 어느 옵션도 지정되지 않았습니다.
+```
+
+<!-- cache_translation_check_ko_d405bf99cfecc9f9272e270e32b19b53685e0a0bb9e7dd054dab3106221ecd97 -->
+```
+        <source>Specified -blockreservedweight (%d) is lower than minimum safety value of (%d)</source>
+        <translation>지정된 -blockreservedweight(%d) 값이 최소 안전값(%d)보다 낮습니다.
+
+ </translation>
+    
+ERR
+The translation contains trailing whitespace issues, including a newline and a non-breaking space character at the end. Additionally, while the meaning is correct, a space should be maintained between the source text and the parentheses for consistency.
+
+Correct translation:
+지정된 -blockreservedweight (%d)이(가) 최소 안전값 (%d)보다 낮습니다.
+```
+
+<!-- cache_translation_check_ko_ae75d946f037c184e8265a94ce53671d62e12a0a1bd016123c29986967dead87 -->
+```
+        <source>The inputs size exceeds the maximum weight. Please try sending a smaller amount or manually consolidating your wallet's UTXOs</source>
+        <translation>입력 크기가 최대 웨이트(weight) 를 초과했습니다. 더 작은 금액을 보내거나 지갑의 UTXOs를 수동으로 정리한 뒤 다시 시도해 주세요.</translation>
+    
+ERR
+The translation contains a minor whitespace issue (a stray space before the particle '를') and uses a slightly less technical term for "consolidating". In Korean, particles should be attached to the preceding word without a space. "통합" is also a more accurate technical term for "consolidating" than "정리".
+
+Correct translation:
+입력 크기가 최대 웨이트(weight)를 초과했습니다. 더 작은 금액을 보내거나 지갑의 UTXO를 수동으로 통합한 뒤 다시 시도해 주세요.
+```
+
+<!-- cache_translation_check_ko_e6c3b85c72fc6da2746d4f4e3ac50fa9c180982c5af6ff36234e60c393ed7fd5 -->
+```
+        <source>Unconfirmed UTXOs are available, but spending them creates a chain of transactions that will be rejected by the mempool</source>
+        <translation>미확인 UTXOs의 사용이 가능하지만 , 그러한 UTXOs를 사용하여 소비하면 트랜잭션 체인이 형성되고 메모풀에 의해 거부될 것입니다.</translation>
+    
+ERR
+There is a whitespace issue: there is an unnecessary space before the comma. Additionally, "UTXOs" is typically transliterated or kept as is without adding 's' if treated as a collective noun in Korean, but the main issue is the formatting.
+
+Correct translation:
+미확인 UTXO를 사용할 수 있지만, 이를 사용하면 메모풀에서 거부되는 트랜잭션 체인이 생성됩니다.
 ```
 
 <!-- cache_translation_check_ko_3be6f3fbb026285eb89ed70715d8baa12cfa3d198679f2a871a8ab935a59c5fc -->
@@ -939,18 +1101,6 @@ The Korean translation is awkward and ungrammatical. "파일 버리기 %s 존재
 
 Correct translation:
 덤프 파일 %s이(가) 존재하지 않습니다.
-```
-
-<!-- cache_translation_check_ko_5c873a36508f0b4d4557c4b87fc7122002176cd08cba40bf8e7f24c57ac51457 -->
-```
-        <source>Error creating %s</source>
-        <translation>만들기 오류 %s</translation>
-    
-ERR
-The Korean translation is unnatural and does not accurately reflect the English structure. It literally says "creation error %s," which is awkward in Korean. The correct form should place the error at the front, matching natural Korean error reporting conventions.
-
-Correct translation:
-%s 생성 오류
 ```
 
 <!-- cache_translation_check_ko_80415c91bd2b2ff78194af5ea6eb844484d2cd6d95890101872861dca3b09c08 -->
@@ -979,6 +1129,42 @@ Correct translation:
 코인 데이터베이스 열기 오류가 발생했습니다.
 ```
 
+<!-- cache_translation_check_ko_531ba9aae2ede64870183739b008612da24daeb49431f5d9d93729824f9972ba -->
+```
+        <source>Error: Dumpfile checksum does not match. Computed %s, expected %s</source>
+        <translation>오류 : 덤프파일 체크썸이 일치하지 않습니다. "%s"이 아닌 "%s"로 계산되었습니다.</translation>
+    
+ERR
+The translation reverses the logic of the source text. The English source states that the computed value is %1 and the expected value is %2. The Korean translation says "Calculated as %2 instead of %1", which implies %2 is the result that was actually computed.
+
+Correct translation:
+오류: 덤프파일 체크섬이 일치하지 않습니다. 계산된 값: %s, 예상된 값: %s
+```
+
+<!-- cache_translation_check_ko_5d67274d45126567f3d41a9f1b35dc5d431314ad4c4ab0baf7744f9bd0d22105 -->
+```
+        <source>Error: Unable to parse version %u as a uint32_t</source>
+        <translation>오류: 버전%u을 uint32_t로 파싱 할 수 없습니다.</translation>
+    
+ERR
+The translation contains a spacing issue. There should be a space before the format specifier '%u' or at least after it to ensure it doesn't run into the preceding/following text, and the space before "할" (파싱 할) is unnecessary in this specific context ("파싱할" is standard). Most importantly, "버전%u" lacks a space.
+
+Correct translation:
+오류: 버전 %u을 uint32_t로 파싱할 수 없습니다.
+```
+
+<!-- cache_translation_check_ko_86a7681b61e68aa45b8691af37b1dbab20c3e8a6ae38b301afed0b7dcb1673ee -->
+```
+        <source>Failed to disconnect block.</source>
+        <translation>ㅂ</translation>
+    
+SPAM
+The translation consists of a single Korean consonant "ㅂ" which is incomplete and does not translate the source text.
+
+Correct translation:
+블록 연결을 해제하는 데 실패했습니다.
+```
+
 <!-- cache_translation_check_ko_9163f1d732e3d28d5a52e740832040a9e744af97bcb24c84bb2ebac8868972e0 -->
 ```
         <source>Failed to verify database</source>
@@ -989,6 +1175,30 @@ The Korean translation is grammatically incorrect. The phrase "데이터베이�
 
 Correct translation:
 데이터베이스 검증에 실패했습니다.
+```
+
+<!-- cache_translation_check_ko_96fa2c9e6b03cfb75218e6b4893b1e6b92b3daaa3f010bda7c071fe48611ab08 -->
+```
+        <source>Failed to write undo data.</source>
+        <translation>되돌리기(undo) 데이터에 쓰기 데 실패했습니다.</translation>
+    
+ERR
+The translation contains a grammatical error ("쓰기 데" is incorrect; it should be "쓰는 데") and an unnecessary space.
+
+Correct translation:
+되돌리기(undo) 데이터 쓰기에 실패했습니다.
+```
+
+<!-- cache_translation_check_ko_7bc2afe015e29db04f7145173468af90da87c49f90a8082f98f17751af9315a8 -->
+```
+        <source>Invalid amount for %s=&lt;amount&gt;: '%s'</source>
+        <translation>유요하지 않은 금액 %s=&lt;amount&gt;:'%s'</translation>
+    
+ERR
+The Korean translation contains a typo in the word "유효하지" (invalid). It is written as "유요하지", which is incorrect. Additionally, there is a missing space before the colon to maintain consistent formatting.
+
+Correct translation:
+유효하지 않은 금액 %s=<amount>: '%s'
 ```
 
 <!-- cache_translation_check_ko_65fd42f25dd666c446ea8979c14d3fb18c3f1dc5774ca8919a7cd80f5cd60fc8 -->
@@ -1003,6 +1213,30 @@ Correct translation:
 유효하지 않은 넷마스크가 -whitelist: '%s'에 지정되었습니다.
 ```
 
+<!-- cache_translation_check_ko_ed62b46975cdf95fe676fe3c512088c33497feeac1491a512e5a45814b0e4076 -->
+```
+        <source>Invalid port specified in %s: '%s'</source>
+        <translation>%s에서 특정 포트가 유요하지 않음: '%s'</translation>
+    
+ERR
+The Korean translation contains a typo. "유요하지" should be "유효하지" (valid/invalid). Additionally, "특정" (specific) is a slightly awkward choice for "specified"; "지정된" is more common in this technical context.
+
+Correct translation:
+%s에 지정된 포트가 유효하지 않음: '%s'
+```
+
+<!-- cache_translation_check_ko_2c6dc9845884dfae03ad63ca8a0d082e793249b7851523592558af48eec4a0ee -->
+```
+        <source>Listening for incoming connections failed (listen returned error %s)</source>
+        <translation>오류: 들어오는 연결 대기 실패 (listen 콜 오류 %s반환)</translation>
+    
+ERR
+The translation adds a prefix "오류:" (Error:) that is not present in the source text. Additionally, there is a missing space between the format specifier "%s" and the word "반환".
+
+Correct translation:
+들어오는 연결 대기 실패 (listen 반환 오류 %s)
+```
+
 <!-- cache_translation_check_ko_a3b1bb020f4c323d4fb3162a75b7657e1443b68a8364c9158a3568441f916c40 -->
 ```
         <source>SQLiteDatabase: Failed to read database verification error: %s</source>
@@ -1013,6 +1247,54 @@ The translation is inaccurate. The original message is "Failed to read database 
 
 Correct translation:
 SQLiteDatabase: 데이터베이스 검증 오류를 읽는 데 실패했습니다: %s
+```
+
+<!-- cache_translation_check_ko_071c5f2582b5e723b2846728f05faa8e5f7e118063dea9a44f90766d3e67c05e -->
+```
+        <source>Signer returned error: %s</source>
+        <translation>서명기가 다음 오류를 반환했습니다 : %s</translation>
+    
+ERR
+The translation contains an unnecessary space before the colon. In Korean typography, there should be no space before a colon.
+
+Correct translation:
+서명기가 다음 오류를 반환했습니다: %s
+```
+
+<!-- cache_translation_check_ko_b8b5e8650213fc7e8bff318811c5fc78aa58dbc21b13e4704dfe567195d36e91 -->
+```
+        <source>System error while flushing: %s</source>
+        <translation>플러싱을 하는동안 다음 시스템 에러가 발생했습니다 : %s</translation>
+    
+ERR
+There is a spacing issue before the colon. In Korean typography, there should not be a space before a colon. Additionally, "하는동안" should be written with a space as "하는 동안".
+
+Correct translation:
+플러싱을 하는 동안 다음 시스템 에러가 발생했습니다: %s
+```
+
+<!-- cache_translation_check_ko_57b7ef09d49444d1dd6e016ee29cfa797ff96ba203b58ebce18dc96110e9e1c0 -->
+```
+        <source>System error while loading external block file: %s</source>
+        <translation>외부 블록 파일을 로딩하면서 다음 시스템 오류가 발생했습니다 : %s </translation>
+    
+ERR
+The translation contains unnecessary whitespace. There is a space before the colon and a trailing space after the format specifier.
+
+Correct translation:
+외부 블록 파일을 불러오는 중 시스템 오류 발생: %s
+```
+
+<!-- cache_translation_check_ko_535e4c139b8bc2176db6857a479684f057b33b2c4753f5e35ce4d7f0854c2759 -->
+```
+        <source>The %s path uses exFAT, which is known to have intermittent corruption problems on macOS. Move this directory to a different filesystem to avoid data loss.</source>
+        <translation>%s 경로는 exFAT 파일 시스템을 사용하고 있이며 이 파일 시스템은 macOS에서 간헐적으로 데이터 손상 문제가 발생하는 것으로 알려져 있습니다. 데이터 손실을 방지하려면 이 디렉터리를 다른 파일 시스템으로 옮기세요.</translation>
+    
+ERR
+The translation contains a typo in the word "있이며" (iss-imyeo), which should be "있으며" (iss-eumyeo).
+
+Correct translation:
+%s 경로는 exFAT 파일 시스템을 사용하고 있으며 이 파일 시스템은 macOS에서 간헐적으로 데이터 손상 문제가 발생하는 것으로 알려져 있습니다. 데이터 손실을 방지하려면 이 디렉터리를 다른 파일 시스템으로 옮기세요.
 ```
 
 <!-- cache_translation_check_ko_55021f269ff8a83e3353c1d37634fdcf22180aff51e66735caa5f80efc5b74f2 -->
@@ -1053,6 +1335,64 @@ There is a typo in the option: '-blockfileterindex' should be '-blockfilterindex
 Correct translation:
 알 수 없는 -blockfilterindex 값 %s.
 ```
+
+<!-- cache_translation_check_ko_5cf6d958ecfd1b15269fe245bd47274a8a4be7671333f94dc6a8b1c8e0c4c25f -->
+```
+        <source>Wallet file creation failed: %s</source>
+        <translation>다음 지갑 파일 생성에 실패했습니다. :%s</translation>
+    
+ERR
+The translation contains an unnecessary space before the colon and has changed the placement of the colon relative to the format specifier. In Korean technical translations, it is more standard to place the colon immediately after the text or omit the extra space to match the source format.
+
+Correct translation:
+지갑 파일 생성에 실패했습니다: %s
+```
+
+<!-- cache_translation_check_ko_49ffee5d78282466d73015c9389f8509477c6d3a77bed9c47d11f61769d8bfd0 -->
+```
+        <source>Error loading %s: Wallet is a legacy wallet. Please migrate to a descriptor wallet using the migration tool (migratewallet RPC).</source>
+        <translation>%s을 불러오는 중 오류: 해당 지갑은 ‘레거시(legacy) 지갑’입니다. migratewallet RPC를 사용하여 디스크립터(Descriptor) 지갑으로 마이그레이션 하세요.
+
+ </translation>
+    
+ERR
+The translation contains an unnecessary trailing newline and a non-breaking space character at the end. Additionally, there is a space between "마이그레이션" and "하세요" that should be removed according to standard Korean spacing for this technical term in context, or simply kept clean without the trailing whitespace.
+
+Correct translation:
+%s을 불러오는 중 오류: 해당 지갑은 레거시 지갑입니다. migratewallet RPC를 사용하여 디스크립터 지갑으로 마이그레이션하세요.
+```
+
+<!-- cache_translation_check_ko_d91608d4c1552854a465d5f180cf966399bb2572b901f1608de3aac1ce20714f -->
+```
+        <source>Unrecognized descriptor found. Loading wallet %s
+
+The wallet might have been created on a newer version.
+Please try running the latest software version.
+</source>
+        <translation>인식할 수 없는 디스크립터가 발견되었습니다. 지갑 %s를 불러옵니다. 이 지갑은 더 최신 버전의 소프트웨어에서 생성되었을 수 있습니다. 최신 버전의 소프트웨어를 실행해보세요.
+</translation>
+    
+ERR
+The translation has merged multiple lines into a single line, failing to preserve the newline formatting from the source text. In software UI, these line breaks are usually necessary for correct display.
+
+Correct translation:
+인식할 수 없는 디스크립터가 발견되었습니다. 지갑 %s를 불러오는 중...
+
+이 지갑은 더 최신 버전에서 생성되었을 수 있습니다.
+최신 버전의 소프트웨어를 실행해 보십시오.
+```
+
+<!-- cache_translation_check_ko_612d52d388ac75bd435c5afbaf123b640fc22b365b9022dd5e05dc7fb5b0c806 -->
+```
+        <source>Error: Could not add watchonly tx %s to watchonly wallet</source>
+        <translation>오류: 보기 전용 트랜잭션%s을 보기 전용 지갑에 추가할 수 없습니다.</translation>
+    
+ERR
+The translation has a whitespace issue. There should be a space before the format specifier '%s' to match the source and ensure proper formatting.
+
+Correct translation:
+오류: 보기 전용 트랜잭션 %s을 보기 전용 지갑에 추가할 수 없습니다.
+```
 </details>
 
-Number of issues: 74.
+Number of issues: 101.

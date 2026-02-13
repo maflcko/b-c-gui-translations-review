@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -57,6 +57,18 @@ The translation is missing the word "now" ("nüüd") and the verb "on" ("is"), w
 
 Correct translation:
 Teie rahakott on nüüd krüpteeritud.
+```
+
+<!-- cache_translation_check_et_476c371fa0fa054fef783527b3c00b4d0b982f51df9014e1b830c36fab46c322 -->
+```
+        <source>Close All Wallets…</source>
+        <translation>Sulge kõik rahakotid</translation>
+    
+ERR
+The translation is missing the ellipsis (...) or the equivalent Unicode character (…), which is present in the source text and indicates that further action or a dialog will follow.
+
+Correct translation:
+Sulge kõik rahakotid…
 ```
 
 <!-- cache_translation_check_et_5b728c44f9fa26cc69e36c5249cbc2846a09c77634d342b5c7eea80bf1f88779 -->
@@ -200,4 +212,4 @@ Ebapiisavad vahendid
 ```
 </details>
 
-Number of issues: 14.
+Number of issues: 15.

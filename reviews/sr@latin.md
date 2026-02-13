@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -900,6 +900,19 @@ Correct translation:
 Prenesi Novčanik
 ```
 
+<!-- cache_translation_check_sr@latin_7d0535707c3f43e4239da01badef5e4ff6da34a1fab9519cb86955de6176c551 -->
+```
+        <source>Restore Wallet</source>
+        <extracomment>Title of progress window which is displayed when wallets are being restored.</extracomment>
+        <translation>Поврати Новчаник</translation>
+    
+ERR
+The translation uses Cyrillic script ("Поврати Новчаник") instead of Latin script, which is required for 'sr@latin'. Additionally, "Novčanik" is typically spelled with "č" in Latin script.
+
+Correct translation:
+Povrati Novčanik
+```
+
 <!-- cache_translation_check_sr@latin_0d5fedc50046da8df3290a135acd90033a8a42aeb9f3584d4d7389d2194ad8c4 -->
 ```
         <source>Open wallet failed</source>
@@ -995,18 +1008,6 @@ The translation is in Serbian Cyrillic script, not the required Latin script ('s
 
 Correct translation:
 Onemogući privatne ključeve
-```
-
-<!-- cache_translation_check_sr@latin_545381983a40dcaca15e5b6764ef61ea47002b9dcfe4f863bbd389c26d8e2479 -->
-```
-        <source>Make a blank wallet. Blank wallets do not initially have private keys or scripts. Private keys and addresses can be imported, or an HD seed can be set, at a later time.</source>
-        <translation>Направи празан новчаник. Празни новчанци немају приватане кључеве или скрипте. Приватни кључеви могу се увести, или HD семе може бити постављено касније.</translation>
-    
-ERR
-The translation is written in Cyrillic script, but 'sr@latin' specifies Serbian in Latin script. There is also a typo: "приватане" should be "приватне".
-
-Correct translation in Latin script:
-Napravi prazan novčanik. Prazni novčanici nemaju privatne ključeve ili skripte. Privatni ključevi i adrese mogu se uvesti, ili HD seme može biti postavljeno kasnije.
 ```
 
 <!-- cache_translation_check_sr@latin_2b240cd4737e05aa6d6df0d409754c9d70305e91b41d48eb476985125568eb83 -->
@@ -4290,18 +4291,6 @@ Correct translation:
 Greška tokom učitavanja %s
 ```
 
-<!-- cache_translation_check_sr@latin_5c5baffb73930f0404b68ed01b75ee7f6705de3ba6ac7b6a11dea9f793b1f326 -->
-```
-        <source>Error loading %s: Private keys can only be disabled during creation</source>
-        <translation>Грешка током учитавања %s: Приватни кључеви могу бити онемогућени само приликом креирања</translation>
-    
-ERR
-The translation is written in Serbian Cyrillic script, but the requested language tag 'sr@latin' specifies Serbian in Latin script. The translation should be in Latin script accordingly.
-
-Correct translation:
-Greška tokom učitavanja %s: Privatni ključevi mogu biti onemogućeni samo prilikom kreiranja
-```
-
 <!-- cache_translation_check_sr@latin_1ec2927b7b059f879b0c90539b72d22d08c0ca3ce75b27dc0dcbb9f9a07b7c62 -->
 ```
         <source>Error loading %s: Wallet corrupted</source>
@@ -4554,4 +4543,4 @@ Novčanik treba da bude prepisan: ponovo pokrenite %s da završite
 ```
 </details>
 
-Number of issues: 368.
+Number of issues: 367.

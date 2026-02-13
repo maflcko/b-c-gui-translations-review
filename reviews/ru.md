@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -106,41 +106,17 @@ Correct translation:
 Введённая старая парольная фраза для расшифровки кошелька неверна. Она содержит нулевой символ (то есть, байт со значением ноль). Если парольная фраза была установлена в версии программы до 25.0, пожалуйста, попробуйте ещё раз, используя только символы до — но не включая — первого нулевого символа.
 ```
 
-<!-- cache_translation_check_ru_145cecf3dc5c4d48e67018be1d11ba68beaf132feb65ca5c0b9b83266a3093d2 -->
+<!-- cache_translation_check_ru_ef099cb3462cc21316cfff3ed5842ea9cc89bc7089c4a66661537442e5c4f917 -->
 ```
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Введите биткоин-адрес (например,%1)</translation>
+        <source>Private Broadcast</source>
+        <extracomment>Short-lived peer connection type that is used for broadcasting privacy-sensitive data.</extracomment>
+        <translation>Конфеденциальная трансляции транзакций</translation>
     
 ERR
-There is a spacing issue: a space is missing after the comma before %1. 
+The Russian translation contains a spelling error and a grammatical mismatch. The word "Конфеденциальная" is misspelled (should be "Конфиденциальная"), and "трансляции" (plural or genitive) does not agree correctly with the singular adjective in this context. Furthermore, "транзакций" (of transactions) is added even though it's not in the source, though it fits the context.
 
 Correct translation:
-Введите биткоин-адрес (например, %1)
-```
-
-<!-- cache_translation_check_ru_1eb03c158f1133e6395efafd4f569a837bb2a3fd419294d8f8dc75f94d01da0b -->
-```
-        <source>Unroutable</source>
-        <translation>Немаршрутизируемый</translation>
-    
-ERR
-The literal word "Немаршрутизируемый" is understandable but uncommon/awkward in Russian. No format-specifier or whitespace issues.
-
-Suggested clearer translations (choose depending on UI context):
-- For a status/label (adjective): "Не маршрутизируемый"
-- For a description/verb phrase: "Невозможно маршрутизировать"
-```
-
-<!-- cache_translation_check_ru_a30fa6d69a259594d9c43c0fa6b6c274dac44de3b2e8047d2dad593907cf4b9e -->
-```
-        <source>N/A</source>
-        <translation>Н/д</translation>
-    
-ERR
-The translation "Н/д" mixes uppercase and lowercase letters; for "N/A" the Russian abbreviation is typically written either "Н/Д" (uppercase) or "н/д" (lowercase) for consistency. No format specifiers or whitespace issues.
-
-Correct translation (recommended):
-Н/Д
+Конфиденциальная трансляция
 ```
 
 <!-- cache_translation_check_ru_a72ab1013414bb2450ed3719336efc360147b19613743fbb31018736d00b1297 -->
@@ -242,20 +218,16 @@ Correct translation:
 Открытие кошелька
 ```
 
-<!-- cache_translation_check_ru_ca07309fb016b0abcea0827e872670e13db0787f69eeb10fd38756bcfbb33016 -->
+<!-- cache_translation_check_ru_c3957699509b14668a099f5695523e904230ef1b451b0250a37e290b414200b6 -->
 ```
-        <source>Restore Wallet</source>
-        <extracomment>Title of progress window which is displayed when wallets are being restored.</extracomment>
-        <translation>Восстановить кошелёк</translation>
+        <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
+        <translation>Адрес "%1" уже существует как адрес получателя с  именем "%2", и поэтому не может быть добавлен как адрес отправителя.</translation>
     
 ERR
-The Russian text "Восстановить кошелёк" is an imperative ("Restore wallet") whereas the context is a window title shown while wallets are being restored (a noun/gerund). Use a noun form.
+The translation contains a double space between "с" and "именем".
 
-Correct translation (singular):
-Восстановление кошелька
-
-Or if referring to multiple wallets (matches the context):
-Восстановление кошельков
+Correct translation:
+Адрес "%1" уже существует как адрес получателя с именем "%2", и поэтому не может быть добавлен как адрес отправителя.
 ```
 
 <!-- cache_translation_check_ru_1570b09f72034a92ea1140b93f40cbe7b24b54981bba1580f90cbc258c336f23 -->
@@ -414,30 +386,6 @@ Correct translation:
 &Показывать значок в трее)
 ```
 
-<!-- cache_translation_check_ru_b369cb312596c584d1801cd4c665fd65f35f87b07f8fe7f7db22029d17e5b905 -->
-```
-        <source>Cannot sign inputs while wallet is locked.</source>
-        <translation>Невозможно подписать входы пока кошелёк заблокирован</translation>
-    
-ERR
-The translation is understandable but has minor punctuation/grammar issues: it lacks a comma before "пока" and a terminating period. Also consider using the imperfective infinitive "подписывать" but "подписать" is acceptable. No format specifiers are involved.
-
-Corrected translation:
-Невозможно подписать входы, пока кошелёк заблокирован.
-```
-
-<!-- cache_translation_check_ru_e91159b2f650679be23f0c14319f5ac37849c986f6ca9546454cc7be8a10f352 -->
-```
-        <source>PSBT copied to clipboard.</source>
-        <translation>PSBT скопирована в буфер обмена</translation>
-    
-ERR
-The translation is mostly correct, but it omits the final period from the source. Also a more common/neutral phrasing in Russian would be "PSBT скопирована в буфер обмена." (keeping the period). 
-
-Correct translation:
-PSBT скопирована в буфер обмена.
-```
-
 <!-- cache_translation_check_ru_242fadcdbd4cd1a0ef582a138bf0ba5206a09464ebb2e45461985290d2841ab4 -->
 ```
         <source>Partially Signed Transaction (Binary)</source>
@@ -449,83 +397,6 @@ The translation adds the word "файл" ("file") which is not present in the so
 
 Correct translation:
 Частично подписанная транзакция (в двоичном формате)
-```
-
-<!-- cache_translation_check_ru_8f18a784e69db356ec6e20fca23ee6ef7f6f8fc7d54e12fdbba2655d77598e2c -->
-```
-        <source>Transaction is missing some information about inputs.</source>
-        <translation>Транзакция имеет недостаточно информации о некоторых входах.</translation>
-    
-ERR
-The Russian phrasing is understandable but unidiomatic: "Транзакция имеет недостаточно информации о некоторых входах." is awkward (literal "has not enough information"). Better, more natural translations would be:
-
-Correct translations:
-В транзакции отсутствует некоторая информация о входах.
-or
-В транзакции не хватает информации о некоторых входах.
-```
-
-<!-- cache_translation_check_ru_33488b79fd13e1d9b13759a2d06c1de0891b4f8c3b47f429a89d1917b3cace1c -->
-```
-        <source>Transaction still needs signature(s).</source>
-        <translation>Транзакции требуется по крайней мере ещё одна подпись.</translation>
-    
-ERR
-The Russian is understandable but slightly ungrammatical/awkward: "Транзакции требуется..." misses a preposition and the phrasing is redundant. Also "по крайней мере ещё одна" is wordy.
-
-Correct translation:
-Для транзакции по-прежнему требуется хотя бы одна подпись.
-```
-
-<!-- cache_translation_check_ru_5ca7a77001f3d8c0830f5b75e931e7630ef47846c77be56af7aa1cc663704e60 -->
-```
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Невозможно запустить обработчик bitcoin: click-to-pay</translation>
-    
-ERR
-The Russian is understandable but awkward and misorders the elements. It mixes English and Russian in a confusing way and uses lowercase "bitcoin". More natural and accurate translations would preserve meaning and read fluently in Russian.
-
-Correct translations (choose one):
-- Не удалось запустить обработчик click-to-pay для Bitcoin
-- Невозможно запустить обработчик click-to-pay для Bitcoin
-
-(If you prefer fully Russian wording for "click-to-pay", you can also use:
-- Не удалось запустить обработчик «Click-to-Pay» для Bitcoin)
-```
-
-<!-- cache_translation_check_ru_a0d1056dac6c679db9b1de61d151e2c6dcfe28d9e4a1306f2198bac50908902b -->
-```
-        <source>Cannot process payment request because BIP70 is not supported.
-Due to widespread security flaws in BIP70 it's strongly recommended that any merchant instructions to switch wallets be ignored.
-If you are receiving this error you should request the merchant provide a BIP21 compatible URI.</source>
-        <translation>Не удалось обработать транзакцию, потому что BIP70 не поддерживается.
-Из-за широко распространённых уязвимостей в BIP70, настоятельно рекомендуется игнорировать любые инструкции продавцов сменить кошелёк.
-Если вы получили эту ошибку, вам следует попросить у продавца URI, совместимый с BIP21.</translation>
-    
-ERR
-The translation is mostly clear but has two issues:
-1. "payment request" was translated as "транзакцию" (transaction), which is less accurate than "запрос платежа".
-2. Slightly awkward phrasing in the second sentence: "инструкции продавцов сменить кошелёк" — better as singular/plural agreement or using "по смене кошелька".
-
-Correct translation:
-Не удалось обработать запрос на оплату, потому что BIP70 не поддерживается.
-Из‑за широко распространённых уязвимостей в BIP70 настоятельно рекомендуется игнорировать любые инструкции продавца/продавцов по смене кошелька.
-Если вы получили эту ошибку, вам следует попросить у продавца URI, совместимый с BIP21.
-```
-
-<!-- cache_translation_check_ru_0c44a413d9cda32a23f6e9f9de29542bd1e933db82b5beaf32f894f1472eadde -->
-```
-        <source>Inbound</source>
-        <extracomment>An Inbound Connection from a Peer.</extracomment>
-        <translation>Входящий</translation>
-    
-ERR
-The Russian adjective should agree with "соединение" (neuter). "Входящий" is masculine; the correct form is "Входящее".
-
-Correct translation:
-Входящее
-
-No format specifiers or spacing issues present.
 ```
 
 <!-- cache_translation_check_ru_6897a59c118ac33debd4392490a26b9def570d1e749dd351858de3134c833747 -->
@@ -588,6 +459,30 @@ Correct translation:
 Произошла фатальная внутренняя ошибка, подробности смотрите в debug.log:
 ```
 
+<!-- cache_translation_check_ru_4cc2a1b5f58c5f01d8c79706167c775109497c1d7bf93441cd4b8f9213114f41 -->
+```
+        <source>Can't spend unconfirmed version %d pre-selected input with a version 3 tx</source>
+        <translation>Нельзя потратить неподтвержденную версию 1%d предварительно выбранного входа с транзакцией версии 3</translation>
+    
+ERR
+The format specifier `%d` from the source was incorrectly modified to `1%d` in the translation.
+
+Correct translation:
+Нельзя потратить неподтвержденную версию %d предварительно выбранного входа с транзакцией версии 3
+```
+
+<!-- cache_translation_check_ru_95be86028a0a31bd2801c2406005a5fac0f9b99c11c7e63d1e64c27a55cb1279 -->
+```
+        <source>Can't spend unconfirmed version 3 pre-selected input with a version %d tx</source>
+        <translation>Нельзя потратить неподтвержденную версию 3 предварительно выбранного входа с транзакцией версии 1%d</translation>
+    
+ERR
+The translation contains an extra '1' before the format specifier %d, which changes the meaning and would result in incorrect output (e.g., "версии 12" instead of "версии 2"). Also, the grammatical agreement for "unconfirmed" and "version 3" should refer to the "input" (вход, masculine) rather than "version" (версия, feminine).
+
+Correct translation:
+Нельзя потратить неподтвержденный предварительно выбранный вход версии 3 в транзакции версии %d
+```
+
 <!-- cache_translation_check_ru_290f4041693314e289fd2274f5782a6f3343805f1ec49bea8de6390d62f235f2 -->
 ```
         <source>Failed to acquire rescan reserver during wallet initialization</source>
@@ -598,6 +493,66 @@ The phrase "rescan reserver" is mistranslated. The Russian "повторное �
 
 Correct translation:
 Не удалось получить резерв для повторного сканирования во время инициализации кошелька.
+```
+
+<!-- cache_translation_check_ru_bf36e83776ff3b314c0a96f8c119a1a9262e5fb868b8293dd1d3b9e9995f51a0 -->
+```
+        <source>Duplicate binding configuration for address %s. Please check your -bind, -bind=...=onion and -whitebind settings.</source>
+        <translation>Двойное связывание с адресом %s. Пожалуйста проверьте ваши настройки: -bind, -bind=...=onion and -whitebind.</translation>
+    
+ERR
+The translation contains an untranslated English word "and" and is missing a comma after "Пожалуйста".
+
+Correct translation:
+Двойная конфигурация привязки для адреса %s. Пожалуйста, проверьте ваши настройки -bind, -bind=...=onion и -whitebind.
+```
+
+<!-- cache_translation_check_ru_9da06217b0509e5e6e61730cbd60eea22d6f1297758066a4b89f48e73d664f74 -->
+```
+        <source>Option '-limitancestorsize' is given but ancestor size limits have been replaced with cluster size limits (see -limitclustersize). This option has no effect.</source>
+        <translation>Option '-limitancestorsize' is given but ancestor size limits have been replaced with cluster size limits (see -limitclustersize). Эта настройка не имеет эффекта.</translation>
+    
+ERR
+The translation is incomplete. The first part of the sentence is left in English, whereas it should be translated into Russian.
+
+Correct translation:
+Параметр '-limitancestorsize' указан, но ограничения на размер предков были заменены ограничениями на размер кластера (см. -limitclustersize). Эта настройка не имеет эффекта.
+```
+
+<!-- cache_translation_check_ru_e28efb6eaf79014795d236a10e706096eae8d036b90682e819b5dede7bb17b07 -->
+```
+        <source>Private broadcast of own transactions requested (-privatebroadcast) and -proxyrandomize is disabled. Tor circuits for private broadcast connections may be correlated to other connections over Tor. For maximum privacy set -proxyrandomize=1.</source>
+        <translation>Приватное вещание своих транзакций требует (-privatebroadcast) ,а -proxyrandomize отключен. Цепочка сети Tor для приватного вещания может коррелировать с другими соединениями через Tor. Для большей приватности установите -proxyrandomize=1.</translation>
+    
+ERR
+The translation contains a punctuation error (a space before a comma) and minor grammatical awkwardness in the first sentence. The phrase "требует (-privatebroadcast)" is slightly misleading compared to "requested", and the plural form "цепочка" should be plural "цепочки" to match "circuits".
+
+Correct translation:
+Запрошена приватная трансляция собственных транзакций (-privatebroadcast), а -proxyrandomize отключен. Цепочки Tor для соединений приватной трансляции могут быть сопоставлены с другими соединениями через Tor. Для максимальной конфиденциальности установите -proxyrandomize=1.
+```
+
+<!-- cache_translation_check_ru_43f862d6898c5ce3950eb16fe48171ff8365e1d669ed3cfc7226361ce853c2f6 -->
+```
+        <source>Private broadcast of own transactions requested (-privatebroadcast), but -connect is also configured. They are incompatible because the private broadcast needs to open new connections to randomly chosen Tor or I2P peers. Consider using -maxconnections=0 -addnode=... instead</source>
+        <translation>Приватное вещание своих транзакций запрошено (-privatebroadcast), но также настроено -connect. Вместе они не совместимы потому что при приватной рассылке необходимо открывать новые соединения к случайно выбираемым узлам Tor или I2P. Предлагается исползовать -maxconnections=0 -addnode=... взамен</translation>
+    
+ERR
+The translation contains several spelling and grammatical errors. Specifically, "исползовать" is a typo (should be "использовать"), "не совместимы" should be written as one word "несовместимы" in this context, and "взамен" at the end is a bit informal; "вместо этого" is more appropriate. Additionally, "потому что" requires a comma before it.
+
+Correct translation:
+Приватное вещание своих транзакций запрошено (-privatebroadcast), но также настроено -connect. Они несовместимы, потому что для приватного вещания необходимо открывать новые соединения к случайно выбираемым узлам Tor или I2P. Попробуйте использовать -maxconnections=0 -addnode=... вместо этого
+```
+
+<!-- cache_translation_check_ru_1788cbefe539511838c1dcbb7e58478a0a5b8f8de9130c667aafd7a877759f13 -->
+```
+        <source>Private broadcast of own transactions requested (-privatebroadcast), but none of Tor or I2P networks is reachable</source>
+        <translation>Приватное вещание своих транзакций запрошено (-privatebroadcast) , но отсутствуют доступные сети Tor or I2P</translation>
+    
+ERR
+The translation has a formatting issue with a stray space before a comma. Additionally, the network names "Tor" and "I2P" should be connected with the Russian word for "or" ("или") rather than the English "or".
+
+Correct translation:
+Приватное вещание своих транзакций запрошено (-privatebroadcast), но отсутствуют доступные сети Tor или I2P
 ```
 
 <!-- cache_translation_check_ru_93090ca67f65e1e6355ba620441bede23d5950b2792429a74ea5f0cdd9760df6 -->
@@ -662,4 +617,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 50.
+Number of issues: 48.

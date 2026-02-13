@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -206,6 +206,30 @@ The translation omits the ampersand (&) which is intended to indicate a shortcut
 Correct translation:
 &Kopier adresse
 ```
+
+<!-- cache_translation_check_no_d3d49f9afeb1d33f68850e75abe2d40b6062ee7ec07d994bf7bbed5b7bc12aed -->
+```
+        <source>Address</source>
+        <translation>Adresse </translation>
+    
+ERR
+The translation contains a trailing space that is not present in the source text.
+
+Correct translation:
+Adresse
+```
+
+<!-- cache_translation_check_no_d189cf5f7d8cfdeafe939efa7443dea22ea78b0c81e669c0207bf24f486bbe78 -->
+```
+        <source>Exporting Failed</source>
+        <translation>Eksportering feilet </translation>
+    
+ERR
+There is an unnecessary trailing space in the translation.
+
+Correct translation:
+Eksportering feilet
+```
 </details>
 
-Number of issues: 16.
+Number of issues: 18.

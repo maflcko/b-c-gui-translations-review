@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -33,6 +33,43 @@ Correct translation:
 &amp;Головна
 ```
 
+<!-- cache_translation_check_uk_e2cf48cba3a3c7ae68e22e2a06e9c19123871fe19207c2caed2ab6c5a0036f8b -->
+```
+        <source>Addresses Rate-Limited</source>
+        <extracomment>Text title for the Addresses Rate-Limited field in the peer details area, which displays the total number of addresses received from this peer that were dropped (not processed) due to rate-limiting.</extracomment>
+        <translation>Адрес пропущено</translation>
+    
+ERR
+The translation "Адрес пропущено" is grammatically incorrect and does not accurately convey the meaning of "Addresses Rate-Limited". "Адрес" is singular, while the source is plural. Furthermore, it doesn't clearly indicate that the addresses were dropped specifically due to rate-limiting.
+
+Correct translation:
+Обмеження частоти адрес
+```
+
+<!-- cache_translation_check_uk_5da597924656e70c495330db8f16dcf2337a85a0acaa157ad99d0e4513c332d0 -->
+```
+        <source>The entered address is invalid.</source>
+        <translation>Введена адреса не співпадає.</translation>
+    
+ERR
+The Ukrainian translation is inaccurate. "Не співпадає" means "does not match" or "is not the same," whereas the source word "invalid" should be translated as "недійсна" or "неправильна" in this context.
+
+Correct translation:
+Введена адреса недійсна.
+```
+
+<!-- cache_translation_check_uk_5f2e5407ab33f7e7cf4faab20ad3b56dced70e48fb7e89f50cb0fdc2fd80f7b0 -->
+```
+        <source>The entered address does not refer to a legacy (P2PKH) key. Message signing for SegWit and other non-P2PKH address types is not supported in this version of %1. Please check the address and try again.</source>
+        <translation>Введена адреса не відноситься до застарілого (P2PKH) ключа. Підписання повідомлень для SegWit та інших типів адрес, відмінних від P2PKH, не підтримується в цій версії . Будь ласка, перевірте адресу і спробуйте ще раз.</translation>
+    
+ERR
+The format specifier '%1' is missing in the translation. In the source text, it refers to the application name (e.g., Bitcoin Core), and it must be included in the translation to maintain context and technical correctness.
+
+Correct translation:
+Введена адреса не відноситься до застарілого (P2PKH) ключа. Підписання повідомлень для SegWit та інших типів адрес, відмінних від P2PKH, не підтримується в цій версії %1. Будь ласка, перевірте адресу і спробуйте ще раз.
+```
+
 <!-- cache_translation_check_uk_6e1248cff4386c2513c43fc435d83ff61585994b58c9382aa3fe07d1d14ffb40 -->
 ```
         <source>Copy &amp;raw transaction</source>
@@ -46,4 +83,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 3.
+Number of issues: 6.

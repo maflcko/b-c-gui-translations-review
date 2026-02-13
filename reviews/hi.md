@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -89,6 +89,20 @@ There are spacing and punctuation issues. The phrase "%1यहां" incorrectl
 
 Correct translation:
 पता सूची को %1 में सहेजने का प्रयास करते समय एक त्रुटि हुई। कृपया पुनः प्रयास करें।
+```
+
+<!-- cache_translation_check_hi_596ff767fbc7f8215cc8436583d3160db794a234656d41fb13098a6c715f1e25 -->
+```
+        <source>Receiving addresses - %1</source>
+        <translation> रिसीवर के पते</translation>
+    
+ERR
+The translation is problematic for two reasons:
+1. The format specifier `%1` is missing from the translation.
+2. There is an unnecessary leading space at the beginning of the translation.
+
+Correct translation:
+प्राप्त करने वाले पते - %1
 ```
 
 <!-- cache_translation_check_hi_7abea39230fa69741ecb5531b853760dd661ee0542017cee519506d4b6d0f158 -->
@@ -217,29 +231,112 @@ Correct translation:
 प्रॉक्सी &lt;b&gt;सक्षम&lt;/b&gt; है: %1
 ```
 
-<!-- cache_translation_check_hi_d7d97beed218d39dd86fd92ef7f79a923c18d84be42dd2f19ec4f44bf6171ca9 -->
+<!-- cache_translation_check_hi_b44ddeb82f2c85980803f3040b9456ee76cef4d22a61cac16cc98bf6cc74619b -->
 ```
-        <source>Backup wallet to another location</source>
-        <translation>किसी अन्य स्थान पर वॉलेट  बैकअप करे |</translation>
+        <source>Sign &amp;message…</source>
+        <translation>हस्ताक्षर &amp;संदेश</translation>
     
 ERR
-There is a spacing issue in the phrase "वॉलेट  बैकअप" (double space), an unnecessary space before the pipe symbol (|), and the imperative verb should be "बनाएँ" to be polite and correct in Hindi. Also, the pipe symbol should not be used; a full stop is better suited for Hindi sentences.
+The translation is missing the ellipsis (…) present in the source text. Additionally, the phrasing "हस्ताक्षर संदेश" translates to "Signature Message" rather than the imperative "Sign message".
 
 Correct translation:
-किसी अन्य स्थान पर वॉलेट का बैकअप बनाएं।
+&संदेश पर हस्ताक्षर करें…
 ```
 
-<!-- cache_translation_check_hi_53d1da48cb88d93ef92b607aee61a78a65b210268e8d6f026c2d617b2873015a -->
+<!-- cache_translation_check_hi_22237f7acd9c59b5a600e9a47b4700d4b2e9d99a40a9a793c904e9206267c7f4 -->
 ```
-        <source>&amp;Options…</source>
-        <translation>&amp;विकल्प
- </translation>
+        <source>&amp;Command-line options</source>
+        <translation>कमांड-लाइन विकल्प</translation>
     
 ERR
-There is an unwanted whitespace or line break at the end of the translation (“\n ”). The translation should be concise with no trailing spaces or line breaks. Also the ellipsis character ("…") is missing in the translation; it should match the source for proper UI consistency.
+The translation is missing the shortcut key indicator '&amp;' which was present in the source text. Per the instructions, if it exists in the source, it should exist exactly once in the translation.
 
 Correct translation:
-&विकल्प…
+&amp;कमांड-लाइन विकल्प
+```
+
+<!-- cache_translation_check_hi_936b2601d59429b05aa55a86c2e0dcf204270fcdb0169a69877ce911a7b69923 -->
+```
+        <source>Catching up…</source>
+        <translation>पीछा कर रहा है…</translation>
+    
+ERR
+The Hindi translation "पीछा कर रहा है" is a literal translation of "chasing" or "following someone." In the context of software or Bitcoin synchronization, this is incorrect and sounds unnatural. A more appropriate term would relate to synchronization or updating.
+
+Correct translation:
+सिंक्रनाइज़ किया जा रहा है…
+```
+
+<!-- cache_translation_check_hi_20a2a3357e722e3717ef28dfd320f86b4aabf12e5d0f63d6c00bac93fe110ad6 -->
+```
+        <source>Load PSBT from &amp;clipboard…</source>
+        <translation>क्लिपबोर्ड से PSBT लोड करें…</translation>
+    
+ERR
+The translation is missing the shortcut key indicator (&amp;). According to the instructions, the &amp; must exist exactly once in the translation if it is present in the source.
+
+Correct translation:
+&amp;क्लिपबोर्ड से PSBT लोड करें…
+```
+
+<!-- cache_translation_check_hi_5180f4a954ef278339f73ad8d8bb541239d9bccdffa9f5904d0d25b6bac96444 -->
+```
+        <source>Copy &amp;label</source>
+        <translation>कॉपी  &amp;लेबल</translation>
+    
+ERR
+There is an extra space between "कॉपी" and "&लेबल". The correct translation should not have double spaces.
+
+Correct translation:
+कॉपी &लेबल
+```
+
+<!-- cache_translation_check_hi_1de1929d3979d6b8231c99ee6720c2a28fdb72faba9abc38a4305e89adc0490f -->
+```
+        <source>Are you sure you wish to migrate the wallet &lt;i&gt;%1&lt;/i&gt;?</source>
+        <translation>क्या आपको यकीन है कि आप इस बटवे का स्थानांतरण करना चाहते है?</translation>
+    
+ERR
+The translation is missing the format specifier `%1` and the HTML tags `<i>` and `</i>` present in the source text.
+
+Correct translation:
+क्या आप वाकई वॉलेट <i>%1</i> को स्थानांतरित करना चाहते हैं?
+```
+
+<!-- cache_translation_check_hi_45851c162a9c3275808b9c7d36bf94e2c3992ba6805c77cce04ce5f497c46a7b -->
+```
+        <source>Migrating Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <translation>बटवा स्थानांतरित हो रहा है</translation>
+    
+ERR
+The translation omits the placeholder `%1`, the HTML formatting tags `<b></b>`, and the ellipsis `…`. The placeholder is essential to identify which wallet is being migrated.
+
+Correct translation:
+वॉलेट <b>%1</b> माइग्रेट किया जा रहा है…
+```
+
+<!-- cache_translation_check_hi_9e09aad17f6530836c193ba52a0a9ba67b76cf4fe98a9832ad69160f77d54ea8 -->
+```
+        <source>The wallet '%1' was migrated successfully.</source>
+        <translation>बटवा स्थानांतरित कर दिया गया है</translation>
+    
+ERR
+The format specifier '%1' is missing in the translation. Additionally, the word "successfully" (सफलतापूर्वक) has been omitted.
+
+Correct translation:
+वॉलेट '%1' सफलतापूर्वक माइग्रेट कर दिया गया है।
+```
+
+<!-- cache_translation_check_hi_960abb337764c254bc0264dfa10ed9396dfabdc2d60a0657c4ddeb3a4b5988fc -->
+```
+        <source>Solvable but not watched scripts have been migrated to a new wallet named '%1'.</source>
+        <translation>हल करने योग्य लेकिन निगरानी में न लाई जा सकने वाली स्क्रिप्टों को नामक नए वॉलेट में स्थानांतरित कर दिया गया है।</translation>
+    
+ERR
+The translation is missing the format specifier '%1' which represents the name of the new wallet.
+
+Correct translation:
+हल करने योग्य लेकिन निगरानी में न रखी गई स्क्रिप्टों को '%1' नामक नए वॉलेट में स्थानांतरित कर दिया गया है।
 ```
 
 <!-- cache_translation_check_hi_44ea80b856552f42a7ab4203160945237be748c762c8803f95d933e7fa1038aa -->
@@ -252,19 +349,6 @@ There is an unwanted extra space at the end of the translation. Also, "के �
 
 Correct translation:
 %1 को %2 को भेजता है
-```
-
-<!-- cache_translation_check_hi_825508be1044f9280bb03f1dcaec658051ea2ac041b8ae0bba30dffeea04df0f -->
-```
-        <source>Type</source>
-        <extracomment>Title of Peers Table column which describes the type of peer connection. The "type" describes why the connection exists.</extracomment>
-        <translation>टाइप</translation>
-    
-ERR
-The translation uses the English loanword "टाइप" (transliteration). A more natural and correct Hindi word for the column header "Type" is "प्रकार".
-
-Correct translation:
-प्रकार
 ```
 
 <!-- cache_translation_check_hi_acf73b5c9d35ec56a9b6e529bbc90f466845f9d3a4a7d2e1f16a56b6304a093f -->
@@ -443,18 +527,6 @@ If the UI convention is to use single words, then "साफ़ करें" or
 
 Correct translation:
 साफ़ करें
-```
-
-<!-- cache_translation_check_hi_5180f4a954ef278339f73ad8d8bb541239d9bccdffa9f5904d0d25b6bac96444 -->
-```
-        <source>Copy &amp;label</source>
-        <translation>कॉपी  &amp;लेबल</translation>
-    
-ERR
-There is an extra space between "कॉपी" and "&लेबल". The correct translation should not have double spaces.
-
-Correct translation:
-कॉपी &लेबल
 ```
 
 <!-- cache_translation_check_hi_190ae0748f9379f324e70eb6fab8b6587f544ca63563f72d82c885f769569720 -->
@@ -695,18 +767,6 @@ Correct translation:
 विरोधाभासी
 ```
 
-<!-- cache_translation_check_hi_5180f4a954ef278339f73ad8d8bb541239d9bccdffa9f5904d0d25b6bac96444 -->
-```
-        <source>Copy &amp;label</source>
-        <translation>कॉपी  &amp;लेबल</translation>
-    
-ERR
-There is an extra space between "कॉपी" and "&लेबल". The correct translation should not have double spaces.
-
-Correct translation:
-कॉपी &लेबल
-```
-
 <!-- cache_translation_check_hi_d8d5666caad9cb7fab78076343fac8869cfbb56141b580f5dbc3f6544e3a54f7 -->
 ```
         <source>Signer error</source>
@@ -767,6 +827,18 @@ There are issues with the translation:
 
 Correct translation:
 %s ने पोर्ट %u पर सुनने का अनुरोध किया है। इस पोर्ट को "खराब" माना जाता है, इसलिए शायद ही कोई पीयर इससे जुड़ेगा। विवरण और पूरी सूची के लिए doc/p2p-bad-ports.md देखें।
+```
+
+<!-- cache_translation_check_hi_d8c2b4e6293bee98726f7dbb5011ac8a42b9fdd4d5e4379416486ea3e4540cad -->
+```
+        <source>Unsupported category-specific logging level %1$s=%2$s. Expected %1$s=&lt;category&gt;:&lt;loglevel&gt;. Valid categories: %3$s. Valid loglevels: %4$s.</source>
+        <translation>असमर्थित श्रेणी-विशिष्ट लॉगिंग स्तर%1$s=%2$s.अपेक्षित%1$s=&lt;category&gt;:&lt;loglevel&gt;.मान्य श्रेणियां:%3$s.मान्य लॉग स्तर:%4$s</translation>
+    
+ERR
+The translation contains whitespace formatting issues. There are missing spaces before and after the format specifiers and punctuation marks, which makes the text difficult to read and deviates from the source's spacing. Specifically, there should be spaces before `%1$s`, after the first sentence's period, and after the colons. Additionally, the final period from the source is missing.
+
+Correct translation:
+असमर्थित श्रेणी-विशिष्ट लॉगिंग स्तर %1$s=%2$s। अपेक्षित %1$s=&lt;category&gt;:&lt;loglevel&gt;। मान्य श्रेणियां: %3$s। मान्य लॉग स्तर: %4$s।
 ```
 
 <!-- cache_translation_check_hi_0b5282e50817be9e217eb76cc39641729a43f3f334c97010f65de73a8520620d -->
@@ -885,18 +957,6 @@ Correct translation:
 त्रुटि: वॉचलॉनली वॉलेट का सर्वश्रेष्ठ ब्लॉक लोकेटर रिकॉर्ड लिखने में असमर्थ)
 ```
 
-<!-- cache_translation_check_hi_959fe14c89ac9d0526c8b7197964f6f08409817c2ccce1a6b71981e48ee0b7db -->
-```
-        <source>Failed to connect best block (%s).</source>
-        <translation>best ब्लॉक (%s) से कनेक्ट करने में विफल |</translation>
-    
-ERR  
-The translation unnecessarily uses the English word "best" instead of its Hindi equivalent, which should be avoided for clarity and localization. Also, the sentence ends with a pipe (|) instead of the correct Hindi full stop (।). Otherwise, the format specifier is correctly carried over.
-
-Correct translation:  
-%s से सर्वश्रेष्ठ ब्लॉक कनेक्ट करने में विफल रहा।
-```
-
 <!-- cache_translation_check_hi_ba4f53048b06f8ebeeac8f8eb3a4153ade1d31cd971c4a0d342b609b1d5d8512 -->
 ```
         <source>Failed to disconnect block.</source>
@@ -919,18 +979,6 @@ Translation is understandable Hindi but uses an incorrect punctuation character 
 
 Correct translation:
 ब्लॉक लिखने में विफल।
-```
-
-<!-- cache_translation_check_hi_fdf15477d9670efe36510e6b0589e2c5074aa10763dbc1d621ea657cd5bdcd7d -->
-```
-        <source>Failed to write to block index database.</source>
-        <translation>ब्लॉक इंडेक्स डेटाबेस में लिखने में विफल |</translation>
-    
-ERR
-The translation is mostly accurate but contains a minor punctuation issue. The Hindi translation uses a vertical bar "|" at the end, which is not standard; the proper sentence terminator in Hindi is the "।" (Danda) or a period (".").
-
-Correct translation:
-ब्लॉक इंडेक्स डेटाबेस में लिखने में विफल।
 ```
 
 <!-- cache_translation_check_hi_dada3e4106f89a2b2c5bc4860c421544d9d86850c3eed513ac25790002936290 -->
@@ -999,4 +1047,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 76.
+Number of issues: 80.

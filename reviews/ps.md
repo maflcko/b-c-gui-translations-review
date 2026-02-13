@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -666,6 +666,22 @@ Correct translation:
 د والټ بیرته راګرځول &lt;b&gt;%1&lt;/b&gt;…
 ```
 
+<!-- cache_translation_check_ps_5aa6ea1ca7ccbc8bbad51184d4d0c1f6ffe5cdc05b99a0da261dd8519736f345 -->
+```
+        <source>Restoring Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the restore wallets progress window which indicates to the user that wallets are currently being restored.</extracomment>
+        <translation>"والټ بیا راګرځول ..&lt;b&gt;%1&lt;/b&gt;…</translation>
+    
+ERR
+There are formatting issues in the translation:
+- The placement of the quotation mark at the start is unnecessary.
+- The order of the HTML tag <b> and %1 is incorrect, as the %1 should be inside the bold tag, following the English structure.
+- There is a space before the '..' and the translation for "Restoring Wallet" is not quite idiomatic; "والټ بیا راګرځول" literally means "wallet return again", but "بیا راګرځول" is less clear for "restoring". A more natural translation would be "والټ بیرته رااچول" or "د والټ بیرته راګرځول".
+
+Correct translation:
+د والټ بیرته راګرځول &lt;b&gt;%1&lt;/b&gt;…
+```
+
 <!-- cache_translation_check_ps_c941e78d315e28244890987564d554ae99fea6a46c0793c0b430ef11ab55f6e5 -->
 ```
         <source>Disable private keys for this wallet. Wallets with private keys disabled will have no private keys and cannot have an HD seed or imported private keys. This is ideal for watch-only wallets.</source>
@@ -918,4 +934,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 66.
+Number of issues: 67.

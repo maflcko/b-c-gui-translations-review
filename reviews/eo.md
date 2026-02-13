@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -8,6 +8,18 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 [If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Beo%5D%20request)
 
+
+<!-- cache_translation_check_eo_baf6c499f298088a748860dc0341112f84e221f9cb79bd6104cb78a2578a0496 -->
+```
+        <source>Copy the currently selected address to the clipboard</source>
+        <translation>Kopii la nune elektita adreso al la tondujo</translation>
+    
+ERR
+The Esperanto translation is grammatically incorrect. In Esperanto, the direct object of a verb (even in the infinitive form used for menu items) must take the accusative case ending "-n". Therefore, "elektita adreso" must be "elektitan adreson".
+
+Correct translation:
+Kopii la nune elektitan adreson al la tondujo
+```
 
 <!-- cache_translation_check_eo_a2394e87a60199f40ce6b47ba8d8d46bbbcb0ef249de26f17e7ab6fdcf49937f -->
 ```
@@ -440,4 +452,4 @@ Geneza bloko aŭ ne trovita aŭ neĝusta. Ĉu eble la datadir de la reto malĝus
 ```
 </details>
 
-Number of issues: 32.
+Number of issues: 33.

@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -19,6 +19,32 @@ The translation "Escolle a dirección da que recibir moedas" translates back as 
 
 Correct translation:
 Escolle a dirección coa que recibir moedas
+```
+
+<!-- cache_translation_check_gl_544e6a2cf9654b32c209f21d5b82186530940ec0c700b0d98022c33a38d84f58 -->
+```
+        <source>Do you want to reset settings to default values, or to abort without making changes?</source>
+        <extracomment>Explanatory text shown on startup when the settings file cannot be read. Prompts user to make a choice between resetting or aborting.</extracomment>
+        <translation>Produciuse un erro interno. %1 tentará continuar con seguridade. Este é un erro inesperado que pode informar como se describe a continuación.</translation>
+    
+ERR
+The translation provided is for a completely different message regarding an internal error and does not match the source text. It also includes a format specifier (%1) that is not present in the source.
+
+Correct translation:
+Quere restablecer a configuración aos valores predeterminados ou cancelar sen realizar cambios?
+```
+
+<!-- cache_translation_check_gl_2f0fe69f76b467399611cf222a9611b1374b46d13ad6b16ee8325d77417f1e1b -->
+```
+        <source>A fatal error occurred. Check that settings file is writable, or try running with -nosettings.</source>
+        <extracomment>Explanatory text shown on startup when the settings file could not be written. Prompts user to check that we have the ability to write to the file. Explains that the user has the option of running without a settings file.</extracomment>
+        <translation>Produciuse un erro interno. %1 tentará continuar con seguridade. Este é un erro inesperado que pode informar como se describe a continuación.</translation>
+    
+ERR
+The translation provided is completely different from the source text. The source text discusses a fatal error related to the settings file and suggests using the "-nosettings" flag, while the translation provided talks about an internal error where the program will try to continue safely and report the error, including a format specifier (%1) not present in the source.
+
+Correct translation:
+Produciuse un erro fatal. Comproba que o ficheiro de configuración permite a escritura, ou proba a executalo con -nosettings.
 ```
 
 <!-- cache_translation_check_gl_505e38fc6ccfafd1f2941642f68a5729554c949c5e554433400f27f98dec3923 -->
@@ -132,4 +158,4 @@ Enviar moedas
 ```
 </details>
 
-Number of issues: 10.
+Number of issues: 12.

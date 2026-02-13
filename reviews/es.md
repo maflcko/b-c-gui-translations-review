@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -8,6 +8,18 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 [If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bes%5D%20request)
 
+
+<!-- cache_translation_check_es_4e181729cae0f58086c4a3d8ca49ab1c6807b67aabd71faaa1e4a6fefe56d5a8 -->
+```
+        <source>Restore and Migrate Wallet File...</source>
+        <translation>Restaurar y migrar archivo de monedero</translation>
+    
+ERR
+The translation is missing the ellipsis (...) at the end of the string, which is present in the source text and usually signifies that a further action or dialog will follow.
+
+Correct translation:
+Restaurar y migrar archivo de monedero...
+```
 
 <!-- cache_translation_check_es_ddbe5c772d9d256205e96515a5ff2874a950599631c28d99e3325b6744e0bafa -->
 ```
@@ -45,60 +57,28 @@ Correct translation:
 (0 = auto, <0 = dejar ese número de núcleos libres)
 ```
 
-<!-- cache_translation_check_es_3309c9af03f58c8ac46a926970f22dfaeab51f58a1342f6d306ccdc7b42c20d9 -->
+<!-- cache_translation_check_es_7072c5be0341c369eaac01cc868dfce4b178f9570bce31c3e13bd1ece22a6928 -->
 ```
-        <source>Privacy mode activated for the Overview tab. To unmask the values, uncheck Settings-&gt;Mask values.</source>
-        <translation>Modo de privacidad activado en la pestaña de vista general. Para mostrar los valores, desmarca "Configuración -&gt; Ocultar valores".</translation>
+        <source>PSBT Operations</source>
+        <translation>Operaciones de TBPF</translation>
     
 ERR
-- "Overview" in Bitcoin Core is typically translated as "Resumen", not "vista general".
-- Extra quotation marks and spaces around "->" are unnecessary.
-- Prefer formal imperative for consistency.
+The acronym "PSBT" (Partially Signed Bitcoin Transaction) is a technical standard and is almost universally kept as "PSBT" in Spanish-speaking Bitcoin contexts. Translating it to "TBPF" (Transacción de Bitcoin Parcialmente Firmada) is non-standard and would likely confuse users who are looking for the technical term.
 
 Correct translation:
-Modo de privacidad activado en la pestaña Resumen. Para mostrar los valores, desmarque Configuración-&gt;Ocultar valores.
+Operaciones PSBT
 ```
 
-<!-- cache_translation_check_es_49c0db7e6155afafb53450080480d0620a4cd16317aeb01d61e6cbea8c9f840c -->
+<!-- cache_translation_check_es_8a5e8e23df36067e95a47a95557d86e335bcaae89ecf7f704c6b7a9be36f3dbc -->
 ```
-        <source>Pays transaction fee: </source>
-        <translation>Paga la comisión de transacción:</translation>
+        <source>PSBT saved to disk.</source>
+        <translation>TBPF guardada en disco.</translation>
     
 ERR
-Missing trailing space after the colon; the source ends with a space.
+The translation uses the acronym "TBPF", which is not a standard or recognized translation for "PSBT" (Partially Signed Bitcoin Transaction) in Spanish. In Spanish technical contexts, the acronym "PSBT" is typically kept as is, or the full phrase "transacción de Bitcoin firmada parcialmente" is used.
 
 Correct translation:
-Paga la comisión de transacción:
-```
-
-<!-- cache_translation_check_es_6afe39a300db41c4819cbadfd4c4d362ffc55d1add564102ca080a5875399fc3 -->
-```
-        <source>(But no wallet is loaded.)</source>
-        <translation>(Sin embargo, no se cargó ningún monedero).</translation>
-    
-ERR
-The tense is incorrect ("no se cargó" is past) and the period placement does not match the source (it should be inside the parentheses). Also, "Pero" is a more direct equivalent here than "Sin embargo".
-
-Correct translation:
-(Pero no se ha cargado ningún monedero.)
-```
-
-<!-- cache_translation_check_es_5ebef66a184d5a30757e643bf73ae81783a7052d5b04d669c8e6744079cf4774 -->
-```
-        <source>Cannot process payment request because BIP70 is not supported.
-Due to widespread security flaws in BIP70 it's strongly recommended that any merchant instructions to switch wallets be ignored.
-If you are receiving this error you should request the merchant provide a BIP21 compatible URI.</source>
-        <translation>No se puede procesar la solicitud de pago porque no no es compatible con BIP70.
-Debido a los fallos de seguridad generalizados en BIP70, se recomienda encarecidamente ignorar las instrucciones del comerciante para cambiar de monedero.
-Si recibe este error, debe solicitar al comerciante que le proporcione un URI compatible con BIP21.</translation>
-    
-ERR
-Hay una repetición errónea de "no" en la primera frase ("porque no no es compatible con BIP70") y la redacción puede ser más precisa.
-
-Traducción corregida:
-No se puede procesar la solicitud de pago porque BIP70 no es compatible.
-Debido a los fallos de seguridad generalizados en BIP70, se recomienda encarecidamente ignorar cualquier instrucción del comerciante para cambiar de monedero.
-Si recibe este error, debe solicitar al comerciante que le proporcione un URI compatible con BIP21.
+PSBT guardada en disco.
 ```
 
 <!-- cache_translation_check_es_a9ee2365ae9cbabf03b81cdfd89e1ea7d5c32d9ef176d9ab5382940f99d851e5 -->
@@ -113,25 +93,25 @@ Correct translation:
 Copiar importe después de la comisión
 ```
 
-<!-- cache_translation_check_es_0e641e595f56096f38d8d76633c7a0299fb7cefabb0dcc2b4a82fc5188810c1f -->
+<!-- cache_translation_check_es_f349d93ada954e01ff7439058c9c58f6d6dc2912563098a5515a6ed536b3daaa -->
 ```
-        <source>Can't draft transaction.</source>
-        <translation>No puede crear un borrador de la transacción.</translation>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>Se ha cancelado el desbloqueo del monedero. </translation>
     
 ERR
-Using "No puede" addresses the user (usted) and is less natural for an impersonal error message. Prefer impersonal construction.
+The translation contains a trailing space after the period, which violates the requirement to ensure no whitespace format issues exist.
 
 Correct translation:
-No se puede crear un borrador de la transacción.
+Se ha cancelado el desbloqueo del monedero.
 ```
 
-<!-- cache_translation_check_es_0287191c3610834f58682201edf907dd58f9b2a2f5fad5bdcf9f4db28a18e098 -->
+<!-- cache_translation_check_es_de8ef9694cd17c841567a17b04b1278f049bf88fd0df82d7ad7e46fdfa13ad73 -->
 ```
         <source>PSBT copied</source>
-        <translation>PSBT copiada </translation>
+        <translation>TBPF copiada </translation>
     
 ERR
-Trailing whitespace at the end of the translation.
+The translation contains a trailing space and uses a non-standard acronym. In the context of Bitcoin, "PSBT" (Partially Signed Bitcoin Transaction) is a technical standard and is typically kept as "PSBT" in Spanish, rather than being translated to "TBPF".
 
 Correct translation:
 PSBT copiada
@@ -147,30 +127,6 @@ Preposition is unnatural; "copiado/a al portapapeles" is standard. Use "al" inst
 
 Correct translation:
 PSBT con incremento de comisión copiada al portapapeles
-```
-
-<!-- cache_translation_check_es_1e0db760e6aa7fdc454345b39f5f958a8e7122ba3bbbf36b6a2673788d1156fc -->
-```
-        <source>Can't sign transaction.</source>
-        <translation>No puede firmar la transacción.</translation>
-    
-ERR
-The Spanish phrasing addresses the user ("No puede..."), while the original is an impersonal system message. Use the impersonal passive for accuracy.
-
-Correct translation:
-No se puede firmar la transacción.
-```
-
-<!-- cache_translation_check_es_68ef20fb589a8f143457badf67968abe51abe2b89bacb46133975c9b9dee3a9c -->
-```
-        <source>Can't display address</source>
-        <translation>No puede mostrar la dirección</translation>
-    
-ERR
-The Spanish phrasing sounds like “You (formal) cannot show the address.” For a system error, the impersonal form is more appropriate.
-
-Correct translation:
-No se puede mostrar la dirección
 ```
 
 <!-- cache_translation_check_es_9301d218ef71112e4e0ace9adf02c48b95a497d58c429370d5dcede20a88d1b2 -->
@@ -207,6 +163,18 @@ Incorrect placement of the hyphen and spacing around the first %s, missing artic
 
 Correct translation:
 No se puede resolver la dirección -%s: '%s'
+```
+
+<!-- cache_translation_check_es_a1e4c3beb5432c1dc7eb676b56eba296d6fa5794c75306e200fb89a9c80cd0ef -->
+```
+        <source>Error loading %s: External signer wallet being loaded without external signer support compiled</source>
+        <translation>Error de carga %s : Se está cargando el monedero del firmante externo sin que se haya compilado el soporte del firmante externo</translation>
+    
+ERR
+There is an unnecessary space before the colon. In Spanish, like in English, there should be no space before a colon.
+
+Correct translation:
+Error de carga %s: Se está cargando el monedero del firmante externo sin que se haya compilado el soporte del firmante externo
 ```
 
 <!-- cache_translation_check_es_8ab377bdb591e052824e00badbd28cf444a7741c8c6d4a33123376cc78a28b6d -->
@@ -280,6 +248,42 @@ Correct translation:
 No se pudo cerrar el archivo de reversión de bloques.
 ```
 
+<!-- cache_translation_check_es_7ba901c8087555807438816dc9d3c93eabace5e96a9f47351d7d8a8da86d8bac -->
+```
+        <source>A %zu MiB dbcache may be too large for a system memory of only %zu MiB.</source>
+        <translation>%zuMiB dbcache es demasiado grande para una memoria del sistema de solamente %zu MiB.</translation>
+    
+ERR
+There is a missing space between the format specifier '%zu' and the unit 'MiB' in the first instance. Additionally, the translation omits the indefinite article "A" at the beginning and translates "may be" (puede ser) as "is" (es).
+
+Correct translation:
+Un dbcache de %zu MiB puede ser demasiado grande para una memoria del sistema de solamente %zu MiB.
+```
+
+<!-- cache_translation_check_es_8ed647a9abc33638e38815ace000db61f2585cfb60886e8f9464a86c87a0841b -->
+```
+        <source>The transactions removal process can only be executed within a db txn</source>
+        <translation>El proceso de eliminación de transacciones sólo puede ejecutarse dentro de una base de datos de transacción</translation>
+    
+ERR
+The translation of "db txn" (database transaction) is incorrect. "base de datos de transacción" translates back to "transaction database", whereas "db txn" refers to a transaction within a database.
+
+Correct translation:
+El proceso de eliminación de transacciones solo puede ejecutarse dentro de una transacción de base de datos.
+```
+
+<!-- cache_translation_check_es_9295bd68c3610e1e1f7b0ee9d89c9f17313d4d5d770299e4f3740937d6fb13e7 -->
+```
+        <source>Unsupported logging category %s=%s.</source>
+        <translation>La categoría de registro no es compatible %s=%s. </translation>
+    
+ERR
+Trailing whitespace after the period. The phrasing "no es compatible" is awkward here; "no admitida" or "no compatible" should be used without "es" or with proper construction.
+
+Correct translation:
+Categoría de registro no admitida %s=%s.
+```
+
 <!-- cache_translation_check_es_a44906ef8702542a58c2473716fcc22c463ef038ce0c2c2ef7bedd7831f6784b -->
 ```
         <source>Error loading %s: Wallet is a legacy wallet. Please migrate to a descriptor wallet using the migration tool (migratewallet RPC).</source>
@@ -322,4 +326,4 @@ Red no reconocida en -proxy='%s': '%s'
 ```
 </details>
 
-Number of issues: 25.
+Number of issues: 26.

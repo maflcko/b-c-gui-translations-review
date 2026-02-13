@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -9,37 +9,16 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 [If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bpt%5D%20request)
 
 
-<!-- cache_translation_check_pt_d49da9fabba493bdadbf873436655b6fea6997e5d8d6659fa7b263f6f8ab9156 -->
+<!-- cache_translation_check_pt_80cde300cbb9d1f55451b6a3100ef481073e51dec1f20eff9b7f7903df642092 -->
 ```
-        <source>Feeler</source>
-        <extracomment>Short-lived peer connection type that tests the aliveness of known addresses.</extracomment>
-        <translation>Antena</translation>
+        <source>Receiving addresses - %1</source>
+        <translation>Endereços de receber - %1</translation>
     
 ERR
-"Antena" is incorrect: it means "antenna" in Portuguese and doesn't convey the technical meaning. The source refers to a short-lived peer connection used to test whether known addresses are alive.
+The translation "Endereços de receber" is grammatically unidiomatic in Portuguese. In the context of Bitcoin, "Receiving addresses" is standardly translated using the noun "recebimento" (Brazilian) or "receção" (European).
 
-Suggested translation:
-Feeler — Conexão de teste curta (tipo de ligação temporária para verificar se endereços conhecidos estão ativos)
-
-Or shorter:
-Conexão de verificação curta
-```
-
-<!-- cache_translation_check_pt_43a52571e52e121012eecb59cdc15efc7b4ba9bb3329387206a50f2bcc80d3f7 -->
-```
-        <source>Address Fetch</source>
-        <extracomment>Short-lived peer connection type that solicits known addresses from a peer.</extracomment>
-        <translation>Procura de endreços</translation>
-    
-ERR
-The Portuguese translation contains a spelling error: "endreços" should be "endereços". Also consider a more natural phrasing for this context (short-lived peer connection): "Busca de endereços" or "Recuperação de endereços".
-
-Correct translation (fixed spelling, literal match):
-Procura de endereços
-
-Alternative, more natural translations:
-Busca de endereços
-Recuperação de endereços
+Correct translation:
+Endereços de recebimento - %1
 ```
 
 <!-- cache_translation_check_pt_3349460b4377e2d127961979ce13dbc2e36c3accceaf189826513ce4385afe8c -->
@@ -82,17 +61,16 @@ Carregar PSBT da &área de transferência…
 </reply>
 ```
 
-<!-- cache_translation_check_pt_b1b4889ae5722e85a424ed07885094b1426c5a82805daa67badd18113e37750f -->
+<!-- cache_translation_check_pt_68f06df3cb9e2025297bcc3c03d010f39872f4c071459c86d962b4bcf90c02a6 -->
 ```
-        <source>&amp;Sending addresses</source>
-        <translation>&amp;Endereço de envio</translation>
+        <source>&amp;Receiving addresses</source>
+        <translation>&amp;Endereços de receber</translation>
     
 ERR
-The translation uses the singular "Endereço de envio" instead of the correct plural form, which should match the source "Sending addresses". Additionally, the ampersand is present only once, as required.
+The translation "Endereços de receber" is grammatically awkward in Portuguese. In software interfaces, the standard term for "Receiving addresses" is "Endereços de recebimento" (common in Brazilian Portuguese) or "Endereços de recepção" (common in European Portuguese). "De receber" sounds like a literal translation of "to receive" rather than the noun form required for a label.
 
 Correct translation:
-&amp;Endereços de envio
-</reply>
+&Endereços de recebimento
 ```
 
 <!-- cache_translation_check_pt_84a4736c2a3d7d41e855a29f46740fac50d60c9b5a892c752b71d1dc269cdf44 -->
@@ -105,6 +83,19 @@ The translation "Valores de Máscara" does not accurately convey the meaning of 
 
 Correct translation:
 &amp;Mascarar valores
+```
+
+<!-- cache_translation_check_pt_1dacaa55d847786ab33c67eac8228fdbaaac5ab2a11255537a9d524cd2650303 -->
+```
+        <source>Restore and Migrate Wallet</source>
+        <extracomment>Title of pop-up window shown when the user is attempting to restore a wallet.</extracomment>
+        <translation>A restaurar e migrar carteira</translation>
+    
+ERR
+The translation uses the gerund ("A restaurar e migrar"), which suggests an ongoing action (Restoring and Migrating). As the title of a pop-up window, it should use the infinitive or the imperative form to match the source "Restore and Migrate Wallet".
+
+Correct translation:
+Restaurar e Migrar Carteira
 ```
 
 <!-- cache_translation_check_pt_c38a528109aac10ea0f408800d1dad451f018c4a68b2d0012aba913d849f07a6 -->
@@ -129,6 +120,30 @@ The translation is inaccurate. The source says "Unit to show amounts in," which 
 
 Correct translation:  
 Unidade para exibir valores. Clique para selecionar outra unidade.
+```
+
+<!-- cache_translation_check_pt_05c95d401b4505d26dc7182ae96d162924cc49d818d50818cb66077eff9ce2be -->
+```
+        <source>Restore and Migrate wallet</source>
+        <translation>A restaurar e migrar carteira</translation>
+    
+ERR
+The translation uses a continuous action form ("A restaurar e migrar" - "Restoring and migrating"), which is typically used for status messages. For a menu title or a command like the source text, the infinitive form should be used.
+
+Correct translation:
+Restaurar e migrar carteira
+```
+
+<!-- cache_translation_check_pt_e94c747646590c2102e6eec814dfc008d8a44ddb1a344e24f326cb5c11ca07be -->
+```
+        <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
+        <translation>O endereço associado com o esta entrada da lista de endereços. Isto só pode ser alterado para os endereços de envio.</translation>
+    
+ERR
+The translation contains a grammatical error: "com o esta". The definite article "o" (masculine) is placed before the demonstrative pronoun "esta" (feminine), which is incorrect in Portuguese. It should be just "com esta" or "a esta".
+
+Correct translation:
+O endereço associado a esta entrada da lista de endereços. Isto só pode ser alterado para endereços de envio.
 ```
 
 <!-- cache_translation_check_pt_93dc03eaf7c4953bb66fff7604f71021ea60a5a7ecba7edcbda2084528f34611 -->
@@ -181,141 +196,32 @@ Correct translation:
 &amp;Minimizar para a bandeja em vez da barra de tarefas
 ```
 
-<!-- cache_translation_check_pt_7ce81eb92c5edb4eaae36e9caf8af0563b93766498af85360bef1a19106248fb -->
+<!-- cache_translation_check_pt_3066ae43fd36a7facff35d1ddb7dc9331e88078a53b07e42c60b8dced3cf657c -->
 ```
         <source>Privacy mode activated for the Overview tab. To unmask the values, uncheck Settings-&gt;Mask values.</source>
-        <translation>Modo de privacidade ativado para a aba de visão geral. para desmascarar os valores, desmarque nas Configurações -&gt; Valores de máscara</translation>
+        <translation>Modo de privacidade ativado para a aba Resumo. para desmascarar os valores, desmarque nas Configurações -&gt; Valores de máscara</translation>
     
-ERR
-Issues:
-- Sentence after the period should start with a capital letter ("para" → "Para").
-- The phrasing "para a aba de visão geral" is awkward; prefer "na aba Visão Geral".
-- The menu item translation is incorrect/awkward: "Valores de máscara" reads like a noun phrase. The source is a menu action "Mask values" (verb), so it should be translated as "Mascarar valores" and presented as a menu path.
-- Minor punctuation: keep the arrow spacing consistent.
+ERR  
+There are minor issues with the translation:
+
+1. The first letter after the period should be uppercase ("para" → "Para").
+2. The phrase "Valores de máscara" does not accurately reflect the original "Mask values" setting; "Mascarar valores" or "Ocultar valores" would be clearer and more idiomatic.
+3. The hyphen should have spacing consistent with UI references ("Configurações -> Mascarar valores").
 
 Correct translation:
-Modo de privacidade ativado na aba Visão Geral. Para desmascarar os valores, desmarque Configurações -> Mascarar valores.
+Modo de privacidade ativado para a aba Resumo. Para desmascarar os valores, desmarque em Configurações -> Mascarar valores.
 ```
 
-<!-- cache_translation_check_pt_5b78996bfd056288f155ee580ec07b87cdcc95a563195947ef185daf5812d8cc -->
+<!-- cache_translation_check_pt_5914b810a3338d2746311e9265981d443f9baccf45adfb6715451a019608a95f -->
 ```
-        <source>Failed to load transaction: %1</source>
-        <translation>Falha ao carregar transação: %1</translation>
+        <source>Error encoding URI into QR Code.</source>
+        <translation>Erro ao codificar o URI em código QR</translation>
     
 ERR
-The translation is understandable but missing the definite article that is more natural in Portuguese. Keep the format specifier as-is.
+The translation is missing the terminal period found in the source text.
 
 Correct translation:
-Falha ao carregar a transação: %1
-```
-
-<!-- cache_translation_check_pt_777867c9bd1107745ab6bd281635e3ab95849852603be0cf38c33f7de2ac49b7 -->
-```
-        <source>Signed %1 inputs, but more signatures are still required.</source>
-        <translation>Assinadas entradas %1, mas mais assinaturas ainda são necessárias.</translation>
-    
-ERR
-Word order in Portuguese is incorrect. "Assinadas entradas %1" is unnatural; the number should precede the noun or the adjective should follow. The format specifier %1 is preserved, but the phrase should be reworded.
-
-Correct translation:
-%1 entradas assinadas, mas ainda são necessárias mais assinaturas.
-```
-
-<!-- cache_translation_check_pt_bfe93608a06cf5d1892c3004bc20a2b727c60b31a6f65a7036516a3bbb06a0b6 -->
-```
-        <source>Save Transaction Data</source>
-        <translation>Salvar informação de transação</translation>
-    
-ERR
-The translation is understandable but slightly unnatural in Portuguese. Use the plural and a more natural preposition/article.
-
-Better translations:
-- Salvar dados da transação
-or
-- Salvar informações da transação
-```
-
-<!-- cache_translation_check_pt_b4866c000111a57c85bd09f9598472bd73ec1a8dca1a426e6ca122e0949501a4 -->
-```
-        <source>Transaction is missing some information about inputs.</source>
-        <translation>Transação está com alguma informação faltando sobre as entradas.</translation>
-    
-ERR
-The Portuguese is understandable but slightly ungrammatical/awkward: it lacks the definite article before "Transação" and uses singular "alguma informação" while "entradas" is plural. A more natural translation:
-
-Correct translation:
-A transação está com algumas informações faltando sobre as entradas.
-```
-
-<!-- cache_translation_check_pt_5f030f239e8afab223435ad0f0177c8c4c8c11b96e1073262779c4bb24fafba1 -->
-```
-        <source>Transaction status is unknown.</source>
-        <translation>Status da transação é desconhecido.</translation>
-    
-ERR
-The Portuguese translation is understandable but stylistically incomplete: it omits the definite article. More natural translations are:
-
-Correct translation:
-O status da transação é desconhecido.
-
-Or alternatively:
-O estado da transação é desconhecido.
-```
-
-<!-- cache_translation_check_pt_be3761d45355d173ff541fe845649a17affba2e7febf41f797482e05fd12809a -->
-```
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Impossível iniciar o controlador de bitcoin: click-to-pay</translation>
-    
-ERR
-The translation is understandable but slightly unnatural: "controlador" is not the best choice for a software "handler", and the phrase order could be clearer in Portuguese. Also consider quoting or hyphenating the feature name.
-
-Suggested translation:
-Impossível iniciar o manipulador "click-to-pay" do Bitcoin
-```
-
-<!-- cache_translation_check_pt_4b8f8256f4ab8699cd3dd3a1a381f5aef46bb412914d39c90652cc0dfb0f78b9 -->
-```
-        <source>Cannot process payment request because BIP70 is not supported.
-Due to widespread security flaws in BIP70 it's strongly recommended that any merchant instructions to switch wallets be ignored.
-If you are receiving this error you should request the merchant provide a BIP21 compatible URI.</source>
-        <translation>Não é possível processar o pagamento pedido porque o BIP70 não é suportado.
-Devido a falhas de segurança no BIP70, é recomendado que todas as instruçōes ao comerciante para mudar de carteiras sejam ignorada.
-Se está a receber este erro, deverá pedir ao comerciante para fornecer um URI compatível com BIP21.</translation>
-    
-ERR
-The Portuguese has several issues: awkward phrasing ("pagamento pedido" should be "pedido de pagamento"), a mis-typed accent ("instruçōes" wrong), grammatical agreement ("sejam ignorada" should be "sejam ignoradas"), and unnatural wording ("mudar de carteiras").
-
-Correct translation:
-Não é possível processar o pedido de pagamento porque o BIP70 não é suportado.
-Devido às falhas de segurança generalizadas no BIP70, recomenda-se fortemente que quaisquer instruções do comerciante para mudar de carteira sejam ignoradas.
-Se estiver a receber este erro, deve pedir ao comerciante que forneça um URI compatível com BIP21.
-```
-
-<!-- cache_translation_check_pt_d95e9111e71a2147f9c9c1cdef74d5d8fb0396f66937d0626d58a8b0a1970556 -->
-```
-        <source>Payment request file handling</source>
-        <translation>Controlo de pedidos de pagamento.</translation>
-    
-ERR
-The translation "Controlo de pedidos de pagamento." reads as "Control of payment requests" and doesn't convey "file handling" (i.e., handling/manipulation of payment request files). Also it adds a terminal period not present in the source.
-
-Suggested corrections (no trailing period):
-- European Portuguese: Manipulação de ficheiros de pedido de pagamento
-- Brazilian Portuguese: Manipulação de arquivos de solicitação de pagamento
-```
-
-<!-- cache_translation_check_pt_8a1d391706529dda0419dd477fcfabd684f11b849f33af1a0ad2b7de38cc7587 -->
-```
-        <source>Age</source>
-        <extracomment>Title of Peers Table column which indicates the duration (length of time) since the peer connection started.</extracomment>
-        <translation>idade</translation>
-    
-ERR
-The translation is correct in meaning ("idade") but should follow title capitalization. Also maintain same casing as other UI labels — capitalize the first letter.
-
-Correct translation:
-Idade
+Erro ao codificar o URI em código QR.
 ```
 
 <!-- cache_translation_check_pt_c6b92bf0d1619af628215c9ebd569b8fa0f24d903fa1c5f08bfaca45103f49d4 -->
@@ -353,6 +259,20 @@ The translation is literally correct but unnatural in Portuguese. "Criar &não a
 
 Correct translation:
 Criar &Não Assinada
+```
+
+<!-- cache_translation_check_pt_bfe93608a06cf5d1892c3004bc20a2b727c60b31a6f65a7036516a3bbb06a0b6 -->
+```
+        <source>Save Transaction Data</source>
+        <translation>Salvar informação de transação</translation>
+    
+ERR
+The translation is understandable but slightly unnatural in Portuguese. Use the plural and a more natural preposition/article.
+
+Better translations:
+- Salvar dados da transação
+or
+- Salvar informações da transação
 ```
 
 <!-- cache_translation_check_pt_e3e733cfd468f5995177ae0cd1cefdb1d18c3e973820e54506b3e8d40f51e00c -->
@@ -645,4 +565,4 @@ A transação deve ter pelo menos um destinatário
 ```
 </details>
 
-Number of issues: 48.
+Number of issues: 43.

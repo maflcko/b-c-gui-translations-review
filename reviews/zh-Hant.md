@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -249,6 +249,18 @@ The translation does not preserve the '&' used to indicate the shortcut key, and
 
 正確翻譯：
 複製金額(&A)
+```
+
+<!-- cache_translation_check_zh-Hant_f568c8e4ca957eadfdf7e283377c5fc85d3009fddd6ffff42a1e15c5865ca108 -->
+```
+        <source>&amp;Unlock unspent</source>
+        <translation>解鎖未花費的</translation>
+    
+ERR
+The translation is missing the shortcut key indicator '&' which was present in the source text.
+
+Correct translation:
+解鎖未花費的(&U)
 ```
 
 <!-- cache_translation_check_zh-Hant_90b92531e1ef339bbba4c9ef552afff81ce69fd057cdd1320fd552110d86e714 -->
@@ -569,63 +581,52 @@ Correct translation:
 「概覽」標籤頁已啟用隱私模式。若要顯示數值，請取消選取「設定」→「隱藏數值」。
 ```
 
-<!-- cache_translation_check_zh-Hant_9162393ae596c5e9b46211bd834e8405fe5f5d02f74458808ba7f7d99e0ba735 -->
+<!-- cache_translation_check_zh-Hant_62164728b6a7c177c1d04a3a116d70629560c46f15c563b6acbb30bb130c7c74 -->
 ```
-        <source>Sign Tx</source>
-        <translation>签名交易</translation>
+        <source>Save…</source>
+        <translation>拯救...</translation>
     
 ERR
-The translation uses Simplified Chinese characters ("签名交易") but the target is Traditional Chinese (zh-Hant). 
-
-Correct translation (Traditional Chinese), e.g.:
-簽署交易
-```
-
-<!-- cache_translation_check_zh-Hant_f105467780ed86558ce8e3654e103ed2c8c0b3ed24d6913c770044a37e0f9c87 -->
-```
-        <source>Copy to Clipboard</source>
-        <translation>复制到剪贴板</translation>
-    
-ERR
-The translation uses Simplified Chinese characters ("复制到剪贴板") but the target is Traditional Chinese (zh-Hant).
-
-Correct translation (Traditional Chinese):
-複製到剪貼簿
-```
-
-<!-- cache_translation_check_zh-Hant_4b980a8e124467dd4f3ab37eff60332cb353274bf73d42481c964a8ce4ab3f49 -->
-```
-        <source>Close</source>
-        <translation>关闭</translation>
-    
-ERR
-The translation uses Simplified Chinese ("关闭") but the target is Traditional Chinese (zh-Hant). Correct Traditional Chinese translation:
-
-關閉
-```
-
-<!-- cache_translation_check_zh-Hant_d8e7e6fc6146a3982356a59e9a60d016fdc2003537ad22c23793179be9469f54 -->
-```
-        <source>Transaction broadcast successfully! Transaction ID: %1</source>
-        <translation>已成功广播交易！交易ID: %1</translation>
-    
-ERR
-The translation uses Simplified Chinese characters ("广播") instead of Traditional Chinese ("廣播"), so it is not correct for zh-Hant. The format specifier %1 is preserved correctly. Also prefer fullwidth punctuation for Chinese.
+The translation is problematic. The source "Save…" refers to saving a file or data, but "拯救..." means "rescue" or "save (from danger)" in Chinese, which is incorrect in a software context. Also, the ellipsis "…" is three dots in the translation but a single Unicode ellipsis in the source.
 
 Correct translation:
-已成功廣播交易！交易 ID：%1
+儲存…
 ```
 
-<!-- cache_translation_check_zh-Hant_76733b01d0f71313804c54209973bdcddaa8ba61adad933c2f4c57d186e6e92a -->
+<!-- cache_translation_check_zh-Hant_3f36d050ff17a707a586960e2695f55721a2fe19f9f0e9bb7cef3488d83ee57a -->
 ```
-        <source>Transaction broadcast failed: %1</source>
-        <translation>交易广播失败: %1</translation>
+        <source>Transaction broadcast successfully! Transaction ID: %1</source>
+        <translation>交易成功廣播！交易 ID：％1</translation>
     
 ERR
-The translation uses Simplified Chinese characters ("失败") and an ASCII colon with a space, whereas zh-Hant requires Traditional Chinese and typically uses a fullwidth colon. The format specifier %1 is preserved correctly.
+The translation uses a full-width percent sign '％' instead of the standard half-width percent sign '%' for the format specifier. This will prevent the software from correctly identifying and replacing the placeholder.
+
+Correct translation:
+交易成功廣播！交易 ID：%1
+```
+
+<!-- cache_translation_check_zh-Hant_d9968a0ce01d53e7de66a6c2c0c9bc4e79b336fac482a1a72c41266f3c24d01f -->
+```
+        <source>Transaction broadcast failed: %1</source>
+        <translation>交易廣播失敗：％1</translation>
+    
+ERR
+The translation uses a full-width percentage sign "％" instead of the half-width ASCII percentage sign "%" used in the source format specifier. This will prevent the software from correctly substituting the variable.
 
 Correct translation:
 交易廣播失敗：%1
+```
+
+<!-- cache_translation_check_zh-Hant_488a31aac260773afaaa52303dc65dcf6d65dc211e76753ff912703f6143a292 -->
+```
+        <source>Transaction has %1 unsigned inputs.</source>
+        <translation>交易有％1個未簽名的inputs。</translation>
+    
+ERR
+The translation contains a full-width percent sign (％) instead of the standard half-width percent sign (%) used for the format specifier. Additionally, "inputs" should be translated into Chinese for better consistency with the rest of the sentence.
+
+Correct translation:
+交易有 %1 個未簽名的輸入。
 ```
 
 <!-- cache_translation_check_zh-Hant_d5b7f50fbccf0a2d8611f9433bfc9db677127483cccdfd4cf1ff4b35c96a762c -->
@@ -1001,30 +1002,6 @@ Correct Traditional Chinese translation (no trailing space):
 選項「-checkpoints」已設定，但檢查點已被移除。此選項無效。
 ```
 
-<!-- cache_translation_check_zh-Hant_d98c1c5ff4f9281f53e84a4630bcb6846485c6649d59a458ddb76aab8f1f87d3 -->
-```
-        <source>Option '-maxorphantx' is set but no longer has any effect (see release notes). Please remove it from your configuration.</source>
-        <translation>选项“-maxorphantx”已设置，但已不再生效（参见发行说明）。请从您的配置中移除该选项。 </translation>
-    
-ERR
-The translation is accurate in meaning but is written in Simplified Chinese (e.g., "选项", "参见", "配置") rather than Traditional Chinese (zh-Hant). There is also a trailing space before the closing tag which should be removed.
-
-Correct Traditional Chinese (zh-Hant) translation (no trailing space):
-選項「-maxorphantx」已設定，但已不再生效（請參閱釋出說明）。請從您的設定中移除該選項。
-```
-
-<!-- cache_translation_check_zh-Hant_bf17affb0acd6713b9f6b2167f99961dbd921c30426c9f4b5f40c6272c0fa297 -->
-```
-        <source>Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.</source>
-        <translation>选项“-datacarrier”或“-datacarriersize”已设置，但已标记为弃用。它们将在未来版本中移除。 </translation>
-    
-ERR
-The translation uses Simplified Chinese characters ("选项", "已设置", "标记为弃用") but the target is zh-Hant (Traditional). Also there is an extra trailing space before the closing tag. No format specifiers are involved.
-
-Correct translation (Traditional Chinese) without extra trailing space:
-選項 "-datacarrier" 或 "-datacarriersize" 已設定，但已標示為棄用。它們將在未來的版本中移除。
-```
-
 <!-- cache_translation_check_zh-Hant_fc44b6029c7dbac45686cc79b705b8c897f4c829f9f3f5057b0a8d2f641e4b4e -->
 ```
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of a pruned node)</source>
@@ -1049,16 +1026,28 @@ Correct translation (Traditional Chinese, no extra spaces):
 “-paytxfee”已棄用，並將在 v31.0 中完全移除。
 ```
 
-<!-- cache_translation_check_zh-Hant_a83d5bb13328c9c6bb05b9d617458f5b2f83d05560a3710195dfb9a046cf5907 -->
+<!-- cache_translation_check_zh-Hant_212c3af68e90ae4a89c435e0fc3e60da04c4a65ab354a77723b7b670db8e3821 -->
 ```
-        <source>Cannot add WalletDescriptor to a non-descriptor wallet</source>
-        <translation>无法将钱包描述符添加到非描述符钱包。</translation>
+        <source>Can't spend unconfirmed version %d pre-selected input with a version 3 tx</source>
+        <translation>无法使用版本3交易花费未确认版本1%d的预选输入。</translation>
     
 ERR
-The translation is in Simplified Chinese (e.g., "无法", "钱包") but the target language is Traditional Chinese (zh-Hant). No format specifiers or spacing issues, but the character set is incorrect.
+The translation is in Simplified Chinese ('zh-Hans'), but the target language is Traditional Chinese ('zh-Hant'). Additionally, the translation incorrectly inserted a '1' before the '%d' placeholder which was not present in the source text.
 
-Correct (Traditional Chinese) translation suggestions:
-無法將錢包描述符加入非描述符錢包。
+Correct translation:
+無法使用版本 3 交易花費未確認版本 %d 的預選輸入。
+```
+
+<!-- cache_translation_check_zh-Hant_f9b38ca6e6771122f4b6e345f173a375d4a3ec7c96cf90ece271263bcdc608a8 -->
+```
+        <source>Can't spend unconfirmed version 3 pre-selected input with a version %d tx</source>
+        <translation>无法使用版本1%d交易花费未确认版本3的预选输入。</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh-Hans/zh-CN) instead of Traditional Chinese (zh-Hant/zh-TW) as requested. Additionally, there is a typo in the format specifier where "1" was accidentally inserted before "%d".
+
+Correct translation:
+無法使用版本 %d 交易花費未確認版本 3 的預選輸入。
 ```
 
 <!-- cache_translation_check_zh-Hant_7fabb939c240330d61596107c938b130818e021e55701b8aa2132a1ecc76b3c8 -->
@@ -1213,6 +1202,18 @@ The translation uses simplified Chinese characters ("预先选择输入") instea
 
 Correct translation:
 找不到預先選擇的輸入 %s
+```
+
+<!-- cache_translation_check_zh-Hant_90bbb0546d18b16de289698ea64fd4a0079b8114ac27ce41b1efa2b87038186f -->
+```
+        <source>The %s path uses exFAT, which is known to have intermittent corruption problems on macOS. Move this directory to a different filesystem to avoid data loss.</source>
+        <translation>%s路径使用exFAT，该格式在macOS上已知会出现间歇性损坏问题。请将此目录移动到其他文件系统以避免数据丢失。</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh-Hans), but the target language is Traditional Chinese (zh-Hant). Additionally, the word "path" is typically translated as "路徑" and "directory" as "目錄" in a Traditional Chinese context.
+
+Correct translation:
+%s 路徑使用 exFAT，此格式在 macOS 上已知會有間歇性損壞問題。請將此目錄移動到其他檔案系統以避免資料遺失。
 ```
 
 <!-- cache_translation_check_zh-Hant_31858be505051e38dd1b91b7fd358da6a776adc9de7310a3806b5d3ab32c3a70 -->

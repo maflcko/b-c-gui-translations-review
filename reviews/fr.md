@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -317,18 +317,6 @@ Correct translation:
 Désactiver les clés privées pour ce portefeuille. Les portefeuilles pour lesquels les clés privées sont désactivées n’auront aucune clé privée et ne pourront ni avoir de graine HD ni de clés privées importées. Cela est idéal pour les portefeuilles d’observation.
 ```
 
-<!-- cache_translation_check_fr_7c3d397cc8e6397c5bd0d0d5dc8e43de5631d00345f8d2dc97ff83ac93422b71 -->
-```
-        <source>Make a blank wallet. Blank wallets do not initially have private keys or scripts. Private keys and addresses can be imported, or an HD seed can be set, at a later time.</source>
-        <translation>Créer un portefeuilles vide. Les portefeuilles vides n’ont initialement ni clé privée ni script. Ultérieurement, des clés privées et des adresses peuvent être importées ou une graine HD peut être définie.</translation>
-    
-ERR
-"un portefeuilles" has a number agreement error; it should be singular. Also use plurals for "clés privées" and "scripts" to match the source.
-
-Correct translation:
-Créer un portefeuille vide. Les portefeuilles vides n’ont initialement ni clés privées ni scripts. Des clés privées et des adresses peuvent être importées ultérieurement, ou une graine HD peut être définie.
-```
-
 <!-- cache_translation_check_fr_9ef62feb7e685791a9f1dae315ab94629a9c0f958199d6bb735d1da9c2be10c2 -->
 ```
         <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2 GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
@@ -391,43 +379,17 @@ Correct translation:
 Définir si, par défaut, les frais doivent être soustraits du montant.
 ```
 
-<!-- cache_translation_check_fr_20efe36b43b7beb78a9a2203de1168fdd15eaaf315a307703773a5e5f3b041b3 -->
+<!-- cache_translation_check_fr_a667b2b47e401c2aa035d4a503d4b20053e468af07edff5184cd85f2159071b5 -->
 ```
         <source>Enable &amp;PSBT controls</source>
         <extracomment>An options window setting to enable PSBT controls.</extracomment>
-        <translation>Activer les contrôles &amp;TBPS</translation>
+        <translation>Activer les contrôles &amp;TBSP</translation>
     
 ERR
-The acronym "PSBT" was incorrectly altered to "TBPS". It should remain "PSBT". The single ampersand for the shortcut is fine.
-Correct translation:
-Activer les contrôles &PSBT
-```
-
-<!-- cache_translation_check_fr_630fad75ef575b8e782989332d156469300fc4ff5642dcc37466d3328f6917be -->
-```
-        <source>Whether to show PSBT controls.</source>
-        <extracomment>Tooltip text for options window setting that enables PSBT controls.</extracomment>
-        <translation>Afficher ou non les contrôles TBPS.</translation>
-    
-ERR
-The acronym PSBT was incorrectly changed to TBPS. In Bitcoin contexts, the acronym should remain PSBT.
+The acronym "PSBT" (Partially Signed Bitcoin Transaction) is a specific technical standard (BIP 174) and should not be translated or rearranged as "TBSP" in French. It is standard practice in French technical documentation and software to retain the original acronym "PSBT".
 
 Correct translation:
-Afficher ou non les contrôles PSBT.
-```
-
-<!-- cache_translation_check_fr_25332b0a201563d4a53c7f38147e1035fd6e058fb4028febefeccfc125393372 -->
-```
-        <source>Privacy mode activated for the Overview tab. To unmask the values, uncheck Settings-&gt;Mask values.</source>
-        <translation>Le mode privé est activé dans l’onglet Vue d’ensemble. Pour afficher les montants, décocher Paramètres &gt; Masquer les montants.</translation>
-    
-ERR
-Issues:
-- Imperative should be “décochez” instead of the infinitive “décocher”.
-- Keep the arrow formatting consistent with the source using “-&gt;” and avoid inserting extra spaces.
-
-Correct translation:
-Le mode privé est activé dans l’onglet Vue d’ensemble. Pour afficher les montants, décochez Paramètres-&gt;Masquer les montants.
+Activer les contrôles &amp;PSBT
 ```
 
 <!-- cache_translation_check_fr_b9bb290de6d62289030ab0b1efe85ced3691c22375e34bdbae82a01a8f189466 -->
@@ -1076,4 +1038,4 @@ Le portefeuille a dû être réécrit : redémarrez %s pour terminer.
 ```
 </details>
 
-Number of issues: 83.
+Number of issues: 80.

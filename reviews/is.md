@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -449,6 +449,18 @@ Correct translation:
 Þessi upphaflega samstilling er mjög krefjandi og gæti afhjúpað vélbúnaðarvandamál í tölvunni þinni sem áður höfðu farið fram hjá þér. Í hvert sinn sem þú keyrir %1 heldur hún áfram að hlaða niður þaðan sem hún hætti.
 ```
 
+<!-- cache_translation_check_is_e09780c20d24dd3d8e0c534288d189985a90bff79fa82eb38f2e1979e81382e5 -->
+```
+        <source>Full path to a %1 compatible script (e.g. C:\Downloads\hwi.exe or /Users/you/Downloads/hwi.py). Beware: malware can steal your coins!</source>
+        <translation>Þessi fyrstu samstilling er mjög krefjandi og getur leitt til vélbúnaðarvandamála með tölvunni þinni sem áður hafði farið framhjá. Í hvert skipti sem þú keyrir % 1 mun það halda áfram að hlaða niður þar sem frá var horfið.</translation>
+    
+SPAM
+The provided Icelandic translation is for a completely different source text related to initial synchronization and hardware demands, rather than the path to a script and a malware warning.
+
+Correct translation:
+Full slóð á %1 samhæft skriftu (t.d. C:\Downloads\hwi.exe eða /Users/you/Downloads/hwi.py). Varúð: spilliforrit geta stolið myntunum þínum!
+```
+
 <!-- cache_translation_check_is_b13056a58fa13dad215f8125e8610ee86ba86f4e9c2e4af84686205dd6529e9c -->
 ```
         <source>Sign Tx</source>
@@ -548,4 +560,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 43.
+Number of issues: 44.

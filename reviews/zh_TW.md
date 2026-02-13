@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -15,22 +15,35 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
         <translation>复制当前选中的地址到剪贴板。</translation>
     
 ERR
-The translation is in Simplified/ mainland Chinese wording and uses Mainland terms (当前选中、地址、剪贴板) rather than Taiwan Traditional Chinese. No format specifiers are involved and there are no whitespace issues, but it should be localized for zh_TW.
-
-Correct translation (Traditional Chinese for Taiwan):
-將目前選取的位址複製到剪貼簿。
-```
-
-<!-- cache_translation_check_zh_TW_7c7f338158c3f1abf79195aa2bdd1bc72adf40da318e41363523d70d2d9112e5 -->
-```
-        <source>C&amp;hoose</source>
-        <translation>選擇 (&amp;h)</translation>
-    
-ERR
-The translation renders "Choose" as "選擇", but the shortcut key (&amp;h) is not appropriate in Chinese UI because "h" does not correspond to any character in the Chinese word "選擇". In zh_TW, it is customary to either assign the shortcut to the first letter of the Chinese word by using an English character that matches, or simply use (&amp;C) for "Choose". It is most common to translate it as "選擇(&amp;C)" to match the shortcut.
+The translation uses Simplified Chinese characters (SC) instead of Traditional Chinese characters (TC) as requested for the language code 'zh_TW'. Additionally, it includes a trailing period which is not present in the source text.
 
 Correct translation:
-選擇(&amp;C)
+複製目前選取的地址至剪貼簿
+```
+
+<!-- cache_translation_check_zh_TW_a5ec2339e35ef405ab65eaf0e56ac471a04688c0d0a27174d3764505ac1525dd -->
+```
+        <source>Comma separated file</source>
+        <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
+        <translation>逗號分隔文件</translation>
+    
+ERR
+The term '文件' (wénjiàn) is more commonly used in Mainland China (zh_CN). In Taiwan (zh_TW), '檔案' (dàng'àn) is the standard term for a computer "file".
+
+Correct translation:
+逗號分隔檔案
+```
+
+<!-- cache_translation_check_zh_TW_ed8c8da5fc967e39bead4f02d66e09dcf786bdebb57759a15b41984a40b4fcbf -->
+```
+        <source>Label</source>
+        <translation>標記:</translation>
+    
+ERR
+The translation includes a trailing colon ':' which is not present in the source text. In Bitcoin software UI contexts, "Label" is typically translated without the colon unless the source includes it.
+
+Correct translation:
+標記
 ```
 
 <!-- cache_translation_check_zh_TW_f2534126929c7c679fc576151c3679254c23ba66cf242be674778ed4239bd99c -->
@@ -39,10 +52,107 @@ Correct translation:
         <translation>輸入錢包的新密碼短語。&lt;br/&gt;請使用&lt;b&gt;個或10個以上隨機字符&lt;/b&gt;或&lt;b&gt;個8個以上單詞&lt;/b&gt;的密碼。</translation>
     
 ERR
-The translation is problematic. The order and structure of the message are garbled, and the numbers (ten/eight) are transposed and inserted incorrectly. The measure words “個” are placed before numbers, making it awkward. The instruction about using 'ten or more random characters' or 'eight or more words' is not clear.
+The translation contains grammatical errors and incorrect terminology for the 'zh_TW' (Taiwan) locale. The phrases "個或10個以上" and "個8個以上" are ungrammatical. Additionally, "字符" is a Simplified Chinese term; "字元" is the standard term in Traditional Chinese for "character".
 
 Correct translation:
-輸入錢包的新密碼短語。&lt;br/&gt;請使用&lt;b&gt;十個以上的隨機字符&lt;/b&gt;，或&lt;b&gt;八個以上的單字&lt;/b&gt;作為密碼。
+輸入錢包的新密碼短語。<br/>請使用包含 <b>10 個或更多隨機字元</b>，或 <b>8 個或更多單詞</b>的密碼短語。
+```
+
+<!-- cache_translation_check_zh_TW_23d6fefa4b3fcbb0ee0f7fdc2b7b5ff16a37f43bc1631f0c44051481c5a884f7 -->
+```
+        <source>Enter the old passphrase and new passphrase for the wallet.</source>
+        <translation>輸入錢包的密碼短語和新密碼短語。</translation>
+    
+ERR
+The translation misses the word "old" (舊的) and repeats "passphrase" without clarifying the sequence clearly. The term "密碼短語" is a bit literal; in Bitcoin Core context for zh_TW, "密碼" or "密碼短語" is used, but the source specifically asks for the "old" and "new" ones.
+
+Correct translation:
+輸入錢包的舊密碼短語與新密碼短語。
+```
+
+<!-- cache_translation_check_zh_TW_f1f875bc7ab1697adecfc05c04bc4f3f85d2531cb22511a87c9fa7dbac1a3e32 -->
+```
+        <source>Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
+        <translation>請記得, 即使將錢包加密, 也不能完全防止因惡意軟體入侵, 而導致位元幣被偷.</translation>
+    
+ERR
+The translation contains unnecessary punctuation (stray commas) and uses some terms that are less standard in Traditional Chinese (Taiwan). Specifically, there is a space after the first comma, and the commas break the sentence flow unnaturally.
+
+Correct translation:
+請記住，加密您的錢包並不能完全防止您的位元幣被感染電腦的惡意軟體偷走。
+```
+
+<!-- cache_translation_check_zh_TW_a32fbf66116af9abe3c93c4afef478da058b06c908b1ff3a2cce7c02fdcdea38 -->
+```
+        <source>Your wallet is about to be encrypted. </source>
+        <translation>你的錢包將被加密</translation>
+    
+ERR
+The translation is missing the trailing space present in the source text and ends without the period, making it slightly inconsistent with the source formatting.
+
+Correct translation:
+你的錢包即將被加密。
+```
+
+<!-- cache_translation_check_zh_TW_7c6b76b3211ce95b89838a14d38391216d4277fd44671c9f571aae1f53b03363 -->
+```
+        <source>Your wallet is now encrypted. </source>
+        <translation>你的錢包現已被加密</translation>
+    
+ERR
+The translation is missing the trailing space and the period that are present in the source text.
+
+Correct translation:
+你的錢包現已被加密。
+```
+
+<!-- cache_translation_check_zh_TW_5183f85114780d89ddc6879e54f121427b74a0aa47faac8d83f9f1671d9e3333 -->
+```
+        <source>Wallet passphrase was successfully changed.</source>
+        <translation>錢包密碼改成功了。</translation>
+    
+ERR
+The translation is too informal/colloquial for a software interface. The phrase "改成功了" (changed successfully) is common in speech but "已成功變更" is more standard for professional software contexts in Traditional Chinese (Taiwan).
+
+Correct translation:
+錢包密碼已成功變更。
+```
+
+<!-- cache_translation_check_zh_TW_e0e8968e5dce6fcd564119c063e35d7a19cef418bb79beefadfe2cac7f516762 -->
+```
+        <source>Settings file %1 might be corrupt or invalid.</source>
+        <translation>設定檔%1可能已經失效或無效</translation>
+    
+ERR
+The translation is missing the period at the end and uses slightly redundant phrasing for "corrupt or invalid". In traditional Chinese (zh_TW) technical contexts, "corrupt" is typically translated as "損毀".
+
+Correct translation:
+設定檔 %1 可能已損毀或無效。
+```
+
+<!-- cache_translation_check_zh_TW_857e23e7e1973f04063bfe63ea5f0211c4d81243fda8f4321ee9945b833e9a2c -->
+```
+        <source>An internal error occurred. %1 will attempt to continue safely. This is an unexpected bug which can be reported as described below.</source>
+        <translation>發生了內部錯誤%1 將嘗試安全地繼續。 這是一個意外錯誤，可以按如下所述進行報告。</translation>
+    
+ERR
+There is a missing space between the internal error description and the format specifier %1, and an extra space after the first full stop.
+
+Correct translation:
+發生了內部錯誤。%1 將嘗試安全地繼續。這是一個意外錯誤，可以按如下所述進行報告。
+```
+
+<!-- cache_translation_check_zh_TW_3f90e8c27d44543ea7b499bfa7e4416c7e241a52f1d707de42e81f32d21e999e -->
+```
+        <source>A fatal error occurred. Check that settings file is writable, or try running with -nosettings.</source>
+        <extracomment>Explanatory text shown on startup when the settings file could not be written. Prompts user to check that we have the ability to write to the file. Explains that the user has the option of running without a settings file.</extracomment>
+        <translation>發生致命錯誤。檢查設置文件是否可寫入，或嘗試運行 -nosettings</translation>
+    
+ERR
+The translation uses terminology more common in Mainland China ('設置' for settings, '文件' for file) and is missing the 'with' context for the command-line argument. In Traditional Chinese (Taiwan), '設定' and '檔案' are the standard terms.
+
+Correct translation:
+發生嚴重錯誤。請檢查設定檔是否可寫入，或是嘗試加上 -nosettings 參數執行。
 ```
 
 <!-- cache_translation_check_zh_TW_b39ffd6ed8b0a57369b123e846dd701dedf0036d45125cb34ee0551a90405b8f -->
@@ -51,10 +161,22 @@ Correct translation:
         <translation>错误：%1</translation>
     
 ERR
-The translation uses simplified Chinese "错误" instead of the traditional Chinese "錯誤" used in 'zh_TW'.
+The translation uses Simplified Chinese characters instead of Traditional Chinese characters as required for 'zh_TW'. Specifically, "错误" (Simplified) should be "錯誤" (Traditional).
 
 Correct translation:
 錯誤：%1
+```
+
+<!-- cache_translation_check_zh_TW_4019e632310dea73c1c3a67edafd1040922f6f4274400d29927db1e1936014bd -->
+```
+        <source>Default system font "%1"</source>
+        <translation>默认系统字体 "%1"</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) rather than Traditional Chinese (zh_TW). In Traditional Chinese, "默认" is typically expressed as "預設", and "字体" is written as "字型" or "字體".
+
+Correct translation:
+預設系統字型 "%1"
 ```
 
 <!-- cache_translation_check_zh_TW_1d4d50356a6d37e9a65eefe4248ceecc505b510a4abaf25a6225631750fcc415 -->
@@ -63,65 +185,85 @@ Correct translation:
         <translation>自定义...</translation>
     
 ERR
-The translation uses the simplified Chinese term "自定义" instead of the Traditional Chinese term. Also, the ellipsis should be the full-width "…" as in the source, not three periods.
+The translation uses Simplified Chinese characters ('自定义') instead of Traditional Chinese characters ('自訂') which is appropriate for the 'zh_TW' (Taiwan) locale. Additionally, it uses three periods instead of the standard horizontal ellipsis character '…' or the Traditional Chinese ellipsis.
 
 Correct translation:
 自訂…
 ```
 
-<!-- cache_translation_check_zh_TW_e427676210b15c2c8c8f6757544cf04cd06b47f42ad86dc1d8ab3bc5a6ebc237 -->
+<!-- cache_translation_check_zh_TW_aa3f0385b6120be97df4f1a0311fb028830f25141c71517fcb98e8f399675f57 -->
 ```
-        <source>Inbound</source>
-        <extracomment>An inbound connection from a peer. An inbound connection is a connection initiated by a peer.</extracomment>
-        <translation>進來</translation>
+        <source>Enter a Bitcoin address (e.g. %1)</source>
+        <translation>輸入 比特幣地址 (比如說 %1)</translation>
     
 ERR
-The translation "進來" is colloquial and less appropriate for UI/technical context. A more natural and accurate Traditional Chinese (zh_TW) translation for an inbound connection is "傳入" (or "入站" / "傳入連線" if you want to be explicit).
+The translation contains an unnecessary space between the verb "輸入" (Enter) and the noun phrase "比特幣地址" (Bitcoin address), which is not standard in Chinese typography.
 
 Correct translation:
-傳入
+輸入比特幣地址 (例如 %1)
 ```
 
-<!-- cache_translation_check_zh_TW_7a8e276b020331cbd40ab2b4dd4087ab1f4a092776cab1e6b1566f64742f3384 -->
+<!-- cache_translation_check_zh_TW_cb0ebfa20467e46f7f2203a0dd2233affdd7e3504b99baa30cbbb4cb76b8988a -->
 ```
-        <source>Outbound</source>
-        <extracomment>An outbound connection to a peer. An outbound connection is a connection initiated by us.</extracomment>
-        <translation>出去</translation>
+        <source>Full Relay</source>
+        <extracomment>Peer connection type that relays all network information.</extracomment>
+        <translation>完整转发</translation>
     
 ERR
-"出去" is literal and colloquial ("to go out") and is not appropriate in this technical/networking context. It does not convey "outbound connection" as used for network/Bitcoin peers.
-
-Suggested translations:
-- For a short label: 出站
-- For more explicit wording: 出站連線 or 外向連線
-
-No format specifiers or whitespace issues present.
-```
-
-<!-- cache_translation_check_zh_TW_041cb38e17e738a0781533f7e303bf1eb85a9c693cc930dde0e655a77dccd313 -->
-```
-        <source>Block Relay</source>
-        <extracomment>Peer connection type that relays network information about blocks and not transactions or addresses.</extracomment>
-        <translation>区块转发</translation>
-    
-ERR
-The translation uses Simplified Chinese characters ("区块转发") rather than Traditional Chinese expected for zh_TW, and the wording could be improved for Bitcoin terminology. A more natural Traditional Chinese translation is:
+The translation uses Simplified Chinese characters ('转发') instead of Traditional Chinese characters ('轉發') as required for the 'zh_TW' (Taiwan) locale.
 
 Correct translation:
-區塊中繼
+完整轉發
 ```
 
-<!-- cache_translation_check_zh_TW_fbb5b09a9f86969a7421fdabda6ed901818486bf04c04a5630a2da5f0460fe4c -->
+<!-- cache_translation_check_zh_TW_dc1c5fed46500f4b661b01393d4b9e1239f27a028a5b204d5f7ef785ef5259a9 -->
 ```
         <source>Manual</source>
         <extracomment>Peer connection type established manually through one of several methods.</extracomment>
-        <translation>手册</translation>
+        <translation>手冊</translation>
     
 ERR
-"手册" means a handbook/manual (noun) in Chinese, which is incorrect in this context. The source "Manual" here is an adjective describing a peer connection type set up by hand.
+In the context of Bitcoin peer connections (as indicated by the extracommment), "Manual" refers to a connection type established by the user manually, not a physical "manual" or "handbook". The translation "手冊" means "handbook/manual". The correct term for a manual action or connection type in this context is "手動".
 
 Correct translation:
 手動
+```
+
+<!-- cache_translation_check_zh_TW_d2cf2d9bca1241bf5206001a5592594151e99cc89df7aa0410d98324aa896d56 -->
+```
+        <source>Feeler</source>
+        <extracomment>Short-lived peer connection type that tests the aliveness of known addresses.</extracomment>
+        <translation>触须</translation>
+    
+SPAM
+The translation provided ("触须") uses Simplified Chinese characters, which are used in Mainland China ('zh_CN'), rather than Traditional Chinese characters used in Taiwan ('zh_TW'). Additionally, in the context of Bitcoin Core, "Feeler" (a connection type to test node aliveness) is typically translated as "探測器" or "探測" in Traditional Chinese.
+
+Correct translation:
+探測器
+```
+
+<!-- cache_translation_check_zh_TW_0467b0276d62fd95ce9b8af3bd4c3e87347f98def98ee4a26f32868c51c98725 -->
+```
+        <source>%1 and %2</source>
+        <translation>%1又 %2</translation>
+    
+ERR
+There is a stray space after the word "又". In traditional Chinese (zh_TW), spaces are typically not used between characters and format specifiers in this context.
+
+Correct translation:
+%1又%2
+```
+
+<!-- cache_translation_check_zh_TW_b15a93ea58ca7043cb82eb05fbafa2f8fc0720bc3913e8b99ad82cd30fcb4ae0 -->
+```
+        <source>default wallet</source>
+        <translation>默认钱包</translation>
+    
+ERR
+The translation uses Simplified Chinese characters and terminology ("默认") instead of Traditional Chinese characters and terminology ("預設") as used in Taiwan (zh_TW).
+
+Correct translation:
+預設錢包
 ```
 
 <!-- cache_translation_check_zh_TW_a7c351c427df6d7b486104f1939aef897d1cfa92e831eea41d659421963ae8ce -->
@@ -130,10 +272,10 @@ Correct translation:
         <translation>最小化</translation>
     
 ERR
-The translation is missing the ampersand (&), which denotes the shortcut key. It should appear exactly once.
+The translation is missing the shortcut key indicator '&' which was present in the source text.
 
 Correct translation:
-&最小化
+最小化(&M)
 ```
 
 <!-- cache_translation_check_zh_TW_6a48bd30fe4e7cd2269014687f421baac1199561d91f0c02a5850a77330d53b2 -->
@@ -142,10 +284,34 @@ Correct translation:
         <translation>备份钱包(&amp;B)</translation>
     
 ERR
-The translation is in Simplified Chinese ("备份钱包") rather than Traditional Chinese as required for 'zh_TW'. In Traditional Chinese, "备份" should be "備份". Also, the shortcut key (&B) is retained correctly, but it's common in zh_TW to put the ampersand before the character or in parentheses after.
+The translation uses Simplified Chinese characters ("备份") instead of Traditional Chinese characters ("備份") which are used in the 'zh_TW' (Taiwan) locale.
 
 Correct translation:
-備份錢包(&amp;B)
+備份錢包(&B)
+```
+
+<!-- cache_translation_check_zh_TW_54eba313b1f7705aba04afbe18023343277ec9a90b81ddf9082862e28be58fc8 -->
+```
+        <source>&amp;Change Passphrase…</source>
+        <translation>修改密码(&amp;C)</translation>
+    
+ERR
+The translation is in Simplified Chinese characters (密码) instead of Traditional Chinese characters (密碼) as required by the 'zh_TW' locale. Additionally, "修改" is commonly used, but "變更" is more standard in this specific software context for Traditional Chinese.
+
+Correct translation:
+變更密碼(&amp;C)…
+```
+
+<!-- cache_translation_check_zh_TW_50c13beebc23be4c5fec21866f35ebd53ff4586cd71628fbe1c3dc8e0e5a3c61 -->
+```
+        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
+        <translation>驗證訊息是用來確定訊息是用指定的比特幣地址簽名的</translation>
+    
+ERR
+The translation is wordy and grammatically awkward. It translates "Verify messages to ensure..." as "Verifying messages is used to determine that...", which changes the tone from an action/feature description to a definition.
+
+Correct translation:
+驗證訊息以確認它們是用指定的比特幣地址簽署的
 ```
 
 <!-- cache_translation_check_zh_TW_6c856fbf154faf315ca0802bc632798d0930e79b9382d4d4ad524e02e3ae18ee -->
@@ -154,7 +320,7 @@ Correct translation:
         <translation>从文件加载PSBT(&amp;L)...</translation>
     
 ERR
-The translation uses Simplified Chinese ("从文件加载PSBT") and the punctuation is the Simplified ellipsis (...), not Traditional Chinese ("…"). In Traditional Chinese for Taiwan, it should be "從檔案載入 PSBT(&amp;L)…"
+The translation is in Simplified Chinese (zh_CN) rather than Traditional Chinese (zh_TW) as requested. In Traditional Chinese, "从" should be "從", and "文件" is typically translated as "檔案". Additionally, the source uses an ellipsis character "…" instead of three dots "...".
 
 Correct translation:
 從檔案載入 PSBT(&amp;L)…
@@ -166,7 +332,7 @@ Correct translation:
         <translation>打开&amp;URI...</translation>
     
 ERR
-The translation uses simplified Chinese ("打开") instead of traditional Chinese used in 'zh_TW' locale. Also, the ellipsis should be the proper full-width character ("…") for better traditional Chinese style.
+The translation uses a Simplified Chinese character ("开") instead of the Traditional Chinese character ("開") required for the 'zh_TW' locale. Furthermore, "開啟" is the standard terminology for "Open" in software contexts in Taiwan, whereas "打开" is more common in Mainland China. Additionally, the source uses a single ellipsis character (…), but the translation uses three periods (...).
 
 Correct translation:
 開啟 &amp;URI…
@@ -178,10 +344,10 @@ Correct translation:
         <translation>关闭钱包...</translation>
     
 ERR
-The translation is in Simplified Chinese ("关闭钱包..."), not Traditional Chinese as used in 'zh_TW'. Also, the ellipsis should use the correct Chinese or Unicode style, and in Traditional Chinese, "關閉" is used instead of "关闭".
+The translation uses Simplified Chinese characters ('关闭钱包') instead of Traditional Chinese characters as required for the 'zh_TW' (Taiwan) locale. Additionally, it uses three standard periods instead of the horizontal ellipsis character.
 
 Correct translation:
-關閉錢包…
+關閉錢包...
 ```
 
 <!-- cache_translation_check_zh_TW_af3e16b29457207e5532a4fd697c8df1f8f0ea0737e20ed17d82e75835bbef81 -->
@@ -190,10 +356,22 @@ Correct translation:
         <translation>创建钱包...</translation>
     
 ERR
-The translation uses Simplified Chinese ("创建钱包...") instead of Traditional Chinese, and the ellipsis is represented with three dots ("...") instead of the single ideographic ellipsis character or three dots as commonly used in Traditional Chinese.
+The translation uses Simplified Chinese characters instead of Traditional Chinese characters as required by the 'zh_TW' language code. Additionally, it uses three periods instead of the ellipsis character.
 
 Correct translation:
 建立錢包…
+```
+
+<!-- cache_translation_check_zh_TW_acd82d01dd14b04dc1a835c30e7022782e0ef028e62202d78b7874fe7559f145 -->
+```
+        <source>Indexing blocks on disk…</source>
+        <translation>对磁盘上的区块进行索引...</translation>
+    
+ERR
+The translation is written in Simplified Chinese (zh_CN) characters rather than Traditional Chinese (zh_TW) characters as requested. Specifically, "对" (Simplified) should be "對", and "磁盘" (Simplified) should be "磁碟".
+
+Correct translation:
+正在對磁碟上的區塊建立索引...
 ```
 
 <!-- cache_translation_check_zh_TW_fcfbfeb4e0bb7910c6581552c56704953953e497f3e229a94f1b8d793fd35fd9 -->
@@ -202,7 +380,7 @@ Correct translation:
         <translation>处理磁盘上的区块...</translation>
     
 ERR
-The translation uses Simplified Chinese characters ("处理" and "磁盘") instead of Traditional Chinese characters appropriate for 'zh_TW'. Also, the ellipsis "..." should preferably be the full-width "…" for consistency with the source.
+The translation uses Simplified Chinese characters ('处理', '磁盘') instead of Traditional Chinese characters ('處理', '磁碟') as required by the 'zh_TW' (Taiwan) locale. Additionally, it uses a standard triple period '...' instead of the horizontal ellipsis '…' used in the source.
 
 Correct translation:
 處理磁碟上的區塊…
@@ -214,10 +392,34 @@ Correct translation:
         <translation>连到同行...</translation>
     
 ERR
-The translation uses Simplified Chinese characters ("连" and "同行") instead of Traditional Chinese as required for 'zh_TW'. Additionally, the ellipsis character "..." is used rather than the more typographically correct "…" as in the source.
+The translation uses Simplified Chinese characters ("连") instead of Traditional Chinese characters ("連") which is required for 'zh_TW'. Additionally, the term "peers" in the context of Bitcoin is better translated as "節點" (nodes) or "對等節點", and "同行" is an literal/incorrect translation in this context.
 
 Correct translation:
-連接到節點…
+正在連線至節點…
+```
+
+<!-- cache_translation_check_zh_TW_b5a5301ba90b2d4ff54e8d02f7f738a0520e534631e3c258f6818fcbd6367450 -->
+```
+        <source>Catching up…</source>
+        <translation>赶上...</translation>
+    
+ERR
+The translation uses Simplified Chinese characters ('赶') instead of Traditional Chinese characters ('趕') as required by the 'zh_TW' language code. Additionally, "Catching up..." in the context of Bitcoin synchronization is more commonly translated as "正在同步..." or "正在追趕進度...".
+
+Correct translation:
+正在同步...
+```
+
+<!-- cache_translation_check_zh_TW_ef6b2c94c98dd02f5b270c9851d19a705c8c650c4d366e9b8aed5e74588e886c -->
+```
+        <source>Last received block was generated %1 ago.</source>
+        <translation>最近收到的區塊是在 %1 以前生出來的。</translation>
+    
+ERR
+The word "生出來" (born/given birth to) is too colloquial and inappropriate for a technical context. In software localization, "產生" or "生成" is the standard translation for "generated".
+
+Correct translation:
+最近收到的區塊是在 %1 以前產生的。
 ```
 
 <!-- cache_translation_check_zh_TW_42a695c10a15cebe8935b1a9013c83e954e990e2627b810a54a4e13beb932376 -->
@@ -226,22 +428,10 @@ Correct translation:
         <translation>從剪貼簿載入PSBT</translation>
     
 ERR
-The translation omits the shortcut key indicator '&' present in the source text. In traditional Chinese for 'zh_TW', '剪貼簿' is correct for 'clipboard', but the translation should preserve the '&' to indicate the shortcut key.
+The translation is missing the shortcut key indicator '&' and the ellipsis '…' which were present in the source text.
 
 Correct translation:
-從剪貼簿(&amp;C)載入PSBT…
-```
-
-<!-- cache_translation_check_zh_TW_ae17b6175a78bca240cb993bcbd06359e31a190184b2b55fe900a701a310a123 -->
-```
-        <source>Open a wallet</source>
-        <translation>打開一個錢包檔</translation>
-    
-ERR
-The translation uses "錢包檔" which translates to "wallet file", but the original English phrase is "Open a wallet", which refers to opening a wallet in general, not specifically a wallet file. The word "檔" (file) is added unnecessarily.
-
-Correct translation:
-打開錢包
+從剪貼簿載入 &PSBT…
 ```
 
 <!-- cache_translation_check_zh_TW_76ae68398510bc24accf5342e8331d844f340c319439d86f2a3463a8c6de557c -->
@@ -250,10 +440,58 @@ Correct translation:
         <translation>＆遮罩值</translation>
     
 ERR
-The translation uses a full-width '＆' character instead of the correct half-width '&' for the shortcut key indication. In zh_TW translations for Qt, the standard is to retain the ASCII '&'. Also, '&' should appear exactly once to indicate the shortcut.
+The translation uses a full-width ampersand '＆' (U+FF06) instead of the standard half-width ampersand '&' (U+0026) used for shortcut keys. Additionally, the spacing between the shortcut key marker and the text is inconsistent with standard UI translations.
 
 Correct translation:
 &遮罩值
+```
+
+<!-- cache_translation_check_zh_TW_a5fd8141329b1c85bfb33f313577cfe31d0c647903b969c0ff7a165cea19f4c5 -->
+```
+        <source>Mask the values in the Overview tab</source>
+        <translation>遮蔽“概述”選項卡中的值</translation>
+    
+ERR
+The translation uses terminology specific to Mainland China (zh_CN) but written in Traditional Chinese characters. In Taiwan (zh_TW), "Overview" is typically translated as "總覽" (instead of "概述") and "Tab" is "索引標籤" or "分頁" (instead of "選項卡"). Additionally, Traditional Chinese typically uses corner brackets 「 」 for UI elements.
+
+Correct translation:
+遮蔽「總覽」索引標籤中的數值
+```
+
+<!-- cache_translation_check_zh_TW_28a47257f2b40104a504b4e453c458ddfafe248571bc4081e7c04cdd24180868 -->
+```
+        <source>No wallets available</source>
+        <translation>没有可用的钱包</translation>
+    
+ERR
+The translation uses Simplified Chinese characters instead of Traditional Chinese characters as required by the 'zh_TW' locale.
+
+Correct translation:
+沒有可用的錢包
+```
+
+<!-- cache_translation_check_zh_TW_9c7ce63ffa1c45ef52e62f8abe6bdf1bc07c9180eaba62997cf3707c87dc16fc -->
+```
+        <source>Zoom</source>
+        <translation>缩放</translation>
+    
+ERR
+The translation provided is in Simplified Chinese ('zh_CN') instead of Traditional Chinese ('zh_TW') as requested. The character '缩' is simplified; the traditional equivalent is '縮'.
+
+Correct translation:
+縮放
+```
+
+<!-- cache_translation_check_zh_TW_03758936259b45b7ffed8c430a8978923644f27dd84a322c325ebdfc7083fa63 -->
+```
+        <source>Main Window</source>
+        <translation>主窗口</translation>
+    
+ERR
+The translation uses terminology from Mainland China ("窗口") rather than the standard terminology used in Taiwan ("視窗") for the language code 'zh_TW'.
+
+Correct translation:
+主視窗
 ```
 
 <!-- cache_translation_check_zh_TW_288aac83bf952b4faa778bc98603999a0a404648c87babfb9f60f83f1c86ac95 -->
@@ -262,10 +500,36 @@ Correct translation:
         <translation>&amp;躲</translation>
     
 ERR
-The translation uses “躲” which is a verb meaning “to hide” (as in physically hiding oneself), but in UI context, the more appropriate term is “隱藏” (to hide a window, element, etc.). Additionally, the ampersand is present and correctly used.
+The translation for "Hide" as "躲" (duǒ) is semantically awkward in a software UI context. "躲" usually implies "to hide oneself" or "to dodge". In a computer interface, the standard term for "Hide" (as in hiding a window or a UI element) is "隱藏".
 
 Correct translation:
 &隱藏
+```
+
+<!-- cache_translation_check_zh_TW_33bca437f3f31507a299a1badfb077ce2405c67a7ac37fa75a16364db159d1f5 -->
+```
+        <source>Show Peers tab</source>
+        <extracomment>A context menu item. The "Peers tab" is an element of the "Node window".</extracomment>
+        <translation>顯示節點選項卡</translation>
+    
+ERR
+The translation uses "選項卡" (tab), which is more common in Mainland China (zh_CN). In Taiwan (zh_TW), "分頁" or "標籤" is the standard terminology. Additionally, "Peers" refers to the specific peer-to-peer connections, often translated as "節點" (nodes) or "端點", but within the Bitcoin Core interface for zh_TW, "節點" is usually used for the "Node" window, and "節點" is also used for peers. However, the term "選項卡" is definitely not standard zh_TW.
+
+Correct translation:
+顯示節點分頁
+```
+
+<!-- cache_translation_check_zh_TW_f98978340b3dee7dea853d55b610cf3ef92e0cdc4f6fc9be06b4f2b7dc3d54dc -->
+```
+        <source>Disable network activity</source>
+        <extracomment>A context menu item.</extracomment>
+        <translation>關閉網路紀錄</translation>
+    
+ERR
+The translation is inaccurate. "Network activity" refers to active network communication/traffic, but the translation "網路紀錄" means "network records" or "network logs". The correct term for activity in this context is "活動".
+
+Correct translation:
+關閉網路活動
 ```
 
 <!-- cache_translation_check_zh_TW_950cb28cc0f57eebf6fb6e99e761a355724df12da7463d87aeda770e4eaacc26 -->
@@ -274,10 +538,10 @@ Correct translation:
         <extracomment>A context menu item. The network activity was disabled previously.</extracomment>
         <translation>關閉網路紀錄</translation>
     
-ERR  
-The translation is incorrect. "Enable network activity" means to allow network operations, but the provided translation "關閉網路紀錄" means "Turn off network record/log," which has the opposite meaning.  
+ERR
+The translation is the opposite of the source text. "Enable network activity" means to turn on the network function, but "關閉網路紀錄" means "Disable network logs".
 
-Correct translation:  
+Correct translation:
 啟用網路活動
 ```
 
@@ -287,46 +551,46 @@ Correct translation:
         <translation>错误：%1</translation>
     
 ERR
-The translation uses simplified Chinese "错误" instead of the traditional Chinese "錯誤" used in 'zh_TW'.
+The translation uses Simplified Chinese characters instead of Traditional Chinese characters as required for 'zh_TW'. Specifically, "错误" (Simplified) should be "錯誤" (Traditional).
 
 Correct translation:
 錯誤：%1
 ```
 
-<!-- cache_translation_check_zh_TW_d51e10172e5552a6df01db975d91a170ab02d5a679a13098943b9ac6cc9acd0d -->
+<!-- cache_translation_check_zh_TW_7fa49cb5a1a0ebac82592a47ee80961c6b096ed7ac1abbc6022f50b07d8c2721 -->
 ```
-        <source>&amp;Copy address</source>
-        <translation>&amp;复制地址</translation>
+        <source>(un)select all</source>
+        <translation>(un)全選</translation>
     
 ERR
-The translation uses Simplified Chinese ("复制地址") instead of Traditional Chinese as required for 'zh_TW'. The correct Traditional Chinese translation is "複製地址".
+The translation is incomplete and unnatural. The English prefix "(un)" was left untranslated, which is not standard practice in Chinese localization. It should be fully translated to reflect the toggle action.
 
 Correct translation:
-&複製地址
+全選或不選
 ```
 
-<!-- cache_translation_check_zh_TW_bf899019c3cac9970e49f67237f343336436f382f43ab4037fab2d1ab4f801dd -->
+<!-- cache_translation_check_zh_TW_5b45a2e3e197cab3a78cc3c4fa7c3b5a00240cf7134223037418ba1be2ef487d -->
 ```
         <source>Copy &amp;label</source>
-        <translation>复制和标签</translation>
+        <translation>複製 &amp;label</translation>
     
 ERR
-The translation is incorrect for 'zh_TW'. It uses simplified characters ("复制") instead of traditional ("複製"), and "和" ("and") is not the correct way to indicate the shortcut. The ampersand (&amp;) should appear exactly once to define the shortcut key.
+The English word 'label' was not translated into Traditional Chinese.
 
 Correct translation:
 複製標籤(&L)
 ```
 
-<!-- cache_translation_check_zh_TW_a6e9d6abcc4431799e73f806331c34124d5e3cf2ac80d23af4c298249010502b -->
+<!-- cache_translation_check_zh_TW_4d7048e3223a6608542d9e88f361c2e18678e6e32a584bc5ae95f8b3d9d13941 -->
 ```
         <source>Copy &amp;amount</source>
-        <translation>复制和数量</translation>
+        <translation>複製金額 &amp;amount</translation>
     
 ERR
-The translation is inaccurate. The original intends for "&amp;amount" to mean "Copy amount" with the ampersand indicating the shortcut key. In zh_TW, the word "复制" means "copy," but "和数量" means "and quantity," which is a mistranslation. Also, the shortcut marker (&) should be preserved as a single & in the appropriate place.
+The translation incorrectly includes the English word 'amount' after the Chinese translation. The shortcut key '&' should be placed before the corresponding character in the translated text.
 
 Correct translation:
-複製數量(&A)
+複製金額(&amp;A)
 ```
 
 <!-- cache_translation_check_zh_TW_6006ab99d8d206cb4b883fe4118546c89833a2f28e1fde4e30e6964adcec3460 -->
@@ -335,9 +599,10 @@ Correct translation:
         <translation>鎖定未消費金額額</translation>
     
 ERR
-The translation is problematic. There is a duplicated character "額" at the end, which is likely a typo. The correct translation should be:
+The translation contains a redundant character "額" at the end and is missing the shortcut key indicator '&'.
 
-鎖定未花費 (&amp;L)
+Correct translation:
+鎖定未花費(&O)
 ```
 
 <!-- cache_translation_check_zh_TW_577d2fa8655462b96c0755878408f171c5787cc54c803443e8ed450a1d4ea35e -->
@@ -346,10 +611,10 @@ The translation is problematic. There is a duplicated character "額" at the end
         <translation>解鎖未花費金額</translation>
     
 ERR
-The translation omits the '&' ampersand, which is used for a keyboard shortcut in the UI, and should appear exactly once in the translation. Also, "金額" literally means "amount", but "unspent" in the context of Bitcoin is usually translated as "未花費" (referring to outputs or coins rather than amounts). A common translation for "Unlock unspent" would retain the ampersand and typically use "未花費" as a noun ("outputs" or "coins" implied).
+The translation is missing the shortcut key indicator '&' which is present in the source text.
 
 Correct translation:
-&解鎖未花費
+解鎖未花費金額(&U)
 ```
 
 <!-- cache_translation_check_zh_TW_39f8fd7fcf43b82d6213e666e6289334dc525e42ff2102d6b2e7aca11cb82165 -->
@@ -358,10 +623,22 @@ Correct translation:
         <translation>創建錢包失敗&lt;br&gt;</translation>
     
 ERR
-The translation adds an unnecessary "<br>" HTML line break tag at the end, which is not present in the source text. This could result in formatting issues in the UI.
+The translation includes an unnecessary HTML break tag `<br>` at the end, which is not present in the source text.
 
 Correct translation:
 創建錢包失敗
+```
+
+<!-- cache_translation_check_zh_TW_91bd450109a71539c669aeb178788c78adb1ae6a861ceddfaba06ac966e74dfb -->
+```
+        <source>Create wallet warning</source>
+        <translation>產生錢包警告:</translation>
+    
+ERR
+The translation adds a colon at the end of the string which is not present in the source text. Additionally, "Create" is better translated as "建立" in this context.
+
+Correct translation:
+建立錢包警告
 ```
 
 <!-- cache_translation_check_zh_TW_1d0a785d1fee9fdf6a0719f357c0ef28ee33c94fae22adc01856988e79a24a5c -->
@@ -370,35 +647,58 @@ Correct translation:
         <translation>仅观察脚本已经被迁移到被命名为“%1”的新钱包中。</translation>
     
 ERR
-The translation is in Simplified Chinese (zh_CN), not Traditional Chinese (zh_TW), and uses the wrong character for "watch-only" ("仅观察" is Simplified; in Traditional it should be "僅觀察" or more commonly "僅觀察用"). Quotation marks also use straight quotes instead of the full-width or Chinese style gulled quotes. 
+The translation is in Simplified Chinese (zh_CN) characters and terminology, rather than Traditional Chinese (zh_TW) as requested. In Traditional Chinese, "仅" should be "僅", "观察" should be "觀察", and "被命名为" is less natural than "名為".
 
 Correct translation:
-僅觀察腳本已經被遷移到名為「%1」的新錢包中。
+僅觀察腳本已被遷移到名為「%1」的新錢包中。
 ```
 
-<!-- cache_translation_check_zh_TW_83b2d2b3062f18b42ef6fc88813791bae47fca08b606bd8622a537ac662e2044 -->
+<!-- cache_translation_check_zh_TW_4f050daa43432233793ea3633b3b1836c5e26f5dfa7bb6add44eaffb3970f760 -->
 ```
-        <source>Are you sure you wish to close the wallet &lt;i&gt;%1&lt;/i&gt;?</source>
-        <translation>您確定要關閉錢包 &lt;i&gt;%1&lt;/i&gt; 嗎？</translation>
+        <source>Solvable but not watched scripts have been migrated to a new wallet named '%1'.</source>
+        <translation>可解决但未被观察到的脚本已经被迁移到被命名为“%1”的新钱包。</translation>
     
 ERR
-The translation is correct in meaning and the format specifier %1 is preserved, but it includes unnecessary spaces around the <i>...</i> tag and before the question mark, which is not appropriate for Chinese typography.
-
-Correct translation (remove the extra spaces):
-您確定要關閉錢包<i>%1</i>嗎？
-```
-
-<!-- cache_translation_check_zh_TW_a07c6118a8d1e499f76e7c6670dd539d040212da28ec25d3a813231e56e9b6cf -->
-```
-        <source>Compiled without external signing support (required for external signing)</source>
-        <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
-        <translation>軟體未編譯外接簽證功能所需的軟體庫(外接簽證必須有此功能)</translation>
-    
-ERR  
-The translation is inaccurate. "簽證" refers more to "visa" in Chinese, which is not appropriate for "signing" in the context of cryptocurrencies. The message is also somewhat convoluted compared to the English source. "外接簽署" or "外部簽署" is the more proper term for "external signing" in this context.
+The translation uses Simplified Chinese characters and terminology (e.g., “解决”, “观察”, “迁移”, “命名”) instead of Traditional Chinese characters and terminology used in Taiwan (zh_TW). Additionally, "Solvable" in the context of Bitcoin descriptors/scripts is typically translated as "可解的".
 
 Correct translation:
-未編譯外部簽署支援（外部簽署需要此支援）
+可解但非監視中的指令碼已遷移至名為「%1」的新錢包。
+```
+
+<!-- cache_translation_check_zh_TW_c4a2faeb3d7857a37a70bc9ee17648c3ec1af372bf069550999cfd66c32192fa -->
+```
+        <source>The entered address "%1" is not a valid Bitcoin address.</source>
+        <translation>輸入的地址 %1 並不是有效的比特幣地址。</translation>
+    
+ERR
+The format specifier "%1" in the source text is missing its double quotes in the translation. In Bitcoin software interfaces, these quotes are typically preserved to highlight the specific address being referenced.
+
+Correct translation:
+輸入的地址 "%1" 並不是有效的比特幣地址。
+```
+
+<!-- cache_translation_check_zh_TW_e1369cc1c24f009c97e7112554fb638110affa5775dbca361aa99206dc0469cc -->
+```
+        <source>The entered address "%1" is already in the address book with label "%2".</source>
+        <translation>輸入的地址 %1 已經在地址簿中了，標籤為 "%2"。</translation>
+    
+ERR
+The translation is inconsistent with the source formatting. The double quotes around the first placeholder "%1" were removed, while they were kept for the second placeholder "%2". In software localization, it is important to maintain the delimiters used in the source text unless there is a specific linguistic reason to change them.
+
+Correct translation:
+輸入的地址 "%1" 已經在地址簿中了，標籤為 "%2"。
+```
+
+<!-- cache_translation_check_zh_TW_b47728db378378963b17d36b42f05bac982dc5bc71697c7d85cd3080d8d21567 -->
+```
+        <source>%1 is shutting down…</source>
+        <translation>%1正在關閉..</translation>
+    
+ERR
+The translation uses two standard periods (..) instead of an ellipsis (…) or the Chinese equivalent (…), and it lacks a space between the format specifier and the Chinese characters for better readability.
+
+Correct translation:
+%1 正在關閉…
 ```
 
 <!-- cache_translation_check_zh_TW_ede40189b4cca918ec555b08ca9cb5a3d9f8b3ed3852ea2add55e099292651bd -->
@@ -406,18 +706,59 @@ Correct translation:
         <source>When you click OK, %1 will begin to download and process the full %4 block chain (%2 GB) starting with the earliest transactions in %3 when %4 initially launched.</source>
         <translation>當你點擊「確認」，%1會開始下載，並從%3年最早的交易，處裡整個%4區塊鏈(大小:%2GB)</translation>
     
-ERR  
-There are several issues in the translation:
-
-1. "處裡" should be corrected to "處理".
-2. "%4" block chain is missing the "%4" in the translated "%4區塊鏈".
-3. The original sentence is more explicit about the process starting with the earliest transactions when %4 was launched, but this is not fully conveyed.
-4. There is an unnecessary colon in "(大小:%2GB)".
-5. There should be proper spacing around units: "%2 GB" instead of "%2GB".
-6. There is some loss in sequence (the order in which information is presented).
+ERR
+The translation contains a typo and is missing a part of the original sentence. "處裡" should be "處理" (to process). Additionally, the phrase "when %4 initially launched" and the second instance of the %4 format specifier are missing.
 
 Correct translation:
-當你點擊「確認」時，%1 會開始下載並處理完整的 %4 區塊鏈（%2 GB），從 %3 年 %4 剛啟動時的最早交易開始。
+當你點擊「確認」後，%1 將會開始下載並處理完整的 %4 區塊鏈 (%2 GB)，從 %3 年 %4 最初啟動時的最早交易開始。
+```
+
+<!-- cache_translation_check_zh_TW_6a9cb334c68e77c87a51c15ec678074e1c255ca7029ce73f44dea48b1d0bf660 -->
+```
+        <source>If you have chosen to limit block chain storage (pruning), the historical data must still be downloaded and processed, but will be deleted afterward to keep your disk usage low.</source>
+        <translation>如果你選擇要限制區塊鏈儲存空間的大小(修剪模式)，還是需要下載和處理過去的歷史資料被，但是之後就會把它刪掉來節省磁碟使用量。</translation>
+    
+ERR
+The Chinese translation contains a grammatical error: the character '被' (indicating passive voice) is placed incorrectly at the end of the clause "歷史資料被". Additionally, the phrasing can be slightly improved for better flow.
+
+Correct translation:
+如果你選擇限制區塊鏈儲存空間 (修剪模式)，還是需要下載並處理歷史資料，但之後會將其刪除以節省磁碟使用量。
+```
+
+<!-- cache_translation_check_zh_TW_f84f294b683b95b42ad955a6bf62174f068f75b9a03f91fa49c6a6d5bd1b9511 -->
+```
+        <source>Choose data directory</source>
+        <translation>指定數據質料目錄</translation>
+    
+ERR
+The translation uses the word "質料" (material/texture), which is incorrect in this context. The correct word for "data" in Traditional Chinese (zh_TW) is "資料". Additionally, "Choose" is more commonly translated as "選擇" in software interfaces.
+
+Correct translation:
+選擇資料目錄
+```
+
+<!-- cache_translation_check_zh_TW_131c421570f6c62bf3141903567ee92de27a319bfcf7ee4c34e05ec6a6a068eb -->
+```
+        <source>Error: Specified data directory "%1" cannot be created.</source>
+        <translation>錯誤: 無法新增指定的資料目錄: %1</translation>
+    
+ERR
+The translation changes the sentence structure and omits the double quotes around the placeholder %1, which were present in the source text to denote the directory path. Additionally, "建立" is a more standard translation for "created" than "新增" in this context.
+
+Correct translation:
+錯誤: 無法建立指定的資料目錄 "%1"。
+```
+
+<!-- cache_translation_check_zh_TW_0d2f970b5001d6e6c9152dd0dc3000f80ca626d9410b4a2c8bb72dd0bd0e8557 -->
+```
+        <source>Attempting to spend bitcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>使用還沒顯示出來的交易所影響到的 bitcoin 可能會不被網路所接受。</translation>
+    
+ERR
+The translation changes the meaning from a definite "will not be accepted" to a probabilistic "might not be accepted" (可能會). Additionally, "bitcoins" is usually translated as "比特幣" in Traditional Chinese.
+
+Correct translation:
+嘗試花費受到尚未顯示的交易影響之比特幣，將不被網路接受。
 ```
 
 <!-- cache_translation_check_zh_TW_4d4b509fc3e7878f360e1612d04397beb9716f2cb456587ef04d4d9fd76b89ed -->
@@ -426,14 +767,35 @@ Correct translation:
         <translation>%1 當前正在同步。它將從peers下載區塊頭和區塊，並對其進行驗證，直到到達區塊鏈的頂為止。</translation>
     
 ERR
-Problems:
-- The English word "peers" is left untranslated; in zh_TW it should be translated (e.g., 節點/對等節點).
-- "區塊頭" is more commonly written as "區塊標頭" or "區塊標頭/區塊頭" — use "區塊標頭" for clarity.
-- "直到到達區塊鏈的頂為止" is awkward; better phrased as "直到追上區塊鏈的最新區塊" or "直到到達區塊鏈的最新區段".
-- Minor wording/flow issues (use more natural Chinese word order).
+The translation contains untranslated English terms ("peers") and uses terminology that is not standard in Traditional Chinese Bitcoin contexts. Specifically, "peers" should be translated as "節點" or "同行節點", and "到達區塊鏈的頂" is a literal but awkward translation of "reaching the tip of the block chain".
 
-Corrected translation (zh_TW):
-%1 當前正在同步。它將從節點下載區塊標頭與區塊，並驗證它們，直到追上區塊鏈的最新區塊。
+Correct translation:
+%1 目前正在同步。它會從節點下載區塊標頭和區塊，並進行驗證，直到達到區塊鏈的末端為止。
+```
+
+<!-- cache_translation_check_zh_TW_52b768606b5e610dade68eeef3f1d1ccbcbb57d4f7a9c4d73d4c63e737636da2 -->
+```
+        <source>Maximum database cache size. Make sure you have enough RAM. A larger cache can contribute to faster sync, after which the benefit is less pronounced for most use cases. Lowering the cache size will reduce memory usage. Unused mempool memory is shared for this cache.</source>
+        <extracomment>Tooltip text for Options window setting that sets the size of the database cache. Explains the corresponding effects of increasing/decreasing this value.</extracomment>
+        <translation>最大数据库缓存大小。确保您的系统有足够的RAM。较大的缓存可以帮助加快同步速度，但在大多数使用场景中，同步完成后其优势不再显著。减少缓存大小将降低内存使用。未使用的内存池内存将共享给此缓存。</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) instead of Traditional Chinese (zh_TW). It uses Simplified characters (e.g., "数据库", "缓存", "显著", "内存") and terms common in Mainland China rather than Taiwan.
+
+Correct translation:
+最大資料庫快取大小。請確保您有足夠的 RAM。較大的快取有助於加快同步速度，在此之後，對大多數使用情境來說，其效益就不那麼明顯。降低快取大小將減少記憶體使用量。未使用的記憶體池 (mempool) 記憶體會與此快取共享。
+```
+
+<!-- cache_translation_check_zh_TW_9189cf2ad6bd98c66f206b7f3bf32e6d673c83f1334939fdb07255e3bdf6d6be -->
+```
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation>自动在路由器上打开比特币客户端端口。仅当您的路由器支持PCP或NAT-PMP并且已启用时才有效。外部端口可能是随机的。</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) instead of Traditional Chinese (zh_TW) as requested.
+
+Correct translation:
+自動在路由器上開啟比特幣用戶端埠。這只有在您的路由器支援並已啟用 PCP 或 NAT-PMP 時才有效。外部埠號可能是隨機的。
 ```
 
 <!-- cache_translation_check_zh_TW_0b9834d400a60bb990f28a778ea6cc4f10773247e6eff97c6877cf04602ec287 -->
@@ -442,14 +804,22 @@ Corrected translation (zh_TW):
         <translation>通过PCP或NA&amp;T-PMP映射端口。</translation>
     
 ERR
-The translation uses Simplified Chinese wording ("通过" instead of the Traditional Chinese "透過"). It also appends a period ("。") which is not present in the source. This does not follow proper 'zh_TW' norms.
+The translation is in Simplified Chinese (zh_CN) instead of Traditional Chinese (zh_TW) as requested. Additionally, it includes an unnecessary trailing period that is not present in the source text.
 
 Correct translation:
-透過PCP或NA&amp;T-PMP映射埠口
+使用 PCP 或 NA&amp;T-PMP 對應通訊埠
+```
 
-or
+<!-- cache_translation_check_zh_TW_123eee98ab4057466f7e1db163f3fc94a002dece86c3becc93a4cd52f07b1f9f -->
+```
+        <source>Font in the Overview tab: </source>
+        <translation>在概览标签页的字体:</translation>
+    
+ERR
+The translation uses Simplified Chinese characters ("概览", "标签页") instead of Traditional Chinese characters as used in Taiwan ('zh_TW'). In Taiwan, "Overview" is typically translated as "總覽" and "tab" as "分頁". Additionally, there is a missing space at the end of the translation to match the source.
 
-透過PCP或NA&amp;T-PMP對映埠口
+Correct translation:
+在總覽分頁的字體:
 ```
 
 <!-- cache_translation_check_zh_TW_57ef1d26d7e9066350b441fb94a842621b52e44ffb8991516ee52967d861c49e -->
@@ -458,22 +828,48 @@ or
         <translation>修剪區塊資料大小到</translation>
     
 ERR
-The translation omits the '&' character that marks the shortcut key in the original source ('&block'). The '&' should appear exactly once in the translation to preserve the shortcut functionality. Additionally, the word "storage" is not translated, which can cause confusion.
+The translation is missing the shortcut key indicator '&' which was present in the source text.
 
 Correct translation:
-修剪區塊&amp;儲存空間到
+修剪區塊資料大小到(&B)
 ```
 
-<!-- cache_translation_check_zh_TW_5bc352a607ec688484e3dacc1242ae192550a2ffa3cbafe32bfc5bf82e0e04c9 -->
+<!-- cache_translation_check_zh_TW_80e7f71ed5b519e5aff06fe423c3ffc4a34ed5228ab5e01b86d51120a255ca95 -->
 ```
-        <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
-        <translation>透過 SOCKS5 代理伺服器連線(預設代理伺服器 &amp;C):</translation>
+        <source>This allows you or a third party tool to communicate with the node through command-line and JSON-RPC commands.</source>
+        <extracomment>Tooltip text for Options window setting that enables the RPC server.</extracomment>
+        <translation>這允許作為使用者的你或第三方工具透過命令列和JSON-RPC命令列與節點通訊。</translation>
     
 ERR
-The position of "&amp;" is not consistent with the source. The English source uses "&amp;" before "Connect" to indicate the shortcut key should be on 'C'. In the translation, "&amp;" is appended after "預設代理伺服器" with a "C", which is not correct and does not provide a valid shortcut in Chinese.
+The translation contains a redundant word "命令列" (command-line) at the end of the phrase "JSON-RPC命令列", which makes the sentence awkward and repetitive as "命令列" was already mentioned earlier in the same sentence. "JSON-RPC" is a protocol, not a command line itself.
 
 Correct translation:
-透過 SOCKS5 代理伺服器(&amp;C)連線（預設代理伺服器）:
+這允許您或第三方工具透過命令列和 JSON-RPC 指令與節點通訊。
+```
+
+<!-- cache_translation_check_zh_TW_e018e4225e4b11dbb99d3880f179525986df6b926e209d302dbb39c08cbb6412 -->
+```
+        <source>Whether to set subtract fee from amount as default or not.</source>
+        <extracomment>Tooltip text for Options window setting that sets subtracting the fee from a sending amount as default.</extracomment>
+        <translation>是否金額中減去手續費當為預設行為</translation>
+    
+ERR
+The translation is missing the word "將" or "把" to make the sentence grammatically complete, and "當為" is slightly awkward in this context. A more natural phrasing would include "從" to indicate "subtract from".
+
+Correct translation:
+是否將「從金額中扣除手續費」設定為預設值。
+```
+
+<!-- cache_translation_check_zh_TW_3371c9f6672e03da06e2bf89a021409bf7f46d0701d9f4e717ce377f97c15935 -->
+```
+        <source>Show the icon in the system tray.</source>
+        <translation>在通知区域显示图标。</translation>
+    
+ERR
+The translation uses Simplified Chinese (zh_CN) terminology and characters instead of Traditional Chinese (zh_TW). Specifically, "通知区域" is more common in zh_CN, and "显示" and "图标" are used here in their simplified form characters (though they are identical in some contexts, the overall phrasing and character usage style lean towards zh_CN). In zh_TW (Taiwan), "系統匣" or "通知區域" is used, and "顯示" and "圖示" are the correct traditional characters.
+
+Correct translation:
+在系統匣顯示圖示。
 ```
 
 <!-- cache_translation_check_zh_TW_722ebb7c4c0dd489ffdda2da43e0ca4cbfaa2f989881657c00dac582cfd523de -->
@@ -482,12 +878,10 @@ Correct translation:
         <translation>显示通知区域图标(&amp;S)</translation>
     
 ERR
-The translation is in Simplified Chinese ('显示通知区域图标') instead of Traditional Chinese as indicated by 'zh_TW'. Additionally, "tray icon" is more accurately "系統列圖示" or "通知區域圖示" in Traditional Chinese for Taiwan. The format specifier "&" is handled correctly.
+The translation is in Simplified Chinese ('zh_CN') instead of Traditional Chinese ('zh_TW') as requested. In Traditional Chinese, "Show" is typically translated as "顯示" and "Tray icon" as "系統匣圖示" or "通知區域圖示".
 
 Correct translation:
-顯示系統列圖示(&amp;S)
-or
-顯示通知區域圖示(&amp;S)
+顯示系統匣圖示(&amp;S)
 ```
 
 <!-- cache_translation_check_zh_TW_c707573f6c0576ae0ef62a64c1b9c9488cf4adc3abc3ab30fb8e39cbd38cf757 -->
@@ -496,48 +890,63 @@ or
         <translation>使用個別的SOCKS＆5代理介由Tor onion服務到達peers：</translation>
     
 ERR
-The translation uses a full-width "＆" instead of the standard ampersand "&" for the shortcut key, which might break shortcut functionality. Additionally, "peers" should be translated to "節點" or "對等節點" for clarity in the Bitcoin context, and "到達" is awkward here. Also, "SOCKS5" should not have a space or different characters. 
+The translation contains several issues:
+1. The shortcut key marker '&amp;' has been replaced with a full-width '＆'. It must remain a standard half-width '&'.
+2. "peers" and "Tor onion" are left untranslated or poorly phrased. In Bitcoin context, "peers" is typically translated as "節點" (nodes) or "同行".
+3. "介由" is a typo/less common variant of "藉由" or "透過".
+4. "到達" (reach) is more naturally translated as "連線至" (connect to) in a networking context.
 
 Correct translation:
-使用個別的 SOCKS&5 代理透過 Tor onion 服務連接節點：
+使用個別的 SOCKS&5 代理伺服器透過 Tor onion 服務連線至節點：
 ```
 
-<!-- cache_translation_check_zh_TW_a07c6118a8d1e499f76e7c6670dd539d040212da28ec25d3a813231e56e9b6cf -->
+<!-- cache_translation_check_zh_TW_60c60a825056570eae169c829fc296dfa738ad5a5bd3513fddfc45685c1df7ad -->
 ```
-        <source>Compiled without external signing support (required for external signing)</source>
-        <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
-        <translation>軟體未編譯外接簽證功能所需的軟體庫(外接簽證必須有此功能)</translation>
-    
-ERR  
-The translation is inaccurate. "簽證" refers more to "visa" in Chinese, which is not appropriate for "signing" in the context of cryptocurrencies. The message is also somewhat convoluted compared to the English source. "外接簽署" or "外部簽署" is the more proper term for "external signing" in this context.
-
-Correct translation:
-未編譯外部簽署支援（外部簽署需要此支援）
-```
-
-<!-- cache_translation_check_zh_TW_62164728b6a7c177c1d04a3a116d70629560c46f15c563b6acbb30bb130c7c74 -->
-```
-        <source>Save…</source>
-        <translation>拯救...</translation>
+        <source>Client restart required to activate changes.</source>
+        <extracomment>Text explaining that the settings changed will not come into effect until the client is restarted.</extracomment>
+        <translation>需要重新開始客戶端軟體來讓改變生效。</translation>
     
 ERR
-The translation "拯救..." is incorrect: "拯救" means "rescue/save (someone)" rather than the UI action "Save". Also the source uses a single ellipsis character (…) not three periods. 
+The translation uses "重新開始" (to start over/begin again), which is less appropriate for a software application than "重新啟動" (to restart/reboot). Additionally, "改變" (change) is a bit literal; "設定" (settings/adjustments) or "變更" (changes) is more natural in this context.
 
 Correct translation:
-儲存…
-(or 保存… )
+需要重新啟動用戶端軟體以使變更生效。
 ```
 
-<!-- cache_translation_check_zh_TW_143c5bf15c6f6513c0f3979a13df178f72adab6725067ce4573e1feb1ce7ed5a -->
+<!-- cache_translation_check_zh_TW_8419704713d350da82e6ee885ed7cf6ea4631c1aa08747dd73a5cd93c901edc6 -->
 ```
-        <source>Cannot sign inputs while wallet is locked.</source>
-        <translation>钱包已锁定，无法签名交易输入项。</translation>
+        <source>This change would require a client restart.</source>
+        <translation>這個變更請求重新開始客戶端軟體。</translation>
     
 ERR
-The provided translation is in Simplified Chinese, but the target locale is zh_TW (Traditional Chinese). Also a more natural phrasing in Traditional Chinese is slightly different.
+The translation for "require" as "請求" (request) is incorrect in this context; it should be "需要" (needs/requires). Additionally, "重新啟動" is the standard technical term for "restart" in software contexts in Traditional Chinese, rather than "重新開始".
 
-Correct translation (Traditional Chinese):
-錢包已鎖定，無法為交易輸入簽名。
+Correct translation:
+這個變更需要重新啟動用戶端。
+```
+
+<!-- cache_translation_check_zh_TW_2615f975446f92b1dcc34086adbc30d66395e733f7d8a9ec400c163b1318951f -->
+```
+        <source>Failed to load transaction: %1</source>
+        <translation>無法載入交易：％1</translation>
+    
+ERR
+The format specifier '%1' has been replaced with a full-width character '％1'. In many programming contexts, format specifiers must use the standard half-width '%' character to be recognized correctly by the software.
+
+Correct translation:
+無法載入交易：%1
+```
+
+<!-- cache_translation_check_zh_TW_4d8316c6943e8eb902be085bfb0974776b037a98feb038d84a3afb37bf050a30 -->
+```
+        <source>Failed to sign transaction: %1</source>
+        <translation>無法簽名交易：％1</translation>
+    
+ERR
+The translation uses a full-width percent sign '％' instead of the standard half-width '%' used in the format specifier. This will prevent the software from correctly replacing the placeholder with the intended variable.
+
+Correct translation:
+無法簽名交易：%1
 ```
 
 <!-- cache_translation_check_zh_TW_1bb330048d59ad858b6ab445a9403ff587124bcf4f330492a641e4a78b32faa5 -->
@@ -545,90 +954,156 @@ Correct translation (Traditional Chinese):
         <source>Could not sign any more inputs.</source>
         <translation>無法再簽名 input</translation>
     
-ERR  
-The translation is inaccurate and partially untranslated. The word "input" should be translated to Chinese, and the full sentence should maintain the clarity of the original.
+ERR
+The translation uses the English word "input" instead of the standard Chinese (Taiwan) technical term for Bitcoin transactions. In the context of Bitcoin development and localization for zh_TW, "input" should be translated.
 
-Correct translation:  
-無法再對任何輸入進行簽名。
+Correct translation:
+無法再簽署任何輸入。
 ```
 
-<!-- cache_translation_check_zh_TW_8c6a6353aabc352572d5bbb1cf3882bbf358755e8790581aeb96ef7a841b3c2b -->
+<!-- cache_translation_check_zh_TW_1fafb70125728d68208e2864dce70a5ce6ceb92928bed2df98c1959d84d77fe7 -->
+```
+        <source>Signed %1 inputs, but more signatures are still required.</source>
+        <translation>已簽名％1 inputs，但仍需要更多簽名。</translation>
+    
+ERR
+The translation contains an incorrect format specifier and untranslated text. The half-width percent sign '%' should be used for the format specifier instead of the full-width '％', and 'inputs' should be translated into Traditional Chinese.
+
+Correct translation:
+已簽署 %1 個輸入，但仍需要更多簽名。
+```
+
+<!-- cache_translation_check_zh_TW_3f36d050ff17a707a586960e2695f55721a2fe19f9f0e9bb7cef3488d83ee57a -->
 ```
         <source>Transaction broadcast successfully! Transaction ID: %1</source>
-        <translation>交易成功廣播！交易 ID：%1</translation>
+        <translation>交易成功廣播！交易 ID：％1</translation>
     
 ERR
-The translation is understandable but slightly unnatural in Traditional Chinese (missing the aspect marker "已"). Also "交易 ID" is acceptable but "交易編號" is more natural. The format specifier %1 is preserved.
-
-Suggested correction:
-交易已成功廣播！交易 ID：%1
-```
-
-<!-- cache_translation_check_zh_TW_e563c47c5574373f46c25eceafcff5b99884b1da712030987cbc6a9af3e38783 -->
-```
-        <source>Partially Signed Transaction (Binary)</source>
-        <extracomment>Expanded name of the binary PSBT file format. See: BIP 174.</extracomment>
-        <translation>部分签名交易(二进制)</translation>
-    
-ERR
-The translation uses Simplified Chinese characters ("签") and ASCII parentheses instead of Traditional Chinese. For zh_TW it should use Traditional characters and full-width punctuation.
+The format specifier in the translation uses a full-width percent sign '％' instead of the standard half-width '%' used in the source. This will prevent the software from correctly substituting the transaction ID.
 
 Correct translation:
-部分簽名交易（二進制）
+交易成功廣播！交易 ID：%1
 ```
 
-<!-- cache_translation_check_zh_TW_495a3eb750ce02dd828c7147c55991c02cdd2f57f609c6e40b0d3e41fc6f8d30 -->
+<!-- cache_translation_check_zh_TW_d9968a0ce01d53e7de66a6c2c0c9bc4e79b336fac482a1a72c41266f3c24d01f -->
 ```
-        <source>Peer</source>
-        <extracomment>Title of Peers Table column which contains a unique number used to identify a connection.</extracomment>
-        <translation>同行</translation>
+        <source>Transaction broadcast failed: %1</source>
+        <translation>交易廣播失敗：％1</translation>
     
 ERR
-"同行" in Chinese (Traditional) usually means "people in the same profession" or "colleague" and is ambiguous in this context. For a Peers table column that contains a unique number identifying a connection, a clearer translation would be "節點" or "節點編號" (or "對等節點" if you want to be literal).
-
-Correct translation suggestions:
-節點
-or
-節點編號
-```
-
-<!-- cache_translation_check_zh_TW_37a2963be23a7645451da4cfcf75f7b0601648e58f991ce411f3fcb1d2ece7ad -->
-```
-        <source>Age</source>
-        <extracomment>Title of Peers Table column which indicates the duration (length of time) since the peer connection started.</extracomment>
-        <translation>连接时间</translation>
-    
-ERR
-The translation uses simplified Chinese characters ("连接时间" with 时间) rather than traditional Chinese as expected for zh_TW. Also in Taiwanese usage "connection" for a peer is better as "連線" than "連接".
+The translation uses a full-width percent sign '％' instead of the standard half-width format specifier '%'. Format specifiers like '%1' must be preserved exactly as they appear in the source to ensure they are correctly processed by the software.
 
 Correct translation:
-連線時間
+交易廣播失敗：%1
 ```
 
-<!-- cache_translation_check_zh_TW_e5cdceea29a99d3a6b4b668f54766d5ff7906cd206769253639daf8533964833 -->
+<!-- cache_translation_check_zh_TW_7738e3a0543017321794c6d8cd3ea74f4805131d2cce7e918c90fc5e9ddea40e -->
 ```
-        <source>Inbound</source>
-        <extracomment>An Inbound Connection from a Peer.</extracomment>
-        <translation>進來</translation>
+        <source>PSBT copied to clipboard.</source>
+        <translation>PSBT已復製到剪貼簿</translation>
     
 ERR
-The translation "進來" is colloquial and reads like a verb/imperative ("come in") rather than the noun/adjective used in this context (an inbound connection). No format specifiers are present, but the phrasing is inappropriate for technical UI text.
+The character '製' (meaning "to manufacture") is used instead of '制' (meaning "to control/copy") in the word for "copy". In Traditional Chinese (zh_TW), "copy" is correctly written as "複製". Additionally, the source sentence ends with a period, which is missing in the translation.
 
-Better translations (zh_TW):
-- If a short label: "傳入"
-- If more explicit: "傳入連線" or "入站連線"
+Correct translation:
+PSBT 已複製到剪貼簿。
 ```
 
-<!-- cache_translation_check_zh_TW_ded61863e23742eeaf06cf85d0d014f6af12827016ab9e5d2b92068fb52ad9ae -->
+<!-- cache_translation_check_zh_TW_42e2827078990da5a13c7ad8e4551c3ab5e079ff07ca080350038d2ff1c09894 -->
 ```
-        <source>Outbound</source>
-        <extracomment>An Outbound Connection to a Peer.</extracomment>
-        <translation>出去</translation>
+        <source>Sends %1 to %2</source>
+        <translation>将“%1”发送到“%2”</translation>
     
 ERR
-"出去" is colloquial and verb-like (meaning "go out"); it doesn't suit the technical label for an outbound connection. Also it doesn't convey "connection". Better translations for the context:
-- Single-label: "出站"
-- More explicit: "出站連線" or "傳出連線"
+The translation is in Simplified Chinese (zh_CN) characters rather than Traditional Chinese (zh_TW) characters as requested. Specifically, "将" (Simplified) should be "將" (Traditional).
+
+Correct translation:
+將 %1 發送到 %2
+```
+
+<!-- cache_translation_check_zh_TW_4852090d0476ca8406146954bff73520e90fa29ed91fb3c478deab30209245cc -->
+```
+        <source>Pays transaction fee: </source>
+        <translation>支付交易手續費:</translation>
+    
+ERR
+The translation is missing the trailing space present in the source text. In UI strings, trailing spaces are often used for padding between a label and its value. Additionally, in Traditional Chinese (zh_TW), it is standard to use a full-width colon.
+
+Correct translation:
+支付交易手續費： ⚖️ Or if sticking to half-width: 支付交易手續費:  (with trailing space)
+```
+
+<!-- cache_translation_check_zh_TW_488a31aac260773afaaa52303dc65dcf6d65dc211e76753ff912703f6143a292 -->
+```
+        <source>Transaction has %1 unsigned inputs.</source>
+        <translation>交易有％1個未簽名的inputs。</translation>
+    
+ERR
+The translation uses a full-width percent sign (％) instead of the standard half-width percent sign (%) for the format specifier. Additionally, "inputs" should ideally be translated into Chinese to match the rest of the sentence.
+
+Correct translation:
+交易有 %1 個未簽名的輸入。
+```
+
+<!-- cache_translation_check_zh_TW_8a63fdf6414c850dcdb072ad3b132cb72113474b8e84348bf40eb9053720a3fb -->
+```
+        <source>(But no wallet is loaded.)</source>
+        <translation>(但没有加载钱包。)</translation>
+    
+ERR
+The translation uses Simplified Chinese characters ('没有', '加载') instead of Traditional Chinese characters as required by the 'zh_TW' (Taiwan) locale. In Traditional Chinese, '加载' (load) is typically translated as '載入' or '載入中'.
+
+Correct translation:
+(但未載入錢包。)
+```
+
+<!-- cache_translation_check_zh_TW_fd8e796f836df963ffad6a80f465759fc26986d13b5c3c7cb4e9a695a3abc2a6 -->
+```
+        <source>Ping</source>
+        <extracomment>Title of Peers Table column which indicates the current latency of the connection with the peer.</extracomment>
+        <translation>Ping  時間</translation>
+    
+ERR
+The translation contains a double space between "Ping" and "時間", which violates the requirement to ensure no whitespace format issues exist. Additionally, while "Ping 時間" is descriptive, "Ping" or "連線延遲" is more standard for a column header.
+
+Correct translation:
+Ping 時間
+```
+
+<!-- cache_translation_check_zh_TW_a0a6a6a4a75decd8772f23fd537aad31df0bb7e8eaafaf449db6d5f6497728a2 -->
+```
+        <source>Error encoding URI into QR Code.</source>
+        <translation>把 URI 编码成二维码时发生错误。</translation>
+    
+ERR
+The translation uses Simplified Chinese terminology and characters instead of Traditional Chinese (Taiwan), which is required for the 'zh_TW' language code. Specifically, '编码' (encoding) should be '編碼', and '二维码' (QR code) is a term used in Mainland China; in Taiwan, 'QR Code' or '行動條碼' is more common.
+
+Correct translation:
+將 URI 編碼成 QR Code 時發生錯誤。
+```
+
+<!-- cache_translation_check_zh_TW_f5bfdcdcb7ee7e82f1e845aed94c229b05723e922b38d8a0edc45d2010103688 -->
+```
+        <source>General</source>
+        <translation>普通</translation>
+    
+ERR
+In software interfaces, the "General" settings tab or category is standardly translated as "一般" in Traditional Chinese. "普通" translates more accurately to "ordinary," "average," or "plain" and is not the appropriate term for this context.
+
+Correct translation:
+一般
+```
+
+<!-- cache_translation_check_zh_TW_0bd4a40aef77c420785b3db7adca923bff2905285f7e473a5e6d8b171a4d1d84 -->
+```
+        <source>Network addresses that your Bitcoin node is currently using to communicate with other nodes.</source>
+        <translation>您的比特币节点正在使用网络地址与其他节点联系。</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) characters rather than Traditional Chinese (zh_TW) characters as requested. Additionally, it is a statement rather than a noun phrase, missing the relative clause structure of the source.
+
+Correct translation:
+您的 Bitcoin 節點目前正用來與其他節點聯繫的網路位址。
 ```
 
 <!-- cache_translation_check_zh_TW_0c2f3b1ca9da511a52168e61c92498723b5b95d121bdf4b2cf14fd3c7c628264 -->
@@ -637,10 +1112,59 @@ ERR
         <translation>隐藏其他人的详细信息</translation>
     
 ERR
-The translation is problematic because it uses Simplified Chinese ("隐藏" instead of Traditional "隱藏") and translates "Peers" as "其他人" (other people), which is inaccurate in the context of Bitcoin where "Peers" refers specifically to network peers/connected nodes. Also, "Peers Detail" should be "對等節點詳細資訊" or similar, not "详细信息" (Simplified; Traditional would be "詳細資訊").
+The translation uses Simplified Chinese characters instead of Traditional Chinese characters, which is required for the language code 'zh_TW'. Additionally, "Peers" in the context of Bitcoin is more accurately translated as "節點".
 
 Correct translation:
-隱藏對等節點詳細資訊
+隱藏節點詳細資訊
+```
+
+<!-- cache_translation_check_zh_TW_1f8069cee4f3b89629d071c520f4e51582d9a7623ba28bf86b7526b980f1832d -->
+```
+        <source>The total number of addresses received from this peer that were dropped (not processed) due to rate-limiting.</source>
+        <extracomment>Tooltip text for the Addresses Rate-Limited field in the peer details area, which displays the total number of addresses received from this peer that were dropped (not processed) due to rate-limiting.</extracomment>
+        <translation>從這個節點接收後又因頻次限製而丟棄（未被處理）的位址總數。</translation>
+    
+ERR
+The translation uses the Simplified Chinese character '制' (in '限製') instead of the Traditional Chinese character '制' (in '限制'), though in this specific context '製' is technically a different character and '限制' is the standard term. More importantly, the translation uses '頻次' which is more common in Mainland China; '頻率' or simply '限流' is more common in Taiwan. Additionally, the character '位址' is correct for 'address' in Taiwan, but '限製' is a common typo/error for '限制'.
+
+Correct translation:
+從這個節點接收後，因流量限制而被丟棄 (未處理) 的位址總數。
+```
+
+<!-- cache_translation_check_zh_TW_935080d9ab81f21a7e9f1966afee42fd1d058fd8fdff31b381ad877437b03082 -->
+```
+        <source>Permissions</source>
+        <translation>允許</translation>
+    
+ERR
+The translation for "Permissions" as "允許" (Allow/Permit) is incorrect for a noun. In software contexts, "Permissions" refers to the set of rights or access levels.
+
+Correct translation:
+權限
+```
+
+<!-- cache_translation_check_zh_TW_27dead6436a543a561d3c729b71de1d46bdfefe1a6f6aec3487a75b710fff08b -->
+```
+        <source>The BIP324 session ID string in hex.</source>
+        <translation>十六进制格式的BIP324会话ID。</translation>
+    
+ERR
+The translation uses Simplified Chinese characters and terminology ("十六进制", "会话") instead of Traditional Chinese as used in Taiwan (zh_TW). In Traditional Chinese, "hex" is typically translated as "十六進位" and "session" as "工作階段" or "連線階段".
+
+Correct translation:
+以十六進位表示的 BIP324 工作階段 ID 字串。
+```
+
+<!-- cache_translation_check_zh_TW_70403f1a05ff1b72eafed4b6b99d7fb14569a54ec845acc165aaf3b4b42e3238 -->
+```
+        <source>High bandwidth BIP152 compact block relay: %1</source>
+        <translation>高頻寬BIP152密集區塊轉發: %1</translation>
+    
+ERR
+The term "compact block" in the context of Bitcoin BIP152 is standardly translated as "緊湊區塊" in Traditional Chinese. "密集區塊" (dense block) is inaccurate for this technical term.
+
+Correct translation:
+高頻寬 BIP152 緊湊區塊轉發: %1
 ```
 
 <!-- cache_translation_check_zh_TW_a1ba9805a5286411483f33f0326173d0b46b69ffd46746e19023aef7c1ce69a7 -->
@@ -649,10 +1173,10 @@ Correct translation:
         <translation>清主控台</translation>
     
 ERR
-The translation "清主控台" is inaccurate and omits a key component. The term "主控台" is occasionally used, but the standard translation for "console" in computing contexts in Traditional Chinese is "控制台". More importantly, the translation is missing the verb "clear" or "清除" (to clear or remove).
+The translation is overly abbreviated and sounds informal. In Traditional Chinese software interfaces, "清除" or "清空" is the standard verb for "Clear". "清主控台" should be expanded for better clarity and professionalism.
 
 Correct translation:
-清除控制台
+清除主控台
 ```
 
 <!-- cache_translation_check_zh_TW_1ca8ed8a2e47dc5a6d18b065ef33944f8035f511e427fcc7b734bb5d9951176a -->
@@ -661,15 +1185,11 @@ Correct translation:
         <extracomment>Explanatory text for a short-lived outbound peer connection that is used to test the aliveness of known addresses.</extracomment>
         <translation>Outbound Feeler: 用於短暫，暫時 測試地址</translation>
     
-ERR  
-The translation has several issues:
-1. It retains "Outbound Feeler" in English instead of localizing.
-2. The word order is unnatural; "用於短暫，暫時 測試地址" is awkward.
-3. The spacing is inconsistent, with an unnecessary space between "暫時" and "測試地址".
-4. "for testing addresses" is not clearly rendered.
+ERR
+The translation is grammatically awkward and redundant ("短暫" and "暫時" both mean short-lived/temporary, and their placement is disjointed). In the context of Bitcoin Core networking, "Feeler" and "Outbound" are often kept as technical terms or translated more precisely.
 
-Correct translation:  
-外部探測連線：短暫建立，用於測試地址是否可用
+Correct translation:
+Outbound Feeler: 存續時間短，用於測試位址的可用性
 ```
 
 <!-- cache_translation_check_zh_TW_294a6b69c8397bcbe46ef5b4e5f1d3feee9e2d9c3a4b4f1ce25d159ee9c964cc -->
@@ -679,10 +1199,10 @@ Correct translation:
         <translation>Outbound 地址取得: 用於短暫，暫時 測試地址</translation>
     
 ERR
-The translation is inaccurate. The phrase "Outbound 地址取得: 用於短暫，暫時 測試地址" introduces "測試地址" (test address) which is not present in the original. It also awkwardly redundantly states "短暫，暫時". The original means the connection is short-lived and is for soliciting (requesting) addresses.
+The translation is inaccurate and includes unnecessary punctuation. The phrase "用來索取位址" (used to solicit addresses) is more accurate than "暫時 測試地址" (temporarily test addresses). In a Bitcoin context, "Address" is typically translated as "位址" in Traditional Chinese (zh_TW) rather than "地址".
 
 Correct translation:
-Outbound 地址擷取：短暫用於請求地址
+出向位址獲取：短暫，用於索取位址
 ```
 
 <!-- cache_translation_check_zh_TW_943c7089a193923d037dd60dc1d4094137809d182c485eaeaf55e07687f2050e -->
@@ -691,7 +1211,7 @@ Outbound 地址擷取：短暫用於請求地址
         <translation>1 天&amp;</translation>
     
 ERR
-The ampersand (&) is misplaced in the translation. In the English source, it is used for the shortcut key on the letter "a" in "day". In the Traditional Chinese translation, the shortcut key should ideally be associated with a Chinese character or omitted if not applicable, but if included, it typically appears before or within the word the shortcut is associated with. Placing "&" at the end is not appropriate.
+The shortcut key marker '&' is placed after the character '天' rather than before it. In Chinese translations, the convention for keyboard shortcuts is to place the '&' followed by the letter/character in parentheses, or simply before the character if it's an English letter. However, in this specific case, the original text "1 d&ay" suggests the shortcut is 'a'. Following standard UI translation practices for Chinese, the shortcut should be preserved.
 
 Correct translation:
 1 天(&A)
@@ -703,7 +1223,7 @@ Correct translation:
         <translation>节点窗口 - [%1]</translation>
     
 ERR
-The translation uses the simplified Chinese character "节点" instead of the traditional Chinese "節點" for 'zh_TW'. 
+The translation uses Simplified Chinese characters ("节") and terminology ("窗口") instead of Traditional Chinese characters ("節") and terminology ("視窗") as requested by the 'zh_TW' code.
 
 Correct translation:
 節點視窗 - [%1]
@@ -728,21 +1248,55 @@ For more information on using this console, type %6.
 %7 警告：騙子們很狡猾，告訴用戶在這裡輸入命令，清空錢包。 不要在不完全了解一個命令的後果的情況下使用此控制台。%8</translation>
     
 ERR
-There are minor issues with spacing and style:
-
-1. In "使用%3 和 %4 以增加或減少字體大小。", there's a missing space before "%3" (should be "使用 %3 和 %4 以增加或減少字體大小。").
-2. The original intentionally keeps %7 and %8 not space-separated from the warning, but in the translation, a space is added after %7 and before "警告：" (should not have a space: "%7警告：...%8").
-3. The English says "stealing their wallet contents", but the translation says "清空錢包" which means "emptying the wallet". While related, "steal the wallet contents" is closer to "竊取他們錢包中的資產".
-4. There's a space before the last sentence: "不要在不完全了解一個命令的後果的情況下使用此控制台。", which in the translation is written as: " 不要在不完全了解一個命令的後果的情況下使用此控制台。" (the space before is unnecessary due to wrong wrapping).
+There are whitespace and punctuation issues in the translation. Specifically:
+1. In the third line, there is a missing space before "%3".
+2. In the last paragraph, a space was inserted after "%7", but the instructions/extracomment explicitly state that placeholders %7 and %8 should not be space-separated from the content.
+3. The translation for "stealing their wallet contents" as "清空錢包" (emptying the wallet) is acceptable but "竊取錢包內容物" is more accurate.
 
 Correct translation:
 歡迎來到 %1 RPC 控制台。
-使用上與下箭頭以進行歷史導航，%2 以清除螢幕。
-使用 %3 和 %4 以增加或減少字體大小。
-輸入 %5 以顯示可用命令的概覽。
-查看更多關於此控制台的資訊，輸入 %6。
+使用上與下箭頭來瀏覽歷史紀錄，%2 以清除螢幕。
+使用 %3 與 %4 來增加或減少字型大小。
+輸入 %5 以取得可用指令的概覽。
+若要取得更多關於使用此控制台的資訊，輸入 %6。
 
-%7警告：騙子已經行動，誘導用戶在此輸入命令，竊取他們錢包中的資產。不要在未完全了解命令後果的情況下使用此控制台。%8
+%7警告：詐騙者一直很活躍，要求使用者在這裡輸入指令以竊取其錢包內容。在沒有完全了解指令後果的情況下，請勿使用此控制台。%8
+```
+
+<!-- cache_translation_check_zh_TW_0b3b3af4650d33e99b1d342a24ed4dc6f10b1492d6bddc9b83ce8b4485e94a60 -->
+```
+        <source>Ban for</source>
+        <translation>禁止連線</translation>
+    
+ERR
+The translation "禁止連線" means "Prohibit connection" or "Ban connection", which describes the action but omits the meaning of the word "for" in this context. In the Bitcoin software UI, "Ban for" is typically a label followed by a duration (e.g., 1 day, 1 week), so the translation should reflect that it refers to the duration or period of the ban. Additionally, "封鎖" is the more standard term for "Ban" in Traditional Chinese (zh_TW) software contexts.
+
+Correct translation:
+封鎖期限
+```
+
+<!-- cache_translation_check_zh_TW_b7c46f518ad07d6443947bf54a0fa27051c29152fb5a6e894080099cb691e625 -->
+```
+        <source>An optional label to associate with the new receiving address (used by you to identify an invoice).  It is also attached to the payment request.</source>
+        <translation>與新的接收地址相關聯的可選的標籤（您用於標識收據）。它也附在支付支付請求上。</translation>
+    
+ERR
+The translation contains a redundant repetition of the word "支付" (payment) and uses slightly unnatural phrasing for "optional label".
+
+Correct translation:
+一個可選的標籤，用來與新的接收地址關聯（您用來識別收據）。它也會附加在支付請求上。
+```
+
+<!-- cache_translation_check_zh_TW_bf899019c3cac9970e49f67237f343336436f382f43ab4037fab2d1ab4f801dd -->
+```
+        <source>Copy &amp;label</source>
+        <translation>复制和标签</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) instead of Traditional Chinese (zh_TW) as requested. Furthermore, the translation of "label" is literal and incorrect in this context; "和" (and) was used instead of treating the ampersand as a shortcut key indicator.
+
+Correct translation:
+複製標籤(&L)
 ```
 
 <!-- cache_translation_check_zh_TW_a6e9d6abcc4431799e73f806331c34124d5e3cf2ac80d23af4c298249010502b -->
@@ -751,10 +1305,10 @@ Correct translation:
         <translation>复制和数量</translation>
     
 ERR
-The translation is inaccurate. The original intends for "&amp;amount" to mean "Copy amount" with the ampersand indicating the shortcut key. In zh_TW, the word "复制" means "copy," but "和数量" means "and quantity," which is a mistranslation. Also, the shortcut marker (&) should be preserved as a single & in the appropriate place.
+The translation is in Simplified Chinese (zh_CN) instead of Traditional Chinese (zh_TW), and it incorrectly translates the shortcut indicator '&' as the word "and" (和). In UI translations, the '&' symbol should be preserved to indicate the keyboard shortcut.
 
 Correct translation:
-複製數量(&A)
+複製金額(&A)
 ```
 
 <!-- cache_translation_check_zh_TW_f055bdc888c085b59867e54c8f5c51f0963e6a2eca3356fe585a48549a987172 -->
@@ -763,14 +1317,72 @@ Correct translation:
         <translation>產生一個原生隔離見證Segwit 位址 (BIP-173) 。 被部分舊版錢包不支援。</translation>
     
 ERR
-The translation introduces spacing and punctuation issues, and could be rephrased for clarity and smoothness. Specifically:
-- "Segwit" should not have a space before "位址".
-- The sentence "被部分舊版錢包不支援。" lacks a subject and is not smooth in Chinese.
-- The period placement is incorrect (there is a space before it).
-- For 'zh_TW', "地址" is also more common than "位址", though both are used.
+The translation contains unnecessary spaces and is grammatically awkward. In Traditional Chinese, "Segwit" is redundant when "隔離見證" is used, or should at least be formatted correctly. Additionally, the phrase "被部分舊版錢包不支援" is an unnatural passive construction; "部分舊型錢包並不支援" is more idiomatic.
 
 Correct translation:
-產生一個原生隔離見證地址（BIP-173）。部分舊版錢包不支援此地址。
+產生一個原生隔離見證 (BIP-173) 位址。部分舊型錢包不支援。
+```
+
+<!-- cache_translation_check_zh_TW_ed8c8da5fc967e39bead4f02d66e09dcf786bdebb57759a15b41984a40b4fcbf -->
+```
+        <source>Label</source>
+        <translation>標記:</translation>
+    
+ERR
+The translation includes a trailing colon ':' which is not present in the source text. In Bitcoin software UI contexts, "Label" is typically translated without the colon unless the source includes it.
+
+Correct translation:
+標記
+```
+
+<!-- cache_translation_check_zh_TW_d9eaf452f5098134eac180fcda99670d36ea9b71c31246c9916e3e8db8a640d7 -->
+```
+        <source>Requested</source>
+        <translation>要求金額</translation>
+    
+ERR
+The translation adds the word "amount" (金額), which is not present in the source text. In the context of Bitcoin software (like Bitcoin Core), "Requested" often refers to a status or a timestamp in a list of payment requests, not necessarily just the amount.
+
+Correct translation:
+已要求
+```
+
+<!-- cache_translation_check_zh_TW_8008045d2be96efd5a50ccd73d062d66454cbcc90ab69aaa6eaa40553d8b0c34 -->
+```
+        <source>Insufficient funds!</source>
+        <translation>累計金額不足！</translation>
+    
+ERR
+The translation "累計金額不足！" (Accumulated amount insufficient) is not the standard or most accurate translation for "Insufficient funds!" in the context of a Bitcoin wallet. The more common and natural translation is "餘額不足！" (Balance insufficient) or "資金不足！".
+
+Correct translation:
+餘額不足！
+```
+
+<!-- cache_translation_check_zh_TW_e4079e28ced2a31c5cd45858ad968288f613986dd93679a9d3f83cef844e9a62 -->
+```
+        <source>Sign on device</source>
+        <extracomment>"device" usually means a hardware wallet.</extracomment>
+        <translation>在設備上簽證</translation>
+    
+ERR
+The translation uses "簽證", which means "visa" (travel document), instead of the correct term for cryptographic signing. In Traditional Chinese (Taiwan), "sign" in a technical context should be "簽署" or "簽名". Additionally, "裝置" is the more common term for "device" in Taiwan than "設備".
+
+Correct translation:
+在裝置上簽署
+```
+
+<!-- cache_translation_check_zh_TW_49122c9fa18f92ecade88f4641cb8c2e638774b22649cfdec91372f079cf5be8 -->
+```
+        <source>Set external signer script path in Options -&gt; Wallet</source>
+        <extracomment>"External signer" means using devices such as hardware wallets.</extracomment>
+        <translation>在 選項 -&gt; 錢包 中設定外部簽名器腳本路徑 </translation>
+    
+ERR
+There is a trailing space at the end of the translation string.
+
+Correct translation:
+在 選項 -> 錢包 中設定外部簽名器腳本路徑
 ```
 
 <!-- cache_translation_check_zh_TW_0b3c2d4282c1375625b4d354071e361cd11a7aa624ddb9f68e2aa130e26c0a3c -->
@@ -779,13 +1391,47 @@ Correct translation:
         <translation>Cr＆eate未簽名</translation>
     
 ERR
-The translation is problematic for several reasons:
-1. The English word "Cr&eate" is not properly translated into Chinese. Only "未簽名" (unsigned) is localized, but "Create" remains in English.
-2. The ampersand (&) for the shortcut key is incorrectly replaced by the full-width "＆", which should not be used. The standard half-width ampersand (&) must be used.
-3. There is a missing space or separator. In Chinese, options are usually translated fully, not half English/half Chinese.
+The translation is problematic because it partially keeps the English word "Create" in a broken format and uses a full-width ampersand (＆) instead of the standard shortcut key indicator (&). In Traditional Chinese UI translations, it is standard to translate the verb and place the shortcut key in parentheses.
 
 Correct translation:
-建立未簽名(&C)
+建立未簽名(&E)
+```
+
+<!-- cache_translation_check_zh_TW_2ba198594139744adfea286781bcfa1736b3054646249ed8be686620ff5660d8 -->
+```
+        <source>To review recipient list click "Show Details…"</source>
+        <translation>要查看收件人列表，請單擊"顯示詳細訊息..."</translation>
+    
+ERR
+The translation uses terminology more common in Mainland China ("單擊" for click, "訊息" for details/message in this context, and "列表" is acceptable but "清單" is more common in Taiwan). In traditional Chinese for Taiwan (zh_TW), "點擊" or "按一下" is preferred over "單擊", and "詳細資料" is the standard translation for "Details". Also, the punctuation should use full-width characters in a Chinese context.
+
+Correct translation:
+要查看收件人清單，請點擊「顯示詳細資料...」
+```
+
+<!-- cache_translation_check_zh_TW_e563c47c5574373f46c25eceafcff5b99884b1da712030987cbc6a9af3e38783 -->
+```
+        <source>Partially Signed Transaction (Binary)</source>
+        <extracomment>Expanded name of the binary PSBT file format. See: BIP 174.</extracomment>
+        <translation>部分签名交易(二进制)</translation>
+    
+ERR
+The translation uses Simplified Chinese characters instead of Traditional Chinese characters as required for 'zh_TW'. Also, the parentheses and the content inside them are in a different style/spacing convention than typical Traditional Chinese localization.
+
+Correct translation:
+部分簽名交易 (二進制)
+```
+
+<!-- cache_translation_check_zh_TW_04b15e5241764dd8906de7cd8013a454ad83b6697ca7493c5157d5c504a9b8f2 -->
+```
+        <source>You can increase the fee later (signals Replace-By-Fee, BIP-125).</source>
+        <translation>你可以之後再提高手續費(有 BIP-125 手續費追加的標記)</translation>
+    
+ERR
+The translation is missing the trailing period at the end of the sentence. Additionally, while descriptive, "手續費追加" (fee addition) is a less standard translation for the technical term "Replace-By-Fee" compared to "以手續費取代".
+
+Correct translation:
+你可以之後再提高手續費 (標記 Replace-By-Fee，BIP-125)。
 ```
 
 <!-- cache_translation_check_zh_TW_070c587fbb4ed6d06fe006cbce66dae59f8480ae60cbd56f50e09c90fb4e8ad5 -->
@@ -795,10 +1441,59 @@ Correct translation:
         <translation>請檢查您的交易提案。這將產生部分簽名的比特幣交易（PSBT），您可以儲存或複製該交易，然後使用簽名。離線%1錢包或與PSBT相容的硬體錢包。</translation>
     
 ERR
-The translation is problematic. The phrase "然後使用簽名。離線%1錢包或與PSBT相容的硬體錢包。" is not smooth and splits the clause inappropriately, making the instructions unclear. The period after "簽名" incorrectly breaks the sentence. The expression "使用簽名" is also inaccurate; it should specify "用...簽名".
+The translation contains grammatical errors and punctuation issues in the second half. "然後使用簽名。離線%1錢包..." translates to "then use signature. Offline %1 wallet...", which breaks the sentence incorrectly and loses the meaning of "sign with [a wallet]".
 
 Correct translation:
-請檢查您的交易提案。這將產生一筆部分簽名的比特幣交易（PSBT），您可以將其儲存或複製，然後使用例如離線的 %1 錢包或支援 PSBT 的硬體錢包來簽名。
+請檢查您的交易提案。這將產生一個部分簽名的比特幣交易 (PSBT)，您可以儲存或複製它，然後使用例如離線 %1 錢包或與 PSBT 相容的硬體錢包進行簽名。
+```
+
+<!-- cache_translation_check_zh_TW_b1ac6bc39f0962b4024cdcd1410b09d2fdbdf0128b71f2c4dcef033d056a9676 -->
+```
+        <source>%1 from wallet '%2'</source>
+        <translation>%1 来自钱包 “%2”</translation>
+    
+ERR
+The translation uses Simplified Chinese characters instead of Traditional Chinese characters as required by the 'zh_TW' language code.
+
+Correct translation:
+%1 來自錢包 '%2'
+```
+
+<!-- cache_translation_check_zh_TW_e513ff6da4a6c494fdfbe8cef69deed099580f7bf2638afba55c72da97de2383 -->
+```
+        <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Bitcoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
+        <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can send their transaction or create a PSBT. This string is displayed when both private keys and PSBT controls are enabled.</extracomment>
+        <translation>請務必仔細檢查您的交易。 你可以創建並發送這筆交易；也可以創建一個“部分簽名比特幣交易(PSBT)”，它可以被保存下來或被複製出去，然後就可以對它進行簽名，比如用離線%1錢包，或 是用相容PSBT的硬體錢包。</translation>
+    
+ERR
+The translation contains punctuation and spacing issues. Specifically, it uses a mix of full-width and half-width punctuation (the semicolon and parentheses), and contains an unnecessary space in "或 是". Furthermore, while "你可以" is understandable, "您可" or "您可以" would be more consistent with the initial "您的".
+
+Correct translation:
+請檢查您的交易。您可以建立並傳送這筆交易，或是建立一個部分簽名比特幣交易 (PSBT)；您可以儲存或複製 PSBT，然後使用例如離線 %1 錢包或相容 PSBT 的硬體錢包進行簽名。
+```
+
+<!-- cache_translation_check_zh_TW_62837073dca4122d75552208aa4f894ecc9c81a1f0218c440e793f077727c62a -->
+```
+        <source>Transaction creation failed!</source>
+        <translation>製造交易失敗了！</translation>
+    
+ERR
+The translation uses "製造" (zhì zào), which typically means "to manufacture" or "to fabricate" (often used for physical goods). In the context of software and Bitcoin, "建立" (jiàn lì) or "產生" (chǎn shēng) is much more natural for "creation."
+
+Correct translation:
+交易建立失敗！
+```
+
+<!-- cache_translation_check_zh_TW_0c83d0e3ac570516673187fcb2f821365ccd2825fa6a52f7f2ebd8d49f1e4e40 -->
+```
+        <source>A fee higher than %1 is considered an absurdly high fee.</source>
+        <translation>高於 %1 的手續費會被認為是不合理。</translation>
+    
+ERR
+The translation is incomplete and slightly awkward. It misses the emphasis on "high fee" at the end of the sentence, making it sound unfinished ("considered unreasonable" instead of "considered an absurdly high fee").
+
+Correct translation:
+高於 %1 的手續費被認為是不合理的高額手續費。
 ```
 
 <!-- cache_translation_check_zh_TW_28469b6bdd232ba1dcfd58e7d6028a052f194701749fcdb0f461d138b0475935 -->
@@ -807,10 +1502,10 @@ Correct translation:
         <translation>將支付發送到的比特幣地址給</translation>
     
 ERR
-The translation is awkward and contains an unnecessary "給" at the end, which makes the sentence ungrammatical in Chinese. The "給" suggests "to" but its placement is wrong.
+The Chinese grammar is incorrect. The word '給' (to/give) at the end of the sentence is redundant and makes the sentence grammatically unnatural in this context.
 
 Correct translation:
-要將付款發送到的比特幣地址
+將支付發送到的比特幣位址
 ```
 
 <!-- cache_translation_check_zh_TW_c4afd5664afb878d2cb259f540d2d2512ea08d6ae681bbfd11a5ae6412d4ad3b -->
@@ -819,10 +1514,22 @@ Correct translation:
         <translation>發</translation>
     
 ERR
-The translation "發" is incomplete and incorrect. The English word "Send" in the context of Bitcoin typically means "to send funds" or "to make a payment", and should be translated as "發送" or "發送資金" in Traditional Chinese (zh_TW). The single character "發" is insufficient and may be confusing.
+The translation "發" is incomplete for the context of a "Send" button or action in software. While it means "send" or "emit", the standard and more professional term used in Bitcoin software and general user interfaces for "Send" is "發送".
 
 Correct translation:
 發送
+```
+
+<!-- cache_translation_check_zh_TW_551764811c890c1f7afde6c6311cd85cecbefb3b68aca53dc43106596e412b74 -->
+```
+        <source>The Bitcoin address to sign the message with</source>
+        <translation>用來簽名訊息的 比特幣地址</translation>
+    
+ERR
+There is an unnecessary space between "用來簽名訊息的" and "比特幣地址". Additionally, "簽署" is more commonly used than "簽名" for signing messages in a technical context in Traditional Chinese.
+
+Correct translation:
+用來簽署訊息的比特幣地址
 ```
 
 <!-- cache_translation_check_zh_TW_7122d22b42a374647712e18883ce57d0104df59b111d6a92097fde2a0828eaba -->
@@ -831,10 +1538,132 @@ Correct translation:
         <translation>复制当前签名至剪贴板</translation>
     
 ERR
-The translation uses Simplified Chinese characters (e.g., 复制, 当前, 签名, 剪贴板) but the target locale is zh_TW (Traditional Chinese). No format specifiers are involved.
+The translation uses Simplified Chinese characters (SC) instead of Traditional Chinese characters (TC) as required for the language code 'zh_TW'. 
 
-Correct translation (Traditional Chinese):
-將目前的簽名複製到剪貼簿
+Correct translation:
+複製目前的簽名至剪貼簿
+```
+
+<!-- cache_translation_check_zh_TW_5db40eb74599aaee862e1ef41129b5fbe6bf17b55d9f6572cd0d19a29526bc29 -->
+```
+        <source>The signed message to verify</source>
+        <translation>簽名訊息進行驗證</translation>
+    
+ERR
+The translation is slightly unnatural and lacks a preposition or verb structure to properly convey "to verify". It reads more like "Signed message perform verification".
+
+Correct translation:
+要驗證的已簽署訊息
+```
+
+<!-- cache_translation_check_zh_TW_e08733906b74b87d0f37164b5c83b001c904df8444c61ce85a5b30b98bef9cec -->
+```
+        <source>kB/s</source>
+        <translation>千字節/秒</translation>
+    
+ERR
+In the context of computing and Bitcoin, "kB/s" is typically translated in Traditional Chinese (zh_TW) using the standard unit "千位元組" or simply kept as "kB/s". The term "字節" is a Simplified Chinese (zh_CN) usage; the Traditional Chinese equivalent is "位元組".
+
+Correct translation:
+千位元組/秒
+```
+
+<!-- cache_translation_check_zh_TW_79df02c35cb72a0a6a5c02236a59eea522d8bd6bf66ccfd7751b5be26dd82b1e -->
+```
+        <source>0/unconfirmed, in memory pool</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents an unconfirmed transaction that is in the memory pool.</extracomment>
+        <translation>0/未確認，在內存池中</translation>
+    
+ERR
+The term "內存池" is a technical term primarily used in Mainland China (Simplified Chinese). In Taiwan (Traditional Chinese 'zh_TW'), "memory" is typically translated as "記憶體".
+
+Correct translation:
+0/未確認，在記憶體池中
+```
+
+<!-- cache_translation_check_zh_TW_1939d9c49a90d943fd4c1fe6b5e45ffde3f69cf119118846f21052e46c382dde -->
+```
+        <source>0/unconfirmed, not in memory pool</source>
+        <extracomment>Text explaining the current status of a transaction, shown in the status field of the details window for this transaction. This status represents an unconfirmed transaction that is not in the memory pool.</extracomment>
+        <translation>0/未確認，不在內存池中</translation>
+    
+ERR
+The term "內存池" is a technical term used in Mainland China (Simplified Chinese). In Traditional Chinese (Taiwan, zh_TW), the term for "memory" is "記憶體". Therefore, "memory pool" should be translated as "記憶體池".
+
+Correct translation:
+0/未確認，不在記憶體池中
+```
+
+<!-- cache_translation_check_zh_TW_77be0d2ef14500f3374d2c2be526108990e6eab6457a3e56aa9ea27af6f71e26 -->
+```
+        <source>Generated</source>
+        <translation>生產出來</translation>
+    
+ERR
+The translation "生產出來" is somewhat colloquial and sounds more like "manufactured". In the context of software and Bitcoin, "Generated" is more appropriately translated as "已生成".
+
+Correct translation:
+已生成
+```
+
+<!-- cache_translation_check_zh_TW_904016abd6d3f4276d44be85f11cb9f6157287fe81bb63f00492a369ea299dd1 -->
+```
+        <source>Transaction virtual size</source>
+        <translation>交易擬真大小</translation>
+    
+ERR
+The term "virtual size" in the context of Bitcoin (vsize) is standardly translated as "虛擬大小" in Traditional Chinese (zh_TW). The word "擬真" (meaning "realistic" or "simulated") is incorrect in this technical context.
+
+Correct translation:
+交易虛擬大小
+```
+
+<!-- cache_translation_check_zh_TW_b50997900caf9bbfcecf9870dda45a80859793bfc118b53c3ef91cfb61b11801 -->
+```
+        <source>%1 (Certificate was not verified)</source>
+        <translation>%1（证书未被验证）</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) characters rather than Traditional Chinese (zh_TW) characters as requested. Specifically, "证书" (zh_CN) should be "憑證" (zh_TW), and "验证" (zh_CN) should be "驗證" (zh_TW).
+
+Correct translation:
+%1 (憑證未經驗證)
+```
+
+<!-- cache_translation_check_zh_TW_ed8c8da5fc967e39bead4f02d66e09dcf786bdebb57759a15b41984a40b4fcbf -->
+```
+        <source>Label</source>
+        <translation>標記:</translation>
+    
+ERR
+The translation includes a trailing colon ':' which is not present in the source text. In Bitcoin software UI contexts, "Label" is typically translated without the colon unless the source includes it.
+
+Correct translation:
+標記
+```
+
+<!-- cache_translation_check_zh_TW_b2f97fca712a6c1ca75a0a28daaed261161c64f5e2a059b06da7259ebc54acfd -->
+```
+        <source>Sent to</source>
+        <translation>付款</translation>
+    
+ERR
+The translation "付款" means "payment" or "to pay", which does not accurately reflect the source "Sent to" (meaning the recipient or destination of a transaction). In the context of Bitcoin software, "Sent to" is typically translated to indicate the destination of the funds.
+
+Correct translation:
+發送到
+```
+
+<!-- cache_translation_check_zh_TW_b2f97fca712a6c1ca75a0a28daaed261161c64f5e2a059b06da7259ebc54acfd -->
+```
+        <source>Sent to</source>
+        <translation>付款</translation>
+    
+ERR
+The translation "付款" means "payment" or "to pay", which does not accurately reflect the source "Sent to" (meaning the recipient or destination of a transaction). In the context of Bitcoin software, "Sent to" is typically translated to indicate the destination of the funds.
+
+Correct translation:
+發送到
 ```
 
 <!-- cache_translation_check_zh_TW_3d126a78589dc7f62fd207a4bd0d3bcc8585630d77ddf615b918ee2d22169413 -->
@@ -843,10 +1672,22 @@ Correct translation (Traditional Chinese):
         <translation>范围...</translation>
     
 ERR
-The translation uses simplified Chinese characters '范围' instead of traditional Chinese characters used in 'zh_TW'. The ellipsis is also three dots instead of the proper ellipsis character (…).
+The translation uses Simplified Chinese characters instead of the Traditional Chinese characters required for the 'zh_TW' (Taiwan) locale. The ellipsis character used is also standard period marks rather than the single character ellipsis.
 
 Correct translation:
 範圍…
+```
+
+<!-- cache_translation_check_zh_TW_bf899019c3cac9970e49f67237f343336436f382f43ab4037fab2d1ab4f801dd -->
+```
+        <source>Copy &amp;label</source>
+        <translation>复制和标签</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) instead of Traditional Chinese (zh_TW) as requested. Furthermore, the translation of "label" is literal and incorrect in this context; "和" (and) was used instead of treating the ampersand as a shortcut key indicator.
+
+Correct translation:
+複製標籤(&L)
 ```
 
 <!-- cache_translation_check_zh_TW_a6e9d6abcc4431799e73f806331c34124d5e3cf2ac80d23af4c298249010502b -->
@@ -855,10 +1696,10 @@ Correct translation:
         <translation>复制和数量</translation>
     
 ERR
-The translation is inaccurate. The original intends for "&amp;amount" to mean "Copy amount" with the ampersand indicating the shortcut key. In zh_TW, the word "复制" means "copy," but "和数量" means "and quantity," which is a mistranslation. Also, the shortcut marker (&) should be preserved as a single & in the appropriate place.
+The translation is in Simplified Chinese (zh_CN) instead of Traditional Chinese (zh_TW), and it incorrectly translates the shortcut indicator '&' as the word "and" (和). In UI translations, the '&' symbol should be preserved to indicate the keyboard shortcut.
 
 Correct translation:
-複製數量(&A)
+複製金額(&A)
 ```
 
 <!-- cache_translation_check_zh_TW_6b6c6afbece467e2f128637730075f08ff6aa1ca33439b5a4828df89267fe6bc -->
@@ -867,10 +1708,10 @@ Correct translation:
         <translation>複製交易(原始)</translation>
     
 ERR
-The '&amp;' (shortcut key indicator) from the source is missing in the translation. According to UI conventions, the '&' should be present exactly once in the translation, ideally before the shortcut character.
+The translation is missing the shortcut key indicator '&' which was present in the source text. In 'zh_TW' localizations for Bitcoin software, the convention for shortcut keys is usually to place it before the opening parenthesis of the suffix.
 
 Correct translation:
-複製(&R)原始交易
+複製原始交易(&R)
 ```
 
 <!-- cache_translation_check_zh_TW_ad178d236f7dfa4296cb4b108c9b445b440409cbd25c6a94f7a622b8b998490f -->
@@ -879,7 +1720,7 @@ Correct translation:
         <translation>複製完整交易明細</translation>
     
 ERR
-The ampersand (&) indicating the shortcut key in the source ("&details") is missing in the translation. The translation should include a single ampersand (&) somewhere in the phrase.
+The translation is missing the shortcut key indicator '&' which was present in the source text.
 
 Correct translation:
 複製完整交易明細(&D)
@@ -891,22 +1732,65 @@ Correct translation:
         <translation>顯示交易明細</translation>
     
 ERR
-The translation omits the '&' which is used to indicate the shortcut key in the English source string. The translation should include exactly one '&' character to preserve shortcut functionality.
+The shortcut key indicator '&' is missing in the translation. The instructions require that if '&' exists in the source, it must exist exactly once in the translation.
 
 Correct translation:
-&顯示交易明細
+顯示交易明細(&S)
 ```
 
-<!-- cache_translation_check_zh_TW_e21c2f6290c8559f0fc42bb3c784a6a516fa3fe5c8b77d55fb3a33fc91446925 -->
+<!-- cache_translation_check_zh_TW_a5ec2339e35ef405ab65eaf0e56ac471a04688c0d0a27174d3764505ac1525dd -->
 ```
-        <source>Increase transaction &amp;fee</source>
-        <translation>增加礦工費(&amp;fee)</translation>
+        <source>Comma separated file</source>
+        <extracomment>Expanded name of the CSV file format. See: https://en.wikipedia.org/wiki/Comma-separated_values.</extracomment>
+        <translation>逗號分隔文件</translation>
     
 ERR
-The shortcut key (&amp;) is supposed to mark a shortcut letter in the translation, as in the source, but in the translation it is not attached to a suitable letter. Also, "fee" is untranslated, which is not standard in 'zh_TW'. The correct translation should use a Chinese translation and put (&amp;f) after an appropriate character.
+The term '文件' (wénjiàn) is more commonly used in Mainland China (zh_CN). In Taiwan (zh_TW), '檔案' (dàng'àn) is the standard term for a computer "file".
 
 Correct translation:
-增加交易手續費(&amp;f)
+逗號分隔檔案
+```
+
+<!-- cache_translation_check_zh_TW_ed8c8da5fc967e39bead4f02d66e09dcf786bdebb57759a15b41984a40b4fcbf -->
+```
+        <source>Label</source>
+        <translation>標記:</translation>
+    
+ERR
+The translation includes a trailing colon ':' which is not present in the source text. In Bitcoin software UI contexts, "Label" is typically translated without the colon unless the source includes it.
+
+Correct translation:
+標記
+```
+
+<!-- cache_translation_check_zh_TW_30b4181a3cd5022074eb9506368bc4298f7bd816239839219642081fddd49c74 -->
+```
+        <source>No wallet has been loaded.
+Go to File &gt; Open Wallet to load a wallet.
+- OR -</source>
+        <translation>尚未載入任何錢包。
+轉到檔案 &gt; 開啟錢包以載入錢包.
+- OR -</translation>
+    
+ERR
+The translation contains a few issues: it uses an inconsistent full-width period/half-width period at the end of the second line, and the "OR" is left in English instead of using the traditional Chinese equivalent which is standard in localized interfaces.
+
+Correct translation:
+尚未載入任何錢包。
+前往 檔案 > 開啟錢包 以載入錢包。
+- 或 -
+```
+
+<!-- cache_translation_check_zh_TW_f461dcb502dd79cd08cf8598633282a35a89ba25b5a4daad8cbe342e7f57bf0d -->
+```
+        <source>Partially Signed Transaction (*.psbt)</source>
+        <translation>簽名部分的交易（* .psbt）</translation>
+    
+ERR
+The translation is slightly inaccurate and contains an unnecessary space in the file extension. In the context of Bitcoin, "Partially Signed Transaction" is standardly translated as "部分簽名的交易". Additionally, there should not be a space between the asterisk and the period in "(*.psbt)".
+
+Correct translation:
+部分簽名的交易 (*.psbt)
 ```
 
 <!-- cache_translation_check_zh_TW_3ba16199c9006d7b84ce0bc3f0c7a21c031e3fe1481b67a88fc397bdc40c9ba1 -->
@@ -915,10 +1799,58 @@ Correct translation:
         <translation>%s的硬碟空間可能無法容納區塊文件。 大約要在這個目錄中儲存 %uGB的數據。</translation>
     
 ERR
-There is a spacing issue: there should be a space between "%u" and "GB" in the Chinese text (" %uGB" should be " %u GB"), and there should not be a space at the start of the second sentence. Also, "數據" is more common in Mainland China; "資料" is the more standard term for 'data' in Taiwanese usage.
+The translation contains minor punctuation and spacing issues. Specifically, there is an unnecessary space after the first period, and the space between the format specifier '%u' and the unit 'GB' from the source is missing.
 
 Correct translation:
-%s 的硬碟空間可能無法容納區塊檔案。大約有 %u GB 的資料會儲存在此目錄中。
+%s 的磁碟空間可能無法容納區塊檔案。大約 %u GB 的資料將儲存在此目錄中。
+```
+
+<!-- cache_translation_check_zh_TW_fdc91619f65bba2b959fc0e46d543492ef1a01eaf79962f4d04cb024f360b160 -->
+```
+        <source>Error starting/committing db txn for wallet transactions removal process</source>
+        <translation>错误：启动/提交数据库事务时出错，导致钱包交易移除过程失败。</translation>
+    
+ERR
+The translation uses Simplified Chinese characters instead of Traditional Chinese characters as required by the 'zh_TW' (Taiwan) language code.
+
+Correct translation:
+啟動/提交資料庫事務時出錯，導致錢包交易移除程序失敗。
+```
+
+<!-- cache_translation_check_zh_TW_14761333ca91564245e396d5a8ed31f646798edfef712e2aa397e59c210d9963 -->
+```
+        <source>Error: Dumpfile format record is incorrect. Got "%s", expected "format".</source>
+        <translation>錯誤: 轉儲文件格式不正確。 得到是"%s"，而預期本應得到的是 "format"。</translation>
+    
+ERR
+The translation uses terminology and grammar more common in Mainland China (zh_CN) rather than Taiwan (zh_TW). In zh_TW, "Dumpfile" is typically translated as "傾印檔案" rather than "轉儲文件". Additionally, there is an unnecessary space after the full-width period, and the phrase "得到是" is grammatically incomplete.
+
+Correct translation:
+錯誤：傾印檔案格式記錄不正確。取得的是 "%s"，而預期應為 "format"。
+```
+
+<!-- cache_translation_check_zh_TW_8e752781b507e8a51aa82bff6a96c6edd256069c9129e09494df4341598316ef -->
+```
+        <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation>錯誤: 轉儲文件版本不支援。 這個版本的 bitcoin-wallet 只支援版本為 1 的轉儲檔案。 得到的轉儲文件版本是%s</translation>
+    
+ERR
+The translation uses the term "轉儲文件" (zhuǎn chǔ wén jiàn), which is more commonly used in Mainland China (Simplified Chinese). In Taiwan (Traditional Chinese 'zh_TW'), the term "傾印檔案" is more standard for "dumpfile". Additionally, there is an inconsistent use of "文件" and "檔案" within the same sentence, and a missing space before the format specifier "%s".
+
+Correct translation:
+錯誤：不支援傾印檔案版本。此版本的 bitcoin-wallet 僅支援版本 1 的傾印檔案。得到的傾印檔案版本為 %s
+```
+
+<!-- cache_translation_check_zh_TW_8e9a6473e784e1ad5d08a655b55e0c5bb2defe673a3a86edd6688a2951f2f3ef -->
+```
+        <source>Invalid value detected for '-wallet' or '-nowallet'. '-wallet' requires a string value, while '-nowallet' accepts only '1' to disable all wallets</source>
+        <translation>检测到‘-wallet’或‘-nowallet’的无效值。‘-wallet’需要一个字符串值，而‘-nowallet’只能接受‘1’来禁用所有钱包。</translation>
+    
+ERR
+The translation uses Simplified Chinese characters and terminology instead of Traditional Chinese as required by the 'zh_TW' language code.
+
+Correct translation:
+偵測到 '-wallet' 或 '-nowallet' 的無效值。'-wallet' 需要字串值，而 '-nowallet' 只接受 '1' 以停用所有錢包。
 ```
 
 <!-- cache_translation_check_zh_TW_78a3727db7b2c58049bfbe79faf011a77473fd002f75700a072bffc43d41b2bc -->
@@ -927,10 +1859,34 @@ Correct translation:
         <translation>提供多數TOR路由綁定位址。 對自動建立的Tor服務用%s</translation>
     
 ERR
-The translation is inaccurate, contains errors, and shows some spacing issues. The phrase "多數TOR路由綁定位址" is not a natural or correct way to say "more than one onion bind address" in Traditional Chinese. Also, the use of "多數" suggests "the majority" instead of "more than one". "TOR路由綁定" is awkward, and "Tor onion service" should be translated more precisely. There is also an irregular space before "對".
+The translation uses "onion" and "TOR路由" interchangeably and has some grammatical and terminology issues. "Onion" in this context refers to the Tor onion service addresses, and "onion bind address" specifically refers to the binding addresses for these services. Also, there is a stray space at the beginning of the second sentence.
 
 Correct translation:
-提供了多個 Onioin 綁定位址。將使用 %s 作為自動建立的 Tor onion 服務。
+提供超過一個 onion 綁定位址。自動建立的 Tor onion 服務將使用 %s。
+```
+
+<!-- cache_translation_check_zh_TW_af6d8ea2c42eb2eaca6f799fa1ac860a91de9c51d4abc78633c0346d6afe0eac -->
+```
+        <source>No dump file provided. To use createfromdump, -dumpfile=&lt;filename&gt; must be provided.</source>
+        <translation>沒有提供轉儲文件。 要使用 createfromdump ，必須提供 -dumpfile=&lt;filename&gt;。</translation>
+    
+ERR
+The translation uses "轉儲文件" for "dump file", which is a term more commonly used in Mainland China (Simplified Chinese). In Traditional Chinese (Taiwan, zh_TW), "dump file" is usually translated as "傾印檔案". Additionally, there is an extra space before the second sentence and around "createfromdump".
+
+Correct translation:
+未提供傾印檔案。若要使用 createfromdump，必須提供 -dumpfile=<filename>。
+```
+
+<!-- cache_translation_check_zh_TW_6155a5986ac8a1a1fed35026a9693a6e15b9d6a74cc2fb148881f321a2785133 -->
+```
+        <source>No dump file provided. To use dump, -dumpfile=&lt;filename&gt; must be provided.</source>
+        <translation>沒有提供轉儲文件。 要使用 dump ，必須提供 -dumpfile=&lt;filename&gt;。</translation>
+    
+ERR
+The translation uses the term '轉儲文件', which is common in Mainland China (Simplified Chinese), but '傾印檔案' is the standard terminology for "dump file" in Taiwan (Traditional Chinese). Additionally, there is an unnecessary space after the first period and around the word 'dump'.
+
+Correct translation:
+沒有提供傾印檔案。要使用傾印功能，必須提供 -dumpfile=<filename>。
 ```
 
 <!-- cache_translation_check_zh_TW_b2748d507d3501efcb27a9dc3c017f4e3942a47e29cf9d49883d558fecf50b5d -->
@@ -939,7 +1895,7 @@ Correct translation:
         <translation>修剪模式与 -reindex-chainstate 不兼容。请进行一次完整的 -reindex 。</translation>
     
 ERR
-The translation is accurate in meaning but has minor whitespace and style issues (extra space before the final punctuation; use Traditional Chinese phrasing). 
+The translation uses Simplified Chinese characters ("与", "为", "进") instead of the Traditional Chinese characters ("與", "為", "進") expected for the 'zh_TW' (Taiwan) locale.
 
 Correct translation:
 修剪模式與 -reindex-chainstate 不相容。請改用完整的 -reindex。
@@ -951,10 +1907,10 @@ Correct translation:
         <translation>這是您支付的最高交易手續費（除了正常手續費外），優先於避免部分花費而不是定期選取幣。</translation>
     
 ERR
-The translation is inaccurate and unclear, especially regarding "prioritize partial spend avoidance over regular coin selection." The translated phrase "優先於避免部分花費而不是定期選取幣" is grammatically incorrect and does not convey the intended meaning.
+The translation of "regular" as "定期" (meaning periodic/scheduled) is incorrect in this context. It should be "一般" or "常規" (meaning standard/normal). Additionally, the sentence structure for "prioritize... over..." is awkward and slightly confusing in the provided translation.
 
 Correct translation:
-這是您為了優先避免部分花費（而不是常規的找零選擇）所支付的最高額外交易手續費（除了正常手續費之外）。
+這是您支付的最高交易手續費（除了正常手續費外），用以優先考慮避免部分花費，而非一般選幣方式。
 ```
 
 <!-- cache_translation_check_zh_TW_06fc7719f8288b3c700585e6609d703acdefc824d1a9c8c92dfd029efe4a88c6 -->
@@ -963,11 +1919,58 @@ Correct translation:
         <translation>不支援的類別限定日誌等級 %1$s=%2$s 。 预期参数 %1$s=&lt;category&gt;:&lt;loglevel&gt;。 有效的類別: %3$s 。有效的日誌等級: %4$s 。</translation>
     
 ERR
-The translation mixes Simplified and Traditional Chinese: "预期参数" is Simplified; in Traditional Chinese, it should be "預期參數". Also, there are inconsistent spaces before periods and after punctuation, which is not standard in Chinese typographic conventions.
-The % format specifiers are correctly carried over, but punctuation and character set need correction.
+The translation uses Simplified Chinese characters ("预期参数") instead of Traditional Chinese characters ("預期參數") which is required for 'zh_TW'. There are also unnecessary spaces before the full-width periods.
 
 Correct translation:
-不支援的類別限定日誌等級 %1$s=%2$s。預期參數 %1$s=&lt;category&gt;:&lt;loglevel&gt;。有效的類別：%3$s。有效的日誌等級：%4$s。
+不支援的類別特定日誌等級 %1$s=%2$s。預期格式為 %1$s=<category>:<loglevel>。有效的類別: %3$s。有效的日誌等級: %4$s。
+```
+
+<!-- cache_translation_check_zh_TW_1aaa2f64fba83ca48f62837460d7e21eea338533c94b097a950571d174685bc2 -->
+```
+        <source>Cannot obtain a lock on directory %s. %s is probably already running.</source>
+        <translation>无法锁定目录 %s。%s 可能已经在运行。</translation>
+    
+ERR
+The translation is in Simplified Chinese ('zh_CN') instead of Traditional Chinese ('zh_TW') as requested. In Traditional Chinese, "无法" is usually "無法", and "目录" is usually "目錄".
+
+Correct translation:
+無法鎖定目錄 %s。%s 可能正在執行。
+```
+
+<!-- cache_translation_check_zh_TW_75371fd2333ab3596958acbdb51fd0420a00af5cce47b7b6249e5115cab5d530 -->
+```
+        <source>Cannot set -peerblockfilters without -blockfilterindex.</source>
+        <translation>在沒有設定-blockfilterindex 則無法使用 -peerblockfilters</translation>
+    
+ERR
+The translation has a missing space between the English parameter and the Chinese text, and the sentence structure is slightly awkward. It translates "without" as "if not setting... then cannot use", but it misses the explicit connection between the two parameters as stated in the source.
+
+Correct translation:
+若未設定 -blockfilterindex，則無法設定 -peerblockfilters。
+```
+
+<!-- cache_translation_check_zh_TW_4fe7d564140fa26b7e7edb29027aeb23622240f0cabc5b33e40f3db4f0e7df7a -->
+```
+        <source>Cannot provide specific connections and have addrman find outgoing connections at the same time.</source>
+        <translation>在使用地址管理器(addrman)寻找出站连接时，无法同时提供特定的连接。</translation>
+    
+ERR
+The translation uses Simplified Chinese characters instead of Traditional Chinese characters, which is incorrect for the 'zh_TW' (Taiwan) locale. Additionally, the phrasing could be more natural for the target locale.
+
+Correct translation:
+在使用位址管理員 (addrman) 尋找外連連線時，無法同時提供特定的連線。
+```
+
+<!-- cache_translation_check_zh_TW_950f471d722746c530b4412304810c79fa7a40eaa5576bf40389d5e75ca78f4a -->
+```
+        <source>Error loading %s: External signer wallet being loaded without external signer support compiled</source>
+        <translation>加载%s时出错: 编译时未启用外部签名器支持，却仍然试图加载外部签名器钱包</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) characters rather than Traditional Chinese (zh_TW) characters as requested. Additionally, the spacing around the colon differs from standard Chinese typography.
+
+Correct translation:
+載入 %s 時出錯：在未編譯外部簽署器支援的情況下，正在載入外部簽署器錢包
 ```
 
 <!-- cache_translation_check_zh_TW_0a696b724672f20400c4c96f18eb4f655927bcc2a16d6d28ffa35cccdc7d8939 -->
@@ -976,10 +1979,22 @@ Correct translation:
         <translation>互不兼容的选项：-dnsseed=1 已被显式指定，但 -onlynet 禁止了IPv4/IPv6 连接</translation>
     
 ERR
-The translation uses Simplified Chinese wording ("兼容", "显式指定", "连接") and has a minor spacing issue before "连接". The target locale zh_TW requires Traditional Chinese.
+The translation uses Simplified Chinese characters ("选项", "显式") instead of Traditional Chinese characters ("選項", "顯式") which are used in 'zh_TW' (Taiwan).
 
-Correct translation (Traditional Chinese, no extra spaces, preserving option names):
-不相容的選項：-dnsseed=1 已明確指定，但 -onlynet 禁止連線到 IPv4/IPv6
+Correct translation:
+互不相容的選項：-dnsseed=1 已被明確指定，但 -onlynet 禁止 IPv4/IPv6 連線
+```
+
+<!-- cache_translation_check_zh_TW_b78f949e8f4c077f96e73a5649ef8b5a8efddac2710a731d10f9d1cb66eb2844 -->
+```
+        <source>Invalid amount for %s=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
+        <translation>%s=&lt;amount&gt;: '%s' 中指定了非法的金额 (手续费必须至少达到最小转发费率(minrelay fee) %s 以避免交易卡着发不出去)</translation>
+    
+ERR
+The translation is provided in Simplified Chinese (zh_CN) characters instead of Traditional Chinese (zh_TW) characters as requested. Additionally, the phrasing "卡着发不出去" is quite colloquial.
+
+Correct translation:
+%s=<amount> 的金額無效: '%s' (金額必須至少為最小轉發手續費 (minrelay fee) %s 以避免交易卡住)
 ```
 
 <!-- cache_translation_check_zh_TW_90fda8f6932228d174e380ed1c7df7be7ae98d00ff1e42c56766226c0f6bb80a -->
@@ -988,34 +2003,10 @@ Correct translation (Traditional Chinese, no extra spaces, preserving option nam
         <translation>选项“-checkpoints”已设置，但检查点已被移除。该选项不再生效。 </translation>
     
 ERR
-The translation is in Simplified Chinese (e.g., "选项", "检查点", "该选项") and contains a trailing space before the closing tag. For zh_TW it should use Traditional Chinese characters and no extra whitespace.
+The translation is in Simplified Chinese (zh_CN) rather than Traditional Chinese (zh_TW) as requested. Additionally, there is a trailing space at the end of the translation.
 
 Correct translation:
-選項「-checkpoints」已設定，但檢查點已被移除。該選項不再生效。
-```
-
-<!-- cache_translation_check_zh_TW_d98c1c5ff4f9281f53e84a4630bcb6846485c6649d59a458ddb76aab8f1f87d3 -->
-```
-        <source>Option '-maxorphantx' is set but no longer has any effect (see release notes). Please remove it from your configuration.</source>
-        <translation>选项“-maxorphantx”已设置，但已不再生效（参见发行说明）。请从您的配置中移除该选项。 </translation>
-    
-ERR
-The provided translation is in Simplified Chinese (zh_CN) rather than Traditional Chinese (zh_TW). There's also an extra trailing space before the closing tag. 
-
-Correct Traditional Chinese (zh_TW) translation:
-選項「-maxorphantx」已設定，但已不再生效（請參閱發行說明）。請從您的設定中移除該選項。
-```
-
-<!-- cache_translation_check_zh_TW_bf17affb0acd6713b9f6b2167f99961dbd921c30426c9f4b5f40c6272c0fa297 -->
-```
-        <source>Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.</source>
-        <translation>选项“-datacarrier”或“-datacarriersize”已设置，但已标记为弃用。它们将在未来版本中移除。 </translation>
-    
-ERR
-The translation is in Simplified Chinese (uses 选项, 设置 etc.) but the target locale is zh_TW (Traditional Chinese). There's also a trailing space before the closing tag.
-
-Correct Traditional Chinese translation:
-選項「-datacarrier」或「-datacarriersize」已設定，但已被標記為棄用。它們將在未來版本中移除。
+選項「-checkpoints」已設定，但檢查點已被移除。此選項不再生效。
 ```
 
 <!-- cache_translation_check_zh_TW_fc44b6029c7dbac45686cc79b705b8c897f4c829f9f3f5057b0a8d2f641e4b4e -->
@@ -1024,10 +2015,22 @@ Correct Traditional Chinese translation:
         <translation>修剪：上次钱包同步超出了已修剪的数据范围。您需要执行“-reindex”（对于已修剪节点，需要重新下载整个区块链）。 </translation>
     
 ERR
-The translation is accurate in meaning but uses Simplified Chinese wording (e.g., 钱包, 下载, 执行) and thus is not appropriate for zh_TW (Traditional Chinese). Also there's an extra trailing space before the end of the string.
+The translation provided is in Simplified Chinese (zh_CN) instead of the requested Traditional Chinese (zh_TW).
 
-Correct Traditional Chinese translation:
-修剪：上次錢包同步超出了已修剪的資料範圍。您需要執行“-reindex”（對於已修剪的節點，需重新下載整個區塊鏈）。
+Correct translation:
+修剪：上次錢包同步超過了已修剪的資料範圍。您需要執行 -reindex (若是修剪節點，請重新下載整個區塊鏈)
+```
+
+<!-- cache_translation_check_zh_TW_b15a93ea58ca7043cb82eb05fbafa2f8fc0720bc3913e8b99ad82cd30fcb4ae0 -->
+```
+        <source>default wallet</source>
+        <translation>默认钱包</translation>
+    
+ERR
+The translation uses Simplified Chinese characters and terminology ("默认") instead of Traditional Chinese characters and terminology ("預設") as used in Taiwan (zh_TW).
+
+Correct translation:
+預設錢包
 ```
 
 <!-- cache_translation_check_zh_TW_eb968025b9240f22a7d27bd23c989a8fc00fef0ee8185f551adcffb7a2452904 -->
@@ -1036,22 +2039,46 @@ Correct Traditional Chinese translation:
         <translation>“-paytxfee”已弃用，并将在 v31.0 中完全移除。 </translation>
     
 ERR
-This is mostly correct in meaning, but the text uses a Simplified Chinese character ("弃用") instead of the Traditional Chinese form expected for zh_TW. There's also an extra trailing space at the end.
-
-Correct translation (Traditional Chinese, no trailing space):
-“-paytxfee” 已棄用，並將在 v31.0 中完全移除。
-```
-
-<!-- cache_translation_check_zh_TW_a83d5bb13328c9c6bb05b9d617458f5b2f83d05560a3710195dfb9a046cf5907 -->
-```
-        <source>Cannot add WalletDescriptor to a non-descriptor wallet</source>
-        <translation>无法将钱包描述符添加到非描述符钱包。</translation>
-    
-ERR
-The translation uses Simplified Chinese characters ("无法", "钱包") but the target locale is zh_TW (Traditional Chinese). Also a slightly more natural phrasing in Traditional Chinese is recommended.
+The translation is in Simplified Chinese (zh_CN) instead of Traditional Chinese (zh_TW) as requested. Additionally, there is a stray space at the end of the translation.
 
 Correct translation:
-無法將錢包描述符新增到非描述符錢包。
+「-paytxfee」已棄用，並將在 v31.0 中完全移除。
+```
+
+<!-- cache_translation_check_zh_TW_212c3af68e90ae4a89c435e0fc3e60da04c4a65ab354a77723b7b670db8e3821 -->
+```
+        <source>Can't spend unconfirmed version %d pre-selected input with a version 3 tx</source>
+        <translation>无法使用版本3交易花费未确认版本1%d的预选输入。</translation>
+    
+ERR
+The translation is in Simplified Chinese ('zh_CN') rather than the requested Traditional Chinese ('zh_TW'). Additionally, it incorrectly inserts a '1' before the format specifier '%d' which is not present in the source.
+
+Correct translation:
+無法使用版本 3 交易花費未確認版本 %d 的預選輸入。
+```
+
+<!-- cache_translation_check_zh_TW_f9b38ca6e6771122f4b6e345f173a375d4a3ec7c96cf90ece271263bcdc608a8 -->
+```
+        <source>Can't spend unconfirmed version 3 pre-selected input with a version %d tx</source>
+        <translation>无法使用版本1%d交易花费未确认版本3的预选输入。</translation>
+    
+ERR
+The translation is written in Simplified Chinese (zh_CN) characters ("无法", "版本") instead of Traditional Chinese (zh_TW) characters as requested. Additionally, there is a formatting error where the digit '1' was incorrectly inserted before the format specifier '%d'.
+
+Correct translation:
+無法使用版本 %d 交易花費未確認版本 3 的預選輸入。
+```
+
+<!-- cache_translation_check_zh_TW_94a8b7b7502ca8cc475caa0d0d503726e24fc4812a1c375d621d2b45922344a0 -->
+```
+        <source>Cannot write to directory '%s'; check permissions.</source>
+        <translation>无法写入目录“%s”；请检查权限。</translation>
+    
+ERR
+The translation uses Simplified Chinese characters (SC) instead of Traditional Chinese characters (TC), which is required for the 'zh_TW' (Taiwan) locale.
+
+Correct translation:
+無法寫入目錄「%s」；請檢查權限。
 ```
 
 <!-- cache_translation_check_zh_TW_7fabb939c240330d61596107c938b130818e021e55701b8aa2132a1ecc76b3c8 -->
@@ -1060,10 +2087,10 @@ Correct translation:
         <translation>无法生成脚本公钥（缓存为空）</translation>
     
 ERR
-The translation is in Simplified Chinese ("无法生成脚本公钥（缓存为空）"). For zh_TW (Traditional Chinese used in Taiwan), characters/terms should be in Traditional script and some localized terms adjusted.
+The translation is in Simplified Chinese (zh_CN) characters rather than Traditional Chinese (zh_TW) characters as requested.
 
-Correct translation (Traditional Chinese, zh_TW):
-無法生成 scriptPubKeys（快取為空）
+Correct translation:
+無法產生 scriptPubKeys (快取是空的)
 ```
 
 <!-- cache_translation_check_zh_TW_1d81021bd0f5e08586ea41fd27117444164eb2a4027d5da2c4780a799bdfbce5 -->
@@ -1072,22 +2099,46 @@ Correct translation (Traditional Chinese, zh_TW):
         <translation>无法补充脚本公钥</translation>
     
 ERR
-The translation uses Simplified Chinese characters ("无法补充脚本公钥") but the target locale is zh_TW (Traditional Chinese). Also consider keeping the technical term "scriptPubKeys" as-is or make it clear; the given wording is otherwise acceptable.
-
-Correct translation (Traditional Chinese):
-無法補充腳本公鑰
-```
-
-<!-- cache_translation_check_zh_TW_93b18ed6dfa8e0974d7760da9f746c5542c32230f9b0d191edc4bd4a05153ead -->
-```
-        <source>Error loading %s: Private keys can only be disabled during creation</source>
-        <translation>載入 %s 時發生錯誤: 只有在造新錢包時能夠指定不允許私鑰</translation>
-    
-ERR
-The translation is understandable but inaccurate and contains awkward phrasing. Specifically, "造新錢包" is less common than "新建錢包" or "建立錢包", and "指定不允許私鑰" is unclear—it should directly convey "can only disable private keys during creation".
+The translation is in Simplified Chinese (zh_CN) characters rather than Traditional Chinese (zh_TW) characters as requested.
 
 Correct translation:
-載入 %s 時發生錯誤：只有在建立錢包時才能停用私鑰
+無法補充 scriptPubKeys
+```
+
+<!-- cache_translation_check_zh_TW_f0b9bb5dcf51f041fbcba14071a232e06aeee74ed85128d9ab3e9c4d93a26fe2 -->
+```
+        <source>Dump file %s does not exist.</source>
+        <translation>轉儲文件 %s 不存在</translation>
+    
+ERR
+The translation uses the term '文件' (wénjiàn) for 'file', which is primarily used in Mainland China. In Taiwan (zh_TW), the term '檔案' (dàng'àn) is used. Additionally, '轉儲' (zhuǎnchǔ) is more common in Mainland China; '傾印' (qīngyìn) is the standard technical term for 'dump' in Taiwan. The translation is also missing the closing period.
+
+Correct translation:
+傾印檔案 %s 不存在。
+```
+
+<!-- cache_translation_check_zh_TW_3352505d7671689baa1f3ff34eedf3092dc10ac4dc30fae01524ce79e58e35cf -->
+```
+        <source>Error loading databases</source>
+        <translation>错误：加载数据库失败。</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) instead of Traditional Chinese (zh_TW), and it uses Simplified Chinese terminology (数据库 vs 資料庫). It also adds extra punctuation and words not present in the source.
+
+Correct translation:
+載入資料庫錯誤
+```
+
+<!-- cache_translation_check_zh_TW_a05575fc97b4296db52f0218f4446bc7139e226cab3017e2ad64fd9bcc6f0bda -->
+```
+        <source>Error opening coins database</source>
+        <translation>错误：打开币数据库失败。</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) characters rather than Traditional Chinese (zh_TW) characters as requested. Additionally, it adds extra words ("Error:" and "failed") not present in the source.
+
+Correct translation:
+開啟錢幣資料庫發生錯誤
 ```
 
 <!-- cache_translation_check_zh_TW_ba4b31fafa76b68ee6fefc8e8b4a7ed3d6fda25fd4bbf4dacf08fa9950112849 -->
@@ -1096,10 +2147,10 @@ Correct translation:
         <translation>錯誤：轉存檔案的校驗和不匹配。%s計算得%s</translation>
     
 ERR
-The translation omits "expected %s" and mistranslates the format. It also lacks proper punctuation and ordering for clarity.
+The translation is problematic because it omits the "expected %s" part of the source string and merges the two format specifiers into a single, confusing clause.
 
 Correct translation:
-錯誤：轉存檔案的校驗和不符。計算值為 %s，預期為 %s
+錯誤：傾印檔案的檢查碼不符。計算結果為 %s，預期為 %s
 ```
 
 <!-- cache_translation_check_zh_TW_8ee0dfeba4ed3cda8cac10a98de3f474eb3de760eb406eae940799fc9fe863d3 -->
@@ -1108,10 +2159,10 @@ Correct translation:
         <translation>错误：并非所有地址簿记录都已迁移</translation>
     
 ERR
-The translation uses Simplified Chinese characters (e.g., "错误", "并非", "迁移") but the target locale is zh_TW (Traditional Chinese). No format specifiers to worry about and spacing is fine.
+The translation is in Simplified Chinese (zh_CN) characters rather than the requested Traditional Chinese (zh_TW) characters. "错误" should be "錯誤", and "记录" should be "紀錄".
 
-Correct Traditional Chinese translation:
-錯誤：並非所有地址簿記錄都已遷移
+Correct translation:
+錯誤：並非所有地址簿紀錄都已遷移
 ```
 
 <!-- cache_translation_check_zh_TW_dcfdd6315d1b3193dbb4dc6ce9abd68a96a5907b5b641337cb01c5fe62fb1489 -->
@@ -1120,10 +2171,34 @@ Correct Traditional Chinese translation:
         <translation>错误：并非所有交易记录都已迁移</translation>
     
 ERR
-The translation uses Simplified Chinese characters (e.g., 错误、并非、记录、迁移) but the target locale is zh_TW (Traditional Chinese). No format specifiers are involved.
+The translation is in Simplified Chinese (zh_CN) instead of Traditional Chinese (zh_TW) as requested.
 
-Correct Traditional Chinese translation:
-錯誤：並非所有交易記錄都已遷移
+Correct translation:
+錯誤：並非所有交易紀錄都已遷移
+```
+
+<!-- cache_translation_check_zh_TW_55242a60b9c1938480d68ca5ded2a646abc15c529bbf163c6d3f2d51bbc31950 -->
+```
+        <source>Error: Unable to parse version %u as a uint32_t</source>
+        <translation>錯誤：無法把版本號%u作為unit32_t解析</translation>
+    
+ERR
+The translation contains a typo in the technical term. "uint32_t" was incorrectly translated as "unit32_t".
+
+Correct translation:
+錯誤：無法將版本 %u 解析為 uint32_t
+```
+
+<!-- cache_translation_check_zh_TW_7519d82763161a4e9f5856bc7955a1cf0ba6c75e681dda7f212097c467801157 -->
+```
+        <source>Error: Unable to read wallet's best block locator record</source>
+        <translation>错误：无法读取钱包最佳区块定位器记录</translation>
+    
+ERR
+The translation uses Simplified Chinese characters, but the target language is 'zh_TW' (Traditional Chinese).
+
+Correct translation:
+錯誤：無法讀取錢包的最佳區塊定位器記錄
 ```
 
 <!-- cache_translation_check_zh_TW_8b1135fb065982e6c8ee05d3643b9ebb06cd5f98d94108205cfa2556397adb94 -->
@@ -1132,10 +2207,58 @@ Correct Traditional Chinese translation:
         <translation>错误：无法将数据写入钱包的磁盘%s。</translation>
     
 ERR
-The translation uses simplified Chinese ("错误：无法将数据写入钱包的磁盘%s。"). For 'zh_TW', traditional Chinese characters should be used. Also, the phrasing is a bit awkward.
+The translation is provided in Simplified Chinese (zh_CN) instead of the requested Traditional Chinese (zh_TW). Additionally, the placement of the format specifier %s makes it refer to the disk rather than the wallet.
 
 Correct translation:
-錯誤：無法將資料寫入錢包 %s 的磁碟。
+錯誤：無法將資料寫入錢包 %s 的磁碟
+```
+
+<!-- cache_translation_check_zh_TW_915745b544568d9b0ec0143b2d6175d6d367b19a8f0b8d23df7fe48bd9228a56 -->
+```
+        <source>Error: Unable to write solvable wallet best block locator record</source>
+        <translation>错误：无法写入可解决钱包最佳区块定位器记录</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) characters rather than Traditional Chinese (zh_TW) characters as requested.
+
+Correct translation:
+錯誤：無法寫入可解決錢包最佳區塊定位器記錄
+```
+
+<!-- cache_translation_check_zh_TW_9f948faec4086a6cd0645e4bb56175f5aedec2afc77809a9971139b6eb940ed9 -->
+```
+        <source>Error: Unable to write watchonly wallet best block locator record</source>
+        <translation>错误：无法写入仅观察钱包最佳区块定位器记录</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) instead of Traditional Chinese (zh_TW) as requested. In Traditional Chinese, "Error" is "錯誤" and "Record" is "紀錄" or "記錄" (though "記錄" is common, the characters used in the provided translation are simplified script).
+
+Correct translation:
+錯誤：無法寫入僅觀察錢包的最佳區塊定位器記錄
+```
+
+<!-- cache_translation_check_zh_TW_5c92d3563974500bc4a24e1a9c20c494818762b145cb46f35cb99d04c22103a1 -->
+```
+        <source>Error: database transaction cannot be executed for wallet %s</source>
+        <translation>错误: 钱包%s的数据库事务无法被执行</translation>
+    
+ERR
+The translation is in Simplified Chinese ('zh_CN') instead of Traditional Chinese ('zh_TW') as requested. In Traditional Chinese, "错误" should be "錯誤", "钱包" should be "錢包", and "数据库" should be "資料庫".
+
+Correct translation:
+錯誤: 無法為錢包 %s 執行資料庫事務
+```
+
+<!-- cache_translation_check_zh_TW_48efbd247f46f842be8b3a32001673fdef3721daddd55e336de8f3c35111412b -->
+```
+        <source>Failed to acquire rescan reserver during wallet initialization</source>
+        <translation>在钱包初始化期间未能获取重扫预留器</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) characters rather than Traditional Chinese (zh_TW) characters as requested.
+
+Correct translation:
+在錢包初始化期間未能獲取重掃預留器
 ```
 
 <!-- cache_translation_check_zh_TW_e4666fa4991fa511c3e025c7f0fca4b1e5628abb54946150622583f10c2a5101 -->
@@ -1144,10 +2267,10 @@ Correct translation:
         <translation>关闭区块撤销文件失败。</translation>
     
 ERR
-The translation uses Simplified Chinese characters ("关闭区块撤销文件失败。") but the target locale is Traditional Chinese (zh_TW). No format specifiers are involved and spacing is fine.
+The translation is in Simplified Chinese ('zh_CN') rather than Traditional Chinese ('zh_TW') as requested.
 
-Correct translation (Traditional Chinese, zh_TW):
-關閉區塊撤銷檔案失敗。
+Correct translation:
+無法關閉區塊撤銷檔案。
 ```
 
 <!-- cache_translation_check_zh_TW_961038e6cbaa1ae82ba5e46b0198703ac89711bf28a9d48eccde01cc70f549ac -->
@@ -1156,9 +2279,9 @@ Correct translation (Traditional Chinese, zh_TW):
         <translation>写入区块时关闭文件失败。</translation>
     
 ERR
-The translation uses Simplified Chinese characters (e.g., 写入, 区块, 失败) but the target is zh_TW (Traditional Chinese). No format specifiers are present.
+The translation is in Simplified Chinese (zh_CN) characters rather than Traditional Chinese (zh_TW) characters as requested.
 
-Correct Traditional Chinese translation:
+Correct translation:
 寫入區塊時關閉檔案失敗。
 ```
 
@@ -1168,24 +2291,121 @@ Correct Traditional Chinese translation:
         <translation>%s删除交易时失败: </translation>
     
 ERR
-There are two issues:
-1. The translation is missing the variable placeholder at the end: The format specifier "%s" is at the beginning in the translation, but in the source, it is at the end as ": %s".
-2. The Chinese punctuation and word order are not idiomatic – the colon should be at the end, not left over in the translation.
+The translation has several issues:
+1. The format specifier `%s` is placed at the beginning of the sentence instead of the end, which changes the meaning or context of the error message.
+2. It uses Simplified Chinese characters (删除) instead of Traditional Chinese characters (刪除) which is expected for 'zh_TW'.
+3. There is a trailing colon and space that is not present in the source.
 
 Correct translation:
-移除交易失敗：%s
+刪除交易失敗: %s
 ```
 
-<!-- cache_translation_check_zh_TW_c025a301b5f2476f25e2f437cfe19ca7bf860e73726d12cea62e2ba39df91298 -->
+<!-- cache_translation_check_zh_TW_ed2eb33e96418eb0376387d631fbd7cc1dbd71ec80a2980082bb9f3bda0e614c -->
 ```
-        <source>The wallet will avoid paying less than the minimum relay fee.</source>
-        <translation>錢包軟體會付多於最小轉發費用的手續費。</translation>
+        <source>Fee rate (%s) is lower than the minimum fee rate setting (%s)</source>
+        <translation>手續費費率(%s) 低於最低費率設置（%s)</translation>
     
 ERR
-The translation is inaccurate. The original English states the wallet will avoid paying less than the minimum relay fee, i.e., it will not pay a fee below that minimum. The translation reverses the meaning, suggesting the wallet will pay more than the minimum relay fee.
+There is an inconsistency in the punctuation used and a stray space. The source uses standard parentheses, while the translation uses a mix of half-width and full-width parentheses with an extra space before the first parenthesis. Additionally, "設置" is often translated as "設定" in the context of software settings in Traditional Chinese (Taiwan).
 
 Correct translation:
-錢包將避免支付低於最低轉發手續費的費用。
+手續費費率 (%s) 低於最低手續費費率設定 (%s)
+```
+
+<!-- cache_translation_check_zh_TW_936e72abeba60a871ed4b8f26db261b38f7f39aad240878ceb7181520fd67c70 -->
+```
+        <source>Insufficient dbcache for block verification</source>
+        <translation>dbcache不足以用于区块验证</translation>
+    
+ERR
+The translation uses Simplified Chinese characters ('用于', '区块', '验证') instead of Traditional Chinese characters which are standard for 'zh_TW'.
+
+Correct translation:
+dbcache 不足以進行區塊驗證
+```
+
+<!-- cache_translation_check_zh_TW_48aff5b850be06ddc3e7e590e48f32f8cc0796953033a29eca3e5b5d58f246fd -->
+```
+        <source>Insufficient funds</source>
+        <translation>累積金額不足</translation>
+    
+ERR
+The translation "累積金額不足" means "accumulated amount is insufficient," which is not the standard way to express "insufficient funds" in a financial or Bitcoin context. The correct term for "funds" in this context is usually "balance" (餘額) or "funds" (資金).
+
+Correct translation:
+餘額不足
+```
+
+<!-- cache_translation_check_zh_TW_05f7be1a75c784692e5f078165d0c876b03eeeee9d7ea79ff745a95926c795d7 -->
+```
+        <source>Invalid amount for %s=&lt;amount&gt;: '%s' (must be at least %s)</source>
+        <translation>%s=&lt;amount&gt;: '%s' 中指定了非法的金额 (必须至少达到 %s)</translation>
+    
+ERR
+The translation uses Simplified Chinese (zh_CN) terminology and characters (e.g., '非法', '金额') instead of Traditional Chinese (zh_TW) which is more common in Taiwan (e.g., '無效', '金額').
+
+Correct translation:
+%s=&lt;amount&gt; 的金額無效: '%s' (必須至少為 %s)
+```
+
+<!-- cache_translation_check_zh_TW_92ee0fb980dfaf224c7e11d8555c7a2c017af1570663009dfe6da510406321ab -->
+```
+        <source>Invalid amount for %s=&lt;amount&gt;: '%s'</source>
+        <translation>%s=&lt;amount&gt;: '%s' 中指定了非法的金额</translation>
+    
+ERR
+The translation uses Simplified Chinese characters ("金额") instead of Traditional Chinese characters ("金額") as required by the 'zh_TW' language code. Additionally, "無效" is a more standard translation for "Invalid" in a software context than "非法" (illegal).
+
+Correct translation:
+%s=<amount>: '%s' 中指定了無效的金額
+```
+
+<!-- cache_translation_check_zh_TW_ee10186268f4d00e96ba575ab85bdfb7c31fe20c255fa91faf09661cd6c5d007 -->
+```
+        <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
+        <translation>無效金額給 -%s=&lt;amount&gt;:'%s'</translation>
+    
+ERR
+The translation is grammatically clunky and contains a whitespace formatting error. The word "給" is a literal translation of "for" that is not natural in this technical context. Additionally, the space after the colon in the source text is missing in the translation.
+
+Correct translation:
+-%s=<amount> 的金額無效: '%s'
+```
+
+<!-- cache_translation_check_zh_TW_90bbb0546d18b16de289698ea64fd4a0079b8114ac27ce41b1efa2b87038186f -->
+```
+        <source>The %s path uses exFAT, which is known to have intermittent corruption problems on macOS. Move this directory to a different filesystem to avoid data loss.</source>
+        <translation>%s路径使用exFAT，该格式在macOS上已知会出现间歇性损坏问题。请将此目录移动到其他文件系统以避免数据丢失。</translation>
+    
+ERR
+The translation is in Simplified Chinese ('zh_CN') instead of Traditional Chinese ('zh_TW') as requested. In Traditional Chinese, "path" is "路徑", "file system" is "檔案系統", and "move" is "移動".
+
+Correct translation:
+%s 路徑使用 exFAT，這在 macOS 上已知會有間歇性的損壞問題。請將此目錄移動到不同的檔案系統以避免資料遺失。
+```
+
+<!-- cache_translation_check_zh_TW_59764626a756ddda6ff3cccbf5da4fa3eed6f1f2e78d46373f63145700145fc0 -->
+```
+        <source>The transactions removal process can only be executed within a db txn</source>
+        <translation>交易移除过程只能在数据库事务内执行。</translation>
+    
+ERR
+The translation uses Simplified Chinese characters ("过程", "数据库", "事务") and terminology common in Mainland China, rather than Traditional Chinese ("過程", "資料庫", "交易/事務") used in Taiwan (zh_TW).
+
+Correct translation:
+交易移除過程只能在資料庫交易 (db txn) 內執行。
+```
+
+<!-- cache_translation_check_zh_TW_9f2ada0936bf31f8f2755a0274b1be1b9172036ba98f3a74ed8e86baa1c93b3e -->
+```
+        <source>Transaction %s does not belong to this wallet</source>
+        <translation>交易%s不属于这个钱包</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) instead of Traditional Chinese (zh_TW) as requested. In Traditional Chinese, "属于" should be "屬於".
+
+Correct translation:
+交易 %s 不屬於這個錢包
 ```
 
 <!-- cache_translation_check_zh_TW_3d9320bea10d5e3e022a19cfd842e427af4d3ea041c7f0b8f6e7b309e8193b04 -->
@@ -1194,10 +2414,22 @@ Correct translation:
         <translation>交易尋找零輸出項超出範圍</translation>
     
 ERR
-The translation is inaccurate. The English phrase "Transaction change output index out of range" refers to the index of the "change output" in a Bitcoin transaction being out of range. The provided translation, "交易尋找零輸出項超出範圍", mistranslates "change" as "尋找零" ("find zero") and does not accurately reflect the technical meaning.
+The translation of "change output" is incorrect. In the context of Bitcoin, "change" refers to the money sent back to the sender (找零), not "searching" (尋找). The word "尋找" (to search/find) is a mistranslation of "change" in this context.
 
 Correct translation:
 交易找零輸出索引超出範圍
+```
+
+<!-- cache_translation_check_zh_TW_5e28eae1247ba7028c21dfd8b692208c87424c5ef20a728bd58402600cbb3c8d -->
+```
+        <source>Transaction needs a change address, but we can't generate it.</source>
+        <translation>需要交易一個找零地址，但是我們無法生成它。</translation>
+    
+ERR
+The translation is grammatically awkward and slightly mistranslates the relationship between the transaction and the address. "需要交易一個找零地址" (Transaction needs a change address) literally translates back to "Needs to trade a change address." In a Bitcoin context, it should state that the transaction itself requires a change address.
+
+Correct translation:
+交易需要找零位址，但我們無法產生。
 ```
 
 <!-- cache_translation_check_zh_TW_8e865d9628d79836fa5dd7fd0b04804d638987eb236d0e8001360df73a8f73b1 -->
@@ -1205,11 +2437,23 @@ Correct translation:
         <source>Unknown new rules activated (versionbit %i)</source>
         <translation>未知的交易已經有新規則激活 (versionbit %i)</translation>
     
-ERR  
-The translation is inaccurate. The English source refers to "Unknown new rules activated," but the translation says "未知的交易已經有新規則激活," which translates back to "Unknown transactions already have new rules activated." The word "交易" (transactions) is not in the source. The meaning is distorted.
+ERR
+The translation incorrectly adds the word "交易" (transaction), which is not present in the source text. The phrase "Unknown new rules" refers to the protocol rules themselves, not transactions.
 
 Correct translation:
-未知的新規則已被啟用（versionbit %i）
+未知的新規則已啟用 (versionbit %i)
+```
+
+<!-- cache_translation_check_zh_TW_97005e0c6d3b199bdfa808814013d5d64da45a41cebbba444988eb6c0b1e498a -->
+```
+        <source>Unsupported global logging level %s=%s. Valid values: %s.</source>
+        <translation>不支持的全局日志等级 %s=%s。有效数值: %s.</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) rather than Traditional Chinese (zh_TW). Additionally, the word "global" is translated as "全局" (more common in zh_CN) instead of "全域" (more common in zh_TW), and "logging level" is translated as "日志等级" (zh_CN) instead of "日誌層級" (zh_TW).
+
+Correct translation:
+不支援的全域日誌層級 %s=%s。有效值：%s。
 ```
 
 <!-- cache_translation_check_zh_TW_76b1bd6861e77279c4c3f4a191a4d295d0696f1f0ea13e7ad0a7140d44da079c -->
@@ -1218,8 +2462,22 @@ Correct translation:
         <translation>钱包文件创建失败：1%s</translation>
     
 ERR
-There is an error in the translation: "1%s" incorrectly inserts a "1" before the format specifier, which should not be present. The correct translation would be:
+The translation is in Simplified Chinese (zh_CN) characters rather than Traditional Chinese (zh_TW) as requested. Additionally, there is a typo in the format specifier: "1%s" instead of "%s".
+
+Correct translation:
 錢包檔案建立失敗：%s
+```
+
+<!-- cache_translation_check_zh_TW_be3ffe6b6d0516a5ca218203dcff6527bff681149823164977cdc46d1f96713a -->
+```
+        <source>acceptstalefeeestimates is not supported on %s chain.</source>
+        <translation>%s链上acceptstalefeeestimates 不受支持。</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) characters rather than Traditional Chinese (zh_TW) characters as requested. Specifically, "链" should be "鏈" and "受支持" is more commonly expressed as "支援" in Taiwan. Also, there is a stray space before the command name in the translation.
+
+Correct translation:
+%s 鏈上不支援 acceptstalefeeestimates。
 ```
 
 <!-- cache_translation_check_zh_TW_e3222f6658880630ea81b0a0cd483e7c2b2346ce99656d5b087dfe9f4559eb98 -->
@@ -1228,10 +2486,10 @@ There is an error in the translation: "1%s" incorrectly inserts a "1" before the
         <translation>加载 %s时出错：钱包为传统钱包。请使用迁移工具（migratewallet RPC）迁移到描述符钱包。</translation>
     
 ERR
-The translation is in Simplified Chinese and not in Traditional Chinese as expected for 'zh_TW'. Also minor wording can be improved for natural Traditional Chinese.
+The translation is in Simplified Chinese (zh_CN) rather than Traditional Chinese (zh_TW), as indicated by the characters "加载" (Simplified) instead of "載入" (Traditional), and "错误" would typically be "出錯" or "錯誤".
 
-Correct translation (Traditional Chinese, preserving the %s specifier):
-載入 %s 時發生錯誤：錢包為舊式錢包。請使用遷移工具（migratewallet RPC）遷移至描述符錢包。
+Correct translation:
+載入 %s 時出錯：錢包為傳統錢包。請使用遷移工具 (migratewallet RPC) 遷移到描述符錢包。
 ```
 
 <!-- cache_translation_check_zh_TW_fb9c57de56fb521dfdc9b8cd4124ea9b1e9e4d83d4064c6624a1a81414b0eed7 -->
@@ -1240,11 +2498,10 @@ Correct translation (Traditional Chinese, preserving the %s specifier):
         <translation>错误：转储文件指定了不受支持的数据库格式 %s。仅支持 sqlite 数据库转储。</translation>
     
 ERR
-The translation is in Simplified Chinese (zh_CN) rather than Traditional Chinese (zh_TW), and it also changed the parentheses around the format specifier (%s) and spacing. The original contains '(%s)' which should be preserved.
+The translation is in Simplified Chinese (zh_CN) instead of the requested Traditional Chinese (zh_TW). Additionally, the format specifier parentheses from the source are missing in the translation.
 
-Correct translation (Traditional Chinese, preserving (%s)):
-
-錯誤：轉儲檔指定了不支援的資料庫格式 (%s)。僅支援 sqlite 資料庫轉儲。
+Correct translation:
+錯誤：傾印檔案指定了不支援的資料庫格式 (%s)。僅支援 sqlite 資料庫傾印。
 ```
 
 <!-- cache_translation_check_zh_TW_2961cb13b7a86f1acc8115f9b7069881ec27d28d4cd7f3b72bc26f1e0634645b -->
@@ -1253,10 +2510,22 @@ Correct translation (Traditional Chinese, preserving (%s)):
         <translation>由于未确认的 UTXO 依赖于庞大的未确认交易集群，无法计算提高手续费。</translation>
     
 ERR
-The translation is accurate in meaning but uses Simplified Chinese characters rather than Traditional Chinese (zh_TW). Also "由于/因为" should be the Traditional form "由於/因為" for zh_TW.
+The translation is in Simplified Chinese (zh_CN) rather than Traditional Chinese (zh_TW) as requested. For example, "由于" (zh_CN) is used instead of "由於" (zh_TW), and "手续费" (zh_CN) instead of "手續費" (zh_TW).
 
-Correct Traditional Chinese (zh_TW) translation:
+Correct translation:
 由於未確認的 UTXO 依賴於龐大的未確認交易集群，無法計算提高手續費。
+```
+
+<!-- cache_translation_check_zh_TW_8b55b394728eedb61271a1a6a5e595bcdfd17b62667645e79819597cc138275c -->
+```
+        <source>Transaction requires one destination of non-zero value, a non-zero feerate, or a pre-selected input</source>
+        <translation>交易需要至少满足以下之一：一个非零金额的收款地址、非零费率，或预先选择的输入。</translation>
+    
+ERR
+The translation is provided in Simplified Chinese (zh_CN) instead of Traditional Chinese (zh_TW) as requested.
+
+Correct translation:
+交易需要至少滿足以下之一：一個非零金額的收款位址、非零費率，或預先選取的輸入。
 ```
 
 <!-- cache_translation_check_zh_TW_7ac1efa37e812c3d7101f033238c56c685efb44247b49ad8368f92f5497fdb8a -->
@@ -1273,12 +2542,12 @@ Please try running the latest software version.
 </translation>
     
 ERR
-The translation uses Simplified Chinese wording/characters (e.g., "发现", "该", "运行") instead of Traditional Chinese for zh_TW. The %s specifier is preserved correctly. There are minor extra spaces/newlines in the translation as well.
+The translation is provided in Simplified Chinese (zh_CN) instead of Traditional Chinese (zh_TW) as requested. It also contains unnecessary trailing spaces and uses terminology specific to mainland China (e.g., "软件" instead of "軟體").
 
-Suggested zh_TW translation (Traditional Chinese, cleaned spacing):
+Correct translation:
 發現無法識別的描述符。正在載入錢包 %s
 
-該錢包可能是在更新的版本中建立的。
+該錢包可能是在較新版本中建立的。
 請嘗試執行最新的軟體版本。
 ```
 
@@ -1288,10 +2557,46 @@ Suggested zh_TW translation (Traditional Chinese, cleaned spacing):
         <translation>错误：无法添加仅观察交易%s到仅观察钱包</translation>
     
 ERR
-The translation uses simplified Chinese ("错误", "无法", "仅观察"), but 'zh_TW' should use traditional Chinese characters. Additionally, spacing is inconsistent; there should be a space between "交易" and "%s". 
+The translation uses Simplified Chinese characters instead of Traditional Chinese characters as required by the 'zh_TW' (Taiwan) locale. Additionally, there is a lack of proper spacing commonly used in Traditional Chinese technical contexts for better readability.
 
 Correct translation:
-錯誤：無法將僅觀察交易 %s 新增到僅觀察錢包
+錯誤：無法將僅限觀察交易 %s 新增至僅限觀察錢包
+```
+
+<!-- cache_translation_check_zh_TW_8f8b9912dd19fcf6794d3e745f92b1f10a125f86e129ec7ad5b76cd99ca07c71 -->
+```
+        <source>Error: Wallet does not exist</source>
+        <translation>錯誤：錢包不存˙在。</translation>
+    
+ERR
+The translation contains a stray character/typo "˙" between "存" and "在", and adds an unnecessary period at the end which is not present in the source.
+
+Correct translation:
+錯誤：錢包不存在
+```
+
+<!-- cache_translation_check_zh_TW_6dd13fad9934f3be9a39e0fbb05e22890fadeadd86a28c391482dccd41c5a042 -->
+```
+        <source>Error: cannot remove legacy wallet records</source>
+        <translation>错误：无法删除遗留钱包的记录。</translation>
+    
+ERR
+The translation uses Simplified Chinese characters instead of Traditional Chinese characters, which is required for the 'zh_TW' (Taiwan) locale. Additionally, the translation includes a full-width period at the end which is not present in the source text.
+
+Correct translation:
+錯誤：無法移除舊式錢包紀錄
+```
+
+<!-- cache_translation_check_zh_TW_5ba898a8fa4f257290a83a80d886d905097a84541cf1159ac1fa2c13a3e5a715 -->
+```
+        <source>Failed to start indexes, shutting down…</source>
+        <translation>索引启动失败，正在关闭……</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) characters rather than Traditional Chinese (zh_TW) characters as requested.
+
+Correct translation:
+索引啟動失敗，正在關閉……
 ```
 
 <!-- cache_translation_check_zh_TW_3893aa5cc96d3a3e6fda580d5592a8e0694e08745e5bb4cb9823521e2db3de13 -->
@@ -1300,10 +2605,22 @@ Correct translation:
         <translation>无效的 -proxy 地址或主机名，以“=”结尾：“%s”。</translation>
     
 ERR
-The translation uses Simplified Chinese ("无效的", "主机名") instead of Traditional Chinese for zh_TW. The format specifier %s is preserved, but punctuation/quotes can be made consistent for Traditional Chinese.
+The translation is in Simplified Chinese (zh_CN) instead of Traditional Chinese (zh_TW) as requested. In Traditional Chinese, "無效" is used instead of "无效", and "位址" is more commonly used for "address" in this context.
 
-Correct translation (Traditional Chinese):
-無效的 -proxy 位址或主機名稱，以「=」結尾：'%s'
+Correct translation:
+無效的 -proxy 位址或主機名稱，以 '=' 結尾: '%s'
+```
+
+<!-- cache_translation_check_zh_TW_2dca275a8f045cf55835cc2aca16df4eb2420a49c7d06979a2528f2a2d7cd7c2 -->
+```
+        <source>Not enough file descriptors available. %d available, %d required.</source>
+        <translation>没有足够的文件描述符可用。%d可用，%d需要。</translation>
+    
+ERR
+The translation uses Simplified Chinese (zh_CN) characters and terminology instead of Traditional Chinese (zh_TW) as requested. In Taiwan, "文件描述符" is typically referred to as "檔案描述項" or "檔案描述子".
+
+Correct translation:
+沒有足夠的檔案描述項。可用 %d，需要 %d。
 ```
 
 <!-- cache_translation_check_zh_TW_8a65190ca204502b79b6c300f73c685661424c04e29136c9be3e8dc44a9de4b3 -->
@@ -1312,11 +2629,11 @@ Correct translation (Traditional Chinese):
         <translation>无法识别 -proxy=“%s” 中的网络：“%s”。</translation>
     
 ERR
-The translation uses Simplified Chinese characters ("无法识别", "网络") but target is zh_TW (Traditional Chinese). Also prefer matching quotes/spacing to the source.
+The translation is in Simplified Chinese (zh_CN) characters rather than Traditional Chinese (zh_TW) characters as requested. Additionally, it uses Chinese-style quotation marks (“”) which might not be desired depending on the specific UI guidelines, but the primary issue is the script type.
 
-Correct Traditional Chinese translation:
-無法識別 -proxy='%s' 中的網路：'%s'。
+Correct translation:
+無法識別 -proxy='%s' 中的網路：'%s'
 ```
 </details>
 
-Number of issues: 102.
+Number of issues: 213.

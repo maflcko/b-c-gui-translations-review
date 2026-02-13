@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -42,6 +42,21 @@ ERR
 There is an erroneous backtick (`) in "att ` emot", and "emot transaktionen" (receive the transaction) is not as accurate as "ta emot mynt" (receive coins). Also, "address" is indefinite in the source, so "en adress" is okay, but "att ta emot" should not be split up. Correct translation:
 
 Välj den adress du vill ta emot mynt med
+```
+
+<!-- cache_translation_check_sv_59af830f107e31ad5ddeeaddc4db12ca3df57e15e616b76a28f3932deb6da765 -->
+```
+        <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
+Signing is only possible with addresses of the type 'legacy'.</source>
+        <translation>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new Bc1qdcausn9bh24wyh8e76q2yz6sut3d226mu9qez
+Signing is only possible with addresses of the type 'legacy'.</translation>
+    
+ERR
+The translation is largely in English rather than Swedish ('sv'). Additionally, it contains a specific Bitcoin address ("Bc1qdcausn9bh24wyh8e76q2yz6sut3d226mu9qez") that was not in the source text, replacing a portion of the instructions.
+
+Correct translation:
+Dessa är dina Bitcoin-adresser för att ta emot betalningar. Använd knappen 'Skapa ny mottagaradress' i fliken för mottagning för att skapa nya adresser.
+Signering är endast möjlig med adresser av typen 'legacy'.
 ```
 
 <!-- cache_translation_check_sv_c83ebb65f87b9ea003dcfc44b1b1ff52c17f82ae59beb54b4d72309e498641a3 -->
@@ -498,4 +513,4 @@ Port måste anges med -whitebind: '%s'
 ```
 </details>
 
-Number of issues: 37.
+Number of issues: 38.

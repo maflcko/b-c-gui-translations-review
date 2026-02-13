@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -142,6 +142,18 @@ Correct translation:
 复制金额(&A)
 ```
 
+<!-- cache_translation_check_cmn_f568c8e4ca957eadfdf7e283377c5fc85d3009fddd6ffff42a1e15c5865ca108 -->
+```
+        <source>&amp;Unlock unspent</source>
+        <translation>解鎖未花費的</translation>
+    
+ERR
+The translation is missing the shortcut key indicator '&' which was present in the source text. In the context of Bitcoin software (like Bitcoin Core), "unspent" usually refers to "unspent outputs" (UTXOs). While the provided translation is semantically okay, it should include the '&' and ideally sound more natural for a UI element.
+
+Correct translation:
+&解鎖未花費的
+```
+
 <!-- cache_translation_check_cmn_5ace09bb0cf15a835e9c7cf2d5e3473d50f6fa76d17319aec8e6fd38b6f1c1dc -->
 ```
         <source>(change)</source>
@@ -247,16 +259,42 @@ Correct translation:
 資料庫快取(&amp;)的大小
 ```
 
-<!-- cache_translation_check_cmn_51edd678fb1b28ef4e527ffcec2694e07d840d24ec22fcc06e2267b6fa704485 -->
+<!-- cache_translation_check_cmn_62164728b6a7c177c1d04a3a116d70629560c46f15c563b6acbb30bb130c7c74 -->
 ```
         <source>Save…</source>
-        <translation>保存...</translation>
+        <translation>拯救...</translation>
     
 ERR
-The source uses the ellipsis character (…) while the translation uses three dots (...). Match the formatting.
+The translation of "Save…" as "拯救..." is incorrect in Chinese (cmn). "拯救" means "to rescue" rather than "to save" in the sense of saving a file. The correct term is "保存…".
 
 Correct translation:
 保存…
+```
+
+<!-- cache_translation_check_cmn_3f36d050ff17a707a586960e2695f55721a2fe19f9f0e9bb7cef3488d83ee57a -->
+```
+        <source>Transaction broadcast successfully! Transaction ID: %1</source>
+        <translation>交易成功廣播！交易 ID：％1</translation>
+    
+ERR
+The Chinese full-width character "％" is used instead of the ASCII percent sign "%", which can cause issues with format specifiers.
+
+Correct translation:
+交易成功广播！交易 ID: %1
+```
+
+<!-- cache_translation_check_cmn_488a31aac260773afaaa52303dc65dcf6d65dc211e76753ff912703f6143a292 -->
+```
+        <source>Transaction has %1 unsigned inputs.</source>
+        <translation>交易有％1個未簽名的inputs。</translation>
+    
+ERR
+The translation is mostly accurate but contains two issues:
+1. The percent sign is a full-width '％' rather than the ASCII '%', which could break placeholder substitution.
+2. The English word "inputs" is not translated or transliterated; in Chinese Bitcoin: "输入" or "输入项" is commonly used.
+
+Correct translation:
+交易有%1个未签名的输入。
 ```
 
 <!-- cache_translation_check_cmn_0c2f3b1ca9da511a52168e61c92498723b5b95d121bdf4b2cf14fd3c7c628264 -->
@@ -341,18 +379,6 @@ Correct translation:
 复制金额(&A)
 ```
 
-<!-- cache_translation_check_cmn_67c3f8f6e88135054820493928b07a82f5a74b3e8cd277f50c32446c00b7376c -->
-```
-        <source>Date</source>
-        <translation> 日期</translation>
-    
-ERR
-The translation contains an unwanted leading space (likely a non-breaking space), which is a whitespace format issue.
-
-Correct translation:
-日期
-```
-
 <!-- cache_translation_check_cmn_070c587fbb4ed6d06fe006cbce66dae59f8480ae60cbd56f50e09c90fb4e8ad5 -->
 ```
         <source>Please, review your transaction proposal. This will produce a Partially Signed Bitcoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
@@ -387,30 +413,6 @@ Correct translation:
 要將付款發送到的比特幣地址
 ```
 
-<!-- cache_translation_check_cmn_67c3f8f6e88135054820493928b07a82f5a74b3e8cd277f50c32446c00b7376c -->
-```
-        <source>Date</source>
-        <translation> 日期</translation>
-    
-ERR
-The translation contains an unwanted leading space (likely a non-breaking space), which is a whitespace format issue.
-
-Correct translation:
-日期
-```
-
-<!-- cache_translation_check_cmn_67c3f8f6e88135054820493928b07a82f5a74b3e8cd277f50c32446c00b7376c -->
-```
-        <source>Date</source>
-        <translation> 日期</translation>
-    
-ERR
-The translation contains an unwanted leading space (likely a non-breaking space), which is a whitespace format issue.
-
-Correct translation:
-日期
-```
-
 <!-- cache_translation_check_cmn_a6e9d6abcc4431799e73f806331c34124d5e3cf2ac80d23af4c298249010502b -->
 ```
         <source>Copy &amp;amount</source>
@@ -433,18 +435,6 @@ The translation is missing the '&' which indicates the shortcut key. It must app
 
 Correct translation:
 &顯示交易明細
-```
-
-<!-- cache_translation_check_cmn_67c3f8f6e88135054820493928b07a82f5a74b3e8cd277f50c32446c00b7376c -->
-```
-        <source>Date</source>
-        <translation> 日期</translation>
-    
-ERR
-The translation contains an unwanted leading space (likely a non-breaking space), which is a whitespace format issue.
-
-Correct translation:
-日期
 ```
 
 <!-- cache_translation_check_cmn_b8e3c443228cffa967a07ac27cf811742669784cf54541470bf150181540b9fb -->
@@ -505,30 +495,6 @@ Correct translation:
 选项“-checkpoints”已设置，但检查点已被移除。该选项不再生效。
 ```
 
-<!-- cache_translation_check_cmn_d98c1c5ff4f9281f53e84a4630bcb6846485c6649d59a458ddb76aab8f1f87d3 -->
-```
-        <source>Option '-maxorphantx' is set but no longer has any effect (see release notes). Please remove it from your configuration.</source>
-        <translation>选项“-maxorphantx”已设置，但已不再生效（参见发行说明）。请从您的配置中移除该选项。 </translation>
-    
-ERR
-There is a trailing space at the end of the translation, which is a whitespace formatting issue.
-
-Correct translation:
-选项“-maxorphantx”已设置，但已不再生效（参见发行说明）。请从您的配置中移除该选项。
-```
-
-<!-- cache_translation_check_cmn_bf17affb0acd6713b9f6b2167f99961dbd921c30426c9f4b5f40c6272c0fa297 -->
-```
-        <source>Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.</source>
-        <translation>选项“-datacarrier”或“-datacarriersize”已设置，但已标记为弃用。它们将在未来版本中移除。 </translation>
-    
-ERR
-There is a trailing whitespace at the end of the translation.
-
-Correct translation:
-选项“-datacarrier”或“-datacarriersize”已设置，但已标记为弃用。它们将在未来版本中移除。
-```
-
 <!-- cache_translation_check_cmn_fc44b6029c7dbac45686cc79b705b8c897f4c829f9f3f5057b0a8d2f641e4b4e -->
 ```
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of a pruned node)</source>
@@ -551,6 +517,30 @@ There is an unnecessary trailing space at the end of the translation.
 
 Correct translation:
 “-paytxfee”已弃用，并将在 v31.0 中完全移除。
+```
+
+<!-- cache_translation_check_cmn_212c3af68e90ae4a89c435e0fc3e60da04c4a65ab354a77723b7b670db8e3821 -->
+```
+        <source>Can't spend unconfirmed version %d pre-selected input with a version 3 tx</source>
+        <translation>无法使用版本3交易花费未确认版本1%d的预选输入。</translation>
+    
+ERR
+The translation adds the number "1" before the format specifier "%d" which is not present in the source text. In technical strings, format specifiers should typically be kept exactly as they appear in the source unless they need to be reordered.
+
+Correct translation:
+无法使用版本 3 交易花费版本为 %d 的未确认预选输入。
+```
+
+<!-- cache_translation_check_cmn_f9b38ca6e6771122f4b6e345f173a375d4a3ec7c96cf90ece271263bcdc608a8 -->
+```
+        <source>Can't spend unconfirmed version 3 pre-selected input with a version %d tx</source>
+        <translation>无法使用版本1%d交易花费未确认版本3的预选输入。</translation>
+    
+ERR
+The format specifier `%d` is preceded by an incorrect character '1' in the translation, which is not present in the source and changes the meaning.
+
+Correct translation:
+无法使用版本 %d 交易花费未确认的版本 3 预选输入。
 ```
 
 <!-- cache_translation_check_cmn_1d81021bd0f5e08586ea41fd27117444164eb2a4027d5da2c4780a799bdfbce5 -->
@@ -699,4 +689,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 53.
+Number of issues: 52.

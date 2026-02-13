@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -81,6 +81,32 @@ Correct translation:
 Odoslaná transakcia
 ```
 
+<!-- cache_translation_check_sk_b17f1636a4741f9a8a39f3f9b8aabdc9347d79703cdce3008f9adc10759e5589 -->
+```
+        <source>Restoring Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the restore wallets progress window which indicates to the user that wallets are currently being restored.</extracomment>
+        <translation>Obnovovanie peňaženky</translation>
+    
+ERR
+The translation is incomplete. It misses the format specifier %1 (which represents the name of the wallet) and the bold HTML tags <b></b>, as well as the ellipsis.
+
+Correct translation:
+Obnovovanie peňaženky <b>%1</b>…
+```
+
+<!-- cache_translation_check_sk_b17f1636a4741f9a8a39f3f9b8aabdc9347d79703cdce3008f9adc10759e5589 -->
+```
+        <source>Restoring Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the restore wallets progress window which indicates to the user that wallets are currently being restored.</extracomment>
+        <translation>Obnovovanie peňaženky</translation>
+    
+ERR
+The translation is incomplete. It misses the format specifier %1 (which represents the name of the wallet) and the bold HTML tags <b></b>, as well as the ellipsis.
+
+Correct translation:
+Obnovovanie peňaženky <b>%1</b>…
+```
+
 <!-- cache_translation_check_sk_a66adf836ad94d9e754ef32c5b2f5970e0237fd749b6c14afd31006a2c40612b -->
 ```
         <source>The entered address "%1" is not a valid Bitcoin address.</source>
@@ -145,20 +171,16 @@ or
 Vstup:
 ```
 
-<!-- cache_translation_check_sk_b9932ef85389f5463efdb8c8b32a4fbde776c296e46cb44ff27c9e8e0e643d81 -->
+<!-- cache_translation_check_sk_510c1858e701eca6a301e1f7b9eaa19795b99d6e02383bc5978f84fb5cfce6df -->
 ```
         <source>Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until you have validated the complete chain.</source>
-        <translation>Použitie núdzového poplatku („fallbackfee“) môže vyústiť v transakciu, ktoré bude trvat hodiny nebo dny (prípadne večnosť), kým bude potvrdená. Zvážte preto ručné nastaveníe poplatku, prípadne počkajte, až sa Vám kompletne zvaliduje reťazec blokov.</translation>
+        <translation>Použitie núdzového poplatku („fallbackfee“) môže vyústiť v transakciu, ktoré bude trvať hodiny alebo dni (prípadne večnosť), kým bude potvrdená. Zvážte preto ručné nastavenie poplatku, prípadne počkajte, až sa Vám kompletne skontroluje reťazec blokov.</translation>
     
 ERR
-There are several issues:
-- Grammar mix: The translation uses Czech words ("nebo", "nastaveníe", "až se Vám", "zvaliduje") instead of Slovak ("alebo", "nastavenie", "kým sa vám", "overí").
-- Diacritics: "trvat" should be "trvať".
-- In Slovak, the polite form "Vám" is capitalized only in formal letters, less common in technical UI.
-- The source specifies "the complete chain", better as "celý reťazec" or "celý blokový reťazec".
+There is a grammatical error in the translation. The word "transakciu" (transaction) is feminine singular, but the following relative pronoun "ktoré" is neuter plural. It should be "ktorá".
 
 Correct translation:
-Použitie núdzového poplatku („fallbackfee“) môže viesť k tomu, že transakcia bude potvrdená až o niekoľko hodín alebo dní (prípadne nikdy). Zvážte preto ručné nastavenie poplatku alebo počkajte, kým bude celý reťazec blokov overený.
+Použitie núdzového poplatku („fallbackfee“) môže vyústiť v transakciu, ktorá bude trvať hodiny alebo dni (prípadne večnosť), kým bude potvrdená. Zvážte preto ručné nastavenie poplatku, prípadne počkajte, kým sa vám kompletne overí reťazec blokov.
 ```
 
 <!-- cache_translation_check_sk_dc3d14865b0ffa75d94a15f64469f8e07521f2b7717a4c610947e37aeab26acb -->
@@ -222,6 +244,18 @@ The translation is incorrect. "address label" should be translated as "označeni
 
 Correct translation:
 &Upraviť označenie adresy
+```
+
+<!-- cache_translation_check_sk_60c34e6a5b6e28ced3363ff2fa609cc405e60c69a4b5f713c651a90d86027b75 -->
+```
+        <source>Can't sign transaction.</source>
+        <translation>Nemôzeme podpíaať transakciu.</translation>
+    
+ERR
+The translation contains typos and grammatical errors. "Nemôzeme" is missing an accent on the 'z' (should be 'nemôžeme'), and "podpíaať" contains an extra 'a' and an incorrect accent (should be 'podpísať').
+
+Correct translation:
+Nemôžeme podpísať transakciu.
 ```
 
 <!-- cache_translation_check_sk_68ac3aa1c3ac91072142d38d20bd4e7b96b4c139f81553e8b7a6563df71dd756 -->
@@ -423,4 +457,4 @@ Skúste spustiť najnovšiu verziu softvéru.
 ```
 </details>
 
-Number of issues: 32.
+Number of issues: 35.

@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -382,6 +382,18 @@ Correct translation:
 Hindi aktibo ang aktibidad ng network.
 ```
 
+<!-- cache_translation_check_tl_a343cee02ffbd05f436628efab7f926ee300a6b33ebe1de4ebae18fadd87f648 -->
+```
+        <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
+        <translation>Ang paghalili ay &lt;b&gt;</translation>
+    
+SPAM
+The translation is incomplete, ends abruptly, and is missing the HTML closing tag and the required format specifier '%1'.
+
+Correct translation:
+Ang proxy ay <b>naka-enable</b>: %1
+```
+
 <!-- cache_translation_check_tl_42b7479210fdd365e16c61ed93cc12ab727c05222faa21cedfed3335c6959d0b -->
 ```
         <source>Send coins to a Bitcoin address</source>
@@ -642,6 +654,18 @@ Correct translation (suggestions):
 &Mga address ng pagpapadala
 or
 &Mga address para sa pagpapadala
+```
+
+<!-- cache_translation_check_tl_09c42d4cc410a3b4ea7e13b957cbf49fdf1d5cc374dcdae106121bc2b8f360fa -->
+```
+        <source>&amp;Receiving addresses</source>
+        <translation>1KwvEidiKbB3Sp84e6kJTYPsj2QRtERcp7</translation>
+    
+SPAM
+The translation provided is a Bitcoin address instead of a Tagalog translation of the source text.
+
+Correct translation:
+Mga address sa pag&tanggap
 ```
 
 <!-- cache_translation_check_tl_ad4ee142c4a1c914a8341da8fbd15416768d0fd9b629cbfc0dcdcbbe81a9c8b8 -->
@@ -1111,6 +1135,18 @@ Correct translation:
 Hindi maaaring lumikha ng directory ng datos dito.
 ```
 
+<!-- cache_translation_check_tl_629538c4ea5636d5bbd0052d8fcca123d483ba1749935dec3d8c7bc2325d3390 -->
+```
+        <source>Welcome to %1.</source>
+        <translation>Maligayang Pagdating sa</translation>
+    
+ERR
+The format specifier '%1' is missing in the translation.
+
+Correct translation:
+Maligayang pagdating sa %1.
+```
+
 <!-- cache_translation_check_tl_8772ceffa95c1a2632dbd7da7d8143e28476fa6e965634fb2a1f69e98b24ea0d -->
 ```
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -1413,4 +1449,4 @@ default na pitaka
 ```
 </details>
 
-Number of issues: 106.
+Number of issues: 109.

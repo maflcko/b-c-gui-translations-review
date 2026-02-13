@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -205,6 +205,60 @@ Correct translation:
 or more descriptively:
 
 غیر قابو شدہ استثنا
+```
+
+<!-- cache_translation_check_ur_fb9ba24e9b278c2b20360559663500eaae5076a23236780031a4bfb830ed6c02 -->
+```
+        <source>Ctrl+W</source>
+        <translation>موجودہ ٹیب بند کریں</translation>
+    
+ERR
+The translation provides a descriptive Urdu phrase ("Close the current tab") instead of translating or preserving the keyboard shortcut "Ctrl+W". Keyboard shortcut strings should generally maintain their format unless the convention in the target language is to translate the key names themselves.
+
+Correct translation:
+Ctrl+W
+```
+
+<!-- cache_translation_check_ur_72a2b3057321c9d0aaeb04ad2cebb3dce51083fccbd22fcfecfa298ba80cb3b9 -->
+```
+        <source>IPv6</source>
+        <comment>network name</comment>
+        <extracomment>Name of IPv6 network in peer info</extracomment>
+        <translation>"آئی پی وی 6"</translation>
+    
+ERR
+The translation includes unnecessary quotation marks around the term "IPv6". In Urdu, technical terms like "IPv6" should either be left as is or transliterated without surrounding quotes in this context.
+
+Correct translation:
+آئی پی وی 6
+```
+
+<!-- cache_translation_check_ur_f812bf06a2a0c0cbeed81fa3a857386aad6bd626f3f934b809b48f147c4a8967 -->
+```
+        <source>Onion</source>
+        <comment>network name</comment>
+        <extracomment>Name of Tor network in peer info</extracomment>
+        <translation>پیاز </translation>
+    
+ERR
+The translation includes a stray trailing space that is not present in the source text. Additionally, while "پیاز" is the literal translation for the vegetable "onion", in a technical context referring to the Tor network, it is often preferred to transliterate the name or keep it as "Onion".
+
+Correct translation:
+پیاز
+```
+
+<!-- cache_translation_check_ur_a2ca37027e0bae365dce7421c70f2caf494c376aa15d559bbcb9e40cc3f12d48 -->
+```
+        <source>CJDNS</source>
+        <comment>network name</comment>
+        <extracomment>Name of CJDNS network in peer info</extracomment>
+        <translation>مکمل ریلے</translation>
+    
+ERR
+The translation provided ("مکمل ریلے", which means "Full Relay") is incorrect. "CJDNS" is a specific proper name of a networking protocol/network and should be transliterated or left as is, rather than translated as "Full Relay".
+
+Correct translation:
+CJDNS
 ```
 
 <!-- cache_translation_check_ur_d6ff4ed9e6bf8cb6a34c689b23ef3984d21ed1060391fb8ea1f6b279406454b5 -->
@@ -574,48 +628,46 @@ Correct translation:
 زوم کریں
 ```
 
-<!-- cache_translation_check_ur_b1de143c777311920854a7262059e8b32b6a116b07a8065d676248634e0bbc85 -->
+<!-- cache_translation_check_ur_ddab3b2573936e5db8b7c6201259f5eb4e37f342c6fe2dc1f4e8ab4969bfaf4c -->
 ```
         <source>Date: %1
 </source>
-        <translation>%1' تاریخ۔
+        <translation>1%1' تاریخ۔
 </translation>
     
 ERR
-The translation is inaccurate and awkward. The placement of %1 is incorrect, and the use of the apostrophe (') is unnecessary in Urdu. The correct translation should be:
+The translation contains an extra '1' and an unnecessary apostrophe. Additionally, the format specifier '%1' is malformed as '1%1'.
 
 Correct translation:
 تاریخ: %1
-
-This preserves the order and format of the source text.
 ```
 
-<!-- cache_translation_check_ur_75aece627a8cdf2aabf2a3f8d91474598b738950354a324db34773445f48689d -->
+<!-- cache_translation_check_ur_f77a80a6293fe7110cd804bf629d251fe140633d186e0d6a57ae7532207bddd8 -->
 ```
         <source>Amount: %1
 </source>
-        <translation>%1' مقدار
+        <translation>1%1' مقدار
 </translation>
     
 ERR
-The placement of %1 is incorrect and there is an unnecessary apostrophe. The correct translation preserves the format specifier and matches the order of words in Urdu.
+The format specifier is incorrect. The translation includes an extra "1" and a single quote character around the "%1" specifier, and the colon is missing.
 
 Correct translation:
 مقدار: %1
 ```
 
-<!-- cache_translation_check_ur_5ccf61bccd0a66df315aafa8e26e781adc4fb8cd0724c5e9429e3cfee2d02669 -->
+<!-- cache_translation_check_ur_932d8012b35e617206bc57515c81133c371149a8a25dea2f2c3376d3365da15e -->
 ```
         <source>Wallet: %1
 </source>
-        <translation>%1' والیٹ
+        <translation>1%1' والیٹ
 </translation>
     
 ERR
-The Urdu translation improperly places the format specifier (%1) before "والیٹ" and uses an apostrophe after %1, which is unnecessary and incorrect in Urdu. Also, the translation reverses the order: in Urdu, the term "والیٹ" (Wallet) should precede the variable, and the line break should be preserved at the end.
+The translation contains an extra '1' before the format specifier, and the format specifier itself is malformed or improperly handled in the RTL context. In Urdu, the colon should also follow the word 'Wallet'.
 
 Correct translation:
-والیٹ: %1
+والٹ: %1
 ```
 
 <!-- cache_translation_check_ur_b564144b415ed5d559681930462359bf7c5fa473020a2a798b1f97d0505a513f -->
@@ -635,32 +687,32 @@ Correct translation:
 قسم: %1
 ```
 
-<!-- cache_translation_check_ur_b9fdf0931f0971bbad9756fdfd3459cc52d66ca1404894ebcd2dc064a83182db -->
+<!-- cache_translation_check_ur_b056398067569b0a549c34c8ed4b91618b7eb483de1aa5346c32c6bb18cd0b7d -->
 ```
         <source>Label: %1
 </source>
-        <translation>%1'لیبل
+        <translation>1%1'لیبل
 </translation>
     
 ERR
-There is a formatting issue: the translation puts '%1' at the start without a space and does not include the colon. The order should match the source, with the word 'لیبل' first, then a colon, a space, and then '%1'.
+The translation contains an error in handling the format specifier and the text layout. The specifier `%1` has been corrupted into `1%1`, and the Urdu word for 'Label' is missing or replaced by a transliteration with incorrect punctuation.
 
 Correct translation:
 لیبل: %1
 ```
 
-<!-- cache_translation_check_ur_768ca4fce898220b640db89fbdabc8293903a91508e8d1eceeb8ba7ca87f8e79 -->
+<!-- cache_translation_check_ur_ba6e2c37415988b7280bdc9be7f0097289a54ee02d6173731fe067deb377fe9e -->
 ```
         <source>Address: %1
 </source>
-        <translation>%1' پتہ
+        <translation>1%1' پتہ
 </translation>
     
 ERR
-The translation is incorrect in word order and format. The correct translation should be: 
-پتہ: %1
+The translation contains an incorrect format specifier and an unnecessary apostrophe. The format specifier `%1` has been mangled into `1%1'`. Additionally, there is a stray newline or spacing issue compared to the source.
 
-Explanation: In Urdu, the word "پتہ" (address) should precede the placeholder %1, matching the format and structure of the English source. The current translation places %1 before the word, and uses an incorrect apostrophe, which is a formatting issue.
+Correct translation:
+پتہ: %1
 ```
 
 <!-- cache_translation_check_ur_433adf43f81d4d73cbf80cd8e08dc8222a4771e538ccf1edc1939312474d3b87 -->
@@ -804,6 +856,31 @@ Correct translation:
 والیٹس لوڈ ہو رہے ہیں…
 ```
 
+<!-- cache_translation_check_ur_3da8535c4c201b36edd866bc8098465d9ba26dd30caa4ddcaf4206cbcc14dfe2 -->
+```
+        <source>Migration failed</source>
+        <translation>بٹ کوائن کے لیے منتقلی ناکام ہوئی</translation>
+    
+ERR
+The translation adds "بٹ کوائن کے لیے" (for Bitcoin) which is not present in the source text. A more direct and accurate translation is preferred.
+
+Correct translation:
+منتقلی ناکام رہی
+```
+
+<!-- cache_translation_check_ur_5d51bc5c2b314acc0da4d325ab3ee47762f23d412b8d2b4ad8aa153bcb8b2ce4 -->
+```
+        <source>Restore wallet message</source>
+        <extracomment>Title of message box which is displayed when the wallet is successfully restored.</extracomment>
+        <translation>بٹ کوائن کے لیے بٹوے کو بحال کریں</translation>
+    
+ERR
+The Urdu translation includes extra words not present in the source. The source "Restore wallet message" is the title of a message box, whereas the translation says "بٹ کوائن کے لیے بٹوے کو بحال کریں" (Restore wallet for Bitcoin).
+
+Correct translation:
+بٹوا بحال کرنے کا پیغام
+```
+
 <!-- cache_translation_check_ur_a6fd45dfcc186d66665dd8a67f623e039e7c9ac0e4d3f01ccd8ccbc977008cae -->
 ```
         <source>&amp;Label</source>
@@ -828,6 +905,18 @@ The Urdu word "پتہ" correctly translates "Address", but the source contains a
 
 Correct translation (include & once):
 &پتہ
+```
+
+<!-- cache_translation_check_ur_a2c17795ff46fafa08e5c9eb811c1d86db2447f8587a75592231925f90842fa6 -->
+```
+        <source>Choose data directory</source>
+        <translation>ٹ کوائن کے لیے ڈیٹا ڈائریکٹری منتخب کریں</translation>
+    
+ERR
+The Urdu translation includes extra words not present in the source. It translates to "Choose data directory for Bitcoin", whereas the source is simply "Choose data directory".
+
+Correct translation:
+ڈیٹا ڈائریکٹری منتخب کریں
 ```
 
 <!-- cache_translation_check_ur_3c142954b5c5ceb61902024c937ae58102d676ec3600729581b7c1cf5966c8a6 -->
@@ -855,6 +944,19 @@ Correct translation:
 &amp;مرکزی
 ```
 
+<!-- cache_translation_check_ur_36f4750adabe6959239e68ecde7ba7f241fd3be4441c671e61e76db4f9572df8 -->
+```
+        <source>Maximum database cache size. Make sure you have enough RAM. A larger cache can contribute to faster sync, after which the benefit is less pronounced for most use cases. Lowering the cache size will reduce memory usage. Unused mempool memory is shared for this cache.</source>
+        <extracomment>Tooltip text for Options window setting that sets the size of the database cache. Explains the corresponding effects of increasing/decreasing this value.</extracomment>
+        <translation>"بٹ کوائن کے لیے زیادہ سے زیادہ ڈیٹابیس کیش کا سائز۔ یقینی بنائیں کہ آپ کے پاس کافی ریم ہے۔ بڑا کیش تیز سنک کرنے میں مدد کر سکتا ہے، لیکن اس کے بعد زیادہ تر استعمال کے لیے فائدہ کم ہوتا ہے۔ کیش کا سائز کم کرنے سے میموری کا استعمال کم ہوگا۔ غیر استعمال شدہ میمپول میموری اس کیش کے لیے شیئر کی جاتی ہے</translation>
+    
+ERR
+The translation starts with an unnecessary opening quotation mark (") and is missing a closing one. Additionally, the phrase "بٹ کوائن کے لیے" (for Bitcoin) was added at the beginning, which is not present in the source text.
+
+Correct translation:
+ڈیٹابیس کیش کا زیادہ سے زیادہ سائز۔ یقینی بنائیں کہ آپ کے پاس کافی ریم (RAM) ہے۔ بڑا کیش تیز سنک (sync) کرنے میں مدد کر سکتا ہے، جس کے بعد زیادہ تر استعمال کے کیسز کے لیے فائدہ کم واضح ہوتا ہے۔ کیش کا سائز کم کرنے سے میموری کا استعمال کم ہوگا۔ غیر استعمال شدہ میمپول میموری اس کیش کے لیے شیئر کی جاتی ہے۔
+```
+
 <!-- cache_translation_check_ur_0d4961bc60fee38d1313b43865e782ebb224ba023339dec3efbd5ed5879eef73 -->
 ```
         <source>Size of &amp;database cache</source>
@@ -877,6 +979,42 @@ The translation is understandable Urdu but it omits the required shortcut ampers
 
 Correct translation (with ampersand before تصدیقی):
 اسکرپٹ اور &تصدیقی دھاگوں کی تعداد
+```
+
+<!-- cache_translation_check_ur_64e6c4c8d84da2bfa5c0f9421c10607bb6a34f9eebb4d9a93aba2103475d9b68 -->
+```
+        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports PCP or NAT-PMP and it is enabled. The external port could be random.</source>
+        <translation>"بٹ کوائن کلائنٹ پورٹ کو روٹر پر خودکار طور پر کھولیں۔ یہ صرف اس وقت کام کرتا ہے جب آپ کا روٹر PCP یا NAT-PMP کو سپورٹ کرتا ہو اور یہ فعال ہو۔ بیرونی پورٹ بے ترتیب ہو سکتا ہے۔</translation>
+    
+ERR
+The translation includes an opening double quotation mark (") at the beginning that is not present in the source text.
+
+Correct translation:
+بٹ کوائن کلائنٹ پورٹ کو روٹر پر خودکار طور پر کھولیں۔ یہ صرف اس وقت کام کرتا ہے جب آپ کا روٹر PCP یا NAT-PMP کو سپورٹ کرتا ہو اور یہ فعال ہو۔ بیرونی پورٹ بے ترتیب ہو سکتا ہے۔
+```
+
+<!-- cache_translation_check_ur_cf274838cb556b0c61a523818f45c39f2dd5d80eb00ae2d051b8c4ec05e66ad3 -->
+```
+        <source>Map port using PCP or NA&amp;T-PMP</source>
+        <translation>بٹ کوائن کے لیے PCP یا NAT-PMP کا استعمال کرتے ہوئے پورٹ میپ کریں</translation>
+    
+ERR
+The translation includes "بٹ کوائن کے لیے" (for Bitcoin), which is not present in the source text. Additionally, the shortcut key indicator (&amp;) is missing in the translation.
+
+Correct translation:
+PCP یا NA&amp;T-PMP کا استعمال کرتے ہوئے پورٹ میپ کریں
+```
+
+<!-- cache_translation_check_ur_0d4072a25825358b37522710fb92cd1411802d8c9e92dd3a88af8c64fed8a735 -->
+```
+        <source>Font in the Overview tab: </source>
+        <translation>بٹ کوائن کے لیے اوور ویو ٹیب میں فونٹ"</translation>
+    
+ERR
+The translation includes an extra "بٹ کوائن کے لیے" (for Bitcoin) which is not in the source text, and it ends with a stray quotation mark.
+
+Correct translation:
+اوور ویو ٹیب میں فونٹ:
 ```
 
 <!-- cache_translation_check_ur_5b7b95242d4af55521f118d8f64f570430170e409e3779df525dcecd3678b4cf -->
@@ -904,6 +1042,57 @@ The source "&Network" uses "&" to mark a keyboard shortcut; the translation inco
 
 Correct translation:
 &نیٹ ورک
+```
+
+<!-- cache_translation_check_ur_9b6a9a5121d76bcb2d9b56c640c2e8b723bf31a001d1dafd1405abbd0171ce7c -->
+```
+        <source>MiB</source>
+        <translation>بٹ کوائن کے لیے بلاک اسٹوریج کو میبی بائٹ تک پرون کریں</translation>
+    
+ERR
+The translation includes an entire sentence ("Prune block storage for Bitcoin to Mebibyte") instead of just translating the unit "MiB". This will likely break the user interface where only the unit suffix is expected.
+
+Correct translation:
+میبی بائٹ
+```
+
+<!-- cache_translation_check_ur_c9ceaee6c16b71f3d49650dd789f66de30a39e32b72b95c9966c3ded8b1155df -->
+```
+        <source>(0 = auto, &lt;0 = leave that many cores free)</source>
+        <translation>(بٹ کوائن کے لیے) 0 = خودکار، &lt;0 = اتنی کورز کو سسٹم کے لیے آزاد
+ چھوڑیں</translation>
+    
+ERR
+The translation includes "(بٹ کوائن کے لیے)" (for Bitcoin) which is not in the source text and adds unnecessary context. Additionally, there is an unnecessary line break within the translation.
+
+Correct translation:
+(0 = خودکار، <0 = اتنی کورز کو آزاد چھوڑیں)
+```
+
+<!-- cache_translation_check_ur_7a8a2bcbd861a4a534db742e10e314d1eb0a1bccc2e2d26c05b14f3f824aabb9 -->
+```
+        <source>This allows you or a third party tool to communicate with the node through command-line and JSON-RPC commands.</source>
+        <extracomment>Tooltip text for Options window setting that enables the RPC server.</extracomment>
+        <translation>بٹ کوائن کے لیے اس سے آپ یا کوئی تیسری پارٹی کا ٹول نوڈ کے ساتھ کمانڈ لائن اور JSON-RPC کمانڈز کے ذریعے رابطہ کر سکتا ہے۔"</translation>
+    
+ERR
+The translation includes an unnecessary addition "بٹ کوائن کے لیے" (for Bitcoin) at the beginning, which is not in the source text, and it ends with a stray quotation mark.
+
+Correct translation:
+اس سے آپ یا کوئی تیسری پارٹی کا ٹول نوڈ کے ساتھ کمانڈ لائن اور JSON-RPC کمانڈز کے ذریعے رابطہ کر سکتا ہے۔
+```
+
+<!-- cache_translation_check_ur_d1d273f8ef83eb4296e98360afd45ff7fcc75713716ebcdecae7fb0e095671e4 -->
+```
+        <source>Subtract &amp;fee from amount by default</source>
+        <extracomment>An Options window setting to set subtracting the fee from a sending amount as default.</extracomment>
+        <translation>فیس کو رقم سے خودکار طور پر منہا کریں</translation>
+    
+ERR
+The translation is missing the '&' character, which is used to indicate the shortcut key as per the instructions.
+
+Correct translation:
+فیس کو رقم سے &خودکار طور پر منہا کریں
 ```
 
 <!-- cache_translation_check_ur_cbbd258258fd71ccd7ebc10eabbb5b6536405f088ecd7db4f23079b85a33ff6e -->
@@ -935,6 +1124,104 @@ Suggested correct translation (with shortcut marker):
 &غیر مصدقہ تبدیلی خرچ کریں
 ```
 
+<!-- cache_translation_check_ur_2eca6804dc72543efee7e53832432aed351c33f27a571e6c53caaa28bed65d04 -->
+```
+        <source>Whether to show PSBT controls.</source>
+        <extracomment>Tooltip text for options window setting that enables PSBT controls.</extracomment>
+        <translation>کیا PSBT کنٹرولز دکھانے ہیں۔"</translation>
+    
+ERR
+The translation includes an unnecessary closing double quotation mark at the end.
+
+Correct translation:
+کیا PSBT کنٹرولز دکھانے ہیں۔
+```
+
+<!-- cache_translation_check_ur_516620b9a687779d4d829ff63f0bf3824e3d2c714ce025eebfd6115e60404eb7 -->
+```
+        <source>External Signer (e.g. hardware wallet)</source>
+        <translation>یرونی دستخط کنندہ (مثلاً ہارڈویئر بٹوا)</translation>
+    
+ERR
+The translation for "External" is misspelled. It should be "بیرونی" (starting with 'ب'), but it is written as "یرونی".
+
+Correct translation:
+بیرونی دستخط کنندہ (مثلاً ہارڈویئر بٹوا)
+```
+
+<!-- cache_translation_check_ur_c7a2ff4c690ff16ce87936784377d4b6bd9700ccea76ef360cbef00b3d75aa47 -->
+```
+        <source>Accept connections from outside.</source>
+        <translation>باہر سے رابطے قبول کری</translation>
+    
+ERR
+The Urdu translation is grammatically incorrect and incomplete. The word "کری" (kari) is used incorrectly here; it should be "کریں" (karein) to indicate a command or a plural/formal action.
+
+Correct translation:
+باہر سے کنکشنز قبول کریں۔
+```
+
+<!-- cache_translation_check_ur_bba6333366b8d55ab05f66bac06520337853304c4f20649847615d111140c685 -->
+```
+        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
+        <translation>بٹ کوائن نیٹ ورک سے SOCKS5 پراکسی کے ذریع
+ے رابطہ کریں"</translation>
+    
+ERR
+The translation contains an unnecessary line break within a word and an trailing double quote at the end.
+
+Correct translation:
+بٹ کوائن نیٹ ورک سے SOCKS5 پراکسی کے ذریعے رابطہ کریں۔
+```
+
+<!-- cache_translation_check_ur_8a717d48d241729b9f7a683527aca97ceeb14ffb184fa6e732ad2b7dc52d2ea1 -->
+```
+        <source>Port of the proxy (e.g. 9050)</source>
+        <translation>پراکسی کا پورٹ (مثلاً 9050)"</translation>
+    
+ERR
+The translation includes a stray double quote character at the end of the string which is not present in the source.
+
+Correct translation:
+پراکسی کا پورٹ (مثلاً 9050)
+```
+
+<!-- cache_translation_check_ur_97621b9afae6570295af73929b60c3b123821bac6d4ffd920d4292c35a21d8aa -->
+```
+        <source>Used for reaching peers via:</source>
+        <translation>"ساتھیوں تک رسائی کے لیے استعمال کیا جاتا ہے:</translation>
+    
+ERR
+The translation includes an unnecessary opening quotation mark (`"`) that is not present in the source text.
+
+Correct translation:
+ساتھیوں تک رسائی کے لیے استعمال کیا جاتا ہے:
+```
+
+<!-- cache_translation_check_ur_e264c3b6a363212efa9abcaba908e199c9b89bcb1ac8d25b5df335078525a88d -->
+```
+        <source>IPv6</source>
+        <translation>"آئی پی وی 6"</translation>
+    
+ERR
+The translation includes unnecessary quotation marks around the term. In technical contexts like this, the name of the protocol should not be quoted.
+
+Correct translation:
+آئی پی وی 6
+```
+
+<!-- cache_translation_check_ur_4e7a7cbc0d790a51c2bc878fab880083794662e3c0f699f5d6d44203da4bde68 -->
+```
+        <source>Tor</source>
+        <translation>ور"</translation>
+    
+ERR
+The translation is incorrect and includes a stray double quote. "Tor" is a proper noun referring to the anonymity network and should be transliterated as "ٹور" in Urdu. The provided text "ور\"" is missing the initial letter and contains an extra character.
+
+Correct translation:
+ٹور
+```
+
 <!-- cache_translation_check_ur_6713eef3b7491f5764d87dc1833865f473b05c468708d35dff18e2edc716799a -->
 ```
         <source>&amp;Window</source>
@@ -945,6 +1232,225 @@ The translation is incorrect. It adds the Urdu word "اور" (meaning "and") and
 
 Correct translation:
 &amp;ونڈو
+```
+
+<!-- cache_translation_check_ur_857e4dbfc445030249764015f311ad800676f321d69d78038c331090725d93e8 -->
+```
+        <source>Show only a tray icon after minimizing the window.</source>
+        <translation>"ونڈو کو کم کرنے کے بعد صرف ٹرے آئیکن دکھائیں"</translation>
+    
+ERR
+The translation includes unnecessary quotation marks around the text, which were not present in the source.
+
+Correct translation:
+ونڈو کو کم کرنے کے بعد صرف ٹرے آئیکن دکھائیں
+```
+
+<!-- cache_translation_check_ur_047a0d252c22607afa277adf82080d875bc89b1583ae7e95a7ab1962f1662857 -->
+```
+        <source>Whether to show coin control features or not.</source>
+        <translation>"کیا سکے کنٹرول فیچرز دکھانے ہیں یا نہیں۔</translation>
+    
+ERR
+The translation includes an unnecessary opening double quote (") at the start of the sentence.
+
+Correct translation:
+کیا کوائن کنٹرول فیچرز دکھانے ہیں یا نہیں۔
+```
+
+<!-- cache_translation_check_ur_17a0a4aa090b67f6de5e9c9e677ee19fcadea2a8aa9acfe133ff7535a79bb8b4 -->
+```
+        <source>The configuration file is used to specify advanced user options which override GUI settings. Additionally, any command-line options will override this configuration file.</source>
+        <extracomment>Explanatory text about the priority order of instructions considered by client. The order from high to low being: command-line, configuration file, GUI settings.</extracomment>
+        <translation>کنفیگریشن فائل کا استعمال اعلیٰ صارف اختیارات کو متعین کرنے کے لیے کیا جاتا ہے جو GUI سیٹنگز کو اوور رائیڈ کرتے ہیں۔ اس کے علاوہ، کوئی بھی کمانڈ لائن اختیارات اس کنفیگریشن فائل کو اوور رائیڈ کریں گے۔"</translation>
+    
+ERR
+The translation includes a stray double quote character at the very end of the sentence which is not present in the source text.
+
+Correct translation:
+کنفیگریشن فائل کا استعمال اعلیٰ صارف اختیارات کو متعین کرنے کے لیے کیا جاتا ہے جو GUI سیٹنگز کو اوور رائیڈ کرتے ہیں۔ اس کے علاوہ، کوئی بھی کمانڈ لائن اختیارات اس کنفیگریشن فائل کو اوور رائیڈ کریں گے۔
+```
+
+<!-- cache_translation_check_ur_777714b6a0df13fecc99bd64f1364bc5052fb486a4714e41a11f1c04f0485db7 -->
+```
+        <source>Cancel</source>
+        <translation>نسوخ کریں"</translation>
+    
+ERR
+The translation contains an unnecessary trailing quotation mark and the word choice "نسوخ" (nasookh) is less common or grammatically awkward compared to the standard term for "Cancel" in Urdu software contexts.
+
+Correct translation:
+منسوخ کریں
+```
+
+<!-- cache_translation_check_ur_99b91a917cf629e3c8046241fab43ef179b3f51b145a277042eb694ed846bae0 -->
+```
+        <source>The configuration file could not be opened.</source>
+        <translation>کنفیگریشن فائل کھولی نہیں جا سکی۔"</translation>
+    
+ERR
+The translation includes an extra quotation mark (") at the end of the sentence which is not present in the source text.
+
+Correct translation:
+کنفیگریشن فائل کھولی نہیں جا سکی۔
+```
+
+<!-- cache_translation_check_ur_d1691094b8458ceb1a5d9ce6b3012dad9fe5571022263eec7b0b8384b595d2a0 -->
+```
+        <source>PSBT Operations</source>
+        <translation>"PSBT آپریشنز</translation>
+    
+ERR
+The translation includes an unnecessary leading double quote that is not present in the source text.
+
+Correct translation:
+PSBT آپریشنز
+```
+
+<!-- cache_translation_check_ur_02697094df996e6ad52a1aabd24f8a51bb35a7df2e51f1392b230c33bdba0464 -->
+```
+        <source>Sign Tx</source>
+        <translation>رانزیکشن پر دستخط کریں"</translation>
+    
+ERR
+The translation contains a typo and a stray punctuation mark. "Tx" (Transaction) should be "ٹرانزیکشن" (starting with 'T') instead of "رانزیکشن", and there is an unnecessary double quote at the end.
+
+Correct translation:
+ٹرانزیکشن پر دستخط کریں
+```
+
+<!-- cache_translation_check_ur_66e9aaea1142d3298cf4081ff06307fbb94c63f008d740bf751ccd165d497d3b -->
+```
+        <source>Broadcast Tx</source>
+        <translation>ٹرانزیکشن نشر کریں"</translation>
+    
+ERR
+The translation includes a trailing double quote character (") that is not present in the source text.
+
+Correct translation:
+ٹرانزیکشن نشر کریں
+```
+
+<!-- cache_translation_check_ur_5f0c743cf090b75a9403a42fb6582b192f04e0c8e0f8027d235ca2e57b5268d0 -->
+```
+        <source>Cannot sign inputs while wallet is locked.</source>
+        <translation>"جب بٹوا مقفل ہو تو ان پٹس پر دستخط نہیں کیے جا سکتے۔"</translation>
+    
+ERR
+The translation includes unnecessary quotation marks that were not present in the source text.
+
+Correct translation:
+جب بٹوا مقفل ہو تو ان پٹس پر دستخط نہیں کیے جا سکتے۔
+```
+
+<!-- cache_translation_check_ur_f7670d17754af8bcd3d2c4fcef5df8c408e4ab5cf139a182dc51d55114526e16 -->
+```
+        <source>Signed transaction successfully. Transaction is ready to broadcast.</source>
+        <translation>"ٹرانزیکشن پر کامیابی سے دستخط کر دیا گیا۔ ٹرانزیکشن نشر کرنے کے لیے تیار ہے۔</translation>
+    
+ERR
+The translation includes an unnecessary opening quotation mark at the beginning of the text which is not present in the source.
+
+Correct translation:
+ٹرانزیکشن پر کامیابی سے دستخط کر دیا گیا۔ ٹرانزیکشن نشر کرنے کے لیے تیار ہے۔
+```
+
+<!-- cache_translation_check_ur_4aa9981fdc28a6341baf9d1b5bebed47a127ad0ffb4d85e709d5d0c7cc157543 -->
+```
+        <source>PSBT copied to clipboard.</source>
+        <translation>"PSBT کلپ بورڈ پر کاپی کر دیا گیا۔"</translation>
+    
+ERR
+The translation includes unnecessary quotation marks around the sentence, which were not present in the source text.
+
+Correct translation:
+PSBT کلپ بورڈ پر کاپی کر دیا گیا۔
+```
+
+<!-- cache_translation_check_ur_b24f347191edb37205a89df5f73b273a3dabdbae52260d9aa7046370b33c36a3 -->
+```
+        <source>Partially Signed Transaction (Binary)</source>
+        <extracomment>Expanded name of the binary PSBT file format. See: BIP 174.</extracomment>
+        <translation>جزوی طور پر دستخط شدہ ٹرانزیکشن (بائنری</translation>
+    
+ERR
+The translation is missing a closing parenthesis at the end of the string.
+
+Correct translation:
+جزوی طور پر دستخط شدہ ٹرانزیکشن (بائنری)
+```
+
+<!-- cache_translation_check_ur_8a02a89693c51897bb1c6079a9b2a1872ac464e5a9a2bc38cfd7b4c4a9b76f92 -->
+```
+        <source>PSBT saved to disk.</source>
+        <translation>PSBT ڈسک پر محفوظ کر دیا گیا۔"</translation>
+    
+ERR
+The translation includes a trailing double quotation mark (") that is not present in the source text and constitutes a format error.
+
+Correct translation:
+PSBT ڈسک پر محفوظ کر دیا گیا۔
+```
+
+<!-- cache_translation_check_ur_ba9afd60f348a230fc996c33c1b01d5bfac9d4f9e92927e2f791e01900016116 -->
+```
+        <source>own address</source>
+        <translation>اپنا پتہ"</translation>
+    
+ERR
+The translation includes an unnecessary closing quotation mark at the end of the text that is not present in the source.
+
+Correct translation:
+اپنا پتہ
+```
+
+<!-- cache_translation_check_ur_f7e0572e2252d82d7598d199e3b5f4309a14d3498281ca7fc0b68542f57b71a8 -->
+```
+        <source>Unable to calculate transaction fee or total transaction amount.</source>
+        <translation>"ٹرانزیکشن فیس یا کل ٹرانزیکشن رقم کا حساب لگانے میں ناکامی۔"</translation>
+    
+ERR
+The translation includes unnecessary quotation marks around the text which were not present in the source.
+
+Correct translation:
+ٹرانزیکشن فیس یا کل ٹرانزیکشن رقم کا حساب لگانے میں ناکامی۔
+```
+
+<!-- cache_translation_check_ur_5a9e84f3c7f3270f9327f1fe654bd53a55e689a9162400ea2dac0401c9ba9c7a -->
+```
+        <source>Pays transaction fee: </source>
+        <translation>ٹرانزیکشن فیس ادا کرتا ہے:"</translation>
+    
+ERR
+The translation includes an extra quotation mark at the end that is not present in the source text. Additionally, there is a missing trailing space which should be preserved.
+
+Correct translation:
+ٹرانزیکشن فیس ادا کرتا ہے:
+```
+
+<!-- cache_translation_check_ur_2dcf4fd225e6f3e2cbe997141f4e8262c0dd205e0d87938a29bde54494e6f206 -->
+```
+        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <translation>کوائن شروع نہیں کیا جا سکتا: کلک کرکے ادائیگی کرنے والا ہینڈلر۔</translation>
+    
+ERR
+The translation of "bitcoin" as "کوائن" (Coin) is incorrect and loses the specific branding of the software. In Urdu, "Bitcoin" should be transliterated. Additionally, the word "بٹ" (bit) is missing from the name.
+
+Correct translation:
+بٹ کوائن شروع نہیں کیا جا سکتا: کلک ٹو پے ہینڈلر (click-to-pay handler)
+```
+
+<!-- cache_translation_check_ur_6aa3b0357301088dc7844b528f552ba1539cdc9a074b05366cee9cb23f0aa62f -->
+```
+        <source>Direction</source>
+        <extracomment>Title of Peers Table column which indicates the direction the peer connection was initiated from.</extracomment>
+        <translation>راہنمائی </translation>
+    
+ERR
+The Urdu translation provided 'راہنمائی' (Rahnumai) means 'Guidance' or 'Instruction'. In the context of a network connection (incoming/outgoing), the correct word for 'Direction' is 'سمت' (Simt). Additionally, the translation contains a stray trailing space.
+
+Correct translation:
+سمت
 ```
 
 <!-- cache_translation_check_ur_2983781429b28da45bb49315d385077df361cc8dec80d2e061d1be9511d11440 -->
@@ -971,6 +1477,42 @@ Problems:
 
 Suggested correct translation (with & included and no trailing punctuation):
 &تصویر کی کاپی کریں
+```
+
+<!-- cache_translation_check_ur_b8388b86e5d9aadbcc05fcab13bed480ac28a24ea369b0d9be4e44a2dc225edf -->
+```
+        <source>Resulting URI too long, try to reduce the text for label / message.</source>
+        <translation>"یو آر آئی بہت لمبا ہے، براہ کرم لیبل یا پیغام کے متن کو کم کریں۔"</translation>
+    
+ERR
+The translation includes unnecessary quotation marks around the text which were not present in the source.
+
+Correct translation:
+نتیجہ کے طور پر بننے والا یو آر آئی بہت لمبا ہے، براہ کرم لیبل / پیغام کے متن کو کم کرنے کی کوشش کریں۔
+```
+
+<!-- cache_translation_check_ur_d681b78630a37c0cf12f799a3cde5c94750768791375833dab0226cff946b6a5 -->
+```
+        <source>Error encoding URI into QR Code.</source>
+        <translation>"یو آر آئی کو QR کوڈ میں انکوڈ کرنے میں خرابی۔"</translation>
+    
+ERR
+The translation includes unnecessary quotation marks around the text which are not present in the source.
+
+Correct translation:
+یو آر آئی کو QR کوڈ میں انکوڈ کرنے میں خرابی۔
+```
+
+<!-- cache_translation_check_ur_64f2a57b3182648b12ed843dc01e77b023b422f4220c116115d06562ba3304a4 -->
+```
+        <source>QR code support not available.</source>
+        <translation>QR کوڈ کی سپورٹ دستیاب نہیں ہے۔"</translation>
+    
+ERR
+The translation includes an extra quotation mark (") at the end of the sentence which is not present in the source text.
+
+Correct translation:
+QR کوڈ کی سپورٹ دستیاب نہیں ہے۔
 ```
 
 <!-- cache_translation_check_ur_5af8d7ff184acd5190668bb64aa852a94db49bda96a870b4948026a31dd47982 -->
@@ -1166,6 +1708,19 @@ Correct translation:
 فی کلو بائٹ
 ```
 
+<!-- cache_translation_check_ur_b24f347191edb37205a89df5f73b273a3dabdbae52260d9aa7046370b33c36a3 -->
+```
+        <source>Partially Signed Transaction (Binary)</source>
+        <extracomment>Expanded name of the binary PSBT file format. See: BIP 174.</extracomment>
+        <translation>جزوی طور پر دستخط شدہ ٹرانزیکشن (بائنری</translation>
+    
+ERR
+The translation is missing a closing parenthesis at the end of the string.
+
+Correct translation:
+جزوی طور پر دستخط شدہ ٹرانزیکشن (بائنری)
+```
+
 <!-- cache_translation_check_ur_757d77c5befc4a6bb41546053981e9687f07cdba1b0909d694ef2436a838bc88 -->
 ```
         <source>&amp;Label:</source>
@@ -1179,6 +1734,18 @@ Problems:
 
 Corrected translation (keep the ampersand exactly once and include the colon):
 &لیبل:
+```
+
+<!-- cache_translation_check_ur_ba9afd60f348a230fc996c33c1b01d5bfac9d4f9e92927e2f791e01900016116 -->
+```
+        <source>own address</source>
+        <translation>اپنا پتہ"</translation>
+    
+ERR
+The translation includes an unnecessary closing quotation mark at the end of the text that is not present in the source.
+
+Correct translation:
+اپنا پتہ
 ```
 
 <!-- cache_translation_check_ur_23dc6480cdf08387666510a341a5cab042775344dba86c91513d643de2c33adc -->
@@ -1245,6 +1812,18 @@ The translation is missing the mnemonic ampersand (&) present in the source. The
 Correct translation:
 &amp;برآمد
 ```
+
+<!-- cache_translation_check_ur_777714b6a0df13fecc99bd64f1364bc5052fb486a4714e41a11f1c04f0485db7 -->
+```
+        <source>Cancel</source>
+        <translation>نسوخ کریں"</translation>
+    
+ERR
+The translation contains an unnecessary trailing quotation mark and the word choice "نسوخ" (nasookh) is less common or grammatically awkward compared to the standard term for "Cancel" in Urdu software contexts.
+
+Correct translation:
+منسوخ کریں
+```
 </details>
 
-Number of issues: 93.
+Number of issues: 140.

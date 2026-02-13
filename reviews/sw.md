@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -197,6 +197,18 @@ Correct translation:
 &Chaguo za mstari wa amri
 ```
 
+<!-- cache_translation_check_sw_c0674eb5e7a03b6270e95bf6dc7191a1f71f4bb09dc2ea120c8aa02c3265a5ff -->
+```
+        <source>Last received block was generated %1 ago.</source>
+        <translation>Kizuizi cha mwisho kilichopokelewa kilitolewa awali.</translation>
+    
+ERR
+The translation is missing the required format specifier '%1', which represents the time duration (e.g., "5 minutes ago"). It also ends with "awali" (previously/initially) instead of providing a placeholder for the relative time.
+
+Correct translation:
+Kizuizi cha mwisho kilichopokelewa kilitengenezwa %1 iliyopita.
+```
+
 <!-- cache_translation_check_sw_255c7be7921031a3f1a701c09a1af76ab32dffb1ad983525ca5c08ff302e3ffd -->
 ```
         <source>&amp;Receiving addresses</source>
@@ -296,18 +308,6 @@ Correct translation:
 Hitilafu
 ```
 
-<!-- cache_translation_check_sw_4cb3be6ad7bbd405628a73996cd65c2d24eed2b2dfbab4b4e32cf785fb4fa798 -->
-```
-        <source>Error</source>
-        <translation>Onyo</translation>
-    
-ERR
-The translation of "Error" as "Onyo" is incorrect. "Onyo" means "Warning" in Swahili.
-
-Correct translation:
-Hitilafu
-```
-
 <!-- cache_translation_check_sw_529ce375d4a989a1d749fa7d58c6e28cb377fa4d45f38a0f39064f20e1a94111 -->
 ```
         <source>Address</source>
@@ -381,18 +381,6 @@ Correct translation:
 &amp;Hariri lebo ya anwani
 ```
 
-<!-- cache_translation_check_sw_4cb3be6ad7bbd405628a73996cd65c2d24eed2b2dfbab4b4e32cf785fb4fa798 -->
-```
-        <source>Error</source>
-        <translation>Onyo</translation>
-    
-ERR
-The translation of "Error" as "Onyo" is incorrect. "Onyo" means "Warning" in Swahili.
-
-Correct translation:
-Hitilafu
-```
-
 <!-- cache_translation_check_sw_be37632ddaea6e82550b3043275af4f67d120e66a2b038015d81954005d630ad -->
 ```
         <source>More than one onion bind address is provided. Using %s for the automatically created Tor onion service.</source>
@@ -406,4 +394,4 @@ Zaidi ya anuani moja ya onion bind imetolewa. %s inatumiwa kwa ajili ya huduma y
 ```
 </details>
 
-Number of issues: 32.
+Number of issues: 31.

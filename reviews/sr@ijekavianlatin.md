@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -2397,18 +2397,6 @@ Correct translation:
 Blokove nije moguće ponovo reprodukovati. Moraćete da obnovite bazu podataka koristeći -reindex-chainstate.
 ```
 
-<!-- cache_translation_check_sr@ijekavianlatin_5c5baffb73930f0404b68ed01b75ee7f6705de3ba6ac7b6a11dea9f793b1f326 -->
-```
-        <source>Error loading %s: Private keys can only be disabled during creation</source>
-        <translation>Грешка током учитавања %s: Приватни кључеви могу бити онемогућени само приликом креирања</translation>
-    
-ERR
-The translation is in Cyrillic script, but 'sr@ijekavianlatin' specifies the Latin script. Additionally, "pri stvaranju" is a more natural translation for "during creation" in Ijekavian Latin.
-
-Correct translation:
-Greška tokom učitavanja %s: Privatni ključevi mogu biti onemogućeni samo pri stvaranju
-```
-
 <!-- cache_translation_check_sr@ijekavianlatin_1b8fb734655cbadcdef962f46c3a3fc84ed492bc7f5421f136f31c9376abcce6 -->
 ```
         <source>Error loading %s: Wallet requires newer version of %s</source>
@@ -2496,4 +2484,4 @@ Novčanik treba da bude prepisan: ponovo pokrenite %s da završite
 ```
 </details>
 
-Number of issues: 198.
+Number of issues: 197.

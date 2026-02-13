@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -8,6 +8,31 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 [If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bde%5D%20request)
 
+
+<!-- cache_translation_check_de_b2c022582a763d4a9f779d9574f6e00c6812b9d2331780a29d679152bdb44082 -->
+```
+        <source>Right-click to edit address or label</source>
+        <translation>Adresse bearbeitenRechtsklick zum Bearbeiten der Adresse oder der Beschreibung</translation>
+    
+ERR
+The translation contains redundant text at the beginning ("Adresse bearbeiten") merged directly with the rest of the sentence without spacing. It appears to be two different translation attempts joined together.
+
+Correct translation:
+Rechtsklick zum Bearbeiten der Adresse oder der Bezeichnung
+```
+
+<!-- cache_translation_check_de_4b9ae8b4d932f009c9244d7f4294ffcbf67201fc3425f0ff04eda01ee056f505 -->
+```
+        <source>Private Broadcast</source>
+        <extracomment>Short-lived peer connection type that is used for broadcasting privacy-sensitive data.</extracomment>
+        <translation>Private Rundsendug</translation>
+    
+ERR
+The German word for "broadcast" is "Rundsendung". The provided translation contains a typo ("Rundsendug" instead of "Rundsendung").
+
+Correct translation:
+Private Rundsendung
+```
 
 <!-- cache_translation_check_de_4a4b331d125decb9c7e827826934faf0860de67f89e0d175ab6cd52552da87f9 -->
 ```
@@ -33,6 +58,50 @@ Correct translation:
 &Fenster
 ```
 
+<!-- cache_translation_check_de_2a7c9ad5872292cb37cdb9cd36f6e9e694e874d81f24e8b8df39f4abfcaaf972 -->
+```
+        <source>Are you sure you wish to restore the wallet file &lt;i&gt;%1&lt;/i&gt; to &lt;i&gt;%2&lt;/i&gt; and migrate it?</source>
+        <translation>Bist du sicher, dass du die Wallet-Dateien &lt;i&gt;%1&lt;/i&gt; bis &lt;i&gt;%2&lt;/i&gt; wiederherstellen und migrieren möchtest?</translation>
+    
+ERR
+The translation contains two errors:
+1. It translates "wallet file" (singular) as "Wallet-Dateien" (plural).
+2. It uses the preposition "bis" (which means "until" or "up to" in a range), whereas the English "to" in this context indicates a destination path. In German, "nach" or "in" is appropriate for file paths.
+
+Correct translation:
+Bist du sicher, dass du die Wallet-Datei <i>%1</i> nach <i>%2</i> wiederherstellen und migrieren möchtest?
+```
+
+<!-- cache_translation_check_de_19ae7349582eab63573fc2e94e04364c6b97a8ea5a531729ee4869980bfbd0b0 -->
+```
+        <source>Restoring the wallet will copy the backup file to the wallets directory and place it in the standard wallet directory layout. The original file will not be modified.
+
+Migrating the wallet will convert the restored wallet to one or more descriptor wallets. A new wallet backup will need to be made.
+If this wallet contains any watchonly scripts, a new wallet will be created which contains those watchonly scripts.
+If this wallet contains any solvable but not watched scripts, a different and new wallet will be created which contains those scripts.
+
+The migration process will create a backup of the wallet before migrating. This backup file will be named &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak and can be found in the directory for this wallet. In the event of an incorrect migration, the backup can be restored with the "Restore Wallet" functionality.</source>
+        <translation>Die Wiederherstellung der Wallet kopiert die Backup-Datei in das Wallet-Verzeichnis und legt sie im Standard-Wallet-Verzeichnis. Die Originaldatei wird nicht verändert.
+
+Die Migration der Wallet wandelt die wiederhergestellte Wallet in eine oder mehrere Descriptor-Wallets um. Ein neues Wallet-Backup muss erstellt werden.
+Wenn diese Wallet Watchonly-Skripte enthält, wird eine neue Wallet erstellt, die diese Watchonly-Skripte enthält.
+Wenn diese Wallet lösbare, aber nicht überwachte Skripte enthält, wird eine andere und neue Wallet erstellt, die diese Skripte enthält.
+
+Der Migrationsprozess erstellt vor der Migration ein Backup der Wallet. Diese Sicherungsdatei wird &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak genannt und ist im Verzeichnis dieser Wallet zu finden. Im Falle einer falschen Migration kann das Backup mit der Funktion "Wallet wiederherstellen" wiederhergestellt werden.</translation>
+    
+ERR
+The translation has a minor grammatical issue and an omission in the first paragraph. The phrase "und legt sie im Standard-Wallet-Verzeichnis" is grammatically incomplete (missing a prefix like "ab" for the verb "legen") and omits the word "layout" from the source text ("standard wallet directory layout").
+
+Correct translation:
+Die Wiederherstellung der Wallet kopiert die Backup-Datei in das Wallet-Verzeichnis und ordnet sie in das Standard-Wallet-Verzeichnis-Layout ein. Die Originaldatei wird nicht verändert.
+
+Die Migration der Wallet wandelt die wiederhergestellte Wallet in eine oder mehrere Descriptor-Wallets um. Ein neues Wallet-Backup muss erstellt werden.
+Wenn diese Wallet Watchonly-Skripte enthält, wird eine neue Wallet erstellt, die diese Watchonly-Skripte enthält.
+Wenn diese Wallet lösbare, aber nicht überwachte Skripte enthält, wird eine andere und neue Wallet erstellt, die diese Skripte enthält.
+
+Der Migrationsprozess erstellt vor der Migration ein Backup der Wallet. Diese Sicherungsdatei wird <wallet name>-<timestamp>.legacy.bak genannt und ist im Verzeichnis dieser Wallet zu finden. Im Falle einer fehlerhaften Migration kann das Backup mit der Funktion "Wallet wiederherstellen" wiederhergestellt werden.
+```
+
 <!-- cache_translation_check_de_7eadbe2102be15382bc9015f3f577e7fec84eef711ac1c95f9224f7fc41c0353 -->
 ```
         <source>Subtract &amp;fee from amount by default</source>
@@ -44,18 +113,6 @@ Missing ampersand for the shortcut key; the English string has exactly one '&' w
 
 Correct translation:
 Standardmäßig &Gebühr vom Betrag abziehen
-```
-
-<!-- cache_translation_check_de_8b2e09edda1278389e67402ff321ea1e68d8a536088ad207d8ac33d91295897a -->
-```
-        <source>&amp;Spend unconfirmed change</source>
-        <translation>&amp;Unbestätigtes Wechselgeld darf ausgegeben werden</translation>
-    
-ERR
-The translation changes the concise label into a permissive sentence ("darf ausgegeben werden") and is stylistically inappropriate for a checkbox/option label. A more accurate and standard GUI phrasing is imperative.
-
-Correct translation:
-&Unbestätigtes Wechselgeld ausgeben
 ```
 
 <!-- cache_translation_check_de_7f16d7c974a18118959dea2c14d2be7b801ba8c842760c52722b75a9e55bb3c6 -->
@@ -70,31 +127,6 @@ Correct translation:
 &Fenster
 ```
 
-<!-- cache_translation_check_de_f8d162e45c992b6ba44daa5ce72ac7982408021b6e180a3aa733d7957503c2c4 -->
-```
-        <source>Cannot sign inputs while wallet is locked.</source>
-        <translation>Eingänge können nicht unterzeichnet werden, wenn die Brieftasche gesperrt ist.</translation>
-    
-ERR
-Wording is understandable but not idiomatisch für technische Bitcoin‑Kontexte. „Eingänge“ und „unterzeichnet“ sind unpräzise; üblicher ist „Eingaben/Inputs“ und „signiert“. Außerdem liest sich „solange“ natürlicher als „wenn“ in diesem Zusammenhang.
-
-Korrekte Übersetzung:
-Eingaben können nicht signiert werden, solange die Brieftasche gesperrt ist.
-```
-
-<!-- cache_translation_check_de_3b136319368213551fd549917be3f17e29cbcafba6cd806a4f504693ef3b20d8 -->
-```
-        <source>Sent</source>
-        <extracomment>Title of Peers Table column which indicates the total amount of network information we have sent to the peer.</extracomment>
-        <translation>Übertragen</translation>
-    
-ERR
-"Übertragen" is less precise for a column meaning data we have sent; the standard and clearer term is "Gesendet", which pairs with "Empfangen" for Received.
-
-Correct translation:
-Gesendet
-```
-
 <!-- cache_translation_check_de_78ab6a62e57e938e5986a6dab2dcc66a6f4ef12732387a3637d0e7e772ea1b49 -->
 ```
         <source>Sent</source>
@@ -107,15 +139,17 @@ Correct translation:
 Gesendet
 ```
 
-<!-- cache_translation_check_de_4b8ddaac0a6208e49422b93ca403d62813b033230c6d5d51af527a09f6c8481f -->
+<!-- cache_translation_check_de_aa29383089c2b284adf9a6ac3efec057d414bc85a1556b1d8ae03d785564a135 -->
 ```
-        <source>Clear &amp;All</source>
-        <translation>&amp;Zurücksetzen</translation>
+        <source>The total number of addresses received from this peer that were processed (excludes addresses that were dropped due to rate-limiting).</source>
+        <extracomment>Tooltip text for the Addresses Processed field in the peer details area, which displays the total number of addresses received from this peer that were processed (excludes addresses that were dropped due to rate-limiting).</extracomment>
+        <translation>Die Gesamtzahl der von diesem Peer empfangenen Adressen, die aufgrund von Ratenbegrenzung verworfen (nicht verarbeitet) wurden.</translation>
     
 ERR
-The translation changes the meaning: "Zurücksetzen" means "reset," not "Clear All."
+The translation is incorrect as it conveys the opposite of the source text. The source text refers to the number of addresses that were **processed** (excluding those dropped), while the translation describes the number of addresses that were **dropped/not processed**.
+
 Correct translation:
-&Alles löschen
+Die Gesamtzahl der von diesem Peer empfangenen Adressen, die verarbeitet wurden (Adressen, die aufgrund von Ratenbegrenzung verworfen wurden, sind ausgeschlossen).
 ```
 
 <!-- cache_translation_check_de_e01cdbfc95d76b3f72518333b65a179d238a2467ecc7d7eb125baf2d406baea6 -->
@@ -128,18 +162,6 @@ The translation omits "Bitcoin" and is semantically awkward. It should clearly i
 
 Correct translation:
 Die Bitcoin-Adresse, an die die Zahlung gesendet werden soll
-```
-
-<!-- cache_translation_check_de_e502e92f91b72319f3cd2fa212dd162ae5012fff3ef57ab063aa012473a46145 -->
-```
-        <source>Copy the current signature to the clipboard</source>
-        <translation>Kopieren der aktuelle Signatur in die Zwischenablage</translation>
-    
-ERR
-German grammar and style are incorrect for a UI command. Use the infinitive menu style and correct article/adjective agreement.
-
-Correct translation:
-Die aktuelle Signatur in die Zwischenablage kopieren
 ```
 
 <!-- cache_translation_check_de_4b8ddaac0a6208e49422b93ca403d62813b033230c6d5d51af527a09f6c8481f -->
@@ -175,42 +197,6 @@ The German translation is missing the required single ampersand for the shortcut
 
 Correct translation:
 &Transaktions-ID kopieren
-```
-
-<!-- cache_translation_check_de_4612457685f6d8b9d7284297275358be675b0dc410fd10c8cd723c1b57c77046 -->
-```
-        <source>Error: Dumpfile format record is incorrect. Got "%s", expected "format".</source>
-        <translation>Fehler: Dumpdatei Format Eintrag ist ungültig. "%s" erhalten, "format" erwartet.</translation>
-    
-ERR
-German compound nouns should not be split into separate words. "Dumpdatei Format Eintrag" is unidiomatic; use a compound or hyphenation. Also adding an article improves readability.
-
-Correct translation:
-Fehler: Der Formateintrag der Dumpdatei ist ungültig. "%s" erhalten, "format" erwartet.
-```
-
-<!-- cache_translation_check_de_c2a6d6f620ef1583c161314bdabc0d5eb064654abada07c0562a03c85b4fbf2c -->
-```
-        <source>Option '-maxorphantx' is set but no longer has any effect (see release notes). Please remove it from your configuration.</source>
-        <translation>Die Option '-maxorphantx' ist gesetzt, hat aber keine Wirkung mehr (siehe Release Notes). Bitte von der Konfiguration entfernen.</translation>
-    
-ERR
-The second sentence is grammatically incomplete; it lacks a pronoun and polite form. Also, "Release Notes" can be localized.
-
-Correct translation:
-Die Option '-maxorphantx' ist gesetzt, hat aber keine Wirkung mehr (siehe Versionshinweise). Bitte entfernen Sie sie aus Ihrer Konfiguration.
-```
-
-<!-- cache_translation_check_de_3d92ea9d9fdeec04a43a8baa25128384119e6d2c692e763422d79e0fb92e88cb -->
-```
-        <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of a pruned node)</source>
-        <translation>Prune: Die Synchronisierung der letzten Wallet geht über beschnittene Daten (pruned) hinaus. Sie müssen -reindex laufen lassen (Es wird die gesamte Blockchain erneut heruntergeladen, falls es ein beschnittener Node (pruned) ist)</translation>
-    
-ERR
-"Synchronisierung der letzten Wallet" implies the synchronization of the last wallet rather than the last wallet synchronization. Also, "Node" should be "Knoten", and wording can be more idiomatic.
-
-Correct translation:
-Prune: Die letzte Wallet-Synchronisierung geht über die beschnittenen Daten hinaus. Sie müssen -reindex ausführen (bei einem beschnittenen Knoten wird dabei die gesamte Blockchain erneut heruntergeladen)
 ```
 
 <!-- cache_translation_check_de_addaaed698fa985db2ae9fb99612ec3035ea3da62566419ca84cd7a15658cbce -->
@@ -252,6 +238,79 @@ Alternative phrasing:
 Die Konfigurationseinstellung für %s wird nur im %s-Netzwerk angewendet, wenn sie im Abschnitt [%s] steht.
 ```
 
+<!-- cache_translation_check_de_97d9339d764b16cfcd0106b36bd8c38cac7e3018e5135bb51f2ec399aa6810fe -->
+```
+        <source>Error creating %s: Could not write version metadata.</source>
+        <translation>Fehler beim erstellen von %s: Versionsmetadaten konnten nicht geschrieben werden.</translation>
+    
+ERR
+In the German translation, "erstellen" should be capitalized because it is used as a nominalized verb (substantive infinitive) following the preposition "beim" (contraction of "bei dem").
+
+Correct translation:
+Fehler beim Erstellen von %s: Versionsmetadaten konnten nicht geschrieben werden.
+```
+
+<!-- cache_translation_check_de_98c4a3a6747dc57f084013aba0c293dcce8f14dcb58f54a21d3c205af9f980c3 -->
+```
+        <source>Option '-limitdescendantsize' is given but descendant size limits have been replaced with cluster size limits (see -limitclustersize). This option has no effect.</source>
+        <translation>Die Option '-limitdescendantsize' wird angegeben, aber die Größenbeschränkung der Descendant wurden durch Clustergrößenbeschränkungen ersetzt (siehe -limitclustersize). Diese Option hat keine Wirkung.</translation>
+    
+ERR
+The German translation contains a grammatical error regarding the plural/declension of the term 'Descendant'. In German, it should either be translated (e.g., 'Nachfahren') or, if kept as a technical term, use the plural form 'Descendants' to match the plural 'Größenbeschränkungen'. Additionally, the word "angegeben" is slightly passive; "festgelegt" or "verwendet" is more common in this context.
+
+Correct translation:
+Die Option '-limitdescendantsize' wird verwendet, aber die Größenbeschränkungen für Descendants wurden durch Clustergrößenbeschränkungen ersetzt (siehe -limitclustersize). Diese Option hat keine Wirkung.
+```
+
+<!-- cache_translation_check_de_488e496f5d5e16762dd5b2c36eaed2f2d5be6ed7370a50443ee3c22183506bdc -->
+```
+        <source>Private broadcast of own transactions requested (-privatebroadcast) and -proxyrandomize is disabled. Tor circuits for private broadcast connections may be correlated to other connections over Tor. For maximum privacy set -proxyrandomize=1.</source>
+        <translation>Private Rundsendungen eigener Transaktionen (-privatebroadcast) und -proxyrandomize sind deaktiviert. Tor-Circuits für private Rundsendungsverbindungen können mit anderen Verbindungen über Tor korreliert sein. Für maximale Privatsphäre setze -proxyrandomize=1.</translation>
+    
+ERR
+The translation incorrectly states that the private broadcast is disabled, whereas the source text states it was requested (enabled). The source says "requested... and -proxyrandomize is disabled", but the translation groups both together as "sind deaktiviert" (are disabled).
+
+Correct translation:
+Private Rundsendung eigener Transaktionen angefordert (-privatebroadcast) und -proxyrandomize ist deaktiviert. Tor-Circuits für private Rundsendungsverbindungen können mit anderen Verbindungen über Tor korreliert werden. Für maximale Privatsphäre setzen Sie -proxyrandomize=1.
+```
+
+<!-- cache_translation_check_de_887ada539f6a3aa1e7944b20ef61d640b4656a82eefa1f4368c7b97680386f54 -->
+```
+        <source>Private broadcast of own transactions requested (-privatebroadcast), but -connect is also configured. They are incompatible because the private broadcast needs to open new connections to randomly chosen Tor or I2P peers. Consider using -maxconnections=0 -addnode=... instead</source>
+        <translation>Private Rundsendungen eigener Transaktionen wird angefordert (-privatebroadcast), aber -connect ist ebenfalls konfiguriert. Diese sind inkompatibel, weil die private Rundsendung neue Verbindungen zu zufällig ausgewählten Tor- oder I2P-Peers öffnen muss. Erwäge die Verwendung von -maxconnections=0 -addnode=... stattdessen</translation>
+    
+ERR
+The German grammar is incorrect. The subject "Private Rundsendungen" is plural, but the verb "wird" is singular. It should be "Private Rundsendung" (singular) or "werden" (plural). Additionally, the word order in the final sentence is slightly clunky.
+
+Correct translation:
+Private Rundsendung eigener Transaktionen angefordert (-privatebroadcast), aber -connect ist ebenfalls konfiguriert. Diese sind inkompatibel, weil die private Rundsendung neue Verbindungen zu zufällig ausgewählten Tor- oder I2P-Peers öffnen muss. Erwägen Sie stattdessen die Verwendung von -maxconnections=0 -addnode=...
+```
+
+<!-- cache_translation_check_de_a823c11abeb2a9ac05a83c5343669727a2fe3f2af8ed08ec6705863899cf0818 -->
+```
+        <source>SQLiteDatabase: Failed to read database verification error: %s</source>
+        <translation>Datenbank konnte nicht gelesen werden
+Verifikations-Error: %s</translation>
+    
+ERR
+The translation introduces an unnecessary newline character that is not present in the source text. It also omits the "SQLiteDatabase" prefix and slightly alters the meaning (the source indicates a failure to read the verification error message itself).
+
+Correct translation:
+SQLiteDatabase: Datenbank-Verifizierungsfehler konnte nicht gelesen werden: %s
+```
+
+<!-- cache_translation_check_de_eb39c9cf17e4f159234c1bf816efb7ece4de369c4c36b7e9be39b5f349ce0171 -->
+```
+        <source>Section [%s] is not recognized.</source>
+        <translation>Sektion [%s] ist nicht delegiert.</translation>
+    
+ERR
+The German translation is incorrect. "recognized" means "erkannt", whereas "delegiert" means "delegated". In the context of a software section, "nicht erkannt" or "unbekannt" is the correct terminology.
+
+Correct translation:
+Sektion [%s] wird nicht erkannt.
+```
+
 <!-- cache_translation_check_de_dba144209bf2d3425da312c35cbebcd53c52026f6f00ffe30da06a77c720346a -->
 ```
         <source>The %s path uses exFAT, which is known to have intermittent corruption problems on macOS. Move this directory to a different filesystem to avoid data loss.</source>
@@ -264,6 +323,30 @@ ERR
 
 Correct translation:
 Der %s-Pfad verwendet exFAT, das unter macOS bekanntermaßen sporadische Korruptionsprobleme aufweist. Verschieben Sie dieses Verzeichnis auf ein anderes Dateisystem, um Datenverlust zu vermeiden.
+```
+
+<!-- cache_translation_check_de_c76c953889bb6e10c840e4f7692e5742b305954bdfac65e48b4abe66adc43fa9 -->
+```
+        <source>The specified config file %s does not exist</source>
+        <translation>Die angegebene Konfigurationsdatei %sexistiert nicht</translation>
+    
+ERR
+The translation contains a spacing error. There should be a space between the format specifier '%s' and the verb 'existiert' to avoid them being joined together.
+
+Correct translation:
+Die angegebene Konfigurationsdatei %s existiert nicht
+```
+
+<!-- cache_translation_check_de_d76d54b9a6fd9a49cd46051cded24b4c08269b0177ba8f362df04b2e6676e25c -->
+```
+        <source>Unable to open %s for writing</source>
+        <translation>Konnte %s nicht zum Schreiben zu öffnen</translation>
+    
+ERR
+The German grammar is incorrect. The verb 'öffnen' should be in the infinitive without 'zu' when used with the modal verb 'konnte'.
+
+Correct translation:
+Konnte %s nicht zum Schreiben öffnen
 ```
 
 <!-- cache_translation_check_de_30cd8c6940936d245663dad4b7e855a03b9182045ac0bd6920f4ef11cd245b27 -->
@@ -290,41 +373,6 @@ Grammatical error: "eine vorausgewähltes Input" has mismatched gender and uses 
 Correct translation:
 Die Transaktion erfordert ein Ziel mit einem Wert ungleich Null, einen Gebührensatz ungleich Null oder eine vorausgewählte Eingabe.
 ```
-
-<!-- cache_translation_check_de_451f85975dce6b6feaed893d6bc8b1a4fa374e3d4f174fdfc0613eb4506add26 -->
-```
-        <source>Unrecognized descriptor found. Loading wallet %s
-
-The wallet might have been created on a newer version.
-Please try running the latest software version.
-</source>
-        <translation>Nicht erkannter Deskriptor gefunden. Wallet %s wird geladen.
-
-Die Wallet wurde möglicherweise in einer neueren Version erstellt.
-Bitte mit der neueste Softwareversion auszuführen.
-</translation>
-    
-ERR
-The last sentence is ungrammatical, and "in einer neueren Version" should be "mit einer neueren Version" in this context.
-
-Correct translation:
-Nicht erkannter Deskriptor gefunden. Wallet %s wird geladen.
-
-Die Wallet wurde möglicherweise mit einer neueren Version erstellt.
-Bitte versuchen Sie, die neueste Softwareversion zu verwenden.
-```
-
-<!-- cache_translation_check_de_d97f463a4f28d187960e6d383c3b73b494d7093037bdf343bd0b749e69dcedb0 -->
-```
-        <source>Invalid -proxy address or hostname, ends with '=': '%s'</source>
-        <translation>Ungültige -proxy Adresse oder Hostname, endet mit '=': '%s'</translation>
-    
-ERR
-Agreement and hyphenation issues in German. It should be the compound “-proxy-Adresse,” and the adjective must agree with both options.
-
-Correct translation:
-Ungültige -proxy-Adresse oder ungültiger Hostname, endet mit '=': '%s'
-```
 </details>
 
-Number of issues: 25.
+Number of issues: 28.

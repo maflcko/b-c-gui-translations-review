@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -129,6 +129,19 @@ The word "gulply" is not the correct Turkmen form for "locked." A proper adjecti
 
 Correct translation:
 (%1 gulplanan)
+```
+
+<!-- cache_translation_check_tk_47b0c02c9a68aff30b52ce714c0700e1ce6a1a7dbe0e87dfe99a89dafedc665b -->
+```
+        <source>Restoring Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the restore wallets progress window which indicates to the user that wallets are currently being restored.</extracomment>
+        <translation>&lt;b&gt;%1&lt;/b&gt; Gapjyk dikeldilýär…</translation>
+    
+ERR
+Word order is awkward; it currently reads as "%1 wallet" rather than "Wallet %1". Also, "Gapjyk" should follow the identifier.
+
+Correct translation:
+Gapjyk &lt;b&gt;%1&lt;/b&gt; dikeldilýär…
 ```
 
 <!-- cache_translation_check_tk_47b0c02c9a68aff30b52ce714c0700e1ce6a1a7dbe0e87dfe99a89dafedc665b -->
@@ -322,18 +335,6 @@ The Turkmen sentence is ungrammatical and uses an awkward phrase (“ýaýlyma g
 
 Correct translation:
 Amallary bu düwüne ýetirmek-ýetirmezligimiz.
-```
-
-<!-- cache_translation_check_tk_4622296f59f47fdeebbaae9584bc5ff151aedbd28259f96d8995d158d6074405 -->
-```
-        <source>Starting Block</source>
-        <translation>Blogy başlamak</translation>
-    
-ERR
-The translation is grammatically incorrect and uses "blogy" (blog) instead of "blok" (block). It also turns the noun phrase into a verb phrase.
-
-Correct translation:
-Başlangyç blok
 ```
 
 <!-- cache_translation_check_tk_20c490c6760758c8d90e0d95f0c7f0191afc3d81a8633c933fb9464b43b077a4 -->

@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -8,6 +8,18 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 [If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bfi%5D%20request)
 
+
+<!-- cache_translation_check_fi_ca28a99d7ef95562936ff0867ab786f29b8451fbdae5915bbe753633f45dfabc -->
+```
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>bc1q5xtskdqtdld56wlxx4wdz3y4smanv977xyuv25</translation>
+    
+SPAM
+Rather than providing a Finnish translation, the response contains a Bitcoin address.
+
+Correct translation:
+Nämä ovat Bitcoin-osoitteesi maksujen lähettämistä varten. Tarkista aina summa ja vastaanottava osoite ennen kolikoiden lähettämistä.
+```
 
 <!-- cache_translation_check_fi_849826846a4e498b80089947afb083769ea98ba81d38ab65a280feed1b4e27b9 -->
 ```
@@ -112,6 +124,18 @@ The translation drops "ago" and the passive verb, making it less clear and incor
 
 Correct translation:  
 Viimeisin vastaanotettu lohko luotiin %1 sitten.
+```
+
+<!-- cache_translation_check_fi_b8d43aa6eac577079bd469e847ee5b85a3d579b9c233e1ef2bb2af4deb931598 -->
+```
+        <source>Invalid Wallet Name</source>
+        <translation>Virheellinen lomapkon nimi</translation>
+    
+ERR
+The Finnish word for "wallet" is "lompakko". In the genitive form ("wallet's name"), it is "lompakon". The translation "lomapkon" contains a typo.
+
+Correct translation:
+Virheellinen lompakon nimi
 ```
 
 <!-- cache_translation_check_fi_5d9e28424cb67661beb351200f9a32008ccfece6b569c066e2aa4735dd1af3c6 -->
@@ -688,4 +712,4 @@ acceptstalefeeestimates-toimintoa ei tueta %s-ketjussa.
 ```
 </details>
 
-Number of issues: 52.
+Number of issues: 54.

@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -8,20 +8,6 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 [If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bar%5D%20request)
 
-
-<!-- cache_translation_check_ar_67bdc5a8fe1eef04e8cc8d63a86dc316d5415dae6e11bf54cfcc8532e83961ac -->
-```
-        <source>Right-click to edit address or label</source>
-        <translation> انقر زر الماوس الأيمن لتعديل العنوان أو المسمي</translation>
-    
-ERR
-- Leading whitespace before the translation.
-- Prepositional error: should be "انقر بزر" not "انقر زر".
-- "المسمي" is a misspelling; better term for "label" is "التسمية" in this context.
-
-Correct translation:
-انقر بزر الماوس الأيمن لتعديل العنوان أو التسمية
-```
 
 <!-- cache_translation_check_ar_acd2d60576ab14a19d03963efa11e1988ce22fa2fbf42f485fe63877de4de84e -->
 ```
@@ -57,6 +43,18 @@ The provided text is in Persian (Farsi), not Arabic.
 
 Correct translation:
 انسخ العنوان المحدد حاليًا إلى الحافظة
+```
+
+<!-- cache_translation_check_ar_d46494b3566d148f2738acd52d5217c6dbb45f2411e9efee6021a65fc44221ce -->
+```
+        <source>&amp;Export</source>
+        <translation>&amp; يصدّر</translation>
+    
+ERR
+There is an unnecessary space after the '&' shortcut key indicator. Also, in Arabic software interfaces, the noun "تصدير" is the standard translation for the "Export" action, whereas "يصدّر" is a verb meaning "he exports".
+
+Correct translation:
+&تصدير
 ```
 
 <!-- cache_translation_check_ar_7c97b2a962531ef2d373b1d7043759b1329b4dbb33442b831cf28ec7e7513192 -->
@@ -319,6 +317,102 @@ Correct translation:
 ‫آخر كتلة تم استلامها تم إنشاؤها قبل %1.‬
 ```
 
+<!-- cache_translation_check_ar_430ec446175a775969ed0971f5cfdff6117be4414232838159e0088428ba7214 -->
+```
+        <source>Date: %1
+</source>
+        <translation>التاريخ %1
+</translation>
+    
+ERR
+The translation is missing the colon (:) present in the source text. In Arabic, a colon is used similarly to English to separate a label from its value.
+
+Correct translation:
+التاريخ: %1
+```
+
+<!-- cache_translation_check_ar_161b139e36599f28dd87a2bb03920871f170730b2639c2c09c3d5b25bd447d83 -->
+```
+        <source>Amount: %1
+</source>
+        <translation>القيمة %1
+</translation>
+    
+ERR
+The translation is missing the colon (:) that is present in the source text. For UI consistency, punctuation should be preserved. Additionally, "المبلغ" is often a more specific term for a monetary "Amount" in Arabic Bitcoin contexts.
+
+Correct translation:
+القيمة: %1
+(or)
+المبلغ: %1
+```
+
+<!-- cache_translation_check_ar_2bbce8068728d9c5aff99b1d59b8dd944948a9fd12d704e0a23952ab79b34ce8 -->
+```
+        <source>Wallet: %1
+</source>
+        <translation>المحفظة:  %1
+</translation>
+    
+ERR
+The translation contains a double space after the colon, whereas the source text only has a single space.
+
+Correct translation:
+المحفظة: %1
+```
+
+<!-- cache_translation_check_ar_110fdb2d8f0a24b7c4e0d57dbd831ffd9691c71d59e8dff15946209f58f4261f -->
+```
+        <source>Type: %1
+</source>
+        <translation>النوع %1
+</translation>
+    
+ERR
+The translation is missing the colon (:) present in the source text. In technical strings, punctuation such as colons should be preserved for consistency.
+
+Correct translation:
+النوع: %1
+```
+
+<!-- cache_translation_check_ar_213f2524a26a29755cb5f954a3255eb0c46eb9577e4d517b7d7523f77cb5da49 -->
+```
+        <source>Address: %1
+</source>
+        <translation>العنوان %1
+</translation>
+    
+ERR
+The translation is missing the colon (:) present in the source text. In technical strings, punctuation should be preserved for consistency.
+
+Correct translation:
+العنوان: %1
+```
+
+<!-- cache_translation_check_ar_310f1fc87a8f9007f493c7404461eae7d35069619eb50fe5a8026112e0f4e095 -->
+```
+        <source>Sent transaction</source>
+        <translation>‫العمليات المرسلة‬</translation>
+    
+ERR
+The translation is in the plural form ("Sent transactions"), while the source text is in the singular form ("Sent transaction").
+
+Correct translation:
+عملية مرسلة
+```
+
+<!-- cache_translation_check_ar_0ee7b23767eea891d2674cdbe45bdd1b38ea46abb5e470cb3957b21edfa0516c -->
+```
+        <source>Incoming transaction</source>
+        <translation>‫العمليات الواردة‬</translation>
+    
+ERR
+The translation is in the plural form ("Incoming transactions"), while the source text is singular ("Incoming transaction").
+
+Correct translation:
+عملية واردة
+```
+
 <!-- cache_translation_check_ar_864c32a78e4280763e9ff7200571c264b559a9c5750d1c178ffd9e41de12a283 -->
 ```
         <source>Change:</source>
@@ -343,16 +437,16 @@ Correct translation:
 استلم مع تسمية
 ```
 
-<!-- cache_translation_check_ar_a6dca1005a4fa9c4178cdfbaab9b59e910c033044f2f38de32d88a535d9985be -->
+<!-- cache_translation_check_ar_c048c0acbd1de655661fc15981fb21a45afc73867424bbbd5731ad14b99b3be6 -->
 ```
         <source>Copy &amp;label</source>
-        <translation>‫نسخ &amp;اضافة مذكرة‬</translation>
+        <translation>‫نسخ &amp;مذكرة‬</translation>
     
 ERR
-The Arabic translation changes the meaning: "إضافة مذكرة" means "add note," not "label." It also contains bidi control characters. The shortcut ampersand is fine but should be kept with the correct term.
+The word "label" should be translated as "تسمية" in Arabic, not "مذكرة" which means "note" or "memo." The ampersand (&amp;) is present correctly.
 
 Correct translation:
-نسخ &التسمية
+‫نسخ &amp;تسمية‬
 ```
 
 <!-- cache_translation_check_ar_7d9877f1fe48898281786c2f68cafdb14d061cddf3fd1fda9076d86ea5855693 -->
@@ -431,6 +525,54 @@ The Arabic word for "name" should be written without hamza: "اسم", not "إس�
 
 Correct translation:
 اسم المحفظة
+```
+
+<!-- cache_translation_check_ar_ac6bb9e2dd49c6dbcb4e2f87722e2ad27dfca75b1cd211fbfd7cb89330c096f3 -->
+```
+        <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
+        <translation>العنوان المرتبط بقائمة العناوين المدخلة. و التي يمكن تعديلها فقط بواسطة ارسال العناوين</translation>
+    
+ERR
+The translation of the second sentence is inaccurate. "بواسطة ارسال العناوين" translates to "by sending the addresses" or "via sending addresses," whereas the source text "for sending addresses" refers to the category of addresses used for sending.
+
+Correct translation:
+العنوان المرتبط بمدخل قائمة العناوين هذا. يمكن تعديل هذا فقط لعناوين الإرسال.
+```
+
+<!-- cache_translation_check_ar_7089d941f5e8ed855014522086bc4c6e06a5c35bc6f4ff4207390c43f6f83592 -->
+```
+        <source>Edit receiving address</source>
+        <translation>تعديل عنوان الأستلام</translation>
+    
+ERR
+The word "الأستلام" contains an orthographic error. The initial Alif in "استلام" is a Hamzat Wasl (همزة وصل) and should not have a Hamza (ء) written on it.
+
+Correct translation:
+تعديل عنوان الاستلام
+```
+
+<!-- cache_translation_check_ar_d5a2000163396481eb776c52a76d4db0a584f21bf334ac03e9094621e098708c -->
+```
+        <source>The entered address "%1" is already in the address book with label "%2".</source>
+        <translation>العنوان المدخل  "%1" موجود بالفعل في سجل العناوين تحت مسمى " "%2".</translation>
+    
+ERR
+The translation contains a double space after "المدخل" and a stray double quotation mark before "%2".
+
+Correct translation:
+العنوان المدخل "%1" موجود بالفعل في سجل العناوين تحت مسمى "%2".
+```
+
+<!-- cache_translation_check_ar_0eb2e17f8d6f1e01d994a831729a6d58f0fb6d772e34b7a97d662cff736b51e9 -->
+```
+        <source>Could not unlock wallet.</source>
+        <translation> يمكن فتح المحفظة.</translation>
+    
+ERR
+The translation provides the opposite meaning of the source text. The Arabic text "يمكن فتح المحفظة" translates to "The wallet can be opened," whereas the source text "Could not unlock wallet" indicates a failure to unlock it.
+
+Correct translation:
+تعذر إلغاء قفل المحفظة.
 ```
 
 <!-- cache_translation_check_ar_5250b2819c7542e4cdb2a0a4a938db4b528ba7531cd1b8134eac196aa06ca893 -->
@@ -638,42 +780,6 @@ Correct translation:
 سيتم نسخ الإعدادات الحالية احتياطيًا في "%1".
 ```
 
-<!-- cache_translation_check_ar_3cd929acea2fcdd41e086483eec4c8e28ef1e3ccdbfb41b951d989bb12ed8794 -->
-```
-        <source>Sign Tx</source>
-        <translation>تسجيل Tx</translation>
-    
-ERR
-"تسجيل" means "registration/recording," not "sign" in the cryptographic sense. The correct term is "توقيع". Also, "Tx" should be translated as "المعاملة" in this context.
-
-Correct translation:
-توقيع المعاملة
-```
-
-<!-- cache_translation_check_ar_61fdc664b74133188223f2bde89ecf069fdda8099cf64ce2746000c197c4c70f -->
-```
-        <source>Save…</source>
-        <translation>حفظ ...</translation>
-    
-ERR
-The translation uses three ASCII dots with a preceding space instead of the ellipsis character and introduces unnecessary whitespace. It should mirror the source’s ellipsis.
-
-Correct translation:
-حفظ…
-```
-
-<!-- cache_translation_check_ar_4d9ba40c4e6a1120fdfa59a7d5f994408396de3e4b8f5f9fe3417f8dfb37300c -->
-```
-        <source>PSBT copied to clipboard.</source>
-        <translation>نسخ PSBT إلى الحافظة.</translation>
-    
-ERR
-The Arabic phrasing is unnatural and sounds like an imperative/noun phrase. A proper status notification should use the passive perfect.
-
-Correct translation:
-تم نسخ PSBT إلى الحافظة.
-```
-
 <!-- cache_translation_check_ar_cd5ebd9c12ed9ff66e2a0f11e9b876ccaec141ebd7261cfb6ab2bf601e091400 -->
 ```
         <source>own address</source>
@@ -686,6 +792,18 @@ Correct translation:
 عنوانك
 or
 عنوانك الخاص
+```
+
+<!-- cache_translation_check_ar_a6dca1005a4fa9c4178cdfbaab9b59e910c033044f2f38de32d88a535d9985be -->
+```
+        <source>Copy &amp;label</source>
+        <translation>‫نسخ &amp;اضافة مذكرة‬</translation>
+    
+ERR
+The Arabic translation changes the meaning: "إضافة مذكرة" means "add note," not "label." It also contains bidi control characters. The shortcut ampersand is fine but should be kept with the correct term.
+
+Correct translation:
+نسخ &التسمية
 ```
 
 <!-- cache_translation_check_ar_864c32a78e4280763e9ff7200571c264b559a9c5750d1c178ffd9e41de12a283 -->
@@ -724,18 +842,16 @@ Correct translation:
 انسخ التوقيع الحالي إلى الحافظة
 ```
 
-<!-- cache_translation_check_ar_cd5ebd9c12ed9ff66e2a0f11e9b876ccaec141ebd7261cfb6ab2bf601e091400 -->
+<!-- cache_translation_check_ar_a6dca1005a4fa9c4178cdfbaab9b59e910c033044f2f38de32d88a535d9985be -->
 ```
-        <source>own address</source>
-        <translation>عنوانه</translation>
+        <source>Copy &amp;label</source>
+        <translation>‫نسخ &amp;اضافة مذكرة‬</translation>
     
 ERR
-The translation "عنوانه" means "his address," which is incorrect and gendered. The correct Arabic translation for "own address" is "عنوانك" if addressing singular "you," or "عنوانك الخاص" for a more general "your own address." If the context refers to "your own address" in the UI, then "عنوانك" or "عنوانك الخاص" is best.
+The Arabic translation changes the meaning: "إضافة مذكرة" means "add note," not "label." It also contains bidi control characters. The shortcut ampersand is fine but should be kept with the correct term.
 
 Correct translation:
-عنوانك
-or
-عنوانك الخاص
+نسخ &التسمية
 ```
 
 <!-- cache_translation_check_ar_459dfaa8aeddf4f6c7aedb4b5823f19a9beaa2586821423f96d790b199c451d1 -->
@@ -776,30 +892,6 @@ The provided text is in Persian (Farsi), not Arabic.
 
 Correct translation:
 تم تعيين الخيار '-checkpoints' ولكن تم إزالة نقاط التحقق. هذا الخيار ليس له أي تأثير.
-```
-
-<!-- cache_translation_check_ar_2e53508f0b4023f316525f26c294fc62bc8579f6f75c19bd3325aa366ee1508d -->
-```
-        <source>Option '-maxorphantx' is set but no longer has any effect (see release notes). Please remove it from your configuration.</source>
-        <translation>maxorphantx' گزینه تنظیم شده است اما دیگر هیچ تاثیری ندارد (به یادداشت‌های انتشار مراجعه کنید). لطفاً آن را از پیکربندی خود حذف کنید.</translation>
-    
-SPAM
-The translation is in Persian (Farsi), not Arabic, and it misplaces the quotation mark and omits the leading hyphen.
-
-Correct translation:
-تم تعيين الخيار '-maxorphantx' لكنه لم يعد ذا أي تأثير (راجع ملاحظات الإصدار). يرجى إزالته من إعداداتك.
-```
-
-<!-- cache_translation_check_ar_6f0c083127c623c98489b4edea92900060eabd8d83b2e8e84ef9ca10dd329440 -->
-```
-        <source>Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.</source>
-        <translation>گزینه‌های '-datacarrier' یا '-datacarriersize' تنظیم شده‌اند اما به عنوان منسوخ علامت‌گذاری شده‌اند. آن‌ها در نسخه‌های آینده حذف خواهند شد.</translation>
-    
-SPAM
-The provided text is in Persian (Farsi), not Arabic.
-
-Correct translation:
-تم تعيين الخيارين '-datacarrier' أو '-datacarriersize' ولكنهما معلّمان كمُهملين. سيتم إزالتهما في إصدار مستقبلي.
 ```
 
 <!-- cache_translation_check_ar_6f0a3cdde1884b0b257ee7a178a9cf4753ea16843a7cae381c4d4c8cadecd63f -->
@@ -861,6 +953,54 @@ The Arabic phrasing is slightly ungrammatical; it should include a preposition.
 Correct translation:
 حدث خطأ أثناء قراءة السجل التالي من قاعدة بيانات المحفظة
 ```
+
+<!-- cache_translation_check_ar_e3c19eba027b01bf785b9b032399f2b1736affccacfa1fe503d05408cf8b2e00 -->
+```
+        <source>Error loading %s: Wallet is a legacy wallet. Please migrate to a descriptor wallet using the migration tool (migratewallet RPC).</source>
+        <translation>حدث خطأ أثناء التحميل %s : المحفظة قديمة. يُرجى الانتقال إلى محفظة وصفية باستخدام أداة الترحيل (محفظة الهجرة RPC).</translation>
+    
+ERR
+The translation of "migratewallet RPC" is incorrect. In the context of Bitcoin Core command-line or RPC interfaces, the command name "migratewallet" should remain in English as it is a specific technical command. Translating it to "محفظة الهجرة" (migration wallet) makes the instruction unusable for the user. Additionally, there is a minor spacing issue before the colon.
+
+Correct translation:
+حدث خطأ أثناء تحميل %s: المحفظة من النوع القديم (legacy). يرجى الترحيل إلى محفظة وصفية (descriptor wallet) باستخدام أداة الترحيل (migratewallet RPC).
+```
+
+<!-- cache_translation_check_ar_a5dd9f0ae36b6ea1ee163eefc1c93f516dc6bc059946dd9eb6ea3dbc9a8d3bed -->
+```
+        <source>Failed to calculate bump fees, because unconfirmed UTXOs depend on an enormous cluster of unconfirmed transactions.</source>
+        <translation>فشل في حساب رسوم الصدمة، لأن UTXOs غير المؤكدة تعتمد على مجموعة ضخمة من المعاملات غير المؤكدة.</translation>
+    
+ERR
+The translation of "bump fees" as "رسوم الصدمة" is incorrect. In the context of Bitcoin, "bump" refers to increasing or raising the transaction fee (e.g., Replace-By-Fee), not a physical "shock" or "bump" (صدمة). 
+
+Correct translation:
+فشل في حساب زيادة الرسوم، لأن مخرجات المعاملات غير المنفقة (UTXOs) غير المؤكدة تعتمد على مجموعة ضخمة من المعاملات غير المؤكدة.
+```
+
+<!-- cache_translation_check_ar_f2b328352717ee3d508404e15a2bbab6e7678dc23afe51563d0c4b340db3db31 -->
+```
+        <source>Invalid -proxy address or hostname, ends with '=': '%s'</source>
+        <translation>عنوان الوكيل أو اسم المضيف غير صالح، وينتهي بـ '=':  %s'</translation>
+    
+ERR
+There is a double space before the format specifier '%s' and a missing opening single quote before it, resulting in a trailing single quote.
+
+Correct translation:
+عنوان الوكيل أو اسم المضيف غير صالح، وينتهي بـ '=': '%s'
+```
+
+<!-- cache_translation_check_ar_96dddb418a0ada1970be7ea86b4dd2d6f72b0cd7fc7c5a9fb225000da32e61d8 -->
+```
+        <source>Unrecognized network in -proxy='%s': '%s'</source>
+        <translation>شبكة غير معروفة في - الوكيل='%s': '%s'</translation>
+    
+ERR
+The translation introduces an unnecessary space between the hyphen and the word "proxy" (translated as الوكيل), which breaks the command-line flag format. The command-line flag `-proxy` should remain untranslated and without spaces to ensure technical accuracy.
+
+Correct translation:
+شبكة غير معروفة في -proxy='%s': '%s'
+```
 </details>
 
-Number of issues: 67.
+Number of issues: 78.

@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -76,6 +76,21 @@ Correct translation:
 ክፍያውን ቅዳተ
 or
 ክፍያውን ግልባጭ አድርግ
+```
+
+<!-- cache_translation_check_am_d7a536b1f1a1af8df54b4d6006de718b992564cce2c7305acbd5e5fec015821d -->
+```
+        <source>Are you sure you wish to migrate the wallet &lt;i&gt;%1&lt;/i&gt;?</source>
+        <translation>እርግጠኛ ኖት ዎሌት 1 ለማዘዋወር ይፈልጋሉ ?</translation>
+    
+ERR
+The translation has several issues:
+- It incorrectly translates "%1" as "1", losing the dynamic placeholder (format specifier).
+- The phrase "እርግጠኛ ኖት" is an awkward construction; the idiomatic way to ask "Are you sure" is "እርግጠኛ ነዎት".
+- Whitespace: There is a space before the question mark, which is not standard in Amharic.
+
+Correct translation:
+እርግጠኛ ነዎት የሚፈልጉት የዎሌትን &lt;i&gt;%1&lt;/i&gt; ማዘዋወር ነው?
 ```
 
 <!-- cache_translation_check_am_4a365989cb386e891a0e4999b5e1f71742cbd6edab7defa39de7b841a6f60a84 -->
@@ -208,4 +223,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 14.
+Number of issues: 15.

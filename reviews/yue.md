@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -170,6 +170,18 @@ or
 复制金额(&a) 
 
 (Note: The placement of & may depend on UI conventions, but it must appear exactly once.)
+```
+
+<!-- cache_translation_check_yue_f568c8e4ca957eadfdf7e283377c5fc85d3009fddd6ffff42a1e15c5865ca108 -->
+```
+        <source>&amp;Unlock unspent</source>
+        <translation>解鎖未花費的</translation>
+    
+ERR
+The translation is missing the shortcut key indicator '&' which was present in the source text.
+
+Correct translation:
+解鎖未花費的(&U)
 ```
 
 <!-- cache_translation_check_yue_90b92531e1ef339bbba4c9ef552afff81ce69fd057cdd1320fd552110d86e714 -->
@@ -375,64 +387,64 @@ Alternatively, in written Cantonese with traditional characters (more common for
 確定（&O）
 ```
 
-<!-- cache_translation_check_yue_9162393ae596c5e9b46211bd834e8405fe5f5d02f74458808ba7f7d99e0ba735 -->
-```
-        <source>Sign Tx</source>
-        <translation>签名交易</translation>
-    
-ERR
-The translation uses Simplified Chinese ("签名交易") while the target language 'yue' (Cantonese) should use Cantonese wording and Traditional Chinese characters. No format specifiers or spacing issues.
-
-Correct translation (Cantonese / Traditional):
-簽署交易
-```
-
-<!-- cache_translation_check_yue_f105467780ed86558ce8e3654e103ed2c8c0b3ed24d6913c770044a37e0f9c87 -->
-```
-        <source>Copy to Clipboard</source>
-        <translation>复制到剪贴板</translation>
-    
-ERR
-The translation uses Simplified Chinese ("复制到剪贴板") rather than Cantonese/Traditional. While the meaning is correct, for 'yue' (Cantonese) you should use Traditional characters and Cantonese-appropriate wording.
-
-Correct translation (Traditional Cantonese):
-複製到剪貼板
-```
-
-<!-- cache_translation_check_yue_51edd678fb1b28ef4e527ffcec2694e07d840d24ec22fcc06e2267b6fa704485 -->
+<!-- cache_translation_check_yue_62164728b6a7c177c1d04a3a116d70629560c46f15c563b6acbb30bb130c7c74 -->
 ```
         <source>Save…</source>
-        <translation>保存...</translation>
+        <translation>拯救...</translation>
     
 ERR
-The translation is not problematic content-wise, but for 'yue' (Cantonese) it's preferable to use the Cantonese-preferred term and preserve the Unicode ellipsis character. The provided translation uses ASCII three dots and a neutral term; use Traditional/Cantonese wording and the ellipsis (…) to match the source.
+The translation "拯救..." is incorrect. The English word "Save" in the context of software (e.g. saving a file) should be translated as "儲存" or "保存" in Cantonese ('yue'), not "拯救" which means "rescue" or "save (from danger)". Also, the ellipsis should be the Chinese version "…" not three periods "...".
 
 Correct translation:
 儲存…
 ```
 
-<!-- cache_translation_check_yue_4b980a8e124467dd4f3ab37eff60332cb353274bf73d42481c964a8ce4ab3f49 -->
+<!-- cache_translation_check_yue_3f36d050ff17a707a586960e2695f55721a2fe19f9f0e9bb7cef3488d83ee57a -->
 ```
-        <source>Close</source>
-        <translation>关闭</translation>
+        <source>Transaction broadcast successfully! Transaction ID: %1</source>
+        <translation>交易成功廣播！交易 ID：％1</translation>
     
 ERR
-The translation uses simplified Mandarin "关闭" rather than Cantonese / traditional Chinese expected for 'yue'. No format specifiers or spacing issues, but the script/register is not appropriate.
+The translation uses a full-width percent sign (％) instead of the standard half-width percent sign (%) for the format specifier. This will prevent the software from correctly identifying and replacing the variable.
 
-Correct translation (Cantonese / traditional):
-關閉
+Correct translation:
+交易成功廣播！交易 ID：%1
 ```
 
-<!-- cache_translation_check_yue_76733b01d0f71313804c54209973bdcddaa8ba61adad933c2f4c57d186e6e92a -->
+<!-- cache_translation_check_yue_d9968a0ce01d53e7de66a6c2c0c9bc4e79b336fac482a1a72c41266f3c24d01f -->
 ```
         <source>Transaction broadcast failed: %1</source>
-        <translation>交易广播失败: %1</translation>
+        <translation>交易廣播失敗：％1</translation>
     
 ERR
-The translation is in Simplified/standard Mandarin Chinese ("交易广播失败: %1") rather than Cantonese (yue). Also use of ASCII colon is acceptable but Cantonese translations normally use Traditional characters and a fullwidth colon.
+The translation uses a full-width percent sign '％' instead of the standard half-width percent sign '%' for the format specifier.
 
-Suggested Cantonese (yue) translation:
+Correct translation:
 交易廣播失敗：%1
+```
+
+<!-- cache_translation_check_yue_488a31aac260773afaaa52303dc65dcf6d65dc211e76753ff912703f6143a292 -->
+```
+        <source>Transaction has %1 unsigned inputs.</source>
+        <translation>交易有％1個未簽名的inputs。</translation>
+    
+ERR
+The translation uses a full-width percent sign '％' instead of the standard half-width '%' required for the format specifier. Additionally, "inputs" should ideally be translated into Cantonese.
+
+Correct translation:
+交易有 %1 個未簽名嘅輸入。
+```
+
+<!-- cache_translation_check_yue_5f16a90889af775414df19badb1f1c67fc0f24ce77bc7b631b0cc27616758a1b -->
+```
+        <source>Cannot start bitcoin: click-to-pay handler</source>
+        <translation>无法启动 bitcoin: 协议的“一键支付”处理程序</translation>
+    
+ERR
+The translation is written in Simplified Chinese (Mandarin), not in 'yue' (Cantonese). Furthermore, for a proper Cantonese translation, the register should be more conversational and regionally accurate.
+
+Correct translation:
+冇办法启动bitcoin：click-to-pay处理程序
 ```
 
 <!-- cache_translation_check_yue_0c2f3b1ca9da511a52168e61c92498723b5b95d121bdf4b2cf14fd3c7c628264 -->
@@ -762,29 +774,6 @@ Correct translation (Cantonese, Traditional characters):
 選項 "-checkpoints" 已設定，但檢查點已被移除。此選項無效。
 ```
 
-<!-- cache_translation_check_yue_d98c1c5ff4f9281f53e84a4630bcb6846485c6649d59a458ddb76aab8f1f87d3 -->
-```
-        <source>Option '-maxorphantx' is set but no longer has any effect (see release notes). Please remove it from your configuration.</source>
-        <translation>选项“-maxorphantx”已设置，但已不再生效（参见发行说明）。请从您的配置中移除该选项。 </translation>
-    
-ERR
-The translation is in Mainland-style Simplified Chinese phrasing rather than Cantonese (yue) in Traditional characters/colloquial style expected for 'yue'. Also there's a trailing space at the end. 
-
-Correct Cantonese (yue) translation (Traditional characters, preserve option name exactly):
-選項「-maxorphantx」已設定，但已無任何作用（見發行說明）。請從您的設定中移除該選項。
-```
-
-<!-- cache_translation_check_yue_bf17affb0acd6713b9f6b2167f99961dbd921c30426c9f4b5f40c6272c0fa297 -->
-```
-        <source>Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.</source>
-        <translation>选项“-datacarrier”或“-datacarriersize”已设置，但已标记为弃用。它们将在未来版本中移除。 </translation>
-    
-SPAM
-提供嘅翻譯係簡體中文（普通話風格），唔係粵語（yue）。正確嘅粵語翻譯示例如下：
-
-選項「-datacarrier」或「-datacarriersize」已設定，但已被標示為棄用。佢哋會喺未來嘅版本中移除。
-```
-
 <!-- cache_translation_check_yue_fc44b6029c7dbac45686cc79b705b8c897f4c829f9f3f5057b0a8d2f641e4b4e -->
 ```
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of a pruned node)</source>
@@ -809,16 +798,28 @@ Correct Cantonese (yue) translation (Traditional characters, Cantonese phrasing)
 “-paytxfee” 已經唔建議使用，並會喺 v31.0 完全移除。
 ```
 
-<!-- cache_translation_check_yue_a83d5bb13328c9c6bb05b9d617458f5b2f83d05560a3710195dfb9a046cf5907 -->
+<!-- cache_translation_check_yue_212c3af68e90ae4a89c435e0fc3e60da04c4a65ab354a77723b7b670db8e3821 -->
 ```
-        <source>Cannot add WalletDescriptor to a non-descriptor wallet</source>
-        <translation>无法将钱包描述符添加到非描述符钱包。</translation>
+        <source>Can't spend unconfirmed version %d pre-selected input with a version 3 tx</source>
+        <translation>无法使用版本3交易花费未确认版本1%d的预选输入。</translation>
     
-SPAM
-The translation is in Simplified Mandarin Chinese, not Cantonese ('yue'). 
+ERR
+The translation includes a "1" before the format specifier "%d" which is not present in the source text, and it uses Simplified Chinese characters/grammar ("无法", "交易", "花费") rather than Cantonese (yue). In Cantonese, "唔可以" or "唔俾" would be more natural, though technical terms often follow written standard Chinese. However, the insertion of "1" is a factual error.
 
-Correct translation in Cantonese (Traditional characters):
-無法將 WalletDescriptor 新增到非描述符錢包。
+Correct translation:
+唔可以用版本 3 交易嚟花費未確認版本 %d 嘅預選輸入。
+```
+
+<!-- cache_translation_check_yue_f9b38ca6e6771122f4b6e345f173a375d4a3ec7c96cf90ece271263bcdc608a8 -->
+```
+        <source>Can't spend unconfirmed version 3 pre-selected input with a version %d tx</source>
+        <translation>无法使用版本1%d交易花费未确认版本3的预选输入。</translation>
+    
+ERR
+The translation contains an extra "1" before the format specifier %d (making it "版本1%d" instead of "版本 %d"). Additionally, the translation uses Simplified Chinese characters and Mandarin grammar/vocabulary (e.g., "无法", "的"), whereas 'yue' (Cantonese) typically uses Traditional characters and specific Cantonese particles.
+
+Correct translation:
+無法使用版本 %d 交易花費未確認嘅版本 3 預選輸入。
 ```
 
 <!-- cache_translation_check_yue_7fabb939c240330d61596107c938b130818e021e55701b8aa2132a1ecc76b3c8 -->
@@ -937,6 +938,18 @@ The translation incorrectly translates "minimum fee rate setting" as "最大手�
 
 Correct translation:
 手续费率 (%s) 低于最低手续费率设置 (%s)
+```
+
+<!-- cache_translation_check_yue_90bbb0546d18b16de289698ea64fd4a0079b8114ac27ce41b1efa2b87038186f -->
+```
+        <source>The %s path uses exFAT, which is known to have intermittent corruption problems on macOS. Move this directory to a different filesystem to avoid data loss.</source>
+        <translation>%s路径使用exFAT，该格式在macOS上已知会出现间歇性损坏问题。请将此目录移动到其他文件系统以避免数据丢失。</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) rather than Cantonese (yue).
+
+Correct translation:
+%s 路徑使用緊 exFAT，呢個格式喺 macOS 上面已知會有間歇性損壞問題。請將呢個目錄搬去第個檔案系統，費事唔見咗啲資料。
 ```
 
 <!-- cache_translation_check_yue_31858be505051e38dd1b91b7fd358da6a776adc9de7310a3806b5d3ab32c3a70 -->
@@ -1076,4 +1089,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 83.
+Number of issues: 84.

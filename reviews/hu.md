@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -60,6 +60,18 @@ The Hungarian word "Parancssor" (command line) is misspelled as "Parancssor" (sh
 
 Correct translation:
 &Parancssori kapcsolók
+```
+
+<!-- cache_translation_check_hu_79f72470a3ac4d379e95a28d542e49c54c58b83cfe22f9815ec6631a5b9cfa25 -->
+```
+        <source>Invalid Wallet Name</source>
+        <translation>Érvénytelen tárca név</translation>
+    
+ERR
+In Hungarian orthography, the compound noun "tárcanév" (wallet name) should be written as a single word without a space.
+
+Correct translation:
+Érvénytelen tárcanév
 ```
 
 <!-- cache_translation_check_hu_4ce2ef43f977d3691b1d19c8c7eac8369a324e708c5a1c59baa9204d1a49ecb5 -->
@@ -128,19 +140,6 @@ Correct translation:
 Megjelenítse-e az érmevezérlési funkciókat vagy sem.
 ```
 
-<!-- cache_translation_check_hu_fb62f0b1b1e346e26a6f361130c5ac2f56ce8a69d0bbe9e6bc712c9fe17a52b2 -->
-```
-        <source>Partially Signed Transaction (Binary)</source>
-        <extracomment>Expanded name of the binary PSBT file format. See: BIP 174.</extracomment>
-        <translation>Részlegesen Aláírt Tranzakció (PSBT bináris)</translation>
-    
-ERR
-The translation is understandable but uses non-idiomatic capitalization for Hungarian (only proper nouns and sentence starts should be capitalized). Also it's clearer to include "PSBT" and "bináris" in lowercase or separated by a comma.
-
-Correct translation:
-Részlegesen aláírt tranzakció (PSBT, bináris)
-```
-
 <!-- cache_translation_check_hu_19ff7b81fd5f492ffa6e94599fd82026e10dd351ec68a52556da26f7732ab0bd -->
 ```
         <source>Sends %1 to %2</source>
@@ -188,6 +187,19 @@ The translation has word order issues and an extra space at the end. Also, the H
 
 Correct translation:
 Nem sikerült új %1 címet létrehozni
+```
+
+<!-- cache_translation_check_hu_fb62f0b1b1e346e26a6f361130c5ac2f56ce8a69d0bbe9e6bc712c9fe17a52b2 -->
+```
+        <source>Partially Signed Transaction (Binary)</source>
+        <extracomment>Expanded name of the binary PSBT file format. See: BIP 174.</extracomment>
+        <translation>Részlegesen Aláírt Tranzakció (PSBT bináris)</translation>
+    
+ERR
+The translation is understandable but uses non-idiomatic capitalization for Hungarian (only proper nouns and sentence starts should be capitalized). Also it's clearer to include "PSBT" and "bináris" in lowercase or separated by a comma.
+
+Correct translation:
+Részlegesen aláírt tranzakció (PSBT, bináris)
 ```
 
 <!-- cache_translation_check_hu_a39033abbfe6f2f9403c354d0af3f3686676e607426ebd02960454daafa8abd0 -->
@@ -385,4 +397,4 @@ Indexek indítása sikertelen, a program leáll…
 ```
 </details>
 
-Number of issues: 29.
+Number of issues: 30.

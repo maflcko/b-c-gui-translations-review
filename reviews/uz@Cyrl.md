@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -31,6 +31,30 @@ The translation is missing the required '&' shortcut marker and slightly misorde
 
 Correct translation (with & included):
 Нусха олиш &Ёрлиқ
+```
+
+<!-- cache_translation_check_uz@Cyrl_af51441b4a8f6c94fe8e843cae0435437a9d83d22addc6aba8195b316d4b8860 -->
+```
+        <source>Sending addresses - %1</source>
+        <translation>Manzil yuborilmoqda</translation>
+    
+ERR
+The translation is problematic for several reasons. First, 'uz@Cyrl' indicates Uzbek in the Cyrillic script, but the translation provided is in the Latin script. Second, the translation "Manzil yuborilmoqda" means "Address is being sent," which does not match the source "Sending addresses - %1" (where "Sending addresses" refers to a list or category of addresses used for sending, and %1 is a placeholder for a label or name). Third, the format specifier '%1' is missing from the translation.
+
+Correct translation:
+Жўнатиш манзиллари - %1
+```
+
+<!-- cache_translation_check_uz@Cyrl_7b3fa41b56d3b32b438ab63351c5d8d8c3136dfac855457306ca67cb46999aa4 -->
+```
+        <source>Receiving addresses - %1</source>
+        <translation>Qabul qilish manzillari</translation>
+    
+ERR
+The translation is missing the required format specifier '%1' and is written in the Latin script instead of the requested Cyrillic script (uz@Cyrl).
+
+Correct translation:
+Қабул қилиш манзиллари - %1
 ```
 
 <!-- cache_translation_check_uz@Cyrl_73062f30966c6156c0858b5b56081c4c11a42eb4e97e4268b5f169f6a61786be -->
@@ -81,6 +105,18 @@ Alternatively, for clarity in the Bitcoin context:
 Таъқиқланган муддат
 
 Either is preferable.
+```
+
+<!-- cache_translation_check_uz@Cyrl_86c0a750ca36f5ff977cf5e9f487f2833b2333512cc1712a961e793c9e8df2a3 -->
+```
+        <source>Settings file %1 might be corrupt or invalid.</source>
+        <translation>Sozlamalar fayli buzilgan yoki yaroqsiz bo'lishi mumkin.</translation>
+    
+SPAM
+The translation is in Latin script (uz), not Cyrillic script (uz@Cyrl) as requested.
+
+Correct translation:
+Созламалар файли %1 шикастланган ёки яроқсиз бўлиши мумкин.
 ```
 
 <!-- cache_translation_check_uz@Cyrl_c410acb758314b160d6a38a7a7ed516964df2d5437a5f1438df8e258778b39b6 -->
@@ -431,6 +467,18 @@ The translation is in Uzbek but written in Latin script; the requested locale 'u
 
 Correct translation (Cyrillic, with one & as shortcut marker):
 &Сарфланмаган транзакцияларни қулфдан чиқариш
+```
+
+<!-- cache_translation_check_uz@Cyrl_b79753252a76edb9988270135bb0acf0077e8cfaabf0665750d5f6631eddd0ca -->
+```
+        <source>Are you sure you wish to migrate the wallet &lt;i&gt;%1&lt;/i&gt;?</source>
+        <translation>Hamyonni ko'chirmoqchi ekanligingizga ishonchingiz komilmi?&lt;i&gt;%1&lt;/i&gt;</translation>
+    
+ERR
+The translation is in Uzbek using Latin script ('uz'), but the requested language code is 'uz@Cyrl' (Uzbek in Cyrillic script). Additionally, the placement of the format specifier and HTML tags `%1` is incorrect, as they have been moved to the end of the sentence instead of surrounding the wallet name as in the source.
+
+Correct translation:
+«&lt;i&gt;%1&lt;/i&gt;» ҳамёнини кўчирмоқчи эканингизга ишончингиз комилми?
 ```
 
 <!-- cache_translation_check_uz@Cyrl_297cc566c94a50d56fa5ef52884509c7ed463e913844f62c5f2c49269e2d1ff3 -->
@@ -875,6 +923,18 @@ Correct translation:
 "Умумий кўриниш" ёрлиғи учун махфийлик режими фаоллаштирилди. Қийматларни кўриш учун "Созламалар-&gt;Қийматларни ниқоблаш" танловидан белгини олиб ташланг.
 ```
 
+<!-- cache_translation_check_uz@Cyrl_d514c77bc0d72c968bb7e1f06c63aaa21e669cfb6fc07ca4aa148d24cb14a2fa -->
+```
+        <source>Failed to load transaction: %1</source>
+        <translation>Tranzaksiyani yuklab bo'lmadi</translation>
+    
+ERR
+The translation is written in Uzbek Latin script instead of the requested Uzbek Cyrillic script (uz@Cyrl). Additionally, the format specifier '%1' is missing from the translation.
+
+Correct translation:
+Транзакцияни юклаб бўлмади: %1
+```
+
 <!-- cache_translation_check_uz@Cyrl_51e0e582a0a1eb654dd898fd98c00e02e811efa7c2af9dacb1d777a1fa98db43 -->
 ```
         <source>Cannot sign inputs while wallet is locked.</source>
@@ -1165,4 +1225,4 @@ Correct translation (Cyrillic Uzbek) example:
 ```
 </details>
 
-Number of issues: 92.
+Number of issues: 97.

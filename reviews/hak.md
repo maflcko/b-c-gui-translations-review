@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -112,6 +112,18 @@ The translation is incorrect. It wrongly includes the character '和' (and), cha
 
 Correct translation:
 複製&金額
+```
+
+<!-- cache_translation_check_hak_f568c8e4ca957eadfdf7e283377c5fc85d3009fddd6ffff42a1e15c5865ca108 -->
+```
+        <source>&amp;Unlock unspent</source>
+        <translation>解鎖未花費的</translation>
+    
+ERR
+The translation is missing the shortcut key indicator '&' which is present in the source text. In the context of the Hakka language (hak), the translation "解鎖未花費的" is accurate, but the format specifier must be preserved.
+
+Correct translation:
+&解鎖未花費的
 ```
 
 <!-- cache_translation_check_hak_07b24e731acfde530620e37ba80e4dd4623efd6c803f490116295af92f3094db -->
@@ -282,12 +294,50 @@ Correct translation:
 「概覽」標籤頁已啟用隱私模式。愛顯示數值，請在設定中取消勾選「遮罩數值」。
 ```
 
-<!-- cache_translation_check_hak_d8e7e6fc6146a3982356a59e9a60d016fdc2003537ad22c23793179be9469f54 -->
+<!-- cache_translation_check_hak_62164728b6a7c177c1d04a3a116d70629560c46f15c563b6acbb30bb130c7c74 -->
+```
+        <source>Save…</source>
+        <translation>拯救...</translation>
+    
+ERR
+The translation uses the wrong word for "Save".
+
+`拯救` (chṳ́n-kiu) means "to rescue" or "to save" in the sense of saving a person from danger. In a software context, "Save" (as in saving a file) should be translated as `保存` (pó-chhùn).
+
+Correct translation:
+保存...
+```
+
+<!-- cache_translation_check_hak_3f36d050ff17a707a586960e2695f55721a2fe19f9f0e9bb7cef3488d83ee57a -->
 ```
         <source>Transaction broadcast successfully! Transaction ID: %1</source>
-        <translation>已成功广播交易！交易ID: %1</translation>
+        <translation>交易成功廣播！交易 ID：％1</translation>
     
 UNK_LANG, not familiar with the Hakka language 'hak'.
+```
+
+<!-- cache_translation_check_hak_d9968a0ce01d53e7de66a6c2c0c9bc4e79b336fac482a1a72c41266f3c24d01f -->
+```
+        <source>Transaction broadcast failed: %1</source>
+        <translation>交易廣播失敗：％1</translation>
+    
+ERR
+The format specifier '%1' was incorrectly changed to a full-width '％1'. In software localization, format specifiers must remain exactly as they appear in the source (half-width '%') to be correctly recognized by the application's string formatting engine.
+
+Correct translation:
+交易廣播失敗：%1
+```
+
+<!-- cache_translation_check_hak_488a31aac260773afaaa52303dc65dcf6d65dc211e76753ff912703f6143a292 -->
+```
+        <source>Transaction has %1 unsigned inputs.</source>
+        <translation>交易有％1個未簽名的inputs。</translation>
+    
+ERR
+The translation uses a full-width percent sign (％) instead of the standard half-width percent sign (%) for the format specifier. This will prevent the software from correctly injecting the variable. Additionally, "inputs" is left in English; while technical terms are sometimes kept, "輸入" is the standard term in Hakka/Chinese contexts.
+
+Correct translation:
+交易有 %1 個未簽名的輸入。
 ```
 
 <!-- cache_translation_check_hak_0c2f3b1ca9da511a52168e61c92498723b5b95d121bdf4b2cf14fd3c7c628264 -->
@@ -382,26 +432,6 @@ Correct translation:
 UNK_LANG, not familiar with the Hakka language 'hak'.
 ```
 
-<!-- cache_translation_check_hak_d98c1c5ff4f9281f53e84a4630bcb6846485c6649d59a458ddb76aab8f1f87d3 -->
-```
-        <source>Option '-maxorphantx' is set but no longer has any effect (see release notes). Please remove it from your configuration.</source>
-        <translation>选项“-maxorphantx”已设置，但已不再生效（参见发行说明）。请从您的配置中移除该选项。 </translation>
-    
-UNK_LANG, not familiar with the Hakka language 'hak'.
-```
-
-<!-- cache_translation_check_hak_bf17affb0acd6713b9f6b2167f99961dbd921c30426c9f4b5f40c6272c0fa297 -->
-```
-        <source>Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.</source>
-        <translation>选项“-datacarrier”或“-datacarriersize”已设置，但已标记为弃用。它们将在未来版本中移除。 </translation>
-    
-SPAM
-The translation is in Mandarin Chinese, not Hakka ('hak').
-
-Correct translation (Hakka, using Chinese characters):
-选项“-datacarrier”或“-datacarriersize”已设置，但标示为弃用。佢兜会喺未来个版本移除。
-```
-
 <!-- cache_translation_check_hak_63198e5ed2a00f10f2cde3f9877c4d303dad025f0dccd18822272eb48a3f052f -->
 ```
         <source>Outbound connections restricted to Tor (-onlynet=onion) but the proxy for reaching the Tor network is not provided: none of -proxy, -onion or -listenonion is given</source>
@@ -464,6 +494,30 @@ The translation is accurate, but there is a trailing space before the closing ta
 
 Corrected translation (removed trailing space):
 “-paytxfee”已弃用，并将在 v31.0 中完全移除。
+```
+
+<!-- cache_translation_check_hak_212c3af68e90ae4a89c435e0fc3e60da04c4a65ab354a77723b7b670db8e3821 -->
+```
+        <source>Can't spend unconfirmed version %d pre-selected input with a version 3 tx</source>
+        <translation>无法使用版本3交易花费未确认版本1%d的预选输入。</translation>
+    
+ERR
+The translation contains a typo in the format specifier. The source text has "%d", but the translation has "1%d", which would incorrectly prepend a '1' to the number. Additionally, the translation is provided in Standard Mandarin Chinese rather than Hakka (hak).
+
+Correct translation (Hakka, Siyen/Sixian script):
+無法使用版本 3 交易花費未確認版本 %d 嘅預選輸入。
+```
+
+<!-- cache_translation_check_hak_f9b38ca6e6771122f4b6e345f173a375d4a3ec7c96cf90ece271263bcdc608a8 -->
+```
+        <source>Can't spend unconfirmed version 3 pre-selected input with a version %d tx</source>
+        <translation>无法使用版本1%d交易花费未确认版本3的预选输入。</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) rather than Hakka (hak). Additionally, it contains a typo where "1" was incorrectly inserted before the format specifier "%d" (resulting in "版本1%d").
+
+Correct translation (Hakka - Simplified script):
+无法用版本 %d 交易花费没确认版本 3 嘅预选输入。
 ```
 
 <!-- cache_translation_check_hak_7fabb939c240330d61596107c938b130818e021e55701b8aa2132a1ecc76b3c8 -->
@@ -548,6 +602,18 @@ The translation is in Standard Written Chinese (Mandarin) and not in Hakka. Whil
 
 Correct translation:
 尋毋到預先選擇个輸入%s
+```
+
+<!-- cache_translation_check_hak_90bbb0546d18b16de289698ea64fd4a0079b8114ac27ce41b1efa2b87038186f -->
+```
+        <source>The %s path uses exFAT, which is known to have intermittent corruption problems on macOS. Move this directory to a different filesystem to avoid data loss.</source>
+        <translation>%s路径使用exFAT，该格式在macOS上已知会出现间歇性损坏问题。请将此目录移动到其他文件系统以避免数据丢失。</translation>
+    
+ERR
+The provided translation is in Standard Mandarin (Simplified Chinese), not Hakka Chinese (hak). While they share a writing system, a Hakka translation should reflect Hakka-specific grammar and vocabulary.
+
+Correct translation (Hakka, using a standard written form):
+%s 路徑使用 exFAT，該格式在 macOS 頂高已知會有間歇性損壞問題。請拿這隻目錄徙到其餘个文件系統，避免資料唔見。
 ```
 
 <!-- cache_translation_check_hak_8c371ab2b349223f3ac888b2f8b6cb0d250a64c0c9c7589c58e7d4b8131ec45a -->
@@ -647,4 +713,4 @@ UNK_LANG, not familiar with the Hakka language 'hak'.
 ```
 </details>
 
-Number of issues: 56.
+Number of issues: 61.

@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -97,6 +97,18 @@ Correct translation:
 વૉલેટ માટે નવો પાસફ્રેઝ દાખલ કરો.&lt;br/&gt;કૃપા કરીને &lt;b&gt;દસ અથવા વધુ રૅન્ડમ અક્ષરો&lt;/b&gt; અથવા &lt;b&gt;આઠ અથવા વધુ શબ્દો&lt;/b&gt;નો પાસફ્રેઝ ઉપયોગ કરો.
 
 Explanation: Fixed the mismatched tags, improved phrase clarity, corrected spacing, and more closely followed the source.
+```
+
+<!-- cache_translation_check_gu_ab90bfe72a696ddb6d1fe90b94b844b9fad2e487cd0609a5ba569542089b6916 -->
+```
+        <source>Back</source>
+        <translation>પાછળ </translation>
+    
+ERR
+There is an unnecessary trailing space in the translation.
+
+Correct translation:
+પાછળ
 ```
 
 <!-- cache_translation_check_gu_03eec681f15192461553830588fd5c6aa5b11e4394e69b9f56bff9df6b86568d -->
@@ -345,6 +357,18 @@ Correct translation:
 બાહ્ય
 ```
 
+<!-- cache_translation_check_gu_2f8e59eb9a79308b3803a1e5f841bb868058d12ca206eead8b43790b2307fa21 -->
+```
+        <source>Local Addresses</source>
+        <translation>સ્થાનિક સરનામું</translation>
+    
+ERR
+The English source text "Addresses" is plural, but the Gujarati translation "સરનામું" (Saranāmuṃ) is singular. The correct plural form should be used.
+
+Correct translation:
+સ્થાનિક સરનામાં
+```
+
 <!-- cache_translation_check_gu_367d091d7593c4a8453cbc681c56bd4168e0ef1c06097c31909f41de830247f7 -->
 ```
         <source>Elapsed time since a novel transaction accepted into our mempool was received from this peer.</source>
@@ -356,6 +380,18 @@ The translation incorrectly translates "novel transaction" as "નવલકથ�
 
 Correct translation:
 અમારા મેમ્પૂલમાં સ્વીકારવામાં આવેલા નવા વ્યવહાર આ પીઅર તરફથી પ્રાપ્ત થયા પછી વીતી ગયેલ સમય.
+```
+
+<!-- cache_translation_check_gu_eba4c2e479e91f306683ebaa081df4c005535ecc6102cf12a5181ae18d266527 -->
+```
+        <source>&amp;Open</source>
+        <translation>&amp; ખોલો </translation>
+    
+ERR
+The translation contains unnecessary whitespace. There is a space after the shortcut indicator '&' and a trailing space at the end of the string.
+
+Correct translation:
+&amp;ખોલો
 ```
 
 <!-- cache_translation_check_gu_3bd2ef2a4ed420e65efa1986ad9223aacae0cf72dd9bd6206397f17008ed5785 -->
@@ -371,6 +407,18 @@ Correct translation:
 v1: અનએનક્રિપ્ટેડ, પ્લેનટેક્સ્ટ ટ્રાન્સપોર્ટ પ્રોટોકોલ
 ```
 
+<!-- cache_translation_check_gu_cc200bc53d156f8379a47d882ce1eb068741ec42c5aa6736ad841b528cab2511 -->
+```
+        <source>Custom change address</source>
+        <translation>સરનામું કસ્ટમાઇઝ કરો</translation>
+    
+ERR
+The translation "સરનામું કસ્ટમાઇઝ કરો" translates back to "Customize the address." It misses the technical meaning of "change" in the Bitcoin context (the address where the transaction change is sent) and phrases it as a command/action rather than a noun phrase.
+
+Correct translation:
+કસ્ટમ ચેન્જ સરનામું
+```
+
 <!-- cache_translation_check_gu_5ba36395d1be6360e7b62945e80caca7a4dbdc76a78708fd20e0364870d377ca -->
 ```
         <source>&amp;Export</source>
@@ -384,4 +432,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 27.
+Number of issues: 31.

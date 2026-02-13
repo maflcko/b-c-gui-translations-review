@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -100,21 +100,16 @@ Correct translation:
 เกิดข้อผิดพลาดร้ายแรง กรุณาตรวจสอบว่าไฟล์การตั้งค่าสามารถเขียนได้หรือไม่ หรือลองรันด้วย -nosettings
 ```
 
-<!-- cache_translation_check_th_79ee0cdc144125f004738a4bdedf8076a891bc710efd735e9df7dc52424269aa -->
+<!-- cache_translation_check_th_d471c81326d47933477f0682c13a63f742019f94818200d3510c69098b72a85c -->
 ```
-        <source>Onion</source>
-        <comment>network name</comment>
-        <extracomment>Name of Tor network in peer info</extracomment>
-        <translation>หัวหอม</translation>
+        <source>Ctrl+W</source>
+        <translation>คีย์ลัด Ctrl+W (pronounced "kee lat Ctrl+W")</translation>
     
 ERR
-The translation "หัวหอม" is a literal Thai word for the vegetable "onion" and is inappropriate for the technical/network name "Onion" (Tor network). No format specifiers or whitespace issues are present.
+The translation includes an unnecessary phonetic pronunciation guide in English parentheses which is not present in the source and is inappropriate for a shortcut key label. Shortcut labels should be concise.
 
-Correct translation (keep network name as-is):
-Onion
-
-Or, if you prefer a Thai transliteration:
-ออนิออน
+Correct translation:
+Ctrl+W
 ```
 
 <!-- cache_translation_check_th_94f53fcd1a7167d7e69027a7c82cb05521ffec1dfa762816e0a1296631cac38d -->
@@ -129,6 +124,21 @@ The addition "(แปลงชื่อย่อ)" translates as "(acronym trans
 
 Correct translation:
 CJDNS
+```
+
+<!-- cache_translation_check_th_978894330944ceb0305bf086aab1f1f4e0c2113ea08b645e5d243ff41ced2a36 -->
+```
+        <source>Outbound</source>
+        <extracomment>An outbound connection to a peer. An outbound connection is a connection initiated by us.</extracomment>
+        <translation>ออกเดินทาง (òk dern thāng)</translation>
+    
+ERR
+The translation "ออกเดินทาง (òk dern thāng)" means "to depart" or "departing", which is not accurate in this technical context. Here, "Outbound" refers to a network connection initiated by the user or system, not physical departure.
+
+Correct translation:
+ขาออก
+
+This term is standard in networking contexts to indicate "outbound" connections.
 ```
 
 <!-- cache_translation_check_th_e2607314bddd809d81725f421e1cb6e12d2ade831bdbe67f6d7a69ff1c9c8edf -->
@@ -516,98 +526,6 @@ Correct translation:
 (If you need to emphasize the count/number of confirmations, use "จำนวนการยืนยัน".)
 ```
 
-<!-- cache_translation_check_th_3bd71798397f0145c16fe7fd634f8f4bdb523a0df9c60b9fc532d6a2edcc3319 -->
-```
-        <source>&amp;Copy address</source>
-        <translation>&amp;คัดลอก แอดเดรส</translation>
-    
-ERR
-The translation uses an extra space and a loanword. In Thai it's more natural to use "ที่อยู่" for address and avoid the stray space after the verb.
-
-Correct translation:
-&คัดลอกที่อยู่
-```
-
-<!-- cache_translation_check_th_f1b983d59657d371adf5d4f3c0109681763dc6b3eb81021f794f5fcc80ddf041 -->
-```
-        <source>Copy transaction &amp;ID and output index</source>
-        <translation>คัดล็อก &amp;ID ธุรกรรม และ ส่งออก เป็นดัชนี</translation>
-    
-ERR
-The Thai translation contains errors and awkward phrasing:
-- Typo: "คัดล็อก" should be "คัดลอก".
-- "ส่งออก เป็นดัชนี" is incorrect for "output index". It should be "ดัชนีเอาต์พุต" or "ดัชนีของเอาต์พุต".
-- Extra/spurious spaces around words ("และ ส่งออก เป็นดัชนี").
-- Ensure the '&' accelerator appears exactly once (kept as in source).
-
-Correct translation:
-คัดลอก &ID ของธุรกรรม และดัชนีเอาต์พุต
-```
-
-<!-- cache_translation_check_th_a648387ec711fb404afedf134007c0edbfc02c3465ce5f371a116cc68d2f0066 -->
-```
-        <source>L&amp;ock unspent</source>
-        <translation>L&amp;ock ที่ไม่ได้ใข้</translation>
-    
-ERR
-The translation is problematic:
-- It leaves "L&amp;ock" in English instead of translating "Lock".
-- Thai typo: "ใข้" should be "ใช้".
-- It's better to translate the phrase fully into Thai and keep a single shortcut marker (&) exactly once.
-
-Correct translation:
-<translation>&amp;ล็อกที่ยังไม่ได้ใช้</translation>
-```
-
-<!-- cache_translation_check_th_a9d6ced908066f15c97e6484503c79755a651962c3afc8741906720c71e89259 -->
-```
-        <source>&amp;Unlock unspent</source>
-        <translation>&amp;ปลดล็อค ที่ไม่ไดใช้</translation>
-    
-ERR
-The Thai has spelling and wording problems. Issues:
-- "ไม่ไดใช้" is misspelled (missing ย in "ไม่ได้") and sounds unnatural; should be "ไม่ได้ใช้" or better "ยังไม่ได้ใช้".
-- "ปลดล็อค" is commonly written "ปลดล็อก" (both seen, but "ปลดล็อก" is preferred).
-- There is an unnecessary space after the verb in the provided translation ("ปลดล็อค ที่...").
-
-No format specifiers are present and the single & shortcut exists exactly once.
-
-Suggested corrections (choose one appropriate to UI context):
-- &ปลดล็อกที่ยังไม่ได้ใช้
-- &ปลดล็อก UTXO ที่ยังไม่ได้ใช้
-- &ปลดล็อกเงินทอนที่ยังไม่ได้ใช้
-```
-
-<!-- cache_translation_check_th_91b96d76fa02b44386a3c7b71e37c34c532914ff79d3d6a52a9232aaa98a643f -->
-```
-        <source>Copy quantity</source>
-        <translation>คัดลอก ปริมาณ</translation>
-    
-ERR
-The Thai translation has an unnecessary space and a less common word choice. In Thai UI text words are typically not separated by a space, and "จำนวน" is a more natural choice than "ปริมาณ" for an amount/quantity in this context.
-
-Correct translations:
-คัดลอกจำนวน
-or
-คัดลอกปริมาณ
-```
-
-<!-- cache_translation_check_th_0d7fc830421b8775d427e81dd009d880e0b239523a595e7e105248db0396de93 -->
-```
-        <source>Copy after fee</source>
-        <translation>คัดลอก หลัง ค่าธรรมเนียม</translation>
-    
-ERR
-The Thai translation is understandable but awkward and has extraneous spaces: "คัดลอก หลัง ค่าธรรมเนียม" inserts spaces around words and lacks a natural phrasing. No format specifiers issues.
-
-Suggested correct translations (choose based on UI context):
-- If meaning "Copy (the amount) after fee": "คัดลอกยอดหลังค่าธรรมเนียม"
-- If meaning "Copy (value) after fee applied" (more explicit): "คัดลอกยอดหลังหักค่าธรรมเนียม"
-- If a short label is needed: "คัดลอก (หลังค่าธรรมเนียม)"
-
-Use one of the above to replace the current translation.
-```
-
 <!-- cache_translation_check_th_54360120e54fd5714bd30aa5649fd4db30f9e73836708bb6228f6325c9ceebd1 -->
 ```
         <source>Copy bytes</source>
@@ -633,30 +551,6 @@ Correct translation (if meaning the change address):
 
 Or, if it means the change amount:
 คัดลอกยอดเงินทอน
-```
-
-<!-- cache_translation_check_th_aeaa7a300954cbb0d8d79211ce660cb1e9c4ce582cb146c5e867f6bf112c0b2e -->
-```
-        <source>&amp;Label</source>
-        <translation>ป้าย</translation>
-    
-ERR
-The Thai translation is missing the mnemonic ampersand (&) present in the source. The source has "&Label" so the translation must include exactly one & to mark the shortcut key.
-
-Correct translation:
-<translation>&amp;ป้าย</translation>
-```
-
-<!-- cache_translation_check_th_b69274455a28991659ffb7d6d705b916e526bb644177a8cc4a10cbf2b1e398d8 -->
-```
-        <source>&amp;Address</source>
-        <translation>ที่อยู่</translation>
-    
-ERR
-The source contains a single '&' to mark a shortcut key, but the translation omits it. Also no other errors.
-
-Correct translation (include the ampersand exactly once):
-&amp;ที่อยู่
 ```
 
 <!-- cache_translation_check_th_6cfe1a123c41bb8d1521d6977e846a3e516ad36bba97f4826e20fd00556f4b38 -->
@@ -1065,17 +959,16 @@ or
 แบบฟอร์ม
 ```
 
-<!-- cache_translation_check_th_4833788f841a883b3ac69d44093d281cb7bfb49ce53606364b3aa6680feeaa5e -->
+<!-- cache_translation_check_th_02574fb72bfbb0cfa7165905554d7364990c35bda753f6a21713fa1e7ebdf136 -->
 ```
-        <source>Unknown error processing transaction.</source>
-        <translation>ข้อผิดพลาดที่ไม่รู้จักของการประมวลผลธุรกรรม</translation>
+        <source>Could not sign any more inputs.</source>
+        <translation>ไม่สามารถลงนามการป้อนข้อมูลเพิ่มเติมได้ (Mai samart long nam kan phon khomooht permum dai).</translation>
     
 ERR
-The Thai is understandable but slightly unnatural/awkward phrasing. A more natural translation would be:
+The translation contains a parenthetical transliteration "(Mai samart long nam kan phon khomooht permum dai)", which is not standard for professional UI/localization and is unnecessary. Only the Thai script translation should be provided. 
 
-เกิดข้อผิดพลาดไม่ทราบสาเหตุในการประมวลผลธุรกรรม
-
-(Or alternatively: ข้อผิดพลาดไม่ทราบสาเหตุระหว่างการประมวลผลธุรกรรม)
+Correct translation:
+ไม่สามารถลงนามการป้อนข้อมูลเพิ่มเติมได้
 ```
 
 <!-- cache_translation_check_th_ca934886c522efc861fcf00e65d7d27a5b76f5126e8de6feb5033385a7499f88 -->
@@ -1112,6 +1005,32 @@ Correct translations (choose one depending on preferred style):
 - ค่า Ping
 ```
 
+<!-- cache_translation_check_th_701faa4eec04d88143d245b42167cecb03bab06235926230fb5239376f22eade -->
+```
+        <source>Network</source>
+        <extracomment>Title of Peers Table column which states the network the peer connected through.</extracomment>
+        <translation>เครือข่าย (pronounced "kruea-khai")</translation>
+    
+ERR
+The translation includes a pronunciation guide in English, which is unnecessary and inappropriate for a software interface translation. Only the translated term should be provided.
+
+Correct translation:
+เครือข่าย
+```
+
+<!-- cache_translation_check_th_eb71d49fb6ff585d80d379efdcbeceae0e65b54a7ff17d711c0ce334f575a43a -->
+```
+        <source>Outbound</source>
+        <extracomment>An Outbound Connection to a Peer.</extracomment>
+        <translation>ออกเดินทาง (òk dern thāng)</translation>
+    
+ERR
+The translation "ออกเดินทาง (òk dern thāng)" means "depart" or "set off", which is incorrect in this context. In the context of network connections, "Outbound" typically means "ขาออก" or "ภายนอก" in Thai.
+
+Correct translation:
+ขาออก
+```
+
 <!-- cache_translation_check_th_4db982722b59469280f31d418d6690ffa6ab4edc767dbddd87f457c98518d0c2 -->
 ```
         <source>&amp;Reset</source>
@@ -1122,18 +1041,6 @@ The source contains an accelerator marker "&" (shortcut key) that must appear ex
 
 Correct translation (include the & exactly once, placed before the displayed letter you want as the shortcut):
 &amp;รีเซ็ต
-```
-
-<!-- cache_translation_check_th_661c51c91c5bd8c7dea76b81511b59e8ac6147a0f9b1ec3298df6c8e8f9c6799 -->
-```
-        <source>Sent</source>
-        <translation>ส่ง</translation>
-    
-ERR
-The Thai word "ส่ง" is a verb meaning "send" (or to send); while understandable, for a status label "Sent" a clearer translation is "ส่งแล้ว" (literally "sent/already sent").
-
-Correct translation:
-ส่งแล้ว
 ```
 
 <!-- cache_translation_check_th_8452811c669ae3d5e0d8dd3295e84f7729f8a44107d44cd0893e81a7c536137d -->
@@ -1185,44 +1092,65 @@ Correct translation:
 เราจะถ่ายทอดธุรกรรมไปยัง peer นี้หรือไม่
 ```
 
-<!-- cache_translation_check_th_e017b7188167740214753c73e82c6cdd13f27e866212598b8cd77ffac26f007a -->
+<!-- cache_translation_check_th_dfc61c09af2a8dbd82402782106be17551652d63455e97a8952767a157926e36 -->
 ```
-        <source>Synced Headers</source>
-        <translation>หัวข้อที่ซิงค์</translation>
+        <source>Last Transaction</source>
+        <translation>ธุรกรรมล่าสุด (Thurakam lasut)</translation>
     
 ERR
-The Thai word "หัวข้อ" usually means "topic" or "item" (e.g., a subject/heading) and is misleading in the Bitcoin context where "headers" means block headers. No format specifiers or spacing issues.
+The translation is partially correct as "ธุรกรรมล่าสุด" means "Last Transaction". However, the parenthetical "(Thurakam lasut)" is a phonetic transliteration in Latin script, which is unnecessary and not standard practice in Thai UI translation. It could be confusing for users.
 
-Suggested correction:
-ส่วนหัวที่ซิงค์
+Correct translation:
+ธุรกรรมล่าสุด
 ```
 
-<!-- cache_translation_check_th_505dee87afcfd373301ed6f774f5f532665c067b27978f2c861d31d80c0e12e6 -->
+<!-- cache_translation_check_th_b84091088e25160c01035abe96d2627d85533c4e222656b2528af42e79d3ec9b -->
 ```
         <source>Mapped AS</source>
-        <translation>แมปป์เป็น</translation>
+        <translation>แมปป์เป็น (pronounced: máp bpen)</translation>
     
 ERR
-The Thai translation "แมปป์เป็น" is unnatural/incorrect (mixes transliteration and the verb "เป็น"). No format specifiers apply, and spacing is fine, but the phrasing should clearly convey "Mapped AS" (i.e., an AS that has been mapped).
+The translation includes an unnecessary phonetic pronunciation guide in parentheses "(pronounced: máp bpen)", which is not present in the source and is inappropriate for a software interface.
 
-Correct translations (choose depending on style/context):
-- "AS ที่ถูกแมป"
-- "AS ที่แมปแล้ว"
-- "การแมป AS" (if a noun phrase meaning the mapping itself)
+Correct translation:
+แมป AS หรือ แมป AS แล้ว
 ```
 
-<!-- cache_translation_check_th_125687da154e0bea5ed61e899a4705a93ae930dfac94643d000b58218c7765d7 -->
+<!-- cache_translation_check_th_1bb595b7a42fedbeca155be993bcd95ac644e814197dc820640d449411c31802 -->
+```
+        <source>User Agent</source>
+        <translation>ตัวแทนผู้ใช้
+(Pronounced: Dtua-Thaen Phu-Chai)</translation>
+    
+ERR
+The translation includes an unnecessary phonetic pronunciation guide in English which is not part of the source text and is inappropriate for a software interface.
+
+Correct translation:
+ตัวแทนผู้ใช้
+```
+
+<!-- cache_translation_check_th_bf8b7f4e0627a6fe92a6c7b877aa4b25f8ddc21b394be9eb04e1e2651fb9cfc7 -->
+```
+        <source>High Bandwidth</source>
+        <translation>แบนด์วิธสูง (pronounced: baen-wit soong)</translation>
+    
+ERR
+The translation includes an unnecessary phonetic pronunciation guide in parentheses. In a software interface, only the translated term should be present.
+
+Correct translation:
+แบนด์วิธสูง
+```
+
+<!-- cache_translation_check_th_40e7539c1287ef2a1c3a89622d0f9e82df8c4fa4d141cf7189d5c1dbbd62644a -->
 ```
         <source>Last Send</source>
-        <translation>ส่งสุดท้าย</translation>
+        <translation>ส่งสุดท้าย (Song Soot Thai)</translation>
     
 ERR
-The Thai translation "ส่งสุดท้าย" is understandable but slightly awkward/unidiomatic. A more natural translation in this Bitcoin UI context would be "ส่งล่าสุด" or "การส่งล่าสุด" (or "การส่งครั้งล่าสุด") depending on space and labelling style.
+The parenthetical transliteration "(Song Soot Thai)" is unnecessary and not standard for a native 'th' translation. The Thai script alone suffices.
 
-Correct translations (choose one appropriate for UI label):
-- ส่งล่าสุด
-- การส่งล่าสุด
-- การส่งครั้งล่าสุด
+Correct translation:
+ส่งล่าสุด
 ```
 
 <!-- cache_translation_check_th_669b53677a6ecdf157996ec1b4376b2ed25962152be2c9a93ac97ace96b03b88 -->
@@ -1287,23 +1215,6 @@ Correct translation:
 <translation>&amp;คัดลอกที่อยู่</translation>
 ```
 
-<!-- cache_translation_check_th_5f13f442eae371f008e95b6de3def3f74f211bd016183ad38e82dc25fb83c719 -->
-```
-        <source>Copy &amp;label</source>
-        <translation>คัดลอก &amp; ป้าย</translation>
-    
-ERR
-Issues:
-- Extra spaces around the ampersand: "คัดลอก &amp; ป้าย" has spaces before and after the &. The ampersand should appear exactly once and without stray spaces adjacent to it.
-- Word choice: "ป้าย" is understandable but "ป้ายกำกับ" is a more natural translation for "label" in UI contexts.
-
-Corrected translation (no extra spaces, single &):
-<translation>คัดลอก &amp;ป้ายกำกับ</translation>
-
-Alternatively, if preferring a shorter label:
-<translation>คัดลอก &amp;ป้าย</translation>
-```
-
 <!-- cache_translation_check_th_eb7717d1384ad01fcdd5552b8627200e941816fb988e1ea2f27060bdf60c33e0 -->
 ```
         <source>Label</source>
@@ -1329,16 +1240,16 @@ Suggested correct translations:
 - or more explicit: "จำนวนเงินทอน:"
 ```
 
-<!-- cache_translation_check_th_9c17451e7b45c45c833444b8c816646eb6fd7a09f84fe0e24cee8c00a68a6eb2 -->
+<!-- cache_translation_check_th_54360120e54fd5714bd30aa5649fd4db30f9e73836708bb6228f6325c9ceebd1 -->
 ```
-        <source>Copy fee</source>
-        <translation>ค่าลอกสำเนา</translation>
+        <source>Copy bytes</source>
+        <translation>คัดลอก bytes</translation>
     
 ERR
-The Thai phrase "ค่าลอกสำเนา" reads as "fee for making a copy" (i.e., a copying fee) and is not the intended imperative/action "Copy fee" (copy the fee value). No format specifiers or spacing issues.
+The translation mixes Thai and English ("bytes") and has an unnecessary space. Better to use the Thai word for bytes and no extra space.
 
 Correct translation:
-คัดลอกค่าธรรมเนียม
+คัดลอกไบต์
 ```
 
 <!-- cache_translation_check_th_a32f34aa61f3a9e6f4f8d4be78e43e28f8fbd7a446a1ca1772eb220a44474400 -->
@@ -1379,35 +1290,6 @@ The translation mixes English and Thai ("ที่อยู่ &Copy") and leave
 Correct translation:
 <translation>&amp;คัดลอกที่อยู่</translation>
 ```
-
-<!-- cache_translation_check_th_5f13f442eae371f008e95b6de3def3f74f211bd016183ad38e82dc25fb83c719 -->
-```
-        <source>Copy &amp;label</source>
-        <translation>คัดลอก &amp; ป้าย</translation>
-    
-ERR
-Issues:
-- Extra spaces around the ampersand: "คัดลอก &amp; ป้าย" has spaces before and after the &. The ampersand should appear exactly once and without stray spaces adjacent to it.
-- Word choice: "ป้าย" is understandable but "ป้ายกำกับ" is a more natural translation for "label" in UI contexts.
-
-Corrected translation (no extra spaces, single &):
-<translation>คัดลอก &amp;ป้ายกำกับ</translation>
-
-Alternatively, if preferring a shorter label:
-<translation>คัดลอก &amp;ป้าย</translation>
-```
-
-<!-- cache_translation_check_th_eb7717d1384ad01fcdd5552b8627200e941816fb988e1ea2f27060bdf60c33e0 -->
-```
-        <source>Label</source>
-        <translation>การส่งออกล้มเหลว</translation>
-    
-ERR
-The translation is incorrect. "การส่งออกล้มเหลว" means "Export failed", which is unrelated to "Label".
-
-Correct translation:
-ป้ายกำกับ
-```
 </details>
 
-Number of issues: 106.
+Number of issues: 99.

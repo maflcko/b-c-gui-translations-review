@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -18,14 +18,14 @@ ERR
 Missing space before the quoted placeholder. It should be: Tipus de lletra per defecte del sistema "%1"
 ```
 
-<!-- cache_translation_check_ca_46e24b6bc52f0135214e0bda6a6f81915efdb2de7182951598281cfefd2b0023 -->
+<!-- cache_translation_check_ca_7f6a9af3c8931728b5d386e09e1b3db476be95069e4ee87478cd7b913731015f -->
 ```
         <source>Full Relay</source>
         <extracomment>Peer connection type that relays all network information.</extracomment>
-        <translation>Transmissió completa</translation>
+        <translation>Trànsit completat</translation>
     
 ERR
-"Transmissió completa" misses the nuance of "relay" (retransmit). A more accurate Catalan translation is "Retransmissió completa".
+"Trànsit completat" means "completed traffic" and misinterprets "Relay". The correct Catalan for the network concept is "Retransmissió completa".
 
 Correct translation:
 Retransmissió completa
@@ -67,17 +67,47 @@ Correct translation:
 S'està migrant la cartera <b>%1</b>…
 ```
 
-<!-- cache_translation_check_ca_dbde7bf47738bc763d5cbadb948623bb30e187c0a973c6a418ced2709b2785f5 -->
+<!-- cache_translation_check_ca_c9e20245dbc8ce3e1029b9ad9a917bb6834dfe2cae252756b69a0718297ed08c -->
 ```
         <source>Restoring Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
         <extracomment>Descriptive text of the restore wallets progress window which indicates to the user that wallets are currently being restored.</extracomment>
-        <translation>Restaurant la cartera &lt;b&gt;%1&lt;/b&gt;...</translation>
+        <translation>Restaurant cartera &lt;b&gt;%1&lt;/b&gt;...</translation>
     
 ERR
-The translation uses three periods "..." instead of the single ellipsis character "…", which should match the source punctuation.
+- "Restaurant" is incorrect; it means "restaurant" (noun) rather than "restoring" (verb). It should be "Restaurant" as a gerund only when used correctly, but the natural form here is "S'està restaurant".
+- Missing definite article "la" before "cartera".
+- The ellipsis should use the single character "…" as in the source, not three periods "...".
 
 Correct translation:
-Restaurant la cartera <b>%1</b>…
+S'està restaurant la cartera &lt;b&gt;%1&lt;/b&gt;…
+```
+
+<!-- cache_translation_check_ca_c9e20245dbc8ce3e1029b9ad9a917bb6834dfe2cae252756b69a0718297ed08c -->
+```
+        <source>Restoring Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the restore wallets progress window which indicates to the user that wallets are currently being restored.</extracomment>
+        <translation>Restaurant cartera &lt;b&gt;%1&lt;/b&gt;...</translation>
+    
+ERR
+- "Restaurant" is incorrect; it means "restaurant" (noun) rather than "restoring" (verb). It should be "Restaurant" as a gerund only when used correctly, but the natural form here is "S'està restaurant".
+- Missing definite article "la" before "cartera".
+- The ellipsis should use the single character "…" as in the source, not three periods "...".
+
+Correct translation:
+S'està restaurant la cartera &lt;b&gt;%1&lt;/b&gt;…
+```
+
+<!-- cache_translation_check_ca_f9f0ef5a7ed9026ef702a6be989e57a25b0e7c6d231e0738df9878b3619bcae2 -->
+```
+        <source>Maximum database cache size. Make sure you have enough RAM. A larger cache can contribute to faster sync, after which the benefit is less pronounced for most use cases. Lowering the cache size will reduce memory usage. Unused mempool memory is shared for this cache.</source>
+        <extracomment>Tooltip text for Options window setting that sets the size of the database cache. Explains the corresponding effects of increasing/decreasing this value.</extracomment>
+        <translation>Mida màxima de la memòria cau de la base de dades.  Assegureu-vos de tenir prou RAM. Una memòria cau més gran pot contribuir a una sincronització més ràpida, després de la qual el benefici és menys pronunciat per a la majoria dels casos d'ús.  Reduir la mida de la memòria cau reduirà l'ús de memòria.  La memòria mempool no utilitzada es comparteix per a aquesta memòria cau.</translation>
+    
+ERR
+The translation contains unnecessary double spaces between sentences.
+
+Correct translation:
+Mida màxima de la memòria cau de la base de dades. Assegureu-vos de tenir prou RAM. Una memòria cau més gran pot contribuir a una sincronització més ràpida, després de la qual el benefici és menys pronunciat per a la majoria dels casos d'ús. Reduir la mida de la memòria cau reduirà l'ús de memòria. La memòria mempool no utilitzada es comparteix per a aquesta memòria cau.
 ```
 
 <!-- cache_translation_check_ca_cf4a29d519ab43a038c1e7aea542f60015d34ecf72034b773b46fd2ceb0984bf -->
@@ -104,17 +134,92 @@ Correct translation:
 Permet les connexions e&ntrants
 ```
 
-<!-- cache_translation_check_ca_4dc3346d02f04aa929e3972c24bebba3e5b7b7c40e7a052f0e2ecb4ba7626037 -->
+<!-- cache_translation_check_ca_045d8394e2db3c3ebc8634c9cc3e253ea9f5b4bc204cafba69a9dc247de446cf -->
+```
+        <source>Copy to Clipboard</source>
+        <translation>Copia al Clipboard</translation>
+    
+ERR
+"Clipboard" is not translated into Catalan. It should be "porta-retalls".
+
+Correct translation:
+Copia al porta-retalls
+```
+
+<!-- cache_translation_check_ca_7329770a647e37936553412fbba15e72b96ddbf11fbfd0bf46a1b9e0690ac457 -->
+```
+        <source>Transaction broadcast successfully! Transaction ID: %1</source>
+        <translation>La transacció s'ha emès correctament! ID de la transacció: 1%</translation>
+    
+ERR
+The format specifier is incorrect. In the translation, "%1" has been changed to "1%", which will prevent the transaction ID from being displayed correctly.
+
+Correct translation:
+La transacció s'ha emès correctament! ID de la transacció: %1
+```
+
+<!-- cache_translation_check_ca_5cdaf36a6e5718765e670f188b076a29bf092b45611ee4b785f7142caca8ba54 -->
+```
+        <source>Transaction Relay</source>
+        <translation>Transmissió de la transacció.</translation>
+    
+ERR
+The translation includes a trailing period that is not present in the source text. Additionally, "Relay" in a networking context is more accurately translated as "retransmissió" and usually refers to transactions in general (plural).
+
+Correct translation:
+Transmissió de transaccions
+```
+
+<!-- cache_translation_check_ca_505c2ee1ef16fc7d215c9d7b8656ac6a8240d95d02b770e3a17cb080364694be -->
+```
+        <source>Address Relay</source>
+        <extracomment>Text title for the Address Relay field in the peer details area, which displays whether we relay addresses to this peer (Yes/No).</extracomment>
+        <translation>Adreça de transmissió.</translation>
+    
+ERR
+The translation includes a trailing period that is not present in the source text. Furthermore, in the context of a technical field title or label, "Transmissió d'adreces" is a more accurate translation for "Address Relay" than "Adreça de transmissió" (which would imply "Transmission address").
+
+Correct translation:
+Retransmissió d'adreces
+```
+
+<!-- cache_translation_check_ca_b300b36a5f63ef8cb27758913276bb7a31efe222564eb8234117476334af711d -->
+```
+        <source>Addresses Processed</source>
+        <extracomment>Text title for the Addresses Processed field in the peer details area, which displays the total number of addresses received from this peer that were processed (excludes addresses that were dropped due to rate-limiting).</extracomment>
+        <translation>Adreces processades.</translation>
+    
+ERR
+The translation includes a trailing period that is not present in the source text. In UI labels and titles, punctuation should match the source.
+
+Correct translation:
+Adreces processades
+```
+
+<!-- cache_translation_check_ca_e091bb3498f48866dab7b214a725a8f6d972a22196caecb758dafa0e3823b591 -->
 ```
         <source>Elapsed time since a novel transaction accepted into our mempool was received from this peer.</source>
         <extracomment>Tooltip text for the Last Transaction field in the peer details area.</extracomment>
-        <translation>Temps transcorregut des que es va rebre d'aquest igual una transacció nova acceptada al nostre mempool.</translation>
+        <translation>El temps transcorregut des que es va rebre d'aquesta transacció una nova transacció acceptada al nostre igual.</translation>
     
 ERR
-"peer" is mistranslated as "igual" (a calque from Spanish). In Catalan for P2P contexts, "peer" should be "parell".
+The Catalan translation is ungrammatical and mistranslates "peer" as "igual" and includes a redundant/incorrect reference to "aquesta transacció". It should clearly state the elapsed time since a new transaction from this peer, accepted into our mempool, was received.
 
 Correct translation:
-Temps transcorregut des que es va rebre d'aquest parell una transacció nova acceptada al nostre mempool.
+Temps transcorregut des que es va rebre d'aquest parell una nova transacció acceptada al nostre mempool.
+```
+
+<!-- cache_translation_check_ca_3a1d40980e262a7490fc7adaac9271e313f74e5dcb47b39d69efe8b549882101 -->
+```
+        <source>Outbound Block Relay: does not relay transactions or addresses</source>
+        <extracomment>Explanatory text for an outbound peer connection that relays network information about blocks and not transactions or addresses.</extracomment>
+        <translation>Trànsit de blocs de sortida: no transmet trànsit ni adreces</translation>
+    
+ERR
+"trànsit" is incorrect for "transactions" (should be "transaccions"), and "Block Relay" is better rendered as "Retransmissió de blocs" rather than "Trànsit de blocs".
+
+Correct translation:
+Retransmissió de blocs de sortida: no retransmet transaccions ni adreces
 ```
 
 <!-- cache_translation_check_ca_9c80c5c75fcf2fe24035d721aab3fbf65defd5b35477eb838012913a53057557 -->
@@ -195,16 +300,16 @@ Correct translation:
 &Descompta la comissió de l'import
 ```
 
-<!-- cache_translation_check_ca_05d60d2a1da0c1652016d0d01e5a93a257d834cdce7aef0771b5e6b487718b85 -->
+<!-- cache_translation_check_ca_66824e60fbba81658981816825e5c71ea5607ad3e093ee964bfefb75e958da5a -->
 ```
         <source>Reset all sign message fields</source>
-        <translation>Neteja tots els camps de signatura de missatges</translation>
+        <translation>Neteja tots els camps de clau</translation>
     
 ERR
-"Reset" should be translated as "Restableix" (or "Reinicia"), not "Neteja" (which means "clear/clean"). The current translation changes the intended action.
+The translation misinterprets "sign message" as "key" ("clau") and changes the meaning. It should refer to the "Sign message" fields.
 
 Correct translation:
-Restableix tots els camps de signatura de missatges
+Restableix tots els camps de signatura del missatge
 ```
 
 <!-- cache_translation_check_ca_b49a95996e952b99608c0837492020d0efe2a4af21e3991bf9d4a34af7dfd508 -->
@@ -292,29 +397,17 @@ Correct translation:
 S'ignora el -wallet %s duplicat.
 ```
 
-<!-- cache_translation_check_ca_d819ad6d68d99a34eed694ca17a344747c9763f7e7fd032ea904c88779f37dbb -->
+<!-- cache_translation_check_ca_d3b576c178cad3f527c4117aa62fb5eebd381401ad0dcee9f1cd125c2e25ecd0 -->
 ```
         <source>Pruning blockstore…</source>
-        <translation>Podant l'emmagatzematge de blocs...</translation>
+        <translation>Taller de poda...</translation>
     
 ERR
-The ellipsis character differs from the source (uses "..." instead of "…"). Use the same ellipsis as in the source.
+"Taller de poda..." means "pruning workshop" and changes the meaning. Also the ellipsis should match the source (…) rather than three dots.
 
 Correct translation:
-Podant l'emmagatzematge de blocs…
-```
-
-<!-- cache_translation_check_ca_562bd9415e849ded41ebe3d833484131baf981c1c484611346b706fca6a464d3 -->
-```
-        <source>Specified -walletdir "%s" does not exist</source>
-        <translation>El -Walletdir "%s" especificat no existeix</translation>
-    
-ERR
-The option name is case-sensitive and should remain lowercase as in the source. "Walletdir" was capitalized.
-
-Correct translation:
-El -walletdir "%s" especificat no existeix
+S'està podant el magatzem de blocs…
 ```
 </details>
 
-Number of issues: 24.
+Number of issues: 31.

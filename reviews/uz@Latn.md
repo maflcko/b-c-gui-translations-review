@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -31,6 +31,30 @@ Word order is unnatural in Uzbek. "Nusxalash &Yorliq" literally reads "Copy Labe
 
 Suggested correction:
 &Yorliqni nusxalash
+```
+
+<!-- cache_translation_check_uz@Latn_af51441b4a8f6c94fe8e843cae0435437a9d83d22addc6aba8195b316d4b8860 -->
+```
+        <source>Sending addresses - %1</source>
+        <translation>Manzil yuborilmoqda</translation>
+    
+ERR
+The translation is incorrect and incomplete. The English source "Sending addresses - %1" refers to a title or label for a list of addresses used for sending, including a placeholder %1. The Uzbek translation "Manzil yuborilmoqda" means "Address is being sent" and misses the placeholder.
+
+Correct translation:
+Jo'natish manzillari - %1
+```
+
+<!-- cache_translation_check_uz@Latn_7b3fa41b56d3b32b438ab63351c5d8d8c3136dfac855457306ca67cb46999aa4 -->
+```
+        <source>Receiving addresses - %1</source>
+        <translation>Qabul qilish manzillari</translation>
+    
+ERR
+The format specifier '%1' is missing in the translation. In this context, it usually represents the wallet name or a specific identifier that should be included.
+
+Correct translation:
+Qabul qilish manzillari - %1
 ```
 
 <!-- cache_translation_check_uz@Latn_b6b006571f42e71027cb725efbc9547b8e83ec661e67ce85273f9ce42665f67a -->
@@ -429,6 +453,18 @@ Correct translation (Latin Uzbek):
 (%1 qulflangan)
 ```
 
+<!-- cache_translation_check_uz@Latn_b79753252a76edb9988270135bb0acf0077e8cfaabf0665750d5f6631eddd0ca -->
+```
+        <source>Are you sure you wish to migrate the wallet &lt;i&gt;%1&lt;/i&gt;?</source>
+        <translation>Hamyonni ko'chirmoqchi ekanligingizga ishonchingiz komilmi?&lt;i&gt;%1&lt;/i&gt;</translation>
+    
+ERR
+The translation places the format specifier and HTML tags `<i1>%1</i>` at the end of the sentence, whereas in the source, it represents the name of the wallet being migrated and should be integrated into the sentence structure for better clarity. Additionally, the spacing around the tags is missing.
+
+Correct translation:
+<i>%1</i> hamyonini ko'chirmoqchi ekanligingizga ishonchingiz komilmi?
+```
+
 <!-- cache_translation_check_uz@Latn_37182631947619c7631bf26ff2e81dd44a04537083ce502d7869d0486527640e -->
 ```
         <source>Migrating the wallet will convert this wallet to one or more descriptor wallets. A new wallet backup will need to be made.
@@ -498,6 +534,19 @@ There are a few issues:
 
 Correct translation:
 Yechilishi mumkin, lekin kuzatilmaydigan skriptlar '%1' deb nomlangan yangi hamyonga ko'chirildi.
+```
+
+<!-- cache_translation_check_uz@Latn_f6880955ec667ea50cb4e4bfef71c9453a6bb921663e3e0e0b7739eadefd382a -->
+```
+        <source>Restoring Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the restore wallets progress window which indicates to the user that wallets are currently being restored.</extracomment>
+        <translation>Wallet tiklanmoqda&lt;b&gt;%1&lt;/b&gt;</translation>
+    
+ERR
+There is a spacing issue: there should be a space after the ellipsis ("tiklanmoqda") and before the HTML tag. The original also ends with an ellipsis (…), but the translation omits it. 
+
+Correct translation:
+Wallet tiklanmoqda &lt;b&gt;%1&lt;/b&gt;…
 ```
 
 <!-- cache_translation_check_uz@Latn_f6880955ec667ea50cb4e4bfef71c9453a6bb921663e3e0e0b7739eadefd382a -->
@@ -990,6 +1039,18 @@ The translation omits part of the instruction about "unmasking" values (i.e., "u
 
 Correct translation:
 "Umumiy ko'rinish" yorlig'i uchun maxfiylik rejimi faollashtirildi. Qiymatlarni ko‘rsatish uchun Sozlamalar->Qiymatlarni yashirish belgisini olib tashlang.
+```
+
+<!-- cache_translation_check_uz@Latn_d514c77bc0d72c968bb7e1f06c63aaa21e669cfb6fc07ca4aa148d24cb14a2fa -->
+```
+        <source>Failed to load transaction: %1</source>
+        <translation>Tranzaksiyani yuklab bo'lmadi</translation>
+    
+ERR
+The translation is missing the format specifier '%1' which is present in the source text.
+
+Correct translation:
+Tranzaksiyani yuklab bo'lmadi: %1
 ```
 
 <!-- cache_translation_check_uz@Latn_51e0e582a0a1eb654dd898fd98c00e02e811efa7c2af9dacb1d777a1fa98db43 -->
@@ -1694,4 +1755,4 @@ Hamyonni qayta yozish kerak: bajarilishini yakunlash uchun %s ni qayta ishga tus
 ```
 </details>
 
-Number of issues: 131.
+Number of issues: 136.

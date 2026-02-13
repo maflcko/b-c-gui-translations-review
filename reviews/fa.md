@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -38,19 +38,16 @@ Or, in some contexts, "تور" (Tor) or "شبکه آنیون" (Onion Network) ma
 آنیون
 ```
 
-<!-- cache_translation_check_fa_c5c2a5368e9e16791befc68f6b65f26b913109d41bafc6adb3726ffba2a1aa1b -->
+<!-- cache_translation_check_fa_0e3411f61d8997a8883221ebaa0b62350ce382270565d1b638120415fc43d1e8 -->
 ```
         <source>%1 m</source>
-        <translation>%1 دقیقه قبل</translation>
+        <translation>£%1 گیگابایت</translation>
     
 ERR
-The translation is problematic because "%1 m" in the context likely stands for "%1 minutes" (simply a quantifier with unit: e.g., "5 m" = "5 minutes"), but the translation "%1 دقیقه قبل" means "%1 minutes ago", adding "قبل" ("ago"), which adds an unintended temporal context not present in the source.
+The translation is incorrect for several reasons. First, it includes a pound sterling symbol (£) which is not present in the source. Second, the source unit "m" (which likely stands for minutes or mega) has been incorrectly translated as "گیگابایت" (Gigabyte). Third, the format specifier and characters are poorly ordered.
 
 Correct translation:
-‏%1 دقیقه‏
-
-Or, if space formatting from the source is critical:
-%1 دقیقه
+%1 دقیقه (if minutes) or %1 m (if shorthand)
 ```
 
 <!-- cache_translation_check_fa_f6224e493124f5abfc86cf0c520a02f6c24e697c2fa0e274b4026027e8f64b1f -->
@@ -491,6 +488,35 @@ or
 Either placement is acceptable as long as '&' exists exactly once.
 ```
 
+<!-- cache_translation_check_fa_a0c3eac4788b7e6677e2b6fc5649dcbb58de055ec4e67f82172b21fe768a4d4f -->
+```
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <translation>کیف پول است &lt;b&gt; رمزگذاری شده &lt;/b&gt; و در حال حاضر &lt;b&gt; تفسیر شده است &lt;/b&gt;
+ </translation>
+    
+ERR
+The translation has several issues:
+1. **Incorrect Translation**: The word "unlocked" is translated as "تفسیر شده است", which means "is interpreted" or "is commented". In the context of a Bitcoin wallet, "قفل‌گشایی شده" or "باز" is appropriate.
+2. **Grammar and Word Order**: The Persian word order is incorrect. The verb "است" (is) should typically come after the adjective or at the end of the phrase.
+3. **Whitespace Issues**: There are unnecessary spaces added inside the `<b>` tags and trailing whitespace/hidden characters at the end of the string.
+
+Correct translation:
+کیف پول <b>رمزگذاری شده</b> است و در حال حاضر <b>قفل‌گشایی شده</b> است
+```
+
+<!-- cache_translation_check_fa_e2826150cfbd2233a38df923178d63b042ebfdc5e8623e14c539f578d73289f9 -->
+```
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
+        <translation>کیف پول است &lt;b&gt; رمزگذاری شده &lt;/b&gt; و در حال حاضر &lt;b&gt; تفسیر شده &lt;/b&gt;
+ </translation>
+    
+ERR
+The translation is problematic for several reasons. First, the Persian word "تفسیر شده" means "interpreted" or "commentated," which is incorrect; the correct word for "locked" is "قفل‌شده". Second, the word order is awkward; the verb "است" (is) usually comes at the end of the sentence or clause in Persian. Third, there is unnecessary spacing around the HTML tags and a trailing non-breaking space/newline.
+
+Correct translation:
+کیف پول **رمزگذاری شده** و در حال حاضر **قفل‌شده** است
+```
+
 <!-- cache_translation_check_fa_32c014b01cfd89415f5a00288074e89150943f194fa357e7ad0122deb2f4ade7 -->
 ```
         <source>&amp;Copy address</source>
@@ -610,6 +636,66 @@ The Persian translation is correct in meaning ("Create Wallet" → "ایجاد �
 
 Correct translation:
 ایجاد کیف پول
+```
+
+<!-- cache_translation_check_fa_63bf19c3c89057a2e1c8df568f73c6932fd2394cf7b6132457c3e00af0d7da4d -->
+```
+        <source>&amp;Label</source>
+        <translation>برچسب</translation>
+    
+ERR
+The shortcut key indicator (&amp;) is missing from the translation. According to the instructions, it must exist exactly once in the translation if it is present in the source.
+
+Correct translation:
+&amp;برچسب
+```
+
+<!-- cache_translation_check_fa_4861730c791e1d013f0719df0c9a364e6c52343f51d37b5a5f5ccaa5c7ed6b53 -->
+```
+        <source>The label associated with this address list entry</source>
+        <translation>برچسب مرتبط با لیست آدرس ورودی</translation>
+    
+ERR
+The Persian translation "برچسب مرتبط با لیست آدرس ورودی" is slightly inaccurate. It translates to "The label associated with the input address list," which misinterprets "address list entry." The "entry" is the item in the list, not an "input" (ورودی).
+
+Correct translation:
+برچسب مرتبط با این ورودیِ لیست آدرس
+```
+
+<!-- cache_translation_check_fa_57cfbea7d53fbc8cd2e3880b96bf814e2218141e61d6fc020ffa83ff0a410ee5 -->
+```
+        <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
+        <translation>برچسب مرتبط با لیست آدرس ورودی می باشد. این می تواند فقط  برای آدرس های ارسالی اصلاح شود.</translation>
+    
+ERR
+The translation is incorrect. The Persian text uses "برچسب" (label) instead of "آدرس" (address) for the first word. Additionally, "لیست آدرس ورودی" (address list entry) is poorly phrased, and there is an unnecessary double space.
+
+Correct translation:
+آدرس مرتبط با این ورودی لیست آدرس. این تنها برای آدرس‌های ارسالی قابل تغییر است.
+```
+
+<!-- cache_translation_check_fa_8e6fec6828d50d58f0e878f578483ff7f3fc3cddf27de42f7db9c9fa3280cc3a -->
+```
+        <source>&amp;Address</source>
+        <translation>آدرس</translation>
+    
+ERR
+The translation is missing the shortcut key indicator '&', which must appear exactly once as per the instructions.
+
+Correct translation:
+&آدرس
+```
+
+<!-- cache_translation_check_fa_e92cd1f4acd621d868b56023036f400f9fe4ea3bdf03fa54bc9071f9a5a4fb05 -->
+```
+        <source>The entered address "%1" is already in the address book with label "%2".</source>
+        <translation>آدرس وارد شده "%1" در حال حاظر در دفترچه آدرس ها موجود است با برچسب "%2" .</translation>
+    
+ERR
+The Persian translation contains a spelling error: "حاظر" should be "حاضر". Additionally, there is a stray space before the final period.
+
+Correct translation:
+آدرس وارد شده "%1" در حال حاضر با برچسب "%2" در دفترچه آدرس‌ها موجود است.
 ```
 
 <!-- cache_translation_check_fa_58f9c95722e9eda8a2c78c07292f54cc20302615592466c8167820400338b09c -->
@@ -1007,18 +1093,6 @@ or
 - دریافت
 ```
 
-<!-- cache_translation_check_fa_500ac6f3e5be541284453a4150bf4bc5a1fcfeb84c460534d6cc8f033e069cb9 -->
-```
-        <source>User Agent</source>
-        <translation>نماینده کاربر</translation>
-    
-ERR
-The Persian translation "نماینده کاربر" literally means "user representative" and is understandable but not the usual term for the technical label "User Agent". A more common and accurate translation in this context is "عامل کاربر".
-
-Correct translation:
-عامل کاربر
-```
-
 <!-- cache_translation_check_fa_07306160f38f85eb810d6fcaf6989cf367bf3c400ee1cdaab2d060689090b4fd -->
 ```
         <source>&amp;Network Traffic</source>
@@ -1031,22 +1105,52 @@ Correct translation:
 &amp;ترافیک شبکه
 ```
 
-<!-- cache_translation_check_fa_66906f4b9c1777e6f01b75fb1aacc605c368aa5e2f8afb677e2c2009ad27f7c2 -->
+<!-- cache_translation_check_fa_ece9918470acec4dc72c6d7aaa51f72faa62b5dc11271369c167dbd9167e1c47 -->
 ```
-        <source>Create a new wallet</source>
-        <translation>کیف پول جدیدی ایجاد کنید
- </translation>
+        <source>Copy &amp;label</source>
+        <translation>تکثیر برچسب</translation>
     
 ERR
-There is an unnecessary newline and a stray whitespace character at the end of the translation. Also, the translation uses the imperative form ("ایجاد کنید") which may be less appropriate if the English is intended as a label (not a command).
+The translation omits the '&' which is used for shortcut keys, and uses "تکثیر" which means "reproduction/duplication" rather than the more typical "کپی" ("copy") in software UI. The proper translation for software context should use "کپی" and include the '&'.
 
 Correct translation:
-یک کیف پول جدید ایجاد کنید
+کپی &برچسب
+```
 
-Or, for a label/button:
-ایجاد کیف پول جدید
+<!-- cache_translation_check_fa_ece9918470acec4dc72c6d7aaa51f72faa62b5dc11271369c167dbd9167e1c47 -->
+```
+        <source>Copy &amp;label</source>
+        <translation>تکثیر برچسب</translation>
+    
+ERR
+The translation omits the '&' which is used for shortcut keys, and uses "تکثیر" which means "reproduction/duplication" rather than the more typical "کپی" ("copy") in software UI. The proper translation for software context should use "کپی" and include the '&'.
 
-Make sure there is no extra space or newline.
+Correct translation:
+کپی &برچسب
+```
+
+<!-- cache_translation_check_fa_e04fdba236bb13fe3ad3d3522004f0dde0cb6e0db1a9b4f1a5bb16a861620a16 -->
+```
+        <source>The inputs size exceeds the maximum weight. Please try sending a smaller amount or manually consolidating your wallet's UTXOs</source>
+        <translation>اندازه ورودی از حداکثر مقدار موجودی بیشتر است.  لطفاً مقدار کمتری ارسال کنید یا به صورت دستی مقدار موجودی خرج نشده کیف پول خود را در ارسال تراکنش اعمال کنید. </translation>
+    
+ERR
+The Persian translation contains inaccuracies regarding technical Bitcoin terminology. "maximum weight" is translated as "maximum balance" (حداکثر مقدار موجودی), which is incorrect. Furthermore, the translation of "manually consolidating your wallet's UTXOs" is overly wordy and does not accurately capture the concept of consolidation (combining multiple UTXOs into fewer ones).
+
+Correct translation:
+اندازه ورودی‌ها از حداکثر وزن مجاز فراتر رفته است. لطفاً مبلغ کمتری ارسال کنید یا خروجی‌های خرج‌نشده (UTXO) کیف پول خود را به صورت دستی تجمیع کنید.
+```
+
+<!-- cache_translation_check_fa_d6e28eefd6934157ea55018093fe5fabc30cc4d449b0391f318d95cf9bfc9480 -->
+```
+        <source>The preselected coins total amount does not cover the transaction target. Please allow other inputs to be automatically selected or include more coins manually</source>
+        <translation>مقدار کل بیتکوینی که از پیش انتخاب کردید کمتر از مبلغ مورد نظر برای انجام تراکنش است .  لطفاً اجازه دهید ورودی های دیگر به طور خودکار انتخاب شوند یا مقدار بیتکوین های بیشتری را به صورت دستی اضافه کنید</translation>
+    
+ERR
+The translation contains unnecessary spaces before the period ('.') and after it. In Persian typography, punctuation marks should follow the preceding word without a space. Additionally, there is a double space after the period.
+
+Correct translation:
+مقدار کل کوین‌های از پیش انتخاب شده برای مبلغ تراکنش کافی نیست. لطفاً اجازه دهید ورودی‌های دیگر به طور خودکار انتخاب شوند یا کوین‌های بیشتری را به صورت دستی اضافه کنید.
 ```
 
 <!-- cache_translation_check_fa_f6224e493124f5abfc86cf0c520a02f6c24e697c2fa0e274b4026027e8f64b1f -->
@@ -1086,6 +1190,18 @@ Correct translation:
 داده‌های Assumeutxo برای بلاک‌هش '%s' یافت نشد.
 ```
 
+<!-- cache_translation_check_fa_8a80a3677fef49a035bace23e7ef3def4aaaf4647e7a901d80fe86f7293fb57b -->
+```
+        <source>Error opening coins database</source>
+        <translation>خطا در بازکردن پایگاه داده بلاک coins</translation>
+    
+ERR
+The translation includes the extra word "بلاک" (block), which is not present in the source text. In the context of Bitcoin software, "coins database" refers specifically to the chainstate database (UTXO set), not necessarily the block database.
+
+Correct translation:
+خطا در بازکردن پایگاه داده سکه‌ها (coins)
+```
+
 <!-- cache_translation_check_fa_310dce85f7e0e931bc268a06b3fd06a186ae09299bf88be6577c2d3921321dd0 -->
 ```
         <source>Error reading from database, shutting down.</source>
@@ -1113,6 +1229,18 @@ The word order in the Persian translation does not correctly preserve the format
 Correct translation:
 خطا: تراکنش پایگاه داده را نمی‌توان برای کیف پول %s اجرا کرد
 ```
+
+<!-- cache_translation_check_fa_6469a353ea2ac175db9d58350239a6188761df6c331d24889403d4b906bde35e -->
+```
+        <source>Not enough file descriptors available. %d available, %d required.</source>
+        <translation>ویژگی‌‌‌نما های فایل کافی نیستند. دردسترس %d، مورد نیاز %d</translation>
+    
+ERR
+The Persian translation contains unnecessary triple spaces (stray spacing) between "ویژگی‌‌‌نما" and "های". Additionally, "ویژگی‌‌‌نما" is not the standard technical term for "file descriptor" in Persian; "توصیف‌گر فایل" is the commonly accepted term in computing.
+
+Correct translation:
+توصیف‌گرهای فایل کافی در دسترس نیستند. %d در دسترس، %d مورد نیاز.
+```
 </details>
 
-Number of issues: 84.
+Number of issues: 95.

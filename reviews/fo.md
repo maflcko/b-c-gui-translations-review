@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -120,6 +120,85 @@ Correct translation:
 Lat upp ein lummapung
 ```
 
+<!-- cache_translation_check_fo_a5e31a9a8b851b1369e3e456be2251106400d5a1fa3dec8af82b4cac11213ed8 -->
+```
+        <source>Migrate Wallet</source>
+        <translation>Uppstiga mappuforsnið</translation>
+    
+ERR
+The translation "Uppstiga mappuforsnið" translates more literally to "Upgrade wallet format" rather than "Migrate Wallet". In Faroese software translation, "Migrate" is typically translated as "Flyt" (Move/Migrate) and "Wallet" is usually translated as "mappa" or "pungur". "Uppstiga" is an unusual choice for "Migrate".
+
+Correct translation:
+Flyt mappu
+```
+
+<!-- cache_translation_check_fo_0dc0960a697a0dcc0ba9b487052f89cc809d4a6a34e08b6aa43aecc7941701da -->
+```
+        <source>Migrate a wallet</source>
+        <translation>Uppstiga forsniðið á eini mappu</translation>
+    
+ERR
+The translation is problematic both in terms of terminology and meaning. "Uppstiga" means to ascend (e.g., stairs) and is not used for software migration. "Mappa" means "folder" or "directory," whereas "wallet" in the context of Bitcoin is typically translated as "fartaska" or "lummi" in Faroese.
+
+Correct translation:
+Flyt eina fartasku
+```
+
+<!-- cache_translation_check_fo_82b36a6672688ca511cd06e1dc15fe94ed4cb0282df2740416b399687374abbd -->
+```
+        <source>Invalid Wallet Name</source>
+        <translation>Ógildugt mappunavn</translation>
+    
+ERR
+The translation uses "mappunavn," which means "folder name" in Faroese. In the context of a Bitcoin wallet, the correct word for wallet is "pungur" or "lummapungur." Additionally, the standard spelling for "invalid" in this context is "ógyldugt."
+
+Correct translation:
+Ógyldugt pungnavn
+```
+
+<!-- cache_translation_check_fo_08eab887106ea664047d82535f2c45fcebdf0a39e7b04078bb1f842e01e956f3 -->
+```
+        <source>Restore and Migrate Wallet File...</source>
+        <translation>Endurinnless og uppstiga mappufíl…</translation>
+    
+ERR
+The translation provided is not correct Faroese and contains several errors:
+1. "Endurinnless" is not a valid word in Faroese; "endurstovna" is typically used for "restore".
+2. "Uppstiga" means to "ascend" or "climb up" and is an incorrect translation for "migrate" in a software context (which should be "flyt" or "migrera").
+3. "Mappufíl" literally means "folder file". In Faroese Bitcoin terminology, "wallet" is "pungur", so a wallet file is "pungsfíla".
+
+Correct translation:
+Endurstovna og flyt pungsfílu...
+```
+
+<!-- cache_translation_check_fo_06a814c351c536bd17df32269e6473e520b03f15bac0bcf8fad965bc1433e16a -->
+```
+        <source>Restore and Migrate Wallet Backup</source>
+        <translation>Endurinnless og uppstiga mapputrygdaravrit</translation>
+    
+ERR
+The translation contains a spelling error and uses a slightly unnatural term for "Migrate". "Endurinnless" is not a correct word; it should be "Endurinnles" (imperative). "Uppstiga" literally means "to step up," while "flyt" or "flytja" is more appropriate for migrating data.
+
+Correct translation:
+Endurinnles og flyt mapputrygdaravrit
+```
+
+<!-- cache_translation_check_fo_00be0acee2577abda6cc21ef7dca2ad44d2f33b87ec99077a40f9d63269831b1 -->
+```
+        <source>Restore and Migrate Wallet</source>
+        <extracomment>Title of pop-up window shown when the user is attempting to restore a wallet.</extracomment>
+        <translation>Endurinnless og uppstiga mappu</translation>
+    
+ERR
+The translation provided is not correct Faroese and contains several errors:
+1. "Endurinnless" is not a Faroese word. The correct term for "Restore" in this context is "Endurstovna".
+2. "uppstiga" is a literal translation of "stepping up" and is not used for software migration. "Flyt" or "Flyt yvir" is more appropriate for "Migrate".
+3. "mappu" means "folder". In the context of Bitcoin, a "Wallet" is typically translated as "lummi" or "gjaldslummi".
+
+Correct translation:
+Endurstovna og flyt lumma
+```
+
 <!-- cache_translation_check_fo_56897f47deca2157d03db69c9fd9f86759b51c170af09867f551f8947d50d542 -->
 ```
         <source>List mode</source>
@@ -156,17 +235,100 @@ Correct translation:
 Miseydnaðist at stovna lumma
 ```
 
-<!-- cache_translation_check_fo_b9510fefa0983063057ec19c7bf29c9ee83f3344b0010894ddfe996a1bb12062 -->
+<!-- cache_translation_check_fo_ba696df8812f14ef87a23fe1e06dbbbf6fb9b391be7c24d96b754b4b52964936 -->
 ```
-        <source>Restore wallet message</source>
-        <extracomment>Title of message box which is displayed when the wallet is successfully restored.</extracomment>
-        <translation>Uppstigan av mappusniði væleydnað</translation>
+        <source>Migrate wallet</source>
+        <translation>Uppstiga mappuforsnið</translation>
     
 ERR
-The translation appears to be completely unrelated to the source text in meaning. "Uppstigan av mappusniði væleydnað" translates roughly to "Ascension of folder format successful", whereas the source text is "Restore wallet message". "Wallet" is usually translated as "lumma" in Faroese.
+The translation uses "Uppstiga" (which means to ascend or step up) instead of "Flyta" (the standard term for migrate/move in a technical context). It also adds the word "forsnið" (format), which is not present in the source text.
 
 Correct translation:
-Boð um endurskapan av lumma
+Flyt mappu
+```
+
+<!-- cache_translation_check_fo_4816e85ba73dfe4b7afd8f6c51cfe11cc7b6a6f8c0002747703e5525640d32e2 -->
+```
+        <source>Are you sure you wish to migrate the wallet &lt;i&gt;%1&lt;/i&gt;?</source>
+        <translation>Ynskir tú at uppstiga forsniðið á &lt;i&gt;%1&lt;/i&gt; mappuni?</translation>
+    
+ERR
+The translation uses "mappuni" (the folder) instead of the standard Faroese term for a Bitcoin wallet, which is "fartaskuna". Additionally, "uppstiga forsniðið" (upgrade the format) is a descriptive interpretation of "migrate", but "flyta" (migrate/move) is the more standard term in this context.
+
+Correct translation:
+Ert tú vísur í, at tú vilt flyta fartaskuna <i>%1</i>?
+```
+
+<!-- cache_translation_check_fo_a5e31a9a8b851b1369e3e456be2251106400d5a1fa3dec8af82b4cac11213ed8 -->
+```
+        <source>Migrate Wallet</source>
+        <translation>Uppstiga mappuforsnið</translation>
+    
+ERR
+The translation "Uppstiga mappuforsnið" translates more literally to "Upgrade wallet format" rather than "Migrate Wallet". In Faroese software translation, "Migrate" is typically translated as "Flyt" (Move/Migrate) and "Wallet" is usually translated as "mappa" or "pungur". "Uppstiga" is an unusual choice for "Migrate".
+
+Correct translation:
+Flyt mappu
+```
+
+<!-- cache_translation_check_fo_dd6a828f7956341fd16c989aa2ecc4373d9badb6787717b18d54727dc47b6467 -->
+```
+        <source>Migrating Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <translation>Uppstigar forsniðið tilhoyrandi mappu &lt;b&gt;%1&lt;/b&gt;…</translation>
+    
+ERR
+The translation is inaccurate and uses incorrect terminology for the context. In Faroese, "Migrating" is typically translated as "Flytir" or "Flyting", and in the context of Bitcoin, "Wallet" is translated as "pungur" rather than "mappa" (which means folder/directory). The provided translation also adds unnecessary words like "forsniðið" (format) and "tilhoyrandi" (belonging to).
+
+Correct translation:
+Flytir pungin <b>%1</b>…
+```
+
+<!-- cache_translation_check_fo_66d43d225dcfb6bb96a1984b213f6a9a01543e064d644db6d8ef9ef5285d6658 -->
+```
+        <source>The wallet '%1' was migrated successfully.</source>
+        <translation>Tað eydnaðist at uppstiga forsniðið á '%1' mappuni.</translation>
+    
+ERR
+The translation uses 'mappuni' (the folder) and 'forsniðið' (the format), which changes the meaning of the original sentence. In the context of Bitcoin, 'wallet' should be translated as 'pungur' or 'pungurin'.
+
+Correct translation:
+Gjaldfordin '%1' varð flutt yvir væleydnað.
+```
+
+<!-- cache_translation_check_fo_826f06f6cd2083e161fc152403920e2719b31d7f07252087408105f11a824733 -->
+```
+        <source>Restore and Migrate wallet</source>
+        <translation>Endurinnless og uppstiga mappu</translation>
+    
+ERR
+The translation contains several errors in Faroese grammar and vocabulary. "Endurinnless" is misspelled and resembles an Icelandic form; "uppstiga" is not the correct word for "migrate" (which would be "flyta"); and "mappa" usually refers to a folder, whereas "pungur" is the standard term for a Bitcoin wallet in Faroese.
+
+Correct translation:
+Endurstovna og flyt pung
+```
+
+<!-- cache_translation_check_fo_4c66c68c5604b5d041f027e768e3acb94d238f8fda749409b15a9f3707f9e9d1 -->
+```
+        <source>Are you sure you wish to restore the wallet file &lt;i&gt;%1&lt;/i&gt; to &lt;i&gt;%2&lt;/i&gt; and migrate it?</source>
+        <translation>Ynskir tú at endurinnlesa mappufíluna &lt;i&gt;%1&lt;/i&gt; til &lt;i&gt;%2&lt;/i&gt; og uppstiga forsnið mappunar?</translation>
+    
+ERR
+The translation uses the word "mappa" (which means folder/directory) instead of the correct word for "wallet" (which is "pungur"). Additionally, "uppstiga forsnið mappunar" is a somewhat literal and awkward translation for "migrate it".
+
+Correct translation:
+Ert tú vísur í, at tú vilt endurstovna pungfíluna <i>%1</i> til <i>%2</i> og dagføra hana?
+```
+
+<!-- cache_translation_check_fo_bb02e8c62f41d37e38bcffccac7a0ba91890c23085cfddacbea65382e23b4e95 -->
+```
+        <source>Make a blank wallet. Blank wallets do not initially have private keys or scripts. Private keys and addresses can be imported using descriptors at a later time.</source>
+        <translation>Ger eina tóma mappu. At byrja við innihalda tómar mappur ikki privatar lyklar ella script. HD rót ella privatir lyklar kunnu innleggjast seinni.</translation>
+    
+ERR
+The translation contains technical inaccuracies. It uses "HD rót" (HD root) instead of a translation for "descriptors", and it omits the translation for "addresses". Additionally, while "mappa" (folder) is sometimes used for wallet, "pungur" is more common in a Bitcoin context in Faroese.
+
+Correct translation:
+Ger ein tóman pung. At byrja við innihalda tómir pungar ikki privatar lyklar ella script. Privatir lyklar og adressur kunnu innleggjast við descriptors seinni.
 ```
 
 <!-- cache_translation_check_fo_de25c2c7d81e32ee82115d0bb73be924224ce521a382073ce8188e311e4667a5 -->
@@ -205,6 +367,18 @@ Correct translation:
 Formularur
 ```
 
+<!-- cache_translation_check_fo_99aa18e2802682ceb0bc6f0d701ae8086b6c2037b19e20aba0f22bc1d9bd8d47 -->
+```
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Vísta kunningin kann vera ótíðarhóskandi. Tín knútur samstillar við Bitcoin netið, sjálvvirkandi, eftir at samband er fingið við tað; men tann tilgongdin er ikki liðug enn.</translation>
+    
+ERR
+The translation uses the word "knútur" (node) instead of "pungur" (wallet). While related in the context of Bitcoin, they are distinct components.
+
+Correct translation:
+Vísta kunningin kann vera ótíðarhóskandi. Tín pungur samstillar seg sjálvvirkandi við Bitcoin-netið, eftir at samband er fingið; men hendan tilgongdin er ikki liðug enn.
+```
+
 <!-- cache_translation_check_fo_9fa34eecaac09b85734d6a145bee0c5b3bf5e8d7844df089b110cfa31b688ff3 -->
 ```
         <source>Cannot sign inputs while wallet is locked.</source>
@@ -215,6 +389,18 @@ The translation contains a critical semantic error and grammatical issues. 'Løs
 
 Correct translation:
 Kann ikki undirrita input, meðan lummapungurin er læstur.
+```
+
+<!-- cache_translation_check_fo_6c42a3f6edca389438b592810dcd257bfb734342bf340b536df77ef498a9a6eb -->
+```
+        <source>Transaction is missing some information about inputs.</source>
+        <translation>Upplýsingar um flytingar-inntøk, vanta í flytingini.</translation>
+    
+ERR
+The translation contains an unnecessary comma that incorrectly separates the subject from the predicate.
+
+Correct translation:
+Upplýsingar um flytingar-inntøk vanta í flytingini.
 ```
 
 <!-- cache_translation_check_fo_3e7f9346cf5b4ae5595987dad3fdd836cf47e3a933df6efebe82a4936d202c72 -->
@@ -229,6 +415,18 @@ Correct translation:
 Pungur:
 ```
 
+<!-- cache_translation_check_fo_dfa10b1b34bdf1cfbf8726c41e47f9b35efd8aef421d695ffa8e00b4a9d54c3c -->
+```
+        <source>Out:</source>
+        <translation>Upp:</translation>
+    
+ERR
+The translation "Upp:" means "Up:" in Faroese. The correct translation for "Out:" (indicating direction or output) is "Út:".
+
+Correct translation:
+Út:
+```
+
 <!-- cache_translation_check_fo_0fe93e14ddceb8b0f0a351d223da51f57c3fc96a9ee4f940cff335869c18e24a -->
 ```
         <source>Wallet:</source>
@@ -239,18 +437,6 @@ The translation "Mappa" means "Folder" in Faroese. The correct term for "Wallet"
 
 Correct translation:
 Pungur:
-```
-
-<!-- cache_translation_check_fo_a1923d6ea5dbaecb696e55977aa6e5d65f1161f3301ff61b387170ad749ffc6c -->
-```
-        <source>automatically selected</source>
-        <translation>Um eingi inntøk (myntir) verða vald, so vera tey vald sjálvvirkandi</translation>
-    
-ERR
-The translation is a long explanatory sentence ("If no inputs (coins) are selected, then they are selected automatically") rather than a direct translation of the short source phrase.
-
-Correct translation:
-sjálvvalt
 ```
 
 <!-- cache_translation_check_fo_a8304a5d9b50fb7c2416b4b8a4c4de9429fcf4d76be51e499c616e73ab19b41a -->
@@ -277,16 +463,16 @@ Correct translation:
 &Draga avgjald frá upphædd
 ```
 
-<!-- cache_translation_check_fo_4d33c62ec5f5dc5d470724a3aeae4d7e8059923e3df8025f34d30e2dcc5d1d61 -->
+<!-- cache_translation_check_fo_7ec5f0f8cd7be1c7d2be5922f7c6d957b4df1714f98b78e6f5c2198d392341a7 -->
 ```
-        <source>Message signed.</source>
-        <translation>Boð undirritaði</translation>
+        <source>The signature could not be decoded.</source>
+        <translation>Undirskriftin er ógildig.</translation>
     
 ERR
-The translation uses the active past tense verb form 'undirritaði' (meaning "signed" as in "he signed") instead of the past participle 'undirritað' (meaning "signed" as in "has been signed"). Since 'boð' (message) is a neuter noun, the participle must agree with it.
+The translation provided means "The signature is invalid" (Undirskriftin er ógildig), which is not an accurate translation of "The signature could not be decoded". The source text refers to a specific failure in processing/parsing the signature, distinct from a general validation failure.
 
 Correct translation:
-Boð undirritað
+Undirskriftin kundi ikki avkotast.
 ```
 
 <!-- cache_translation_check_fo_a6bb486aa8ca885aac5fb6464b2b5298b84254b6c158f36e5cc0980d09c42685 -->
@@ -301,13 +487,13 @@ Correct translation:
 Móttikið frá
 ```
 
-<!-- cache_translation_check_fo_8a2a96cb484048ad909e3635404ce4e6e14dfb937d170a6e118059ec555a6ba2 -->
+<!-- cache_translation_check_fo_9352ff2a31e67cffc54ea3192cebfc57c7b35993e5dd8ad545abe2c19cf9568b -->
 ```
         <source>Sent to</source>
-        <translation>Útgjald</translation>
+        <translation>Útgjøld</translation>
     
 ERR
-The translation "Útgjald" means "payout" or "expenditure" (noun), which changes the meaning of the source text. "Sent to" indicates the destination or the action of sending, and is best translated with the corresponding verb phrase.
+The translation "Útgjøld" corresponds to "expenses" or "payouts" (noun), whereas "Sent to" indicates the destination or recipient of the transaction.
 
 Correct translation:
 Sent til
@@ -369,6 +555,14 @@ Correct translation:
 Villa: Útgávan av dumpfíluni er ikki stuðlað. Hendan útgávan av bitcoin-punginum stuðlar bert dumpfílur av útgávu 1. Fekk dumpfílu við útgávu %s
 ```
 
+<!-- cache_translation_check_fo_f65dfa61e55d8cf0ccc7e6f87a21221bc91e608c12d4f66b058acef3c5d5b931 -->
+```
+        <source>Please contribute if you find %s useful. Visit %s for further information about the software.</source>
+        <translation>Vinaliga gev títt ískoyti um tú fært nyttu úr %s. Sí meira kunning um ritbúnaðin á %s.</translation>
+    
+UNK_LANG, not familiar with the Faroese language 'fo'.
+```
+
 <!-- cache_translation_check_fo_578543f6f5b9238a414a81055b74697f680731d043c191607c4dcc944ad4f8fb -->
 ```
         <source>UTXO snapshot failed to validate. Restart to resume normal initial block download, or try loading a different snapshot.</source>
@@ -379,30 +573,6 @@ Grammar error: The modal verb 'kundi' requires the infinitive 'vátta', not the 
 
 Correct translation:
 Kundi ikki vátta UTXO-løtumynd. Endurbyrja fyri at halda fram við vanligu blokk-niðurtøkuni, ella royn at innlesa eina aðra løtumynd.
-```
-
-<!-- cache_translation_check_fo_c85712a0e10e26059f19c3820aceffa84da8d51ceb8cdd1d64689fac68a9826a -->
-```
-        <source>whitebind may only be used for incoming connections ("out" was passed)</source>
-        <translation>whitebind kann bert brúkast til inngangandi sambon ("out" var ásett)</translation>
-    
-ERR
-The word "sambon" is a misspelling. The correct plural form of "samband" (connection) in Faroese is "sambond".
-
-Correct translation:
-whitebind kann bert brúkast til inngangandi sambond ("out" var ásett)
-```
-
-<!-- cache_translation_check_fo_47f1736d1816cb7ad4aaf03b3931ab7eae699ac294d5bad3699e0da25ab4d8a4 -->
-```
-        <source>Error creating %s</source>
-        <translation>Villa undir innlesing av %s</translation>
-    
-ERR
-The translation changes the meaning of the action. "Innlesing" means reading, loading, or importing, whereas the source text refers to "creating".
-
-Correct translation:
-Villa við at stovna %s
 ```
 
 <!-- cache_translation_check_fo_5199692813c5d67a1bd18f0cd81bcefd5190186f64cecc1a9221b445c6b9cb57 -->
@@ -416,6 +586,42 @@ The translation contains a grammatical error. After the infinitive marker 'at', 
 Correct translation:
 Miseydnaðist at strika flyting: %s
 ```
+
+<!-- cache_translation_check_fo_bb83708f68faac31d2de0d63206562eba0ab2797cc511ae5efd03af5a116ba9a -->
+```
+        <source>Input not found or already spent</source>
+        <translation>Inntak varð ikki funni ella longu nýtt</translation>
+    
+ERR
+The translation contains a spelling/grammatical error. In Faroese, the neuter past participle of "finna" (to find) is "funnið", not "funni".
+
+Correct translation:
+Inntak varð ikki funnið ella longu nýtt
+```
+
+<!-- cache_translation_check_fo_c4765008cc55985a7eb4a609d19d938071291f60fd1d2300da13ddde8f4060a6 -->
+```
+        <source>Duplicate binding configuration for address %s. Please check your -bind, -bind=...=onion and -whitebind settings.</source>
+        <translation>Endurtikin bindingaruppsetan tilhoyrandi %s atsetrið. Vinnaliga kanna tíni -bind, -bind=...=onion og -whitebind ávirki.</translation>
+    
+ERR
+The translation contains a mix of Faroese ("fo") and Icelandic words, and the grammar is slightly unnatural for Faroese. "Endurtikin" and "atsetrið" are Icelandic (the Faroese equivalents would be "Dupult" or "Tvífald" and "adressuna"). Additionally, "bindingaruppsetan" is not a standard Faroese term.
+
+Correct translation:
+Dupult biningaruppsetan fyri adressuna %s. Vinarliga eftirkanna tínar -bind, -bind=...=onion og -whitebind stillingar.
+```
+
+<!-- cache_translation_check_fo_72c2add5b5e3c474efdb2b2ce56a253307cdc8045e6baa2e6f5548b2658ac4db -->
+```
+        <source>Warning: Found invalid chain more than 6 blocks longer than our best chain. This could be due to database corruption or consensus incompatibility with peers.</source>
+        <translation>Gev gætur: Fann ógildug ketu, ið er meira enn 6 blokkar longur enn okkara besta keta. Hetta er kann vera orsaka av avskeplaðum dátugrunni ella vantandi semju við aðrar viðskiftarar.</translation>
+    
+ERR
+The Faroese translation contains a grammatical error in the second sentence. "Hetta er kann vera" translates to "This is can be", which is redundant. The word "er" should be removed.
+
+Correct translation:
+Gev gætur: Fann ógildug ketu, ið er meira enn 6 blokkar longur enn okkara besta keta. Hetta kann vera orsaka av avskeplaðum dátugrunni ella vantandi semju við aðrar viðskiftarar.
+```
 </details>
 
-Number of issues: 33.
+Number of issues: 50.

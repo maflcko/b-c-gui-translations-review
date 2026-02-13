@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -136,19 +136,34 @@ Or, if more context is needed:
 Either of these better fits the original English meaning.
 ```
 
-<!-- cache_translation_check_ja_13ebae0e36f8b8e75aa88b6134d61bfe6f045fb9f1f9a9412d99234b7bdd5131 -->
+<!-- cache_translation_check_ja_5221ff16cd7bde63d8f8556d1439f11fc30965bfe9353bd4e9dbb269c4746e73 -->
 ```
-        <source>Copy transaction &amp;ID and output index</source>
-        <translation>取引IDとアウトプットのインデックスをコピー</translation>
+        <source>Restoring the wallet will copy the backup file to the wallets directory and place it in the standard wallet directory layout. The original file will not be modified.
+
+Migrating the wallet will convert the restored wallet to one or more descriptor wallets. A new wallet backup will need to be made.
+If this wallet contains any watchonly scripts, a new wallet will be created which contains those watchonly scripts.
+If this wallet contains any solvable but not watched scripts, a different and new wallet will be created which contains those scripts.
+
+The migration process will create a backup of the wallet before migrating. This backup file will be named &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak and can be found in the directory for this wallet. In the event of an incorrect migration, the backup can be restored with the "Restore Wallet" functionality.</source>
+        <translation>ウォレットの復元では、バックアップファイルをウォレットディレクトリにコピーし、標準のウォレットディレクトリレイアウトに配置します。元のファイルは変更されません。
+
+ウォレットの移行では、復元されたウォレットを１つ以上のディスクリプターウォレットに変換します。新しいウォレットバックアップを作成する必要があります。
+このウォレットに監視専用スクリプトが含まれている場合、それらの監視専用スクリプトを含む新しいウォレットが作成されます。
+このウォレットに解決可能だが非監視スクリプトが含まれている場合、それらのスクリプトを含む別の新しいウォレットが作成されます。
+
+移行プロセスでは、移行前にウォレットのバックアップが作成されます。このバックアップファイルの名前は&lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bakで、このウォレット用のディレクトリ内に保存されます。間違った移行が行われた場合、「ウォレットの復元」機能をしよいうしてバックアップを復元できます。</translation>
     
 ERR
-The translation omits the '&' which is used to indicate a shortcut key in the UI. The translation should contain a single '&' somewhere, matching the source. Additionally, "アウトプット" could be more naturally "出力", but "アウトプット" is still often used in the Bitcoin context in Japanese.
+The translation contains a typo in the last sentence. "しよいうして" (shiyouishite) should be "使用して" (shiyoushite) or "しよ­う­して". Also, the punctuation and spacing around the placeholder names could be improved for better readability.
 
 Correct translation:
-取引&IDとアウトプットのインデックスをコピー
+ウォレットの復元では、バックアップファイルをウォレットディレクトリにコピーし、標準のウォレットディレクトリレイアウトに配置します。元のファイルは変更されません。
 
-Or, if more natural Japanese is preferred and still in the Bitcoin context:
-取引IDと出力のインデックスをコピー(&I)
+ウォレットの移行では、復元されたウォレットを1つ以上のディスクリプターウォレットに変換します。新しいウォレットバックアップを作成する必要があります。
+このウォレットに監視専用スクリプトが含まれている場合、それらの監視専用スクリプトを含む新しいウォレットが作成されます。
+このウォレットに解決可能だが監視されていないスクリプトが含まれている場合、それらのスクリプトを含む別の新しいウォレットが作成されます。
+
+移行プロセスでは、移行前にウォレットのバックアップが作成されます。このバックアップファイルの名前は <wallet name>-<timestamp>.legacy.bak で、このウォレット用のディレクトリ内に保存されます。移行に失敗した場合、「ウォレットの復元」機能を使用してバックアップを復元できます。
 ```
 
 <!-- cache_translation_check_ja_0914854e51cf3f4915d58aa5ea7d953c57325769a45ab8ceb0af9b0ec57fd3e1 -->
@@ -206,53 +221,17 @@ Tor onion service経由でピアに接続するために、別のSOCKS&5プロ�
 If a shortcut/mnemonic is required for localization, it would depend on the application; otherwise, omit explicit placement.
 ```
 
-<!-- cache_translation_check_ja_888cf3b6b4e9f398868664a466f5c6b25fe30df4256f07b386aa1764d417810a -->
+<!-- cache_translation_check_ja_c7c3949c3b9192a5e53a007c03f41165729972787821db0522763d5c89fc9972 -->
 ```
-        <source>Sign Tx</source>
-        <translation>署名されたトランザクション</translation>
+        <source>Private broadcast: short-lived, for broadcasting privacy-sensitive transactions</source>
+        <extracomment>Explanatory text for a short-lived outbound peer connection that is used to broadcast privacy-sensitive data (like our transactions).</extracomment>
+        <translation>プライベートブロードキャスト: プライバシーに配慮した取引をブロードキャストするためもので、短命</translation>
     
 ERR
-The Japanese translation "署名されたトランザクション" means "signed transaction" (a transaction that has already been signed). The English "Sign Tx" is an action/command (e.g., a button label) meaning "sign the transaction", so the translation is incorrect.
-
-Correct translations (depending on UI style):
-- トランザクションに署名
-- 取引に署名
-
-Shorter alternatives:
-- 署名
-- 署名する
-
-No format specifiers or whitespace issues.
-```
-
-<!-- cache_translation_check_ja_08a67dae4f650bca102838d8dc00ceec413646c2feed287f784c5899d87ea5f5 -->
-```
-        <source>Failed to load transaction: %1</source>
-        <translation>%1 : トランザクションの読込失敗</translation>
-    
-ERR
-Issues:
-- The placeholder %1 is moved to the start; in the source it appears after the colon. Keep order consistent.
-- There's an extra space before the colon and the wording uses the uncommon form "読込" instead of "読み込み".
-- More natural Japanese phrasing uses "読み込みに失敗しました".
+The translation contains a grammatical error and a minor omission. The particle "の" is missing after "ため" (should be "ためのもの"), and the phrasing "短命" at the end is awkward for an explanatory sentence.
 
 Correct translation:
-<translation>トランザクションの読み込みに失敗しました: %1</translation>
-```
-
-<!-- cache_translation_check_ja_13ca14291f907c3ae3f8841bd395201769305be72aa1b0e9686ee68787710bf2 -->
-```
-        <source>Failed to sign transaction: %1</source>
-        <translation>%1 : トランザクション署名失敗</translation>
-    
-ERR
-The Japanese is awkward and has spacing issues. It places "%1" at the start with a space before the colon and uses an unnatural noun phrase "トランザクション署名失敗" (missing particle and polite verb form).
-
-Correct translation (keeps the same meaning and %1 specifier):
-トランザクションの署名に失敗しました: %1
-
-(Alternatively, use a fullwidth colon:)
-トランザクションの署名に失敗しました：%1
+プライベートブロードキャスト: プライバシーに配慮した取引をブロードキャストするためのもので、短期間のみ有効です。
 ```
 
 <!-- cache_translation_check_ja_f780c2f0dd26b87896fd739ffc9a17f05bdb876b3ad2220b680e1caebed73299 -->
@@ -484,6 +463,30 @@ The translation is understandable and preserves format specifiers, but it has mi
 
 Corrected translation:
 指定された-blockreservedweight (%d) は最小安全値 (%d) 未満です
+```
+
+<!-- cache_translation_check_ja_01e6b475f6e8678070def2f0c66613952151426ab5a7b9c85f09ec549c8c6854 -->
+```
+        <source>Can't spend unconfirmed version %d pre-selected input with a version 3 tx</source>
+        <translation>バージョン3のtxで、未確認バージョン1%dの事前選択されたインプットを使うことはできません</translation>
+    
+ERR
+The translation includes an extra "1" before the format specifier "%d", which is not present in the source text and alters the meaning.
+
+Correct translation:
+バージョン3のtxで、未確認バージョン%dの事前選択されたインプットを使うことはできません
+```
+
+<!-- cache_translation_check_ja_580c79730e824c6ba4b47a62d1a119ea1d436740ad8183a1c6d98e633039cd5d -->
+```
+        <source>Can't spend unconfirmed version 3 pre-selected input with a version %d tx</source>
+        <translation>バージョン1%dのtxで、未確認バージョン3の事前選択されたインプットを使うことはできません</translation>
+    
+ERR
+The format specifier from the source `%d` has been incorrectly modified to `%1%d` in the translation. This will likely cause a formatting error in the application.
+
+Correct translation:
+バージョン %d の tx で、未確認バージョン 3 の事前選択されたインプットを使うことはできません
 ```
 
 <!-- cache_translation_check_ja_a9579629663a4b6cb2a0394fe2e5e5757db2e7f524f8571eb882df36b237cc85 -->

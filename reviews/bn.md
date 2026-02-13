@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -206,6 +206,22 @@ Correct translation:
 &ঠিকানা কপি করুন
 ```
 
+<!-- cache_translation_check_bn_36a7168b79362233d9426fc37a1e2953a789a7e3529023d6d0c77a08634a110a -->
+```
+        <source>Copy &amp;label</source>
+        <translation>কপি লেবেল</translation>
+    
+ERR
+The translation "কপি লেবেল" is missing the ampersand (&) character, which denotes the shortcut key in the original English string. The ampersand should be present exactly once in the translation.
+
+Correct translation:
+কপি &লেবেল
+or
+&কপি লেবেল
+
+Either placement is allowed as per shortcut conventions, but the ampersand must appear exactly once.
+```
+
 <!-- cache_translation_check_bn_6285b845fcc2bc8d8455413f9e44dc9ce825833e0ba97df87f048941c57d55de -->
 ```
         <source>Copy &amp;amount</source>
@@ -240,6 +256,19 @@ The translation of "&amp;Unlock unspent" as "&amp;অব্যয়িত খ�
 
 Correct translation:
 &amp;অব্যয়িত আনলক করুন
+```
+
+<!-- cache_translation_check_bn_da58da0e9712a69c80d888d8f008d7549657a7557dfa931c23de2288185e17f5 -->
+```
+        <source>Creating Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the create wallet progress window which indicates to the user which wallet is currently being created.</extracomment>
+        <translation>ওয়ালেট তৈরি করা হচ্ছে</translation>
+    
+ERR
+The translation omits the placeholder %1 and does not specify which wallet is being created, which is important information from the source sentence.
+
+Correct translation:
+ওয়ালেট &lt;b&gt;%1&lt;/b&gt; তৈরি করা হচ্ছে…
 ```
 
 <!-- cache_translation_check_bn_a3525f0a9e5e5b15e9da8b7cd057efe9af462eb528910f30dedef4c13f499380 -->
@@ -425,6 +454,18 @@ Correct translation:
 &amp;পরিমাণ কপি করুন
 ```
 
+<!-- cache_translation_check_bn_cbeafd180baa2c6221dff3a7952e17bc2dff88f198ef17222d658e664dc9916e -->
+```
+        <source>Label</source>
+        <translation>টিকেট</translation>
+    
+ERR
+The translation is incorrect. "Label" should be translated as "লেবেল" or "চিহ্ন", not "টিকেট" (which means "ticket" in Bengali).
+
+Correct translation:
+লেবেল
+```
+
 <!-- cache_translation_check_bn_32290be196f3d5c6942b0ba5047a253a85f6f37b647a110e67453eec56cd20fa -->
 ```
         <source>Settings file could not be read</source>
@@ -438,4 +479,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 32.
+Number of issues: 35.

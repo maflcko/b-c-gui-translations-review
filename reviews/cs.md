@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -118,16 +118,16 @@ Correct translation:
 Ve výchozím nastavení odečíst &poplatek z částky
 ```
 
-<!-- cache_translation_check_cs_1eddbcc5b0f551f493dc9c76ffeb38a20198e05e0e18219ed983d5bfb41173d0 -->
+<!-- cache_translation_check_cs_e68de09c9a141b73f289c5b643a1b29850c23cc540a695c8405c9efebbb25e1b -->
 ```
-        <source>Addresses Rate-Limited</source>
-        <extracomment>Text title for the Addresses Rate-Limited field in the peer details area, which displays the total number of addresses received from this peer that were dropped (not processed) due to rate-limiting.</extracomment>
-        <translation>Adresy omezené rychlostí</translation>
+        <source>To specify a non-default location of the blocks directory use the '%1' option.</source>
+        <translation>Pro specifikaci neklasické lokace pro data použij možnost '%1'</translation>
     
 ERR
-The phrase "omezené rychlostí" is awkward and can be misread as "limited in speed." In this context, it should indicate being subject to a rate limit.
+The Czech phrasing is awkward and inaccurate: "neklasické lokace pro data" is incorrect for "non-default location of the blocks directory", and "použij" is informal. Also missing the final period.
+
 Correct translation:
-Adresy omezené limitem rychlosti
+Chcete-li zadat nevýchozí umístění adresáře bloků, použijte volbu '%1'.
 ```
 
 <!-- cache_translation_check_cs_cc540d33d798b1aaf2e7068a0e2eb626c6362144071cc85e1ecfea348981ebb3 -->
@@ -166,31 +166,28 @@ Correct translation:
 Volitelný štítek pro přiřazení k nové adrese pro příjem (použijete jej k identifikaci faktury). Je také připojen k platební žádosti.
 ```
 
-<!-- cache_translation_check_cs_b8aa2d448cb509c979446b5fc2cede118b69f8353bb7d96fb2c02054c3739ae2 -->
+<!-- cache_translation_check_cs_5972f9af235394f8c8f213554dea0733f551037b958c6a9ec2568517d4f7d1c6 -->
 ```
-        <source>You can sign messages/agreements with your legacy (P2PKH) addresses to prove you can receive bitcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Můžete podepisovat zprávy/dohody se svými zastaralými adresami (typu P2PKH), abyste prokázali, že můžete přijímat bitcoiny, které tam byly zaslány. Buďte obezřetní a nepodepisujte nic neurčitého nebo náhodného, protože phishingové útoky mohou vést k přepsání vaší identity na někoho jiného. Podepisujte pouze záležitosti, jejichž detaily plně znáte a s nimiž souhlasíte.</translation>
+        <source>Increasing transaction fee failed</source>
+        <translation>Nepodařilo se navýšeit poplatek</translation>
     
 ERR
-The translation is mostly accurate but has issues:
-- "statements" should be "prohlášení," not the vague "záležitosti."
-- The clause about phishing should reflect the intent to trick you into signing your identity over to them.
-- Minor stylistic improvements: "na ně" instead of "tam" for addresses; "legacy" is commonly left as "legacy" or "starší," not "zastaralé" (which implies obsolete).
+The Czech word "navýšeit" is a typo; it should be "navýšit". It’s also clearer to specify "transakční poplatek".
 
 Correct translation:
-Můžete podepisovat zprávy/dohody svými legacy (P2PKH) adresami, abyste prokázali, že můžete přijímat bitcoiny zaslané na ně. Dávejte pozor, abyste nepodepisovali nic neurčitého ani náhodného, protože phishingové útoky se vás mohou pokusit přimět, abyste jim podpisem převedli svou identitu. Podepisujte pouze plně specifikovaná prohlášení, s nimiž souhlasíte.
+Nepodařilo se navýšit transakční poplatek
 ```
 
-<!-- cache_translation_check_cs_ccf34d066a52f6566b2e537181eb8fc147b727cde62c196541e637bb65a3a3c5 -->
+<!-- cache_translation_check_cs_001b7e363c98f66d33c0dd956aa5b9e4315796f44a48099976c9c410d6beddbc -->
 ```
-        <source>The entered address does not refer to a legacy (P2PKH) key. Message signing for SegWit and other non-P2PKH address types is not supported in this version of %1. Please check the address and try again.</source>
-        <translation>Zadaná adresa neodpovídá zastaralému typu klíče (P2PKH). Zpráva podepisovaná pomocí SegWit nebo jiným typem adresy mimo-P2PKH není podporovaná v této verzi %1. Prosím zkontrolujte adresu a zkuste to znovu.</translation>
+        <source>Could not commit transaction</source>
+        <translation>Nemohl jsem uložit transakci do peněženky</translation>
     
 ERR
-The Czech sentence structure is awkward and changes the subject ("Zpráva podepisovaná...") leading to incorrect grammar and meaning. It should refer to the action "podepisování zpráv" and use "jiné než P2PKH" instead of "mimo-P2PKH". Also "pomocí SegWit" is inappropriate; it should be "pro SegWit".
+The translation adds content not in the source (“do peněženky”) and uses first person (“Nemohl jsem”), which is inappropriate for UI strings. It also misrenders “commit,” which is better as “zapsat” here.
 
 Correct translation:
-Zadaná adresa neodpovídá staršímu (P2PKH) klíči. Podepisování zpráv pro SegWit a další typy adres jiné než P2PKH není v této verzi %1 podporováno. Zkontrolujte prosím adresu a zkuste to znovu.
+Nepodařilo se zapsat transakci
 ```
 
 <!-- cache_translation_check_cs_16cf9dd725c3c99dc8d27805b171f58d2ac838836a17fafd0d7fd0f01aac76c3 -->
@@ -306,18 +303,6 @@ Grammar issue: "volba automatických vstupů peněženky" is in nominative, but 
 
 Correct translation:
 Kombinace předvybraných vstupů a automatického výběru vstupů peněženky přesahuje maximální váhu transakce. Zkuste prosím poslat nižší částku nebo ručně konsolidovat UTXO své peněženky
-```
-
-<!-- cache_translation_check_cs_bd4bd4761eee510d9ef1bfa865ed15ee6764486a10f1af82fe1ddcbd4187862f -->
-```
-        <source>The inputs size exceeds the maximum weight. Please try sending a smaller amount or manually consolidating your wallet's UTXOs</source>
-        <translation>Velikost vstupů přesahuje maximální váhu. Zkuste poslat menší částku nebo ručně konsolidovat UTXO peněženky</translation>
-    
-ERR
-Missing possessive "vaší" and the verb aspect is more natural as "zkonsolidovat".
-
-Correct translation:
-Velikost vstupů přesahuje maximální váhu. Zkuste poslat menší částku nebo ručně zkonsolidovat UTXO vaší peněženky.
 ```
 
 <!-- cache_translation_check_cs_24710a83d085a9c2bf743a6f03ba2a888a6992a819d28a026f143cb34c7c7705 -->
@@ -476,18 +461,6 @@ Correct translation:
 Během inicializace peněženky se nepodařilo získat rezervaci pro opětovné prohledání.
 ```
 
-<!-- cache_translation_check_cs_f82893cc8086bcee7c52bcedb657db4004364a885d3a964c099579f4ab60e649 -->
-```
-        <source>Failed to write to coin database.</source>
-        <translation>Selhal zápis do databáze mincí</translation>
-    
-ERR
-Missing final period and slightly unnatural word order.
-
-Correct translation:
-Zápis do databáze mincí selhal.
-```
-
 <!-- cache_translation_check_cs_5b995f859ca5154a74491219725e01dd75f50392ff8070e01a8df2c4e5a95c4a -->
 ```
         <source>Failed to write undo data.</source>
@@ -582,16 +555,16 @@ Correct translation:
 Nepodařilo se vypočítat poplatky pro navýšení, protože nepotvrzené UTXO závisí na obrovském klastru nepotvrzených transakcí.
 ```
 
-<!-- cache_translation_check_cs_08a6300c56f0d94e61e36bf197280734f414447751477a7d906d50f047e99016 -->
+<!-- cache_translation_check_cs_7dbe4d3bd8b3611230af4faaa6ce145b6c5a4c819c0e60df70d06beaa18b3371 -->
 ```
-        <source>Error: Could not delete watchonly transactions. </source>
-        <translation>Chyba: Nelze odstranit transakce, které jsou pouze pro čtení.</translation>
+        <source>Error: Could not add watchonly tx %s to watchonly wallet</source>
+        <translation>Chyba: Nelze přidat pouze-sledovací tx %s do peněženky pro čtení</translation>
     
 ERR
-"watchonly" should be translated as "pouze ke sledování," not "pouze pro čtení." Also, the source string contains a trailing space that should be preserved.
+The translation uses "peněženky pro čtení" (read-only) instead of the standard "jen ke sledování" (watch-only) and the phrase "pouze-sledovací tx" is unnatural. It should use "transakci" for "tx" and consistently render "watch-only" as "jen ke sledování".
 
 Correct translation:
-Chyba: Nelze odstranit transakce pouze ke sledování.
+Chyba: Nelze přidat transakci %s jen ke sledování do peněženky jen ke sledování
 ```
 
 <!-- cache_translation_check_cs_c424c2e65be2e293546645b3036a4540b42b8030a5017087876f3285a8bf8bb0 -->
@@ -621,4 +594,4 @@ Nedostatek volných souborových deskriptorů. %d k dispozici, %d vyžadováno.
 ```
 </details>
 
-Number of issues: 50.
+Number of issues: 48.

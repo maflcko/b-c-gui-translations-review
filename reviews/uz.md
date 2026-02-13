@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -390,20 +390,6 @@ Correct translation:
 Sarflanmagan tranzaksiyalarni &qulfdan chiqarish
 ```
 
-<!-- cache_translation_check_uz_5ecb47d9f9e90bed2dcafc92afe94bc082df53f30b0a74c6c36f9c0e22a8c497 -->
-```
-        <source>Copy after fee</source>
-        <translation>'To'lovdan keyin' ni nusxalash</translation>
-    
-ERR
-The translation has incorrect punctuation and spacing (unnecessary single quotes and a space before the postposition "ni"), and the phrasing is awkward. There are no format specifiers to preserve.
-
-Correct translation:
-To'lovdan keyingisini nusxalash
-
-(Alternative more explicit: "To'lovdan keyingi qiymatni nusxalash")
-```
-
 <!-- cache_translation_check_uz_b79753252a76edb9988270135bb0acf0077e8cfaabf0665750d5f6631eddd0ca -->
 ```
         <source>Are you sure you wish to migrate the wallet &lt;i&gt;%1&lt;/i&gt;?</source>
@@ -499,6 +485,22 @@ Correct translation:
 Hamyon <b>%1</b> tiklanmoqda…
 ```
 
+<!-- cache_translation_check_uz_c47c8c35977570e2680c36440f4758ee90c26d0a11c9d59e42725011ba520828 -->
+```
+        <source>Restoring Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the restore wallets progress window which indicates to the user that wallets are currently being restored.</extracomment>
+        <translation>Hamyon tiklanmoqda&lt;b&gt;%1&lt;/b&gt;</translation>
+    
+ERR
+Issues:
+- Missing the trailing ellipsis (…) from the source.
+- No space before the <b> tag; the source has a space before &lt;b&gt;.
+- Word order in Uzbek is more natural as "Hamyon <b>%1</b> tiklanmoqda…" (emphasised wallet name between).
+
+Correct translation:
+Hamyon <b>%1</b> tiklanmoqda…
+```
+
 <!-- cache_translation_check_uz_0a5b602624e9e468f3d5fde7996d52803be53fdfd2c21e9ae095e98a7e744b0d -->
 ```
         <source>Closing the wallet for too long can result in having to resync the entire chain if pruning is enabled.</source>
@@ -520,18 +522,6 @@ ERR
 The translation misses the final explanatory sentence "This is ideal for watch-only wallets." and partially modifies the meaning of the original. Also, "HD seedlar" should be singular or adapted for Uzbek.
 Correct translation:
 Ushbu hamyon uchun maxfiy kalitlarni o‘chiring. Maxfiy kalitlar o‘chirilgan hamyonlarda maxfiy kalitlar, HD urug‘i yoki import qilingan maxfiy kalitlar bo‘lmaydi. Bu faqat kuzatuvchi (watch-only) hamyonlar uchun idealdir.
-```
-
-<!-- cache_translation_check_uz_b86d92e8c1d02a024c0fbe58195f7f4c8bc49d24aaa1cf21dbf1920390a57a05 -->
-```
-        <source>Make a blank wallet. Blank wallets do not initially have private keys or scripts. Private keys and addresses can be imported, or an HD seed can be set, at a later time.</source>
-        <translation>Bo'sh hamyon yaratish. Bo'sh hamyonlarga keyinchalik maxfiy kalitlar yoki manzillar import qilinishi mumkin, yana HD seedlar ham o'rnatilishi mumkin.</translation>
-    
-ERR
-The translation omits important details from the source. The original specifies that blank wallets do not initially have private keys or scripts, and that private keys, addresses, or an HD seed can be set or imported later. The translation does not mention "scripts," and "addresses" are not clearly mentioned at the stage described in the source. The causality and options are not as clear as in the source text.
-
-Correct translation:
-Bo'sh hamyon yarating. Bo'sh hamyonlar dastlab maxfiy kalitlarga yoki skriptlarga ega bo‘lmaydi. Keyinchalik maxfiy kalitlar va manzillar import qilinishi yoki HD urug‘i o‘rnatilishi mumkin.
 ```
 
 <!-- cache_translation_check_uz_3b87db80994dc838fb12b6f3b2ff58a3f70ccc7d1881af14ccc499ca63f84775 -->
@@ -1154,4 +1144,4 @@ Hamyonni qayta yozish kerak: bajarishni yakunlash uchun %s ni qayta ishga tushir
 ```
 </details>
 
-Number of issues: 86.
+Number of issues: 85.

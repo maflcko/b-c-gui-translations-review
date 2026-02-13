@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -587,18 +587,6 @@ Correct translation:
 ტრანზაქციაზე &უარის თქმა
 ```
 
-<!-- cache_translation_check_ka_de7e6c120dfc36f4f0e397dc2ef61b13ab9a8c098622ced8bcba39b1fed9eefd -->
-```
-        <source>Error creating %s</source>
-        <translation>შეცდომა%s-ის შექმნისას</translation>
-    
-ERR
-There is a formatting issue: there is no space between the word "შეცდომა" (Error) and the format specifier "%s". In Georgian, a space should be present for clarity.
-
-Correct translation:
-შეცდომა %s-ის შექმნისას
-```
-
 <!-- cache_translation_check_ka_fe7f989202a283e1c7070245f073adf2626c177a071c216940e9b82abbf7a406 -->
 ```
         <source>Error opening block database</source>
@@ -624,4 +612,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 48.
+Number of issues: 47.

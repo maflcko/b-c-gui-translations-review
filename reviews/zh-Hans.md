@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -67,6 +67,18 @@ The translation "卸载钱包" means "uninstall wallet", which is incorrect for 
 
 Correct translation:
 关闭钱包
+```
+
+<!-- cache_translation_check_zh-Hans_492c89b5149d60d48c4c53aa66a37e8ed3cc5b9cf2da1aa2afcf48c1d8a10fa3 -->
+```
+        <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
+        <translation>跟這個地址清單關聯的地址。只有發送地址能被修改。</translation>
+    
+ERR
+The translation is in Traditional Chinese (zh-Hant) instead of Simplified Chinese (zh-Hans) as requested.
+
+Correct translation:
+与此地址列表项关联的地址。只有发送地址可以修改。
 ```
 
 <!-- cache_translation_check_zh-Hans_9aaea724e35cabcbf2ac07c832c25a252ef22ee5c468bb68b8255db455a0cef6 -->
@@ -183,30 +195,6 @@ Correct translation (no trailing space):
 选项“-checkpoints”已设置，但检查点已被移除。该选项不再生效。
 ```
 
-<!-- cache_translation_check_zh-Hans_d98c1c5ff4f9281f53e84a4630bcb6846485c6649d59a458ddb76aab8f1f87d3 -->
-```
-        <source>Option '-maxorphantx' is set but no longer has any effect (see release notes). Please remove it from your configuration.</source>
-        <translation>选项“-maxorphantx”已设置，但已不再生效（参见发行说明）。请从您的配置中移除该选项。 </translation>
-    
-ERR
-Translation is accurate, but there is a trailing whitespace before the closing tag. Remove the extra space.
-
-Correct translation:
-选项“-maxorphantx”已设置，但已不再生效（参见发行说明）。请从您的配置中移除该选项。
-```
-
-<!-- cache_translation_check_zh-Hans_bf17affb0acd6713b9f6b2167f99961dbd921c30426c9f4b5f40c6272c0fa297 -->
-```
-        <source>Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.</source>
-        <translation>选项“-datacarrier”或“-datacarriersize”已设置，但已标记为弃用。它们将在未来版本中移除。 </translation>
-    
-ERR
-The translation is accurate and natural, but there is an extra trailing space before the closing tag. Also Chinese punctuation could use a comma instead of a full stop after "已设置，但已标记为弃用" — current punctuation is acceptable though. Remove the stray space.
-
-Correct translation:
-选项“-datacarrier”或“-datacarriersize”已设置，但已标记为弃用。它们将在未来版本中移除。
-```
-
 <!-- cache_translation_check_zh-Hans_fc44b6029c7dbac45686cc79b705b8c897f4c829f9f3f5057b0a8d2f641e4b4e -->
 ```
         <source>Prune: last wallet synchronisation goes beyond pruned data. You need to -reindex (download the whole blockchain again in case of a pruned node)</source>
@@ -229,6 +217,30 @@ The Chinese translation is accurate in meaning but has minor formatting issues: 
 
 Correct translation:
 “-paytxfee”已弃用，并将在v31.0中完全移除。
+```
+
+<!-- cache_translation_check_zh-Hans_212c3af68e90ae4a89c435e0fc3e60da04c4a65ab354a77723b7b670db8e3821 -->
+```
+        <source>Can't spend unconfirmed version %d pre-selected input with a version 3 tx</source>
+        <translation>无法使用版本3交易花费未确认版本1%d的预选输入。</translation>
+    
+ERR
+The translation adds the number "1" before the format specifier "%d", which is not present in the source text and changes the meaning.
+
+Correct translation:
+无法使用版本 3 交易花费版本为 %d 的未确认预选输入。
+```
+
+<!-- cache_translation_check_zh-Hans_f9b38ca6e6771122f4b6e345f173a375d4a3ec7c96cf90ece271263bcdc608a8 -->
+```
+        <source>Can't spend unconfirmed version 3 pre-selected input with a version %d tx</source>
+        <translation>无法使用版本1%d交易花费未确认版本3的预选输入。</translation>
+    
+ERR
+The translation incorrectly translates "version %d" as "版本1%d". The "1" is an extraneous character added before the format specifier, which changes the meaning and corrupts the format.
+
+Correct translation:
+无法使用版本 %d 交易花费未确认的版本 3 预选输入。
 ```
 
 <!-- cache_translation_check_zh-Hans_fb0823c1e335cab3c139e0073166fec5250bf5eb78a2f8b358bf651517b0544c -->
@@ -327,4 +339,4 @@ Correct translation (without extra trailing spaces):
 ```
 </details>
 
-Number of issues: 25.
+Number of issues: 26.

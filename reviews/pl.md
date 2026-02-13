@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -57,42 +57,16 @@ Correct translation:
 Wystąpił wewnętrzny błąd. %1 spróbuje bezpiecznie kontynuować działanie. To nieoczekiwany błąd, który można zgłosić w sposób opisany poniżej.
 ```
 
-<!-- cache_translation_check_pl_a03c0f55fc06ac461fcf1fe7a0fe9097121be159e5d4f2de37a3698cd438873a -->
+<!-- cache_translation_check_pl_9a7b6b6510aeff2bfaa110854cdfeb85ba8f9befc0425afb6842a873786c7738 -->
 ```
-        <source>Inbound</source>
-        <extracomment>An inbound connection from a peer. An inbound connection is a connection initiated by a peer.</extracomment>
-        <translation>Przychodzący</translation>
+        <source>Feeler</source>
+        <extracomment>Short-lived peer connection type that tests the aliveness of known addresses.</extracomment>
+        <translation>Wychodzące połączenie testowe: krótkotrwałe, do testowania adresów</translation>
     
 ERR
-The form "Przychodzący" is grammatically mismatched for this UI label. The standard label in Polish for "Inbound" (as in connection) is "Przychodzące".
-
+The translation is overly verbose and introduces "wychodzące" (outbound), which is not stated in the source. This label should be concise.
 Correct translation:
-Przychodzące
-```
-
-<!-- cache_translation_check_pl_d836efbd908e5138d209ab28b7a0690b0b436f8cd1e25035b8616e568d36738f -->
-```
-        <source>Outbound</source>
-        <extracomment>An outbound connection to a peer. An outbound connection is a connection initiated by us.</extracomment>
-        <translation>Wychodzący</translation>
-    
-ERR
-Grammatical gender mismatch; as a standalone label for a connection, it should be neuter.
-Correct translation:
-Wychodzące
-```
-
-<!-- cache_translation_check_pl_2c397a05411f587aa9d9f03962bb1b9da6ce4645833c16747a5f8a1b6a29d729 -->
-```
-        <source>Manual</source>
-        <extracomment>Peer connection type established manually through one of several methods.</extracomment>
-        <translation>Ręczne</translation>
-    
-ERR
-The grammatical form is incorrect for "type" (typ), which is masculine; it should be "Ręczny", not "Ręczne".
-
-Correct translation:
-Ręczny
+Sonda
 ```
 
 <!-- cache_translation_check_pl_dd961a9dba0a83a1a527dae54e86035ed4d0261e55dc5ed0e8cf8bba0c6fda91 -->
@@ -131,18 +105,6 @@ Correct translation:
 Zweryfikuj wiadomości, aby upewnić się, że zostały podpisane określonymi adresami bitcoinowymi.
 ```
 
-<!-- cache_translation_check_pl_09a34749a42df339cceb6421072395e0c84b812cef119842508f357ac928dcb7 -->
-```
-        <source>Migrate a wallet</source>
-        <translation>Przenieś Portfel</translation>
-    
-ERR
-Incorrect capitalization in Polish; common nouns should not be capitalized mid-sentence.
-
-Correct translation:
-Przenieś portfel
-```
-
 <!-- cache_translation_check_pl_0b20b3e105282a12775930e88c643024d5fc57623b772ac04e4bd310005da674 -->
 ```
         <source>Mask the values in the Overview tab</source>
@@ -168,40 +130,53 @@ Correct translation:
 Przywróć portfel
 ```
 
-<!-- cache_translation_check_pl_d1cd000787f8f3f83f882913472bfd084396adea5ad1bcb630cd6a1904fa31f8 -->
+<!-- cache_translation_check_pl_c9b0d7be83a1973305a1a0a8301d39b7d169fa439c4df5c2acee90e78a568cbf -->
 ```
-        <source>Type: %1
-</source>
-        <translation>Rodzaj: %1
-</translation>
+        <source>&amp;Copy address</source>
+        <translation>Kopiuj adres</translation>
     
 ERR
-"Rodzaj" is understandable but not the standard UI term. In Polish software interfaces, "Type" is typically translated as "Typ". The format specifier and whitespace are correct.
+Missing shortcut marker '&' in the translation.
 
 Correct translation:
-Typ: %1
+&Kopiuj adres
 ```
 
-<!-- cache_translation_check_pl_5e1b1bd770d99b94510393032eade201b25666f09ded5979009bf629817f85b0 -->
+<!-- cache_translation_check_pl_5d465186f4c1b9416f4809df08adbbed22e5bfe18d24720fddbe4cad4b1c2f14 -->
 ```
-        <source>Migrate wallet</source>
-        <translation>Przenieś Portfel</translation>
+        <source>Copy &amp;label</source>
+        <translation>Kopiuj etykietę</translation>
     
 ERR
-The capitalization is incorrect ("Portfel" should be lowercase), and "Przenieś" suggests moving rather than migrating in a technical context. A clearer command label is:
-Migruj portfel
-```
-
-<!-- cache_translation_check_pl_7048718f7316b64b1e1d08ba5dc333b117e2acc716873ad9f880a71d38a0e6bd -->
-```
-        <source>Watchonly scripts have been migrated to a new wallet named '%1'.</source>
-        <translation>Skrypty tylko do odczytu zostały przeniesione do nowego portfela '%1'.</translation>
-    
-ERR
-"Watch-only" in Bitcoin context is better translated as "tylko do obserwacji", and "named" should be rendered as "o nazwie" for accuracy.
+Missing ampersand for the shortcut key. There must be exactly one '&' in the translation.
 
 Correct translation:
-Skrypty tylko do obserwacji zostały przeniesione do nowego portfela o nazwie '%1'.
+Kopiuj &etykietę
+```
+
+<!-- cache_translation_check_pl_2aab17c96a5a3f1e2898aee8ff5002a1e01db1b07aa09c61a24933b72c149d4a -->
+```
+        <source>Copy &amp;amount</source>
+        <translation>Kopiuj kwotę</translation>
+    
+ERR
+The accelerator indicator '&' from the source is missing. It must appear exactly once in the translation.
+
+Correct translation:
+Kopiuj &kwotę
+```
+
+<!-- cache_translation_check_pl_b43831ab599a514471ca055eccb9bbd15f68fc3cfc077866eeb9d8290f7abdea -->
+```
+        <source>Compiled without external signing support (required for external signing)</source>
+        <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
+        <translation>Skompilowany bez obsługi podpisywania zewnętrznego (wymagany do podpisywania zewnętrzengo)</translation>
+    
+ERR
+The Polish translation contains a typo: "zewnętrzengo" should be "zewnętrznego". Additionally, the adjective "Skompilowany" (masculine) should ideally be "Skompilowano" (impersonal) or "Program skompilowany" to match common software terminology, and the masculine "wymagany" does not agree with the feminine noun "obsługa" (support) it refers to.
+
+Correct translation:
+Skompilowano bez obsługi zewnętrznego podpisania (wymaganej do zewnętrznego podpisania)
 ```
 
 <!-- cache_translation_check_pl_c0c5e7a09d440144da1c8a8d29092f5ffe6b5c42f70cd91161f517f7f0be1b8e -->
@@ -277,54 +252,17 @@ Correct translation:
 Użyj oddzielnego proxy SOCKS&5, aby połączyć się z węzłami poprzez usługi onion w sieci Tor:
 ```
 
-<!-- cache_translation_check_pl_43466b08a2a860125274d947ccbdb4ee826d3ccf9343a4f96d4cdb291bf4e161 -->
+<!-- cache_translation_check_pl_b43831ab599a514471ca055eccb9bbd15f68fc3cfc077866eeb9d8290f7abdea -->
 ```
-        <source>PSBT saved to disk.</source>
-        <translation>PSBT zapisana na dysk.</translation>
+        <source>Compiled without external signing support (required for external signing)</source>
+        <extracomment>"External signing" means using devices such as hardware wallets.</extracomment>
+        <translation>Skompilowany bez obsługi podpisywania zewnętrznego (wymagany do podpisywania zewnętrzengo)</translation>
     
 ERR
-Grammatical error in Polish; the sentence lacks the auxiliary or impersonal form.
+The Polish translation contains a typo: "zewnętrzengo" should be "zewnętrznego". Additionally, the adjective "Skompilowany" (masculine) should ideally be "Skompilowano" (impersonal) or "Program skompilowany" to match common software terminology, and the masculine "wymagany" does not agree with the feminine noun "obsługa" (support) it refers to.
 
 Correct translation:
-PSBT zapisano na dysk.
-```
-
-<!-- cache_translation_check_pl_4b7180861a679f9da57f73e7aa557438983fc5a7eb1fe0dd513a0bf123d30cb1 -->
-```
-        <source>Transaction is fully signed and ready for broadcast.</source>
-        <translation>Transakcja została pomyślnie podpisana. Jest gotowa do rozgłoszenia.</translation>
-    
-ERR
-"Fully signed" means "w pełni podpisana," not "pomyślnie podpisana" (successfully). The latter changes the meaning.
-
-Correct translation:
-Transakcja jest w pełni podpisana i gotowa do rozgłoszenia.
-```
-
-<!-- cache_translation_check_pl_707964f18bcef2a0a3f6a31ac40f311461b0d4ce56472f72f51329be65d66200 -->
-```
-        <source>Inbound</source>
-        <extracomment>An Inbound Connection from a Peer.</extracomment>
-        <translation>Przychodzący</translation>
-    
-ERR
-The Polish adjective should agree with the implied noun "połączenie" (neuter). "Przychodzący" (masculine) is grammatically off in this context.
-
-Correct translation:
-Przychodzące
-```
-
-<!-- cache_translation_check_pl_b5272f4e0924567c9db94d5795ab7422227543831d3c7fca0f0317961159d908 -->
-```
-        <source>Outbound</source>
-        <extracomment>An Outbound Connection to a Peer.</extracomment>
-        <translation>Wychodzący</translation>
-    
-ERR
-The Polish term should match the common UI label for connection direction. "Wychodzące" is the natural form used for categories like connections or messages. "Wychodzący" sounds like an adjective modifying a masculine noun and is less appropriate as a standalone label.
-
-Correct translation:
-Wychodzące
+Skompilowano bez obsługi zewnętrznego podpisania (wymaganej do zewnętrznego podpisania)
 ```
 
 <!-- cache_translation_check_pl_7c443cbfe29a5e3b749356d461803e53a619e8c10b9444483fdf2b8fb08eab95 -->
@@ -339,39 +277,16 @@ Correct translation:
 Czy przekazujemy transakcje temu węzłowi.
 ```
 
-<!-- cache_translation_check_pl_9ff216abfd65af9e4652e53f0ec19e800316b660899307a9407f10c6c5a32542 -->
+<!-- cache_translation_check_pl_fef09b8b05715a58f52b909683afc239b43d5c34ecf7529668f34526df2d10cf -->
 ```
-        <source>Whether we relay addresses to this peer.</source>
-        <extracomment>Tooltip text for the Address Relay field in the peer details area, which displays whether we relay addresses to this peer (Yes/No).</extracomment>
-        <translation>Czy przekazujemy transakcje do tego węzła zdalnego.</translation>
+        <source>Clear console</source>
+        <translation>Wyczyść konosolę</translation>
     
 ERR
-The translation incorrectly mentions "transakcje" (transactions) instead of "adresy" (addresses) and slightly awkward phrasing.
+The Polish word for "console" (in the accusative case) is "konsolę". The provided translation contains a typo: "konosolę".
 
 Correct translation:
-Czy przekazujemy adresy temu węzłowi.
-```
-
-<!-- cache_translation_check_pl_fe0929c0872c4efaf9f19ff2af6f1f9cc323a51ebc6403591aa3a9dab5db4d26 -->
-```
-        <source>Totals</source>
-        <translation>Łączna ilość</translation>
-    
-ERR
-"Łączna ilość" is singular and implies "quantity," which is not ideal for a general totals label. A more natural Polish UI label is:
-Razem
-```
-
-<!-- cache_translation_check_pl_bfa3a06d33b01007b837ad6568182f874ff788c07351d9ccbf7a9ad4e997971e -->
-```
-        <source>Inbound: initiated by peer</source>
-        <extracomment>Explanatory text for an inbound peer connection.</extracomment>
-        <translation>Przychodzący: zainicjowane przez węzeł zdalny</translation>
-    
-ERR
-Grammatical agreement is off and the noun is missing; it should specify "połączenie" (connection).
-Correct translation:
-Połączenie przychodzące: zainicjowane przez węzeł zdalny
+Wyczyść konsolę
 ```
 
 <!-- cache_translation_check_pl_1ea5f5c488380942bf5e399ba6f5e76808b433814a4f9dba332e0ff5986e4513 -->
@@ -384,18 +299,6 @@ In financial/Bitcoin context, "Amount" should be translated as "Kwota", not "Ilo
 
 Correct translation:
 &Kwota:
-```
-
-<!-- cache_translation_check_pl_7af98a4ae2d84bc8e4bf9bfa26579ffc357b38656cf1fa3aa956effd160839d6 -->
-```
-        <source>Wallet:</source>
-        <translation>Portfel: </translation>
-    
-ERR
-Unnecessary trailing space after the colon.
-
-Correct translation:
-Portfel:
 ```
 
 <!-- cache_translation_check_pl_c262f14104c68dcc0674cfbff14f9f146236c60b96b96171618c93282bdd2e6b -->
@@ -420,16 +323,20 @@ Correct translation:
 PSBT zapisano na dysk
 ```
 
-<!-- cache_translation_check_pl_58c51320cc212d19c8693b07d4535ce33042475cea90b15a23a969695b0dd608 -->
+<!-- cache_translation_check_pl_f431407ec4e4cd6eb0e90547b4936b462f80c82023fc95829dd3a1812278ef84 -->
 ```
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Zweryfikuj wiadomość, aby upewnić się, że została podpisana odpowiednim adresem Bitcoin.</translation>
+        <source>Enter the receiver's address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
+        <translation>Wpisz adres, wiadomość oraz sygnaturę (podpis) odbiorcy (upewnij się, że dokładnie skopiujesz wszystkie zakończenia linii, spacje, tabulacje itp.). Uważaj by nie dodać więcej do podpisu niż do samej podpisywanej wiadomości by uniknąć ataku man-in-the-middle. 
+Zwróć uwagę, że poprawnie zweryfikowana wiadomość potwierdza to, że nadawca posiada klucz do adresu, natomiast nie potwierdza to, że poprawne wysłanie jakiejkolwiek transakcji!</translation>
     
 ERR
-"specified" was mistranslated as "odpowiednim" (appropriate). It should be "określonym"/"wskazanym" to match the source.
+- The parenthetical about copying whitespace is attached to "signature" and "odbiorcy", making it ambiguous; it should modify "message" only.
+- The phrase "Uważaj by nie dodać więcej do podpisu..." misrenders the meaning; it should be about not inferring more from the signature than the signed message states.
+- Grammar/punctuation issues: missing commas after "Uważaj", awkward "by", and "natomiast nie potwierdza to, że poprawne wysłanie..." is ungrammatical.
+- The translation introduces a line break not present in the source.
 
 Correct translation:
-Zweryfikuj wiadomość, aby upewnić się, że została podpisana wskazanym adresem Bitcoin.
+Wpisz poniżej adres odbiorcy, wiadomość (upewnij się, że dokładnie skopiujesz podziały wierszy, spacje, tabulatory itp.) oraz podpis, aby zweryfikować wiadomość. Uważaj, aby nie doszukiwać się w podpisie więcej, niż wynika z samej podpisanej wiadomości, aby nie dać się oszukać atakiem typu man-in-the-middle. Zwróć uwagę, że dowodzi to jedynie, iż podpisujący kontroluje ten adres; nie dowodzi wysłania żadnej transakcji!
 ```
 
 <!-- cache_translation_check_pl_24b56163fb69849279f7f3cf3178706c9ff4d60d47593cfd7f96fa6c51335cd1 -->
@@ -454,6 +361,62 @@ Correct translation:
 Wygenerowane monety muszą dojrzeć przez %1 bloków, zanim będzie można je wydać. Gdy wygenerowałeś(-aś) ten blok, został on rozesłany do sieci w celu dodania go do łańcucha bloków. Jeśli nie zostanie dodany do łańcucha, jego status zmieni się na „niezaakceptowany” i nie będzie można go wydać. Może się to czasami zdarzyć, jeśli inny węzeł wygeneruje blok w ciągu kilku sekund od Twojego.
 ```
 
+<!-- cache_translation_check_pl_f4838eb324c8c46eea35f8072e6bf0d91e28461f7f3d7d05a428205986740b67 -->
+```
+        <source>No wallet has been loaded.
+Go to File &gt; Open Wallet to load a wallet.
+- OR -</source>
+        <translation>Portfel nie został wybrany.
+Przejdź do Plik &gt; Otwórz Portfel aby wgrać portfel.</translation>
+    
+ERR
+The translation is incomplete because it omits the final line "- OR -". Additionally, "loaded" is more accurately translated as "wczytany" or "załadowany" rather than "wybrany" (selected).
+
+Correct translation:
+Nie załadowano żadnego portfela.
+Przejdź do Plik > Otwórz Portfel, aby wczytać portfel.
+- LUB -
+```
+
+<!-- cache_translation_check_pl_f464a64504b94e35336d58cc7e09f94711fa36118b8e12cbfc679674098286f2 -->
+```
+        <source>Unable to decode PSBT from clipboard (invalid base64)</source>
+        <translation>Nie udało się załadować częściowo podpisanej transakcji (nieważny base64)</translation>
+    
+ERR
+The translation changes the meaning of "decode" to "załadować" (load) and replaces "PSBT" with its descriptive name "częściowo podpisanej transakcji" (partially signed transaction). While descriptive, it misses the specific technical term PSBT and the literal action of decoding. It also omits "ze schowka" (from clipboard).
+
+Correct translation:
+Nie udało się zdekodować PSBT ze schowka (nieprawidłowy base64)
+```
+
+<!-- cache_translation_check_pl_d0551a2e681d34e215b034ed3a1fa2d4bd4869b7d32fb747a55d7258b59e6d48 -->
+```
+        <source>PSBT file must be smaller than 100 MiB</source>
+        <translation>PSBT musi być mniejsze niż 100MB</translation>
+    
+ERR
+The translation contains two issues:
+1. The source specifically mentions "PSBT file", while the translation omits the word for "file" ("plik").
+2. The unit "MiB" (mebibyte) was changed to "MB" (megabyte), which are technically different units.
+3. Grammatically, if "plik" (masculine) is used, the adjective should be "mniejszy". In the current translation, "PSBT" is treated as neuter ("mniejsze"), but "PSBT" (Partially Signed Bitcoin Transaction) is usually referred to as "transakcja" (feminine - "mniejsza") or "plik PSBT" (masculine - "mniejszy").
+
+Correct translation:
+Plik PSBT musi być mniejszy niż 100 MiB
+```
+
+<!-- cache_translation_check_pl_43cd3904f1c89821899451216d1f0bf9f2b53efbe29df5921c2e242e42499516 -->
+```
+        <source>Warning: This may pay the additional fee by reducing change outputs or adding inputs, when necessary. It may add a new change output if one does not already exist. These changes may potentially leak privacy.</source>
+        <translation>Ostrzeżenie: Może to spowodować uiszczenie dodatkowej opłaty poprzez zmniejszenie zmian wyjść lub dodanie danych wejściowych, jeśli jest to konieczne. Może dodać nowe wyjście zmiany, jeśli jeszcze nie istnieje. Te zmiany mogą potencjalnie spowodować utratę prywatności.</translation>
+    
+ERR
+The translation of "change outputs" is problematic. In the context of Bitcoin, "change" refers to the amount returned to the sender, which is translated as "reszta". The current translation uses "zmian wyjść" and "wyjście zmiany", which are literal translations of the word "change" (as in "alteration" or "modification") and do not make sense in this technical context. Furthermore, "inputs" in transaction contexts are usually called "wejścia" rather than "dane wejściowe".
+
+Correct translation:
+Ostrzeżenie: Może to spowodować uiszczenie dodatkowej opłaty poprzez zmniejszenie wyjść reszty lub dodanie wejść, jeśli jest to konieczne. Może dodać nowe wyjście reszty, jeśli jeszcze nie istnieje. Zmiany te mogą potencjalnie naruszyć prywatność.
+```
+
 <!-- cache_translation_check_pl_5c38b182efdd0e407071dbc7b03a5e2f1d554b93d69f4c74bba21cbea295115c -->
 ```
         <source>The %s developers</source>
@@ -476,6 +439,18 @@ The phrase "połączył się do niego" is ungrammatical in Polish; it should be 
 
 Correct translation:
 %s żąda nasłuchiwania na porcie %u. Ten port jest uznany za "zły" i dlatego jest mało prawdopodobne, że jakikolwiek węzeł połączy się z nim. Zobacz doc/p2p-bad-ports.md, aby uzyskać szczegóły i pełną listę.
+```
+
+<!-- cache_translation_check_pl_0a68b984f4b907620b0ca2dab2ee064886fd9e38cd7ed34b9ea947d72d3f8d9e -->
+```
+        <source>Error: Unable to produce descriptors for this legacy wallet. Make sure to provide the wallet's passphrase if it is encrypted.</source>
+        <translation>Błąd: Nie można wygenerować deskryptorów dla tego starego portfela. Upewnij się najpierw, że portfel jest odblokowany.</translation>
+    
+ERR
+The translation is imprecise. The second sentence "Upewnij się najpierw, że portfel jest odblokowany" (Make sure first that the wallet is unlocked) deviates from the source instruction "Make sure to provide the wallet's passphrase if it is encrypted". While the meaning is similar in practice, the translation should more accurately reflect the instruction to provide a passphrase.
+
+Correct translation:
+Błąd: Nie można wygenerować deskryptorów dla tego portfela typu legacy. Upewnij się, że podano hasło portfela, jeśli jest on zaszyfrowany.
 ```
 
 <!-- cache_translation_check_pl_6f80ed8d081bf722568d594b850a5cacda886e0ef97b93d4713f3f577b5afaf9 -->
@@ -512,18 +487,6 @@ ERR
 
 Correct translation:
 Opróżnienie buforów pliku cofania na dysk nie powiodło się. Prawdopodobnie jest to wynik błędu operacji wejścia/wyjścia (I/O).
-```
-
-<!-- cache_translation_check_pl_8684c92433eec828bfd4f67b1a677fcae5e48ebfcada7328eb6d1b90dfaf8e25 -->
-```
-        <source>Options '-datacarrier' or '-datacarriersize' are set but are marked as deprecated. They will be removed in a future version.</source>
-        <translation>Opcje '-datacarrier' lub '-datacarriersize' są oznaczone jako przestarzałe. Zostaną usunięte w przyszłej wersji.</translation>
-    
-ERR
-The translation omits the "are set" part, changing the meaning.
-
-Correct translation:
-Opcje '-datacarrier' lub '-datacarriersize' zostały ustawione, ale są oznaczone jako przestarzałe. Zostaną usunięte w przyszłej wersji.
 ```
 
 <!-- cache_translation_check_pl_b0b043f79190694630d4aec33a0e3a9aa3de6e83b06a6902e24824b17fc89eee -->
@@ -574,16 +537,17 @@ Correct translation:
 Ładowanie portfela…
 ```
 
-<!-- cache_translation_check_pl_349a059b49832108f1798beec52cbd924b9e003e85a8f76b6f8de86832a23614 -->
+<!-- cache_translation_check_pl_7667ff88d5d0d18d8da72da1b251a9198303480b8e6e9a0f223503016030e083 -->
 ```
         <source>acceptstalefeeestimates is not supported on %s chain.</source>
-        <translation>acceptstalefeeestimates nie jest wspierany na łańcuchu %s</translation>
+        <translation>opcja acceptstalefeeestimates nie są wspierane na łańcuchu %s</translation>
     
 ERR
-Stylistic and grammatical issues: "wspierany" is less appropriate than "obsługiwane" for a feature/option, and a period is missing. Preposition "w" fits better here.
+There is a grammatical mismatch in the translation. The word "opcja" (option) is singular, but the verb "są wspierane" (are supported) is plural. It should be singular: "nie jest wspierana". Additionally, the translation is missing the trailing period present in the source.
+
 Correct translation:
-acceptstalefeeestimates nie jest obsługiwane w łańcuchu %s.
+opcja acceptstalefeeestimates nie jest wspierana na łańcuchu %s.
 ```
 </details>
 
-Number of issues: 48.
+Number of issues: 44.

@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -111,6 +111,18 @@ The translation is missing the '&' which indicates the shortcut key in the inter
 
 Correct translation:
 &सम्पादन
+```
+
+<!-- cache_translation_check_ne_084c69269c9a7333a7456989454d6e778a4c251549c22d5be8c7db4aa222a3f3 -->
+```
+        <source>An internal error occurred. %1 will attempt to continue safely. This is an unexpected bug which can be reported as described below.</source>
+        <translation>आन्तरिक त्रुटि भयो। सुरक्षित रूपमा जारी राख्ने प्रयास गरिनेछ। यो अप्रत्याशित समस्या हो, जसको रिपोर्ट तल बताईए  अनुसार गर्न सकिन्छ।</translation>
+    
+ERR
+The format specifier '%1' is missing from the translation. Additionally, there is a double space between 'बताईए' and 'अनुसार'.
+
+Correct translation:
+आन्तरिक त्रुटि भयो। %1 ले सुरक्षित रूपमा जारी राख्ने प्रयास गर्नेछ। यो अप्रत्याशित समस्या हो, जसको रिपोर्ट तल बताइएअनुसार गर्न सकिन्छ।
 ```
 
 <!-- cache_translation_check_ne_b02c2a28cd4f637968cafae2ff5529ea497d9f06c89859d00bce568dad3c43c8 -->
@@ -281,4 +293,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 21.
+Number of issues: 22.

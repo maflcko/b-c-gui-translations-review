@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -86,18 +86,6 @@ Correct translation:
 Muat transaksi Bitcoin yang ditandatangani sebagian dari clipboard
 ```
 
-<!-- cache_translation_check_id_5bb9de234275a0bd041e2cb410203d021b5aa8a031c2b8fb3b5400dda38e4e3b -->
-```
-        <source>After Fee:</source>
-        <translation>Dengan Biaya:</translation>
-    
-ERR
-Translation is slightly inaccurate. "Dengan Biaya:" means "With Fee:" rather than "After Fee:". A better translation is:
-
-Correct translation:
-Setelah Biaya:
-```
-
 <!-- cache_translation_check_id_0ff23f32434624832984bc127c9bc28f085277ef58abed034cb0bdb72a9066fc -->
 ```
         <source>(un)select all</source>
@@ -109,30 +97,6 @@ Spacing and phrasing are slightly off. There should be a space after the opening
 Correct translations (choose one appropriate for the UI):
 - "(Tidak) memilih semua"  (fixed spacing)
 - "Pilih semua / Batalkan pilih semua"  (clearer alternative)
-```
-
-<!-- cache_translation_check_id_4ac8f9ec722bb0a18793a1d6cadb9a1c0517e79dad3c7f698b61bda3c8dd1dc9 -->
-```
-        <source>Copy transaction &amp;ID and output index</source>
-        <translation>Copy &amp;ID transaksi dan index keluaran</translation>
-    
-ERR
-The translation mixes English and Indonesian ("Copy" and "index") and uses the English spelling "index". Also "salin" is the correct Indonesian verb. The ampersand shortcut should appear exactly once and is placed before "ID" as in the source.
-
-Correct translation:
-Salin &ID transaksi dan indeks keluaran
-```
-
-<!-- cache_translation_check_id_9442b076df1934cb0fcdf26e2dda7e201ebe9eac26a7a26b00ba6ebf25c6ea71 -->
-```
-        <source>Copy after fee</source>
-        <translation>Salin Setelah Upah</translation>
-    
-ERR
-"Upah" means "wage" in Indonesian and is not the best word for a transaction fee. Better to use "biaya" (fee/cost). Also Indonesian typically uses sentence case rather than Title Case, but that may depend on UI style.
-
-Correct translation:
-Salin setelah biaya
 ```
 
 <!-- cache_translation_check_id_a2ccaf1f4f2751f615ee523670a3599aaa4536ef4193ac8fbce8184854df274e -->
@@ -289,100 +253,16 @@ Correct translation:
 &Gunakan kembalian yang belum dikonfirmasi
 ```
 
-<!-- cache_translation_check_id_14c23d60e8140d4ad02894cebaedce25e1f21ab2deee2c90456dff33a1a56cb1 -->
+<!-- cache_translation_check_id_a2ccaf1f4f2751f615ee523670a3599aaa4536ef4193ac8fbce8184854df274e -->
 ```
-        <source>Privacy mode activated for the Overview tab. To unmask the values, uncheck Settings-&gt;Mask values.</source>
-        <translation>Mode privasi diaktivasi untuk tab Overview. Untuk mengunmask nilai-nilai, hapus centang yang ada di Settings&gt;Mask values.</translation>
+        <source>Copy bytes</source>
+        <translation>Salin bytes</translation>
     
 ERR
-The Indonesian has some awkward anglicisms and word choices: "diaktivasi" is nonstandard (use "diaktifkan"), "mengunmask" is an English verb (use "menampilkan" or "tampilkan"), and the UI path is left in English. Also it's better to translate "Overview" and "Settings->Mask values" to Indonesian UI terms.
+The translation mixes Indonesian ("Salin") with the English plural "bytes". While understandable, it's better to use the Indonesian term consistently. No format specifiers or spacing issues present.
 
-Correct translation:
-Mode privasi diaktifkan untuk tab Ikhtisar. Untuk menampilkan nilai, hapus centang pada Pengaturan->Sembunyikan nilai.
-```
-
-<!-- cache_translation_check_id_6d2817cf131bd05b8b8574117e8d08691206cf3176a58fcb13cbdbe54bac0e9e -->
-```
-        <source>Sign Tx</source>
-        <translation>Tanda tangan Tx</translation>
-    
-ERR
-The Indonesian phrase "Tanda tangan Tx" is awkward: "tanda tangan" is normally a noun ("signature") or written as one word "tandatangan", while the source is an action/command ("Sign Tx"). A clearer translation uses the imperative verb form.
-
-Correct translations:
-- Tandatangani Tx
-or, more explicit:
-- Tandatangani transaksi
-```
-
-<!-- cache_translation_check_id_b9b00e39051b618410d194e2cc6bb27c3b74266a2020bfca27771a34ea5050c2 -->
-```
-        <source>Copy to Clipboard</source>
-        <translation>Copy ke Clipboard</translation>
-    
-ERR
-The translation mixes English and is not idiomatic Indonesian. Prefer using the Indonesian verb "Salin".
-
-Correct translation:
-Salin ke Clipboard
-
-(Alternatively: "Salin ke papan klip" or simply "Salin" depending on UI context.)
-```
-
-<!-- cache_translation_check_id_d1bc4a06c4cd9c3c5ced89bbd681638b62eabec146d0aeeebb0de9df5cbc950e -->
-```
-        <source>Signed %1 inputs, but more signatures are still required.</source>
-        <translation>Menandatangankan %1 input, tetapi tanda tangan lebih banyak masih dibutuhkan.</translation>
-    
-ERR
-The Indonesian contains a misspelling and awkward phrasing. "Menandatangankan" is incorrect. Also the sentence style can be made more natural for Indonesian.
-
-Correct translation suggestions:
-%1 input telah ditandatangani, tetapi masih diperlukan tanda tangan tambahan.
-or
-Telah menandatangani %1 input, tetapi masih diperlukan lebih banyak tanda tangan.
-```
-
-<!-- cache_translation_check_id_c9c2bb9ded783ea73a3b0627ad710d31a786ecea30dcb705c725e0c46ac2ae26 -->
-```
-        <source>Signed transaction successfully. Transaction is ready to broadcast.</source>
-        <translation>Berhasil menandatangani transaksi. Transaksi sudah siap untuk di broadcast</translation>
-    
-ERR
-The Indonesian is understandable but not idiomatic and has minor punctuation/wording issues. Prefer passive phrasing and use a single sentence ending punctuation. Also "di broadcast" should be "disiarkan" or "dipublikasikan".
-
-Correct translation:
-Transaksi berhasil ditandatangani. Transaksi sudah siap untuk disiarkan.
-```
-
-<!-- cache_translation_check_id_79fd52c795cfcaa52456feb7605d197bb464a55506faaf9218d91b2bb1ea7e4a -->
-```
-        <source>Unknown error processing transaction.</source>
-        <translation>Kesalahan yang tidak diketahui ketika memproses transaksi </translation>
-    
-ERR
-Issues:
-- Trailing whitespace at end of the translation.
-- Missing ending period (source ends with a period).
-- Slightly awkward phrasing; more natural Indonesian would omit "yang" or add "Terjadi".
-
-Correct translation suggestions:
-- Kesalahan tidak diketahui saat memproses transaksi.
-- Terjadi kesalahan tidak diketahui saat memproses transaksi.
-```
-
-<!-- cache_translation_check_id_0eada9d7b813aa199ea9a1334735d0392ab35fda415905355b6a9fc2419d9926 -->
-```
-        <source>PSBT copied to clipboard.</source>
-        <translation>PSBT disalin ke clipboard</translation>
-    
-ERR
-Missing sentence-ending punctuation and a more natural Indonesian term could be used.
-
-Suggested corrections:
-PSBT disalin ke clipboard.
-Or more natural:
-PSBT disalin ke papan klip.
+Suggested correction:
+Salin byte
 ```
 
 <!-- cache_translation_check_id_63b0c8c2dfda60813e4d018017934df56e5268e79638e81dbbd129876aa0a137 -->
@@ -493,4 +373,4 @@ or
 ```
 </details>
 
-Number of issues: 36.
+Number of issues: 27.

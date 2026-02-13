@@ -1,6 +1,6 @@
 # Translations Review by LLM (✨ experimental)
 
-The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model.
+The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
 
 
@@ -43,6 +43,18 @@ The translation is missing the single '&' accelerator required to indicate the s
 
 Correct translation:
 &Ontvangstadressen
+```
+
+<!-- cache_translation_check_nl_e339536e34398b8608d336b7cd31ad47ce7066d42bb5df7b260e1ac3929a626a -->
+```
+        <source>Restore and Migrate Wallet File...</source>
+        <translation>Herstel en Migreer Wallet File</translation>
+    
+ERR
+The translation is missing the ellipsis (...) at the end of the string, which is present in the source and indicates that a further action or dialog follows. Additionally, "Wallet File" is better translated as "walletbestand" in Dutch.
+
+Correct translation:
+Herstel en migreer walletbestand...
 ```
 
 <!-- cache_translation_check_nl_3abf29fa1c69c8582c4c7d68292ee911dc49218e9f9a0fcb4325a38b6000c379 -->
@@ -95,6 +107,34 @@ The translation contains stray text ("HerstellenL") and ungrammatical phrasing (
 
 Correct translation:
 Wallet &lt;b&gt;%1&lt;/b&gt; wordt hersteld…
+```
+
+<!-- cache_translation_check_nl_942cbbac456e4558c965f5770e51ca31c9e5fd63a3d5b735ba636433a032b57c -->
+```
+        <source>Restoring Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
+        <extracomment>Descriptive text of the restore wallets progress window which indicates to the user that wallets are currently being restored.</extracomment>
+        <translation>Herstellen wallet &lt;b&gt;%1&lt;/b&gt;…HerstellenL
+
+
+</translation>
+    
+ERR
+The translation contains stray text ("HerstellenL") and ungrammatical phrasing ("Herstellen wallet"). It should use proper Dutch word order and remove the extra characters.
+
+Correct translation:
+Wallet &lt;b&gt;%1&lt;/b&gt; wordt hersteld…
+```
+
+<!-- cache_translation_check_nl_9e5bdf4cefc76ce5f1f6f67897f1c2125145043610212e9c074bc88104cca410 -->
+```
+        <source>Make a blank wallet. Blank wallets do not initially have private keys or scripts. Private keys and addresses can be imported using descriptors at a later time.</source>
+        <translation>Maak een blanco wallet. Blanco wallets hebben initieel geen privésleutel of scripts. Privésleutels en adressen kunnen worden geimporteerd, of een HD seed kan ingesteld worden, op een later moment.</translation>
+    
+ERR
+The translation includes information not present in the source text. Specifically, it mentions setting an "HD seed" ("of een HD seed kan ingesteld worden"), which is not part of the original English sentence. Additionally, the word "geimporteerd" is missing a diaeresis (trema) on the 'i'.
+
+Correct translation:
+Maak een blanco wallet. Blanco wallets hebben initieel geen privésleutels of scripts. Privésleutels en adressen kunnen op een later moment worden geïmporteerd met behulp van descriptors.
 ```
 
 <!-- cache_translation_check_nl_79997e1eaa72a7fd1b7ddb3d19266c73b9092535f50f28fa77176540e3b784d7 -->
@@ -155,30 +195,6 @@ The accelerator ampersand is misplaced with a space before the 5 ("SOCKS & 5"), 
 
 Correct translation:
 Gebruik een afzonderlijke SOCKS&5-proxy om peers te bereiken via Tor-onionservices:
-```
-
-<!-- cache_translation_check_nl_715723d70a05aff43d30bcf55458e5f4f7375df9201e745b80730096c8f5789a -->
-```
-        <source>Sends %1 to %2</source>
-        <translation>Verzenden %1 van %2</translation>
-    
-ERR
-The Dutch translation is incorrect: it uses the wrong verb form and preposition (“Verzenden … van …” means “Sending … from …”). It should be “Stuurt … naar …” or “Verstuurt … naar …”.
-
-Correct translation:
-Stuurt %1 naar %2
-```
-
-<!-- cache_translation_check_nl_870c6c0a1188d977ca63260110f5f09353262d4fc45616e577a8dd46d8c47ad6 -->
-```
-        <source>Unable to calculate transaction fee or total transaction amount.</source>
-        <translation>Onmogelijk om de transactie kost of totale bedrag te berekenen.</translation>
-    
-ERR
-Dutch grammar and compounding are incorrect: "transactie kost" should be "transactiekosten"; missing article "het" before "totale bedrag"; overall phrasing is unnatural.
-
-Correct translation:
-Kan de transactiekosten of het totale transactiebedrag niet berekenen.
 ```
 
 <!-- cache_translation_check_nl_1182dbe649fa19b14a5d868e09291fd93a519e10645027dddc2b523ed6fa1468 -->
@@ -242,34 +258,6 @@ Correct translation:
 Fout bij externe ondertekenaar
 ```
 
-<!-- cache_translation_check_nl_fd6e13019e50803c2a7fd6befa69823efbbd5526175b53f04a3985bf7d16fea5 -->
-```
-        <source>Duplicate address found: addresses should only be used once each.</source>
-        <translation>Dubbel adres gevonden: adressen mogen maar één keer worden gebruikt worden.</translation>
-    
-ERR
-The translation contains a grammatical error: "worden gebruikt worden" repeats "worden". 
-
-Correct translation:
-Dubbel adres gevonden: adressen mogen maar één keer worden gebruikt.
-```
-
-<!-- cache_translation_check_nl_f72ef038718efa31d0b650ee6978ea327f876614b2985c2790c3451ab5fc2f02 -->
-```
-        <source>Enter the receiver's address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack. Note that this only proves the signing party receives with the address, it cannot prove sendership of any transaction!</source>
-        <translation>Voer het adres van de ontvanger in, bericht (zorg ervoor dat de regeleinden, spaties, tabs etc. precies kloppen) en onderteken onderaan om het bericht te verifiëren. Wees voorzicht om niet meer in de ondertekening te lezen dan in het getekende bericht zelf, om te voorkomen dat je wordt aangevallen met een man-in-the-middle attack. Houd er mee rekening dat dit alleen de ondertekende partij bewijst met het ontvangen adres, er kan niet bewezen worden dat er een transactie heeft plaatsgevonden!</translation>
-    
-ERR
-The translation contains multiple issues:
-- Misinterprets "and signature below" as an instruction to sign, instead of to enter the signature.
-- Typo: "Wees voorzicht" should be "Wees voorzichtig".
-- Unnatural/incorrect phrasing: "Houd er mee rekening" should be "Houd er rekening mee".
-- Awkward and unclear rendering of the note about what is proven; should clarify that only control over the address is proven, not sendership of any transaction.
-
-Correct translation:
-Voer hieronder het adres van de ontvanger, het bericht (let erop dat je regeleinden, spaties, tabs, enz. exact overneemt) en de handtekening in om het bericht te verifiëren. Wees voorzichtig om niet meer in de handtekening te lezen dan in het ondertekende bericht zelf, om te voorkomen dat je wordt misleid door een man-in-the-middle-aanval. Let op: hiermee wordt alleen aangetoond dat de ondertekenende partij het adres beheert of ermee kan ontvangen; het kan niet aantonen wie de afzender van een transactie is of dat er een transactie is verzonden.
-```
-
 <!-- cache_translation_check_nl_e88ec3876fb13073170e938a0a163444dbd8919bc2fa5940d1d264e1f162fbbe -->
 ```
         <source>Immature (%1 confirmations, will be available after %2)</source>
@@ -330,6 +318,18 @@ Correct translation:
 Opgegeven -blockmaxweight (%d) overschrijdt het consensusmaximum voor blokgewicht (%d)
 ```
 
+<!-- cache_translation_check_nl_41bbbf393c82293375c9d2a167acc7abbb417ac82fce020d1ae3c0955a6496a4 -->
+```
+        <source>Can't spend unconfirmed version %d pre-selected input with a version 3 tx</source>
+        <translation>kan niet uitgeven onbevestigde versie  %d voorgeselecteerde inpunt met een versie 3 tx</translation>
+    
+ERR
+The translation contains a typo and a formatting issue. "inpunt" is not a word; it should be "input". Additionally, there is an unnecessary double space before the format specifier "%d".
+
+Correct translation:
+Kan onbevestigde versie %d voorgeselecteerde input niet uitgeven met een versie 3 tx
+```
+
 <!-- cache_translation_check_nl_d927ed55de9c3f400854f211aea3750782212b58d5428e7a1eff891619c74e75 -->
 ```
         <source>Failed to close file when writing block.</source>
@@ -366,27 +366,16 @@ Correct translation:
 Ongeldig -onion adres of hostnaam: '%s'
 ```
 
-<!-- cache_translation_check_nl_33c432c0c6d00e52c76535788ef530a658c96c5190f4319062c843d594e078fb -->
+<!-- cache_translation_check_nl_becdb7d773dd880bd13b35fbba6ae4ae6cca4211ecd34d9fdbd4f7b6141198d9 -->
 ```
-        <source>Transaction amounts must not be negative</source>
-        <translation>Transactiebedragen moeten positief zijn</translation>
+        <source>Creating wallet…</source>
+        <translation>Wallet wordt aangemaakt ... </translation>
     
 ERR
-The translation changes the meaning. "Must not be negative" allows zero, but "moeten positief zijn" excludes zero.
-Correct translation:
-Transactiebedragen mogen niet negatief zijn
-```
-
-<!-- cache_translation_check_nl_29bb416405192bceaedcc947a5f23c03697eb5596ef254d4f7816b055bf46493 -->
-```
-        <source>Transaction change output index out of range</source>
-        <translation>Transactie change output is buiten bereik</translation>
-    
-ERR
-The Dutch translation omits "index" and leaves "change output" untranslated, reducing clarity.
+The translation contains trailing whitespace and uses three dots with spaces in between instead of the ellipsis character or the standard three dots without spaces. In technical translations, trailing spaces are usually errors.
 
 Correct translation:
-Index van de wisselgeld-uitvoer van de transactie buiten bereik
+Wallet wordt aangemaakt…
 ```
 
 <!-- cache_translation_check_nl_552155f08b60a09a522b4bb2d140ad80b6a4b850cc90774f6ee2760edd1e928b -->
@@ -402,4 +391,4 @@ Kan de HTTP-server niet starten. Zie het debuglogboek voor details.
 ```
 </details>
 
-Number of issues: 32.
+Number of issues: 31.
