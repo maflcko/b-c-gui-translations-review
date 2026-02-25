@@ -2,11 +2,11 @@
 
 The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bga_IE%5D%20request)
+
 
 
 <details><summary>ga_IE</summary>
-
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bga_IE%5D%20request)
 
 
 <!-- cache_translation_check_ga_IE_a8e31db341db4bf6c04b2a78085789cddb5a9706af1e4602c2e262635a88ac9d -->

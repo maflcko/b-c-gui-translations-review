@@ -2,11 +2,11 @@
 
 The review quality depends on the LLM and the language. To report LLM shortcomings for a specific language, please file an issue. It may be possible to re-run with a stronger model. Check the git metadata of this file for the creation date.
 
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bpl%5D%20request)
+
 
 
 <details><summary>pl</summary>
-
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bpl%5D%20request)
 
 
 <!-- cache_translation_check_pl_a03c0f55fc06ac461fcf1fe7a0fe9097121be159e5d4f2de37a3698cd438873a -->
