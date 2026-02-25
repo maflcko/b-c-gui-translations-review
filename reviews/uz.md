@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>uz</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Buz%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Buz%5D%20request)
 
 
 <!-- cache_translation_check_uz_d4b49b220f1f388b03d449a60b03a715301c61719864932de15bb489ddb0509c -->
@@ -247,32 +247,16 @@ Correct translations (choose one depending on script preference):
 - Cyrillic script (if deliberately using Cyrillic): &amp;Созламалар
 ```
 
-<!-- cache_translation_check_uz_7c293b039b3b3e7b0789ae952347b995b48c8ae2f311630ec31b6d11ce3e50db -->
+<!-- cache_translation_check_uz_c046697554241814382edf0e3da7f67ed475be8dde67e83a1983f103cfaae0ec -->
 ```
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>To'lovlarni so'rash(QR kolar va bitkoin yaratish: URL manzillar)</translation>
+        <translation>Тўловлар (QR кодлари ва bitcoin ёрдамида яратишлар: URI’лар) сўраш</translation>
     
 ERR
-There are several issues:
-1. "kolar" is a typo, should be "kodlar".
-2. The parentheses are not spaced as in the source: a space should be before the parenthesis.
-3. "bitcoin: URIs" should be "bitcoin: URI larini" or at least reflect that "bitcoin: URIs" is a technical term.
-4. The translation for "Request payments" could be improved to "To'lovlarni so'rash" (which is fine), but the rest is not precise.
+The translation is grammatically awkward and poorly structured in Uzbek. The phrase "bitcoin ёрдамида яратишлар" (creations using bitcoin) is an unnatural way to translate the parenthetical explanation. A more natural translation should follow the English structure more closely while maintaining Uzbek grammar.
 
 Correct translation:
-To'lovlarni so'rash (QR kodlar va bitcoin: URI larini yaratadi)
-```
-
-<!-- cache_translation_check_uz_1991927842119249addbe4ffb62b8fd709004e24adb55bc96ff72d514a22c28c -->
-```
-        <source>&amp;Command-line options</source>
-        <translation>&amp;Command-line sozlamalari</translation>
-    
-ERR
-The translation mixes English and Uzbek ("Command-line" left in English). The ampersand is used correctly and there are no format specifiers or whitespace issues, but the phrase should be fully in Uzbek.
-
-Suggested correction:
-&Buyruq satri sozlamalari
+Тўловларни сўраш (QR-кодлар ва bitcoin: URI’лар яратилади)
 ```
 
 <!-- cache_translation_check_uz_ae0b96cf49348fdc55f9a198a3ff27e4c811f3ff042a7e5043772cd909d0711f -->
@@ -1144,4 +1128,4 @@ Hamyonni qayta yozish kerak: bajarishni yakunlash uchun %s ni qayta ishga tushir
 ```
 </details>
 
-Number of issues: 85.
+Number of issues: 84.

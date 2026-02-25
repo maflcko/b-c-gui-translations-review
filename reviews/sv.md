@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>sv</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bsv%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bsv%5D%20request)
 
 
 <!-- cache_translation_check_sv_7b1dfbb573001ce6cac2f074c1546588524aa8b799b115d380def8d2cda23b5b -->
@@ -335,18 +335,6 @@ Correct translation:
 Privatläge aktiverat för fliken Översikt. För att visa värden, bocka ur Inställningar &gt; Dölj värden.
 ```
 
-<!-- cache_translation_check_sv_77eec5cead6962357d36a92f3992204b6a2d145c2bca7111bb2e08a2d636319e -->
-```
-        <source>Transaction has %1 unsigned inputs.</source>
-        <translation>Transaktion %1 har osignerad indata.</translation>
-    
-ERR
-The translation is incorrect and does not accurately reflect the plural ("inputs") and structure of the source sentence. "%1" should indicate the number of unsigned inputs and appears before "osignerad indata", making the sentence unclear.
-
-Correct translation:
-Transaktionen har %1 osignerade indata.
-```
-
 <!-- cache_translation_check_sv_239204eda8d83110bcd428a85b5744e3b73b52a1407018421f2bed02eef3cb2a -->
 ```
         <source>(But no wallet is loaded.)</source>
@@ -513,4 +501,4 @@ Port måste anges med -whitebind: '%s'
 ```
 </details>
 
-Number of issues: 38.
+Number of issues: 37.

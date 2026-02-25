@@ -6,19 +6,31 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>es</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bes%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bes%5D%20request)
 
 
-<!-- cache_translation_check_es_4e181729cae0f58086c4a3d8ca49ab1c6807b67aabd71faaa1e4a6fefe56d5a8 -->
+<!-- cache_translation_check_es_0b2b40482548f71ec5efeba28ba7fb886338b2f4e0bb6e6cb3879f00d639de16 -->
 ```
-        <source>Restore and Migrate Wallet File...</source>
-        <translation>Restaurar y migrar archivo de monedero</translation>
+        <source>Connecting to peers…</source>
+        <translation>Conectando con sus pares ...</translation>
     
 ERR
-The translation is missing the ellipsis (...) at the end of the string, which is present in the source text and usually signifies that a further action or dialog will follow.
+The translation contains unnecessary spaces before the ellipsis, and the ellipsis itself uses three separate periods instead of the single character used in the source (though the source uses three dots, the spacing issue is the main concern). Additionally, "sus pares" is a bit formal/literal; in Bitcoin contexts, "pares" or "compañeros" is usually used without the possessive "sus".
 
 Correct translation:
-Restaurar y migrar archivo de monedero...
+Conectando con pares…
+```
+
+<!-- cache_translation_check_es_649f1d331807940c7bd3a04ee08f84d329745823f20fd863e4efa9f751688e2f -->
+```
+        <source>Last received block was generated %1 ago.</source>
+        <translation>El último bloque recibido fue generado hace %1 horas.</translation>
+    
+ERR
+The translation incorrectly adds the word "horas" (hours). The placeholder %1 in this context typically represents a formatted time duration (e.g., "5 minutes" or "2 days"). Adding "horas" would result in incorrect phrases like "hace 5 minutos horas".
+
+Correct translation:
+El último bloque recibido fue generado hace %1.
 ```
 
 <!-- cache_translation_check_es_ddbe5c772d9d256205e96515a5ff2874a950599631c28d99e3325b6744e0bafa -->
@@ -103,6 +115,30 @@ The translation contains a trailing space after the period, which violates the r
 
 Correct translation:
 Se ha cancelado el desbloqueo del monedero.
+```
+
+<!-- cache_translation_check_es_9105fef6298b2c5d564f5fd9bd7990fa62e5b69a0cbea7f57c1010044a19ce21 -->
+```
+        <source>Immature (%1 confirmations, will be available after %2)</source>
+        <translation>Inmadura (%1 confirmaciones; estará disponibles después de %2)</translation>
+    
+ERR
+Concordancia gramatical incorrecta: “estará disponibles” debe ser singular “estará disponible”. También es preferible “Inmaduro” en este contexto. Se recomienda mantener la coma del original.
+
+Correct translation:
+Inmaduro (%1 confirmaciones, estará disponible después de %2)
+```
+
+<!-- cache_translation_check_es_63e0134a046cac1d2f8737790dce4da76fae106ec25a0bd7f275328e21770e0c -->
+```
+        <source>Last month</source>
+        <translation>El mes pasado </translation>
+    
+ERR
+There is a trailing whitespace at the end of the translation which is not present in the source.
+
+Correct translation:
+El mes pasado
 ```
 
 <!-- cache_translation_check_es_de8ef9694cd17c841567a17b04b1278f049bf88fd0df82d7ad7e46fdfa13ad73 -->
@@ -199,18 +235,6 @@ The quotes around the %s placeholders are incorrect (mismatched single/double qu
 
 Correct translation:
 Error al cambiar el nombre de '%s' a '%s'. No se puede limpiar el directorio chainstate de LevelDB en segundo plano.
-```
-
-<!-- cache_translation_check_es_72238504c62169d2c007abc62fc7f118f7e8c2aa4df525d6480d2812b0227083 -->
-```
-        <source>-paytxfee is deprecated and will be fully removed in v31.0.</source>
-        <translation>-paytxfee está obsoleto y se eliminará por completo en la versión 31.0.</translation>
-    
-ERR
-The translation changes the literal "v31.0" to "versión 31.0", which may be inconsistent with the original string and product notation.
-
-Correct translation:
--paytxfee está obsoleto y se eliminará por completo en v31.0.
 ```
 
 <!-- cache_translation_check_es_8656430074c47809074dc42d3477944cca8858d52dce5909774a0f0f66671bda -->
@@ -326,4 +350,4 @@ Red no reconocida en -proxy='%s': '%s'
 ```
 </details>
 
-Number of issues: 26.
+Number of issues: 28.

@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>tr</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Btr%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Btr%5D%20request)
 
 
 <!-- cache_translation_check_tr_42b12ab4470a52e925fcced76dca24c8640a51c07f1ad19f421bdb56a7d8b91d -->
@@ -840,18 +840,6 @@ Correct translation:
 İmzacı hata döndürdü: %s
 ```
 
-<!-- cache_translation_check_tr_739128e43d61a262385b9fa99177599317e47144f7c016489c56e4fdce760d73 -->
-```
-        <source>This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>-paytxfee çok yüksek bir değere ayarlanmış! Bu, işlemi gönderirseniz ödeyeceğiniz işlem ücretidir.</translation>
-    
-ERR
-The Turkish translation adds information ("-paytxfee çok yüksek bir değere ayarlanmış!") that is not in the original English string, making it inaccurate. The translation should only render the given sentence.
-
-Correct translation:
-Bu, bir işlem gönderirseniz ödeyeceğiniz işlem ücretidir.
-```
-
 <!-- cache_translation_check_tr_e2b2c7b611623f1d72ad968d185680fbac21a6d45d0cc9e8850d3af9bf64b720 -->
 ```
         <source>Error: Could not add watchonly tx %s to watchonly wallet</source>
@@ -865,4 +853,4 @@ Hata: Sadece izlenen tx %s, sadece izlenen cüzdana eklenemedi
 ```
 </details>
 
-Number of issues: 66.
+Number of issues: 65.

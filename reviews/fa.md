@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>fa</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bfa%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bfa%5D%20request)
 
 
 <!-- cache_translation_check_fa_a7bdf359e7b71f51b1f3a92b665e0b3fcf4816feafcc336de4a56fe9c6a98797 -->
@@ -1040,18 +1040,6 @@ Correct translation:
 موجودی فعلی قابل خرج شما
 ```
 
-<!-- cache_translation_check_fa_b5c3441b98bbff6658cb7361e2f2bd6a81828879e437aa358dde071199354e8b -->
-```
-        <source>Transaction has %1 unsigned inputs.</source>
-        <translation>%1Transaction has  unsigned inputs.</translation>
-    
-ERR
-The translation is incorrect. It is not in Persian ('fa') and mainly repeats the English text, which is a clear error.
-
-Correct translation:
-تراکنش دارای %1 ورودی امضا نشده است.
-```
-
 <!-- cache_translation_check_fa_ba6149331fa7f8e9b8ce615abbfda52f8154f3d4a69d063e51255a3773794997 -->
 ```
         <source>Cannot start bitcoin: click-to-pay handler</source>
@@ -1117,16 +1105,16 @@ Correct translation:
 کپی &برچسب
 ```
 
-<!-- cache_translation_check_fa_ece9918470acec4dc72c6d7aaa51f72faa62b5dc11271369c167dbd9167e1c47 -->
+<!-- cache_translation_check_fa_23abcf5b06f1fbd143687daa1f091648a70812a9795690cd59d7b169409271bc -->
 ```
-        <source>Copy &amp;label</source>
-        <translation>تکثیر برچسب</translation>
+        <source>%s request to listen on port %u. This port is considered "bad" and thus it is unlikely that any peer will connect to it. See doc/p2p-bad-ports.md for details and a full list.</source>
+        <translation>%sدرخواست گوش دادن به پورت %u. این پورت به عنوان پورت "بد" در نظر  گرفته شده بنابراین بعید است که یک همتا به آن متصل شود. برای مشاهده جزییات و دیدن فهرست کامل فایل doc/p2p-bad-ports.md را مشاهده کنید.</translation>
     
 ERR
-The translation omits the '&' which is used for shortcut keys, and uses "تکثیر" which means "reproduction/duplication" rather than the more typical "کپی" ("copy") in software UI. The proper translation for software context should use "کپی" and include the '&'.
+There is a missing space between the format specifier "%s" and the first Persian word. There is also a double space between the words "نظر" and "گرفته".
 
 Correct translation:
-کپی &برچسب
+%s درخواست گوش دادن به پورت %u. این پورت به عنوان پورت "بد" در نظر گرفته شده بنابراین بعید است که یک همتا به آن متصل شود. برای مشاهده جزییات و دیدن فهرست کامل فایل doc/p2p-bad-ports.md را مشاهده کنید.
 ```
 
 <!-- cache_translation_check_fa_e04fdba236bb13fe3ad3d3522004f0dde0cb6e0db1a9b4f1a5bb16a861620a16 -->
@@ -1243,4 +1231,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 95.
+Number of issues: 94.

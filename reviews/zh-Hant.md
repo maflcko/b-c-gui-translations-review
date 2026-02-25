@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>zh-Hant</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bzh-Hant%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bzh-Hant%5D%20request)
 
 
 <!-- cache_translation_check_zh-Hant_0612e8aef0b85cca15b3d2220e063d00d5e249fa27727fd2ab0830cdcc07978c -->
@@ -617,18 +617,6 @@ Correct translation:
 交易廣播失敗：%1
 ```
 
-<!-- cache_translation_check_zh-Hant_488a31aac260773afaaa52303dc65dcf6d65dc211e76753ff912703f6143a292 -->
-```
-        <source>Transaction has %1 unsigned inputs.</source>
-        <translation>交易有％1個未簽名的inputs。</translation>
-    
-ERR
-The translation contains a full-width percent sign (％) instead of the standard half-width percent sign (%) used for the format specifier. Additionally, "inputs" should be translated into Chinese for better consistency with the rest of the sentence.
-
-Correct translation:
-交易有 %1 個未簽名的輸入。
-```
-
 <!-- cache_translation_check_zh-Hant_d5b7f50fbccf0a2d8611f9433bfc9db677127483cccdfd4cf1ff4b35c96a762c -->
 ```
         <source>&amp;Save Image…</source>
@@ -1014,18 +1002,6 @@ Correct Traditional Chinese (zh-Hant) translation:
 修剪：上次錢包同步已超出可用的修剪資料範圍。您需要使用 -reindex（對於已修剪的節點，需重新下載整個區塊鏈）。
 ```
 
-<!-- cache_translation_check_zh-Hant_eb968025b9240f22a7d27bd23c989a8fc00fef0ee8185f551adcffb7a2452904 -->
-```
-        <source>-paytxfee is deprecated and will be fully removed in v31.0.</source>
-        <translation>“-paytxfee”已弃用，并将在 v31.0 中完全移除。 </translation>
-    
-ERR
-The translation uses Simplified Chinese characters ("已弃用") instead of Traditional Chinese ("已棄用"), and there is an extra trailing space before the closing tag. No format specifiers are present, so none need carrying over.
-
-Correct translation (Traditional Chinese, no extra spaces):
-“-paytxfee”已棄用，並將在 v31.0 中完全移除。
-```
-
 <!-- cache_translation_check_zh-Hant_212c3af68e90ae4a89c435e0fc3e60da04c4a65ab354a77723b7b670db8e3821 -->
 ```
         <source>Can't spend unconfirmed version %d pre-selected input with a version 3 tx</source>
@@ -1350,4 +1326,4 @@ Correct translation (Traditional Chinese) with format specifiers preserved:
 ```
 </details>
 
-Number of issues: 104.
+Number of issues: 102.

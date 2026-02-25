@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>kk@latin</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bkk@latin%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bkk@latin%5D%20request)
 
 
 <!-- cache_translation_check_kk@latin_ed8c51042b3e94de77cc81b8318eb7d1190d15b6fca7dc2821507e361984fd34 -->
@@ -99,6 +99,18 @@ Correct translation:
 Төлем сұрау (QR кодтары мен bitcoin: URI-лерін жасайды)
 ```
 
+<!-- cache_translation_check_kk@latin_2848679b953a99a3552ab1f49005bcba9a7f32bd90e6838bce7193b7bfb09d1a -->
+```
+        <source>Information</source>
+        <translation>Ақпарат</translation>
+    
+ERR
+The translation is provided in Cyrillic script, but the language code 'kk@latin' requires the Kazakh translation to be in Latin script.
+
+Correct translation:
+Aqparat
+```
+
 <!-- cache_translation_check_kk@latin_5d0f26933d0b63efc522290d06bc64d6f24a058f9d812c87756f4ad8f7c07b85 -->
 ```
         <source>&amp;Address</source>
@@ -159,4 +171,4 @@ So&masy:
 ```
 </details>
 
-Number of issues: 12.
+Number of issues: 13.

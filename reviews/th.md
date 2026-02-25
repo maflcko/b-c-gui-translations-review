@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>th</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bth%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bth%5D%20request)
 
 
 <!-- cache_translation_check_th_f5c1985b691d1ea2c80502e0c0b00927d33d92ad2b9cc2c3005677a9ce8829e7 -->
@@ -356,6 +356,30 @@ There is an extra leading space before the ampersand in the translation (whitesp
 
 Correct translation (remove leading space):
 <translation>&amp;โหลด PSBT จากไฟล์…</translation>
+```
+
+<!-- cache_translation_check_th_9e9bec442912b237b6d41da24b90ef24948f6a8d2092617ace24e2c5e167e78d -->
+```
+        <source>Show the list of used sending addresses and labels</source>
+        <translation>แสดงรายการ ที่เก็บเงินที่จะส่ง bitcoin ออก และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
+    
+ERR
+The translation is awkward and contains unnecessary spaces. "ที่เก็บเงินที่จะส่ง bitcoin ออก" is a very verbose and literal way to translate "sending addresses", and the phrasing "ที่ใช้ไปแล้ว" (already used) is placed at the end, making the sentence structure confusing.
+
+Correct translation:
+แสดงรายการที่อยู่วิธีการส่งและป้ายชื่อที่ใช้แล้ว
+```
+
+<!-- cache_translation_check_th_df892cedffdcf7d3cccfc7411e2e0267a54d78a7e681fc036a29ba30ee59c998 -->
+```
+        <source>Show the list of used receiving addresses and labels</source>
+        <translation>แสดงรายการ ที่เก็บเงินที่จะรับ bitcoin เข้า และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
+    
+ERR
+The translation is awkwardly phrased and contains unnecessary spaces and word choices. The term "ที่เก็บเงินที่จะรับ bitcoin เข้า" (place to keep money to receive bitcoin in) is a very verbose way to translate "receiving addresses". A more standard and concise translation for "receiving addresses" in a Bitcoin context is "ที่อยู่สำหรับรับเงิน".
+
+Correct translation:
+แสดงรายการที่อยู่สำหรับรับเงินและป้ายชื่อที่ใช้ไปแล้ว
 ```
 
 <!-- cache_translation_check_th_ebe9dec8116a4c12752f8444486e5e44c19d7cf0e0866a3f52d21f3b5526338d -->
@@ -1279,17 +1303,17 @@ Correct translation:
 ป้ายกำกับ
 ```
 
-<!-- cache_translation_check_th_f6f368badf6f14b5e493a7cebaeb6565b8cf59f820fcd0da8690c7f92123e521 -->
+<!-- cache_translation_check_th_eb7717d1384ad01fcdd5552b8627200e941816fb988e1ea2f27060bdf60c33e0 -->
 ```
-        <source>&amp;Copy address</source>
-        <translation>ที่อยู่ &amp;Copy</translation>
+        <source>Label</source>
+        <translation>การส่งออกล้มเหลว</translation>
     
 ERR
-The translation mixes English and Thai ("ที่อยู่ &Copy") and leaves a misplaced space before the ampersand. It should be fully translated into Thai and include the shortcut ampersand exactly once (no extra space).
+The translation is incorrect. "การส่งออกล้มเหลว" means "Export failed", which is unrelated to "Label".
 
 Correct translation:
-<translation>&amp;คัดลอกที่อยู่</translation>
+ป้ายกำกับ
 ```
 </details>
 
-Number of issues: 99.
+Number of issues: 101.

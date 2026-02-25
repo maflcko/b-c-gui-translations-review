@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>sr@ijekavianlatin</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bsr@ijekavianlatin%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bsr@ijekavianlatin%5D%20request)
 
 
 <!-- cache_translation_check_sr@ijekavianlatin_0d0a31d243186251083dead73b6472ecbead71c7849dbe296d4ec54ff74f92a5 -->
@@ -1304,17 +1304,6 @@ Correct translation:
 Režim privatnosti je aktiviran za karticu Pregled. Da biste demaskirali vrijednosti, poništite izbor Podešavanja-&gt;Maskiraj vrijednosti.
 ```
 
-<!-- cache_translation_check_sr@ijekavianlatin_61756bdc9b87e53082f66ff2e5389a58dfa0ed82a343eb456b6534641460d2f1 -->
-```
-        <source>Signed %1 inputs, but more signatures are still required.</source>
-        <translation>Потписано %1 поље, али је потребно још потписа.</translation>
-    
-ERR
-The translation uses Cyrillic script ('Потписано', etc.), but the 'sr@ijekavianlatin' locale specifies Latin script. Additionally, "inputs" in Bitcoin context refers to transaction inputs, which should be rendered as "ulaza" or "inputa", not "поље" ("field"). Also, "polje" is incorrect here.
-Correct translation:
-Potpisano je %1 inputa, ali je potrebno još potpisa.
-```
-
 <!-- cache_translation_check_sr@ijekavianlatin_721ae588a825107d60bf9ac0cf792232d1b2d113324c3250ab525036cc0c252b -->
 ```
         <source>Signed transaction successfully. Transaction is ready to broadcast.</source>
@@ -1325,18 +1314,6 @@ The translation is in Serbian Cyrillic script, whereas 'sr@ijekavianlatin' requi
 
 Correct translation:
 Potpisivanje transakcije je uspješno. Transakcija je spremna za emitovanje.
-```
-
-<!-- cache_translation_check_sr@ijekavianlatin_918bfac7e1cace4f1796c4686382e92b5e609ea99e9b65abb165ce3f5caf3314 -->
-```
-        <source>Transaction has %1 unsigned inputs.</source>
-        <translation>Трансакција има %1 непотписана поља.</translation>
-    
-ERR
-The translation uses the Cyrillic script ("Трансакција има %1 непотписана поља."), but 'sr@ijekavianlatin' requires Latin script. Also, "inputs" in Bitcoin context is better translated as "ulaza" rather than "poља," which means "fields." 
-
-Correct translation:
-Transakcija ima %1 nepotpisanih ulaza.
 ```
 
 <!-- cache_translation_check_sr@ijekavianlatin_eb42220c66bea3d15fe6085acfb511e050a9bf1b08c755fe57440d22dfbce1d7 -->
@@ -2484,4 +2461,4 @@ Novčanik treba da bude prepisan: ponovo pokrenite %s da završite
 ```
 </details>
 
-Number of issues: 197.
+Number of issues: 195.

@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>ve</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bve%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bve%5D%20request)
 
 
 <!-- cache_translation_check_ve_7799ed359cf43dc4d06caa71eee65bb8747851799927cff10aaa9dda686bc65a -->

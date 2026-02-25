@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>uk</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Buk%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Buk%5D%20request)
 
 
 <!-- cache_translation_check_uk_34da7fd6bcd6baafb8ccca6b702f6be8472c470252a71d50fed13e9ad1b38a7a -->
@@ -70,6 +70,18 @@ Correct translation:
 Введена адреса не відноситься до застарілого (P2PKH) ключа. Підписання повідомлень для SegWit та інших типів адрес, відмінних від P2PKH, не підтримується в цій версії %1. Будь ласка, перевірте адресу і спробуйте ще раз.
 ```
 
+<!-- cache_translation_check_uk_d3b3a5b3041d22af59fc9d5996028d1776145dfe622ed697fd25751619cb0d6b -->
+```
+        <source>This pane shows a detailed description of the transaction</source>
+        <translation>Даний діалог показує детальну статистику по вибраній транзакції</translation>
+    
+ERR
+The translation is inaccurate. The word 'description' is translated as 'статистику' (statistics) instead of 'опис' (description). Also, 'This pane' is translated as 'Даний діалог' (This dialog), while 'панель' or 'вікно' would be more appropriate for 'pane'.
+
+Correct translation:
+Ця панель показує детальний опис транзакції
+```
+
 <!-- cache_translation_check_uk_6e1248cff4386c2513c43fc435d83ff61585994b58c9382aa3fe07d1d14ffb40 -->
 ```
         <source>Copy &amp;raw transaction</source>
@@ -81,6 +93,20 @@ The translation of "raw transaction" as "всю транзакцію" (the whole
 Correct translation:
 Копіювати &необроблену транзакцію
 ```
+
+<!-- cache_translation_check_uk_79ee7f13a3f2bab239e1d5e2e18b3c9522181efe25c386c57053e30fba671809 -->
+```
+        <source>%s request to listen on port %u. This port is considered "bad" and thus it is unlikely that any peer will connect to it. See doc/p2p-bad-ports.md for details and a full list.</source>
+        <translation>%s прохання прослухати на порту %u . Цей порт вважається «поганим» і тому навряд чи до нього підключиться який-небудь бенкет. Перегляньте doc/p2p-bad-ports.md для отримання детальної інформації та повного списку.</translation>
+    
+ERR
+The translation contains a serious mistranslation ("бенкет" meaning "banquet/feast" instead of "peer") and a whitespace issue (an extra space before the period after %u).
+
+The word "peer" in a networking context should be translated as "вузол" (node) or "пір" (peer), but definitely not "бенкет".
+
+Correct translation:
+%s запит на прослуховування порту %u. Цей порт вважається «поганим», тому малоймовірно, що будь-який вузол підключиться до нього. Деталі та повний список див. у doc/p2p-bad-ports.md.
+```
 </details>
 
-Number of issues: 6.
+Number of issues: 8.

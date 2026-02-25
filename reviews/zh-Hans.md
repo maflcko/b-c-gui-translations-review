@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>zh-Hans</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bzh-Hans%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bzh-Hans%5D%20request)
 
 
 <!-- cache_translation_check_zh-Hans_521b000b1c65ac70f7da315a0414f9daaace273dc244a28b594051447f2b7749 -->
@@ -45,6 +45,18 @@ Correct translation:
 &帮助
 ```
 
+<!-- cache_translation_check_zh-Hans_3d2d880fdd18f641615c38aa12c613465dc82f970ba0e79057b1df44e231d301 -->
+```
+        <source>Show the list of used receiving addresses and labels</source>
+        <translation>顯示已使用過的接收地址和標籤清單</translation>
+    
+ERR
+The translation is in Traditional Chinese (zh-Hant) characters ('顯示', '過', '標籤', '清單') instead of the requested Simplified Chinese (zh-Hans/zh-CN).
+
+Correct translation:
+显示已使用的接收地址和标签列表
+```
+
 <!-- cache_translation_check_zh-Hans_07b24e731acfde530620e37ba80e4dd4623efd6c803f490116295af92f3094db -->
 ```
         <source>Close wallet</source>
@@ -55,6 +67,79 @@ The translation "卸载钱包" means "uninstall wallet", which is incorrect for 
 
 Correct translation:
 关闭钱包
+```
+
+<!-- cache_translation_check_zh-Hans_747fb860a6e51a2644a6c5fb4b721cadfbbb0621574c8e7e2e38c4a5aded0d3f -->
+```
+        <source>Invalid Wallet Name</source>
+        <translation>無效的錢包名稱</translation>
+    
+ERR
+The translation provided uses Traditional Chinese characters (無效的錢包名稱) instead of the requested Simplified Chinese ('zh-Hans').
+
+Correct translation:
+无效的钱包名称
+```
+
+<!-- cache_translation_check_zh-Hans_44b123c43c41ee9f6b7555e6381bb453dbe55003261e4fd3a9fbbde4da1c0b24 -->
+```
+        <source>Wallet name cannot be empty</source>
+        <translation>錢包名稱不能為空白</translation>
+    
+ERR
+The translation uses Traditional Chinese characters ('錢包名稱不能為空白') instead of the requested Simplified Chinese ('zh-Hans').
+
+Correct translation:
+钱包名称不能为空
+```
+
+<!-- cache_translation_check_zh-Hans_e52a3f61ad39058cb0121d0d71c77d661915268095f6d64dcc6544aa2e99578d -->
+```
+        <source>Restore and Migrate Wallet Backup</source>
+        <translation>恢復及遷移錢包備份</translation>
+    
+ERR
+The translation uses Traditional Chinese characters ('zh-Hant'), but the requested language is Simplified Chinese ('zh-Hans').
+
+Correct translation:
+恢复及迁移钱包备份
+```
+
+<!-- cache_translation_check_zh-Hans_1ed932f81252b891a80fc00fddff66521a6dfd06368edc8ab7153624199e7a4e -->
+```
+        <source>Restore and Migrate Wallet</source>
+        <extracomment>Title of pop-up window shown when the user is attempting to restore a wallet.</extracomment>
+        <translation>恢復及遷移錢包</translation>
+    
+ERR
+The translation is in Traditional Chinese (zh-Hant) characters, but the requested language is Simplified Chinese (zh-Hans).
+
+Correct translation:
+恢复及迁移钱包
+```
+
+<!-- cache_translation_check_zh-Hans_37f25f5e50328f4e45861fc63f3a5271b075bc7e6f8b3f15c642805f1eed7981 -->
+```
+        <source>Restore and Migrate wallet</source>
+        <translation>恢復及遷移錢包</translation>
+    
+ERR
+The translation uses Traditional Chinese characters ('zh-Hant'), whereas the language code 'zh-Hans' specifies Simplified Chinese.
+
+Correct translation:
+恢复及迁移钱包
+```
+
+<!-- cache_translation_check_zh-Hans_73c80338eaec8975db8702e0c0f08b06bca2fe60a17ff2db219247fd559bb563 -->
+```
+        <source>Are you sure you wish to restore the wallet file &lt;i&gt;%1&lt;/i&gt; to &lt;i&gt;%2&lt;/i&gt; and migrate it?</source>
+        <translation>您確定要恢復錢包檔案&lt;i&gt;%1&lt;/i&gt;到&lt;i&gt;%2&lt;/i&gt;及遷移它嗎？</translation>
+    
+ERR
+The translation uses Traditional Chinese characters ('確定', '檔案', '及', '嗎') instead of Simplified Chinese ('zh-Hans') characters. Additionally, the spacing around the HTML tags and the flow can be improved for better readability in Simplified Chinese.
+
+Correct translation:
+您确定要将钱包文件 <i>%1</i> 恢复至 <i>%2</i> 并进行迁移吗？
 ```
 
 <!-- cache_translation_check_zh-Hans_07b24e731acfde530620e37ba80e4dd4623efd6c803f490116295af92f3094db -->
@@ -207,18 +292,6 @@ Correct translation (remove trailing space):
 修剪：上次钱包同步超出了已修剪的数据范围。您需要执行“-reindex”（对于已修剪节点，需要重新下载整个区块链）。
 ```
 
-<!-- cache_translation_check_zh-Hans_eb968025b9240f22a7d27bd23c989a8fc00fef0ee8185f551adcffb7a2452904 -->
-```
-        <source>-paytxfee is deprecated and will be fully removed in v31.0.</source>
-        <translation>“-paytxfee”已弃用，并将在 v31.0 中完全移除。 </translation>
-    
-ERR
-The Chinese translation is accurate in meaning but has minor formatting issues: an extra space before the closing tag and unnecessary spaces around "v31.0" and punctuation. Also prefer no space between the option and the following text.
-
-Correct translation:
-“-paytxfee”已弃用，并将在v31.0中完全移除。
-```
-
 <!-- cache_translation_check_zh-Hans_212c3af68e90ae4a89c435e0fc3e60da04c4a65ab354a77723b7b670db8e3821 -->
 ```
         <source>Can't spend unconfirmed version %d pre-selected input with a version 3 tx</source>
@@ -277,6 +350,18 @@ The translation is inaccurate. The source says "lower than the minimum fee rate 
 
 Correct translation:  
 手续费率 (%s) 低于最小手续费率设置 (%s)
+```
+
+<!-- cache_translation_check_zh-Hans_1f5138a1870f72bb60f262327f0a8fdc6704ef86ff8017387659758dbd583564 -->
+```
+        <source>Creating wallet…</source>
+        <translation>創建錢包...</translation>
+    
+ERR
+The translation uses Traditional Chinese characters ('創建錢包'), but the target language is Simplified Chinese ('zh-Hans').
+
+Correct translation:
+创建钱包...
 ```
 
 <!-- cache_translation_check_zh-Hans_31858be505051e38dd1b91b7fd358da6a776adc9de7310a3806b5d3ab32c3a70 -->
@@ -339,4 +424,4 @@ Correct translation (without extra trailing spaces):
 ```
 </details>
 
-Number of issues: 26.
+Number of issues: 33.

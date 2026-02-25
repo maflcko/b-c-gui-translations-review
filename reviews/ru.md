@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>ru</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bru%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bru%5D%20request)
 
 
 <!-- cache_translation_check_ru_3d5142c12236a0298d28ab23d3b9ab635c2b1423345ef63266f16217b1080cb7 -->
@@ -164,6 +164,18 @@ The translation is mostly correct, but it omits the ellipsis (…) present in th
 
 Correct translation:
 &amp;Проверить сообщение…
+```
+
+<!-- cache_translation_check_ru_7dfe55d315d81f5d5800b662000ff36324d9e2a65df97ed83f08af5542a817c1 -->
+```
+        <source>&amp;Command-line options</source>
+        <translation>Параметры командной строки</translation>
+    
+ERR
+The shortcut key marker '&' is missing in the translation. According to the instructions, it must exist exactly once if it is present in the source.
+
+Correct translation:
+&Параметры командной строки
 ```
 
 <!-- cache_translation_check_ru_71e8c11c3db97ad914706f490c173a135c5e3b6be3756c9e6a0223e977637db5 -->
@@ -617,4 +629,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 48.
+Number of issues: 49.

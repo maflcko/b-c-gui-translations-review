@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>sl</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bsl%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bsl%5D%20request)
 
 
 <!-- cache_translation_check_sl_49607f0c441ec21f616c17fc7b5e7cf1e850a02d66d13c76c448425e0c56c1d8 -->
@@ -93,6 +93,18 @@ The Slovenian translation uses three dots and a space (" ...") instead of the el
 
 Correct translation:
 Sinhronizacija z omrežjem…
+```
+
+<!-- cache_translation_check_sl_361ad34a371e43acf32955d2d4b84e418bf9a4e0a9a8761f2d9f804b60e26a07 -->
+```
+        <source>Show the list of used receiving addresses and labels</source>
+        <translation>Preglejte in uredite seznam naslovov, na katere ste kdaj prejeli plačila</translation>
+    
+ERR
+The translation changes the meaning of the source text. The English source says "Show the list...", while the translation says "Preglejte in uredite seznam..." (Review and edit the list...). Additionally, the translation adds "na katere ste kdaj prejeli plačila" (to which you have ever received payments), which is overly descriptive compared to the source "receiving addresses and labels".
+
+Correct translation:
+Prikaži seznam uporabljenih naslovov za prejemanje in oznak
 ```
 
 <!-- cache_translation_check_sl_5373ceaca57fe90d4f4ef222e812ebced777eb2fab71d0c447cd6d5db30544e4 -->
@@ -703,4 +715,4 @@ Obrezujem shrambi blokov…
 ```
 </details>
 
-Number of issues: 54.
+Number of issues: 55.

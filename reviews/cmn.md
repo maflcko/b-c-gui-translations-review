@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>cmn</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bcmn%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bcmn%5D%20request)
 
 
 <!-- cache_translation_check_cmn_b8e3c443228cffa967a07ac27cf811742669784cf54541470bf150181540b9fb -->
@@ -283,20 +283,6 @@ Correct translation:
 交易成功广播！交易 ID: %1
 ```
 
-<!-- cache_translation_check_cmn_488a31aac260773afaaa52303dc65dcf6d65dc211e76753ff912703f6143a292 -->
-```
-        <source>Transaction has %1 unsigned inputs.</source>
-        <translation>交易有％1個未簽名的inputs。</translation>
-    
-ERR
-The translation is mostly accurate but contains two issues:
-1. The percent sign is a full-width '％' rather than the ASCII '%', which could break placeholder substitution.
-2. The English word "inputs" is not translated or transliterated; in Chinese Bitcoin: "输入" or "输入项" is commonly used.
-
-Correct translation:
-交易有%1个未签名的输入。
-```
-
 <!-- cache_translation_check_cmn_0c2f3b1ca9da511a52168e61c92498723b5b95d121bdf4b2cf14fd3c7c628264 -->
 ```
         <source>Hide Peers Detail</source>
@@ -507,18 +493,6 @@ Correct translation:
 修剪：上次钱包同步超出了已修剪的数据范围。您需要执行 -reindex（对于已修剪节点，需要重新下载整个区块链）。
 ```
 
-<!-- cache_translation_check_cmn_eb968025b9240f22a7d27bd23c989a8fc00fef0ee8185f551adcffb7a2452904 -->
-```
-        <source>-paytxfee is deprecated and will be fully removed in v31.0.</source>
-        <translation>“-paytxfee”已弃用，并将在 v31.0 中完全移除。 </translation>
-    
-ERR
-There is an unnecessary trailing space at the end of the translation.
-
-Correct translation:
-“-paytxfee”已弃用，并将在 v31.0 中完全移除。
-```
-
 <!-- cache_translation_check_cmn_212c3af68e90ae4a89c435e0fc3e60da04c4a65ab354a77723b7b670db8e3821 -->
 ```
         <source>Can't spend unconfirmed version %d pre-selected input with a version 3 tx</source>
@@ -689,4 +663,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 52.
+Number of issues: 50.

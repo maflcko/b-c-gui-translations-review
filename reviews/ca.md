@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>ca</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bca%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bca%5D%20request)
 
 
 <!-- cache_translation_check_ca_6ef9b171efdc28ef93a36f0d902dc589ccd6b73175f0daa916e54cd827daf286 -->
@@ -312,42 +312,55 @@ Correct translation:
 Restableix tots els camps de signatura del missatge
 ```
 
-<!-- cache_translation_check_ca_b49a95996e952b99608c0837492020d0efe2a4af21e3991bf9d4a34af7dfd508 -->
+<!-- cache_translation_check_ca_565ecc6998e06a725fbfbc24d77131e09f3461a43fb6e61cf9ee76b25167efe2 -->
 ```
         <source>A&amp;bandon transaction</source>
-        <translation>A&amp;amp;bandona la transacció</translation>
+        <translation>Transacció d'a&amp;bandonar</translation>
     
 ERR
-The shortcut marker ampersand is double-escaped as "&amp;amp;", which will display incorrectly. There must be exactly one shortcut marker.
+The Catalan phrasing is awkward ("Transacció d'abandonar") and not a natural UI command. Use an imperative verb form. Keep exactly one ampersand.
 
 Correct translation:
-A&amp;bandona la transacció
+A&bandona la transacció
 ```
 
-<!-- cache_translation_check_ca_199ecc7e0e82c25be59a4c466952516396a31a17a5eb2b500e5b991b3088a403 -->
+<!-- cache_translation_check_ca_ce133c2a268ef694c7de10c5dce275c4a58660209fdfe2ac42522c7b0c4fd0c3 -->
 ```
         <source>More than one onion bind address is provided. Using %s for the automatically created Tor onion service.</source>
-        <translation>Es proporcionen més d'una adreça de vinculació onion. Utilitzant %s pel servei Tor onion creat automàticament.</translation>
+        <translation> Es proporciona més d'una adreça de vinculació. Utilitzant %s pel servei Tor onion automàticament creat.</translation>
     
 ERR
-- Verb agreement: "més d'una adreça" should take singular ("Es proporciona"), not plural ("Es proporcionen").
-- Second sentence is a fragment; should be a finite verb ("S'utilitza") rather than a gerund.
-- Slightly improved phrasing for "Tor onion service".
+- Leading unwanted space at the start of the translation.
+- Missing "onion" in the first sentence ("onion bind address" not fully translated).
+- The second sentence uses a gerund fragment; better as a finite verb.
+- Minor style improvement: "per al" instead of "pel".
 
 Correct translation:
-Es proporciona més d'una adreça de vinculació onion. S'utilitza %s per al servei onion de Tor creat automàticament.
+S'han proporcionat més d'una adreça de vinculació onion. S'utilitza %s per al servei onion de Tor creat automàticament.
 ```
 
-<!-- cache_translation_check_ca_b7b651ccb3548725a25c6ca3d1232002a0be6775736ba47d7828417231dbecc2 -->
+<!-- cache_translation_check_ca_60ee04085d718f3b7e19859e42a558da434847292d74ae90417fb84f3fb0af67 -->
+```
+        <source>No dump file provided. To use createfromdump, -dumpfile=&lt;filename&gt; must be provided.</source>
+        <translation>No s'ha proporcionat cap fitxer de bolcat. Per a utilitzar createfromdump, s'ha de proporcionar&lt;filename&gt;.</translation>
+    
+ERR
+The translation omits the required option "-dumpfile=" and the encoded placeholder, and it lacks a space before the filename placeholder.
+
+Correct translation:
+No s'ha proporcionat cap fitxer de bolcat. Per utilitzar createfromdump, s'ha de proporcionar -dumpfile=&lt;filename&gt;.
+```
+
+<!-- cache_translation_check_ca_57e67dc9a8ea6bfcf19dbaac5232976723665c7f264f14028e2972f5d08183bd -->
 ```
         <source>No dump file provided. To use dump, -dumpfile=&lt;filename&gt; must be provided.</source>
-        <translation>No s'ha proporcionat cap fitxer de bolcat. Per utilitzar la funció de bolcat, cal proporcionar -dumpfile=&lt;filename&gt;</translation>
+        <translation>No s'ha proporcionat cap fitxer de bolcat. Per a bolcar, cal proporcionar&lt;filename&gt;.</translation>
     
 ERR
-The translation is accurate but is missing the final period in the second sentence.
+The option flag "-dumpfile=<filename>" is missing in the translation, and there is a spacing issue before <filename>. The flag must be preserved exactly.
 
 Correct translation:
-No s'ha proporcionat cap fitxer de bolcat. Per utilitzar la funció de bolcat, cal proporcionar -dumpfile=&lt;filename&gt;.
+No s'ha proporcionat cap fitxer de bolcat. Per utilitzar el bolcat, s'ha de proporcionar -dumpfile=&lt;filename&gt;.
 ```
 
 <!-- cache_translation_check_ca_0db4bd802579a027f4cbe7f2b27224d0eccaf6a6056e4683ec21a00e3644626d -->
@@ -410,4 +423,4 @@ S'està podant el magatzem de blocs…
 ```
 </details>
 
-Number of issues: 31.
+Number of issues: 32.

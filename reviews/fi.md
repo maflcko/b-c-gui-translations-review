@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>fi</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bfi%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bfi%5D%20request)
 
 
 <!-- cache_translation_check_fi_ca28a99d7ef95562936ff0867ab786f29b8451fbdae5915bbe753633f45dfabc -->

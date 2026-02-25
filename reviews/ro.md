@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>ro</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bro%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bro%5D%20request)
 
 
 <!-- cache_translation_check_ro_08e69dd38ccb27aea37ea74d931c13128bf1f56965b82358e66c308a5615df39 -->
@@ -996,6 +996,19 @@ Correct translation (include & once; placement before 'detaliile' preserves the 
 Copiază toate &detaliile tranzacției
 ```
 
+<!-- cache_translation_check_ro_535d33251d2659842a5abb877babb84a0bac516dbb353a67051e67cafbfcb77b -->
+```
+        <source>Show in %1</source>
+        <extracomment>Transactions table context menu action to show the selected transaction in a third-party block explorer. %1 is a stand-in argument for the URL of the explorer.</extracomment>
+        <translation>Arata in %1</translation>
+    
+ERR
+The Romanian translation is missing the necessary diacritic mark for the word "Arată". "Arata" without the diacritic means "plowed" (past tense), whereas "Arată" means "Show".
+
+Correct translation:
+Arată în %1
+```
+
 <!-- cache_translation_check_ro_ef18bbc46b106b835b0cba5a37a88bec67b8b0e70d1f751bd0bed77248763c55 -->
 ```
         <source>Error reading %s! Transaction data may be missing or incorrect. Rescanning wallet.</source>
@@ -1049,4 +1062,4 @@ Correct translations (choose preferred style):
 ```
 </details>
 
-Number of issues: 75.
+Number of issues: 76.

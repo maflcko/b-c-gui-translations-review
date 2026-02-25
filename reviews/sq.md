@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>sq</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bsq%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bsq%5D%20request)
 
 
 <!-- cache_translation_check_sq_6dfda18e74bb22642c82f27fe9287c1569df19c57b4567433a830d88d7af90f5 -->

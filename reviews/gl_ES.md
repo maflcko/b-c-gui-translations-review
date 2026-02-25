@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>gl_ES</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bgl_ES%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bgl_ES%5D%20request)
 
 
 <!-- cache_translation_check_gl_ES_d205be2cffd855f87f00b1d90afb7b23b4cd7d9408be6af8f5925839b0e087b1 -->
@@ -287,13 +287,13 @@ Correct translation:
 &Acerca de %1
 ```
 
-<!-- cache_translation_check_gl_ES_d627244f25ba05aa0d850b2d6e5612f758d6c6adb4e8beca0c06abc97608a765 -->
+<!-- cache_translation_check_gl_ES_6c9bbdeee54e8f5e19a2314817794d3ed88a64fe6f8a03be5e55c2c315a300b8 -->
 ```
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Solicita pagamentos (xera un código QR e bitcoin : URIs)</translation>
+        <translation>Solicita pagamentos (xera un código QR e bitocin : URIs)</translation>
     
 ERR
-There is an unnecessary space added before the colon in "bitcoin : URIs", and the translation for "QR codes" changed from plural to singular ("un código QR").
+There is a typo in the word "bitcoin" (written as "bitocin") and an unnecessary space before the colon.
 
 Correct translation:
 Solicita pagamentos (xera códigos QR e URIs bitcoin:)

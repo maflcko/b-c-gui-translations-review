@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>sr</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bsr%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bsr%5D%20request)
 
 
 <!-- cache_translation_check_sr_48df7cc335dbe779a8dc38d57a7fef7d3e72fe7bd58d739ee04ec6476a7cbf98 -->
@@ -706,30 +706,6 @@ Correct translation:
 &amp;У реду
 ```
 
-<!-- cache_translation_check_sr_61756bdc9b87e53082f66ff2e5389a58dfa0ed82a343eb456b6534641460d2f1 -->
-```
-        <source>Signed %1 inputs, but more signatures are still required.</source>
-        <translation>Потписано %1 поље, али је потребно још потписа.</translation>
-    
-ERR
-The translation is inaccurate. The word "inputs" in the Bitcoin context rarely translates as "поље" ("field") in Serbian; the proper term is "улаза" ("inputs"). Additionally, the plural form should be used. The rest of the sentence is acceptable.
-
-Correct translation:
-Потписано је %1 улаза, али је потребно још потписа.
-```
-
-<!-- cache_translation_check_sr_918bfac7e1cace4f1796c4686382e92b5e609ea99e9b65abb165ce3f5caf3314 -->
-```
-        <source>Transaction has %1 unsigned inputs.</source>
-        <translation>Трансакција има %1 непотписана поља.</translation>
-    
-ERR
-The translation is inaccurate. The term "inputs" in Bitcoin context should be "улази" (inputs), not "поља" (fields). "Поља" is misleading in this context. Also, the format specifier %1 is correctly preserved.
-
-Correct translation:
-Трансакција има %1 непотписаних улаза.
-```
-
 <!-- cache_translation_check_sr_cdbd97358498204e8761f36e069511667c12b9bd067eaafb6451298892c98218 -->
 ```
         <source>&amp;Save Image…</source>
@@ -1176,4 +1152,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 90.
+Number of issues: 88.

@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>zh_TW</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bzh_TW%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bzh_TW%5D%20request)
 
 
 <!-- cache_translation_check_zh_TW_0612e8aef0b85cca15b3d2220e063d00d5e249fa27727fd2ab0830cdcc07978c -->
@@ -386,28 +386,16 @@ Correct translation:
 處理磁碟上的區塊…
 ```
 
-<!-- cache_translation_check_zh_TW_cbdfafde82c20bee4d6cb962d929ad72ef61410f95f7fe59c3d21a19fe8df12b -->
-```
-        <source>Connecting to peers…</source>
-        <translation>连到同行...</translation>
-    
-ERR
-The translation uses Simplified Chinese characters ("连") instead of Traditional Chinese characters ("連") which is required for 'zh_TW'. Additionally, the term "peers" in the context of Bitcoin is better translated as "節點" (nodes) or "對等節點", and "同行" is an literal/incorrect translation in this context.
-
-Correct translation:
-正在連線至節點…
-```
-
-<!-- cache_translation_check_zh_TW_b5a5301ba90b2d4ff54e8d02f7f738a0520e534631e3c258f6818fcbd6367450 -->
+<!-- cache_translation_check_zh_TW_26e0c71fd928bd3aa7426bf4de0df4b27ddf93b9ff59141b69edfbec78d4f391 -->
 ```
         <source>Catching up…</source>
-        <translation>赶上...</translation>
+        <translation>正在追上进度...</translation>
     
 ERR
-The translation uses Simplified Chinese characters ('赶') instead of Traditional Chinese characters ('趕') as required by the 'zh_TW' language code. Additionally, "Catching up..." in the context of Bitcoin synchronization is more commonly translated as "正在同步..." or "正在追趕進度...".
+The translation uses Simplified Chinese characters and terminology ("进度") instead of Traditional Chinese (zh_TW) characters and terminology. In zh_TW, "進度" is used, and "正在追上..." or "同步中..." is more common in this context.
 
 Correct translation:
-正在同步...
+正在追上進度...
 ```
 
 <!-- cache_translation_check_zh_TW_ef6b2c94c98dd02f5b270c9851d19a705c8c650c4d366e9b8aed5e74588e886c -->
@@ -961,18 +949,6 @@ Correct translation:
 無法再簽署任何輸入。
 ```
 
-<!-- cache_translation_check_zh_TW_1fafb70125728d68208e2864dce70a5ce6ceb92928bed2df98c1959d84d77fe7 -->
-```
-        <source>Signed %1 inputs, but more signatures are still required.</source>
-        <translation>已簽名％1 inputs，但仍需要更多簽名。</translation>
-    
-ERR
-The translation contains an incorrect format specifier and untranslated text. The half-width percent sign '%' should be used for the format specifier instead of the full-width '％', and 'inputs' should be translated into Traditional Chinese.
-
-Correct translation:
-已簽署 %1 個輸入，但仍需要更多簽名。
-```
-
 <!-- cache_translation_check_zh_TW_3f36d050ff17a707a586960e2695f55721a2fe19f9f0e9bb7cef3488d83ee57a -->
 ```
         <source>Transaction broadcast successfully! Transaction ID: %1</source>
@@ -1031,18 +1007,6 @@ The translation is missing the trailing space present in the source text. In UI 
 
 Correct translation:
 支付交易手續費： ⚖️ Or if sticking to half-width: 支付交易手續費:  (with trailing space)
-```
-
-<!-- cache_translation_check_zh_TW_488a31aac260773afaaa52303dc65dcf6d65dc211e76753ff912703f6143a292 -->
-```
-        <source>Transaction has %1 unsigned inputs.</source>
-        <translation>交易有％1個未簽名的inputs。</translation>
-    
-ERR
-The translation uses a full-width percent sign (％) instead of the standard half-width percent sign (%) for the format specifier. Additionally, "inputs" should ideally be translated into Chinese to match the rest of the sentence.
-
-Correct translation:
-交易有 %1 個未簽名的輸入。
 ```
 
 <!-- cache_translation_check_zh_TW_8a63fdf6414c850dcdb072ad3b132cb72113474b8e84348bf40eb9053720a3fb -->
@@ -1678,28 +1642,28 @@ Correct translation:
 範圍…
 ```
 
-<!-- cache_translation_check_zh_TW_bf899019c3cac9970e49f67237f343336436f382f43ab4037fab2d1ab4f801dd -->
+<!-- cache_translation_check_zh_TW_5b45a2e3e197cab3a78cc3c4fa7c3b5a00240cf7134223037418ba1be2ef487d -->
 ```
         <source>Copy &amp;label</source>
-        <translation>复制和标签</translation>
+        <translation>複製 &amp;label</translation>
     
 ERR
-The translation is in Simplified Chinese (zh_CN) instead of Traditional Chinese (zh_TW) as requested. Furthermore, the translation of "label" is literal and incorrect in this context; "和" (and) was used instead of treating the ampersand as a shortcut key indicator.
+The English word 'label' was not translated into Traditional Chinese.
 
 Correct translation:
 複製標籤(&L)
 ```
 
-<!-- cache_translation_check_zh_TW_a6e9d6abcc4431799e73f806331c34124d5e3cf2ac80d23af4c298249010502b -->
+<!-- cache_translation_check_zh_TW_4d7048e3223a6608542d9e88f361c2e18678e6e32a584bc5ae95f8b3d9d13941 -->
 ```
         <source>Copy &amp;amount</source>
-        <translation>复制和数量</translation>
+        <translation>複製金額 &amp;amount</translation>
     
 ERR
-The translation is in Simplified Chinese (zh_CN) instead of Traditional Chinese (zh_TW), and it incorrectly translates the shortcut indicator '&' as the word "and" (和). In UI translations, the '&' symbol should be preserved to indicate the keyboard shortcut.
+The translation incorrectly includes the English word 'amount' after the Chinese translation. The shortcut key '&' should be placed before the corresponding character in the translated text.
 
 Correct translation:
-複製金額(&A)
+複製金額(&amp;A)
 ```
 
 <!-- cache_translation_check_zh_TW_6b6c6afbece467e2f128637730075f08ff6aa1ca33439b5a4828df89267fe6bc -->
@@ -1973,6 +1937,42 @@ Correct translation:
 載入 %s 時出錯：在未編譯外部簽署器支援的情況下，正在載入外部簽署器錢包
 ```
 
+<!-- cache_translation_check_zh_TW_8c4d3c546718fda322b2d16d35344c98b08f02e7a8fffb2c1be4d49896ad1977 -->
+```
+        <source>Error: Address book data in wallet cannot be identified to belong to migrated wallets</source>
+        <translation>错误：钱包中的地址簿数据无法被识别为属于迁移后的钱包</translation>
+    
+ERR
+The translation uses Simplified Chinese (zh_CN) characters instead of Traditional Chinese (zh_TW) characters as requested. Specifically, "错误" (Simplified) should be "錯誤" (Traditional), and "识别" (Simplified) should be "識別" (Traditional).
+
+Correct translation:
+錯誤：錢包中的位址簿資料無法被識別為屬於遷移後的錢包
+```
+
+<!-- cache_translation_check_zh_TW_18bade23e7020ac53d848de22998bef5b810b09241ad945718f1ae969a10591e -->
+```
+        <source>Error: Duplicate descriptors created during migration. Your wallet may be corrupted.</source>
+        <translation>错误：迁移过程中创建了重复的输出描述符。你的钱包可能已损坏。</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) characters rather than Traditional Chinese (zh_TW) characters as requested. Additionally, "输出描述符" is more commonly referred to simply as "描述符" in this context.
+
+Correct translation:
+錯誤：遷移過程中建立了重複的描述符。您的錢包可能已損壞。
+```
+
+<!-- cache_translation_check_zh_TW_81d3ee86dab133bc19e307ca2ceaa079b3d561abc22124f2687788334cc794ad -->
+```
+        <source>Error: Transaction %s in wallet cannot be identified to belong to migrated wallets</source>
+        <translation>错误：钱包中的交易%s无法被识别为属于迁移后的钱包</translation>
+    
+ERR
+The translation is in Simplified Chinese (zh_CN) characters rather than Traditional Chinese (zh_TW) characters as requested.
+
+Correct translation:
+錯誤：錢包中的交易 %s 無法被識別為屬於遷移後的錢包
+```
+
 <!-- cache_translation_check_zh_TW_0a696b724672f20400c4c96f18eb4f655927bcc2a16d6d28ffa35cccdc7d8939 -->
 ```
         <source>Incompatible options: -dnsseed=1 was explicitly specified, but -onlynet forbids connections to IPv4/IPv6</source>
@@ -2031,18 +2031,6 @@ The translation uses Simplified Chinese characters and terminology ("默认") in
 
 Correct translation:
 預設錢包
-```
-
-<!-- cache_translation_check_zh_TW_eb968025b9240f22a7d27bd23c989a8fc00fef0ee8185f551adcffb7a2452904 -->
-```
-        <source>-paytxfee is deprecated and will be fully removed in v31.0.</source>
-        <translation>“-paytxfee”已弃用，并将在 v31.0 中完全移除。 </translation>
-    
-ERR
-The translation is in Simplified Chinese (zh_CN) instead of Traditional Chinese (zh_TW) as requested. Additionally, there is a stray space at the end of the translation.
-
-Correct translation:
-「-paytxfee」已棄用，並將在 v31.0 中完全移除。
 ```
 
 <!-- cache_translation_check_zh_TW_212c3af68e90ae4a89c435e0fc3e60da04c4a65ab354a77723b7b670db8e3821 -->
@@ -2336,18 +2324,6 @@ Correct translation:
 餘額不足
 ```
 
-<!-- cache_translation_check_zh_TW_05f7be1a75c784692e5f078165d0c876b03eeeee9d7ea79ff745a95926c795d7 -->
-```
-        <source>Invalid amount for %s=&lt;amount&gt;: '%s' (must be at least %s)</source>
-        <translation>%s=&lt;amount&gt;: '%s' 中指定了非法的金额 (必须至少达到 %s)</translation>
-    
-ERR
-The translation uses Simplified Chinese (zh_CN) terminology and characters (e.g., '非法', '金额') instead of Traditional Chinese (zh_TW) which is more common in Taiwan (e.g., '無效', '金額').
-
-Correct translation:
-%s=&lt;amount&gt; 的金額無效: '%s' (必須至少為 %s)
-```
-
 <!-- cache_translation_check_zh_TW_92ee0fb980dfaf224c7e11d8555c7a2c017af1570663009dfe6da510406321ab -->
 ```
         <source>Invalid amount for %s=&lt;amount&gt;: '%s'</source>
@@ -2636,4 +2612,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 213.
+Number of issues: 211.

@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>yi</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Byi%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Byi%5D%20request)
 
 
 <!-- cache_translation_check_yi_eb4660d219040fb5960add668cea0ccdffa51f2c5aca2b3556bd6dfd57557f2e -->
@@ -796,22 +796,6 @@ Correct translation:
 פאַרקריפּלטע פּ2פּ-בירעכטיקונג: '%s'
 ```
 
-<!-- cache_translation_check_yi_8bd242affcc9df06494c287338db79b16fbd3398314e8bc65c6706eb85eca7ab -->
-```
-        <source>Invalid amount for %s=&lt;amount&gt;: '%s' (must be at least %s)</source>
-        <translation>ניט גאָלדיגער בטראַכט פֿאַר 1%s=: '1%s' (מוז זײַן בּאַלד נישט ווייניקער ווי 1%s)</translation>
-    
-ERR
-The translation contains multiple errors:
-1. The translation uses "ניט גאָלדיגער בטראַכט" which is not idiomatic in Yiddish for "Invalid amount". A better term is "אומגילטיק סומע" or "אומגילטיקער סכום".
-2. It incorrectly uses "1%s" several times instead of simply "%s", which would break format specifiers.
-3. The phrase "מוז זײַן בּאַלד נישט ווייניקער ווי" is too wordy and awkward for "must be at least %s". The usual Yiddish is "מוז זיין לפּחות %s".
-4. The placement and format of specifiers does not match the source.
-
-Correct translation:
-אומגילטיקע סומע פֿאַר %s=&lt;amount&gt;: '%s' (מוז זיין לפּחות %s)
-```
-
 <!-- cache_translation_check_yi_065cf2c743eaa89281615451d3cf280055da62a1a6e4beb8aa301a31b00d14ca -->
 ```
         <source>Invalid netmask specified in -whitelist: '%s'</source>
@@ -1483,4 +1467,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 100.
+Number of issues: 99.

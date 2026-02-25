@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>hak</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bhak%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bhak%5D%20request)
 
 
 <!-- cache_translation_check_hak_f189babc612527e64991d05ce8bd1cd607cca50e53c99e7bc6628bff84d771c1 -->
@@ -328,18 +328,6 @@ Correct translation:
 交易廣播失敗：%1
 ```
 
-<!-- cache_translation_check_hak_488a31aac260773afaaa52303dc65dcf6d65dc211e76753ff912703f6143a292 -->
-```
-        <source>Transaction has %1 unsigned inputs.</source>
-        <translation>交易有％1個未簽名的inputs。</translation>
-    
-ERR
-The translation uses a full-width percent sign (％) instead of the standard half-width percent sign (%) for the format specifier. This will prevent the software from correctly injecting the variable. Additionally, "inputs" is left in English; while technical terms are sometimes kept, "輸入" is the standard term in Hakka/Chinese contexts.
-
-Correct translation:
-交易有 %1 個未簽名的輸入。
-```
-
 <!-- cache_translation_check_hak_0c2f3b1ca9da511a52168e61c92498723b5b95d121bdf4b2cf14fd3c7c628264 -->
 ```
         <source>Hide Peers Detail</source>
@@ -482,18 +470,6 @@ Correct translation:
 在描述符錢包中發現意外个舊式條目。正在載入錢包 %s
 
 錢包可能已經分人竄改，或係出於惡意所建立个。
-```
-
-<!-- cache_translation_check_hak_eb968025b9240f22a7d27bd23c989a8fc00fef0ee8185f551adcffb7a2452904 -->
-```
-        <source>-paytxfee is deprecated and will be fully removed in v31.0.</source>
-        <translation>“-paytxfee”已弃用，并将在 v31.0 中完全移除。 </translation>
-    
-ERR
-The translation is accurate, but there is a trailing space before the closing tag (whitespace issue). Also the source uses straight hyphen-minus; the translation keeps the option name which is fine.
-
-Corrected translation (removed trailing space):
-“-paytxfee”已弃用，并将在 v31.0 中完全移除。
 ```
 
 <!-- cache_translation_check_hak_212c3af68e90ae4a89c435e0fc3e60da04c4a65ab354a77723b7b670db8e3821 -->
@@ -713,4 +689,4 @@ UNK_LANG, not familiar with the Hakka language 'hak'.
 ```
 </details>
 
-Number of issues: 61.
+Number of issues: 59.

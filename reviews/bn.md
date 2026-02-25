@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>bn</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bbn%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bbn%5D%20request)
 
 
 <!-- cache_translation_check_bn_0dd82b171679d261cb464b6a935f14d900c9065f1dfc2706afe5ab578758da26 -->
@@ -430,6 +430,18 @@ Correct translation:
 &amp;পরিমাণ কপি করুন
 ```
 
+<!-- cache_translation_check_bn_cbeafd180baa2c6221dff3a7952e17bc2dff88f198ef17222d658e664dc9916e -->
+```
+        <source>Label</source>
+        <translation>টিকেট</translation>
+    
+ERR
+The translation is incorrect. "Label" should be translated as "লেবেল" or "চিহ্ন", not "টিকেট" (which means "ticket" in Bengali).
+
+Correct translation:
+লেবেল
+```
+
 <!-- cache_translation_check_bn_55cbc127801296bd8c63495880093469b0a6f13e01a00e4c9b42df754e511bc9 -->
 ```
         <source>&amp;Copy address</source>
@@ -442,6 +454,22 @@ Correct translation:
 &ঠিকানা কপি করুন
 ```
 
+<!-- cache_translation_check_bn_36a7168b79362233d9426fc37a1e2953a789a7e3529023d6d0c77a08634a110a -->
+```
+        <source>Copy &amp;label</source>
+        <translation>কপি লেবেল</translation>
+    
+ERR
+The translation "কপি লেবেল" is missing the ampersand (&) character, which denotes the shortcut key in the original English string. The ampersand should be present exactly once in the translation.
+
+Correct translation:
+কপি &লেবেল
+or
+&কপি লেবেল
+
+Either placement is allowed as per shortcut conventions, but the ampersand must appear exactly once.
+```
+
 <!-- cache_translation_check_bn_6285b845fcc2bc8d8455413f9e44dc9ce825833e0ba97df87f048941c57d55de -->
 ```
         <source>Copy &amp;amount</source>
@@ -452,18 +480,6 @@ The ampersand (&) indicating the shortcut key from the source ("Copy &amp;amount
 
 Correct translation:
 &amp;পরিমাণ কপি করুন
-```
-
-<!-- cache_translation_check_bn_cbeafd180baa2c6221dff3a7952e17bc2dff88f198ef17222d658e664dc9916e -->
-```
-        <source>Label</source>
-        <translation>টিকেট</translation>
-    
-ERR
-The translation is incorrect. "Label" should be translated as "লেবেল" or "চিহ্ন", not "টিকেট" (which means "ticket" in Bengali).
-
-Correct translation:
-লেবেল
 ```
 
 <!-- cache_translation_check_bn_32290be196f3d5c6942b0ba5047a253a85f6f37b647a110e67453eec56cd20fa -->
@@ -479,4 +495,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 35.
+Number of issues: 36.

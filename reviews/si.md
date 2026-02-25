@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>si</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bsi%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bsi%5D%20request)
 
 
 <!-- cache_translation_check_si_de74b282c89179c860aff941b83312cec0d0c13b719f92beaee2120be5691561 -->

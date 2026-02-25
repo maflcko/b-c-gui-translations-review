@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>ku_IQ</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bku_IQ%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bku_IQ%5D%20request)
 
 
 <!-- cache_translation_check_ku_IQ_0e0a7a84e61c7d0da53ab075ef416a7f996a2ad96619ef6a33f6ceabd2397f23 -->

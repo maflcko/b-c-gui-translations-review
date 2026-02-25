@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>sr@latin</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bsr@latin%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bsr@latin%5D%20request)
 
 
 <!-- cache_translation_check_sr@latin_208cbebd67e1f4bd409d1575968bff23ee206b62b439c361d251353f6c2650ad -->
@@ -1835,18 +1835,6 @@ Correct translation:
 Potpiši transakciju
 ```
 
-<!-- cache_translation_check_sr@latin_61756bdc9b87e53082f66ff2e5389a58dfa0ed82a343eb456b6534641460d2f1 -->
-```
-        <source>Signed %1 inputs, but more signatures are still required.</source>
-        <translation>Потписано %1 поље, али је потребно још потписа.</translation>
-    
-ERR
-The translation uses Cyrillic script, but 'sr@latin' specifies the Latin script for Serbian. The correct translation should also use the plural/singular form for "inputs" and "signatures" in an appropriate way.
-
-Correct translation:
-Potpisano je %1 ulaza, ali je potrebno još potpisa.
-```
-
 <!-- cache_translation_check_sr@latin_721ae588a825107d60bf9ac0cf792232d1b2d113324c3250ab525036cc0c252b -->
 ```
         <source>Signed transaction successfully. Transaction is ready to broadcast.</source>
@@ -1906,18 +1894,6 @@ The translation uses Cyrillic script ("Укупан износ") instead of the 
 
 Correct translation:
 Ukupan iznos
-```
-
-<!-- cache_translation_check_sr@latin_918bfac7e1cace4f1796c4686382e92b5e609ea99e9b65abb165ce3f5caf3314 -->
-```
-        <source>Transaction has %1 unsigned inputs.</source>
-        <translation>Трансакција има %1 непотписана поља.</translation>
-    
-ERR
-The translation uses Cyrillic script instead of Latin script, which is required for 'sr@latin'. Additionally, "inputs" in the context of Bitcoin transactions is more appropriately translated as "ulaza" rather than "polja", which means "fields". 
-
-Correct translation:
-Transakcija ima %1 nepotpisanih ulaza.
 ```
 
 <!-- cache_translation_check_sr@latin_493baa091431ac68c2e93792f11988130c23069186fea72ba77cb246e5f5e18f -->
@@ -3325,18 +3301,6 @@ Correct translation:
 Ovaj iznos je veći od vašeg salda.
 ```
 
-<!-- cache_translation_check_sr@latin_13f5fabc425a627d655e9572a080d9ce93380b4ce0f4a82529c89fd1275d8473 -->
-```
-        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>Укупни износ премашује ваш салдо, када се %1 провизија за трансакцију укључи у износ.</translation>
-    
-ERR
-The translation is written in Cyrillic script, but the target language 'sr@latin' specifies Serbian in Latin script. Additionally, the word order could be slightly improved for naturalness, but the main issue is the script.
-
-Correct translation:
-Ukupni iznos premašuje vaš saldo kada se uključi transakcijska naknada od %1.
-```
-
 <!-- cache_translation_check_sr@latin_e3533c8f35d55b8a6d38c81cc4c93ae7dd18b570bc205397231a8cd73beaa665 -->
 ```
         <source>Duplicate address found: addresses should only be used once each.</source>
@@ -4458,18 +4422,6 @@ Correct translation:
 Ovo je minimalni iznos provizije za transakciju koju ćete platiti na svakoj transakciji.
 ```
 
-<!-- cache_translation_check_sr@latin_cf2c44031eaca2d2a15fe367c1e25342f4aa185aa431774f680e396e3520d94c -->
-```
-        <source>This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Ово је износ провизије за трансакцију коју ћете платити уколико шаљете трансакцију.</translation>
-    
-ERR
-The translation is problematic because it is in Serbian Cyrillic script rather than the requested Latin script ('sr@latin').
-
-Correct translation:
-Ovo je iznos provizije za transakciju koju ćete platiti ukoliko šaljete transakciju.
-```
-
 <!-- cache_translation_check_sr@latin_a1aba15fe7bbcc37e6d4eccd0e61bc69e0c51d8e985370e5f0e62c4e4c22a018 -->
 ```
         <source>Transaction amounts must not be negative</source>
@@ -4543,4 +4495,4 @@ Novčanik treba da bude prepisan: ponovo pokrenite %s da završite
 ```
 </details>
 
-Number of issues: 367.
+Number of issues: 363.

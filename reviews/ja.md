@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>ja</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bja%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bja%5D%20request)
 
 
 <!-- cache_translation_check_ja_7c8d85793e337ba00e1be1697530b28d0f6b6194a3dd5c9bba72347c3ee6cb8e -->
@@ -81,6 +81,19 @@ The translation omits the shortcut key indicator (&). The ellipsis should be the
 
 Correct translation:
 &amp;PSBTをクリップボードから読む…
+```
+
+<!-- cache_translation_check_ja_d64d61fdd30d3e16007074e2efcff2669ad59056da32795ca66280e954fbf843 -->
+```
+        <source>Restore Wallet</source>
+        <extracomment>Title of pop-up window shown when the user is attempting to restore a wallet.</extracomment>
+        <translation>ウォレットを復</translation>
+    
+ERR
+The translation is incomplete and cut off. The Japanese word for "Restore" in this context should be "復元" (fukugen), but only the first character "復" is present.
+
+Correct translation:
+ウォレットを復元
 ```
 
 <!-- cache_translation_check_ja_1f58d3f8a81110c8c089583fdb1bf9d1e43309bf20c1948fbae5c0d9cc60ecfa -->
@@ -606,4 +619,4 @@ Suggested correction:
 ```
 </details>
 
-Number of issues: 43.
+Number of issues: 44.

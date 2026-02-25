@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>mi</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bmi%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bmi%5D%20request)
 
 
 <!-- cache_translation_check_mi_0f41696faf22947e86a90ad9f7429b0bb2c3e91f6929a65795151536ccc8a71c -->
@@ -479,18 +479,6 @@ Correct translation:
 Ka karo te pūkete i te utu i raro iho i te utu whakawhiti iti rawa.
 ```
 
-<!-- cache_translation_check_mi_89ef2b5b140589b1ab1784bdb4c473a269b1d41bd03e8ff64d6891f77378160d -->
-```
-        <source>This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Ko te utu whakawhiti tāuta tēnei ka utu e whiwhi ana koe ki te tuku i tētahi tāuta.</translation>
-    
-ERR
-The translation is inaccurate. In Māori ('mi'), the provided translation misuses "tāuta," which generally refers to "installation" or "setup," not a "transaction." The structure of the sentence is also awkward.
-
-Correct translation:
-Koinei te utu whakawhiti ka utua e koe mēnā ka tuku whakawhitinga koe.
-```
-
 <!-- cache_translation_check_mi_92c88e5a4ab76e8949b952367493a98f6ad33b3c9224ef37fd8bdb5ac80b8f30 -->
 ```
         <source>Transaction amounts must not be negative</source>
@@ -631,4 +619,4 @@ This conveys that the wallet needs to be rewritten, and restarting %s is require
 ```
 </details>
 
-Number of issues: 46.
+Number of issues: 45.

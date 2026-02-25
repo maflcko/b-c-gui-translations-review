@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>bg</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bbg%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bbg%5D%20request)
 
 
 <!-- cache_translation_check_bg_006e299b98520c76b375449d26356acaa9e5260344f935d2417d6a96e3d29d4c -->
@@ -704,18 +704,6 @@ Correct translation:
 Потвърдете изпращането на монетите
 ```
 
-<!-- cache_translation_check_bg_69840447143d9caf25b4f881cad6634a6b07de71eb1e1dd248945b1b29863e6d -->
-```
-        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>Сумата при добавяне на данък добавена стойност по %1 транзакцията надвишава сумата по вашата сметка.</translation>
-    
-ERR
-The translation incorrectly interprets "transaction fee" as "данък добавена стойност" (value-added tax), which is not correct in the context of Bitcoin; it should be "такса за транзакция". Additionally, "the total exceeds your balance" is not translated precisely, and there is a redundancy with the repeated "сума".
-
-Correct translation:
-Сумата надвишава наличността ви, когато е включена таксата за транзакция от %1.
-```
-
 <!-- cache_translation_check_bg_abe88dacbaaa0e2546cf9e7e459e4d027795533b3844909f59577430d5f22067 -->
 ```
         <source>Paste address from clipboard</source>
@@ -910,4 +898,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 72.
+Number of issues: 71.

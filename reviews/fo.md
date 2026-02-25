@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>fo</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bfo%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bfo%5D%20request)
 
 
 <!-- cache_translation_check_fo_ba9d1bcd19d525af595a1ce6c5c5391dcdb346f33c24ed8544ba9bb9d1c4f69b -->
@@ -19,18 +19,6 @@ The translation uses "Innlegg" (which is typically a noun meaning 'contribution'
 
 Correct translation:
 Stovna nýggja adressu
-```
-
-<!-- cache_translation_check_fo_ea8c7490415e4d6780a2c266eb0e70a21100c1f2fe3eea8189f76a34d4d7470a -->
-```
-        <source>Confirm wallet encryption</source>
-        <translation>Váttað mappu bronglan</translation>
-    
-ERR
-The translation contains grammatical and terminology errors. "Váttað" is the past participle (Confirmed), whereas the source requires the imperative "Vátta" (Confirm). Additionally, "mappu" translates to "folder", while "wallet" is correctly translated as "seðlabók" in this context.
-
-Correct translation:
-Vátta bronglan av seðlabók
 ```
 
 <!-- cache_translation_check_fo_ce8d9c572849fa271822ea7a0c30eee94659f3e74f77bbfaddca5e290a84265a -->
@@ -57,19 +45,12 @@ Correct translation:
 Pungur, ið skal krypterast
 ```
 
-<!-- cache_translation_check_fo_d1b0669a460533a748f2cfd94ac5ea6b5062758d0ed63b77e0447966c8bae7f6 -->
+<!-- cache_translation_check_fo_948524401f8a777d740493afe9cf5ae955b1c475a42887e5a82a169370f0c695 -->
 ```
         <source>Your wallet is about to be encrypted. </source>
-        <translation>Tín mappa verður brongla.</translation>
+        <translation>Tín mappa verður brongla. </translation>
     
-ERR
-The translation contains grammatical errors, terminology issues, and is missing a trailing space.
-1. "Mappa" usually means "folder"; "seðlabók" is the standard term for "wallet".
-2. "Brongla" (to confuse/scramble) is in the infinitive form, but the passive voice requires a past participle (e.g., "bronglað" or preferably the technical term "krypterað").
-3. The source text ends with a space, which is missing in the translation.
-
-Correct translation:
-Tín seðlabók fer at verða krypterað.
+UNK_LANG, not familiar with the Faroese language 'fo'.
 ```
 
 <!-- cache_translation_check_fo_7024581e3221473d89bd75ac77039b7da259e2267108ce10401cba4c32155126 -->
@@ -108,6 +89,18 @@ Correct translation:
 Pungur:
 ```
 
+<!-- cache_translation_check_fo_12abfb9550111e6868d8382c63a91ea4aded431615730a1d53dbdbf76d3b3c50 -->
+```
+        <source>Restore and Migrate Wallet File…</source>
+        <translation>Endurinnles og uppstiga mappufílu...</translation>
+    
+ERR
+The Faroese translation contains grammatical and vocabulary errors. "Endurinnles" is likely a calque from Icelandic and not standard Faroese. "Uppstiga" is not used for software migration; "flyt" or "dagfør" would be more appropriate. "Mappufílu" (folder-file) is a confusing construction for "wallet file."
+
+Correct translation:
+Endurstovna og flyt lummapoka-fílu…
+```
+
 <!-- cache_translation_check_fo_9216749058908e9a28ee28458812bad6912cdcaad1c5b79c07d06877aecb0a9b -->
 ```
         <source>Open a wallet</source>
@@ -144,59 +137,25 @@ Correct translation:
 Flyt eina fartasku
 ```
 
-<!-- cache_translation_check_fo_82b36a6672688ca511cd06e1dc15fe94ed4cb0282df2740416b399687374abbd -->
-```
-        <source>Invalid Wallet Name</source>
-        <translation>Ógildugt mappunavn</translation>
-    
-ERR
-The translation uses "mappunavn," which means "folder name" in Faroese. In the context of a Bitcoin wallet, the correct word for wallet is "pungur" or "lummapungur." Additionally, the standard spelling for "invalid" in this context is "ógyldugt."
-
-Correct translation:
-Ógyldugt pungnavn
-```
-
-<!-- cache_translation_check_fo_08eab887106ea664047d82535f2c45fcebdf0a39e7b04078bb1f842e01e956f3 -->
-```
-        <source>Restore and Migrate Wallet File...</source>
-        <translation>Endurinnless og uppstiga mappufíl…</translation>
-    
-ERR
-The translation provided is not correct Faroese and contains several errors:
-1. "Endurinnless" is not a valid word in Faroese; "endurstovna" is typically used for "restore".
-2. "Uppstiga" means to "ascend" or "climb up" and is an incorrect translation for "migrate" in a software context (which should be "flyt" or "migrera").
-3. "Mappufíl" literally means "folder file". In Faroese Bitcoin terminology, "wallet" is "pungur", so a wallet file is "pungsfíla".
-
-Correct translation:
-Endurstovna og flyt pungsfílu...
-```
-
-<!-- cache_translation_check_fo_06a814c351c536bd17df32269e6473e520b03f15bac0bcf8fad965bc1433e16a -->
+<!-- cache_translation_check_fo_66d94a7cba9e773595437bfd1abcf4a4d29c81f0a2079118e2d8b1228bdc81be -->
 ```
         <source>Restore and Migrate Wallet Backup</source>
-        <translation>Endurinnless og uppstiga mapputrygdaravrit</translation>
+        <translation>Endurinnles og uppstiga mapputrygdaravrit</translation>
     
-ERR
-The translation contains a spelling error and uses a slightly unnatural term for "Migrate". "Endurinnless" is not a correct word; it should be "Endurinnles" (imperative). "Uppstiga" literally means "to step up," while "flyt" or "flytja" is more appropriate for migrating data.
-
-Correct translation:
-Endurinnles og flyt mapputrygdaravrit
+UNK_LANG, not familiar with the Faroese language 'fo'.
 ```
 
-<!-- cache_translation_check_fo_00be0acee2577abda6cc21ef7dca2ad44d2f33b87ec99077a40f9d63269831b1 -->
+<!-- cache_translation_check_fo_a9b09f5b67ffef1e6d5096c339361d83a69198be5a5c92fb04aebb08db259ed0 -->
 ```
         <source>Restore and Migrate Wallet</source>
         <extracomment>Title of pop-up window shown when the user is attempting to restore a wallet.</extracomment>
-        <translation>Endurinnless og uppstiga mappu</translation>
+        <translation>Endurinnles og uppstiga mappu</translation>
     
 ERR
-The translation provided is not correct Faroese and contains several errors:
-1. "Endurinnless" is not a Faroese word. The correct term for "Restore" in this context is "Endurstovna".
-2. "uppstiga" is a literal translation of "stepping up" and is not used for software migration. "Flyt" or "Flyt yvir" is more appropriate for "Migrate".
-3. "mappu" means "folder". In the context of Bitcoin, a "Wallet" is typically translated as "lummi" or "gjaldslummi".
+The translation uses incorrect terminology. 'Mappa' means folder, whereas 'pungur' is the standard term for a Bitcoin wallet. 'Endurinnles' translates to 're-read' rather than 'restore', and 'uppstiga' is an incorrect term for 'migrate'.
 
 Correct translation:
-Endurstovna og flyt lumma
+Endurstovna og flytja pung
 ```
 
 <!-- cache_translation_check_fo_56897f47deca2157d03db69c9fd9f86759b51c170af09867f551f8947d50d542 -->
@@ -295,13 +254,13 @@ Correct translation:
 Gjaldfordin '%1' varð flutt yvir væleydnað.
 ```
 
-<!-- cache_translation_check_fo_826f06f6cd2083e161fc152403920e2719b31d7f07252087408105f11a824733 -->
+<!-- cache_translation_check_fo_4eb4563fbf85fc5d4b565757bb646992ea07c1fe79e530c7231ad68a4dc0f3a8 -->
 ```
         <source>Restore and Migrate wallet</source>
-        <translation>Endurinnless og uppstiga mappu</translation>
+        <translation>Endurinnles og uppstiga mappu</translation>
     
 ERR
-The translation contains several errors in Faroese grammar and vocabulary. "Endurinnless" is misspelled and resembles an Icelandic form; "uppstiga" is not the correct word for "migrate" (which would be "flyta"); and "mappa" usually refers to a folder, whereas "pungur" is the standard term for a Bitcoin wallet in Faroese.
+The translation uses incorrect terminology for a technical context. "Endurinnles" means "re-read" or "reload" rather than "restore". "Uppstiga" means "to ascend" or "step up" and is not used for data migration. "Mappa" means "folder" or "briefcase," whereas the standard Faroese term for a Bitcoin "wallet" is "pungur".
 
 Correct translation:
 Endurstovna og flyt pung
@@ -355,6 +314,18 @@ Correct translation:
 Formularur
 ```
 
+<!-- cache_translation_check_fo_01c434233d3a71c417196ba3fdcbf66dbd50f74f1537115e388f1a11b7df319a -->
+```
+        <source>Used for reaching peers via:</source>
+        <translation>Brúka proxy'in at røkka javningum umvegis: </translation>
+    
+ERR
+The translation includes "proxy'in" (the proxy), which is not present in the source text. There is also a stray trailing space before the closing tag. In Faroese, "javningum" is a common translation for "peers" in a networking context, but the sentence structure is slightly clunky.
+
+Correct translation:
+Brúkt til at røkka javningum umvegis:
+```
+
 <!-- cache_translation_check_fo_afc457a9861e6e314541de1c97b75f50c9bfc8f4443a7ca2539965090b713a24 -->
 ```
         <source>Form</source>
@@ -379,28 +350,32 @@ Correct translation:
 Vísta kunningin kann vera ótíðarhóskandi. Tín pungur samstillar seg sjálvvirkandi við Bitcoin-netið, eftir at samband er fingið; men hendan tilgongdin er ikki liðug enn.
 ```
 
-<!-- cache_translation_check_fo_9fa34eecaac09b85734d6a145bee0c5b3bf5e8d7844df089b110cfa31b688ff3 -->
+<!-- cache_translation_check_fo_1539e4b707f995fd2b1b11397d22521da84ea013ffb4320db92379936f195e39 -->
 ```
-        <source>Cannot sign inputs while wallet is locked.</source>
-        <translation>Fær ikki undirrita inntøk tá mappan er løst.</translation>
+        <source>Transaction broadcast failed: %1</source>
+        <translation>Flytingarútvarping miseydnaðist: %1</translation>
+    
+UNK_LANG, not familiar with the Faroese language 'fo'.
+```
+
+<!-- cache_translation_check_fo_6c2eb3ba9cbf315a5c38f285ecb63f431f41ebf1f1f1bf44976e858fe45b3ae9 -->
+```
+        <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
+        <translation>"bitcoin://" er ikki eitt gildigt URI. Brúka ístaðin 'bitcoin:'.</translation>
+    
+UNK_LANG, not familiar with the Faroese language 'fo'.
+```
+
+<!-- cache_translation_check_fo_ea066b25723a6e47f30152c82f5cf9f749e088faadca9a39711fe82e954df5ec -->
+```
+        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <translation>Bar ikki til at tulkað URI! Tað kann standast av ógildigari Bitcoin adressu ella avskeplaðum URI ávirkjum.</translation>
     
 ERR
-The translation contains a critical semantic error and grammatical issues. 'Løst' means 'loose', 'unlocked', or 'solved', whereas 'locked' translates to 'læst'. Additionally, 'mappan' means 'the folder', while 'wallet' is typically translated as 'lummapungur' in this context. 'Fær ikki undirrita' is also grammatically awkward (should be 'Fær ikki undirritað' or 'Kann ikki undirrita').
+The translation contains grammatical errors and a tense mismatch. "Bar" is the past tense ("could not"), whereas the source is "cannot" (present tense). The verb following "at" should be in the infinitive "tulka", not the supine "tulkað". Additionally, "ávirkjum" is a literal translation of "influences" rather than the technical term "parameters".
 
 Correct translation:
-Kann ikki undirrita input, meðan lummapungurin er læstur.
-```
-
-<!-- cache_translation_check_fo_6c42a3f6edca389438b592810dcd257bfb734342bf340b536df77ef498a9a6eb -->
-```
-        <source>Transaction is missing some information about inputs.</source>
-        <translation>Upplýsingar um flytingar-inntøk, vanta í flytingini.</translation>
-    
-ERR
-The translation contains an unnecessary comma that incorrectly separates the subject from the predicate.
-
-Correct translation:
-Upplýsingar um flytingar-inntøk vanta í flytingini.
+Ber ikki til at tulka URI! Tað kann standast av ógildigari Bitcoin adressu ella avskeplaðum URI parametrum.
 ```
 
 <!-- cache_translation_check_fo_3e7f9346cf5b4ae5595987dad3fdd836cf47e3a933df6efebe82a4936d202c72 -->
@@ -415,16 +390,65 @@ Correct translation:
 Pungur:
 ```
 
-<!-- cache_translation_check_fo_dfa10b1b34bdf1cfbf8726c41e47f9b35efd8aef421d695ffa8e00b4a9d54c3c -->
+<!-- cache_translation_check_fo_0639591c0b74c5f42b620e6e2f1d57aef39e5436bf268889a66e2eeec5b1f657 -->
 ```
-        <source>Out:</source>
-        <translation>Upp:</translation>
+        <source>Hide Peers Detail</source>
+        <translation>Fjal smálutir javningans</translation>
+    
+UNK_LANG, not familiar with the Faroese language 'fo'.
+```
+
+<!-- cache_translation_check_fo_32ab9e8acb62ce5e28b6c16e5d845853fa627895be0ae7bd7e37d32f769c5590 -->
+```
+        <source>Whether we relay transactions to this peer.</source>
+        <translation>Um vit framsenda flytingar til javningan.</translation>
+    
+UNK_LANG, not familiar with the Faroese language 'fo'.
+```
+
+<!-- cache_translation_check_fo_41e66726f25ce28143ef05ea4445df97f8b8bab537fd6997502fa119cd90ad8c -->
+```
+        <source>The total number of addresses received from this peer that were dropped (not processed) due to rate-limiting.</source>
+        <extracomment>Tooltip text for the Addresses Rate-Limited field in the peer details area, which displays the total number of addresses received from this peer that were dropped (not processed) due to rate-limiting.</extracomment>
+        <translation>Tal av atsetrum móttikin, frá javninganum, ið vóru slept (ikki teldaði) vegnað ferðavmarking.</translation>
     
 ERR
-The translation "Upp:" means "Up:" in Faroese. The correct translation for "Out:" (indicating direction or output) is "Út:".
+The Faroese translation contains grammatical and spelling errors. "Tal av atsetrum" should be "Tal av adressum" (or "adressum" rather than "atsetrum," which is not the standard term for a network address in Faroese). "móttikin" does not agree with the plural "adressum" (should be "móttiknar"). "javninganum" is a poor translation for "peer" in a networking context (usually "javningi"). "vegnað" is misspelled (should be "vegna"). "teldaði" means "computerized" rather than "processed" (which would be "viðgjørd").
 
 Correct translation:
-Út:
+Samlaða talið av adressum móttiknar frá hesum javninga, ið vórðu sleptar (ikki viðgjørdar) vegna ferðavmarking.
+```
+
+<!-- cache_translation_check_fo_4f08dd830463fe9f69c58a4e50ed2842814e737296c17bd7e3f4aec04c112364 -->
+```
+        <source>The network protocol this peer is connected through: IPv4, IPv6, Onion, I2P, or CJDNS.</source>
+        <translation>Net-protokollin ið sambandið við hendan javningan byggir á: IPv4, IPv6, Onion, I2P, ella CJDNS.</translation>
+    
+UNK_LANG, not familiar with the Faroese language 'fo'.
+```
+
+<!-- cache_translation_check_fo_b9f11fb629d7096451b2b2226d3ad2538e4f017fca2d0a37f0ebe2cb2ec52d44 -->
+```
+        <source>we selected the peer for high bandwidth relay</source>
+        <translation>vit valdu javningan, til hábandbreidd-framsendan</translation>
+    
+ERR
+The translation contains an unnecessary comma and the compound word construction is slightly non-standard for Faroese. In Faroese, "high bandwidth relay" should ideally be a compound noun or a more natural phrase without the comma.
+
+Correct translation:
+vit valdu javningan til hábandbreiddarframsendan
+```
+
+<!-- cache_translation_check_fo_dde0179225f4efdaf4cff830602e75c26ae35baa96f446a1b99dd14db68f38b1 -->
+```
+        <source>the peer selected us for high bandwidth relay</source>
+        <translation>javningin valdi okkum, til hábandbreidd-framsendan</translation>
+    
+ERR
+The translation contains a grammatically incorrect comma and the word choice for "relay" is slightly awkward in its definite form. In Faroese, a comma should not separate the object ("okkum") from the prepositional phrase ("til...").
+
+Correct translation:
+javningin valdi okkum til hábandbreiddarframsending
 ```
 
 <!-- cache_translation_check_fo_0fe93e14ddceb8b0f0a351d223da51f57c3fc96a9ee4f940cff335869c18e24a -->
@@ -451,18 +475,6 @@ Correct translation:
 %1/kvB
 ```
 
-<!-- cache_translation_check_fo_5cf359818a9627e655a2013b066649a974e4edcf8a40ed0ea9dc2409244c0479 -->
-```
-        <source>S&amp;ubtract fee from amount</source>
-        <translation>Draga avgjald frá upphædd</translation>
-    
-ERR
-The translation is missing the shortcut key indicator ('&') which is present in the source text.
-
-Correct translation:
-&Draga avgjald frá upphædd
-```
-
 <!-- cache_translation_check_fo_7ec5f0f8cd7be1c7d2be5922f7c6d957b4df1714f98b78e6f5c2198d392341a7 -->
 ```
         <source>The signature could not be decoded.</source>
@@ -473,42 +485,6 @@ The translation provided means "The signature is invalid" (Undirskriftin er ógi
 
 Correct translation:
 Undirskriftin kundi ikki avkotast.
-```
-
-<!-- cache_translation_check_fo_a6bb486aa8ca885aac5fb6464b2b5298b84254b6c158f36e5cc0980d09c42685 -->
-```
-        <source>Received from</source>
-        <translation>Inngjald</translation>
-    
-ERR
-The translation "Inngjald" means "deposit", "payment", or "contribution" (noun). The source text "Received from" indicates the source or sender of the transaction.
-
-Correct translation:
-Móttikið frá
-```
-
-<!-- cache_translation_check_fo_9352ff2a31e67cffc54ea3192cebfc57c7b35993e5dd8ad545abe2c19cf9568b -->
-```
-        <source>Sent to</source>
-        <translation>Útgjøld</translation>
-    
-ERR
-The translation "Útgjøld" corresponds to "expenses" or "payouts" (noun), whereas "Sent to" indicates the destination or recipient of the transaction.
-
-Correct translation:
-Sent til
-```
-
-<!-- cache_translation_check_fo_9352ff2a31e67cffc54ea3192cebfc57c7b35993e5dd8ad545abe2c19cf9568b -->
-```
-        <source>Sent to</source>
-        <translation>Útgjøld</translation>
-    
-ERR
-The translation "Útgjøld" corresponds to "expenses" or "payouts" (noun), whereas "Sent to" indicates the destination or recipient of the transaction.
-
-Correct translation:
-Sent til
 ```
 
 <!-- cache_translation_check_fo_906ac37103d5b761ab3e492f8b300e161beeb13f6b7c92b69f788bbad6c6b64b -->
@@ -523,36 +499,70 @@ Correct translation:
 Ger nýggjan pung
 ```
 
-<!-- cache_translation_check_fo_9500cc1f755400abc4eb48e5ad97609b6c9f37b6a5416448af9d4bd51ebee031 -->
+<!-- cache_translation_check_fo_fa26d2bb681d5dccabbd4aacf887a8904466972ba57aa7a1bf71edf264cfc4d2 -->
+```
+        <source>%s failed to validate the -assumeutxo snapshot state. This indicates a hardware problem, or a bug in the software, or a bad software modification that allowed an invalid snapshot to be loaded. As a result of this, the node will shut down and stop using any state that was built on the snapshot, resetting the chain height from %d to %d. On the next restart, the node will resume syncing from %d without using any snapshot data. Please report this incident to %s, including how you obtained the snapshot. The invalid snapshot chainstate will be left on disk in case it is helpful in diagnosing the issue that caused this error.</source>
+        <translation>%s miseydnaðist at vátta -assumeutxo løtumyndstøðuna. Hetta kann verða tekin um ein tólbúnaðartrupulleika, eitt brek í ritbúnaðinum, ella eina illviljaða broyting í ritbúnaðinum, sum loyvur innlesing av ógildigari løtumynd. Sum avleiðing av hesum verður knúturin slóktur, og steðgar at brúka allar støður avleiddar av løtumyndini, og spolar aftur ketuhæddina frá %d til %d. Undir næstu koyring heldur knúturin fram at samstilla frá %d, uttan løtumynddátur. Vinaliga boga frá hesum tilburðinum á %s, og hvussu tú fekk løtumyndina. Ógildiga ketustøðu-løtumyndin verður verandi á diskinum, í fall tað kann hjálpa til brekfinning av trupulleikanum, ið elvdi til villuna.</translation>
+    
+ERR
+There is a typo in the Faroese translation. The word "boga" (to bow/bend) is used instead of "boða" (to report).
+
+Correct translation:
+%s miseydnaðist at vátta -assumeutxo løtumyndstøðuna. Hetta kann verða tekin um ein tólbúnaðartrupulleika, eitt brek í ritbúnaðinum, ella eina illviljaða broyting í ritbúnaðinum, sum loyvur innlesing av ógildigari løtumynd. Sum avleiðing av hesum verður knúturin slóktur, og steðgar at brúka allar støður avleiddar av løtumyndini, og spolar aftur ketuhæddina frá %d til %d. Undir næstu koyring heldur knúturin fram at samstilla frá %d, uttan løtumynddátur. Vinaliga boða frá hesum tilburðinum á %s, og hvussu tú fekk løtumyndina. Ógildiga ketustøðu-løtumyndin verður verandi á diskinum, í fall tað kann hjálpa til brekfinning av trupulleikanum, ið elvdi til villuna.
+```
+
+<!-- cache_translation_check_fo_8c66ef7394ba7dfcb5d080c865855ff124cc55cfbd46238ec0fe6fe13d298692 -->
 ```
         <source>Error loading wallet. Wallet requires blocks to be downloaded, and software does not currently support loading wallets while blocks are being downloaded out of order when using assumeutxo snapshots. Wallet should be able to load successfully after node sync reaches height %s</source>
-        <translation>Villa undir innlesing av mappu. Mappur tørva at blokkar eru tiknir niður. Og ritbúnaðurin kann ikki, sum er, innlesa mappur undir niðurtøku av blokkum, í ósamanhangandi raðfylgju, tá assumeutxo løtumynd verur brúkt. Eftir at knúturin hevur samstilla til hædd %s skuldi eydnast at innlisið mappuna.</translation>
+        <translation>Villa undir innlesing av mappu. Mappur tørva at blokkar eru tiknir niður. Og ritbúnaðurin kann ikki, sum er, innlesa mappur undir niðurtøku av blokkum, í ósamanhangandi raðfylgju, tá assumeutxo løtumynd verur brúkt. Eftir at knúturin hevur samstillað til hædd %s skuldi eydnast at innlisið mappuna.</translation>
     
 ERR
-The translation contains incorrect terminology and grammatical errors.
-1. "Wallet" is translated as "mappa" (folder), but the standard Faroese term for a Bitcoin wallet is "lumma".
-2. "verur" is a misspelling of "verður".
-3. "hevur samstilla" is grammatically incorrect; it requires the supine form "samstillað".
-4. "at innlisið" is incorrect; the infinitive "at innlesa" is required here.
+The translation contains a few grammatical and orthographical errors in Faroese.
+1. "verur" is a misspelling of "verður".
+2. "at innlisið" is grammatically incorrect; the infinitive "at innlesa" should be used after "eydnast".
+3. "Mappur tørva" (Wallets require) is plural, while the source "Wallet requires" is singular.
 
 Correct translation:
-Villa við innlesing av lumma. Lumman krevur, at blokkar verða tiknir niður, og ritbúnaðurin stuðlar í løtuni ikki innlesing av lummum, meðan blokkar verða tiknir niður í ósamanhangandi raðfylgju, tá assumeutxo-løtumyndir verða brúktar. Lumman átti at kunna innlesast, tá knúturin hevur samstillað til hædd %s
+Villa undir innlesing av mappu. Mappa tørvar at blokkar eru tiknir niður. Og ritbúnaðurin kann ikki, sum er, innlesa mappur undir niðurtøku av blokkum í ósamanhangandi raðfylgju, tá assumeutxo løtumynd verður brúkt. Eftir at knúturin hevur samstillað til hædd %s, skuldi eydnast at innlesa mappuna.
 ```
 
-<!-- cache_translation_check_fo_00258c2a38755692de21f5a83af6a90db1813af7427b572a75cb4fde880e85a9 -->
+<!-- cache_translation_check_fo_c0891e57afc7e06064f9eb3cc6e12abf67f914a2e1a1400f1e39185d878fbf42 -->
 ```
         <source>Error: Dumpfile version is not supported. This version of bitcoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation>Villa: Hendan útgávan av bitcoin-mappuni kann bert innlessa útgávu 1 dumsufílur. Læs útgávu %s dumsufílu</translation>
+        <translation>Villa: Hendan útgávan av bitcoin-mappuni kann bert innlesa útgávu 1 dumsufílur. Læs útgávu %s dumsufílu</translation>
     
 ERR
-The translation is incomplete and contains significant errors.
-1. The first sentence ("Dumpfile version is not supported.") is missing.
-2. "bitcoin-wallet" is translated as "bitcoin-mappuni" (bitcoin folder), but "wallet" should be translated as "pungur".
-3. "Læs" implies the imperative "Lock!" in Faroese. The intended meaning "Got" should be translated as "Fekk" or "Las" (read).
-4. "dumsufílur" appears to be a typo for "dumpfílur".
+The translation is missing the first sentence ("Dumpfile version is not supported"), contains a spelling error/typo ("dumsufílur" should be "dumpfílur"), and uses a Danish word ("læs") instead of the Faroese past tense ("las"). Additionally, "mappuni" means "the folder", whereas "punginum" is the standard term for a "wallet" in Faroese.
 
 Correct translation:
-Villa: Útgávan av dumpfíluni er ikki stuðlað. Hendan útgávan av bitcoin-punginum stuðlar bert dumpfílur av útgávu 1. Fekk dumpfílu við útgávu %s
+Villa: Dumpfíluútgávan verður ikki stuðlað. Hendan útgávan av bitcoin-punginum stuðlar bert útgávu 1 dumpfílur. Fekk dumpfílu við útgávu %s.
+```
+
+<!-- cache_translation_check_fo_368424a5d9e7f9382ace31c0e629bfe060ae836b446c10dbc4cad79058775e93 -->
+```
+        <source>Invalid or corrupt peers.dat (%s). If you believe this is a bug, please report it to %s. As a workaround, you can move the file (%s) out of the way (rename, move, or delete) to have a new one created on the next start.</source>
+        <translation>peers.dat er ógildig ella avskeplað (%s). Vinaliga boða frá á %s, um tú heldur at brek er við tí niðurstøðuni. Tú kann flyta, nýnevna ella strika fíluna (%s), soleiðis at ein nýggj verður gjørd undir næstu koyring.</translation>
+    
+ERR
+The Faroese translation contains a few grammatical and stylistic issues. 
+1. "Tú kann" is grammatically incorrect in written Faroese; it should be "Tú kanst".
+2. "niðurstøðuni" means "the conclusion" or "the result," which doesn't fit the context of "If you believe this is a bug". A more direct translation for "this" in this context would be "hetta".
+3. The phrasing "brek er við tí niðurstøðuni" is slightly awkward for "this is a bug".
+
+Correct translation:
+peers.dat er ógildig ella avskeplað (%s). Um tú heldur, at hetta er eitt brek, vinaliga boða so frá á %s. Sum eina fyribils loysn kanst tú flyta fíluna (%s) burtur (navngeva av nýggjum, flyta ella strika), soleiðis at ein nýggj verður gjørd næstu ferð, tú startar.
+```
+
+<!-- cache_translation_check_fo_e1394e17a35ef0d5be7b58c89aabf2b0a2693c4382b6c9a13a0d25376b49fa17 -->
+```
+        <source>Invalid value detected for '-wallet' or '-nowallet'. '-wallet' requires a string value, while '-nowallet' accepts only '1' to disable all wallets</source>
+        <translation>Varnaðist ógildigt virði á '-wallet' ella '-nowallet'. '-wallet' krevur eitt strong-virði, ímeðan '-nowallet' einans góðtekur '1' fyri at óvirkja allar mappur</translation>
+    
+ERR
+The translation uses the word "mappur" (folders) to translate "wallets". In the context of Bitcoin, "wallet" should be translated as "pungi" (purse/wallet).
+
+Correct translation:
+Varnaðist ógildigt virði á '-wallet' ella '-nowallet'. '-wallet' krevur eitt strong-virði, ímeðan '-nowallet' einans góðtekur '1' fyri at óvirkja allar pungar.
 ```
 
 <!-- cache_translation_check_fo_f65dfa61e55d8cf0ccc7e6f87a21221bc91e608c12d4f66b058acef3c5d5b931 -->
@@ -563,40 +573,44 @@ Villa: Útgávan av dumpfíluni er ikki stuðlað. Hendan útgávan av bitcoin-p
 UNK_LANG, not familiar with the Faroese language 'fo'.
 ```
 
-<!-- cache_translation_check_fo_578543f6f5b9238a414a81055b74697f680731d043c191607c4dcc944ad4f8fb -->
+<!-- cache_translation_check_fo_d7af7ce98f614f454ef10fb4007f6f689e0e8c6d771373ea706db5003a3daa00 -->
 ```
-        <source>UTXO snapshot failed to validate. Restart to resume normal initial block download, or try loading a different snapshot.</source>
-        <translation>Kundi ikki váttað UTXO løtumynd. Endurbyrja fyri at halda fram við vannligu blokk-niðurtøkuni, ella royn at innlesa eina aðra løtumynd.</translation>
+        <source>Failed to rename invalid peers.dat file. Please move or delete it and try again.</source>
+        <translation>Miseydnaðist at nýnevna ógildiga peers.dat fílu. Vinaliga flyt ella strika hana og royn aftur.</translation>
+    
+UNK_LANG, not familiar with the Faroese language 'fo'.
+```
+
+<!-- cache_translation_check_fo_7ffd02a8a733c4c3b35b6ca0df28ea5cc63ba6b199e8f3b3ea92774be190ed05 -->
+```
+        <source>The combination of the pre-selected inputs and the wallet automatic inputs selection exceeds the transaction maximum weight. Please try sending a smaller amount or manually consolidating your wallet's UTXOs</source>
+        <translation>Samansetingin av undanvaldum inntøkum og mappu-sjálvvirkandi valdum inntøkum er hægri enn flytingarstøddarhámarkið. Vinaliga royn at senda eina minnið upphædd ella samein myntirnar í tíni mappu.</translation>
     
 ERR
-Grammar error: The modal verb 'kundi' requires the infinitive 'vátta', not the supine/participle 'váttað'. Additionally, 'vannligu' is a misspelling of 'vanligu'.
+The translation contains a grammatical error and omits part of the original message. "minnið" is incorrect in this context; it should be "minni" (smaller). Furthermore, the word "manually" (manuelt or handvirkið) is missing from the second sentence.
 
 Correct translation:
-Kundi ikki vátta UTXO-løtumynd. Endurbyrja fyri at halda fram við vanligu blokk-niðurtøkuni, ella royn at innlesa eina aðra løtumynd.
+Samansetingin av undanvaldum inntøkum og sjálvvirkandi valinum hjá mappuni av inntøkum fer upp um hámarkstyngdina á flytingini. Vinaliga royn at senda eina minni upphædd ella savna tínar UTXO-ir í mappuni manuelt.
 ```
 
-<!-- cache_translation_check_fo_5199692813c5d67a1bd18f0cd81bcefd5190186f64cecc1a9221b445c6b9cb57 -->
+<!-- cache_translation_check_fo_c8660585372fc5330b88a9a4c5702c1dc4bb54f6f7be509efd8a1fdcad6d983e -->
 ```
-        <source>Failure removing transaction: %s</source>
-        <translation>Miseydnaðist at strikað flyting: %s</translation>
+        <source>The inputs size exceeds the maximum weight. Please try sending a smaller amount or manually consolidating your wallet's UTXOs</source>
+        <translation>Goymslustøddin á inntøkunum er stórri enn hámarkið. Vinaliga royn at senda eina lægri upphædd, ella samein UTXO'irnar (myntirnar) í tíni mappu.</translation>
     
 ERR
-The translation contains a grammatical error. After the infinitive marker 'at', the verb should be in the infinitive form 'strika', not the supine/past participle form 'strikað'.
+The translation contains a spelling error ("stórri" should be "størri") and uses "mappu" (folder/map) instead of a more appropriate term for "wallet" (like "pungur"). It also omits the specific concept of "weight" (vekt), which is a technical term in Bitcoin distinct from "size".
 
 Correct translation:
-Miseydnaðist at strika flyting: %s
+Støddin á inntøkunum fer upp um hámarksvektina. Vinaliga royn at senda eina minni upphædd, ella savna tínar UTXO'ir í tínum pungi manuelt.
 ```
 
-<!-- cache_translation_check_fo_bb83708f68faac31d2de0d63206562eba0ab2797cc511ae5efd03af5a116ba9a -->
+<!-- cache_translation_check_fo_09fa552ed82e045b238fc3f7f7f08b9a420af57d4baf10ce27270a58d5384cad -->
 ```
-        <source>Input not found or already spent</source>
-        <translation>Inntak varð ikki funni ella longu nýtt</translation>
+        <source>Could not read embedded asmap data</source>
+        <translation>Bar ikki til at innlesa innankervis asmap dátur</translation>
     
-ERR
-The translation contains a spelling/grammatical error. In Faroese, the neuter past participle of "finna" (to find) is "funnið", not "funni".
-
-Correct translation:
-Inntak varð ikki funnið ella longu nýtt
+UNK_LANG, not familiar with the Faroese language 'fo'.
 ```
 
 <!-- cache_translation_check_fo_c4765008cc55985a7eb4a609d19d938071291f60fd1d2300da13ddde8f4060a6 -->
@@ -611,17 +625,33 @@ Correct translation:
 Dupult biningaruppsetan fyri adressuna %s. Vinarliga eftirkanna tínar -bind, -bind=...=onion og -whitebind stillingar.
 ```
 
-<!-- cache_translation_check_fo_72c2add5b5e3c474efdb2b2ce56a253307cdc8045e6baa2e6f5548b2658ac4db -->
+<!-- cache_translation_check_fo_b750dcc61f7281f6bfe7db0c18db5a734fba76baadd94f19a6a8f7966c3f891a -->
 ```
-        <source>Warning: Found invalid chain more than 6 blocks longer than our best chain. This could be due to database corruption or consensus incompatibility with peers.</source>
-        <translation>Gev gætur: Fann ógildug ketu, ið er meira enn 6 blokkar longur enn okkara besta keta. Hetta er kann vera orsaka av avskeplaðum dátugrunni ella vantandi semju við aðrar viðskiftarar.</translation>
+        <source>Private broadcast of own transactions requested (-privatebroadcast) and -proxyrandomize is disabled. Tor circuits for private broadcast connections may be correlated to other connections over Tor. For maximum privacy set -proxyrandomize=1.</source>
+        <translation>Loyniútvarping, av egnum flytingum, er ásett (-privatebroadcast), samstundis sum -proxyrandomize er óvirkt. Tor sambond, ið verða brúktar til loyniútvarping, kunnu tí verða set í samband við onnur Tor sambond frá hesum viðskiftaranum. Áset -proxyrandomize=1 fyri bestu loynd.</translation>
+    
+UNK_LANG, not familiar with the Faroese language 'fo'.
+```
+
+<!-- cache_translation_check_fo_20dca50d0b75ebc8d7ed607c069f6deaf6585cc0bb2fe33d7c8e1666edf42149 -->
+```
+        <source>Unsupported global logging level %s=%s. Valid values: %s.</source>
+        <translation>Ógildigur heiltøkugerðalistabólkur %s=%s. Gildigir bólkar: %s.</translation>
     
 ERR
-The Faroese translation contains a grammatical error in the second sentence. "Hetta er kann vera" translates to "This is can be", which is redundant. The word "er" should be removed.
+The translation contains terminology errors. "Values" should be translated as "virði", not "bólkar" (which means groups). "Level" is better translated as "stig" rather than "bólkur". Additionally, "Unsupported" is more accurately translated as "Ikki stuðlað" rather than "Ógildigur" (which means Invalid).
 
 Correct translation:
-Gev gætur: Fann ógildug ketu, ið er meira enn 6 blokkar longur enn okkara besta keta. Hetta kann vera orsaka av avskeplaðum dátugrunni ella vantandi semju við aðrar viðskiftarar.
+Ikki stuðlað heiltøku gerðalistastig %s=%s. Gildig virði: %s.
+```
+
+<!-- cache_translation_check_fo_2ff9d784057e76571f28b853e4bf5a51e376d0733f74dc9a27cc185d631243a8 -->
+```
+        <source>Unsupported logging category %s=%s.</source>
+        <translation>Ógildigur gerðalistabólkur %s=%s.</translation>
+    
+UNK_LANG, not familiar with the Faroese language 'fo'.
 ```
 </details>
 
-Number of issues: 50.
+Number of issues: 57.

@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>ga</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bga%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bga%5D%20request)
 
 
 <!-- cache_translation_check_ga_a76f02c2625faa3c26bf62a305ec068da9a05b182f189ebbf2a0015e2c7e887e -->
@@ -205,20 +205,6 @@ The translation is problematic: "Seoltaí seoladh" is redundant and incorrect. "
 
 Correct translation:
 &Seoltaí seolta
-```
-
-<!-- cache_translation_check_ga_005d23e54ec64c88aac901446bae5d38d9db37f7bf001e45e58c0d064b3cb8b8 -->
-```
-        <source>Restore and Migrate Wallet File...</source>
-        <translation>Athchóirigh agus Imircigh Comhad Sparán...</translation>
-    
-ERR
-The translation contains grammatical errors. 
-1. "Imircigh" is a noun meaning "migrants". The correct imperative verb for "Migrate" is "Imirc".
-2. "Comhad Sparán" should use the genitive case for the second noun, making it "Comhad Sparáin" (File of Wallet).
-
-Correct translation:
-Athchóirigh agus Imirc Comhad Sparáin...
 ```
 
 <!-- cache_translation_check_ga_3f39686b57742bc697792de8feeb01fee0d369a455df236054401d2835074a0f -->
@@ -889,20 +875,6 @@ Suggested correction:
 Theip ar an gcomhad a dhúnadh nuair a bhí bloc á scríobh.
 ```
 
-<!-- cache_translation_check_ga_c3a386be63db3545343062348302b0ef103636d3880715ea6821b097382ad48a -->
-```
-        <source>Invalid amount for %s=&lt;amount&gt;: '%s' (must be at least %s)</source>
-        <translation>Méid neamhbhailí le haghaidh %s=1: '%s' (ar a laghad %s)</translation>
-    
-ERR
-The translation has two issues:
-1. The format specifier %s=&lt;amount&gt; is replaced by %s=1 in the translation. The "1" should be "&lt;amount&gt;" (or an Irish equivalent like "<méid>") to preserve the original placeholder meaning.
-2. The rest of the translation is mostly accurate, but the placeholder must be maintained as a variable.
-
-Correct translation:
-Méid neamhbhailí le haghaidh %s=&lt;méid&gt;: '%s' (caithfidh sé a bheith ar a laghad %s)
-```
-
 <!-- cache_translation_check_ga_43ec6c34685263727061ab78e2ede20e6559b25c31d0580924e8fcab5368f998 -->
 ```
         <source>Listening for incoming connections failed (listen returned error %s)</source>
@@ -1030,4 +1002,4 @@ Seoladh -proxy nó ainm óstach neamhbhailí, a chríochnaíonn le '=': '%s'
 ```
 </details>
 
-Number of issues: 76.
+Number of issues: 74.

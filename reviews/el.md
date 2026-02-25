@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>el</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bel%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bel%5D%20request)
 
 
 <!-- cache_translation_check_el_e8422409238701228e1b0ad2e5b2cb756b58c052da94c33f4a8c73a55d187bfd -->
@@ -101,18 +101,6 @@ The translation uses "Ανάλυση" (analysis) instead of "Επεξεργασ�
 
 Correct translation:
 Επεξεργασία μπλοκ στον δίσκο…
-```
-
-<!-- cache_translation_check_el_7fdb5dffdc4d20f10cfafe97f693e99ea823f2552af8fd2193a4129e68e2ba06 -->
-```
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Αίτηση πληρωμών (δημιουργεί QR codes και bitcoin: URI)</translation>
-    
-ERR
-The parenthetical part mismatches the plural "URIs" by using singular "URI" and leaves "QR codes" untranslated. Use a plural-friendly phrasing in Greek.
-
-Correct translation:
-Αίτηση πληρωμών (δημιουργεί κωδικούς QR και διευθύνσεις bitcoin: URI)
 ```
 
 <!-- cache_translation_check_el_4f7e1d9a4525bcf6c36547e1295359fff529154e6cd355f3502155bcd58290bb -->
@@ -742,122 +730,6 @@ Correct translation:
 Αντιγραφή της τρέχουσας υπογραφής στο πρόχειρο
 ```
 
-<!-- cache_translation_check_el_6270653217b2025d33f3563b7c73446b8a3cb025a7ddbf1ad39ffce11a1583a6 -->
-```
-        <source>Transaction fee</source>
-        <translation>Τέλη συναλλαγής</translation>
-    
-ERR
-Number mismatch: the English source is singular ("fee"), while the Greek translation is plural ("Τέλη"). Use singular.
-
-Correct translation:
-Τέλος συναλλαγής
-```
-
-<!-- cache_translation_check_el_6f834f9035617f8516e9e70c6100aac1137b5174d7c7e5e965dde8cb25135ee7 -->
-```
-        <source>Output index</source>
-        <translation>Δείκτης output</translation>
-    
-ERR
-The term "output" remains untranslated, mixing Greek with English. It should be fully localized.
-
-Correct translation:
-Δείκτης εξόδου
-```
-
-<!-- cache_translation_check_el_64484b34030294e7229934ded5e86c3f7923de86fb0f1c1a85ee6183f7b10eaf -->
-```
-        <source>Unconfirmed</source>
-        <translation>Μη επικυρωμένη</translation>
-    
-ERR
-The term "επικυρωμένη" means "validated/ratified" and is not the standard term for transaction confirmations. The standard in this context is "επιβεβαιωμένο/επιβεβαιωμένη". Also, using neuter is safer for a standalone status label.
-
-Correct translation:
-Μη επιβεβαιωμένο
-```
-
-<!-- cache_translation_check_el_831caaf49de98282d4993e0eead1e5b4dd7b007f3f6a6b1ee6fbce6a71e5f573 -->
-```
-        <source>Confirmed (%1 confirmations)</source>
-        <translation>Επικυρώθηκε (%1 επικυρώσεις)</translation>
-    
-ERR
-The terminology is uncommon/inaccurate for Bitcoin. Standard Greek usage prefers "επιβεβαίωση/επιβεβαιώσεις" rather than "επικύρωση/επικυρώσεις". Also, "Confirmed" aligns better with "Επιβεβαιώθηκε".
-
-Correct translation:
-Επιβεβαιώθηκε (%1 επιβεβαιώσεις)
-```
-
-<!-- cache_translation_check_el_b482328e6559734d1974512a017dde33e1f3174d02bf987a15cfdf9d5546af1d -->
-```
-        <source>Immature (%1 confirmations, will be available after %2)</source>
-        <translation>Ανώριμο (%1 επικυρώσεις, θα είναι διαθέσιμο μετά από %2)</translation>
-    
-ERR
-The term "επικυρώσεις" is uncommon in the Bitcoin context; "επιβεβαιώσεις" is the standard term for confirmations in Greek.
-
-Correct translation:
-Ανώριμο (%1 επιβεβαιώσεις, θα είναι διαθέσιμο μετά από %2)
-```
-
-<!-- cache_translation_check_el_5ea4887f4aded65fcc6931f74922e1e405edab354aff698d0673a6ab5aca5a52 -->
-```
-        <source>Sent to</source>
-        <translation>Αποστολή προς</translation>
-    
-ERR
-The Greek translation uses a noun phrase ("Αποστολή προς" = "Sending to") instead of the past tense. It should reflect "Sent to."
-
-Correct translation:
-Στάλθηκε σε
-```
-
-<!-- cache_translation_check_el_09c2903e5825dbe9a710350d03021da2ef0c8b4a89cb318034ff28f03f755023 -->
-```
-        <source>Mined</source>
-        <translation>Εξορυγμένη</translation>
-    
-ERR
-The Greek word is misspelled (should use χ, not γ) and the feminine form is unnatural for a standalone status label. A natural and correct translation for the Bitcoin context is:
-Εξορύχθηκε
-```
-
-<!-- cache_translation_check_el_5ea4887f4aded65fcc6931f74922e1e405edab354aff698d0673a6ab5aca5a52 -->
-```
-        <source>Sent to</source>
-        <translation>Αποστολή προς</translation>
-    
-ERR
-The Greek translation uses a noun phrase ("Αποστολή προς" = "Sending to") instead of the past tense. It should reflect "Sent to."
-
-Correct translation:
-Στάλθηκε σε
-```
-
-<!-- cache_translation_check_el_09c2903e5825dbe9a710350d03021da2ef0c8b4a89cb318034ff28f03f755023 -->
-```
-        <source>Mined</source>
-        <translation>Εξορυγμένη</translation>
-    
-ERR
-The Greek word is misspelled (should use χ, not γ) and the feminine form is unnatural for a standalone status label. A natural and correct translation for the Bitcoin context is:
-Εξορύχθηκε
-```
-
-<!-- cache_translation_check_el_3643b94becddb5599c601ae4a3db003eab8415270aacf963c3fb2221c33d7531 -->
-```
-        <source>Increase transaction &amp;fee</source>
-        <translation>Αύξηση &amp;τελών συναλλαγής</translation>
-    
-ERR
-The Greek uses the plural genitive "τελών", while the source is singular ("fee"). It should be singular genitive "τέλους". The ampersand placement is fine but must remain exactly once.
-
-Correct translation:
-Αύξηση &τέλους συναλλαγής
-```
-
 <!-- cache_translation_check_el_6bbf4f2a13cb32f1ba1bb6d4a0489a60145b57603625de57199314cabba1eaf3 -->
 ```
         <source>No wallet has been loaded.
@@ -874,6 +746,17 @@ Correct translation:
 Δεν έχει φορτωθεί κανένα πορτοφόλι.
 Μεταβείτε στο Αρχείο > Άνοιγμα πορτοφολιού για να φορτώσετε ένα πορτοφόλι.
 - Η -
+```
+
+<!-- cache_translation_check_el_38925d7746baa0e052110aab24c4b76a2efbdb80957fe63aa0bb93e0778b1568 -->
+```
+        <source>Send Coins</source>
+        <translation>Αποστολή bitcoin</translation>
+    
+ERR
+The translation uses "bitcoin" instead of "coins" and is not aligned with the source meaning.
+Correct translation:
+Αποστολή νομισμάτων
 ```
 
 <!-- cache_translation_check_el_2a2148b10afdf9e640ed880e4609c29e6a80ff89ff9b6286aec97afdfe79eae6 -->
@@ -1009,4 +892,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 80.
+Number of issues: 70.

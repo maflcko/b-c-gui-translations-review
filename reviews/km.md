@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>km</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bkm%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bkm%5D%20request)
 
 
 <!-- cache_translation_check_km_f34171ace5b109783baa88a0c1f9e7c0aec303ee0d93715b71c46fb8b13c4318 -->
@@ -416,18 +416,6 @@ or, if rendering in Khmer:
 
 Alternatively, maintaining the original order:
 បើក bitcoin: URI
-```
-
-<!-- cache_translation_check_km_6a7868f8a0ba87967ad49b033c0e11b67ae2b55cada77819c458782a6d8c18d9 -->
-```
-        <source>Open Wallet</source>
-        <translation>បើកកាបូបចល័ត</translation>
-    
-ERR
-The translation adds the word "mobile" (ចល័ត) to the translation, which is not present in the English source text. "Open Wallet" should be translated more generally unless the context is specifically for a mobile-only application.
-
-Correct translation:
-បើកកាបូប
 ```
 
 <!-- cache_translation_check_km_6d0c1c7d3b9306c9f6f7146e5087898c3c9f6a67b305f430422c93d730139948 -->
@@ -1297,4 +1285,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 100.
+Number of issues: 99.

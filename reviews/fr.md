@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>fr</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bfr%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bfr%5D%20request)
 
 
 <!-- cache_translation_check_fr_7e4d3d9c523db168eb02fb280122b89d1970121deafc9d553b05aa336de0dbdc -->
@@ -928,18 +928,6 @@ Correct translation:
 SQLiteDatabase : échec de lecture de la base de données, erreur de vérification : %s
 ```
 
-<!-- cache_translation_check_fr_92006d83b183ee429ac35ccbf54d6e5393a8d54fe0e99022dd568928e28cad80 -->
-```
-        <source>This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>Les frais que vous payerez si vous envoyez une transaction.</translation>
-    
-ERR
-The translation omits "de transaction" after "frais," which is needed for accuracy. Also, "paierez" is the more standard spelling.
-
-Correct translation:
-Il s’agit des frais de transaction que vous paierez si vous envoyez une transaction.
-```
-
 <!-- cache_translation_check_fr_52a6a4151d7a6c28bfec98d3e7097dff322f3a62b6fad834cf60c0af38cdd092 -->
 ```
         <source>Transaction change output index out of range</source>
@@ -1038,4 +1026,4 @@ Le portefeuille a dû être réécrit : redémarrez %s pour terminer.
 ```
 </details>
 
-Number of issues: 80.
+Number of issues: 79.

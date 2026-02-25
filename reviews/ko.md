@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>ko</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bko%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bko%5D%20request)
 
 
 <!-- cache_translation_check_ko_743dc2ba81b3c015a9b142097624bfe2847180f2917ac7d28cab788ac3f6687c -->
@@ -534,18 +534,6 @@ Correct translation:
 
 If needed, you can also say:
 외부 서명 지원 없이 컴파일됨(외부 서명에 필요함)
-```
-
-<!-- cache_translation_check_ko_9fb025bf74842581f142e8b051fc77422af14cc80a1e30dc616919539cd6a3d6 -->
-```
-        <source>Signed %1 inputs, but more signatures are still required.</source>
-        <translation>% 1 입력에 서명했지만 더 많은 서명이 필요합니다.</translation>
-    
-ERR
-There is an erroneous space inserted within the format specifier. "% 1" should be "%1" to correctly function as a placeholder.
-
-Correct translation:
-%1 입력에 서명했지만 더 많은 서명이 필요합니다.
 ```
 
 <!-- cache_translation_check_ko_82bb15665c7799a85efadbd4efdf602020b687e2bbf8170dc556fb133cfec00a -->
@@ -1395,4 +1383,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 101.
+Number of issues: 100.

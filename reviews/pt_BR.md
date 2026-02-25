@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>pt_BR</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bpt_BR%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bpt_BR%5D%20request)
 
 
 <!-- cache_translation_check_pt_BR_538c78567c7dd94f623f47d7755a7d3ead61a5ace5e95dec557443e1efbc548b -->
@@ -276,30 +276,6 @@ The translation is missing the word "peers" (pares). While "Conectando..." is un
 
 Correct translation:
 Conectando a pares...
-```
-
-<!-- cache_translation_check_pt_BR_4449abc1e8eb7d6f53fdd23c9894b3e5d553eec4fbb452f57f1c77935e48dafd -->
-```
-        <source>Load Partially Signed Bitcoin Transaction</source>
-        <translation>Carregar</translation>
-    
-ERR
-The translation is incomplete. It only translates the verb "Load" and omits the rest of the phrase "Partially Signed Bitcoin Transaction".
-
-Correct translation:
-Carregar Transação de Bitcoin Parcialmente Assinada
-```
-
-<!-- cache_translation_check_pt_BR_569c7405ae43e1f46d343d10c16d042c4e06fd68555e48644cc1ae0f5a1c0527 -->
-```
-        <source>Restore and Migrate Wallet File...</source>
-        <translation>Restaurar e migrar ficheiro da carteira...</translation>
-    
-ERR
-The translation uses the term 'ficheiro', which is specific to European Portuguese (pt_PT). In Brazilian Portuguese (pt_BR), 'arquivo' is the standard term for 'file'.
-
-Correct translation:
-Restaurar e Migrar Arquivo da Carteira...
 ```
 
 <!-- cache_translation_check_pt_BR_1dacaa55d847786ab33c67eac8228fdbaaac5ab2a11255537a9d524cd2650303 -->
@@ -1649,18 +1625,6 @@ Correct translation:
 A taxa (%s) é inferior à configuração de taxa mínima (%s)
 ```
 
-<!-- cache_translation_check_pt_BR_dbee17c3050610c71fdead3c29f637c8469705ffac38227ac84a88c75e147f05 -->
-```
-        <source>-asmap requires a file path. Use -asmap=&lt;file&gt;.</source>
-        <translation>-asmap requer um caminho de ficheiro. Use -asmap=&lt;file&gt;.</translation>
-    
-ERR
-The translation uses the term "ficheiro," which is common in European Portuguese (pt_PT), but the standard term for "file" in Brazilian Portuguese (pt_BR) is "arquivo."
-
-Correct translation:
--asmap requer um caminho de arquivo. Use -asmap=<file>.
-```
-
 <!-- cache_translation_check_pt_BR_3826da56c37b113a08e1f7f7eb706efaac3ba40ad861dfe5ce314c9539cab7bc -->
 ```
         <source>Creating wallet…</source>
@@ -1903,4 +1867,4 @@ Não foi possível gravar o arquivo de configurações
 ```
 </details>
 
-Number of issues: 152.
+Number of issues: 149.

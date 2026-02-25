@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>zh_CN</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bzh_CN%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bzh_CN%5D%20request)
 
 
 <!-- cache_translation_check_zh_CN_fc505b4b67f611633f017e7695c11226ce1a0f01727365c909a98995a03ce45b -->
@@ -82,6 +82,55 @@ Correct translation:
 在“概况”标签页中隐藏数值
 ```
 
+<!-- cache_translation_check_zh_CN_747fb860a6e51a2644a6c5fb4b721cadfbbb0621574c8e7e2e38c4a5aded0d3f -->
+```
+        <source>Invalid Wallet Name</source>
+        <translation>無效的錢包名稱</translation>
+    
+ERR
+The translation provided is in Traditional Chinese (zh_TW/zh_HK), but the language code specified is 'zh_CN' (Simplified Chinese).
+
+Correct translation:
+无效的钱包名称
+```
+
+<!-- cache_translation_check_zh_CN_44b123c43c41ee9f6b7555e6381bb453dbe55003261e4fd3a9fbbde4da1c0b24 -->
+```
+        <source>Wallet name cannot be empty</source>
+        <translation>錢包名稱不能為空白</translation>
+    
+ERR
+The translation provided is in Traditional Chinese ('zh_TW' or 'zh_HK'), but the target language is Simplified Chinese ('zh_CN').
+
+Correct translation:
+钱包名称不能为空
+```
+
+<!-- cache_translation_check_zh_CN_e52a3f61ad39058cb0121d0d71c77d661915268095f6d64dcc6544aa2e99578d -->
+```
+        <source>Restore and Migrate Wallet Backup</source>
+        <translation>恢復及遷移錢包備份</translation>
+    
+ERR
+The translation uses Traditional Chinese characters ('zh_HK' or 'zh_TW'), but the specified language code is 'zh_CN', which requires Simplified Chinese characters.
+
+Correct translation:
+恢复及迁移钱包备份
+```
+
+<!-- cache_translation_check_zh_CN_1ed932f81252b891a80fc00fddff66521a6dfd06368edc8ab7153624199e7a4e -->
+```
+        <source>Restore and Migrate Wallet</source>
+        <extracomment>Title of pop-up window shown when the user is attempting to restore a wallet.</extracomment>
+        <translation>恢復及遷移錢包</translation>
+    
+ERR
+The translation uses Traditional Chinese characters ('恢復', '遷移'), whereas the language code 'zh_CN' specifies Simplified Chinese.
+
+Correct translation:
+恢复及迁移钱包
+```
+
 <!-- cache_translation_check_zh_CN_9e586e108f9d3563d40685e78f9629fbe6059295b42274a8e24a3834e2de57f7 -->
 ```
         <source>Show Peers tab</source>
@@ -153,6 +202,30 @@ The translation uses Traditional Chinese characters ('偵測', '簽名器'), but
 
 Correct translation:
 检测到的外部签名器过多
+```
+
+<!-- cache_translation_check_zh_CN_37f25f5e50328f4e45861fc63f3a5271b075bc7e6f8b3f15c642805f1eed7981 -->
+```
+        <source>Restore and Migrate wallet</source>
+        <translation>恢復及遷移錢包</translation>
+    
+ERR
+The translation uses Traditional Chinese characters (恢復及遷移錢包), whereas 'zh_CN' specifies Simplified Chinese.
+
+Correct translation:
+恢复及迁移钱包
+```
+
+<!-- cache_translation_check_zh_CN_73c80338eaec8975db8702e0c0f08b06bca2fe60a17ff2db219247fd559bb563 -->
+```
+        <source>Are you sure you wish to restore the wallet file &lt;i&gt;%1&lt;/i&gt; to &lt;i&gt;%2&lt;/i&gt; and migrate it?</source>
+        <translation>您確定要恢復錢包檔案&lt;i&gt;%1&lt;/i&gt;到&lt;i&gt;%2&lt;/i&gt;及遷移它嗎？</translation>
+    
+ERR
+The translation uses Traditional Chinese characters ('確定', '檔案', '錢包') instead of Simplified Chinese ('确定', '文件', '钱包') which is used for the 'zh_CN' locale. Additionally, there are minor spacing and phrasing improvements for better readability in Simplified Chinese.
+
+Correct translation:
+您确定要将钱包文件 <i>%1</i> 恢复至 <i>%2</i> 并进行迁移吗？
 ```
 
 <!-- cache_translation_check_zh_CN_07b24e731acfde530620e37ba80e4dd4623efd6c803f490116295af92f3094db -->
@@ -482,18 +555,6 @@ Correct translation:
 无法解析 -%s 地址: '%s'
 ```
 
-<!-- cache_translation_check_zh_CN_eb968025b9240f22a7d27bd23c989a8fc00fef0ee8185f551adcffb7a2452904 -->
-```
-        <source>-paytxfee is deprecated and will be fully removed in v31.0.</source>
-        <translation>“-paytxfee”已弃用，并将在 v31.0 中完全移除。 </translation>
-    
-ERR
-There is an unnecessary trailing space at the end of the translation.
-
-Correct translation:
-“-paytxfee”已弃用，并将在 v31.0 中完全移除。
-```
-
 <!-- cache_translation_check_zh_CN_bd76499e00cb12d65e9f4a26e439710bbc7d6c7ae92a935c74cbbcc9b3f64ab6 -->
 ```
         <source>A fatal internal error occurred, see debug.log for details: </source>
@@ -650,6 +711,18 @@ Correct translation:
 无效的 -onion 地址或主机名: '%s'
 ```
 
+<!-- cache_translation_check_zh_CN_1f5138a1870f72bb60f262327f0a8fdc6704ef86ff8017387659758dbd583564 -->
+```
+        <source>Creating wallet…</source>
+        <translation>創建錢包...</translation>
+    
+ERR
+The translation uses Traditional Chinese characters instead of Simplified Chinese characters (zh_CN).
+
+Correct translation:
+创建钱包...
+```
+
 <!-- cache_translation_check_zh_CN_373cdf9ab7d47acd52bf8067802629744d7343f4a9098b040fced76f259ba316 -->
 ```
         <source>Missing amount</source>
@@ -687,4 +760,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 54.
+Number of issues: 60.

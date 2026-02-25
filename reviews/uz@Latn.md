@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>uz@Latn</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Buz@Latn%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Buz@Latn%5D%20request)
 
 
 <!-- cache_translation_check_uz@Latn_38b701719f502392bed26773a24618abcafe30af31e089bc87014e004658a846 -->
@@ -284,20 +284,112 @@ Correct translation:
 &amp;Yordam
 ```
 
-<!-- cache_translation_check_uz@Latn_7c293b039b3b3e7b0789ae952347b995b48c8ae2f311630ec31b6d11ce3e50db -->
+<!-- cache_translation_check_uz@Latn_c046697554241814382edf0e3da7f67ed475be8dde67e83a1983f103cfaae0ec -->
 ```
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>To'lovlarni so'rash(QR kolar va bitkoin yaratish: URL manzillar)</translation>
+        <translation>Тўловлар (QR кодлари ва bitcoin ёрдамида яратишлар: URI’лар) сўраш</translation>
     
-ERR
-- There are a few issues:
-    1. "QR kolar" should be "QR kodlar".
-    2. "bitkoin yaratish: URL manzillar" does not accurately represent "bitcoin: URIs"; it should be "va bitcoin: URI larini yaratadi".
-    3. Missing space after the opening parenthesis.
-    4. Should retain the meaning "generates QR codes and bitcoin: URIs".
+SPAM
+The translation is in the Uzbek Cyrillic script (uz@Cyrl), not the requested Uzbek Latin script (uz@Latn).
 
 Correct translation:
-To‘lovlarni so‘rash (QR kodlar va bitcoin: URI larini yaratadi)
+To‘lovlarni so‘rash (QR kodlar va bitcoin: URI’lar yaratadi)
+```
+
+<!-- cache_translation_check_uz@Latn_f9edbd28c2e8e4f3afea8e5331c30c9b7a7a312887aac3fc1464c1eb9194b59f -->
+```
+        <source>Show the list of used sending addresses and labels</source>
+        <translation>Фойдаланилган жўнатилган манзиллар ва ёрлиқлар рўйхатини кўрсатиш</translation>
+    
+SPAM
+The translation is in the Uzbek Cyrillic script (uz-Cyrl), while the language code 'uz@Latn' specifically requires the Uzbek Latin script.
+
+Correct translation:
+Foydalanilgan jo‘natish manzillari va yorliqlari ro‘yxatini ko‘rsatish
+```
+
+<!-- cache_translation_check_uz@Latn_1fab0ff46fa07f47df721507051eae4088a13a66b878cfce07e5d1fe838e3f83 -->
+```
+        <source>Show the list of used receiving addresses and labels</source>
+        <translation>Фойдаланилган қабул қилинган манзиллар ва ёрлиқлар рўйхатини кўрсатиш</translation>
+    
+SPAM
+The translation is written in the Cyrillic script (uz@Cyrl), but the requested language code is 'uz@Latn' (Uzbek Latin).
+
+Correct translation:
+Foydalanilgan qabul qilingan manzillar va yorliqlar roʻyxatini koʻrsatish
+```
+
+<!-- cache_translation_check_uz@Latn_3562a0f4559474943fb35669c58aa061f571f27b20ce3ea9b36f028b9759a2e5 -->
+```
+        <source>&amp;Command-line options</source>
+        <translation>&amp;Буйруқлар сатри мосламалари</translation>
+    
+SPAM
+The translation is in the Uzbek Cyrillic script (uz@Cyrl), not the requested Uzbek Latin script (uz@Latn).
+
+Correct translation:
+&Buyruqlar satri moslamalari
+```
+
+<!-- cache_translation_check_uz@Latn_5e53923b82a15b5fc470e1f944749b4c886e3d53531a1b395ed3c186a4e1fdb8 -->
+```
+        <source>%1 behind</source>
+        <translation>%1 орқада</translation>
+    
+SPAM
+The translation is in the Uzbek Cyrillic script (uz-Cyrl), not the Uzbek Latin script (uz-Latn) as requested.
+
+Correct translation:
+%1 orqada
+```
+
+<!-- cache_translation_check_uz@Latn_caf8e1497be30ad8da79cf8bcd9ed179c520727628fad95368a36e5ff2011a13 -->
+```
+        <source>Last received block was generated %1 ago.</source>
+        <translation>Сўнги қабул қилинган блок %1 олдин яратилган.</translation>
+    
+SPAM
+The translation is written in the Cyrillic script (uz@Cyrl), but the requested language code is 'uz@Latn' (Uzbek Latin).
+
+Correct translation:
+Soʻnggi qabul qilingan blok %1 oldin yaratilgan.
+```
+
+<!-- cache_translation_check_uz@Latn_ad5c5da71c0efc75c3e3c7c021159d7b2d5d5bc27964d36852b5a43ccd9115dd -->
+```
+        <source>Transactions after this will not yet be visible.</source>
+        <translation>Бундан кейинги пул ўтказмалари кўринмайдиган бўлади.</translation>
+    
+SPAM
+The translation is written in the Cyrillic script (uz@Cyrl), but the requested language code is 'uz@Latn', which requires the Latin script.
+
+Correct translation:
+Bundan keyingi oʻtkazmalar hali koʻrinmaydi.
+```
+
+<!-- cache_translation_check_uz@Latn_696d027d65a6305cb1740a8c3350042ad0be59d91dfcc30b38bbb0f4b42f174b -->
+```
+        <source>Warning</source>
+        <translation>Диққат</translation>
+    
+SPAM
+The translation is provided in the Cyrillic script (Диққат), but the requested language code is 'uz@Latn', which specifies the Latin script.
+
+Correct translation:
+Diqqat
+```
+
+<!-- cache_translation_check_uz@Latn_deca15a81462eb6fa48ff03939863fed5974c113dafeca689ce8bff527bb8243 -->
+```
+        <source>Up to date</source>
+        <translation>Янгиланган</translation>
+    
+SPAM
+The translation is in the Cyrillic script (uz@Cyrl), but the requested language code is 'uz@Latn', which requires the Latin script.
+
+Correct translation:
+Yangilangan
 ```
 
 <!-- cache_translation_check_uz@Latn_ae0b96cf49348fdc55f9a198a3ff27e4c811f3ff042a7e5043772cd909d0711f -->
@@ -1755,4 +1847,4 @@ Hamyonni qayta yozish kerak: bajarilishini yakunlash uchun %s ni qayta ishga tus
 ```
 </details>
 
-Number of issues: 136.
+Number of issues: 144.

@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>eu</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Beu%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Beu%5D%20request)
 
 
 <!-- cache_translation_check_eu_fb70a25373dbd8aebeaa6890a9976a52a7ccd96d3d78c453497d84550004a47c -->
@@ -298,18 +298,6 @@ In the context of Bitcoin, "wallet" is translated as "diru-zorro". Using "zorro"
 
 Correct translation:
 Diru-zorro bat migratu
-```
-
-<!-- cache_translation_check_eu_e33ba8ff75db833159b234c0a372eee655288d73e74def9cd4dcee8306ce7adb -->
-```
-        <source>Restore and Migrate Wallet File...</source>
-        <translation>Zorro fitxategia berreskuratu eta migratu...</translation>
-    
-ERR
-The word "Zorro" in Basque means "sack", "envelope", or "case". In the context of a Bitcoin wallet, the correct term is "Diru-zorro" or "Kartera".
-
-Correct translation:
-Diru-zorro fitxategia berreskuratu eta migratu...
 ```
 
 <!-- cache_translation_check_eu_9d64abf669ded6ad9ccbf5d92b705e8136cf8e6d9114cf117f401b1528a3b122 -->
@@ -1122,18 +1110,6 @@ Correct translation:
 Zenbatekoak zure saldoa gainditzen du.
 ```
 
-<!-- cache_translation_check_eu_2fe9b92377c0d904901f280626496a82d5edbe9e25e9671ff9339487ac079c66 -->
-```
-        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>Guztizko zenbatekoa zure saldoa baino handiagoa da, %1transakzio-komisioa gehitzen denean.</translation>
-    
-ERR
-The translation contains a spacing error. There should be a space between the format specifier '%1' and the word 'transakzio-komisioa'.
-
-Correct translation:
-Guztizko zenbatekoa zure saldoa baino handiagoa da, %1 transakzio-komisioa gehitzen denean.
-```
-
 <!-- cache_translation_check_eu_a5008dc50eae9d24e0270ce15d8f4c58db3134752e61a5f555ae8c38b9c6c8cd -->
 ```
         <source>S&amp;ubtract fee from amount</source>
@@ -1169,6 +1145,18 @@ The translation is incorrect because "konfirmazio" is not correct in Basque for 
 
 Correct translation:
 %1 berrespen
+```
+
+<!-- cache_translation_check_eu_21153ea5599085c23889bb2c9c20276f267115b9c8fceb1aea8b805b71f79b66 -->
+```
+        <source>Net amount</source>
+        <translation>Sareko zenbatekoa</translation>
+    
+ERR
+The translation "Sareko zenbatekoa" incorrectly interprets "Net" as "Network" (Sare). In a financial or Bitcoin context, "Net amount" refers to the total amount after deductions (like fees), which should be translated as "garbi".
+
+Correct translation:
+Zenbateko garbia
 ```
 
 <!-- cache_translation_check_eu_7af200fc81216e6b7c827dec6c2251a77cfce4de457adc05d3f9a531f4574b23 -->
@@ -1217,6 +1205,18 @@ The translation "Meatua" is incorrect in Basque. The correct term for "Mined" in
 
 Correct translation:
 Meatutako
+```
+
+<!-- cache_translation_check_eu_121926b40832dd954279b8909907420e12fa442716959927c2b9b665e0322444 -->
+```
+        <source>This week</source>
+        <translation>Aste honetankoak</translation>
+    
+ERR
+The translation "Aste honetankoak" is incorrect and ungrammatical in Basque. The correct translation for "This week" is "Aste hau".
+
+Correct translation:
+Aste hau
 ```
 
 <!-- cache_translation_check_eu_bdcf55dc0f0ce2d61fa1f3c79e8fb886be362c244fcb93358c3d6529d9ed3e8c -->
@@ -1663,30 +1663,6 @@ Correct translation:
 Hasierako zuzentasun-egiaztapenak huts egin du. %s itzaltzen ari da.
 ```
 
-<!-- cache_translation_check_eu_e04add94006239425b327136912cc23ad873d5272d312bf82fd1a1b66797b351 -->
-```
-        <source>Invalid amount for %s=&lt;amount&gt;: '%s' (must be at least %s)</source>
-        <translation>%s= &lt;amount&gt;baliorako kopuru baliogabea: '%s' (gutxienez %s izan behar da)</translation>
-    
-ERR
-The translation contains a spacing error. There is an extra space between "%s=" and "<amount>", which was not present in the source text.
-
-Correct translation:
-%s=&lt;amount&gt; baliorako kopuru baliogabea: '%s' (gutxienez %s izan behar da)
-```
-
-<!-- cache_translation_check_eu_191290bcc02c2f68af733cc800e4a8991ab18faf1944cfe23c55445b099b981c -->
-```
-        <source>-asmap requires a file path. Use -asmap=&lt;file&gt;.</source>
-        <translation>-asmap aukera fitxategi-ibilbide bat behar du. Erabili -asmap=&lt;file&gt;.</translation>
-    
-ERR
-The Basque grammar is incorrect. The subject "-asmap aukera" (the -asmap option) is the subject of the transitive verb "behar du" (requires) and must take the ergative case ending "-k".
-
-Correct translation:
--asmap aukerak fitxategi-ibilbide bat behar du. Erabili -asmap=<file>.
-```
-
 <!-- cache_translation_check_eu_7ef82543e2faa8a7a7916354cbd37aa1c3f77b83cb9210e0b683ef21a5fc4e51 -->
 ```
         <source>Prune cannot be configured with a negative value.</source>
@@ -1952,4 +1928,4 @@ Zorroa berridatzi behar izan da: %s berrabiarazi osatzeko
 ```
 </details>
 
-Number of issues: 153.
+Number of issues: 151.

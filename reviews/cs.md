@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>cs</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bcs%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bcs%5D%20request)
 
 
 <!-- cache_translation_check_cs_3ca95584af0d74951b48f5847796870c9f4091c6aa1a9ef49c4e4db7409b019a -->
@@ -190,35 +190,6 @@ Correct translation:
 Nepodařilo se zapsat transakci
 ```
 
-<!-- cache_translation_check_cs_16cf9dd725c3c99dc8d27805b171f58d2ac838836a17fafd0d7fd0f01aac76c3 -->
-```
-        <source>%s failed to validate the -assumeutxo snapshot state. This indicates a hardware problem, or a bug in the software, or a bad software modification that allowed an invalid snapshot to be loaded. As a result of this, the node will shut down and stop using any state that was built on the snapshot, resetting the chain height from %d to %d. On the next restart, the node will resume syncing from %d without using any snapshot data. Please report this incident to %s, including how you obtained the snapshot. The invalid snapshot chainstate will be left on disk in case it is helpful in diagnosing the issue that caused this error.</source>
-        <translation>%sse nepodařilo ověřit -assumeutxo stav snímku. Tohle značí hardwarový problém, chybu v softwaru nebo špatnou úpravu softwaru, která dovolila nahrání neplatného snímku. Došlo proto k vypnutí uzlu a vy přestaňte používat jakékoliv verze, které byly postaveny na tomto snímku, resetování délky řetězce od %d do %d. Při příštím restartu bude uzel pokračovat v synchronizování od %d bez jakýchkoliv dat snímku. Prosím, nahlašte tento incident %s, včetně toho, jak jste získali tento snímek. Neplatný snímek stavu řetězce byl ponechán na disku v případě, že by to bylo nápomocné při odhalení potíže, která způsobila tuto chybu.</translation>
-    
-ERR
-- Missing space after the initial %s ("%sse" should be "%s se").
-- Several semantic and stylistic issues: addressing the user inappropriately ("a vy přestaňte"), misuse of "verze" instead of "stav", awkward phrasing, and preposition missing with %s ("nahlaste ... %s" should indicate reporting to/at %s).
-
-Correct translation:
-%s se nepodařilo ověřit stav snímku -assumeutxo. To naznačuje hardwarový problém, chybu v softwaru nebo nevhodnou úpravu softwaru, která umožnila načtení neplatného snímku. V důsledku toho se uzel vypne a přestane používat jakýkoli stav vytvořený na základě tohoto snímku; výška řetězce bude resetována z %d na %d. Při příštím restartu bude uzel pokračovat v synchronizaci od %d bez použití jakýchkoli dat snímku. Nahlaste prosím tento incident na %s, včetně informace, jak jste snímek získali. Neplatný stav řetězce ze snímku bude ponechán na disku pro případ, že pomůže s diagnostikou problému, který tuto chybu způsobil.
-```
-
-<!-- cache_translation_check_cs_aea90fd2911a2ae2d88b8e02e8f3b5e418c843495e85cce7273c8e4a6a5a7253 -->
-```
-        <source>%s request to listen on port %u. This port is considered "bad" and thus it is unlikely that any peer will connect to it. See doc/p2p-bad-ports.md for details and a full list.</source>
-        <translation> %s Žádost o poslech na portu %u . Tento port je považován za "špatný", a proto je nepravděpodobné, že by se k němu připojil nějaký peer. Viz doc/p2p-bad-ports.md pro podrobnosti a úplný seznam.</translation>
-    
-ERR
-Issues:
-- Leading space before %s.
-- Extra space before the period after %u.
-- Awkward phrasing ("Žádost o poslech"); more natural is "požaduje naslouchání".
-- Use of "peer" anglicism; "uzel" is preferable in Czech Bitcoin context.
-
-Correct translation:
-%s požaduje naslouchání na portu %u. Tento port je považován za „špatný“, a proto je nepravděpodobné, že se k němu připojí nějaký uzel. Viz doc/p2p-bad-ports.md pro podrobnosti a úplný seznam.
-```
-
 <!-- cache_translation_check_cs_afcf0c27409892cbbf34f9e8c91069da004f8676ff4ef78584ae9d68765e4068 -->
 ```
         <source>This is the maximum transaction fee you pay (in addition to the normal fee) to prioritize partial spend avoidance over regular coin selection.</source>
@@ -315,18 +286,6 @@ The parenthetical incorrectly states that outgoing was approved; it should indic
 
 Correct translation:
 whitebind smí být použit pouze pro příchozí spojení („out“ byl předán)
-```
-
-<!-- cache_translation_check_cs_3d9b396fad8f58a1503677df935684c9cbe252ed1b55f556f7a9ca42cdcc31b5 -->
-```
-        <source>-paytxfee is deprecated and will be fully removed in v31.0.</source>
-        <translation> Volba -paytxfee je zastaralá a bude ve verzi 31.0 úplně odstraněna.</translation>
-    
-ERR
-Leading whitespace at the start of the translation.
-
-Correct translation:
-Volba -paytxfee je zastaralá a bude ve verzi 31.0 plně odstraněna.
 ```
 
 <!-- cache_translation_check_cs_f5d41f3ba2b39f4a5cd6cbee52cc141c57e9349ef405c5bf87d81825497dd237 -->
@@ -473,18 +432,6 @@ Correct translation:
 Nepodařilo se zapsat data pro vracení změn.
 ```
 
-<!-- cache_translation_check_cs_1cab4940b4e1d561b799ffce993670e16fc17015f283d389dd54a3b380010f99 -->
-```
-        <source>Invalid amount for %s=&lt;amount&gt;: '%s' (must be at least %s)</source>
-        <translation>Neplatná částka %s=&lt;amount&gt;:'%s' (musí být alespoň %s)</translation>
-    
-ERR
-Missing preposition "pro" makes the Czech phrasing unnatural, and there is a whitespace issue: the space after the colon before '%s' is missing. Format specifiers are correctly preserved.
-
-Correct translation:
-Neplatná částka pro %s=&lt;amount&gt;: '%s' (musí být alespoň %s)
-```
-
 <!-- cache_translation_check_cs_d6819abf34c35785d6b0b75b2b87c238be4ed32bc4d28787ba53878e1918194b -->
 ```
         <source>Invalid amount for %s=&lt;amount&gt;: '%s'</source>
@@ -495,6 +442,30 @@ Missing preposition "pro" and missing space after the colon.
 
 Correct translation:
 Neplatná částka pro %s=&lt;amount&gt;: '%s'
+```
+
+<!-- cache_translation_check_cs_7bd47b680f93fe6ffdad8b5effa44974b6ad4282f160b11685e85a2c1b2c9d2e -->
+```
+        <source>A %zu MiB dbcache may be too large for a system memory of only %zu MiB.</source>
+        <translation>%zu MiB dbcache může být příliš velká pro systémovou paměť o velikosti %zu MiB.</translation>
+    
+ERR
+The Czech translation has a gender agreement error. The word "dbcache" (database cache) is typically treated as masculine or neuter in technical Czech, but the adjective "velká" is feminine. It should match the neuter "velké" or masculine "velký" to be grammatically correct in this context.
+
+Correct translation:
+%zu MiB dbcache může být příliš velké pro systémovou paměť o velikosti %zu MiB.
+```
+
+<!-- cache_translation_check_cs_8c3c4ffab7de121db5fcdc9d5f1d2c67b342212c61311c975d4ba4f53c80f0e5 -->
+```
+        <source>Duplicate binding configuration for address %s. Please check your -bind, -bind=...=onion and -whitebind settings.</source>
+        <translation>Vytvořit duplicitní nastavení pro adresu %s. Prosím ověřte nastavení -bind, -bind=...=onion a -whitebind.</translation>
+    
+ERR
+The translation changes the meaning of the first sentence. "Vytvořit duplicitní nastavení" translates to "Create a duplicate configuration," whereas the source text states that a "Duplicate binding configuration" exists (indicates an error or status). In Czech technical contexts, this is usually translated using "Duplicitní nastavení vazby" or simply "Duplicitní konfigurace". Also, "ověřte" is better as "zkontrolujte".
+
+Correct translation:
+Duplicitní nastavení vazby pro adresu %s. Zkontrolujte prosím nastavení -bind, -bind=...=onion a -whitebind.
 ```
 
 <!-- cache_translation_check_cs_6c16a9dcda055994537f3d0b81ab98e22066ec93aff966e092bd48c7a4d59514 -->
@@ -594,4 +565,4 @@ Nedostatek volných souborových deskriptorů. %d k dispozici, %d vyžadováno.
 ```
 </details>
 
-Number of issues: 48.
+Number of issues: 46.

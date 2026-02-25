@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>kn</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bkn%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bkn%5D%20request)
 
 
 <!-- cache_translation_check_kn_bad98e3ac33e5c6239c7b14c25c030aaa0402d054fc3f386621f3d89ab4737a4 -->
@@ -167,18 +167,6 @@ Correct translation:
 ಅನುಕೂಲವಲ್ಲದ ಆಯ್ಕೆಗಳು: -dnsseed=1 ಅನ್ನು ಸ್ಪಷ್ಟವಾಗಿ ಸೂಚಿಸಲಾಗಿದೆ, ಆದರೆ -onlynet ಗೆ IPv4/IPv6 ಸಂಪರ್ಕಗಳನ್ನು ನಿಷೇಧಿಸುತ್ತದೆ.
 ```
 
-<!-- cache_translation_check_kn_109b52a31934efbca038fdcc56e232dc7951f1e1d2e4585c9208da49bf9ada0f -->
-```
-        <source>This is the transaction fee you will pay if you send a transaction.</source>
-        <translation>ನೀವು ಟ್ರಾನ್ಸ್ಯಾಕ್ಷನ್ ಕಳುಹಿಸುವಾಗ ನೀವು ಪಾವತಿ ವಿಧಾನದ ಮೂಲಕ ಪಾವತಿ ಶುಲ್ಕವನ್ನು ಪಾವತಿ ಕಳುಹಿಸುವಾಗ ನೀವು ಕೊಡಬೇಕಾದ ಶುಲ್ಕ.</translation>
-    
-ERR
-The translation is verbose, repetitive, and awkward. The sentence repeats "ನೀವು ಪಾವತಿ ಕಳುಹಿಸುವಾಗ" ("when you send payment") and generally adds unnecessary complexity and redundancy. The original sentence is simple and direct.
-
-Correct translation:
-ನೀವು ಟ್ರಾನ್ಸ್‌್ಯಾಕ್ಷನ್ ಕಳುಹಿಸಿದರೆ ನೀಡಬೇಕಾದ ಶುಲ್ಕ ಇದು.
-```
-
 <!-- cache_translation_check_kn_3e71143bcba8c0af358748e40dab95d7907442e2e7ad7bc8d19d65904db46f62 -->
 ```
         <source>Transaction needs a change address, but we can't generate it.</source>
@@ -192,4 +180,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 14.
+Number of issues: 13.

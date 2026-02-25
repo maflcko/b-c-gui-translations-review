@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>tk</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Btk%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Btk%5D%20request)
 
 
 <!-- cache_translation_check_tk_01c84469dbfc4692cf3ca3d959eb2ed8dab665a94726d244cde7266ca440c8b9 -->
@@ -131,17 +131,17 @@ Correct translation:
 (%1 gulplanan)
 ```
 
-<!-- cache_translation_check_tk_47b0c02c9a68aff30b52ce714c0700e1ce6a1a7dbe0e87dfe99a89dafedc665b -->
+<!-- cache_translation_check_tk_61a823057577cd532bbeaf62ffd6f9736e579088600f0b3c506f2ae01cf3cf63 -->
 ```
-        <source>Restoring Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
-        <extracomment>Descriptive text of the restore wallets progress window which indicates to the user that wallets are currently being restored.</extracomment>
-        <translation>&lt;b&gt;%1&lt;/b&gt; Gapjyk dikeldilýär…</translation>
+        <source>Restore Wallet</source>
+        <extracomment>Title of progress window which is displayed when wallets are being restored.</extracomment>
+        <translation>Gapjygy düzeltmek</translation>
     
 ERR
-Word order is awkward; it currently reads as "%1 wallet" rather than "Wallet %1". Also, "Gapjyk" should follow the identifier.
+The translation uses "düzeltmek", which means "to fix" or "to correct". For restoring a backup or a wallet in a software context, "dikeltmek" is more appropriate in Turkmen.
 
 Correct translation:
-Gapjyk &lt;b&gt;%1&lt;/b&gt; dikeldilýär…
+Gapjygy dikeltmek
 ```
 
 <!-- cache_translation_check_tk_47b0c02c9a68aff30b52ce714c0700e1ce6a1a7dbe0e87dfe99a89dafedc665b -->

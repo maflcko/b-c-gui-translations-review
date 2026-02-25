@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>sw</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bsw%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bsw%5D%20request)
 
 
 <!-- cache_translation_check_sw_62419019a8d232cfdaa9851e736d8d5ee418f6fd4cf3098317a3d4351891673e -->
@@ -392,6 +392,18 @@ There is a missing space between '%s' and 'kwa', resulting in '%skwa'. Also, "in
 Correct translation:
 Zaidi ya anuani moja ya onion bind imetolewa. %s inatumiwa kwa ajili ya huduma ya Tor onion inayoundwa kiotomatiki.
 ```
+
+<!-- cache_translation_check_sw_f8e0c6d5be295c7e2c991ec09226b39072dc0f5b2702a405bb6582b567f7fa84 -->
+```
+        <source>Error: Address book data in wallet cannot be identified to belong to migrated wallets</source>
+        <translation>HITILAFU: Data za kitabu cha anunai katika pochi haziwezi kutambulika kuwa ni ya pochi zilizohamia.</translation>
+    
+ERR
+The Swahili translation contains a typo and a grammatical inconsistency. "Anunai" is a typo for "anwani" (address), and the possessive "ya" should be "za" to agree with the plural "data".
+
+Correct translation:
+HITILAFU: Data za kitabu cha anwani katika pochi haziwezi kutambulika kuwa ni za pochi zilizohamishwa.
+```
 </details>
 
-Number of issues: 31.
+Number of issues: 32.

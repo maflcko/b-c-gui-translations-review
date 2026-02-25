@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>pt</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bpt%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bpt%5D%20request)
 
 
 <!-- cache_translation_check_pt_80cde300cbb9d1f55451b6a3100ef481073e51dec1f20eff9b7f7903df642092 -->
@@ -443,6 +443,18 @@ Correct translation:
 A base de dados de blocos contém um bloco que aparenta ser do futuro. Isto pode dever‑se à data e hora do seu computador estarem definidas incorretamente. Reconstrua apenas a base de dados de blocos caso tenha a certeza de que a data e a hora do seu computador estão corretas.
 ```
 
+<!-- cache_translation_check_pt_f5b48dc68dfaa2175bcb1292f6313275f9460b2874c48b64513527ad6aca41c6 -->
+```
+        <source>Error: Address book data in wallet cannot be identified to belong to migrated wallets</source>
+        <translation>Erro: Os dados do livro de endereços da carteira  não puderam ser identificados por pertencerem a carteiras migradas</translation>
+    
+ERR
+The translation contains a double space after "carteira" and the phrase "por pertencerem" is slightly awkward in this context. Using "como pertencentes" or "como pertencendo" is more natural.
+
+Correct translation:
+Erro: Os dados do livro de endereços da carteira não puderam ser identificados como pertencentes a carteiras migradas
+```
+
 <!-- cache_translation_check_pt_68c5e98d9f4a0247bd0a2efe24e7fd9993a0ba806ca0587323318d68be5e160f -->
 ```
         <source>Incompatible options: -dnsseed=1 was explicitly specified, but -onlynet forbids connections to IPv4/IPv6</source>
@@ -565,4 +577,4 @@ A transação deve ter pelo menos um destinatário
 ```
 </details>
 
-Number of issues: 43.
+Number of issues: 44.

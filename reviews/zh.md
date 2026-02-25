@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>zh</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bzh%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bzh%5D%20request)
 
 
 <!-- cache_translation_check_zh_18cb2eafe9476d601cad613709995b7bd26eaa6f870c23a048355f97ee533bd6 -->
@@ -77,6 +77,96 @@ Or, if using traditional Chinese:
 未編譯外部簽名支援（需要此支援才能進行外部簽名）
 ```
 
+<!-- cache_translation_check_zh_4d7048e3223a6608542d9e88f361c2e18678e6e32a584bc5ae95f8b3d9d13941 -->
+```
+        <source>Copy &amp;amount</source>
+        <translation>複製金額 &amp;amount</translation>
+    
+ERR
+The translation incorrectly retains the English word "amount" alongside the Chinese translation. The shortcut key indicator '&' should be placed before the corresponding Chinese character or the English word should be removed.
+
+Correct translation:
+複製金額(&;A)
+```
+
+<!-- cache_translation_check_zh_6b6c6afbece467e2f128637730075f08ff6aa1ca33439b5a4828df89267fe6bc -->
+```
+        <source>Copy &amp;raw transaction</source>
+        <translation>複製交易(原始)</translation>
+    
+ERR
+The ampersand (&amp;) indicating the shortcut key is missing in the translation, but it should exist exactly once according to the rules. Also, the suggested shortcut key should be present.
+
+Correct translation:
+复制(&R)交易原始数据
+
+Or, if you want to stick closer to the original placement:
+
+复制原始(&R)交易
+
+Or, if the shortcut key can be anywhere as per context:
+
+复制原始交易(&R)
+
+Explanation: The shortcut key (usually specified with & plus a letter, corresponding to a keyboard accelerator) must be preserved exactly once in the translation. The provided translation omits it.
+```
+
+<!-- cache_translation_check_zh_ad835176286ec5001b2d46ca1cecbac97741bc5c25c342e04972405d7b6424e8 -->
+```
+        <source>&amp;Show transaction details</source>
+        <translation>顯示交易明細</translation>
+    
+ERR
+The translation is missing the '&' which indicates the shortcut key in the source. It should appear exactly once in the translation.
+
+Correct translation:
+&顯示交易明細
+```
+
+<!-- cache_translation_check_zh_e21c2f6290c8559f0fc42bb3c784a6a516fa3fe5c8b77d55fb3a33fc91446925 -->
+```
+        <source>Increase transaction &amp;fee</source>
+        <translation>增加礦工費(&amp;fee)</translation>
+    
+ERR
+The ampersand (&) should exist exactly once and is used to indicate the shortcut key. In Chinese translations, it is usual to place it before the shortcut character in the translation, not to include the English word 'fee' in parentheses. Also, "矿工费" is the standard for "transaction fee". The proper translation should be:
+
+增加交易手续费(&F)
+```
+
+<!-- cache_translation_check_zh_c7322b733fb6e07eeb0c5a4f89faf9d956509351ec4b36c6ad2b25b6f1a6acf6 -->
+```
+        <source>Error: Dumpfile identifier record is incorrect. Got "%s", expected "%s".</source>
+        <translation>
+錯誤：轉存檔案識別記錄不正確。獲得%s，預期
+%s。</translation>
+    
+ERR
+There are minor issues:
+1. Inconsistent handling of the format specifiers "%s": in Chinese, there should be no space or line break before them, and the phrasing isn't very natural.
+2. Unnecessary line break and whitespace in the translation.
+3. "獲得" is less common for 'got' in this context; "实际为" is more idiomatic.
+
+Correct translation:
+錯誤：轉存檔案識別記錄不正確。實際為「%s」，預期為「%s」。
+```
+
+<!-- cache_translation_check_zh_78a3727db7b2c58049bfbe79faf011a77473fd002f75700a072bffc43d41b2bc -->
+```
+        <source>More than one onion bind address is provided. Using %s for the automatically created Tor onion service.</source>
+        <translation>提供多數TOR路由綁定位址。 對自動建立的Tor服務用%s</translation>
+    
+ERR
+There are several issues: 
+1. The translation does not accurately reflect the original meaning; "多數" is awkward, and "路由綁定" is a literal translation not commonly used in this context.
+2. The flow and specificity (e.g., "onion service") are lost.
+3. There is inconsistent spacing (a space after the period).
+4. "TOR" should be "Tor" for consistency.
+
+Correct translation:
+提供了多个Onion绑定地址。将使用%s作为自动创建的Tor onion服务。
+```
+
 <!-- cache_translation_check_zh_90fda8f6932228d174e380ed1c7df7be7ae98d00ff1e42c56766226c0f6bb80a -->
 ```
         <source>Option '-checkpoints' is set but checkpoints were removed. This option has no effect.</source>
@@ -99,18 +189,6 @@ The translation is accurate and appropriate, but there is a minor formatting iss
 
 Corrected translation:
 修剪：上次钱包同步超出了已修剪的数据范围。您需要执行“-reindex”（对于已修剪节点，需要重新下载整个区块链）。
-```
-
-<!-- cache_translation_check_zh_eb968025b9240f22a7d27bd23c989a8fc00fef0ee8185f551adcffb7a2452904 -->
-```
-        <source>-paytxfee is deprecated and will be fully removed in v31.0.</source>
-        <translation>“-paytxfee”已弃用，并将在 v31.0 中完全移除。 </translation>
-    
-ERR
-The translation is accurate in meaning, but contains an extra trailing space before the closing tag. Also the source did not include quotes; using Chinese quotes is acceptable but optional.
-
-Correct translation (no trailing space):
-“-paytxfee”已弃用，并将在 v31.0 中完全移除。
 ```
 
 <!-- cache_translation_check_zh_212c3af68e90ae4a89c435e0fc3e60da04c4a65ab354a77723b7b670db8e3821 -->
@@ -214,4 +292,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 15.
+Number of issues: 20.

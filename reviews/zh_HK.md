@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>zh_HK</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bzh_HK%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bzh_HK%5D%20request)
 
 
 <!-- cache_translation_check_zh_HK_0612e8aef0b85cca15b3d2220e063d00d5e249fa27727fd2ab0830cdcc07978c -->
@@ -437,18 +437,6 @@ Correct translation:
 處理磁碟上的區塊…
 ```
 
-<!-- cache_translation_check_zh_HK_9b597fdeceb734048b54fca888e785be4c6a3b290c047827f79b9f1d0cc02a38 -->
-```
-        <source>Connecting to peers…</source>
-        <translation>连接到节点...</translation>
-    
-ERR
-The translation uses Simplified Chinese characters ('连接', '节点') instead of the Traditional Chinese characters ('連接', '節點') used in Hong Kong (zh_HK). Additionally, it uses the standard ellipsis '...' instead of the full-width version '...' or '…' often preferred, although the source uses the Unicode character '…'.
-
-Correct translation:
-連接到節點...
-```
-
 <!-- cache_translation_check_zh_HK_672d27fe7f8d0443e7e9dca4fc5050d211f316d737a276cbc5bab5b59e9ae663 -->
 ```
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
@@ -471,18 +459,6 @@ The translation uses Simplified Chinese characters ("显示", "用过的", "付�
 
 Correct translation:
 顯示已使用的發送地址和標籤列表
-```
-
-<!-- cache_translation_check_zh_HK_0f1a5580fe170b0a6c6f6c95bf031cd3d8224d23eb0b6e6468288b4ce166070e -->
-```
-        <source>Show the list of used receiving addresses and labels</source>
-        <translation>显示用过的收款地址和标签的列表</translation>
-    
-ERR
-The translation uses Simplified Chinese characters ("显示", "过", "个") which is inappropriate for the 'zh_HK' (Hong Kong) locale, which uses Traditional Chinese characters.
-
-Correct translation:
-顯示已使用的收款地址和標籤列表
 ```
 
 <!-- cache_translation_check_zh_HK_82248c70b987b3378a52639122590e5d7836713e604eda3b53265e2482a88c72 -->
@@ -2189,18 +2165,6 @@ Correct translation:
 支付交易費用：
 ```
 
-<!-- cache_translation_check_zh_HK_488a31aac260773afaaa52303dc65dcf6d65dc211e76753ff912703f6143a292 -->
-```
-        <source>Transaction has %1 unsigned inputs.</source>
-        <translation>交易有％1個未簽名的inputs。</translation>
-    
-ERR
-The translation contains a full-width percent sign (％) instead of the standard half-width percent sign (%) used in the format specifier. Additionally, "inputs" should be translated into Chinese for consistency.
-
-Correct translation:
-交易有 %1 個未簽名的輸入。
-```
-
 <!-- cache_translation_check_zh_HK_52db82fd0e56b9e88c10209d32f307de41bc0e426560994330510e90672d8f26 -->
 ```
         <source>Transaction still needs signature(s).</source>
@@ -3858,18 +3822,6 @@ Correct translation:
 收款人地址無效。請重新檢查。
 ```
 
-<!-- cache_translation_check_zh_HK_69820cec2a09029d07f3ee39ce7bfa738b42e2dcd34e624111591f7fc1244349 -->
-```
-        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>计入 %1 手续费后，金额超出了您的余额。</translation>
-    
-ERR
-The translation uses Simplified Chinese characters ('计', '续', '额'), whereas 'zh_HK' (Hong Kong) requires Traditional Chinese characters.
-
-Correct translation:
-計入 %1 手續費後，金額超出了您的餘額。
-```
-
 <!-- cache_translation_check_zh_HK_d237b345064d3ca2fbaccd58b58f57fdd0c857644846998a88c2fce491c49a4f -->
 ```
         <source>Transaction creation failed!</source>
@@ -5260,18 +5212,6 @@ Correct translation:
 無法還原錢包備份。</reply>
 ```
 
-<!-- cache_translation_check_zh_HK_eb968025b9240f22a7d27bd23c989a8fc00fef0ee8185f551adcffb7a2452904 -->
-```
-        <source>-paytxfee is deprecated and will be fully removed in v31.0.</source>
-        <translation>“-paytxfee”已弃用，并将在 v31.0 中完全移除。 </translation>
-    
-ERR
-The translation uses Simplified Chinese characters ("已弃用", "移除") and punctuation styles (the space at the end) instead of Traditional Chinese characters typically used in Hong Kong ('zh_HK'). Additionally, there is a stray space at the end of the translation.
-
-Correct translation:
-「-paytxfee」已不推薦使用，並將在 v31.0 中完全移除。
-```
-
 <!-- cache_translation_check_zh_HK_53950a242f5e59667590d6062ab692d881b51fc70b20f8126ac90fdb8f05e08f -->
 ```
         <source>Block verification was interrupted</source>
@@ -6256,4 +6196,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 511.
+Number of issues: 506.

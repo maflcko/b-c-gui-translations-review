@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>hi</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bhi%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bhi%5D%20request)
 
 
 <!-- cache_translation_check_hi_de52c986d77bb8e5e465245ef81cc19e38c931d538ba0ece1b78e6e746ea2dcd -->
@@ -241,30 +241,6 @@ The translation is missing the ellipsis (…) present in the source text. Additi
 
 Correct translation:
 &संदेश पर हस्ताक्षर करें…
-```
-
-<!-- cache_translation_check_hi_22237f7acd9c59b5a600e9a47b4700d4b2e9d99a40a9a793c904e9206267c7f4 -->
-```
-        <source>&amp;Command-line options</source>
-        <translation>कमांड-लाइन विकल्प</translation>
-    
-ERR
-The translation is missing the shortcut key indicator '&amp;' which was present in the source text. Per the instructions, if it exists in the source, it should exist exactly once in the translation.
-
-Correct translation:
-&amp;कमांड-लाइन विकल्प
-```
-
-<!-- cache_translation_check_hi_936b2601d59429b05aa55a86c2e0dcf204270fcdb0169a69877ce911a7b69923 -->
-```
-        <source>Catching up…</source>
-        <translation>पीछा कर रहा है…</translation>
-    
-ERR
-The Hindi translation "पीछा कर रहा है" is a literal translation of "chasing" or "following someone." In the context of software or Bitcoin synchronization, this is incorrect and sounds unnatural. A more appropriate term would relate to synchronization or updating.
-
-Correct translation:
-सिंक्रनाइज़ किया जा रहा है…
 ```
 
 <!-- cache_translation_check_hi_20a2a3357e722e3717ef28dfd320f86b4aabf12e5d0f63d6c00bac93fe110ad6 -->
@@ -767,6 +743,18 @@ Correct translation:
 विरोधाभासी
 ```
 
+<!-- cache_translation_check_hi_5180f4a954ef278339f73ad8d8bb541239d9bccdffa9f5904d0d25b6bac96444 -->
+```
+        <source>Copy &amp;label</source>
+        <translation>कॉपी  &amp;लेबल</translation>
+    
+ERR
+There is an extra space between "कॉपी" and "&लेबल". The correct translation should not have double spaces.
+
+Correct translation:
+कॉपी &लेबल
+```
+
 <!-- cache_translation_check_hi_d8d5666caad9cb7fab78076343fac8869cfbb56141b580f5dbc3f6544e3a54f7 -->
 ```
         <source>Signer error</source>
@@ -814,19 +802,16 @@ Correct translation:
 -assumeutxo snapshot state को सत्यापित करने में %s विफल रहा। यह हार्डवेयर समस्या, सॉफ़्टवेयर में बग, या ऐसा खराब सॉफ़्टवेयर संशोधन है जिसने एक अमान्य स्नैपशॉट लोड होने की अनुमति दी। इसके परिणामस्वरूप, नोड बंद हो जाएगा और स्नैपशॉट पर निर्मित किसी भी स्थिति का उपयोग करना बंद कर देगा, जिससे चेन की ऊँचाई %d से %d पर रीसेट हो जाएगी। अगले पुनरारंभ पर, नोड किसी भी स्नैपशॉट डेटा का उपयोग किए बिना %d से सिंक करना फिर से शुरू कर देगा। कृपया यह घटना %s को रिपोर्ट करें, तथा यह भी बताएं कि आपने स्नैपशॉट कैसे प्राप्त किया। अमान्य स्नैपशॉट चेनस्टेट को डिस्क पर छोड़ दिया जाएगा, ताकि यह उस समस्या के निदान में सहायक रहे जिसने यह त्रुटि उत्पन्न की।
 ```
 
-<!-- cache_translation_check_hi_10124f311d84454e939d798c66dba60dea5a9baa74812ff479e0b877667fafa8 -->
+<!-- cache_translation_check_hi_be4aa1c17b20c699bb5e0c1b36135871fb3392158f985ee1eb70d5367013fe64 -->
 ```
         <source>%s request to listen on port %u. This port is considered "bad" and thus it is unlikely that any peer will connect to it. See doc/p2p-bad-ports.md for details and a full list.</source>
-        <translation>%s अनुरोध %u पोर्ट पर सुनने का. इस बंदरगाह को "खराब" माना जाता है और इस प्रकार यह संभावना नहीं है कि कोई भी सहकर्मी इससे जुड़ेगा। विवरण और पूरी सूची के लिए doc/p2p-bad-ports.md देखें।</translation>
+        <translation>%u पोर्ट पर सुनने का %s अनुरोध. इस बंदरगाह को "खराब" माना जाता है और इस प्रकार यह संभावना नहीं है कि कोई भी सहकर्मी इससे जुड़ेगा। विवरण और पूरी सूची के लिए doc/p2p-bad-ports.md देखें।</translation>
     
 ERR
-There are issues with the translation:
-1. The translation of "port" as "बंदरगाह" is inaccurate in this context. In computing, "port" should be translated as "पोर्ट".
-2. The sentence structure is somewhat awkward with "अनुरोध %u पोर्ट पर सुनने का". It should follow the original sentence structure.
-3. The format specifiers %s and %u are preserved but the sentence is not smooth in Hindi and is missing the correct auxiliary verbs.
+The translation for "port" as "बंदरगाह" (bandargāh) is incorrect in a technical context. While it means a maritime port (harbor), in computing, "पोर्ट" (port) should be transliterated. Additionally, the word order in the first sentence is slightly unnatural.
 
 Correct translation:
-%s ने पोर्ट %u पर सुनने का अनुरोध किया है। इस पोर्ट को "खराब" माना जाता है, इसलिए शायद ही कोई पीयर इससे जुड़ेगा। विवरण और पूरी सूची के लिए doc/p2p-bad-ports.md देखें।
+पोर्ट %u पर सुनने का %s अनुरोध। इस पोर्ट को "खराब" माना जाता है और इसलिए इसकी संभावना कम है कि कोई पीयर (peer) इससे जुड़ेगा। विवरण और पूरी सूची के लिए doc/p2p-bad-ports.md देखें।
 ```
 
 <!-- cache_translation_check_hi_d8c2b4e6293bee98726f7dbb5011ac8a42b9fdd4d5e4379416486ea3e4540cad -->
@@ -1047,4 +1032,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 80.
+Number of issues: 79.

@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>cy</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bcy%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bcy%5D%20request)
 
 
 <!-- cache_translation_check_cy_e73b235c39ca06478e60e913dcdea36f33470f19a408004272b74b99ae3bd108 -->

@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>nl</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bnl%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bnl%5D%20request)
 
 
 <!-- cache_translation_check_nl_13117fa3236539da3becc8bd6cfad278b705499855fc0537d48eb43d7ab3c163 -->
@@ -43,18 +43,6 @@ The translation is missing the single '&' accelerator required to indicate the s
 
 Correct translation:
 &Ontvangstadressen
-```
-
-<!-- cache_translation_check_nl_e339536e34398b8608d336b7cd31ad47ce7066d42bb5df7b260e1ac3929a626a -->
-```
-        <source>Restore and Migrate Wallet File...</source>
-        <translation>Herstel en Migreer Wallet File</translation>
-    
-ERR
-The translation is missing the ellipsis (...) at the end of the string, which is present in the source and indicates that a further action or dialog follows. Additionally, "Wallet File" is better translated as "walletbestand" in Dutch.
-
-Correct translation:
-Herstel en migreer walletbestand...
 ```
 
 <!-- cache_translation_check_nl_3abf29fa1c69c8582c4c7d68292ee911dc49218e9f9a0fcb4325a38b6000c379 -->
@@ -391,4 +379,4 @@ Kan de HTTP-server niet starten. Zie het debuglogboek voor details.
 ```
 </details>
 
-Number of issues: 31.
+Number of issues: 30.

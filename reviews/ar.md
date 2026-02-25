@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>ar</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bar%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bar%5D%20request)
 
 
 <!-- cache_translation_check_ar_acd2d60576ab14a19d03963efa11e1988ce22fa2fbf42f485fe63877de4de84e -->
@@ -276,45 +276,40 @@ Correct translation:
 افتح &رابط…
 ```
 
-<!-- cache_translation_check_ar_15aff1a2eac2b1978f51a042352d320f4949824e7e4f3611a06af7fe614d2e3d -->
+<!-- cache_translation_check_ar_14ca9bea9b43e756a7b14057a2f7abf6fc6e055bee5cfebffcd910b94330b39f -->
 ```
         <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>‫أطلب مدفوعات (أنشئ رموز استجابة (QR Codes) وعناوين بتكوين)‬</translation>
+        <translation>أطلب دفعات (يولد كودات الرمز المربع وبيت كوين: العناوين المعطاة)</translation>
     
 ERR
-The translation is mostly accurate but could be improved for clarity and format consistency. "أنشئ" (generate) should be in the same imperative form as "أطلب" (request), but since the English uses the third person "generates" as an explanation, not as a command, the Arabic should better reflect that.
-
-Additionally, "bitcoin: URIs" is not specifically mentioned; "عناوين بتكوين" is ambiguous, as "address" (عنوان) can be confused with general address, not a URI format.
+The Arabic translation is unnatural and contains some inaccuracies. "كودات الرمز المربع" is a literal and clunky way to describe QR codes, and "العناوين المعطاة" (given addresses) is an incorrect translation for "URIs". In the context of Bitcoin, "bitcoin: URIs" should be kept as "روابط bitcoin:".
 
 Correct translation:
-‫طلب المدفوعات (ينشئ رموز QR وروابط bitcoin:)‬
+طلب مدفوعات (يولد رموز استجابة سريعة "QR" وروابط bitcoin:)
 ```
 
-<!-- cache_translation_check_ar_68de0cf320cf8bc29e51727757f58198209b84655ae5143d5e0294772aab10ee -->
+<!-- cache_translation_check_ar_89f172e2f6a63a087cb90c0de2ec6404af348be645b23bd077bd508aae61d312 -->
 ```
-        <source>Show the list of used receiving addresses and labels</source>
-        <translation>‫عرض قائمة العناوين المستلمة والمذكرات (المستخدمة سابقا)‬</translation>
+        <source>Catching up…</source>
+        <translation>يمسك…</translation>
     
 ERR
-The translation is somewhat inaccurate. The original mentions "used receiving addresses and labels," but the translation says "عرض قائمة العناوين المستلمة والمذكرات (المستخدمة سابقا)," which means "Show the list of received addresses and notes (used earlier)." The term "labels" was incorrectly translated as "المذكرات" (notes/memos), which is inaccurate. Also, "receiving" ("العناوين المستلمة") implies addresses that have received funds, while the English source means "receiving addresses" in general. Additionally, the phrase "(المستخدمة سابقا)" (used previously) is placed ambiguously and not directly tied to both "addresses and labels" as in the source.
+The translation "يمسك…" is a literal translation of "catching" in the sense of physically grabbing something. In the context of software or Bitcoin syncing, "Catching up" refers to the process of synchronized data updating.
 
 Correct translation:
-عرض قائمة عناوين الاستلام والملصقات المستخدمة
-
-Or, longer and clearer:
-عرض قائمة عناوين الاستلام والملصقات التي تم استخدامها
+جاري التحديث…
 ```
 
-<!-- cache_translation_check_ar_9a3f5b9d8c205be85da6e812c85c9f07f5e1647c4cf99ec67c6ec8e35dbd374a -->
+<!-- cache_translation_check_ar_9f2cb69e286a3e417ae73e6ec1dd0d0dcb24b4e04162c927dfd99cebc4309cf4 -->
 ```
-        <source>Last received block was generated %1 ago.</source>
-        <translation>‫آخر طابق مستلم تم بناءه قبل %1.</translation>
+        <source>Transactions after this will not yet be visible.</source>
+        <translation>المعاملات بعد ذلك لن تكون مريئة بعد.</translation>
     
 ERR
-The Arabic translation incorrectly uses "طابق" (which means "floor" as in a building), instead of "كتلة" for "block" in the Bitcoin context. There is no unwanted or spam content, but the meaning is wrong.
+The translation contains a spelling error in the word "مرئية" (visible). The word used in the translation is "مريئة", which is incorrect in this context.
 
 Correct translation:
-‫آخر كتلة تم استلامها تم إنشاؤها قبل %1.‬
+المعاملات بعد ذلك لن تكون مرئية بعد.
 ```
 
 <!-- cache_translation_check_ar_430ec446175a775969ed0971f5cfdff6117be4414232838159e0088428ba7214 -->
@@ -842,16 +837,18 @@ Correct translation:
 انسخ التوقيع الحالي إلى الحافظة
 ```
 
-<!-- cache_translation_check_ar_a6dca1005a4fa9c4178cdfbaab9b59e910c033044f2f38de32d88a535d9985be -->
+<!-- cache_translation_check_ar_cd5ebd9c12ed9ff66e2a0f11e9b876ccaec141ebd7261cfb6ab2bf601e091400 -->
 ```
-        <source>Copy &amp;label</source>
-        <translation>‫نسخ &amp;اضافة مذكرة‬</translation>
+        <source>own address</source>
+        <translation>عنوانه</translation>
     
 ERR
-The Arabic translation changes the meaning: "إضافة مذكرة" means "add note," not "label." It also contains bidi control characters. The shortcut ampersand is fine but should be kept with the correct term.
+The translation "عنوانه" means "his address," which is incorrect and gendered. The correct Arabic translation for "own address" is "عنوانك" if addressing singular "you," or "عنوانك الخاص" for a more general "your own address." If the context refers to "your own address" in the UI, then "عنوانك" or "عنوانك الخاص" is best.
 
 Correct translation:
-نسخ &التسمية
+عنوانك
+or
+عنوانك الخاص
 ```
 
 <!-- cache_translation_check_ar_459dfaa8aeddf4f6c7aedb4b5823f19a9beaa2586821423f96d790b199c451d1 -->
@@ -904,18 +901,6 @@ The provided text is mostly in Persian with garbled words, not Arabic, and is un
 
 Correct translation:
 التقليم: آخر مزامنة للمحفظة تتجاوز البيانات المُقلَّمة. تحتاج إلى تنفيذ -reindex (إعادة تنزيل سلسلة الكتل كاملةً في حالة العقدة المُقلَّمة)
-```
-
-<!-- cache_translation_check_ar_f7079146d3266ef38061ed4d5dd866c98ce3f68810198bbe6f7a698128e34dcf -->
-```
-        <source>-paytxfee is deprecated and will be fully removed in v31.0.</source>
-        <translation>-paytxfee منسوخ شده و در نسخه 31.0 به طور کامل حذف خواهد شد.</translation>
-    
-SPAM
-The translation is in Persian (Farsi), not Arabic.
-
-Correct translation:
--paytxfee مهمل وسيُزال بالكامل في v31.0.
 ```
 
 <!-- cache_translation_check_ar_daac836af7ca2ef2148a1c6997acfcc4583e169fc6b133a0b31675e92ca670fb -->
@@ -1003,4 +988,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 78.
+Number of issues: 77.

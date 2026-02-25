@@ -6,7 +6,7 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 
 <details><summary>ga_IE</summary>
 
-[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../issues/new?title=%5Bga_IE%5D%20request)
+[If the result is outdated or of low quality, please file an issue to request and updated run for this language.](../../../issues/new?title=%5Bga_IE%5D%20request)
 
 
 <!-- cache_translation_check_ga_IE_a8e31db341db4bf6c04b2a78085789cddb5a9706af1e4602c2e262635a88ac9d -->
@@ -278,18 +278,6 @@ The translation "Imirce sparán" is grammatically incorrect. "Imirce" is a noun 
 
 Correct translation:
 Imirigh sparán
-```
-
-<!-- cache_translation_check_ga_IE_005d23e54ec64c88aac901446bae5d38d9db37f7bf001e45e58c0d064b3cb8b8 -->
-```
-        <source>Restore and Migrate Wallet File...</source>
-        <translation>Athchóirigh agus Imircigh Comhad Sparán...</translation>
-    
-ERR
-The word "Imircigh" is a plural noun meaning "migrants" (people). The correct imperative verb form for "migrate" in Irish is "Imirigh".
-
-Correct translation:
-Athchóirigh agus Imirigh Comhad Sparán...
 ```
 
 <!-- cache_translation_check_ga_IE_3f39686b57742bc697792de8feeb01fee0d369a455df236054401d2835074a0f -->
@@ -1986,18 +1974,6 @@ Correct translation:
 Braitheadh luach neamhbhailí le haghaidh '-wallet' nó '-nowallet'. Teastaíonn luach teaghrán le '-wallet', agus ní ghlacann '-nowallet' ach le '1' chun gach sparán a dhíchumasú
 ```
 
-<!-- cache_translation_check_ga_IE_8674cee426f7964065121562ed9f05cd01de2d7970f92ffd9b7ebf9796056d0e -->
-```
-        <source>No dump file provided. To use dump, -dumpfile=&lt;filename&gt; must be provided.</source>
-        <translation>Níor soláthraíodh aon chomhad dumpála. Chun Dumpáil a úsáid, ní mór -dumpfile=&lt;filename&gt;a sholáthar.</translation>
-    
-ERR
-There is a missing space between the placeholder `<filename>` and the Irish particle `a`.
-
-Correct translation:
-Níor soláthraíodh aon chomhad dumpála. Chun Dumpáil a úsáid, ní mór -dumpfile=<filename> a sholáthar.
-```
-
 <!-- cache_translation_check_ga_IE_0e0ee60d2932351aa2a0c5099a8c437aa7768ebc8ab1e1686819b48cf23fce24 -->
 ```
         <source>Please contribute if you find %s useful. Visit %s for further information about the software.</source>
@@ -2491,4 +2467,4 @@ Sparán(áin) á fhíorú…
 ```
 </details>
 
-Number of issues: 201.
+Number of issues: 199.
