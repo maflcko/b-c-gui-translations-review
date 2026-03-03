@@ -91,20 +91,6 @@ Correct translation:
 पता सूची को %1 में सहेजने का प्रयास करते समय एक त्रुटि हुई। कृपया पुनः प्रयास करें।
 ```
 
-<!-- cache_translation_check_hi_596ff767fbc7f8215cc8436583d3160db794a234656d41fb13098a6c715f1e25 -->
-```
-        <source>Receiving addresses - %1</source>
-        <translation> रिसीवर के पते</translation>
-    
-ERR
-The translation is problematic for two reasons:
-1. The format specifier `%1` is missing from the translation.
-2. There is an unnecessary leading space at the beginning of the translation.
-
-Correct translation:
-प्राप्त करने वाले पते - %1
-```
-
 <!-- cache_translation_check_hi_7abea39230fa69741ecb5531b853760dd661ee0542017cee519506d4b6d0f158 -->
 ```
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
@@ -265,54 +251,6 @@ There is an extra space between "कॉपी" and "&लेबल". The correct 
 
 Correct translation:
 कॉपी &लेबल
-```
-
-<!-- cache_translation_check_hi_1de1929d3979d6b8231c99ee6720c2a28fdb72faba9abc38a4305e89adc0490f -->
-```
-        <source>Are you sure you wish to migrate the wallet &lt;i&gt;%1&lt;/i&gt;?</source>
-        <translation>क्या आपको यकीन है कि आप इस बटवे का स्थानांतरण करना चाहते है?</translation>
-    
-ERR
-The translation is missing the format specifier `%1` and the HTML tags `<i>` and `</i>` present in the source text.
-
-Correct translation:
-क्या आप वाकई वॉलेट <i>%1</i> को स्थानांतरित करना चाहते हैं?
-```
-
-<!-- cache_translation_check_hi_45851c162a9c3275808b9c7d36bf94e2c3992ba6805c77cce04ce5f497c46a7b -->
-```
-        <source>Migrating Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
-        <translation>बटवा स्थानांतरित हो रहा है</translation>
-    
-ERR
-The translation omits the placeholder `%1`, the HTML formatting tags `<b></b>`, and the ellipsis `…`. The placeholder is essential to identify which wallet is being migrated.
-
-Correct translation:
-वॉलेट <b>%1</b> माइग्रेट किया जा रहा है…
-```
-
-<!-- cache_translation_check_hi_9e09aad17f6530836c193ba52a0a9ba67b76cf4fe98a9832ad69160f77d54ea8 -->
-```
-        <source>The wallet '%1' was migrated successfully.</source>
-        <translation>बटवा स्थानांतरित कर दिया गया है</translation>
-    
-ERR
-The format specifier '%1' is missing in the translation. Additionally, the word "successfully" (सफलतापूर्वक) has been omitted.
-
-Correct translation:
-वॉलेट '%1' सफलतापूर्वक माइग्रेट कर दिया गया है।
-```
-
-<!-- cache_translation_check_hi_960abb337764c254bc0264dfa10ed9396dfabdc2d60a0657c4ddeb3a4b5988fc -->
-```
-        <source>Solvable but not watched scripts have been migrated to a new wallet named '%1'.</source>
-        <translation>हल करने योग्य लेकिन निगरानी में न लाई जा सकने वाली स्क्रिप्टों को नामक नए वॉलेट में स्थानांतरित कर दिया गया है।</translation>
-    
-ERR
-The translation is missing the format specifier '%1' which represents the name of the new wallet.
-
-Correct translation:
-हल करने योग्य लेकिन निगरानी में न रखी गई स्क्रिप्टों को '%1' नामक नए वॉलेट में स्थानांतरित कर दिया गया है।
 ```
 
 <!-- cache_translation_check_hi_44ea80b856552f42a7ab4203160945237be748c762c8803f95d933e7fa1038aa -->
@@ -802,18 +740,6 @@ Correct translation:
 -assumeutxo snapshot state को सत्यापित करने में %s विफल रहा। यह हार्डवेयर समस्या, सॉफ़्टवेयर में बग, या ऐसा खराब सॉफ़्टवेयर संशोधन है जिसने एक अमान्य स्नैपशॉट लोड होने की अनुमति दी। इसके परिणामस्वरूप, नोड बंद हो जाएगा और स्नैपशॉट पर निर्मित किसी भी स्थिति का उपयोग करना बंद कर देगा, जिससे चेन की ऊँचाई %d से %d पर रीसेट हो जाएगी। अगले पुनरारंभ पर, नोड किसी भी स्नैपशॉट डेटा का उपयोग किए बिना %d से सिंक करना फिर से शुरू कर देगा। कृपया यह घटना %s को रिपोर्ट करें, तथा यह भी बताएं कि आपने स्नैपशॉट कैसे प्राप्त किया। अमान्य स्नैपशॉट चेनस्टेट को डिस्क पर छोड़ दिया जाएगा, ताकि यह उस समस्या के निदान में सहायक रहे जिसने यह त्रुटि उत्पन्न की।
 ```
 
-<!-- cache_translation_check_hi_be4aa1c17b20c699bb5e0c1b36135871fb3392158f985ee1eb70d5367013fe64 -->
-```
-        <source>%s request to listen on port %u. This port is considered "bad" and thus it is unlikely that any peer will connect to it. See doc/p2p-bad-ports.md for details and a full list.</source>
-        <translation>%u पोर्ट पर सुनने का %s अनुरोध. इस बंदरगाह को "खराब" माना जाता है और इस प्रकार यह संभावना नहीं है कि कोई भी सहकर्मी इससे जुड़ेगा। विवरण और पूरी सूची के लिए doc/p2p-bad-ports.md देखें।</translation>
-    
-ERR
-The translation for "port" as "बंदरगाह" (bandargāh) is incorrect in a technical context. While it means a maritime port (harbor), in computing, "पोर्ट" (port) should be transliterated. Additionally, the word order in the first sentence is slightly unnatural.
-
-Correct translation:
-पोर्ट %u पर सुनने का %s अनुरोध। इस पोर्ट को "खराब" माना जाता है और इसलिए इसकी संभावना कम है कि कोई पीयर (peer) इससे जुड़ेगा। विवरण और पूरी सूची के लिए doc/p2p-bad-ports.md देखें।
-```
-
 <!-- cache_translation_check_hi_d8c2b4e6293bee98726f7dbb5011ac8a42b9fdd4d5e4379416486ea3e4540cad -->
 ```
         <source>Unsupported category-specific logging level %1$s=%2$s. Expected %1$s=&lt;category&gt;:&lt;loglevel&gt;. Valid categories: %3$s. Valid loglevels: %4$s.</source>
@@ -1032,4 +958,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 79.
+Number of issues: 73.

@@ -9,80 +9,18 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 <details><summary>da</summary>
 
 
-<!-- cache_translation_check_da_32eb9b258c630ba8d494a74f468dc15f49621e7e4166c96c05ad1c0dcae789dc -->
-```
-        <source>Right-click to edit address or label</source>
-        <translation>￼  Về     Tải về     blog     phát hành     Phát triển     Liên hệ                                Tiếng Anh                                                                                                    Tiếng Tây Ban Nha                                                  Nhật Bản                                                  Tiếng Trung giản thể                                                  繁體中文                                                                            Phát hành  Bitcoin Core 28.0  Bitcoin Core 27.1  Bitcoin Core 27.0  Bitcoin Core 26.2  Bitcoin Core 26.1  Bitcoin Core 26.0  Bitcoin Core 25.2  Bitcoin Core 25.1  Bitcoin Core 25.0  Bitcoin Core 24.2  Bitcoin Core 24.1  Lõi Bitcoin 24.0.1  Bitcoin Core 23.2  Bitcoin Core 23.1  Bitcoin Core 23.0  Bitcoin Core 22.1  Bitcoin Core 22.0  Bitcoin Core 0.21.2  Bitcoin Core 0.21.1  Bitcoin Core 0.21.0  Bitcoin Core 0.20.2  Bitcoin Core 0.20.1  Bitcoin Core 0.20.0  Bitcoin Core 0.19.1  Lõi Bitcoin 0.19.0.1  Bitcoin Core 0.18.1  Bitcoin Core 0.18.0  Lõi Bitcoin 0.17.1  Lõi Bitcoin 0.17.0.1  Bitcoin Core 0.17.0  Lõi Bitcoin 0.16.3  Lõi Bitcoin 0.16.2  Lõi Bitcoin 0.16.1  Bitcoin Core 0.16.0  Bitcoin Core 0.15.2  Lõi Bitcoin 0.15.1  Lõi Bitcoin 0.15.0.1  Bitcoin Core 0.15.0  Lõi Bitcoin 0.14.3  Bitcoin Core 0.14.2  Bitcoin Core 0.14.1  Bitcoin Core 0.14.0  Bitcoin Core 0.13.2  Lõi Bitcoin 10.11.12.8333  Bitcoin Core 0.13.0  Bitcoin Core 0.12.1  Bitcoin Core 0.12.0  Bitcoin Core 0.11.2  Bitcoin Core 1010568.11.1  Bitcoin Core 10.11.0..  Twitter Pháp lý | Chính sách bảo mật | RSS￼  ￼ © 2024 Lõi Bitcoin</translation>
-    
-SPAM
-The translation is not in Danish ('da'). Instead, it contains a large block of text in Vietnamese that appears to be scraped from a website header/footer related to Bitcoin Core releases, containing navigation links and version numbers.
-
-Correct translation:
-Højreklik for at redigere adresse eller mærkat
-```
-
-<!-- cache_translation_check_da_8149d08081b194022e936e45978c872e67ea104f2a9ef01418344084be27504f -->
-```
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>bc1qum5qxl55fvdy3muaka457ge06qdq678h7ugjv9</translation>
-    
-SPAM
-The provided translation is a specific Bitcoin address instead of a Danish translation of the source text.
-
-Correct translation:
-Dette er dine Bitcoin-adresser til at sende betalinger. Tjek altid beløbet og den modtagende adresse, før du sender coins.
-```
-
-<!-- cache_translation_check_da_1801bfcf21d5af4c00550ec37211640285523a511c5a99430e34204084d5924f -->
+<!-- cache_translation_check_da_80b350a290627784a58ba72f6a5ae492686ca48c16a30028f21356995fd24c9a -->
 ```
         <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>Dette er Bitcoin-adressene dine for å motta betalinger. Bruk «Opprett ny mottakeradresse»-knappen i mottaksfanen for å opprette nye adresser. bc1qum5qxl55fvdy3muaka457ge06qdq678h7ugjv9
-Signering er kun mulig med adresser av typen 'legacy'.</translation>
+        <translation>Disse er dine Bitcoin adresser til at modtage betalinger. Benyt 'Opret ny modtager adresse' knappen i modtag fanen for at oprette nye adresser.</translation>
     
-SPAM
-The translation is in Norwegian instead of Danish and includes a Bitcoin address (`bc1qum5qxl55fvdy3muaka457ge06qdq678h7ugjv9`) that is not present in the source text.
+ERR
+The translation is incomplete. It omits the entire second paragraph regarding signing with legacy addresses. Additionally, there are minor compound word spacing issues in Danish ("modtageradresse" and "modtagefanen" should ideally be compound words, though the missing sentence is the primary error).
 
 Correct translation:
-Dette er dine Bitcoin-adresser til modtagelse af betalinger. Brug knappen 'Opret ny modtagelsesadresse' i fanen modtag for at oprette nye adresser.
-Signering er kun muligt med adresser af typen 'legacy'.
-```
-
-<!-- cache_translation_check_da_5fc6494e91d36bd317b51db9dd2e82895c814c2eb2b6cd815bd7b17b68646574 -->
-```
-        <source>&amp;Copy Address</source>
-        <translation>BC1QUM5QXl55Fvdy3muaka457GE06QDQ678H7Ugjv9</translation>
-    
-SPAM
-Rather than providing a Danish translation for the command "&Copy Address", the translation contains a specific Bitcoin address.
-
-Correct translation:
-&Kopiér adresse
-```
-
-<!-- cache_translation_check_da_3d442b315648b4603421a9d0b51e527de8ba761ccfa0dadb117756945113dabf -->
-```
-        <source>Copy &amp;Label</source>
-        <translation>BC1QUM5QXl55Fvdy3muaka457GE06QDQ678H7Ugjv9</translation>
-    
-SPAM
-The translation is a Bitcoin address instead of a Danish translation of the source text.
-
-Correct translation:
-Kopiér &amp;mærkat
-```
-
-<!-- cache_translation_check_da_c8832a24e0879f925e1153d1a1cef60628946aa8060ab4882aba7bce34104a9a -->
-```
-        <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <extracomment>An error message. %1 is a stand-in argument for the name of the file we attempted to save to.</extracomment>
-        <translation>BC1QUM5QXl55Fvdy3muaka457GE06QDQ678H7Ugjv9</translation>
-    
-SPAM
-The translation provided is a Bitcoin address, which is unrelated to the source text and constitutes spam or malicious input.
-
-Correct translation:
-Der opstod en fejl under forsøget på at gemme adresselisten til %1. Prøv venligst igen.
+Disse er dine Bitcoin-adresser til at modtage betalinger. Benyt 'Opret ny modtageradresse'-knappen i modtag-fanen for at oprette nye adresser.
+Signering er kun mulig med adresser af typen 'legacy'.
 ```
 
 <!-- cache_translation_check_da_2218dd66486dc430cfaeb60111fb3d740d26cfdcd4e615cf1bd029344778a985 -->
@@ -304,4 +242,4 @@ Der skal angives en port med -whitebind: '%s'
 ```
 </details>
 
-Number of issues: 23.
+Number of issues: 18.

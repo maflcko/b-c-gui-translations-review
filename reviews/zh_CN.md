@@ -9,18 +9,6 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 <details><summary>zh_CN</summary>
 
 
-<!-- cache_translation_check_zh_CN_fc505b4b67f611633f017e7695c11226ce1a0f01727365c909a98995a03ce45b -->
-```
-        <source>Right-click to edit address or label</source>
-        <translation>magnet:?xt=urn:btih:18d9fafc70143d96348f5be8d8585f76da13a3cf</translation>
-    
-SPAM
-The translation is a Magnet link (BitTorrent URI) instead of a Chinese translation of the text.
-
-Correct translation:
-右键点击以编辑地址或标签
-```
-
 <!-- cache_translation_check_zh_CN_14cbe6cb141fedbd531029c3311edec151f50fcbc6e240192f51adad715c87a8 -->
 ```
         <source>An internal error occurred. %1 will attempt to continue safely. This is an unexpected bug which can be reported as described below.</source>
@@ -760,4 +748,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 60.
+Number of issues: 59.

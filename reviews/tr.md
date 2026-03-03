@@ -190,18 +190,6 @@ Correct translation:
 &URI'yi Aç…
 ```
 
-<!-- cache_translation_check_tr_97ae355cbf4e3ea580ce5ccaa249948835bcddfcdb2b1a968ab8ee884c1a5651 -->
-```
-        <source>%1 behind</source>
-        <translation>arkasında</translation>
-    
-ERR
-The translation is missing the format specifier '%1' which is required to show the time or number of blocks behind.
-
-Correct translation:
-%1 geride
-```
-
 <!-- cache_translation_check_tr_f5e0528619ddd1120287ccf5d52b1f4daca7bcdd91a307701dde1d5c0fb1b43b -->
 ```
         <source>&amp;Sending addresses</source>
@@ -566,18 +554,6 @@ or
 %1, %2 adresine gönderiliyor
 ```
 
-<!-- cache_translation_check_tr_20edda8e4e478dc6fa0f8373f3e2b23508501557b3a75e2ec4642fdfb8c4ed86 -->
-```
-        <source>Total Amount</source>
-        <translation>Toplam Tutar %1</translation>
-    
-ERR
-The translation includes a format specifier (%1) that is not present in the source text. Adding format specifiers where they don't exist in the source can cause errors in the software.
-
-Correct translation:
-Toplam Tutar
-```
-
 <!-- cache_translation_check_tr_0316934ac8aee6398276bddb648ad84224d90d5f4f6cdfece04255dc19feea07 -->
 ```
         <source>Outbound</source>
@@ -853,4 +829,4 @@ Hata: Sadece izlenen tx %s, sadece izlenen cüzdana eklenemedi
 ```
 </details>
 
-Number of issues: 65.
+Number of issues: 63.

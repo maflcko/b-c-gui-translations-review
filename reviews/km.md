@@ -121,54 +121,6 @@ Correct translation:
 %1 មីលីវិនាទី
 ```
 
-<!-- cache_translation_check_km_8b1d32dcde84235586e5e132b4d59b7a5a760f6e3d5710ff24c3574471530058 -->
-```
-        <source>%1 and %2</source>
-        <translation>%១​ នឹង %២</translation>
-    
-ERR
-The format specifiers '%1' and '%2' must be kept exactly as they are in the source text. Converting the digits to Khmer script (%១ and %២) will prevent the software from correctly identifying and replacing the placeholders with the intended data.
-
-Correct translation:
-%1 នឹង %2
-```
-
-<!-- cache_translation_check_km_753bf201153c649d86af84a3de7cbb26439bc26bcee596cb841e5d7f3c17beec -->
-```
-        <source>%1 B</source>
-        <translation>%១​ ប៊ៃ</translation>
-    
-ERR
-The format specifier '%1' has been incorrectly converted to Khmer numerals '%១'. Format specifiers must be preserved exactly as they appear in the source text for the software to correctly substitute the values.
-
-Correct translation:
-%1 ប៊ៃ
-```
-
-<!-- cache_translation_check_km_56dbaf4b5ef59424bd7c8f3d18fbac78116c9606f7b5f2297eccb6d48365329b -->
-```
-        <source>%1 MB</source>
-        <translation>%១​ មេហ្គាប៊ៃ</translation>
-    
-ERR
-The format specifier %1 was incorrectly modified. In software localization, format specifiers like %1, %2, etc., must be preserved exactly as they appear in the source text so that the application can correctly replace them with numerical values. The Khmer numeral "១" was used instead of the Arabic numeral "1".
-
-Correct translation:
-%1 មេហ្គាប៊ៃ
-```
-
-<!-- cache_translation_check_km_b6959d24d6407ab87e9d03986c3aa0833dcd1a30dcb8799b8271e4531c9f638b -->
-```
-        <source>%1 GB</source>
-        <translation>%១ ជីហ្គាប៊ៃ</translation>
-    
-ERR
-The format specifier '%1' was changed to use the Khmer digit '%១'. In software localization, format specifiers must remain in their original Latin/Arabic numeral format (e.g., %1, %2, %s) so the application can correctly identify and replace them with the intended variables.
-
-Correct translation:
-%1 ជីហ្គាប៊ៃ
-```
-
 <!-- cache_translation_check_km_6641b0dc49824dcc07ad72aa1737d4bfc84cbee2f9a8a3553f400e104950f2d0 -->
 ```
         <source>&amp;About %1</source>
@@ -351,18 +303,6 @@ The shortcut key indicator (&amp;) is missing in the translation. According to t
 
 Correct translation:
 &amp;ជំនួយ
-```
-
-<!-- cache_translation_check_km_b2cde9458e2e948f148d01b1ec8e869f0c24501c145289d2118d90b36572b57e -->
-```
-        <source>Last received block was generated %1 ago.</source>
-        <translation>ប៊ុកដែលបានទទួលចុងក្រោយត្រូវបានបង្កើត %១កន្លងរួចមកហើយ។</translation>
-    
-ERR
-The format specifier was changed from '%1' to '%១' (Khmer numeral). Technical format specifiers must be kept exactly as they appear in the source to ensure the software can correctly replace them with data. Additionally, the word for "Block" is misspelled as "ប៊ុក" (which sounds like 'book'); "ប្លុក" is the standard term.
-
-Correct translation:
-ប្លុកដែលបានទទួលចុងក្រោយត្រូវបានបង្កើត %1 កន្លងរួចមកហើយ។
 ```
 
 <!-- cache_translation_check_km_a2de638f38a8638f3da4dc86b004e42f3ce79465d68a6fbafca65bf005eac7a2 -->
@@ -649,57 +589,6 @@ Correct translation:
 អាសយដ្ឋានដែលបានបញ្ចូល "%1" គឺមានរួចហើយនៅក្នុងសៀវភៅអាសយដ្ឋានដែលមានស្លាក "%2"។
 ```
 
-<!-- cache_translation_check_km_8722f92a0246f269e39faf348d8a18ff2e1b84c128ffb49f1e5230c6c32460ce -->
-```
-        <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation>ទីតាំងផ្ទុកទិន្នន័យមានរួចរាល់។ បន្ថែម %១ ប្រសិនបើអ្នកចង់បង្កើតទីតាំងផ្ទុកទិន្នន័យថ្មីនៅទីនេះ។</translation>
-    
-ERR
-The translation uses the Khmer numeral '១' (U+17E1) instead of the western digit '1'. In software localization, format specifiers like '%1' must remain identical to the source to be correctly parsed by the application.
-
-Correct translation:
-ទីតាំងផ្ទុកទិន្នន័យមានរួចរាល់។ បន្ថែម %1 ប្រសិនបើអ្នកចង់បង្កើតទីតាំងផ្ទុកទិន្នន័យថ្មីនៅទីនេះ។
-```
-
-<!-- cache_translation_check_km_de410696744e226bbb943bd19d35c52b9c12b942f930171bbb0ff5aebddc1aa4 -->
-```
-        <source>About %1</source>
-        <translation>ប្រហែល %១</translation>
-    
-ERR
-The translation uses the wrong word for "About" in a software context and incorrectly modifies the format specifier. 
-
-1. In software menus, "About" (referring to information about the program) should be translated as "អំពី", whereas "ប្រហែល" means "approximately" or "maybe".
-2. The format specifier "%1" must remain in ASCII characters for the software to recognize it. Changing the digit "1" to the Khmer digit "១" will break the placeholder substitution.
-
-Correct translation:
-អំពី %1
-```
-
-<!-- cache_translation_check_km_c6ec966ff64c62a7452497d4fd5617b6748b46b631bddfb30f8f5e276855aa65 -->
-```
-        <source>Welcome to %1.</source>
-        <translation>សូមស្វាគមន៏ទៅកាន់ %១។</translation>
-    
-ERR
-The format specifier `%1` has been incorrectly changed to the Khmer digit `%១`. Format specifiers must be preserved exactly as they appear in the source text for the software to correctly substitute the variable. Additionally, the spelling of "Welcome" is slightly incorrect.
-
-Correct translation:
-សូមស្វាគមន៍មកកាន់ %1។
-```
-
-<!-- cache_translation_check_km_eaac2a8326ecc9ec52e6a20b3053b293b453a4a31565d46fbfd987347cbdfbfd -->
-```
-        <source>As this is the first time the program is launched, you can choose where %1 will store its data.</source>
-        <translation>កម្មវិធីនេះត្រូវបានដាក់ឲ្យដំណើរការជាលើកដំបូង ដូច្នេះអ្នកអាចជ្រើសរើស%១ នឹងរក្សាផ្ទុកទិន្នន័យ។</translation>
-    
-ERR
-The format specifier '%1' was changed to '%១' (using the Khmer numeral). In software localization, these placeholders must remain exactly as they appear in the source (ASCII) to be correctly identified and replaced by the program. Additionally, the word "where" was not clearly translated.
-
-Correct translation:
-កម្មវិធីនេះត្រូវបានដាក់ឲ្យដំណើរការជាលើកដំបូង ដូច្នេះអ្នកអាចជ្រើសរើសកន្លែងដែល %1 នឹងរក្សាទុកទិន្នន័យរបស់វា។
-```
-
 <!-- cache_translation_check_km_5e6fe003d12a2c8809e4670ac88c0d8b759ec14cbc5450112f7833aae07c5327 -->
 ```
         <source>Last block time</source>
@@ -846,33 +735,6 @@ Correct translation:
 សរុបប្រតិបត្តការដែលមិនទាន់ត្រូវបានបញ្ជាក់ ហើយមិនទាន់រាប់បញ្ចូលក្នុងសមតុល្យដែលអាចចំណាយបានទេ
 ```
 
-<!-- cache_translation_check_km_85007705d494ed1578495138ffebef909c599f9caa991cde0864e10e8597c757 -->
-```
-        <source>Failed to load transaction: %1</source>
-        <translation>មិនជោគជ័យក្នុងការបង្ហាញប្រត្តិបត្តិការៈ​ %១</translation>
-    
-ERR
-The translation has several issues:
-1. The format specifier `%1` was changed to `%១` (using the Khmer numeral 1). Format specifiers must remain exactly as they are in the source code (ASCII) to function correctly in the software.
-2. The word for "transaction" is misspelled as "ប្រត្តិបត្តិការ"; the correct spelling is "ប្រតិបត្តិការ".
-3. "បង្ហាញ" means "to show/display", whereas "load" is more accurately translated as "ផ្ទុក".
-
-Correct translation:
-បរាជ័យក្នុងការផ្ទុកប្រតិបត្តិការ៖ %1
-```
-
-<!-- cache_translation_check_km_582ecf53260c645e46f66af7aa62d72956fd43fc3bdf3e0687ae832193b42367 -->
-```
-        <source>Failed to sign transaction: %1</source>
-        <translation>មិនជោគជ័យក្នុងការចុះហត្ថលេខាលើប្រត្តិបត្តិការៈ %១</translation>
-    
-ERR
-The format specifier '%1' has been converted to the Khmer digit '%១'. In software localization, format specifiers must remain in their original ASCII format (e.g., %1, %2, %s) so the software can correctly identify and replace them with the intended variables. Additionally, there is a minor spelling error in the Khmer word for transaction (ប្រត្តិបត្តិការ should be ប្រតិបត្តិការ).
-
-Correct translation:
-មិនជោគជ័យក្នុងការចុះហត្ថលេខាលើប្រតិបត្តិការ៖ %1
-```
-
 <!-- cache_translation_check_km_497ffc842e0161d8f99f6e599380b282940209d6a40bb3ae1c9d0398c425ee61 -->
 ```
         <source>Unknown error processing transaction.</source>
@@ -883,30 +745,6 @@ There is an unnecessary leading whitespace in the translation. Also, the transla
 
 Correct translation:
 មិនស្គាល់កំហុសក្នុងការដំណើរការប្រាក់ប្រតិបត្តិការ។
-```
-
-<!-- cache_translation_check_km_87c30c6db2d1163b91183850ba5a88d506a39bac057e3abe7509dc6f306f70a2 -->
-```
-        <source>Transaction broadcast successfully! Transaction ID: %1</source>
-        <translation>ផ្សព្វផ្សាយប្រត្តិបត្តិការជោគជ័យ! ​​​​​​​​                ​​​ ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​                                                                                            អត្តសញ្ញាណប្រត្តិបត្តិការៈ %១</translation>
-    
-ERR
-The translation contains an excessive amount of unnecessary whitespace between the two sentences. Additionally, it uses the Khmer numeral "%១" instead of the standard format specifier "%1", which may prevent the software from correctly injecting the transaction ID.
-
-Correct translation:
-ផ្សព្វផ្សាយប្រតិបត្តិការដោយជោគជ័យ! អត្តសញ្ញាណប្រតិបត្តិការ៖ %1
-```
-
-<!-- cache_translation_check_km_e0c29cc3b5aa604e309e69b434dd04f763e950316119857b217fd205f13b49bb -->
-```
-        <source>Transaction broadcast failed: %1</source>
-        <translation>ផ្សព្វផ្សាយប្រត្តិបត្តិការមិនជោគជ័យៈ​%១</translation>
-    
-ERR
-The format specifier "%1" was incorrectly changed to "%១" (Khmer digit 1), which will prevent the software from correctly injecting the variable. Additionally, there is a spelling error in the word for "transaction".
-
-Correct translation:
-ផ្សព្វផ្សាយប្រតិបត្តិការមិនជោគជ័យ៖ %1
 ```
 
 <!-- cache_translation_check_km_7e87b91b0757f74bafe302d6739b9c5f33411806cfbce130dbe658a06f682e97 -->
@@ -1285,4 +1123,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 99.
+Number of issues: 86.

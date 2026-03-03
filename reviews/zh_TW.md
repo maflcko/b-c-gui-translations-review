@@ -913,30 +913,6 @@ Correct translation:
 這個變更需要重新啟動用戶端。
 ```
 
-<!-- cache_translation_check_zh_TW_2615f975446f92b1dcc34086adbc30d66395e733f7d8a9ec400c163b1318951f -->
-```
-        <source>Failed to load transaction: %1</source>
-        <translation>無法載入交易：％1</translation>
-    
-ERR
-The format specifier '%1' has been replaced with a full-width character '％1'. In many programming contexts, format specifiers must use the standard half-width '%' character to be recognized correctly by the software.
-
-Correct translation:
-無法載入交易：%1
-```
-
-<!-- cache_translation_check_zh_TW_4d8316c6943e8eb902be085bfb0974776b037a98feb038d84a3afb37bf050a30 -->
-```
-        <source>Failed to sign transaction: %1</source>
-        <translation>無法簽名交易：％1</translation>
-    
-ERR
-The translation uses a full-width percent sign '％' instead of the standard half-width '%' used in the format specifier. This will prevent the software from correctly replacing the placeholder with the intended variable.
-
-Correct translation:
-無法簽名交易：%1
-```
-
 <!-- cache_translation_check_zh_TW_1bb330048d59ad858b6ab445a9403ff587124bcf4f330492a641e4a78b32faa5 -->
 ```
         <source>Could not sign any more inputs.</source>
@@ -947,30 +923,6 @@ The translation uses the English word "input" instead of the standard Chinese (T
 
 Correct translation:
 無法再簽署任何輸入。
-```
-
-<!-- cache_translation_check_zh_TW_3f36d050ff17a707a586960e2695f55721a2fe19f9f0e9bb7cef3488d83ee57a -->
-```
-        <source>Transaction broadcast successfully! Transaction ID: %1</source>
-        <translation>交易成功廣播！交易 ID：％1</translation>
-    
-ERR
-The format specifier in the translation uses a full-width percent sign '％' instead of the standard half-width '%' used in the source. This will prevent the software from correctly substituting the transaction ID.
-
-Correct translation:
-交易成功廣播！交易 ID：%1
-```
-
-<!-- cache_translation_check_zh_TW_d9968a0ce01d53e7de66a6c2c0c9bc4e79b336fac482a1a72c41266f3c24d01f -->
-```
-        <source>Transaction broadcast failed: %1</source>
-        <translation>交易廣播失敗：％1</translation>
-    
-ERR
-The translation uses a full-width percent sign '％' instead of the standard half-width format specifier '%'. Format specifiers like '%1' must be preserved exactly as they appear in the source to ensure they are correctly processed by the software.
-
-Correct translation:
-交易廣播失敗：%1
 ```
 
 <!-- cache_translation_check_zh_TW_7738e3a0543017321794c6d8cd3ea74f4805131d2cce7e918c90fc5e9ddea40e -->
@@ -2612,4 +2564,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 211.
+Number of issues: 207.

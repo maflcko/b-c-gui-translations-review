@@ -593,28 +593,16 @@ Correct translation:
 儲存…
 ```
 
-<!-- cache_translation_check_zh-Hant_3f36d050ff17a707a586960e2695f55721a2fe19f9f0e9bb7cef3488d83ee57a -->
+<!-- cache_translation_check_zh-Hant_9d29978f3526975ee076f66863a290391fd37133400613dc9b865920b58f4af1 -->
 ```
         <source>Transaction broadcast successfully! Transaction ID: %1</source>
-        <translation>交易成功廣播！交易 ID：％1</translation>
+        <translation>交易成功廣播！交易 ID： %1</translation>
     
 ERR
-The translation uses a full-width percent sign '％' instead of the standard half-width percent sign '%' for the format specifier. This will prevent the software from correctly identifying and replacing the placeholder.
+There is an unnecessary space between the colon and the format specifier.
 
 Correct translation:
 交易成功廣播！交易 ID：%1
-```
-
-<!-- cache_translation_check_zh-Hant_d9968a0ce01d53e7de66a6c2c0c9bc4e79b336fac482a1a72c41266f3c24d01f -->
-```
-        <source>Transaction broadcast failed: %1</source>
-        <translation>交易廣播失敗：％1</translation>
-    
-ERR
-The translation uses a full-width percentage sign "％" instead of the half-width ASCII percentage sign "%" used in the source format specifier. This will prevent the software from correctly substituting the variable.
-
-Correct translation:
-交易廣播失敗：%1
 ```
 
 <!-- cache_translation_check_zh-Hant_d5b7f50fbccf0a2d8611f9433bfc9db677127483cccdfd4cf1ff4b35c96a762c -->
@@ -1326,4 +1314,4 @@ Correct translation (Traditional Chinese) with format specifiers preserved:
 ```
 </details>
 
-Number of issues: 102.
+Number of issues: 101.

@@ -33,30 +33,6 @@ Correct translation (with & included):
 Нусха олиш &Ёрлиқ
 ```
 
-<!-- cache_translation_check_uz@Cyrl_af51441b4a8f6c94fe8e843cae0435437a9d83d22addc6aba8195b316d4b8860 -->
-```
-        <source>Sending addresses - %1</source>
-        <translation>Manzil yuborilmoqda</translation>
-    
-ERR
-The translation is problematic for several reasons. First, 'uz@Cyrl' indicates Uzbek in the Cyrillic script, but the translation provided is in the Latin script. Second, the translation "Manzil yuborilmoqda" means "Address is being sent," which does not match the source "Sending addresses - %1" (where "Sending addresses" refers to a list or category of addresses used for sending, and %1 is a placeholder for a label or name). Third, the format specifier '%1' is missing from the translation.
-
-Correct translation:
-Жўнатиш манзиллари - %1
-```
-
-<!-- cache_translation_check_uz@Cyrl_7b3fa41b56d3b32b438ab63351c5d8d8c3136dfac855457306ca67cb46999aa4 -->
-```
-        <source>Receiving addresses - %1</source>
-        <translation>Qabul qilish manzillari</translation>
-    
-ERR
-The translation is missing the required format specifier '%1' and is written in the Latin script instead of the requested Cyrillic script (uz@Cyrl).
-
-Correct translation:
-Қабул қилиш манзиллари - %1
-```
-
 <!-- cache_translation_check_uz@Cyrl_73062f30966c6156c0858b5b56081c4c11a42eb4e97e4268b5f169f6a61786be -->
 ```
         <source>The passphrase entered for the wallet decryption is incorrect. It contains a null character (ie - a zero byte). If the passphrase was set with a version of this software prior to 25.0, please try again with only the characters up to — but not including — the first null character. If this is successful, please set a new passphrase to avoid this issue in the future.</source>
@@ -105,18 +81,6 @@ Alternatively, for clarity in the Bitcoin context:
 Таъқиқланган муддат
 
 Either is preferable.
-```
-
-<!-- cache_translation_check_uz@Cyrl_86c0a750ca36f5ff977cf5e9f487f2833b2333512cc1712a961e793c9e8df2a3 -->
-```
-        <source>Settings file %1 might be corrupt or invalid.</source>
-        <translation>Sozlamalar fayli buzilgan yoki yaroqsiz bo'lishi mumkin.</translation>
-    
-SPAM
-The translation is in Latin script (uz), not Cyrillic script (uz@Cyrl) as requested.
-
-Correct translation:
-Созламалар файли %1 шикастланган ёки яроқсиз бўлиши мумкин.
 ```
 
 <!-- cache_translation_check_uz@Cyrl_c410acb758314b160d6a38a7a7ed516964df2d5437a5f1438df8e258778b39b6 -->
@@ -923,18 +887,6 @@ Correct translation:
 "Умумий кўриниш" ёрлиғи учун махфийлик режими фаоллаштирилди. Қийматларни кўриш учун "Созламалар-&gt;Қийматларни ниқоблаш" танловидан белгини олиб ташланг.
 ```
 
-<!-- cache_translation_check_uz@Cyrl_d514c77bc0d72c968bb7e1f06c63aaa21e669cfb6fc07ca4aa148d24cb14a2fa -->
-```
-        <source>Failed to load transaction: %1</source>
-        <translation>Tranzaksiyani yuklab bo'lmadi</translation>
-    
-ERR
-The translation is written in Uzbek Latin script instead of the requested Uzbek Cyrillic script (uz@Cyrl). Additionally, the format specifier '%1' is missing from the translation.
-
-Correct translation:
-Транзакцияни юклаб бўлмади: %1
-```
-
 <!-- cache_translation_check_uz@Cyrl_51e0e582a0a1eb654dd898fd98c00e02e811efa7c2af9dacb1d777a1fa98db43 -->
 ```
         <source>Cannot sign inputs while wallet is locked.</source>
@@ -1225,4 +1177,4 @@ Correct translation (Cyrillic Uzbek) example:
 ```
 </details>
 
-Number of issues: 97.
+Number of issues: 93.

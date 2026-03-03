@@ -33,30 +33,6 @@ Suggested correction:
 &Yorliqni nusxalash
 ```
 
-<!-- cache_translation_check_uz@Latn_af51441b4a8f6c94fe8e843cae0435437a9d83d22addc6aba8195b316d4b8860 -->
-```
-        <source>Sending addresses - %1</source>
-        <translation>Manzil yuborilmoqda</translation>
-    
-ERR
-The translation is incorrect and incomplete. The English source "Sending addresses - %1" refers to a title or label for a list of addresses used for sending, including a placeholder %1. The Uzbek translation "Manzil yuborilmoqda" means "Address is being sent" and misses the placeholder.
-
-Correct translation:
-Jo'natish manzillari - %1
-```
-
-<!-- cache_translation_check_uz@Latn_7b3fa41b56d3b32b438ab63351c5d8d8c3136dfac855457306ca67cb46999aa4 -->
-```
-        <source>Receiving addresses - %1</source>
-        <translation>Qabul qilish manzillari</translation>
-    
-ERR
-The format specifier '%1' is missing in the translation. In this context, it usually represents the wallet name or a specific identifier that should be included.
-
-Correct translation:
-Qabul qilish manzillari - %1
-```
-
 <!-- cache_translation_check_uz@Latn_b6b006571f42e71027cb725efbc9547b8e83ec661e67ce85273f9ce42665f67a -->
 ```
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -1133,18 +1109,6 @@ Correct translation:
 "Umumiy ko'rinish" yorlig'i uchun maxfiylik rejimi faollashtirildi. Qiymatlarni ko‘rsatish uchun Sozlamalar->Qiymatlarni yashirish belgisini olib tashlang.
 ```
 
-<!-- cache_translation_check_uz@Latn_d514c77bc0d72c968bb7e1f06c63aaa21e669cfb6fc07ca4aa148d24cb14a2fa -->
-```
-        <source>Failed to load transaction: %1</source>
-        <translation>Tranzaksiyani yuklab bo'lmadi</translation>
-    
-ERR
-The translation is missing the format specifier '%1' which is present in the source text.
-
-Correct translation:
-Tranzaksiyani yuklab bo'lmadi: %1
-```
-
 <!-- cache_translation_check_uz@Latn_51e0e582a0a1eb654dd898fd98c00e02e811efa7c2af9dacb1d777a1fa98db43 -->
 ```
         <source>Cannot sign inputs while wallet is locked.</source>
@@ -1847,4 +1811,4 @@ Hamyonni qayta yozish kerak: bajarilishini yakunlash uchun %s ni qayta ishga tus
 ```
 </details>
 
-Number of issues: 144.
+Number of issues: 141.

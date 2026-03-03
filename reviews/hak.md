@@ -308,26 +308,6 @@ Correct translation:
 保存...
 ```
 
-<!-- cache_translation_check_hak_3f36d050ff17a707a586960e2695f55721a2fe19f9f0e9bb7cef3488d83ee57a -->
-```
-        <source>Transaction broadcast successfully! Transaction ID: %1</source>
-        <translation>交易成功廣播！交易 ID：％1</translation>
-    
-UNK_LANG, not familiar with the Hakka language 'hak'.
-```
-
-<!-- cache_translation_check_hak_d9968a0ce01d53e7de66a6c2c0c9bc4e79b336fac482a1a72c41266f3c24d01f -->
-```
-        <source>Transaction broadcast failed: %1</source>
-        <translation>交易廣播失敗：％1</translation>
-    
-ERR
-The format specifier '%1' was incorrectly changed to a full-width '％1'. In software localization, format specifiers must remain exactly as they appear in the source (half-width '%') to be correctly recognized by the application's string formatting engine.
-
-Correct translation:
-交易廣播失敗：%1
-```
-
 <!-- cache_translation_check_hak_0c2f3b1ca9da511a52168e61c92498723b5b95d121bdf4b2cf14fd3c7c628264 -->
 ```
         <source>Hide Peers Detail</source>
@@ -689,4 +669,4 @@ UNK_LANG, not familiar with the Hakka language 'hak'.
 ```
 </details>
 
-Number of issues: 59.
+Number of issues: 57.

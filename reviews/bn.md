@@ -258,19 +258,6 @@ Correct translation:
 &amp;অব্যয়িত আনলক করুন
 ```
 
-<!-- cache_translation_check_bn_da58da0e9712a69c80d888d8f008d7549657a7557dfa931c23de2288185e17f5 -->
-```
-        <source>Creating Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
-        <extracomment>Descriptive text of the create wallet progress window which indicates to the user which wallet is currently being created.</extracomment>
-        <translation>ওয়ালেট তৈরি করা হচ্ছে</translation>
-    
-ERR
-The translation omits the placeholder %1 and does not specify which wallet is being created, which is important information from the source sentence.
-
-Correct translation:
-ওয়ালেট &lt;b&gt;%1&lt;/b&gt; তৈরি করা হচ্ছে…
-```
-
 <!-- cache_translation_check_bn_a3525f0a9e5e5b15e9da8b7cd057efe9af462eb528910f30dedef4c13f499380 -->
 ```
         <source>Migrate wallet</source>
@@ -495,4 +482,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 36.
+Number of issues: 35.

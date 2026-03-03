@@ -44,18 +44,17 @@ There is an erroneous backtick (`) in "att ` emot", and "emot transaktionen" (re
 Välj den adress du vill ta emot mynt med
 ```
 
-<!-- cache_translation_check_sv_59af830f107e31ad5ddeeaddc4db12ca3df57e15e616b76a28f3932deb6da765 -->
+<!-- cache_translation_check_sv_419c5f283282efac6a9d3922e91d2f01ed05c2ec3749df0569e64e8777aa3060 -->
 ```
         <source>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation>These are your Bitcoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new Bc1qdcausn9bh24wyh8e76q2yz6sut3d226mu9qez
-Signing is only possible with addresses of the type 'legacy'.</translation>
+        <translation>Detta är dina Bitcoinadresser för att ta emot betalningar. Använd knappen 'Skapa ny mottagaradress' i mottagsfliken för att skapa nya adresser. Signering är bara tillgänglig för adresser av typen 'legacy'</translation>
     
 ERR
-The translation is largely in English rather than Swedish ('sv'). Additionally, it contains a specific Bitcoin address ("Bc1qdcausn9bh24wyh8e76q2yz6sut3d226mu9qez") that was not in the source text, replacing a portion of the instructions.
+The translation has a whitespace issue and is missing the final period. There is also a slight naturalness issue in the phrasing "mottagsfliken".
 
 Correct translation:
-Dessa är dina Bitcoin-adresser för att ta emot betalningar. Använd knappen 'Skapa ny mottagaradress' i fliken för mottagning för att skapa nya adresser.
+Detta är dina Bitcoin-adresser för att ta emot betalningar. Använd knappen 'Skapa ny mottagaradress' i fliken för mottagning för att skapa nya adresser.
 Signering är endast möjlig med adresser av typen 'legacy'.
 ```
 

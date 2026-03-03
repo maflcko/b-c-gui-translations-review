@@ -2081,30 +2081,6 @@ Correct translation:
 無法再為任何輸入項簽名。
 ```
 
-<!-- cache_translation_check_zh_HK_3f36d050ff17a707a586960e2695f55721a2fe19f9f0e9bb7cef3488d83ee57a -->
-```
-        <source>Transaction broadcast successfully! Transaction ID: %1</source>
-        <translation>交易成功廣播！交易 ID：％1</translation>
-    
-ERR
-The translation uses a full-width percent sign '％' instead of the standard half-width format specifier '%'. This will prevent the software from correctly substituting the transaction ID value into the string.
-
-Correct translation:
-交易成功廣播！交易 ID：%1
-```
-
-<!-- cache_translation_check_zh_HK_d9968a0ce01d53e7de66a6c2c0c9bc4e79b336fac482a1a72c41266f3c24d01f -->
-```
-        <source>Transaction broadcast failed: %1</source>
-        <translation>交易廣播失敗：％1</translation>
-    
-ERR
-The format specifier '%1' has been changed to a full-width character '％1'. Format specifiers must be kept exactly as they are in the source text to ensure the software can correctly replace them with the intended data.
-
-Correct translation:
-交易廣播失敗：%1
-```
-
 <!-- cache_translation_check_zh_HK_c6f503305d377a608cf941670f239649d93d350777ddea046e5bc277f225f15e -->
 ```
         <source>PSBT copied to clipboard.</source>
@@ -6196,4 +6172,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 506.
+Number of issues: 504.

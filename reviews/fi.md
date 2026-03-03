@@ -9,18 +9,6 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 <details><summary>fi</summary>
 
 
-<!-- cache_translation_check_fi_ca28a99d7ef95562936ff0867ab786f29b8451fbdae5915bbe753633f45dfabc -->
-```
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>bc1q5xtskdqtdld56wlxx4wdz3y4smanv977xyuv25</translation>
-    
-SPAM
-Rather than providing a Finnish translation, the response contains a Bitcoin address.
-
-Correct translation:
-Nämä ovat Bitcoin-osoitteesi maksujen lähettämistä varten. Tarkista aina summa ja vastaanottava osoite ennen kolikoiden lähettämistä.
-```
-
 <!-- cache_translation_check_fi_849826846a4e498b80089947afb083769ea98ba81d38ab65a280feed1b4e27b9 -->
 ```
         <source>Passphrase Dialog</source>
@@ -712,4 +700,4 @@ acceptstalefeeestimates-toimintoa ei tueta %s-ketjussa.
 ```
 </details>
 
-Number of issues: 54.
+Number of issues: 53.

@@ -9,18 +9,6 @@ The review quality depends on the LLM and the language. To report LLM shortcomin
 <details><summary>pt_BR</summary>
 
 
-<!-- cache_translation_check_pt_BR_538c78567c7dd94f623f47d7755a7d3ead61a5ace5e95dec557443e1efbc548b -->
-```
-        <source>Create a new address</source>
-        <translation>bc1q6lv58dpyg65x6n2ml78tuz5pjxr079yt7k9pu3</translation>
-    
-SPAM
-Rather than providing a translation in Portuguese, the response contains a specific Bitcoin address.
-
-Correct translation:
-Criar um novo endereço
-```
-
 <!-- cache_translation_check_pt_BR_39862a3e0db57571e272113d27ca3c80f7d9dd22e8c81bf4ce53aab6620d28b1 -->
 ```
         <source>Delete the currently selected address from the list</source>
@@ -33,77 +21,16 @@ Correct translation:
 Excluir o endereço atualmente selecionado da lista
 ```
 
-<!-- cache_translation_check_pt_BR_35e252d6f1496f407547afbab26a2401011135704060334f531fe492a5ada890 -->
+<!-- cache_translation_check_pt_BR_a03dfadbe26ac24159e551c5084f971c8b2eac099e09f2807cf2692b96c79379 -->
 ```
         <source>Export the data in the current tab to a file</source>
-        <translation>bitcoin:BC1Q6LV58DPYG65X6N2ML78TUZ5PJXR079YT7K9PU3</translation>
-    
-SPAM
-Rather than providing a translation into Brazilian Portuguese, the response contains a Bitcoin address.
-
-Correct translation:
-Exportar os dados na aba atual para um arquivo
-```
-
-<!-- cache_translation_check_pt_BR_fde9f2301d683429940f608ae010bcb359b184e7066d35ea1ea2cb0fcd746fc6 -->
-```
-        <source>Choose the address to receive coins with</source>
-        <translation>bc1q6lv58dpyg65x6n2ml78tuz5pjxr079yt7k9pu3</translation>
-    
-SPAM
-Rather than providing a Brazilian Portuguese translation, the response includes a specific Bitcoin address.
-
-Correct translation:
-Escolha o endereço para receber moedas com ele
-```
-
-<!-- cache_translation_check_pt_BR_0230761ff3e360e1e900f64bb863f592ea09d395d62a1c09f0f022dd3b43f9f4 -->
-```
-        <source>C&amp;hoose</source>
-        <translation>bc1q6lv58dpyg65x6n2ml78tuz5pjxr079yt7k9pu3</translation>
-    
-SPAM
-The translation provided is a Bitcoin address instead of a Portuguese translation of the word "Choose".
-
-Correct translation:
-Es&colher
-```
-
-<!-- cache_translation_check_pt_BR_0af82f0f0835e7d9dc42c364feabef570f524df3fd7e759aeab00c670b88b0dd -->
-```
-        <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <extracomment>An error message. %1 is a stand-in argument for the name of the file we attempted to save to.</extracomment>
-        <translation>%1bc1q6lv58dpyg65x6n2ml78tuz5pjxr079yt7k9pu3</translation>
-    
-SPAM
-The translation consists of a Bitcoin address instead of a translation of the source text.
-
-Correct translation:
-Houve um erro ao tentar salvar a lista de endereços em %1. Por favor, tente novamente.
-```
-
-<!-- cache_translation_check_pt_BR_88a03b242f8bed85f1f17e0a8d90bfabdcc93fdffc004355bbe692b63e04d7df -->
-```
-        <source>Sending addresses - %1</source>
-        <translation>Endereços de envio - %1bc1q6lv58dpyg65x6n2ml78tuz5pjxr079yt7k9pu3</translation>
-    
-SPAM
-The translation includes a specific Bitcoin address that was not present in the source text, which constitutes a security risk or spam.
-
-Correct translation:
-Endereços de envio - %1
-```
-
-<!-- cache_translation_check_pt_BR_8508a46e4ec21b037be2ed04831dc0e0bb0ecf1f14a9305d761367bd4c6b3dde -->
-```
-        <source>Receiving addresses - %1</source>
-        <translation>Endereços de recebimento - %1bc1q6lv58dpyg65x6n2ml78tuz5pjxr079yt7k9pu3</translation>
+        <translation>Exportar os dados do separador atual para um arquivo</translation>
     
 ERR
-The translation includes a hardcoded Bitcoin address (bc1q6lv58dpyg65x6n2ml78tuz5pjxr079yt7k9pu3) appended to the format specifier, which is not present in the source text and appears to be malicious or erroneous.
+The word "separador" is used for "tab" in European Portuguese (pt_PT). In Brazilian Portuguese (pt_BR), the standard term is "aba".
 
 Correct translation:
-Endereços de recebimento - %1
+Exportar os dados da aba atual para um arquivo
 ```
 
 <!-- cache_translation_check_pt_BR_fe1b65d4edc58a167f659205ffe6f0d4d3199af4942801915cb909e4bc067465 -->
@@ -1228,16 +1155,16 @@ Correct translation:
 Não foi possível efetuar a transação
 ```
 
-<!-- cache_translation_check_pt_BR_35e252d6f1496f407547afbab26a2401011135704060334f531fe492a5ada890 -->
+<!-- cache_translation_check_pt_BR_71df7b7a1a6534c32879113bd40022cd230b430639ec450204b5d9d5e463d3ce -->
 ```
         <source>Export the data in the current tab to a file</source>
-        <translation>bitcoin:BC1Q6LV58DPYG65X6N2ML78TUZ5PJXR079YT7K9PU3</translation>
+        <translation>Exportar os dados no separador atual para um ficheiro</translation>
     
-SPAM
-Rather than providing a translation into Brazilian Portuguese, the response contains a Bitcoin address.
+ERR
+The translation uses European Portuguese (pt_PT) vocabulary instead of Brazilian Portuguese (pt_BR). In Brazil, "tab" is translated as "aba" (instead of "separador") and "file" is translated as "arquivo" (instead of "ficheiro").
 
 Correct translation:
-Exportar os dados na aba atual para um arquivo
+Exportar os dados da aba atual para um arquivo
 ```
 
 <!-- cache_translation_check_pt_BR_ec7c9bb2138057fc208cb3afbcdcc503f33b9a1c06add64389d23b4294c039bc -->
@@ -1867,4 +1794,4 @@ Não foi possível gravar o arquivo de configurações
 ```
 </details>
 
-Number of issues: 149.
+Number of issues: 143.

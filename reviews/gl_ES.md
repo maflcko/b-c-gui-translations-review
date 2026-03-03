@@ -237,32 +237,6 @@ Correct translation:
 Aviso: ¡A tecla Bloq Maiús está activada!
 ```
 
-<!-- cache_translation_check_gl_ES_544e6a2cf9654b32c209f21d5b82186530940ec0c700b0d98022c33a38d84f58 -->
-```
-        <source>Do you want to reset settings to default values, or to abort without making changes?</source>
-        <extracomment>Explanatory text shown on startup when the settings file cannot be read. Prompts user to make a choice between resetting or aborting.</extracomment>
-        <translation>Produciuse un erro interno. %1 tentará continuar con seguridade. Este é un erro inesperado que pode informar como se describe a continuación.</translation>
-    
-SPAM
-The translation is unrelated to the source text. The source text asks whether to reset settings or abort, while the translation describes an internal error and suggests reporting it.
-
-Correct translation:
-¿Quere restablecer a configuración aos valores predeterminados ou abortar sen facer cambios?
-```
-
-<!-- cache_translation_check_gl_ES_2f0fe69f76b467399611cf222a9611b1374b46d13ad6b16ee8325d77417f1e1b -->
-```
-        <source>A fatal error occurred. Check that settings file is writable, or try running with -nosettings.</source>
-        <extracomment>Explanatory text shown on startup when the settings file could not be written. Prompts user to check that we have the ability to write to the file. Explains that the user has the option of running without a settings file.</extracomment>
-        <translation>Produciuse un erro interno. %1 tentará continuar con seguridade. Este é un erro inesperado que pode informar como se describe a continuación.</translation>
-    
-ERR
-The translation is completely incorrect and does not match the source text. It describes an internal error and continuing safely, rather than addressing the settings file writability or the -nosettings option.
-
-Correct translation:
-Produciuse un erro fatal. Comproba que o ficheiro de configuración teña permisos de escritura, ou proba a executar con -nosettings.
-```
-
 <!-- cache_translation_check_gl_ES_fc22b57ecc4fa222f5556fead8ab093eea9ef3443d4aef73cfc996369483b99c -->
 ```
         <source>&amp;Overview</source>
@@ -285,6 +259,30 @@ In Galician, the phrase "About [Name]" is correctly translated as "Acerca de" (o
 
 Correct translation:
 &Acerca de %1
+```
+
+<!-- cache_translation_check_gl_ES_a27eea9b3cf7b17b4d7a7523ffbcac78038647db19c5ce0288e67828cb3b3de7 -->
+```
+        <source>Syncing Headers (%1%)…</source>
+        <translation>Sincronizando Cabezeiras (%1%)...</translation>
+    
+ERR
+The word "Cabezeiras" is spelled incorrectly according to modern Galician orthography (RAG standards). The correct spelling is "Cabeceiras". Additionally, the translation uses three dots "..." instead of the horizontal ellipsis character "…" used in the source.
+
+Correct translation:
+Sincronizando cabeceiras (%1%)…
+```
+
+<!-- cache_translation_check_gl_ES_3c70ac795eb427b1fe617ec758d19e19efed2bc1338aa6ed830f8980bdcc1d6a -->
+```
+        <source>Connecting to peers…</source>
+        <translation>Connectando con compañeiros...</translation>
+    
+ERR
+The word "Connectando" is misspelled. In Galician, the verb is "conectar", so the gerund is "conectando" (with a single 'n'). Additionally, in the context of P2P networking, "peers" is more commonly translated as "pares" rather than "compañeiros".
+
+Correct translation:
+Conectando con pares…
 ```
 
 <!-- cache_translation_check_gl_ES_6c9bbdeee54e8f5e19a2314817794d3ed88a64fe6f8a03be5e55c2c315a300b8 -->

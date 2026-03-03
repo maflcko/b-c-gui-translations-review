@@ -146,18 +146,6 @@ Correct translation:
 Copia al porta-retalls
 ```
 
-<!-- cache_translation_check_ca_7329770a647e37936553412fbba15e72b96ddbf11fbfd0bf46a1b9e0690ac457 -->
-```
-        <source>Transaction broadcast successfully! Transaction ID: %1</source>
-        <translation>La transacció s'ha emès correctament! ID de la transacció: 1%</translation>
-    
-ERR
-The format specifier is incorrect. In the translation, "%1" has been changed to "1%", which will prevent the transaction ID from being displayed correctly.
-
-Correct translation:
-La transacció s'ha emès correctament! ID de la transacció: %1
-```
-
 <!-- cache_translation_check_ca_5cdaf36a6e5718765e670f188b076a29bf092b45611ee4b785f7142caca8ba54 -->
 ```
         <source>Transaction Relay</source>
@@ -423,4 +411,4 @@ S'està podant el magatzem de blocs…
 ```
 </details>
 
-Number of issues: 32.
+Number of issues: 31.

@@ -156,6 +156,18 @@ Correct translation:
 Níl ar Fáil
 ```
 
+<!-- cache_translation_check_ga_89d8a946a778ada2af9c61062d2586bdbb017bf73cd29216d35513e1e1d56b3c -->
+```
+        <source>Restore and Migrate Wallet File…</source>
+        <translation>Athchóirigh agus Imircigh Comhad Sparán…</translation>
+    
+ERR
+The translation uses the word "Imircigh", which is a noun meaning "migrants" (plural), rather than the imperative verb form "Imiric" (migrate).
+
+Correct translation:
+Athchóirigh agus Imiric Comhad Sparán…
+```
+
 <!-- cache_translation_check_ga_71f105c04bc3a7839d47ee7c3517f00982e44c7a44bb32089d473533a48f1587 -->
 ```
         <source>Syncing Headers (%1%)…</source>
@@ -506,19 +518,6 @@ Correct translation:
 Am an bhloic dheireanaigh
 ```
 
-<!-- cache_translation_check_ga_c415e2cb733e1ede59bb4ccc424131f45e2edf38260bbaa0389da80316ec13e5 -->
-```
-        <source>Outbound Manual: added using RPC %1 or %2/%3 configuration options</source>
-        <extracomment>Explanatory text for an outbound peer connection that was established manually through one of several methods. The numbered arguments are stand-ins for the methods available to establish manual connections.</extracomment>
-        <translation>Lámhleabhar Amach: curtha leis ag úsáid roghanna cumraíochta RPC %1 nó % 2/ %3</translation>
-    
-ERR
-There are incorrect spaces added between the format specifiers. "% 2/ %3" should be "%2/%3" to match the source formatting and ensure the variables are processed correctly.
-
-Correct translation:
-Lámhleabhar Amach: curtha leis ag úsáid roghanna cumraíochta RPC %1 nó %2/%3
-```
-
 <!-- cache_translation_check_ga_8e3580f9b44f60cd0a35aa583559d173f4d399321201a1e5e6eafe3ad17eb574 -->
 ```
         <source>detecting: peer could be v1 or v2</source>
@@ -660,18 +659,6 @@ The translation is understandable but not entirely correct or idiomatic in Irish
 
 Correct translation:
 Níl Replace-By-Fee, BIP-125, á chomharthaíocht.
-```
-
-<!-- cache_translation_check_ga_e849874bea537a9d7982bb34631e4ebde87f58814995366ed873aaa966b89aaf -->
-```
-        <source>The entered address does not refer to a legacy (P2PKH) key. Message signing for SegWit and other non-P2PKH address types is not supported in this version of %1. Please check the address and try again.</source>
-        <translation>Ní thagraíonn an seoladh isteach d'eochair leagáide (P2PKH). Ní thacaítear le síniú teachtaireachta do SegWit agus cineálacha seoltaí eile nach P2PKH iad sa leagan seo de % 1. Seiceáil an seoladh agus bain triail eile as.</translation>
-    
-ERR
-There is a stray space in the format specifier "% 1". It should be "%1" to match the source text and function correctly as a placeholder.
-
-Correct translation:
-Ní thagraíonn an seoladh isteach d'eochair leagáide (P2PKH). Ní thacaítear le síniú teachtaireachta do SegWit agus cineálacha seoltaí eile nach P2PKH iad sa leagan seo de %1. Seiceáil an seoladh agus bain triail eile as.
 ```
 
 <!-- cache_translation_check_ga_ef7e6af5c62970b5fe0e53653efe71cadf5a5edd2e0b616d73d414c9e1cb9686 -->
@@ -1002,4 +989,4 @@ Seoladh -proxy nó ainm óstach neamhbhailí, a chríochnaíonn le '=': '%s'
 ```
 </details>
 
-Number of issues: 74.
+Number of issues: 73.

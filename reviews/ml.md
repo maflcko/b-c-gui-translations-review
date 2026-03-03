@@ -46,19 +46,6 @@ Correct translation:
 കൊമയാൽ വേർതിരിച്ച മൂല്യങ്ങളുള്ള ഫയൽ (*.csv)
 ```
 
-<!-- cache_translation_check_ml_37e52440854166659a4efdc843a6693d94cfba81f140c9a86c446135f3f5ba6c -->
-```
-        <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <extracomment>An error message. %1 is a stand-in argument for the name of the file we attempted to save to.</extracomment>
-        <translation>ലേക്ക് വിലാസങ്ങൾ സേവ് ചെയ്യുന്നതിൽ ഒരു പിശകുണ്ടായിരുന്നു. ദയവായി വീണ്ടും ശ്രമിക്കുക.</translation>
-    
-ERR
-The format specifier '%1' is missing from the translation. In Malayalam, the postposition '-ലേക്ക്' (to) should follow the placeholder.
-
-Correct translation:
-%1-ലേക്ക് വിലാസങ്ങൾ സേവ് ചെയ്യുന്നതിൽ ഒരു പിശകുണ്ടായിരുന്നു. ദയവായി വീണ്ടും ശ്രമിക്കുക.
-```
-
 <!-- cache_translation_check_ml_e667454020e768cd06fc3105a8ef34bb6f82401d08f6c556122c7852bddbf6f5 -->
 ```
         <source>Sending addresses - %1</source>
@@ -264,18 +251,6 @@ Suggested correct translation:
 പീർസുമായി ബന്ധം സ്ഥാപിക്കുന്നു…
 
 (Alternatively: "പീയേഴ്സുമായി ബന്ധിപ്പിക്കുന്നു…")
-```
-
-<!-- cache_translation_check_ml_d7e50fb2db15be2c84b2368ff8a2cca61c2a5d6b6a126700f441c9f3ac531e63 -->
-```
-        <source>%1 behind</source>
-        <translation>1 % പുറകിൽ</translation>
-    
-ERR
-The format specifier '%1' has been modified to '1 %'. Format specifiers must be taken over exactly as they appear in the source text to ensure the software can correctly inject the variable.
-
-Correct translation:
-%1 പുറകിൽ
 ```
 
 <!-- cache_translation_check_ml_b013b88a2fa08694affbac4d438afa76bc15a9fd17432c5b8cf7091e63192080 -->
@@ -493,4 +468,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 38.
+Number of issues: 36.

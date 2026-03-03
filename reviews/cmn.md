@@ -271,18 +271,6 @@ Correct translation:
 保存…
 ```
 
-<!-- cache_translation_check_cmn_3f36d050ff17a707a586960e2695f55721a2fe19f9f0e9bb7cef3488d83ee57a -->
-```
-        <source>Transaction broadcast successfully! Transaction ID: %1</source>
-        <translation>交易成功廣播！交易 ID：％1</translation>
-    
-ERR
-The Chinese full-width character "％" is used instead of the ASCII percent sign "%", which can cause issues with format specifiers.
-
-Correct translation:
-交易成功广播！交易 ID: %1
-```
-
 <!-- cache_translation_check_cmn_0c2f3b1ca9da511a52168e61c92498723b5b95d121bdf4b2cf14fd3c7c628264 -->
 ```
         <source>Hide Peers Detail</source>
@@ -663,4 +651,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 50.
+Number of issues: 49.

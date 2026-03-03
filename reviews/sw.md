@@ -197,16 +197,16 @@ Correct translation:
 &Chaguo za mstari wa amri
 ```
 
-<!-- cache_translation_check_sw_c0674eb5e7a03b6270e95bf6dc7191a1f71f4bb09dc2ea120c8aa02c3265a5ff -->
+<!-- cache_translation_check_sw_dc068a7e431428f361529923ecffc8506585e4cafb56179af94bedab6323dc60 -->
 ```
         <source>Last received block was generated %1 ago.</source>
-        <translation>Kizuizi cha mwisho kilichopokelewa kilitolewa awali.</translation>
+        <translation>Kizuizi cha mwisho kilichopokelewa kilitolewa %1awali.</translation>
     
 ERR
-The translation is missing the required format specifier '%1', which represents the time duration (e.g., "5 minutes ago"). It also ends with "awali" (previously/initially) instead of providing a placeholder for the relative time.
+There is a whitespace formatting issue. There should be a space between the format specifier '%1' and the word 'awali'.
 
 Correct translation:
-Kizuizi cha mwisho kilichopokelewa kilitengenezwa %1 iliyopita.
+Kizuizi cha mwisho kilichopokelewa kilitolewa %1 awali.
 ```
 
 <!-- cache_translation_check_sw_255c7be7921031a3f1a701c09a1af76ab32dffb1ad983525ca5c08ff302e3ffd -->

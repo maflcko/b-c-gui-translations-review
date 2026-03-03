@@ -399,30 +399,6 @@ Correct translation:
 儲存…
 ```
 
-<!-- cache_translation_check_yue_3f36d050ff17a707a586960e2695f55721a2fe19f9f0e9bb7cef3488d83ee57a -->
-```
-        <source>Transaction broadcast successfully! Transaction ID: %1</source>
-        <translation>交易成功廣播！交易 ID：％1</translation>
-    
-ERR
-The translation uses a full-width percent sign (％) instead of the standard half-width percent sign (%) for the format specifier. This will prevent the software from correctly identifying and replacing the variable.
-
-Correct translation:
-交易成功廣播！交易 ID：%1
-```
-
-<!-- cache_translation_check_yue_d9968a0ce01d53e7de66a6c2c0c9bc4e79b336fac482a1a72c41266f3c24d01f -->
-```
-        <source>Transaction broadcast failed: %1</source>
-        <translation>交易廣播失敗：％1</translation>
-    
-ERR
-The translation uses a full-width percent sign '％' instead of the standard half-width percent sign '%' for the format specifier.
-
-Correct translation:
-交易廣播失敗：%1
-```
-
 <!-- cache_translation_check_yue_5f16a90889af775414df19badb1f1c67fc0f24ce77bc7b631b0cc27616758a1b -->
 ```
         <source>Cannot start bitcoin: click-to-pay handler</source>
@@ -1065,4 +1041,4 @@ Correct translation:
 ```
 </details>
 
-Number of issues: 82.
+Number of issues: 80.

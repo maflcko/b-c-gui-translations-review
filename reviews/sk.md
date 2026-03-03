@@ -81,32 +81,6 @@ Correct translation:
 Odoslaná transakcia
 ```
 
-<!-- cache_translation_check_sk_b17f1636a4741f9a8a39f3f9b8aabdc9347d79703cdce3008f9adc10759e5589 -->
-```
-        <source>Restoring Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
-        <extracomment>Descriptive text of the restore wallets progress window which indicates to the user that wallets are currently being restored.</extracomment>
-        <translation>Obnovovanie peňaženky</translation>
-    
-ERR
-The translation is incomplete. It misses the format specifier %1 (which represents the name of the wallet) and the bold HTML tags <b></b>, as well as the ellipsis.
-
-Correct translation:
-Obnovovanie peňaženky <b>%1</b>…
-```
-
-<!-- cache_translation_check_sk_b17f1636a4741f9a8a39f3f9b8aabdc9347d79703cdce3008f9adc10759e5589 -->
-```
-        <source>Restoring Wallet &lt;b&gt;%1&lt;/b&gt;…</source>
-        <extracomment>Descriptive text of the restore wallets progress window which indicates to the user that wallets are currently being restored.</extracomment>
-        <translation>Obnovovanie peňaženky</translation>
-    
-ERR
-The translation is incomplete. It misses the format specifier %1 (which represents the name of the wallet) and the bold HTML tags <b></b>, as well as the ellipsis.
-
-Correct translation:
-Obnovovanie peňaženky <b>%1</b>…
-```
-
 <!-- cache_translation_check_sk_a66adf836ad94d9e754ef32c5b2f5970e0237fd749b6c14afd31006a2c40612b -->
 ```
         <source>The entered address "%1" is not a valid Bitcoin address.</source>
@@ -457,4 +431,4 @@ Skúste spustiť najnovšiu verziu softvéru.
 ```
 </details>
 
-Number of issues: 35.
+Number of issues: 33.

@@ -218,6 +218,33 @@ Correct translation:
 Ert tú vísur í, at tú vilt flyta fartaskuna <i>%1</i>?
 ```
 
+<!-- cache_translation_check_fo_41d2fa1ad1ad5022f97b02c47947f1aeceea7ded7be0bb9b387d0dad0ba035d9 -->
+```
+        <source>Migrating the wallet will convert this wallet to one or more descriptor wallets. A new wallet backup will need to be made.
+If this wallet contains any watchonly scripts, a new wallet will be created which contains those watchonly scripts.
+If this wallet contains any solvable but not watched scripts, a different and new wallet will be created which contains those scripts.
+
+The migration process will create a backup of the wallet before migrating. This backup file will be named &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak and can be found in the directory for this wallet. In the event of an incorrect migration, the backup can be restored with the "Restore Wallet" functionality.</source>
+        <translation>Mappuupstigan formbroytur hesa mappuna til eina ella fleiri lyklalýsingar mappur. Ein nýggj mappa verður gjørd.
+Inniheldur mappan eygleiðingarscript, so verður ein nýggj mappa gjørd við teimum eygleiðingarscriptunum.
+Inniheldur mappan loysilig-script, ið ikki eru eygleiðingarscript, so verður ein nýggj mappa gjørd við teimum scriptunum.
+
+Uppstiganartilgongdin tekur eitt trygdaravrit, av mappuni, áðrenn uppstigan. Trygdaravritið verður kallað &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak og liggur í somu skjáttu sum hendan mappan. Í fall uppstiganin miseydnast, kann trygdaravritið verða endurinnlisið við "Endurinnles mappu" hentleikanum.</translation>
+    
+ERR
+The translation has several issues:
+1. It misses the word "backup" (trygdaravrit) in the second sentence, saying "a new wallet will be made" instead of "a new wallet backup will need to be made".
+2. It uses "mappa" (which usually means folder/directory) for "wallet" and "skjátta" (which usually means wallet/pouch) for "directory". In standard Faroese computing terminology, these should be reversed or clarified to avoid confusion.
+3. There are some minor grammatical/spacing issues (e.g., "lyklalýsingar mappur" should be a compound word "lyklalýsingarmappur").
+
+Correct translation:
+Uppstigan av mappuni fer at broyta hesa mappuna til eina ella fleiri lyklalýsingarmappur. Tørvur verður á at gera eitt nýtt trygdaravrit av mappuni.
+Inniheldur henda mappan eygleiðingarscript (watchonly), verður ein nýggj mappa gjørd, ið inniheldur hesi eygleiðingarscriptini.
+Inniheldur henda mappan script, ið kunnu loysast men ikki verða eygleidd, verður ein onnur og nýggj mappa gjørd, ið inniheldur hesi scriptini.
+
+Uppstiganartilgongdin ger eitt trygdaravrit av mappuni áðrenn uppstiganina. Henda trygdaravritafíla fær navnið <wallet name>-<timestamp>.legacy.bak og er at finna í mappuni hjá hesari mappuni. Um uppstiganin miseydnast, kann trygdaravritið endurinnlesast við "Endurinnles mappu" (Restore Wallet) hentleikanum.
+```
+
 <!-- cache_translation_check_fo_a5e31a9a8b851b1369e3e456be2251106400d5a1fa3dec8af82b4cac11213ed8 -->
 ```
         <source>Migrate Wallet</source>
@@ -278,16 +305,37 @@ Correct translation:
 Ert tú vísur í, at tú vilt endurstovna pungfíluna <i>%1</i> til <i>%2</i> og dagføra hana?
 ```
 
-<!-- cache_translation_check_fo_bb02e8c62f41d37e38bcffccac7a0ba91890c23085cfddacbea65382e23b4e95 -->
+<!-- cache_translation_check_fo_39046d49abbed4fbbbc749c524ac41e00129d0a8c8727c48caab2b9a89bcfd6a -->
+```
+        <source>Restoring the wallet will copy the backup file to the wallets directory and place it in the standard wallet directory layout. The original file will not be modified.
+
+Migrating the wallet will convert the restored wallet to one or more descriptor wallets. A new wallet backup will need to be made.
+If this wallet contains any watchonly scripts, a new wallet will be created which contains those watchonly scripts.
+If this wallet contains any solvable but not watched scripts, a different and new wallet will be created which contains those scripts.
+
+The migration process will create a backup of the wallet before migrating. This backup file will be named &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak and can be found in the directory for this wallet. In the event of an incorrect migration, the backup can be restored with the "Restore Wallet" functionality.</source>
+        <translation>Endurinnlesing av mappufílu avritar trygdaravritið til mappuskjáttuna. Upprunaliga fílin verður ikki broytt.
+
+Mappuupstigan formbroytur endurinnlisnu mappuna til eina ella fleiri lyklalýsingar mappur. Neyðugt verður at gera eitt nýtt mapputrygdaravrit.
+Inniheldur mappan eygleiðingarscript, so verður ein nýggj mappa gjørd við teimum eygleiðingarscriptunum.
+Inniheldur mappan loysilig-script, ið ikki eru eygleiðingarscript, so verður ein nýggj mappa gjørd við teimum scriptunum.
+
+Fyrst í uppstiganartilgongdini verður eitt trygdaravrit gjørt, av mappuni.
+Trygdaravritið verður kallað &lt;wallet name&gt;-&lt;timestamp&gt;.legacy.bak og liggur í somu skjáttu sum hendan mappan. Í fall uppstiganin miseydnast, kann trygdaravritið verða endurinnlisið við "Endurinnles mappu" hentleikanum.</translation>
+    
+UNK_LANG, not familiar with the Faroese language 'fo'.
+```
+
+<!-- cache_translation_check_fo_a0ae4e4034ed7928dc0b5cbf443f16cb5d3ac4f72867ba03918d5f0317fb0a4d -->
 ```
         <source>Make a blank wallet. Blank wallets do not initially have private keys or scripts. Private keys and addresses can be imported using descriptors at a later time.</source>
-        <translation>Ger eina tóma mappu. At byrja við innihalda tómar mappur ikki privatar lyklar ella script. HD rót ella privatir lyklar kunnu innleggjast seinni.</translation>
+        <translation>Ger eina tóma mappu. At byrja við innihalda tómar mappur ikki privatar lyklar ella script. Privatir lyklar og adressur kunnu innleggjast seinni við lyklalýsingun.</translation>
     
 ERR
-The translation contains technical inaccuracies. It uses "HD rót" (HD root) instead of a translation for "descriptors", and it omits the translation for "addresses". Additionally, while "mappa" (folder) is sometimes used for wallet, "pungur" is more common in a Bitcoin context in Faroese.
+The translation uses "mappa" (folder/file) instead of "pungur" or "lummi" for "wallet". Furthermore, there is a grammatical error in the word "lyklalýsingun", which should be in the dative plural "lyklalýsingum" after the preposition "við". Additionally, "innleggjast" (be put in/placed) is less accurate than "innflytast" for "imported".
 
 Correct translation:
-Ger ein tóman pung. At byrja við innihalda tómir pungar ikki privatar lyklar ella script. Privatir lyklar og adressur kunnu innleggjast við descriptors seinni.
+Ger ein tóman pung. Tómir pungar innihalda at byrja við hvørki privatar lyklar ella skript. Privatir lyklar og adressur kunnu innflytast seinni við lyklalýsingum.
 ```
 
 <!-- cache_translation_check_fo_de25c2c7d81e32ee82115d0bb73be924224ce521a382073ce8188e311e4667a5 -->
@@ -314,16 +362,16 @@ Correct translation:
 Formularur
 ```
 
-<!-- cache_translation_check_fo_01c434233d3a71c417196ba3fdcbf66dbd50f74f1537115e388f1a11b7df319a -->
+<!-- cache_translation_check_fo_a4331def6e62b6efa639a2f7148394e50efd386662fd77b64f4c2c9848c621bc -->
 ```
         <source>Used for reaching peers via:</source>
-        <translation>Brúka proxy'in at røkka javningum umvegis: </translation>
+        <translation>Brúka proxy'in at røkka javningum umvegis:</translation>
     
 ERR
-The translation includes "proxy'in" (the proxy), which is not present in the source text. There is also a stray trailing space before the closing tag. In Faroese, "javningum" is a common translation for "peers" in a networking context, but the sentence structure is slightly clunky.
+The translation includes the word "proxy'in" (the proxy), which is not present in the English source text. The English text is a general statement about reaching peers, not necessarily specifically via a proxy.
 
 Correct translation:
-Brúkt til at røkka javningum umvegis:
+Nýtt til at røkka javningum umvegis:
 ```
 
 <!-- cache_translation_check_fo_afc457a9861e6e314541de1c97b75f50c9bfc8f4443a7ca2539965090b713a24 -->
@@ -475,18 +523,6 @@ Correct translation:
 %1/kvB
 ```
 
-<!-- cache_translation_check_fo_7ec5f0f8cd7be1c7d2be5922f7c6d957b4df1714f98b78e6f5c2198d392341a7 -->
-```
-        <source>The signature could not be decoded.</source>
-        <translation>Undirskriftin er ógildig.</translation>
-    
-ERR
-The translation provided means "The signature is invalid" (Undirskriftin er ógildig), which is not an accurate translation of "The signature could not be decoded". The source text refers to a specific failure in processing/parsing the signature, distinct from a general validation failure.
-
-Correct translation:
-Undirskriftin kundi ikki avkotast.
-```
-
 <!-- cache_translation_check_fo_906ac37103d5b761ab3e492f8b300e161beeb13f6b7c92b69f788bbad6c6b64b -->
 ```
         <source>Create a new wallet</source>
@@ -573,6 +609,14 @@ Varnaðist ógildigt virði á '-wallet' ella '-nowallet'. '-wallet' krevur eitt
 UNK_LANG, not familiar with the Faroese language 'fo'.
 ```
 
+<!-- cache_translation_check_fo_361da5e91c3fed531cf1990766ce8c5b35e34f9fcbdce2c3c3739879f3be0ce8 -->
+```
+        <source>Error: Duplicate descriptors created during migration. Your wallet may be corrupted.</source>
+        <translation>Villa: Endurtiknar lyklalýsingar framleiddar undir uppstigan. Tín mappa kann verða avskeplað.</translation>
+    
+UNK_LANG, not familiar with the Faroese language 'fo'.
+```
+
 <!-- cache_translation_check_fo_d7af7ce98f614f454ef10fb4007f6f689e0e8c6d771373ea706db5003a3daa00 -->
 ```
         <source>Failed to rename invalid peers.dat file. Please move or delete it and try again.</source>
@@ -581,28 +625,16 @@ UNK_LANG, not familiar with the Faroese language 'fo'.
 UNK_LANG, not familiar with the Faroese language 'fo'.
 ```
 
-<!-- cache_translation_check_fo_7ffd02a8a733c4c3b35b6ca0df28ea5cc63ba6b199e8f3b3ea92774be190ed05 -->
+<!-- cache_translation_check_fo_065457d46c9fe2eadcee509ff6b82b45166fa4be5d3cec25eb95c109c9f550c4 -->
 ```
-        <source>The combination of the pre-selected inputs and the wallet automatic inputs selection exceeds the transaction maximum weight. Please try sending a smaller amount or manually consolidating your wallet's UTXOs</source>
-        <translation>Samansetingin av undanvaldum inntøkum og mappu-sjálvvirkandi valdum inntøkum er hægri enn flytingarstøddarhámarkið. Vinaliga royn at senda eina minnið upphædd ella samein myntirnar í tíni mappu.</translation>
+        <source>UTXO snapshot failed to validate. Restart to resume normal initial block download, or try loading a different snapshot.</source>
+        <translation>Kundi ikki váttað UTXO løtumynd. Endurbyrja fyri at halda fram við vanligu blokk-niðurtøkuni, ella royn at innlesa eina aðra løtumynd.</translation>
     
 ERR
-The translation contains a grammatical error and omits part of the original message. "minnið" is incorrect in this context; it should be "minni" (smaller). Furthermore, the word "manually" (manuelt or handvirkið) is missing from the second sentence.
+The grammar in the first sentence is incorrect. The verb 'vátta' should be in the infinitive form after the auxiliary 'kundi'. Additionally, "UTXO løtumynd" should be hyphenated as "UTXO-løtumynd" for better readability in Faroese.
 
 Correct translation:
-Samansetingin av undanvaldum inntøkum og sjálvvirkandi valinum hjá mappuni av inntøkum fer upp um hámarkstyngdina á flytingini. Vinaliga royn at senda eina minni upphædd ella savna tínar UTXO-ir í mappuni manuelt.
-```
-
-<!-- cache_translation_check_fo_c8660585372fc5330b88a9a4c5702c1dc4bb54f6f7be509efd8a1fdcad6d983e -->
-```
-        <source>The inputs size exceeds the maximum weight. Please try sending a smaller amount or manually consolidating your wallet's UTXOs</source>
-        <translation>Goymslustøddin á inntøkunum er stórri enn hámarkið. Vinaliga royn at senda eina lægri upphædd, ella samein UTXO'irnar (myntirnar) í tíni mappu.</translation>
-    
-ERR
-The translation contains a spelling error ("stórri" should be "størri") and uses "mappu" (folder/map) instead of a more appropriate term for "wallet" (like "pungur"). It also omits the specific concept of "weight" (vekt), which is a technical term in Bitcoin distinct from "size".
-
-Correct translation:
-Støddin á inntøkunum fer upp um hámarksvektina. Vinaliga royn at senda eina minni upphædd, ella savna tínar UTXO'ir í tínum pungi manuelt.
+Kundi ikki vátta UTXO-løtumyndina. Endurbyrja fyri at halda fram við vanligu blokk-niðurtøkuni, ella royn at innlesa eina aðra løtumynd.
 ```
 
 <!-- cache_translation_check_fo_09fa552ed82e045b238fc3f7f7f08b9a420af57d4baf10ce27270a58d5384cad -->
@@ -633,6 +665,18 @@ Dupult biningaruppsetan fyri adressuna %s. Vinarliga eftirkanna tínar -bind, -b
 UNK_LANG, not familiar with the Faroese language 'fo'.
 ```
 
+<!-- cache_translation_check_fo_a3744ee415c93c30ebe3b676b2cf104c75decf0652dce216346703cd699fa49b -->
+```
+        <source>Unable to find UTXO for external input</source>
+        <translation>Fann ikki ónýtt flytingarúttak, til ytri inntak</translation>
+    
+ERR
+The translation contains unnecessary punctuation and slightly incorrect terminology. In Faroese, "UTXO" (Unspent Transaction Output) is typically translated as "ónýtt flytingarúttak," but the phrase "til ytri inntak" is grammatically awkward and the comma is unnecessary. 
+
+Correct translation:
+Fann ikki ónýtt flytingarúttak fyri ytri inntak
+```
+
 <!-- cache_translation_check_fo_20dca50d0b75ebc8d7ed607c069f6deaf6585cc0bb2fe33d7c8e1666edf42149 -->
 ```
         <source>Unsupported global logging level %s=%s. Valid values: %s.</source>
@@ -652,6 +696,30 @@ Ikki stuðlað heiltøku gerðalistastig %s=%s. Gildig virði: %s.
     
 UNK_LANG, not familiar with the Faroese language 'fo'.
 ```
+
+<!-- cache_translation_check_fo_1118b1c946d5946039bf9e086e228baf96cf242a76b3fd460cf3c76909c90d24 -->
+```
+        <source>Failed to calculate bump fees, because unconfirmed UTXOs depend on an enormous cluster of unconfirmed transactions.</source>
+        <translation>Miseydnaðist at rokna avgjald fyri avgjaldshækkan, av tí at óváttaðu ónýttu flytingarúttøkini eru treytað av eini stórari mongd av óváttaðum flytingum.</translation>
+    
+UNK_LANG, not familiar with the Faroese language 'fo'.
+```
+
+<!-- cache_translation_check_fo_708c59f59cb0b8063069dcd610d207a17c6f3860e3acbc3350c38f9bebef98f5 -->
+```
+        <source>Unrecognized descriptor found. Loading wallet %s
+
+The wallet might have been created on a newer version.
+Please try running the latest software version.
+</source>
+        <translation>Fann ókenda lyklalýsing undir innlesing av mappuni %s
+
+Møguligt er at mappan var gjørd við nýggjari útgávu av forritinum.
+Vinaliga royn við nýggjastu útgávu av forritinum.
+</translation>
+    
+UNK_LANG, not familiar with the Faroese language 'fo'.
+```
 </details>
 
-Number of issues: 57.
+Number of issues: 61.

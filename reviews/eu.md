@@ -240,18 +240,6 @@ Correct translation:
 Diru-zorro guztiak itxi…
 ```
 
-<!-- cache_translation_check_eu_510ed29661a2ae37e173a72ba038a0e1df381a3f58fa69431e168e7fc4f31b7a -->
-```
-        <source>Syncing Headers (%1%)…</source>
-        <translation>Goiburuak sinkronizatzen (%%1)…</translation>
-    
-ERR
-The format specifier is incorrect. In the source text `%1%`, `%1` is the placeholder for the value and the trailing `%` is a literal percentage sign. The translation `%%1` incorrectly places two percentage signs before the placeholder.
-
-Correct translation:
-Goiburuak sinkronizatzen (%1%)…
-```
-
 <!-- cache_translation_check_eu_9e59e66b3dfaf304a9fbeb82624f46650e9f0204e4dc781f74dbafa3a81c592b -->
 ```
         <source>Load PSBT from &amp;clipboard…</source>
@@ -1928,4 +1916,4 @@ Zorroa berridatzi behar izan da: %s berrabiarazi osatzeko
 ```
 </details>
 
-Number of issues: 151.
+Number of issues: 150.
